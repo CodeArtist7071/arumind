@@ -13,14 +13,10 @@ interface LoginProps {
 }
 
 const Login = () => {
-
   const navigate = useNavigate();
   const [error, setError] = useState<any>();
   const [loading, setLoading] = useState(true);
   const [errorMessage, setErrorMessage] = useState<string | null>(null);
-
-
-
 
   useEffect(() => {
     const urlParams = new URLSearchParams(window.location.search);
@@ -31,7 +27,7 @@ const Login = () => {
       supabase.auth
         .setSession({
           access_token: accessToken,
-          refresh_token: ""
+          refresh_token: "",
         })
         .then(({ error }) => {
           setLoading(false);
@@ -43,7 +39,7 @@ const Login = () => {
             }
           } else {
             // Successfully logged in, redirect to dashboard
-            isSubmitting
+            isSubmitting;
             navigate("/dashboard");
           }
         });
@@ -57,40 +53,39 @@ const Login = () => {
     handleSubmit,
     formState: { errors, isSubmitting },
   } = useForm<LoginProps>();
-const onSubmit = async (info: LoginProps) => {
-  setLoading(true);
-  setError(null); // clear previous errors
+  const onSubmit = async (info: LoginProps) => {
+    setLoading(true);
+    setError(null); // clear previous errors
 
-  try {
-    // Sign in with Supabase
-    const { data, error } = await supabase.auth.signInWithPassword({
-      email: info.email,
-      password: info.password,
-    });
-
-    if (error) {
-      // Show error banner
-      console.log("Login error:", error);
-      setError(error);
-      return;
+    try {
+      // Sign in with Supabase
+      const { data, error } = await supabase.auth.signInWithPassword({
+        email: info.email,
+        password: info.password,
+      });
+    } catch (error) {
+      if (error) {
+        // Show error banner
+        console.log("Login error:", error);
+        setError(error);
+        return;
+      }
     }
-if(loading){
-  
-}
+  };
+
   return (
     <div className="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-slate-100 min-h-screen flex flex-col">
       {/* Main Content */}
       <main className="flex-1 flex items-center justify-center p-6 lg:p-12">
         <div className="w-full max-w-md">
           <div className="bg-white dark:bg-slate-900 shadow-xl shadow-slate-200/50 dark:shadow-none rounded-xl p-8 border border-slate-100 dark:border-slate-800">
-           
             <h1 className="text-2xl text-center font-bold text-slate-900 dark:text-white mb-2">
               Welcome Back
             </h1>
             <p className="text-slate-500 mb-5 text-center dark:text-slate-400 text-sm">
               Login to continue your exam preparation journey
             </p>
-          
+
             {error && <StatusBanner status={error} />}
 
             <form className="space-y-5" onSubmit={handleSubmit(onSubmit)}>
