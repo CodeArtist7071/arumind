@@ -9,11 +9,9 @@ import { store } from "./store.ts";
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
     <Provider store={store}>
-    
-        <BrowserRouter>
+        <BrowserRouter basename="/aru.edu/">
           <App />
         </BrowserRouter>
-  
     </Provider>
   </StrictMode>,
 );
