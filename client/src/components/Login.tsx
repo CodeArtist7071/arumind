@@ -3,7 +3,7 @@ import { InputWithLabel } from "./ui/InputWithLabel";
 import { Button } from "./ui/Button";
 import { useForm } from "react-hook-form";
 import supabase from "../utils/supabase";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { StatusBanner } from "./ui/StatusBanner";
 import { Navigate, useNavigate } from "react-router";
 
@@ -13,14 +13,52 @@ interface LoginProps {
 }
 
 const Login = () => {
+
   const navigate = useNavigate();
   const [error, setError] = useState<any>();
+  const [loading, setLoading] = useState(true);
+  const [errorMessage, setErrorMessage] = useState<string | null>(null);
+
+
+
+
+  useEffect(() => {
+    const urlParams = new URLSearchParams(window.location.search);
+    const accessToken = urlParams.get("access_token");
+
+    if (accessToken) {
+      // Attempt to set session with magic link token
+      supabase.auth
+        .setSession({
+          access_token: accessToken,
+          refresh_token: ""
+        })
+        .then(({ error }) => {
+          setLoading(false);
+          if (error) {
+            if (error.message.includes("Email not confirmed")) {
+              setErrorMessage("Please verify your email before logging in.");
+            } else {
+              setErrorMessage(error.message);
+            }
+          } else {
+            // Successfully logged in, redirect to dashboard
+            isSubmitting
+            navigate("/dashboard");
+          }
+        });
+    } else {
+      setLoading(false);
+    }
+  }, [navigate]);
+
   const {
     register,
     handleSubmit,
     formState: { errors, isSubmitting },
   } = useForm<LoginProps>();
   const onSubmit = async (info: LoginProps) => {
+    setLoading(true);
     const { data, error } = await supabase.auth.signInWithPassword({
       email: info.email,
       password: info.password,
@@ -31,12 +69,16 @@ const Login = () => {
     }
     if (error) {
       <StatusBanner status={error} />;
+      console.log("error",error)
       // console.log(error.status)
       setError(error);
       return;
     }
+    setLoading(false);
   };
-
+if(loading){
+  
+}
   return (
     <div className="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-slate-100 min-h-screen flex flex-col">
       {/* Main Content */}
