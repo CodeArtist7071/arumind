@@ -1,0 +1,36 @@
+from google.cloud import translate_v2 as translate
+from config import TARGET_LANGUAGE
+
+client = translate.Client()
+
+def translate_text(text):
+    """
+    Translate a single text string to target language
+    """
+
+    if not text:
+        return ""
+
+    result = client.translate(
+        text,
+        target_language=TARGET_LANGUAGE
+    )
+
+    return result["translatedText"]
+
+
+def translate_question(question):
+    """
+    Translate a question object into Odia
+    """
+
+    translated = {
+        "question": translate_text(question.get("question", "")),
+        "option_a": translate_text(question.get("option_a", "")),
+        "option_b": translate_text(question.get("option_b", "")),
+        "option_c": translate_text(question.get("option_c", "")),
+        "option_d": translate_text(question.get("option_d", "")),
+        "answer": translate_text(question.get("answer", ""))
+    }
+
+    return translated

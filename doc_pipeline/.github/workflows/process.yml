@@ -1,0 +1,24 @@
+name: Process PDF
+
+on:
+  repository_dispatch:
+    types: [drive_upload]
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Install Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.10"
+
+      - name: Install deps
+        run: |
+          pip install -r requirements.txt
+
+      - name: Run pipeline
+        run: python main.py
