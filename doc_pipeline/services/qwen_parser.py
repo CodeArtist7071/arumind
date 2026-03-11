@@ -105,20 +105,11 @@ supabase: Client = create_client(SUPABASE_URL, SUPABASE_KEY)
 
 
 def detect_exam_board_and_subject(text):
-
-    subject_id = None
+    # Subject tracking is now handled natively via Stateful Headings in subject_tracker.py
+    # This exclusively tracks the exam_id fallback.
     exam_id = None
-
-    subjects = supabase.table("subjects").select("id,name").execute().data
     exams = supabase.table("exams").select("id,name").execute().data
-
     text_lower = text.lower()
-
-    for subject in subjects:
-        if subject["name"].lower() in text_lower:
-            subject_id = subject["id"]
-            print(f"[PARSER] Found Subject: {subject['name']}")
-            break
 
     for exam in exams:
         if exam["name"].lower() in text_lower:
@@ -126,7 +117,7 @@ def detect_exam_board_and_subject(text):
             print(f"[PARSER] Found Exam: {exam['name']}")
             break
 
-    return subject_id, exam_id
+    return None, exam_id
 
 
 def fetch_chapters_by_subject(subject_id):
@@ -140,8 +131,6 @@ def fetch_chapters_by_subject(subject_id):
 def clean_ocr_text(text):
 
     print("\n[PARSER] Cleaning OCR text")
-
-    subject_id, exam_id = detect_exam_board_and_subject(text)
 
     # Comprehensive Regex cleanup for A/B/C/D option variants
     # Converts combinations like ( a ), a ), a., etc., gracefully into standard "A.", "B.", etc.
@@ -163,7 +152,7 @@ def clean_ocr_text(text):
         text = text.split("1.", 1)[1]
         text = "1. " + text
 
-    return text, subject_id, exam_id
+    return text
 
 # def clean_ocr_text(text):
 
@@ -228,7 +217,9 @@ def regex_extract_questions(text):
                 "C": m[4].strip(),
                 "D": m[5].strip()
             },
-            "correct_answer": ""
+            "correct_answer": "",
+            "linked_questions": [],
+            "appear_year": None
         }
 
         questions.append(q)
@@ -380,11 +371,11 @@ def deduplicate_questions(questions):
 #     return all_questions
 
 
-def parse_to_json(text):
+def parse_to_json(text, subject_id, exam_id):
 
     print("\n========== PARSER PIPELINE START ==========")
 
-    clean_text, subject_id, exam_id = clean_ocr_text(text)
+    clean_text = clean_ocr_text(text)
     print("checking the clean_text",clean_text)
     # STEP 1 — REGEX EXTRACTION
     regex_questions = regex_extract_questions(clean_text)
@@ -420,12 +411,15 @@ Rules:
 - Must contain EXACTLY 4 options: A B C D. You must explicitly organize, split, or correct the provided options to strictly ensure exactly 4 options exist.
 - CORRECT ANSWER: You MUST solve the question yourself to determine the `correct_answer`. Focus heavily on evaluating mathematical questions accurately by checking against the 4 options. Output ONLY the correct option letter (A, B, C, or D).
 - CHAPTER MAPPING: Determine the most relevant topic/chapter for the question. Match the topic conceptually to a chapter from the 'Available Chapters' list below. Set `chapter_id` to that chapter's exact ID. If no chapters are provided or none match, set to null.
+- LINKED QUESTIONS: If multiple questions share the same context/data interpretation text/diagram, list the exact integer question numbers of all related questions in `linked_questions` as an array (e.g., `[66, 67, 68, 69, 70]`). If not linked, return an empty array `[]`.
+- APPEAR YEAR: Track which year the question has appeared in previously, if mentioned in the text (e.g. 2021). Otherwise set to null.
 - Return ONLY JSON.
 
 FORMAT:
 
 [
  {{
+   "question_number": null,
    "question": "",
    "options": {{
      "A": "",
@@ -434,7 +428,9 @@ FORMAT:
      "D": ""
    }},
    "correct_answer": "",
-   "chapter_id": ""
+   "chapter_id": "",
+   "linked_questions": [],
+   "appear_year": null
  }}
 ]
 {chapters_prompt_block}
@@ -457,6 +453,29 @@ TEXT:
 
     # STEP 4 — REMOVE DUPLICATES
     all_questions = deduplicate_questions(all_questions)
+
+    import uuid
+    for q in all_questions:
+        c_id = q.get("chapter_id")
+        resolved_id = None
+        if c_id:
+            c_str = str(c_id).strip()
+            try:
+                # Check if it's directly a valid UUID
+                uuid.UUID(c_str)
+                resolved_id = c_str
+            except ValueError:
+                # If Gemini returned the name instead of the ID, match it manually
+                if chapters_data:
+                    for c in chapters_data:
+                        if c["name"].strip().lower() == c_str.lower():
+                            resolved_id = c["id"]
+                            break
+        
+        q["chapter_id"] = resolved_id
+
+        q["subject_id"] = subject_id
+        q["exam_id"] = exam_id
 
     print("\n[PARSER] Total extracted:", len(all_questions))
 

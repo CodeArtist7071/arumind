@@ -166,34 +166,39 @@ def is_question_start(text):
 
 
 
-def build_question_clusters(blocks):
+def build_question_clusters(blocks, initial_subject_id=None):
+    from services.subject_tracker import match_subject_id
 
     clusters = []
     current_cluster = None
+    running_subject_id = initial_subject_id
 
     for block in blocks:
-
         text = block["text"]
+        
+        # Check if block is a heading and updates the running subject state
+        new_sub = match_subject_id(text)
+        if new_sub:
+            running_subject_id = new_sub
+            print(f"--> STATE UPDATE: Switched to Subject ID {running_subject_id} from heading '{text.strip()}'")
 
         if is_question_start(text):
-
             if current_cluster:
                 clusters.append(current_cluster)
 
             current_cluster = {
                 "question_block": block,
-                "content": [text]
+                "content": [text],
+                "subject_id": running_subject_id
             }
 
         elif current_cluster:
-
             current_cluster["content"].append(text)
 
     if current_cluster:
         clusters.append(current_cluster)
 
-    return clusters
-
+    return clusters, running_subject_id
 
 
 def process_pdf(pdf_path):
@@ -213,6 +218,8 @@ def process_pdf(pdf_path):
 
     all_questions = []
     debug_text = ""
+    global_exam_id = None
+    current_subject_id = None
 
     # --------------------------
     # PAGE LOOP
@@ -225,11 +232,18 @@ def process_pdf(pdf_path):
         try:
 
             # --------------------------
+            # IMAGE PREPROCESSING
+            # --------------------------
+            log("Running Image Preprocessing")
+            from services.image_preprocessor import preprocess_for_ocr
+            processed_img = preprocess_for_ocr(img)
+
+            # --------------------------
             # OCR
             # --------------------------
             log("Running OCR extraction")
 
-            annotation = extract_text(img)
+            annotation = extract_text(processed_img)
 
             log(f"OCR extraction complete. Type returned: {type(annotation)}")
 
@@ -239,6 +253,15 @@ def process_pdf(pdf_path):
             log("Extracting layout blocks")
 
             blocks = extract_blocks(annotation)
+            from services.qwen_parser import detect_exam_board_and_subject
+            page_text = blocks_to_text(blocks)
+            s_id, e_id = detect_exam_board_and_subject(page_text)
+            
+            if i < 4 and e_id and not global_exam_id:
+                global_exam_id = e_id
+                log(f"Global Exam ID locked from page {i+1}: {global_exam_id}")
+            
+            # We explicitly ignore s_id here in favor of structure-based chronological Subject Tracking below.
 
             log(f"Blocks extracted: {len(blocks)}")
 
@@ -265,7 +288,7 @@ def process_pdf(pdf_path):
             # --------------------------
             log("Separating diagram blocks")
 
-            text_blocks, diagram_blocks = split_diagram_blocks(blocks)
+            text_blocks, diagram_blocks = split_diagram_blocks(blocks, processed_img)
 
             log(f"Text blocks: {len(text_blocks)}")
             log(f"Diagram blocks: {len(diagram_blocks)}")
@@ -273,9 +296,9 @@ def process_pdf(pdf_path):
             # --------------------------
             # BUILD CLUSTERS
             # --------------------------
-            log("Building question clusters")
+            log("Building question clusters and resolving stateful headings")
 
-            clusters = build_question_clusters(text_blocks)
+            clusters, current_subject_id = build_question_clusters(text_blocks, current_subject_id)
 
             log(f"{len(clusters)} clusters detected on page {i+1}")
 
@@ -284,7 +307,7 @@ def process_pdf(pdf_path):
             # --------------------------
             log("Linking diagrams to clusters")
 
-            attach_diagrams_to_clusters(clusters, diagram_blocks)
+            attach_diagrams_to_clusters(clusters, diagram_blocks, text_blocks, processed_img)
 
             log("Diagram linking completed")
 
@@ -304,8 +327,9 @@ def process_pdf(pdf_path):
                 try:
 
                     log("Sending cluster to parser")
-
-                    json_data = parse_to_json(cluster_text)
+                    
+                    cluster_subject_id = cluster.get("subject_id") or current_subject_id
+                    json_data = parse_to_json(cluster_text, cluster_subject_id, global_exam_id)
 
                     log(f"Parser returned type: {type(json_data)}")
                     
@@ -323,6 +347,7 @@ def process_pdf(pdf_path):
 
                         for q in parsed_questions:
                             q["diagram_present"] = cluster.get("diagram", False)
+                            q["diagram_url"] = cluster.get("diagram_url", None)
 
                         all_questions.extend(parsed_questions)
 
@@ -369,6 +394,61 @@ def process_pdf(pdf_path):
     log(f"Total questions extracted: {len(all_questions)}")
 
     # --------------------------
+    # DIAGRAM & LINKED METADATA PROPAGATION
+    # --------------------------
+    log("Propagating diagrams for linked questions")
+    
+    # Map questions by integer question_number
+    q_map = {}
+    for q in all_questions:
+        q_num = q.get("question_number")
+        if q_num is not None:
+            try:
+                q_map[int(q_num)] = q
+            except ValueError:
+                pass
+
+        if "linked_questions" not in q:
+            q["linked_questions"] = []
+        if "appear_year" not in q:
+            q["appear_year"] = None
+
+    processed_groups = set()
+    for q in all_questions:
+        linked = q.get("linked_questions", [])
+        if not isinstance(linked, list):
+            linked = []
+            q["linked_questions"] = linked
+
+        q_num = q.get("question_number")
+        
+        group_nums = [int(x) for x in linked if str(x).isdigit()]
+        if q_num is not None and str(q_num).isdigit():
+            group_nums.append(int(q_num))
+            
+        group_nums = list(set(group_nums))
+        
+        if len(group_nums) > 1:
+            group = tuple(sorted(group_nums))
+            if group not in processed_groups:
+                processed_groups.add(group)
+                
+                group_diagram_url = None
+                group_diagram_present = False
+                
+                for num in group:
+                    if num in q_map:
+                        if q_map[num].get("diagram_present") and q_map[num].get("diagram_url"):
+                            group_diagram_url = q_map[num]["diagram_url"]
+                            group_diagram_present = True
+                            break
+                
+                if group_diagram_present:
+                    for num in group:
+                        if num in q_map and not q_map[num].get("diagram_url"):
+                            q_map[num]["diagram_present"] = True
+                            q_map[num]["diagram_url"] = group_diagram_url
+                            log(f"Propagated diagram to question {num} from linked group")
     # SAVE QUESTIONS JSON
     # --------------------------
     log("Saving questions JSON")
@@ -379,41 +459,25 @@ def process_pdf(pdf_path):
     log("Questions saved to outputs/questions.json")
 
     # --------------------------
-    # DETECT EXAM + SUBJECT
+    # SUPABASE PUSH
     # --------------------------
-    log("Detecting exam and subject from OCR text")
+    log(f"Final Detected Exam ID: {global_exam_id}")
+    log(f"Final Detected Subject ID: {current_subject_id}")
 
-    header_text = debug_text[:1500]
-
-    log(f"Header text length used for detection: {len(header_text)}")
-
-    exam_name = detect_exam_name(header_text)
-    subject_name = detect_subject_name(header_text)
-
-    log(f"Detected exam name: {exam_name}")
-    log(f"Detected subject name: {subject_name}")
-
-    if not exam_name or not subject_name:
-
+    if not global_exam_id or not current_subject_id:
         log("Exam or subject detection failed. Skipping Supabase push.")
         return
-
-    # --------------------------
-    # RESOLVE IDS
-    # --------------------------
-    log("Resolving exam_id and subject_id from Supabase")
-
-    exam_id, subject_id = resolve_exam_subject_ids(exam_name, subject_name)
-
-    log(f"Resolved exam_id: {exam_id}")
-    log(f"Resolved subject_id: {subject_id}")
+    else:
+        log("Questions contain fully mapped subject_id, exam_id, and chapter_id.")
+        # push_english(all_questions, current_subject_id, global_exam_id)
+        pass
 
     # --------------------------
     # PUSH TO SUPABASE
     # --------------------------
     log("Pushing English questions to Supabase")
 
-    push_english(all_questions, subject_id, exam_id)
+    push_english(all_questions, current_subject_id, global_exam_id)
 
     log("English questions pushed successfully")
 
