@@ -1,4 +1,4 @@
-import supabase from "../utils/supabase";
+import { supabase } from "../utils/supabase";
 
 export const getUserProfile = async () => {
   const {
@@ -15,8 +15,6 @@ export const getUserProfile = async () => {
   return { user: session.user, profile: data };
 };
 
-
-
 export const examService = async (updates: string, id: string) => {
   const { data, error } = await supabase
     .from("profiles")
@@ -26,5 +24,5 @@ export const examService = async (updates: string, id: string) => {
   if (error) {
     return new Error("error", error);
   }
-  return {data};
+  return { data };
 };

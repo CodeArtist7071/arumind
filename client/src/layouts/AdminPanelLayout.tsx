@@ -18,31 +18,31 @@ const navItems = [
   {
     label: "Dashboard",
     icon: <LayoutDashboard color="white" size={20} />,
-    path: "/user/dashboard",
+    path: "dashboard",
   },
   {
-    label: "Performance",
+    label: "Exams",
     icon: <BarChart color="white" size={20} />,
-    path: "/user/performance",
+    path: "exams",
   },
   {
-    label: "Study Planner",
+    label: "Users Management",
     icon: <Notebook color="white" size={20} />,
-    path: "/user/study-planner",
+    path: "/admin/users",
   },
   {
-    label: "Mock Tests",
+    label: "Reports",
     icon: <Package color="white" size={20} />,
-    path: "/user/mock-tests",
+    path: "reports",
   },
   {
-    label: "Results",
+    label: "Settings",
     icon: <Package color="white" size={20} />,
-    path: "/user/results",
+    path: "settings",
   },
 ];
 
-export default function UserPanelLayout() {
+export default function AdminPanelLayout() {
   const { user } = useSelector((state: RootState) => state.user ?? null);
   const dispatch = useDispatch<AppDispatch>();
 

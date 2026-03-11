@@ -2,7 +2,7 @@ import { EyeClosed } from "lucide-react";
 import { InputWithLabel } from "./ui/InputWithLabel";
 import { Button } from "./ui/Button";
 import { useForm } from "react-hook-form";
-import supabase from "../utils/supabase";
+import {supabase } from "../utils/supabase";
 import { useEffect, useState } from "react";
 import { StatusBanner } from "./ui/StatusBanner";
 import { Navigate, useNavigate } from "react-router";

@@ -9,11 +9,14 @@ import { Button } from "./Button";
 import * as tf from "@tensorflow/tfjs";
 import * as faceLandmarksDetection from "@tensorflow-models/face-landmarks-detection";
 import { WarningModal } from "./WarningModal";
+import { useDispatch, useSelector } from "react-redux";
+import type { AppDispatch, RootState } from "../../store";
+import { fetchQuestion } from "../../slice/questionSlice";
 
 export default function PracticeTest() {
   const videoRef = useRef<HTMLVideoElement | null>(null);
   const animationRef = useRef<number | null>(null);
-  const { eid } = useParams();
+  const { eid, sid, cid } = useParams();
   const DEBUG = true;
   let frameCount = 0;
   let isProcessing = false;
@@ -23,6 +26,16 @@ export default function PracticeTest() {
   const [cheatingAlert, setCheatingAlert] = useState<boolean>(false);
   const [warning, setWarning] = useState("");
   const [violations, setViolations] = useState(0);
+  const { data, error } = useSelector(
+    (state: RootState) => state.questions ?? null,
+  );
+  const dispatch = useDispatch<AppDispatch>();
+
+  useEffect(() => {
+    dispatch(fetchQuestion(cid));
+  }, []);
+
+  console.log("question", data);
 
   let lastViolationTime = 0;
   const VIOLATION_COOLDOWN = 2000;
@@ -292,7 +305,42 @@ export default function PracticeTest() {
       {/* Main Layout */}
       <main className="flex-1 max-w-360 mx-auto w-full grid sm:grid-cols-1 lg:grid-cols-12 gap-6 p-4 lg:p-8">
         {/* Left Sidebar */}
-        <aside className="lg:col-span-3 space-y-6">
+        <section className="lg:col-span-9 space-y-6">
+          {data.map((el, i) => {
+            return (
+              <div className="bg-white dark:bg-slate-900 rounded-xl border border-slate-200 dark:border-slate-800 shadow-sm flex flex-col min-h-[600px]">
+                {/* Header */}
+                <div className="p-6 border-b border-slate-100 dark:border-slate-800">
+                  <h2 className="text-xl font-bold">Question {i + 1}</h2>
+                </div>
+
+                {/* Body */}
+                <div className="p-8 flex-1">
+                  <p className="text-lg mb-8">{el.question}</p>
+
+                  <div className="space-y-4">
+                    {el.options.flatMap((el, i) => (
+                      <label
+                        key={i}
+                        className="flex items-center p-4 rounded-xl border-2 border-slate-100 dark:border-slate-800 hover:border-primary/40 hover:bg-primary/5 transition-all cursor-pointer"
+                      >
+                        <input
+                          type="radio"
+                          name="q3"
+                          className="size-5 text-primary focus:ring-primary"
+                        />
+                        <span className="ml-4 font-medium">{el.v}</span>
+                      </label>
+                    ))}
+                  </div>
+                </div>
+              </div>
+            );
+          })}
+        </section>
+
+        {/* Right Sidebar */}
+        <aside className="fixed right-10 space-y-6 w-[20%]  lg:col-span-3">
           <div className="bg-white dark:bg-slate-900 rounded-xl border border-slate-200 dark:border-slate-800 p-5 shadow-sm">
             <h3 className="font-bold mb-4 flex items-center gap-2">
               <span className="material-symbols-outlined text-primary text-sm">
@@ -300,9 +348,8 @@ export default function PracticeTest() {
               </span>
               Question Palette
             </h3>
-
             <div className="grid grid-cols-5 gap-2">
-              {[...Array(25)].map((_, i) => (
+              {data.map((_, i) => (
                 <button
                   key={i}
                   className="aspect-square flex items-center justify-center rounded-lg bg-slate-100 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-slate-400 font-bold text-sm"
@@ -312,8 +359,6 @@ export default function PracticeTest() {
               ))}
             </div>
           </div>
-
-          {/* Progress Card */}
           <div className="bg-primary/5 dark:bg-primary/10 border border-primary/20 rounded-xl p-4">
             <div className="flex justify-between mb-2">
               <span className="text-sm font-semibold text-primary">
@@ -328,55 +373,8 @@ export default function PracticeTest() {
               3 of 25 questions completed
             </p>
           </div>
-        </aside>
 
-        {/* Center Question */}
-        <section className="lg:col-span-6">
-          <div className="bg-white dark:bg-slate-900 rounded-xl border border-slate-200 dark:border-slate-800 shadow-sm flex flex-col min-h-[600px]">
-            {/* Header */}
-            <div className="p-6 border-b border-slate-100 dark:border-slate-800">
-              <h2 className="text-xl font-bold">Question 3</h2>
-            </div>
-
-            {/* Body */}
-            <div className="p-8 flex-1">
-              <p className="text-lg mb-8">
-                A student has to secure 40% marks to pass. He gets 178 marks and
-                fails by 22 marks. What are the maximum marks?
-              </p>
-
-              <div className="space-y-4">
-                {["450", "500", "550", "600"].map((option, index) => (
-                  <label
-                    key={index}
-                    className="flex items-center p-4 rounded-xl border-2 border-slate-100 dark:border-slate-800 hover:border-primary/40 hover:bg-primary/5 transition-all cursor-pointer"
-                  >
-                    <input
-                      type="radio"
-                      name="q3"
-                      className="size-5 text-primary focus:ring-primary"
-                    />
-                    <span className="ml-4 font-medium">{option}</span>
-                  </label>
-                ))}
-              </div>
-            </div>
-
-            {/* Footer */}
-            <div className="p-6 border-t border-slate-100 dark:border-slate-800 bg-slate-50/50 dark:bg-slate-800/30 flex justify-between">
-              <button className="px-6 py-2 bg-slate-200 dark:bg-slate-700 rounded-lg font-bold">
-                Previous
-              </button>
-              <button className="px-8 py-2 bg-primary hover:bg-primary/90 text-white font-bold rounded-lg shadow-md shadow-primary/20">
-                Save & Next
-              </button>
-            </div>
-          </div>
-        </section>
-
-        {/* Right Sidebar */}
-        <aside className="lg:col-span-3">
-          <div className="bg-white dark:bg-slate-900 rounded-xl border border-slate-200 dark:border-slate-800 shadow-sm h-full flex flex-col">
+          {/* <div className="bg-white dark:bg-slate-900 rounded-xl border border-slate-200 dark:border-slate-800 shadow-sm h-full flex flex-col">
             <div className="p-4 border-b">
               <h3 className="font-bold flex items-center gap-2">
                 <span className="material-symbols-outlined text-primary text-sm">
@@ -392,7 +390,7 @@ export default function PracticeTest() {
                 className="w-full h-48 lg:h-[400px] p-3 text-sm bg-background-light dark:bg-background-dark focus:ring-1 focus:ring-primary/20 rounded-lg resize-none font-mono"
               />
             </div>
-          </div>
+          </div> */}
         </aside>
       </main>
     </div>
