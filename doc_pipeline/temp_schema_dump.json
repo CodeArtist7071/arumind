@@ -1,0 +1,1339 @@
+{
+  "exam_board": [],
+  "exams": [
+    {
+      "id": "fde27361-e062-4394-96aa-b09542d3835a",
+      "name": "CTSRE",
+      "full_name": "Combined Technical Services Recruitment Examination",
+      "type": "Technical",
+      "description": "Recruitment for technical and engineering-related posts.",
+      "is_active": true,
+      "created_at": "2026-03-03T18:28:02.762478",
+      "exam_board_id": "7f35f854-24bb-4b99-89dc-d1ac9701b750",
+      "prelims": false,
+      "mains": true
+    },
+    {
+      "id": "cc5c847f-1655-48a6-806b-99c444846dde",
+      "name": "JEO",
+      "full_name": "Junior Enforcement Officer Examination",
+      "type": "Graduate Level",
+      "description": "Recruitment for Junior Enforcement Officer posts.",
+      "is_active": true,
+      "created_at": "2026-03-03T18:28:02.762478",
+      "exam_board_id": "7f35f854-24bb-4b99-89dc-d1ac9701b750",
+      "prelims": false,
+      "mains": true
+    },
+    {
+      "id": "f4f70bd7-b6bc-4863-9926-db03854b3099",
+      "name": "JA",
+      "full_name": "Junior Assistant Examination",
+      "type": "Clerical",
+      "description": "Recruitment for Junior Assistant posts in various departments.",
+      "is_active": true,
+      "created_at": "2026-03-03T18:28:02.762478",
+      "exam_board_id": "7f35f854-24bb-4b99-89dc-d1ac9701b750",
+      "prelims": false,
+      "mains": true
+    },
+    {
+      "id": "52ef5744-9ea7-4fc5-92e9-c6bd8dd28bc0",
+      "name": "PMPET",
+      "full_name": "Physical Measurement & Physical Efficiency Test",
+      "type": "Physical Test",
+      "description": "Physical eligibility test conducted for specific recruitment posts.",
+      "is_active": true,
+      "created_at": "2026-03-03T18:28:02.762478",
+      "exam_board_id": "7f35f854-24bb-4b99-89dc-d1ac9701b750",
+      "prelims": false,
+      "mains": true
+    },
+    {
+      "id": "bf7333d8-cab4-49c2-9a80-7458453a5917",
+      "name": "LTR",
+      "full_name": "Leave Training Reserve Teacher Examination",
+      "type": "Teaching",
+      "description": "Recruitment for Leave Training Reserve teachers in Odisha schools.",
+      "is_active": true,
+      "created_at": "2026-03-03T18:28:02.762478",
+      "exam_board_id": "7f35f854-24bb-4b99-89dc-d1ac9701b750",
+      "prelims": false,
+      "mains": true
+    },
+    {
+      "id": "58843e8f-ef30-4033-b2bf-816cbfb29a4b",
+      "name": "BSSO",
+      "full_name": "Block Social Security Officer Examination",
+      "type": "Graduate Level",
+      "description": "Recruitment for Block Social Security Officer posts.",
+      "is_active": true,
+      "created_at": "2026-03-03T18:28:02.762478",
+      "exam_board_id": "7f35f854-24bb-4b99-89dc-d1ac9701b750",
+      "prelims": false,
+      "mains": true
+    },
+    {
+      "id": "7d83df73-c84b-420d-ab67-6a1116d119f6",
+      "name": "SCEW",
+      "full_name": "Soil Conservation Extension Worker Examination",
+      "type": "Field Staff",
+      "description": "Recruitment for Soil Conservation Extension Worker posts.",
+      "is_active": true,
+      "created_at": "2026-03-03T18:28:02.762478",
+      "exam_board_id": "7f35f854-24bb-4b99-89dc-d1ac9701b750",
+      "prelims": false,
+      "mains": true
+    },
+    {
+      "id": "5d9d01ee-18f8-4cea-b161-2c51d35077f7",
+      "name": "RI",
+      "full_name": "Revenue Inspector Examination",
+      "type": "Graduate Level",
+      "description": "Recruitment for Revenue Inspector posts under Odisha Government.",
+      "is_active": true,
+      "created_at": "2026-03-03T18:36:15.904057",
+      "exam_board_id": "7ed06554-d33d-4790-84a0-ae6c8b0c5578",
+      "prelims": false,
+      "mains": true
+    },
+    {
+      "id": "10ac9a9e-3352-46b1-bd8a-ac028dfb013c",
+      "name": "ARI",
+      "full_name": "Assistant Revenue Inspector Examination",
+      "type": "12th Level",
+      "description": "Recruitment for Assistant Revenue Inspector posts.",
+      "is_active": true,
+      "created_at": "2026-03-03T18:36:15.904057",
+      "exam_board_id": "7ed06554-d33d-4790-84a0-ae6c8b0c5578",
+      "prelims": false,
+      "mains": true
+    },
+    {
+      "id": "6670b0c7-227a-4094-b54f-157518338cfe",
+      "name": "ICDS",
+      "full_name": "Integrated Child Development Services Recruitment",
+      "type": "Field Staff",
+      "description": "Recruitment under ICDS department posts.",
+      "is_active": true,
+      "created_at": "2026-03-03T18:36:15.904057",
+      "exam_board_id": "7ed06554-d33d-4790-84a0-ae6c8b0c5578",
+      "prelims": false,
+      "mains": true
+    },
+    {
+      "id": "147e1eb2-7710-4f79-9ac4-c9532d866f37",
+      "name": "SFS",
+      "full_name": "Statistical Field Surveyor Examination",
+      "type": "Field Staff",
+      "description": "Recruitment for Statistical Field Surveyor posts.",
+      "is_active": true,
+      "created_at": "2026-03-03T18:36:15.904057",
+      "exam_board_id": "7ed06554-d33d-4790-84a0-ae6c8b0c5578",
+      "prelims": false,
+      "mains": true
+    },
+    {
+      "id": "e50e98ff-0d87-47d3-b3b9-1da81c804835",
+      "name": "AMIN",
+      "full_name": "Amin Recruitment Examination",
+      "type": "12th Level",
+      "description": "Recruitment for Amin posts in Revenue Department.",
+      "is_active": true,
+      "created_at": "2026-03-03T18:36:15.904057",
+      "exam_board_id": "7ed06554-d33d-4790-84a0-ae6c8b0c5578",
+      "prelims": false,
+      "mains": true
+    },
+    {
+      "id": "d59119f8-f016-403f-b32a-aab16eb1663b",
+      "name": "CRE",
+      "full_name": "Combined Recruitment Examination",
+      "type": "Multiple Posts",
+      "description": "Combined recruitment for multiple OSSSC posts.",
+      "is_active": true,
+      "created_at": "2026-03-03T18:36:15.904057",
+      "exam_board_id": "7ed06554-d33d-4790-84a0-ae6c8b0c5578",
+      "prelims": false,
+      "mains": true
+    },
+    {
+      "id": "dbc527d1-1f82-4ede-a8fe-3aac5948ab16",
+      "name": "FORESTER",
+      "full_name": "Forester Recruitment Examination",
+      "type": "Forest Service",
+      "description": "Recruitment for Forester posts under Forest Department.",
+      "is_active": true,
+      "created_at": "2026-03-03T18:36:15.904057",
+      "exam_board_id": "7ed06554-d33d-4790-84a0-ae6c8b0c5578",
+      "prelims": false,
+      "mains": true
+    },
+    {
+      "id": "6d393880-0367-46d0-b99b-7336f3e15722",
+      "name": "FOREST GUARD",
+      "full_name": "Forest Guard Recruitment Examination",
+      "type": "Forest Service",
+      "description": "Recruitment for Forest Guard posts.",
+      "is_active": true,
+      "created_at": "2026-03-03T18:36:15.904057",
+      "exam_board_id": "7ed06554-d33d-4790-84a0-ae6c8b0c5578",
+      "prelims": false,
+      "mains": true
+    },
+    {
+      "id": "9bc99fdf-46a2-423f-a9ad-3c205fde51eb",
+      "name": "LI",
+      "full_name": "Livestock Inspector Examination",
+      "type": "Agriculture",
+      "description": "Recruitment for Livestock Inspector posts.",
+      "is_active": true,
+      "created_at": "2026-03-03T18:36:15.904057",
+      "exam_board_id": "7ed06554-d33d-4790-84a0-ae6c8b0c5578",
+      "prelims": false,
+      "mains": true
+    },
+    {
+      "id": "a0723b61-7dc0-4bdd-991e-5fbf088e6a3d",
+      "name": "PEO",
+      "full_name": "Panchayat Executive Officer Examination",
+      "type": "Graduate Level",
+      "description": "Recruitment for Panchayat Executive Officer posts.",
+      "is_active": true,
+      "created_at": "2026-03-03T18:36:15.904057",
+      "exam_board_id": "7ed06554-d33d-4790-84a0-ae6c8b0c5578",
+      "prelims": false,
+      "mains": true
+    },
+    {
+      "id": "6cc1df31-0cf5-4cd2-98d0-5761e58d0c8d",
+      "name": "PET",
+      "full_name": "Physical Efficiency Test",
+      "type": "Physical Test",
+      "description": "Physical eligibility test for applicable recruitment posts.",
+      "is_active": true,
+      "created_at": "2026-03-03T18:36:15.904057",
+      "exam_board_id": "7ed06554-d33d-4790-84a0-ae6c8b0c5578",
+      "prelims": false,
+      "mains": true
+    },
+    {
+      "id": "f745f9ac-a994-42fa-a239-ffe855148790",
+      "name": "TGT",
+      "full_name": "Trained Graduate Teacher Examination",
+      "type": "Teaching",
+      "description": "Recruitment for TGT teaching posts.",
+      "is_active": true,
+      "created_at": "2026-03-03T18:36:15.904057",
+      "exam_board_id": "7ed06554-d33d-4790-84a0-ae6c8b0c5578",
+      "prelims": false,
+      "mains": true
+    },
+    {
+      "id": "85a72c15-5b08-4a48-8049-178537fe1336",
+      "name": "ASO",
+      "full_name": "Assistant Section Officer Examination",
+      "type": "Graduate Level",
+      "description": "Recruitment for Assistant Section Officer posts in Odisha Secretariat.",
+      "is_active": true,
+      "created_at": "2026-03-03T18:42:38.901797",
+      "exam_board_id": "cdad5e16-d3ce-448c-8d72-1af16611e367",
+      "prelims": false,
+      "mains": true
+    },
+    {
+      "id": "e246028c-204b-4464-913b-078ffbacb03e",
+      "name": "OJS",
+      "full_name": "Odisha Judicial Services Examination",
+      "type": "Judicial",
+      "description": "Recruitment for Civil Judge (Junior Division) under Odisha Judiciary.",
+      "is_active": true,
+      "created_at": "2026-03-03T18:42:38.901797",
+      "exam_board_id": "cdad5e16-d3ce-448c-8d72-1af16611e367",
+      "prelims": false,
+      "mains": true
+    },
+    {
+      "id": "de2acdab-c9a1-421f-b282-248964e4f54f",
+      "name": "OMAS",
+      "full_name": "Odisha Municipal Administrative Services Examination",
+      "type": "Administrative",
+      "description": "Recruitment for municipal administrative service posts.",
+      "is_active": true,
+      "created_at": "2026-03-03T18:42:38.901797",
+      "exam_board_id": "cdad5e16-d3ce-448c-8d72-1af16611e367",
+      "prelims": false,
+      "mains": true
+    },
+    {
+      "id": "df860f87-c021-4565-b3de-c2da4d712c53",
+      "name": "AEE",
+      "full_name": "Assistant Executive Engineer Examination",
+      "type": "Engineering",
+      "description": "Recruitment for Assistant Executive Engineer posts in various departments.",
+      "is_active": true,
+      "created_at": "2026-03-03T18:42:38.901797",
+      "exam_board_id": "cdad5e16-d3ce-448c-8d72-1af16611e367",
+      "prelims": false,
+      "mains": true
+    },
+    {
+      "id": "b8a65a66-36c7-4d65-a2f6-c83f6110d032",
+      "name": "AAO",
+      "full_name": "Assistant Agriculture Officer Examination",
+      "type": "Agriculture",
+      "description": "Recruitment for Assistant Agriculture Officer posts.",
+      "is_active": true,
+      "created_at": "2026-03-03T18:42:38.901797",
+      "exam_board_id": "cdad5e16-d3ce-448c-8d72-1af16611e367",
+      "prelims": false,
+      "mains": true
+    },
+    {
+      "id": "cdcee39e-0211-4d25-8a74-0212e965c1be",
+      "name": "OAS",
+      "full_name": "Odisha Administrative Service",
+      "type": "Civil Services",
+      "description": "Administrative cadre service under Odisha Civil Services.",
+      "is_active": true,
+      "created_at": "2026-03-03T18:44:23.220369",
+      "exam_board_id": "cdad5e16-d3ce-448c-8d72-1af16611e367",
+      "prelims": false,
+      "mains": true
+    },
+    {
+      "id": "e09737a2-e4da-4c5e-b0bf-98b64f373c21",
+      "name": "OPS",
+      "full_name": "Odisha Police Service",
+      "type": "Civil Services",
+      "description": "State police service under Odisha Civil Services.",
+      "is_active": true,
+      "created_at": "2026-03-03T18:44:23.220369",
+      "exam_board_id": "cdad5e16-d3ce-448c-8d72-1af16611e367",
+      "prelims": false,
+      "mains": true
+    },
+    {
+      "id": "a516b504-7c36-4659-b290-51007d228957",
+      "name": "OFS",
+      "full_name": "Odisha Finance Service",
+      "type": "Civil Services",
+      "description": "Finance and accounts service under Odisha Government.",
+      "is_active": true,
+      "created_at": "2026-03-03T18:44:23.220369",
+      "exam_board_id": "cdad5e16-d3ce-448c-8d72-1af16611e367",
+      "prelims": false,
+      "mains": true
+    },
+    {
+      "id": "2de00163-d104-4f28-9718-ba72ca7e43a1",
+      "name": "ORS",
+      "full_name": "Odisha Revenue Service",
+      "type": "Civil Services",
+      "description": "Revenue administration service under Odisha Government.",
+      "is_active": true,
+      "created_at": "2026-03-03T18:44:23.220369",
+      "exam_board_id": "cdad5e16-d3ce-448c-8d72-1af16611e367",
+      "prelims": false,
+      "mains": true
+    },
+    {
+      "id": "6c417e5a-7398-447a-89f4-b8b2d852bd7a",
+      "name": "OTAS",
+      "full_name": "Odisha Taxation & Accounts Service",
+      "type": "Civil Services",
+      "description": "Taxation and accounts service under Odisha Government.",
+      "is_active": true,
+      "created_at": "2026-03-03T18:44:23.220369",
+      "exam_board_id": "cdad5e16-d3ce-448c-8d72-1af16611e367",
+      "prelims": false,
+      "mains": true
+    },
+    {
+      "id": "2f6b18b5-0f6a-44db-9bea-31c5abbecad6",
+      "name": "CGL",
+      "full_name": "Combined Graduate Level Examination",
+      "type": "Graduate Level",
+      "description": "Recruitment for various Group B & C graduate-level posts.",
+      "is_active": true,
+      "created_at": "2026-03-03T18:28:02.762478",
+      "exam_board_id": "7f35f854-24bb-4b99-89dc-d1ac9701b750",
+      "prelims": true,
+      "mains": true
+    },
+    {
+      "id": "af17ee6f-8b1f-4557-9a76-c38e343fc7b6",
+      "name": "CHSL",
+      "full_name": "Combined Higher Secondary Level Examination",
+      "type": "12th Level",
+      "description": "Recruitment for 10+2 level posts under Odisha Government.",
+      "is_active": true,
+      "created_at": "2026-03-03T18:28:02.762478",
+      "exam_board_id": "7f35f854-24bb-4b99-89dc-d1ac9701b750",
+      "prelims": true,
+      "mains": true
+    }
+  ],
+  "subjects": [
+    {
+      "id": "0d3e0ab3-f9d9-4a35-9e17-4c5a6025b177",
+      "name": "General Studies",
+      "description": "Polity, Economy, History, Geography, Odisha GK & Current Affairs.",
+      "display_order": null,
+      "created_at": "2026-03-03T19:26:32.207058"
+    },
+    {
+      "id": "7dee4ca4-f673-4fb4-b51e-ca3ee132bb35",
+      "name": "Arithmetic and Data Interpretation",
+      "description": "Quantitative aptitude: percentage, ratio, profit & loss, time & work, SI/CI.",
+      "display_order": null,
+      "created_at": "2026-03-03T19:26:32.207058"
+    },
+    {
+      "id": "09083f66-28ea-4f34-abdf-88138100a2dd",
+      "name": "Logical Reasoning",
+      "description": "Logical reasoning, analytical ability, puzzles and decision making.",
+      "display_order": null,
+      "created_at": "2026-03-03T19:26:32.207058"
+    },
+    {
+      "id": "6fdb7f5a-cce6-4c16-8d0e-b8f76423fc00",
+      "name": "Computer Awareness",
+      "description": "Basic computer knowledge, MS Office, internet & digital awareness.",
+      "display_order": null,
+      "created_at": "2026-03-03T19:26:32.207058"
+    },
+    {
+      "id": "67776002-df33-4c0e-a2b6-de95f91e31dc",
+      "name": "English",
+      "description": "Grammar, vocabulary, comprehension & sentence correction.",
+      "display_order": null,
+      "created_at": "2026-03-03T19:26:32.207058"
+    },
+    {
+      "id": "f0f0d8cb-de93-431d-b8a9-0d601d1d6bff",
+      "name": "General Knowledge (Odisha)",
+      "description": "History, Geography, comprehension & Culture & heritage.",
+      "display_order": null,
+      "created_at": "2026-03-03T19:26:32.207058"
+    },
+    {
+      "id": "84a6bad4-d9f9-4cfb-b5b0-2ccbbeea636a",
+      "name": "General English-PMPET",
+      "description": "Preposition, Verb, Adverb, Subject-Verb Agreement, Error Correction, Tenses,\r\nSentence Rearrangement, Fill in the Blanks (Articles etc.), Comprehension,\r\nUnseen Passages, Vocabulary, Synonyms and Antonyms.",
+      "display_order": null,
+      "created_at": "2026-03-03T19:46:21.898709"
+    },
+    {
+      "id": "78849598-44b9-4f43-9bcf-fece3e9c65db",
+      "name": "Odia-PMPET",
+      "description": "Translation (English to Odia), Unseen Comprehension,\r\nOdia Vocabulary, Word Formation, Syntax, Spelling,\r\nPunctuation, Synonyms and Antonyms.",
+      "display_order": null,
+      "created_at": "2026-03-03T19:46:21.898709"
+    },
+    {
+      "id": "f4ff73ce-8be5-4433-9ad4-4c27adffad8b",
+      "name": "General Studies-PMPET",
+      "description": "General Science and recent technological developments;\r\nIndian History (Ancient & National Movement);\r\nGeography (Physical & Economic);\r\nIndian Agriculture & National Resources;\r\nIndian Polity (Constitution, Panchayati Raj, Administration);\r\nIndian Economy (Planning & Economic Development).",
+      "display_order": null,
+      "created_at": "2026-03-03T19:46:21.898709"
+    },
+    {
+      "id": "6e06da39-6d5c-43f5-9706-8ed85072bf5e",
+      "name": "Mathematics-PMPET",
+      "description": "Ratio & Proportion, Percentage, Average, Partnership,\r\nQuadratic Equation, Profit & Loss, Time & Work,\r\nPipes & Cisterns, Boats & Stream, Problems on Age,\r\nTrains, Mixture & Allegation, Time-Speed-Distance, Mensuration.",
+      "display_order": null,
+      "created_at": "2026-03-03T19:46:21.898709"
+    },
+    {
+      "id": "4777b998-94c9-4fd0-971b-a858b04dd337",
+      "name": "Reasoning-PMPET",
+      "description": "Verbal: Number Series, Alphabet Series, Direction Sense,\r\nCoding-Decoding, Ranking, Arithmetic Reasoning, Age Problems,\r\nAnalogy, Decision Making.\r\nNon-Verbal: Series, Mirror Images, Cubes & Dice,\r\nGrouping Identical Figures, Embedded Figures.",
+      "display_order": null,
+      "created_at": "2026-03-03T19:46:21.898709"
+    },
+    {
+      "id": "2ae902c5-57bc-4deb-80c7-1e7c5778dfd7",
+      "name": "Computer Awareness-PMPET",
+      "description": "Introduction to Computer, Computer Architecture,\r\nOperating System, Microsoft Windows, Microsoft Office.",
+      "display_order": null,
+      "created_at": "2026-03-03T19:46:21.898709"
+    }
+  ],
+  "chapters": [
+    {
+      "id": "fe2f35f0-5007-423a-b88b-6235a6b59fe5",
+      "subject_id": "7dee4ca4-f673-4fb4-b51e-ca3ee132bb35",
+      "name": "Number Basics \u2013 Number System, Fractions, Decimals",
+      "display_order": null,
+      "created_at": "2026-03-03T23:27:36.11482",
+      "exam_type": "MAINS"
+    },
+    {
+      "id": "ec6dd347-a917-4694-b91a-ca029b49ff51",
+      "subject_id": "84a6bad4-d9f9-4cfb-b5b0-2ccbbeea636a",
+      "name": "Preposition",
+      "display_order": null,
+      "created_at": "2026-03-10T19:57:50.279382",
+      "exam_type": "MAINS"
+    },
+    {
+      "id": "5adda8a4-f10a-4c23-b8b3-b33c448ea9dc",
+      "subject_id": "84a6bad4-d9f9-4cfb-b5b0-2ccbbeea636a",
+      "name": "Verb",
+      "display_order": null,
+      "created_at": "2026-03-10T19:57:50.279382",
+      "exam_type": "MAINS"
+    },
+    {
+      "id": "1e2cf339-2e9d-4796-89fe-c139b6113a36",
+      "subject_id": "84a6bad4-d9f9-4cfb-b5b0-2ccbbeea636a",
+      "name": "Adverb",
+      "display_order": null,
+      "created_at": "2026-03-10T19:57:50.279382",
+      "exam_type": "MAINS"
+    },
+    {
+      "id": "74828f23-425f-4fc0-94e6-670218be9f55",
+      "subject_id": "84a6bad4-d9f9-4cfb-b5b0-2ccbbeea636a",
+      "name": "Subject-Verb Agreement",
+      "display_order": null,
+      "created_at": "2026-03-10T19:57:50.279382",
+      "exam_type": "MAINS"
+    },
+    {
+      "id": "8fbe8699-64fd-4333-b004-6c0998927b7a",
+      "subject_id": "84a6bad4-d9f9-4cfb-b5b0-2ccbbeea636a",
+      "name": "Error Correction / Recognition",
+      "display_order": null,
+      "created_at": "2026-03-10T19:57:50.279382",
+      "exam_type": "MAINS"
+    },
+    {
+      "id": "b30b44e8-456f-4df8-833c-eb2a1f30b4e6",
+      "subject_id": "84a6bad4-d9f9-4cfb-b5b0-2ccbbeea636a",
+      "name": "Tenses",
+      "display_order": null,
+      "created_at": "2026-03-10T19:57:50.279382",
+      "exam_type": "MAINS"
+    },
+    {
+      "id": "7d7a1bb8-7526-48e9-8150-c85756059200",
+      "subject_id": "84a6bad4-d9f9-4cfb-b5b0-2ccbbeea636a",
+      "name": "Sentence Rearrangement",
+      "display_order": null,
+      "created_at": "2026-03-10T19:57:50.279382",
+      "exam_type": "MAINS"
+    },
+    {
+      "id": "f29de853-46bf-464e-a13b-2dbd546a1d6a",
+      "subject_id": "84a6bad4-d9f9-4cfb-b5b0-2ccbbeea636a",
+      "name": "Fill in the Blanks with Articles",
+      "display_order": null,
+      "created_at": "2026-03-10T19:57:50.279382",
+      "exam_type": "MAINS"
+    },
+    {
+      "id": "d641a153-358c-402b-be3c-88117e9d69e4",
+      "subject_id": "84a6bad4-d9f9-4cfb-b5b0-2ccbbeea636a",
+      "name": "Comprehension",
+      "display_order": null,
+      "created_at": "2026-03-10T19:57:50.279382",
+      "exam_type": "MAINS"
+    },
+    {
+      "id": "e210ab87-bad5-4b74-a51b-5215b0eb4760",
+      "subject_id": "84a6bad4-d9f9-4cfb-b5b0-2ccbbeea636a",
+      "name": "Answering Questions based on Unseen Passages",
+      "display_order": null,
+      "created_at": "2026-03-10T19:57:50.279382",
+      "exam_type": "MAINS"
+    },
+    {
+      "id": "168fe5ba-07b5-4cc1-b944-28a4ab06b845",
+      "subject_id": "84a6bad4-d9f9-4cfb-b5b0-2ccbbeea636a",
+      "name": "Vocabulary",
+      "display_order": null,
+      "created_at": "2026-03-10T19:57:50.279382",
+      "exam_type": "MAINS"
+    },
+    {
+      "id": "15b9e640-0bce-4731-9e92-b81076bf92be",
+      "subject_id": "84a6bad4-d9f9-4cfb-b5b0-2ccbbeea636a",
+      "name": "Synonyms and Antonyms",
+      "display_order": null,
+      "created_at": "2026-03-10T19:57:50.279382",
+      "exam_type": "MAINS"
+    },
+    {
+      "id": "952f366d-3fd5-4ce4-b4be-535340910e59",
+      "subject_id": "f4ff73ce-8be5-4433-9ad4-4c27adffad8b",
+      "name": "General Science and Recent Scientific & Technological Developments",
+      "display_order": null,
+      "created_at": "2026-03-10T20:01:01.302683",
+      "exam_type": "MAINS"
+    },
+    {
+      "id": "681a9e87-7a71-496f-90bf-5bcb8d2a3378",
+      "subject_id": "f4ff73ce-8be5-4433-9ad4-4c27adffad8b",
+      "name": "History \u2013 India from Ancient Times",
+      "display_order": null,
+      "created_at": "2026-03-10T20:01:01.302683",
+      "exam_type": "MAINS"
+    },
+    {
+      "id": "83a15a22-db6f-49d3-a6be-8ed3eaee25dd",
+      "subject_id": "f4ff73ce-8be5-4433-9ad4-4c27adffad8b",
+      "name": "Indian National Movement",
+      "display_order": null,
+      "created_at": "2026-03-10T20:01:01.302683",
+      "exam_type": "MAINS"
+    },
+    {
+      "id": "7266dc8a-5120-4237-b132-7e5389fab6fa",
+      "subject_id": "f4ff73ce-8be5-4433-9ad4-4c27adffad8b",
+      "name": "Geography \u2013 Physical and Economic Geography of India",
+      "display_order": null,
+      "created_at": "2026-03-10T20:01:01.302683",
+      "exam_type": "MAINS"
+    },
+    {
+      "id": "5ee6b757-aefb-42d4-9a4b-532a7072b577",
+      "subject_id": "f4ff73ce-8be5-4433-9ad4-4c27adffad8b",
+      "name": "Indian Agriculture and National Resources",
+      "display_order": null,
+      "created_at": "2026-03-10T20:01:01.302683",
+      "exam_type": "MAINS"
+    },
+    {
+      "id": "5a212055-422a-4727-bf40-1adf0b075317",
+      "subject_id": "f4ff73ce-8be5-4433-9ad4-4c27adffad8b",
+      "name": "Indian Polity \u2013 Constitution of India",
+      "display_order": null,
+      "created_at": "2026-03-10T20:01:01.302683",
+      "exam_type": "MAINS"
+    },
+    {
+      "id": "64583f22-f0d6-436b-be9b-c7cc649d3659",
+      "subject_id": "f4ff73ce-8be5-4433-9ad4-4c27adffad8b",
+      "name": "Panchayati Raj and Administration",
+      "display_order": null,
+      "created_at": "2026-03-10T20:01:01.302683",
+      "exam_type": "MAINS"
+    },
+    {
+      "id": "4606b2a1-fcc1-4d53-930a-c0fb4ff188ca",
+      "subject_id": "f4ff73ce-8be5-4433-9ad4-4c27adffad8b",
+      "name": "Indian Economy \u2013 Planning and Economic Development",
+      "display_order": null,
+      "created_at": "2026-03-10T20:01:01.302683",
+      "exam_type": "MAINS"
+    },
+    {
+      "id": "664dad2c-0394-416a-9adf-f23109a83959",
+      "subject_id": "6e06da39-6d5c-43f5-9706-8ed85072bf5e",
+      "name": "Ratio and Proportion",
+      "display_order": null,
+      "created_at": "2026-03-10T20:02:30.071532",
+      "exam_type": "MAINS"
+    },
+    {
+      "id": "2cf78516-38a7-4f40-81d1-1300205ca94d",
+      "subject_id": "6e06da39-6d5c-43f5-9706-8ed85072bf5e",
+      "name": "Percentage",
+      "display_order": null,
+      "created_at": "2026-03-10T20:02:30.071532",
+      "exam_type": "MAINS"
+    },
+    {
+      "id": "0eb24585-ca32-4af3-8188-3efd517bce7e",
+      "subject_id": "6e06da39-6d5c-43f5-9706-8ed85072bf5e",
+      "name": "Average",
+      "display_order": null,
+      "created_at": "2026-03-10T20:02:30.071532",
+      "exam_type": "MAINS"
+    },
+    {
+      "id": "7b0dea32-d96f-4748-bd01-bed0bd21895c",
+      "subject_id": "6e06da39-6d5c-43f5-9706-8ed85072bf5e",
+      "name": "Partnership",
+      "display_order": null,
+      "created_at": "2026-03-10T20:02:30.071532",
+      "exam_type": "MAINS"
+    },
+    {
+      "id": "0a584b4a-4c61-44b4-9acd-4c23b5baf03f",
+      "subject_id": "6e06da39-6d5c-43f5-9706-8ed85072bf5e",
+      "name": "Quadratic Equation",
+      "display_order": null,
+      "created_at": "2026-03-10T20:02:30.071532",
+      "exam_type": "MAINS"
+    },
+    {
+      "id": "308dea9e-1207-4011-a132-4d0f43bb06e8",
+      "subject_id": "6e06da39-6d5c-43f5-9706-8ed85072bf5e",
+      "name": "Profit and Loss",
+      "display_order": null,
+      "created_at": "2026-03-10T20:02:30.071532",
+      "exam_type": "MAINS"
+    },
+    {
+      "id": "ef85b839-7fc7-46f0-8690-1d8ba58f8f33",
+      "subject_id": "6e06da39-6d5c-43f5-9706-8ed85072bf5e",
+      "name": "Time and Work",
+      "display_order": null,
+      "created_at": "2026-03-10T20:02:30.071532",
+      "exam_type": "MAINS"
+    },
+    {
+      "id": "890bd020-f26c-47a6-b1da-5a1c5111e382",
+      "subject_id": "6e06da39-6d5c-43f5-9706-8ed85072bf5e",
+      "name": "Pipes and Cisterns",
+      "display_order": null,
+      "created_at": "2026-03-10T20:02:30.071532",
+      "exam_type": "MAINS"
+    },
+    {
+      "id": "5e5e2267-c744-4a87-aadd-cd9ef1b95b16",
+      "subject_id": "6e06da39-6d5c-43f5-9706-8ed85072bf5e",
+      "name": "Boats and Streams",
+      "display_order": null,
+      "created_at": "2026-03-10T20:02:30.071532",
+      "exam_type": "MAINS"
+    },
+    {
+      "id": "b2afdf0a-7110-49b3-b2ef-f69cae064c49",
+      "subject_id": "6e06da39-6d5c-43f5-9706-8ed85072bf5e",
+      "name": "Problems on Ages",
+      "display_order": null,
+      "created_at": "2026-03-10T20:02:30.071532",
+      "exam_type": "MAINS"
+    },
+    {
+      "id": "5a1c8369-f28a-4e20-8bc0-6c390b864231",
+      "subject_id": "6e06da39-6d5c-43f5-9706-8ed85072bf5e",
+      "name": "Problems on Trains",
+      "display_order": null,
+      "created_at": "2026-03-10T20:02:30.071532",
+      "exam_type": "MAINS"
+    },
+    {
+      "id": "71c08628-01be-4622-b546-dddca4c2a5cf",
+      "subject_id": "6e06da39-6d5c-43f5-9706-8ed85072bf5e",
+      "name": "Mixture and Alligation",
+      "display_order": null,
+      "created_at": "2026-03-10T20:02:30.071532",
+      "exam_type": "MAINS"
+    },
+    {
+      "id": "afd7a0a9-c3cd-4498-ba37-d491927342b6",
+      "subject_id": "6e06da39-6d5c-43f5-9706-8ed85072bf5e",
+      "name": "Time, Speed and Distance",
+      "display_order": null,
+      "created_at": "2026-03-10T20:02:30.071532",
+      "exam_type": "MAINS"
+    },
+    {
+      "id": "efb0ff04-f4ea-4909-b914-09eda0e3b016",
+      "subject_id": "78849598-44b9-4f43-9bcf-fece3e9c65db",
+      "name": "Translation from English to Odia",
+      "display_order": null,
+      "created_at": "2026-03-10T20:04:57.399829",
+      "exam_type": "MAINS"
+    },
+    {
+      "id": "c985339b-b668-4556-8151-e901f6b91a01",
+      "subject_id": "78849598-44b9-4f43-9bcf-fece3e9c65db",
+      "name": "Comprehension \u2013 Unseen Text",
+      "display_order": null,
+      "created_at": "2026-03-10T20:04:57.399829",
+      "exam_type": "MAINS"
+    },
+    {
+      "id": "a3fcd316-50ae-434f-be7c-7f3f1151dc88",
+      "subject_id": "78849598-44b9-4f43-9bcf-fece3e9c65db",
+      "name": "Odia Vocabulary \u2013 Word Formation and Syntax",
+      "display_order": null,
+      "created_at": "2026-03-10T20:04:57.399829",
+      "exam_type": "MAINS"
+    },
+    {
+      "id": "41f2d635-4e09-4952-8535-d040c7a97041",
+      "subject_id": "78849598-44b9-4f43-9bcf-fece3e9c65db",
+      "name": "Spelling and Punctuation",
+      "display_order": null,
+      "created_at": "2026-03-10T20:04:57.399829",
+      "exam_type": "MAINS"
+    },
+    {
+      "id": "69872ba5-26c7-44f9-95c2-d15884f57cac",
+      "subject_id": "78849598-44b9-4f43-9bcf-fece3e9c65db",
+      "name": "Synonyms and Antonyms",
+      "display_order": null,
+      "created_at": "2026-03-10T20:04:57.399829",
+      "exam_type": "MAINS"
+    },
+    {
+      "id": "657bc9b6-4e56-4bd6-a75e-f2a7b0c2ad6e",
+      "subject_id": "4777b998-94c9-4fd0-971b-a858b04dd337",
+      "name": "Number Series",
+      "display_order": null,
+      "created_at": "2026-03-10T20:06:36.604152",
+      "exam_type": "MAINS"
+    },
+    {
+      "id": "68b52960-0a01-4509-a23b-ac0342cdb5f2",
+      "subject_id": "4777b998-94c9-4fd0-971b-a858b04dd337",
+      "name": "Alphabet Series",
+      "display_order": null,
+      "created_at": "2026-03-10T20:06:36.604152",
+      "exam_type": "MAINS"
+    },
+    {
+      "id": "01f301a5-b5b0-4d9c-af94-dd7413095928",
+      "subject_id": "4777b998-94c9-4fd0-971b-a858b04dd337",
+      "name": "Direction Sense Test",
+      "display_order": null,
+      "created_at": "2026-03-10T20:06:36.604152",
+      "exam_type": "MAINS"
+    },
+    {
+      "id": "1dc54eaf-a7d0-4579-b5fd-e0e884c18d42",
+      "subject_id": "7dee4ca4-f673-4fb4-b51e-ca3ee132bb35",
+      "name": "Simplification & BODMAS",
+      "display_order": null,
+      "created_at": "2026-03-03T23:27:36.11482",
+      "exam_type": "PRELIMS"
+    },
+    {
+      "id": "4d46ff8a-ef0b-4e97-b698-5721bdf997da",
+      "subject_id": "09083f66-28ea-4f34-abdf-88138100a2dd",
+      "name": "Coding\u2013Decoding",
+      "display_order": null,
+      "created_at": "2026-03-10T19:28:00.932155",
+      "exam_type": "PRELIMS"
+    },
+    {
+      "id": "f444c2c5-7707-4515-87b2-3f5f26521c6a",
+      "subject_id": "09083f66-28ea-4f34-abdf-88138100a2dd",
+      "name": "Blood Relation & Direction",
+      "display_order": null,
+      "created_at": "2026-03-10T19:28:00.932155",
+      "exam_type": "PRELIMS"
+    },
+    {
+      "id": "92f9fbdd-824a-4747-bcf4-3df31af035e3",
+      "subject_id": "09083f66-28ea-4f34-abdf-88138100a2dd",
+      "name": "Order, Ranking & Scheduling",
+      "display_order": null,
+      "created_at": "2026-03-10T19:28:00.932155",
+      "exam_type": "PRELIMS"
+    },
+    {
+      "id": "fbf8a8a6-0712-44ea-9652-b289b8a6b630",
+      "subject_id": "09083f66-28ea-4f34-abdf-88138100a2dd",
+      "name": "Statement-Based Reasoning (Assumption, Conclusion, Syllogism)",
+      "display_order": null,
+      "created_at": "2026-03-10T19:28:00.932155",
+      "exam_type": "PRELIMS"
+    },
+    {
+      "id": "2cef5113-5d5d-4937-9ab4-aa8f3b1a19de",
+      "subject_id": "09083f66-28ea-4f34-abdf-88138100a2dd",
+      "name": "Data Sufficiency & Decision Making",
+      "display_order": null,
+      "created_at": "2026-03-10T19:28:00.932155",
+      "exam_type": "PRELIMS"
+    },
+    {
+      "id": "82fb234a-0a15-495c-9896-e732ef1c91be",
+      "subject_id": "09083f66-28ea-4f34-abdf-88138100a2dd",
+      "name": "Puzzles & Seating Arrangement",
+      "display_order": null,
+      "created_at": "2026-03-10T19:28:00.932155",
+      "exam_type": "PRELIMS"
+    },
+    {
+      "id": "2741c74e-0d60-417a-9a69-8cafda4caff2",
+      "subject_id": "09083f66-28ea-4f34-abdf-88138100a2dd",
+      "name": "Analogy, Classification & Odd One Out",
+      "display_order": null,
+      "created_at": "2026-03-10T19:28:00.932155",
+      "exam_type": "PRELIMS"
+    },
+    {
+      "id": "4f6147cb-3ac8-4b08-ad6b-6de5bbd3895d",
+      "subject_id": "09083f66-28ea-4f34-abdf-88138100a2dd",
+      "name": "Venn Diagram",
+      "display_order": null,
+      "created_at": "2026-03-10T19:28:00.932155",
+      "exam_type": "PRELIMS"
+    },
+    {
+      "id": "a646a347-d022-4e17-a56f-0073e8e1b61f",
+      "subject_id": "09083f66-28ea-4f34-abdf-88138100a2dd",
+      "name": "Clock & Calendar",
+      "display_order": null,
+      "created_at": "2026-03-10T19:28:00.932155",
+      "exam_type": "PRELIMS"
+    },
+    {
+      "id": "28b9ae41-bab6-4d6f-8979-4270783934be",
+      "subject_id": "09083f66-28ea-4f34-abdf-88138100a2dd",
+      "name": "Non-Verbal & Pattern Recognition",
+      "display_order": null,
+      "created_at": "2026-03-10T19:28:00.932155",
+      "exam_type": "PRELIMS"
+    },
+    {
+      "id": "b4b3e543-e191-47c7-8d2a-a421c4376138",
+      "subject_id": "09083f66-28ea-4f34-abdf-88138100a2dd",
+      "name": "Miscellaneous",
+      "display_order": null,
+      "created_at": "2026-03-10T19:28:00.932155",
+      "exam_type": "PRELIMS"
+    },
+    {
+      "id": "0c7bf036-8e39-495d-845e-eeffb325fbd7",
+      "subject_id": "0d3e0ab3-f9d9-4a35-9e17-4c5a6025b177",
+      "name": "Economy & Banking",
+      "display_order": null,
+      "created_at": "2026-03-10T19:30:26.770044",
+      "exam_type": "PRELIMS"
+    },
+    {
+      "id": "385cc967-47b7-4272-9918-e78f95058378",
+      "subject_id": "0d3e0ab3-f9d9-4a35-9e17-4c5a6025b177",
+      "name": "Science & Technology",
+      "display_order": null,
+      "created_at": "2026-03-10T19:30:26.770044",
+      "exam_type": "PRELIMS"
+    },
+    {
+      "id": "7c954e83-a379-43e2-90cd-cc6a8da23e80",
+      "subject_id": "0d3e0ab3-f9d9-4a35-9e17-4c5a6025b177",
+      "name": "Defence & Space",
+      "display_order": null,
+      "created_at": "2026-03-10T19:30:26.770044",
+      "exam_type": "PRELIMS"
+    },
+    {
+      "id": "ea744b3f-7e56-4ba6-8b3e-0053933891ad",
+      "subject_id": "0d3e0ab3-f9d9-4a35-9e17-4c5a6025b177",
+      "name": "Sports, Awards & Summits",
+      "display_order": null,
+      "created_at": "2026-03-10T19:30:26.770044",
+      "exam_type": "PRELIMS"
+    },
+    {
+      "id": "d92d6012-ec9e-4ed7-9205-82265b66304c",
+      "subject_id": "0d3e0ab3-f9d9-4a35-9e17-4c5a6025b177",
+      "name": "Odisha-specific Current Affairs",
+      "display_order": null,
+      "created_at": "2026-03-10T19:30:26.770044",
+      "exam_type": "PRELIMS"
+    },
+    {
+      "id": "b8411ef1-21e5-4215-a456-6ff957b29696",
+      "subject_id": "6fdb7f5a-cce6-4c16-8d0e-b8f76423fc00",
+      "name": "Computer Fundamentals",
+      "display_order": null,
+      "created_at": "2026-03-10T19:25:31.433123",
+      "exam_type": "PRELIMS"
+    },
+    {
+      "id": "c7b62ca5-5e6d-4ed8-a2bf-3fe872c270f5",
+      "subject_id": "6fdb7f5a-cce6-4c16-8d0e-b8f76423fc00",
+      "name": "Hardware & Software",
+      "display_order": null,
+      "created_at": "2026-03-10T19:25:31.433123",
+      "exam_type": "PRELIMS"
+    },
+    {
+      "id": "ee2e0684-1a7b-49b4-8b57-53c2d09063af",
+      "subject_id": "6fdb7f5a-cce6-4c16-8d0e-b8f76423fc00",
+      "name": "MS Office (Word, Excel, PowerPoint)",
+      "display_order": null,
+      "created_at": "2026-03-10T19:25:31.433123",
+      "exam_type": "PRELIMS"
+    },
+    {
+      "id": "2afdd99b-3fd6-4c29-bded-4252894b5478",
+      "subject_id": "6fdb7f5a-cce6-4c16-8d0e-b8f76423fc00",
+      "name": "Internet & Networking",
+      "display_order": null,
+      "created_at": "2026-03-10T19:25:31.433123",
+      "exam_type": "PRELIMS"
+    },
+    {
+      "id": "25eb9051-919e-47d0-b0e1-80970a232d86",
+      "subject_id": "6fdb7f5a-cce6-4c16-8d0e-b8f76423fc00",
+      "name": "Database & Programming Basics",
+      "display_order": null,
+      "created_at": "2026-03-10T19:25:31.433123",
+      "exam_type": "PRELIMS"
+    },
+    {
+      "id": "11f43cb3-14ae-415b-a60e-089bb041e82d",
+      "subject_id": "f0f0d8cb-de93-431d-b8a9-0d601d1d6bff",
+      "name": "History",
+      "display_order": null,
+      "created_at": "2026-03-10T19:44:33.555823",
+      "exam_type": "PRELIMS"
+    },
+    {
+      "id": "2930cc1a-4f93-4c3a-9fb0-8e5e904ae43c",
+      "subject_id": "f0f0d8cb-de93-431d-b8a9-0d601d1d6bff",
+      "name": "Geography",
+      "display_order": null,
+      "created_at": "2026-03-10T19:44:33.555823",
+      "exam_type": "PRELIMS"
+    },
+    {
+      "id": "df845690-db79-4911-99ae-c2db2b886b38",
+      "subject_id": "f0f0d8cb-de93-431d-b8a9-0d601d1d6bff",
+      "name": "Economy",
+      "display_order": null,
+      "created_at": "2026-03-10T19:44:33.555823",
+      "exam_type": "PRELIMS"
+    },
+    {
+      "id": "746ca82a-098c-4f54-b945-8a39d01bdedd",
+      "subject_id": "f0f0d8cb-de93-431d-b8a9-0d601d1d6bff",
+      "name": "Culture & Heritage",
+      "display_order": null,
+      "created_at": "2026-03-10T19:44:33.555823",
+      "exam_type": "PRELIMS"
+    },
+    {
+      "id": "409a7ebf-a106-4dc2-b9bb-d4bb10b2edd5",
+      "subject_id": "4777b998-94c9-4fd0-971b-a858b04dd337",
+      "name": "Coding-Decoding",
+      "display_order": null,
+      "created_at": "2026-03-10T20:06:36.604152",
+      "exam_type": "MAINS"
+    },
+    {
+      "id": "e254fd18-8360-4a1f-88b9-67b8bb8a6080",
+      "subject_id": "4777b998-94c9-4fd0-971b-a858b04dd337",
+      "name": "Number Ranking",
+      "display_order": null,
+      "created_at": "2026-03-10T20:06:36.604152",
+      "exam_type": "MAINS"
+    },
+    {
+      "id": "b98e2f8b-04e4-465d-b9a9-4b6f41fbbcaa",
+      "subject_id": "4777b998-94c9-4fd0-971b-a858b04dd337",
+      "name": "Arithmetic Reasoning",
+      "display_order": null,
+      "created_at": "2026-03-10T20:06:36.604152",
+      "exam_type": "MAINS"
+    },
+    {
+      "id": "7a67451f-2fdc-4139-b9f7-0d9232794ccf",
+      "subject_id": "4777b998-94c9-4fd0-971b-a858b04dd337",
+      "name": "Age Calculation Problems",
+      "display_order": null,
+      "created_at": "2026-03-10T20:06:36.604152",
+      "exam_type": "MAINS"
+    },
+    {
+      "id": "1eb2e65d-413b-4378-a8ad-4cbd120aa90d",
+      "subject_id": "4777b998-94c9-4fd0-971b-a858b04dd337",
+      "name": "Analogy",
+      "display_order": null,
+      "created_at": "2026-03-10T20:06:36.604152",
+      "exam_type": "MAINS"
+    },
+    {
+      "id": "e2d68807-74c8-4211-85c8-87538121d5e2",
+      "subject_id": "4777b998-94c9-4fd0-971b-a858b04dd337",
+      "name": "Decision Making",
+      "display_order": null,
+      "created_at": "2026-03-10T20:06:36.604152",
+      "exam_type": "MAINS"
+    },
+    {
+      "id": "f75d76da-d793-415c-a94d-e06a4f0692c0",
+      "subject_id": "4777b998-94c9-4fd0-971b-a858b04dd337",
+      "name": "Non-Verbal Series",
+      "display_order": null,
+      "created_at": "2026-03-10T20:06:36.604152",
+      "exam_type": "MAINS"
+    },
+    {
+      "id": "2e19bfc5-cd0a-41de-bc95-809ba474628f",
+      "subject_id": "4777b998-94c9-4fd0-971b-a858b04dd337",
+      "name": "Mirror Images",
+      "display_order": null,
+      "created_at": "2026-03-10T20:06:36.604152",
+      "exam_type": "MAINS"
+    },
+    {
+      "id": "4a351e51-9e57-4812-9816-f76039977567",
+      "subject_id": "4777b998-94c9-4fd0-971b-a858b04dd337",
+      "name": "Cubes and Dice",
+      "display_order": null,
+      "created_at": "2026-03-10T20:06:36.604152",
+      "exam_type": "MAINS"
+    },
+    {
+      "id": "6fcb400e-a235-4907-bfe9-b79a313456d6",
+      "subject_id": "4777b998-94c9-4fd0-971b-a858b04dd337",
+      "name": "Grouping of Identical Figures",
+      "display_order": null,
+      "created_at": "2026-03-10T20:06:36.604152",
+      "exam_type": "MAINS"
+    },
+    {
+      "id": "8384a147-766b-44ca-970d-d5aa09b8b317",
+      "subject_id": "4777b998-94c9-4fd0-971b-a858b04dd337",
+      "name": "Embedded Figures",
+      "display_order": null,
+      "created_at": "2026-03-10T20:06:36.604152",
+      "exam_type": "MAINS"
+    },
+    {
+      "id": "c17c6342-505c-4f6d-9688-6862bb56bc3c",
+      "subject_id": "7dee4ca4-f673-4fb4-b51e-ca3ee132bb35",
+      "name": "Squares, Cubes & Roots",
+      "display_order": null,
+      "created_at": "2026-03-03T23:27:36.11482",
+      "exam_type": "PRELIMS"
+    },
+    {
+      "id": "a3c021a7-5074-4b3f-9030-275fefd06714",
+      "subject_id": "7dee4ca4-f673-4fb4-b51e-ca3ee132bb35",
+      "name": "Surds & Indices",
+      "display_order": null,
+      "created_at": "2026-03-03T23:27:36.11482",
+      "exam_type": "PRELIMS"
+    },
+    {
+      "id": "948a230b-83fd-4f58-85a4-c896e9ff5072",
+      "subject_id": "7dee4ca4-f673-4fb4-b51e-ca3ee132bb35",
+      "name": "HCF, LCM & Divisibility",
+      "display_order": null,
+      "created_at": "2026-03-03T23:27:36.11482",
+      "exam_type": "PRELIMS"
+    },
+    {
+      "id": "02d64910-6e29-4169-8388-a5051f855fc7",
+      "subject_id": "7dee4ca4-f673-4fb4-b51e-ca3ee132bb35",
+      "name": "Ratio, Proportion & Alligation",
+      "display_order": null,
+      "created_at": "2026-03-03T23:27:36.11482",
+      "exam_type": "PRELIMS"
+    },
+    {
+      "id": "f574e55e-452f-4a32-92f0-41c08eb0a709",
+      "subject_id": "7dee4ca4-f673-4fb4-b51e-ca3ee132bb35",
+      "name": "Percentage, Profit, Loss & Discount",
+      "display_order": null,
+      "created_at": "2026-03-03T23:27:36.11482",
+      "exam_type": "PRELIMS"
+    },
+    {
+      "id": "7c50893f-e668-4b96-b6ee-52f78247fd90",
+      "subject_id": "7dee4ca4-f673-4fb4-b51e-ca3ee132bb35",
+      "name": "Simple & Compound Interest",
+      "display_order": null,
+      "created_at": "2026-03-03T23:27:36.11482",
+      "exam_type": "PRELIMS"
+    },
+    {
+      "id": "8193ae34-5310-4440-909b-6e52f1f060ef",
+      "subject_id": "7dee4ca4-f673-4fb4-b51e-ca3ee132bb35",
+      "name": "Average, Ages & Partnership",
+      "display_order": null,
+      "created_at": "2026-03-03T23:27:36.11482",
+      "exam_type": "PRELIMS"
+    },
+    {
+      "id": "a0befc7c-49a1-4358-b8fc-dd6df429eaac",
+      "subject_id": "7dee4ca4-f673-4fb4-b51e-ca3ee132bb35",
+      "name": "Time & Work, Work & Wages, Pipes & Cisterns",
+      "display_order": null,
+      "created_at": "2026-03-03T23:27:36.11482",
+      "exam_type": "PRELIMS"
+    },
+    {
+      "id": "382e2121-8de4-4938-8c21-ad6b62a0e082",
+      "subject_id": "7dee4ca4-f673-4fb4-b51e-ca3ee132bb35",
+      "name": "Speed, Distance, Trains, Boats",
+      "display_order": null,
+      "created_at": "2026-03-03T23:27:36.11482",
+      "exam_type": "PRELIMS"
+    },
+    {
+      "id": "3ad8a0e8-2693-403d-8fd2-968573b6b064",
+      "subject_id": "7dee4ca4-f673-4fb4-b51e-ca3ee132bb35",
+      "name": "Mensuration",
+      "display_order": null,
+      "created_at": "2026-03-03T23:27:36.11482",
+      "exam_type": "PRELIMS"
+    },
+    {
+      "id": "8b9dc51e-d8f5-4a29-8c2c-381f4569158a",
+      "subject_id": "7dee4ca4-f673-4fb4-b51e-ca3ee132bb35",
+      "name": "Pie Charts",
+      "display_order": null,
+      "created_at": "2026-03-03T23:27:36.11482",
+      "exam_type": "PRELIMS"
+    },
+    {
+      "id": "1f865d89-a75d-4b15-b3cc-fd618439d6dc",
+      "subject_id": "7dee4ca4-f673-4fb4-b51e-ca3ee132bb35",
+      "name": "Bar Graphs",
+      "display_order": null,
+      "created_at": "2026-03-03T23:27:36.11482",
+      "exam_type": "PRELIMS"
+    },
+    {
+      "id": "4a35f603-49b2-42cd-861c-8efa959e2b85",
+      "subject_id": "7dee4ca4-f673-4fb4-b51e-ca3ee132bb35",
+      "name": "Tabulation",
+      "display_order": null,
+      "created_at": "2026-03-03T23:27:36.11482",
+      "exam_type": "PRELIMS"
+    },
+    {
+      "id": "a2038484-ddbf-4bc6-92b0-7055b3d0a4fc",
+      "subject_id": "7dee4ca4-f673-4fb4-b51e-ca3ee132bb35",
+      "name": "Line Graph",
+      "display_order": null,
+      "created_at": "2026-03-03T23:27:36.11482",
+      "exam_type": "PRELIMS"
+    },
+    {
+      "id": "80dd87a5-bf8f-4f57-b18c-10fe8b26b3ba",
+      "subject_id": "7dee4ca4-f673-4fb4-b51e-ca3ee132bb35",
+      "name": "Caselet DI",
+      "display_order": null,
+      "created_at": "2026-03-03T23:27:36.11482",
+      "exam_type": "PRELIMS"
+    },
+    {
+      "id": "912f1e3c-d6ab-4778-a43a-357c63222717",
+      "subject_id": "6e06da39-6d5c-43f5-9706-8ed85072bf5e",
+      "name": "Mensuration",
+      "display_order": null,
+      "created_at": "2026-03-10T20:02:30.071532",
+      "exam_type": "PRELIMS"
+    },
+    {
+      "id": "7ef62303-90a5-4c20-9937-b1484fbc5f47",
+      "subject_id": "2ae902c5-57bc-4deb-80c7-1e7c5778dfd7",
+      "name": "Introduction to Computer",
+      "display_order": null,
+      "created_at": "2026-03-10T21:02:38.149709",
+      "exam_type": "MAINS"
+    },
+    {
+      "id": "5aa190ef-6c4c-49c0-83c2-c58daa3900c6",
+      "subject_id": "2ae902c5-57bc-4deb-80c7-1e7c5778dfd7",
+      "name": "Computer Architecture",
+      "display_order": null,
+      "created_at": "2026-03-10T21:02:38.149709",
+      "exam_type": "MAINS"
+    },
+    {
+      "id": "b1759287-5c23-48a5-90ac-bc5315dfffc4",
+      "subject_id": "2ae902c5-57bc-4deb-80c7-1e7c5778dfd7",
+      "name": "Operating System",
+      "display_order": null,
+      "created_at": "2026-03-10T21:02:38.149709",
+      "exam_type": "MAINS"
+    },
+    {
+      "id": "f6977727-03fd-40dd-8eab-646ba88f8c5d",
+      "subject_id": "2ae902c5-57bc-4deb-80c7-1e7c5778dfd7",
+      "name": "Microsoft Windows",
+      "display_order": null,
+      "created_at": "2026-03-10T21:02:38.149709",
+      "exam_type": "MAINS"
+    },
+    {
+      "id": "4aedab70-bd2d-4229-ad47-162a6c5491ca",
+      "subject_id": "2ae902c5-57bc-4deb-80c7-1e7c5778dfd7",
+      "name": "Microsoft Office",
+      "display_order": null,
+      "created_at": "2026-03-10T21:02:38.149709",
+      "exam_type": "MAINS"
+    },
+    {
+      "id": "cbce0225-b58d-48fe-8a56-d0adbfab1d31",
+      "subject_id": "67776002-df33-4c0e-a2b6-de95f91e31dc",
+      "name": "Miscellaneous",
+      "display_order": null,
+      "created_at": "2026-03-10T21:40:15.225438",
+      "exam_type": "MAINS"
+    }
+  ],
+  "exam_boards": [
+    {
+      "id": "cdad5e16-d3ce-448c-8d72-1af16611e367",
+      "name": "OPSC",
+      "full_name": "Odisha Public Service Commission",
+      "description": "Conducts civil services and various Group A & B recruitment exams for Odisha Government.",
+      "is_active": true,
+      "created_at": "2026-03-03T15:48:54.197183"
+    },
+    {
+      "id": "7ed06554-d33d-4790-84a0-ae6c8b0c5578",
+      "name": "OSSSC",
+      "full_name": "Odisha Sub-Ordinate Staff Selection Commission",
+      "description": "Conducts recruitment for Group C posts in various Odisha government departments.",
+      "is_active": true,
+      "created_at": "2026-03-03T15:48:54.197183"
+    },
+    {
+      "id": "7f35f854-24bb-4b99-89dc-d1ac9701b750",
+      "name": "OSSC",
+      "full_name": "Odisha Staff Selection Commission",
+      "description": "Conducts recruitment for Group B & C technical and non-technical posts.",
+      "is_active": true,
+      "created_at": "2026-03-03T15:48:54.197183"
+    },
+    {
+      "id": "425294a8-89d1-41c8-b397-d1dba5adaceb",
+      "name": "OPSSB",
+      "full_name": "Odisha Police State Selection Board",
+      "description": "Conducts recruitment for Odisha Police constables, SI and other posts.",
+      "is_active": true,
+      "created_at": "2026-03-03T15:48:54.197183"
+    },
+    {
+      "id": "d0c1bc3a-575b-43ae-b8b4-fcb63eb0aced",
+      "name": "OSCB",
+      "full_name": "Odisha State Cooperative Bank Recruitment",
+      "description": "Manages recruitment for cooperative banks under Odisha government.",
+      "is_active": true,
+      "created_at": "2026-03-03T15:48:54.197183"
+    },
+    {
+      "id": "64821cd7-88bb-4500-9d33-e1aa6fd14e23",
+      "name": "OHPC",
+      "full_name": "Odisha Hydro Power Corporation Recruitment",
+      "description": "Handles recruitment for technical and administrative posts in OHPC.",
+      "is_active": true,
+      "created_at": "2026-03-03T15:48:54.197183"
+    },
+    {
+      "id": "118d0b6b-28af-472a-8d67-4830a0e6142a",
+      "name": "OTET ",
+      "full_name": "Odisha Teacher Eligibility Test Board",
+      "description": "Conducts OTET examination for teacher eligibility in Odisha schools.",
+      "is_active": true,
+      "created_at": "2026-03-03T15:48:54.197183"
+    },
+    {
+      "id": "fb48faf0-1993-479d-bf58-1b01911f6594",
+      "name": "SSBO",
+      "full_name": "State Selection Board Odisha",
+      "description": "Responsible for recruitment of lecturers and teaching posts in Odisha government colleges.",
+      "is_active": true,
+      "created_at": "2026-03-03T15:48:54.197183"
+    }
+  ]
+}

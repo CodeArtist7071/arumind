@@ -1,0 +1,1643 @@
+[
+  {
+    "board_id": "cdad5e16-d3ce-448c-8d72-1af16611e367",
+    "board_name": "OPSC",
+    "full_name": "Odisha Public Service Commission",
+    "description": "Conducts civil services and various Group A & B recruitment exams for Odisha Government.",
+    "exams": [
+      {
+        "exam_id": "85a72c15-5b08-4a48-8049-178537fe1336",
+        "exam_name": "ASO",
+        "full_name": "Assistant Section Officer Examination",
+        "type": "Graduate Level",
+        "subjects": []
+      },
+      {
+        "exam_id": "e246028c-204b-4464-913b-078ffbacb03e",
+        "exam_name": "OJS",
+        "full_name": "Odisha Judicial Services Examination",
+        "type": "Judicial",
+        "subjects": []
+      },
+      {
+        "exam_id": "de2acdab-c9a1-421f-b282-248964e4f54f",
+        "exam_name": "OMAS",
+        "full_name": "Odisha Municipal Administrative Services Examination",
+        "type": "Administrative",
+        "subjects": []
+      },
+      {
+        "exam_id": "df860f87-c021-4565-b3de-c2da4d712c53",
+        "exam_name": "AEE",
+        "full_name": "Assistant Executive Engineer Examination",
+        "type": "Engineering",
+        "subjects": []
+      },
+      {
+        "exam_id": "b8a65a66-36c7-4d65-a2f6-c83f6110d032",
+        "exam_name": "AAO",
+        "full_name": "Assistant Agriculture Officer Examination",
+        "type": "Agriculture",
+        "subjects": []
+      },
+      {
+        "exam_id": "cdcee39e-0211-4d25-8a74-0212e965c1be",
+        "exam_name": "OAS",
+        "full_name": "Odisha Administrative Service",
+        "type": "Civil Services",
+        "subjects": []
+      },
+      {
+        "exam_id": "e09737a2-e4da-4c5e-b0bf-98b64f373c21",
+        "exam_name": "OPS",
+        "full_name": "Odisha Police Service",
+        "type": "Civil Services",
+        "subjects": []
+      },
+      {
+        "exam_id": "a516b504-7c36-4659-b290-51007d228957",
+        "exam_name": "OFS",
+        "full_name": "Odisha Finance Service",
+        "type": "Civil Services",
+        "subjects": []
+      },
+      {
+        "exam_id": "2de00163-d104-4f28-9718-ba72ca7e43a1",
+        "exam_name": "ORS",
+        "full_name": "Odisha Revenue Service",
+        "type": "Civil Services",
+        "subjects": []
+      },
+      {
+        "exam_id": "6c417e5a-7398-447a-89f4-b8b2d852bd7a",
+        "exam_name": "OTAS",
+        "full_name": "Odisha Taxation & Accounts Service",
+        "type": "Civil Services",
+        "subjects": []
+      }
+    ]
+  },
+  {
+    "board_id": "7ed06554-d33d-4790-84a0-ae6c8b0c5578",
+    "board_name": "OSSSC",
+    "full_name": "Odisha Sub-Ordinate Staff Selection Commission",
+    "description": "Conducts recruitment for Group C posts in various Odisha government departments.",
+    "exams": [
+      {
+        "exam_id": "5d9d01ee-18f8-4cea-b161-2c51d35077f7",
+        "exam_name": "RI",
+        "full_name": "Revenue Inspector Examination",
+        "type": "Graduate Level",
+        "subjects": []
+      },
+      {
+        "exam_id": "10ac9a9e-3352-46b1-bd8a-ac028dfb013c",
+        "exam_name": "ARI",
+        "full_name": "Assistant Revenue Inspector Examination",
+        "type": "12th Level",
+        "subjects": []
+      },
+      {
+        "exam_id": "6670b0c7-227a-4094-b54f-157518338cfe",
+        "exam_name": "ICDS",
+        "full_name": "Integrated Child Development Services Recruitment",
+        "type": "Field Staff",
+        "subjects": []
+      },
+      {
+        "exam_id": "147e1eb2-7710-4f79-9ac4-c9532d866f37",
+        "exam_name": "SFS",
+        "full_name": "Statistical Field Surveyor Examination",
+        "type": "Field Staff",
+        "subjects": []
+      },
+      {
+        "exam_id": "e50e98ff-0d87-47d3-b3b9-1da81c804835",
+        "exam_name": "AMIN",
+        "full_name": "Amin Recruitment Examination",
+        "type": "12th Level",
+        "subjects": []
+      },
+      {
+        "exam_id": "d59119f8-f016-403f-b32a-aab16eb1663b",
+        "exam_name": "CRE",
+        "full_name": "Combined Recruitment Examination",
+        "type": "Multiple Posts",
+        "subjects": []
+      },
+      {
+        "exam_id": "dbc527d1-1f82-4ede-a8fe-3aac5948ab16",
+        "exam_name": "FORESTER",
+        "full_name": "Forester Recruitment Examination",
+        "type": "Forest Service",
+        "subjects": []
+      },
+      {
+        "exam_id": "6d393880-0367-46d0-b99b-7336f3e15722",
+        "exam_name": "FOREST GUARD",
+        "full_name": "Forest Guard Recruitment Examination",
+        "type": "Forest Service",
+        "subjects": []
+      },
+      {
+        "exam_id": "9bc99fdf-46a2-423f-a9ad-3c205fde51eb",
+        "exam_name": "LI",
+        "full_name": "Livestock Inspector Examination",
+        "type": "Agriculture",
+        "subjects": []
+      },
+      {
+        "exam_id": "a0723b61-7dc0-4bdd-991e-5fbf088e6a3d",
+        "exam_name": "PEO",
+        "full_name": "Panchayat Executive Officer Examination",
+        "type": "Graduate Level",
+        "subjects": []
+      },
+      {
+        "exam_id": "6cc1df31-0cf5-4cd2-98d0-5761e58d0c8d",
+        "exam_name": "PET",
+        "full_name": "Physical Efficiency Test",
+        "type": "Physical Test",
+        "subjects": []
+      },
+      {
+        "exam_id": "f745f9ac-a994-42fa-a239-ffe855148790",
+        "exam_name": "TGT",
+        "full_name": "Trained Graduate Teacher Examination",
+        "type": "Teaching",
+        "subjects": []
+      }
+    ]
+  },
+  {
+    "board_id": "7f35f854-24bb-4b99-89dc-d1ac9701b750",
+    "board_name": "OSSC",
+    "full_name": "Odisha Staff Selection Commission",
+    "description": "Conducts recruitment for Group B & C technical and non-technical posts.",
+    "exams": [
+      {
+        "exam_id": "fde27361-e062-4394-96aa-b09542d3835a",
+        "exam_name": "CTSRE",
+        "full_name": "Combined Technical Services Recruitment Examination",
+        "type": "Technical",
+        "subjects": [
+          {
+            "subject_id": "0d3e0ab3-f9d9-4a35-9e17-4c5a6025b177",
+            "subject_name": "General Studies",
+            "description": "Polity, Economy, History, Geography, Odisha GK & Current Affairs.",
+            "chapters": [
+              {
+                "chapter_id": "0c7bf036-8e39-495d-845e-eeffb325fbd7",
+                "chapter_name": "Economy & Banking",
+                "exam_type": "PRELIMS"
+              },
+              {
+                "chapter_id": "385cc967-47b7-4272-9918-e78f95058378",
+                "chapter_name": "Science & Technology",
+                "exam_type": "PRELIMS"
+              },
+              {
+                "chapter_id": "7c954e83-a379-43e2-90cd-cc6a8da23e80",
+                "chapter_name": "Defence & Space",
+                "exam_type": "PRELIMS"
+              },
+              {
+                "chapter_id": "ea744b3f-7e56-4ba6-8b3e-0053933891ad",
+                "chapter_name": "Sports, Awards & Summits",
+                "exam_type": "PRELIMS"
+              },
+              {
+                "chapter_id": "d92d6012-ec9e-4ed7-9205-82265b66304c",
+                "chapter_name": "Odisha-specific Current Affairs",
+                "exam_type": "PRELIMS"
+              }
+            ]
+          },
+          {
+            "subject_id": "7dee4ca4-f673-4fb4-b51e-ca3ee132bb35",
+            "subject_name": "Arithmetic and Data Interpretation",
+            "description": "Quantitative aptitude: percentage, ratio, profit & loss, time & work, SI/CI.",
+            "chapters": [
+              {
+                "chapter_id": "fe2f35f0-5007-423a-b88b-6235a6b59fe5",
+                "chapter_name": "Number Basics \u2013 Number System, Fractions, Decimals",
+                "exam_type": "MAINS"
+              },
+              {
+                "chapter_id": "1dc54eaf-a7d0-4579-b5fd-e0e884c18d42",
+                "chapter_name": "Simplification & BODMAS",
+                "exam_type": "PRELIMS"
+              },
+              {
+                "chapter_id": "c17c6342-505c-4f6d-9688-6862bb56bc3c",
+                "chapter_name": "Squares, Cubes & Roots",
+                "exam_type": "PRELIMS"
+              },
+              {
+                "chapter_id": "a3c021a7-5074-4b3f-9030-275fefd06714",
+                "chapter_name": "Surds & Indices",
+                "exam_type": "PRELIMS"
+              },
+              {
+                "chapter_id": "948a230b-83fd-4f58-85a4-c896e9ff5072",
+                "chapter_name": "HCF, LCM & Divisibility",
+                "exam_type": "PRELIMS"
+              },
+              {
+                "chapter_id": "02d64910-6e29-4169-8388-a5051f855fc7",
+                "chapter_name": "Ratio, Proportion & Alligation",
+                "exam_type": "PRELIMS"
+              },
+              {
+                "chapter_id": "f574e55e-452f-4a32-92f0-41c08eb0a709",
+                "chapter_name": "Percentage, Profit, Loss & Discount",
+                "exam_type": "PRELIMS"
+              },
+              {
+                "chapter_id": "7c50893f-e668-4b96-b6ee-52f78247fd90",
+                "chapter_name": "Simple & Compound Interest",
+                "exam_type": "PRELIMS"
+              },
+              {
+                "chapter_id": "8193ae34-5310-4440-909b-6e52f1f060ef",
+                "chapter_name": "Average, Ages & Partnership",
+                "exam_type": "PRELIMS"
+              },
+              {
+                "chapter_id": "a0befc7c-49a1-4358-b8fc-dd6df429eaac",
+                "chapter_name": "Time & Work, Work & Wages, Pipes & Cisterns",
+                "exam_type": "PRELIMS"
+              },
+              {
+                "chapter_id": "382e2121-8de4-4938-8c21-ad6b62a0e082",
+                "chapter_name": "Speed, Distance, Trains, Boats",
+                "exam_type": "PRELIMS"
+              },
+              {
+                "chapter_id": "3ad8a0e8-2693-403d-8fd2-968573b6b064",
+                "chapter_name": "Mensuration",
+                "exam_type": "PRELIMS"
+              },
+              {
+                "chapter_id": "8b9dc51e-d8f5-4a29-8c2c-381f4569158a",
+                "chapter_name": "Pie Charts",
+                "exam_type": "PRELIMS"
+              },
+              {
+                "chapter_id": "1f865d89-a75d-4b15-b3cc-fd618439d6dc",
+                "chapter_name": "Bar Graphs",
+                "exam_type": "PRELIMS"
+              },
+              {
+                "chapter_id": "4a35f603-49b2-42cd-861c-8efa959e2b85",
+                "chapter_name": "Tabulation",
+                "exam_type": "PRELIMS"
+              },
+              {
+                "chapter_id": "a2038484-ddbf-4bc6-92b0-7055b3d0a4fc",
+                "chapter_name": "Line Graph",
+                "exam_type": "PRELIMS"
+              },
+              {
+                "chapter_id": "80dd87a5-bf8f-4f57-b18c-10fe8b26b3ba",
+                "chapter_name": "Caselet DI",
+                "exam_type": "PRELIMS"
+              }
+            ]
+          },
+          {
+            "subject_id": "09083f66-28ea-4f34-abdf-88138100a2dd",
+            "subject_name": "Logical Reasoning",
+            "description": "Logical reasoning, analytical ability, puzzles and decision making.",
+            "chapters": [
+              {
+                "chapter_id": "4d46ff8a-ef0b-4e97-b698-5721bdf997da",
+                "chapter_name": "Coding\u2013Decoding",
+                "exam_type": "PRELIMS"
+              },
+              {
+                "chapter_id": "f444c2c5-7707-4515-87b2-3f5f26521c6a",
+                "chapter_name": "Blood Relation & Direction",
+                "exam_type": "PRELIMS"
+              },
+              {
+                "chapter_id": "92f9fbdd-824a-4747-bcf4-3df31af035e3",
+                "chapter_name": "Order, Ranking & Scheduling",
+                "exam_type": "PRELIMS"
+              },
+              {
+                "chapter_id": "fbf8a8a6-0712-44ea-9652-b289b8a6b630",
+                "chapter_name": "Statement-Based Reasoning (Assumption, Conclusion, Syllogism)",
+                "exam_type": "PRELIMS"
+              },
+              {
+                "chapter_id": "2cef5113-5d5d-4937-9ab4-aa8f3b1a19de",
+                "chapter_name": "Data Sufficiency & Decision Making",
+                "exam_type": "PRELIMS"
+              },
+              {
+                "chapter_id": "82fb234a-0a15-495c-9896-e732ef1c91be",
+                "chapter_name": "Puzzles & Seating Arrangement",
+                "exam_type": "PRELIMS"
+              },
+              {
+                "chapter_id": "2741c74e-0d60-417a-9a69-8cafda4caff2",
+                "chapter_name": "Analogy, Classification & Odd One Out",
+                "exam_type": "PRELIMS"
+              },
+              {
+                "chapter_id": "4f6147cb-3ac8-4b08-ad6b-6de5bbd3895d",
+                "chapter_name": "Venn Diagram",
+                "exam_type": "PRELIMS"
+              },
+              {
+                "chapter_id": "a646a347-d022-4e17-a56f-0073e8e1b61f",
+                "chapter_name": "Clock & Calendar",
+                "exam_type": "PRELIMS"
+              },
+              {
+                "chapter_id": "28b9ae41-bab6-4d6f-8979-4270783934be",
+                "chapter_name": "Non-Verbal & Pattern Recognition",
+                "exam_type": "PRELIMS"
+              },
+              {
+                "chapter_id": "b4b3e543-e191-47c7-8d2a-a421c4376138",
+                "chapter_name": "Miscellaneous",
+                "exam_type": "PRELIMS"
+              }
+            ]
+          },
+          {
+            "subject_id": "6fdb7f5a-cce6-4c16-8d0e-b8f76423fc00",
+            "subject_name": "Computer Awareness",
+            "description": "Basic computer knowledge, MS Office, internet & digital awareness.",
+            "chapters": [
+              {
+                "chapter_id": "b8411ef1-21e5-4215-a456-6ff957b29696",
+                "chapter_name": "Computer Fundamentals",
+                "exam_type": "PRELIMS"
+              },
+              {
+                "chapter_id": "c7b62ca5-5e6d-4ed8-a2bf-3fe872c270f5",
+                "chapter_name": "Hardware & Software",
+                "exam_type": "PRELIMS"
+              },
+              {
+                "chapter_id": "ee2e0684-1a7b-49b4-8b57-53c2d09063af",
+                "chapter_name": "MS Office (Word, Excel, PowerPoint)",
+                "exam_type": "PRELIMS"
+              },
+              {
+                "chapter_id": "2afdd99b-3fd6-4c29-bded-4252894b5478",
+                "chapter_name": "Internet & Networking",
+                "exam_type": "PRELIMS"
+              },
+              {
+                "chapter_id": "25eb9051-919e-47d0-b0e1-80970a232d86",
+                "chapter_name": "Database & Programming Basics",
+                "exam_type": "PRELIMS"
+              }
+            ]
+          },
+          {
+            "subject_id": "67776002-df33-4c0e-a2b6-de95f91e31dc",
+            "subject_name": "English",
+            "description": "Grammar, vocabulary, comprehension & sentence correction.",
+            "chapters": [
+              {
+                "chapter_id": "cbce0225-b58d-48fe-8a56-d0adbfab1d31",
+                "chapter_name": "Miscellaneous",
+                "exam_type": "MAINS"
+              }
+            ]
+          },
+          {
+            "subject_id": "f0f0d8cb-de93-431d-b8a9-0d601d1d6bff",
+            "subject_name": "General Knowledge (Odisha)",
+            "description": "History, Geography, comprehension & Culture & heritage.",
+            "chapters": [
+              {
+                "chapter_id": "11f43cb3-14ae-415b-a60e-089bb041e82d",
+                "chapter_name": "History",
+                "exam_type": "PRELIMS"
+              },
+              {
+                "chapter_id": "2930cc1a-4f93-4c3a-9fb0-8e5e904ae43c",
+                "chapter_name": "Geography",
+                "exam_type": "PRELIMS"
+              },
+              {
+                "chapter_id": "df845690-db79-4911-99ae-c2db2b886b38",
+                "chapter_name": "Economy",
+                "exam_type": "PRELIMS"
+              },
+              {
+                "chapter_id": "746ca82a-098c-4f54-b945-8a39d01bdedd",
+                "chapter_name": "Culture & Heritage",
+                "exam_type": "PRELIMS"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "exam_id": "cc5c847f-1655-48a6-806b-99c444846dde",
+        "exam_name": "JEO",
+        "full_name": "Junior Enforcement Officer Examination",
+        "type": "Graduate Level",
+        "subjects": [
+          {
+            "subject_id": "0d3e0ab3-f9d9-4a35-9e17-4c5a6025b177",
+            "subject_name": "General Studies",
+            "description": "Polity, Economy, History, Geography, Odisha GK & Current Affairs.",
+            "chapters": [
+              {
+                "chapter_id": "0c7bf036-8e39-495d-845e-eeffb325fbd7",
+                "chapter_name": "Economy & Banking",
+                "exam_type": "PRELIMS"
+              },
+              {
+                "chapter_id": "385cc967-47b7-4272-9918-e78f95058378",
+                "chapter_name": "Science & Technology",
+                "exam_type": "PRELIMS"
+              },
+              {
+                "chapter_id": "7c954e83-a379-43e2-90cd-cc6a8da23e80",
+                "chapter_name": "Defence & Space",
+                "exam_type": "PRELIMS"
+              },
+              {
+                "chapter_id": "ea744b3f-7e56-4ba6-8b3e-0053933891ad",
+                "chapter_name": "Sports, Awards & Summits",
+                "exam_type": "PRELIMS"
+              },
+              {
+                "chapter_id": "d92d6012-ec9e-4ed7-9205-82265b66304c",
+                "chapter_name": "Odisha-specific Current Affairs",
+                "exam_type": "PRELIMS"
+              }
+            ]
+          },
+          {
+            "subject_id": "7dee4ca4-f673-4fb4-b51e-ca3ee132bb35",
+            "subject_name": "Arithmetic and Data Interpretation",
+            "description": "Quantitative aptitude: percentage, ratio, profit & loss, time & work, SI/CI.",
+            "chapters": [
+              {
+                "chapter_id": "fe2f35f0-5007-423a-b88b-6235a6b59fe5",
+                "chapter_name": "Number Basics \u2013 Number System, Fractions, Decimals",
+                "exam_type": "MAINS"
+              },
+              {
+                "chapter_id": "1dc54eaf-a7d0-4579-b5fd-e0e884c18d42",
+                "chapter_name": "Simplification & BODMAS",
+                "exam_type": "PRELIMS"
+              },
+              {
+                "chapter_id": "c17c6342-505c-4f6d-9688-6862bb56bc3c",
+                "chapter_name": "Squares, Cubes & Roots",
+                "exam_type": "PRELIMS"
+              },
+              {
+                "chapter_id": "a3c021a7-5074-4b3f-9030-275fefd06714",
+                "chapter_name": "Surds & Indices",
+                "exam_type": "PRELIMS"
+              },
+              {
+                "chapter_id": "948a230b-83fd-4f58-85a4-c896e9ff5072",
+                "chapter_name": "HCF, LCM & Divisibility",
+                "exam_type": "PRELIMS"
+              },
+              {
+                "chapter_id": "02d64910-6e29-4169-8388-a5051f855fc7",
+                "chapter_name": "Ratio, Proportion & Alligation",
+                "exam_type": "PRELIMS"
+              },
+              {
+                "chapter_id": "f574e55e-452f-4a32-92f0-41c08eb0a709",
+                "chapter_name": "Percentage, Profit, Loss & Discount",
+                "exam_type": "PRELIMS"
+              },
+              {
+                "chapter_id": "7c50893f-e668-4b96-b6ee-52f78247fd90",
+                "chapter_name": "Simple & Compound Interest",
+                "exam_type": "PRELIMS"
+              },
+              {
+                "chapter_id": "8193ae34-5310-4440-909b-6e52f1f060ef",
+                "chapter_name": "Average, Ages & Partnership",
+                "exam_type": "PRELIMS"
+              },
+              {
+                "chapter_id": "a0befc7c-49a1-4358-b8fc-dd6df429eaac",
+                "chapter_name": "Time & Work, Work & Wages, Pipes & Cisterns",
+                "exam_type": "PRELIMS"
+              },
+              {
+                "chapter_id": "382e2121-8de4-4938-8c21-ad6b62a0e082",
+                "chapter_name": "Speed, Distance, Trains, Boats",
+                "exam_type": "PRELIMS"
+              },
+              {
+                "chapter_id": "3ad8a0e8-2693-403d-8fd2-968573b6b064",
+                "chapter_name": "Mensuration",
+                "exam_type": "PRELIMS"
+              },
+              {
+                "chapter_id": "8b9dc51e-d8f5-4a29-8c2c-381f4569158a",
+                "chapter_name": "Pie Charts",
+                "exam_type": "PRELIMS"
+              },
+              {
+                "chapter_id": "1f865d89-a75d-4b15-b3cc-fd618439d6dc",
+                "chapter_name": "Bar Graphs",
+                "exam_type": "PRELIMS"
+              },
+              {
+                "chapter_id": "4a35f603-49b2-42cd-861c-8efa959e2b85",
+                "chapter_name": "Tabulation",
+                "exam_type": "PRELIMS"
+              },
+              {
+                "chapter_id": "a2038484-ddbf-4bc6-92b0-7055b3d0a4fc",
+                "chapter_name": "Line Graph",
+                "exam_type": "PRELIMS"
+              },
+              {
+                "chapter_id": "80dd87a5-bf8f-4f57-b18c-10fe8b26b3ba",
+                "chapter_name": "Caselet DI",
+                "exam_type": "PRELIMS"
+              }
+            ]
+          },
+          {
+            "subject_id": "09083f66-28ea-4f34-abdf-88138100a2dd",
+            "subject_name": "Logical Reasoning",
+            "description": "Logical reasoning, analytical ability, puzzles and decision making.",
+            "chapters": [
+              {
+                "chapter_id": "4d46ff8a-ef0b-4e97-b698-5721bdf997da",
+                "chapter_name": "Coding\u2013Decoding",
+                "exam_type": "PRELIMS"
+              },
+              {
+                "chapter_id": "f444c2c5-7707-4515-87b2-3f5f26521c6a",
+                "chapter_name": "Blood Relation & Direction",
+                "exam_type": "PRELIMS"
+              },
+              {
+                "chapter_id": "92f9fbdd-824a-4747-bcf4-3df31af035e3",
+                "chapter_name": "Order, Ranking & Scheduling",
+                "exam_type": "PRELIMS"
+              },
+              {
+                "chapter_id": "fbf8a8a6-0712-44ea-9652-b289b8a6b630",
+                "chapter_name": "Statement-Based Reasoning (Assumption, Conclusion, Syllogism)",
+                "exam_type": "PRELIMS"
+              },
+              {
+                "chapter_id": "2cef5113-5d5d-4937-9ab4-aa8f3b1a19de",
+                "chapter_name": "Data Sufficiency & Decision Making",
+                "exam_type": "PRELIMS"
+              },
+              {
+                "chapter_id": "82fb234a-0a15-495c-9896-e732ef1c91be",
+                "chapter_name": "Puzzles & Seating Arrangement",
+                "exam_type": "PRELIMS"
+              },
+              {
+                "chapter_id": "2741c74e-0d60-417a-9a69-8cafda4caff2",
+                "chapter_name": "Analogy, Classification & Odd One Out",
+                "exam_type": "PRELIMS"
+              },
+              {
+                "chapter_id": "4f6147cb-3ac8-4b08-ad6b-6de5bbd3895d",
+                "chapter_name": "Venn Diagram",
+                "exam_type": "PRELIMS"
+              },
+              {
+                "chapter_id": "a646a347-d022-4e17-a56f-0073e8e1b61f",
+                "chapter_name": "Clock & Calendar",
+                "exam_type": "PRELIMS"
+              },
+              {
+                "chapter_id": "28b9ae41-bab6-4d6f-8979-4270783934be",
+                "chapter_name": "Non-Verbal & Pattern Recognition",
+                "exam_type": "PRELIMS"
+              },
+              {
+                "chapter_id": "b4b3e543-e191-47c7-8d2a-a421c4376138",
+                "chapter_name": "Miscellaneous",
+                "exam_type": "PRELIMS"
+              }
+            ]
+          },
+          {
+            "subject_id": "6fdb7f5a-cce6-4c16-8d0e-b8f76423fc00",
+            "subject_name": "Computer Awareness",
+            "description": "Basic computer knowledge, MS Office, internet & digital awareness.",
+            "chapters": [
+              {
+                "chapter_id": "b8411ef1-21e5-4215-a456-6ff957b29696",
+                "chapter_name": "Computer Fundamentals",
+                "exam_type": "PRELIMS"
+              },
+              {
+                "chapter_id": "c7b62ca5-5e6d-4ed8-a2bf-3fe872c270f5",
+                "chapter_name": "Hardware & Software",
+                "exam_type": "PRELIMS"
+              },
+              {
+                "chapter_id": "ee2e0684-1a7b-49b4-8b57-53c2d09063af",
+                "chapter_name": "MS Office (Word, Excel, PowerPoint)",
+                "exam_type": "PRELIMS"
+              },
+              {
+                "chapter_id": "2afdd99b-3fd6-4c29-bded-4252894b5478",
+                "chapter_name": "Internet & Networking",
+                "exam_type": "PRELIMS"
+              },
+              {
+                "chapter_id": "25eb9051-919e-47d0-b0e1-80970a232d86",
+                "chapter_name": "Database & Programming Basics",
+                "exam_type": "PRELIMS"
+              }
+            ]
+          },
+          {
+            "subject_id": "67776002-df33-4c0e-a2b6-de95f91e31dc",
+            "subject_name": "English",
+            "description": "Grammar, vocabulary, comprehension & sentence correction.",
+            "chapters": [
+              {
+                "chapter_id": "cbce0225-b58d-48fe-8a56-d0adbfab1d31",
+                "chapter_name": "Miscellaneous",
+                "exam_type": "MAINS"
+              }
+            ]
+          },
+          {
+            "subject_id": "f0f0d8cb-de93-431d-b8a9-0d601d1d6bff",
+            "subject_name": "General Knowledge (Odisha)",
+            "description": "History, Geography, comprehension & Culture & heritage.",
+            "chapters": [
+              {
+                "chapter_id": "11f43cb3-14ae-415b-a60e-089bb041e82d",
+                "chapter_name": "History",
+                "exam_type": "PRELIMS"
+              },
+              {
+                "chapter_id": "2930cc1a-4f93-4c3a-9fb0-8e5e904ae43c",
+                "chapter_name": "Geography",
+                "exam_type": "PRELIMS"
+              },
+              {
+                "chapter_id": "df845690-db79-4911-99ae-c2db2b886b38",
+                "chapter_name": "Economy",
+                "exam_type": "PRELIMS"
+              },
+              {
+                "chapter_id": "746ca82a-098c-4f54-b945-8a39d01bdedd",
+                "chapter_name": "Culture & Heritage",
+                "exam_type": "PRELIMS"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "exam_id": "f4f70bd7-b6bc-4863-9926-db03854b3099",
+        "exam_name": "JA",
+        "full_name": "Junior Assistant Examination",
+        "type": "Clerical",
+        "subjects": [
+          {
+            "subject_id": "0d3e0ab3-f9d9-4a35-9e17-4c5a6025b177",
+            "subject_name": "General Studies",
+            "description": "Polity, Economy, History, Geography, Odisha GK & Current Affairs.",
+            "chapters": [
+              {
+                "chapter_id": "0c7bf036-8e39-495d-845e-eeffb325fbd7",
+                "chapter_name": "Economy & Banking",
+                "exam_type": "PRELIMS"
+              },
+              {
+                "chapter_id": "385cc967-47b7-4272-9918-e78f95058378",
+                "chapter_name": "Science & Technology",
+                "exam_type": "PRELIMS"
+              },
+              {
+                "chapter_id": "7c954e83-a379-43e2-90cd-cc6a8da23e80",
+                "chapter_name": "Defence & Space",
+                "exam_type": "PRELIMS"
+              },
+              {
+                "chapter_id": "ea744b3f-7e56-4ba6-8b3e-0053933891ad",
+                "chapter_name": "Sports, Awards & Summits",
+                "exam_type": "PRELIMS"
+              },
+              {
+                "chapter_id": "d92d6012-ec9e-4ed7-9205-82265b66304c",
+                "chapter_name": "Odisha-specific Current Affairs",
+                "exam_type": "PRELIMS"
+              }
+            ]
+          },
+          {
+            "subject_id": "7dee4ca4-f673-4fb4-b51e-ca3ee132bb35",
+            "subject_name": "Arithmetic and Data Interpretation",
+            "description": "Quantitative aptitude: percentage, ratio, profit & loss, time & work, SI/CI.",
+            "chapters": [
+              {
+                "chapter_id": "fe2f35f0-5007-423a-b88b-6235a6b59fe5",
+                "chapter_name": "Number Basics \u2013 Number System, Fractions, Decimals",
+                "exam_type": "MAINS"
+              },
+              {
+                "chapter_id": "1dc54eaf-a7d0-4579-b5fd-e0e884c18d42",
+                "chapter_name": "Simplification & BODMAS",
+                "exam_type": "PRELIMS"
+              },
+              {
+                "chapter_id": "c17c6342-505c-4f6d-9688-6862bb56bc3c",
+                "chapter_name": "Squares, Cubes & Roots",
+                "exam_type": "PRELIMS"
+              },
+              {
+                "chapter_id": "a3c021a7-5074-4b3f-9030-275fefd06714",
+                "chapter_name": "Surds & Indices",
+                "exam_type": "PRELIMS"
+              },
+              {
+                "chapter_id": "948a230b-83fd-4f58-85a4-c896e9ff5072",
+                "chapter_name": "HCF, LCM & Divisibility",
+                "exam_type": "PRELIMS"
+              },
+              {
+                "chapter_id": "02d64910-6e29-4169-8388-a5051f855fc7",
+                "chapter_name": "Ratio, Proportion & Alligation",
+                "exam_type": "PRELIMS"
+              },
+              {
+                "chapter_id": "f574e55e-452f-4a32-92f0-41c08eb0a709",
+                "chapter_name": "Percentage, Profit, Loss & Discount",
+                "exam_type": "PRELIMS"
+              },
+              {
+                "chapter_id": "7c50893f-e668-4b96-b6ee-52f78247fd90",
+                "chapter_name": "Simple & Compound Interest",
+                "exam_type": "PRELIMS"
+              },
+              {
+                "chapter_id": "8193ae34-5310-4440-909b-6e52f1f060ef",
+                "chapter_name": "Average, Ages & Partnership",
+                "exam_type": "PRELIMS"
+              },
+              {
+                "chapter_id": "a0befc7c-49a1-4358-b8fc-dd6df429eaac",
+                "chapter_name": "Time & Work, Work & Wages, Pipes & Cisterns",
+                "exam_type": "PRELIMS"
+              },
+              {
+                "chapter_id": "382e2121-8de4-4938-8c21-ad6b62a0e082",
+                "chapter_name": "Speed, Distance, Trains, Boats",
+                "exam_type": "PRELIMS"
+              },
+              {
+                "chapter_id": "3ad8a0e8-2693-403d-8fd2-968573b6b064",
+                "chapter_name": "Mensuration",
+                "exam_type": "PRELIMS"
+              },
+              {
+                "chapter_id": "8b9dc51e-d8f5-4a29-8c2c-381f4569158a",
+                "chapter_name": "Pie Charts",
+                "exam_type": "PRELIMS"
+              },
+              {
+                "chapter_id": "1f865d89-a75d-4b15-b3cc-fd618439d6dc",
+                "chapter_name": "Bar Graphs",
+                "exam_type": "PRELIMS"
+              },
+              {
+                "chapter_id": "4a35f603-49b2-42cd-861c-8efa959e2b85",
+                "chapter_name": "Tabulation",
+                "exam_type": "PRELIMS"
+              },
+              {
+                "chapter_id": "a2038484-ddbf-4bc6-92b0-7055b3d0a4fc",
+                "chapter_name": "Line Graph",
+                "exam_type": "PRELIMS"
+              },
+              {
+                "chapter_id": "80dd87a5-bf8f-4f57-b18c-10fe8b26b3ba",
+                "chapter_name": "Caselet DI",
+                "exam_type": "PRELIMS"
+              }
+            ]
+          },
+          {
+            "subject_id": "09083f66-28ea-4f34-abdf-88138100a2dd",
+            "subject_name": "Logical Reasoning",
+            "description": "Logical reasoning, analytical ability, puzzles and decision making.",
+            "chapters": [
+              {
+                "chapter_id": "4d46ff8a-ef0b-4e97-b698-5721bdf997da",
+                "chapter_name": "Coding\u2013Decoding",
+                "exam_type": "PRELIMS"
+              },
+              {
+                "chapter_id": "f444c2c5-7707-4515-87b2-3f5f26521c6a",
+                "chapter_name": "Blood Relation & Direction",
+                "exam_type": "PRELIMS"
+              },
+              {
+                "chapter_id": "92f9fbdd-824a-4747-bcf4-3df31af035e3",
+                "chapter_name": "Order, Ranking & Scheduling",
+                "exam_type": "PRELIMS"
+              },
+              {
+                "chapter_id": "fbf8a8a6-0712-44ea-9652-b289b8a6b630",
+                "chapter_name": "Statement-Based Reasoning (Assumption, Conclusion, Syllogism)",
+                "exam_type": "PRELIMS"
+              },
+              {
+                "chapter_id": "2cef5113-5d5d-4937-9ab4-aa8f3b1a19de",
+                "chapter_name": "Data Sufficiency & Decision Making",
+                "exam_type": "PRELIMS"
+              },
+              {
+                "chapter_id": "82fb234a-0a15-495c-9896-e732ef1c91be",
+                "chapter_name": "Puzzles & Seating Arrangement",
+                "exam_type": "PRELIMS"
+              },
+              {
+                "chapter_id": "2741c74e-0d60-417a-9a69-8cafda4caff2",
+                "chapter_name": "Analogy, Classification & Odd One Out",
+                "exam_type": "PRELIMS"
+              },
+              {
+                "chapter_id": "4f6147cb-3ac8-4b08-ad6b-6de5bbd3895d",
+                "chapter_name": "Venn Diagram",
+                "exam_type": "PRELIMS"
+              },
+              {
+                "chapter_id": "a646a347-d022-4e17-a56f-0073e8e1b61f",
+                "chapter_name": "Clock & Calendar",
+                "exam_type": "PRELIMS"
+              },
+              {
+                "chapter_id": "28b9ae41-bab6-4d6f-8979-4270783934be",
+                "chapter_name": "Non-Verbal & Pattern Recognition",
+                "exam_type": "PRELIMS"
+              },
+              {
+                "chapter_id": "b4b3e543-e191-47c7-8d2a-a421c4376138",
+                "chapter_name": "Miscellaneous",
+                "exam_type": "PRELIMS"
+              }
+            ]
+          },
+          {
+            "subject_id": "6fdb7f5a-cce6-4c16-8d0e-b8f76423fc00",
+            "subject_name": "Computer Awareness",
+            "description": "Basic computer knowledge, MS Office, internet & digital awareness.",
+            "chapters": [
+              {
+                "chapter_id": "b8411ef1-21e5-4215-a456-6ff957b29696",
+                "chapter_name": "Computer Fundamentals",
+                "exam_type": "PRELIMS"
+              },
+              {
+                "chapter_id": "c7b62ca5-5e6d-4ed8-a2bf-3fe872c270f5",
+                "chapter_name": "Hardware & Software",
+                "exam_type": "PRELIMS"
+              },
+              {
+                "chapter_id": "ee2e0684-1a7b-49b4-8b57-53c2d09063af",
+                "chapter_name": "MS Office (Word, Excel, PowerPoint)",
+                "exam_type": "PRELIMS"
+              },
+              {
+                "chapter_id": "2afdd99b-3fd6-4c29-bded-4252894b5478",
+                "chapter_name": "Internet & Networking",
+                "exam_type": "PRELIMS"
+              },
+              {
+                "chapter_id": "25eb9051-919e-47d0-b0e1-80970a232d86",
+                "chapter_name": "Database & Programming Basics",
+                "exam_type": "PRELIMS"
+              }
+            ]
+          },
+          {
+            "subject_id": "67776002-df33-4c0e-a2b6-de95f91e31dc",
+            "subject_name": "English",
+            "description": "Grammar, vocabulary, comprehension & sentence correction.",
+            "chapters": [
+              {
+                "chapter_id": "cbce0225-b58d-48fe-8a56-d0adbfab1d31",
+                "chapter_name": "Miscellaneous",
+                "exam_type": "MAINS"
+              }
+            ]
+          },
+          {
+            "subject_id": "f0f0d8cb-de93-431d-b8a9-0d601d1d6bff",
+            "subject_name": "General Knowledge (Odisha)",
+            "description": "History, Geography, comprehension & Culture & heritage.",
+            "chapters": [
+              {
+                "chapter_id": "11f43cb3-14ae-415b-a60e-089bb041e82d",
+                "chapter_name": "History",
+                "exam_type": "PRELIMS"
+              },
+              {
+                "chapter_id": "2930cc1a-4f93-4c3a-9fb0-8e5e904ae43c",
+                "chapter_name": "Geography",
+                "exam_type": "PRELIMS"
+              },
+              {
+                "chapter_id": "df845690-db79-4911-99ae-c2db2b886b38",
+                "chapter_name": "Economy",
+                "exam_type": "PRELIMS"
+              },
+              {
+                "chapter_id": "746ca82a-098c-4f54-b945-8a39d01bdedd",
+                "chapter_name": "Culture & Heritage",
+                "exam_type": "PRELIMS"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "exam_id": "52ef5744-9ea7-4fc5-92e9-c6bd8dd28bc0",
+        "exam_name": "PMPET",
+        "full_name": "Physical Measurement & Physical Efficiency Test",
+        "type": "Physical Test",
+        "subjects": [
+          {
+            "subject_id": "84a6bad4-d9f9-4cfb-b5b0-2ccbbeea636a",
+            "subject_name": "General English-PMPET",
+            "description": "Preposition, Verb, Adverb, Subject-Verb Agreement, Error Correction, Tenses,\r\nSentence Rearrangement, Fill in the Blanks (Articles etc.), Comprehension,\r\nUnseen Passages, Vocabulary, Synonyms and Antonyms.",
+            "chapters": [
+              {
+                "chapter_id": "ec6dd347-a917-4694-b91a-ca029b49ff51",
+                "chapter_name": "Preposition",
+                "exam_type": "MAINS"
+              },
+              {
+                "chapter_id": "5adda8a4-f10a-4c23-b8b3-b33c448ea9dc",
+                "chapter_name": "Verb",
+                "exam_type": "MAINS"
+              },
+              {
+                "chapter_id": "1e2cf339-2e9d-4796-89fe-c139b6113a36",
+                "chapter_name": "Adverb",
+                "exam_type": "MAINS"
+              },
+              {
+                "chapter_id": "74828f23-425f-4fc0-94e6-670218be9f55",
+                "chapter_name": "Subject-Verb Agreement",
+                "exam_type": "MAINS"
+              },
+              {
+                "chapter_id": "8fbe8699-64fd-4333-b004-6c0998927b7a",
+                "chapter_name": "Error Correction / Recognition",
+                "exam_type": "MAINS"
+              },
+              {
+                "chapter_id": "b30b44e8-456f-4df8-833c-eb2a1f30b4e6",
+                "chapter_name": "Tenses",
+                "exam_type": "MAINS"
+              },
+              {
+                "chapter_id": "7d7a1bb8-7526-48e9-8150-c85756059200",
+                "chapter_name": "Sentence Rearrangement",
+                "exam_type": "MAINS"
+              },
+              {
+                "chapter_id": "f29de853-46bf-464e-a13b-2dbd546a1d6a",
+                "chapter_name": "Fill in the Blanks with Articles",
+                "exam_type": "MAINS"
+              },
+              {
+                "chapter_id": "d641a153-358c-402b-be3c-88117e9d69e4",
+                "chapter_name": "Comprehension",
+                "exam_type": "MAINS"
+              },
+              {
+                "chapter_id": "e210ab87-bad5-4b74-a51b-5215b0eb4760",
+                "chapter_name": "Answering Questions based on Unseen Passages",
+                "exam_type": "MAINS"
+              },
+              {
+                "chapter_id": "168fe5ba-07b5-4cc1-b944-28a4ab06b845",
+                "chapter_name": "Vocabulary",
+                "exam_type": "MAINS"
+              },
+              {
+                "chapter_id": "15b9e640-0bce-4731-9e92-b81076bf92be",
+                "chapter_name": "Synonyms and Antonyms",
+                "exam_type": "MAINS"
+              }
+            ]
+          },
+          {
+            "subject_id": "78849598-44b9-4f43-9bcf-fece3e9c65db",
+            "subject_name": "Odia-PMPET",
+            "description": "Translation (English to Odia), Unseen Comprehension,\r\nOdia Vocabulary, Word Formation, Syntax, Spelling,\r\nPunctuation, Synonyms and Antonyms.",
+            "chapters": [
+              {
+                "chapter_id": "efb0ff04-f4ea-4909-b914-09eda0e3b016",
+                "chapter_name": "Translation from English to Odia",
+                "exam_type": "MAINS"
+              },
+              {
+                "chapter_id": "c985339b-b668-4556-8151-e901f6b91a01",
+                "chapter_name": "Comprehension \u2013 Unseen Text",
+                "exam_type": "MAINS"
+              },
+              {
+                "chapter_id": "a3fcd316-50ae-434f-be7c-7f3f1151dc88",
+                "chapter_name": "Odia Vocabulary \u2013 Word Formation and Syntax",
+                "exam_type": "MAINS"
+              },
+              {
+                "chapter_id": "41f2d635-4e09-4952-8535-d040c7a97041",
+                "chapter_name": "Spelling and Punctuation",
+                "exam_type": "MAINS"
+              },
+              {
+                "chapter_id": "69872ba5-26c7-44f9-95c2-d15884f57cac",
+                "chapter_name": "Synonyms and Antonyms",
+                "exam_type": "MAINS"
+              }
+            ]
+          },
+          {
+            "subject_id": "f4ff73ce-8be5-4433-9ad4-4c27adffad8b",
+            "subject_name": "General Studies-PMPET",
+            "description": "General Science and recent technological developments;\r\nIndian History (Ancient & National Movement);\r\nGeography (Physical & Economic);\r\nIndian Agriculture & National Resources;\r\nIndian Polity (Constitution, Panchayati Raj, Administration);\r\nIndian Economy (Planning & Economic Development).",
+            "chapters": [
+              {
+                "chapter_id": "952f366d-3fd5-4ce4-b4be-535340910e59",
+                "chapter_name": "General Science and Recent Scientific & Technological Developments",
+                "exam_type": "MAINS"
+              },
+              {
+                "chapter_id": "681a9e87-7a71-496f-90bf-5bcb8d2a3378",
+                "chapter_name": "History \u2013 India from Ancient Times",
+                "exam_type": "MAINS"
+              },
+              {
+                "chapter_id": "83a15a22-db6f-49d3-a6be-8ed3eaee25dd",
+                "chapter_name": "Indian National Movement",
+                "exam_type": "MAINS"
+              },
+              {
+                "chapter_id": "7266dc8a-5120-4237-b132-7e5389fab6fa",
+                "chapter_name": "Geography \u2013 Physical and Economic Geography of India",
+                "exam_type": "MAINS"
+              },
+              {
+                "chapter_id": "5ee6b757-aefb-42d4-9a4b-532a7072b577",
+                "chapter_name": "Indian Agriculture and National Resources",
+                "exam_type": "MAINS"
+              },
+              {
+                "chapter_id": "5a212055-422a-4727-bf40-1adf0b075317",
+                "chapter_name": "Indian Polity \u2013 Constitution of India",
+                "exam_type": "MAINS"
+              },
+              {
+                "chapter_id": "64583f22-f0d6-436b-be9b-c7cc649d3659",
+                "chapter_name": "Panchayati Raj and Administration",
+                "exam_type": "MAINS"
+              },
+              {
+                "chapter_id": "4606b2a1-fcc1-4d53-930a-c0fb4ff188ca",
+                "chapter_name": "Indian Economy \u2013 Planning and Economic Development",
+                "exam_type": "MAINS"
+              }
+            ]
+          },
+          {
+            "subject_id": "6e06da39-6d5c-43f5-9706-8ed85072bf5e",
+            "subject_name": "Mathematics-PMPET",
+            "description": "Ratio & Proportion, Percentage, Average, Partnership,\r\nQuadratic Equation, Profit & Loss, Time & Work,\r\nPipes & Cisterns, Boats & Stream, Problems on Age,\r\nTrains, Mixture & Allegation, Time-Speed-Distance, Mensuration.",
+            "chapters": [
+              {
+                "chapter_id": "664dad2c-0394-416a-9adf-f23109a83959",
+                "chapter_name": "Ratio and Proportion",
+                "exam_type": "MAINS"
+              },
+              {
+                "chapter_id": "2cf78516-38a7-4f40-81d1-1300205ca94d",
+                "chapter_name": "Percentage",
+                "exam_type": "MAINS"
+              },
+              {
+                "chapter_id": "0eb24585-ca32-4af3-8188-3efd517bce7e",
+                "chapter_name": "Average",
+                "exam_type": "MAINS"
+              },
+              {
+                "chapter_id": "7b0dea32-d96f-4748-bd01-bed0bd21895c",
+                "chapter_name": "Partnership",
+                "exam_type": "MAINS"
+              },
+              {
+                "chapter_id": "0a584b4a-4c61-44b4-9acd-4c23b5baf03f",
+                "chapter_name": "Quadratic Equation",
+                "exam_type": "MAINS"
+              },
+              {
+                "chapter_id": "308dea9e-1207-4011-a132-4d0f43bb06e8",
+                "chapter_name": "Profit and Loss",
+                "exam_type": "MAINS"
+              },
+              {
+                "chapter_id": "ef85b839-7fc7-46f0-8690-1d8ba58f8f33",
+                "chapter_name": "Time and Work",
+                "exam_type": "MAINS"
+              },
+              {
+                "chapter_id": "890bd020-f26c-47a6-b1da-5a1c5111e382",
+                "chapter_name": "Pipes and Cisterns",
+                "exam_type": "MAINS"
+              },
+              {
+                "chapter_id": "5e5e2267-c744-4a87-aadd-cd9ef1b95b16",
+                "chapter_name": "Boats and Streams",
+                "exam_type": "MAINS"
+              },
+              {
+                "chapter_id": "b2afdf0a-7110-49b3-b2ef-f69cae064c49",
+                "chapter_name": "Problems on Ages",
+                "exam_type": "MAINS"
+              },
+              {
+                "chapter_id": "5a1c8369-f28a-4e20-8bc0-6c390b864231",
+                "chapter_name": "Problems on Trains",
+                "exam_type": "MAINS"
+              },
+              {
+                "chapter_id": "71c08628-01be-4622-b546-dddca4c2a5cf",
+                "chapter_name": "Mixture and Alligation",
+                "exam_type": "MAINS"
+              },
+              {
+                "chapter_id": "afd7a0a9-c3cd-4498-ba37-d491927342b6",
+                "chapter_name": "Time, Speed and Distance",
+                "exam_type": "MAINS"
+              },
+              {
+                "chapter_id": "912f1e3c-d6ab-4778-a43a-357c63222717",
+                "chapter_name": "Mensuration",
+                "exam_type": "PRELIMS"
+              }
+            ]
+          },
+          {
+            "subject_id": "4777b998-94c9-4fd0-971b-a858b04dd337",
+            "subject_name": "Reasoning-PMPET",
+            "description": "Verbal: Number Series, Alphabet Series, Direction Sense,\r\nCoding-Decoding, Ranking, Arithmetic Reasoning, Age Problems,\r\nAnalogy, Decision Making.\r\nNon-Verbal: Series, Mirror Images, Cubes & Dice,\r\nGrouping Identical Figures, Embedded Figures.",
+            "chapters": [
+              {
+                "chapter_id": "657bc9b6-4e56-4bd6-a75e-f2a7b0c2ad6e",
+                "chapter_name": "Number Series",
+                "exam_type": "MAINS"
+              },
+              {
+                "chapter_id": "68b52960-0a01-4509-a23b-ac0342cdb5f2",
+                "chapter_name": "Alphabet Series",
+                "exam_type": "MAINS"
+              },
+              {
+                "chapter_id": "01f301a5-b5b0-4d9c-af94-dd7413095928",
+                "chapter_name": "Direction Sense Test",
+                "exam_type": "MAINS"
+              },
+              {
+                "chapter_id": "409a7ebf-a106-4dc2-b9bb-d4bb10b2edd5",
+                "chapter_name": "Coding-Decoding",
+                "exam_type": "MAINS"
+              },
+              {
+                "chapter_id": "e254fd18-8360-4a1f-88b9-67b8bb8a6080",
+                "chapter_name": "Number Ranking",
+                "exam_type": "MAINS"
+              },
+              {
+                "chapter_id": "b98e2f8b-04e4-465d-b9a9-4b6f41fbbcaa",
+                "chapter_name": "Arithmetic Reasoning",
+                "exam_type": "MAINS"
+              },
+              {
+                "chapter_id": "7a67451f-2fdc-4139-b9f7-0d9232794ccf",
+                "chapter_name": "Age Calculation Problems",
+                "exam_type": "MAINS"
+              },
+              {
+                "chapter_id": "1eb2e65d-413b-4378-a8ad-4cbd120aa90d",
+                "chapter_name": "Analogy",
+                "exam_type": "MAINS"
+              },
+              {
+                "chapter_id": "e2d68807-74c8-4211-85c8-87538121d5e2",
+                "chapter_name": "Decision Making",
+                "exam_type": "MAINS"
+              },
+              {
+                "chapter_id": "f75d76da-d793-415c-a94d-e06a4f0692c0",
+                "chapter_name": "Non-Verbal Series",
+                "exam_type": "MAINS"
+              },
+              {
+                "chapter_id": "2e19bfc5-cd0a-41de-bc95-809ba474628f",
+                "chapter_name": "Mirror Images",
+                "exam_type": "MAINS"
+              },
+              {
+                "chapter_id": "4a351e51-9e57-4812-9816-f76039977567",
+                "chapter_name": "Cubes and Dice",
+                "exam_type": "MAINS"
+              },
+              {
+                "chapter_id": "6fcb400e-a235-4907-bfe9-b79a313456d6",
+                "chapter_name": "Grouping of Identical Figures",
+                "exam_type": "MAINS"
+              },
+              {
+                "chapter_id": "8384a147-766b-44ca-970d-d5aa09b8b317",
+                "chapter_name": "Embedded Figures",
+                "exam_type": "MAINS"
+              }
+            ]
+          },
+          {
+            "subject_id": "2ae902c5-57bc-4deb-80c7-1e7c5778dfd7",
+            "subject_name": "Computer Awareness-PMPET",
+            "description": "Introduction to Computer, Computer Architecture,\r\nOperating System, Microsoft Windows, Microsoft Office.",
+            "chapters": [
+              {
+                "chapter_id": "7ef62303-90a5-4c20-9937-b1484fbc5f47",
+                "chapter_name": "Introduction to Computer",
+                "exam_type": "MAINS"
+              },
+              {
+                "chapter_id": "5aa190ef-6c4c-49c0-83c2-c58daa3900c6",
+                "chapter_name": "Computer Architecture",
+                "exam_type": "MAINS"
+              },
+              {
+                "chapter_id": "b1759287-5c23-48a5-90ac-bc5315dfffc4",
+                "chapter_name": "Operating System",
+                "exam_type": "MAINS"
+              },
+              {
+                "chapter_id": "f6977727-03fd-40dd-8eab-646ba88f8c5d",
+                "chapter_name": "Microsoft Windows",
+                "exam_type": "MAINS"
+              },
+              {
+                "chapter_id": "4aedab70-bd2d-4229-ad47-162a6c5491ca",
+                "chapter_name": "Microsoft Office",
+                "exam_type": "MAINS"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "exam_id": "bf7333d8-cab4-49c2-9a80-7458453a5917",
+        "exam_name": "LTR",
+        "full_name": "Leave Training Reserve Teacher Examination",
+        "type": "Teaching",
+        "subjects": []
+      },
+      {
+        "exam_id": "58843e8f-ef30-4033-b2bf-816cbfb29a4b",
+        "exam_name": "BSSO",
+        "full_name": "Block Social Security Officer Examination",
+        "type": "Graduate Level",
+        "subjects": []
+      },
+      {
+        "exam_id": "7d83df73-c84b-420d-ab67-6a1116d119f6",
+        "exam_name": "SCEW",
+        "full_name": "Soil Conservation Extension Worker Examination",
+        "type": "Field Staff",
+        "subjects": []
+      },
+      {
+        "exam_id": "2f6b18b5-0f6a-44db-9bea-31c5abbecad6",
+        "exam_name": "CGL",
+        "full_name": "Combined Graduate Level Examination",
+        "type": "Graduate Level",
+        "subjects": [
+          {
+            "subject_id": "0d3e0ab3-f9d9-4a35-9e17-4c5a6025b177",
+            "subject_name": "General Studies",
+            "description": "Polity, Economy, History, Geography, Odisha GK & Current Affairs.",
+            "chapters": [
+              {
+                "chapter_id": "0c7bf036-8e39-495d-845e-eeffb325fbd7",
+                "chapter_name": "Economy & Banking",
+                "exam_type": "PRELIMS"
+              },
+              {
+                "chapter_id": "385cc967-47b7-4272-9918-e78f95058378",
+                "chapter_name": "Science & Technology",
+                "exam_type": "PRELIMS"
+              },
+              {
+                "chapter_id": "7c954e83-a379-43e2-90cd-cc6a8da23e80",
+                "chapter_name": "Defence & Space",
+                "exam_type": "PRELIMS"
+              },
+              {
+                "chapter_id": "ea744b3f-7e56-4ba6-8b3e-0053933891ad",
+                "chapter_name": "Sports, Awards & Summits",
+                "exam_type": "PRELIMS"
+              },
+              {
+                "chapter_id": "d92d6012-ec9e-4ed7-9205-82265b66304c",
+                "chapter_name": "Odisha-specific Current Affairs",
+                "exam_type": "PRELIMS"
+              }
+            ]
+          },
+          {
+            "subject_id": "7dee4ca4-f673-4fb4-b51e-ca3ee132bb35",
+            "subject_name": "Arithmetic and Data Interpretation",
+            "description": "Quantitative aptitude: percentage, ratio, profit & loss, time & work, SI/CI.",
+            "chapters": [
+              {
+                "chapter_id": "fe2f35f0-5007-423a-b88b-6235a6b59fe5",
+                "chapter_name": "Number Basics \u2013 Number System, Fractions, Decimals",
+                "exam_type": "MAINS"
+              },
+              {
+                "chapter_id": "1dc54eaf-a7d0-4579-b5fd-e0e884c18d42",
+                "chapter_name": "Simplification & BODMAS",
+                "exam_type": "PRELIMS"
+              },
+              {
+                "chapter_id": "c17c6342-505c-4f6d-9688-6862bb56bc3c",
+                "chapter_name": "Squares, Cubes & Roots",
+                "exam_type": "PRELIMS"
+              },
+              {
+                "chapter_id": "a3c021a7-5074-4b3f-9030-275fefd06714",
+                "chapter_name": "Surds & Indices",
+                "exam_type": "PRELIMS"
+              },
+              {
+                "chapter_id": "948a230b-83fd-4f58-85a4-c896e9ff5072",
+                "chapter_name": "HCF, LCM & Divisibility",
+                "exam_type": "PRELIMS"
+              },
+              {
+                "chapter_id": "02d64910-6e29-4169-8388-a5051f855fc7",
+                "chapter_name": "Ratio, Proportion & Alligation",
+                "exam_type": "PRELIMS"
+              },
+              {
+                "chapter_id": "f574e55e-452f-4a32-92f0-41c08eb0a709",
+                "chapter_name": "Percentage, Profit, Loss & Discount",
+                "exam_type": "PRELIMS"
+              },
+              {
+                "chapter_id": "7c50893f-e668-4b96-b6ee-52f78247fd90",
+                "chapter_name": "Simple & Compound Interest",
+                "exam_type": "PRELIMS"
+              },
+              {
+                "chapter_id": "8193ae34-5310-4440-909b-6e52f1f060ef",
+                "chapter_name": "Average, Ages & Partnership",
+                "exam_type": "PRELIMS"
+              },
+              {
+                "chapter_id": "a0befc7c-49a1-4358-b8fc-dd6df429eaac",
+                "chapter_name": "Time & Work, Work & Wages, Pipes & Cisterns",
+                "exam_type": "PRELIMS"
+              },
+              {
+                "chapter_id": "382e2121-8de4-4938-8c21-ad6b62a0e082",
+                "chapter_name": "Speed, Distance, Trains, Boats",
+                "exam_type": "PRELIMS"
+              },
+              {
+                "chapter_id": "3ad8a0e8-2693-403d-8fd2-968573b6b064",
+                "chapter_name": "Mensuration",
+                "exam_type": "PRELIMS"
+              },
+              {
+                "chapter_id": "8b9dc51e-d8f5-4a29-8c2c-381f4569158a",
+                "chapter_name": "Pie Charts",
+                "exam_type": "PRELIMS"
+              },
+              {
+                "chapter_id": "1f865d89-a75d-4b15-b3cc-fd618439d6dc",
+                "chapter_name": "Bar Graphs",
+                "exam_type": "PRELIMS"
+              },
+              {
+                "chapter_id": "4a35f603-49b2-42cd-861c-8efa959e2b85",
+                "chapter_name": "Tabulation",
+                "exam_type": "PRELIMS"
+              },
+              {
+                "chapter_id": "a2038484-ddbf-4bc6-92b0-7055b3d0a4fc",
+                "chapter_name": "Line Graph",
+                "exam_type": "PRELIMS"
+              },
+              {
+                "chapter_id": "80dd87a5-bf8f-4f57-b18c-10fe8b26b3ba",
+                "chapter_name": "Caselet DI",
+                "exam_type": "PRELIMS"
+              }
+            ]
+          },
+          {
+            "subject_id": "09083f66-28ea-4f34-abdf-88138100a2dd",
+            "subject_name": "Logical Reasoning",
+            "description": "Logical reasoning, analytical ability, puzzles and decision making.",
+            "chapters": [
+              {
+                "chapter_id": "4d46ff8a-ef0b-4e97-b698-5721bdf997da",
+                "chapter_name": "Coding\u2013Decoding",
+                "exam_type": "PRELIMS"
+              },
+              {
+                "chapter_id": "f444c2c5-7707-4515-87b2-3f5f26521c6a",
+                "chapter_name": "Blood Relation & Direction",
+                "exam_type": "PRELIMS"
+              },
+              {
+                "chapter_id": "92f9fbdd-824a-4747-bcf4-3df31af035e3",
+                "chapter_name": "Order, Ranking & Scheduling",
+                "exam_type": "PRELIMS"
+              },
+              {
+                "chapter_id": "fbf8a8a6-0712-44ea-9652-b289b8a6b630",
+                "chapter_name": "Statement-Based Reasoning (Assumption, Conclusion, Syllogism)",
+                "exam_type": "PRELIMS"
+              },
+              {
+                "chapter_id": "2cef5113-5d5d-4937-9ab4-aa8f3b1a19de",
+                "chapter_name": "Data Sufficiency & Decision Making",
+                "exam_type": "PRELIMS"
+              },
+              {
+                "chapter_id": "82fb234a-0a15-495c-9896-e732ef1c91be",
+                "chapter_name": "Puzzles & Seating Arrangement",
+                "exam_type": "PRELIMS"
+              },
+              {
+                "chapter_id": "2741c74e-0d60-417a-9a69-8cafda4caff2",
+                "chapter_name": "Analogy, Classification & Odd One Out",
+                "exam_type": "PRELIMS"
+              },
+              {
+                "chapter_id": "4f6147cb-3ac8-4b08-ad6b-6de5bbd3895d",
+                "chapter_name": "Venn Diagram",
+                "exam_type": "PRELIMS"
+              },
+              {
+                "chapter_id": "a646a347-d022-4e17-a56f-0073e8e1b61f",
+                "chapter_name": "Clock & Calendar",
+                "exam_type": "PRELIMS"
+              },
+              {
+                "chapter_id": "28b9ae41-bab6-4d6f-8979-4270783934be",
+                "chapter_name": "Non-Verbal & Pattern Recognition",
+                "exam_type": "PRELIMS"
+              },
+              {
+                "chapter_id": "b4b3e543-e191-47c7-8d2a-a421c4376138",
+                "chapter_name": "Miscellaneous",
+                "exam_type": "PRELIMS"
+              }
+            ]
+          },
+          {
+            "subject_id": "6fdb7f5a-cce6-4c16-8d0e-b8f76423fc00",
+            "subject_name": "Computer Awareness",
+            "description": "Basic computer knowledge, MS Office, internet & digital awareness.",
+            "chapters": [
+              {
+                "chapter_id": "b8411ef1-21e5-4215-a456-6ff957b29696",
+                "chapter_name": "Computer Fundamentals",
+                "exam_type": "PRELIMS"
+              },
+              {
+                "chapter_id": "c7b62ca5-5e6d-4ed8-a2bf-3fe872c270f5",
+                "chapter_name": "Hardware & Software",
+                "exam_type": "PRELIMS"
+              },
+              {
+                "chapter_id": "ee2e0684-1a7b-49b4-8b57-53c2d09063af",
+                "chapter_name": "MS Office (Word, Excel, PowerPoint)",
+                "exam_type": "PRELIMS"
+              },
+              {
+                "chapter_id": "2afdd99b-3fd6-4c29-bded-4252894b5478",
+                "chapter_name": "Internet & Networking",
+                "exam_type": "PRELIMS"
+              },
+              {
+                "chapter_id": "25eb9051-919e-47d0-b0e1-80970a232d86",
+                "chapter_name": "Database & Programming Basics",
+                "exam_type": "PRELIMS"
+              }
+            ]
+          },
+          {
+            "subject_id": "67776002-df33-4c0e-a2b6-de95f91e31dc",
+            "subject_name": "English",
+            "description": "Grammar, vocabulary, comprehension & sentence correction.",
+            "chapters": [
+              {
+                "chapter_id": "cbce0225-b58d-48fe-8a56-d0adbfab1d31",
+                "chapter_name": "Miscellaneous",
+                "exam_type": "MAINS"
+              }
+            ]
+          },
+          {
+            "subject_id": "f0f0d8cb-de93-431d-b8a9-0d601d1d6bff",
+            "subject_name": "General Knowledge (Odisha)",
+            "description": "History, Geography, comprehension & Culture & heritage.",
+            "chapters": [
+              {
+                "chapter_id": "11f43cb3-14ae-415b-a60e-089bb041e82d",
+                "chapter_name": "History",
+                "exam_type": "PRELIMS"
+              },
+              {
+                "chapter_id": "2930cc1a-4f93-4c3a-9fb0-8e5e904ae43c",
+                "chapter_name": "Geography",
+                "exam_type": "PRELIMS"
+              },
+              {
+                "chapter_id": "df845690-db79-4911-99ae-c2db2b886b38",
+                "chapter_name": "Economy",
+                "exam_type": "PRELIMS"
+              },
+              {
+                "chapter_id": "746ca82a-098c-4f54-b945-8a39d01bdedd",
+                "chapter_name": "Culture & Heritage",
+                "exam_type": "PRELIMS"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "exam_id": "af17ee6f-8b1f-4557-9a76-c38e343fc7b6",
+        "exam_name": "CHSL",
+        "full_name": "Combined Higher Secondary Level Examination",
+        "type": "12th Level",
+        "subjects": []
+      }
+    ]
+  },
+  {
+    "board_id": "425294a8-89d1-41c8-b397-d1dba5adaceb",
+    "board_name": "OPSSB",
+    "full_name": "Odisha Police State Selection Board",
+    "description": "Conducts recruitment for Odisha Police constables, SI and other posts.",
+    "exams": []
+  },
+  {
+    "board_id": "d0c1bc3a-575b-43ae-b8b4-fcb63eb0aced",
+    "board_name": "OSCB",
+    "full_name": "Odisha State Cooperative Bank Recruitment",
+    "description": "Manages recruitment for cooperative banks under Odisha government.",
+    "exams": []
+  },
+  {
+    "board_id": "64821cd7-88bb-4500-9d33-e1aa6fd14e23",
+    "board_name": "OHPC",
+    "full_name": "Odisha Hydro Power Corporation Recruitment",
+    "description": "Handles recruitment for technical and administrative posts in OHPC.",
+    "exams": []
+  },
+  {
+    "board_id": "118d0b6b-28af-472a-8d67-4830a0e6142a",
+    "board_name": "OTET ",
+    "full_name": "Odisha Teacher Eligibility Test Board",
+    "description": "Conducts OTET examination for teacher eligibility in Odisha schools.",
+    "exams": []
+  },
+  {
+    "board_id": "fb48faf0-1993-479d-bf58-1b01911f6594",
+    "board_name": "SSBO",
+    "full_name": "State Selection Board Odisha",
+    "description": "Responsible for recruitment of lecturers and teaching posts in Odisha government colleges.",
+    "exams": []
+  }
+]

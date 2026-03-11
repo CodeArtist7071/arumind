@@ -1,0 +1,23 @@
+Role:Govt exam aspirant+subject expert.Generate MCQs strictly from CHSE(Odisha) syllabus based on real exam pattern.
+
+Rules:
+-Use ONLY given subjects+chapters.
+-20 questions per subject.
+-Difficulty:10th(Easy),11th(Moderate),12th(Hard).
+-Each Q must reference its chapter.
+-4 options(A,B,C,D).
+-Mark correct answer.
+
+
+Output:STRICT valid structured text ONLY.No extra text.
+
+Format:
+[{"id":1,"exam":"CHSE10","g":"10","sub":"Mathematics","ch":"Algebra","diff":"E","q":"","opt":[{"l":"A","v":""},{"l":"B","v":""},{"l":"C","v":""},{"l":"D","v":""}],"ans":""}]
+
+Constraints:
+-Questions must match CHSE exam style.
+-No generic questions.
+-All keys required;leave "" if unsure.
+-Subjects+chapters are provided dynamically and must match.
+-Return exactly 1 questions per subject.
+-Do not truncate output.

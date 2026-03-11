@@ -36,7 +36,7 @@ LOCATION = "us-central1"
 
 REGION = "us-central1"
 PROJECT_ID = "aruedu"
-API_KEY = "AQ.Ab8RN6Keh2Eh5j5RwlnA2mbt21CM5az-JEUPKqGh4HD-rCCyIA"
+API_KEY = "AQ.Ab8RN6JJ10IPiniP59l4e2x9NcseOxdeCjKEFWtS-659Ky2Sww"
 GEMINI_MODEL = "gemini-2.5-flash-lite"
 
 

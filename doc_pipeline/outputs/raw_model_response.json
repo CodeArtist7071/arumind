@@ -1,0 +1,422 @@
+[
+  {
+    "id": 1,
+    "exam": "CHSE10",
+    "g": "10",
+    "sub": "General Studies",
+    "ch": "Science & Technology",
+    "diff": "E",
+    "q": "Which of the following is the basic unit of life? (Chapter: Biology Basics)",
+    "opt": [
+      {
+        "l": "A",
+        "v": "Atom"
+      },
+      {
+        "l": "B",
+        "v": "Cell"
+      },
+      {
+        "l": "C",
+        "v": "Molecule"
+      },
+      {
+        "l": "D",
+        "v": "Organ"
+      }
+    ],
+    "ans": "B"
+  },
+  {
+    "id": 2,
+    "exam": "CHSE10",
+    "g": "10",
+    "sub": "General Studies",
+    "ch": "Science & Technology",
+    "diff": "E",
+    "q": "What is the chemical symbol for water? (Chapter: Basic Chemistry)",
+    "opt": [
+      {
+        "l": "A",
+        "v": "O2"
+      },
+      {
+        "l": "B",
+        "v": "CO2"
+      },
+      {
+        "l": "C",
+        "v": "H2O"
+      },
+      {
+        "l": "D",
+        "v": "NaCl"
+      }
+    ],
+    "ans": "C"
+  },
+  {
+    "id": 3,
+    "exam": "CHSE10",
+    "g": "10",
+    "sub": "General Studies",
+    "ch": "Science & Technology",
+    "diff": "E",
+    "q": "Which planet is known as the Red Planet? (Chapter: Solar System)",
+    "opt": [
+      {
+        "l": "A",
+        "v": "Earth"
+      },
+      {
+        "l": "B",
+        "v": "Mars"
+      },
+      {
+        "l": "C",
+        "v": "Jupiter"
+      },
+      {
+        "l": "D",
+        "v": "Venus"
+      }
+    ],
+    "ans": "B"
+  },
+  {
+    "id": 4,
+    "exam": "CHSE10",
+    "g": "10",
+    "sub": "General Studies",
+    "ch": "Science & Technology",
+    "diff": "E",
+    "q": "What force keeps us on the ground? (Chapter: Physics Fundamentals)",
+    "opt": [
+      {
+        "l": "A",
+        "v": "Magnetism"
+      },
+      {
+        "l": "B",
+        "v": "Friction"
+      },
+      {
+        "l": "C",
+        "v": "Gravity"
+      },
+      {
+        "l": "D",
+        "v": "Electricity"
+      }
+    ],
+    "ans": "C"
+  },
+  {
+    "id": 5,
+    "exam": "CHSE10",
+    "g": "10",
+    "sub": "General Studies",
+    "ch": "Science & Technology",
+    "diff": "E",
+    "q": "What is the process by which plants make their own food? (Chapter: Photosynthesis)",
+    "opt": [
+      {
+        "l": "A",
+        "v": "Respiration"
+      },
+      {
+        "l": "B",
+        "v": "Transpiration"
+      },
+      {
+        "l": "C",
+        "v": "Fermentation"
+      },
+      {
+        "l": "D",
+        "v": "Photosynthesis"
+      }
+    ],
+    "ans": "D"
+  },
+  {
+    "id": 6,
+    "exam": "CHSE11",
+    "g": "11",
+    "sub": "General Studies",
+    "ch": "Science & Technology",
+    "diff": "M",
+    "q": "Which of the following is a non-renewable source of energy? (Chapter: Energy Resources)",
+    "opt": [
+      {
+        "l": "A",
+        "v": "Solar Energy"
+      },
+      {
+        "l": "B",
+        "v": "Wind Energy"
+      },
+      {
+        "l": "C",
+        "v": "Coal"
+      },
+      {
+        "l": "D",
+        "v": "Hydroelectric Power"
+      }
+    ],
+    "ans": "C"
+  },
+  {
+    "id": 7,
+    "exam": "CHSE11",
+    "g": "11",
+    "sub": "General Studies",
+    "ch": "Science & Technology",
+    "diff": "M",
+    "q": "What is the primary function of red blood cells? (Chapter: Human Physiology)",
+    "opt": [
+      {
+        "l": "A",
+        "v": "Fight infections"
+      },
+      {
+        "l": "B",
+        "v": "Carry oxygen"
+      },
+      {
+        "l": "C",
+        "v": "Clot blood"
+      },
+      {
+        "l": "D",
+        "v": "Produce antibodies"
+      }
+    ],
+    "ans": "B"
+  },
+  {
+    "id": 8,
+    "exam": "CHSE11",
+    "g": "11",
+    "sub": "General Studies",
+    "ch": "Science & Technology",
+    "diff": "M",
+    "q": "Which gas is primarily responsible for the greenhouse effect? (Chapter: Environmental Science)",
+    "opt": [
+      {
+        "l": "A",
+        "v": "Nitrogen"
+      },
+      {
+        "l": "B",
+        "v": "Oxygen"
+      },
+      {
+        "l": "C",
+        "v": "Carbon Dioxide"
+      },
+      {
+        "l": "D",
+        "v": "Methane"
+      }
+    ],
+    "ans": "C"
+  },
+  {
+    "id": 9,
+    "exam": "CHSE11",
+    "g": "11",
+    "sub": "General Studies",
+    "ch": "Science & Technology",
+    "diff": "M",
+    "q": "The speed of light in a vacuum is approximately: (Chapter: Optics and Waves)",
+    "opt": [
+      {
+        "l": "A",
+        "v": "3 x 10^6 m/s"
+      },
+      {
+        "l": "B",
+        "v": "3 x 10^8 m/s"
+      },
+      {
+        "l": "C",
+        "v": "3 x 10^10 m/s"
+      },
+      {
+        "l": "D",
+        "v": "3 x 10^12 m/s"
+      }
+    ],
+    "ans": "B"
+  },
+  {
+    "id": 10,
+    "exam": "CHSE11",
+    "g": "11",
+    "sub": "General Studies",
+    "ch": "Science & Technology",
+    "diff": "M",
+    "q": "What is the process of converting nitrogen gas from the atmosphere into ammonia? (Chapter: Industrial Chemistry)",
+    "opt": [
+      {
+        "l": "A",
+        "v": "Contact Process"
+      },
+      {
+        "l": "B",
+        "v": "Haber Process"
+      },
+      {
+        "l": "C",
+        "v": "Solvay Process"
+      },
+      {
+        "l": "D",
+        "v": "Ostwald Process"
+      }
+    ],
+    "ans": "B"
+  },
+  {
+    "id": 11,
+    "exam": "CHSE12",
+    "g": "12",
+    "sub": "General Studies",
+    "ch": "Science & Technology",
+    "diff": "H",
+    "q": "Which of the following is a characteristic feature of nanotechnology? (Chapter: Emerging Technologies)",
+    "opt": [
+      {
+        "l": "A",
+        "v": "Working at the atomic and molecular scale"
+      },
+      {
+        "l": "B",
+        "v": "Utilizing macroscopic materials"
+      },
+      {
+        "l": "C",
+        "v": "Focusing on large-scale engineering"
+      },
+      {
+        "l": "D",
+        "v": "Dealing with biological processes only"
+      }
+    ],
+    "ans": "A"
+  },
+  {
+    "id": 12,
+    "exam": "CHSE12",
+    "g": "12",
+    "sub": "General Studies",
+    "ch": "Science & Technology",
+    "diff": "H",
+    "q": "CRISPR-Cas9 technology is primarily used for: (Chapter: Biotechnology and Genetic Engineering)",
+    "opt": [
+      {
+        "l": "A",
+        "v": "Fertilizer production"
+      },
+      {
+        "l": "B",
+        "v": "Gene editing"
+      },
+      {
+        "l": "C",
+        "v": "Antibiotic synthesis"
+      },
+      {
+        "l": "D",
+        "v": "Water purification"
+      }
+    ],
+    "ans": "B"
+  },
+  {
+    "id": 13,
+    "exam": "CHSE12",
+    "g": "12",
+    "sub": "General Studies",
+    "ch": "Science & Technology",
+    "diff": "H",
+    "q": "The Large Hadron Collider (LHC) is primarily used for research in which field of physics? (Chapter: Particle Physics and Astrophysics)",
+    "opt": [
+      {
+        "l": "A",
+        "v": "Quantum Mechanics"
+      },
+      {
+        "l": "B",
+        "v": "Nuclear Physics"
+      },
+      {
+        "l": "C",
+        "v": "Particle Physics"
+      },
+      {
+        "l": "D",
+        "v": "Thermodynamics"
+      }
+    ],
+    "ans": "C"
+  },
+  {
+    "id": 14,
+    "exam": "CHSE12",
+    "g": "12",
+    "sub": "General Studies",
+    "ch": "Science & Technology",
+    "diff": "H",
+    "q": "Which of the following best describes Artificial Intelligence (AI)? (Chapter: Computer Science and AI)",
+    "opt": [
+      {
+        "l": "A",
+        "v": "The study of living organisms"
+      },
+      {
+        "l": "B",
+        "v": "The creation of intelligent agents that can reason, learn, and act autonomously"
+      },
+      {
+        "l": "C",
+        "v": "The manipulation of atomic structures"
+      },
+      {
+        "l": "D",
+        "v": "The understanding of planetary motion"
+      }
+    ],
+    "ans": "B"
+  },
+  {
+    "id": 15,
+    "exam": "CHSE12",
+    "g": "12",
+    "sub": "General Studies",
+    "ch": "Science & Technology",
+    "diff": "H",
+    "q": "What is the primary mechanism behind the functioning of a Lithium-ion battery? (Chapter: Electrochemistry and Materials Science)",
+    "opt": [
+      {
+        "l": "A",
+        "v": "Transfer of electrons between anode and cathode through an external circuit"
+      },
+      {
+        "l": "B",
+        "v": "Movement of ions between electrodes through an electrolyte"
+      },
+      {
+        "l": "C",
+        "v": "Chemical reaction producing heat"
+      },
+      {
+        "l": "D",
+        "v": "Absorption of light energy"
+      }
+    ],
+    "ans": "B"
+  }
+]
