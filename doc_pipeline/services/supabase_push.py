@@ -27,53 +27,34 @@ def upload_diagram_to_supabase(filepath, filename):
         return f"/local/{filepath}"
 
 
-def push_english(data, fallback_subject_id=None, fallback_exam_id=None):
-    """
-    Push questions to Supabase using upsert (insert or update on conflict).
-    Uses each question's own subject_id / exam_id / chapter_id.
-    Falls back to the provided values only if the question is missing them.
-    Skips any question that still has no subject_id or exam_id.
-    """
-    pushed = 0
-    skipped = 0
-    errors = 0
+def push_english(data, subject_id, exam_id):
+
+    print("is data coming", data)
 
     for q in data:
+
+        # Copy to avoid mutating the original file data
         payload = dict(q)
-
-        # Use per-question IDs, fall back to pipeline-level values if missing
-        if not payload.get("subject_id"):
-            payload["subject_id"] = fallback_subject_id
-        if not payload.get("exam_id"):
-            payload["exam_id"] = fallback_exam_id
-
-        # Skip if still missing required fields
-        if not payload.get("subject_id") or not payload.get("exam_id"):
-            print(f"[PUSH] SKIP Q{q.get('question_number')} — missing subject_id or exam_id")
-            skipped += 1
-            continue
-
-        # Strip fields not in the Supabase schema
-        for key in ["diagram_present", "linked_questions", "appear_year",
-                    "question_number", "diagram_note"]:
-            payload.pop(key, None)
-
-        # Ensure chapter_id is present (null is fine, but key must exist)
-        payload.setdefault("chapter_id", None)
+        payload["subject_id"] = subject_id
+        payload["exam_id"] = exam_id
+        
+        # Remove keys that aren't inside the Supabase schema yet to prevent PGRST204 errors
+        payload.pop("diagram_present", None)
+        payload.pop("linked_questions", None)
+        payload.pop("appear_year", None)
+        payload.pop("question_number", None)
+        payload.pop("diagram_note", None)
 
         try:
-            supabase.table("questions").upsert(
-                payload,
-                on_conflict="question"   # unique key in your schema
-            ).execute()
-            pushed += 1
-            print(f"[PUSH] ✓ Q{q.get('question_number')} upserted")
+            # Upsert using 'question' as the conflict key (since there is a unique constraint on it)
+            # If your table doesn't support ON CONFLICT easily from the python SDK, we catch the APIError
+            supabase.table("questions").upsert(payload, on_conflict="question").execute()
+            print(f"✓ Pushed: {q.get('question_number', '?')}")
         except Exception as e:
-            print(f"[PUSH] ✗ Q{q.get('question_number')} error: {e}")
-            errors += 1
-
-    print(f"[PUSH] Done — pushed: {pushed} | skipped: {skipped} | errors: {errors}")
-
+            if "already exists" in str(e):
+                print(f"⚠ Skipped duplicate: {q.get('question', '')[:50]}...")
+            else:
+                print(f"✗ Failed to push Q{q.get('question_number', '?')}: {e}")
 
 
 

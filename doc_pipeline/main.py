@@ -287,144 +287,145 @@ def process_pdf(pdf_path):
     else:
         log("[CHECKPOINT] Running OCR + Parse ...")
 
-        log("--------------------------------------------------")
-        log(f"Processing page {i+1}/{len(images)}")
+        for i, img in enumerate(images):
+            log("--------------------------------------------------")
+            log(f"Processing page {i+1}/{len(images)}")
 
-        try:
+            try:
 
-            # --------------------------
-            # IMAGE PREPROCESSING
-            # --------------------------
-            log("Running Image Preprocessing")
-            from services.image_preprocessor import preprocess_for_ocr
-            processed_img = preprocess_for_ocr(img)
+                # --------------------------
+                # IMAGE PREPROCESSING
+                # --------------------------
+                log("Running Image Preprocessing")
+                from services.image_preprocessor import preprocess_for_ocr
+                processed_img = preprocess_for_ocr(img)
 
-            # --------------------------
-            # OCR
-            # --------------------------
-            log("Running OCR extraction")
+                # --------------------------
+                # OCR
+                # --------------------------
+                log("Running OCR extraction")
 
-            annotation = extract_text(processed_img)
+                annotation = extract_text(processed_img)
 
-            log(f"OCR extraction complete. Type returned: {type(annotation)}")
+                log(f"OCR extraction complete. Type returned: {type(annotation)}")
 
-            # --------------------------
-            # BLOCK EXTRACTION
-            # --------------------------
-            log("Extracting layout blocks")
+                # --------------------------
+                # BLOCK EXTRACTION
+                # --------------------------
+                log("Extracting layout blocks")
 
-            blocks = extract_blocks(annotation)
-            from services.qwen_parser import detect_exam_board_and_subject
-            page_text = blocks_to_text(blocks)
-            s_id, e_id = detect_exam_board_and_subject(page_text)
+                blocks = extract_blocks(annotation)
+                from services.qwen_parser import detect_exam_board_and_subject
+                page_text = blocks_to_text(blocks)
+                s_id, e_id = detect_exam_board_and_subject(page_text)
             
-            if i < 4 and e_id and not global_exam_id:
-                global_exam_id = e_id
-                log(f"Global Exam ID locked from page {i+1}: {global_exam_id}")
+                if i < 4 and e_id and not global_exam_id:
+                    global_exam_id = e_id
+                    log(f"Global Exam ID locked from page {i+1}: {global_exam_id}")
             
-            # We explicitly ignore s_id here in favor of structure-based chronological Subject Tracking below.
+                # We explicitly ignore s_id here in favor of structure-based chronological Subject Tracking below.
 
-            log(f"Blocks extracted: {len(blocks)}")
+                log(f"Blocks extracted: {len(blocks)}")
 
-            # --------------------------
-            # SORT BLOCKS
-            # --------------------------
-            log("Sorting blocks in reading order")
+                # --------------------------
+                # SORT BLOCKS
+                # --------------------------
+                log("Sorting blocks in reading order")
 
-            blocks = sort_blocks(blocks)
+                blocks = sort_blocks(blocks)
 
-            log("Block sorting completed")
+                log("Block sorting completed")
 
-            # --------------------------
-            # CLEAN BLOCKS
-            # --------------------------
-            log("Cleaning noise blocks")
+                # --------------------------
+                # CLEAN BLOCKS
+                # --------------------------
+                log("Cleaning noise blocks")
 
-            blocks = clean_blocks(blocks)
+                blocks = clean_blocks(blocks)
 
-            log(f"Blocks remaining after cleaning: {len(blocks)}")
+                log(f"Blocks remaining after cleaning: {len(blocks)}")
 
-            # --------------------------
-            # SPLIT DIAGRAMS
-            # --------------------------
-            log("Separating diagram blocks")
+                # --------------------------
+                # SPLIT DIAGRAMS
+                # --------------------------
+                log("Separating diagram blocks")
 
-            text_blocks, diagram_blocks = split_diagram_blocks(blocks, processed_img)
+                text_blocks, diagram_blocks = split_diagram_blocks(blocks, processed_img)
 
-            log(f"Text blocks: {len(text_blocks)}")
-            log(f"Diagram blocks: {len(diagram_blocks)}")
+                log(f"Text blocks: {len(text_blocks)}")
+                log(f"Diagram blocks: {len(diagram_blocks)}")
 
-            # --------------------------
-            # BUILD CLUSTERS
-            # --------------------------
-            log("Building question clusters and resolving stateful headings")
+                # --------------------------
+                # BUILD CLUSTERS
+                # --------------------------
+                log("Building question clusters and resolving stateful headings")
 
-            clusters, current_subject_id = build_question_clusters(text_blocks, current_subject_id)
+                clusters, current_subject_id = build_question_clusters(text_blocks, current_subject_id)
 
-            log(f"{len(clusters)} clusters detected on page {i+1}")
+                log(f"{len(clusters)} clusters detected on page {i+1}")
 
-            # --------------------------
-            # DIAGRAM LINKING
-            # --------------------------
-            log("Linking diagrams to clusters")
+                # --------------------------
+                # DIAGRAM LINKING
+                # --------------------------
+                log("Linking diagrams to clusters")
 
-            attach_diagrams_to_clusters(clusters, diagram_blocks, text_blocks, processed_img)
+                attach_diagrams_to_clusters(clusters, diagram_blocks, text_blocks, processed_img)
 
-            log("Diagram linking completed")
+                log("Diagram linking completed")
 
-            # --------------------------
-            # PROCESS CLUSTERS
-            # --------------------------
-            for c_idx, cluster in enumerate(clusters):
+                # --------------------------
+                # PROCESS CLUSTERS
+                # --------------------------
+                for c_idx, cluster in enumerate(clusters):
 
-                log(f"Processing cluster {c_idx+1}/{len(clusters)}")
+                    log(f"Processing cluster {c_idx+1}/{len(clusters)}")
 
-                cluster_text = cluster_to_text(cluster)
+                    cluster_text = cluster_to_text(cluster)
 
-                log(f"Cluster text length: {len(cluster_text)} characters")
+                    log(f"Cluster text length: {len(cluster_text)} characters")
 
-                debug_text += cluster_text + "\n\n"
+                    debug_text += cluster_text + "\n\n"
 
-                try:
+                    try:
 
-                    log("Sending cluster to parser")
+                        log("Sending cluster to parser")
                     
-                    cluster_subject_id = cluster.get("subject_id") or current_subject_id
-                    json_data = parse_to_json(cluster_text, cluster_subject_id, global_exam_id)
+                        cluster_subject_id = cluster.get("subject_id") or current_subject_id
+                        json_data = parse_to_json(cluster_text, cluster_subject_id, global_exam_id)
 
-                    log(f"Parser returned type: {type(json_data)}")
+                        log(f"Parser returned type: {type(json_data)}")
                     
-                    # Extract the questions list whether it's wrapped in a dict or standalone
-                    if isinstance(json_data, dict) and "questions" in json_data:
-                        parsed_questions = json_data["questions"]
-                    elif isinstance(json_data, list):
-                        parsed_questions = json_data
-                    else:
-                        parsed_questions = []
+                        # Extract the questions list whether it's wrapped in a dict or standalone
+                        if isinstance(json_data, dict) and "questions" in json_data:
+                            parsed_questions = json_data["questions"]
+                        elif isinstance(json_data, list):
+                            parsed_questions = json_data
+                        else:
+                            parsed_questions = []
 
-                    if isinstance(parsed_questions, list) and len(parsed_questions) > 0:
+                        if isinstance(parsed_questions, list) and len(parsed_questions) > 0:
 
-                        log(f"{len(parsed_questions)} questions parsed from cluster")
+                            log(f"{len(parsed_questions)} questions parsed from cluster")
 
-                        for q in parsed_questions:
-                            q["diagram_present"] = cluster.get("diagram", False)
-                            q["diagram_url"] = cluster.get("diagram_url", None)
+                            for q in parsed_questions:
+                                q["diagram_present"] = cluster.get("diagram", False)
+                                q["diagram_url"] = cluster.get("diagram_url", None)
 
-                        all_questions.extend(parsed_questions)
+                            all_questions.extend(parsed_questions)
 
-                        log(f"Total accumulated questions: {len(all_questions)}")
+                            log(f"Total accumulated questions: {len(all_questions)}")
 
-                    else:
+                        else:
 
-                        log("Parser output empty or not a list. Cluster skipped.")
+                            log("Parser output empty or not a list. Cluster skipped.")
 
-                except Exception as e:
+                    except Exception as e:
 
-                    log(f"Cluster parse error: {e}")
+                        log(f"Cluster parse error: {e}")
 
-        except Exception as e:
+            except Exception as e:
 
-            log(f"OCR error on page {i+1}: {e}")
+                log(f"OCR error on page {i+1}: {e}")
 
         log("--------------------------------------------------")
         log("OCR processing completed")
@@ -552,6 +553,8 @@ def process_pdf(pdf_path):
     finetuned_path = os.path.join("outputs", f"{pdf_stem}_finetuned.json")
     if cp["finetuned_done"] and os.path.exists(finetuned_path):
         log("[CHECKPOINT] ✓ Fine-tuning already done — skipping Gemini cleaning")
+        with open(finetuned_path, encoding="utf-8") as f:
+            finetuned_questions = json.load(f)
     else:
         log("[CHECKPOINT] Fine-tuning questions via Gemini (cleaning OCR noise) ...")
         finetuned_questions = finetune_questions(all_questions)
@@ -567,15 +570,22 @@ def process_pdf(pdf_path):
     log(f"Final Detected Exam ID: {global_exam_id}")
     log(f"Final Detected Subject ID: {current_subject_id}")
 
-    if not global_exam_id and not current_subject_id:
-        log("WARNING: No exam_id or subject_id detected — questions with missing IDs will be skipped during push")
+    if not global_exam_id or not current_subject_id:
+        log("Exam or subject detection failed. Skipping Supabase push.")
+        return
+    else:
+        log("Questions contain fully mapped subject_id, exam_id, and chapter_id.")
+        # push_english(all_questions, current_subject_id, global_exam_id)
+        pass
 
     # --------------------------
     # PUSH TO SUPABASE
     # --------------------------
-    log("Pushing questions to Supabase ...")
-    push_english(all_questions, fallback_subject_id=current_subject_id, fallback_exam_id=global_exam_id)
-    log("Supabase push complete")
+    log("Pushing English questions to Supabase")
+
+    push_english(finetuned_questions, current_subject_id, global_exam_id)
+
+    log("English questions pushed successfully")
 
     # --------------------------
     # ODIA TRANSLATION
@@ -590,7 +600,7 @@ def process_pdf(pdf_path):
 
         log("Translating questions to Odia")
 
-        odia_questions = translate_questions_batch(all_questions)
+        odia_questions = translate_questions_batch(finetuned_questions)
 
         log(f"Odia translation complete. Questions translated: {len(odia_questions)}")
 
