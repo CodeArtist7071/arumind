@@ -3,6 +3,7 @@ import userReducer from "./slice/userSlice";
 import examReducer from "./slice/examSlice";
 import examSubjectReducer from "./slice/examSubjectSlice";
 import chapterReducer from "./slice/chapterSlice";
+import questionReducer from "./slice/questionSlice"
 
 export const store = configureStore({
   reducer: {
@@ -10,6 +11,7 @@ export const store = configureStore({
     exams: examReducer,
     examSubject: examSubjectReducer,
     chapters: chapterReducer,
+    questions:questionReducer
   },
 });
 

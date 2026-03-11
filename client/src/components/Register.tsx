@@ -14,7 +14,7 @@ import { InputWithLabel } from "./ui/InputWithLabel";
 import { MultiSelect } from "./ui/MultiSelect";
 import { Button } from "./ui/Button";
 import { useForm, Watch } from "react-hook-form";
-import supabase from "../utils/supabase";
+import { supabase } from "../utils/supabase";
 import { useState } from "react";
 import { useNavigate } from "react-router";
 
@@ -29,7 +29,7 @@ interface RegisterProps {
 const Register = () => {
   const [userData, setUserData] = useState<any>();
   const navigate = useNavigate();
-  const id = '252cfb73-3a8a-4c56-845a-e595dd2ee753';
+  const id = "252cfb73-3a8a-4c56-845a-e595dd2ee753";
   const {
     register,
     handleSubmit,
@@ -41,24 +41,24 @@ const Register = () => {
 
   const passwordMatch = confirmPassword && password === confirmPassword;
 
-  async function onSubmit(details:RegisterProps) {
-    console.log("details",details)
-   const {data,error} = await supabase.auth.signUp({
-    email:details.email,
-    phone:details.phone,
-    password:details.confirm_password,
-    options:{
-      emailRedirectTo:"https://aru-edu.artististysn.workers.dev/login",
+  async function onSubmit(details: RegisterProps) {
+    console.log("details", details);
+    const { data, error } = await supabase.auth.signUp({
+      email: details.email,
+      phone: details.phone,
+      password: details.confirm_password,
+      options: {
+        emailRedirectTo: "https://aru-edu.artististysn.workers.dev/login",
+      },
+    });
+    if (data.user?.aud === "authenticated") {
+      navigate("/user/dashboard");
     }
-   })
-   if(data.user?.aud === "authenticated"){
-     navigate('/user/dashboard');
-   }
-   console.log(data);
-   setUserData(data.user)
-   if(error){
-    console.log(error)
-   }
+    console.log(data);
+    setUserData(data.user);
+    if (error) {
+      console.log(error);
+    }
   }
 
   return (
@@ -308,7 +308,10 @@ const Register = () => {
                   .
                 </label>
               </div>
-              <Button type="submit" title={isSubmitting ? "Creating Account":"Create Account"} />
+              <Button
+                type="submit"
+                title={isSubmitting ? "Creating Account" : "Create Account"}
+              />
             </form>
           </div>
         </div>

@@ -11,7 +11,7 @@ import StudyPlanner from "./pages/userPanel/StudyPlanner";
 import MockTests from "./pages/userPanel/MockTests";
 import UserDashboard from "./pages/userPanel/UserDashboard";
 import UserPanelLayout from "./layouts/UserPanelLayout";
-import supabase from "./utils/supabase";
+import {supabase} from "./utils/supabase";
 import { useEffect, useState } from "react";
 import { fetchUserProfile } from "./slice/userSlice";
 import { useDispatch, useSelector } from "react-redux";
@@ -21,6 +21,9 @@ import Exam from "./components/Exam";
 import { UserDashboardLayout } from "./layouts/UserDashboardLayout";
 import PracticeTest from "./components/ui/PracticeTest";
 import ConfirmOAuthPage from "./components/ConfirmOAuth";
+import Profile from "./pages/Profile";
+import AdminPanelLayout from "./layouts/AdminPanelLayout";
+import UserManagement from "./pages/adminPanel/UserManagement";
 
 function App() {
   const dispatch = useDispatch<AppDispatch>();
@@ -95,6 +98,10 @@ function App() {
           !user ? <Register /> : <Navigate to="/user/dashboard" replace />
         }
       />
+      <Route path="admin" element={<AdminPanelLayout />}>
+        <Route path="users" element={<UserManagement />} />
+      </Route>
+      <Route path="admin/login" element={<Login />} />
 
       {/* Protected Routes */}
       <Route
@@ -109,7 +116,7 @@ function App() {
             element={<PracticeTest />}
           />
         </Route>
-
+        <Route path="profile" element={<Profile />} />
         <Route path="performance" element={<PerformanceAnalytics />} />
         <Route path="study-planner" element={<StudyPlanner />} />
         <Route path="mock-tests" element={<MockTests />} />
@@ -121,4 +128,3 @@ function App() {
 }
 
 export default App;
-

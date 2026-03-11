@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-import supabase from "../utils/supabase";
+import { supabase } from "../utils/supabase";
 
 export default function ConfirmOAuthPage() {
   const navigate = useNavigate();
@@ -14,7 +14,7 @@ export default function ConfirmOAuthPage() {
 
     if (access_token) {
       supabase.auth
-        .setSession({ access_token, refresh_token, })
+        .setSession({ access_token, refresh_token })
         .then(({ error }) => {
           if (!error) {
             navigate("/user/dashboard"); // redirect after successful login
