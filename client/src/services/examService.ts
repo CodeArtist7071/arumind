@@ -3,16 +3,16 @@ import { supabase } from "../utils/supabase";
 export const getExams = async () => {
   const { data, error } = await supabase.from("exams").select("*");
   if (error) throw error;
-  console.log("is examsss coming....", data);
+  // console.log("is examsss coming....", data);
   return data;
 };
 
-// export const getExamSubjects = async (exam_id:string) => {
-//   const { data, error } = await supabase.from("exam_subjects").select("*").eq("exam_id",exam_id);
-//   if (error) throw error;
-//   console.log("is examsss coming....",data)
-//   return data;
-// };
+export const getExamsById = async (exam_id:string[]) => {
+  const { data, error } = await supabase.from("exams").select("*").eq("id",exam_id);
+  if (error) throw error;
+  console.log("is examss list coming....",data)
+  return data;
+};
 
 export const getExamSubjects = async (exam_id: string) => {
   const { data, error } = await supabase
@@ -69,3 +69,10 @@ export const getChapters = async (subject_id: string) => {
   console.log("checking...", data);
   return data;
 };
+
+
+export const getExamBoards = async()=>{
+  const {data,error}  = await supabase.from("exam_boards").select("*").single()
+  if(error) throw error;
+  return data;
+}

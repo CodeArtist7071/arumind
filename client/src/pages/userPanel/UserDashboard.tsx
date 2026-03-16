@@ -6,6 +6,10 @@ import {
   SearchAlert,
   Settings,
   Tags,
+  Calendar as CalendarIcon,
+  CheckSquare,
+  BarChart2,
+  BookMarked
 } from "lucide-react";
 import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
@@ -16,6 +20,7 @@ import { Outlet, useNavigate } from "react-router-dom";
 import { AlertPopup } from "../../components/ui/AlertPopup";
 import { Button } from "../../components/ui/Button";
 import { WarningModal } from "../../components/ui/WarningModal";
+import { notify } from "reapop";
 
 const UserDashboard = () => {
   const { profile } = useSelector((state: RootState) => state.user ?? null);
@@ -28,38 +33,11 @@ const UserDashboard = () => {
     dispatch(fetchExams());
   }, []);
 
-  // const navItems = [
-  //   { icon: "dashboard", label: "Dashboard", active: true },
-  //   { icon: "history_edu", label: "Mock Tests" },
-  //   { icon: "leaderboard", label: "Results" },
-  //   { icon: "calendar_today", label: "Study Planner" },
-  //   { icon: "emoji_events", label: "Leaderboard" },
-  //   { icon: "auto_graph", label: "Performance" },
-  // ];
+  console.log("users-dashboard", profile);
 
-  const targetExams = [
-    {
-      icon: "gavel",
-      title: "OPSC (OAS)",
-      desc: "Odisha Administrative Service",
-      date: "15th Oct, 2023",
-      color: "from-[#1a57db] to-[#1a57db]",
-    },
-    {
-      icon: "account_balance",
-      title: "OSSC (GL)",
-      desc: "Combined Graduate Level",
-      date: "4th Nov, 2023",
-      color: "from-blue-500 to-blue-600",
-    },
-    {
-      icon: "description",
-      title: "OSSSC",
-      desc: "Junior Assistant / PEW",
-      date: "Dec 2023 (TBD)",
-      color: "from-indigo-500 to-indigo-600",
-    },
-  ];
+  const targetedExams = examData.filter((el) =>
+    profile.target_exams.includes(el.id),
+  );
 
   const subjectProgress = [
     {
@@ -77,10 +55,10 @@ const UserDashboard = () => {
   ];
 
   const quickLinks = [
-    { icon: "edit_calendar", label: "Planner" },
-    { icon: "checklist", label: "Tests" },
-    { icon: "analytics", label: "Performance" },
-    { icon: "library_books", label: "E-Notes" },
+    { icon: <CalendarIcon size={24} />, label: "Planner", path: "/user/plan-exams" },
+    { icon: <CheckSquare size={24} />, label: "Tests", path: "/user/mock-tests" },
+    { icon: <BarChart2 size={24} />, label: "Performance", path: "/user/performance" },
+    { icon: <BookMarked size={24} />, label: "History", path: "/user/results" },
   ];
 
   const checklist = [
@@ -95,7 +73,7 @@ const UserDashboard = () => {
   }
 
   return (
-    <div className="flex h-screen overflow-hidden bg-gradient-to-br from-slate-50 to-slate-100 dark:from-slate-900 dark:to-slate-950 font-['Inter'] text-slate-900 dark:text-slate-100">
+    <div className="flex h-screen overflow-hidden bg-linear-to-br from-slate-50 to-slate-100 dark:from-slate-900 dark:to-slate-950 font-['Inter'] text-slate-900 dark:text-slate-100">
       {/* Sidebar */}
 
       {/* Main Content */}
@@ -146,7 +124,7 @@ const UserDashboard = () => {
                   />
                 </div>
               </div>
-                 
+
               <div className="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 px-6 py-4 rounded-xl shadow-sm hover:shadow-md transition-all duration-200">
                 <p className="text-xs text-slate-500 uppercase font-bold tracking-wider mb-1">
                   Daily Goal
@@ -166,17 +144,20 @@ const UserDashboard = () => {
             <div className="lg:col-span-2 space-y-8">
               {/* Target Exams */}
               <section>
-                <h2 className="text-xl font-bold mb-6 text-slate-900 dark:text-white">
-                  Your Target Exams
-                </h2>
+                <div className="flex justify-between items-center">
+                  <h2 className="text-xl font-bold mb-6 text-slate-900 dark:text-white">
+                    Your Target Exams
+                  </h2>
+                  <span onClick={()=>navigate("exam-lists")} className="text-blue-500 underline cursor-pointer">Add More Exams To your List.!!</span>
+                </div>
                 <div className="grid sm:grid-cols-1 md:grid-cols-3 gap-6">
-                  {examData.map((exam, index) => (
+                  {targetedExams.map((exam, index) => (
                     <div
                       key={index}
                       className="p-6 bg-white dark:bg-slate-900 rounded-xl border border-slate-200 dark:border-slate-800 shadow-sm hover:border-[#1a57db] hover:shadow-xl transition-all duration-300 group cursor-pointer"
                       onClick={() => handleButton(exam.id)}
                     >
-                      <div className="w-10 h-10 bg-linear-to-r from-[#1a57db]/10 to-[#1a57db]/20 rounded-lg flex items-center justify-center text-[#1a57db] mb-4 group-hover:bg-gradient-to-r group-hover:from-[#1a57db] group-hover:to-blue-600 group-hover:text-white transition-all duration-300">
+                      <div className="w-10 h-10 bg-linear-to-r from-[#1a57db]/10 to-[#1a57db]/20 rounded-lg flex items-center justify-center text-[#1a57db] mb-4 group-hover:bg-linear-to-r group-hover:from-[#1a57db] group-hover:to-blue-600 group-hover:text-white transition-all duration-300">
                         <Book />
                       </div>
                       <h3 className="font-black text-lg mb-1">{exam.name}</h3>
@@ -237,16 +218,16 @@ const UserDashboard = () => {
                 </h2>
                 <div className="grid grid-cols-2 gap-4">
                   {quickLinks.map((link, index) => (
-                    <a
+                    <button
                       key={index}
-                      className="flex flex-col items-center justify-center p-6 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl hover:shadow-xl hover:-translate-y-1 hover:border-[#1a57db]/50 transition-all duration-300 text-center"
-                      href="#"
+                      className="flex flex-col items-center justify-center p-6 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl hover:shadow-xl hover:-translate-y-1 hover:border-[#1a57db]/50 transition-all duration-300 text-center cursor-pointer"
+                      onClick={() => navigate(link.path)}
                     >
-                      {link.icon}
+                      <div className="mb-2 text-[#1a57db]">{link.icon}</div>
                       <span className="text-xs font-bold text-slate-900 dark:text-white">
                         {link.label}
                       </span>
-                    </a>
+                    </button>
                   ))}
                 </div>
               </section>

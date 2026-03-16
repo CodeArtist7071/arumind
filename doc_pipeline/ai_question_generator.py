@@ -109,13 +109,15 @@ def get_round_robin_subject_chapter(mapping):
     
     current_index = 0
     priority_board = None
+    priority_exam = "CGL"
+    priority_subject = None
     
     if os.path.exists(tracker_file):
         try:
             with open(tracker_file, "r", encoding="utf-8") as tf:
                 state = json.load(tf)
                 current_index = state.get("current_index", 0)
-                priority_board = state.get("priority_board", None)
+                priority_board = state.get("priority_board", priority_board)
         except Exception:
             current_index = 0
             priority_board = None
@@ -128,7 +130,14 @@ def get_round_robin_subject_chapter(mapping):
             continue
             
         for exam_name, subjects in exams.items():
-            for subject_name, chapters in subjects.items():
+
+             if priority_exam and exam_name != priority_exam:
+                continue
+
+             for subject_name, chapters in subjects.items():
+
+                if priority_subject and subject_name != priority_subject:
+                   continue
                 for chapter in chapters:
                     flat_list.append((exam_name, subject_name, chapter))
     

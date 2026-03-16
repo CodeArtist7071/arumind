@@ -6,6 +6,7 @@ export const getQuestions = async (chapter_id: string) => {
     .select(
       ` exam_id,
       subject_id,
+      id,
       question,
       options,
       correct_answer,

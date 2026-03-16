@@ -16,52 +16,54 @@ import {
 import React, { useState, useEffect } from "react";
 import Footer from "../components/Footer";
 import { Header } from "../components/Header";
+import {useNotifications } from "reapop";
 
-
-interface featuresDataTypes{
-icon:Element |any ,
-status:boolean,
-title:string,
-desc:string,
+interface featuresDataTypes {
+  icon: Element | any;
+  status: boolean;
+  title: string;
+  desc: string;
 }
 
-const featuresData:featuresDataTypes[] = [
-              {
-                icon: <Book />,
-                status:true,
-                title: "Daily Mock Tests",
-                desc: "Simulate the real exam experience with daily tests based on the latest OPSC and OSSC exam patterns.",
-              },
-              {
-                icon: <GalleryHorizontal />,
-                status:true,
-                title: "Comprehensive Material",
-                desc: "Access curated PDF notes, previous year question banks, and localized current affairs for Odisha.",
-              },
-             
-              {
-                icon: <User2Icon />,
-                status:true,
-                title: "Personalized Analytics",
-                desc: "Track your performance with detailed reports highlighting your strengths and areas needing improvement.",
-              },
-              {
-                icon: <NotebookPen />,
-                status:true,
-                title: "Learn on the Go",
-                desc: "Download videos and study material to learn anytime, anywhere with our high-speed mobile app.",
-              },{
-                icon: <Presentation />,
-                status:false,
-                title: "AI Expert Faculty",
-                desc: "Learn from educators who have cracked these exams themselves. Get insights and shortcuts you won't find in textbooks.",
-              }, {
-                icon: <Tv />,
-                status:false,
-                title: "Live Interactive Classes",
-                desc: "Real-time doubt clearing sessions and interactive lectures to keep you engaged and on track.",
-              }
-            ]
+const featuresData: featuresDataTypes[] = [
+  {
+    icon: <Book />,
+    status: true,
+    title: "Daily Mock Tests",
+    desc: "Simulate the real exam experience with daily tests based on the latest OPSC and OSSC exam patterns.",
+  },
+  {
+    icon: <GalleryHorizontal />,
+    status: true,
+    title: "Comprehensive Material",
+    desc: "Access curated PDF notes, previous year question banks, and localized current affairs for Odisha.",
+  },
+
+  {
+    icon: <User2Icon />,
+    status: true,
+    title: "Personalized Analytics",
+    desc: "Track your performance with detailed reports highlighting your strengths and areas needing improvement.",
+  },
+  {
+    icon: <NotebookPen />,
+    status: true,
+    title: "Learn on the Go",
+    desc: "Download videos and study material to learn anytime, anywhere with our high-speed mobile app.",
+  },
+  {
+    icon: <Presentation />,
+    status: false,
+    title: "AI Expert Faculty",
+    desc: "Learn from educators who have cracked these exams themselves. Get insights and shortcuts you won't find in textbooks.",
+  },
+  {
+    icon: <Tv />,
+    status: false,
+    title: "Live Interactive Classes",
+    desc: "Real-time doubt clearing sessions and interactive lectures to keep you engaged and on track.",
+  },
+];
 
 const examData = [
   {
@@ -82,6 +84,7 @@ const examData = [
 ];
 
 const Hompage = () => {
+  const { notify } = useNotifications();
   const [countdown, setCountdown] = useState({
     days: 2,
     hours: 14,
@@ -89,6 +92,7 @@ const Hompage = () => {
   });
 
   useEffect(() => {
+
     const timer = setInterval(() => {
       setCountdown((prev) => {
         let { days, hours, minutes } = prev;
@@ -208,7 +212,7 @@ const Hompage = () => {
                 className="text-[#1e3a5f] font-bold flex items-center gap-1 hover:underline underline-offset-4"
                 href="#"
               >
-                View all exam categories <ChevronRight size={20}/>
+                View all exam categories <ChevronRight size={20} />
               </a>
             </div>
             <div className="grid sm:grid-cols-1 md:grid-cols-3 gap-6">
@@ -255,16 +259,25 @@ const Hompage = () => {
             {featuresData.map(({ icon, title, desc, status }, i) => (
               <div
                 key={i}
-                className={status ? 'cursor-pointer flex flex-col  gap-5 p-4 hover:scale-[1.02] transition-transform duration-200' : 'cursor-not-allowed flex flex-col  gap-5 p-4 hover:scale-[1.02] transition-transform duration-200'}
+                className={
+                  status
+                    ? "cursor-pointer flex flex-col  gap-5 p-4 hover:scale-[1.02] transition-transform duration-200"
+                    : "cursor-not-allowed flex flex-col  gap-5 p-4 hover:scale-[1.02] transition-transform duration-200"
+                }
               >
                 <span className="flex justify-between items-center ">
                   <div className="w-12 h-12 bg-[#1e3a5f] rounded-lg flex items-center justify-center text-white shadow-lg">
                     {icon}
                   </div>
-                  <p className={status ? `bg-green-500 text-white px-3 py-1 text-xs rounded-full`:`bg-yellow-500 text-white px-3 py-1 text-xs rounded-full`}>
-                   {status ? "try yourself":"coming soon"}
+                  <p
+                    className={
+                      status
+                        ? `bg-green-500 text-white px-3 py-1 text-xs rounded-full`
+                        : `bg-yellow-500 text-white px-3 py-1 text-xs rounded-full`
+                    }
+                  >
+                    {status ? "try yourself" : "coming soon"}
                   </p>
-                  
                 </span>
 
                 <div className="flex flex-col gap-2">

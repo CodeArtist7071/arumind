@@ -28,7 +28,7 @@ const navItems = [
   {
     label: "Study Planner",
     icon: <Notebook color="white" size={20} />,
-    path: "/user/study-planner",
+    path: "/user/plan-exams",
   },
   {
     label: "Mock Tests",

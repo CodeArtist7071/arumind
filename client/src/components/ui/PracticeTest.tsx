@@ -1,398 +1,364 @@
-import { Edit, Grid2X2, NotebookTabs } from "lucide-react";
-// import ProctoringCamera from "./ProctoringCamera";
-import { useEffect, useRef, useState } from "react";
-import AdvancedProctoring from "./AdvanceProctoring";
+import { Edit, Grid2X2, NotebookTabs, Timer } from "lucide-react";
+import { useEffect, useRef, useState, useMemo } from "react";
 import { useNavigate, useParams } from "react-router";
 import { AlertPopup } from "./AlertPopup";
-import type { FaceLandmarksDetector } from "@tensorflow-models/face-landmarks-detection";
 import { Button } from "./Button";
-import * as tf from "@tensorflow/tfjs";
-import * as faceLandmarksDetection from "@tensorflow-models/face-landmarks-detection";
 import { WarningModal } from "./WarningModal";
 import { useDispatch, useSelector } from "react-redux";
 import type { AppDispatch, RootState } from "../../store";
 import { fetchQuestion } from "../../slice/questionSlice";
+import { useNotifications } from "reapop";
+import { QuestionPalette } from "./QuestionPalette";
+import { useForm, FormProvider } from "react-hook-form";
+import { QuestionList } from "../pracTiceTest/QuestionList";
+import { supabase } from "../../utils/supabase";
+
+const SESSION_TTL = 30 * 60 * 1000; // 30 minutes in milliseconds
 
 export default function PracticeTest() {
-  const videoRef = useRef<HTMLVideoElement | null>(null);
-  const animationRef = useRef<number | null>(null);
   const { eid, sid, cid } = useParams();
-  const DEBUG = true;
-  let frameCount = 0;
-  let isProcessing = false;
-  const [openAlert, setOpenAlert] = useState<boolean>(false);
-  const [detector, setDetector] = useState<FaceLandmarksDetector | null>(null);
   const navigate = useNavigate();
-  const [cheatingAlert, setCheatingAlert] = useState<boolean>(false);
-  const [warning, setWarning] = useState("");
-  const [violations, setViolations] = useState(0);
-  const { data, error } = useSelector(
-    (state: RootState) => state.questions ?? null,
-  );
   const dispatch = useDispatch<AppDispatch>();
+  const { notify } = useNotifications();
 
+  const { data: questions } = useSelector((state: RootState) => state.questions);
+  const { user } = useSelector((state: RootState) => state.user);
+
+  const [openAlert, setOpenAlert] = useState<boolean>(false);
+  const [attemptId, setAttemptId] = useState<string | null>(null);
+  const isCreatingRef = useRef(false);
+  const [lastSaved, setLastSaved] = useState<number>(Date.now());
+  const [confirmedAnswers, setConfirmedAnswers] = useState<Record<number, boolean>>({});
+
+  const methods = useForm<any>({
+    defaultValues: { answers: {} },
+  });
+
+  const { handleSubmit, setValue, watch, reset } = methods;
+  const watchedAnswers = watch("answers");
+
+  // Consolidated initialization and reset
   useEffect(() => {
-    dispatch(fetchQuestion(cid));
-  }, []);
+    console.log(`[PracticeTest] CID changed or component mounted. Current CID: ${cid}`);
+    
+    // 1. CLEAR previous state to prevent carry-over
+    setAttemptId(null);
+    setConfirmedAnswers({});
+    reset({ answers: {} });
 
-  console.log("question", data);
-
-  let lastViolationTime = 0;
-  const VIOLATION_COOLDOWN = 2000;
-
-  const stopCamera = () => {
-    if (!videoRef.current) return;
-
-    const stream = videoRef.current.srcObject as MediaStream;
-
-    if (stream) {
-      stream.getTracks().forEach((track) => {
-        track.stop();
-      });
+    // 2. Try loading from storage
+    const storageKey = `practice_test_${cid}`;
+    const savedState = localStorage.getItem(storageKey);
+    
+    if (savedState) {
+      try {
+        const { answers, timestamp, confirmed, attemptId: savedAttemptId } = JSON.parse(savedState);
+        const now = Date.now();
+        
+        if (now - timestamp < SESSION_TTL) {
+          console.log(`[PracticeTest] Restoring session from storage. AttemptID: ${savedAttemptId}`);
+          reset({ answers });
+          setConfirmedAnswers(confirmed || {});
+          if (savedAttemptId) setAttemptId(savedAttemptId);
+          setLastSaved(timestamp);
+        } else {
+          console.log("[PracticeTest] Storage session expired.");
+          localStorage.removeItem(storageKey);
+        }
+      } catch (e) {
+        console.error("[PracticeTest] Failed to parse storage state:", e);
+      }
     }
+    
+    dispatch(fetchQuestion(cid as string));
+  }, [cid, dispatch, reset]); // ONLY depend on cid to ensure reset happens only when chapter changes
 
-    videoRef.current.pause();
-    videoRef.current.srcObject = null;
-    videoRef.current.load();
-
-    if (animationRef.current) {
-      cancelAnimationFrame(animationRef.current);
-      animationRef.current = null;
+  // Track attemptId changes
+  useEffect(() => {
+    if (attemptId) {
+      console.log(`[PracticeTest] ACTIVE AttemptID: ${attemptId}`);
+    } else {
+      console.log(`[PracticeTest] AttemptID is currently null.`);
     }
+  }, [attemptId]);
 
-    console.log("Camera fully detached at:", Date.now());
-  };
-
-  function handleBackButton() {
-    setOpenAlert(true);
-    stopCamera();
-  }
-  const registerViolation = (msg: string) => {
-    const now = Date.now();
-
-    if (now - lastViolationTime < VIOLATION_COOLDOWN) {
-      return; // Ignore repeated violation within cooldown
+  // Save to localStorage on change
+  useEffect(() => {
+    if (Object.keys(watchedAnswers || {}).length > 0) {
+      const storageKey = `practice_test_${cid}`;
+      localStorage.setItem(storageKey, JSON.stringify({
+        answers: watchedAnswers,
+        confirmed: confirmedAnswers,
+        attemptId: attemptId,
+        timestamp: Date.now()
+      }));
+      setLastSaved(Date.now());
     }
+  }, [watchedAnswers, cid, confirmedAnswers, attemptId]);
 
-    lastViolationTime = now;
+  // Session Cleanup
+  useEffect(() => {
+    const interval = setInterval(() => {
+      const now = Date.now();
+      if (now - lastSaved > SESSION_TTL) {
+        const storageKey = `practice_test_${cid}`;
+        localStorage.removeItem(storageKey);
+        // Optional: notify user or redirect
+      }
+    }, 60000); // Check every minute
 
-    console.log("🚨 Violation:", msg);
+    return () => clearInterval(interval);
+  }, [lastSaved, cid]);
 
-    setWarning(msg);
+  // Create test attempt record
+  useEffect(() => {
+    const createAttempt = async () => {
+      // Don't create if missing info, or already have an ID, or is currently creating
+      if (!user?.id || !cid || attemptId || isCreatingRef.current) return;
 
-    setViolations((prev) => {
-      const newCount = prev + 1;
-      console.log("⚠️ Total Violations:", newCount);
-      return newCount;
-    });
-  };
+      try {
+        isCreatingRef.current = true;
+        console.log("Checking for existing 'started' attempt for user/chapter...");
+        
+        // 1. Check for existing "started" attempt to avoid duplicates
+        const { data: existing, error: findError } = await supabase
+          .from("test_attempts")
+          .select("id")
+          .eq("user_id", user.id)
+          .eq("chapter_id", cid)
+          .eq("status", "STARTED")
+          .order("started_at", { ascending: false })
+          .limit(1)
+          .maybeSingle();
 
-  const loadModel = async () => {
-    // Make sure TF is ready (prevents silent crashes)
-    console.log("🔄 Loading MediaPipe model...");
-    await tf.setBackend("webgl");
-    await tf.ready();
+        if (existing) {
+          console.log("Found existing attempt:", existing.id);
+          setAttemptId(existing.id);
+          const storageKey = `practice_test_${cid}`;
+          const current = localStorage.getItem(storageKey);
+          const state = current ? JSON.parse(current) : { answers: {}, confirmed: {} };
+          localStorage.setItem(storageKey, JSON.stringify({
+            ...state,
+            attemptId: existing.id,
+            timestamp: Date.now()
+          }));
+          return;
+        }
 
-    const model = faceLandmarksDetection.SupportedModels.MediaPipeFaceMesh;
+        console.log("No existing attempt found, creating new one...");
+        const { data, error } = await supabase
+          .from("test_attempts")
+          .insert({
+            user_id: user.id,
+            exam_id: eid,
+            subject_id: sid,
+            chapter_id: cid,
+            status: "STARTED",
+            started_at: new Date().toISOString()
+          })
+          .select()
+          .single();
 
-    const detectorConfig: faceLandmarksDetection.MediaPipeFaceMeshMediaPipeModelConfig =
-      {
-        runtime: "mediapipe",
-        solutionPath: "/mediapipe", // MUST exist in public folder
-        maxFaces: 1,
-        refineLandmarks: true,
-      };
+        if (error) throw error;
 
-    const newDetector = await faceLandmarksDetection.createDetector(
-      model,
-      detectorConfig,
-    );
+        if (data) {
+          setAttemptId(data.id);
+          // Immediately update localStorage with the new attemptId
+          const storageKey = `practice_test_${cid}`;
+          const current = localStorage.getItem(storageKey);
+          const state = current ? JSON.parse(current) : { answers: {}, confirmed: {} };
+          localStorage.setItem(storageKey, JSON.stringify({
+            ...state,
+            attemptId: data.id,
+            timestamp: Date.now()
+          }));
+        }
+      } catch (error: any) {
+        console.error("Error creating test attempt:", error);
+        notify({
+          title: "Session Error",
+          message: error.message || "Failed to initialize test session.",
+          status: "error",
+        });
+      } finally {
+        isCreatingRef.current = false;
+      }
+    };
 
-    setDetector(newDetector);
-    console.log("✅ Detector Loaded Successfully");
-  };
+    createAttempt();
+  }, [user, eid, sid, cid, attemptId]);
 
-  const detect = async () => {
-    if (!videoRef.current || !detector) return;
-
-    if (videoRef.current.readyState !== 4) {
-      animationRef.current = requestAnimationFrame(detect);
+  const onSubmit = async (data: any) => {
+    console.log("[PracticeTest] Attempting to submit. AttemptID in state:", attemptId);
+    if (!attemptId) {
+      notify({ title: "Error", message: "No active session found. Please refresh.", status: "error" });
       return;
     }
-
-    if (isProcessing) {
-      animationRef.current = requestAnimationFrame(detect);
-      return;
-    }
-
-    isProcessing = true;
-    frameCount++;
 
     try {
-      const faces = await detector.estimateFaces(videoRef.current);
+      const payload = Object.entries(data.answers).map(([questionId, answer]) => ({
+        attempt_id: attemptId,
+        question_id: Number(questionId),
+        selected_option: answer,
+        is_submitted: true
+      }));
 
-      if (DEBUG && frameCount % 30 === 0) {
-        console.log("🎥 Frame:", frameCount);
-        console.log("👤 Faces detected:", faces.length);
+      console.log(`[PracticeTest] Upserting ${payload.length} answers...`);
+      const { error: answerError } = await supabase
+        .from("test_attempt_answers")
+        .upsert(payload, { onConflict: "attempt_id,question_id" });
+
+      if (answerError) throw answerError;
+
+      console.log(`[PracticeTest] Updating status to COMPLETED for AttemptID: ${attemptId}`);
+      const { data: updateData, error: attemptError } = await supabase
+        .from("test_attempts")
+        .update({ status: "COMPLETED", submitted_at: new Date().toISOString() })
+        .eq("id", attemptId)
+        .select();
+
+      if (attemptError) throw attemptError;
+      console.log("[PracticeTest] Status update result:", updateData);
+
+      if (!updateData || updateData.length === 0) {
+        console.warn("[PracticeTest] No rows were updated! This usually means the ID doesn't exist.");
       }
 
-      if (faces.length === 0) {
-        //   registerViolation("No face detected 🚨");
-      } else {
-        const keypoints = faces[0].keypoints;
-        const leftIris = keypoints[468];
-        const leftEyeLeft = keypoints[33];
-        const leftEyeRight = keypoints[133];
+      // Clear local storage
+      localStorage.removeItem(`practice_test_${cid}`);
 
-        if (leftIris && leftEyeLeft && leftEyeRight) {
-          const gazeRatio =
-            (leftIris.x - leftEyeLeft.x) / (leftEyeRight.x - leftEyeLeft.x);
+      notify({
+        title: "Success",
+        message: "Your answers have been submitted successfully!",
+        status: "success",
+        dismissAfter: 5000,
+      });
 
-          if (DEBUG && frameCount % 30 === 0) {
-            console.log("👁️ Gaze Ratio:", gazeRatio.toFixed(2));
-          }
-
-          if (gazeRatio < 0.25) {
-            registerViolation("Looking Right 👀");
-            setCheatingAlert(true);
-          } else if (gazeRatio > 0.75) {
-            registerViolation("Looking Left 👀");
-            setCheatingAlert(true);
-          } else {
-            setWarning("");
-            setCheatingAlert(false);
-          }
-        }
-      }
-    } catch (err) {
-      console.error("❌ Detection error:", err);
+      navigate(`/user/results/${attemptId}`);
+    } catch (error: any) {
+      console.error("Submission failed:", error);
+      notify({
+        title: "Submission Failed",
+        message: error.message || "An error occurred during submission.",
+        status: "error",
+      });
     }
-
-    isProcessing = false;
-    animationRef.current = requestAnimationFrame(detect);
   };
 
-  const initialize = async () => {
-    // await startCamera();
-    // await loadModel();
+  const handleBackButton = () => {
+    setOpenAlert(true);
   };
-
-  const startCamera = async () => {
-    const stream = await navigator.mediaDevices.getUserMedia({
-      video: {
-        width: 640,
-        height: 480,
-        facingMode: "user",
-      },
-    });
-
-    if (!videoRef.current) return;
-
-    videoRef.current.srcObject = stream;
-
-    await new Promise<void>((resolve) => {
-      videoRef.current!.onloadedmetadata = () => {
-        videoRef.current!.play();
-        resolve();
-      };
-    });
-  };
-
-  useEffect(() => {
-    initialize();
-    // detect();
-
-    return () => {
-      if (videoRef.current?.srcObject) {
-        const stream = videoRef.current.srcObject as MediaStream;
-        stream.getTracks().forEach((track) => track.stop());
-      }
-
-      if (animationRef.current) {
-        cancelAnimationFrame(animationRef.current);
-      }
-    };
-  }, []);
 
   const confirmExit = () => {
-    window.history.go(-1);
     navigate(-1);
   };
-  useEffect(() => {
-    const handleVisibility = () => {
-      if (document.hidden) {
-        alert("Tab switching detected 🚨");
-      }
-    };
-    // Push fake state so back button triggers popstate
-    window.history.pushState(null, "", window.location.href);
 
-    window.addEventListener("popstate", handleBackButton);
-    document.addEventListener("visibilitychange", handleVisibility);
+  const handleConfirm = async (questionId: number, answer: string) => {
+    if (!attemptId) return;
 
-    return () => {
-      document.removeEventListener("visibilitychange", handleVisibility);
-      window.removeEventListener("popstate", handleBackButton);
-    };
-  }, []);
+    try {
+      const { error } = await supabase
+        .from("test_attempt_answers")
+        .upsert({
+          attempt_id: attemptId,
+          question_id: questionId,
+          selected_option: answer,
+          is_submitted: false
+        }, { onConflict: "attempt_id,question_id" });
+
+      if (error) throw error;
+
+      // Also potentially track in question_attempt_tracking
+      await supabase.from("question_attempt_tracking").insert({
+        user_id: user?.id,
+        question_id: questionId,
+        attempt_id: attemptId,
+        selected_option: answer,
+        attempted_at: new Date().toISOString()
+      });
+
+    } catch (error) {
+      console.error("Failed to sync answer:", error);
+    }
+  };
+
+  const questionRef = useRef<(HTMLDivElement | null)[]>([]);
 
   return (
-    <div className="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 font-display min-h-screen flex flex-col">
-      <div className="w-50 h-50 absolute z-100 right-10">
-        {/* <AdvancedProctoring
-          videoRef={videoRef}
-          detect={detect()}
-          detector={detector}
-          animationRef={animationRef}
-        /> */}
-      </div>
-      <AlertPopup
-        isOpen={openAlert}
-        // onClose={()=>void}
-        message="Are you sure you want to leave the exam.?"
-        onClose={() => setOpenAlert(false)}
-        children={
-          <>
-            <Button onClick={confirmExit} title="Yes" />
-            <Button
-              onClick={() => setOpenAlert(false)}
-              title="Cancel"
-              className="bg-white text-blue-500! border border-blue-500!"
-            />
-          </>
-        }
-        title={"Leave Exam"}
-      />
-      {/* Header */}
-      <WarningModal isOpen={cheatingAlert} title={""} />
-      <header className="sticky top-0 z-50 bg-white dark:bg-slate-900 border-b border-slate-200 dark:border-slate-800 px-4 lg:px-8 py-3">
-        <div className="max-w-360 mx-auto flex items-center justify-between">
-          {/* Left */}
-          <div className="flex items-center gap-4">
-            <div className="bg-primary/10 p-2 rounded-lg">
-              <span className="material-symbols-outlined text-primary">
-                <NotebookTabs />
-              </span>
-            </div>
-            <div>
-              <h1 className="text-lg font-bold tracking-tight">
-                Arithmetic: Percentage
-              </h1>
-              <p className="text-xs text-slate-500 dark:text-slate-400 font-medium uppercase tracking-wider">
-                Chapter Practice Test
-              </p>
-            </div>
-          </div>
+    <FormProvider {...methods}>
+      <form onSubmit={handleSubmit(onSubmit)}>
+        <div className="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 font-display min-h-screen flex flex-col">
+          <Header />
 
-          {/* Right */}
-          <div className="flex items-center gap-3">
-            <div className="hidden md:flex items-center gap-2 bg-slate-100 dark:bg-slate-800 px-4 py-2 rounded-lg border border-slate-200 dark:border-slate-700">
-              <span className="material-symbols-outlined text-slate-500 text-sm">
-                timer
-              </span>
-              <span className="font-mono font-bold text-slate-700 dark:text-slate-200">
-                42:15
-              </span>
-            </div>
-
-            <button className="bg-primary hover:bg-primary/90 text-white px-6 py-2 rounded-lg font-bold text-sm transition-all flex items-center gap-2 shadow-sm shadow-primary/20">
-              Finish Test
-            </button>
-          </div>
-        </div>
-      </header>
-
-      {/* Main Layout */}
-      <main className="flex-1 max-w-360 mx-auto w-full grid sm:grid-cols-1 lg:grid-cols-12 gap-6 p-4 lg:p-8">
-        {/* Left Sidebar */}
-        <section className="lg:col-span-9 space-y-6">
-          {data.map((el, i) => {
-            return (
-              <div className="bg-white dark:bg-slate-900 rounded-xl border border-slate-200 dark:border-slate-800 shadow-sm flex flex-col min-h-[600px]">
-                {/* Header */}
-                <div className="p-6 border-b border-slate-100 dark:border-slate-800">
-                  <h2 className="text-xl font-bold">Question {i + 1}</h2>
-                </div>
-
-                {/* Body */}
-                <div className="p-8 flex-1">
-                  <p className="text-lg mb-8">{el.question}</p>
-
-                  <div className="space-y-4">
-                    {el.options.flatMap((el, i) => (
-                      <label
-                        key={i}
-                        className="flex items-center p-4 rounded-xl border-2 border-slate-100 dark:border-slate-800 hover:border-primary/40 hover:bg-primary/5 transition-all cursor-pointer"
-                      >
-                        <input
-                          type="radio"
-                          name="q3"
-                          className="size-5 text-primary focus:ring-primary"
-                        />
-                        <span className="ml-4 font-medium">{el.v}</span>
-                      </label>
-                    ))}
-                  </div>
-                </div>
-              </div>
-            );
-          })}
-        </section>
-
-        {/* Right Sidebar */}
-        <aside className="fixed right-10 space-y-6 w-[20%]  lg:col-span-3">
-          <div className="bg-white dark:bg-slate-900 rounded-xl border border-slate-200 dark:border-slate-800 p-5 shadow-sm">
-            <h3 className="font-bold mb-4 flex items-center gap-2">
-              <span className="material-symbols-outlined text-primary text-sm">
-                <Grid2X2 />
-              </span>
-              Question Palette
-            </h3>
-            <div className="grid grid-cols-5 gap-2">
-              {data.map((_, i) => (
-                <button
-                  key={i}
-                  className="aspect-square flex items-center justify-center rounded-lg bg-slate-100 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-slate-400 font-bold text-sm"
-                >
-                  {i + 1}
-                </button>
-              ))}
-            </div>
-          </div>
-          <div className="bg-primary/5 dark:bg-primary/10 border border-primary/20 rounded-xl p-4">
-            <div className="flex justify-between mb-2">
-              <span className="text-sm font-semibold text-primary">
-                Test Progress
-              </span>
-              <span className="text-xs font-bold text-primary">12%</span>
-            </div>
-            <div className="h-2 w-full bg-primary/20 rounded-full overflow-hidden">
-              <div className="h-full bg-primary rounded-full w-[12%]"></div>
-            </div>
-            <p className="mt-3 text-xs text-slate-600 dark:text-slate-400 font-medium">
-              3 of 25 questions completed
-            </p>
-          </div>
-
-          {/* <div className="bg-white dark:bg-slate-900 rounded-xl border border-slate-200 dark:border-slate-800 shadow-sm h-full flex flex-col">
-            <div className="p-4 border-b">
-              <h3 className="font-bold flex items-center gap-2">
-                <span className="material-symbols-outlined text-primary text-sm">
-                  <Edit />
-                </span>
-                Quick Notepad
-              </h3>
-            </div>
-
-            <div className="p-4 flex-1">
-              <textarea
-                placeholder="Scratch pad for calculations..."
-                className="w-full h-48 lg:h-[400px] p-3 text-sm bg-background-light dark:bg-background-dark focus:ring-1 focus:ring-primary/20 rounded-lg resize-none font-mono"
+          <AlertPopup
+            isOpen={openAlert}
+            message="Are you sure you want to leave the exam? Your progress will be saved for a short while."
+            onClose={() => setOpenAlert(false)}
+            title="Leave Exam"
+          >
+            <div className="flex gap-3 justify-end mt-4">
+              <Button onClick={confirmExit} title="Yes, Exit" />
+              <Button
+                onClick={() => setOpenAlert(false)}
+                title="Cancel"
+                className="bg-white text-blue-500! border border-blue-500!"
               />
             </div>
-          </div> */}
-        </aside>
-      </main>
-    </div>
+          </AlertPopup>
+
+          <main className="flex-1 max-w-360 mx-auto w-full grid sm:grid-cols-1 lg:grid-cols-12 gap-6 p-4 lg:p-8">
+            {/* Left Sidebar - Question Content */}
+            <QuestionList
+              confirmedAnswers={confirmedAnswers}
+              setConfirmedAnswers={setConfirmedAnswers}
+              questionRef={questionRef}
+              onConfirm={handleConfirm}
+            />
+
+            {/* Right Sidebar - Palette */}
+            <QuestionPalette
+              questionRefs={questionRef}
+              confirmed={confirmedAnswers}
+            />
+          </main>
+        </div>
+      </form>
+    </FormProvider>
   );
 }
+
+const Header = () => {
+  return (
+    <header className="sticky top-0 z-50 bg-white dark:bg-slate-900 border-b border-slate-200 dark:border-slate-800 px-4 lg:px-8 py-3">
+      <div className="max-w-360 mx-auto flex items-center justify-between">
+        <div className="flex items-center gap-4">
+          <div className="bg-primary/10 p-2 rounded-lg">
+            <NotebookTabs className="text-primary size-6" />
+          </div>
+          <div>
+            <h1 className="text-lg font-bold tracking-tight">Practice Test</h1>
+            <p className="text-xs text-slate-500 dark:text-slate-400 font-medium uppercase tracking-wider">
+              Subject Practice
+            </p>
+          </div>
+        </div>
+
+        <div className="flex items-center gap-3">
+          <div className="hidden md:flex items-center gap-2 bg-slate-100 dark:bg-slate-800 px-4 py-2 rounded-lg border border-slate-200 dark:border-slate-700">
+            <Timer className="text-slate-500 size-4" />
+            <span className="font-mono font-bold text-slate-700 dark:text-slate-200">
+              Practice Session
+            </span>
+          </div>
+
+          <button
+            type="submit"
+            className="bg-primary cursor-pointer hover:bg-primary/90 text-white px-6 py-2 rounded-lg font-bold text-sm transition-all flex items-center gap-2 shadow-sm shadow-primary/20"
+          >
+            Finish Test
+          </button>
+        </div>
+      </div>
+    </header>
+  );
+};

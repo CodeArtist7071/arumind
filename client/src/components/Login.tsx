@@ -1,8 +1,8 @@
-import { EyeClosed } from "lucide-react";
+import { EyeClosed, Mail } from "lucide-react";
 import { InputWithLabel } from "./ui/InputWithLabel";
 import { Button } from "./ui/Button";
 import { useForm } from "react-hook-form";
-import {supabase } from "../utils/supabase";
+import { supabase } from "../utils/supabase";
 import { useEffect, useState } from "react";
 import { StatusBanner } from "./ui/StatusBanner";
 import { Navigate, useNavigate } from "react-router";
@@ -52,7 +52,7 @@ const Login = () => {
     register,
     handleSubmit,
     formState: { errors, isSubmitting },
-  } = useForm<LoginProps>();
+  } = useForm<LoginProps>({ mode: "onChange" });
   const onSubmit = async (info: LoginProps) => {
     setLoading(true);
     setError(null); // clear previous errors
@@ -63,6 +63,7 @@ const Login = () => {
         email: info.email,
         password: info.password,
       });
+      setError(error);
     } catch (error) {
       if (error) {
         // Show error banner
@@ -74,20 +75,20 @@ const Login = () => {
   };
 
   const handleGoogleSignIn = async () => {
-  const { data, error } = await supabase.auth.signInWithOAuth({
-    provider: "google",
-    options: {
-      redirectTo: "https://aru-edu.artististysn.workers.dev/confirm-oauth", // change for prod
-    },
-  });
+    const { data, error } = await supabase.auth.signInWithOAuth({
+      provider: "google",
+      options: {
+        redirectTo: "https://aru-edu.artististysn.workers.dev/confirm-oauth", // change for prod
+      },
+    });
 
-  if (error) {
-    console.error("Google login error:", error.message);
-    return;
-  }
+    if (error) {
+      console.error("Google login error:", error.message);
+      return;
+    }
 
-  console.log("Redirecting to Google login...", data);
-};
+    console.log("Redirecting to Google login...", data);
+  };
 
   return (
     <div className="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-slate-100 min-h-screen flex flex-col">
@@ -106,37 +107,59 @@ const Login = () => {
 
             <form className="space-y-5" onSubmit={handleSubmit(onSubmit)}>
               <InputWithLabel
-                {...register("email")}
-                label={"Email"}
-                id={"email"}
-                error={errors.email?.message}
+                label="Email Address"
+                type="email"
+                id="email"
+                placeholder="name@student.com"
+                error={errors.email}
+                labelIcon={<Mail className="text-slate-400" />}
+                {...register("email", {
+                  required: "Email is required",
+                  pattern: {
+                    value: /^\S+@\S+\.\S+$/,
+                    message: "Enter a valid email",
+                  },
+                })}
               />
               <InputWithLabel
                 {...register("password")}
                 label="Password"
                 id="password"
+                {...register("password", {
+                  required: "Password is required",
+                  minLength: {
+                    value: 6,
+                    message: "Invalid Pasword",
+                  },
+                })}
                 icon={<EyeClosed color="black" size={20} />}
-                error={errors.password?.message}
+                error={errors.password}
               />
 
               {/* Remember Me */}
-              <div className="flex items-center">
-                <input
-                  id="remember-me"
-                  name="remember-me"
-                  type="checkbox"
-                  className="h-4 w-4 rounded border-slate-300 text-primary focus:ring-primary transition-all"
-                />
-                <label
-                  htmlFor="remember-me"
-                  className="ml-2 block text-sm text-slate-600 dark:text-slate-400"
-                >
-                  Remember me for 30 days
-                </label>
+              <div className="flex justify-between items-center">
+                <div className="flex items-center">
+                  <input
+                    id="remember-me"
+                    name="remember-me"
+                    type="checkbox"
+                    className="h-4 w-4 rounded border-slate-300 text-primary focus:ring-primary transition-all"
+                  />
+                  <label
+                    htmlFor="remember-me"
+                    className="ml-2 block text-sm text-slate-600 dark:text-slate-400"
+                  >
+                    Remember me for 30 days
+                  </label>
+                </div>
+                <a className="text-blue-800 text-sm cursor-pointer">Forget Password.?</a>
               </div>
 
               {/* Sign In Button */}
-              <Button title={isSubmitting ? "Submitting" : "Sign In"} />
+              <Button
+                disabled={isSubmitting}
+                title={isSubmitting ? "Submitting" : "Sign In"}
+              />
             </form>
 
             {/* Divider */}
@@ -153,7 +176,10 @@ const Login = () => {
 
             {/* Google Login */}
             <div className="grid grid-cols-1 gap-3">
-              <button onClick={handleGoogleSignIn} className="flex items-center justify-center gap-3 w-full px-4 py-2.5 border border-slate-300 dark:border-slate-700 rounded-lg bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-300 font-medium hover:bg-slate-50 dark:hover:bg-slate-700 transition-colors">
+              <button
+                onClick={handleGoogleSignIn}
+                className="flex items-center justify-center gap-3 w-full px-4 py-2.5 border border-slate-300 dark:border-slate-700 rounded-lg bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-300 font-medium hover:bg-slate-50 dark:hover:bg-slate-700 transition-colors"
+              >
                 <svg className="w-5 h-5" viewBox="0 0 24 24">
                   <path
                     d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"
