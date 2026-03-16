@@ -9,9 +9,9 @@ import {
   Calendar as CalendarIcon,
   CheckSquare,
   BarChart2,
-  BookMarked
+  BookMarked,
 } from "lucide-react";
-import React, { useEffect } from "react";
+import React, { Suspense, useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import type { AppDispatch, RootState } from "../../store";
 import { getExams } from "../../services/examService";
@@ -23,10 +23,14 @@ import { WarningModal } from "../../components/ui/WarningModal";
 import { notify } from "reapop";
 
 const UserDashboard = () => {
-  const { profile } = useSelector((state: RootState) => state.user ?? null);
-  const { examData } = useSelector((state: RootState) => state.exams ?? null);
+  const { profile, user } = useSelector(
+    (state: RootState) => state.user ?? null,
+  );
+  const { examData, loading } = useSelector(
+    (state: RootState) => state.exams ?? null,
+  );
   const dispatch = useDispatch<AppDispatch>();
-  console.log("exams.....", examData);
+  console.log("exams.....", user);
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -55,9 +59,21 @@ const UserDashboard = () => {
   ];
 
   const quickLinks = [
-    { icon: <CalendarIcon size={24} />, label: "Planner", path: "/user/plan-exams" },
-    { icon: <CheckSquare size={24} />, label: "Tests", path: "/user/mock-tests" },
-    { icon: <BarChart2 size={24} />, label: "Performance", path: "/user/performance" },
+    {
+      icon: <CalendarIcon size={24} />,
+      label: "Planner",
+      path: "/user/plan-exams",
+    },
+    {
+      icon: <CheckSquare size={24} />,
+      label: "Tests",
+      path: "/user/mock-tests",
+    },
+    {
+      icon: <BarChart2 size={24} />,
+      label: "Performance",
+      path: "/user/performance",
+    },
     { icon: <BookMarked size={24} />, label: "History", path: "/user/results" },
   ];
 
@@ -70,6 +86,10 @@ const UserDashboard = () => {
 
   function handleButton(id: string) {
     navigate(`exam/${id}`);
+  }
+
+  if (loading) {
+    return <DashboardSkeleton />;
   }
 
   return (
@@ -102,7 +122,7 @@ const UserDashboard = () => {
           <section className="flex flex-wrap items-center justify-between gap-6">
             <div>
               <h1 className="text-3xl font-black tracking-tight mb-2 bg-linear-to-r from-slate-900 to-slate-700 dark:from-white dark:to-slate-200 bg-clip-text text-transparent">
-                Namaskar, Aswin!
+                Namaskar,{user?.identities?.[0]?.identity_data?.name}!
               </h1>
               <p className="text-slate-500 max-w-md text-lg">
                 Your OPSC preparation is 65% complete. You are in the top 5% of
@@ -148,7 +168,12 @@ const UserDashboard = () => {
                   <h2 className="text-xl font-bold mb-6 text-slate-900 dark:text-white">
                     Your Target Exams
                   </h2>
-                  <span onClick={()=>navigate("exam-lists")} className="text-blue-500 underline cursor-pointer">Add More Exams To your List.!!</span>
+                  <span
+                    onClick={() => navigate("exam-lists")}
+                    className="text-blue-500 underline cursor-pointer"
+                  >
+                    Add More Exams To your List.!!
+                  </span>
                 </div>
                 <div className="grid sm:grid-cols-1 md:grid-cols-3 gap-6">
                   {targetedExams.map((exam, index) => (
@@ -344,5 +369,123 @@ const UpcomingMockTest = () => {
         </button>
       </div>
     </section>
+  );
+};
+
+const DashboardSkeleton = () => {
+  return (
+    <div className="flex h-screen overflow-hidden bg-linear-to-br from-slate-50 to-slate-100 dark:from-slate-900 dark:to-slate-950 animate-pulse">
+      <main className="flex-1 overflow-y-auto flex flex-col">
+        {/* Header */}
+        <header className="h-16 border-b border-slate-200 dark:border-slate-800 flex items-center justify-between px-8">
+          {/* Search */}
+          <div className="w-96 h-10 bg-slate-200 dark:bg-slate-700 rounded-lg"></div>
+
+          {/* Icons */}
+          <div className="flex gap-4">
+            <div className="w-8 h-8 rounded-lg bg-slate-200 dark:bg-slate-700"></div>
+            <div className="w-8 h-8 rounded-lg bg-slate-200 dark:bg-slate-700"></div>
+          </div>
+        </header>
+
+        <div className="p-8 max-w-7xl mx-auto w-full space-y-8">
+          {/* Greeting Section */}
+          <section className="flex flex-wrap items-center justify-between gap-6">
+            <div>
+              <div className="h-8 w-72 bg-slate-300 dark:bg-slate-700 rounded mb-3"></div>
+              <div className="h-4 w-96 bg-slate-200 dark:bg-slate-700 rounded"></div>
+            </div>
+
+            <div className="flex gap-4">
+              <div className="w-40 h-20 bg-slate-200 dark:bg-slate-700 rounded-xl"></div>
+              <div className="w-40 h-20 bg-slate-200 dark:bg-slate-700 rounded-xl"></div>
+            </div>
+          </section>
+
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+            {/* Left Column */}
+            <div className="lg:col-span-2 space-y-8">
+              {/* Target Exams */}
+              <section>
+                <div className="h-6 w-48 bg-slate-300 dark:bg-slate-700 rounded mb-6"></div>
+
+                <div className="grid md:grid-cols-3 gap-6">
+                  {Array.from({ length: 3 }).map((_, i) => (
+                    <div
+                      key={i}
+                      className="p-6 bg-white dark:bg-slate-900 rounded-xl border border-slate-200 dark:border-slate-800"
+                    >
+                      <div className="w-10 h-10 bg-slate-300 dark:bg-slate-700 rounded-lg mb-4"></div>
+                      <div className="h-5 w-28 bg-slate-300 dark:bg-slate-700 rounded mb-2"></div>
+                      <div className="h-3 w-40 bg-slate-200 dark:bg-slate-700 rounded mb-4"></div>
+
+                      <div className="mt-4 pt-4 border-t border-slate-200 dark:border-slate-800">
+                        <div className="h-3 w-20 bg-slate-300 dark:bg-slate-700 rounded mb-2"></div>
+                        <div className="h-4 w-24 bg-slate-200 dark:bg-slate-700 rounded"></div>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </section>
+
+              {/* Subject Progress */}
+              <section>
+                <div className="h-6 w-40 bg-slate-300 dark:bg-slate-700 rounded mb-6"></div>
+
+                <div className="bg-white dark:bg-slate-900 rounded-xl border border-slate-200 dark:border-slate-800 p-6 space-y-6">
+                  {Array.from({ length: 4 }).map((_, i) => (
+                    <div key={i}>
+                      <div className="flex justify-between mb-2">
+                        <div className="h-4 w-32 bg-slate-300 dark:bg-slate-700 rounded"></div>
+                        <div className="h-4 w-10 bg-slate-200 dark:bg-slate-700 rounded"></div>
+                      </div>
+
+                      <div className="w-full h-2.5 bg-slate-200 dark:bg-slate-700 rounded-full"></div>
+                    </div>
+                  ))}
+                </div>
+              </section>
+            </div>
+
+            {/* Right Column */}
+            <div className="space-y-8">
+              {/* Quick Links */}
+              <section>
+                <div className="h-6 w-32 bg-slate-300 dark:bg-slate-700 rounded mb-6"></div>
+
+                <div className="grid grid-cols-2 gap-4">
+                  {Array.from({ length: 4 }).map((_, i) => (
+                    <div
+                      key={i}
+                      className="h-24 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl"
+                    ></div>
+                  ))}
+                </div>
+              </section>
+
+              {/* Upcoming Mock */}
+              <div className="h-40 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl"></div>
+
+              {/* Checklist */}
+              <section className="bg-slate-100 dark:bg-slate-800 rounded-xl p-6 space-y-3">
+                <div className="h-5 w-40 bg-slate-300 dark:bg-slate-700 rounded mb-4"></div>
+
+                {Array.from({ length: 4 }).map((_, i) => (
+                  <div
+                    key={i}
+                    className="h-10 bg-white dark:bg-slate-900 rounded-lg"
+                  ></div>
+                ))}
+              </section>
+            </div>
+          </div>
+        </div>
+
+        {/* Footer */}
+        <footer className="p-8 border-t border-slate-200 dark:border-slate-800">
+          <div className="h-3 w-72 mx-auto bg-slate-300 dark:bg-slate-700 rounded"></div>
+        </footer>
+      </main>
+    </div>
   );
 };

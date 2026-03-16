@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { Suspense, useEffect, useState } from "react";
 import { useNavigate, useParams } from "react-router";
 import { getExamSubjects } from "../services/examService";
 import { useDispatch, useSelector } from "react-redux";
@@ -12,7 +12,7 @@ const Exam = () => {
   const { eid } = useParams<{ eid: string }>();
   const dispatch = useDispatch<AppDispatch>();
   const navigate = useNavigate();
-  const {notify} = useNotifications();
+  const { notify } = useNotifications();
 
   // ✅ useSelector MUST be here (top level)
   const { data, e_data, loading, error } = useSelector(
@@ -36,6 +36,10 @@ const Exam = () => {
   }
 
   console.log("Redux Data:", data);
+
+  if (loading) {
+    return <ExamSkeleton/>;
+  }
 
   return (
     <div className="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-slate-100 min-h-screen">
@@ -133,3 +137,73 @@ const Exam = () => {
 };
 
 export default Exam;
+
+
+const ExamSkeleton = () => {
+  return (
+    <div className="bg-background-light dark:bg-background-dark font-display min-h-screen animate-pulse">
+      
+      <main className="max-w-300 mx-auto w-full px-4 py-6 md:px-10">
+        
+        {/* Header Skeleton */}
+        <div className="mb-8">
+          <div className="h-8 w-72 bg-slate-300 dark:bg-slate-700 rounded mb-3"></div>
+          <div className="h-4 w-96 bg-slate-200 dark:bg-slate-700 rounded"></div>
+        </div>
+
+        {/* Subject Card Skeleton */}
+        {[1,2,3].map((_, index) => (
+          <section
+            key={index}
+            className="bg-white dark:bg-slate-900 rounded-xl border border-slate-200 dark:border-slate-800 shadow-sm mb-8"
+          >
+            {/* Subject Header */}
+            <div className="p-6 border-b border-slate-100 dark:border-slate-800 flex justify-between">
+              
+              <div className="flex items-center gap-4">
+                
+                <div className="size-12 bg-slate-300 dark:bg-slate-700 rounded-xl"></div>
+
+                <div>
+                  <div className="h-5 w-40 bg-slate-300 dark:bg-slate-700 rounded mb-2"></div>
+                  <div className="h-3 w-72 bg-slate-200 dark:bg-slate-700 rounded"></div>
+                </div>
+
+              </div>
+
+              {/* Progress Skeleton */}
+              <div className="min-w-[140px]">
+                <div className="h-3 w-24 bg-slate-300 dark:bg-slate-700 rounded mb-2"></div>
+                <div className="w-full h-2 bg-slate-200 dark:bg-slate-700 rounded"></div>
+              </div>
+
+            </div>
+
+            {/* Chapter Skeleton Rows */}
+            {[1,2,3].map((_, idx) => (
+              <div
+                key={idx}
+                className="p-4 flex justify-between items-center"
+              >
+                <div>
+                  <div className="h-4 w-40 bg-slate-300 dark:bg-slate-700 rounded mb-2"></div>
+                  <div className="h-3 w-28 bg-slate-200 dark:bg-slate-700 rounded"></div>
+                </div>
+
+                <div className="h-8 w-20 bg-slate-300 dark:bg-slate-700 rounded-lg"></div>
+              </div>
+            ))}
+          </section>
+        ))}
+      </main>
+
+      {/* Footer Skeleton */}
+      <footer className="mt-12 border-t border-slate-200 dark:border-slate-800 py-10 px-4 md:px-10">
+        <div className="max-w-300 mx-auto">
+          <div className="h-4 w-60 bg-slate-300 dark:bg-slate-700 rounded"></div>
+        </div>
+      </footer>
+
+    </div>
+  );
+};
