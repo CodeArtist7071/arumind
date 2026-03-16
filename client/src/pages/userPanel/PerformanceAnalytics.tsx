@@ -264,7 +264,7 @@ const PerformanceAnalytics = () => {
       <main className="flex flex-1 justify-center py-12 px-4 md:px-10">
         <div className="flex flex-col max-w-[1200px] flex-1 gap-12">
           {/* Hero Section */}
-          <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-6 bg-white/80 dark:bg-slate-900/80 p-8 rounded-3xl border border-slate-200 dark:border-slate-800 shadow-xl backdrop-blur-md">
+          <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-6 bg-white/80 dark:bg-slate-900/80 p-8 rounded-xl border border-slate-200 dark:border-slate-800 shadow-xl backdrop-blur-md">
             <div className="flex flex-col gap-3">
               <span className="text-[#1a57db] font-bold text-sm uppercase tracking-wider">
                 {attempts.length > 0 ? `${attempts[0].status === 'completed' ? 'Latest Attempt Completed' : 'Attempt In Progress'}` : 'No Attempts Found'}
@@ -281,7 +281,7 @@ const PerformanceAnalytics = () => {
             <div className="flex flex-col sm:flex-row gap-4">
               <button 
                 onClick={() => navigate('/user/results')}
-                className="px-8 py-4 bg-white dark:bg-slate-800 text-slate-900 dark:text-slate-100 border border-slate-200 dark:border-slate-700 rounded-2xl font-bold shadow-xl hover:bg-slate-50 dark:hover:bg-slate-700 transition-all duration-300"
+                className="px-8 py-4 bg-white dark:bg-slate-800 text-slate-900 dark:text-slate-100 border border-slate-200 dark:border-slate-700 rounded-xl font-bold shadow-xl hover:bg-slate-50 dark:hover:bg-slate-700 transition-all duration-300"
               >
                 View Full History
               </button>
@@ -293,7 +293,7 @@ const PerformanceAnalytics = () => {
                     navigate('/user/dashboard');
                   }
                 }}
-                className="px-8 py-4 bg-[#1a57db] text-white rounded-2xl font-bold shadow-2xl shadow-[#1a57db]/25 hover:bg-[#1a57db]/90 hover:scale-105 transition-all duration-300"
+                className="px-8 py-4 bg-[#1a57db] text-white rounded-xl font-bold shadow-2xl shadow-[#1a57db]/25 hover:bg-[#1a57db]/90 hover:scale-105 transition-all duration-300"
               >
                 {attempts.length > 0 ? "Review Solutions" : "Take a Test"}
               </button>
@@ -301,11 +301,11 @@ const PerformanceAnalytics = () => {
           </div>
 
           {/* Score Summary Cards */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
             {stats.map((stat, index) => (
               <div
                 key={index}
-                className="flex flex-col gap-3 rounded-3xl p-8 bg-white/70 dark:bg-slate-900/70 border border-slate-200 dark:border-slate-800 shadow-xl hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 backdrop-blur-md"
+                className="flex flex-col gap-3 rounded-xl p-8 bg-white/70 dark:bg-slate-900/70 border border-slate-200 dark:border-slate-800 shadow-xl hover:shadow-2xl hover:-translate-y-3 transition-all duration-300 backdrop-blur-md"
               >
                 <div className="flex items-center justify-between">
                   <p className="text-slate-500 dark:text-slate-400 text-sm font-semibold uppercase tracking-wider">{stat.label}</p>
