@@ -5,11 +5,11 @@ interface AlertPopupProps {
   isOpen: boolean;
   onClose: () => void;
   message?: string;
-  children:React.ReactNode;
-  title:string;
+  children: React.ReactNode;
+  title?: string;
 }
 
-export const AlertPopup = ({ isOpen, onClose, message,title="h",children }: AlertPopupProps) => {
+export const AlertPopup = ({ isOpen, onClose, message, title, children }: AlertPopupProps) => {
   if (!isOpen) return null;
 
   return (
@@ -19,12 +19,12 @@ export const AlertPopup = ({ isOpen, onClose, message,title="h",children }: Aler
           onClick={onClose}
           className="absolute top-3 right-3 text-gray-500 hover:text-black"
         >
-         <X/>
+          <X />
         </span>
-        {title && <p className="text-center text-2xl font-bold mt-10">{title || "Title"}</p>}
-        <p className="text-lg text-center font-medium text-gray-800">
-          {message || "Hello"}
-        </p>
+        {title && <p className="text-center text-blue-500 text-2xl font-bold mt-10">{title || "Title"}</p>}
+        {message && <p className="text-lg text-center font-medium text-gray-800">
+          {message}
+        </p>}
         <div className="mt-6 flex gap-4 text-right">
           {children}
         </div>

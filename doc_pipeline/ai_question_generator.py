@@ -11,67 +11,7 @@ import random
 supabase = create_client(SUPABASE_URL, SUPABASE_KEY)
 
 
-class GeminiModel:
-    def __init__(self, use_vertexai=True, project=PROJECT_ID, location=REGION, async_mode=False):
-        """
-        Initialize Gemini model client.
-        - use_vertexai=True to connect via Vertex AI, else uses Gemini Developer API.
-        - async_mode=True to use async client.
-        """
-        self.async_mode = async_mode
-        self.model_id = GEMINI_MODEL
-
-        if use_vertexai:
-            if async_mode:
-                self.client = genai.Client(
-                    vertexai=True,
-                    project=project,
-                    location=location,
-                    http_options=types.HttpOptions(api_version='v1')
-                ).aio
-            else:
-                self.client = genai.Client(
-                    vertexai=True,
-                    project=project,
-                    location=location,
-                    http_options=types.HttpOptions(api_version='v1')
-                )
-            print("[MODEL] Gemini initialized via Vertex AI")
-        else:
-            if async_mode:
-                self.client = genai.Client(
-                    api_key=API_KEY,
-                    http_options=types.HttpOptions(api_version='v1alpha')
-                ).aio
-            else:
-                self.client = genai.Client(
-                    api_key=API_KEY,
-                    http_options=types.HttpOptions(api_version='v1alpha')
-                )
-            print("[MODEL] Gemini initialized via Gemini Developer API")
-
-    def generate(self, prompt):
-        try:
-            if self.async_mode:
-                import asyncio
-
-                async def async_generate():
-                    response = await self.client.models.generate_content(
-                        model=self.model_id,
-                        contents=prompt
-                    )
-                    return response.text
-
-                return asyncio.run(async_generate())
-            else:
-                response = self.client.models.generate_content(
-                    model=self.model_id,
-                    contents=prompt
-                )
-                return response.text
-        except Exception as e:
-            print("[MODEL ERROR]", e)
-            return ""
+from services.gemini_service import GeminiModel
 
 
 def clean_json_output(text):

@@ -1,5 +1,5 @@
 import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
-import { getQuestions } from "../services/questionService";
+import { getFilteredQuestions, getQuestions } from "../services/questionService";
 
 export const fetchQuestion = createAsyncThunk(
   "questions/fetchQuestions",
@@ -12,16 +12,36 @@ export const fetchQuestion = createAsyncThunk(
     }
   },
 );
+
+export const fetchFilteredQuestion = createAsyncThunk("questions/fetchFilteredQuestions",
+  async(user_id:string,thinkAPI)=>{
+    
+    try {
+      const data = await getFilteredQuestions(user_id);
+      return data;
+    } catch (error: any) {
+      return thinkAPI.rejectWithValue(error.message);
+    }
+  }
+)
+
+
 interface QuestionState {
   loading: boolean;
   error: string | null;
   data: any[];
   ids: any[];
+  questionLoading:boolean;
+  questionError:string | null;
+  filteredQuestionData:any[] | any | {},
 }
 
 const initialState: QuestionState = {
   loading: false,
+  questionLoading:false,
+  questionError:null,
   error: null,
+  filteredQuestionData:[],
   data: [],
   ids: [],
 };
@@ -43,6 +63,17 @@ export const questionSlice = createSlice({
       .addCase(fetchQuestion.rejected, (state, action) => {
         state.loading = false;
         state.error = action.payload as string;
+      }).addCase(fetchFilteredQuestion.pending, (state) => {
+        state.questionLoading = true;
+        state.questionError = null;
+      })
+      .addCase(fetchFilteredQuestion.fulfilled, (state, action) => {
+        state.questionLoading = false;
+        state.filteredQuestionData = action.payload;
+      })
+      .addCase(fetchFilteredQuestion.rejected, (state, action) => {
+        state.questionLoading = false;
+        state.questionError = action.payload as string;
       });
   },
 });

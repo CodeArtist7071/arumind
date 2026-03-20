@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Search, ChevronRight, Book, BookOpen, Layers, Plus, CheckCircle2 } from 'lucide-react';
+import { Search, ChevronRight, Book, BookOpen, Layers, Plus, CheckCircle2, X } from 'lucide-react';
 import { getChaptersByExamID } from '../../services/examService';
 
 interface Chapter {
@@ -38,7 +38,7 @@ export default function MasterySelector({ examId, onAdd, existingIds }: MasteryS
     if (examId) fetchChapters();
   }, [examId]);
 
-  const filtered = chapters.filter(c => 
+  const filtered = chapters.filter(c =>
     c.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
     c.subjects?.name?.toLowerCase().includes(searchTerm.toLowerCase())
   );
@@ -56,8 +56,8 @@ export default function MasterySelector({ examId, onAdd, existingIds }: MasteryS
         <h3 className="text-xl font-black tracking-tight mb-4">Add Syllabus Mastery</h3>
         <div className="relative">
           <Search className="absolute left-4 top-1/2 -translate-y-1/2 size-4 text-slate-400" />
-          <input 
-            type="text" 
+          <input
+            type="text"
             placeholder="Search chapters or subjects..."
             className="w-full pl-11 pr-4 py-3 bg-slate-50 dark:bg-slate-800 border-none rounded-2xl text-sm outline-none focus:ring-2 ring-[#1a57db]/30 transition-all"
             value={searchTerm}
@@ -69,8 +69,8 @@ export default function MasterySelector({ examId, onAdd, existingIds }: MasteryS
       <div className="flex-1 overflow-y-auto p-6 space-y-6 custom-scrollbar">
         {loading ? (
           <div className="flex flex-col items-center justify-center py-20 gap-3">
-             <div className="size-10 border-4 border-[#1a57db] border-t-transparent rounded-full animate-spin" />
-             <p className="text-xs font-bold text-slate-400 uppercase tracking-widest">Loading Syllabus...</p>
+            <div className="size-10 border-4 border-[#1a57db] border-t-transparent rounded-full animate-spin" />
+            <p className="text-xs font-bold text-slate-400 uppercase tracking-widest">Loading Syllabus...</p>
           </div>
         ) : Object.keys(grouped).length === 0 ? (
           <div className="text-center py-20 text-slate-400 font-bold uppercase text-[10px] tracking-widest">
@@ -87,20 +87,23 @@ export default function MasterySelector({ examId, onAdd, existingIds }: MasteryS
                 {subChapters.map(chapter => {
                   const isAdded = existingIds.includes(chapter.id);
                   return (
-                    <button
-                      key={chapter.id}
-                      disabled={isAdded}
-                      onClick={() => onAdd(chapter)}
-                      className={`flex items-center justify-between p-4 bg-slate-50 dark:bg-slate-800/50 rounded-2xl border border-transparent transition-all group ${isAdded ? 'opacity-50 grayscale' : 'hover:border-[#1a57db]/30 hover:bg-white dark:hover:bg-slate-800'}`}
-                    >
+                    <div className={`flex justify-between items-center ${isAdded ? 'bg-slate-50' : 'bg-slate-200 dark:bg-slate-900'} rounded-xl p-6`}>
                       <div className="flex items-center gap-4 text-left">
                         <div className={`size-8 rounded-lg flex items-center justify-center ${isAdded ? 'bg-slate-200 text-slate-400' : 'bg-white dark:bg-slate-900 text-[#1a57db] shadow-sm'}`}>
                           {isAdded ? <CheckCircle2 size={16} /> : <BookOpen size={16} />}
                         </div>
-                        <span className="text-sm font-bold text-slate-900 dark:text-white line-clamp-1">{chapter.name}</span>
                       </div>
-                      <Plus size={18} className={`text-[#1a57db] transition-transform ${isAdded ? 'hidden' : 'group-hover:rotate-90 group-hover:scale-125'}`} />
-                    </button>
+                      <div className='w-full '>
+                        <span className="text-sm ml-4 font-bold text-slate-900 dark:text-white line-clamp-1">{chapter.name}</span>
+                      </div>
+                      <div
+                        onClick={() => onAdd(chapter)}
+                        className={`flex items-center cursor-pointer h-10 w-12 ${isAdded ? 'items-center justify-center text-slate-400' : 'bg-blue-400 rounded-full justify-center'}`}
+                      >
+                        {isAdded ? <CheckCircle2 size={25} /> : <Plus color='white' size={16} />}
+                      </div>
+                    </div>
+
                   );
                 })}
               </div>

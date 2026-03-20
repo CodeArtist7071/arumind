@@ -237,7 +237,7 @@ const UserDashboard = () => {
             {/* Right Column */}
             <div className="space-y-8">
               {/* Quick Links */}
-              <section>
+              {/* <section>
                 <h2 className="text-xl font-bold mb-6 text-slate-900 dark:text-white">
                   Quick Links
                 </h2>
@@ -255,7 +255,7 @@ const UserDashboard = () => {
                     </button>
                   ))}
                 </div>
-              </section>
+              </section> */}
 
               <UpcomingMockTest />
 

@@ -7,10 +7,13 @@ export const getExams = async () => {
   return data;
 };
 
-export const getExamsById = async (exam_id:string[]) => {
-  const { data, error } = await supabase.from("exams").select("*").eq("id",exam_id);
+export const getExamsById = async (exam_id: string[]) => {
+  const { data, error } = await supabase
+    .from("exams")
+    .select("*")
+    .eq("id", exam_id);
   if (error) throw error;
-  console.log("is examss list coming....",data)
+  console.log("is examss list coming....", data);
   return data;
 };
 
@@ -70,9 +73,30 @@ export const getChapters = async (subject_id: string) => {
   return data;
 };
 
-
-export const getExamBoards = async()=>{
-  const {data,error}  = await supabase.from("exam_boards").select("*").single()
-  if(error) throw error;
+export const getExamBoards = async () => {
+  const { data, error } = await supabase
+    .from("exam_boards")
+    .select(
+      `
+    id,
+    name,
+    full_name,
+    description,
+    exams (
+      id,
+      name,
+      full_name,
+      type,
+      prelims,
+      mains,
+      is_active
+    )
+  `,
+    )
+    .eq("is_active", true)
+    .order("description");
+  if (error) throw new Error();
   return data;
-}
+};
+
+

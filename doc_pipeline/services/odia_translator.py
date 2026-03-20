@@ -1,87 +1,85 @@
 import json
 import logging
-from openodia import other_lang_to_odia
+import re
+from services.gemini_service import GeminiModel
 
 class OdiaTranslator:
     def __init__(self):
         self.logger = logging.getLogger(__name__)
-        self.logger.info("Initializing offline translator using openodia")
-
-    def convert_to_odia_numerals(self, text):
-        """
-        Converts English digits (0-9) to Odia numerals (୦-୯).
-        """
-        if not text:
-            return text
-        
-        digit_map = {
-            '0': '୦', '1': '୧', '2': '୨', '3': '୩', '4': '୪',
-            '5': '୫', '6': '୬', '7': '୭', '8': '୮', '9': '୯'
-        }
-        
-        result = ""
-        for char in str(text):
-            result += digit_map.get(char, char)
-        return result
-
-    def translate_text(self, text):
-        if not text:
-            return ""
-            
-        try:
-            # openodia translation is free and can run offline (with its dictionary)
-            translated_text = other_lang_to_odia(text)
-            # Apply number conversion to the translated text
-            return self.convert_to_odia_numerals(translated_text)
-        except Exception as e:
-            self.logger.error(f"Translation error: {e}")
-            return text
+        self.model = GeminiModel(use_vertexai=False) # Use AI for better accuracy
+        self.logger.info("Initializing AI translator using Gemini")
 
     def translate_question(self, question_obj):
         """
-        Translates a single question object to Odia and converts numbers.
-        Keeps IDs and metadata intact.
+        Translates a single question object to Odia using Gemini AI with expert rules.
         """
-        translated_q = question_obj.copy()
+        # User defined expert prompt
+        prompt = f"""You are an expert Odia language translator specializing in educational and competitive exam content for Odisha state exams (OPSC, OSSC, OSSSC).
+
+Your task is to translate the given MCQ question and its options into natural, exam-appropriate Odia.
+
+## Translation rules — follow exactly
+
+### Language mixing (most important rule)
+- Translate ALL general and technical words into Odia
+- For ALL technical terms (Speed, Velocity, Force, Pressure, DNA, CPU, RAM, etc.) and ALL Proper Nouns/Acronyms (NASA, WHO, RBI, ISRO, India, etc.), translate/transliterate to Odia but ALWAYS include the original English term in brackets immediately after
+- Example: "NASA" → "ନାସା (NASA)"
+- Example: "Speed of light" → "ଆଲୋକର ବେଗ (Speed of light)"
+- Keep these in English AS-IS ONLY: scientific units (m/s, kg, km, Hz, MHz), mathematical operators (+, -, ×, ÷, =, ^), and chemical formulas (H₂O, CO₂, NaCl)
+
+### Number conversion
+- Convert ALL standalone numerals to Odia numerals: 0→୦, 1→୧, 2→୨, 3→୩, 4→୪, 5→୫, 6→୬, 7→୭, 8→୮, 9→୯
+- Convert inside words too: "21st" → "୨୧ତମ"
+- Keep decimal point as "." — do NOT convert it: "3.14" → "୩.୧୪"
+- Keep numbers that are part of units or formulas as-is if clarity requires: "10^8" → "୧୦^୮"
+- Years stay as Odia numerals: "1947" → "୧୯୪୭"
+
+### Options structure
+- Keep the EXACT same JSON structure: each option must have "l" and "v" keys
+- Do NOT add, remove, or reorder options
+- The "l" key value (A, B, C, D) must NOT be translated — keep exactly as-is
+- Only translate the "v" (value) field
+
+### Quality rules
+- Translation must sound natural to an Odia-medium student — not word-for-word literal
+- Preserve the exact meaning — do not simplify or add explanation
+- If a term has no clean Odia equivalent, keep English — never force a bad translation
+- Mathematical relationships must be preserved exactly
+
+JSON Question to translate:
+{json.dumps({
+    "question": question_obj.get("question", question_obj.get("q")),
+    "options": question_obj.get("options", question_obj.get("opt", []))
+}, indent=2)}
+
+Return the result as a VALID JSON object with exactly two keys: "question" and "options".
+Do not include any other text or markdown formatting.
+        """
         
-        # Translate main question text
-        # Supabase uses 'question' field
-        if 'question' in question_obj:
-            translated_q['question'] = self.translate_text(question_obj.get('question', ''))
-        elif 'q' in question_obj:
-             translated_q['question'] = self.translate_text(question_obj.get('q', ''))
-        
-        # Translate options
-        translated_options = []
-        # Supabase uses 'options' field
-        options = question_obj.get('options') or question_obj.get('opt') or []
-        
-        if isinstance(options, list):
-            for opt in options:
-                new_opt = opt.copy()
-                if isinstance(opt, dict):
-                    # Translate option value/text
-                    for key in ['v', 'value', 'text']:
-                        if key in opt:
-                            new_opt[key] = self.translate_text(str(opt[key]))
-                translated_options.append(new_opt)
-        
-        translated_q['options'] = translated_options
-        
-        # Ensure we don't have conflicting keys if we used 'opt'/'q' source
-        translated_q.pop('q', None)
-        translated_q.pop('opt', None)
-        
-        return translated_q
+        try:
+            response_text = self.model.generate(prompt, response_mime_type="application/json")
+            # Clean response text just in case (though response_mime_type should handle it)
+            clean_text = re.sub(r'```json\s*|\s*```', '', response_text).strip()
+            translated_data = json.loads(clean_text)
+            
+            result = question_obj.copy()
+            result["question"] = translated_data.get("question", result.get("question"))
+            result["options"] = translated_data.get("options", result.get("options"))
+            
+            # Clean up source fields if they were non-standard
+            result.pop('q', None)
+            result.pop('opt', None)
+            
+            return result
+        except Exception as e:
+            self.logger.error(f"AI Translation failed for question: {e}")
+            # Fallback to English if translation fails
+            return question_obj
 
     def translate_questions_batch(self, questions_list):
         """
-        Translates a list of questions.
+        Translates a list of questions using AI.
         """
-        return [self.translate_question(q) for q in questions_list]
-
-    def translate_questions_batch(self, questions_list):
-        """
-        Translates a list of questions.
-        """
+        # For simplicity and to avoid prompt size limits, we translate individually,
+        # but could be batched for performance later.
         return [self.translate_question(q) for q in questions_list]
