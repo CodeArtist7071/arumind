@@ -4,8 +4,9 @@ import examReducer from "./slice/examSlice";
 import examSubjectReducer from "./slice/examSubjectSlice";
 import chapterReducer from "./slice/chapterSlice";
 import questionReducer from "./slice/questionSlice";
-import habitReducer from "./slice/habitSlice"
-
+import habitReducer from "./slice/habitSlice";
+import examBoardReducer from "./slice/examBoardSlice";
+import adaptiveReducer from "./slice/adaptiveQuestionSlice";
 
 export const store = configureStore({
   reducer: {
@@ -14,7 +15,9 @@ export const store = configureStore({
     examSubject: examSubjectReducer,
     chapters: chapterReducer,
     questions: questionReducer,
-    habits: habitReducer
+    habits: habitReducer,
+    examBoards: examBoardReducer,
+    adaptive: adaptiveReducer,
   },
 });
 

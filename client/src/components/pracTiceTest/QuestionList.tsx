@@ -10,6 +10,7 @@ type QuestionListProps = {
     React.SetStateAction<Record<number, boolean>>
   >;
   onConfirm?: (questionId: number, answer: string) => void;
+  language: "en" | "od";
 };
 
 export const QuestionList = ({
@@ -17,8 +18,11 @@ export const QuestionList = ({
   confirmedAnswers,
   setConfirmedAnswers,
   onConfirm,
+  language,
 }: QuestionListProps) => {
   const [lastSelected, setLastSelected] = useState<Record<number, string>>({});
+    const {filteredQuestionData} = useSelector((state:RootState)=>state.questions.filteredQuestionData)
+   console.log("hello sexy.....",filteredQuestionData)
   const { data: questionData } = useSelector(
     (state: RootState) => state.questions,
   );
@@ -37,6 +41,11 @@ export const QuestionList = ({
               : "bg-yellow-100 text-yellow-700";
 
         const currentAnswer = answers?.[q.id];
+        
+        const isOdia = language === "od";
+        const odiaData = Array.isArray(q.odia_questions) ? q.odia_questions[0] : q.odia_questions;
+        const displayQuestion = (isOdia && odiaData?.question) ? odiaData.question : q.question;
+        const displayOptions = (isOdia && odiaData?.options) ? odiaData.options : q.options;
 
         return (
           <div
@@ -64,11 +73,11 @@ export const QuestionList = ({
             {/* Body */}
             <div className="p-6 flex-1">
               <p className="text-slate-800 dark:text-slate-200 font-medium text-lg mb-6 leading-relaxed">
-                {q.question}
+                {displayQuestion}
               </p>
 
               <div className="grid gap-3">
-                {q.options.map((opt: any) => (
+                {displayOptions.map((opt: any) => (
                   <div key={opt.l} className="relative flex items-center group">
                     <label className={`
                       flex w-full items-center p-4 rounded-xl border-2 transition-all cursor-pointer
@@ -103,9 +112,9 @@ export const QuestionList = ({
                           }));
                           if (onConfirm) onConfirm(q.id, currentAnswer);
                         }}
-                        className="absolute right-4 bg-primary hover:bg-primary/90 text-white px-4 py-1.5 rounded-lg text-sm font-bold shadow-lg shadow-primary/20 transition-all animate-in slide-in-from-right-2"
+                        className="absolute right-4 bg-primary cursor-pointer hover:bg-primary/90 text-green-700 px-4 py-1.5 rounded-lg text-sm font-bold shadow-lg shadow-primary/20 transition-all animate-in slide-in-from-right-2"
                       >
-                        Confirm
+                        Click Here to Confirm
                       </button>
                     )}
                   </div>
@@ -116,7 +125,7 @@ export const QuestionList = ({
               {confirmedAnswers[q.id] && (
                 <div className="flex items-center gap-2 mt-6 text-emerald-600 dark:text-emerald-400 font-bold text-sm">
                   <div className="size-2 rounded-full bg-emerald-500 animate-pulse" />
-                  Answer Confirmed
+                  Answer Selected
                 </div>
               )}
             </div>

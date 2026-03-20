@@ -9,7 +9,7 @@ export const Header = () => {
   console.log("usersss.....!!", user);
 
   return (
-    <header className="flex items-center justify-between border-b border-slate-200 dark:border-slate-800 px-6 py-4 lg:px-20 sticky top-0 z-50 bg-white/80 dark:bg-slate-900/80 backdrop-blur-md">
+    <header className="flex items-center justify-between border-b border-slate-200 bg-white dark:border-slate-800 py-4 sticky top-0 z-50 backdrop-blur-md">
       <div className="flex items-center gap-8">
         <div className="flex items-center gap-2 text-[#1e3a5f]">
           <Notebook className="text-3xl font-bold" />

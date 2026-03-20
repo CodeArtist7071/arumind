@@ -23,7 +23,7 @@ STATUS_FILE = "status.json"
 
 # Translation settings
 ENABLE_ODIA_TRANSLATION = False
-TARGET_LANGUAGE = "or"
+TARGET_LANGUAGE = "od"
 
 # Free tier safety limits
 

@@ -11,9 +11,7 @@ createRoot(document.getElementById("root")!).render(
   <StrictMode>
     <Provider store={store}>
       <NotificationsProvider>
-        <BrowserRouter>
-          <App />
-        </BrowserRouter>
+        <App />
       </NotificationsProvider>
     </Provider>
   </StrictMode>,
