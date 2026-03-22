@@ -26,6 +26,11 @@ export const userSlice = createSlice({
             state.user = null;
             state.profile = null;
             state.error = null;
+        },
+        updateUserLocally:(state, action) => {
+            if (state.profile) {
+                state.profile = { ...state.profile, ...action.payload };
+            }
         }
     },
     extraReducers(builder) {
@@ -43,5 +48,5 @@ export const userSlice = createSlice({
     },
 })
 
-export const {clearUser} = userSlice.actions;
+export const {clearUser, updateUserLocally} = userSlice.actions;
 export default userSlice.reducer;
