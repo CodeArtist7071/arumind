@@ -19,6 +19,8 @@
     "@tailwindcss/vite": "^4.2.1",
     "@tensorflow-models/face-landmarks-detection": "^1.0.6",
     "@tensorflow/tfjs": "^4.22.0",
+    "@types/gapi": "^0.0.47",
+    "@types/gapi.client.calendar": "^3.0.12",
     "date-fns": "^4.1.0",
     "gh-pages": "^6.3.0",
     "lucide-react": "^0.575.0",
@@ -34,6 +36,9 @@
   },
   "devDependencies": {
     "@eslint/js": "^9.39.1",
+    "@types/gapi.client": "^1.0.8",
+    "@types/gapi.client.calendar-v3": "^0.0.4",
+    "@types/google.accounts": "^0.0.18",
     "@types/node": "^24.10.1",
     "@types/react": "^19.2.7",
     "@types/react-dom": "^19.2.3",

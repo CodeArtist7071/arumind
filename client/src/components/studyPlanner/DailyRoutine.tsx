@@ -1,5 +1,5 @@
 import React from 'react';
-import { Sun, Moon, Clock, CheckCircle2, Circle, Sparkles } from 'lucide-react';
+import { Sun, Moon, Clock, CheckCircle2, Circle, Sparkles, Calendar } from 'lucide-react';
 
 interface Habit {
   id: string;
@@ -12,9 +12,11 @@ interface Habit {
 interface DailyRoutineProps {
   habits?: Habit[];
   onRefresh?: () => void;
+  onSync?: (habit: Habit) => void;
+  onSyncAll?: () => void;
 }
 
-export default function DailyRoutine({ habits = [], onRefresh }: DailyRoutineProps) {
+export default function DailyRoutine({ habits = [], onRefresh, onSync, onSyncAll }: DailyRoutineProps) {
   // Sort habits by start time for a better routine view
   const sortedHabits = [...habits].sort((a, b) => {
     if (!a.start_time) return 1;
@@ -33,9 +35,27 @@ export default function DailyRoutine({ habits = [], onRefresh }: DailyRoutinePro
           <h3 className="text-2xl font-black tracking-tight text-slate-900 dark:text-white">Daily Routine</h3>
           <p className="text-md text-slate-400 font-bold mt-1">Today's Study Schedule</p>
         </div>
-        <div className="px-3 py-1 bg-emerald-50 dark:bg-emerald-950 text-emerald-600 rounded-lg text-[10px] font-black uppercase tracking-widest flex items-center gap-2">
-           <Sparkles size={12} />
-           Live
+        <div className="flex items-center gap-3">
+          {(onSyncAll || onSync) && sortedHabits.length > 0 && (
+            <button
+              onClick={() => {
+                if (onSyncAll) {
+                  onSyncAll();
+                } else {
+                  sortedHabits.forEach((h) => onSync?.(h));
+                }
+              }}
+              className="px-3 py-1.5 bg-blue-50 dark:bg-blue-900/20 text-[#1a57db] rounded-lg text-[10px] font-black uppercase tracking-widest flex items-center gap-2 hover:bg-blue-100 dark:hover:bg-blue-900/40 transition-all border border-blue-100 dark:border-blue-800"
+              title="Add all to Google Calendar"
+            >
+              <Calendar size={12} />
+              Sync All
+            </button>
+          )}
+          <div className="px-3 py-1 bg-emerald-50 dark:bg-emerald-950 text-emerald-600 rounded-lg text-[10px] font-black uppercase tracking-widest flex items-center gap-2">
+            <Sparkles size={12} />
+            Live
+          </div>
         </div>
       </div>
 
@@ -60,11 +80,22 @@ export default function DailyRoutine({ habits = [], onRefresh }: DailyRoutinePro
                        {habit.start_time || "Anytime"} — {habit.end_time || "Anytime"}
                     </p>
                   </div>
-                  <span className={`text-[12px] font-bold px-1.5 py-0.5 rounded-md uppercase tracking-wide ${
-                    habit.priority === 'HIGH' ? 'bg-rose-100 text-rose-600' : 'bg-slate-100 text-slate-500'
-                  }`}>
-                    {habit.priority}
-                  </span>
+                  <div className="flex items-center gap-2">
+                    {onSync && (
+                      <button
+                        onClick={() => onSync(habit)}
+                        className="p-1.5 text-slate-400 hover:text-[#1a57db] hover:bg-blue-50 dark:hover:bg-blue-900/20 rounded-lg transition-all"
+                        title="Sync to Google Calendar"
+                      >
+                        <Calendar size={14} />
+                      </button>
+                    )}
+                    <span className={`text-[12px] font-bold px-1.5 py-0.5 rounded-md uppercase tracking-wide ${
+                      habit.priority === 'HIGH' ? 'bg-rose-100 text-rose-600' : 'bg-slate-100 text-slate-500'
+                    }`}>
+                      {habit.priority}
+                    </span>
+                  </div>
                 </div>
               </div>
             </div>

@@ -14,30 +14,24 @@ import {
 import React, { Suspense, useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import type { AppDispatch, RootState } from "../../store";
-import { getExams } from "../../services/examService";
+import { supabase } from "../../utils/supabase";
+import { fetchUserProfile } from "../../slice/userSlice";
+
 import { fetchExams, type examProps } from "../../slice/examSlice";
 import { Outlet, useNavigate } from "react-router-dom";
-import { AlertPopup } from "../../components/ui/AlertPopup";
-import { Button } from "../../components/ui/Button";
-import { WarningModal } from "../../components/ui/WarningModal";
-import { notify } from "reapop";
+
 
 const UserDashboard = () => {
-  const { profile, user } = useSelector(
-    (state: RootState) => state.user ?? null,
-  );
+  const { user, profile } = useSelector((state: RootState) => state.user);
   const { examData, loading } = useSelector(
     (state: RootState) => state.exams ?? null,
   );
   const dispatch = useDispatch<AppDispatch>();
-  console.log("exams.....", user);
   const navigate = useNavigate();
 
   useEffect(() => {
     dispatch(fetchExams());
-  }, []);
-
-  console.log("users-dashboard", profile);
+  }, [dispatch]);
 
   const targetedExams = examData.filter((el) =>
     profile.target_exams.includes(el.id),
@@ -58,24 +52,7 @@ const UserDashboard = () => {
     { name: "Aptitude & Mental Ability", percent: 30, color: "bg-orange-500" },
   ];
 
-  const quickLinks = [
-    {
-      icon: <CalendarIcon size={24} />,
-      label: "Planner",
-      path: "/user/plan-exams",
-    },
-    {
-      icon: <CheckSquare size={24} />,
-      label: "Tests",
-      path: "/user/mock-tests",
-    },
-    {
-      icon: <BarChart2 size={24} />,
-      label: "Performance",
-      path: "/user/performance",
-    },
-    { icon: <BookMarked size={24} />, label: "History", path: "/user/results" },
-  ];
+
 
   const checklist = [
     { text: "Read Current Affairs (Odia)", checked: true },
@@ -88,6 +65,8 @@ const UserDashboard = () => {
     navigate(`exam/${id}`);
   }
 
+
+
   if (loading) {
     return <DashboardSkeleton />;
   }
@@ -99,23 +78,25 @@ const UserDashboard = () => {
       {/* Main Content */}
       <main className="flex-1 overflow-y-auto flex flex-col">
         {/* Header */}
-        <header className="h-16 py-10 border-b border-slate-200 dark:border-slate-800 bg-white/80 dark:bg-slate-900/80 backdrop-blur-md flex items-center justify-between px-8 sticky top-0 z-10 shadow-sm">
-          <div className="flex items-center gap-4 bg-slate-100 dark:bg-slate-800 px-4 py-2 rounded-lg w-96 shadow-sm">
-            <SearchAlert color="white" size={20} />
+        <header className="h-20 border-b border-slate-200 dark:border-slate-800 bg-white/80 dark:bg-slate-900/80 backdrop-blur-md flex items-center justify-between px-8 sticky top-0 z-10 shadow-sm">
+          <div className="flex items-center gap-4 bg-slate-100 dark:bg-slate-800 px-4 py-2 rounded-xl w-96 shadow-sm ring-1 ring-slate-200 dark:ring-slate-700">
+            <SearchAlert className="text-slate-400" size={18} />
             <input
-              className="bg-transparent border-none focus:ring-0 text-sm w-full outline-none placeholder-slate-500"
-              placeholder="Search study material, tests, or subjects..."
+              className="bg-transparent border-none focus:ring-0 text-sm w-full outline-none placeholder-slate-500 font-medium"
+              placeholder="Search study material, tests..."
               type="text"
             />
           </div>
-          <div className="flex items-center gap-4">
-            <button className="p-2 text-slate-500 hover:bg-slate-100 dark:hover:bg-slate-800 rounded-lg relative transition-all duration-200">
-              <Bell color="white" size={20} />
-              <span className="absolute top-2 right-2 w-2 h-2 bg-red-500 rounded-full border-2 border-white dark:border-slate-900"></span>
-            </button>
-            <button className="p-2 text-slate-500 hover:bg-slate-100 dark:hover:bg-slate-800 rounded-lg transition-all duration-200">
-              <Settings color="white" size={20} />
-            </button>
+          <div className="flex items-center gap-6">
+            <div className="flex items-center gap-3">
+              <button className="p-2.5 text-slate-500 hover:bg-slate-100 dark:hover:bg-slate-800 rounded-xl relative transition-all duration-200 border border-transparent hover:border-slate-200 dark:hover:border-slate-700">
+                <Bell size={20} />
+                <span className="absolute top-2.5 right-2.5 w-2 h-2 bg-red-500 rounded-full border-2 border-white dark:border-slate-900"></span>
+              </button>
+              <button className="p-2.5 text-slate-500 hover:bg-slate-100 dark:hover:bg-slate-800 rounded-xl transition-all duration-200 border border-transparent hover:border-slate-200 dark:hover:border-slate-700">
+                <Settings size={20} />
+              </button>
+            </div>
           </div>
         </header>
         <div className="p-8 max-w-7xl mx-auto w-full space-y-8">
@@ -235,7 +216,7 @@ const UserDashboard = () => {
             </div>
 
             {/* Right Column */}
-            <div className="space-y-8">
+            <div className="lg:col-span-4 space-y-8">
               {/* Quick Links */}
               {/* <section>
                 <h2 className="text-xl font-bold mb-6 text-slate-900 dark:text-white">
@@ -311,60 +292,77 @@ export default UserDashboard;
 const UpcomingMockTest = () => {
   const upcomingMocks = [
     {
-      date: "24",
+      date: "2025-08-24", // Changed to ISO for parsing
+      displayDate: "24",
       month: "Aug",
       title: "OPSC Prelims Full Mock 12",
-      time: "10:00 AM",
+      time: "10:00",
+      displayTime: "10:00 AM",
       marks: "200 Marks",
     },
     {
-      date: "26",
+      date: "2025-08-26",
+      displayDate: "26",
       month: "Aug",
       title: "Odisha GK Sectional Test",
-      time: "04:00 PM",
+      time: "16:00",
+      displayTime: "04:00 PM",
       marks: "50 Marks",
     },
     {
-      date: "30",
+      date: "2025-08-30",
+      displayDate: "30",
       month: "Aug",
       title: "OSSC CGL Quantitative",
-      time: "11:00 AM",
+      time: "11:00",
+      displayTime: "11:00 AM",
       marks: "100 Marks",
     },
   ];
+
   return (
     <section>
-      <h2 className="text-xl font-bold mb-6 text-slate-900 dark:text-white">
-        Upcoming Mock Tests
-      </h2>
-      <div className="bg-white dark:bg-slate-900 rounded-xl border border-slate-200 dark:border-slate-800 overflow-hidden shadow-sm">
+      <div className="flex items-center justify-between mb-6">
+        <h2 className="text-xl font-bold text-slate-900 dark:text-white">
+          Upcoming Mock Tests
+        </h2>
+      </div>
+      <div className="bg-white dark:bg-slate-900 rounded-2xl border border-slate-200 dark:border-slate-800 overflow-hidden shadow-sm">
         <div className="divide-y divide-slate-100 dark:divide-slate-800">
           {upcomingMocks.map((mock, index) => (
             <div
               key={index}
-              className="p-4 flex items-center gap-4 hover:bg-slate-50 dark:hover:bg-slate-800 transition-all duration-200 cursor-pointer group"
+              className="p-5 flex items-center gap-5 hover:bg-slate-50/80 dark:hover:bg-slate-800/50 transition-all duration-200 group"
             >
-              <div className="flex flex-col items-center justify-center min-w-[50px] bg-slate-100 dark:bg-slate-800 py-3 rounded-lg group-hover:bg-slate-200 dark:group-hover:bg-slate-700 transition-colors">
-                <span className="text-[10px] font-bold text-slate-400 uppercase tracking-wider">
+              <div className="flex flex-col items-center justify-center min-w-[56px] bg-slate-100 dark:bg-slate-800/80 py-3 rounded-xl group-hover:bg-blue-50 dark:group-hover:bg-blue-900/20 transition-colors">
+                <span className="text-[10px] font-black text-slate-400 dark:text-slate-500 uppercase tracking-widest mb-0.5 group-hover:text-blue-500 transition-colors">
                   {mock.month}
                 </span>
-                <span className="text-xl font-black text-slate-900 dark:text-white">
-                  {mock.date}
+                <span className="text-xl font-black text-slate-900 dark:text-white group-hover:text-blue-600 transition-colors">
+                  {mock.displayDate}
                 </span>
               </div>
-              <div className="flex-1">
-                <h4 className="text-sm font-bold text-slate-900 dark:text-white group-hover:text-[#1a57db] transition-colors">
+              <div className="flex-1 min-w-0">
+                <h4 className="text-sm font-bold text-slate-900 dark:text-white group-hover:text-[#1a57db] transition-colors truncate">
                   {mock.title}
                 </h4>
-                <p className="text-xs text-slate-500">
-                  {mock.time} • {mock.marks}
-                </p>
+                <div className="flex items-center gap-2 mt-1">
+                  <p className="text-xs text-slate-500 font-medium whitespace-nowrap">
+                    {mock.displayTime} • {mock.marks}
+                  </p>
+                </div>
               </div>
-              <ChevronRight className="text-slate-400 group-hover:translate-x-1 transition-transform" />
+              <button
+                className="p-2 text-slate-400 hover:text-blue-600 hover:bg-blue-100 dark:hover:bg-blue-900/30 rounded-lg transition-all"
+                title="View Details"
+              >
+                <ChevronRight size={18} />
+              </button>
+              <ChevronRight className="text-slate-300 group-hover:translate-x-1 transition-transform" />
             </div>
           ))}
         </div>
-        <button className="w-full py-3 text-xs font-bold text-[#1a57db] border-t border-slate-100 dark:border-slate-800 hover:bg-slate-50 dark:hover:bg-slate-800 transition-all duration-200">
+        <button className="w-full py-4 text-[11px] font-black uppercase tracking-widest text-slate-500 dark:text-slate-400 border-t border-slate-100 dark:border-slate-800 hover:bg-slate-50 dark:hover:bg-slate-800 hover:text-[#1a57db] transition-all duration-200">
           View All Scheduled Tests
         </button>
       </div>
@@ -382,7 +380,8 @@ const DashboardSkeleton = () => {
           <div className="w-96 h-10 bg-slate-200 dark:bg-slate-700 rounded-lg"></div>
 
           {/* Icons */}
-          <div className="flex gap-4">
+          <div className="flex items-center gap-4">
+            <div className="w-24 h-8 rounded-lg bg-slate-200 dark:bg-slate-700"></div>
             <div className="w-8 h-8 rounded-lg bg-slate-200 dark:bg-slate-700"></div>
             <div className="w-8 h-8 rounded-lg bg-slate-200 dark:bg-slate-700"></div>
           </div>
