@@ -32,8 +32,39 @@ export default defineConfig({
           },
         ],
       },
+      workbox: {
+        globPatterns: ["**/*.{js,css,html,ico,png,svg,wasm}"],
+        maximumFileSizeToCacheInBytes: 12 * 1024 * 1024, // 12MB
+      },
     }),
   ],
+  build: {
+    rollupOptions: {
+      output: {
+        manualChunks(id) {
+          if (id.includes("node_modules")) {
+            if (id.includes("@tensorflow")) {
+              return "vendor-tf";
+            }
+            if (id.includes("@mediapipe")) {
+              return "vendor-mediapipe";
+            }
+            if (id.includes("recharts") || id.includes("d3")) {
+              return "vendor-charts";
+            }
+            if (id.includes("lucide-react")) {
+              return "vendor-icons";
+            }
+            if (id.includes("@supabase")) {
+              return "vendor-supabase";
+            }
+            return "vendor";
+          }
+        },
+      },
+    },
+    chunkSizeWarningLimit: 1000,
+  },
 });
   plugins: [react(), tailwindcss(), cloudflare()],
 });
