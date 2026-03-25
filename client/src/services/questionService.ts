@@ -284,3 +284,31 @@ export const seedAbilityFromMockTest = async (
     .from("user_ability")
     .upsert(upserts, { onConflict: "user_id,chapter_id" });
 };
+
+export const getQuestionsByIds = async (ids: string[]) => {
+  const { data, error } = await supabase
+    .from("questions")
+    .select(`
+      id,
+      exam_id,
+      subject_id,
+      chapter_id,
+      correct_answer,
+      difficulty_level,
+      marks,
+      negative_marks,
+      options,
+      question,
+      question_number,
+      diagram_url,
+      diagram_present,
+      odia_questions (
+        question,
+        options
+      )
+    `)
+    .in("id", ids);
+
+  if (error) throw error;
+  return data;
+};

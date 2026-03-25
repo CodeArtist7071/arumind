@@ -5,6 +5,7 @@ import DailyRoutine from "../../components/studyPlanner/DailyRoutine";
 import FocusTimer from "../../components/studyPlanner/FocusTimer";
 import GrowthMetrics from "../../components/studyPlanner/GrowthMetrics";
 import { GoogleCalendarButton } from "../../components/ui/GoogleCalenderButton";
+import GoogleCalendarModal from "../../components/studyPlanner/GoogleCalendarModal";
 import {
   GraduationCap,
   Sparkles,
@@ -52,6 +53,7 @@ export default function StudyPlannerPage() {
   const [isSettingUp, setIsSettingUp] = useState(false);
   const [autoOpenAddModal, setAutoOpenAddModal] = useState(false);
   const [hasPrevMonthTasks, setHasPrevMonthTasks] = useState(false);
+  const [isGooglePopupOpen, setIsGooglePopupOpen] = useState(false);
 
   // Fetch from Supabase
   const fetchData = async () => {
@@ -219,7 +221,6 @@ export default function StudyPlannerPage() {
 
   const handleStartFresh = async () => {
     setIsSettingUp(false);
-    setAutoOpenAddModal(true);
   };
 
   useEffect(() => {
@@ -308,7 +309,7 @@ export default function StudyPlannerPage() {
 
   const handleSyncTaskToCalendar = async (habit: Habit, silent = false) => {
     if (!connected) {
-      if (!silent) alert("Please connect Google Calendar first.");
+      if (!silent) setIsGooglePopupOpen(true);
       return;
     }
 
@@ -391,7 +392,7 @@ export default function StudyPlannerPage() {
 
   const handleSyncAllTasks = async () => {
     if (!connected) {
-      alert("Please connect Google Calendar first.");
+      setIsGooglePopupOpen(true);
       return;
     }
     
@@ -408,6 +409,7 @@ export default function StudyPlannerPage() {
 
   return (
     <div className="min-h-screen bg-linear-to-br from-slate-50 to-slate-100 dark:from-slate-900 dark:to-slate-950 text-slate-900 dark:text-slate-100">
+      <GoogleCalendarModal isOpen={isGooglePopupOpen} onClose={() => setIsGooglePopupOpen(false)} />
       <main className="max-w-400 mx-auto p-4 md:p-8 space-y-10 pb-20">
         <div className="grid sm:grid-cols-1 lg:grid-cols-12 gap-6 items-start">
           {/* Center Column: Mastery Tracker (8/12) */}
