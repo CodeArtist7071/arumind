@@ -10,6 +10,7 @@ export default defineConfig({
   plugins: [
     react(),
     tailwindcss(),
+    cloudflare(),
     VitePWA({
       registerType: "autoUpdate",
       devOptions: {
@@ -65,6 +66,4 @@ export default defineConfig({
     },
     chunkSizeWarningLimit: 1000,
   },
-});
-  plugins: [react(), tailwindcss(), cloudflare()],
 });
