@@ -21,8 +21,8 @@ export const QuestionList = ({
   language,
 }: QuestionListProps) => {
   const [lastSelected, setLastSelected] = useState<Record<number, string>>({});
-    const {filteredQuestionData} = useSelector((state:RootState)=>state.questions.filteredQuestionData)
-   console.log("hello sexy.....",filteredQuestionData)
+  const filteredQuestionData = useSelector((state:RootState)=>state.questions.filteredQuestionData)
+  console.log("filteredQuestionData.....", filteredQuestionData)
   const { data: questionData } = useSelector(
     (state: RootState) => state.questions,
   );
@@ -44,8 +44,6 @@ export const QuestionList = ({
         
         const isOdia = language === "od";
         const odiaData = Array.isArray(q.odia_questions) ? q.odia_questions[0] : q.odia_questions;
-        const displayQuestion = (isOdia && odiaData?.question) ? odiaData.question : q.question;
-        const displayOptions = (isOdia && odiaData?.options) ? odiaData.options : q.options;
 
         return (
           <div
@@ -72,12 +70,19 @@ export const QuestionList = ({
 
             {/* Body */}
             <div className="p-6 flex-1">
-              <p className="text-slate-800 dark:text-slate-200 font-medium text-lg mb-6 leading-relaxed">
-                {displayQuestion}
-              </p>
+              <div className="space-y-4 mb-6">
+                <p className="text-slate-800 dark:text-slate-200 font-medium text-lg leading-relaxed">
+                  {q.question}
+                </p>
+                {isOdia && odiaData?.question && (
+                  <p className="text-[#1a57db] dark:text-blue-400 font-bold text-lg leading-relaxed border-t border-slate-100 dark:border-slate-800 pt-4 mt-4">
+                    {odiaData.question}
+                  </p>
+                )}
+              </div>
 
               <div className="grid gap-3">
-                {displayOptions.map((opt: any) => (
+                {q.options.map((opt: any) => (
                   <div key={opt.l} className="relative flex items-center group">
                     <label className={`
                       flex w-full items-center p-4 rounded-xl border-2 transition-all cursor-pointer
@@ -89,17 +94,31 @@ export const QuestionList = ({
                       <input
                         type="radio"
                         value={opt.l}
-                        {...register(`answers.${q.id}`)}
+                        {...register(`answers.${q.id}`, {
+                          onChange: () => {
+                            setConfirmedAnswers((prev) => ({
+                              ...prev,
+                              [q.id]: false,
+                            }));
+                          },
+                        })}
                         className="size-5 text-primary focus:ring-primary border-slate-300 dark:border-slate-600"
                       />
 
-                      <div className="ml-4 flex items-center gap-3">
-                        <span className="flex items-center justify-center size-6 rounded bg-slate-100 dark:bg-slate-800 text-xs font-bold text-slate-500">
-                          {opt.l}
-                        </span>
-                        <span className="font-medium">{opt.v}</span>
-                      </div>
-                    </label>
+                        <div className="ml-4 flex flex-col gap-1">
+                          <div className="flex items-center gap-3">
+                            <span className="flex items-center justify-center size-6 rounded bg-slate-100 dark:bg-slate-800 text-xs font-bold text-slate-500">
+                              {opt.l}
+                            </span>
+                            <span className="font-medium">{opt.v}</span>
+                          </div>
+                          {isOdia && odiaData?.options?.find((o:any) => o.l === opt.l) && (
+                            <div className="ml-9 text-[#1a57db] dark:text-blue-400 text-sm font-bold">
+                              {odiaData.options.find((o:any) => o.l === opt.l)?.v}
+                            </div>
+                          )}
+                        </div>
+                      </label>
 
                     {/* Show Confirm button only if this option is selected BUT not confirmed */}
                     {currentAnswer === opt.l && !confirmedAnswers[q.id] && (

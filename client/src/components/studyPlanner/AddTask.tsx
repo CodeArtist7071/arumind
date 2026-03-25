@@ -20,6 +20,7 @@ interface AddRoutineProps {
   editingHabitId?: string;
   onRefresh?: () => void;
   initialProgress?: Record<string, boolean[]>;
+  onRequestConnection?: () => void;
 }
 
 type ToastType = "success" | "error" | "info" | "loading";
@@ -221,6 +222,7 @@ export const AddRoutine = ({
   title,
   onRefresh,
   initialProgress: incomingProgress,
+  onRequestConnection,
 }: AddRoutineProps) => {
   const { user, profile } = useSelector((state: RootState) => state.user ?? null);
   const dispatch = useDispatch<AppDispatch>();
@@ -725,19 +727,23 @@ export const AddRoutine = ({
                   </p>
                </div>
              </div>
-             <label className="relative inline-flex items-center cursor-pointer">
-                <input 
-                  type="checkbox" 
-                  {...register("syncToCalendar")} 
-                  disabled={!connected}
-                  className="sr-only peer" 
-                />
-                <div className={`w-11 h-6 rounded-full peer transition-all
-                  ${!connected ? 'bg-slate-200 cursor-not-allowed' : 'bg-slate-200 peer-checked:bg-green-600'}
-                  after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:rounded-full after:h-5 after:w-5 after:transition-all 
-                  ${connected ? 'peer-checked:after:translate-x-full' : ''}`}>
-                </div>
-             </label>
+             
+             {connected ? (
+                 <label className="relative inline-flex items-center cursor-pointer">
+                    <input 
+                      type="checkbox" 
+                      {...register("syncToCalendar")}
+                      className="sr-only peer" 
+                    />
+                    <div className="w-11 h-6 rounded-full peer transition-all bg-slate-200 peer-checked:bg-green-600 after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:after:translate-x-full">
+                    </div>
+                 </label>
+             ) : (
+                 <div className="relative inline-flex items-center cursor-pointer" onClick={() => onRequestConnection && onRequestConnection()}>
+                    <div className="w-11 h-6 rounded-full transition-all bg-slate-200 after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:rounded-full after:h-5 after:w-5 after:transition-all">
+                    </div>
+                 </div>
+             )}
           </div>
 
           {/* submit */}

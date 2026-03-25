@@ -16,6 +16,7 @@ interface MasterySelectorProps {
   examId: string;
   onAdd: (chapter: Chapter, date: string, startTime: string, endTime: string, syncToCalendar: boolean) => void;
   existingIds: string[];
+  onRequestConnection?: () => void;
 }
 
 // ── Friendly Time Picker (Re-shared logic) ───────────────────────────────────
@@ -97,7 +98,7 @@ const FriendlyTimePicker = ({
   );
 };
 
-export default function MasterySelector({ examId, onAdd, existingIds }: MasterySelectorProps) {
+export default function MasterySelector({ examId, onAdd, existingIds, onRequestConnection }: MasterySelectorProps) {
   const [chapters, setChapters] = useState<Chapter[]>([]);
   const [loading, setLoading] = useState(true);
   const [searchTerm, setSearchTerm] = useState("");
@@ -214,20 +215,24 @@ export default function MasterySelector({ examId, onAdd, existingIds }: MasteryS
                            </p>
                         </div>
                       </div>
-                      <label className="relative inline-flex items-center cursor-pointer">
-                         <input 
-                           type="checkbox" 
-                           checked={syncToCalendar}
-                           onChange={(e) => setSyncToCalendar(e.target.checked)}
-                           disabled={!connected}
-                           className="sr-only peer" 
-                         />
-                         <div className={`w-11 h-6 rounded-full peer transition-all
-                           ${!connected ? 'bg-slate-200 cursor-not-allowed' : 'bg-slate-200 peer-checked:bg-green-600'}
-                           after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:rounded-full after:h-5 after:w-5 after:transition-all 
-                           ${connected && syncToCalendar ? 'after:translate-x-full' : ''}`}>
+                      
+                      {connected ? (
+                         <label className="relative inline-flex items-center cursor-pointer">
+                            <input 
+                              type="checkbox" 
+                              checked={syncToCalendar}
+                              onChange={(e) => setSyncToCalendar(e.target.checked)}
+                              className="sr-only peer" 
+                            />
+                            <div className="w-11 h-6 rounded-full peer transition-all bg-slate-200 peer-checked:bg-green-600 after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:after:translate-x-full">
+                            </div>
+                         </label>
+                      ) : (
+                         <div className="relative inline-flex items-center cursor-pointer" onClick={() => onRequestConnection && onRequestConnection()}>
+                            <div className="w-11 h-6 rounded-full transition-all bg-slate-200 after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:rounded-full after:h-5 after:w-5 after:transition-all">
+                            </div>
                          </div>
-                      </label>
+                      )}
                    </div>
                </div>
 

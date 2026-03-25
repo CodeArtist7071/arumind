@@ -24,6 +24,8 @@ import {
   LineChart,
   Activity,
   Trophy,
+  Copy,
+  BookOpen,
 } from "lucide-react";
 import React, { useState, useMemo, useEffect } from "react";
 import { useForm } from "react-hook-form";
@@ -765,8 +767,9 @@ export default function TrackerGrid({
   }
 
   return (
-    <div className="text-slate-800 flex flex-col h-full bg-slate-50 min-w-0">
+    <div className="text-slate-800 flex flex-col h-full bg-slate-50 min-w-0 relative">
       <GoogleCalendarModal isOpen={isGooglePopupOpen} onClose={() => setIsGooglePopupOpen(false)} />
+      
       <AddRoutine 
         isOpen={enableTask} 
         onClose={() => { setEnableTask(false); setEditingHabitId(null); }} 
@@ -778,6 +781,7 @@ export default function TrackerGrid({
         viewMonth={viewMonth} 
         viewYear={viewYear} 
         onRefresh={onRefresh} 
+        onRequestConnection={() => setIsGooglePopupOpen(true)}
       />
       
       {/* SPREADSHEET HEADER */}
@@ -897,6 +901,80 @@ export default function TrackerGrid({
           <tbody>
             {(isLoading && initialHabits.length === 0) ? (
                <tr><td colSpan={rotatedDays.length + 3} className="p-10 text-center"><Loader className="animate-spin text-slate-400 mx-auto"/></td></tr>
+             ) : isSettingUp && initialHabits.length === 0 ? (
+               <tr>
+                 <td colSpan={rotatedDays.length + 3} className="p-0 align-middle border-none">
+                    <div className="sticky left-0  right-0 mx-auto w-fit flex flex-col items-center justify-center min-h-[450px] py-12 pointer-events-none">
+                      <div className="pointer-events-auto mx-auto max-w-md bg-white rounded-2xl shadow-lg border border-emerald-100 p-6 text-center my-4">
+                        <div className="mx-auto size-12 bg-emerald-100 rounded-full flex items-center justify-center mb-4 shadow-inner">
+                           <Sparkles className="text-emerald-600 size-6" />
+                        </div>
+                        <h3 className="text-xl font-black tracking-tight text-slate-800 mb-1.5">Fresh Month, Fresh Start!</h3>
+                        <p className="text-slate-500 font-medium text-xs mb-6 px-2">
+                           Your {monthName} planner is empty. Set up routines and tests to stay on track.
+                        </p>
+                        
+                        <div className="space-y-3 text-left">
+                           <button 
+                             onClick={() => setEnableTask(true)}
+                             className="w-full flex items-center gap-3 p-3 rounded-xl border-2 border-emerald-100 hover:border-emerald-500 hover:bg-emerald-50 transition-all group cursor-pointer"
+                           >
+                              <div className="size-10 bg-white rounded-lg hidden sm:flex items-center justify-center text-emerald-600 shadow-sm group-hover:scale-110 transition-transform">
+                                 <Calendar size={18} />
+                              </div>
+                              <div>
+                                 <h4 className="font-black text-slate-800 uppercase tracking-wide text-xs">Add Daily Routine</h4>
+                                 <p className="text-[9px] text-slate-500 font-bold uppercase tracking-widest mt-0.5">Build consistent habits</p>
+                              </div>
+                              <ChevronRight className="ml-auto size-4 text-slate-300 group-hover:text-emerald-500" />
+                           </button>
+
+                           <button 
+                             onClick={() => setShowSelector(true)}
+                             className="w-full flex items-center gap-3 p-3 rounded-xl border-2 border-blue-100 hover:border-blue-500 hover:bg-blue-50 transition-all group cursor-pointer"
+                           >
+                              <div className="size-10 bg-white rounded-lg hidden sm:flex items-center justify-center text-blue-600 shadow-sm group-hover:scale-110 transition-transform">
+                                 <BookOpen size={18} />
+                              </div>
+                              <div>
+                                 <h4 className="font-black text-slate-800 uppercase tracking-wide text-xs">Schedule Test</h4>
+                                 <p className="text-[9px] text-slate-500 font-bold uppercase tracking-widest mt-0.5">Test your mastery</p>
+                              </div>
+                              <ChevronRight className="ml-auto size-4 text-slate-300 group-hover:text-blue-500" />
+                           </button>
+
+                           {hasPrevMonthTasks && onCopyPrevious && (
+                             <button 
+                               onClick={onCopyPrevious}
+                               className="w-full flex items-center gap-3 p-3 rounded-xl border-2 border-purple-100 hover:border-purple-500 hover:bg-purple-50 transition-all group cursor-pointer"
+                             >
+                                <div className="size-10 bg-white rounded-lg hidden sm:flex items-center justify-center text-purple-600 shadow-sm group-hover:scale-110 transition-transform">
+                                   <Copy size={18} />
+                                </div>
+                                <div>
+                                   <h4 className="font-black text-slate-800 uppercase tracking-wide text-xs">Copy Previous</h4>
+                                   <p className="text-[9px] text-slate-500 font-bold uppercase tracking-widest mt-0.5">Rollover routines</p>
+                                </div>
+                                <ChevronRight className="ml-auto size-4 text-slate-300 group-hover:text-purple-500" />
+                             </button>
+                           )}
+                        </div>
+                        
+                        <div className="mt-5 pt-4 border-t border-slate-100">
+                           <button onClick={onStartFresh} className="text-[10px] font-bold text-slate-400 hover:text-slate-600 uppercase tracking-widest transition-colors cursor-pointer">
+                              Or just look around for now
+                           </button>
+                        </div>
+                      </div>
+                    </div>
+                 </td>
+               </tr>
+            ) : habitsWithStreaks.length === 0 ? (
+               <tr>
+                 <td colSpan={rotatedDays.length + 3} className="p-8 text-center text-slate-400 font-bold text-sm">
+                   No routines or tests found. Click the + buttons above to add some!
+                 </td>
+               </tr>
             ) : habitsWithStreaks.map((habit) => (
                <FastHabitRow 
                  key={habit.id}
@@ -948,7 +1026,12 @@ export default function TrackerGrid({
               <h3 className="text-2xl font-black tracking-tight text-slate-800">Schedule Chapter Test</h3>
               <button className="p-2 hover:bg-slate-100 rounded-full" onClick={() => setShowSelector(false)}><X size={20} /></button>
             </div>
-            <MasterySelector examId={examId || ""} onAdd={handleAddMastery} existingIds={initialHabits.filter((h) => h.is_mastery).map((h) => h.chapter_id!)} />
+            <MasterySelector 
+                examId={examId || ""} 
+                onAdd={handleAddMastery} 
+                existingIds={initialHabits.filter((h) => h.is_mastery).map((h) => h.chapter_id!)} 
+                onRequestConnection={() => setIsGooglePopupOpen(true)}
+            />
           </div>
         </div>
       )}

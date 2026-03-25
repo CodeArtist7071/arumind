@@ -21,6 +21,7 @@ import { fetchExams } from "./slice/examSlice";
 import Exam from "./components/Exam";
 import { UserDashboardLayout } from "./layouts/UserDashboardLayout";
 import PracticeTest from "./components/ui/PracticeTest";
+import MockTest from "./components/ui/MockTest";
 import ConfirmOAuthPage from "./components/ConfirmOAuth";
 import Profile from "./pages/Profile";
 import AdminPanelLayout from "./layouts/AdminPanelLayout";
@@ -35,6 +36,8 @@ import ExamGoalSelection from "./pages/ExamSelection";
 import { UserStudyPlanner } from "./layouts/UserStudyPlanner";
 import { ExamsPlanning } from "./pages/userPanel/ExamsPlanning";
 import { ExamsList } from "./pages/ExamsList";
+import ResultSelection from "./pages/resultpage/ResultSelection";
+import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
   const dispatch = useDispatch<AppDispatch>();
@@ -101,6 +104,7 @@ function App() {
   const router = createBrowserRouter(
     createRoutesFromElements(
       <>
+       
         <Route path="/" element={<HomePage />} />
         <Route
           path="/login"
@@ -134,8 +138,10 @@ function App() {
           <Route path="performance" element={<PerformanceAnalytics />} />
           <Route path="plan-exams" element={<ExamsPlanning />} />
           <Route path="mock-tests" element={<MockTests />} />
+          <Route path="mock-tests/session/:attemptId" element={<MockTest />} />
           <Route path="confirm-oauth" element={<ConfirmOAuthPage />} />
-          <Route path="results" element={<ResultsHistory />} />
+          <Route path="results/history" element={<ResultsHistory />} />
+          <Route path="results" element={<ResultSelection />} />
           <Route path="results/:attemptId" element={<Results />} />
         </Route>
       </>
@@ -158,6 +164,7 @@ function App() {
         theme={wyboTheme}
       />
       <RouterProvider router={router} />
+      <ScrollToTop/>
     </>
   );
 }

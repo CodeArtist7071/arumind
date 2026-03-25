@@ -111,25 +111,39 @@ const Results = () => {
           chapters: chapRes.data,
         });
 
-        const { data: qData, error: qError } = await supabase
-          .from("questions")
-          .select("*")
-          .eq("chapter_id", attemptData.chapter_id);
-
-        if (qError) throw qError;
-        setQuestions(qData || []);
-
         const { data: aData, error: aError } = await supabase
           .from("test_attempt_answers")
-          .select("*")
+          .select(`
+            *,
+            questions (*)
+          `)
           .eq("attempt_id", attemptId);
 
         if (aError) throw aError;
 
-        const answerMap = (aData || []).reduce((acc: any, curr: any) => {
-          acc[curr.question_id] = curr;
-          return acc;
-        }, {});
+        const retrievedQuestions: Question[] = [];
+        const answerMap: Record<number, Answer> = {};
+
+        (aData || []).forEach((row: any) => {
+          if (row.questions) {
+            retrievedQuestions.push(row.questions);
+            answerMap[row.question_id] = {
+              question_id: row.question_id,
+              selected_option: row.selected_option,
+              is_submitted: row.is_submitted
+            };
+          }
+        });
+
+        // Sort questions by their original order: question_number first, then id as fallback
+        retrievedQuestions.sort((a: any, b: any) => {
+          const numA = a.question_number ?? 0;
+          const numB = b.question_number ?? 0;
+          if (numA !== numB) return numA - numB;
+          return (a.id || 0) - (b.id || 0);
+        });
+
+        setQuestions(retrievedQuestions);
         setAnswers(answerMap);
       } catch (err) {
         console.error("Error fetching results:", err);
@@ -225,7 +239,7 @@ const Results = () => {
         <div className="max-w-7xl mx-auto flex items-center justify-between">
           <div className="flex items-center gap-4">
             <button
-              onClick={() => navigate(-1)}
+              onClick={() => navigate("/user/results")}
               className="p-2.5 bg-slate-100 dark:bg-slate-800 rounded-2xl hover:bg-slate-200 dark:hover:bg-slate-700 transition-all text-slate-500"
             >
               <ArrowLeft size={18} />

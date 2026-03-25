@@ -70,8 +70,11 @@ export default function PracticeTest() {
   const [showSubmitConfirm, setShowSubmitConfirm] = useState(false);
   const [counts, setCounts] = useState({ attempted: 0, total: 0 });
 
+  const isNavigatingAwayRef = useRef(false);
+
   const blocker = useBlocker(
     ({ currentLocation, nextLocation }) =>
+      !isNavigatingAwayRef.current &&
       Object.keys(watchedAnswers || {}).length > 0 && 
       currentLocation.pathname !== nextLocation.pathname
   );
@@ -130,7 +133,6 @@ export default function PracticeTest() {
         console.error("[PracticeTest] Failed to parse storage state:", e);
       }
     }
-
     dispatch(fetchQuestion(cid as string));
     dispatch(fetchFilteredQuestion(user?.id));
   }, [cid, dispatch, reset]); // ONLY depend on cid to ensure reset happens only when chapter changes
@@ -261,8 +263,9 @@ export default function PracticeTest() {
   }, []);
 
   const handlePreSubmit = () => {
-    const attempted = Object.keys(watchedAnswers || {}).length;
-    setCounts({ attempted, total: questions?.length || 0 });
+    const total = questions?.length || 0;
+    const attempted = questions?.filter(q => watchedAnswers?.[q.id]).length || 0;
+    setCounts({ attempted, total });
     setShowSubmitConfirm(true);
   };
 
@@ -283,14 +286,25 @@ export default function PracticeTest() {
     }
 
     try {
-      const payload = Object.entries(data.answers).map(
-        ([questionId, answer]) => ({
-          attempt_id: attemptId,
-          question_id: questionId,
-          selected_option: answer,
-          is_submitted: true,
-        }),
-      );
+      // Calculate final metrics
+      const total_questions = questions?.length || 0;
+      let total_marks = 0;
+      let score = 0;
+
+      questions?.forEach((q: any) => {
+        const marks = q.marks || 0;
+        total_marks += marks;
+        if (data.answers[q.id] === q.correct_answer) {
+          score += marks;
+        }
+      });
+
+      const payload = (questions || []).map((q: any) => ({
+        attempt_id: attemptId,
+        question_id: q.id,
+        is_submitted: true,
+        ...(data.answers[q.id] ? { selected_option: data.answers[q.id] } : {})
+      }));
       console.log("payload....", payload);
       console.log(`[PracticeTest] Upserting ${payload.length} answers...`);
       const { error: answerError } = await supabase
@@ -300,11 +314,17 @@ export default function PracticeTest() {
       if (answerError) throw answerError;
 
       console.log(
-        `[PracticeTest] Updating status to COMPLETED for AttemptID: ${attemptId}`,
+        `[PracticeTest] Updating status and metrics for AttemptID: ${attemptId}`,
       );
       const { data: updateData, error: attemptError } = await supabase
         .from("test_attempts")
-        .update({ status: "COMPLETED", submitted_at: new Date().toISOString() })
+        .update({ 
+          status: "COMPLETED", 
+          submitted_at: new Date().toISOString(),
+          total_questions,
+          total_marks,
+          score
+        })
         .eq("id", attemptId)
         .select();
 
@@ -330,6 +350,7 @@ export default function PracticeTest() {
         dismissAfter: 5000,
       });
 
+      isNavigatingAwayRef.current = true;
       navigate(`/user/results/${attemptId}`);
     
     } catch (error: any) {
@@ -563,6 +584,31 @@ export default function PracticeTest() {
     createAttempt();
   }, [user, eid, sid, cid, attemptId]);
 
+  // Sync questions to test_attempts metadata columns
+  useEffect(() => {
+    if (attemptId && questions?.length > 0) {
+      const syncQuestions = async () => {
+        try {
+          const qIds = questions.map((q: any) => q.id.toString());
+          const initialAttempted = questions.map((q: any) => ({
+            question_id: q.id.toString(),
+            user_answered: ""
+          }));
+          
+          await supabase.from("test_attempts")
+            .update({ 
+              question_ids: qIds,
+              attempted_questions: initialAttempted 
+            })
+            .eq("id", attemptId);
+        } catch (err) {
+          console.error("Failed to sync questions to attempt metadata:", err);
+        }
+      };
+      syncQuestions();
+    }
+  }, [attemptId, questions]);
+
   const handleBackButton = () => {
     setOpenAlert(true);
   };
@@ -585,8 +631,13 @@ export default function PracticeTest() {
       }
     }
 
+    isNavigatingAwayRef.current = true;
     if (blocker.state === "blocked") {
-      blocker.proceed();
+      blocker.reset();
+    }
+    
+    if (attemptId) {
+      navigate(`/user/results/${attemptId}`);
     } else {
       // Deterministic navigation back to the exam overview
       navigate(`/user/dashboard/exam/${eid}`);
@@ -604,6 +655,7 @@ export default function PracticeTest() {
     if (!attemptId) return;
 
     try {
+      // 1. Original Logic: Upsert to test_attempt_answers
       const { error } = await supabase.from("test_attempt_answers").upsert(
         {
           attempt_id: attemptId,
@@ -616,7 +668,7 @@ export default function PracticeTest() {
 
       if (error) throw error;
 
-      // Also potentially track in question_attempt_tracking
+      // 2. Original Logic: Track in question_attempt_tracking
       await supabase.from("question_attempt_tracking").insert({
         user_id: user?.id,
         question_id: questionId,
@@ -624,6 +676,22 @@ export default function PracticeTest() {
         selected_option: answer,
         attempted_at: new Date().toISOString(),
       });
+
+      // 3. New Logic: Update attempted_questions in test_attempts
+      const { data: attempt } = await supabase
+        .from("test_attempts")
+        .select("attempted_questions")
+        .eq("id", attemptId)
+        .single();
+      
+      if (attempt?.attempted_questions) {
+        const updated = attempt.attempted_questions.map((q: any) => 
+          q.question_id === questionId.toString() ? { ...q, user_answered: answer } : q
+        );
+        await supabase.from("test_attempts")
+          .update({ attempted_questions: updated })
+          .eq("id", attemptId);
+      }
     } catch (error) {
       console.error("Failed to sync answer:", error);
     }
