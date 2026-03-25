@@ -31,7 +31,8 @@
     "react-router-dom": "^7.13.1",
     "reapop": "^4.3.0",
     "recharts": "^3.8.0",
-    "tailwindcss": "^4.2.1"
+    "tailwindcss": "^4.2.1",
+    "tslib": "^2.4.0"
   },
   "devDependencies": {
     "@cloudflare/vite-plugin": "^1.30.1",
