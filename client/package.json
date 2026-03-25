@@ -20,7 +20,6 @@
     "@tensorflow-models/face-landmarks-detection": "^1.0.6",
     "@tensorflow/tfjs": "^4.22.0",
     "@types/gapi": "^0.0.47",
-    "@types/gapi.client.calendar": "^3.0.12",
     "date-fns": "^4.1.0",
     "gh-pages": "^6.3.0",
     "lucide-react": "^0.575.0",
@@ -32,7 +31,8 @@
     "react-router-dom": "^7.13.1",
     "reapop": "^4.3.0",
     "recharts": "^3.8.0",
-    "tailwindcss": "^4.2.1"
+    "tailwindcss": "^4.2.1",
+    "tslib": "^2.4.0"
   },
   "devDependencies": {
     "@cloudflare/vite-plugin": "^1.30.1",
@@ -40,7 +40,7 @@
     "@types/gapi.client": "^1.0.8",
     "@types/gapi.client.calendar-v3": "^0.0.4",
     "@types/google.accounts": "^0.0.18",
-    "@types/node": "^24.10.1",
+    "@types/node": "^22.10.1",
     "@types/react": "^19.2.7",
     "@types/react-dom": "^19.2.3",
     "@vitejs/plugin-react": "^5.1.1",
@@ -51,6 +51,7 @@
     "typescript": "~5.9.3",
     "typescript-eslint": "^8.48.0",
     "vite": "^7.3.1",
+    "vite-plugin-pwa": "^1.2.0",
     "wrangler": "^4.77.0"
   }
 }
