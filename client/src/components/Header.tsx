@@ -9,12 +9,12 @@ export const Header = () => {
   console.log("usersss.....!!", user);
 
   return (
-    <header className="flex items-center justify-between border-b border-slate-200 bg-white dark:border-slate-800 py-4 sticky top-0 z-50 backdrop-blur-md">
+    <header className="flex px-10 items-center justify-between border-b border-slate-200 bg-white dark:border-slate-800 py-4 sticky top-0 z-50 backdrop-blur-md">
       <div className="flex items-center gap-8">
         <div className="flex items-center gap-2 text-[#1e3a5f]">
           <Notebook className="text-3xl font-bold" />
-          <h2 className="text-xl font-black leading-tight tracking-tight">
-            Odisha Exam Prep
+          <h2 className="text-3xl font-black leading-tight tracking-tight">
+            Arumind <span className="text-sm font-semibold">Push Your Mind Beyond Its Limits </span>
           </h2>
         </div>
         <nav className="hidden md:flex items-center gap-8">

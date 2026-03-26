@@ -30,6 +30,7 @@ export interface Habit {
   is_mastery?: boolean;
   chapter_id?: string;
   exam_id?: string;
+  is_recurring?: boolean;
 }
 
 export default function StudyPlannerPage() {
@@ -47,9 +48,12 @@ export default function StudyPlannerPage() {
   const currentMonthIdx = now.getMonth();
   const currentYear = now.getFullYear();
   const currentMonth = currentMonthIdx + 1;
+  const today = now.getDate();
+  const unlockPastDays = false;
 
   const [viewMonth, setViewMonth] = useState(currentMonth);
   const [viewYear, setViewYear] = useState(currentYear);
+  const [selectedDate, setSelectedDate] = useState<Date>(new Date());
   const [isSettingUp, setIsSettingUp] = useState(false);
   const [autoOpenAddModal, setAutoOpenAddModal] = useState(false);
   const [hasPrevMonthTasks, setHasPrevMonthTasks] = useState(false);
@@ -91,6 +95,7 @@ export default function StudyPlannerPage() {
           category: h.category,
           start_time: h.start_time,
           end_time: h.end_time,
+          is_recurring: h.is_recurring !== false,
         });
         allProgress[h.id] = h.progress || Array(31).fill(false);
       });
@@ -106,6 +111,7 @@ export default function StudyPlannerPage() {
           is_mastery: true,
           chapter_id: m.chapter_id,
           exam_id: examId,
+          is_recurring: m.is_recurring !== false,
         });
         allProgress[m.id] = m.progress || Array(31).fill(false);
       });
@@ -232,6 +238,15 @@ export default function StudyPlannerPage() {
     const habit = habits.find((h) => h.id === id);
     if (!habit || !user?.id) return;
 
+    // "Today-only" restriction for one-off tasks
+    const isOneOff = (habit as any).is_recurring === false;
+    const isToday = viewMonth === currentMonth && viewYear === currentYear && index === today - 1;
+    
+    if (isOneOff && !isToday && !unlockPastDays) {
+       // Optional: show a toast or alert
+       return;
+    }
+
     const newProg = [...(progress[id] || Array(31).fill(false))];
     newProg[index] = !newProg[index];
 
@@ -264,21 +279,30 @@ export default function StudyPlannerPage() {
     setProgress({});
     setLoading(true);
 
+    let newMonth = viewMonth;
+    let newYear = viewYear;
+
     if (direction === "prev") {
       if (viewMonth === 1) {
-        setViewMonth(12);
-        setViewYear((v) => v - 1);
+        newMonth = 12;
+        newYear = viewYear - 1;
       } else {
-        setViewMonth((v) => v - 1);
+        newMonth = viewMonth - 1;
       }
     } else {
       if (viewMonth === 12) {
-        setViewMonth(1);
-        setViewYear((v) => v + 1);
+        newMonth = 1;
+        newYear = viewYear + 1;
       } else {
-        setViewMonth((v) => v + 1);
+        newMonth = viewMonth + 1;
       }
     }
+
+    setViewMonth(newMonth);
+    setViewYear(newYear);
+    
+    // Also reset selectedDate to the 1st of the new month to stay within view
+    setSelectedDate(new Date(newYear, newMonth - 1, 1));
   };
   // Growth Metrics Logic
   const stats = useMemo(() => {
@@ -425,6 +449,8 @@ export default function StudyPlannerPage() {
                   isLoading={loading}
                   viewMonth={viewMonth}
                   viewYear={viewYear}
+                  selectedDate={selectedDate}
+                  onSelectDate={setSelectedDate}
                   onMonthChange={handleMonthChange}
                   isSettingUp={isSettingUp}
                   isPastMonth={
@@ -481,6 +507,8 @@ export default function StudyPlannerPage() {
           <section className=" lg:col-span-8">
             <DailyRoutine 
               habits={habits} 
+              progress={progress}
+              selectedDate={selectedDate}
               onRefresh={fetchData} 
               onSync={handleSyncTaskToCalendar} 
               onSyncAll={handleSyncAllTasks}

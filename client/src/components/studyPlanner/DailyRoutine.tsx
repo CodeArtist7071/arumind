@@ -7,6 +7,8 @@ interface Habit {
   start_time?: string;
   end_time?: string;
   priority: string;
+  is_mastery?: boolean;
+  is_recurring?: boolean;
 }
 
 interface DailyRoutineProps {
@@ -14,11 +16,33 @@ interface DailyRoutineProps {
   onRefresh?: () => void;
   onSync?: (habit: Habit) => void;
   onSyncAll?: () => void;
+  selectedDate?: Date;
+  progress?: Record<string, boolean[]>;
 }
 
-export default function DailyRoutine({ habits = [], onRefresh, onSync, onSyncAll }: DailyRoutineProps) {
-  // Sort habits by start time for a better routine view
-  const sortedHabits = [...habits].sort((a, b) => {
+export default function DailyRoutine({ habits = [], progress = {}, selectedDate = new Date(), onRefresh, onSync, onSyncAll }: DailyRoutineProps) {
+  // 1. Determine which day we are looking at
+  const dayIdx = selectedDate.getDate() - 1;
+  const isToday = selectedDate.toDateString() === new Date().toDateString();
+
+  // 2. Filter habits that are either:
+  //    - Generic routines (recurring for the month)
+  //    - One-off tasks/tests scheduled for THIS specific date
+  const relevantHabits = habits.filter(h => {
+    const prog = progress[h.id];
+    if (!prog) return false;
+
+    // If it's a mastery test or a one-off task, it's strictly scheduled for a specific day
+    if (h.is_mastery || h.is_recurring === false) {
+       return prog[dayIdx] === true;
+    }
+
+    // For recurring routines, show them every day
+    return true; 
+  });
+
+  // Sort by start time
+  const sortedHabits = [...relevantHabits].sort((a, b) => {
     if (!a.start_time) return 1;
     if (!b.start_time) return -1;
     return a.start_time.localeCompare(b.start_time);
@@ -33,7 +57,9 @@ export default function DailyRoutine({ habits = [], onRefresh, onSync, onSyncAll
       <div className="flex items-center justify-between relative z-10">
         <div>
           <h3 className="text-2xl font-black tracking-tight text-slate-900 dark:text-white">Daily Routine</h3>
-          <p className="text-md text-slate-400 font-bold mt-1">Today's Study Schedule</p>
+          <p className="text-md text-slate-400 font-bold mt-1">
+            {isToday ? "Today's Schedule" : `Schedule for ${selectedDate.toLocaleDateString('default', { month: 'short', day: 'numeric' })}`}
+          </p>
         </div>
         <div className="flex items-center gap-3">
           {(onSyncAll || onSync) && sortedHabits.length > 0 && (

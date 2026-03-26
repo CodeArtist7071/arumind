@@ -2,10 +2,12 @@ import { BellAlertIcon } from "@heroicons/react/24/solid";
 import {
   Antenna,
   ArrowRight,
+  Badge,
   BanknoteIcon,
   Book,
   ChevronRight,
   GalleryHorizontal,
+  Group,
   NotebookPen,
   PlayCircle,
   Presentation,
@@ -16,7 +18,7 @@ import {
 import React, { useState, useEffect } from "react";
 import Footer from "../components/Footer";
 import { Header } from "../components/Header";
-import {useNotifications } from "reapop";
+import { useNotifications } from "reapop";
 
 interface featuresDataTypes {
   icon: Element | any;
@@ -57,12 +59,12 @@ const featuresData: featuresDataTypes[] = [
     title: "AI Expert Faculty",
     desc: "Learn from educators who have cracked these exams themselves. Get insights and shortcuts you won't find in textbooks.",
   },
-  {
-    icon: <Tv />,
-    status: false,
-    title: "Live Interactive Classes",
-    desc: "Real-time doubt clearing sessions and interactive lectures to keep you engaged and on track.",
-  },
+  // {
+  //   icon: <Tv />,
+  //   status: false,
+  //   title: "Live Interactive Classes",
+  //   desc: "Real-time doubt clearing sessions and interactive lectures to keep you engaged and on track.",
+  // },
 ];
 
 const examData = [
@@ -72,12 +74,12 @@ const examData = [
     desc: "Odisha Public Service Commission - Group A & B Civil Services, Medical & Judicial exams.",
   },
   {
-    icon: "badge",
+    icon: <Badge />,
     title: "OSSC",
     desc: "Odisha Staff Selection Commission - Combined Graduate Level (CGL), CTS, and specialized cadres.",
   },
   {
-    icon: "groups",
+    icon: <Group />,
     title: "OSSSC",
     desc: "Odisha Sub-Ordinate Staff Selection Commission - RI, ARI, Amin, Forest Guard, and LSI.",
   },
@@ -92,7 +94,6 @@ const Hompage = () => {
   });
 
   useEffect(() => {
-
     const timer = setInterval(() => {
       setCountdown((prev) => {
         let { days, hours, minutes } = prev;
@@ -127,11 +128,11 @@ const Hompage = () => {
             <div className="w-full">
               <div className="inline-flex items-center gap-2 bg-[#1e3a5f]/10 text-[#1e3a5f] px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider">
                 <Verified className="text-sm" />
-                Odisha's #1 Learning Platform
+                Odisha's 1st AI Focus Oriented Learning Platform
               </div>
               <h1 className="text-5xl lg:text-6xl font-black leading-tight tracking-tight">
-                Ace Your <span className="text-[#1e3a5f]">Odisha Govt</span>{" "}
-                Exams
+                Ace Your <span className="text-[#1e3a5f]">Mind</span> Conquer
+                Every Test.
               </h1>
               <p className="text-slate-600 dark:text-slate-400 text-lg leading-relaxed max-w-135">
                 Comprehensive coaching and real-time mock tests for OPSC, OSSC,
@@ -140,12 +141,12 @@ const Hompage = () => {
               </p>
               <div className="flex flex-wrap gap-4 mt-2">
                 <button className="bg-[#1e3a5f] text-white px-8 py-4 rounded-lg text-lg font-bold shadow-lg shadow-[#1e3a5f]/20 hover:scale-[1.02] active:scale-[0.98] transition-all duration-200">
-                  Start Learning Now
+                  Try Your Level
                 </button>
-                <button className="dark:bg-slate-800 border border-slate-200 dark:border-slate-700 dark:text-white px-8 py-4 rounded-lg text-lg font-bold hover:bg-slate-50 dark:hover:bg-slate-700 transition-all duration-200 flex items-center gap-2">
+                {/* <button className="dark:bg-slate-800 border border-slate-200 dark:border-slate-700 dark:text-white px-8 py-4 rounded-lg text-lg font-bold hover:bg-slate-50 dark:hover:bg-slate-700 transition-all duration-200 flex items-center gap-2">
                   <PlayCircle />
                   Free Demo Class
-                </button>
+                </button> */}
               </div>
               <div className="flex items-center gap-4 text-sm text-slate-500 mt-4">
                 <div className="flex -space-x-2">
@@ -160,7 +161,7 @@ const Hompage = () => {
                   ))}
                 </div>
                 <span>
-                  Trusted by <strong>10,000+</strong> successful candidates
+                  Trusted by <strong>leading</strong> successful candidates
                 </span>
               </div>
             </div>
@@ -174,7 +175,7 @@ const Hompage = () => {
                       'url("https://lh3.googleusercontent.com/aida-public/AB6AXuAQUenS4aOtdqIYCzU1M80UYchn7-IMxiZrWTbKYhRqLY-cmbrFDZr9wFv8O4TVc3yM4Gghx79lB6nHCN-wdrdqEEcU_tzAzT3SBbIqmvz8FGaE40zT_T3KkqmxT0V8Z4YyeAAxqoceWiYrKnqSvNlHyQJBYE11Y47vtMYx4Ydcm5bBptsGxDPIQHvew1PizByxJeTvjr3dbtyEzvTIIL3vdeRG5q8qZtc2NeG69WB3Jb_IYZ33t3myi9NcaV1-Gks_gTy_Ow6GPQ")',
                   }}
                 />
-                <div className="absolute bottom-6 left-6 right-6 backdrop-blur-md p-6 rounded-xl border border-white/20 shadow-xl bg-white/90 dark:bg-slate-900/90">
+                {/* <div className="absolute bottom-6 left-6 right-6 backdrop-blur-md p-6 rounded-xl border border-white/20 shadow-xl bg-white/90 dark:bg-slate-900/90">
                   <div className="flex items-center justify-between">
                     <div>
                       <p className="text-xs text-slate-500 font-bold uppercase tracking-wide">
@@ -190,7 +191,7 @@ const Hompage = () => {
                       <BellAlertIcon />
                     </div>
                   </div>
-                </div>
+                </div> */}
               </div>
             </div>
           </div>

@@ -7,7 +7,7 @@ const Footer = () => {
         <div>
           <span className="flex items-center gap-2 text-white">
             <School className="text-3xl" />
-            <h2 className="text-xl font-bold">Odisha Exam Prep</h2>
+            <h2 className="text-3xl font-bold">Arumind</h2>
           </span>
           <p className="text-sm leading-relaxed">
             Empowering aspirants across Odisha to crack competitive exams with
@@ -68,7 +68,7 @@ const Footer = () => {
             ))}
           </ul>
         </div>
-        <div className="py-10 sm:col-span-2 md:col-span-1">
+        {/* <div className="py-10 sm:col-span-2 md:col-span-1">
           <h4 className="text-white font-bold mb-6">Contact Us</h4>
           <ul className="space-y-4 gap-4 text-sm">
             <li className="flex items-start gap-3">
@@ -86,10 +86,10 @@ const Footer = () => {
               <span>support@odishaexamprep.com</span>
             </li>
           </ul>
-        </div>
+        </div> */}
         </div>
         <div className="border-t border-slate-800 mt-10 flex flex-col md:flex-row justify-between items-center gap-4 text-xs">
-          <p>© 2024 Odisha Exam Prep. All rights reserved.</p>
+          <p>© 2026 Arumind. All rights reserved.</p>
           <div className="flex gap-6">
             {["Privacy Policy", "Terms of Service", "Refund Policy"].map(
               (item, i) => (

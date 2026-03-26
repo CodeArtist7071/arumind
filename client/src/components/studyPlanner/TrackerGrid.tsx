@@ -58,6 +58,7 @@ export interface Habit {
   end_time?: string;
   is_mastery?: boolean;
   chapter_id?: string;
+  is_recurring?: boolean;
 }
 
 type FormValues = {
@@ -86,6 +87,8 @@ interface TrackerGridProps {
   isPastMonth?: boolean;
   onShowMastery?: () => void;
   onShowAddTask?: () => void;
+  selectedDate?: Date;
+  onSelectDate?: (date: Date) => void;
 }
 
 const WEEK_COLORS = ["bg-blue-200", "bg-purple-200", "bg-red-200", "bg-orange-200", "bg-slate-200"];
@@ -113,6 +116,7 @@ const HabitRow = ({
   deletingId,
   connected,
   user,
+  selectedDate,
   onToggle,
   editHabit,
   removeEvent,
@@ -133,12 +137,18 @@ const HabitRow = ({
   deletingId: string | null;
   connected: boolean;
   user: any;
+  selectedDate?: Date;
   onToggle: (id: string, idx: number) => void;
   editHabit: (h: Habit) => void;
   removeEvent: (id: string) => Promise<void>;
   onRefresh: () => void;
   dispatch: any;
 }) => {
+  const isOneOff = (habit as any).is_recurring === false;
+  const isHabitToday = viewMonth === currentMonth && viewYear === currentYear;
+  // A one-off task is only editable if it matches 'today' or grid is unlocked
+  const canEdit = !isOneOff || isHabitToday || unlockPastDays;
+
   return (
     <tr className="group hover:bg-[#f0fff4]/30 relative transition-colors">
       <td className="sticky left-0 z-20 bg-white group-hover:bg-[#f0fff4]/50 border-r border-slate-300 p-0 border-b border-slate-200 border-dotted align-middle outline outline-transparent -outline-offset-1 shadow-[1px_0_0_0_#cbd5e1] transition-colors">
@@ -166,8 +176,18 @@ const HabitRow = ({
             </div>
           </div>
           <div className="flex gap-0.5 opacity-0 group-hover:opacity-100 transition-opacity bg-white/95 border border-slate-200 rounded p-0.5 shadow-sm">
-            <button onClick={() => editHabit(habit)} className="p-1 text-slate-400 hover:text-blue-500 hover:bg-blue-50 rounded transition-colors" title="Edit Routine"><Pen size={12} /></button>
-            <button onClick={async () => {
+            <button 
+              disabled={!canEdit}
+              onClick={() => canEdit && editHabit(habit)} 
+              className={`p-1 rounded transition-colors ${canEdit ? "text-slate-400 hover:text-blue-500 hover:bg-blue-50" : "text-slate-200 cursor-not-allowed"}`} 
+              title={canEdit ? "Edit Routine" : "One-off tasks can only be edited on their scheduled day"}
+            >
+              <Pen size={12} />
+            </button>
+            <button 
+              disabled={!canEdit}
+              onClick={async () => {
+                if (!canEdit) return;
                 if (connected) {
                   const { data: prof } = await supabase.from("profiles").select("google_calendar_event_ids").eq("id", user?.id).single();
                   const gcId = (prof?.google_calendar_event_ids as any)?.[habit.id];
@@ -190,16 +210,17 @@ const HabitRow = ({
       {rotatedDays.map((_, i) => {
         const actualDayIdx = (startDay - 1 + i) % daysInMonth;
         const isToday = viewMonth === currentMonth && viewYear === currentYear && actualDayIdx === today - 1;
+        const isSelected = selectedDate && selectedDate.getDate() === actualDayIdx + 1 && selectedDate.getMonth() + 1 === viewMonth && selectedDate.getFullYear() === viewYear;
         const isEditable = isToday || unlockPastDays;
         const isDone = progress[actualDayIdx];
         const weekIdx = i < 28 ? Math.floor(i / 7) : 4;
-        const bgClass = isToday ? "bg-white" : WEEK_COLORS[weekIdx].replace("200", "50").replace("bg-slate-200", "bg-transparent");
+        const bgClass = isSelected ? "bg-green-100/50" : isToday ? "bg-white" : WEEK_COLORS[weekIdx].replace("200", "50").replace("bg-slate-200", "bg-transparent");
         const cellOpacity = isEditable ? "opacity-100" : "opacity-40 grayscale-[0.5]";
         const checkedBorderClass = WEEK_COLORS[weekIdx].replace("bg-", "border-").replace("200", "500");
         const checkedTextClass = WEEK_COLORS[weekIdx].replace("bg-", "text-").replace("200", "600");
 
         return (
-          <td key={i} className={` border-slate-200/50 border-dotted ${bgClass} ${isToday ? "ring-1 ring-inset ring-green-400/50" : ""} ${cellOpacity} transition-all`}>
+          <td key={i} className={` border-slate-200/50 border-dotted ${bgClass} ${isToday ? "ring-2 ring-inset ring-green-600/40 bg-green-50/30" : ""} ${isSelected ? "ring-2 ring-inset ring-green-600/30 shadow-inner" : ""} ${cellOpacity} transition-all`}>
             <label className={`w-full h-full flex items-center justify-center p-1 ${isEditable ? 'cursor-pointer' : 'cursor-not-allowed'}`}>
               <input 
                 type="checkbox" 
@@ -241,6 +262,8 @@ export default function TrackerGrid({
   isLoading = false,
   viewMonth,
   viewYear,
+  selectedDate,
+  onSelectDate,
   onMonthChange,
   isSettingUp = false,
   onCopyPrevious,
@@ -882,18 +905,25 @@ export default function TrackerGrid({
             {/* ROW 3: Days Headers */}
             <tr>
                <th className="sticky left-0 z-30 bg-white border-r border-b border-slate-300 outline outline-slate-200"></th>
-               {rotatedDays.map((day, i) => {
-                 const weekIdx = i < 28 ? Math.floor(i / 7) : 4;
-                 const bgClass = WEEK_COLORS[weekIdx].replace("200", "100");
-                 const weekdayIdx = (startWeekdayIdx + (day - 1)) % 7;
-                 const isToday = viewMonth === currentMonth && viewYear === currentYear && ((startDay - 1 + i) % daysInMonth) === today - 1;
-                 return (
-                   <th key={i} className={` ${bgClass} p-0.5 text-center font-normal ${isToday ? "ring-2 ring-inset ring-green-600/60 font-black bg-green-200" : ""}`}>
-                     <div className="text-[9px] text-slate-500 font-bold">{WEEKDAY_NAMES[weekdayIdx]}</div>
-                     <div className="text-[11px] text-slate-700 font-black">{day}</div>
-                   </th>
-                 );
-               })}
+                {rotatedDays.map((day, i) => {
+                  const weekIdx = i < 28 ? Math.floor(i / 7) : 4;
+                  const bgClass = WEEK_COLORS[weekIdx].replace("200", "100");
+                  const weekdayIdx = (startWeekdayIdx + (day - 1)) % 7;
+                  const actualDayIdx = (startDay - 1 + i) % daysInMonth;
+                  const isToday = viewMonth === currentMonth && viewYear === currentYear && actualDayIdx === today - 1;
+                  const isSelected = selectedDate && selectedDate.getDate() === day && selectedDate.getMonth() + 1 === viewMonth && selectedDate.getFullYear() === viewYear;
+                  
+                  return (
+                    <th 
+                      key={i} 
+                      onClick={() => onSelectDate?.(new Date(viewYear, viewMonth - 1, day))}
+                      className={` ${bgClass} p-0.5 text-center font-normal cursor-pointer transition-all hover:brightness-95 ${isSelected ? "ring-2 ring-inset ring-green-600 font-black bg-green-200" : isToday ? "ring-2 ring-inset ring-green-600/60 font-black bg-green-200" : ""}`}
+                    >
+                      <div className={`text-[9px] font-bold ${isSelected ? "text-green-800" : "text-slate-500"}`}>{WEEKDAY_NAMES[weekdayIdx]}</div>
+                      <div className={`text-[11px] font-black ${isSelected ? "text-green-900 scale-110" : "text-slate-700"}`}>{day}</div>
+                    </th>
+                  );
+                })}
                <th colSpan={2} className="sticky right-0 z-30 bg-slate-100 border-b border-slate-300 border-l outline outline-slate-200"></th>
             </tr>
           </thead>
@@ -975,30 +1005,31 @@ export default function TrackerGrid({
                    No routines or tests found. Click the + buttons above to add some!
                  </td>
                </tr>
-            ) : habitsWithStreaks.map((habit) => (
-               <FastHabitRow 
-                 key={habit.id}
-                 habit={habit}
-                 progress={initialProgress[habit.id] || []}
-                 rotatedDays={rotatedDays}
-                 startDay={startDay}
-                 daysInMonth={daysInMonth}
-                 viewMonth={viewMonth}
-                 viewYear={viewYear}
-                 currentMonth={currentMonth}
-                 currentYear={currentYear}
-                 today={today}
-                 unlockPastDays={unlockPastDays}
-                 deletingId={deletingId}
-                 connected={connected}
-                 user={user}
-                 onToggle={onToggle}
-                 editHabit={editHabit}
-                 removeEvent={removeEvent}
-                 onRefresh={onRefresh}
-                 dispatch={dispatch}
-               />
-            ))}
+              ) : habitsWithStreaks.map((habit) => (
+                <FastHabitRow 
+                  key={habit.id}
+                  habit={habit}
+                  progress={initialProgress[habit.id] || []}
+                  rotatedDays={rotatedDays}
+                  startDay={startDay}
+                  daysInMonth={daysInMonth}
+                  viewMonth={viewMonth}
+                  viewYear={viewYear}
+                  currentMonth={currentMonth}
+                  currentYear={currentYear}
+                  today={today}
+                  unlockPastDays={unlockPastDays}
+                  deletingId={deletingId}
+                  connected={connected}
+                  user={user}
+                  selectedDate={selectedDate}
+                  onToggle={onToggle}
+                  editHabit={editHabit}
+                  removeEvent={removeEvent}
+                  onRefresh={onRefresh}
+                  dispatch={dispatch}
+                />
+              ))}
           </tbody>
 
           {/* SPREADSHEET FOOTER: WEEKLY DONE % */}
@@ -1314,10 +1345,10 @@ export default function TrackerGrid({
 
 const DonutChart = ({percent, color, label}: {percent: number, color: string, bg: string, label: string}) => (
   <div className="flex flex-col items-center gap-4 group">
-    <div className="relative p-3 size-[200px]">
+    <div className="relative p-3 size-[150px]">
       <svg className="size-full" viewBox="0 0 100 100">
-        <circle cx="50" cy="50" r="40" fill="none" stroke={color} strokeWidth="18" />
-        <circle cx="50" cy="50" r="40" fill="none" stroke={"#ffffff"} strokeWidth="18" strokeDasharray={`${percent * 2.51}, 251`} strokeLinecap="butt" transform="rotate(-90 50 50)" className="transition-all duration-1000 ease-out" />
+        <circle cx="50" cy="50" r="40" fill="none" stroke={color} strokeWidth="12" />
+        <circle cx="50" cy="50" r="40" fill="none" stroke={"#ffffff"} strokeWidth="12" strokeDasharray={`${percent * 2.51}, 251`} strokeLinecap="butt" transform="rotate(-90 50 50)" className="transition-all duration-1000 ease-out" />
       </svg>
       <div className="absolute inset-0 flex items-center justify-center"><span className="text-[20px] font-black">{percent}%</span></div>
     </div>
