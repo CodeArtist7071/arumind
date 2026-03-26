@@ -9,8 +9,10 @@ import {
   Notebook,
   Package,
   School,
+  Download,
 } from "lucide-react";
 import { useDispatch, useSelector } from "react-redux";
+import InstallAppButton from "../components/InstallAppButton";
 
 import { Link, NavLink, Outlet } from "react-router-dom";
 import type { AppDispatch, RootState } from "../store";
@@ -188,12 +190,17 @@ const UserProfile = ({ user, isCollapsed }: any) => {
           )}
         </div>
         {!isCollapsed && (
-          <Link
-            to={"/user/profile"}
-            className="w-full px-5 flex items-center justify-center py-1.5 text-xs font-bold bg-[#1a57db] text-white rounded-lg hover:bg-[#1a57db]/90 transition-all duration-200"
-          >
-            View Profile
-          </Link>
+          <>
+            <Link
+              to={"/user/profile"}
+              className="w-full px-5 flex items-center justify-center py-1.5 text-xs font-bold bg-[#1a57db] text-white rounded-lg hover:bg-[#1a57db]/90 transition-all duration-200"
+            >
+              View Profile
+            </Link>
+            <div className="mt-3">
+              <InstallAppButton />
+            </div>
+          </>
         )}
       </div>
     </div>

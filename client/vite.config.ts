@@ -7,6 +7,9 @@ import { cloudflare } from "@cloudflare/vite-plugin";
 
 // https://vite.dev/config/
 export default defineConfig({
+  server: {
+    host: true,
+  },
   plugins: [
     react(),
     tailwindcss(),
@@ -16,20 +19,43 @@ export default defineConfig({
       devOptions: {
         enabled: true,
       },
-      includeAssets: ["favicon.ico", "apple-touch-icon.png", "mask-icon.svg"],
+      includeAssets: ["apple-touch-icon.png", "vite.svg", "screenshot-wide.png", "screenshot-mobile.png"],
       manifest: {
-        name: "Aruedu - Performance Analytics Dashboard",
-        short_name: "Aruedu",
+        name: "Arumind - Performance Analytics Dashboard",
+        short_name: "Arumind",
         description: "Your premium OPSC and CGL preparation trajectory dashboard.",
         theme_color: "#15803d",
         background_color: "#ffffff",
         display: "standalone",
+        start_url: "/",
+        scope: "/",
         icons: [
+          {
+            src: "pwa-192x192.png",
+            sizes: "192x192",
+            type: "image/png",
+            purpose: "any",
+          },
           {
             src: "pwa-512x512.png",
             sizes: "512x512",
             type: "image/png",
-            purpose: "any maskable",
+            purpose: "any",
+          },
+        ],
+        screenshots: [
+          {
+            src: "screenshot-wide.png",
+            sizes: "1280x720",
+            type: "image/png",
+            form_factor: "wide",
+            label: "Desktop Dashboard View"
+          },
+          {
+            src: "screenshot-mobile.png",
+            sizes: "750x1334",
+            type: "image/png",
+            label: "Mobile Study Planner View"
           },
         ],
       },
