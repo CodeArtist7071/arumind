@@ -51,7 +51,7 @@ export const QuestionList = ({
             ref={(el: any) => {
               if (questionRef.current) questionRef.current[i] = el;
             }}
-            className="bg-white dark:bg-slate-900 rounded-xl border border-slate-200 dark:border-slate-800 shadow-sm flex flex-col min-h-60"
+            className="bg-surface dark:bg-slate-900 rounded-xl  dark:border-slate-800 shadow-sm flex flex-col min-h-60"
           >
             {/* Header */}
             <div className="p-4 border-b flex justify-between items-center border-slate-100 dark:border-slate-800">
@@ -62,7 +62,7 @@ export const QuestionList = ({
                   {q.difficulty_level}
                 </span>
 
-                <span className="text-[10px] uppercase font-bold px-2 py-1 bg-blue-100 text-blue-700 rounded-full">
+                <span className="text-[10px] uppercase font-bold px-2 py-1 bg-primary/10 text-green-700 rounded-full">
                   {q.marks} Points
                 </span>
               </div>
@@ -75,7 +75,7 @@ export const QuestionList = ({
                   {q.question}
                 </p>
                 {isOdia && odiaData?.question && (
-                  <p className="text-[#1a57db] dark:text-blue-400 font-bold text-lg leading-relaxed border-t border-slate-100 dark:border-slate-800 pt-4 mt-4">
+                  <p className="text-[#16a34a] dark:text-green-400 font-bold text-lg leading-relaxed border-t border-slate-100 dark:border-slate-800 pt-4 mt-4">
                     {odiaData.question}
                   </p>
                 )}
@@ -88,7 +88,7 @@ export const QuestionList = ({
                       flex w-full items-center p-4 rounded-xl border-2 transition-all cursor-pointer
                       ${currentAnswer === opt.l 
                         ? 'border-primary bg-primary/5 dark:bg-primary/10' 
-                        : 'border-slate-100 dark:border-slate-800 hover:border-slate-200 dark:hover:border-slate-700 hover:bg-slate-50 dark:hover:bg-slate-800/50'
+                        : 'border-slate-100 dark:border-slate-800 hover:border-slate-200 dark:hover:border-slate-700 hover:bg-surface-container-low dark:hover:bg-slate-800/50'
                       }
                     `}>
                       <input
@@ -107,13 +107,13 @@ export const QuestionList = ({
 
                         <div className="ml-4 flex flex-col gap-1">
                           <div className="flex items-center gap-3">
-                            <span className="flex items-center justify-center size-6 rounded bg-slate-100 dark:bg-slate-800 text-xs font-bold text-slate-500">
+                            <span className="flex items-center justify-center size-6 rounded bg-surface-container-high dark:bg-slate-800 text-xs font-bold text-on-surface-variant">
                               {opt.l}
                             </span>
                             <span className="font-medium">{opt.v}</span>
                           </div>
                           {isOdia && odiaData?.options?.find((o:any) => o.l === opt.l) && (
-                            <div className="ml-9 text-[#1a57db] dark:text-blue-400 text-sm font-bold">
+                            <div className="ml-9 text-[#16a34a] dark:text-green-400 text-sm font-bold">
                               {odiaData.options.find((o:any) => o.l === opt.l)?.v}
                             </div>
                           )}

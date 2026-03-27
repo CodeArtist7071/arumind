@@ -24,7 +24,7 @@ export default defineConfig({
         name: "Arumind - Performance Analytics Dashboard",
         short_name: "Arumind",
         description: "Your premium OPSC and CGL preparation trajectory dashboard.",
-        theme_color: "#15803d",
+        theme_color: "#16a34a",
         background_color: "#ffffff",
         display: "standalone",
         start_url: "/",

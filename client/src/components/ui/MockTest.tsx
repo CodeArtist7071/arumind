@@ -393,7 +393,7 @@ export default function MockTest() {
   return (
     <FormProvider {...methods}>
       <form onSubmit={handleSubmit(onSubmit)}>
-        <div className="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 font-display min-h-screen flex flex-col">
+        <div className="bg-background-light dark:bg-background-dark text-on-surface dark:text-slate-100 font-display min-h-screen flex flex-col">
           <Header 
              attemptId={attemptId} 
              timeLeft={timeLeft} 
@@ -427,8 +427,8 @@ export default function MockTest() {
             message="This mock exam requires camera access for proctoring. Please enable your camera and restart the session."
           >
             <div className="flex flex-col gap-4 mt-4">
-               <div className="bg-blue-50 dark:bg-blue-900/20 p-4 rounded-xl border border-blue-100 dark:border-blue-800">
-                  <p className="text-sm text-blue-700 dark:text-blue-300">
+               <div className="bg-green-50 dark:bg-green-900/20 p-4 rounded-xl border border-green-100 dark:border-green-800">
+                  <p className="text-sm text-green-700 dark:text-green-300">
                      1. Click the lock icon in your browser's address bar.<br/>
                      2. Toggle "Camera" to <b>On</b>.<br/>
                      3. Click the button below to reload.
@@ -449,7 +449,7 @@ export default function MockTest() {
                    }
                  }} 
                  title="Grant Permission & Reload" 
-                 className="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 rounded-xl shadow-lg shadow-blue-600/20"
+                 className="w-full bg-primary hover:bg-green-700 text-white font-bold py-3 rounded-xl shadow-lg shadow-green-600/20"
                />
             </div>
           </AlertPopup>
@@ -457,27 +457,27 @@ export default function MockTest() {
           <AlertPopup isOpen={openAlert} title="Leave Mock Exam" onClose={() => setOpenAlert(false)} message="Are you sure you want to exit this mock exam?">
             <div className="flex w-full gap-3 justify-between mt-4">
               <Button onClick={confirmExit} title="Yes, Exit" />
-              <Button onClick={() => setOpenAlert(false)} title="Cancel" className="bg-white text-blue-500! border border-blue-500!" />
+              <Button onClick={() => setOpenAlert(false)} title="Cancel" className="bg-surface text-primary! border border-primary!" />
             </div>
           </AlertPopup>
 
           <AlertPopup isOpen={showSubmitConfirm} title="Final Submission" onClose={() => setShowSubmitConfirm(false)} message="">
              <div className="space-y-6">
-                <div className="bg-slate-50 dark:bg-slate-800/50 p-6 rounded-2xl border border-slate-100 dark:border-slate-800">
+                <div className="bg-surface-container-low dark:bg-slate-800/50 p-6 rounded-2xl  dark:border-slate-800">
                    <div className="grid grid-cols-2 gap-4">
-                      <div className="text-center p-4 bg-white dark:bg-slate-900 rounded-xl shadow-sm">
+                      <div className="text-center p-4 bg-surface dark:bg-slate-900 rounded-xl shadow-sm">
                          <p className="text-xs font-bold text-slate-400 uppercase tracking-widest mb-1">Attempted</p>
-                         <p className="text-3xl font-black text-blue-600">{counts.attempted}</p>
+                         <p className="text-3xl font-black text-primary">{counts.attempted}</p>
                       </div>
-                      <div className="text-center p-4 bg-white dark:bg-slate-900 rounded-xl shadow-sm">
+                      <div className="text-center p-4 bg-surface dark:bg-slate-900 rounded-xl shadow-sm">
                          <p className="text-xs font-bold text-slate-400 uppercase tracking-widest mb-1">Unattempted</p>
                          <p className="text-3xl font-black text-orange-500">{counts.total - counts.attempted}</p>
                       </div>
                    </div>
                 </div>
                 <div className="flex gap-4 pt-2">
-                   <button type="button" onClick={() => setShowSubmitConfirm(false)} className="flex-1 py-4 text-sm font-bold text-slate-500 hover:bg-slate-100 rounded-2xl">Review</button>
-                   <button type="button" onClick={() => { setShowSubmitConfirm(false); handleSubmit(onSubmit)(); }} className="flex-1 py-4 text-sm font-bold bg-blue-600 text-white rounded-2xl">Submit</button>
+                   <button type="button" onClick={() => setShowSubmitConfirm(false)} className="flex-1 py-4 text-sm font-bold text-on-surface-variant hover:bg-surface-container-high rounded-2xl">Review</button>
+                   <button type="button" onClick={() => { setShowSubmitConfirm(false); handleSubmit(onSubmit)(); }} className="flex-1 py-4 text-sm font-bold bg-primary text-white rounded-2xl">Submit</button>
                 </div>
              </div>
           </AlertPopup>
@@ -500,23 +500,23 @@ const Header = ({ attemptId, timeLeft, onPreSubmit, onBack, language, setLanguag
   };
 
   return (
-    <header className="sticky top-0 z-50 bg-white dark:bg-slate-900 border-b border-slate-200 dark:border-slate-800 px-4 lg:px-8 py-3">
+    <header className="sticky top-0 z-50 bg-surface dark:bg-slate-900  dark:border-slate-800 px-4 lg:px-8 py-3">
       <div className="max-w-360 mx-auto flex items-center justify-between">
         <div className="flex items-center gap-4">
           <button 
             type="button" 
             onClick={onBack} 
-            className="p-2 hover:bg-slate-100 dark:hover:bg-slate-800 rounded-full transition-colors cursor-pointer group"
+            className="p-2 hover:bg-surface-container-high dark:hover:bg-slate-800 rounded-full transition-colors cursor-pointer group"
             title="Go Back"
           >
-            <ChevronLeft className="size-6 text-slate-500 group-hover:text-primary transition-colors" />
+            <ChevronLeft className="size-6 text-on-surface-variant group-hover:text-primary transition-colors" />
           </button>
           <div className="bg-primary/10 p-2 rounded-lg">
             <NotebookTabs className="text-primary size-6" />
           </div>
           <div>
             <h1 className="text-lg font-bold tracking-tight">Mock Exam</h1>
-            <p className="text-xs text-slate-500 dark:text-slate-400 font-medium uppercase tracking-wider">
+            <p className="text-xs text-on-surface-variant dark:text-slate-400 font-medium uppercase tracking-wider">
               Adaptive session
             </p>
           </div>
@@ -533,14 +533,14 @@ const Header = ({ attemptId, timeLeft, onPreSubmit, onBack, language, setLanguag
           )}
 
           {/* Language Toggle */}
-          <div className="flex bg-slate-100 dark:bg-slate-800 p-1 rounded-xl border border-slate-200 dark:border-slate-700 shadow-inner">
+          <div className="flex bg-surface-container-high dark:bg-slate-800 p-1 rounded-xl  dark:border-slate-700 shadow-inner">
             <button
                type="button"
                onClick={() => setLanguage("en")}
                className={`px-3 py-1.5 rounded-lg text-xs font-bold transition-all ${
                  language === "en" 
-                   ? "bg-white dark:bg-slate-700 text-blue-600 shadow-sm" 
-                   : "text-slate-500 hover:text-slate-700"
+                   ? "bg-surface dark:bg-slate-700 text-primary shadow-sm" 
+                   : "text-on-surface-variant hover:text-slate-700"
                }`}
             >
                ENG
@@ -550,16 +550,16 @@ const Header = ({ attemptId, timeLeft, onPreSubmit, onBack, language, setLanguag
                onClick={() => setLanguage("od")}
                className={`px-3 py-1.5 rounded-lg text-xs font-bold transition-all ${
                  language === "od" 
-                   ? "bg-white dark:bg-slate-700 text-blue-600 shadow-sm" 
-                   : "text-slate-500 hover:text-slate-700"
+                   ? "bg-surface dark:bg-slate-700 text-primary shadow-sm" 
+                   : "text-on-surface-variant hover:text-slate-700"
                }`}
             >
                ଓଡ଼ିଆ
             </button>
           </div>
 
-          <div className="hidden md:flex items-center gap-2 bg-slate-100 dark:bg-slate-800 px-4 py-2 rounded-lg border border-slate-200 dark:border-slate-700">
-            <Timer className="text-slate-500 size-4" />
+          <div className="hidden md:flex items-center gap-2 bg-surface-container-high dark:bg-slate-800 px-4 py-2 rounded-lg  dark:border-slate-700">
+            <Timer className="text-on-surface-variant size-4" />
             <span className="font-mono font-bold text-slate-700 dark:text-slate-200">
               {timeLeft === null ? "Relaxed Mode" : "Timed Session"}
             </span>
@@ -571,7 +571,7 @@ const Header = ({ attemptId, timeLeft, onPreSubmit, onBack, language, setLanguag
             disabled={!attemptId}
             className={`bg-primary ${
               !attemptId ? "opacity-50 cursor-not-allowed" : "cursor-pointer hover:bg-primary/90"
-            } text-blue-700 px-6 py-2 rounded-lg font-bold text-sm transition-all flex items-center gap-2 shadow-sm shadow-primary/20`}
+            } text-green-700 px-6 py-2 rounded-lg font-bold text-sm transition-all flex items-center gap-2 shadow-sm shadow-primary/20`}
           >
             {attemptId ? "Final Submit" : "Initializing..."}
           </button>

@@ -1,218 +1,268 @@
 
-import React from "react";
-import { useSelector } from "react-redux";
-import type { RootState } from "../store";
-
+import { useDispatch, useSelector } from "react-redux";
+import type { AppDispatch, RootState } from "../store";
+import { updateUserLocally } from "../slice/userSlice";
+import { updateUserProfile } from "../services/userServices";
+import { EditProfileModal } from "../components/EditProfileModal";
+import { 
+  User, 
+  Mail, 
+  Phone, 
+  MapPin, 
+  GraduationCap, 
+  Award, 
+  Zap, 
+  Target, 
+  Gem, 
+  RefreshCcw, 
+  CreditCard,
+  CheckCircle2,
+  Calendar,
+  Settings,
+  ChevronRight
+} from "lucide-react";
+import { useState } from "react";
 
 const Profile = () => {
-    const {user} = useSelector((state:RootState)=>state.user)
-    const userData = user?.user_metadata
-  return (
-    <div className="bg-[#f6f6f8] text-slate-900 font-sans min-h-screen flex flex-col">
-      
-      {/* Header */}
-      <header className="sticky top-0 z-50 w-full border-b border-slate-200 bg-white/80 backdrop-blur-md px-4 lg:px-20 py-3">
-        <div className="mx-auto flex max-w-7xl items-center justify-between">
-          {/* {JSON.stringify(user)} */}
-          <div className="flex items-center gap-3">
-            <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-blue-600 text-white">
-              <span className="material-symbols-outlined">auto_stories</span>
-            </div>
-            <div>
-              <h1 className="text-lg font-bold">Odisha Exam Prep</h1>
-              <p className="text-xs text-slate-500">Student Dashboard</p>
-            </div>
-          </div>
+    const { user, profile } = useSelector((state: RootState) => state.user);
+    const dispatch = useDispatch<AppDispatch>();
+    const [isEditModalOpen, setIsEditModalOpen] = useState(false);
+    
+    const userData = user?.user_metadata;
 
-          <nav className="hidden md:flex items-center gap-6">
-            <a className="text-sm font-medium text-slate-600 hover:text-blue-600" href="#">
-              Home
-            </a>
-            <a className="text-sm font-medium text-slate-600 hover:text-blue-600" href="#">
-              Test Series
-            </a>
-            <a className="text-sm font-medium text-slate-600 hover:text-blue-600" href="#">
-              Materials
-            </a>
-            <a className="text-sm font-bold text-blue-600" href="#">
-              Profile
-            </a>
-          </nav>
-
-          <div className="flex items-center gap-3">
-            <button className="flex h-10 w-10 items-center justify-center rounded-full bg-slate-100 text-slate-600 hover:bg-slate-200">
-              <span className="material-symbols-outlined text-[20px]">
-                notifications
-              </span>
-            </button>
-
-            <div className="h-10 w-10 rounded-full bg-blue-100 border-2 border-blue-200 overflow-hidden">
-              <img
-                className="h-full w-full object-cover"
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuCkm62oVe8PBmJKTxERvO4Lrh0_HD3BfZEz-WfJeCR8meRYzwK9mxGf-csezIjIddmZ5yVCx--GA0xfHowJD2IrrWi1FW_e1iLtkQ2u6JL6jZkYDbpX2WH1A4F_cFGoax66NvGt-1BEvSS_dR5P5wiwVtcaSeTlk43aqx0ouDo-rnkJBsuvHEUDwDZvgrxWbDh1b5m9LzAHrcB8b74PDHhCaKGKniJs-7ZdARZ6v7IwSG2l8O9WjbgWBn-oqfi5tGs3HBnrnR_gfw"
-                alt="profile"
-              />
-            </div>
-          </div>
-        </div>
-      </header>
-
-      {/* Main */}
-      <main className="flex-1 px-4 py-8 lg:px-20">
-        <div className="mx-auto max-w-7xl">
-
-          {/* Profile Card */}
-          <div className="mb-8 flex sm:flex-col md:flex-row items-center gap-6 rounded-2xl bg-white p-8 shadow-sm border border-slate-200">
+    const handleSaveProfile = async (updates: any) => {
+        if (!user?.id) return;
+        
+        try {
+            // Map the internal form fields to the Supabase profiles table fields
+            const supabaseUpdates = {
+                full_name: updates.name,
+                phone: updates.phone,
+                location: updates.location
+            };
             
-            <div className="relative">
-              <div className="h-32 w-32 rounded-full border-4 border-white ring-4 ring-blue-100 overflow-hidden shadow-xl">
-                <img
-                  className="h-full w-full object-cover"
-                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuAd-e1E_Lk0b-ybYISMm_WOW4WPLlM2nwB3V9Mce8MWzNP6t0d8PYOC1ONJAtTGBx742aCjW8DtymHO3BQR46t2ZONZNBcijGTx_Vuid7YKLFuWDyGfD7F8hfVH3eUtknjLexY-rM_Xsj95u4H1vAM8zWDhT0275syJQkmZUv_VX83rkfg2GrB5Yr5EXPH-3nLOO1d7rHbRjL0x7JySaR08nx1DJiY_Z-HvR68_H8LQa-JqPp-bMqVBkTyMtinJB6ekYqkLFlOmLg"
-                  alt="student"
-                />
-              </div>
+            await updateUserProfile(supabaseUpdates, user.id);
+            dispatch(updateUserLocally(supabaseUpdates));
+        } catch (error) {
+            console.error("Update failed", error);
+            throw error;
+        }
+    };
 
-              <div className={userData?.email_verified ? "bg-green-500 absolute bottom-0 right-0 flex h-8 w-full items-center justify-center rounded-full  text-white shadow-lg ring-4 ring-white" : "absolute bottom-1 right-1 flex h-8 w-8 items-center justify-center rounded-full  text-white shadow-lg ring-4 ring-white"}>
-                <span className="material-symbols-outlined text-[18px]">
-                  {userData?.email_verified ? "Verified":"Not Verified"}
-                </span>
-              </div>
+    return (
+        <div className="space-y-10 pb-20 animate-reveal">
+            <EditProfileModal 
+                isOpen={isEditModalOpen}
+                onClose={() => setIsEditModalOpen(false)}
+                onSave={handleSaveProfile}
+                initialData={{
+                    name: profile?.full_name || user?.identities?.[0]?.identity_data?.name || "",
+                    phone: profile?.phone || user?.phone || "",
+                    location: profile?.location || "Bhubaneswar, Odisha"
+                }}
+            />
+            {/* Identity Editorial Hero */}
+            <section className="bg-surface-container-low rounded-[3rem] p-10 shadow-ambient relative overflow-hidden group hover-bloom">
+                {/* Decorative Pattern */}
+                <div className="absolute top-0 right-0 p-12 opacity-[0.03] group-hover:scale-110 transition-transform duration-3000 pointer-events-none">
+                    <User size={300} />
+                </div>
+
+                <div className="flex flex-col md:flex-row items-center gap-10 relative z-10">
+                    <div className="relative">
+                        <div className="size-40 rounded-full border-8 border-white dark:border-surface shadow-2xl overflow-hidden ring-4 ring-primary/20">
+                            <img
+                                className="h-full w-full object-cover"
+                                src={user?.identities?.[0]?.identity_data?.avatar_url || "https://lh3.googleusercontent.com/a/ACg8ocL8jX9S4Z4c9X..."}
+                                alt="profile"
+                            />
+                        </div>
+                        {userData?.email_verified && (
+                            <div className="absolute bottom-2 right-2 bg-primary text-white p-2 rounded-full shadow-lg ring-4 ring-white dark:ring-surface animate-bounce-slow">
+                                <CheckCircle2 size={18} />
+                            </div>
+                        )}
+                    </div>
+
+                    <div className="text-center md:text-left flex-1 space-y-4">
+                        <div>
+                            <h2 className="text-4xl lg:text-5xl font-black text-on-surface tracking-tighter leading-none mb-2">
+                                {profile?.full_name || user?.identities?.[0]?.identity_data?.name || "Premium Aspirant"}
+                            </h2>
+                            <div className="flex flex-wrap justify-center md:justify-start gap-3 items-center">
+                                <span className="bg-primary/10 text-primary px-4 py-1.5 rounded-full text-[10px] font-technical font-black uppercase tracking-widest">
+                                    OPSC Elite Aspirant
+                                </span>
+                                <span className="text-[10px] font-technical font-black uppercase tracking-[0.2em] text-on-surface-variant opacity-40">
+                                    Batch of 2024
+                                </span>
+                            </div>
+                        </div>
+
+                        <div className="flex flex-wrap justify-center md:justify-start gap-6 text-on-surface-variant text-sm font-medium opacity-70">
+                            <div className="flex items-center gap-2">
+                                <MapPin size={14} className="text-primary" />
+                                <span>{profile?.location || "Odisha, India"}</span>
+                            </div>
+                            <div className="flex items-center gap-2">
+                                <Calendar size={14} className="text-primary" />
+                                <span>Joined Oct 2023</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button 
+                        onClick={() => setIsEditModalOpen(true)}
+                        className="bg-primary text-white px-8 py-4 rounded-full font-technical font-black uppercase tracking-widest shadow-lg shadow-primary/20 hover:scale-105 transition-all duration-300 flex items-center gap-3"
+                    >
+                        <Settings size={18} />
+                        Edit Profile
+                    </button>
+                </div>
+            </section>
+
+            <div className="grid grid-cols-1 lg:grid-cols-12 gap-10">
+                {/* Left Column: Deep Analysis */}
+                <div className="lg:col-span-8 space-y-10">
+                    {/* Personal Information Tube */}
+                    <section className="bg-surface-container-low rounded-[3rem] p-10 shadow-ambient hover-bloom">
+                        <div className="flex items-center gap-4 mb-10">
+                            <div className="size-10 bg-primary/10 rounded-xl flex items-center justify-center text-primary">
+                                <User size={20} />
+                            </div>
+                            <h3 className="text-[11px] font-technical font-black uppercase tracking-[0.4em] text-on-surface-variant opacity-60">Personal Manifesto</h3>
+                        </div>
+
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                            <InfoField icon={<User size={14} />} label="Full Identity" value={profile?.full_name || user?.identities?.[0]?.identity_data?.name || "N/A"} />
+                            <InfoField icon={<Mail size={14} />} label="Signal Address" value={user?.email || "N/A"} />
+                            <InfoField icon={<Phone size={14} />} label="Comm Link" value={profile?.phone || user?.phone || "N/A"} />
+                            <InfoField icon={<MapPin size={14} />} label="Geographic Node" value={profile?.location || "Bhubaneswar, Odisha"} />
+                        </div>
+                    </section>
+
+                    {/* Academic Pedigree Tube */}
+                    <section className="bg-surface-container-low rounded-[3rem] p-10 shadow-ambient hover-bloom">
+                        <div className="flex items-center gap-4 mb-10">
+                            <div className="size-10 bg-tertiary/10 rounded-xl flex items-center justify-center text-tertiary">
+                                <GraduationCap size={20} />
+                            </div>
+                            <h3 className="text-[11px] font-technical font-black uppercase tracking-[0.4em] text-on-surface-variant opacity-60">Academic Pedigree</h3>
+                        </div>
+
+                        <div className="space-y-6">
+                            <AcademicEntry
+                                degree="Master of Technology (M.Tech)"
+                                college="Biju Patnaik University of Technology"
+                                details="2022 • 8.5 CGPA"
+                                active
+                            />
+                            <AcademicEntry
+                                degree="Bachelor of Technology (B.Tech)"
+                                college="VSSUT, Burla"
+                                details="2020 • 7.9 CGPA"
+                            />
+                        </div>
+                    </section>
+                </div>
+
+                {/* Right Column: Vitals */}
+                <div className="lg:col-span-4 space-y-10">
+                    {/* Mastery Snapshot Pod */}
+                    <section className="bg-surface-container-low rounded-[3rem] p-10 shadow-ambient">
+                        <h3 className="text-[11px] font-technical font-black uppercase tracking-[0.4em] text-on-surface-variant opacity-60 mb-10">Mastery Snapshot</h3>
+                        
+                        <div className="space-y-8">
+                            <div>
+                                <div className="flex justify-between items-end mb-4">
+                                    <p className="text-[10px] font-technical font-black uppercase tracking-widest text-on-surface-variant opacity-40">Accuracy Rate</p>
+                                    <span className="text-xl font-technical font-black text-primary tracking-tighter">78%</span>
+                                </div>
+                                <div className="h-3 w-full bg-surface-container-high rounded-full overflow-hidden p-1 shadow-inner ring-1 ring-black/5">
+                                    <div className="h-full bg-primary rounded-full transition-all duration-1000 w-[78%]" />
+                                </div>
+                            </div>
+
+                            <div className="grid grid-cols-2 gap-4">
+                                <div className="bg-white/50 p-6 rounded-4xl shadow-sm group hover:bg-white transition-all">
+                                    <p className="text-2xl font-technical font-black text-on-surface mb-1">42</p>
+                                    <p className="text-[8px] font-technical font-black uppercase tracking-[0.2em] text-on-surface-variant opacity-40">Manifests</p>
+                                </div>
+                                <div className="bg-white/50 p-6 rounded-4xl shadow-sm group hover:bg-white transition-all">
+                                    <p className="text-2xl font-technical font-black text-tertiary mb-1">840</p>
+                                    <p className="text-[8px] font-technical font-black uppercase tracking-[0.2em] text-on-surface-variant opacity-40">Focus Hrs</p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    {/* Subscription Layer */}
+                    <section className="bg-linear-to-br from-primary to-primary-container p-1 rounded-[3rem] shadow-lg shadow-primary/20 overflow-hidden">
+                        <div className="bg-white/5 backdrop-blur-xl p-10 rounded-[2.8rem] space-y-8">
+                            <div className="flex justify-between items-start">
+                                <div className="bg-white/20 p-4 rounded-2xl text-white">
+                                    <Gem size={28} />
+                                </div>
+                                <span className="bg-white/20 text-white px-4 py-1.5 rounded-full text-[9px] font-technical font-black uppercase tracking-widest">
+                                    Elite Plan
+                                </span>
+                            </div>
+
+                            <div className="text-white">
+                                <h4 className="text-2xl font-black tracking-tighter leading-none mb-1">Elite Test Series</h4>
+                                <p className="text-[10px] font-technical font-black uppercase tracking-widest opacity-60">Unlimited Access to OPSC</p>
+                            </div>
+
+                            <div className="space-y-4 pt-4 border-t border-white/10">
+                                <div className="flex justify-between items-center text-white/80">
+                                    <div className="flex items-center gap-2">
+                                        <RefreshCcw size={12} />
+                                        <span className="text-[10px] uppercase font-technical font-black">Renewal</span>
+                                    </div>
+                                    <span className="text-xs font-bold">15 Oct 2024</span>
+                                </div>
+                                <div className="flex justify-between items-center text-white/80">
+                                    <div className="flex items-center gap-2">
+                                        <CreditCard size={12} />
+                                        <span className="text-[10px] uppercase font-technical font-black">Amount</span>
+                                    </div>
+                                    <span className="text-xs font-bold">₹2,499</span>
+                                </div>
+                            </div>
+
+                            <button className="w-full bg-white text-primary py-4 rounded-full font-technical font-black text-[10px] uppercase tracking-[0.3em] hover:scale-105 transition-all">
+                                Manage Subscription
+                            </button>
+                        </div>
+                    </section>
+                </div>
             </div>
-
-            <div className="text-center md:text-left flex-1">
-              <h2 className="text-3xl font-bold">Aurobinda Mohanty</h2>
-              <span className="inline-flex mt-2 rounded-full bg-blue-100 px-3 py-1 text-xs font-bold text-blue-600">
-                OPSC Aspirant
-              </span>
-
-              <div className="flex flex-wrap justify-center md:justify-start gap-4 text-slate-500 text-sm mt-3">
-                <span>Bhubaneswar, Odisha</span>
-                <span>Batch of 2024</span>
-                <span>Joined Oct 2023</span>
-              </div>
-            </div>
-
-            <button className="rounded-xl bg-blue-600 px-6 py-2.5 text-sm font-semibold text-white shadow hover:bg-blue-700">
-              Edit Profile
-            </button>
-          </div>
-
-          {/* Grid */}
-          <div className="grid sm:grid-cols-1 lg:grid-cols-12 gap-8">
-
-            {/* Left */}
-            <div className="lg:col-span-8 flex sm:flex-col gap-8">
-
-              {/* Personal Info */}
-              <section className="rounded-2xl bg-white p-6 shadow-sm border border-slate-200">
-                <h3 className="text-lg font-bold mb-6">Personal Information</h3>
-
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                  <Info label="Full Name" value="Aurobinda Mohanty" />
-                  <Info label="Email Address" value={user.email} />
-                  <Info label="Phone Number" value={user.phone} />
-                  <Info label="Location" value="Chandrasekharpur, Bhubaneswar" />
-                </div>
-              </section>
-
-              {/* Academic */}
-              <section className="rounded-2xl bg-white p-6 shadow-sm border border-slate-200">
-                <h3 className="text-lg font-bold mb-6">Academic Details</h3>
-
-                <div className="space-y-6">
-                  <Academic
-                    degree="Master of Technology (M.Tech)"
-                    college="Biju Patnaik University of Technology"
-                    year="2022 • 8.5 CGPA"
-                  />
-                  <Academic
-                    degree="Bachelor of Technology (B.Tech)"
-                    college="VSSUT, Burla"
-                    year="2020 • 7.9 CGPA"
-                  />
-                </div>
-              </section>
-
-            </div>
-
-            {/* Right */}
-            <div className="lg:col-span-4 flex flex-col gap-8">
-
-              {/* Progress */}
-              <section className="rounded-2xl bg-white p-6 shadow-sm border border-slate-200">
-                <h3 className="text-lg font-bold mb-6">Progress Summary</h3>
-
-                <p className="text-sm text-slate-500">Total Mock Tests</p>
-                <p className="text-2xl font-bold">42</p>
-
-                <div className="mt-4">
-                  <p className="text-sm text-slate-500">Overall Accuracy</p>
-                  <div className="h-2 w-full bg-slate-200 rounded-full mt-2">
-                    <div className="h-2 bg-blue-600 w-[78%] rounded-full"></div>
-                  </div>
-                </div>
-
-                <div className="grid grid-cols-2 gap-4 mt-6">
-                  <Stat title="Tests Won" value="12" />
-                  <Stat title="Study Hours" value="840" />
-                </div>
-              </section>
-
-              {/* Account */}
-              <section className="rounded-2xl bg-white p-6 shadow-sm border border-slate-200">
-                <h3 className="text-lg font-bold mb-6">Account Status</h3>
-
-                <div className="bg-blue-600 text-white rounded-xl p-4 mb-4">
-                  <p className="text-xs uppercase">Premium Plan</p>
-                  <p className="text-xl font-bold">Elite Test Series</p>
-                  <p className="text-xs opacity-80">Full Access to OPSC & OSSC</p>
-                </div>
-
-                <div className="space-y-2 text-sm">
-                  <div className="flex justify-between">
-                    <span>Renewal Date</span>
-                    <span className="font-bold">15 Oct 2024</span>
-                  </div>
-                  <div className="flex justify-between">
-                    <span>Last Payment</span>
-                    <span className="font-bold">₹2,499</span>
-                  </div>
-                </div>
-
-                <button className="w-full mt-4 border border-blue-600 text-blue-600 rounded-xl py-2 font-bold hover:bg-blue-600 hover:text-white">
-                  Manage Subscription
-                </button>
-              </section>
-
-            </div>
-          </div>
         </div>
-      </main>
-    </div>
-  );
+    );
 };
 
-const Info = ({ label, value }) => (
-  <div>
-    <p className="text-xs uppercase text-slate-400">{label}</p>
-    <p className="font-semibold text-slate-800">{value}</p>
-  </div>
+const InfoField = ({ icon, label, value }: { icon: any, label: string, value: string }) => (
+    <div className="bg-white/30 p-6 rounded-4xl border border-on-surface/5 group hover:bg-white transition-all duration-500">
+        <div className="flex items-center gap-3 mb-3 text-primary opacity-40 group-hover:opacity-100 transition-opacity">
+            {icon}
+            <p className="text-[9px] font-technical font-black uppercase tracking-[0.2em] text-on-surface-variant">{label}</p>
+        </div>
+        <p className="text-sm font-bold text-on-surface tracking-tight truncate">{value}</p>
+    </div>
 );
 
-const Academic = ({ degree, college, year }) => (
-  <div>
-    <p className="font-bold text-slate-800">{degree}</p>
-    <p className="text-sm text-slate-500">{college}</p>
-    <p className="text-xs text-slate-400">{year}</p>
-  </div>
-);
-
-const Stat = ({ title, value }) => (
-  <div className="text-center">
-    <p className="text-lg font-bold text-blue-600">{value}</p>
-    <p className="text-xs uppercase text-slate-400">{title}</p>
-  </div>
+const AcademicEntry = ({ degree, college, details, active = false }: { degree: string, college: string, details: string, active?: boolean }) => (
+    <div className={`flex items-start gap-6 p-6 rounded-4xl transition-all duration-700 ease-(--ease-botanical) hover:translate-x-2 ${active ? 'bg-white shadow-ambient ring-1 ring-black/5' : 'bg-on-surface/5 opacity-60 hover:opacity-100'}`}>
+        <div className={`size-12 rounded-2xl flex items-center justify-center shrink-0 ${active ? 'bg-primary text-white shadow-lg' : 'bg-surface-container-high text-on-surface-variant'}`}>
+            <Award size={24} />
+        </div>
+        <div>
+            <h4 className="font-bold text-on-surface tracking-tight leading-tight">{degree}</h4>
+            <p className="text-xs text-on-surface-variant font-medium mt-1">{college}</p>
+            <p className="text-[10px] font-technical font-black uppercase tracking-widest mt-2 opacity-40">{details}</p>
+        </div>
+        <ChevronRight size={16} className="ml-auto opacity-20" />
+    </div>
 );
 
 export default Profile;

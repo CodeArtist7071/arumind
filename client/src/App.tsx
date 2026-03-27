@@ -106,14 +106,16 @@ function App() {
       <>
        
         <Route path="/" element={<HomePage />} />
-        <Route
-          path="/login"
-          element={!user ? <Login /> : <Navigate to="/user/dashboard" replace />}
-        />
-        <Route
-          path="/register"
-          element={!user ? <Register /> : <Navigate to="/user/dashboard" replace />}
-        />
+        <Route element={<Authlayout />}>
+          <Route
+            path="/login"
+            element={!user ? <Login /> : <Navigate to="/user/dashboard" replace />}
+          />
+          <Route
+            path="/register"
+            element={!user ? <Register /> : <Navigate to="/user/dashboard" replace />}
+          />
+        </Route>
         <Route path="admin" element={<AdminPanelLayout />}>
           <Route path="users" element={<UserManagement />} />
         </Route>

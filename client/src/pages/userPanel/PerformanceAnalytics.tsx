@@ -272,7 +272,7 @@ const PerformanceAnalytics = () => {
 
   if (loading) {
     return (
-      <div className="flex min-h-screen items-center justify-center bg-white">
+      <div className="flex min-h-screen items-center justify-center bg-surface">
         <div className="flex flex-col items-center gap-4">
           <div className="size-12 border-4 border-green-700 border-t-transparent rounded-full animate-spin" />
           <p className="font-bold text-gray-500 animate-pulse">
@@ -287,30 +287,34 @@ const PerformanceAnalytics = () => {
   const maxScore = 100; // Accuracy is 0-100
 
   return (
-    <main className="md:ml-64 pt-24 pb-12 px-6 md:px-12 max-w-7xl mx-auto">
-      {/* Hero */}
-      <section className="mb-12">
-        <h1 className="text-5xl font-extrabold leading-tight">
-          Growth <span className="text-green-700">&</span> Precision.
+    <main className="pb-20 px-6 lg:px-12 max-w-7xl mx-auto space-y-16 animate-reveal">
+      {/* Hero / Editorial Greeting */}
+      <section className="pt-8">
+        <h1 className="text-6xl font-black leading-[0.9] tracking-tighter text-on-surface">
+          Growth <span className="text-primary italic">&</span> <br />
+          Precision.
         </h1>
-        <p className="mt-4 text-gray-600 max-w-xl text-lg font-medium">
-          Your{" "}
-          <span className="text-green-700 font-bold">
-            {targetedExams?.find((e: any) => e.id === selectedExam)?.name ||
-              "exam"}
+        <p className="mt-8 text-on-surface-variant max-w-lg text-lg font-medium leading-relaxed opacity-80">
+          Your journey through the{" "}
+          <span className="text-primary font-black px-2 py-0.5 bg-primary/5 rounded-lg">
+            {targetedExams?.find((e: any) => e.id === selectedExam)?.name || "curriculum"}
           </span>{" "}
-          preparation trajectory is showing consistent growth.
+          is showing strong technical mastery and consistent momentum.
         </p>
       </section>
-      <div className="bg-green-200 rounded-full p-2 mb-12 w-fit">
-        <div
-          className={`flex flex-wrap gap-6`}
-        >
+
+      {/* Target Selector Tube */}
+      <div className="bg-surface-container-high rounded-full p-2 w-fit shadow-ambient backdrop-blur-xl border border-outline-variant/5">
+        <div className="flex flex-wrap gap-2">
           {targetedExams?.map((item: any, index: number) => (
             <button
               key={index}
               onClick={() => setSelectedExam(item.id)}
-              className={`px-8 py-3 rounded-full font-black text-sm uppercase tracking-widest transition-all cursor-pointer shadow-sm border-2 ${selectedExam === item.id ? "bg-green-700 text-white border-green-700 shadow-green-200 shadow-lg scale-105" : "bg-white text-green-800 border-green-100 hover:border-green-300 hover:bg-green-50"}`}
+              className={`px-8 py-3 rounded-full font-technical font-black text-[11px] uppercase tracking-[0.2em] transition-all duration-500 cursor-pointer ${
+                selectedExam === item.id 
+                  ? "bg-primary text-on-primary shadow-lg shadow-primary/20 scale-105" 
+                  : "text-on-surface-variant hover:bg-surface/50 hover:text-on-surface"
+              }`}
             >
               {item.name}
             </button>
@@ -318,18 +322,21 @@ const PerformanceAnalytics = () => {
         </div>
       </div>
 
-      {/* Grid */}
-      <div className="grid md:grid-cols-12 gap-6">
-        {/* Ranking */}
-        <div className="md:col-span-4 bg-white p-6 rounded-xl shadow">
-          <h3 className="text-xl font-bold mb-4">Odisha Rankings</h3>
-          <p className="text-6xl font-bold text-green-700">
+      {/* Main Analytics Grid */}
+      <div className="grid lg:grid-cols-12 gap-8">
+        {/* Core Metric: Large Stamping */}
+        <div className="lg:col-span-4 bg-surface-container-low p-10 rounded-[3rem] shadow-ambient hover-bloom group">
+            <div className="size-16 bg-surface-container-high rounded-2xl flex items-center justify-center text-primary mb-8 shadow-sm group-hover:bg-primary group-hover:text-white transition-all duration-500">
+              <TrendingUp size={28} />
+            </div>
+            <h3 className="text-[11px] font-technical font-black uppercase tracking-widest text-on-surface-variant opacity-60 mb-2">Momentum Trend</h3>
+          <p className="text-8xl font-technical font-black text-on-surface tracking-tighter leading-none">
             {metrics?.testsCount || 0}
           </p>
-          <p className="text-sm text-gray-500">Tests Completed</p>
+          <p className="text-sm font-bold text-on-surface-variant mt-4 opacity-60">Completed Sessions</p>
         </div>
 
-        {/* Growth Chart */}
+        {/* Dynamic Growth Chart Component */}
         <GrowthChart
           performanceTrajectory={performanceTrajectory}
           maxScore={maxScore}
@@ -337,117 +344,141 @@ const PerformanceAnalytics = () => {
           setChartMode={setChartMode}
         />
 
-        <SubjectMastery examid={selectedExam} metrics={metrics} />
+        {/* Detailed Breakdown Section */}
+        <div className="lg:col-span-8">
+          <SubjectMastery examid={selectedExam} metrics={metrics} />
+        </div>
 
-        {/* Accuracy vs Speed */}
-        <div className="md:col-span-6 bg-white p-6 rounded-xl shadow">
-          <h3 className="text-xl font-bold mb-6">Accuracy vs Speed</h3>
-          <div className="flex justify-around">
-            <div className="text-center">
-              <div className="w-20 h-20 border-4 border-green-300 rounded-full flex items-center justify-center text-xl font-black text-green-800">
-                {metrics?.accuracy || 0}%
+        {/* Speed vs Precision Tube */}
+        <div className="lg:col-span-4 bg-surface-container-low p-10 rounded-[3rem] shadow-ambient">
+          <h3 className="text-xl font-black text-on-surface mb-10 tracking-tight">Focus Balance</h3>
+          <div className="space-y-12">
+            <div className="flex items-center gap-8">
+              <div className="shrink-0 size-24 border-10 border-primary/20 rounded-full flex items-center justify-center text-2xl font-technical font-black text-primary bg-primary/5 shadow-inner">
+                {metrics?.accuracy || 0}<span className="text-xs opacity-40">%</span>
               </div>
-              <p className="text-xs mt-2 text-gray-500 font-medium">Accuracy</p>
+              <div>
+                <p className="text-[10px] font-technical font-black text-on-surface-variant uppercase tracking-widest opacity-40">Accuracy</p>
+                <p className="text-sm font-bold text-on-surface leading-tight mt-1">Syllabus Precision</p>
+              </div>
             </div>
-            <div className="text-center">
-              <div className="w-20 h-20 border-4 border-gray-300 rounded-full flex items-center justify-center text-xl font-black text-gray-700">
-                {metrics?.avgTimeSec || 0}s
+            
+            <div className="flex items-center gap-8">
+              <div className="shrink-0 size-24 border-10 border-on-surface/5 rounded-full flex items-center justify-center text-2xl font-technical font-black text-on-surface-variant bg-on-surface/5 shadow-inner">
+                {metrics?.avgTimeSec || 0}<span className="text-xs opacity-40">s</span>
               </div>
-              <p className="text-xs mt-2 text-gray-500 font-medium">
-                Avg Time/Test
-              </p>
+              <div>
+                <p className="text-[10px] font-technical font-black text-on-surface-variant uppercase tracking-widest opacity-40">Tempo</p>
+                <p className="text-sm font-bold text-on-surface leading-tight mt-1">Avg Response Speed</p>
+              </div>
             </div>
           </div>
         </div>
-        <QuestionDistribution metrics={metrics} />
-        <AiInsights aiInsights={aiInsights} />
 
-        {/* Strong vs Weak Chapters */}
-        <div className="md:col-span-6 bg-white p-6 rounded-xl shadow">
-          <h3 className="text-lg font-bold flex items-center gap-2 mb-4">
-            <CheckCircle className="text-green-600" size={20} />
-            Strongest Chapters
-          </h3>
-          {(metrics?.strongChapters || []).length > 0 ? (
-            metrics!.strongChapters.map((ch, i) => (
-              <div
-                key={i}
-                className="flex justify-between items-center py-3 border-b border-gray-100 last:border-0"
-              >
-                <div>
-                  <p className="font-bold text-sm">{ch.name}</p>
-                  <p className="text-xs text-gray-500">{ch.subject}</p>
-                </div>
-                <p className="text-green-700 font-black text-lg">
-                  {ch.accuracy}%
-                </p>
-              </div>
-            ))
-          ) : (
-            <p className="text-gray-400 text-sm italic">
-              Complete more tests to see strengths.
-            </p>
-          )}
+        {/* Insights & Distribution Tubes */}
+        <div className="lg:col-span-6">
+           <QuestionDistribution metrics={metrics} />
+        </div>
+        
+        <div className="lg:col-span-6">
+           <AiInsights aiInsights={aiInsights} />
         </div>
 
-        <div className="md:col-span-6 bg-white p-6 rounded-xl shadow">
-          <h3 className="text-lg font-bold flex items-center gap-2 mb-4">
-            <FileWarning className="text-red-500" size={20} />
-            Focus Areas
-          </h3>
-          {(metrics?.weakChapters || []).length > 0 ? (
-            metrics!.weakChapters.map((ch, i) => (
-              <div
-                key={i}
-                className="flex justify-between items-center py-3 border-b border-gray-100 last:border-0"
-              >
-                <div>
-                  <p className="font-bold text-sm">{ch.name}</p>
-                  <p className="text-xs text-gray-500">{ch.subject}</p>
-                </div>
-                <p className="text-red-600 font-black text-lg">
-                  {ch.accuracy}%
-                </p>
+        {/* Chapter Pods: Strong vs Weak */}
+        <div className="lg:col-span-6 bg-surface-container-low p-10 rounded-[3rem] shadow-ambient hover-bloom">
+          <div className="flex items-center justify-between mb-10">
+            <h3 className="text-xl font-black text-on-surface tracking-tight flex items-center gap-4">
+              <div className="size-10 bg-primary/10 rounded-xl flex items-center justify-center text-primary">
+                 <CheckCircle size={20} />
               </div>
-            ))
-          ) : (
-            <p className="text-gray-400 text-sm italic">
-              No weak areas identified yet.
-            </p>
-          )}
+              Masthead Chapters
+            </h3>
+          </div>
+          <div className="space-y-4">
+            {(metrics?.strongChapters || []).length > 0 ? (
+              metrics!.strongChapters.map((ch, i) => (
+                <div key={i} className="flex justify-between items-center p-6 bg-white/40 rounded-3xl hover:bg-white transition-all duration-300 group">
+                  <div>
+                    <p className="font-technical font-black text-sm text-on-surface uppercase tracking-wider">{ch.name}</p>
+                    <p className="text-[10px] font-technical font-black text-primary uppercase tracking-[0.2em] mt-1 opacity-60">{ch.subject}</p>
+                  </div>
+                  <div className="text-right">
+                     <p className="text-2xl font-technical font-black text-primary tracking-tighter">
+                       {ch.accuracy}%
+                     </p>
+                  </div>
+                </div>
+              ))
+            ) : (
+              <p className="text-on-surface-variant text-xs italic opacity-40 p-6">Complete more sessions to identify strengths.</p>
+            )}
+          </div>
+        </div>
+
+        <div className="lg:col-span-6 bg-surface-container-low p-10 rounded-[3rem] shadow-ambient hover-bloom">
+          <div className="flex items-center justify-between mb-10">
+            <h3 className="text-xl font-black text-on-surface tracking-tight flex items-center gap-4">
+              <div className="size-10 bg-tertiary/10 rounded-xl flex items-center justify-center text-tertiary">
+                 <FileWarning size={20} />
+              </div>
+              Soil Enrichment
+            </h3>
+          </div>
+          <div className="space-y-4">
+            {(metrics?.weakChapters || []).length > 0 ? (
+              metrics!.weakChapters.map((ch, i) => (
+                <div key={i} className="flex justify-between items-center p-6 bg-tertiary/5 rounded-3xl hover:bg-tertiary/10 transition-all duration-300 group">
+                  <div>
+                    <p className="font-technical font-black text-sm text-on-surface uppercase tracking-wider">{ch.name}</p>
+                    <p className="text-[10px] font-technical font-black text-tertiary uppercase tracking-[0.2em] mt-1 opacity-60">{ch.subject}</p>
+                  </div>
+                  <div className="text-right">
+                     <p className="text-2xl font-technical font-black text-tertiary tracking-tighter">
+                       {ch.accuracy}%
+                     </p>
+                  </div>
+                </div>
+              ))
+            ) : (
+              <p className="text-on-surface-variant text-xs italic opacity-40 p-6">Your garden is fully balanced.</p>
+            )}
+          </div>
         </div>
       </div>
-      <div className="flex flex-col md:flex-row items-center justify-between gap-6 p-8 bg-green-50 border border-green-100 rounded-xl mb-8">
-        <div className="flex items-center gap-6">
-          <div className="size-16 rounded-xl bg-white flex items-center justify-center shadow text-green-700">
-            <Pen size={28} />
+
+      {/* Call to Action Footer Pod */}
+      <footer className="flex flex-col md:flex-row items-center justify-between gap-8 p-12 bg-primary/5 rounded-[4rem] border border-primary/10 overflow-hidden relative">
+        <div className="absolute top-0 right-0 p-8 opacity-5">
+           <TrendingUp size={200} />
+        </div>
+        <div className="flex items-center gap-8 relative z-10">
+          <div className="size-20 rounded-3xl bg-primary flex items-center justify-center shadow-xl shadow-primary/30 text-white group hover:scale-105 transition-transform duration-500">
+            <TrendingUp size={36} className="group-hover:translate-y-[-4px] transition-transform" />
           </div>
           <div>
-            <h3 className="text-xl font-bold mb-1">
-              Ready to master the concepts?
+            <h3 className="text-2xl font-black text-on-surface mb-2 tracking-tight">
+              Cultivate your potential.
             </h3>
-            <p className="text-gray-600 text-sm max-w-md">
-              We've generated a custom study plan based on these results.
+            <p className="text-on-surface-variant text-sm font-medium leading-relaxed max-w-sm">
+              We've synthesized your performance data into a specialized growth path.
             </p>
           </div>
         </div>
-        <div className="flex gap-4">
+        <div className="flex gap-4 relative z-10">
           <button
-            onClick={() =>
-              attempts.length > 0 && navigate(`/user/results/${attempts[0].id}`)
-            }
-            className="px-6 py-3 bg-white border border-gray-200 rounded-xl font-bold text-sm shadow hover:shadow-lg transition-all"
+            onClick={() => attempts.length > 0 && navigate(`/user/results/${attempts[0].id}`)}
+            className="px-8 py-4 bg-surface rounded-full font-technical font-black text-[11px] uppercase tracking-[0.2em] text-on-surface-variant shadow-sm hover:shadow-xl hover:text-on-surface transition-all active:scale-95"
           >
             Review Errors
           </button>
           <button
             onClick={() => navigate("/user/dashboard")}
-            className="px-6 py-3 bg-green-700 text-white rounded-xl font-bold text-sm shadow-lg hover:bg-green-800 transition-all"
+            className="px-8 py-4 bg-linear-to-r from-primary to-primary-container text-on-primary rounded-full font-technical font-black text-[11px] uppercase tracking-[0.2em] shadow-lg shadow-primary/20 hover:scale-[1.02] active:scale-[0.98] transition-all"
           >
-            Go to Study Plan
+            Return to Study
           </button>
         </div>
-      </div>
+      </footer>
     </main>
   );
 };
@@ -466,62 +497,79 @@ const GrowthChart = ({
   setChartMode: (m: "Practice" | "Mock") => void;
 }) => {
   return (
-    <div className="md:col-span-8 bg-[#f5f4e8] p-8 rounded-2xl shadow-sm border border-gray-100">
-      <div className="flex justify-between items-center mb-8">
-        <h3 className="text-xl font-black text-gray-900 tracking-tight flex items-center gap-3">
-          <TrendingUp className="text-green-700" />
-          Performance Trajectory
+    <div className="lg:col-span-8 bg-surface-container-low p-10 rounded-[3rem] shadow-ambient">
+      <div className="flex justify-between items-center mb-12">
+        <h3 className="text-xl font-black text-on-surface tracking-tight flex items-center gap-4">
+          <div className="size-10 bg-primary/10 rounded-xl flex items-center justify-center text-primary">
+             <TrendingUp size={20} />
+          </div>
+          Session Trajectory
         </h3>
-        <div className="flex gap-1 bg-green-100 p-1 text-white rounded-xl items-center shadow-inner">
+        <div className="flex gap-1 bg-surface-container-high p-1 rounded-full shadow-inner">
           <button
             onClick={() => setChartMode("Practice")}
-            className={`text-[10px] font-black uppercase tracking-widest px-6 py-2 rounded-lg transition-all cursor-pointer ${chartMode === "Practice" ? "bg-green-700 text-white shadow-md" : "text-green-800 hover:bg-green-200"}`}
+            className={`text-[10px] font-technical font-black uppercase tracking-[0.2em] px-6 py-2 rounded-full transition-all duration-500 cursor-pointer ${
+              chartMode === "Practice" 
+                ? "bg-primary text-on-primary shadow-md scale-105" 
+                : "text-on-surface-variant hover:text-on-surface"
+            }`}
           >
             Practice
           </button>
           <button
             onClick={() => setChartMode("Mock")}
-            className={`text-[10px] font-black uppercase tracking-widest px-6 py-2 rounded-lg transition-all cursor-pointer ${chartMode === "Mock" ? "bg-green-700 text-white shadow-md" : "text-green-800 hover:bg-green-200"}`}
+            className={`text-[10px] font-technical font-black uppercase tracking-[0.2em] px-6 py-2 rounded-full transition-all duration-500 cursor-pointer ${
+              chartMode === "Mock" 
+                ? "bg-tertiary text-white shadow-md scale-105" 
+                : "text-on-surface-variant hover:text-on-surface"
+            }`}
           >
             Mock
           </button>
         </div>
       </div>
-      <div className="flex items-end gap-3 h-48">
+      <div className="flex items-end gap-3 h-56 px-4">
         {(performanceTrajectory.length > 0
           ? performanceTrajectory
-          : Array(10).fill({ accuracy: 0, chapterName: "No Data" })
-        ).map((item, i) => (
-          <div
-            key={i}
-            className="flex-1 bg-green-200/50 rounded-t-xl relative group h-full flex flex-col justify-end"
-          >
+          : Array(10).fill({ accuracy: 0, chapterName: "Seedling" })
+        ).map((item, i) => {
+          const barColor = chartMode === "Practice" ? "bg-primary" : "bg-tertiary";
+          const barOpacity = item.accuracy === 0 ? "opacity-10" : "opacity-100";
+          
+          return (
             <div
-              className={`rounded-t-xl transition-all duration-700 ease-out ${chartMode === "Practice" ? "bg-green-700" : "bg-green-900"}`}
-              style={{ height: `${(item.accuracy / maxScore) * 100}%` }}
-            />
-            <div className="absolute -top-14 left-1/2 -translate-x-1/2 bg-gray-900 text-white text-[10px] font-black px-3 py-2 rounded shadow-xl opacity-0 group-hover:opacity-100 transition-all group-hover:-top-16 pointer-events-none whitespace-nowrap z-20 flex flex-col items-center gap-1">
-              <span className="text-green-400 font-black">
-                {item.accuracy}%
-              </span>
-              <span className="text-[8px] uppercase tracking-tighter opacity-80">
-                {item.chapterName}
-              </span>
-              <div className="absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-full w-0 h-0 border-l-4 border-l-transparent border-r-4 border-r-transparent border-t-4 border-t-gray-900" />
+              key={i}
+              className="flex-1 bg-on-surface/5 rounded-t-2xl relative group h-full flex flex-col justify-end transition-all duration-700 ease-(--ease-botanical) hover:bg-on-surface/10"
+            >
+              <div
+                className={`rounded-t-2xl transition-all duration-1000 ease-out shadow-sm ${barColor} ${barOpacity} group-hover:brightness-110`}
+                style={{ height: `${(item.accuracy / maxScore) * 100}%` }}
+              />
+              
+              {/* Tooltip Pod */}
+              <div className="absolute -top-16 left-1/2 -translate-x-1/2 bg-on-surface text-surface text-[10px] font-technical font-black px-4 py-3 rounded-2xl shadow-ambient opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 transition-all pointer-events-none whitespace-nowrap z-20 flex flex-col items-center gap-1 border border-outline-variant/10">
+                <span className={chartMode === "Practice" ? "text-primary-container" : "text-tertiary"}>
+                  {item.accuracy}%
+                </span>
+                <span className="text-[8px] uppercase tracking-widest opacity-40">
+                  {item.chapterName}
+                </span>
+                <div className="absolute bottom-[-6px] left-1/2 -translate-x-1/2 w-3 h-3 bg-on-surface rotate-45" />
+              </div>
             </div>
-          </div>
-        ))}
+          );
+        })}
       </div>
-      <div className="flex justify-between mt-4">
+      <div className="flex justify-between mt-8 px-4 opacity-30">
         {(performanceTrajectory.length > 0
           ? performanceTrajectory
           : Array(10).fill(null)
         ).map((_, i) => (
           <span
             key={i}
-            className="flex-1 text-center text-[10px] text-gray-400 font-black uppercase tracking-widest"
+            className="flex-1 text-center text-[9px] font-technical font-black uppercase tracking-[0.2em] text-on-surface-variant"
           >
-            Set {i + 1}
+            S{i + 1}
           </span>
         ))}
       </div>

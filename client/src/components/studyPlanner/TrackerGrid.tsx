@@ -91,7 +91,7 @@ interface TrackerGridProps {
   onSelectDate?: (date: Date) => void;
 }
 
-const WEEK_COLORS = ["bg-blue-200", "bg-purple-200", "bg-red-200", "bg-orange-200", "bg-slate-200"];
+const WEEK_COLORS = ["bg-primary/10", "bg-tertiary/10", "bg-primary/5", "bg-tertiary/5", "bg-surface-container-high"];
 
 const format12h = (timeStr: string) => {
   if (!timeStr) return "";
@@ -151,20 +151,20 @@ const HabitRow = ({
 
   return (
     <tr className="group hover:bg-[#f0fff4]/30 relative transition-colors">
-      <td className="sticky left-0 z-20 bg-white group-hover:bg-[#f0fff4]/50 border-r border-slate-300 p-0 border-b border-slate-200 border-dotted align-middle outline outline-transparent -outline-offset-1 shadow-[1px_0_0_0_#cbd5e1] transition-colors">
+      <td className="sticky left-0 z-20 bg-surface group-hover:bg-[#f0fff4]/50 border-r border-slate-300 p-0  border-dotted align-middle outline outline-transparent -outline-offset-1 shadow-[1px_0_0_0_#cbd5e1] transition-colors">
         <div className="flex items-center justify-between px-2 py-1.5 min-h-[44px]">
           <div className="flex flex-col min-w-0 pr-1 gap-1">
             <div className="text-[11px] font-bold text-slate-800 leading-tight flex items-center gap-1.5">
               <span className="truncate max-w-[140px]" title={habit.name}>{habit.name}</span>
             </div>
             <div className="flex flex-wrap items-center gap-1.5">
-              <span className={`px-1.5 py-0.5 rounded-full text-[8px] font-black uppercase tracking-tighter ${habit.is_mastery ? "bg-blue-100 text-blue-700" : "bg-green-100 text-green-700"}`}>
+              <span className={`px-1.5 py-0.5 rounded-full text-[8px] font-black uppercase tracking-tighter ${habit.is_mastery ? "bg-primary/10 text-green-700" : "bg-green-100 text-green-700"}`}>
                 {habit.is_mastery ? "Test" : "Routine"}
               </span>
               <span className={`px-1.5 py-0.5 rounded-full text-[8px] font-black uppercase tracking-tighter ${
                 habit.priority === "HIGH" ? "bg-red-100 text-red-700" : 
                 habit.priority === "MEDIUM" ? "bg-yellow-100 text-yellow-700" : 
-                "bg-slate-100 text-slate-600"}`}>
+                "bg-surface-container-high text-slate-600"}`}>
                 {habit.priority}
               </span>
               {(habit.start_time || habit.end_time) && (
@@ -175,11 +175,11 @@ const HabitRow = ({
               )}
             </div>
           </div>
-          <div className="flex gap-0.5 opacity-0 group-hover:opacity-100 transition-opacity bg-white/95 border border-slate-200 rounded p-0.5 shadow-sm">
+          <div className="flex gap-0.5 opacity-0 group-hover:opacity-100 transition-opacity bg-surface/95  rounded p-0.5 shadow-sm">
             <button 
               disabled={!canEdit}
               onClick={() => canEdit && editHabit(habit)} 
-              className={`p-1 rounded transition-colors ${canEdit ? "text-slate-400 hover:text-blue-500 hover:bg-blue-50" : "text-slate-200 cursor-not-allowed"}`} 
+              className={`p-1 rounded transition-colors ${canEdit ? "text-slate-400 hover:text-primary hover:bg-green-50" : "text-slate-200 cursor-not-allowed"}`} 
               title={canEdit ? "Edit Routine" : "One-off tasks can only be edited on their scheduled day"}
             >
               <Pen size={12} />
@@ -214,7 +214,7 @@ const HabitRow = ({
         const isEditable = isToday || unlockPastDays;
         const isDone = progress[actualDayIdx];
         const weekIdx = i < 28 ? Math.floor(i / 7) : 4;
-        const bgClass = isSelected ? "bg-green-100/50" : isToday ? "bg-white" : WEEK_COLORS[weekIdx].replace("200", "50").replace("bg-slate-200", "bg-transparent");
+        const bgClass = isSelected ? "bg-green-100/50" : isToday ? "bg-surface" : WEEK_COLORS[weekIdx].replace("200", "50").replace("bg-slate-200", "bg-transparent");
         const cellOpacity = isEditable ? "opacity-100" : "opacity-40 grayscale-[0.5]";
         const checkedBorderClass = WEEK_COLORS[weekIdx].replace("bg-", "border-").replace("200", "500");
         const checkedTextClass = WEEK_COLORS[weekIdx].replace("bg-", "text-").replace("200", "600");
@@ -229,14 +229,14 @@ const HabitRow = ({
                 checked={isDone || false} 
                 onChange={() => isEditable && onToggle(habit.id, actualDayIdx)} 
               />
-              <div className={`size-[16px] bg-white border ${isDone ? checkedBorderClass : "border-slate-300"} rounded-sm flex items-center justify-center shadow-sm relative transition-all ${isEditable ? 'hover:border-green-400 hover:shadow-md' : ''} ${!isEditable && !isDone ? "bg-slate-50 border-slate-200 opacity-50" : ""}`}>
+              <div className={`size-[16px] bg-surface border ${isDone ? checkedBorderClass : "border-slate-300"} rounded-sm flex items-center justify-center shadow-sm relative transition-all ${isEditable ? 'hover:border-green-400 hover:shadow-md' : ''} ${!isEditable && !isDone ? "bg-surface-container-low border-slate-200 opacity-50" : ""}`}>
                 {isDone && (
                   habit.is_mastery ? (
-                    <div className="absolute -inset-1 flex items-center justify-center bg-blue-50 rounded-sm border border-blue-200 shadow-sm animate-pulse z-10" title={`Test at ${habit.start_time}`}>
-                      <Bell className="text-blue-600 size-[12px]" strokeWidth={3} />
+                    <div className="absolute -inset-1 flex items-center justify-center bg-green-50 rounded-sm border border-green-200 shadow-sm animate-pulse z-10" title={`Test at ${habit.start_time}`}>
+                      <Bell className="text-primary size-[12px]" strokeWidth={3} />
                     </div>
                   ) : (
-                    <CheckSquare className={`${checkedTextClass} size-[18px] absolute -top-px -left-px bg-white rounded-sm`} strokeWidth={3} />
+                    <CheckSquare className={`${checkedTextClass} size-[18px] absolute -top-px -left-px bg-surface rounded-sm`} strokeWidth={3} />
                   )
                 )}
               </div>
@@ -790,7 +790,7 @@ export default function TrackerGrid({
   }
 
   return (
-    <div className="text-slate-800 flex flex-col h-full bg-slate-50 min-w-0 relative">
+    <div className="flex flex-col text-on-surface w-full h-full bg-surface-container-low min-w-0 relative animate-in fade-in duration-700">
       <GoogleCalendarModal isOpen={isGooglePopupOpen} onClose={() => setIsGooglePopupOpen(false)} />
       
       <AddRoutine 
@@ -808,103 +808,108 @@ export default function TrackerGrid({
       />
       
       {/* SPREADSHEET HEADER */}
-      <div className="bg-[#1a8b3e] text-white flex items-center justify-between px-6 py-4 shadow-md shrink-0">
-        <div className="w-1/3 text-4xl md:text-5xl font-black tracking-tighter drop-shadow-sm">{overallProgress}%</div>
-        <div className="w-1/3 flex justify-center items-center gap-4">
-           <button onClick={() => onMonthChange("prev")} className="p-1 hover:bg-white/20 rounded-full transition-colors cursor-pointer"><ChevronLeft size={28} /></button>
-           <h1 className="text-3xl md:text-4xl font-extrabold tracking-wide">{monthName}</h1>
-           <button onClick={() => onMonthChange("next")} className="p-1 hover:bg-white/20 rounded-full transition-colors cursor-pointer"><ChevronRight size={28} /></button>
+      {/* SPREADSHEET HEADER: Editorial Botanical */}
+      <div className="bg-primary text-on-primary flex items-center justify-between px-8 py-6 shadow-ambient shrink-0 relative overflow-hidden">
+        <div className="absolute top-0 right-0 p-4 opacity-5 pointer-events-none">
+           <Calendar size={120} />
         </div>
-        <div className="w-1/3 flex justify-end items-center gap-6">
-           {/* Google Calendar Control */}
-           <div className="flex items-center">
-              <GoogleCalendarButton />
-           </div>
+        <div className="w-1/3 flex flex-col relative z-10">
+           <span className="text-[10px] font-technical font-black tracking-[0.4em] uppercase opacity-60 mb-1">Current Momentum</span>
+           <div className="text-6xl font-technical font-black tracking-tighter leading-none">{overallProgress}%</div>
+        </div>
+        
+        <div className="w-1/3 flex justify-center items-center gap-6 relative z-10">
+           <button onClick={() => onMonthChange("prev")} className="p-2 hover:bg-white/10 rounded-full transition-all cursor-pointer active:scale-90"><ChevronLeft size={32} /></button>
+           <h1 className="text-4xl font-black tracking-tighter uppercase">{monthName}</h1>
+           <button onClick={() => onMonthChange("next")} className="p-2 hover:bg-white/10 rounded-full transition-all cursor-pointer active:scale-90"><ChevronRight size={32} /></button>
+        </div>
 
-           <div className="flex flex-col items-end gap-1">
-             <div className="text-2xl font-black italic tracking-tighter drop-shadow-md leading-none text-right flex flex-col items-end">
-                <span className="font-cursive tracking-normal text-[#c2f0c2]">OPrep</span><span>Portal.com</span>
+        <div className="w-1/3 flex justify-end items-center gap-8 relative z-10">
+           <GoogleCalendarButton />
+
+           <div className="flex flex-col items-end gap-2 px-6 border-l border-white/10 ml-4">
+             <div className="text-2xl font-black tracking-tighter leading-none text-right flex flex-col items-end">
+                <span className="text-[10px] font-technical uppercase tracking-[0.2em] opacity-40">OPrep Portal</span>
+                <span className="font-narrative italic text-secondary-container">Botanical</span>
              </div>
              <button 
                onClick={() => setUnlockPastDays(!unlockPastDays)}
-               className={`text-[9px] px-2 py-1 rounded border uppercase font-bold transition-all ${unlockPastDays ? 'bg-amber-500/20 text-amber-200 border-amber-400/30' : 'bg-transparent text-white/50 border-white/20 hover:bg-black/10 hover:text-white/80'}`}
+               className={`text-[9px] px-3 py-1.5 rounded-full border uppercase font-technical font-black transition-all ${unlockPastDays ? 'bg-tertiary text-white border-tertiary shadow-lg' : 'bg-white/5 text-white/40 border-white/10 hover:bg-white/10 hover:text-white'}`}
                title={unlockPastDays ? "Lock past days" : "Unlock past days for editing"}
              >
-               {unlockPastDays ? "🔓 Grid Unlocked" : "🔒 Lock Grid"}
+               {unlockPastDays ? "🔓 Unlocked" : "🔒 Locked"}
              </button>
            </div>
         </div>
       </div>
 
-      {/* MASTER PROGRESS BAR */}
-      <div className="w-full bg-[#12662c] h-7 flex items-center px-4 gap-4 shrink-0 overflow-hidden shadow-[inset_0_2px_4px_rgba(0,0,0,0.3)]">
-         <div className="w-[180px] shrink-0 text-[11px] text-white font-black uppercase flex items-center justify-end drop-shadow-md tracking-wider">Active Days Score</div>
-         <div className="flex-1 h-4 bg-black/40 rounded-full overflow-hidden relative border border-white/5 shadow-inner">
+      {/* MASTER PROGRESS BAR: Technical Trough */}
+      <div className="w-full bg-primary-container/30 h-10 flex items-center px-6 gap-6 shrink-0 overflow-hidden border-y border-outline-variant/10 shadow-inner">
+         <div className="w-[180px] shrink-0 text-[10px] font-technical font-black text-primary uppercase tracking-[0.2em]">Syllabus Score</div>
+         <div className="flex-1 h-2.5 bg-on-surface/5 rounded-full overflow-hidden relative border border-outline-variant/5">
             <div 
-              className="h-full bg-linear-to-r from-[#3f9947] to-[#55c060] transition-all duration-1000 ease-out shadow-[0_0_15px_rgba(63,153,71,0.6)] relative" 
+              className="h-full bg-linear-to-r from-primary to-primary-container transition-all duration-1000 ease-out shadow-sm relative" 
               style={{ width: `${overallProgress}%` }}
             >
               <div className="absolute inset-0 bg-white/10 animate-pulse" />
             </div>
-            <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
-              <span className="text-[9px] font-black text-white drop-shadow-[0_1px_2px_rgba(0,0,0,0.8)] tracking-widest">{overallProgress}%</span>
-            </div>
          </div>
          <div className="w-16 shrink-0 flex items-center justify-start">
-            <span className="text-[10px] font-black text-[#c2f0c2] italic opacity-80">100%</span>
+            <span className="text-[10px] font-technical font-black text-primary tracking-widest">{overallProgress}%</span>
          </div>
       </div>
 
       {/* SCROLLABLE SPREADSHEET WRAPPER */}
-      <div className="flex-1 overflow-auto bg-white relative shadow-inner">
+      <div className="flex-1 overflow-auto bg-surface relative shadow-inner">
         <table className="w-max min-w-full border-collapse text-xs select-none">
           <thead>
             {/* ROW 1: Active Days Checkboxes */}
-            <tr className="bg-[#3f9947]">
-               <th className="sticky left-0 z-30 bg-[#3f9947] border-b border-r border-[#2d7334] p-3 text-left w-[300px] align-bottom outline outline-[#1a8b3e]">
-                 <h2 className="text-white text-xl font-bold tracking-widest pl-2 uppercase">Habits</h2>
+            <tr className="bg-primary">
+               <th className="sticky left-0 z-30 bg-primary border-b border-white/10 p-4 text-left w-[300px] align-bottom">
+                 <h2 className="text-white text-xs font-technical font-black tracking-[0.4em] pl-4 uppercase opacity-60">Syllabus Habits</h2>
                </th>
                {rotatedDays.map((_, i) => {
                  const actualDayIdx = (startDay - 1 + i) % daysInMonth;
                  const isToday = viewMonth === currentMonth && viewYear === currentYear && actualDayIdx === today - 1;
                  const isAnyDone = initialHabits.some((h) => initialProgress[h.id]?.[actualDayIdx]);
                  return (
-                   <th key={i} className={`border-b border-r border-[#2d7334] bg-[#3f9947] w-[32px] min-w-[32px] p-1.5 align-bottom ${isToday ? "bg-white/20" : ""}`}>
-                      <div className={`size-4 mx-auto rounded-sm border ${isAnyDone ? "bg-white border-white" : "border-white/50 bg-white/10"} flex items-center justify-center`}>
-                        {isAnyDone && <CheckSquare className="text-[#3f9947] size-4 absolute" strokeWidth={3} />}
+                   <th key={i} className={`border-b border-white/5 bg-primary w-[36px] min-w-[36px] p-2 align-bottom ${isToday ? "bg-white/10" : ""}`}>
+                      <div className={`size-5 mx-auto rounded-lg border-2 transition-all duration-500 ${isAnyDone ? "bg-white border-white rotate-0" : "border-white/20 bg-white/5 rotate-45 scale-75"} flex items-center justify-center`}>
+                        {isAnyDone && <CheckSquare className="text-primary size-4 absolute" strokeWidth={3} />}
                       </div>
                    </th>
                  );
                })}
-               <th colSpan={2} className="sticky right-0 z-30 bg-[#3f9947] text-white border-b border-l border-[#2d7334] p-1 text-center font-bold outline outline-[#1a8b3e]">Streaks</th>
+               <th colSpan={2} className="sticky right-0 z-30 bg-primary text-white border-b border-white/10 p-1 text-center font-technical font-black uppercase text-[10px] tracking-widest">Streaks</th>
             </tr>
 
             {/* ROW 2: Daily Done % Charts */}
-            <tr>
-               <th className="sticky left-0 z-30 bg-white border-r border-b border-slate-200 px-2 py-1 align-top outline outline-slate-200">
-                 <div className="absolute inset-x-0 top-1/2 -translate-y-1/2 px-3 flex justify-between">
-                    <button onClick={() => setEnableTask(true)} className="text-[10px] w-full bg-white text-green-700 border-green-200 border px-1 py-1.5 rounded-md hover:bg-green-50 flex items-center justify-center font-bold transition-all active:scale-95"><Plus size={12}/> Routine</button>
-                    <button onClick={() => setShowSelector(true)} className="text-[10px] w-full ml-1 bg-white text-blue-700 border-blue-200 border px-1 py-1.5 rounded-md hover:bg-blue-50 flex items-center justify-center font-bold transition-all active:scale-95"><Plus size={12}/> Schedule Test</button>
+            <tr className="bg-surface">
+               <th className="sticky left-0 z-30 bg-surface border-b border-outline-variant/5 px-2 py-4 align-top">
+                 <div className="absolute inset-x-0 top-1/2 -translate-y-1/2 px-4 flex justify-between gap-2">
+                    <button onClick={() => setEnableTask(true)} className="flex-1 text-[10px] bg-primary/10 text-primary px-3 py-2 rounded-full hover:bg-primary hover:text-white flex items-center justify-center font-technical font-black tracking-widest transition-all active:scale-95 shadow-sm"><Plus size={14} className="mr-1"/> Routine</button>
+                    <button onClick={() => setShowSelector(true)} className="flex-1 text-[10px] bg-tertiary/10 text-tertiary px-3 py-2 rounded-full hover:bg-tertiary hover:text-white flex items-center justify-center font-technical font-black tracking-widest transition-all active:scale-95 shadow-sm"><Plus size={14} className="mr-1"/> Test</button>
                  </div>
                </th>
                {rotatedDays.map((_, i) => {
                  const weekIdx = i < 28 ? Math.floor(i / 7) : 4;
-                 const bgClass = WEEK_COLORS[weekIdx].replace("300", "300");
-                 const barClass = WEEK_COLORS[weekIdx].replace("300", "500");
+                 const bgClass = WEEK_COLORS[weekIdx];
+                 const barColor = (weekIdx % 2 === 0) ? "bg-primary" : "bg-tertiary";
+                 
                  return (
-                   <th key={i} className={` ${bgClass} h-20 p-0 align-bottom relative`}>
-                      <div className="absolute top-1 inset-x-0 text-[8px] font-bold text-slate-500 text-center scale-90">{dailyStats[i].percent}%</div>
-                      <div className={`mx-auto w-[12px] ${barClass} opacity-80 rounded-t-sm`} style={{ height: `${dailyStats[i].percent-30}%` }}></div>
+                   <th key={i} className={` ${bgClass} h-24 p-0 align-bottom relative border-b border-outline-variant/10 group`}>
+                      <div className="absolute top-2 inset-x-0 text-[10px] font-technical font-black text-on-surface-variant text-center opacity-0 group-hover:opacity-100 transition-opacity">{dailyStats[i].percent}%</div>
+                      <div className={`mx-auto w-[16px] ${barColor} opacity-40 rounded-t-lg transition-all duration-700 hover:opacity-100 shadow-sm`} style={{ height: `${dailyStats[i].percent-10}%` }}></div>
                    </th>
                  );
                })}
-               <th className="sticky right-8 z-30 border-l border-r border-b border-[#2d7334] bg-[#3f9947] text-white text-[9px] w-[32px] p-1 outline outline-[#1a8b3e]">Current</th>
-               <th className="sticky right-0 z-30 border-b border-[#2d7334] bg-[#3f9947] text-white text-[9px] w-[32px] p-1 outline outline-[#1a8b3e]">Max</th>
+               <th className="sticky right-10 z-30 bg-primary/20 text-primary text-[9px] font-technical font-black uppercase tracking-widest w-[40px] p-2 border-b border-outline-variant/10">Now</th>
+               <th className="sticky right-0 z-30 bg-primary/10 text-primary text-[9px] font-technical font-black uppercase tracking-widest w-[40px] p-2 border-b border-outline-variant/10">Peak</th>
             </tr>
 
             {/* ROW 3: Days Headers */}
             <tr>
-               <th className="sticky left-0 z-30 bg-white border-r border-b border-slate-300 outline outline-slate-200"></th>
+               <th className="sticky left-0 z-30 bg-surface border-r border-b border-slate-300 outline outline-slate-200"></th>
                 {rotatedDays.map((day, i) => {
                   const weekIdx = i < 28 ? Math.floor(i / 7) : 4;
                   const bgClass = WEEK_COLORS[weekIdx].replace("200", "100");
@@ -919,12 +924,12 @@ export default function TrackerGrid({
                       onClick={() => onSelectDate?.(new Date(viewYear, viewMonth - 1, day))}
                       className={` ${bgClass} p-0.5 text-center font-normal cursor-pointer transition-all hover:brightness-95 ${isSelected ? "ring-2 ring-inset ring-green-600 font-black bg-green-200" : isToday ? "ring-2 ring-inset ring-green-600/60 font-black bg-green-200" : ""}`}
                     >
-                      <div className={`text-[9px] font-bold ${isSelected ? "text-green-800" : "text-slate-500"}`}>{WEEKDAY_NAMES[weekdayIdx]}</div>
+                      <div className={`text-[9px] font-bold ${isSelected ? "text-green-800" : "text-on-surface-variant"}`}>{WEEKDAY_NAMES[weekdayIdx]}</div>
                       <div className={`text-[11px] font-black ${isSelected ? "text-green-900 scale-110" : "text-slate-700"}`}>{day}</div>
                     </th>
                   );
                 })}
-               <th colSpan={2} className="sticky right-0 z-30 bg-slate-100 border-b border-slate-300 border-l outline outline-slate-200"></th>
+               <th colSpan={2} className="sticky right-0 z-30 bg-surface-container-high border-b border-slate-300 border-l outline outline-slate-200"></th>
             </tr>
           </thead>
 
@@ -935,12 +940,12 @@ export default function TrackerGrid({
                <tr>
                  <td colSpan={rotatedDays.length + 3} className="p-0 align-middle border-none">
                     <div className="sticky left-0  right-0 mx-auto w-fit flex flex-col items-center justify-center min-h-[450px] py-12 pointer-events-none">
-                      <div className="pointer-events-auto mx-auto max-w-md bg-white rounded-2xl shadow-lg border border-emerald-100 p-6 text-center my-4">
+                      <div className="pointer-events-auto mx-auto max-w-md bg-surface rounded-2xl shadow-lg border border-emerald-100 p-6 text-center my-4">
                         <div className="mx-auto size-12 bg-emerald-100 rounded-full flex items-center justify-center mb-4 shadow-inner">
                            <Sparkles className="text-emerald-600 size-6" />
                         </div>
                         <h3 className="text-xl font-black tracking-tight text-slate-800 mb-1.5">Fresh Month, Fresh Start!</h3>
-                        <p className="text-slate-500 font-medium text-xs mb-6 px-2">
+                        <p className="text-on-surface-variant font-medium text-xs mb-6 px-2">
                            Your {monthName} planner is empty. Set up routines and tests to stay on track.
                         </p>
                         
@@ -949,28 +954,28 @@ export default function TrackerGrid({
                              onClick={() => setEnableTask(true)}
                              className="w-full flex items-center gap-3 p-3 rounded-xl border-2 border-emerald-100 hover:border-emerald-500 hover:bg-emerald-50 transition-all group cursor-pointer"
                            >
-                              <div className="size-10 bg-white rounded-lg hidden sm:flex items-center justify-center text-emerald-600 shadow-sm group-hover:scale-110 transition-transform">
+                              <div className="size-10 bg-surface rounded-lg hidden sm:flex items-center justify-center text-emerald-600 shadow-sm group-hover:scale-110 transition-transform">
                                  <Calendar size={18} />
                               </div>
                               <div>
                                  <h4 className="font-black text-slate-800 uppercase tracking-wide text-xs">Add Daily Routine</h4>
-                                 <p className="text-[9px] text-slate-500 font-bold uppercase tracking-widest mt-0.5">Build consistent habits</p>
+                                 <p className="text-[9px] text-on-surface-variant font-bold uppercase tracking-widest mt-0.5">Build consistent habits</p>
                               </div>
                               <ChevronRight className="ml-auto size-4 text-slate-300 group-hover:text-emerald-500" />
                            </button>
 
                            <button 
                              onClick={() => setShowSelector(true)}
-                             className="w-full flex items-center gap-3 p-3 rounded-xl border-2 border-blue-100 hover:border-blue-500 hover:bg-blue-50 transition-all group cursor-pointer"
+                             className="w-full flex items-center gap-3 p-3 rounded-xl border-2 border-green-100 hover:border-primary hover:bg-green-50 transition-all group cursor-pointer"
                            >
-                              <div className="size-10 bg-white rounded-lg hidden sm:flex items-center justify-center text-blue-600 shadow-sm group-hover:scale-110 transition-transform">
+                              <div className="size-10 bg-surface rounded-lg hidden sm:flex items-center justify-center text-primary shadow-sm group-hover:scale-110 transition-transform">
                                  <BookOpen size={18} />
                               </div>
                               <div>
                                  <h4 className="font-black text-slate-800 uppercase tracking-wide text-xs">Schedule Test</h4>
-                                 <p className="text-[9px] text-slate-500 font-bold uppercase tracking-widest mt-0.5">Test your mastery</p>
+                                 <p className="text-[9px] text-on-surface-variant font-bold uppercase tracking-widest mt-0.5">Test your mastery</p>
                               </div>
-                              <ChevronRight className="ml-auto size-4 text-slate-300 group-hover:text-blue-500" />
+                              <ChevronRight className="ml-auto size-4 text-slate-300 group-hover:text-primary" />
                            </button>
 
                            {hasPrevMonthTasks && onCopyPrevious && (
@@ -978,12 +983,12 @@ export default function TrackerGrid({
                                onClick={onCopyPrevious}
                                className="w-full flex items-center gap-3 p-3 rounded-xl border-2 border-purple-100 hover:border-purple-500 hover:bg-purple-50 transition-all group cursor-pointer"
                              >
-                                <div className="size-10 bg-white rounded-lg hidden sm:flex items-center justify-center text-purple-600 shadow-sm group-hover:scale-110 transition-transform">
+                                <div className="size-10 bg-surface rounded-lg hidden sm:flex items-center justify-center text-purple-600 shadow-sm group-hover:scale-110 transition-transform">
                                    <Copy size={18} />
                                 </div>
                                 <div>
                                    <h4 className="font-black text-slate-800 uppercase tracking-wide text-xs">Copy Previous</h4>
-                                   <p className="text-[9px] text-slate-500 font-bold uppercase tracking-widest mt-0.5">Rollover routines</p>
+                                   <p className="text-[9px] text-on-surface-variant font-bold uppercase tracking-widest mt-0.5">Rollover routines</p>
                                 </div>
                                 <ChevronRight className="ml-auto size-4 text-slate-300 group-hover:text-purple-500" />
                              </button>
@@ -1035,15 +1040,15 @@ export default function TrackerGrid({
           {/* SPREADSHEET FOOTER: WEEKLY DONE % */}
           <tfoot>
              <tr>
-               <td className="sticky left-0 z-30 bg-white border-r border-t border-slate-300 p-2 align-middle text-right h-[120px] outline outline-1 outline-slate-200">
+               <td className="sticky left-0 z-30 bg-surface border-r border-t border-slate-300 p-2 align-middle text-right h-[120px] outline outline-1 outline-slate-200">
                  <span className="font-bold text-[10px] uppercase text-slate-400">Weekly Done %</span>
                </td>
-               <td colSpan={7} className="border-t border-white bg-blue-300 relative align-middle"><center><DonutChart percent={weeklyProgress[0]} color="#60a5fa" bg="bg-blue-100" label="Week 1" /></center></td>
+               <td colSpan={7} className="border-t border-white bg-green-300 relative align-middle"><center><DonutChart percent={weeklyProgress[0]} color="#60a5fa" bg="bg-primary/10" label="Week 1" /></center></td>
                <td colSpan={7} className="border-t border-white bg-purple-300 relative align-middle"><center><DonutChart percent={weeklyProgress[1]} color="#c084fc" bg="bg-purple-100" label="Week 2" /></center></td>
                <td colSpan={7} className="border-t border-white bg-red-300 relative align-middle"><center><DonutChart percent={weeklyProgress[2]} color="#f87171" bg="bg-red-100" label="Week 3" /></center></td>
                <td colSpan={7} className="border-t border-white bg-orange-300 relative align-middle"><center><DonutChart percent={weeklyProgress[3]} color="#fb923c" bg="bg-orange-100" label="Week 4" /></center></td>
-               <td colSpan={daysInMonth - 28} className="border-t border-white bg-slate-300 relative align-middle"><center><DonutChart percent={weeklyProgress[4]} color="#94a3b8" bg="bg-slate-100" label={`Extra`} /></center></td>
-               <td colSpan={2} className="sticky right-0 z-30 bg-white border-l border-t border-slate-300 outline outline-slate-200"></td>
+               <td colSpan={daysInMonth - 28} className="border-t border-white bg-slate-300 relative align-middle"><center><DonutChart percent={weeklyProgress[4]} color="#94a3b8" bg="bg-surface-container-high" label={`Extra`} /></center></td>
+               <td colSpan={2} className="sticky right-0 z-30 bg-surface border-l border-t border-slate-300 outline outline-slate-200"></td>
              </tr>
           </tfoot>
         </table>
@@ -1052,10 +1057,10 @@ export default function TrackerGrid({
       {showSelector && (
         <div className="fixed inset-0 z-50 flex items-center justify-center p-4">
           <div className="absolute inset-0 bg-black/50" onClick={() => setShowSelector(false)} />
-          <div className="relative bg-white w-full max-w-2xl rounded shadow-2xl overflow-hidden p-6">
+          <div className="relative bg-surface w-full max-w-2xl rounded shadow-2xl overflow-hidden p-6">
             <div className="flex items-center justify-between mb-6">
               <h3 className="text-2xl font-black tracking-tight text-slate-800">Schedule Chapter Test</h3>
-              <button className="p-2 hover:bg-slate-100 rounded-full" onClick={() => setShowSelector(false)}><X size={20} /></button>
+              <button className="p-2 hover:bg-surface-container-high rounded-full" onClick={() => setShowSelector(false)}><X size={20} /></button>
             </div>
             <MasterySelector 
                 examId={examId || ""} 
@@ -1067,38 +1072,46 @@ export default function TrackerGrid({
         </div>
       )}
 
-      {/* STUDY HOURS GRAPH SECTION */}
-      <div className="mt-12 bg-white rounded-2xl shadow-xl border border-slate-200 overflow-hidden">
-        <div className="bg-[#12662c] px-6 py-4 flex items-center justify-between">
-          <div className="flex items-center gap-3">
-             <Clock className="text-white" size={20} />
-             <h3 className="text-white font-black uppercase tracking-widest text-sm">Study Hours Analysis</h3>
+      {/* STUDY HOURS GRAPH SECTION: Technical Analysis Pod */}
+      <div className="mt-12 mb-20 bg-surface-container-low rounded-[3rem] shadow-ambient overflow-hidden">
+        <div className="bg-primary px-10 py-8 flex flex-col md:flex-row items-center justify-between gap-6 overflow-hidden relative">
+          <div className="absolute top-0 left-0 p-8 opacity-5 pointer-events-none">
+             <Trophy size={140} />
+          </div>
+          <div className="flex items-center gap-6 relative z-10">
+             <div className="size-14 bg-white/10 rounded-2xl flex items-center justify-center text-white shadow-lg">
+                <Clock size={28} />
+             </div>
+             <div>
+                <h3 className="text-2xl font-black text-white tracking-tighter uppercase">Technical Tempo</h3>
+                <p className="text-[10px] font-technical font-black text-secondary-container uppercase tracking-[0.4em] opacity-60">Syllabus Temporal Analysis</p>
+             </div>
           </div>
 
-          {/* CHART TYPE TOGGLE */}
-          <div className="flex bg-black/20 p-1 rounded-xl backdrop-blur-md">
+          {/* CHART TYPE TOGGLE: Botanical Tube */}
+          <div className="flex bg-white/10 p-1.5 rounded-full backdrop-blur-3xl border border-white/10 relative z-10">
              <button 
                onClick={() => setChartType('bar')}
-               className={`flex items-center gap-2 px-3 py-1.5 rounded-lg text-[10px] font-black uppercase transition-all ${chartType === 'bar' ? 'bg-white text-[#12662c] shadow-lg' : 'text-white/60 hover:text-white'}`}
+               className={`flex items-center gap-3 px-6 py-2.5 rounded-full text-[10px] font-technical font-black uppercase tracking-[0.2em] transition-all duration-500 scale-90 ${chartType === 'bar' ? 'bg-white text-primary shadow-xl scale-100' : 'text-white/60 hover:text-white'}`}
              >
-                <BarChart2 size={14} /> <span>Bar</span>
+                <BarChart2 size={16} /> <span>Bar</span>
              </button>
              <button 
                onClick={() => setChartType('line')}
-               className={`flex items-center gap-2 px-3 py-1.5 rounded-lg text-[10px] font-black uppercase transition-all ${chartType === 'line' ? 'bg-white text-[#12662c] shadow-lg' : 'text-white/60 hover:text-white'}`}
+               className={`flex items-center gap-3 px-6 py-2.5 rounded-full text-[10px] font-technical font-black uppercase tracking-[0.2em] transition-all duration-500 scale-90 ${chartType === 'line' ? 'bg-white text-primary shadow-xl scale-100' : 'text-white/60 hover:text-white'}`}
              >
-                <LineChart size={14} /> <span>Line</span>
+                <LineChart size={16} /> <span>Line</span>
              </button>
              <button 
                onClick={() => setChartType('histogram')}
-               className={`flex items-center gap-2 px-3 py-1.5 rounded-lg text-[10px] font-black uppercase transition-all ${chartType === 'histogram' ? 'bg-white text-[#12662c] shadow-lg' : 'text-white/60 hover:text-white'}`}
+               className={`flex items-center gap-3 px-6 py-2.5 rounded-full text-[10px] font-technical font-black uppercase tracking-[0.2em] transition-all duration-500 scale-90 ${chartType === 'histogram' ? 'bg-white text-primary shadow-xl scale-100' : 'text-white/60 hover:text-white'}`}
              >
-                <Activity size={14} /> <span>Distro</span>
+                <Activity size={16} /> <span>Distro</span>
              </button>
           </div>
         </div>
         
-        <div className="p-8">
+        <div className="p-12">
            <div className="h-[250px] w-full relative pt-6">
               {chartType === 'bar' && (
                 <div className="h-full w-full flex items-end gap-[2px] md:gap-1 lg:gap-1.5 relative border-b border-slate-100">
@@ -1253,15 +1266,15 @@ export default function TrackerGrid({
            <div className="mt-8 flex flex-wrap gap-6 justify-center">
               {chartType === 'bar' ? (
                 WEEK_COLORS.map((c, idx) => (
-                  <div key={idx} className="flex items-center gap-1.5 px-3 py-1 bg-slate-50 rounded-full border border-slate-100">
+                  <div key={idx} className="flex items-center gap-1.5 px-3 py-1 bg-surface-container-low rounded-full ">
                      <div className={`size-2.5 rounded-full ${c} shadow-sm`} />
-                     <span className="text-[9px] font-black uppercase text-slate-500 tracking-wider">Week {idx+1}</span>
+                     <span className="text-[9px] font-black uppercase text-on-surface-variant tracking-wider">Week {idx+1}</span>
                   </div>
                 ))
               ) : chartType === 'histogram' ? (
-                <div className="flex items-center gap-2 px-4 py-2 bg-blue-50 rounded-2xl border border-blue-100">
-                   <Trophy size={16} className="text-blue-600" />
-                   <span className="text-[10px] font-black text-blue-700 uppercase tracking-widest">
+                <div className="flex items-center gap-2 px-4 py-2 bg-green-50 rounded-2xl border border-green-100">
+                   <Trophy size={16} className="text-primary" />
+                   <span className="text-[10px] font-black text-green-700 uppercase tracking-widest">
                      Day frequency by study time range
                    </span>
                 </div>
@@ -1278,24 +1291,24 @@ export default function TrackerGrid({
       {reminderTest && (
         <div className="fixed inset-0 z-100 flex items-center justify-center p-4">
           <div className="absolute inset-0 bg-slate-900/60 backdrop-blur-sm shadow-2xl" onClick={() => setReminderTest(null)} />
-          <div className="relative bg-white w-full max-w-md rounded-3xl shadow-2xl overflow-hidden border border-blue-100 animate-in fade-in zoom-in duration-300">
-             <div className="bg-blue-600 p-8 text-center relative overflow-hidden">
+          <div className="relative bg-surface w-full max-w-md rounded-3xl shadow-2xl overflow-hidden border border-green-100 animate-in fade-in zoom-in duration-300">
+             <div className="bg-primary p-8 text-center relative overflow-hidden">
                 <div className="absolute top-0 right-0 p-4">
-                   <Bell className="text-blue-400 opacity-20 rotate-12" size={120} />
+                   <Bell className="text-green-400 opacity-20 rotate-12" size={120} />
                 </div>
                 <div className="relative z-10">
-                   <div className="size-16 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-4 backdrop-blur-md">
+                   <div className="size-16 bg-surface/20 rounded-full flex items-center justify-center mx-auto mb-4 backdrop-blur-md">
                       <Bell className="text-white animate-bounce" size={32} />
                    </div>
                    <h3 className="text-2xl font-black text-white uppercase tracking-tight">Test Reminder</h3>
-                   <p className="text-blue-100 font-bold text-sm mt-1">Your scheduled test is starting now!</p>
+                   <p className="text-primary/10 font-bold text-sm mt-1">Your scheduled test is starting now!</p>
                 </div>
              </div>
              
              <div className="p-8">
-                <div className="bg-slate-50 rounded-2xl p-6 border border-slate-100 mb-8">
+                <div className="bg-surface-container-low rounded-2xl p-6  mb-8">
                    <div className="flex items-center gap-4 mb-4">
-                      <div className="size-10 bg-blue-100 rounded-xl flex items-center justify-center text-blue-600">
+                      <div className="size-10 bg-primary/10 rounded-xl flex items-center justify-center text-primary">
                          <Book size={20} />
                       </div>
                       <div>
@@ -1320,13 +1333,13 @@ export default function TrackerGrid({
                         editHabit(reminderTest);
                         setReminderTest(null);
                      }}
-                     className="flex-1 px-6 py-4 rounded-2xl border-2 border-slate-900 bg-white text-slate-900 font-black uppercase tracking-widest text-[10px] hover:bg-slate-50 transition-all active:scale-95"
+                     className="flex-1 px-6 py-4 rounded-2xl border-2 border-slate-900 bg-surface text-on-surface font-black uppercase tracking-widest text-[10px] hover:bg-surface-container-low transition-all active:scale-95"
                    >
                       Change Date/Time
                    </button>
                    <button 
                      onClick={() => handleProceedToTest(reminderTest)}
-                     className="flex-1 px-6 py-4 rounded-2xl bg-blue-600 text-white font-black uppercase tracking-widest text-[10px] shadow-lg shadow-blue-600/20 hover:bg-blue-700 transition-all active:scale-95"
+                     className="flex-1 px-6 py-4 rounded-2xl bg-primary text-white font-black uppercase tracking-widest text-[10px] shadow-lg shadow-green-600/20 hover:bg-green-700 transition-all active:scale-95"
                    >
                       Proceed to Test
                    </button>

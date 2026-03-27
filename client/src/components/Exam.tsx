@@ -77,7 +77,7 @@ const Exam = () => {
   }
 
   return (
-    <div className="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-slate-100 min-h-screen">
+    <div className="bg-background-light dark:bg-background-dark font-display text-on-surface dark:text-slate-100 min-h-screen">
       {/* Main Content */}
       <main className="max-w-300 mx-auto w-full px-4 py-6 md:px-10">
         {/* Page Header */}
@@ -95,12 +95,12 @@ const Exam = () => {
             return (
               <section
                 key={index}
-                className="bg-white dark:bg-slate-900 rounded-xl border border-slate-200 dark:border-slate-800 shadow-sm mb-8"
+                className="bg-surface dark:bg-slate-900 rounded-xl  dark:border-slate-800 shadow-sm mb-8"
               >
                 <div className="p-6 border-b border-slate-100 dark:border-slate-800 flex justify-between">
                   <div className="flex items-center gap-4">
-                    <div className="size-12 bg-blue-100 dark:bg-blue-900/30 rounded-xl flex items-center justify-center">
-                      <span className="material-symbols-outlined text-blue-600 text-2xl">
+                    <div className="size-12 bg-primary/10 dark:bg-green-900/30 rounded-xl flex items-center justify-center">
+                      <span className="material-symbols-outlined text-primary text-2xl">
                         <BookCopy />
                       </span>
                     </div>
@@ -108,7 +108,7 @@ const Exam = () => {
                       <h2 className="text-xl font-bold">
                         {subject.subjects.name}
                       </h2>
-                      <p className="text-sm w-90 text-slate-500 truncate">
+                      <p className="text-sm w-90 text-on-surface-variant truncate">
                         {subject.subjects.description}
                       </p>
                     </div>
@@ -119,7 +119,7 @@ const Exam = () => {
                       <span className="text-primary">Progress</span>
                       <span>4 / 12 Chapters</span>
                     </div>
-                    <div className="w-full h-2 bg-slate-100 dark:bg-slate-800 rounded-full">
+                    <div className="w-full h-2 bg-surface-container-high dark:bg-slate-800 rounded-full">
                       <div
                         className="h-full bg-primary rounded-full"
                         style={{ width: "33%" }}
@@ -135,7 +135,7 @@ const Exam = () => {
                     return (
                       <div
                         key={idx}
-                        className="p-4 flex justify-between items-center cursor-pointer hover:bg-slate-100 dark:hover:bg-slate-800/50"
+                        className="p-4 flex justify-between items-center cursor-pointer hover:bg-surface-container-high dark:hover:bg-slate-800/50"
                       >
                         <div>
                           <h4 className="font-medium">{item.name}</h4>
@@ -147,7 +147,7 @@ const Exam = () => {
                           onClick={() =>
                             handleButton(item.subjects.id, item.id)
                           }
-                          className={`px-4 py-2 border ${attemptedChapters.has(item.id) ? "bg-blue-600" : "bg-green-600"} text-white cursor-pointer hover:text-blue-400 hover:border-slate-400 rounded-lg text-sm font-semibold hover:bg-slate-200`}
+                          className={`px-4 py-2 border ${attemptedChapters.has(item.id) ? "bg-primary" : "bg-green-600"} text-white cursor-pointer hover:text-green-400 hover:border-slate-400 rounded-lg text-sm font-semibold hover:bg-slate-200`}
                         >
                           {attemptedChapters.has(item.id) ? "Retake Test" : "Take Test"}
                         </button>
@@ -167,11 +167,11 @@ const Exam = () => {
               className="absolute inset-0 bg-slate-900/60 backdrop-blur-sm"
               onClick={() => setShowPrefs(false)}
             />
-            <div className="relative bg-white dark:bg-slate-900 w-full max-w-xl rounded-4xl shadow-2xl border border-slate-200 dark:border-slate-800 overflow-hidden animate-in zoom-in-95 duration-200">
+            <div className="relative bg-surface dark:bg-slate-900 w-full max-w-xl rounded-4xl shadow-2xl  dark:border-slate-800 overflow-hidden animate-in zoom-in-95 duration-200">
               {/* Modal Header */}
-              <div className="p-8 border-b border-slate-100 dark:border-slate-800 bg-slate-50/50 dark:bg-slate-800/50">
+              <div className="p-8 border-b border-slate-100 dark:border-slate-800 bg-surface-container-low/50 dark:bg-slate-800/50">
                 <h3 className="text-2xl font-black tracking-tight">Exam Preferences</h3>
-                <p className="text-slate-500 text-sm mt-1">Select how you want to attempt this chapter</p>
+                <p className="text-on-surface-variant text-sm mt-1">Select how you want to attempt this chapter</p>
               </div>
 
               {/* Modal Content */}
@@ -181,19 +181,19 @@ const Exam = () => {
                   onClick={() => setPrefs(p => ({ ...p, mode: "normal" }))}
                   className={`p-5 rounded-2xl border-2 transition-all cursor-pointer flex items-center gap-4 ${
                     prefs.mode === "normal" 
-                      ? "border-blue-600 bg-blue-50/50 dark:bg-blue-900/20" 
+                      ? "border-green-600 bg-green-50/50 dark:bg-green-900/20" 
                       : "border-slate-100 dark:border-slate-800 hover:border-slate-200"
                   }`}
                 >
-                  <div className={`p-3 rounded-xl ${prefs.mode === "normal" ? "bg-blue-600 text-white" : "bg-slate-100 dark:bg-slate-800 text-slate-500"}`}>
+                  <div className={`p-3 rounded-xl ${prefs.mode === "normal" ? "bg-primary text-white" : "bg-surface-container-high dark:bg-slate-800 text-on-surface-variant"}`}>
                     <Coffee size={24} />
                   </div>
                   <div className="flex-1">
                     <h4 className="font-bold flex items-center gap-2">
                       Relaxed Practice
-                      {prefs.mode === "normal" && <CheckCircle2 size={16} className="text-blue-600" />}
+                      {prefs.mode === "normal" && <CheckCircle2 size={16} className="text-primary" />}
                     </h4>
-                    <p className="text-xs text-slate-500">No timer, no proctoring. Study at your own pace.</p>
+                    <p className="text-xs text-on-surface-variant">No timer, no proctoring. Study at your own pace.</p>
                   </div>
                 </div>
 
@@ -207,7 +207,7 @@ const Exam = () => {
                   }`}
                 >
                   <div className="flex items-center gap-4">
-                    <div className={`p-3 rounded-xl ${prefs.mode === "speed" ? "bg-orange-500 text-white" : "bg-slate-100 dark:bg-slate-800 text-slate-500"}`}>
+                    <div className={`p-3 rounded-xl ${prefs.mode === "speed" ? "bg-orange-500 text-white" : "bg-surface-container-high dark:bg-slate-800 text-on-surface-variant"}`}>
                       <Zap size={24} />
                     </div>
                     <div className="flex-1">
@@ -215,7 +215,7 @@ const Exam = () => {
                         Speed Drill
                         {prefs.mode === "speed" && <CheckCircle2 size={16} className="text-orange-500" />}
                       </h4>
-                      <p className="text-xs text-slate-500">Timer enabled, Camera disabled. Perfect for speed.</p>
+                      <p className="text-xs text-on-surface-variant">Timer enabled, Camera disabled. Perfect for speed.</p>
                     </div>
                   </div>
 
@@ -229,7 +229,7 @@ const Exam = () => {
                             className={`px-4 py-1.5 rounded-full text-xs font-bold transition-all ${
                               prefs.time === t 
                                 ? "bg-orange-500 text-white shadow-lg shadow-orange-500/30" 
-                                : "bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-slate-600 hover:bg-slate-50"
+                                : "bg-surface dark:bg-slate-800  dark:border-slate-700 text-slate-600 hover:bg-surface-container-low"
                             }`}
                          >
                            {t}m
@@ -248,7 +248,7 @@ const Exam = () => {
                       : "border-slate-100 dark:border-slate-800 hover:border-slate-200"
                   }`}
                 >
-                  <div className={`p-3 rounded-xl ${prefs.mode === "proctored" ? "bg-emerald-600 text-white" : "bg-slate-100 dark:bg-slate-800 text-slate-500"}`}>
+                  <div className={`p-3 rounded-xl ${prefs.mode === "proctored" ? "bg-emerald-600 text-white" : "bg-surface-container-high dark:bg-slate-800 text-on-surface-variant"}`}>
                     <Shield size={24} />
                   </div>
                   <div className="flex-1">
@@ -256,22 +256,22 @@ const Exam = () => {
                       Full Simulation
                       {prefs.mode === "proctored" && <CheckCircle2 size={16} className="text-emerald-600" />}
                     </h4>
-                    <p className="text-xs text-slate-500">Camera + Timer. The ultimate exam environment.</p>
+                    <p className="text-xs text-on-surface-variant">Camera + Timer. The ultimate exam environment.</p>
                   </div>
                 </div>
               </div>
 
               {/* Modal Footer */}
-              <div className="p-8 bg-slate-50 dark:bg-slate-800/50 flex gap-4">
+              <div className="p-8 bg-surface-container-low dark:bg-slate-800/50 flex gap-4">
                 <button 
                   onClick={() => setShowPrefs(false)}
-                  className="flex-1 py-4 text-sm font-bold text-slate-500 hover:bg-white dark:hover:bg-slate-800 rounded-2xl transition-all border border-transparent hover:border-slate-200 cursor-pointer"
+                  className="flex-1 py-4 text-sm font-bold text-on-surface-variant hover:bg-surface dark:hover:bg-slate-800 rounded-2xl transition-all border border-transparent hover:border-slate-200 cursor-pointer"
                 >
                   Cancel
                 </button>
                 <button 
                   onClick={handleStartTest}
-                  className="flex-1 py-4 text-sm font-bold bg-slate-900 dark:bg-blue-600 text-white rounded-2xl hover:opacity-90 transition-all flex items-center justify-center gap-2 cursor-pointer shadow-xl"
+                  className="flex-1 py-4 text-sm font-bold bg-slate-900 dark:bg-primary text-white rounded-2xl hover:opacity-90 transition-all flex items-center justify-center gap-2 cursor-pointer shadow-xl"
                 >
                   Start Now
                   <ChevronRight size={18} />
@@ -283,8 +283,8 @@ const Exam = () => {
       </main>
 
       {/* Footer */}
-      <footer className="mt-12 border-t border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 py-10 px-4 md:px-10">
-        <div className="max-w-300 mx-auto text-sm text-slate-500">
+      <footer className="mt-12  dark:border-slate-800 bg-surface dark:bg-slate-900 py-10 px-4 md:px-10">
+        <div className="max-w-300 mx-auto text-sm text-on-surface-variant">
           © 2024 OSSC CGL Prep. All rights reserved.
         </div>
       </footer>
@@ -311,7 +311,7 @@ const ExamSkeleton = () => {
         {[1,2,3].map((_, index) => (
           <section
             key={index}
-            className="bg-white dark:bg-slate-900 rounded-xl border border-slate-200 dark:border-slate-800 shadow-sm mb-8"
+            className="bg-surface dark:bg-slate-900 rounded-xl  dark:border-slate-800 shadow-sm mb-8"
           >
             {/* Subject Header */}
             <div className="p-6 border-b border-slate-100 dark:border-slate-800 flex justify-between">
@@ -354,7 +354,7 @@ const ExamSkeleton = () => {
       </main>
 
       {/* Footer Skeleton */}
-      <footer className="mt-12 border-t border-slate-200 dark:border-slate-800 py-10 px-4 md:px-10">
+      <footer className="mt-12  dark:border-slate-800 py-10 px-4 md:px-10">
         <div className="max-w-300 mx-auto">
           <div className="h-4 w-60 bg-slate-300 dark:bg-slate-700 rounded"></div>
         </div>

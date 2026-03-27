@@ -432,88 +432,66 @@ export default function StudyPlannerPage() {
   };
 
   return (
-    <div className="min-h-screen bg-linear-to-br from-slate-50 to-slate-100 dark:from-slate-900 dark:to-slate-950 text-slate-900 dark:text-slate-100">
+    <div className="bg-surface text-on-surface transition-colors duration-500">
       <GoogleCalendarModal isOpen={isGooglePopupOpen} onClose={() => setIsGooglePopupOpen(false)} />
-      <main className="max-w-400 mx-auto p-4 md:p-8 space-y-10 pb-20">
-        <div className="grid sm:grid-cols-1 lg:grid-cols-12 gap-6 items-start">
-          {/* Center Column: Mastery Tracker (8/12) */}
-          <section className="lg:col-span-12 space-y-8">
-            <div className="flex flex-col md:flex-row gap-8">
-              {/* <GoogleCalendarButton /> */}
-              <div className="flex-1">
-                <TrackerGrid
-                  initialHabits={habits}
-                  initialProgress={progress}
-                  onToggle={handleToggle}
-                  onRefresh={fetchData}
-                  isLoading={loading}
-                  viewMonth={viewMonth}
-                  viewYear={viewYear}
-                  selectedDate={selectedDate}
-                  onSelectDate={setSelectedDate}
-                  onMonthChange={handleMonthChange}
-                  isSettingUp={isSettingUp}
-                  isPastMonth={
-                    viewYear < currentYear ||
-                    (viewYear === currentYear && viewMonth < currentMonth)
-                  }
-                  hasPrevMonthTasks={hasPrevMonthTasks}
-                  onCopyPrevious={handleCopyPreviousMonth}
-                  onStartFresh={handleStartFresh}
-                  autoOpenAddModal={autoOpenAddModal}
-                  onModalOpenHandled={() => setAutoOpenAddModal(false)}
-                />
-              </div>
-              <div className="w-full md:w-80 shrink-0">
-                {/* <FocusTimer /> */}
-
-                {/* Quick Reminders Box */}
-                {/* <div className="mt-8 bg-linear-to-br from-indigo-500 to-blue-600 p-8 rounded-[2.5rem] text-white shadow-xl shadow-blue-500/20 relative overflow-hidden group">
-                  <div className="absolute bottom-0 right-0 -mb-4 -mr-4 p-4 opacity-10 group-hover:scale-110 transition-transform">
-                    <GraduationCap size={120} />
-                  </div>
-                  <div className="space-y-4 relative z-10">
-                    <h4 className="text-lg font-black tracking-tight flex items-center gap-2">
-                      <Calendar size={20} />
-                      Exam Countdown
-                    </h4>
-                    <div className="space-y-2">
-                      <div className="flex justify-between text-xs font-bold text-white/70 uppercase">
-                        <span>OPSC Prelims</span>
-                        <span>42 Days Left</span>
-                      </div>
-                      <div className="h-2 bg-white/20 rounded-full overflow-hidden">
-                        <div className="h-full bg-white w-2/3 rounded-full" />
-                      </div>
-                    </div>
-                    <p className="text-[10px] text-blue-100 font-bold leading-relaxed">
-                      "Success is the sum of small efforts, repeated day in and
-                      day out."
-                    </p>
-                  </div>
-                </div> */}
-              </div>
+      
+      <main className="mx-auto space-y-12 pb-20">
+        {/* Main Planning Desk */}
+        <div className="grid lg:grid-cols-12 gap-10 items-start">
+          
+          {/* SPREADSHEET ZONE: Full Width Technical Desk */}
+          <section className="lg:col-span-12">
+            <div className="bg-surface-container-low rounded-[3rem] shadow-ambient overflow-hidden border border-outline-variant/5">
+              <TrackerGrid
+                initialHabits={habits}
+                initialProgress={progress}
+                onToggle={handleToggle}
+                onRefresh={fetchData}
+                isLoading={loading}
+                viewMonth={viewMonth}
+                viewYear={viewYear}
+                selectedDate={selectedDate}
+                onSelectDate={setSelectedDate}
+                onMonthChange={handleMonthChange}
+                isSettingUp={isSettingUp}
+                isPastMonth={
+                  viewYear < currentYear ||
+                  (viewYear === currentYear && viewMonth < currentMonth)
+                }
+                hasPrevMonthTasks={hasPrevMonthTasks}
+                onCopyPrevious={handleCopyPreviousMonth}
+                onStartFresh={handleStartFresh}
+                autoOpenAddModal={autoOpenAddModal}
+                onModalOpenHandled={() => setAutoOpenAddModal(false)}
+              />
             </div>
           </section>
-          {/* Left Column: Routine & Metrics (4/12) */}
-          <section className="lg:col-span-4 space-y-8">
-            <GrowthMetrics
-              level={stats.level}
-              xp={stats.xpInLevel}
-              totalXp={stats.xp}
-              streak={stats.currentStreak}
-            />
+
+          {/* LOWER ANALYSIS ZONE: Split Routine & Growth */}
+          <section className="lg:col-span-4 space-y-10 animate-in fade-in slide-in-from-left-4 duration-1000">
+            <div className="bg-surface-container-low p-2 rounded-[3.5rem] shadow-ambient">
+              <GrowthMetrics
+                level={stats.level}
+                xp={stats.xpInLevel}
+                totalXp={stats.xp}
+                streak={stats.currentStreak}
+              />
+            </div>
           </section>
-          <section className=" lg:col-span-8">
-            <DailyRoutine 
-              habits={habits} 
-              progress={progress}
-              selectedDate={selectedDate}
-              onRefresh={fetchData} 
-              onSync={handleSyncTaskToCalendar} 
-              onSyncAll={handleSyncAllTasks}
-            />
+
+          <section className="lg:col-span-8 animate-in fade-in slide-in-from-right-4 duration-1000">
+            <div className="bg-surface-container-low p-2 rounded-[3.5rem] shadow-ambient">
+              <DailyRoutine 
+                habits={habits} 
+                progress={progress}
+                selectedDate={selectedDate}
+                onRefresh={fetchData} 
+                onSync={handleSyncTaskToCalendar} 
+                onSyncAll={handleSyncAllTasks}
+              />
+            </div>
           </section>
+
         </div>
       </main>
     </div>

@@ -20,7 +20,7 @@ export const TargetExams = () => {
         <button
           key={index}
           onClick={() => setSelectedExam(item.id)}
-          className={`px-8 py-3 rounded-full font-black text-sm uppercase tracking-widest transition-all cursor-pointer shadow-sm border-2 ${selectedExam === item.id ? "bg-green-700 text-white border-green-700 shadow-green-200 shadow-lg scale-105" : "bg-white text-green-800 border-green-100 hover:border-green-300 hover:bg-green-50"}`}
+          className={`px-8 py-3 rounded-full font-black text-sm uppercase tracking-widest transition-all cursor-pointer shadow-sm border-2 ${selectedExam === item.id ? "bg-green-700 text-white border-green-700 shadow-green-200 shadow-lg scale-105" : "bg-surface text-green-800 border-green-100 hover:border-green-300 hover:bg-green-50"}`}
         >
           {item.name}
         </button>

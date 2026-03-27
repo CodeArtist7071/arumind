@@ -59,10 +59,10 @@ const FriendlyTimePicker = ({
 
   return (
     <div className="space-y-1.5 flex-1">
-      <label className="text-[10px] font-black uppercase text-blue-700 flex items-center gap-1.5">
+      <label className="text-[10px] font-black uppercase text-green-700 flex items-center gap-1.5">
         <Clock size={10} /> {label}
       </label>
-      <div className={`flex items-center gap-1 p-1 bg-white border rounded-xl transition-all ${error ? "border-red-300 ring-2 ring-red-50" : "border-slate-200 focus-within:ring-2 focus-within:ring-blue-100 focus-within:border-blue-300"}`}>
+      <div className={`flex items-center gap-1 p-1 bg-surface border rounded-xl transition-all ${error ? "border-red-300 ring-2 ring-red-50" : "border-slate-200 focus-within:ring-2 focus-within:ring-green-100 focus-within:border-green-300"}`}>
         <select 
           value={h12.toString()} 
           onChange={(e) => handleHChange(e.target.value)}
@@ -80,13 +80,13 @@ const FriendlyTimePicker = ({
              <option key={min} value={min}>{min}</option>
           ))}
         </select>
-        <div className="flex ml-auto bg-slate-50 border border-slate-100 rounded-lg p-0.5 shadow-sm">
+        <div className="flex ml-auto bg-surface-container-low  rounded-lg p-0.5 shadow-sm">
           {["AM", "PM"].map(type => (
             <button
               key={type}
               type="button"
               onClick={() => handleAMPMChange(type)}
-              className={`px-2 py-1 rounded-md text-[9px] font-black transition-all ${ampm === type ? "bg-blue-600 text-white shadow-sm" : "text-slate-400 hover:text-slate-600"}`}
+              className={`px-2 py-1 rounded-md text-[9px] font-black transition-all ${ampm === type ? "bg-primary text-white shadow-sm" : "text-slate-400 hover:text-slate-600"}`}
             >
               {type}
             </button>
@@ -151,7 +151,7 @@ export default function MasterySelector({ examId, onAdd, existingIds, onRequestC
           <input
             type="text"
             placeholder="Search chapters or subjects..."
-            className="w-full pl-11 pr-4 py-3 bg-slate-50 dark:bg-slate-800 border-none rounded-2xl text-sm outline-none focus:ring-2 ring-[#1a57db]/30 transition-all"
+            className="w-full pl-11 pr-4 py-3 bg-surface-container-low dark:bg-slate-800 border-none rounded-2xl text-sm outline-none focus:ring-2 ring-[#16a34a]/30 transition-all"
             value={searchTerm}
             onChange={(e) => setSearchTerm(e.target.value)}
           />
@@ -161,18 +161,18 @@ export default function MasterySelector({ examId, onAdd, existingIds, onRequestC
       <div className="flex-1 overflow-y-auto p-6 space-y-6 custom-scrollbar">
         {loading ? (
           <div className="flex flex-col items-center justify-center py-20 gap-3">
-            <div className="size-10 border-4 border-[#1a57db] border-t-transparent rounded-full animate-spin" />
+            <div className="size-10 border-4 border-[#16a34a] border-t-transparent rounded-full animate-spin" />
             <p className="text-xs font-bold text-slate-400 uppercase tracking-widest">Loading Syllabus...</p>
           </div>
         ) : selectedChapter ? (
            /* Scheduling Screen */
            <div className="space-y-8 animate-in fade-in slide-in-from-bottom-4 duration-300">
-              <div className="flex items-center gap-4 p-4 bg-blue-50 rounded-2xl border border-blue-100">
-                 <div className="size-12 bg-white rounded-xl flex items-center justify-center text-[#1a57db] shadow-sm">
+              <div className="flex items-center gap-4 p-4 bg-green-50 rounded-2xl border border-green-100">
+                 <div className="size-12 bg-surface rounded-xl flex items-center justify-center text-[#16a34a] shadow-sm">
                     <BookOpen size={24} />
                  </div>
                  <div>
-                    <p className="text-[10px] font-black uppercase text-blue-400 tracking-widest">Scheduling Test For</p>
+                    <p className="text-[10px] font-black uppercase text-green-400 tracking-widest">Scheduling Test For</p>
                     <h4 className="text-lg font-black text-slate-800 leading-tight">{selectedChapter.name}</h4>
                  </div>
               </div>
@@ -184,7 +184,7 @@ export default function MasterySelector({ examId, onAdd, existingIds, onRequestC
                        type="date" 
                        value={testDate}
                        onChange={(e) => { setTestDate(e.target.value); setError(""); }}
-                       className="w-full px-4 py-3 bg-slate-50 border-none rounded-xl text-sm font-bold outline-none focus:ring-2 ring-blue-500/30 transition-all"
+                       className="w-full px-4 py-3 bg-surface-container-low border-none rounded-xl text-sm font-bold outline-none focus:ring-2 ring-green-500/30 transition-all"
                      />
                   </div>
                   
@@ -203,14 +203,14 @@ export default function MasterySelector({ examId, onAdd, existingIds, onRequestC
                   {error && <p className="text-xs font-bold text-red-500 text-center">{error}</p>}
 
                    {/* Sync Toggle */}
-                   <div className="flex items-center justify-between p-4 bg-blue-50/50 rounded-2xl border border-blue-100/50">
+                   <div className="flex items-center justify-between p-4 bg-green-50/50 rounded-2xl border border-green-100/50">
                       <div className="flex items-center gap-2.5">
-                        <div className={`p-2 rounded-lg ${connected ? 'bg-blue-100 text-blue-600' : 'bg-slate-100 text-slate-400'}`}>
+                        <div className={`p-2 rounded-lg ${connected ? 'bg-primary/10 text-primary' : 'bg-surface-container-high text-slate-400'}`}>
                           <Calendar size={16} />
                         </div>
                         <div>
                            <p className="text-xs font-black text-slate-700">Google Calendar Sync</p>
-                           <p className="text-[10px] text-slate-500 font-medium">
+                           <p className="text-[10px] text-on-surface-variant font-medium">
                              {connected ? "Enabled for this test" : "Connect calendar to enable"}
                            </p>
                         </div>
@@ -224,12 +224,12 @@ export default function MasterySelector({ examId, onAdd, existingIds, onRequestC
                               onChange={(e) => setSyncToCalendar(e.target.checked)}
                               className="sr-only peer" 
                             />
-                            <div className="w-11 h-6 rounded-full peer transition-all bg-slate-200 peer-checked:bg-green-600 after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:after:translate-x-full">
+                            <div className="w-11 h-6 rounded-full peer transition-all bg-slate-200 peer-checked:bg-green-600 after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-surface after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:after:translate-x-full">
                             </div>
                          </label>
                       ) : (
                          <div className="relative inline-flex items-center cursor-pointer" onClick={() => onRequestConnection && onRequestConnection()}>
-                            <div className="w-11 h-6 rounded-full transition-all bg-slate-200 after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:rounded-full after:h-5 after:w-5 after:transition-all">
+                            <div className="w-11 h-6 rounded-full transition-all bg-slate-200 after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-surface after:rounded-full after:h-5 after:w-5 after:transition-all">
                             </div>
                          </div>
                       )}
@@ -239,7 +239,7 @@ export default function MasterySelector({ examId, onAdd, existingIds, onRequestC
               <div className="flex gap-3 pt-4">
                  <button 
                    onClick={() => setSelectedChapter(null)}
-                   className="flex-1 px-6 py-4 rounded-2xl border-2 border-slate-100 text-slate-400 font-black uppercase tracking-widest text-xs hover:bg-slate-50 transition-colors"
+                   className="flex-1 px-6 py-4 rounded-2xl border-2 border-slate-100 text-slate-400 font-black uppercase tracking-widest text-xs hover:bg-surface-container-low transition-colors"
                  >
                     Back
                  </button>
@@ -251,7 +251,7 @@ export default function MasterySelector({ examId, onAdd, existingIds, onRequestC
                         }
                         onAdd(selectedChapter, testDate, testStartTime, testEndTime, syncToCalendar);
                     }}
-                    className="flex-2 px-6 py-4 rounded-2xl bg-blue-600 hover:bg-blue-700 text-white font-black uppercase tracking-widest text-xs shadow-lg shadow-blue-500/30 transition-all active:scale-95"
+                    className="flex-2 px-6 py-4 rounded-2xl bg-primary hover:bg-green-700 text-white font-black uppercase tracking-widest text-xs shadow-lg shadow-green-500/30 transition-all active:scale-95"
                   >
                      Confirm Schedule
                   </button>
@@ -265,25 +265,25 @@ export default function MasterySelector({ examId, onAdd, existingIds, onRequestC
           Object.entries(grouped).map(([subject, subChapters]) => (
             <div key={subject} className="space-y-3">
               <div className="flex items-center gap-2 px-1">
-                <Book className="size-3 text-[#1a57db]" />
+                <Book className="size-3 text-[#16a34a]" />
                 <span className="text-[10px] font-black uppercase tracking-[0.2em] text-slate-400">{subject}</span>
               </div>
               <div className="grid gap-2">
                 {subChapters.map(chapter => {
                   const isAdded = existingIds.includes(chapter.id);
                   return (
-                    <div key={chapter.id} className={`flex justify-between items-center ${isAdded ? 'bg-slate-50' : 'bg-slate-200 dark:bg-slate-900'} rounded-xl p-4`}>
+                    <div key={chapter.id} className={`flex justify-between items-center ${isAdded ? 'bg-surface-container-low' : 'bg-slate-200 dark:bg-slate-900'} rounded-xl p-4`}>
                       <div className="flex items-center gap-4 text-left">
-                        <div className={`size-8 rounded-lg flex items-center justify-center ${isAdded ? 'bg-slate-200 text-slate-400' : 'bg-white dark:bg-slate-900 text-[#1a57db] shadow-sm'}`}>
+                        <div className={`size-8 rounded-lg flex items-center justify-center ${isAdded ? 'bg-slate-200 text-slate-400' : 'bg-surface dark:bg-slate-900 text-[#16a34a] shadow-sm'}`}>
                           {isAdded ? <CheckCircle2 size={16} /> : <BookOpen size={16} />}
                         </div>
                       </div>
                       <div className='w-full '>
-                        <span className="text-sm ml-4 font-bold text-slate-900 dark:text-white line-clamp-1">{chapter.name}</span>
+                        <span className="text-sm ml-4 font-bold text-on-surface dark:text-white line-clamp-1">{chapter.name}</span>
                       </div>
                       <div
                         onClick={() => !isAdded && setSelectedChapter(chapter)}
-                        className={`flex items-center cursor-pointer h-10 w-12 transition-all ${isAdded ? 'items-center justify-center text-slate-400' : 'bg-blue-600 hover:bg-blue-700 rounded-full justify-center shadow-md'}`}
+                        className={`flex items-center cursor-pointer h-10 w-12 transition-all ${isAdded ? 'items-center justify-center text-slate-400' : 'bg-primary hover:bg-green-700 rounded-full justify-center shadow-md'}`}
                       >
                         {isAdded ? <CheckCircle2 size={25} /> : <Plus color='white' size={16} />}
                       </div>

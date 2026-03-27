@@ -122,30 +122,30 @@ const ResultsHistory = () => {
 
   if (loading) {
     return (
-      <div className="flex min-h-screen items-center justify-center bg-slate-50 dark:bg-slate-950">
+      <div className="flex min-h-screen items-center justify-center bg-surface-container-low dark:bg-slate-950">
         <div className="flex flex-col items-center gap-4">
-          <div className="size-12 border-4 border-[#1a57db] border-t-transparent rounded-full animate-spin" />
-          <p className="font-bold text-slate-500 animate-pulse">Retreiving your progress...</p>
+          <div className="size-12 border-4 border-[#16a34a] border-t-transparent rounded-full animate-spin" />
+          <p className="font-bold text-on-surface-variant animate-pulse">Retreiving your progress...</p>
         </div>
       </div>
     );
   }
 
   return (
-    <div className="min-h-screen bg-linear-to-br from-slate-50 to-slate-100 dark:from-slate-900 dark:to-slate-950 font-['Inter'] text-slate-900 dark:text-slate-100 pb-20">
+    <div className="min-h-screen bg-linear-to-br from-slate-50 to-slate-100 dark:from-slate-900 dark:to-slate-950 font-narrative text-on-surface dark:text-slate-100 pb-20">
       {/* Header */}
-      <header className="sticky top-0 z-50 bg-white/80 dark:bg-slate-900/80 backdrop-blur-md border-b border-slate-200 dark:border-slate-800 px-6 py-4 shadow-sm">
+      <header className="sticky top-0 z-50 bg-surface/80 dark:bg-slate-900/80 backdrop-blur-md  dark:border-slate-800 px-6 py-4 shadow-sm">
         <div className="max-w-6xl mx-auto flex items-center justify-between">
           <div className="flex items-center gap-4">
             <button
               onClick={() => navigate(-1)}
-              className="p-2 hover:bg-slate-100 dark:hover:bg-slate-800 rounded-xl transition-all duration-200 text-slate-500"
+              className="p-2 hover:bg-surface-container-high dark:hover:bg-slate-800 rounded-xl transition-all duration-200 text-on-surface-variant"
             >
               <ArrowLeft className="size-5" />
             </button>
             <div>
               <h1 className="text-xl font-black tracking-tight flex items-center gap-2">
-                <History className="size-5 text-[#1a57db]" />
+                <History className="size-5 text-[#16a34a]" />
                 Practice History
               </h1>
               <p className="text-[10px] text-slate-400 uppercase font-black tracking-widest leading-none mt-1">
@@ -156,7 +156,7 @@ const ResultsHistory = () => {
 
           <button 
             onClick={() => navigate('/user/dashboard')}
-            className="hidden md:flex items-center gap-2 px-4 py-2 bg-slate-100 dark:bg-slate-800 hover:bg-slate-200 dark:hover:bg-slate-700 rounded-xl text-sm font-bold transition-all"
+            className="hidden md:flex items-center gap-2 px-4 py-2 bg-surface-container-high dark:bg-slate-800 hover:bg-slate-200 dark:hover:bg-slate-700 rounded-xl text-sm font-bold transition-all"
           >
             <LayoutDashboard className="size-4" />
             Dashboard
@@ -169,12 +169,12 @@ const ResultsHistory = () => {
         {/* Stats Section */}
         {/* <section className="grid sm:grid-cols-2 md:grid-cols-4 gap-4">
           {[
-            { label: 'Total Attempts', value: stats.total, icon: <TrendingUp className="size-5" />, color: 'text-blue-600', bg: 'bg-blue-50 dark:bg-blue-900/20' },
+            { label: 'Total Attempts', value: stats.total, icon: <TrendingUp className="size-5" />, color: 'text-primary', bg: 'bg-green-50 dark:bg-green-900/20' },
             { label: 'Chapters Covered', value: stats.unique, icon: <Layers className="size-5" />, color: 'text-purple-600', bg: 'bg-purple-50 dark:bg-purple-900/20' },
             { label: 'Completed', value: stats.completed, icon: <Award className="size-5" />, color: 'text-emerald-600', bg: 'bg-emerald-50 dark:bg-emerald-900/20' },
             { label: 'Success Rate', value: `${stats.rate}%`, icon: <Target className="size-5" />, color: 'text-orange-600', bg: 'bg-orange-50 dark:bg-orange-900/20' },
           ].map((s, idx) => (
-            <div key={idx} className="bg-white dark:bg-slate-900 p-5 rounded-2xl border border-slate-200 dark:border-slate-800 shadow-sm hover:shadow-md transition-all group">
+            <div key={idx} className="bg-surface dark:bg-slate-900 p-5 rounded-2xl  dark:border-slate-800 shadow-sm hover:shadow-md transition-all group">
               <div className={`size-10 ${s.bg} ${s.color} rounded-xl flex items-center justify-center mb-3 group-hover:scale-110 transition-transform`}>
                 {s.icon}
               </div>
@@ -191,7 +191,7 @@ const ResultsHistory = () => {
             <input
               type="text"
               placeholder="Filter by Exam, Subject or Chapter..."
-              className="w-full pl-11 pr-4 py-3 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl text-sm focus:ring-2 ring-[#1a57db] outline-none shadow-sm transition-all"
+              className="w-full pl-11 pr-4 py-3 bg-surface dark:bg-slate-900  dark:border-slate-800 rounded-2xl text-sm focus:ring-2 ring-[#16a34a] outline-none shadow-sm transition-all"
               value={searchTerm}
               onChange={(e) => setSearchTerm(e.target.value)}
             />
@@ -204,8 +204,8 @@ const ResultsHistory = () => {
                 onClick={() => setStatusFilter(filter)}
                 className={`flex-1 md:flex-none px-4 py-3 rounded-lg text-md font-bold transition-all ${
                   statusFilter === filter 
-                    ? 'bg-white dark:bg-slate-700 text-[#1a57db] dark:text-white shadow-sm' 
-                    : 'text-slate-500 hover:text-slate-700 dark:hover:text-slate-300'
+                    ? 'bg-surface dark:bg-slate-700 text-[#16a34a] dark:text-white shadow-sm' 
+                    : 'text-on-surface-variant hover:text-slate-700 dark:hover:text-slate-300'
                 }`}
               >
                 {filter}
@@ -217,15 +217,15 @@ const ResultsHistory = () => {
         {/* History Cards */}
         <section className="space-y-12">
           {Object.entries(filteredGroups).length === 0 ? (
-            <div className="text-center py-20 bg-white dark:bg-slate-900 rounded-[2.5rem] border-2 border-dashed border-slate-200 dark:border-slate-800 animate-in fade-in zoom-in duration-500">
-              <div className="size-20 bg-slate-100 dark:bg-slate-800 rounded-full flex items-center justify-center mx-auto mb-6">
+            <div className="text-center py-20 bg-surface dark:bg-slate-900 rounded-[2.5rem] border-2 border-dashed border-slate-200 dark:border-slate-800 animate-in fade-in zoom-in duration-500">
+              <div className="size-20 bg-surface-container-high dark:bg-slate-800 rounded-full flex items-center justify-center mx-auto mb-6">
                 <Search className="size-10 text-slate-300" />
               </div>
               <h3 className="text-xl font-black text-slate-400">No matching attempts found</h3>
-              <p className="text-sm text-slate-500 mt-2 max-w-xs mx-auto font-medium">Try adjusting your filters or start a new practice test to fill your history.</p>
+              <p className="text-sm text-on-surface-variant mt-2 max-w-xs mx-auto font-medium">Try adjusting your filters or start a new practice test to fill your history.</p>
               <button
                 onClick={() => navigate('/user/dashboard')}
-                className="mt-8 px-8 py-3 bg-[#1a57db] text-white rounded-2xl font-black shadow-lg shadow-blue-500/20 hover:scale-105 active:scale-95 transition-all"
+                className="mt-8 px-8 py-3 bg-[#16a34a] text-white rounded-2xl font-black shadow-lg shadow-green-500/20 hover:scale-105 active:scale-95 transition-all"
               >
                 Go to Dashboard
               </button>
@@ -243,18 +243,18 @@ const ResultsHistory = () => {
 
                 <div className="grid gap-8 lg:grid-cols-1">
                   {Object.entries(subjects).map(([subject, atts]) => (
-                    <div key={subject} className="bg-white dark:bg-slate-900 rounded-2xl border border-slate-200 dark:border-slate-800 overflow-hidden shadow-sm hover:shadow-xl transition-all duration-500 group">
-                      <div className="bg-linear-to-r from-[#1a57db]/5 to-transparent px-8 py-5 border-b border-slate-100 dark:border-slate-800 flex justify-between items-center group-hover:from-[#1a57db]/10 transition-colors">
+                    <div key={subject} className="bg-surface dark:bg-slate-900 rounded-2xl  dark:border-slate-800 overflow-hidden shadow-sm hover:shadow-xl transition-all duration-500 group">
+                      <div className="bg-linear-to-r from-[#16a34a]/5 to-transparent px-8 py-5 border-b border-slate-100 dark:border-slate-800 flex justify-between items-center group-hover:from-[#16a34a]/10 transition-colors">
                         <div className="flex items-center gap-4">
-                          <div className="size-10 rounded-2xl bg-white dark:bg-slate-800 flex items-center justify-center text-[#1a57db] shadow-xs border border-slate-100 dark:border-slate-700">
+                          <div className="size-10 rounded-2xl bg-surface dark:bg-slate-800 flex items-center justify-center text-[#16a34a] shadow-xs  dark:border-slate-700">
                             <BookOpen className="size-5" />
                           </div>
                           <div>
-                            <h3 className="text-xl font-bold text-slate-900 dark:text-slate-100 leading-tight">{subject}</h3>
+                            <h3 className="text-xl font-bold text-on-surface dark:text-slate-100 leading-tight">{subject}</h3>
                             <p className="text-sm text-slate-400 font-semibold mt-0.5">Subject Stream</p>
                           </div>
                         </div>
-                        <div className="bg-[#1a57db] text-white text-sm font-black px-3 py-2 rounded-md shadow-lg shadow-blue-500/20 tracking-normal">
+                        <div className="bg-[#16a34a] text-white text-sm font-black px-3 py-2 rounded-md shadow-lg shadow-green-500/20 tracking-normal">
                           {atts.length} {atts.length === 1 ? 'Attempt' : 'Attempts'}
                         </div>
                       </div>
@@ -264,7 +264,7 @@ const ResultsHistory = () => {
                           <div
                             key={attempt.id}
                             onClick={() => navigate(`/user/results/${attempt.id}`)}
-                            className="m-2 rounded-2xl px-6 py-4 flex items-center justify-between hover:bg-slate-50 dark:hover:bg-slate-800 transition-all duration-300 group/item cursor-pointer"
+                            className="m-2 rounded-2xl px-6 py-4 flex items-center justify-between hover:bg-surface-container-low dark:hover:bg-slate-800 transition-all duration-300 group/item cursor-pointer"
                           >
                             <div className="flex items-center gap-4">
                               <div className={`size-10 rounded-xl flex items-center justify-center ${
@@ -273,7 +273,7 @@ const ResultsHistory = () => {
                                 {attempt.status === 'COMPLETED' ? <CheckCircle2 className="size-5" /> : <PlayCircle className="size-5" />}
                               </div>
                               <div className="flex flex-col">
-                                <span className="text-md font-medium text-slate-600 dark:text-slate-100 group-hover/item:text-[#1a57db] transition-colors">
+                                <span className="text-md font-medium text-slate-600 dark:text-slate-100 group-hover/item:text-[#16a34a] transition-colors">
                                   {attempt.chapter_name}
                                 </span>
                                 <div className="flex items-center gap-3 text-[10px] font-bold text-slate-400 uppercase tracking-tight mt-1">
@@ -289,7 +289,7 @@ const ResultsHistory = () => {
                                 </div>
                               </div>
                             </div>
-                            <ChevronRight className="size-5 text-slate-200 group-hover/item:text-[#1a57db] group-hover/item:translate-x-1 transition-all" />
+                            <ChevronRight className="size-5 text-slate-200 group-hover/item:text-[#16a34a] group-hover/item:translate-x-1 transition-all" />
                           </div>
                         ))}
                       </div>

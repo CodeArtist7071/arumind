@@ -83,7 +83,7 @@ const ResultSelection = () => {
                 {/* Cards */}
                 <div className="grid sm:grid-cols-1 md:grid-cols-2 gap-6">
                     {cardData.map((el, index) => (
-                        <div className="w-[450px] bg-white/50 px-6 py-15 rounded-xl flex flex-col justify-between hover:bg-[#e9e9dd] transition-all duration-300">
+                        <div className="w-[450px] bg-surface/50 px-6 py-15 rounded-xl flex flex-col justify-between hover:bg-[#e9e9dd] transition-all duration-300">
                             <div>
                                 <div className="w-16 h-16 bg-[#e4e3d7] rounded-2xl flex items-center justify-center mb-6">
                                     <span className="material-symbols-outlined text-4xl text-green-700">
@@ -124,7 +124,7 @@ const ResultSelection = () => {
                         <div className="h-px flex-1 bg-gray-300"></div>
                     </h4>
                     {latestReportData.map((el, index) => (
-                        <div key={index} className="bg-white p-6 rounded-lg flex sm:flex-col md:flex-row justify-between items-center gap-4 shadow">
+                        <div key={index} className="bg-surface p-6 rounded-lg flex sm:flex-col md:flex-row justify-between items-center gap-4 shadow">
                             <div className="flex items-center gap-4">
                                 <div className="w-12 h-12 rounded-full bg-orange-200 flex items-center justify-center">
                                     <span className="material-symbols-outlined">

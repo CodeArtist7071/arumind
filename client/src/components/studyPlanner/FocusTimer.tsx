@@ -66,18 +66,18 @@ export default function FocusTimer() {
     : ((5 - minutes) * 60 + (60 - seconds)) / (5 * 60) * 100;
 
   return (
-    <div className="bg-white dark:bg-slate-900 rounded-3xl p-8 border border-slate-200 dark:border-slate-800 shadow-xl overflow-hidden relative group transition-all duration-300 hover:shadow-blue-500/10 hover:border-blue-500/30">
+    <div className="bg-surface dark:bg-slate-900 rounded-3xl p-8  dark:border-slate-800 shadow-xl overflow-hidden relative group transition-all duration-300 hover:shadow-green-500/10 hover:border-primary/30">
       <div className="absolute top-0 right-0 p-6">
-        <button className="text-slate-400 hover:text-[#1a57db] transition-colors">
+        <button className="text-slate-400 hover:text-[#16a34a] transition-colors">
           <Settings size={20} />
         </button>
       </div>
 
       <div className="flex flex-col items-center text-center space-y-6">
-        <div className="flex items-center gap-2 px-4 py-1.5 bg-slate-100 dark:bg-slate-800 rounded-full text-[10px] font-black uppercase tracking-[0.2em] text-slate-500">
+        <div className="flex items-center gap-2 px-4 py-1.5 bg-surface-container-high dark:bg-slate-800 rounded-full text-[10px] font-black uppercase tracking-[0.2em] text-on-surface-variant">
           {mode === 'FOCUS' ? (
             <>
-              <BookOpen size={12} className="text-[#1a57db]" />
+              <BookOpen size={12} className="text-[#16a34a]" />
               Deep Work Session
             </>
           ) : (
@@ -110,12 +110,12 @@ export default function FocusTimer() {
               strokeDasharray={553}
               strokeDashoffset={553 - (553 * Math.min(progress, 100)) / 100}
               strokeLinecap="round"
-              className={`${mode === 'FOCUS' ? 'text-[#1a57db]' : 'text-emerald-500'} transition-all duration-1000`}
+              className={`${mode === 'FOCUS' ? 'text-[#16a34a]' : 'text-emerald-500'} transition-all duration-1000`}
             />
           </svg>
           
-          <div className="z-10 bg-white dark:bg-slate-900 size-40 rounded-full flex flex-col items-center justify-center shadow-inner">
-            <span className="text-5xl font-black tracking-tighter tabular-nums text-slate-900 dark:text-white">
+          <div className="z-10 bg-surface dark:bg-slate-900 size-40 rounded-full flex flex-col items-center justify-center shadow-inner">
+            <span className="text-5xl font-black tracking-tighter tabular-nums text-on-surface dark:text-white">
               {String(minutes).padStart(2, '0')}:{String(seconds).padStart(2, '0')}
             </span>
           </div>
@@ -124,19 +124,19 @@ export default function FocusTimer() {
         <div className="flex items-center gap-4">
           <button 
             onClick={resetTimer}
-            className="p-4 bg-slate-100 dark:bg-slate-800 rounded-2xl text-slate-500 hover:text-slate-700 dark:hover:text-slate-300 transition-all hover:scale-105 active:scale-95 shadow-sm"
+            className="p-4 bg-surface-container-high dark:bg-slate-800 rounded-2xl text-on-surface-variant hover:text-slate-700 dark:hover:text-slate-300 transition-all hover:scale-105 active:scale-95 shadow-sm"
           >
             <RotateCcw size={20} />
           </button>
           
           <button 
             onClick={toggleTimer}
-            className={`p-6 ${isActive ? 'bg-amber-500 shadow-amber-500/20' : 'bg-[#1a57db] shadow-blue-500/20'} text-white rounded-[2.5rem] shadow-2xl hover:scale-110 active:scale-90 transition-all duration-300 group`}
+            className={`p-6 ${isActive ? 'bg-amber-500 shadow-amber-500/20' : 'bg-[#16a34a] shadow-green-500/20'} text-white rounded-[2.5rem] shadow-2xl hover:scale-110 active:scale-90 transition-all duration-300 group`}
           >
             {isActive ? <Pause size={32} fill="white" /> : <Play size={32} fill="white" className="ml-1" />}
           </button>
 
-          <button className="p-4 bg-slate-100 dark:bg-slate-800 rounded-2xl text-slate-500 hover:text-[#1a57db] transition-all hover:scale-105 active:scale-95 shadow-sm">
+          <button className="p-4 bg-surface-container-high dark:bg-slate-800 rounded-2xl text-on-surface-variant hover:text-[#16a34a] transition-all hover:scale-105 active:scale-95 shadow-sm">
             <Bell size={20} />
           </button>
         </div>
@@ -145,27 +145,27 @@ export default function FocusTimer() {
             <div className="flex justify-center gap-2 w-full">
                 <button 
                     onClick={() => setTime(25)}
-                    className={`flex-1 py-2 rounded-xl text-[10px] font-black uppercase tracking-widest transition-all ${minutes === 25 && mode === 'FOCUS' ? 'bg-[#1a57db] text-white' : 'bg-slate-50 dark:bg-slate-800 text-slate-400'}`}
+                    className={`flex-1 py-2 rounded-xl text-[10px] font-black uppercase tracking-widest transition-all ${minutes === 25 && mode === 'FOCUS' ? 'bg-[#16a34a] text-white' : 'bg-surface-container-low dark:bg-slate-800 text-slate-400'}`}
                 >
                     25:00
                 </button>
                 <button 
                     onClick={() => setTime(15)}
-                    className={`flex-1 py-2 rounded-xl text-[10px] font-black uppercase tracking-widest transition-all ${minutes === 15 ? 'bg-[#1a57db] text-white' : 'bg-slate-50 dark:bg-slate-800 text-slate-400'}`}
+                    className={`flex-1 py-2 rounded-xl text-[10px] font-black uppercase tracking-widest transition-all ${minutes === 15 ? 'bg-[#16a34a] text-white' : 'bg-surface-container-low dark:bg-slate-800 text-slate-400'}`}
                 >
                     15:00
                 </button>
                 <button 
                     onClick={() => setTime(50)}
-                    className={`flex-1 py-2 rounded-xl text-[10px] font-black uppercase tracking-widest transition-all ${minutes === 50 ? 'bg-[#1a57db] text-white' : 'bg-slate-50 dark:bg-slate-800 text-slate-400'}`}
+                    className={`flex-1 py-2 rounded-xl text-[10px] font-black uppercase tracking-widest transition-all ${minutes === 50 ? 'bg-[#16a34a] text-white' : 'bg-surface-container-low dark:bg-slate-800 text-slate-400'}`}
                 >
                     50:00
                 </button>
             </div>
 
-            <div className="w-full h-px bg-slate-100 dark:bg-slate-800" />
+            <div className="w-full h-px bg-surface-container-high dark:bg-slate-800" />
             
-            <div className="flex items-center gap-2 text-slate-500">
+            <div className="flex items-center gap-2 text-on-surface-variant">
                 <Trophy size={14} className="text-amber-500" />
                 <span className="text-xs font-bold">{completedSessions} Sessions Completed Today</span>
             </div>

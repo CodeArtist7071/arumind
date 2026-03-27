@@ -17,7 +17,7 @@ export const QuestionPalette = ({ questionRefs, confirmed }) => {
   );
   return (
     <aside className="fixed right-10 space-y-6 w-[20%] lg:col-span-3">
-      <div className="bg-white dark:bg-slate-900 rounded-xl border border-slate-200 dark:border-slate-800 p-5 shadow-sm">
+      <div className="bg-surface dark:bg-slate-900 rounded-xl  dark:border-slate-800 p-5 shadow-sm">
         <h3 className="font-bold mb-4 flex items-center gap-2">
           <span className="material-symbols-outlined text-primary text-sm">
             <Grid2X2 />
@@ -44,7 +44,7 @@ export const QuestionPalette = ({ questionRefs, confirmed }) => {
                   ${
                     confirmed[data[i].id]
                       ? "bg-green-500 text-white border-green-600"
-                      : "bg-slate-100 hover:bg-slate-300 dark:bg-slate-800 border-slate-200 dark:border-slate-700 text-slate-400"
+                      : "bg-surface-container-high hover:bg-slate-300 dark:bg-slate-800 border-slate-200 dark:border-slate-700 text-slate-400"
                   }`}
               >
                 {i + 1}

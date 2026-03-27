@@ -1,11 +1,12 @@
 import {
-  ArrowUpAZIcon,
   CheckCheckIcon,
   Info,
   LockIcon,
   Mail,
   Phone,
   User,
+  Notebook,
+  ArrowRight
 } from "lucide-react";
 import { InputWithLabel } from "./ui/InputWithLabel";
 import { Button } from "./ui/Button";
@@ -24,17 +25,14 @@ interface RegisterProps {
 }
 
 const Register = () => {
-  const [userData, setUserData] = useState<any>();
   const navigate = useNavigate();
 
   const {
     register,
     handleSubmit,
     watch,
-    formState: { errors, isSubmitting, isValid },
-  } = useForm<RegisterProps>({
-    mode: "onChange",
-  });
+    formState: { errors, isSubmitting },
+  } = useForm<RegisterProps>({ mode: "onChange" });
 
   const password = watch("create_password");
 
@@ -43,8 +41,7 @@ const Register = () => {
       email: details.email,
       password: details.create_password,
       options: {
-        emailRedirectTo:
-          "https://aru-edu.artististysn.workers.dev/login",
+        emailRedirectTo: `${window.location.origin}/login`,
         data: {
           phone: details.phone,
           name: details.name,
@@ -55,187 +52,145 @@ const Register = () => {
     if (data.user?.aud === "authenticated") {
       navigate("/user/dashboard");
     }
-
-    setUserData(data.user);
-
-    if (error) {
-      console.log(error);
-    }
+    if (error) console.error(error);
   }
 
   return (
-    <div className="bg-background-light container dark:bg-background-dark font-display text-slate-900 dark:text-slate-100 min-h-screen">
-      <div className="grid grid-cols-2">
-        {/* LEFT PANEL */}
-        <div className="bg-blue-500 h-screen px-10 flex items-center justify-center">
-          <div className="flex flex-col">
-            <h2 className="text-4xl text-white font-bold">
-              Unlock Your Potential with Personalized Coaching.
-            </h2>
-
-            <p className="text-white mt-5 mb-10">
-              "The beautiful thing about learning is that no one can take it away from you."
-            </p>
-
-            <div className="text-white">
-              <div className="flex items-center my-2">
-                <CheckCheckIcon />
-                <div className="ml-2">
-                  <p className="font-semibold">Curated Content</p>
-                  <p>Expert-led courses for OPSC & OSSC.</p>
-                </div>
-              </div>
-
-              <div className="flex items-center my-2">
-                <ArrowUpAZIcon
-                  color="white"
-                  size={20}
-                  className="bg-blue-400 w-5 h-5"
-                />
-                <div className="ml-2">
-                  <p className="font-semibold">Real-time Progress</p>
-                  <p>Track your performance with advanced analytics.</p>
-                </div>
-              </div>
+    <div className="grid lg:grid-cols-2 min-h-screen">
+      {/* LEFT PANEL: Editorial */}
+      <div className="hidden lg:flex bg-surface-container-low p-16 flex-col justify-between relative overflow-hidden">
+        <div className="absolute top-0 right-0 p-24 opacity-5 rotate-12">
+          <Notebook size={400} />
+        </div>
+        
+        <div className="space-y-8 relative z-10">
+          <div className="flex items-center gap-3 text-primary">
+            <div className="size-12 bg-primary/10 rounded-2xl flex items-center justify-center shadow-sm">
+              <Notebook className="size-6" />
+            </div>
+            <div>
+              <h2 className="text-3xl font-black leading-none tracking-tighter text-on-surface">Arumind</h2>
+              <span className="text-[9px] font-technical font-black uppercase tracking-[0.3em] text-on-surface-variant opacity-40">The Living Journal</span>
             </div>
           </div>
+          
+          <h1 className="text-6xl font-black leading-[0.9] tracking-tighter text-on-surface max-w-md">
+            Unlock Your <span className="text-primary italic font-serif -ml-2">Potential</span> With Focus.
+          </h1>
+          
+          <p className="text-on-surface-variant text-xl font-medium leading-relaxed max-w-sm">
+            "The beautiful thing about learning is that no one can take it away from you."
+          </p>
         </div>
 
-        {/* RIGHT PANEL */}
-        <div className="flex flex-1 flex-col justify-center px-6 lg:px-24">
-          <div className="mx-auto w-full h-screen overflow-y-auto max-w-120">
-            <div className="mb-10">
-              <h2 className="text-3xl font-extrabold mb-2">
-                Create Account
-              </h2>
+        <div className="space-y-6 relative z-10">
+          {[
+            { title: "Curated Content", desc: "Expert-led courses for OPSC & OSSC excellence." },
+            { title: "Real-time Progress", desc: "Advanced analytics for your exam journey." }
+          ].map((feature, i) => (
+            <div key={i} className="flex gap-4 items-start">
+              <div className="size-6 bg-primary/20 rounded-full flex items-center justify-center text-primary mt-1">
+                <CheckCheckIcon size={14} />
+              </div>
+              <div>
+                <p className="text-sm font-black text-on-surface uppercase tracking-widest">{feature.title}</p>
+                <p className="text-xs text-on-surface-variant font-medium opacity-60">{feature.desc}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
 
-              <p className="text-slate-500">
-                Join thousands of students preparing for success.
+      {/* RIGHT PANEL: Form */}
+      <div className="flex items-center justify-center p-8 lg:p-24 relative bg-surface">
+        <div className="w-full max-w-md space-y-10">
+          <div className="space-y-2">
+            <h2 className="text-4xl font-black tracking-tighter text-on-surface">Begin Journey</h2>
+            <p className="text-on-surface-variant font-medium">Join thousands of students preparing for success.</p>
+          </div>
+
+          <form className="space-y-6" onSubmit={handleSubmit(onSubmit)}>
+            <div className="grid grid-cols-1 gap-6">
+              <InputWithLabel
+                label="Identity"
+                id="name"
+                placeholder="Full Name"
+                error={errors.name}
+                labelIcon={<User className="size-4" />}
+                {...register("name", { required: "Name is required" })}
+              />
+              <InputWithLabel
+                label="Communication"
+                type="email"
+                id="email"
+                placeholder="Email Address"
+                error={errors.email}
+                labelIcon={<Mail className="size-4" />}
+                {...register("email", { required: "Email is required" })}
+              />
+              <InputWithLabel
+                label="Contact"
+                type="tel"
+                id="phone"
+                placeholder="Phone Number"
+                error={errors.phone}
+                labelIcon={<Phone className="size-4" />}
+                {...register("phone", { required: "Phone is required" })}
+              />
+              <div className="grid md:grid-cols-2 gap-6">
+                <InputWithLabel
+                  label="Secret Key"
+                  id="create_password"
+                  type="password"
+                  placeholder="Password"
+                  error={errors.create_password}
+                  labelIcon={<LockIcon className="size-4" />}
+                  {...register("create_password", { required: "Required" })}
+                />
+                <InputWithLabel
+                  label="Confirm Key"
+                  id="confirm_password"
+                  type="password"
+                  placeholder="Confirm"
+                  error={errors.confirm_password}
+                  labelIcon={<LockIcon className="size-4" />}
+                  {...register("confirm_password", {
+                    required: "Required",
+                    validate: (val) => val === password || "Mismatch"
+                  })}
+                />
+              </div>
+            </div>
+
+            <div className="p-5 rounded-3xl bg-primary/5 border border-primary/10 flex gap-4 items-center">
+              <Info className="text-primary size-5 shrink-0" />
+              <p className="text-[10px] font-technical font-black uppercase tracking-widest leading-relaxed text-on-surface-variant">
+                We'll sync one-time verification to secure your <span className="text-primary">Journal Access</span>.
               </p>
             </div>
 
-            <form className="space-y-5 mb-10" onSubmit={handleSubmit(onSubmit)}>
-              <div className="grid grid-cols-1 gap-5">
+            <label className="flex items-start gap-4 cursor-pointer group px-2">
+              <input type="checkbox" className="size-5 rounded-full border-on-surface/10 text-primary focus:ring-primary/20 transition-all cursor-pointer mt-1" {...register("terms", { required: "Terms acceptance required" })} />
+              <span className="text-[10px] font-technical font-black uppercase tracking-widest text-on-surface-variant opacity-60 group-hover:opacity-100 transition-opacity leading-relaxed">
+                I agree to the Living Journal Terms of Service and Privacy Policy
+              </span>
+            </label>
 
-                {/* NAME */}
-                <InputWithLabel
-                  label="Full Name"
-                  id="name"
-                  placeholder="John Doe"
-                  error={errors.name}
-                  labelIcon={<User className="text-slate-400" />}
-                  {...register("name", {
-                    required: "Full name is required",
-                    minLength: {
-                      value: 3,
-                      message: "Name must be at least 3 characters",
-                    },
-                  })}
-                />
+            <Button
+              disabled={isSubmitting}
+              title={isSubmitting ? "Generating..." : "Create Account"}
+            />
+          </form>
 
-                {/* EMAIL */}
-                <InputWithLabel
-                  label="Email Address"
-                  type="email"
-                  id="email"
-                  placeholder="name@student.com"
-                  error={errors.email}
-                  labelIcon={<Mail className="text-slate-400" />}
-                  {...register("email", {
-                    required: "Email is required",
-                    pattern: {
-                      value: /^\S+@\S+\.\S+$/,
-                      message: "Enter a valid email",
-                    },
-                  })}
-                />
-
-                {/* PHONE */}
-                <InputWithLabel
-                  label="Phone Number"
-                  type="tel"
-                  id="phone"
-                  placeholder="00000 00000"
-                  error={errors.phone}
-                  labelIcon={<Phone className="text-slate-400" />}
-                  {...register("phone", {
-                    required: "Phone number is required",
-                    pattern: {
-                      value: /^[6-9]\d{9}$/,
-                      message: "Enter 10 digits phone number",
-                    },
-                  })}
-                />
-
-                {/* PASSWORD */}
-                <InputWithLabel
-                  label="Create Password"
-                  id="create_password"
-                  type="password"
-                  placeholder="Create your password"
-                  error={errors.create_password}
-                  labelIcon={<LockIcon />}
-                  {...register("create_password", {
-                    required: "Password is required",
-                    minLength: {
-                      value: 6,
-                      message: "Minimum 6 characters required",
-                    },
-                  })}
-                />
-
-                {/* CONFIRM PASSWORD */}
-                <InputWithLabel
-                  label="Confirm Password"
-                  id="confirm_password"
-                  type="password"
-                  placeholder="Confirm your password"
-                  error={errors.confirm_password}
-                  labelIcon={<LockIcon />}
-                  {...register("confirm_password", {
-                    required: "Confirm your password",
-                    validate: (value) =>
-                      value === password || "Passwords do not match",
-                  })}
-                />
-              </div>
-
-              {/* INFO BOX */}
-              <div className="bg-primary/5 border border-primary/20 rounded-xl p-4 flex gap-3 items-center">
-                <Info />
-                <p className="text-xs text-slate-600">
-                  We'll send a <span className="font-bold text-primary">One-Time Password (OTP)</span> to verify your account.
-                </p>
-              </div>
-
-              {/* TERMS */}
-              <div className="flex items-start gap-3 py-2">
-                <input
-                  type="checkbox"
-                  {...register("terms", {
-                    required: "You must accept terms Terms and Conditions",
-                  })}
-                />
-
-                <label className="text-sm text-slate-500">
-                  I agree to the Terms of Service and Privacy Policy
-                </label>
-              </div>
-
-              {errors.terms && (
-                <p className="text-red-500 text-sm">
-                  {errors.terms.message}
-                </p>
-              )}
-
-              {/* SUBMIT */}
-              <Button
-                disabled={isSubmitting}
-                type="submit"
-                title={isSubmitting ? "Creating Account..." : "Create Account"}
-              />
-            </form>
-          </div>
+          <p className="text-center text-sm font-medium text-on-surface-variant">
+            Already have a journal?{" "}
+            <button 
+              onClick={() => navigate("/login")}
+              className="font-black text-primary hover:underline"
+            >
+              Sign In
+            </button>
+          </p>
         </div>
       </div>
     </div>

@@ -188,4 +188,4 @@ export const deleteEvent = async (eventId: string): Promise<void> => {
     path: `https://www.googleapis.com/calendar/v3/calendars/primary/events/${eventId}`,
     method: 'DELETE',
   });
-};
+};

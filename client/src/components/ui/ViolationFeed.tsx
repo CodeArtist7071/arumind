@@ -56,7 +56,7 @@ export default function ViolationFeed({
   return (
     <div style={{
       width: '260px',
-      background: 'bg-white',
+      background: 'bg-surface',
       border: '0.5px solid var(--color-border-tertiary)',
       borderRadius: 'var(--border-radius-lg)',
       overflow: 'hidden',

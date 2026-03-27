@@ -31,14 +31,14 @@ export default function UserManagement() {
   console.log(dates());
 
   return (
-    <div className="flex min-h-screen bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100">
+    <div className="flex min-h-screen bg-background-light dark:bg-background-dark text-on-surface dark:text-slate-100">
       {/* Main */}
       <main className="flex-1 ml-64 p-8">
         {/* Header */}
         <header className="flex items-center justify-between mb-8">
           <div>
             <h2 className="text-2xl font-bold">User Management</h2>
-            <p className="text-sm text-slate-500">
+            <p className="text-sm text-on-surface-variant">
               Manage student registrations and verification status.
             </p>
           </div>
@@ -58,15 +58,15 @@ export default function UserManagement() {
         </div>
 
         {/* Search */}
-        <div className="bg-white dark:bg-slate-900 rounded-xl border p-4 mb-6">
+        <div className="bg-surface dark:bg-slate-900 rounded-xl border p-4 mb-6">
           <div className="flex flex-wrap items-center gap-4">
             <input
               type="text"
               placeholder="Search students..."
-              className="flex-1 min-w-[300px] bg-slate-100 dark:bg-slate-800 rounded-lg px-4 py-2 text-sm"
+              className="flex-1 min-w-[300px] bg-surface-container-high dark:bg-slate-800 rounded-lg px-4 py-2 text-sm"
             />
 
-            <select className="bg-slate-100 dark:bg-slate-800 rounded-lg px-4 py-2 text-sm">
+            <select className="bg-surface-container-high dark:bg-slate-800 rounded-lg px-4 py-2 text-sm">
               <option>Status: All</option>
               <option>Active</option>
               <option>Inactive</option>
@@ -76,9 +76,9 @@ export default function UserManagement() {
         </div>
 
         {/* Table */}
-        <div className="bg-white dark:bg-slate-900 rounded-xl border overflow-x-auto">
+        <div className="bg-surface dark:bg-slate-900 rounded-xl border overflow-x-auto">
           <table className="w-full text-left">
-            <thead className="text-xs uppercase text-slate-500">
+            <thead className="text-xs uppercase text-on-surface-variant">
               <tr>
                 <th className="px-6 py-4">Student</th>
                 <th className="px-6 py-4">Exam</th>
@@ -121,7 +121,7 @@ function SidebarItem({ icon, label, active }) {
       className={`flex items-center gap-3 px-3 py-2 rounded-lg text-sm ${
         active
           ? "bg-primary/10 text-primary font-semibold"
-          : "text-slate-600 hover:bg-slate-100"
+          : "text-slate-600 hover:bg-surface-container-high"
       }`}
     >
       <span className="material-symbols-outlined">{icon}</span>
@@ -132,8 +132,8 @@ function SidebarItem({ icon, label, active }) {
 
 function StatCard({ title, value, change }) {
   return (
-    <div className="bg-white dark:bg-slate-900 p-6 rounded-xl border shadow-sm">
-      <p className="text-xs text-slate-500 mb-1">{title}</p>
+    <div className="bg-surface dark:bg-slate-900 p-6 rounded-xl border shadow-sm">
+      <p className="text-xs text-on-surface-variant mb-1">{title}</p>
 
       <div className="flex items-end justify-between">
         <h3 className="text-2xl font-bold">{value}</h3>
@@ -149,11 +149,11 @@ function StatCard({ title, value, change }) {
 
 function UserRow({ name, email, exam, date, status }) {
   return (
-    <tr className="border-t hover:bg-slate-50 dark:hover:bg-slate-800/30">
+    <tr className="border-t hover:bg-surface-container-low dark:hover:bg-slate-800/30">
       <td className="px-6 py-4">
         <div>
           <p className="font-semibold">{name}</p>
-          <p className="text-xs text-slate-500">{email}</p>
+          <p className="text-xs text-on-surface-variant">{email}</p>
         </div>
       </td>
 

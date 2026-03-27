@@ -113,14 +113,14 @@ const MockTestPreferenceModal: React.FC<MockTestPreferenceModalProps> = ({
 
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-900/60 backdrop-blur-sm animate-in fade-in duration-300">
-      <div className="bg-white dark:bg-slate-900 w-full max-w-2xl rounded-3xl shadow-2xl overflow-hidden border border-slate-200 dark:border-slate-800 flex flex-col max-h-[90vh]">
+      <div className="bg-surface dark:bg-slate-900 w-full max-w-2xl rounded-3xl shadow-2xl overflow-hidden  dark:border-slate-800 flex flex-col max-h-[90vh]">
         {/* Header */}
         <div className="p-6 border-b border-slate-100 dark:border-slate-800 flex justify-between items-center bg-linear-to-r from-slate-50 to-white dark:from-slate-800/50 dark:to-slate-900">
           <div>
-            <h2 className="text-2xl font-black tracking-tight text-slate-900 dark:text-white">
+            <h2 className="text-2xl font-black tracking-tight text-on-surface dark:text-white">
               Mock Test Settings
             </h2>
-            <p className="text-sm font-bold text-blue-500 uppercase tracking-wider mt-1">
+            <p className="text-sm font-bold text-primary uppercase tracking-wider mt-1">
               {examName}
             </p>
           </div>
@@ -135,22 +135,22 @@ const MockTestPreferenceModal: React.FC<MockTestPreferenceModalProps> = ({
         {/* Content */}
         <div className="p-8 space-y-8 overflow-y-auto flex-1">
           {/* Instructions */}
-          <div className="bg-blue-50 dark:bg-blue-900/20 p-6 rounded-2xl border border-blue-100 dark:border-blue-800/50 space-y-4">
-            <h3 className="text-sm font-black uppercase tracking-widest text-blue-600 dark:text-blue-400 flex items-center gap-2">
+          <div className="bg-green-50 dark:bg-green-900/20 p-6 rounded-2xl border border-green-100 dark:border-green-800/50 space-y-4">
+            <h3 className="text-sm font-black uppercase tracking-widest text-primary dark:text-green-400 flex items-center gap-2">
               <BookOpen size={16} />
               Exam Instructions
             </h3>
             <ul className="space-y-2 text-sm text-slate-600 dark:text-slate-400 font-medium">
               <li className="flex gap-2">
-                <span className="text-blue-500">•</span>
+                <span className="text-primary">•</span>
                 The test will be auto-submitted once the timer reaches zero.
               </li>
               <li className="flex gap-2">
-                <span className="text-blue-500">•</span>
+                <span className="text-primary">•</span>
                 Do not refresh the page or navigate away during the test.
               </li>
               <li className="flex gap-2">
-                <span className="text-blue-500">•</span>
+                <span className="text-primary">•</span>
                 Questions are selected based on your chosen difficulty mode.
               </li>
             </ul>
@@ -159,9 +159,9 @@ const MockTestPreferenceModal: React.FC<MockTestPreferenceModalProps> = ({
                 type="checkbox"
                 checked={acceptedInstructions}
                 onChange={(e) => setAcceptedInstructions(e.target.checked)}
-                className="size-5 rounded border-blue-200 text-blue-600 focus:ring-blue-500 cursor-pointer"
+                className="size-5 rounded border-green-200 text-primary focus:ring-green-500 cursor-pointer"
               />
-              <span className="text-sm font-bold text-slate-700 dark:text-slate-200 group-hover:text-blue-600 transition-colors">
+              <span className="text-sm font-bold text-slate-700 dark:text-slate-200 group-hover:text-primary transition-colors">
                 I have read and understood all instructions.
               </span>
             </label>
@@ -180,7 +180,7 @@ const MockTestPreferenceModal: React.FC<MockTestPreferenceModalProps> = ({
               ? "bg-emerald-50 border-emerald-100 text-emerald-700 dark:bg-emerald-900/10 dark:border-emerald-800" 
               : cameraStatus === "denied"
               ? "bg-rose-50 border-rose-100 text-rose-700 dark:bg-rose-900/10 dark:border-rose-800"
-              : "bg-slate-50 border-slate-100 text-slate-600 dark:bg-slate-800/50 dark:border-slate-800"
+              : "bg-surface-container-low border-slate-100 text-slate-600 dark:bg-slate-800/50 dark:border-slate-800"
           }`}>
             <div className="flex items-center gap-3">
               <div className={`p-2 rounded-lg ${
@@ -203,7 +203,7 @@ const MockTestPreferenceModal: React.FC<MockTestPreferenceModalProps> = ({
                 type="button"
                 onClick={checkCamera}
                 disabled={cameraStatus === "checking"}
-                className="px-4 py-2 bg-slate-900 dark:bg-blue-600 text-white text-xs font-bold rounded-lg hover:opacity-90 disabled:opacity-50"
+                className="px-4 py-2 bg-slate-900 dark:bg-primary text-white text-xs font-bold rounded-lg hover:opacity-90 disabled:opacity-50"
               >
                 {cameraStatus === "checking" ? "Checking..." : "Verify Camera"}
               </button>
@@ -224,12 +224,12 @@ const MockTestPreferenceModal: React.FC<MockTestPreferenceModalProps> = ({
                     onClick={() => setDifficulty(mode)}
                     className={`flex items-center justify-between p-4 rounded-xl border-2 transition-all font-bold text-sm ${
                       difficulty === mode
-                        ? "border-blue-500 bg-blue-50 dark:bg-blue-900/10 text-blue-600 shadow-md translate-x-1"
-                        : "border-slate-100 dark:border-slate-800 text-slate-500 hover:border-slate-200 dark:hover:border-slate-700"
+                        ? "border-primary bg-green-50 dark:bg-green-900/10 text-primary shadow-md translate-x-1"
+                        : "border-slate-100 dark:border-slate-800 text-on-surface-variant hover:border-slate-200 dark:hover:border-slate-700"
                     }`}
                   >
                     {mode}
-                    {difficulty === mode && <ShieldCheck size={18} className="text-blue-500" />}
+                    {difficulty === mode && <ShieldCheck size={18} className="text-primary" />}
                   </button>
                 ))}
               </div>
@@ -244,7 +244,7 @@ const MockTestPreferenceModal: React.FC<MockTestPreferenceModalProps> = ({
             <div className="space-y-6">
               <div className="space-y-4">
                 <h3 className="text-xs font-black uppercase tracking-[0.2em] text-slate-400 flex items-center gap-2">
-                  <Target size={14} className="text-blue-500" />
+                  <Target size={14} className="text-primary" />
                   Total Questions
                 </h3>
                 <div className="flex gap-2">
@@ -254,8 +254,8 @@ const MockTestPreferenceModal: React.FC<MockTestPreferenceModalProps> = ({
                       onClick={() => setQuestionCount(num)}
                       className={`flex-1 py-3 rounded-xl border-2 transition-all font-black text-xs ${
                         questionCount === num
-                          ? "border-slate-900 bg-slate-900 text-white dark:border-white dark:bg-white dark:text-slate-900"
-                          : "border-slate-100 dark:border-slate-800 text-slate-500 hover:bg-slate-50"
+                          ? "border-slate-900 bg-slate-900 text-white dark:border-white dark:bg-surface dark:text-on-surface"
+                          : "border-slate-100 dark:border-slate-800 text-on-surface-variant hover:bg-surface-container-low"
                       }`}
                     >
                       {num}
@@ -276,11 +276,11 @@ const MockTestPreferenceModal: React.FC<MockTestPreferenceModalProps> = ({
                   step="15"
                   value={timeLimit}
                   onChange={(e) => setTimeLimit(parseInt(e.target.value))}
-                  className="w-full h-2 bg-slate-200 dark:bg-slate-800 rounded-lg appearance-none cursor-pointer accent-blue-600"
+                  className="w-full h-2 bg-slate-200 dark:bg-slate-800 rounded-lg appearance-none cursor-pointer accent-green-600"
                 />
-                <div className="flex justify-between text-xs font-bold text-slate-500 uppercase">
+                <div className="flex justify-between text-xs font-bold text-on-surface-variant uppercase">
                   <span>30m</span>
-                  <span className="text-blue-600 text-sm font-black">{timeLimit} Minutes</span>
+                  <span className="text-primary text-sm font-black">{timeLimit} Minutes</span>
                   <span>180m</span>
                 </div>
               </div>
@@ -289,13 +289,13 @@ const MockTestPreferenceModal: React.FC<MockTestPreferenceModalProps> = ({
         </div>
 
         {/* Footer */}
-        <div className="p-6 bg-slate-50 dark:bg-slate-800/30 border-t border-slate-100 dark:border-slate-800">
+        <div className="p-6 bg-surface-container-low dark:bg-slate-800/30 border-t border-slate-100 dark:border-slate-800">
           <button
             onClick={handleStart}
             disabled={!acceptedInstructions || loading}
             className={`w-full py-4 rounded-2xl font-black text-lg transition-all shadow-2xl flex items-center justify-center gap-3 ${
               acceptedInstructions && !loading
-                ? "bg-[#1a57db] text-white hover:bg-blue-600 hover:shadow-blue-500/25 active:scale-[0.98]"
+                ? "bg-[#16a34a] text-white hover:bg-primary hover:shadow-green-500/25 active:scale-[0.98]"
                 : "bg-slate-200 dark:bg-slate-800 text-slate-400 cursor-not-allowed"
             }`}
           >

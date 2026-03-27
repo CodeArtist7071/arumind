@@ -1,72 +1,89 @@
-import { Notebook, Search } from "lucide-react";
+import { Notebook, Search, Moon, Sun } from "lucide-react";
 import { useSelector } from "react-redux";
 import { useNavigate } from "react-router";
 import type { RootState } from "../store";
+import { useTheme } from "../hooks/useTheme";
 
 export const Header = () => {
   const navigate = useNavigate();
+  const { theme, toggleTheme } = useTheme();
   const { user } = useSelector((state: RootState) => state.user ?? null);
   console.log("usersss.....!!", user);
 
   return (
-    <header className="flex px-10 items-center justify-between border-b border-slate-200 bg-white dark:border-slate-800 py-4 sticky top-0 z-50 backdrop-blur-md">
+    <header className="flex h-20 px-6 lg:px-12 items-center justify-between bg-surface/90 sticky top-0 z-60 backdrop-blur-2xl shadow-[0_10px_40px_-15px_rgba(27,28,21,0.06)]">
       <div className="flex items-center gap-8">
-        <div className="flex items-center gap-2 text-[#1e3a5f]">
-          <Notebook className="text-3xl font-bold" />
-          <h2 className="text-3xl font-black leading-tight tracking-tight">
-            Arumind <span className="text-sm font-semibold">Push Your Mind Beyond Its Limits </span>
-          </h2>
+        <div className="flex items-center gap-3 text-primary group cursor-pointer" onClick={() => navigate("/")}>
+          <div className="size-10 bg-primary/10 rounded-xl flex items-center justify-center group-hover:bg-primary group-hover:text-on-primary transition-all duration-500 shadow-sm">
+            <Notebook className="size-6" />
+          </div>
+          <div className="flex flex-col">
+            <h2 className="text-2xl font-black leading-none tracking-tighter text-on-surface">
+              Arumind
+            </h2>
+            <span className="text-[8px] font-technical font-black uppercase tracking-[0.2em] text-on-surface-variant opacity-40 mt-1">Push Beyond Limits</span>
+          </div>
         </div>
-        <nav className="hidden md:flex items-center gap-8">
+        <nav className="hidden lg:flex items-center gap-10">
           {["Exams", "Courses", "Test Series", "Current Affairs"].map(
             (item) => (
               <a
                 key={item}
-                className="text-slate-600 dark:text-slate-400 hover:text-[#1e3a5f] dark:hover:text-[#1e3a5f] text-sm font-medium transition-colors duration-200"
+                className="text-on-surface-variant hover:text-primary text-[10px] font-technical font-black uppercase tracking-[0.2em] transition-all duration-300 relative group"
                 href="#"
               >
                 {item}
+                <span className="absolute -bottom-2 left-1/2 -translate-x-1/2 w-0 h-1 bg-primary/20 rounded-full transition-all duration-500 group-hover:w-8" />
               </a>
             ),
           )}
         </nav>
       </div>
       <div className="flex items-center gap-4">
-        <div className="hidden sm:flex relative">
-          <Search className="absolute left-3 top-1/2 -translate-y-1/2 text-slate-400 text-sm" />
+        <div className="hidden sm:flex relative group">
+          <Search className="absolute left-4 top-1/2 -translate-y-1/2 text-on-surface-variant size-4 opacity-40 group-focus-within:text-primary group-focus-within:opacity-100 transition-all" />
           <input
-            className="bg-slate-100 dark:bg-slate-800 border-none rounded-lg pl-10 pr-4 py-2 text-sm focus:ring-2 focus:ring-[#1e3a5f] w-48 lg:w-64 transition-all"
-            placeholder="Search exams..."
+            className="bg-surface-container-low text-on-surface border-none rounded-full pl-12 pr-6 py-2.5 text-[11px] font-technical font-black uppercase tracking-widest focus:ring-2 focus:ring-primary/20 w-48 lg:w-72 transition-all placeholder:text-on-surface-variant/30"
+            placeholder="Search Journal..."
             type="text"
           />
         </div>
+
+        {/* Theme Toggle */}
+        <button
+          onClick={toggleTheme}
+          className="size-10 rounded-full bg-surface-container-low flex items-center justify-center text-on-surface-variant hover:text-primary transition-all duration-500 border border-on-surface/5"
+          title={`Switch to ${theme === "light" ? "dark" : "light"} mode`}
+        >
+          {theme === "light" ? <Moon className="size-4" /> : <Sun className="size-4" />}
+        </button>
         {user ? (
-          <div>
+          <div className="flex items-center gap-6">
             <button
               onClick={() => navigate("/user/dashboard")}
-              className="bg-[#1e3a5f] text-white px-5 py-2 rounded-lg text-sm font-bold hover:bg-[#1e3a5f]/90 transition-all duration-200"
+              className="bg-linear-to-r from-primary to-primary-container text-on-primary px-8 py-3 rounded-full text-[10px] font-technical font-black uppercase tracking-widest shadow-lg shadow-primary/20 hover:scale-105 active:scale-95 transition-all duration-300"
             >
-              Your Dashboard
+              Dashboard
             </button>
-            <span className="w-10 h-10 bg-blue-900 text-white px-3 py-2 ml-4 rounded-full">{user.email[0].toUpperCase()}</span>
+            <div className="size-10 bg-primary/10 rounded-full flex items-center justify-center text-primary font-technical font-black border border-primary/20 cursor-pointer hover:bg-primary hover:text-white transition-all">
+              {user.email?.[0].toUpperCase()}
+            </div>
           </div>
         ) : (
-          <>
-            <div className="flex gap-2">
-              <button
-                onClick={() => navigate("/register")}
-                className="bg-[#1e3a5f] text-white px-5 py-2 rounded-lg text-sm font-bold hover:bg-[#1e3a5f]/90 transition-all duration-200"
-              >
-                Sign Up
-              </button>
-              <button
-                onClick={() => navigate("/login")}
-                className="bg-slate-100 dark:bg-slate-800 dark:text-slate-100 px-5 py-2 rounded-lg text-sm font-bold hover:bg-slate-200 dark:hover:bg-slate-700 transition-all duration-200"
-              >
-                Login
-              </button>
-            </div>
-          </>
+          <div className="flex gap-4">
+            <button
+              onClick={() => navigate("/login")}
+              className="text-on-surface-variant hover:text-primary px-6 py-3 rounded-full text-[10px] font-technical font-black uppercase tracking-widest transition-all"
+            >
+              Login
+            </button>
+            <button
+              onClick={() => navigate("/register")}
+              className="bg-linear-to-r from-primary to-primary-container text-on-primary px-8 py-3 rounded-full text-[10px] font-technical font-black uppercase tracking-widest shadow-lg shadow-primary/20 hover:scale-105 active:scale-95 transition-all duration-300"
+            >
+              Sign Up
+            </button>
+          </div>
         )}
       </div>
     </header>

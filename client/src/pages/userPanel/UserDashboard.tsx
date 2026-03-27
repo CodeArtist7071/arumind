@@ -1,36 +1,60 @@
 import { FireIcon } from "@heroicons/react/24/outline";
 import {
   Bell,
-  Book,
   ChevronRight,
   SearchAlert,
   Settings,
-  Tags,
-  Calendar as CalendarIcon,
-  CheckSquare,
-  BarChart2,
-  BookMarked,
+  Notebook,
+  TrendingUp,
+  History,
+  Target
 } from "lucide-react";
-import React, { Suspense, useEffect } from "react";
+import React, { useEffect, useRef } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import type { AppDispatch, RootState } from "../../store";
-import { supabase } from "../../utils/supabase";
-import { fetchUserProfile } from "../../slice/userSlice";
-
-import { fetchExams, type examProps } from "../../slice/examSlice";
-import { Outlet, useNavigate } from "react-router-dom";
-
+import { fetchExams } from "../../slice/examSlice";
+import { useNavigate, Outlet } from "react-router-dom";
 
 const UserDashboard = () => {
   const { user, profile } = useSelector((state: RootState) => state.user);
-  const { examData, loading } = useSelector(
-    (state: RootState) => state.exams ?? null,
-  );
+  const { examData, loading } = useSelector((state: RootState) => state.exams ?? null);
   const dispatch = useDispatch<AppDispatch>();
   const navigate = useNavigate();
 
+  const targetRef = useRef<HTMLDivElement>(null);
+
   useEffect(() => {
     dispatch(fetchExams());
+
+    // Focus Target Landscapes after a delay with a truly smooth transition
+    const timer = setTimeout(() => {
+      const element = targetRef.current;
+      if (!element) return;
+      
+      const scrollableParent = element.closest('.overflow-y-auto');
+      if (scrollableParent) {
+        // Calculate target position relative to the scrollable container
+        const targetPos = element.offsetTop - 80;
+        const startPos = scrollableParent.scrollTop;
+        const distance = targetPos - startPos;
+        const duration = 1500; // 1.5 seconds for premium feel
+        let start: number | null = null;
+
+        const cubicBezier = (t: number) => t < 0.5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2;
+
+        const step = (timestamp: number) => {
+          if (!start) start = timestamp;
+          const progress = Math.min((timestamp - start) / duration, 1);
+          scrollableParent.scrollTop = startPos + distance * cubicBezier(progress);
+          if (progress < 1) {
+            requestAnimationFrame(step);
+          }
+        };
+        requestAnimationFrame(step);
+      }
+    }, 1000);
+
+    return () => clearTimeout(timer);
   }, [dispatch]);
 
   const targetedExams = examData.filter((el) =>
@@ -38,21 +62,11 @@ const UserDashboard = () => {
   );
 
   const subjectProgress = [
-    {
-      name: "History & Geography of Odisha",
-      percent: 82,
-      color: "bg-[#1a57db]",
-    },
-    {
-      name: "General Studies & Current Affairs",
-      percent: 45,
-      color: "bg-[#1a57db]",
-    },
-    { name: "Odia Language & Literature", percent: 95, color: "bg-green-500" },
-    { name: "Aptitude & Mental Ability", percent: 30, color: "bg-orange-500" },
+    { name: "History & Geography of Odisha", percent: 82 },
+    { name: "General Studies & Current Affairs", percent: 45 },
+    { name: "Odia Language & Literature", percent: 95 },
+    { name: "Aptitude & Mental Ability", percent: 30 },
   ];
-
-
 
   const checklist = [
     { text: "Read Current Affairs (Odia)", checked: true },
@@ -61,228 +75,166 @@ const UserDashboard = () => {
     { text: "Revise Odisha History notes", checked: false },
   ];
 
-  function handleButton(id: string) {
-    navigate(`exam/${id}`);
-  }
-
-
-
-  if (loading) {
-    return <DashboardSkeleton />;
-  }
+  if (loading) return <DashboardSkeleton />;
 
   return (
-    <div className="flex h-screen overflow-hidden bg-linear-to-br from-slate-50 to-slate-100 dark:from-slate-900 dark:to-slate-950 font-['Inter'] text-slate-900 dark:text-slate-100">
-      {/* Sidebar */}
+    <div className="space-y-12 pb-20 p-2 lg:p-6">
+      {/* Editorial Hero Section */}
+      <section className="relative px-2">
+        <h2 className="text-[10px] font-technical uppercase tracking-[0.5em] text-on-surface-variant opacity-40 mb-6 font-black translate-x-1">Morning Reflection</h2>
+        <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-8">
+          <div className="animate-greeting">
+            <h1 className="text-6xl lg:text-8xl font-black tracking-tighter text-on-surface leading-[0.85] mb-8">
+              Namaskar,<br />
+              <span className="text-primary italic font-serif -ml-2 lg:-ml-4 drop-shadow-sm select-none">
+                {(profile?.full_name || user?.identities?.[0]?.identity_data?.name)?.split(' ')[0]}
+              </span>
+            </h1>
+            <p className="text-on-surface-variant max-w-xl text-xl lg:text-2xl leading-relaxed opacity-0 animate-greeting-delay font-medium font-narrative">
+              Your OPSC preparation is <span className="font-technical font-black text-primary border-b-2 border-primary/20">65%</span> complete.
+              You are currently in the top <span className="font-technical font-black text-primary border-b-2 border-primary/20">5%</span> of botanical aspirants.
+            </p>
+          </div>
 
-      {/* Main Content */}
-      <main className="flex-1 overflow-y-auto flex flex-col">
-        {/* Header */}
-        <header className="h-20 border-b border-slate-200 dark:border-slate-800 bg-white/80 dark:bg-slate-900/80 backdrop-blur-md flex items-center justify-between px-8 sticky top-0 z-10 shadow-sm">
-          <div className="flex items-center gap-4 bg-slate-100 dark:bg-slate-800 px-4 py-2 rounded-xl w-96 shadow-sm ring-1 ring-slate-200 dark:ring-slate-700">
-            <SearchAlert className="text-slate-400" size={18} />
-            <input
-              className="bg-transparent border-none focus:ring-0 text-sm w-full outline-none placeholder-slate-500 font-medium"
-              placeholder="Search study material, tests..."
-              type="text"
-            />
-          </div>
-          <div className="flex items-center gap-6">
-            <div className="flex items-center gap-3">
-              <button className="p-2.5 text-slate-500 hover:bg-slate-100 dark:hover:bg-slate-800 rounded-xl relative transition-all duration-200 border border-transparent hover:border-slate-200 dark:hover:border-slate-700">
-                <Bell size={20} />
-                <span className="absolute top-2.5 right-2.5 w-2 h-2 bg-red-500 rounded-full border-2 border-white dark:border-slate-900"></span>
-              </button>
-              <button className="p-2.5 text-slate-500 hover:bg-slate-100 dark:hover:bg-slate-800 rounded-xl transition-all duration-200 border border-transparent hover:border-slate-200 dark:hover:border-slate-700">
-                <Settings size={20} />
-              </button>
-            </div>
-          </div>
-        </header>
-        <div className="p-8 max-w-7xl mx-auto w-full space-y-8">
-          <section className="flex flex-wrap items-center justify-between gap-6">
-            <div>
-              <h1 className="text-3xl font-black tracking-tight mb-2 bg-linear-to-r from-slate-900 to-slate-700 dark:from-white dark:to-slate-200 bg-clip-text text-transparent">
-                Namaskar,{user?.identities?.[0]?.identity_data?.name}!
-              </h1>
-              <p className="text-slate-500 max-w-md text-lg">
-                Your OPSC preparation is 65% complete. You are in the top 5% of
-                aspirants this week.
+          <div className="flex gap-4">
+            <div className="bg-surface-container-low px-8 py-6 rounded-[2.5rem] shadow-ambient hover:scale-105 transition-transform duration-500 group">
+              <p className="text-[9px] font-technical text-on-surface-variant uppercase font-black tracking-[0.2em] mb-2 opacity-50 group-hover:opacity-100 transition-opacity">
+                Daily Streak
               </p>
-            </div>
-            <div className="flex gap-4">
-              <div className="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 px-6 py-4 rounded-xl shadow-sm hover:shadow-md transition-all duration-200">
-                <p className="text-xs text-slate-500 uppercase font-bold tracking-wider mb-1">
-                  Daily Streak
-                </p>
-                <div className="flex items-center gap-2">
-                  <span className="text-2xl font-bold text-orange-600">
-                    12 Days
-                  </span>
-                  <FireIcon
-                    className="text-orange-500 text-2xl"
-                    style={{ fontVariationSettings: "'FILL' 1" }}
-                  />
-                </div>
-              </div>
-
-              <div className="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 px-6 py-4 rounded-xl shadow-sm hover:shadow-md transition-all duration-200">
-                <p className="text-xs text-slate-500 uppercase font-bold tracking-wider mb-1">
-                  Daily Goal
-                </p>
-                <div className="flex items-center gap-2">
-                  <span className="text-2xl font-bold">4/6 Hrs</span>
-                  <div className="w-16 h-2 bg-slate-200 rounded-full overflow-hidden">
-                    <div className="bg-green-500 h-full w-[66%] rounded-full shadow-sm"></div>
-                  </div>
-                </div>
+              <div className="flex items-center gap-3">
+                <span className="text-4xl font-technical font-black text-tertiary">12</span>
+                <FireIcon className="size-8 text-tertiary animate-pulse" />
               </div>
             </div>
-          </section>
 
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-            {/* Left Column */}
-            <div className="lg:col-span-2 space-y-8">
-              {/* Target Exams */}
-              <section>
-                <div className="flex justify-between items-center">
-                  <h2 className="text-xl font-bold mb-6 text-slate-900 dark:text-white">
-                    Your Target Exams
-                  </h2>
-                  <span
-                    onClick={() => navigate("exam-lists")}
-                    className="text-blue-500 underline cursor-pointer"
-                  >
-                    Add More Exams To your List.!!
-                  </span>
+            <div className="bg-surface-container-low px-8 py-6 rounded-[2.5rem] shadow-ambient hover:scale-105 transition-transform duration-500 group">
+              <p className="text-[9px] font-technical text-on-surface-variant uppercase font-black tracking-[0.2em] mb-2 opacity-50 group-hover:opacity-100 transition-opacity">
+                Daily Goal
+              </p>
+              <div className="flex items-center gap-4">
+                <span className="text-3xl font-technical font-black text-on-surface">4/6 <span className="text-[10px] opacity-40 uppercase tracking-tighter ml-1">Hrs</span></span>
+                <div className="w-20 h-5 bg-surface-container-high rounded-full overflow-hidden p-1 shadow-inner ring-1 ring-black/5">
+                  <div className="bg-primary h-full w-[66%] rounded-full shadow-sm transition-all duration-1000" />
                 </div>
-                <div className="grid sm:grid-cols-1 md:grid-cols-3 gap-6">
-                  {targetedExams.map((exam, index) => (
-                    <div
-                      key={index}
-                      className="p-6 bg-white dark:bg-slate-900 rounded-xl border border-slate-200 dark:border-slate-800 shadow-sm hover:border-[#1a57db] hover:shadow-xl transition-all duration-300 group cursor-pointer"
-                      onClick={() => handleButton(exam.id)}
-                    >
-                      <div className="w-10 h-10 bg-linear-to-r from-[#1a57db]/10 to-[#1a57db]/20 rounded-lg flex items-center justify-center text-[#1a57db] mb-4 group-hover:bg-linear-to-r group-hover:from-[#1a57db] group-hover:to-blue-600 group-hover:text-white transition-all duration-300">
-                        <Book />
-                      </div>
-                      <h3 className="font-black text-lg mb-1">{exam.name}</h3>
-                      <p className="text-xs text-slate-500 mb-4">
-                        {exam.full_name}
-                      </p>
-                      <div className="mt-4 pt-4 border-t border-slate-100 dark:border-slate-800">
-                        <p className="text-[10px] text-slate-400 font-bold uppercase mb-2 tracking-wider">
-                          Exam Type
-                        </p>
-                        <p className="text-sm font-semibold text-slate-900 dark:text-white">
-                          {exam.type}
-                        </p>
-                      </div>
-                    </div>
-                  ))}
-                </div>
-              </section>
-
-              {/* Subject Progress */}
-              <section>
-                <div className="flex items-center justify-between mb-6">
-                  <h2 className="text-xl font-bold">Subject Progress</h2>
-                  <a
-                    className="text-[#1a57db] text-sm font-bold hover:underline"
-                    href="#"
-                  >
-                    View Curriculum
-                  </a>
-                </div>
-                <div className="bg-white dark:bg-slate-900 rounded-xl border border-slate-200 dark:border-slate-800 p-6 shadow-sm">
-                  {subjectProgress.map((subject, index) => (
-                    <div key={index} className="mb-6 last:mb-0">
-                      <div className="flex justify-between text-sm mb-2">
-                        <span className="font-medium">{subject.name}</span>
-                        <span className="text-slate-500 font-bold">
-                          {subject.percent}%
-                        </span>
-                      </div>
-                      <div className="w-full h-2.5 bg-slate-100 dark:bg-slate-800 rounded-full overflow-hidden shadow-inner">
-                        <div
-                          className={`${subject.color} h-full rounded-full shadow-sm transition-all duration-500`}
-                          style={{ width: `${subject.percent}%` }}
-                        />
-                      </div>
-                    </div>
-                  ))}
-                </div>
-              </section>
-            </div>
-
-            {/* Right Column */}
-            <div className="lg:col-span-4 space-y-8">
-              {/* Quick Links */}
-              {/* <section>
-                <h2 className="text-xl font-bold mb-6 text-slate-900 dark:text-white">
-                  Quick Links
-                </h2>
-                <div className="grid grid-cols-2 gap-4">
-                  {quickLinks.map((link, index) => (
-                    <button
-                      key={index}
-                      className="flex flex-col items-center justify-center p-6 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl hover:shadow-xl hover:-translate-y-1 hover:border-[#1a57db]/50 transition-all duration-300 text-center cursor-pointer"
-                      onClick={() => navigate(link.path)}
-                    >
-                      <div className="mb-2 text-[#1a57db]">{link.icon}</div>
-                      <span className="text-xs font-bold text-slate-900 dark:text-white">
-                        {link.label}
-                      </span>
-                    </button>
-                  ))}
-                </div>
-              </section> */}
-
-              <UpcomingMockTest />
-
-              {/* Daily Checklist */}
-              <section className="bg-[#1a57db]/5 border border-[#1a57db]/20 rounded-xl p-6 shadow-sm">
-                <h3 className="font-bold mb-6 flex items-center gap-2 text-slate-900 dark:text-white">
-                  <Tags className="text-[#1a57db]" />
-                  Today's Checklist
-                </h3>
-                <div className="space-y-3">
-                  {checklist.map((item, index) => (
-                    <label
-                      key={index}
-                      className={`flex items-center gap-3 p-3 bg-white dark:bg-slate-900 rounded-lg cursor-pointer border transition-all duration-200 hover:shadow-sm ${
-                        item.active
-                          ? "border-[#1a57db]/30 shadow-sm shadow-[#1a57db]/10 ring-1 ring-[#1a57db]/20"
-                          : "border-slate-100 dark:border-slate-800"
-                      }`}
-                    >
-                      <input
-                        className="rounded border-slate-300 text-[#1a57db] focus:ring-[#1a57db] h-4 w-4 shadow-sm cursor-pointer"
-                        type="checkbox"
-                        checked={item.checked}
-                        readOnly
-                      />
-                      <span
-                        className={`text-sm ${item.checked ? "line-through text-slate-400" : "font-medium text-slate-900 dark:text-white"}`}
-                      >
-                        {item.text}
-                      </span>
-                    </label>
-                  ))}
-                </div>
-              </section>
+              </div>
             </div>
           </div>
         </div>
-        <Outlet />
-        {/* Footer */}
-        <footer className="p-8 mt-auto border-t border-slate-200 dark:border-slate-800 text-center bg-white/50 dark:bg-slate-900/50 backdrop-blur-sm">
-          <p className="text-xs text-slate-400">
-            © 2023 Odisha Prep Portal. Dedicated to the aspirants of Odisha
-            State Government Exams.
-          </p>
-        </footer>
-      </main>
+      </section>
+
+      <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 pt-8">
+        {/* Left Content Column */}
+        <div className="lg:col-span-8 space-y-12">
+          {/* Target Exams - The Garden View */}
+          <section ref={targetRef} className="scroll-mt-32">
+            <div className="flex justify-between items-center mb-8 px-2">
+              <h3 className="text-[11px] font-technical font-black uppercase tracking-[0.4em] text-on-surface-variant opacity-60">Target Landscapes</h3>
+              <button
+                onClick={() => navigate("exam-lists")}
+                className="text-[10px] font-technical font-black uppercase tracking-widest text-primary hover:opacity-70 transition-opacity"
+              >
+                Expand Horizons +
+              </button>
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              {targetedExams.map((exam, index) => (
+                <div
+                  key={index}
+                  className="p-8 bg-surface-container-low rounded-[2.5rem] shadow-ambient hover-bloom group cursor-pointer relative overflow-hidden"
+                  onClick={() => navigate(`exam/${exam.id}`)}
+                >
+                  <div className="size-14 bg-surface-container-high rounded-2xl flex items-center justify-center text-primary mb-6 group-hover:bg-primary group-hover:text-white transition-all duration-500 shadow-sm">
+                    <Notebook className="size-6" />
+                  </div>
+                  <h4 className="font-black text-2xl mb-2 text-on-surface tracking-tighter leading-none">{exam.name}</h4>
+                  <p className="text-xs text-on-surface-variant mb-6 font-medium leading-relaxed opacity-60">
+                    {exam.full_name}
+                  </p>
+                  <div className="pt-6 border-t border-on-surface/5 flex items-center justify-between">
+                    <div>
+                      <p className="text-[9px] font-technical font-black uppercase tracking-widest text-on-surface-variant opacity-40 mb-1">Status</p>
+                      <p className="text-[10px] font-technical font-black text-primary uppercase tracking-widest leading-none">Active Cycle</p>
+                    </div>
+                    <ChevronRight className="size-5 text-on-surface-variant opacity-20 group-hover:opacity-100 group-hover:translate-x-2 transition-all duration-500" />
+                  </div>
+                </div>
+              ))}
+            </div>
+          </section>
+
+          {/* Subject Growth - Tonal Layering */}
+          <section>
+            <h3 className="text-[11px] font-technical font-black uppercase tracking-[0.4em] text-on-surface-variant opacity-60 mb-8 px-2">Growth Analytics</h3>
+            <div className="bg-surface-container-low rounded-[3rem] p-10 shadow-ambient">
+              <div className="space-y-10">
+                {subjectProgress.map((subject, index) => (
+                  <div key={index}>
+                    <div className="flex justify-between items-end mb-4 px-1">
+                      <span className="font-bold text-on-surface tracking-tight">{subject.name}</span>
+                      <span className="text-xs font-technical font-black text-primary tracking-widest">
+                        {subject.percent}%
+                      </span>
+                    </div>
+                    <div className="w-full h-6 bg-surface-container-high rounded-full overflow-hidden p-1.5 shadow-inner ring-1 ring-black/5">
+                      <div
+                        className="bg-linear-to-r from-primary to-primary-container h-full rounded-full shadow-sm transition-all duration-2000 ease-out shadow-primary/20"
+                        style={{ width: `${subject.percent}%` }}
+                      />
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </section>
+        </div>
+
+        {/* Right Sidebar Column */}
+        <div className="lg:col-span-4 space-y-12">
+          <UpcomingMockTest />
+
+          {/* Daily Rituals */}
+          <section className="bg-surface-container-low rounded-[3rem] p-10 shadow-ambient">
+            <h3 className="text-[11px] font-technical font-black uppercase tracking-[0.4em] text-on-surface-variant opacity-50 mb-10 flex items-center gap-4">
+              <div className="size-2.5 bg-primary rounded-full animate-pulse shadow-[0_0_10px_rgba(0,110,47,0.5)]" />
+              Daily Rituals
+            </h3>
+            <div className="space-y-4">
+              {checklist.map((item, index) => (
+                <label
+                  key={index}
+                  className={`flex items-center gap-5 p-6 rounded-4xl cursor-pointer transition-all duration-500 ease-(--ease-botanical) hover:scale-[1.03] ${item.active
+                    ? "bg-white shadow-ambient ring-2 ring-primary/5"
+                    : "bg-surface-container-high/40 opacity-60 grayscale hover:grayscale-0 hover:opacity-100"
+                    }`}
+                >
+                  <input
+                    className="rounded-full border-2 border-primary/20 text-primary focus:ring-primary size-6 shadow-sm cursor-pointer transition-all"
+                    type="checkbox"
+                    checked={item.checked}
+                    readOnly
+                  />
+                  <span
+                    className={`text-sm font-black tracking-tight ${item.checked ? "line-through text-on-surface-variant opacity-40 font-medium" : "text-on-surface"}`}
+                  >
+                    {item.text}
+                  </span>
+                </label>
+              ))}
+            </div>
+          </section>
+        </div>
+      </div>
+
+      <footer className="pt-20 pb-10 px-2 flex flex-col lg:flex-row items-center justify-between gap-8 border-t border-on-surface/5 opacity-30 group">
+        <p className="text-[9px] font-technical font-black uppercase tracking-[0.4em] leading-relaxed max-w-sm text-center lg:text-left">
+          © 2026 ARUMIND DIGITAL JOURNAL. ARCHITECTED FOR CONSISTENT GROWTH AND INTENTIONAL LEARNING.
+        </p>
+        <div className="flex gap-8">
+          <span className="text-[9px] font-technical font-black uppercase tracking-widest cursor-help hover:text-primary transition-colors hover:underline">Privacy</span>
+          <span className="text-[9px] font-technical font-black uppercase tracking-widest cursor-help hover:text-primary transition-colors hover:underline">Terms</span>
+        </div>
+      </footer>
+      <Outlet />
     </div>
   );
 };
@@ -292,78 +244,52 @@ export default UserDashboard;
 const UpcomingMockTest = () => {
   const upcomingMocks = [
     {
-      date: "2025-08-24", // Changed to ISO for parsing
-      displayDate: "24",
       month: "Aug",
+      displayDate: "24",
       title: "OPSC Prelims Full Mock 12",
-      time: "10:00",
       displayTime: "10:00 AM",
       marks: "200 Marks",
     },
     {
-      date: "2025-08-26",
-      displayDate: "26",
       month: "Aug",
+      displayDate: "26",
       title: "Odisha GK Sectional Test",
-      time: "16:00",
       displayTime: "04:00 PM",
       marks: "50 Marks",
-    },
-    {
-      date: "2025-08-30",
-      displayDate: "30",
-      month: "Aug",
-      title: "OSSC CGL Quantitative",
-      time: "11:00",
-      displayTime: "11:00 AM",
-      marks: "100 Marks",
     },
   ];
 
   return (
     <section>
-      <div className="flex items-center justify-between mb-6">
-        <h2 className="text-xl font-bold text-slate-900 dark:text-white">
-          Upcoming Mock Tests
-        </h2>
-      </div>
-      <div className="bg-white dark:bg-slate-900 rounded-2xl border border-slate-200 dark:border-slate-800 overflow-hidden shadow-sm">
-        <div className="divide-y divide-slate-100 dark:divide-slate-800">
+      <h3 className="text-[11px] font-technical font-black uppercase tracking-[0.4em] text-on-surface-variant opacity-60 mb-8 px-2">Scheduled Tests</h3>
+      <div className="bg-surface-container-low rounded-[3rem] overflow-hidden shadow-ambient p-3">
+        <div className="space-y-2">
           {upcomingMocks.map((mock, index) => (
             <div
               key={index}
-              className="p-5 flex items-center gap-5 hover:bg-slate-50/80 dark:hover:bg-slate-800/50 transition-all duration-200 group"
+              className="p-8 flex items-center gap-8 hover:bg-white transition-all duration-500 group rounded-4xl"
             >
-              <div className="flex flex-col items-center justify-center min-w-[56px] bg-slate-100 dark:bg-slate-800/80 py-3 rounded-xl group-hover:bg-blue-50 dark:group-hover:bg-blue-900/20 transition-colors">
-                <span className="text-[10px] font-black text-slate-400 dark:text-slate-500 uppercase tracking-widest mb-0.5 group-hover:text-blue-500 transition-colors">
+              <div className="flex flex-col items-center justify-center min-w-[80px] bg-surface-container-high py-5 rounded-4xl group-hover:bg-primary group-hover:text-white transition-all duration-500 shadow-sm border border-black/5">
+                <span className="text-[10px] font-technical font-black uppercase tracking-[0.2em] mb-1 opacity-50 group-hover:text-white/80 group-hover:opacity-100">
                   {mock.month}
                 </span>
-                <span className="text-xl font-black text-slate-900 dark:text-white group-hover:text-blue-600 transition-colors">
+                <span className="text-3xl font-technical font-black group-hover:text-white tracking-tighter">
                   {mock.displayDate}
                 </span>
               </div>
               <div className="flex-1 min-w-0">
-                <h4 className="text-sm font-bold text-slate-900 dark:text-white group-hover:text-[#1a57db] transition-colors truncate">
+                <h4 className="text-xl font-black text-on-surface group-hover:text-primary transition-colors truncate tracking-tighter leading-tight mb-1">
                   {mock.title}
                 </h4>
-                <div className="flex items-center gap-2 mt-1">
-                  <p className="text-xs text-slate-500 font-medium whitespace-nowrap">
-                    {mock.displayTime} • {mock.marks}
-                  </p>
-                </div>
+                <p className="text-[10px] font-technical uppercase tracking-[0.2em] text-on-surface-variant font-black opacity-60">
+                  {mock.displayTime} <span className="opacity-20 mx-2">•</span> {mock.marks}
+                </p>
               </div>
-              <button
-                className="p-2 text-slate-400 hover:text-blue-600 hover:bg-blue-100 dark:hover:bg-blue-900/30 rounded-lg transition-all"
-                title="View Details"
-              >
-                <ChevronRight size={18} />
-              </button>
-              <ChevronRight className="text-slate-300 group-hover:translate-x-1 transition-transform" />
             </div>
           ))}
         </div>
-        <button className="w-full py-4 text-[11px] font-black uppercase tracking-widest text-slate-500 dark:text-slate-400 border-t border-slate-100 dark:border-slate-800 hover:bg-slate-50 dark:hover:bg-slate-800 hover:text-[#1a57db] transition-all duration-200">
-          View All Scheduled Tests
+        <button className="w-full py-8 text-[10px] font-technical font-black uppercase tracking-[0.4em] text-on-surface-variant hover:text-primary transition-all duration-500 opacity-60 hover:opacity-100">
+          Manifest All Activity →
         </button>
       </div>
     </section>
@@ -372,119 +298,18 @@ const UpcomingMockTest = () => {
 
 const DashboardSkeleton = () => {
   return (
-    <div className="flex h-screen overflow-hidden bg-linear-to-br from-slate-50 to-slate-100 dark:from-slate-900 dark:to-slate-950 animate-pulse">
-      <main className="flex-1 overflow-y-auto flex flex-col">
-        {/* Header */}
-        <header className="h-16 border-b border-slate-200 dark:border-slate-800 flex items-center justify-between px-8">
-          {/* Search */}
-          <div className="w-96 h-10 bg-slate-200 dark:bg-slate-700 rounded-lg"></div>
-
-          {/* Icons */}
-          <div className="flex items-center gap-4">
-            <div className="w-24 h-8 rounded-lg bg-slate-200 dark:bg-slate-700"></div>
-            <div className="w-8 h-8 rounded-lg bg-slate-200 dark:bg-slate-700"></div>
-            <div className="w-8 h-8 rounded-lg bg-slate-200 dark:bg-slate-700"></div>
-          </div>
-        </header>
-
-        <div className="p-8 max-w-7xl mx-auto w-full space-y-8">
-          {/* Greeting Section */}
-          <section className="flex flex-wrap items-center justify-between gap-6">
-            <div>
-              <div className="h-8 w-72 bg-slate-300 dark:bg-slate-700 rounded mb-3"></div>
-              <div className="h-4 w-96 bg-slate-200 dark:bg-slate-700 rounded"></div>
-            </div>
-
-            <div className="flex gap-4">
-              <div className="w-40 h-20 bg-slate-200 dark:bg-slate-700 rounded-xl"></div>
-              <div className="w-40 h-20 bg-slate-200 dark:bg-slate-700 rounded-xl"></div>
-            </div>
-          </section>
-
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-            {/* Left Column */}
-            <div className="lg:col-span-2 space-y-8">
-              {/* Target Exams */}
-              <section>
-                <div className="h-6 w-48 bg-slate-300 dark:bg-slate-700 rounded mb-6"></div>
-
-                <div className="grid md:grid-cols-3 gap-6">
-                  {Array.from({ length: 3 }).map((_, i) => (
-                    <div
-                      key={i}
-                      className="p-6 bg-white dark:bg-slate-900 rounded-xl border border-slate-200 dark:border-slate-800"
-                    >
-                      <div className="w-10 h-10 bg-slate-300 dark:bg-slate-700 rounded-lg mb-4"></div>
-                      <div className="h-5 w-28 bg-slate-300 dark:bg-slate-700 rounded mb-2"></div>
-                      <div className="h-3 w-40 bg-slate-200 dark:bg-slate-700 rounded mb-4"></div>
-
-                      <div className="mt-4 pt-4 border-t border-slate-200 dark:border-slate-800">
-                        <div className="h-3 w-20 bg-slate-300 dark:bg-slate-700 rounded mb-2"></div>
-                        <div className="h-4 w-24 bg-slate-200 dark:bg-slate-700 rounded"></div>
-                      </div>
-                    </div>
-                  ))}
-                </div>
-              </section>
-
-              {/* Subject Progress */}
-              <section>
-                <div className="h-6 w-40 bg-slate-300 dark:bg-slate-700 rounded mb-6"></div>
-
-                <div className="bg-white dark:bg-slate-900 rounded-xl border border-slate-200 dark:border-slate-800 p-6 space-y-6">
-                  {Array.from({ length: 4 }).map((_, i) => (
-                    <div key={i}>
-                      <div className="flex justify-between mb-2">
-                        <div className="h-4 w-32 bg-slate-300 dark:bg-slate-700 rounded"></div>
-                        <div className="h-4 w-10 bg-slate-200 dark:bg-slate-700 rounded"></div>
-                      </div>
-
-                      <div className="w-full h-2.5 bg-slate-200 dark:bg-slate-700 rounded-full"></div>
-                    </div>
-                  ))}
-                </div>
-              </section>
-            </div>
-
-            {/* Right Column */}
-            <div className="space-y-8">
-              {/* Quick Links */}
-              <section>
-                <div className="h-6 w-32 bg-slate-300 dark:bg-slate-700 rounded mb-6"></div>
-
-                <div className="grid grid-cols-2 gap-4">
-                  {Array.from({ length: 4 }).map((_, i) => (
-                    <div
-                      key={i}
-                      className="h-24 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl"
-                    ></div>
-                  ))}
-                </div>
-              </section>
-
-              {/* Upcoming Mock */}
-              <div className="h-40 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl"></div>
-
-              {/* Checklist */}
-              <section className="bg-slate-100 dark:bg-slate-800 rounded-xl p-6 space-y-3">
-                <div className="h-5 w-40 bg-slate-300 dark:bg-slate-700 rounded mb-4"></div>
-
-                {Array.from({ length: 4 }).map((_, i) => (
-                  <div
-                    key={i}
-                    className="h-10 bg-white dark:bg-slate-900 rounded-lg"
-                  ></div>
-                ))}
-              </section>
-            </div>
-          </div>
+    <div className="space-y-12 animate-pulse pb-20 p-2 lg:p-6">
+      <div className="h-4 w-48 bg-surface-container-low rounded-full mb-8"></div>
+      <div className="flex flex-col lg:flex-row justify-between gap-12">
+        <div className="space-y-6">
+          <div className="h-20 w-160 bg-surface-container-low rounded-3xl"></div>
+          <div className="h-24 w-120 bg-surface-container-low rounded-3xl"></div>
         </div>
-
-        {/* Footer */}
-        <footer className="p-8 border-t border-slate-200 dark:border-slate-800">
-          <div className="h-3 w-72 mx-auto bg-slate-300 dark:bg-slate-700 rounded"></div>
-        </footer>
-      </main>
+        <div className="flex gap-6">
+          <div className="size-40 bg-surface-container-low rounded-[3rem]"></div>
+          <div className="size-40 bg-surface-container-low rounded-[3rem]"></div>
+        </div>
+      </div>
     </div>
   );
 };

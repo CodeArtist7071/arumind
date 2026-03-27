@@ -14,14 +14,14 @@ export const AlertPopup = ({ isOpen, onClose, message, title, children }: AlertP
 
   return (
     <div className="fixed inset-0 flex items-center justify-center bg-black/50 z-60">
-      <div className="bg-white w-100 rounded-xl shadow-lg p-6 relative">
+      <div className="bg-surface w-100 rounded-xl shadow-lg p-6 relative">
         <span
           onClick={onClose}
           className="absolute top-3 right-3 text-gray-500 hover:text-black"
         >
           <X />
         </span>
-        {title && <p className="text-center text-blue-500 text-2xl font-bold mt-10">{title || "Title"}</p>}
+        {title && <p className="text-center text-primary text-2xl font-bold mt-10">{title || "Title"}</p>}
         {message && <p className="text-lg text-center font-medium text-gray-800">
           {message}
         </p>}

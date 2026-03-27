@@ -83,4 +83,4 @@ export const detect = async (props: DetectProps) => {
 
   isProcessingRef.current = false;
   animationRef.current = requestAnimationFrame(() => detect(props));
-};
+};

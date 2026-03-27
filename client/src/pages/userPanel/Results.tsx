@@ -214,14 +214,14 @@ const Results = () => {
 
   if (loading) {
     return (
-      <div className="min-h-screen bg-slate-50 dark:bg-slate-950 flex flex-col items-center justify-center gap-6 p-8">
+      <div className="min-h-screen bg-surface-container-low dark:bg-slate-950 flex flex-col items-center justify-center gap-6 p-8">
         <div className="relative size-24">
-          <div className="absolute inset-0 border-4 border-[#1a57db]/20 rounded-full" />
-          <div className="absolute inset-0 border-4 border-[#1a57db] border-t-transparent rounded-full animate-spin" />
-          <Trophy className="absolute inset-0 m-auto size-8 text-[#1a57db] animate-bounce" />
+          <div className="absolute inset-0 border-4 border-[#16a34a]/20 rounded-full" />
+          <div className="absolute inset-0 border-4 border-[#16a34a] border-t-transparent rounded-full animate-spin" />
+          <Trophy className="absolute inset-0 m-auto size-8 text-[#16a34a] animate-bounce" />
         </div>
         <div className="text-center space-y-2">
-          <h2 className="text-xl font-black text-slate-900 dark:text-white uppercase tracking-tighter">
+          <h2 className="text-xl font-black text-on-surface dark:text-white uppercase tracking-tighter">
             Analyzing Mastery
           </h2>
           <p className="text-sm font-bold text-slate-400 animate-pulse uppercase tracking-[0.2em]">
@@ -233,20 +233,20 @@ const Results = () => {
   }
 
   return (
-    <div className="min-h-screen bg-linear-to-br from-slate-50 to-slate-100 dark:from-slate-900 dark:to-slate-950 text-slate-900 dark:text-slate-100 pb-20">
+    <div className="min-h-screen bg-linear-to-br from-slate-50 to-slate-100 dark:from-slate-900 dark:to-slate-950 text-on-surface dark:text-slate-100 pb-20">
       {/* HEADER */}
-      <header className="sticky top-0 z-50 bg-white/80 dark:bg-slate-900/80 backdrop-blur-xl border-b border-slate-200 dark:border-slate-800 px-6 py-4">
+      <header className="sticky top-0 z-50 bg-surface/80 dark:bg-slate-900/80 backdrop-blur-xl  dark:border-slate-800 px-6 py-4">
         <div className="max-w-7xl mx-auto flex items-center justify-between">
           <div className="flex items-center gap-4">
             <button
               onClick={() => navigate("/user/results")}
-              className="p-2.5 bg-slate-100 dark:bg-slate-800 rounded-2xl hover:bg-slate-200 dark:hover:bg-slate-700 transition-all text-slate-500"
+              className="p-2.5 bg-surface-container-high dark:bg-slate-800 rounded-2xl hover:bg-slate-200 dark:hover:bg-slate-700 transition-all text-on-surface-variant"
             >
               <ArrowLeft size={18} />
             </button>
             <div>
-              <h1 className="text-lg font-black tracking-tight text-slate-900 dark:text-white flex items-center gap-2">
-                <Target className="text-[#1a57db]" size={18} />
+              <h1 className="text-lg font-black tracking-tight text-on-surface dark:text-white flex items-center gap-2">
+                <Target className="text-[#16a34a]" size={18} />
                 Performance Report
               </h1>
               <p className="text-[10px] text-slate-400 font-black uppercase tracking-widest mt-0.5">
@@ -258,12 +258,12 @@ const Results = () => {
           <div className="flex items-center gap-3">
             <button
               onClick={() => navigate("/user/dashboard")}
-              className="hidden md:flex items-center gap-2 px-5 py-2.5 bg-[#1a57db]/5 text-[#1a57db] rounded-2xl text-xs font-black uppercase tracking-widest hover:bg-[#1a57db]/10 transition-all"
+              className="hidden md:flex items-center gap-2 px-5 py-2.5 bg-[#16a34a]/5 text-[#16a34a] rounded-2xl text-xs font-black uppercase tracking-widest hover:bg-[#16a34a]/10 transition-all"
             >
               <LayoutDashboard size={14} />
               Dashboard
             </button>
-            <div className="size-10 bg-slate-100 dark:bg-slate-800 rounded-2xl flex items-center justify-center text-slate-400 font-black text-xs">
+            <div className="size-10 bg-surface-container-high dark:bg-slate-800 rounded-2xl flex items-center justify-center text-slate-400 font-black text-xs">
               {metrics.totalScore}
             </div>
           </div>
@@ -281,9 +281,9 @@ const Results = () => {
         <div className="grid sm:grid-cols-1 lg:grid-cols-12 gap-10">
           {/* PERFORMANCE INSIGHTS */}
           <div className="lg:col-span-5 space-y-8">
-            <div className="bg-white dark:bg-slate-900 p-8 rounded-xl border border-slate-200 dark:border-slate-800 space-y-8 shadow-xl">
+            <div className="bg-surface dark:bg-slate-900 p-8 rounded-xl  dark:border-slate-800 space-y-8 shadow-xl">
               <h3 className="text-xs font-black uppercase tracking-[0.2em] text-slate-400 flex items-center gap-3">
-                <BarChart3 size={16} className="text-[#1a57db]" />
+                <BarChart3 size={16} className="text-[#16a34a]" />
                 Question Distribution
               </h3>
 
@@ -317,7 +317,7 @@ const Results = () => {
                 {distributionData.map((d, i) => (
                   <div
                     key={i}
-                    className="flex items-center justify-between p-4 bg-slate-50 dark:bg-slate-800/50 rounded-xl border border-slate-100 dark:border-slate-800"
+                    className="flex items-center justify-between p-4 bg-surface-container-low dark:bg-slate-800/50 rounded-xl  dark:border-slate-800"
                   >
                     <div className="flex items-center gap-3">
                       <div
@@ -328,7 +328,7 @@ const Results = () => {
                         {d.name}
                       </span>
                     </div>
-                    <span className="text-sm font-black text-slate-900 dark:text-white">
+                    <span className="text-sm font-black text-on-surface dark:text-white">
                       {d.value}
                     </span>
                   </div>
@@ -336,16 +336,16 @@ const Results = () => {
               </div>
             </div>
 
-            <div className="bg-linear-to-br from-indigo-600 to-blue-700 p-8 rounded-xl text-white shadow-2xl relative overflow-hidden group">
+            <div className="bg-linear-to-br from-indigo-600 to-green-700 p-8 rounded-xl text-white shadow-2xl relative overflow-hidden group">
               <div className="absolute top-0 right-0 p-8 opacity-10 group-hover:scale-110 transition-transform">
                 <BrainCircuit size={120} />
               </div>
-              <h3 className="text-xs font-black uppercase text-blue-100/70 mb-6 flex items-center gap-3">
+              <h3 className="text-xs font-black uppercase text-primary/10/70 mb-6 flex items-center gap-3">
                 <Zap size={16} />
                 AI Action Plan
               </h3>
               <div className="space-y-6 relative z-10">
-                <div className="bg-white/10 p-5 rounded-3xl border border-white/10 backdrop-blur-sm">
+                <div className="bg-surface/10 p-5 rounded-3xl border border-white/10 backdrop-blur-sm">
                   <p className="text-sm font-bold leading-relaxed italic">
                     {metrics.accuracy < 50
                       ? `Focus on rebuilding basic concepts of ${attempt?.chapters?.name}. Your strength in accuracy is low.`
@@ -354,7 +354,7 @@ const Results = () => {
                 </div>
                 <button
                   onClick={() => navigate(`/user/dashboard`)}
-                  className="w-full py-4 cursor-pointer bg-white text-blue-500 rounded-xl font-black text-xs uppercase shadow-xl hover:scale-105 transition-all"
+                  className="w-full py-4 cursor-pointer bg-surface text-primary rounded-xl font-black text-xs uppercase shadow-xl hover:scale-105 transition-all"
                 >
                   Start Targeted Practice
                 </button>
@@ -366,7 +366,7 @@ const Results = () => {
           <div className="lg:col-span-7 h-185 overflow-y-auto space-y-8">
             <div className="flex items-center justify-between px-4">
               <h3 className="text-sm font-black uppercase tracking-wide text-slate-400 flex items-center gap-3">
-                <History size={16} className="text-[#1a57db]" />
+                <History size={16} className="text-[#16a34a]" />
                 Question Review
               </h3>
               <div className="flex items-center gap-4">
@@ -394,17 +394,17 @@ const Results = () => {
                 return (
                   <div
                     key={q.id}
-                    className="bg-white dark:bg-slate-900 rounded-xl border border-slate-200 dark:border-slate-800 shadow-sm overflow-hidden group/q transition-all"
+                    className="bg-surface dark:bg-slate-900 rounded-xl  dark:border-slate-800 shadow-sm overflow-hidden group/q transition-all"
                   >
                     <div
                       onClick={() => setOpenQuestion(isOpened ? null : q.id)}
-                      className="p-6 md:p-8 flex items-start justify-between gap-6 cursor-pointer hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors"
+                      className="p-6 md:p-8 flex items-start justify-between gap-6 cursor-pointer hover:bg-surface-container-low dark:hover:bg-slate-800 transition-colors"
                     >
                       <div className="flex items-start gap-5">
                         <div
                           className={`size-10 shrink-0 rounded-xl flex items-center justify-center font-black text-sm border-2 transition-all ${
                             !ans?.selected_option
-                              ? "border-slate-300 rounded-full bg-slate-50 text-slate-500"
+                              ? "border-slate-300 rounded-full bg-surface-container-low text-on-surface-variant"
                               : isCorrect
                                 ? "border-emerald-100 bg-emerald-50 text-emerald-500"
                                 : "border-rose-100 bg-rose-50 text-rose-500"
@@ -417,7 +417,7 @@ const Results = () => {
                             {q.question}
                           </h4>
                           <div className="flex items-center gap-3">
-                            <span className="text-xs font-bold text-[#1a57db]">
+                            <span className="text-xs font-bold text-[#16a34a]">
                               {q.difficulty_level || "Medium"}
                             </span>
                             <div className="h-1 w-1 rounded-full bg-slate-200" />
@@ -428,7 +428,7 @@ const Results = () => {
                         </div>
                       </div>
                       <div
-                        className={`p-2 rounded-full transition-all ${isOpened ? "bg-[#1a57db] text-white rotate-180" : "bg-slate-200 dark:bg-slate-800 text-slate-400"}`}
+                        className={`p-2 rounded-full transition-all ${isOpened ? "bg-[#16a34a] text-white rotate-180" : "bg-slate-200 dark:bg-slate-800 text-slate-400"}`}
                       >
                         <ChevronDown size={15} />
                       </div>
@@ -439,7 +439,7 @@ const Results = () => {
                         <div className="grid sm:grid-cols-1 md:grid-cols-2 gap-4">
                           {q.options?.map((opt) => {
                             let style =
-                              "bg-slate-50 dark:bg-slate-800 border-slate-100 dark:border-slate-800 text-slate-600 dark:text-slate-100";
+                              "bg-surface-container-low dark:bg-slate-800 border-slate-100 dark:border-slate-800 text-slate-600 dark:text-slate-100";
                             if (opt.l === q.correct_answer)
                               style =
                                 "bg-emerald-50 dark:bg-emerald-950/30 border-emerald-200 dark:border-emerald-800 text-emerald-700 dark:text-emerald-400 shadow-md shadow-emerald-500/5";
@@ -458,8 +458,8 @@ const Results = () => {
                                 <div
                                   className={`size-6 rounded-lg flex items-center justify-center font-bold text-sm border ${
                                     opt.l === q.correct_answer
-                                      ? "bg-white border-emerald-100"
-                                      : "bg-white/50 border-slate-200"
+                                      ? "bg-surface border-emerald-100"
+                                      : "bg-surface/50 border-slate-200"
                                   }`}
                                 >
                                   {opt.l}
@@ -479,14 +479,14 @@ const Results = () => {
                           })}
                         </div>
 
-                        <div className="bg-slate-50 dark:bg-slate-800/50 p-6 rounded-3xl border border-dashed border-slate-200 dark:border-slate-700">
-                          <div className="flex items-center gap-3 mb-3 text-[#1a57db]">
+                        <div className="bg-surface-container-low dark:bg-slate-800/50 p-6 rounded-3xl border border-dashed border-slate-200 dark:border-slate-700">
+                          <div className="flex items-center gap-3 mb-3 text-[#16a34a]">
                             <Info size={16} />
                             <span className="text-[10px] font-black uppercase tracking-widest">
                               Expert Explanation
                             </span>
                           </div>
-                          <p className="text-xs font-medium text-slate-500 leading-relaxed italic">
+                          <p className="text-xs font-medium text-on-surface-variant leading-relaxed italic">
                             {q.explanation ||
                               `The correct answer is Option ${q.correct_answer}. This topic covers essential concepts related to ${attempt?.subjects?.name}. Review your notes on this chapter for more clarity.`}
                           </p>
@@ -508,8 +508,8 @@ export default Results;
 
 const PerformanceCard = ({ metrics, attempt, questions }) => {
   return (
-    <section className="bg-white dark:bg-slate-900 p-8 md:p-12 rounded-xl border border-slate-200 dark:border-slate-800 shadow-2xl relative overflow-hidden group">
-      <div className="absolute top-0 right-0 -mt-20 -mr-20 size-80 bg-[#1a57db]/5 rounded-full blur-3xl group-hover:bg-[#1a57db]/10 transition-colors" />
+    <section className="bg-surface dark:bg-slate-900 p-8 md:p-12 rounded-xl  dark:border-slate-800 shadow-2xl relative overflow-hidden group">
+      <div className="absolute top-0 right-0 -mt-20 -mr-20 size-80 bg-[#16a34a]/5 rounded-full blur-3xl group-hover:bg-[#16a34a]/10 transition-colors" />
 
       <div className="flex sm:flex-col lg:flex-row items-center gap-12 relative z-10">
         {/* Score Ring */}
@@ -532,13 +532,13 @@ const PerformanceCard = ({ metrics, attempt, questions }) => {
               fill="transparent"
               strokeDasharray="283%"
               strokeDashoffset={283 - metrics.scorePercent * 2.83}
-              className="text-[#1a57db]"
+              className="text-[#16a34a]"
               stroke="currentColor"
               strokeLinecap="round"
             />
           </svg>
           <div className="absolute inset-0 flex flex-col items-center justify-center">
-            <span className="text-6xl font-black text-slate-900 dark:text-white tracking-tighter">
+            <span className="text-6xl font-black text-on-surface dark:text-white tracking-tighter">
               {metrics.totalScore}
             </span>
             <span className="text-[10px] font-black uppercase text-slate-400 tracking-[0.2em] mt-1">
@@ -553,16 +553,16 @@ const PerformanceCard = ({ metrics, attempt, questions }) => {
               <Zap size={12} fill="currentColor" />
               {metrics.accuracy}% Accuracy Achieved
             </div>
-            <h2 className="text-4xl md:text-5xl font-black text-slate-900 dark:text-white tracking-tighter">
+            <h2 className="text-4xl md:text-5xl font-black text-on-surface dark:text-white tracking-tighter">
               {metrics.accuracy >= 80
                 ? "Phenomenal Mastery!"
                 : metrics.accuracy >= 50
                   ? "Solid Progress!"
                   : "Keep Pushing Harder!"}
             </h2>
-            <p className="text-slate-500 dark:text-slate-400 text-lg font-medium leading-relaxed max-w-2xl mx-auto lg:mx-0">
+            <p className="text-on-surface-variant dark:text-slate-400 text-lg font-medium leading-relaxed max-w-2xl mx-auto lg:mx-0">
               You've completed the assessment for{" "}
-              <span className="text-[#1a57db] font-black">
+              <span className="text-[#16a34a] font-black">
                 {attempt?.chapters?.name}
               </span>
               . Your performance indicates a{" "}
@@ -600,12 +600,12 @@ const PerformanceCard = ({ metrics, attempt, questions }) => {
             ].map((item, i) => (
               <div
                 key={i}
-                className="bg-slate-50 dark:bg-slate-800/50 p-5 rounded-xl border border-slate-100 dark:border-slate-800 space-y-2 group/stat hover:border-[#1a57db]/30 transition-all"
+                className="bg-surface-container-low dark:bg-slate-800/50 p-5 rounded-xl  dark:border-slate-800 space-y-2 group/stat hover:border-[#16a34a]/30 transition-all"
               >
-                <div className="text-slate-400 group-hover/stat:text-[#1a57db] transition-colors">
+                <div className="text-slate-400 group-hover/stat:text-[#16a34a] transition-colors">
                   {item.icon}
                 </div>
-                <p className="text-xl font-black text-slate-900 dark:text-white">
+                <p className="text-xl font-black text-on-surface dark:text-white">
                   {item.value}
                 </p>
                 <p className="text-[9px] font-black uppercase text-slate-400 tracking-widest">

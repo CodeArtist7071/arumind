@@ -30,20 +30,20 @@ const MockTests = () => {
   };
 
   return (
-    <div className="min-h-screen bg-slate-50 dark:bg-slate-950 p-6 lg:p-10">
+    <div className="min-h-screen bg-surface-container-low p-6 lg:p-10">
       <div className="max-w-7xl mx-auto space-y-10">
         {/* Header Section */}
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-6">
           <div className="space-y-2">
-            <h1 className="text-4xl font-black tracking-tight text-slate-900 dark:text-white">
-              Adaptive Mock <span className="text-blue-600">Portal</span>
+            <h1 className="text-4xl font-black tracking-tight text-on-surface dark:text-white">
+              Adaptive Mock <span className="text-primary">Portal</span>
             </h1>
-            <p className="text-slate-500 dark:text-slate-400 font-medium max-w-lg">
+            <p className="text-on-surface-variant dark:text-slate-400 font-medium max-w-lg">
               Generate personalized mock tests based on your past performance. 
               Improve your score with AI-driven question selection.
             </p>
           </div>
-          <div className="bg-blue-600 text-white px-6 py-3 rounded-2xl shadow-xl shadow-blue-600/20 flex items-center gap-3">
+          <div className="bg-primary text-white px-6 py-3 rounded-2xl shadow-xl shadow-green-600/20 flex items-center gap-3">
             <Zap className="size-5" fill="white" />
             <span className="font-bold tracking-wide uppercase text-sm">
               Adaptive Learning Active
@@ -56,22 +56,22 @@ const MockTests = () => {
           {targetedExams.map((exam) => (
             <div
               key={exam.id}
-              className="group relative bg-white dark:bg-slate-900 rounded-3xl border border-slate-200 dark:border-slate-800 p-8 hover:shadow-2xl hover:shadow-blue-600/5 transition-all duration-500 cursor-pointer overflow-hidden"
+              className="group relative bg-surface dark:bg-surface-container-low rounded-3xl  dark:border-slate-800 p-8 hover:shadow-2xl hover:shadow-green-600/5 transition-all duration-500 cursor-pointer overflow-hidden"
               onClick={() => handleStartExam(exam.id, exam.name)}
             >
               {/* Background gradient effect */}
-              <div className="absolute -top-24 -right-24 size-48 bg-blue-600/5 rounded-full blur-3xl group-hover:bg-blue-600/10 transition-all duration-500" />
+              <div className="absolute -top-24 -right-24 size-48 bg-primary/5 rounded-full blur-3xl group-hover:bg-primary/10 transition-all duration-500" />
               
               <div className="relative z-10 space-y-6">
-                <div className="size-16 bg-blue-50 dark:bg-blue-900/20 rounded-2xl flex items-center justify-center text-blue-600 group-hover:bg-blue-600 group-hover:text-white transition-all duration-500">
+                <div className="size-16 bg-green-50 dark:bg-green-900/20 rounded-2xl flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-all duration-500">
                   <Book className="size-8" />
                 </div>
 
                 <div>
-                  <h3 className="text-xl font-black text-slate-900 dark:text-white mb-2 leading-tight">
+                  <h3 className="text-xl font-black text-on-surface dark:text-white mb-2 leading-tight">
                     {exam.name}
                   </h3>
-                  <p className="text-sm text-slate-500 dark:text-slate-400 font-medium line-clamp-2">
+                  <p className="text-sm text-on-surface-variant dark:text-slate-400 font-medium line-clamp-2">
                     Start a custom mock session for this exam.
                   </p>
                 </div>
@@ -83,7 +83,7 @@ const MockTests = () => {
                       Exam Ready
                     </span>
                   </div>
-                  <div className="p-2 rounded-xl bg-slate-50 dark:bg-slate-800 group-hover:bg-blue-600 group-hover:text-white transition-all duration-500">
+                  <div className="p-2 rounded-xl bg-surface-container-low dark:bg-slate-800 group-hover:bg-primary group-hover:text-white transition-all duration-500">
                     <ChevronRight className="size-5" />
                   </div>
                 </div>
@@ -93,24 +93,24 @@ const MockTests = () => {
 
           {targetedExams.length === 0 && !examsLoading && (
              <div className="col-span-full py-20 text-center space-y-4">
-                <div className="size-20 bg-slate-100 dark:bg-slate-800 rounded-full flex items-center justify-center mx-auto text-slate-400">
+                <div className="size-20 bg-surface-container-high dark:bg-slate-800 rounded-full flex items-center justify-center mx-auto text-slate-400">
                    <Target className="size-10" />
                 </div>
                 <h3 className="text-xl font-bold">No targeted exams found</h3>
-                <p className="text-slate-500">Please set your target exams in your profile or dashboard.</p>
+                <p className="text-on-surface-variant">Please set your target exams in your profile or dashboard.</p>
              </div>
           )}
         </div>
 
         {/* Info Section */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 pt-10 border-t border-slate-200 dark:border-slate-800">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 pt-10  dark:border-slate-800">
            <div className="flex gap-4">
               <div className="size-12 rounded-2xl bg-amber-50 dark:bg-amber-900/20 flex items-center justify-center text-amber-600 shrink-0">
                  <ShieldCheck className="size-6" />
               </div>
               <div className="space-y-1">
-                 <h4 className="font-bold text-slate-900 dark:text-white">Performance-Led</h4>
-                 <p className="text-xs text-slate-500">Ratios focus on your weak points while revisiting mastered topics.</p>
+                 <h4 className="font-bold text-on-surface dark:text-white">Performance-Led</h4>
+                 <p className="text-xs text-on-surface-variant">Ratios focus on your weak points while revisiting mastered topics.</p>
               </div>
            </div>
            <div className="flex gap-4">
@@ -118,8 +118,8 @@ const MockTests = () => {
                  <Clock className="size-6" />
               </div>
               <div className="space-y-1">
-                 <h4 className="font-bold text-slate-900 dark:text-white">Timed Sessions</h4>
-                 <p className="text-xs text-slate-500">Practice under pressure with customizable timers for better endurance.</p>
+                 <h4 className="font-bold text-on-surface dark:text-white">Timed Sessions</h4>
+                 <p className="text-xs text-on-surface-variant">Practice under pressure with customizable timers for better endurance.</p>
               </div>
            </div>
            <div className="flex gap-4">
@@ -127,8 +127,8 @@ const MockTests = () => {
                  <Target className="size-6" />
               </div>
               <div className="space-y-1">
-                 <h4 className="font-bold text-slate-900 dark:text-white">Exam Specific</h4>
-                 <p className="text-xs text-slate-500">Questions are curated exactly to your chosen exam's curriculum.</p>
+                 <h4 className="font-bold text-on-surface dark:text-white">Exam Specific</h4>
+                 <p className="text-xs text-on-surface-variant">Questions are curated exactly to your chosen exam's curriculum.</p>
               </div>
            </div>
         </div>

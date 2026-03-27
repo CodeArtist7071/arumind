@@ -1,49 +1,51 @@
-import { QueueListIcon } from "@heroicons/react/24/solid";
+import React, { cloneElement, useState } from "react";
 import {
   BarChart,
   ChevronLeft,
   ChevronRight,
   LayoutDashboard,
   LogOut,
-  Menu,
   Notebook,
   Package,
   School,
-  Download,
+  Sun,
+  Moon,
+  TrendingUp,
+  History,
+  Target
 } from "lucide-react";
 import { useDispatch, useSelector } from "react-redux";
 import InstallAppButton from "../components/InstallAppButton";
-
-import { Link, NavLink, Outlet } from "react-router-dom";
+import { useTheme } from "../hooks/useTheme";
+import { NavLink, Outlet, useLocation, useNavigate } from "react-router-dom";
 import type { AppDispatch, RootState } from "../store";
 import { supabase } from "../utils/supabase";
 import { clearUser } from "../slice/userSlice";
-import { useState } from "react";
 
 const navItems = [
   {
     label: "Dashboard",
-    icon: <LayoutDashboard color="blue" size={20} />,
+    icon: <LayoutDashboard size={20} />,
     path: "/user/dashboard",
   },
   {
-    label: "Performance",
-    icon: <BarChart color="blue" size={20} />,
+    label: "Analytics",
+    icon: <TrendingUp size={20} />,
     path: "/user/performance",
   },
   {
-    label: "Study Planner",
-    icon: <Notebook color="blue" size={20} />,
+    label: "Planner",
+    icon: <History size={20} />,
     path: "/user/plan-exams",
   },
   {
-    label: "Mock Tests",
-    icon: <Package color="blue" size={20} />,
+    label: "Inventory",
+    icon: <Package size={20} />,
     path: "/user/mock-tests",
   },
   {
     label: "Results",
-    icon: <Package color="blue" size={20} />,
+    icon: <Target size={20} />,
     path: "/user/results",
   },
 ];
@@ -51,158 +53,150 @@ const navItems = [
 export default function UserPanelLayout() {
   const { user } = useSelector((state: RootState) => state.user ?? null);
   const dispatch = useDispatch<AppDispatch>();
+  const navigate = useNavigate();
   const [isCollapsed, setIsCollapsed] = useState(false);
+  const { theme, toggleTheme } = useTheme();
 
-  const handleLogout = () => {
-    const { error }: any = supabase.auth.signOut();
-    if (error) {
-      console.log("Logout Error", error);
-    }
+  const location = useLocation();
+
+  const handleLogout = async () => {
+    const { error } = await supabase.auth.signOut();
+    if (error) console.error("Logout Error", error);
     dispatch(clearUser());
-    console.log("Logout Successfully");
+    navigate("/login");
   };
 
   return (
-    <>
-      <style>{`
-        /* Hardcoded breakpoints to guarantee layout works immediately without Tailwind JIT restarts */
-        @media (min-width: 768px) {
-          .mobile-bottom-nav { display: none !important; }
-          .main-wrapper { padding-bottom: 1.5rem !important; }
-        }
-        @media (max-width: 767px) {
-          .desktop-sidebar { display: none !important; }
-          .main-wrapper { padding-bottom: 6rem !important; }
-        }
-      `}</style>
-      <div className="flex h-screen bg-slate-50 dark:bg-slate-950">
-        {/* Sidebar (Desktop Only) */}
-        <aside 
-          className={`desktop-sidebar border-r border-slate-200 dark:border-slate-800 bg-white/90 dark:bg-slate-900/90 backdrop-blur-md flex flex-col transition-all duration-300 relative group ${
-            isCollapsed ? "w-20" : "w-64"
-          }`}
-        >
-          {/* Toggle Button */}
-          <button
-            onClick={() => setIsCollapsed(!isCollapsed)}
-            className={`absolute -right-3 top-20 size-6 bg-[#1a57db] text-white rounded-full flex items-center justify-center shadow-lg z-50 transition-all duration-200 ${
-              isCollapsed ? "opacity-100" : "opacity-100 group-hover:opacity-100"
-            }`}
-          >
-            {isCollapsed ? <ChevronRight size={14} /> : <ChevronLeft size={14} />}
-          </button>
-
-          {/* Logo */}
-          <div className={`p-6 flex items-center ${isCollapsed ? "justify-center" : "gap-3"}`}>
-            <div className="w-8 h-8 bg-blue-500 rounded-lg flex items-center justify-center text-white shrink-0">
-              <School color="white" size={20} />
-            </div>
-            {!isCollapsed && (
-              <h2 className="text-xl font-bold tracking-tight truncate">OPrep Portal</h2>
-            )}
+    <div className="flex h-screen bg-surface font-narrative text-on-surface overflow-hidden transition-colors duration-500">
+      {/* Sidebar - Desktop */}
+      <aside
+        className={`hidden lg:flex border-r border-on-surface/5 flex-col h-full bg-surface-container-low transition-all duration-700 ease-[var(--ease-botanical)] relative z-30 shadow-ambient ${
+          isCollapsed ? "w-20" : "w-72"
+        }`}
+      >
+        {/* Logo Section */}
+        <div className="h-28 flex items-center px-8 mb-4">
+          <div className="flex items-center gap-4 group cursor-pointer" onClick={() => navigate("/")}>
+             <div className="size-12 bg-linear-to-br from-primary to-primary-container rounded-2xl flex items-center justify-center text-white shadow-lg shadow-primary/20 group-hover:rotate-6 transition-all duration-300">
+                <School className="size-6" />
+             </div>
+             {!isCollapsed && (
+               <div className="flex flex-col">
+                 <h1 className="text-2xl font-black tracking-tighter leading-none text-primary">ARUMIND</h1>
+                 <span className="text-[10px] font-technical uppercase tracking-[0.2em] text-on-surface-variant opacity-60">Digital Journal</span>
+               </div>
+             )}
           </div>
+        </div>
 
-          {/* User Profile */}
-          <UserProfile user={user} isCollapsed={isCollapsed} />
-
-          {/* Navigation */}
-          <nav className="flex-1 px-4 space-y-1 overflow-y-auto">
-            {navItems.map((item, index) => (
-              <NavLink
-                key={index}
-                to={item.path}
-                title={isCollapsed ? item.label : ""}
-                className={({ isActive }) =>
-                  `flex items-center ${isCollapsed ? "justify-center" : "gap-3"} px-3 py-2.5 rounded-lg transition-all duration-200 ${
-                    isActive
-                      ? "bg-[#1a57db]/10 text-[#1a57db] font-medium shadow-sm"
-                      : "hover:bg-slate-100 dark:hover:bg-slate-800 text-slate-700 dark:text-slate-300"
-                  }`
-                }
-              >
-                <div className="shrink-0">{item.icon}</div>
-                {!isCollapsed && <span className="truncate">{item.label}</span>}
-              </NavLink>
-            ))}
-          </nav>
-
-          <div className="p-4 border-t border-slate-200 dark:border-slate-800">
-            <button
-              onClick={handleLogout}
-              title={isCollapsed ? "Log Out" : ""}
-              className={`w-full py-2 bg-white text-[#1a57db] text-xs font-bold rounded-lg hover:bg-slate-100 transition-all duration-200 flex items-center justify-center gap-2 ${isCollapsed ? "px-0" : "px-4"}`}
-            >
-              <LogOut size={16} />
-              {!isCollapsed && <span>Log Out</span>}
-            </button>
-          </div>
-        </aside>
-
-        {/* Main Content */}
-        <main className="main-wrapper flex-1 p-4 sm:p-6 overflow-y-auto w-full relative">
-          <Outlet />
-        </main>
-
-        {/* Mobile Bottom Navigation */}
-        <nav className="mobile-bottom-nav fixed bottom-0 left-0 right-0 bg-white border-t border-slate-200 flex justify-around items-center px-1 py-2 z-50 shadow-[0_-4px_6px_-1px_rgba(0,0,0,0.05)]">
-          {navItems.map((item, index) => (
+        {/* Navigation Section */}
+        <nav className="flex-1 p-4 space-y-2 overflow-y-auto overflow-x-hidden">
+          {navItems.map((item) => (
             <NavLink
-              key={index}
+              key={item.label}
               to={item.path}
+              end={item.path === "/user/dashboard"}
               className={({ isActive }) =>
-                `flex flex-col items-center justify-center w-16 h-12 rounded-xl transition-all duration-200 ${
-                  isActive 
-                    ? "text-[#1a57db] bg-blue-50/80 scale-105" 
-                    : "text-slate-400 hover:text-slate-600"
+                `flex flex-row items-center justify-start px-3 py-2  rounded-4xl transition-all duration-300 group ${
+                  isActive
+                    ? "bg-surface-container-highest text-primary shadow-sm scale-105"
+                    : "text-on-surface-variant flex items-center justify-center hover:bg-(--color-primary) hover:text-on-surface hover:text-white"
                 }`
               }
             >
-              <div className={`shrink-0 transition-transform ${
-                // Slightly scale up icon when active
-                window.location.pathname.startsWith(item.path) ? "scale-110" : "scale-100"
-              }`}>
-                {item.icon}
+              <div className="shrink-0 group-hover:scale-110 my-1 flex items-center justify-center transition-transform duration-300">
+                 {cloneElement(item.icon as React.ReactElement<any>, { 
+                   color: "currentColor", 
+                   className: "size-6" 
+                 })}
               </div>
-              <span className="text-[9px] font-bold mt-1 tracking-tight truncate w-full text-center px-1">
-                {item.label}
-              </span>
+              {!isCollapsed && (
+                <span className="text-sm ml-3 font-technical uppercase tracking-widest font-black opacity-80 group-hover:opacity-100">
+                  {item.label}
+                </span>
+              )}
             </NavLink>
           ))}
         </nav>
-      </div>
-    </>
+
+        {/* Action Buttons Section */}
+        <div className="p-4 space-y-4">
+           <InstallAppButton isCollapsed={isCollapsed} />
+           
+           <div className="flex gap-2">
+              <button 
+                onClick={toggleTheme}
+                className="flex-1 flex items-center justify-center p-2 rounded-full bg-surface-container-high text-on-surface-variant hover:bg-surface-container-highest hover:text-primary transition-all duration-300 group"
+                title="Toggle Mood"
+              >
+                {theme === 'dark' ? <Sun className="size-5" /> : <Moon className="size-5" />}
+              </button>
+
+              <button
+                onClick={() => setIsCollapsed(!isCollapsed)}
+                className="flex-1 flex items-center justify-center p-2 rounded-full bg-surface-container-high text-primary hover:bg-surface-container-highest transition-all duration-300"
+              >
+                <ChevronLeft className={`size-5 transition-transform duration-500 ${isCollapsed ? "rotate-180" : ""}`} />
+              </button>
+           </div>
+
+           <button
+             onClick={handleLogout}
+             className="w-full flex items-center justify-center gap-3 p-4 rounded-full text-on-surface-variant hover:text-red-600 hover:bg-red-500/5 transition-all duration-300 group"
+           >
+             <LogOut className="size-5 group-hover:-translate-x-1 transition-transform" />
+             {!isCollapsed && <span className="text-[10px] font-technical uppercase tracking-widest font-black">Close Session</span>}
+           </button>
+        </div>
+      </aside>
+
+      {/* Main Content Area */}
+      <main className="flex-1 flex flex-col relative overflow-hidden bg-surface transition-colors duration-500">
+        {/* Editorial Header */}
+        <header className="h-24 bg-surface/40 backdrop-blur-2xl flex items-center justify-between px-10 sticky top-0 z-20">
+           <div>
+              <div className="flex flex-col">
+                <h2 className="text-[10px] font-technical uppercase tracking-[0.4em] text-on-surface-variant opacity-40 mb-1">Authenticated Account</h2>
+                <div className="flex items-center gap-3">
+                   <div className="size-2 bg-primary rounded-full animate-pulse" />
+                   <p className="font-technical text-xs font-bold text-on-surface tracking-tight">{user?.email}</p>
+                </div>
+              </div>
+           </div>
+
+           <div className="flex items-center gap-6">
+              <div className="size-12 bg-linear-to-br from-primary to-primary-container rounded-2xl flex items-center justify-center text-white font-technical font-bold text-lg shadow-lg shadow-primary/20 hover:scale-105 transition-transform cursor-pointer" onClick={() => navigate("/user/profile")}>
+                 {user?.email?.[0].toUpperCase()}
+              </div>
+           </div>
+        </header>
+
+        {/* Content Viewport */}
+        <div 
+          key={location.pathname}
+          className="flex-1 bg-surface-container-low overflow-y-auto custom-scrollbar p-6 lg:p-10 animate-reveal"
+        >
+          <Outlet />
+        </div>
+
+        {/* Mobile Nav - "The Bottom Bar" */}
+        <nav className="lg:hidden h-20 bg-surface-container-highest/80 backdrop-blur-xl flex justify-around items-center px-4 sticky bottom-0 z-30 border-t border-outline-variant/10 shadow-ambient">
+           {navItems.slice(0, 4).map((item) => (
+             <NavLink
+               key={item.label}
+               to={item.path}
+               className={({ isActive }) =>
+                 `flex flex-col items-center justify-center size-14 rounded-2xl transition-all ${
+                   isActive ? "text-primary bg-surface shadow-sm" : "text-on-surface-variant"
+                 }`
+               }
+             >
+               {cloneElement(item.icon as React.ReactElement<any>, { size: 20 })}
+             </NavLink>
+           ))}
+        </nav>
+      </main>
+    </div>
   );
 }
 
-const UserProfile = ({ user, isCollapsed }: any) => {
-  return (
-    <div className={`px-4 mb-6 ${isCollapsed ? "flex justify-center" : ""}`}>
-      <div className={`p-4 bg-[#1a57db]/5 rounded-xl border border-[#1a57db]/10 ${isCollapsed ? "p-2" : ""}`}>
-        <div className={`flex items-center gap-3 ${isCollapsed ? "justify-center mb-0" : "mb-2"}`}>
-          <div className="w-10 h-10 bg-blue-200 shrink-0 flex justify-center items-center rounded-full bg-cover bg-center shadow-lg"></div>
-          {!isCollapsed && (
-            <div className="flex flex-col min-w-0">
-              <span className="text-sm font-semibold truncate">
-                {user?.email || ""}
-              </span>
-              <span className="text-xs text-slate-500">OPSC Aspirant</span>
-            </div>
-          )}
-        </div>
-        {!isCollapsed && (
-          <>
-            <Link
-              to={"/user/profile"}
-              className="w-full px-5 flex items-center justify-center py-1.5 text-xs font-bold bg-[#1a57db] text-white rounded-lg hover:bg-[#1a57db]/90 transition-all duration-200"
-            >
-              View Profile
-            </Link>
-            <div className="mt-3">
-              <InstallAppButton />
-            </div>
-          </>
-        )}
-      </div>
-    </div>
-  );
-};

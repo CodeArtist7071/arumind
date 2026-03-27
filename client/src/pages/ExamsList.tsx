@@ -69,11 +69,11 @@ export const ExamsList = () => {
             <span
               key={el.id}
               onClick={() => handleSelectBoard(el.id)}
-              className={`px-6 py-2 rounded-full border cursor-pointer transition-all duration-200 font-medium text-sm
+              className={`px-6 py-2 rounded-full border cursor-pointer  transition-all duration-200 font-medium text-sm
                 ${
                   isSelected
-                    ? "bg-[#1a57db] text-white border-[#1a57db] shadow-md"
-                    : "bg-white dark:bg-slate-900 text-slate-700 dark:text-slate-300 border-slate-200 dark:border-slate-700 hover:border-[#1a57db] hover:text-[#1a57db]"
+                    ? "bg-[#16a34a] text-white border-[#16a34a] shadow-md"
+                    : "bg-surface dark:bg-slate-900 text-slate-700 dark:text-slate-300 border-slate-200 dark:border-slate-700 hover:border-[#16a34a] hover:text-[#16a34a]"
                 }`}
             >
               {el.name}
@@ -92,19 +92,19 @@ export const ExamsList = () => {
           {filteredExams.map((exam, index) => (
             <div
               key={exam.id ?? index}
-              className="p-6 bg-white dark:bg-slate-900 rounded-xl border border-slate-200 dark:border-slate-800 shadow-sm hover:border-[#1a57db] hover:shadow-xl transition-all duration-300 group cursor-pointer"
+              className="p-6 bg-surface dark:bg-slate-900 rounded-xl  dark:border-slate-800 shadow-sm hover:border-[#16a34a] hover:shadow-xl transition-all duration-300 group cursor-pointer"
               onClick={() => {}}
             >
-              <div className="w-10 h-10 bg-gradient-to-r from-[#1a57db]/10 to-[#1a57db]/20 rounded-lg flex items-center justify-center text-[#1a57db] mb-4 group-hover:bg-gradient-to-r group-hover:from-[#1a57db] group-hover:to-blue-600 group-hover:text-white transition-all duration-300">
+              <div className="w-10 h-10 bg-gradient-to-r from-[#16a34a]/10 to-[#16a34a]/20 rounded-lg flex items-center justify-center text-[#16a34a] mb-4 group-hover:bg-gradient-to-r group-hover:from-[#16a34a] group-hover:to-green-600 group-hover:text-white transition-all duration-300">
                 <Book />
               </div>
               <h3 className="font-black text-lg mb-1">{exam.name}</h3>
-              <p className="text-xs text-slate-500 mb-4">{exam.full_name}</p>
+              <p className="text-xs text-on-surface-variant mb-4">{exam.full_name}</p>
               <div className="mt-4 pt-4 border-t border-slate-100 dark:border-slate-800">
                 <p className="text-[10px] text-slate-400 font-bold uppercase mb-2 tracking-wider">
                   Exam Type
                 </p>
-                <p className="text-sm font-semibold text-slate-900 dark:text-white">
+                <p className="text-sm font-semibold text-on-surface dark:text-white">
                   {exam.type}
                 </p>
               </div>
