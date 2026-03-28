@@ -31,14 +31,14 @@ export const QuestionList = ({
   const answers = watch("answers");
 
   return (
-    <section className="lg:col-span-9 space-y-6">
+    <section className="lg:col-span-9 space-y-12">
       {questionData?.map((q, i) => {
         const difficultyClass =
           q.difficulty_level === "Easy"
-            ? "bg-green-100 text-green-700"
+            ? "bg-primary/10 text-primary"
             : q.difficulty_level === "Hard"
-              ? "bg-red-100 text-red-700"
-              : "bg-yellow-100 text-yellow-700";
+              ? "bg-red-50 text-red-600"
+              : "bg-tertiary/10 text-tertiary";
 
         const currentAnswer = answers?.[q.id];
         
@@ -51,44 +51,59 @@ export const QuestionList = ({
             ref={(el: any) => {
               if (questionRef.current) questionRef.current[i] = el;
             }}
-            className="bg-surface dark:bg-slate-900 rounded-xl  dark:border-slate-800 shadow-sm flex flex-col min-h-60"
+            className="bg-surface-container-low rounded-4xl p-8 lg:p-12 shadow-ambient transition-all duration-700 ease-botanical hover:shadow-ambient-lg group/q"
           >
-            {/* Header */}
-            <div className="p-4 border-b flex justify-between items-center border-slate-100 dark:border-slate-800">
-              <h2 className="text-lg font-bold">Question {i + 1}</h2>
+            {/* Header: Editorial & Technical Stamped */}
+            <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12 border-b border-outline-variant/30 pb-8">
+              <div className="flex flex-col">
+                <span className="text-[10px] font-technical font-black text-on-surface-variant/40 uppercase tracking-[0.4em] mb-2">Inquiry</span>
+                <h2 className="text-6xl font-black tracking-tighter text-on-surface">
+                  {String(i + 1).padStart(2, '0')}.
+                </h2>
+              </div>
 
-              <div className="flex items-center gap-2">
-                <span className={`text-[10px] uppercase font-bold px-2 py-1 rounded-full ${difficultyClass}`}>
-                  {q.difficulty_level}
-                </span>
+              <div className="flex items-center gap-4">
+                <div className="flex flex-col items-end">
+                  <span className="text-[8px] font-technical font-black text-on-surface-variant/30 uppercase tracking-[0.3em] mb-1">Complexity</span>
+                  <span className={`text-[10px] font-technical font-black uppercase tracking-widest px-3 py-1.5 rounded-full ${difficultyClass}`}>
+                    {q.difficulty_level}
+                  </span>
+                </div>
 
-                <span className="text-[10px] uppercase font-bold px-2 py-1 bg-primary/10 text-green-700 rounded-full">
-                  {q.marks} Points
-                </span>
+                <div className="h-8 w-px bg-outline-variant/30" />
+
+                <div className="flex flex-col items-end">
+                  <span className="text-[8px] font-technical font-black text-on-surface-variant/30 uppercase tracking-[0.3em] mb-1">Growth Value</span>
+                  <span className="text-[10px] font-technical font-black uppercase tracking-widest px-3 py-1.5 bg-primary text-white rounded-full">
+                    {q.marks} Pts
+                  </span>
+                </div>
               </div>
             </div>
 
-            {/* Body */}
-            <div className="p-6 flex-1">
-              <div className="space-y-4 mb-6">
-                <p className="text-slate-800 dark:text-slate-200 font-medium text-lg leading-relaxed">
+            {/* Body: High Legibility */}
+            <div className="flex-1 max-w-4xl">
+              <div className="space-y-8 mb-12">
+                <p className="text-on-surface font-semibold text-2xl leading-relaxed tracking-tight">
                   {q.question}
                 </p>
                 {isOdia && odiaData?.question && (
-                  <p className="text-[#16a34a] dark:text-green-400 font-bold text-lg leading-relaxed border-t border-slate-100 dark:border-slate-800 pt-4 mt-4">
-                    {odiaData.question}
-                  </p>
+                  <div className="bg-primary/5 p-8 rounded-3xl border-l-4 border-primary">
+                    <p className="text-primary font-bold text-xl leading-relaxed">
+                      {odiaData.question}
+                    </p>
+                  </div>
                 )}
               </div>
 
-              <div className="grid gap-3">
+              <div className="grid gap-4">
                 {q.options.map((opt: any) => (
-                  <div key={opt.l} className="relative flex items-center group">
+                  <div key={opt.l} className="relative flex items-center">
                     <label className={`
-                      flex w-full items-center p-4 rounded-xl border-2 transition-all cursor-pointer
+                      flex w-full items-center p-6 rounded-2xl transition-all duration-500 cursor-pointer
                       ${currentAnswer === opt.l 
-                        ? 'border-primary bg-primary/5 dark:bg-primary/10' 
-                        : 'border-slate-100 dark:border-slate-800 hover:border-slate-200 dark:hover:border-slate-700 hover:bg-surface-container-low dark:hover:bg-slate-800/50'
+                        ? 'bg-surface-container-highest shadow-inner ring-1 ring-primary/20 scale-[1.02]' 
+                        : 'bg-surface-container-lowest hover:bg-white hover:scale-[1.01] hover:shadow-ambient'
                       }
                     `}>
                       <input
@@ -102,22 +117,27 @@ export const QuestionList = ({
                             }));
                           },
                         })}
-                        className="size-5 text-primary focus:ring-primary border-slate-300 dark:border-slate-600"
+                        className="size-6 text-primary focus:ring-primary/30 border-outline-variant transition-all"
                       />
 
-                        <div className="ml-4 flex flex-col gap-1">
-                          <div className="flex items-center gap-3">
-                            <span className="flex items-center justify-center size-6 rounded bg-surface-container-high dark:bg-slate-800 text-xs font-bold text-on-surface-variant">
+                        <div className="ml-6 flex flex-col gap-2 flex-1">
+                          <div className="flex items-center gap-5">
+                            <span className="flex items-center justify-center size-8 rounded-xl bg-surface-container-high font-technical font-black text-xs text-on-surface-variant">
                               {opt.l}
                             </span>
-                            <span className="font-medium">{opt.v}</span>
+                            <span className="font-bold text-lg text-on-surface">{opt.v}</span>
                           </div>
                           {isOdia && odiaData?.options?.find((o:any) => o.l === opt.l) && (
-                            <div className="ml-9 text-[#16a34a] dark:text-green-400 text-sm font-bold">
+                            <div className="ml-13 text-primary text-base font-bold opacity-80">
                               {odiaData.options.find((o:any) => o.l === opt.l)?.v}
                             </div>
                           )}
                         </div>
+
+                        {/* Confirmation Glow indicator inside selection */}
+                        {confirmedAnswers[q.id] && currentAnswer === opt.l && (
+                           <div className="size-3 bg-primary rounded-full animate-pulse shadow-[0_0_15px_rgba(34,197,94,0.6)]" />
+                        )}
                       </label>
 
                     {/* Show Confirm button only if this option is selected BUT not confirmed */}
@@ -131,9 +151,9 @@ export const QuestionList = ({
                           }));
                           if (onConfirm) onConfirm(q.id, currentAnswer);
                         }}
-                        className="absolute right-4 bg-primary cursor-pointer hover:bg-primary/90 text-green-700 px-4 py-1.5 rounded-lg text-sm font-bold shadow-lg shadow-primary/20 transition-all animate-in slide-in-from-right-2"
+                        className="absolute right-6 bg-linear-to-r from-primary to-primary-container text-white px-6 py-2 rounded-full text-[10px] font-technical font-black uppercase tracking-widest shadow-ambient-lg transition-all animate-in slide-in-from-right-4 hover:scale-110 active:scale-95 cursor-pointer"
                       >
-                        Click Here to Confirm
+                        Affirm Selection
                       </button>
                     )}
                   </div>
@@ -142,9 +162,11 @@ export const QuestionList = ({
 
               {/* Status Indicator */}
               {confirmedAnswers[q.id] && (
-                <div className="flex items-center gap-2 mt-6 text-emerald-600 dark:text-emerald-400 font-bold text-sm">
-                  <div className="size-2 rounded-full bg-emerald-500 animate-pulse" />
-                  Answer Selected
+                <div className="flex items-center gap-3 mt-10">
+                   <div className="flex items-center gap-2 bg-primary/10 px-4 py-2 rounded-full border border-primary/20">
+                      <div className="size-2 rounded-full bg-primary animate-ping" />
+                      <span className="text-[10px] font-technical font-black text-primary uppercase tracking-[0.2em]">Validated • Recorded</span>
+                   </div>
                 </div>
               )}
             </div>

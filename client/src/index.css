@@ -38,8 +38,8 @@
     --on-primary: #ffffff;
     
     --surface: #fbfaee; 
-    --surface-container-low: #f5f4e8;
-    --surface-container-high: #ecebdc;
+    --surface-container-low: #e2e2e2;
+    --surface-container-high: #f3f2ea;
     --surface-container-highest: #e4e3d7;
     --surface-container-lowest: #ffffff;
     --surface-dim: #dbdbcf;
@@ -118,6 +118,12 @@
   }
 
   .hover-bloom {
-    @apply hover:scale-[1.015] hover:shadow-ambient-lg hover:bg-white transition-all duration-500 ease-[var(--ease-botanical)];
+    @apply hover:scale-[1.015] hover:shadow-ambient-lg transition-all duration-500 ease-botanical;
+  }
+
+  /* Eye Protection Mode: Lush Minimalist Amber Filter */
+  .eye-protection-active {
+    filter: sepia(0.25) contrast(0.95) brightness(0.95);
+    transition: filter 0.8s var(--ease-botanical);
   }
 }

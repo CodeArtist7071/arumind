@@ -1,7 +1,7 @@
-
 import { useDispatch, useSelector } from "react-redux";
 import type { AppDispatch, RootState } from "../store";
 import { updateUserLocally } from "../slice/userSlice";
+import { toggleEyeProtection, toggleBlueLightShield } from "../slice/uiSlice";
 import { updateUserProfile } from "../services/userServices";
 import { EditProfileModal } from "../components/EditProfileModal";
 import { 
@@ -19,12 +19,14 @@ import {
   CheckCircle2,
   Calendar,
   Settings,
-  ChevronRight
+  ChevronRight,
+  Eye
 } from "lucide-react";
 import { useState } from "react";
 
 const Profile = () => {
     const { user, profile } = useSelector((state: RootState) => state.user);
+    const { isEyeProtectionActive, blueLightShield } = useSelector((state: RootState) => state.ui);
     const dispatch = useDispatch<AppDispatch>();
     const [isEditModalOpen, setIsEditModalOpen] = useState(false);
     
@@ -168,8 +170,54 @@ const Profile = () => {
 
                 {/* Right Column: Vitals */}
                 <div className="lg:col-span-4 space-y-10">
+                    {/* Environmental Vitals: Eye Protection & Blue Light Shield */}
+                    <section className="bg-surface-container-low rounded-4xl p-10 shadow-ambient border border-primary/5">
+                        <div className="flex items-center gap-4 mb-8">
+                             <div className="size-10 bg-primary/10 rounded-xl flex items-center justify-center text-primary">
+                                 <Eye size={20} />
+                             </div>
+                             <h3 className="text-[11px] font-technical font-black uppercase tracking-[0.4em] text-on-surface-variant opacity-60">Environmental Vitals</h3>
+                        </div>
+
+                        <div className="space-y-6">
+                            {/* Eye Protection Toggle */}
+                            <div className="flex items-center justify-between p-6 bg-white/50 rounded-4xl group hover:bg-white transition-all duration-500">
+                                <div className="flex flex-col">
+                                    <p className="text-xs font-bold text-on-surface">Eye Protection</p>
+                                    <p className="text-[9px] font-technical font-black uppercase tracking-widest text-primary mt-1">Soft Warmth</p>
+                                </div>
+                                <button 
+                                    type="button"
+                                    onClick={() => dispatch(toggleEyeProtection())}
+                                    className={`relative inline-flex h-6 w-11 items-center rounded-full transition-colors duration-500 cursor-pointer ${isEyeProtectionActive ? 'bg-primary' : 'bg-surface-dim'}`}
+                                >
+                                    <span className={`inline-block h-4 w-4 transform rounded-full bg-white transition-transform duration-500 ${isEyeProtectionActive ? 'translate-x-6' : 'translate-x-1'}`} />
+                                </button>
+                            </div>
+
+                            {/* Blue Light Shield Toggle */}
+                            <div className="flex items-center justify-between p-6 bg-white/50 rounded-4xl group hover:bg-white transition-all duration-500 ring-1 ring-tertiary/5">
+                                <div className="flex flex-col">
+                                    <p className="text-xs font-bold text-on-surface">Blue Light Shield</p>
+                                    <p className="text-[9px] font-technical font-black uppercase tracking-widest text-tertiary mt-1">Amber Filter</p>
+                                </div>
+                                <button 
+                                    type="button"
+                                    onClick={() => dispatch(toggleBlueLightShield())}
+                                    className={`relative inline-flex h-6 w-11 items-center rounded-full transition-colors duration-500 cursor-pointer ${blueLightShield ? 'bg-tertiary' : 'bg-surface-dim'}`}
+                                >
+                                    <span className={`inline-block h-4 w-4 transform rounded-full bg-white transition-transform duration-500 ${blueLightShield ? 'translate-x-6' : 'translate-x-1'}`} />
+                                </button>
+                            </div>
+                        </div>
+
+                        <p className="mt-8 text-[9px] text-on-surface-variant opacity-40 font-medium leading-relaxed italic">
+                           * Reduces high-energy blue-violet light. Recommended for night-time reviews.
+                        </p>
+                    </section>
+
                     {/* Mastery Snapshot Pod */}
-                    <section className="bg-surface-container-low rounded-[3rem] p-10 shadow-ambient">
+                    <section className="bg-surface-container-low rounded-4xl p-10 shadow-ambient">
                         <h3 className="text-[11px] font-technical font-black uppercase tracking-[0.4em] text-on-surface-variant opacity-60 mb-10">Mastery Snapshot</h3>
                         
                         <div className="space-y-8">

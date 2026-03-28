@@ -18,7 +18,7 @@ const SubjectMastery = ({ examid, metrics }: { examid?: string, metrics: any }) 
     const displayData = data?.length > 0 ? data : (metrics?.subjectBreakdown || []);
 
     return (
-        <div className="bg-surface-container-low p-10 rounded-[3rem] shadow-ambient">
+        <div className="bg-surface-container-high p-10 rounded-[3rem] shadow-ambient">
             <h3 className="text-xl font-black text-on-surface mb-10 tracking-tight flex items-center gap-4">
                 <div className="size-10 bg-primary/10 rounded-xl flex items-center justify-center text-primary">
                    <Target size={20} />

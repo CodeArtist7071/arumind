@@ -1,4 +1,4 @@
-import { ChevronLeft, Edit, Grid2X2, NotebookTabs, Timer } from "lucide-react";
+import { ChevronLeft, Edit, Grid2X2, NotebookTabs, Timer, Target } from "lucide-react";
 import { useEffect, useRef, useState, useMemo, useCallback } from "react";
 import { useNavigate, useParams, useSearchParams, useBlocker } from "react-router";
 import { AlertPopup } from "./AlertPopup";
@@ -10,6 +10,13 @@ import {
   fetchFilteredQuestion,
   fetchQuestion,
 } from "../../slice/questionSlice";
+import { 
+  startTestSession, 
+  updateTestTime, 
+  setTestLanguage, 
+  clearTestSession,
+  triggerTestSubmit
+} from "../../slice/uiSlice";
 import { useNotifications } from "reapop";
 import { QuestionPalette } from "./QuestionPalette";
 import { useForm, FormProvider } from "react-hook-form";
@@ -31,8 +38,6 @@ export default function PracticeTest() {
   const dispatch = useDispatch<AppDispatch>();
   const { notify } = useNotifications();
 
-  // new......
-  // PracticeTest.tsx — add these refs at the top with existing refs
   const videoRef = useRef<HTMLVideoElement>(null);
   const animationRef = useRef<number | null>(null);
   const detectorRef = useRef<any>(null);
@@ -54,6 +59,7 @@ export default function PracticeTest() {
     (state: RootState) => state.questions,
   );
   const { user } = useSelector((state: RootState) => state.user);
+  const { testLanguage, triggerSubmit } = useSelector((state: RootState) => state.ui);
 
   const [openAlert, setOpenAlert] = useState<boolean>(false);
   const [attemptId, setAttemptId] = useState<string | null>(null);
@@ -66,11 +72,19 @@ export default function PracticeTest() {
   const [confirmedAnswers, setConfirmedAnswers] = useState<
     Record<number, boolean>
   >({});
-  const [language, setLanguage] = useState<"en" | "od">("en");
+  
+  const [language, setLanguageLocal] = useState<"en" | "od">(testLanguage);
   const [showSubmitConfirm, setShowSubmitConfirm] = useState(false);
   const [counts, setCounts] = useState({ attempted: 0, total: 0 });
 
   const isNavigatingAwayRef = useRef(false);
+
+  const methods = useForm<any>({
+    defaultValues: { answers: {} },
+  });
+
+  const { handleSubmit, setValue, watch, reset } = methods;
+  const watchedAnswers = watch("answers");
 
   const blocker = useBlocker(
     ({ currentLocation, nextLocation }) =>
@@ -85,89 +99,80 @@ export default function PracticeTest() {
     }
   }, [blocker]);
 
-  const methods = useForm<any>({
-    defaultValues: { answers: {} },
-  });
-
-  const { handleSubmit, setValue, watch, reset } = methods;
-  const watchedAnswers = watch("answers");
-
-  // Consolidated initialization and reset
+  // Sync test session with global header on mount
   useEffect(() => {
-    console.log(
-      `[PracticeTest] CID changed or component mounted. Current CID: ${cid}`,
-    );
+    dispatch(startTestSession({ 
+      title: "Subject Manifestation", 
+      language: "en" 
+    }));
+    return () => {
+      dispatch(clearTestSession());
+    };
+  }, [dispatch]);
 
-    // 1. CLEAR previous state to prevent carry-over
+  // Sync language with Redux
+  useEffect(() => {
+    setLanguageLocal(testLanguage);
+  }, [testLanguage]);
+
+  // Watch for Parent-Triggered Submit
+  useEffect(() => {
+    if (triggerSubmit) {
+      handlePreSubmit();
+    }
+  }, [triggerSubmit]);
+
+  // Sync timer with Redux
+  useEffect(() => {
+    if (timeLeft === null) return;
+    dispatch(updateTestTime(timeLeft));
+  }, [timeLeft, dispatch]);
+
+  useEffect(() => {
+    console.log(`[PracticeTest] CID changed or component mounted. CID: ${cid}`);
     setAttemptId(null);
     setConfirmedAnswers({});
     reset({ answers: {} });
 
-    // 2. Try loading from storage
     const storageKey = `practice_test_${cid}`;
     const savedState = localStorage.getItem(storageKey);
 
     if (savedState) {
       try {
-        const {
-          answers,
-          timestamp,
-          confirmed,
-          attemptId: savedAttemptId,
-        } = JSON.parse(savedState);
-        const now = Date.now();
-
-        if (now - timestamp < SESSION_TTL) {
-          console.log(
-            `[PracticeTest] Restoring session from storage. AttemptID: ${savedAttemptId}`,
-          );
+        const { answers, timestamp, confirmed, attemptId: savedAttemptId } = JSON.parse(savedState);
+        if (Date.now() - timestamp < SESSION_TTL) {
           reset({ answers });
           setConfirmedAnswers(confirmed || {});
           if (savedAttemptId) setAttemptId(savedAttemptId);
           setLastSaved(timestamp);
         } else {
-          console.log("[PracticeTest] Storage session expired.");
           localStorage.removeItem(storageKey);
         }
       } catch (e) {
-        console.error("[PracticeTest] Failed to parse storage state:", e);
+        console.error("Failed to parse storage state:", e);
       }
     }
     dispatch(fetchQuestion(cid as string));
     dispatch(fetchFilteredQuestion(user?.id));
-  }, [cid, dispatch, reset]); // ONLY depend on cid to ensure reset happens only when chapter changes
+  }, [cid, dispatch, reset]);
 
-  // Track attemptId changes
-  useEffect(() => {
-    if (attemptId) {
-      console.log(`[PracticeTest] ACTIVE AttemptID: ${attemptId}`);
-    } else {
-      console.log(`[PracticeTest] AttemptID is currently null.`);
-    }
-  }, [attemptId]);
-
-  // Save to localStorage on change
+  // Save to localStorage
   useEffect(() => {
     if (Object.keys(watchedAnswers || {}).length > 0) {
       const storageKey = `practice_test_${cid}`;
-      localStorage.setItem(
-        storageKey,
-        JSON.stringify({
-          answers: watchedAnswers,
-          confirmed: confirmedAnswers,
-          attemptId: attemptId,
-          timestamp: Date.now(),
-        }),
-      );
+      localStorage.setItem(storageKey, JSON.stringify({
+        answers: watchedAnswers,
+        confirmed: confirmedAnswers,
+        attemptId: attemptId,
+        timestamp: Date.now(),
+      }));
       setLastSaved(Date.now());
     }
   }, [watchedAnswers, cid, confirmedAnswers, attemptId]);
 
-  // proctoring init...
+  // Proctoring Init
   useEffect(() => {
     let cancelled = false;
-    
-    // Only run proctoring if in proctored mode
     if (mode !== "proctored") {
       setProctoringStatus("Standard Mode");
       return;
@@ -175,24 +180,18 @@ export default function PracticeTest() {
 
     const initProctoring = async () => {
       try {
-        // 1. start camera and track stream
         const stream = await startCamera({ videoRef });
         streamRef.current = stream;
         if (cancelled) return;
         setCameraReady(true);
-
-        // 2. load TensorFlow face model
         setProctoringStatus("Loading AI Engine...");
-        const tf = await import("@tensorflow/tfjs");
         
-        // Ensure backends are registered explicitly for Vite
+        const tf = await import("@tensorflow/tfjs");
         await import("@tensorflow/tfjs-backend-webgl");
         await tf.setBackend("webgl");
         await tf.ready();
         
-        setProctoringStatus("Loading Face Model...");
-        const faceLandmarksDetection =
-          await import("@tensorflow-models/face-landmarks-detection");
+        const faceLandmarksDetection = await import("@tensorflow-models/face-landmarks-detection");
         const detector = await faceLandmarksDetection.createDetector(
           faceLandmarksDetection.SupportedModels.MediaPipeFaceMesh,
           { 
@@ -200,66 +199,42 @@ export default function PracticeTest() {
             maxFaces: 1, 
             refineLandmarks: true,
             solutionPath: "https://cdn.jsdelivr.net/npm/@mediapipe/face_mesh"
-          },
+          }
         );
         if (cancelled) return;
         detectorRef.current = detector;
-        setProctoringStatus("Model Ready");
+        setProctoringStatus("Monitoring");
 
-        // 3. start detection loop
         detect({
-          videoRef,
-          detector,
-          animationRef,
-          isProcessingRef,
-          frameCountRef,
-          noFaceStreakRef,
+          videoRef, detector, animationRef, isProcessingRef, frameCountRef, noFaceStreakRef,
           registerViolation: (type) => registerViolationRef.current(type),
-          onFaceStatusChange: (detected) => {
-            setFaceDetected(detected);
-            if (detected) setProctoringStatus("Monitoring");
-          },
-          onDiagnostic: (data) => {
-            if (!faceDetected) {
-              setProctoringStatus(`Searching... (${Math.round(data.inferenceTime)}ms)`);
-            }
-          }
+          onFaceStatusChange: (detected) => setFaceDetected(detected)
         });
       } catch (err: any) {
         console.error("Proctoring init failed:", err);
-        setProctoringStatus(`Error: ${err.message || 'Initialization failed'}`);
+        setProctoringStatus("Model Initialization Failed");
       }
     };
 
     initProctoring();
-
     return () => {
       cancelled = true;
       if (animationRef.current) cancelAnimationFrame(animationRef.current);
-      // stop camera stream via ref for reliability
       if (streamRef.current) {
         streamRef.current.getTracks().forEach((t) => t.stop());
         streamRef.current = null;
       }
     };
-  }, []); // only on mount
+  }, [mode]);
 
   const stopProctoring = useCallback(() => {
-    console.log("[Proctoring] Stopping proctoring and camera...");
     if (animationRef.current) cancelAnimationFrame(animationRef.current);
-    
-    // Stop all tracks via the persistent stream ref
     if (streamRef.current) {
       streamRef.current.getTracks().forEach((t) => t.stop());
       streamRef.current = null;
     }
-
-    if (videoRef.current) {
-      videoRef.current.srcObject = null;
-    }
-
+    if (videoRef.current) videoRef.current.srcObject = null;
     setCameraReady(false);
-    setProctoringStatus("Proctoring Stopped");
   }, []);
 
   const handlePreSubmit = () => {
@@ -269,34 +244,17 @@ export default function PracticeTest() {
     setShowSubmitConfirm(true);
   };
 
-  //new .....
-
   const onSubmit = async (data: any) => {
-    console.log(
-      "[PracticeTest] Attempting to submit. AttemptID in state:",
-      attemptId,
-    );
-    if (!attemptId) {
-      notify({
-        title: "Error",
-        message: "No active session found. Please wait for initialization or refresh.",
-        status: "error",
-      });
-      return;
-    }
+    if (!attemptId) return;
 
     try {
-      // Calculate final metrics
       const total_questions = questions?.length || 0;
       let total_marks = 0;
       let score = 0;
 
       questions?.forEach((q: any) => {
-        const marks = q.marks || 0;
-        total_marks += marks;
-        if (data.answers[q.id] === q.correct_answer) {
-          score += marks;
-        }
+        total_marks += q.marks || 0;
+        if (data.answers[q.id] === q.correct_answer) score += q.marks || 0;
       });
 
       const payload = (questions || []).map((q: any) => ({
@@ -305,127 +263,65 @@ export default function PracticeTest() {
         is_submitted: true,
         ...(data.answers[q.id] ? { selected_option: data.answers[q.id] } : {})
       }));
-      console.log("payload....", payload);
-      console.log(`[PracticeTest] Upserting ${payload.length} answers...`);
-      const { error: answerError } = await supabase
-        .from("test_attempt_answers")
-        .upsert(payload, { onConflict: "attempt_id,question_id" });
 
-      if (answerError) throw answerError;
-
-      console.log(
-        `[PracticeTest] Updating status and metrics for AttemptID: ${attemptId}`,
-      );
+      await supabase.from("test_attempt_answers").upsert(payload, { onConflict: "attempt_id,question_id" });
       const { data: updateData, error: attemptError } = await supabase
         .from("test_attempts")
         .update({ 
           status: "COMPLETED", 
           submitted_at: new Date().toISOString(),
-          total_questions,
-          total_marks,
-          score
+          total_questions, total_marks, score
         })
         .eq("id", attemptId)
         .select();
 
       if (attemptError) throw attemptError;
-      console.log("[PracticeTest] Status update result:", updateData);
 
-      if (!updateData || updateData.length === 0) {
-        console.warn(
-          "[PracticeTest] No rows were updated! This usually means the ID doesn't exist.",
-        );
-      }
-
-      // Clear local storage
       localStorage.removeItem(`practice_test_${cid}`);
-      
-      // STOP CAMERA EXPLICITLY
       stopProctoring();
-       await seedAbilityFromMockTest(user?.id, eid, attemptId);
-      notify({
-        title: "Success",
-        message: "Your answers have been submitted successfully!",
-        status: "success",
-        dismissAfter: 5000,
-      });
-
+      await seedAbilityFromMockTest(user?.id, eid, attemptId);
+      
+      notify({ title: "Success", message: "Examination Manifested.", status: "success" });
       isNavigatingAwayRef.current = true;
       navigate(`/user/results/${attemptId}`);
-    
     } catch (error: any) {
       console.error("Submission failed:", error);
-      notify({
-        title: "Submission Failed",
-        message: error.message || "An error occurred during submission.",
-        status: "error",
-      });
+      notify({ title: "Error", message: "Submission unsuccessful.", status: "error" });
     }
   };
-  // new.....
-  const registerViolation = useCallback(
-    async (type: string) => {
-      const now = Date.now();
-      const last = violationTimestamps.current[type] ?? 0;
-      if (now - last < 3000) return;
-      violationTimestamps.current[type] = now;
 
-      const newViolation: Violation = {
-        id: crypto.randomUUID(),
-        type,
-        occurred_at: new Date().toISOString(),
-      };
+  const registerViolation = useCallback(async (type: string) => {
+    const now = Date.now();
+    const last = violationTimestamps.current[type] ?? 0;
+    if (now - last < 3000) return;
+    violationTimestamps.current[type] = now;
 
-      setViolations((prev) => {
-        const next = [newViolation, ...prev]; // newest first
-        if (next.length >= 3) setShowWarning(true);
-        if (next.length >= 7) handleAutoSubmit();
-        return next;
+    const newViolation: Violation = { id: crypto.randomUUID(), type, occurred_at: new Date().toISOString() };
+    setViolations((prev) => {
+      const next = [newViolation, ...prev];
+      if (next.length >= 3) setShowWarning(true);
+      if (next.length >= 7) handleAutoSubmit();
+      return next;
+    });
+    setLastViolation(newViolation);
+
+    if (attemptId && user?.id) {
+      await supabase.from("exam_violations").insert({
+        attempt_id: attemptId, user_id: user.id, exam_id: eid, subject_id: sid, chapter_id: cid, type, occurred_at: newViolation.occurred_at
       });
+    }
+  }, [attemptId, user, eid, sid, cid]);
 
-      setLastViolation(newViolation);
-
-      // persist to Supabase
-      if (attemptId && user?.id) {
-        supabase.from("exam_violations").insert({
-          attempt_id: attemptId,
-          user_id: user.id,
-          exam_id: eid,
-          subject_id: sid,
-          chapter_id: cid,
-          type,
-          occurred_at: newViolation.occurred_at,
-        });
-      }
-    },
-    [attemptId, user, eid, sid, cid],
-  );
-
-  // Sync ref with latest callback
-  useEffect(() => {
-    registerViolationRef.current = registerViolation;
-  }, [registerViolation]);
+  useEffect(() => { registerViolationRef.current = registerViolation; }, [registerViolation]);
 
   const handleAutoSubmit = useCallback(() => {
-    console.warn("[Proctoring] AUTO-SUBMIT TRIGGERED DUE TO VIOLATIONS");
-    handleSubmit(onSubmit, (err) => {
-      console.error("[Proctoring] Auto-submit validation failed:", err);
-      notify({
-        status: "error",
-        title: "Auto-submit failure",
-        message: "Could not auto-submit due to form validation. Please check your answers and submit manually."
-      });
-    })();
-  }, [handleSubmit, onSubmit, notify]);
+    handleSubmit(onSubmit)();
+  }, [handleSubmit, onSubmit]);
 
-  // Timer Initialization & Logic
+  // Timer Logic
   useEffect(() => {
     if (mode === "normal") return;
-
-    // Initialize timer
-    if (timeLeft === null) {
-      setTimeLeft(timeLimit * 60);
-    }
+    if (timeLeft === null) setTimeLeft(timeLimit * 60);
 
     const timer = setInterval(() => {
       setTimeLeft((prev) => {
@@ -437,264 +333,64 @@ export default function PracticeTest() {
         return prev - 1;
       });
     }, 1000);
-
     return () => clearInterval(timer);
   }, [mode, timeLimit, handleAutoSubmit]);
 
-  // new....
+  // Event Listeners
   useEffect(() => {
     if (mode !== "proctored") return;
     const onBlur = () => registerViolation("window_blur");
-    const onVisibility = () => {
-      if (document.visibilityState === "hidden")
-        registerViolation("tab_switch");
-    };
-    const onCopy = (e: ClipboardEvent) => {
-      e.preventDefault();
-      registerViolation("copy_attempt");
-    };
-    const onPaste = (e: ClipboardEvent) => {
-      e.preventDefault();
-      registerViolation("paste_attempt");
-    };
-    const onContextMenu = (e: MouseEvent) => e.preventDefault();
-    const onBeforeUnload = (e: BeforeUnloadEvent) => {
-      e.preventDefault();
-      e.returnValue = ""; // Required for Chrome
-    };
+    const onVisibility = () => document.visibilityState === "hidden" && registerViolation("tab_switch");
+    const onCopy = (e: ClipboardEvent) => { e.preventDefault(); registerViolation("copy_attempt"); };
+    const onBeforeUnload = (e: BeforeUnloadEvent) => { e.preventDefault(); e.returnValue = ""; };
 
     window.addEventListener("blur", onBlur);
     document.addEventListener("visibilitychange", onVisibility);
     document.addEventListener("copy", onCopy);
-    document.addEventListener("paste", onPaste);
-    document.addEventListener("contextmenu", onContextMenu);
     window.addEventListener("beforeunload", onBeforeUnload);
 
     return () => {
       window.removeEventListener("blur", onBlur);
       document.removeEventListener("visibilitychange", onVisibility);
       document.removeEventListener("copy", onCopy);
-      document.removeEventListener("paste", onPaste);
-      document.removeEventListener("contextmenu", onContextMenu);
       window.removeEventListener("beforeunload", onBeforeUnload);
     };
   }, [registerViolation]);
 
-  // Session Cleanup
-  useEffect(() => {
-    const interval = setInterval(() => {
-      const now = Date.now();
-      if (now - lastSaved > SESSION_TTL) {
-        const storageKey = `practice_test_${cid}`;
-        localStorage.removeItem(storageKey);
-        // Optional: notify user or redirect
-      }
-    }, 60000); // Check every minute
-
-    return () => clearInterval(interval);
-  }, [lastSaved, cid]);
-
-  // Create test attempt record
+  // Create/Restore Attempt
   useEffect(() => {
     const createAttempt = async () => {
-      // Don't create if missing info, or already have an ID, or is currently creating
       if (!user?.id || !cid || attemptId || isCreatingRef.current) return;
-
+      isCreatingRef.current = true;
       try {
-        isCreatingRef.current = true;
-        console.log(
-          "Checking for existing 'started' attempt for user/chapter...",
-        );
-
-        // 1. Check for existing "started" attempt to avoid duplicates
-        const { data: existing, error: findError } = await supabase
-          .from("test_attempts")
-          .select("id")
-          .eq("user_id", user.id)
-          .eq("chapter_id", cid)
-          .eq("status", "STARTED")
-          .order("started_at", { ascending: false })
-          .limit(1)
-          .maybeSingle();
-
+        const { data: existing } = await supabase.from("test_attempts").select("id").eq("user_id", user.id).eq("chapter_id", cid).eq("status", "STARTED").order("started_at", { ascending: false }).limit(1).maybeSingle();
         if (existing) {
-          console.log("Found existing attempt:", existing.id);
           setAttemptId(existing.id);
-          const storageKey = `practice_test_${cid}`;
-          const current = localStorage.getItem(storageKey);
-          const state = current
-            ? JSON.parse(current)
-            : { answers: {}, confirmed: {} };
-          localStorage.setItem(
-            storageKey,
-            JSON.stringify({
-              ...state,
-              attemptId: existing.id,
-              timestamp: Date.now(),
-            }),
-          );
           return;
         }
-
-        console.log("No existing attempt found, creating new one...");
-        const { data, error } = await supabase
-          .from("test_attempts")
-          .insert({
-            user_id: user.id,
-            exam_id: eid,
-            subject_id: sid,
-            chapter_id: cid,
-            status: "STARTED",
-            started_at: new Date().toISOString(),
-          })
-          .select()
-          .single();
-
-        if (error) throw error;
-
-        if (data) {
-          setAttemptId(data.id);
-          // Immediately update localStorage with the new attemptId
-          const storageKey = `practice_test_${cid}`;
-          const current = localStorage.getItem(storageKey);
-          const state = current
-            ? JSON.parse(current)
-            : { answers: {}, confirmed: {} };
-          localStorage.setItem(
-            storageKey,
-            JSON.stringify({
-              ...state,
-              attemptId: data.id,
-              timestamp: Date.now(),
-            }),
-          );
-        }
-      } catch (error: any) {
-        console.error("Error creating test attempt:", error);
-        notify({
-          title: "Session Error",
-          message: error.message || "Failed to initialize test session.",
-          status: "error",
-        });
-      } finally {
-        isCreatingRef.current = false;
-      }
+        const { data } = await supabase.from("test_attempts").insert({ user_id: user.id, exam_id: eid, subject_id: sid, chapter_id: cid, status: "STARTED", started_at: new Date().toISOString() }).select().single();
+        if (data) setAttemptId(data.id);
+      } catch (err) { console.error("Attempt creation failed:", err); }
+      finally { isCreatingRef.current = false; }
     };
-
     createAttempt();
   }, [user, eid, sid, cid, attemptId]);
 
-  // Sync questions to test_attempts metadata columns
-  useEffect(() => {
-    if (attemptId && questions?.length > 0) {
-      const syncQuestions = async () => {
-        try {
-          const qIds = questions.map((q: any) => q.id.toString());
-          const initialAttempted = questions.map((q: any) => ({
-            question_id: q.id.toString(),
-            user_answered: ""
-          }));
-          
-          await supabase.from("test_attempts")
-            .update({ 
-              question_ids: qIds,
-              attempted_questions: initialAttempted 
-            })
-            .eq("id", attemptId);
-        } catch (err) {
-          console.error("Failed to sync questions to attempt metadata:", err);
-        }
-      };
-      syncQuestions();
-    }
-  }, [attemptId, questions]);
-
-  const handleBackButton = () => {
-    setOpenAlert(true);
-  };
-
-  const confirmExit = async () => {
-    setOpenAlert(false);
-    
-    // If user has an active attempt, mark it as LEFT instead of leaving it in STARTED
-    if (attemptId) {
-      try {
-        await supabase
-          .from("test_attempts")
-          .update({ status: "LEFT THE EXAM", submitted_at: new Date().toISOString() })
-          .eq("id", attemptId);
-        
-        // Also clear local storage session since we're leaving
-        localStorage.removeItem(`practice_test_${cid}`);
-      } catch (err) {
-        console.error("Failed to update status on exit:", err);
-      }
-    }
-
-    isNavigatingAwayRef.current = true;
-    if (blocker.state === "blocked") {
-      blocker.reset();
-    }
-    
-    if (attemptId) {
-      navigate(`/user/results/${attemptId}`);
-    } else {
-      // Deterministic navigation back to the exam overview
-      navigate(`/user/dashboard/exam/${eid}`);
-    }
-  };
-
-  const cancelExit = () => {
-    setOpenAlert(false);
-    if (blocker.state === "blocked") {
-        blocker.reset();
-    }
-  }
-
   const handleConfirm = async (questionId: number, answer: string) => {
     if (!attemptId) return;
-
     try {
-      // 1. Original Logic: Upsert to test_attempt_answers
-      const { error } = await supabase.from("test_attempt_answers").upsert(
-        {
-          attempt_id: attemptId,
-          question_id: questionId,
-          selected_option: answer,
-          is_submitted: false,
-        },
-        { onConflict: "attempt_id,question_id" },
-      );
+      await supabase.from("test_attempt_answers").upsert({ attempt_id: attemptId, question_id: questionId, selected_option: answer, is_submitted: false }, { onConflict: "attempt_id,question_id" });
+      await supabase.from("question_attempt_tracking").insert({ user_id: user?.id, question_id: questionId, attempt_id: attemptId, selected_option: answer, attempted_at: new Date().toISOString() });
+    } catch (err) { console.error("Answer sync failed:", err); }
+  };
 
-      if (error) throw error;
-
-      // 2. Original Logic: Track in question_attempt_tracking
-      await supabase.from("question_attempt_tracking").insert({
-        user_id: user?.id,
-        question_id: questionId,
-        attempt_id: attemptId,
-        selected_option: answer,
-        attempted_at: new Date().toISOString(),
-      });
-
-      // 3. New Logic: Update attempted_questions in test_attempts
-      const { data: attempt } = await supabase
-        .from("test_attempts")
-        .select("attempted_questions")
-        .eq("id", attemptId)
-        .single();
-      
-      if (attempt?.attempted_questions) {
-        const updated = attempt.attempted_questions.map((q: any) => 
-          q.question_id === questionId.toString() ? { ...q, user_answered: answer } : q
-        );
-        await supabase.from("test_attempts")
-          .update({ attempted_questions: updated })
-          .eq("id", attemptId);
-      }
-    } catch (error) {
-      console.error("Failed to sync answer:", error);
-    }
+  const handleBackButton = () => setOpenAlert(true);
+  const cancelExit = () => { setOpenAlert(false); blocker.reset(); };
+  const confirmExit = async () => {
+    if (attemptId) await supabase.from("test_attempts").update({ status: "LEFT THE EXAM", submitted_at: new Date().toISOString() }).eq("id", attemptId);
+    isNavigatingAwayRef.current = true;
+    blocker.proceed?.();
+    navigate(`/user/results/${attemptId}`);
   };
 
   const questionRef = useRef<(HTMLDivElement | null)[]>([]);
@@ -702,248 +398,60 @@ export default function PracticeTest() {
   return (
     <FormProvider {...methods}>
       <form onSubmit={handleSubmit(onSubmit)}>
-        <div className="bg-background-light dark:bg-background-dark text-on-surface dark:text-slate-100 font-display min-h-screen flex flex-col">
-          <Header 
-             attemptId={attemptId} 
-             timeLeft={timeLeft} 
-             onPreSubmit={handlePreSubmit}
-             onBack={handleBackButton}
-             language={language}
-             setLanguage={setLanguage}
-          />
-          {/* Floating camera widget */}
+        <div className="bg-surface text-on-surface font-narrative min-h-screen flex flex-col transition-colors duration-700 ease-botanical">
+          
+          <main className="flex-1 max-w-7xl mx-auto w-full grid lg:grid-cols-12 gap-8 p-6 lg:p-12 animate-reveal">
+            <QuestionList confirmedAnswers={confirmedAnswers} setConfirmedAnswers={setConfirmedAnswers} questionRef={questionRef} onConfirm={handleConfirm} language={language} />
+            <QuestionPalette questionRefs={questionRef} confirmed={confirmedAnswers} />
+          </main>
+
+          {/* Immersive Proctoring Elements */}
           {mode === "proctored" && (
-            <AdvancedProctoring
-              videoRef={videoRef}
-              isCameraReady={cameraReady}
-              isFaceDetected={faceDetected}
-              statusText={proctoringStatus}
-              violationCount={violations.length}
-              autoSubmitAt={7}
-            />
+            <div className="fixed bottom-8 right-8 z-50 pointer-events-none">
+               <AdvancedProctoring videoRef={videoRef} isCameraReady={cameraReady} isFaceDetected={faceDetected} statusText={proctoringStatus} violationCount={violations.length} autoSubmitAt={7} />
+               <div className="mt-4 pointer-events-auto">
+                 <ViolationFeed violations={violations} totalCount={violations.length} autoSubmitAt={7} />
+               </div>
+            </div>
           )}
 
-          {/* Floating violation feed — bottom right corner */}
-          {mode === "proctored" && (
-            <>
-              <div
-                style={{
-                  position: "fixed",
-                  bottom: "24px",
-                  right: "24px",
-                  zIndex: 50,
-                }}
-              >
-                <ViolationFeed
-                  violations={violations}
-                  totalCount={violations.length}
-                  autoSubmitAt={7}
-                />
-              </div>
-
-              {/* Warning modal — fires on each new violation >= 3 */}
-              <ViolationWarningModal
-                isOpen={showWarning}
-                violation={lastViolation}
-                totalCount={violations.length}
-                autoSubmitAt={7}
-                onClose={() => setShowWarning(false)}
-              />
-            </>
-          )}
-          <AlertPopup
-            isOpen={openAlert}
-            message="Are you sure you want to leave the exam? Your progress will be saved, but we recommend finishing your session."
-            onClose={cancelExit}
-            title="Leave Exam"
-          >
-            <div className="flex w-full gap-3 justify-between mt-4">
-              <Button  onClick={confirmExit} title="Yes, Exit" />
-              <Button
-                onClick={cancelExit}
-                title="Cancel"
-                className="bg-surface text-primary! border border-primary!"
-              />
+          <ViolationWarningModal isOpen={showWarning} violation={lastViolation} totalCount={violations.length} autoSubmitAt={7} onClose={() => setShowWarning(false)} />
+          
+          <AlertPopup isOpen={openAlert} message="Abandon the examination manifest? Your current progress will be preserved." onClose={cancelExit} title="Evacuation Confirmation">
+            <div className="flex gap-4 mt-8">
+               <button type="button" onClick={confirmExit} className="flex-1 py-4 bg-surface-container-high text-on-surface-variant font-technical font-black uppercase tracking-widest rounded-full hover:bg-surface-dim transition-all">Yes, Evacuate</button>
+               <button type="button" onClick={cancelExit} className="flex-1 py-4 bg-primary text-white font-technical font-black uppercase tracking-widest rounded-full shadow-ambient hover:scale-105 transition-all">Cancel</button>
             </div>
           </AlertPopup>
 
-          {/* Submission Confirmation Modal */}
-          <AlertPopup
-            isOpen={showSubmitConfirm}
-            title="Final Submission"
-            onClose={() => setShowSubmitConfirm(false)}
-            message=""
-          >
-             <div className="space-y-6">
-                <div className="bg-surface-container-low dark:bg-slate-800/50 p-6 rounded-2xl  dark:border-slate-800">
-                   <div className="grid grid-cols-2 gap-4">
-                      <div className="text-center p-4 bg-surface dark:bg-slate-900 rounded-xl shadow-sm">
-                         <p className="text-xs font-bold text-slate-400 uppercase tracking-widest mb-1">Attempted</p>
-                         <p className="text-3xl font-black text-primary">{counts.attempted}</p>
+          <AlertPopup isOpen={showSubmitConfirm} title="Final Submission" onClose={() => setShowSubmitConfirm(false)} message="">
+             <div className="space-y-10 py-6">
+                <div className="bg-linear-to-br from-surface-container-low to-surface p-12 rounded-[3.5rem] relative overflow-hidden shadow-inner">
+                   <div className="grid grid-cols-2 gap-10 relative z-10">
+                      <div className="text-center p-8 bg-surface/60 backdrop-blur-xl rounded-4xl shadow-ambient ring-1 ring-white/20">
+                         <p className="text-[10px] font-technical font-black text-primary uppercase tracking-[0.2em] mb-3">Manifested</p>
+                         <p className="text-5xl font-technical font-black text-on-surface tracking-tighter">{counts.attempted}</p>
                       </div>
-                      <div className="text-center p-4 bg-surface dark:bg-slate-900 rounded-xl shadow-sm">
-                         <p className="text-xs font-bold text-slate-400 uppercase tracking-widest mb-1">Unattempted</p>
-                         <p className="text-3xl font-black text-orange-500">{counts.total - counts.attempted}</p>
+                      <div className="text-center p-8 bg-surface/60 backdrop-blur-xl rounded-4xl shadow-ambient ring-1 ring-white/20">
+                         <p className="text-[10px] font-technical font-black text-tertiary uppercase tracking-[0.2em] mb-3">Remaining</p>
+                         <p className="text-5xl font-technical font-black text-tertiary tracking-tighter">{counts.total - counts.attempted}</p>
                       </div>
                    </div>
                 </div>
 
-                <div className="text-center px-4">
-                   <h4 className="text-lg font-bold">
-                      {counts.attempted === counts.total 
-                         ? "Excellent! You've answered everything." 
-                         : "Are you sure you want to submit?"}
-                   </h4>
-                   <p className="text-sm text-on-surface-variant mt-2">
-                      {counts.attempted === counts.total 
-                         ? "Please proceed for the final submission." 
-                         : "You still have unattempted questions remaining."}
-                   </p>
+                <div className="text-center space-y-4">
+                   <h4 className="text-3xl font-black tracking-tight text-on-surface">Ready for Manifestation?</h4>
+                   <p className="text-sm text-on-surface-variant font-medium leading-relaxed max-w-sm mx-auto">Your study data is curated for professional grading. Manifesting will finalize this entry in your digital journal.</p>
                 </div>
 
-                <div className="flex gap-4 pt-2">
-                   <button
-                      type="button"
-                      onClick={() => setShowSubmitConfirm(false)}
-                      className="flex-1 py-4 text-sm font-bold text-on-surface-variant hover:bg-surface-container-high dark:hover:bg-slate-800 rounded-2xl transition-all cursor-pointer"
-                   >
-                      Review Answers
-                   </button>
-                   <button
-                      type="button"
-                      onClick={() => {
-                         setShowSubmitConfirm(false);
-                         handleSubmit(onSubmit)();
-                      }}
-                      className="flex-1 py-4 text-sm font-bold bg-primary text-white rounded-2xl shadow-xl shadow-green-600/20 hover:bg-green-700 transition-all cursor-pointer"
-                   >
-                      Submit Exam
-                   </button>
+                <div className="flex gap-6">
+                   <button type="button" onClick={() => setShowSubmitConfirm(false)} className="flex-1 py-5 text-xs font-technical font-black uppercase tracking-widest text-on-surface-variant/60 hover:text-on-surface transition-all">Re-evaluate</button>
+                   <button type="button" onClick={() => handleSubmit(onSubmit)()} className="flex-1 py-5 bg-linear-to-r from-primary to-primary-container text-white rounded-full font-technical font-black text-xs uppercase tracking-widest shadow-ambient-lg hover:scale-105 active:scale-95 transition-all flex items-center justify-center gap-3">Manifest Submission <Target size={18} /></button>
                 </div>
              </div>
           </AlertPopup>
-
-          <main className="flex-1 max-w-360 mx-auto w-full grid sm:grid-cols-1 lg:grid-cols-12 gap-6 p-4 lg:p-8">
-            {/* Left Sidebar - Question Content */}
-            <QuestionList
-              confirmedAnswers={confirmedAnswers}
-              setConfirmedAnswers={setConfirmedAnswers}
-              questionRef={questionRef}
-              onConfirm={handleConfirm}
-              language={language}
-            />
-
-            {/* Right Sidebar - Palette */}
-            <QuestionPalette
-              questionRefs={questionRef}
-              confirmed={confirmedAnswers}
-            />
-          </main>
         </div>
       </form>
     </FormProvider>
   );
 }
-
-const Header = ({ 
-  attemptId, 
-  timeLeft, 
-  onPreSubmit,
-  onBack,
-  language,
-  setLanguage
-}: { 
-  attemptId: string | null; 
-  timeLeft: number | null;
-  onPreSubmit: () => void;
-  onBack?: () => void;
-  language: "en" | "od";
-  setLanguage: (lang: "en" | "od") => void;
-}) => {
-  const formatTime = (seconds: number) => {
-    const m = Math.floor(seconds / 60);
-    const s = seconds % 60;
-    return `${m}:${s.toString().padStart(2, "0")}`;
-  };
-
-  return (
-    <header className="sticky top-0 z-50 bg-surface dark:bg-slate-900  dark:border-slate-800 px-4 lg:px-8 py-3">
-      <div className="max-w-360 mx-auto flex items-center justify-between">
-        <div className="flex items-center gap-4">
-          <button
-            type="button"
-            onClick={onBack}
-            className="p-2 hover:bg-surface-container-high dark:hover:bg-slate-800 rounded-full transition-colors cursor-pointer group"
-            title="Go Back"
-          >
-            <ChevronLeft className="size-6 text-on-surface-variant group-hover:text-primary transition-colors" />
-          </button>
-          <div className="bg-primary/10 p-2 rounded-lg">
-            <NotebookTabs className="text-primary size-6" />
-          </div>
-          <div>
-            <h1 className="text-lg font-bold tracking-tight">Practice Test</h1>
-            <p className="text-xs text-on-surface-variant dark:text-slate-400 font-medium uppercase tracking-wider">
-              Subject Practice
-            </p>
-          </div>
-        </div>
-
-        <div className="flex items-center gap-3">
-          {timeLeft !== null && (
-            <div className="flex items-center gap-2 bg-orange-100 dark:bg-orange-900/30 px-4 py-2 rounded-lg border border-orange-200 dark:border-orange-800">
-              <Timer className="text-orange-600 size-4" />
-              <span className="font-mono font-bold text-orange-700 dark:text-orange-200 text-lg">
-                {formatTime(timeLeft)}
-              </span>
-            </div>
-          )}
-
-          {/* Language Toggle */}
-          <div className="flex bg-surface-container-high dark:bg-slate-800 p-1 rounded-xl  dark:border-slate-700 shadow-inner">
-            <button
-               type="button"
-               onClick={() => setLanguage("en")}
-               className={`px-3 py-1.5 rounded-lg text-xs font-bold transition-all ${
-                 language === "en" 
-                   ? "bg-surface dark:bg-slate-700 text-primary shadow-sm" 
-                   : "text-on-surface-variant hover:text-slate-700"
-               }`}
-            >
-               ENG
-            </button>
-            <button
-               type="button"
-               onClick={() => setLanguage("od")}
-               className={`px-3 py-1.5 rounded-lg text-xs font-bold transition-all ${
-                 language === "od" 
-                   ? "bg-surface dark:bg-slate-700 text-primary shadow-sm" 
-                   : "text-on-surface-variant hover:text-slate-700"
-               }`}
-            >
-               ଓଡ଼ିଆ
-            </button>
-          </div>
-
-          <div className="hidden md:flex items-center gap-2 bg-surface-container-high dark:bg-slate-800 px-4 py-2 rounded-lg  dark:border-slate-700">
-            <Timer className="text-on-surface-variant size-4" />
-            <span className="font-mono font-bold text-slate-700 dark:text-slate-200">
-              {timeLeft === null ? "Relaxed Mode" : "Timed Session"}
-            </span>
-          </div>
-
-          <button
-            type="button"
-            onClick={onPreSubmit}
-            disabled={!attemptId}
-            className={`bg-primary ${
-              !attemptId ? "opacity-50 cursor-not-allowed" : "cursor-pointer hover:bg-primary/90"
-            } text-green-700 px-6 py-2 rounded-lg font-bold text-sm transition-all flex items-center gap-2 shadow-sm shadow-primary/20`}
-          >
-            {attemptId ? "Final Submit" : "Initializing..."}
-          </button>
-        </div>
-      </div>
-    </header>
-  );
-};

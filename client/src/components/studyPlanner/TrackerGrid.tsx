@@ -91,7 +91,7 @@ interface TrackerGridProps {
   onSelectDate?: (date: Date) => void;
 }
 
-const WEEK_COLORS = ["bg-primary/10", "bg-tertiary/10", "bg-primary/5", "bg-tertiary/5", "bg-surface-container-high"];
+const WEEK_COLORS = ["bg-green-300", "bg-purple-300", "bg-red-300", "bg-orange-300","bg-slate-300"];
 
 const format12h = (timeStr: string) => {
   if (!timeStr) return "";
@@ -104,7 +104,7 @@ const format12h = (timeStr: string) => {
 const HabitRow = ({
   habit,
   progress,
-  rotatedDays,
+  renderedDays,
   startDay,
   daysInMonth,
   viewMonth,
@@ -125,7 +125,7 @@ const HabitRow = ({
 }: {
   habit: Habit & { currentStreak: number; maxStreak: number };
   progress: boolean[];
-  rotatedDays: number[];
+  renderedDays: number[];
   startDay: number;
   daysInMonth: number;
   viewMonth: number;
@@ -151,31 +151,37 @@ const HabitRow = ({
 
   return (
     <tr className="group hover:bg-[#f0fff4]/30 relative transition-colors">
-      <td className="sticky left-0 z-20 bg-surface group-hover:bg-[#f0fff4]/50 border-r border-slate-300 p-0  border-dotted align-middle outline outline-transparent -outline-offset-1 shadow-[1px_0_0_0_#cbd5e1] transition-colors">
-        <div className="flex items-center justify-between px-2 py-1.5 min-h-[44px]">
-          <div className="flex flex-col min-w-0 pr-1 gap-1">
-            <div className="text-[11px] font-bold text-slate-800 leading-tight flex items-center gap-1.5">
-              <span className="truncate max-w-[140px]" title={habit.name}>{habit.name}</span>
-            </div>
-            <div className="flex flex-wrap items-center gap-1.5">
-              <span className={`px-1.5 py-0.5 rounded-full text-[8px] font-black uppercase tracking-tighter ${habit.is_mastery ? "bg-primary/10 text-green-700" : "bg-green-100 text-green-700"}`}>
-                {habit.is_mastery ? "Test" : "Routine"}
-              </span>
-              <span className={`px-1.5 py-0.5 rounded-full text-[8px] font-black uppercase tracking-tighter ${
-                habit.priority === "HIGH" ? "bg-red-100 text-red-700" : 
-                habit.priority === "MEDIUM" ? "bg-yellow-100 text-yellow-700" : 
-                "bg-surface-container-high text-slate-600"}`}>
-                {habit.priority}
-              </span>
-              {(habit.start_time || habit.end_time) && (
-                <span className="text-[9px] font-bold text-slate-400 flex items-center gap-0.5">
-                  <Clock size={8} /> 
-                  {habit.start_time ? format12h(habit.start_time) : ""} - {habit.end_time ? format12h(habit.end_time) : "..."}
+      <td className="sticky left-0 z-20 bg-surface-container-high group-hover:bg-[#f0fff4]/50 border-green-500 p-0 align-middle transition-colors">
+        <div className="flex items-center justify-between bg-surface-container-high border-b border-on-surface/20 px-2 py-1.5 min-h-[44px]">
+          <div className="grid grid-cols-[160px_70px_70px] items-center gap-2 min-w-0 pr-2">
+            
+            {/* Column 1: Routine Name & Priority Stack */}
+            <div className="flex flex-col min-w-0">
+              <div className="text-[11px] font-bold text-on-surface leading-tight truncate" title={habit.name}>
+                  {habit.name}
+              </div>
+              <div className="mt-1">
+                <span className={`px-1.5 py-0.5 rounded-full text-[8px] font-black uppercase tracking-tighter ${
+                  habit.priority === "HIGH" ? "bg-red-100/80 text-red-700" : 
+                  habit.priority === "MEDIUM" ? "bg-yellow-100/80 text-yellow-700" : 
+                  "bg-on-surface/5 text-on-surface-variant/60"}`}>
+                  {habit.priority}
                 </span>
-              )}
+              </div>
+            </div>
+
+            {/* Column 2: Start Time */}
+            <div className="text-[9px] font-bold text-on-surface/60">
+               {habit.start_time ? format12h(habit.start_time) : "--"}
+            </div>
+
+            {/* Column 3: End Time */}
+            <div className="text-[9px] font-bold text-on-surface/60">
+               {habit.end_time ? format12h(habit.end_time) : "--"}
             </div>
           </div>
-          <div className="flex gap-0.5 opacity-0 group-hover:opacity-100 transition-opacity bg-surface/95  rounded p-0.5 shadow-sm">
+
+          <div className="flex gap-0.5 transition-opacity bg-surface/40 rounded p-0.5 mr-1">
             <button 
               disabled={!canEdit}
               onClick={() => canEdit && editHabit(habit)} 
@@ -207,20 +213,20 @@ const HabitRow = ({
           </div>
         </div>
       </td>
-      {rotatedDays.map((_, i) => {
-        const actualDayIdx = (startDay - 1 + i) % daysInMonth;
-        const isToday = viewMonth === currentMonth && viewYear === currentYear && actualDayIdx === today - 1;
+      {renderedDays.map((day) => {
+        const actualDayIdx = day - 1;
+        const isToday = viewMonth === currentMonth && viewYear === currentYear && (actualDayIdx + 1) === today;
         const isSelected = selectedDate && selectedDate.getDate() === actualDayIdx + 1 && selectedDate.getMonth() + 1 === viewMonth && selectedDate.getFullYear() === viewYear;
         const isEditable = isToday || unlockPastDays;
         const isDone = progress[actualDayIdx];
-        const weekIdx = i < 28 ? Math.floor(i / 7) : 4;
-        const bgClass = isSelected ? "bg-green-100/50" : isToday ? "bg-surface" : WEEK_COLORS[weekIdx].replace("200", "50").replace("bg-slate-200", "bg-transparent");
-        const cellOpacity = isEditable ? "opacity-100" : "opacity-40 grayscale-[0.5]";
-        const checkedBorderClass = WEEK_COLORS[weekIdx].replace("bg-", "border-").replace("200", "500");
-        const checkedTextClass = WEEK_COLORS[weekIdx].replace("bg-", "text-").replace("200", "600");
+        const weekIdx = Math.floor(actualDayIdx / 7);
+        const bgClass = isSelected ? "bg-green-100/50" : isToday ? "bg-surface" : WEEK_COLORS[Math.min(weekIdx, 4)].replace("200", "50").replace("bg-slate-200", "bg-transparent");
+        const cellOpacity = isEditable ? "opacity-100" : "opacity-60 dark:opacity-80 grayscale-[0.5]";
+        const checkedBorderClass = WEEK_COLORS[Math.min(weekIdx, 4)].replace("bg-", "border-").replace("200", "500");
+        const checkedTextClass = WEEK_COLORS[Math.min(weekIdx, 4)].replace("bg-", "text-").replace("200", "600");
 
         return (
-          <td key={i} className={` border-slate-200/50 border-dotted ${bgClass} ${isToday ? "ring-2 ring-inset ring-green-600/40 bg-green-50/30" : ""} ${isSelected ? "ring-2 ring-inset ring-green-600/30 shadow-inner" : ""} ${cellOpacity} transition-all`}>
+          <td key={actualDayIdx} className={`  border-b border-on-surface/10 ${bgClass} ${isToday ? "ring-2 ring-inset ring-green-600/40 bg-green-50/30" : ""} ${isSelected ? "ring-2 ring-inset ring-green-600/30 shadow-inner" : ""} ${cellOpacity} transition-all`}>
             <label className={`w-full h-full flex items-center justify-center p-1 ${isEditable ? 'cursor-pointer' : 'cursor-not-allowed'}`}>
               <input 
                 type="checkbox" 
@@ -229,10 +235,10 @@ const HabitRow = ({
                 checked={isDone || false} 
                 onChange={() => isEditable && onToggle(habit.id, actualDayIdx)} 
               />
-              <div className={`size-[16px] bg-surface border ${isDone ? checkedBorderClass : "border-slate-300"} rounded-sm flex items-center justify-center shadow-sm relative transition-all ${isEditable ? 'hover:border-green-400 hover:shadow-md' : ''} ${!isEditable && !isDone ? "bg-surface-container-low border-slate-200 opacity-50" : ""}`}>
+              <div className={`size-[16px] bg-surface-container-high  ${isDone ? checkedBorderClass : "border-slate-300"} rounded-sm flex items-center justify-center shadow-sm relative transition-all ${isEditable ? 'hover:border-green-400 hover:shadow-md' : ''} ${!isEditable && !isDone ? "bg-surface-container-low border-slate-200 opacity-50" : ""}`}>
                 {isDone && (
                   habit.is_mastery ? (
-                    <div className="absolute -inset-1 flex items-center justify-center bg-green-50 rounded-sm border border-green-200 shadow-sm animate-pulse z-10" title={`Test at ${habit.start_time}`}>
+                    <div className="absolute -inset-1 flex items-center justify-center  bg-green-50 rounded-sm border border-green-200 shadow-sm animate-pulse z-10" title={`Test at ${habit.start_time}`}>
                       <Bell className="text-primary size-[12px]" strokeWidth={3} />
                     </div>
                   ) : (
@@ -248,7 +254,7 @@ const HabitRow = ({
       <td className="sticky right-0 z-20 border-l border-b border-[#2d7334]/20 bg-emerald-50 text-center font-mono text-[11px] font-bold text-slate-700 outline outline-transparent -outline-offset-1 shadow-[-1px_0_0_0_#cbd5e1]">{habit.maxStreak}</td>
     </tr>
   );
-};
+}
 
 const FastHabitRow = React.memo(HabitRow);
 
@@ -311,13 +317,34 @@ export default function TrackerGrid({
 
   // Always show the full month starting from day 1
   const startDay = 1;
+  const days = Array.from({ length: daysInMonth }, (_, i) => i + 1);
+  const rotatedDays = days.slice(startDay - 1);
+
+  // --- View Mode State (Weekly/Monthly) ---
+  const [viewMode, setViewMode] = useState<'monthly' | 'weekly'>('monthly');
+  const [activeWeek, setActiveWeek] = useState(0);
+
+  // Default active week to current date when viewing current month
+  useEffect(() => {
+    if (viewMonth === currentMonth && viewYear === currentYear) {
+      const weekIdx = Math.floor((today - 1) / 7);
+      setActiveWeek(Math.min(weekIdx, 4));
+    } else {
+      setActiveWeek(0);
+    }
+  }, [viewMonth, viewYear, currentMonth, currentYear, today]);
+
+  const renderedDays = useMemo(() => {
+    if (viewMode === 'monthly') return rotatedDays;
+    const start = activeWeek * 7;
+    // For week 4 (extra days), we show remaining days in month
+    if (activeWeek === 4) return rotatedDays.slice(28);
+    return rotatedDays.slice(start, start + 7);
+  }, [viewMode, activeWeek, rotatedDays]);
 
   useEffect(() => {
      console.log("%c[CHART] Type changed to:", "color: #12662c; font-weight: bold; font-size: 14px;", chartType);
   }, [chartType]);
-
-  const days = Array.from({ length: daysInMonth }, (_, i) => i + 1);
-  const rotatedDays = days.slice(startDay - 1);
 
   const {
     register,
@@ -809,23 +836,74 @@ export default function TrackerGrid({
       
       {/* SPREADSHEET HEADER */}
       {/* SPREADSHEET HEADER: Editorial Botanical */}
-      <div className="bg-primary text-on-primary flex items-center justify-between px-8 py-6 shadow-ambient shrink-0 relative overflow-hidden">
-        <div className="absolute top-0 right-0 p-4 opacity-5 pointer-events-none">
-           <Calendar size={120} />
+      <div className="bg-primary text-on-primary flex items-center justify-between px-8 py-6 shadow-ambient shrink-0 relative">
+        <div className="absolute z-100 top-0 right-0 p-4 opacity-5 pointer-events-none">
+           <Calendar color="" size={120} />
         </div>
         <div className="w-1/3 flex flex-col relative z-10">
            <span className="text-[10px] font-technical font-black tracking-[0.4em] uppercase opacity-60 mb-1">Current Momentum</span>
            <div className="text-6xl font-technical font-black tracking-tighter leading-none">{overallProgress}%</div>
         </div>
         
-        <div className="w-1/3 flex justify-center items-center gap-6 relative z-10">
-           <button onClick={() => onMonthChange("prev")} className="p-2 hover:bg-white/10 rounded-full transition-all cursor-pointer active:scale-90"><ChevronLeft size={32} /></button>
-           <h1 className="text-4xl font-black tracking-tighter uppercase">{monthName}</h1>
-           <button onClick={() => onMonthChange("next")} className="p-2 hover:bg-white/10 rounded-full transition-all cursor-pointer active:scale-90"><ChevronRight size={32} /></button>
-        </div>
+         <div className="w-1/3 flex justify-center items-center gap-6 relative z-10">
+            <button 
+              onClick={() => {
+                if (viewMode === 'monthly') {
+                  onMonthChange("prev");
+                } else {
+                  if (activeWeek > 0) setActiveWeek(activeWeek - 1);
+                  else {
+                    onMonthChange("prev");
+                    setActiveWeek(4); // Go to last week of prev month
+                  }
+                }
+              }} 
+              className="p-2 hover:bg-white/10 rounded-full transition-all cursor-pointer active:scale-90"
+            >
+              <ChevronLeft size={32} />
+            </button>
+            <div className="flex flex-col items-center">
+              <h1 className="text-4xl font-black tracking-tighter uppercase">{monthName}</h1>
+              {viewMode === 'weekly' && (
+                <span className="text-[10px] font-technical font-black uppercase tracking-[0.3em] text-secondary-container mt-1">Week {activeWeek + 1}</span>
+              )}
+            </div>
+            <button 
+              onClick={() => {
+                if (viewMode === 'monthly') {
+                  onMonthChange("next");
+                } else {
+                  if (activeWeek < 4) setActiveWeek(activeWeek + 1);
+                  else {
+                    onMonthChange("next");
+                    setActiveWeek(0); // Go to first week of next month
+                  }
+                }
+              }} 
+              className="p-2 hover:bg-white/10 rounded-full transition-all cursor-pointer active:scale-90"
+            >
+              <ChevronRight size={32} />
+            </button>
+         </div>
 
-        <div className="w-1/3 flex justify-end items-center gap-8 relative z-10">
-           <GoogleCalendarButton />
+         <div className="w-1/3 flex justify-end items-center gap-4 relative z-10">
+            {/* View Mode Toggle */}
+            <div className="flex bg-white/10 p-1 rounded-xl border border-white/10 mr-4">
+              <button 
+                onClick={() => setViewMode('monthly')}
+                className={`px-3 py-1.5 rounded-lg text-[9px] font-technical font-black uppercase tracking-widest transition-all ${viewMode === 'monthly' ? 'bg-white text-primary shadow-sm' : 'text-white/40 hover:text-white'}`}
+              >
+                Month
+              </button>
+              <button 
+                onClick={() => setViewMode('weekly')}
+                className={`px-3 py-1.5 rounded-lg text-[9px] font-technical font-black uppercase tracking-widest transition-all ${viewMode === 'weekly' ? 'bg-white text-primary shadow-sm' : 'text-white/40 hover:text-white'}`}
+              >
+                Week
+              </button>
+            </div>
+
+            <GoogleCalendarButton />
 
            <div className="flex flex-col items-end gap-2 px-6 border-l border-white/10 ml-4">
              <div className="text-2xl font-black tracking-tighter leading-none text-right flex flex-col items-end">
@@ -834,7 +912,7 @@ export default function TrackerGrid({
              </div>
              <button 
                onClick={() => setUnlockPastDays(!unlockPastDays)}
-               className={`text-[9px] px-3 py-1.5 rounded-full border uppercase font-technical font-black transition-all ${unlockPastDays ? 'bg-tertiary text-white border-tertiary shadow-lg' : 'bg-white/5 text-white/40 border-white/10 hover:bg-white/10 hover:text-white'}`}
+               className={`text-[9px] px-3 py-1.5 rounded-full border uppercase font-technical font-black transition-all ${unlockPastDays ? 'bg-tertiary/30 text-white border-tertiary shadow-lg' : 'bg-white/5 text-white/40 border-white/10 hover:bg-white/10 hover:text-white'}`}
                title={unlockPastDays ? "Lock past days" : "Unlock past days for editing"}
              >
                {unlockPastDays ? "🔓 Unlocked" : "🔒 Locked"}
@@ -865,88 +943,95 @@ export default function TrackerGrid({
           <thead>
             {/* ROW 1: Active Days Checkboxes */}
             <tr className="bg-primary">
-               <th className="sticky left-0 z-30 bg-primary border-b border-white/10 p-4 text-left w-[300px] align-bottom">
-                 <h2 className="text-white text-xs font-technical font-black tracking-[0.4em] pl-4 uppercase opacity-60">Syllabus Habits</h2>
+               <th className="sticky left-0 z-30 bg-primary border-b border-white/10 p-4 text-left w-[360px] align-bottom">
+                 <h2 className="text-white text-xs font-technical font-black tracking-[0.4em] pl-4 uppercase opacity-60">Syllabus Routines</h2>
                </th>
-               {rotatedDays.map((_, i) => {
-                 const actualDayIdx = (startDay - 1 + i) % daysInMonth;
-                 const isToday = viewMonth === currentMonth && viewYear === currentYear && actualDayIdx === today - 1;
-                 const isAnyDone = initialHabits.some((h) => initialProgress[h.id]?.[actualDayIdx]);
-                 return (
-                   <th key={i} className={`border-b border-white/5 bg-primary w-[36px] min-w-[36px] p-2 align-bottom ${isToday ? "bg-white/10" : ""}`}>
-                      <div className={`size-5 mx-auto rounded-lg border-2 transition-all duration-500 ${isAnyDone ? "bg-white border-white rotate-0" : "border-white/20 bg-white/5 rotate-45 scale-75"} flex items-center justify-center`}>
-                        {isAnyDone && <CheckSquare className="text-primary size-4 absolute" strokeWidth={3} />}
-                      </div>
-                   </th>
-                 );
-               })}
+                {renderedDays.map((day) => {
+                  const actualDayIdx = day - 1;
+                  const isToday = viewMonth === currentMonth && viewYear === currentYear && (actualDayIdx + 1) === today;
+                  const isAnyDone = initialHabits.some((h) => initialProgress[h.id]?.[actualDayIdx]);
+                  return (
+                    <th key={actualDayIdx} className={`border-b border-white/5 bg-primary w-[36px] min-w-[36px] p-2 align-bottom ${isToday ? "bg-white/10" : ""}`}>
+                       <div className={`size-5 mx-auto rounded-lg border-2 transition-all duration-500 ${isAnyDone ? "bg-white border-white rotate-0" : "border-white/20 bg-white/5 rotate-45 scale-75"} flex items-center justify-center`}>
+                         {isAnyDone && <CheckSquare className="text-primary size-4 absolute" strokeWidth={3} />}
+                       </div>
+                    </th>
+                  );
+                })}
                <th colSpan={2} className="sticky right-0 z-30 bg-primary text-white border-b border-white/10 p-1 text-center font-technical font-black uppercase text-[10px] tracking-widest">Streaks</th>
             </tr>
 
             {/* ROW 2: Daily Done % Charts */}
             <tr className="bg-surface">
-               <th className="sticky left-0 z-30 bg-surface border-b border-outline-variant/5 px-2 py-4 align-top">
+               <th className="sticky left-0 z-30 bg-surface-container-high border-b border-outline-variant/5 px-2 py-4 align-top">
                  <div className="absolute inset-x-0 top-1/2 -translate-y-1/2 px-4 flex justify-between gap-2">
                     <button onClick={() => setEnableTask(true)} className="flex-1 text-[10px] bg-primary/10 text-primary px-3 py-2 rounded-full hover:bg-primary hover:text-white flex items-center justify-center font-technical font-black tracking-widest transition-all active:scale-95 shadow-sm"><Plus size={14} className="mr-1"/> Routine</button>
                     <button onClick={() => setShowSelector(true)} className="flex-1 text-[10px] bg-tertiary/10 text-tertiary px-3 py-2 rounded-full hover:bg-tertiary hover:text-white flex items-center justify-center font-technical font-black tracking-widest transition-all active:scale-95 shadow-sm"><Plus size={14} className="mr-1"/> Test</button>
                  </div>
                </th>
-               {rotatedDays.map((_, i) => {
-                 const weekIdx = i < 28 ? Math.floor(i / 7) : 4;
-                 const bgClass = WEEK_COLORS[weekIdx];
-                 const barColor = (weekIdx % 2 === 0) ? "bg-primary" : "bg-tertiary";
-                 
-                 return (
-                   <th key={i} className={` ${bgClass} h-24 p-0 align-bottom relative border-b border-outline-variant/10 group`}>
-                      <div className="absolute top-2 inset-x-0 text-[10px] font-technical font-black text-on-surface-variant text-center opacity-0 group-hover:opacity-100 transition-opacity">{dailyStats[i].percent}%</div>
-                      <div className={`mx-auto w-[16px] ${barColor} opacity-40 rounded-t-lg transition-all duration-700 hover:opacity-100 shadow-sm`} style={{ height: `${dailyStats[i].percent-10}%` }}></div>
-                   </th>
-                 );
-               })}
+                {renderedDays.map((day) => {
+                  const actualDayIdx = day - 1;
+                  const weekIdx = Math.floor(actualDayIdx / 7);
+                  const bgClass = WEEK_COLORS[Math.min(weekIdx, 4)];
+                  const barColor = (weekIdx % 2 === 0) ? "bg-primary" : "bg-tertiary";
+                  
+                  return (
+                    <th key={actualDayIdx} className={` ${bgClass} h-24 p-0 align-bottom relative  bg-surface-container-high border-b border-outline-variant/100 group`}>
+                       <div className="absolute top-2 inset-x-0 text-[10px] font-technical font-black text-on-surface-variant text-center opacity-0 group-hover:opacity-100 transition-opacity">{dailyStats[actualDayIdx].percent}%</div>
+                       <div className={`mx-auto w-[16px] ${barColor} opacity-40 rounded-t-lg transition-all duration-700 hover:opacity-100 shadow-sm`} style={{ height: `${dailyStats[actualDayIdx].percent-10}%` }}></div>
+                    </th>
+                  );
+                })}
                <th className="sticky right-10 z-30 bg-primary/20 text-primary text-[9px] font-technical font-black uppercase tracking-widest w-[40px] p-2 border-b border-outline-variant/10">Now</th>
                <th className="sticky right-0 z-30 bg-primary/10 text-primary text-[9px] font-technical font-black uppercase tracking-widest w-[40px] p-2 border-b border-outline-variant/10">Peak</th>
             </tr>
 
             {/* ROW 3: Days Headers */}
             <tr>
-               <th className="sticky left-0 z-30 bg-surface border-r border-b border-slate-300 outline outline-slate-200"></th>
-                {rotatedDays.map((day, i) => {
-                  const weekIdx = i < 28 ? Math.floor(i / 7) : 4;
-                  const bgClass = WEEK_COLORS[weekIdx].replace("200", "100");
-                  const weekdayIdx = (startWeekdayIdx + (day - 1)) % 7;
-                  const actualDayIdx = (startDay - 1 + i) % daysInMonth;
-                  const isToday = viewMonth === currentMonth && viewYear === currentYear && actualDayIdx === today - 1;
-                  const isSelected = selectedDate && selectedDate.getDate() === day && selectedDate.getMonth() + 1 === viewMonth && selectedDate.getFullYear() === viewYear;
-                  
-                  return (
-                    <th 
-                      key={i} 
-                      onClick={() => onSelectDate?.(new Date(viewYear, viewMonth - 1, day))}
-                      className={` ${bgClass} p-0.5 text-center font-normal cursor-pointer transition-all hover:brightness-95 ${isSelected ? "ring-2 ring-inset ring-green-600 font-black bg-green-200" : isToday ? "ring-2 ring-inset ring-green-600/60 font-black bg-green-200" : ""}`}
-                    >
-                      <div className={`text-[9px] font-bold ${isSelected ? "text-green-800" : "text-on-surface-variant"}`}>{WEEKDAY_NAMES[weekdayIdx]}</div>
-                      <div className={`text-[11px] font-black ${isSelected ? "text-green-900 scale-110" : "text-slate-700"}`}>{day}</div>
-                    </th>
-                  );
-                })}
-               <th colSpan={2} className="sticky right-0 z-30 bg-surface-container-high border-b border-slate-300 border-l outline outline-slate-200"></th>
+               <th className="sticky left-0 z-30 bg-surface-container-high border border-on-surface/20 p-0">
+                  <div className="grid grid-cols-[160px_70px_70px] items-center gap-2 px-2 h-full uppercase font-technical font-black text-[8px] text-on-surface/40 tracking-widest">
+                     <div className="pl-1">Routine & Priority</div>
+                     <div>Start</div>
+                     <div>End</div>
+                  </div>
+               </th>
+                {renderedDays.map((day) => {
+                   const actualDayIdx = day - 1;
+                   const weekIdx = Math.floor(actualDayIdx / 7);
+                   const bgClass = WEEK_COLORS[Math.min(weekIdx, 4)].replace("200", "100");
+                   const weekdayIdx = (startWeekdayIdx + (day - 1)) % 7;
+                   const isToday = viewMonth === currentMonth && viewYear === currentYear && (actualDayIdx + 1) === today;
+                   const isSelected = selectedDate && selectedDate.getDate() === day && selectedDate.getMonth() + 1 === viewMonth && selectedDate.getFullYear() === viewYear;
+                   
+                   return (
+                     <th 
+                       key={actualDayIdx} 
+                       onClick={() => onSelectDate?.(new Date(viewYear, viewMonth - 1, day))}
+                       className={` ${bgClass} p-0.5 text-center font-normal cursor-pointer transition-all hover:brightness-95 ${isSelected ? "ring-2 ring-inset ring-green-600 font-black bg-green-200" : isToday ? "ring-2 ring-inset ring-green-600/60 font-black bg-green-200" : ""}`}
+                     >
+                       <div className={`text-[9px] font-bold ${isSelected ? "text-green-800" : "text-on-surface-variant"}`}>{WEEKDAY_NAMES[weekdayIdx]}</div>
+                       <div className={`text-[11px] font-black ${isSelected ? "text-green-900 scale-110" : "text-slate-700"}`}>{day}</div>
+                     </th>
+                   );
+                 })}
+               <th colSpan={2} className="sticky right-0 z-30 bg-surface-container-high border-b border-slate-300 border-l"></th>
             </tr>
           </thead>
 
           <tbody>
             {(isLoading && initialHabits.length === 0) ? (
-               <tr><td colSpan={rotatedDays.length + 3} className="p-10 text-center"><Loader className="animate-spin text-slate-400 mx-auto"/></td></tr>
+               <tr><td colSpan={renderedDays.length + 3} className="p-10 text-center"><Loader className="animate-spin text-slate-400 mx-auto"/></td></tr>
              ) : isSettingUp && initialHabits.length === 0 ? (
                <tr>
-                 <td colSpan={rotatedDays.length + 3} className="p-0 align-middle border-none">
+                 <td colSpan={renderedDays.length + 3} className="p-0 align-middle border-none">
                     <div className="sticky left-0  right-0 mx-auto w-fit flex flex-col items-center justify-center min-h-[450px] py-12 pointer-events-none">
                       <div className="pointer-events-auto mx-auto max-w-md bg-surface rounded-2xl shadow-lg border border-emerald-100 p-6 text-center my-4">
                         <div className="mx-auto size-12 bg-emerald-100 rounded-full flex items-center justify-center mb-4 shadow-inner">
                            <Sparkles className="text-emerald-600 size-6" />
                         </div>
-                        <h3 className="text-xl font-black tracking-tight text-slate-800 mb-1.5">Fresh Month, Fresh Start!</h3>
+                        <h3 className="text-xl font-black tracking-tight text-slate-800 mb-1.5">Fresh Month, Fresh Routines!</h3>
                         <p className="text-on-surface-variant font-medium text-xs mb-6 px-2">
-                           Your {monthName} planner is empty. Set up routines and tests to stay on track.
+                           Your {monthName} tracker for monthly habits is empty. Set up recurring routines to build consistency.
                         </p>
                         
                         <div className="space-y-3 text-left">
@@ -1006,49 +1091,56 @@ export default function TrackerGrid({
                </tr>
             ) : habitsWithStreaks.length === 0 ? (
                <tr>
-                 <td colSpan={rotatedDays.length + 3} className="p-8 text-center text-slate-400 font-bold text-sm">
-                   No routines or tests found. Click the + buttons above to add some!
+                 <td colSpan={renderedDays.length + 3} className="p-8 text-center text-slate-400 font-bold text-sm">
+                   No routines found for this cycle. Use the "+ Routine" button above to manifest your rituals.
                  </td>
                </tr>
               ) : habitsWithStreaks.map((habit) => (
-                <FastHabitRow 
-                  key={habit.id}
-                  habit={habit}
-                  progress={initialProgress[habit.id] || []}
-                  rotatedDays={rotatedDays}
-                  startDay={startDay}
-                  daysInMonth={daysInMonth}
-                  viewMonth={viewMonth}
-                  viewYear={viewYear}
-                  currentMonth={currentMonth}
-                  currentYear={currentYear}
-                  today={today}
-                  unlockPastDays={unlockPastDays}
-                  deletingId={deletingId}
-                  connected={connected}
-                  user={user}
-                  selectedDate={selectedDate}
-                  onToggle={onToggle}
-                  editHabit={editHabit}
-                  removeEvent={removeEvent}
-                  onRefresh={onRefresh}
-                  dispatch={dispatch}
-                />
-              ))}
+                  <FastHabitRow 
+                    key={habit.id}
+                    habit={habit}
+                    progress={initialProgress[habit.id] || []}
+                    renderedDays={renderedDays}
+                    startDay={startDay}
+                    daysInMonth={daysInMonth}
+                    viewMonth={viewMonth}
+                    viewYear={viewYear}
+                    currentMonth={currentMonth}
+                    currentYear={currentYear}
+                    today={today}
+                    unlockPastDays={unlockPastDays}
+                    deletingId={deletingId}
+                    connected={connected}
+                    user={user}
+                    selectedDate={selectedDate}
+                    onToggle={onToggle}
+                    editHabit={editHabit}
+                    removeEvent={removeEvent}
+                    onRefresh={onRefresh}
+                    dispatch={dispatch}
+                  />
+                ))}
           </tbody>
 
-          {/* SPREADSHEET FOOTER: WEEKLY DONE % */}
           <tfoot>
              <tr>
-               <td className="sticky left-0 z-30 bg-surface border-r border-t border-slate-300 p-2 align-middle text-right h-[120px] outline outline-1 outline-slate-200">
+               <td className="sticky left-0 z-30 bg-surface-container-high border-r border-t border-slate-300 p-2 align-middle text-right h-[120px]">
                  <span className="font-bold text-[10px] uppercase text-slate-400">Weekly Done %</span>
                </td>
-               <td colSpan={7} className="border-t border-white bg-green-300 relative align-middle"><center><DonutChart percent={weeklyProgress[0]} color="#60a5fa" bg="bg-primary/10" label="Week 1" /></center></td>
-               <td colSpan={7} className="border-t border-white bg-purple-300 relative align-middle"><center><DonutChart percent={weeklyProgress[1]} color="#c084fc" bg="bg-purple-100" label="Week 2" /></center></td>
-               <td colSpan={7} className="border-t border-white bg-red-300 relative align-middle"><center><DonutChart percent={weeklyProgress[2]} color="#f87171" bg="bg-red-100" label="Week 3" /></center></td>
-               <td colSpan={7} className="border-t border-white bg-orange-300 relative align-middle"><center><DonutChart percent={weeklyProgress[3]} color="#fb923c" bg="bg-orange-100" label="Week 4" /></center></td>
-               <td colSpan={daysInMonth - 28} className="border-t border-white bg-slate-300 relative align-middle"><center><DonutChart percent={weeklyProgress[4]} color="#94a3b8" bg="bg-surface-container-high" label={`Extra`} /></center></td>
-               <td colSpan={2} className="sticky right-0 z-30 bg-surface border-l border-t border-slate-300 outline outline-slate-200"></td>
+               {viewMode === 'monthly' ? (
+                 <>
+                   <td colSpan={7} className="border-t border-white bg-green-300 relative align-middle"><center><DonutChart percent={weeklyProgress[0]} color="#60a5fa" bg="bg-primary/10" label="Week 1" /></center></td>
+                   <td colSpan={7} className="border-t border-white bg-purple-300 relative align-middle"><center><DonutChart percent={weeklyProgress[1]} color="#c084fc" bg="bg-purple-100" label="Week 2" /></center></td>
+                   <td colSpan={7} className="border-t border-white bg-red-300 relative align-middle"><center><DonutChart percent={weeklyProgress[2]} color="#f87171" bg="bg-red-100" label="Week 3" /></center></td>
+                   <td colSpan={7} className="border-t border-white bg-orange-300 relative align-middle"><center><DonutChart percent={weeklyProgress[3]} color="#fb923c" bg="bg-orange-100" label="Week 4" /></center></td>
+                   <td colSpan={daysInMonth - 28} className="border-t border-white bg-slate-300 relative align-middle"><center><DonutChart percent={weeklyProgress[4]} color="#94a3b8" bg="bg-surface-container-high" label={`Extra`} /></center></td>
+                 </>
+               ) : (
+                 <td colSpan={7} className={`border-t border-white relative align-middle ${activeWeek === 0 ? "bg-green-300" : activeWeek === 1 ? "bg-purple-300" : activeWeek === 2 ? "bg-red-300" : activeWeek === 3 ? "bg-orange-300" : "bg-slate-300"}`}>
+                   <center><DonutChart percent={weeklyProgress[activeWeek]} color={["#60a5fa", "#c084fc", "#f87171", "#fb923c", "#94a3b8"][activeWeek]} bg="bg-transparent" label={`Week ${activeWeek + 1}`} /></center>
+                 </td>
+               )}
+               <td colSpan={2} className="sticky right-0 z-30 bg-surface-container-high border-l border-t border-slate-300 outline outline-slate-200"></td>
              </tr>
           </tfoot>
         </table>

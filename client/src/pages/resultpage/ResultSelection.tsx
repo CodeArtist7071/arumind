@@ -44,107 +44,88 @@ const latestReportData = [
 const ResultSelection = () => {
     const navigate = useNavigate();
     return (
-        <div className="min-h-screen text-[#1b1c15] selection:bg-primary-container selection:text-on-primary-container">
-
-            {/* Top App Bar */}
-            {/* <header className="fixed top-0 left-0 w-full z-50 flex justify-between items-center px-6 h-16 bg-[#fbfaee]">
-        <div className="flex items-center gap-4">
-          <button className="flex items-center justify-center w-10 h-10 rounded-full hover:bg-[#f5f4e8] transition active:scale-90">
-            <span className="material-symbols-outlined text-[#3d4a3d]">arrow_back</span>
-          </button>
-          <h1 className="text-2xl font-black text-[#006e2f] tracking-tight">
-            OPSC Journey
-          </h1>
-        </div>
-
-        <div className="flex items-center gap-2">
-          <button className="p-2 rounded-full hover:bg-[#f5f4e8] active:scale-90">
-            <span className="material-symbols-outlined text-[#3d4a3d]">
-              notifications
-            </span>
-          </button>
-          <button className="p-2 rounded-full hover:bg-[#f5f4e8] active:scale-90">
-            <span className="material-symbols-outlined text-[#3d4a3d]">
-              account_circle
-            </span>
-          </button>
-        </div>
-      </header> */}
+        <div className="min-h-screen font-narrative text-on-surface antialiased transition-colors duration-700 selection:bg-primary/10 selection:text-primary">
 
             {/* Main Content */}
-            <main className="pt-5 pb-32 max-w-5xl mx-auto">
+            <main className="max-w-5xl px-6">
 
-                {/* Header */}
-                <div>
-                    <h2 className="text-5xl font-extrabold text-center"> Performance <span className="text-[#006e2f] italic">Analytics</span></h2>
-                    <p className="text-center max-w-2xl text-lg mx-auto mb-15 mt-5">Review your progress through detailed insights. Choose between focused practice drills or comprehensive mock simulations.</p>
+                {/* Header - Massive Editorial */}
+                <div className="mb-24">
+                    {/* <p className="text-[10px] font-mono font-black uppercase tracking-[0.4em] text-primary opacity-60 mb-4">Diagnostic Synthesis</p> */}
+                    <h2 className="text-4xl md:text-6xl font-black tracking-tighter leading-[0.85]"> 
+                        Growth <span className="text-primary">Matrix</span>
+                    </h2>
+                    <p className="max-w-2xl text-xl mt-8 text-on-surface-variant/70 font-medium leading-relaxed">
+                        Assess your cognitive evolution across focused chapter drills and comprehensive exam simulations.
+                    </p>
                 </div>
 
-                {/* Cards */}
-                <div className="grid sm:grid-cols-1 md:grid-cols-2 gap-6">
+                {/* Cards - Tonal Sectioning */}
+                <div className="grid sm:grid-cols-1 md:grid-cols-2 gap-10">
                     {cardData.map((el, index) => (
-                        <div className="w-[450px] bg-surface/50 px-6 py-15 rounded-xl flex flex-col justify-between hover:bg-[#e9e9dd] transition-all duration-300">
+                        <div key={index} className="bg-surface-container-low p-12 rounded-[2.5rem] flex flex-col justify-between hover:bg-surface-container-high transition-all duration-500 group shadow-ambient-sm hover:shadow-ambient-lg">
                             <div>
-                                <div className="w-16 h-16 bg-[#e4e3d7] rounded-2xl flex items-center justify-center mb-6">
-                                    <span className="material-symbols-outlined text-4xl text-green-700">
-                                        {el.icon}
-                                    </span>
+                                <div className="w-20 h-20 bg-surface-container-high rounded-3xl flex items-center justify-center mb-10 group-hover:scale-110 transition-transform duration-500 shadow-sm">
+                                    <div className="text-primary">
+                                        {React.cloneElement(el.icon as React.ReactElement, { size: 32 } as any)}
+                                    </div>
                                 </div>
 
-                                <h3 className="text-2xl font-bold mb-2">
+                                <h3 className="text-3xl font-bold mb-3 tracking-tight">
                                     {el.title}
                                 </h3>
-                                <p className="text-[#3d4a3d] mb-6">
+                                <p className="text-on-surface-variant/70 mb-10 text-lg leading-relaxed">
                                     {el.description}
                                 </p>
 
-                                <div className="flex gap-6 mb-6">
+                                <div className="flex gap-10 mb-10">
                                     <div>
-                                        <p className="text-xs uppercase opacity-60">Completed</p>
-                                        <p className="text-xl font-bold text-green-700">{el.completed}</p>
+                                        <p className="text-[10px] font-mono font-bold uppercase tracking-widest text-on-surface-variant/40 mb-1">Synthesized</p>
+                                        <p className="text-3xl font-mono font-black text-primary">{el.completed}</p>
                                     </div>
                                     <div>
-                                        <p className="text-xs uppercase opacity-60">Avg Score</p>
-                                        <p className="text-xl font-bold text-orange-600">{el.avgScore}</p>
+                                        <p className="text-[10px] font-mono font-bold uppercase tracking-widest text-on-surface-variant/40 mb-1">Index Score</p>
+                                        <p className="text-3xl font-mono font-black text-secondary">{el.avgScore}</p>
                                     </div>
                                 </div>
                             </div>
 
-                            <button onClick={() => navigate("history")} className="w-full cursor-pointer py-3 bg-green-700 text-white rounded-full font-bold hover:shadow-lg">
+                            <button 
+                                onClick={() => navigate("history")} 
+                                className="w-full cursor-pointer py-5 bg-primary text-white rounded-full font-mono font-black text-[10px] uppercase tracking-widest shadow-xl shadow-primary/20 hover:scale-[1.02] active:scale-95 transition-all"
+                            >
                                 {el.buttonText}
                             </button>
                         </div>
                     ))}
                 </div>
 
-                {/* Latest Report */}
-                <div className="mt-16">
-                    <h4 className="text-xs uppercase tracking-widest mb-4 flex items-center gap-3">
-                        Latest Report
-                        <div className="h-px flex-1 bg-gray-300"></div>
+                {/* Latest Report - Technical Slip */}
+                <div className="mt-24">
+                    <h4 className="text-[10px] font-mono font-black uppercase tracking-[0.4em] text-on-surface-variant/40 mb-8 flex items-center gap-6">
+                        Latest Sync Report
+                        <div className="h-px flex-1 bg-on-surface-variant/10"></div>
                     </h4>
                     {latestReportData.map((el, index) => (
-                        <div key={index} className="bg-surface p-6 rounded-lg flex sm:flex-col md:flex-row justify-between items-center gap-4 shadow">
-                            <div className="flex items-center gap-4">
-                                <div className="w-12 h-12 rounded-full bg-orange-200 flex items-center justify-center">
-                                    <span className="material-symbols-outlined">
-                                        <WorkflowIcon />
-                                    </span>
+                        <div key={index} className="bg-surface-container-high/20 rounded-4xl px-8 py-6 flex items-center justify-between hover:bg-surface-container-high transition-all duration-300 group/item cursor-pointer hover-bloom">
+                            <div className="flex items-center gap-6 w-full md:w-auto">
+                                <div className="w-14 h-14 rounded-2xl bg-secondary/10 text-secondary flex items-center justify-center p-3 animate-pulse">
+                                    <WorkflowIcon size={24} />
                                 </div>
-                                <div>
-                                    <p className="font-bold">{el.title}</p>
-                                    <p className="text-xs text-gray-500">
-                                        {el.date}
+                                <div className="flex flex-col gap-1">
+                                    <p className="text-lg font-bold tracking-tight">{el.title}</p>
+                                    <p className="text-[10px] font-mono font-bold text-on-surface-variant/40 uppercase tracking-widest">
+                                        Acknowledged <span className="text-on-surface-variant">{el.date}</span>
                                     </p>
                                 </div>
                             </div>
 
-                            <div className="flex items-center gap-6">
-                                <div>
-                                    <p className="text-xl font-bold">{el.score}</p>
-                                    <p className="text-xs uppercase">Final Score</p>
+                            <div className="flex items-center justify-between md:justify-end gap-12 w-full md:w-auto">
+                                <div className="flex flex-col items-end">
+                                    <p className="text-2xl font-mono font-black text-on-surface">{el.score}</p>
+                                    <p className="text-[9px] font-mono font-bold uppercase tracking-widest text-on-surface-variant/40">Terminal Score</p>
                                 </div>
-                                <button className="px-4 py-2 border rounded-full text-sm font-bold hover:bg-gray-100">
+                                <button className="px-8 py-3 bg-surface-container-highest text-on-surface rounded-full text-[10px] font-mono font-bold uppercase tracking-widest hover:bg-on-surface hover:text-white transition-all">
                                     {el.status}
                                 </button>
                             </div>

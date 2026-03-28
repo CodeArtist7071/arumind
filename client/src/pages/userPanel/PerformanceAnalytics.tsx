@@ -38,10 +38,12 @@ const PerformanceAnalytics = () => {
   const [subjects, setSubjects] = useState<any[]>([]);
   const [selectedExam, setSelectedExam] = useState<string>("");
   const [chartMode, setChartMode] = useState<"Practice" | "Mock">("Practice");
-  const { examData } = useSelector((state: RootState) => state.exams ?? null);
-  const targetedExams = examData.filter((el) =>
-    profile.target_exams.includes(el.id),
-  );
+  const { examData } = useSelector((state: RootState) => state.exams ?? { examData: [] });
+  
+  const targetedExams = useMemo(() => {
+    if (!examData || !profile?.target_exams) return [];
+    return examData.filter((el) => profile.target_exams.includes(el.id));
+  }, [examData, profile?.target_exams]);
 
   useEffect(() => {
     dispatch(fetchExams());
@@ -51,7 +53,7 @@ const PerformanceAnalytics = () => {
     if (profile?.target_exams?.[0] && !selectedExam) {
       setSelectedExam(profile.target_exams[0]);
     }
-  }, [profile, selectedExam, targetedExams]);
+  }, [profile, selectedExam]);
 
   useEffect(() => {
     const fetchData = async () => {
@@ -111,7 +113,6 @@ const PerformanceAnalytics = () => {
     const subjectStats: Record<string, any> = {};
     const chapterStats: Record<string, any> = {};
 
-    // Per-attempt scores for growth chart
     const answersByAttempt: Record<string, any[]> = {};
     filteredAnswers.forEach((ans) => {
       if (!answersByAttempt[ans.attempt_id])
@@ -216,7 +217,7 @@ const PerformanceAnalytics = () => {
         .filter((c) => c.accuracy >= 80)
         .slice(0, 2),
       weakChapters: sortedChapters.filter((c) => c.accuracy < 50).slice(0, 2),
-      performanceTrajectory: performanceTrajectory.slice(-12), // Show up to 12
+      performanceTrajectory: performanceTrajectory.slice(-12),
     };
   }, [filteredAttempts, filteredAnswers, chapters, subjects]);
 
@@ -248,47 +249,33 @@ const PerformanceAnalytics = () => {
       type: "Next Recommended",
       title:
         metrics.strongChapters.length > 0
-          ? `Advanced ${metrics.strongChapters[0].subject} Quiz`
-          : "General Overview Quiz",
-      desc: "Strengthen your base by taking a mixed-subject practice set.",
+          ? `${metrics.strongChapters[0].subject} Mastery`
+          : "General Practice",
+      desc: "Maintain your momentum with a personalized session.",
     });
     return insights.slice(0, 3);
   }, [metrics]);
 
-  // Latest report from the most recent attempt
-  const latestReport =
-    attempts.length > 0
-      ? {
-          title:
-            chapters.find((c) => c.id === attempts[0].chapter_id)?.name ||
-            "Practice Session",
-          date: attempts[0].submitted_at
-            ? `Completed on ${new Date(attempts[0].submitted_at).toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric" })}`
-            : "In Progress",
-          score: `${metrics?.accuracy || 0}%`,
-          attemptId: attempts[0].id,
-        }
-      : null;
+  if (loading) return <PerformanceSkeleton />;
 
-  if (loading) {
+  if (!metrics) {
     return (
-      <div className="flex min-h-screen items-center justify-center bg-surface">
-        <div className="flex flex-col items-center gap-4">
-          <div className="size-12 border-4 border-green-700 border-t-transparent rounded-full animate-spin" />
-          <p className="font-bold text-gray-500 animate-pulse">
-            Calculating your performance...
-          </p>
-        </div>
-      </div>
-    );
+      <main className="pb-20 px-6 lg:px-12 max-w-7xl mx-auto space-y-16 animate-reveal">
+         <section className="pt-8 text-center py-20 bg-surface-container-high rounded-[3rem]">
+            <FlaskConical className="size-16 text-primary/20 mx-auto mb-6" />
+            <h2 className="text-3xl font-black text-on-surface">Data Seedlings Needed</h2>
+            <p className="text-on-surface-variant max-w-md mx-auto mt-4">Complete your first exam to begin generating growth trends and AI insights.</p>
+            <button onClick={() => navigate("/user/dashboard")} className="mt-8 px-8 py-4 bg-primary text-white rounded-full font-technical font-black uppercase tracking-widest text-[11px] shadow-lg shadow-primary/20 hover:scale-105 transition-all">Start Preparation</button>
+         </section>
+      </main>
+    )
   }
 
-  const performanceTrajectory = metrics?.performanceTrajectory || [];
-  const maxScore = 100; // Accuracy is 0-100
+  const performanceTrajectory = metrics.performanceTrajectory;
+  const maxScore = 100;
 
   return (
     <main className="pb-20 px-6 lg:px-12 max-w-7xl mx-auto space-y-16 animate-reveal">
-      {/* Hero / Editorial Greeting */}
       <section className="pt-8">
         <h1 className="text-6xl font-black leading-[0.9] tracking-tighter text-on-surface">
           Growth <span className="text-primary italic">&</span> <br />
@@ -299,11 +286,10 @@ const PerformanceAnalytics = () => {
           <span className="text-primary font-black px-2 py-0.5 bg-primary/5 rounded-lg">
             {targetedExams?.find((e: any) => e.id === selectedExam)?.name || "curriculum"}
           </span>{" "}
-          is showing strong technical mastery and consistent momentum.
+          ecosystem shows developing technical mastery and consistent momentum.
         </p>
       </section>
 
-      {/* Target Selector Tube */}
       <div className="bg-surface-container-high rounded-full p-2 w-fit shadow-ambient backdrop-blur-xl border border-outline-variant/5">
         <div className="flex flex-wrap gap-2">
           {targetedExams?.map((item: any, index: number) => (
@@ -322,21 +308,18 @@ const PerformanceAnalytics = () => {
         </div>
       </div>
 
-      {/* Main Analytics Grid */}
       <div className="grid lg:grid-cols-12 gap-8">
-        {/* Core Metric: Large Stamping */}
-        <div className="lg:col-span-4 bg-surface-container-low p-10 rounded-[3rem] shadow-ambient hover-bloom group">
+        <div className="lg:col-span-4 bg-primary p-10 rounded-[3rem] shadow-ambient hover-bloom group">
             <div className="size-16 bg-surface-container-high rounded-2xl flex items-center justify-center text-primary mb-8 shadow-sm group-hover:bg-primary group-hover:text-white transition-all duration-500">
               <TrendingUp size={28} />
             </div>
-            <h3 className="text-[11px] font-technical font-black uppercase tracking-widest text-on-surface-variant opacity-60 mb-2">Momentum Trend</h3>
-          <p className="text-8xl font-technical font-black text-on-surface tracking-tighter leading-none">
-            {metrics?.testsCount || 0}
+            <h3 className="text-[11px] font-technical font-black uppercase tracking-widest text-white opacity-60 mb-2">Momentum Trend</h3>
+          <p className="text-8xl font-technical font-black text-white tracking-tighter leading-none">
+            {metrics.testsCount || 0}
           </p>
-          <p className="text-sm font-bold text-on-surface-variant mt-4 opacity-60">Completed Sessions</p>
+          <p className="text-sm font-bold text-white mt-4">Completed Sessions</p>
         </div>
 
-        {/* Dynamic Growth Chart Component */}
         <GrowthChart
           performanceTrajectory={performanceTrajectory}
           maxScore={maxScore}
@@ -344,38 +327,35 @@ const PerformanceAnalytics = () => {
           setChartMode={setChartMode}
         />
 
-        {/* Detailed Breakdown Section */}
         <div className="lg:col-span-8">
           <SubjectMastery examid={selectedExam} metrics={metrics} />
         </div>
 
-        {/* Speed vs Precision Tube */}
-        <div className="lg:col-span-4 bg-surface-container-low p-10 rounded-[3rem] shadow-ambient">
-          <h3 className="text-xl font-black text-on-surface mb-10 tracking-tight">Focus Balance</h3>
+        <div className="lg:col-span-4 bg-primary p-10 rounded-[3rem] shadow-ambient">
+          <h3 className="text-xl font-black text-on-primary mb-10 tracking-tight">Focus Balance</h3>
           <div className="space-y-12">
             <div className="flex items-center gap-8">
-              <div className="shrink-0 size-24 border-10 border-primary/20 rounded-full flex items-center justify-center text-2xl font-technical font-black text-primary bg-primary/5 shadow-inner">
-                {metrics?.accuracy || 0}<span className="text-xs opacity-40">%</span>
+              <div className="shrink-0 size-24 border-10 border-primary/20 rounded-full flex items-center justify-center text-2xl font-technical font-black text-on-primary bg-primary/5 shadow-inner">
+                {metrics.accuracy || 0}<span className="text-xs opacity-40">%</span>
               </div>
               <div>
-                <p className="text-[10px] font-technical font-black text-on-surface-variant uppercase tracking-widest opacity-40">Accuracy</p>
-                <p className="text-sm font-bold text-on-surface leading-tight mt-1">Syllabus Precision</p>
+                <p className="text-[10px] font-technical font-black text-on-primary uppercase tracking-widest opacity-40">Accuracy</p>
+                <p className="text-sm font-bold text-on-primary leading-tight mt-1">Syllabus Precision</p>
               </div>
             </div>
             
             <div className="flex items-center gap-8">
-              <div className="shrink-0 size-24 border-10 border-on-surface/5 rounded-full flex items-center justify-center text-2xl font-technical font-black text-on-surface-variant bg-on-surface/5 shadow-inner">
-                {metrics?.avgTimeSec || 0}<span className="text-xs opacity-40">s</span>
+              <div className="shrink-0 size-24 border-10 border-on-primary/5 rounded-full flex items-center justify-center text-xl font-technical font-black text-on-primary bg-primary/5 shadow-inner">
+                {metrics.avgTimeSec || 0}<span className="text-xs opacity-40">s</span>
               </div>
               <div>
-                <p className="text-[10px] font-technical font-black text-on-surface-variant uppercase tracking-widest opacity-40">Tempo</p>
-                <p className="text-sm font-bold text-on-surface leading-tight mt-1">Avg Response Speed</p>
+                <p className="text-[10px] font-technical font-black text-on-primary uppercase tracking-widest opacity-40">Tempo</p>
+                <p className="text-sm font-bold text-on-primary leading-tight mt-1">Avg Response Speed</p>
               </div>
             </div>
           </div>
         </div>
 
-        {/* Insights & Distribution Tubes */}
         <div className="lg:col-span-6">
            <QuestionDistribution metrics={metrics} />
         </div>
@@ -384,7 +364,6 @@ const PerformanceAnalytics = () => {
            <AiInsights aiInsights={aiInsights} />
         </div>
 
-        {/* Chapter Pods: Strong vs Weak */}
         <div className="lg:col-span-6 bg-surface-container-low p-10 rounded-[3rem] shadow-ambient hover-bloom">
           <div className="flex items-center justify-between mb-10">
             <h3 className="text-xl font-black text-on-surface tracking-tight flex items-center gap-4">
@@ -395,8 +374,8 @@ const PerformanceAnalytics = () => {
             </h3>
           </div>
           <div className="space-y-4">
-            {(metrics?.strongChapters || []).length > 0 ? (
-              metrics!.strongChapters.map((ch, i) => (
+            {metrics.strongChapters.length > 0 ? (
+              metrics.strongChapters.map((ch, i) => (
                 <div key={i} className="flex justify-between items-center p-6 bg-white/40 rounded-3xl hover:bg-white transition-all duration-300 group">
                   <div>
                     <p className="font-technical font-black text-sm text-on-surface uppercase tracking-wider">{ch.name}</p>
@@ -425,8 +404,8 @@ const PerformanceAnalytics = () => {
             </h3>
           </div>
           <div className="space-y-4">
-            {(metrics?.weakChapters || []).length > 0 ? (
-              metrics!.weakChapters.map((ch, i) => (
+            {metrics.weakChapters.length > 0 ? (
+              metrics.weakChapters.map((ch, i) => (
                 <div key={i} className="flex justify-between items-center p-6 bg-tertiary/5 rounded-3xl hover:bg-tertiary/10 transition-all duration-300 group">
                   <div>
                     <p className="font-technical font-black text-sm text-on-surface uppercase tracking-wider">{ch.name}</p>
@@ -446,7 +425,6 @@ const PerformanceAnalytics = () => {
         </div>
       </div>
 
-      {/* Call to Action Footer Pod */}
       <footer className="flex flex-col md:flex-row items-center justify-between gap-8 p-12 bg-primary/5 rounded-[4rem] border border-primary/10 overflow-hidden relative">
         <div className="absolute top-0 right-0 p-8 opacity-5">
            <TrendingUp size={200} />
@@ -497,7 +475,7 @@ const GrowthChart = ({
   setChartMode: (m: "Practice" | "Mock") => void;
 }) => {
   return (
-    <div className="lg:col-span-8 bg-surface-container-low p-10 rounded-[3rem] shadow-ambient">
+    <div className="lg:col-span-8 bg-surface-container-high p-10 rounded-[3rem] shadow-ambient">
       <div className="flex justify-between items-center mb-12">
         <h3 className="text-xl font-black text-on-surface tracking-tight flex items-center gap-4">
           <div className="size-10 bg-primary/10 rounded-xl flex items-center justify-center text-primary">
@@ -546,7 +524,6 @@ const GrowthChart = ({
                 style={{ height: `${(item.accuracy / maxScore) * 100}%` }}
               />
               
-              {/* Tooltip Pod */}
               <div className="absolute -top-16 left-1/2 -translate-x-1/2 bg-on-surface text-surface text-[10px] font-technical font-black px-4 py-3 rounded-2xl shadow-ambient opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 transition-all pointer-events-none whitespace-nowrap z-20 flex flex-col items-center gap-1 border border-outline-variant/10">
                 <span className={chartMode === "Practice" ? "text-primary-container" : "text-tertiary"}>
                   {item.accuracy}%
@@ -576,3 +553,72 @@ const GrowthChart = ({
     </div>
   );
 };
+
+function PerformanceSkeleton() {
+  return (
+    <main className="pb-20 px-6 lg:px-12 max-w-7xl mx-auto space-y-16 animate-pulse">
+      <section className="pt-8 space-y-6">
+        <div className="h-16 w-2/3 bg-surface-container-high rounded-xl" />
+        <div className="h-6 w-1/2 bg-surface-container-high rounded-lg" />
+      </section>
+
+      <div className="flex gap-3 flex-wrap">
+        {Array.from({ length: 4 }).map((_, i) => (
+          <div key={i} className="h-10 w-28 rounded-full bg-surface-container-high" />
+        ))}
+      </div>
+
+      <div className="grid lg:grid-cols-12 gap-8">
+        <div className="lg:col-span-4 bg-surface-container-low p-10 rounded-[3rem] space-y-6">
+          <div className="size-16 bg-surface-container-high rounded-2xl" />
+          <div className="h-4 w-24 bg-surface-container-high rounded" />
+          <div className="h-16 w-32 bg-surface-container-high rounded" />
+          <div className="h-4 w-40 bg-surface-container-high rounded" />
+        </div>
+        <div className="lg:col-span-8 bg-surface-container-low p-10 rounded-[3rem] h-[300px]" />
+        <div className="lg:col-span-8 bg-surface-container-low p-10 rounded-[3rem] h-[250px]" />
+        <div className="lg:col-span-4 bg-surface-container-low p-10 rounded-[3rem] space-y-10">
+          {Array.from({ length: 2 }).map((_, i) => (
+            <div key={i} className="flex items-center gap-6">
+              <div className="size-20 rounded-full bg-surface-container-high" />
+              <div className="space-y-2">
+                <div className="h-3 w-20 bg-surface-container-high rounded" />
+                <div className="h-4 w-32 bg-surface-container-high rounded" />
+              </div>
+            </div>
+          ))}
+        </div>
+        <div className="lg:col-span-6 bg-surface-container-low p-10 rounded-[3rem] h-[200px]" />
+        <div className="lg:col-span-6 bg-surface-container-low p-10 rounded-[3rem] space-y-4">
+          {Array.from({ length: 3 }).map((_, i) => (
+            <div key={i} className="h-16 bg-surface-container-high rounded-2xl" />
+          ))}
+        </div>
+        <div className="lg:col-span-6 bg-surface-container-low p-10 rounded-[3rem] space-y-4">
+          {Array.from({ length: 3 }).map((_, i) => (
+            <div key={i} className="h-20 bg-surface-container-high rounded-2xl" />
+          ))}
+        </div>
+        <div className="lg:col-span-6 bg-surface-container-low p-10 rounded-[3rem] space-y-4">
+          {Array.from({ length: 3 }).map((_, i) => (
+            <div key={i} className="h-20 bg-surface-container-high rounded-2xl" />
+          ))}
+        </div>
+      </div>
+
+      <footer className="p-12 rounded-[4rem] bg-primary/5 flex flex-col md:flex-row gap-8 justify-between items-center">
+        <div className="flex items-center gap-6">
+          <div className="size-20 bg-primary/20 rounded-3xl" />
+          <div className="space-y-3">
+            <div className="h-6 w-48 bg-surface-container-high rounded" />
+            <div className="h-4 w-64 bg-surface-container-high rounded" />
+          </div>
+        </div>
+        <div className="flex gap-4">
+          <div className="h-12 w-32 bg-surface-container-high rounded-full" />
+          <div className="h-12 w-36 bg-surface-container-high rounded-full" />
+        </div>
+      </footer>
+    </main>
+  );
+}

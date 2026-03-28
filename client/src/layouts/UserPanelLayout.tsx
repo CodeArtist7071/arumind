@@ -12,7 +12,10 @@ import {
   Moon,
   TrendingUp,
   History,
-  Target
+  Target,
+  Eye,
+  EyeOff,
+  Timer
 } from "lucide-react";
 import { useDispatch, useSelector } from "react-redux";
 import InstallAppButton from "../components/InstallAppButton";
@@ -21,6 +24,7 @@ import { NavLink, Outlet, useLocation, useNavigate } from "react-router-dom";
 import type { AppDispatch, RootState } from "../store";
 import { supabase } from "../utils/supabase";
 import { clearUser } from "../slice/userSlice";
+import { toggleEyeProtection, triggerTestSubmit, setTestLanguage } from "../slice/uiSlice";
 
 const navItems = [
   {
@@ -50,14 +54,45 @@ const navItems = [
   },
 ];
 
+const routeMetadata: Record<string, { label: string; title: string }> = {
+  "/user/dashboard": { label: "Journal Overview", title: "Ecological Dashboard" },
+  "/user/performance": { label: "Growth Analysis", title: "Syllabus Mastery" },
+  "/user/plan-exams": { label: "Exam Rituals", title: "Strategic Planner" },
+  "/user/mock-tests": { label: "Simulation Lab", title: "Testing Grounds" },
+  "/user/results": { label: "Performance Records", title: "Achievement Manifest" },
+  "/user/profile": { label: "Personal Identity", title: "User Manifesto" },
+  "/user/dashboard/exam-lists": { label: "Syllabus Discovery", title: "Exam Registry" },
+  "/user/results/history": { label: "Log Manifest", title: "Archive Manifest" },
+};
+
 export default function UserPanelLayout() {
   const { user } = useSelector((state: RootState) => state.user ?? null);
+  const { 
+    isEyeProtectionActive, 
+    blueLightShield,
+    isTestActive,
+    testTimeLeft,
+    testLanguage,
+    testTitle
+  } = useSelector((state: RootState) => state.ui);
   const dispatch = useDispatch<AppDispatch>();
   const navigate = useNavigate();
   const [isCollapsed, setIsCollapsed] = useState(false);
   const { theme, toggleTheme } = useTheme();
 
+  const handleEyeProtectionToggle = () => {
+    dispatch(toggleEyeProtection());
+  };
+
   const location = useLocation();
+  const formatTime = (seconds: number | null) => {
+    if (seconds === null) return "00:00";
+    const m = Math.floor(seconds / 60);
+    const s = seconds % 60;
+    return `${m}:${s.toString().padStart(2, "0")}`;
+  };
+
+  const currentMetadata = routeMetadata[location.pathname] || { label: "Account Access", title: "Arumind Journal" };
 
   const handleLogout = async () => {
     const { error } = await supabase.auth.signOut();
@@ -67,7 +102,18 @@ export default function UserPanelLayout() {
   };
 
   return (
-    <div className="flex h-screen bg-surface font-narrative text-on-surface overflow-hidden transition-colors duration-500">
+    <div className={`flex h-screen bg-surface font-narrative text-on-surface overflow-hidden transition-colors duration-500 ${isEyeProtectionActive ? "eye-protection-active" : ""}`}>
+      {/* Blue Light Shield: Amber Overlay */}
+      {blueLightShield && (
+        <div 
+          className="fixed inset-0 z-9999 pointer-events-none transition-all duration-1000 ease-botanical" 
+          style={{ 
+            backgroundColor: "rgba(255, 145, 0, 0.08)", 
+            mixBlendMode: "multiply" 
+          }} 
+        />
+      )}
+
       {/* Sidebar - Desktop */}
       <aside
         className={`hidden lg:flex border-r border-on-surface/5 flex-col h-full bg-surface-container-low transition-all duration-700 ease-[var(--ease-botanical)] relative z-30 shadow-ambient ${
@@ -99,8 +145,8 @@ export default function UserPanelLayout() {
               className={({ isActive }) =>
                 `flex flex-row items-center justify-start px-3 py-2  rounded-4xl transition-all duration-300 group ${
                   isActive
-                    ? "bg-surface-container-highest text-primary shadow-sm scale-105"
-                    : "text-on-surface-variant flex items-center justify-center hover:bg-(--color-primary) hover:text-on-surface hover:text-white"
+                    ? "bg-primary text-white shadow-sm scale-105"
+                    : "text-on-surface-variant hover:text-primary flex items-center justify-center hover:bg-surface-container-high hover:text-on-surface hover:dark:text-primary"
                 }`
               }
             >
@@ -132,6 +178,18 @@ export default function UserPanelLayout() {
                 {theme === 'dark' ? <Sun className="size-5" /> : <Moon className="size-5" />}
               </button>
 
+              <button 
+                onClick={handleEyeProtectionToggle}
+                className={`flex-1 flex items-center justify-center p-2 rounded-full transition-all duration-300 group ${
+                  isEyeProtectionActive 
+                  ? "bg-primary text-white shadow-sm" 
+                  : "bg-surface-container-high text-on-surface-variant hover:bg-surface-container-highest hover:text-primary"
+                }`}
+                title="Eye Protection Mode"
+              >
+                {isEyeProtectionActive ? <Eye size={20} /> : <EyeOff size={20} />}
+              </button>
+
               <button
                 onClick={() => setIsCollapsed(!isCollapsed)}
                 className="flex-1 flex items-center justify-center p-2 rounded-full bg-surface-container-high text-primary hover:bg-surface-container-highest transition-all duration-300"
@@ -152,29 +210,100 @@ export default function UserPanelLayout() {
 
       {/* Main Content Area */}
       <main className="flex-1 flex flex-col relative overflow-hidden bg-surface transition-colors duration-500">
-        {/* Editorial Header */}
-        <header className="h-24 bg-surface/40 backdrop-blur-2xl flex items-center justify-between px-10 sticky top-0 z-20">
-           <div>
-              <div className="flex flex-col">
-                <h2 className="text-[10px] font-technical uppercase tracking-[0.4em] text-on-surface-variant opacity-40 mb-1">Authenticated Account</h2>
-                <div className="flex items-center gap-3">
-                   <div className="size-2 bg-primary rounded-full animate-pulse" />
-                   <p className="font-technical text-xs font-bold text-on-surface tracking-tight">{user?.email}</p>
-                </div>
-              </div>
-           </div>
+        {/* Editorial Dynamic Header - Now Multi-State */}
+        <header className="h-32 bg-surface/40 backdrop-blur-3xl flex items-center justify-between px-10 sticky top-0 z-20 border-b border-outline-variant/10">
+           {!isTestActive ? (
+             // Standard View: Page Context
+             <>
+               <div className="animate-reveal" key={location.pathname + "-title"}>
+                  <div className="flex flex-col">
+                    <span className="text-[10px] font-technical uppercase tracking-[0.4em] text-primary opacity-60 mb-2">{currentMetadata.label}</span>
+                    <h2 className="text-3xl font-black text-on-surface tracking-tighter leading-none">{currentMetadata.title}</h2>
+                  </div>
+               </div>
 
-           <div className="flex items-center gap-6">
-              <div className="size-12 bg-linear-to-br from-primary to-primary-container rounded-2xl flex items-center justify-center text-white font-technical font-bold text-lg shadow-lg shadow-primary/20 hover:scale-105 transition-transform cursor-pointer" onClick={() => navigate("/user/profile")}>
-                 {user?.email?.[0].toUpperCase()}
-              </div>
-           </div>
+               <div className="flex items-center gap-6">
+                  <div className="flex flex-col items-end mr-2">
+                     <p className="text-[9px] font-technical font-black text-on-surface-variant opacity-40 uppercase tracking-widest">{user?.email?.split('@')[0]}</p>
+                     <div className="flex items-center gap-2">
+                        <div className="size-2 bg-primary rounded-full animate-pulse" />
+                        <span className="text-[8px] font-technical font-black text-primary uppercase tracking-widest">Active Core</span>
+                     </div>
+                  </div>
+                  <div 
+                    className="size-14 bg-linear-to-br from-primary to-primary-container rounded-2xl flex items-center justify-center text-white font-technical font-bold text-xl shadow-lg shadow-primary/20 hover:scale-110 active:scale-95 transition-all cursor-pointer group relative overflow-hidden" 
+                    onClick={() => navigate("/user/profile")}
+                  >
+                     <span className="relative z-10">{user?.email?.[0].toUpperCase()}</span>
+                     <div className="absolute inset-0 bg-white/20 opacity-0 group-hover:opacity-100 transition-opacity" />
+                  </div>
+               </div>
+             </>
+           ) : (
+             // Test View: Immersive Context
+             <>
+               <div className="animate-reveal" key="test-active-title">
+                  <div className="flex flex-col">
+                    <span className="text-[10px] font-technical uppercase tracking-[0.4em] text-primary opacity-60 mb-2">Live Examination</span>
+                    <h2 className="text-3xl font-black text-on-surface tracking-tighter leading-none">{testTitle || "Subject Manifestation"}</h2>
+                  </div>
+               </div>
+
+               <div className="flex items-center gap-8">
+                  {/* Timer Pod */}
+                  {testTimeLeft !== null && (
+                    <div className="flex items-center gap-5 bg-surface-container-high/60 backdrop-blur-md px-8 py-3 rounded-full shadow-inner ring-1 ring-white/10 group">
+                       <div className="size-10 bg-tertiary/10 rounded-full flex items-center justify-center">
+                          <Timer className="text-tertiary size-5 animate-pulse" />
+                       </div>
+                       <div className="flex flex-col">
+                          <span className="text-[8px] font-technical font-black text-tertiary uppercase tracking-widest opacity-40">Tempo Reset</span>
+                          <span className="font-technical font-black text-on-surface text-2xl tracking-tighter tabular-nums">
+                            {formatTime(testTimeLeft)}
+                          </span>
+                       </div>
+                    </div>
+                  )}
+
+                  {/* Language Toggle */}
+                  <div className="flex bg-surface-container-low p-1 rounded-full shadow-inner border border-outline-variant/5">
+                    <button
+                      type="button"
+                      onClick={() => dispatch(setTestLanguage("en"))}
+                      className={`px-6 py-2 rounded-full text-[10px] font-technical font-black uppercase tracking-widest transition-all ${
+                        testLanguage === "en" ? "bg-white text-primary shadow-sm" : "text-on-surface-variant opacity-40 hover:opacity-100"
+                      }`}
+                    >
+                      EN
+                    </button>
+                    <button
+                      type="button"
+                      onClick={() => dispatch(setTestLanguage("od"))}
+                      className={`px-6 py-2 rounded-full text-[10px] font-technical font-black uppercase tracking-widest transition-all ${
+                        testLanguage === "od" ? "bg-white text-primary shadow-sm" : "text-on-surface-variant opacity-40 hover:opacity-100"
+                      }`}
+                    >
+                      OD
+                    </button>
+                  </div>
+
+                  {/* Final Submit Button */}
+                  <button
+                    onClick={() => dispatch(triggerTestSubmit())}
+                    className="px-10 py-4 bg-linear-to-r from-primary to-primary-container text-white rounded-full font-technical font-black text-xs uppercase tracking-[0.3em] shadow-ambient-lg hover:scale-105 active:scale-95 transition-all cursor-pointer flex items-center gap-3 group"
+                  >
+                    Syllabus Submit
+                    <Target size={18} className="group-hover:rotate-12 transition-transform" />
+                  </button>
+               </div>
+             </>
+           )}
         </header>
 
         {/* Content Viewport */}
         <div 
           key={location.pathname}
-          className="flex-1 bg-surface-container-low overflow-y-auto custom-scrollbar p-6 lg:p-10 animate-reveal"
+          className="flex-1 bg-surface-container-low overflow-y-auto custom-scrollbar p-6 lg:p-10"
         >
           <Outlet />
         </div>
