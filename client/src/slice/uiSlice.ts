@@ -9,6 +9,7 @@ interface UIState {
   testLanguage: "en" | "od";
   testTitle: string;
   triggerSubmit: boolean;
+  isActionCenterOpen: boolean;
 }
 
 const initialState: UIState = {
@@ -19,6 +20,7 @@ const initialState: UIState = {
   testLanguage: "en",
   testTitle: "",
   triggerSubmit: false,
+  isActionCenterOpen: false,
 };
 
 const uiSlice = createSlice({
@@ -62,6 +64,12 @@ const uiSlice = createSlice({
       state.testTimeLeft = null;
       state.triggerSubmit = false;
     },
+    toggleActionCenter: (state) => {
+      state.isActionCenterOpen = !state.isActionCenterOpen;
+    },
+    setActionCenter: (state, action: PayloadAction<boolean>) => {
+      state.isActionCenterOpen = action.payload;
+    },
   },
 });
 
@@ -74,6 +82,8 @@ export const {
   updateTestTime,
   setTestLanguage,
   triggerTestSubmit,
-  clearTestSession
+  clearTestSession,
+  toggleActionCenter,
+  setActionCenter
 } = uiSlice.actions;
 export default uiSlice.reducer;
