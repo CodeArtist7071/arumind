@@ -43,12 +43,18 @@ export const MobileProfile: React.FC<MobileProfileProps> = ({ onEdit }) => {
     <div className="flex flex-col gap-8 pb-32 animate-reveal">
       {/* Mobile Hero: Identification Manifest */}
       <section className="bg-surface-container-low rounded-[2.5rem] p-8 flex flex-col items-center text-center relative overflow-hidden shadow-ambient">
-        <div className="size-28 rounded-full border-4 border-white shadow-xl overflow-hidden mb-6 ring-4 ring-primary/10">
-           <img 
-             src={user?.identities?.[0]?.identity_data?.avatar_url || "https://lh3.googleusercontent.com/a/ACg8ocL8jX9S4Z4c9X..."}
-             alt="User Manifestation"
-             className="size-full object-cover"
-           />
+        <div className="size-28 rounded-full border-4 border-white shadow-xl overflow-hidden mb-6 ring-4 ring-primary/10 bg-linear-to-br from-primary/10 to-secondary/10 flex items-center justify-center">
+           {user?.user_metadata?.avatar_url || user?.identities?.[0]?.identity_data?.avatar_url ? (
+             <img 
+               src={user?.user_metadata?.avatar_url || user?.identities?.[0]?.identity_data?.avatar_url}
+               alt="User Manifestation"
+               className="size-full object-cover"
+             />
+           ) : (
+             <span className="text-3xl font-black text-primary tracking-tighter">
+                {(profile?.full_name || user?.user_metadata?.full_name || user?.email)?.[0]?.toUpperCase() || "A"}
+             </span>
+           )}
         </div>
         
         <div className="space-y-1">

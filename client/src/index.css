@@ -121,6 +121,37 @@
     @apply hover:scale-[1.015] hover:shadow-ambient-lg transition-all duration-500 ease-botanical;
   }
 
+  /* --- FLAGSHIP: SPLASH SCREEN MANIFESTATIONS --- */
+  @keyframes splash-bloom {
+    0% { transform: scale(0.8); filter: blur(10px) brightness(0.5); }
+    50% { transform: scale(1.1); filter: blur(0) brightness(1.1); }
+    100% { transform: scale(1); filter: blur(0) brightness(1); }
+  }
+
+  @keyframes splash-progress {
+    0% { width: 0%; opacity: 0.2; }
+    50% { width: 60%; opacity: 0.6; }
+    100% { width: 100%; opacity: 0.4; }
+  }
+
+  @keyframes pulse-slow {
+    0%, 100% { transform: translate(-50%, -50%) scale(1); opacity: 0.2; }
+    50% { transform: translate(-50%, -50%) scale(1.2); opacity: 0.4; }
+  }
+
+  .animate-splash-bloom {
+    animation: splash-bloom 2s var(--ease-botanical) infinite;
+  }
+
+  .animate-splash-progress {
+    animation: splash-progress 3s var(--ease-botanical) infinite;
+  }
+
+  .animate-pulse-slow {
+    animation: pulse-slow 8s var(--ease-botanical) infinite;
+  }
+  /* --- END FLAGSHIP MANIFESTATIONS --- */
+
   /* Eye Protection Mode: Lush Minimalist Amber Filter */
   .eye-protection-active {
     filter: sepia(0.25) contrast(0.95) brightness(0.95);

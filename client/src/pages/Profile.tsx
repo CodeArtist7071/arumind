@@ -80,12 +80,18 @@ const Profile = () => {
 
                     <div className="flex flex-col md:flex-row items-center gap-10 relative z-10">
                         <div className="relative">
-                            <div className="size-40 rounded-full border-4 border-white dark:border-surface shadow-2xl overflow-hidden ring-4 ring-primary/20">
-                                <img
-                                    className="h-full w-full object-cover"
-                                    src={user?.identities?.[0]?.identity_data?.avatar_url || "https://lh3.googleusercontent.com/a/ACg8ocL8jX9S4Z4c9X..."}
-                                    alt="profile"
-                                />
+                            <div className="size-40 rounded-full border-4 border-white dark:border-surface shadow-2xl overflow-hidden ring-4 ring-primary/20 bg-linear-to-br from-primary/10 to-secondary/10 flex items-center justify-center">
+                                {user?.user_metadata?.avatar_url || user?.identities?.[0]?.identity_data?.avatar_url ? (
+                                    <img
+                                        className="h-full w-full object-cover"
+                                        src={user?.user_metadata?.avatar_url || user?.identities?.[0]?.identity_data?.avatar_url}
+                                        alt="profile"
+                                    />
+                                ) : (
+                                    <span className="text-5xl font-black text-primary tracking-tighter">
+                                        {(profile?.full_name || user?.user_metadata?.full_name || user?.email)?.[0]?.toUpperCase() || "A"}
+                                    </span>
+                                )}
                             </div>
                             {userData?.email_verified && (
                                 <div className="absolute bottom-2 right-2 bg-primary text-white p-2 rounded-full shadow-lg ring-4 ring-white dark:ring-surface animate-bounce-slow">

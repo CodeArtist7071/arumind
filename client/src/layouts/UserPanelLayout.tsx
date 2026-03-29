@@ -73,7 +73,7 @@ const routeMetadata: Record<string, { label: string; title: string }> = {
 };
 
 export default function UserPanelLayout() {
-  const { user } = useSelector((state: RootState) => state.user ?? null);
+  const { user, profile } = useSelector((state: RootState) => state.user ?? { user: null, profile: null });
   const { 
     isEyeProtectionActive, 
     blueLightShield,
@@ -254,7 +254,15 @@ export default function UserPanelLayout() {
                     className="size-14 bg-linear-to-br from-primary to-primary-container rounded-2xl flex items-center justify-center text-white font-technical font-bold text-xl shadow-lg shadow-primary/20 hover:scale-110 active:scale-95 transition-all cursor-pointer group relative overflow-hidden" 
                     onClick={() => navigate("/user/profile")}
                   >
-                     <span className="relative z-10">{user?.email?.[0].toUpperCase()}</span>
+                     {user?.user_metadata?.avatar_url || user?.identities?.[0]?.identity_data?.avatar_url ? (
+                        <img 
+                          src={user?.user_metadata?.avatar_url || user?.identities?.[0]?.identity_data?.avatar_url} 
+                          alt="ID" 
+                          className="size-full object-cover"
+                        />
+                     ) : (
+                        <span className="relative z-10">{(profile?.full_name || user?.user_metadata?.full_name || user?.email)?.[0]?.toUpperCase() || "A"}</span>
+                     )}
                      <div className="absolute inset-0 bg-white/20 opacity-0 group-hover:opacity-100 transition-opacity" />
                   </div>
                </div>

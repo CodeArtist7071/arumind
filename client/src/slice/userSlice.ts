@@ -12,7 +12,7 @@ interface UserState {
 const initialState: UserState ={
     user:null,
     profile:null,
-    loading:false,
+    loading:false, // Reverted to false to prevent PWA Stalling for logged-out users
     error:null
 }
 
