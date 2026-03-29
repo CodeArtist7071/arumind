@@ -112,120 +112,139 @@ const MockTestPreferenceModal: React.FC<MockTestPreferenceModalProps> = ({
   };
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-900/60 backdrop-blur-sm animate-in fade-in duration-300">
-      <div className="bg-surface dark:bg-slate-900 w-full max-w-2xl rounded-3xl shadow-2xl overflow-hidden  dark:border-slate-800 flex flex-col max-h-[90vh]">
+    <div className="fixed inset-0 z-50 flex items-end sm:items-center justify-center p-0 sm:p-4">
+      <div 
+        className="absolute inset-0 bg-on-surface/20 backdrop-blur-md transition-all duration-1000 ease-botanical animate-in fade-in"
+        onClick={onClose}
+      />
+      <div className="relative bg-surface dark:bg-surface-dim w-full sm:max-w-2xl rounded-t-[2.5rem] rounded-b-none sm:rounded-b-[2.5rem] shadow-ambient-lg overflow-hidden flex flex-col max-h-[92vh] animate-in slide-in-from-bottom sm:slide-in-from-bottom-0 sm:zoom-in-95 duration-700 ease-botanical">
+        
+        {/* Mobile Drag Handle Ritual */}
+        <div className="pt-4 pb-0 sm:hidden">
+          <div className="w-12 h-1.5 bg-on-surface/10 rounded-full mx-auto" />
+        </div>
+
         {/* Header */}
-        <div className="p-6 border-b border-slate-100 dark:border-slate-800 flex justify-between items-center bg-linear-to-r from-slate-50 to-white dark:from-slate-800/50 dark:to-slate-900">
+        <div className="p-8 sm:p-10 border-b border-on-surface/5 flex justify-between items-center bg-surface-container-low/50">
           <div>
-            <h2 className="text-2xl font-black tracking-tight text-on-surface dark:text-white">
-              Mock Test Settings
+            <h2 className="text-2xl sm:text-3xl font-black tracking-tighter text-on-surface">
+              Mock Test Ritual
             </h2>
-            <p className="text-sm font-bold text-primary uppercase tracking-wider mt-1">
-              {examName}
+            <p className="text-[10px] sm:text-xs font-technical font-black text-primary uppercase tracking-[0.3em] mt-2">
+              {examName} Manifesto
             </p>
           </div>
           <button
             onClick={onClose}
-            className="p-2 hover:bg-slate-200 dark:hover:bg-slate-800 rounded-full transition-colors"
+            className="p-3 bg-surface-container-high rounded-full transition-all hover:rotate-90 duration-500"
           >
-            <X size={24} className="text-slate-400" />
+            <X size={20} className="text-on-surface-variant" />
           </button>
         </div>
 
         {/* Content */}
-        <div className="p-8 space-y-8 overflow-y-auto flex-1">
-          {/* Instructions */}
-          <div className="bg-green-50 dark:bg-green-900/20 p-6 rounded-2xl border border-green-100 dark:border-green-800/50 space-y-4">
-            <h3 className="text-sm font-black uppercase tracking-widest text-primary dark:text-green-400 flex items-center gap-2">
-              <BookOpen size={16} />
-              Exam Instructions
-            </h3>
-            <ul className="space-y-2 text-sm text-slate-600 dark:text-slate-400 font-medium">
-              <li className="flex gap-2">
-                <span className="text-primary">•</span>
-                The test will be auto-submitted once the timer reaches zero.
-              </li>
-              <li className="flex gap-2">
-                <span className="text-primary">•</span>
-                Do not refresh the page or navigate away during the test.
-              </li>
-              <li className="flex gap-2">
-                <span className="text-primary">•</span>
-                Questions are selected based on your chosen difficulty mode.
-              </li>
-            </ul>
-            <label className="flex items-center gap-3 pt-2 cursor-pointer group">
-              <input
-                type="checkbox"
-                checked={acceptedInstructions}
-                onChange={(e) => setAcceptedInstructions(e.target.checked)}
-                className="size-5 rounded border-green-200 text-primary focus:ring-green-500 cursor-pointer"
-              />
-              <span className="text-sm font-bold text-slate-700 dark:text-slate-200 group-hover:text-primary transition-colors">
-                I have read and understood all instructions.
-              </span>
-            </label>
+        <div className="p-8 sm:p-10 space-y-10 overflow-y-auto flex-1 custom-scrollbar">
+          {/* Section 1: Instructions */}
+          <div className={`space-y-6 ${isOpen ? "animate-reveal" : "opacity-0"}`} style={{ animationDelay: '100ms' }}>
+            <div className="flex items-center gap-4 opacity-40">
+               <BookOpen size={16} className="text-primary" />
+               <h3 className="text-[10px] font-technical font-black uppercase tracking-[0.4em] text-on-surface-variant">Exam Instructions</h3>
+               <div className="h-px flex-1 bg-on-surface-variant/20" />
+            </div>
+
+            <div className="bg-surface-container-low p-6 rounded-4xl border border-primary/5 space-y-4">
+              <ul className="space-y-3 text-sm text-on-surface-variant font-medium">
+                <li className="flex gap-4">
+                  <div className="size-1.5 bg-primary rounded-full mt-2" />
+                  <span>The test will be auto-submitted once the timer reaches zero.</span>
+                </li>
+                <li className="flex gap-4">
+                  <div className="size-1.5 bg-primary rounded-full mt-2" />
+                  <span>Do not refresh the page or navigate away during the simulation.</span>
+                </li>
+                <li className="flex gap-4">
+                  <div className="size-1.5 bg-primary rounded-full mt-2" />
+                  <span>Questions are contextually balanced based on your difficulty focus.</span>
+                </li>
+              </ul>
+              
+              <label className="flex items-center gap-4 p-5 bg-white/50 rounded-3xl cursor-pointer group hover:bg-white transition-all duration-300 shadow-inner">
+                <input
+                  type="checkbox"
+                  checked={acceptedInstructions}
+                  onChange={(e) => setAcceptedInstructions(e.target.checked)}
+                  className="size-6 rounded-xl border-primary/20 text-primary focus:ring-primary/50 cursor-pointer"
+                />
+                <span className="text-sm font-bold text-on-surface group-hover:text-primary transition-colors">
+                  I have read and realized the instructions.
+                </span>
+              </label>
+            </div>
           </div>
 
           {errorMsg && (
-            <div className="bg-rose-50 dark:bg-rose-900/20 p-4 rounded-xl border border-rose-100 dark:border-rose-800 flex items-center gap-3 text-rose-600 dark:text-rose-400 text-sm font-bold animate-in slide-in-from-top-2">
+            <div className="bg-tertiary/10 p-5 rounded-3xl border border-tertiary/10 flex items-center gap-4 text-tertiary text-xs font-bold animate-in slide-in-from-top-3">
               <AlertCircle size={20} />
               {errorMsg}
             </div>
           )}
 
-          {/* Camera Status */}
-          <div className={`p-4 rounded-xl border flex items-center justify-between transition-all ${
-            cameraStatus === "granted" 
-              ? "bg-emerald-50 border-emerald-100 text-emerald-700 dark:bg-emerald-900/10 dark:border-emerald-800" 
-              : cameraStatus === "denied"
-              ? "bg-rose-50 border-rose-100 text-rose-700 dark:bg-rose-900/10 dark:border-rose-800"
-              : "bg-surface-container-low border-slate-100 text-slate-600 dark:bg-slate-800/50 dark:border-slate-800"
-          }`}>
-            <div className="flex items-center gap-3">
-              <div className={`p-2 rounded-lg ${
-                cameraStatus === "granted" ? "bg-emerald-500 text-white" : 
-                cameraStatus === "denied" ? "bg-rose-500 text-white" : "bg-slate-400 text-white"
-              }`}>
-                <ShieldCheck size={18} />
+          {/* Section 2: Camera Status */}
+          <div className={`space-y-6 ${isOpen ? "animate-reveal" : "opacity-0"}`} style={{ animationDelay: '200ms' }}>
+            <div className={`p-6 rounded-4xl border flex flex-col sm:flex-row items-center justify-between gap-6 transition-all duration-700 ease-botanical ${
+              cameraStatus === "granted" 
+                ? "bg-primary/5 border-primary/20" 
+                : cameraStatus === "denied"
+                ? "bg-tertiary/5 border-tertiary/20"
+                : "bg-surface-container-low border-on-surface/5"
+            }`}>
+              <div className="flex items-center gap-5 w-full sm:w-auto">
+                <div className={`size-12 rounded-2xl flex items-center justify-center transition-all ${
+                  cameraStatus === "granted" ? "bg-primary text-white" : 
+                  cameraStatus === "denied" ? "bg-tertiary text-white" : "bg-surface-container-highest text-on-surface-variant/40"
+                }`}>
+                  <ShieldCheck size={24} />
+                </div>
+                <div>
+                  <p className="text-sm font-black text-on-surface">Proctoring Verification</p>
+                  <p className="text-[10px] font-technical uppercase tracking-widest text-on-surface-variant opacity-60">
+                    {cameraStatus === "granted" ? "Camera Shield Active" : 
+                    cameraStatus === "denied" ? "Verification Failure" : 
+                    cameraStatus === "checking" ? "Environment Syncing..." : "Hardware Check Required"}
+                  </p>
+                </div>
               </div>
-              <div>
-                <p className="text-sm font-bold">Camera Verification</p>
-                <p className="text-xs opacity-80">
-                  {cameraStatus === "granted" ? "Camera is ready and verified." : 
-                   cameraStatus === "denied" ? "Camera access was denied." : 
-                   cameraStatus === "checking" ? "Verifying camera..." : "Verification required before starting."}
-                </p>
-              </div>
+              
+              {cameraStatus !== "granted" && (
+                <button 
+                  type="button"
+                  onClick={checkCamera}
+                  disabled={cameraStatus === "checking"}
+                  className="w-full sm:w-auto px-8 py-3 bg-on-surface text-surface text-[10px] font-technical font-black uppercase tracking-widest rounded-full hover:scale-105 active:scale-95 transition-all disabled:opacity-50"
+                >
+                  {cameraStatus === "checking" ? "Checking..." : "Verify Environment"}
+                </button>
+              )}
             </div>
-            {cameraStatus !== "granted" && (
-              <button 
-                type="button"
-                onClick={checkCamera}
-                disabled={cameraStatus === "checking"}
-                className="px-4 py-2 bg-slate-900 dark:bg-primary text-white text-xs font-bold rounded-lg hover:opacity-90 disabled:opacity-50"
-              >
-                {cameraStatus === "checking" ? "Checking..." : "Verify Camera"}
-              </button>
-            )}
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          {/* Section 3: Configuration */}
+          <div className={`grid grid-cols-1 md:grid-cols-2 gap-10 ${isOpen ? "animate-reveal" : "opacity-0"}`} style={{ animationDelay: '300ms' }}>
             {/* Difficulty */}
-            <div className="space-y-4">
-              <h3 className="text-xs font-black uppercase tracking-[0.2em] text-slate-400 flex items-center gap-2">
-                <Zap size={14} className="text-amber-500" />
-                Difficulty Mode
+            <div className="space-y-6">
+              <h3 className="text-[10px] font-technical font-black uppercase tracking-[0.3em] text-on-surface-variant/40 flex items-center gap-3">
+                <Zap size={14} className="text-primary" />
+                Adaptive Focus
               </h3>
-              <div className="grid grid-cols-1 gap-2">
+              <div className="grid grid-cols-1 gap-3">
                 {(["EASY", "MODERATE", "HARD"] as DifficultyMode[]).map((mode) => (
                   <button
                     key={mode}
                     onClick={() => setDifficulty(mode)}
-                    className={`flex items-center justify-between p-4 rounded-xl border-2 transition-all font-bold text-sm ${
+                    className={`flex items-center justify-between p-5 rounded-3xl transition-all duration-300 font-bold text-sm ${
                       difficulty === mode
-                        ? "border-primary bg-green-50 dark:bg-green-900/10 text-primary shadow-md translate-x-1"
-                        : "border-slate-100 dark:border-slate-800 text-on-surface-variant hover:border-slate-200 dark:hover:border-slate-700"
+                        ? "bg-primary/5 ring-2 ring-primary text-primary"
+                        : "bg-surface-container-low text-on-surface-variant hover:bg-surface-container-high"
                     }`}
                   >
                     {mode}
@@ -233,29 +252,29 @@ const MockTestPreferenceModal: React.FC<MockTestPreferenceModalProps> = ({
                   </button>
                 ))}
               </div>
-              <p className="text-[10px] text-slate-400 italic">
-                {difficulty === "EASY" && "60% Previously Seen • 40% New"}
-                {difficulty === "MODERATE" && "40% Previously Seen • 60% New"}
-                {difficulty === "HARD" && "20% Previously Seen • 80% New"}
+              <p className="text-[10px] text-on-surface-variant opacity-40 italic font-medium px-2">
+                {difficulty === "EASY" && "Manifest seen questions 60/40 mix"}
+                {difficulty === "MODERATE" && "Syllabus exploration 40/60 mix"}
+                {difficulty === "HARD" && "Stress simulation 20/80 mix"}
               </p>
             </div>
 
             {/* Config */}
-            <div className="space-y-6">
-              <div className="space-y-4">
-                <h3 className="text-xs font-black uppercase tracking-[0.2em] text-slate-400 flex items-center gap-2">
+            <div className="space-y-10">
+              <div className="space-y-6">
+                <h3 className="text-[10px] font-technical font-black uppercase tracking-[0.3em] text-on-surface-variant/40 flex items-center gap-3">
                   <Target size={14} className="text-primary" />
-                  Total Questions
+                  Manifest Count
                 </h3>
-                <div className="flex gap-2">
+                <div className="flex gap-3">
                   {[30, 60, 100].map((num) => (
                     <button
                       key={num}
                       onClick={() => setQuestionCount(num)}
-                      className={`flex-1 py-3 rounded-xl border-2 transition-all font-black text-xs ${
+                      className={`flex-1 py-4 rounded-3xl transition-all duration-300 font-black text-xs ${
                         questionCount === num
-                          ? "border-slate-900 bg-slate-900 text-white dark:border-white dark:bg-surface dark:text-on-surface"
-                          : "border-slate-100 dark:border-slate-800 text-on-surface-variant hover:bg-surface-container-low"
+                          ? "bg-on-surface text-surface shadow-xl"
+                          : "bg-surface-container-low text-on-surface-variant hover:bg-surface-container-high"
                       }`}
                     >
                       {num}
@@ -264,54 +283,57 @@ const MockTestPreferenceModal: React.FC<MockTestPreferenceModalProps> = ({
                 </div>
               </div>
 
-              <div className="space-y-4">
-                <h3 className="text-xs font-black uppercase tracking-[0.2em] text-slate-400 flex items-center gap-2">
-                  <Clock size={14} className="text-purple-500" />
-                  Time Limit (Min)
+              <div className="space-y-6">
+                <h3 className="text-[10px] font-technical font-black uppercase tracking-[0.3em] text-on-surface-variant/40 flex items-center gap-3">
+                  <Clock size={14} className="text-primary" />
+                  Tempo Offset
                 </h3>
-                <input
-                  type="range"
-                  min="30"
-                  max="180"
-                  step="15"
-                  value={timeLimit}
-                  onChange={(e) => setTimeLimit(parseInt(e.target.value))}
-                  className="w-full h-2 bg-slate-200 dark:bg-slate-800 rounded-lg appearance-none cursor-pointer accent-green-600"
-                />
-                <div className="flex justify-between text-xs font-bold text-on-surface-variant uppercase">
-                  <span>30m</span>
-                  <span className="text-primary text-sm font-black">{timeLimit} Minutes</span>
-                  <span>180m</span>
+                <div className="px-2">
+                  <input
+                    type="range"
+                    min="30"
+                    max="180"
+                    step="15"
+                    value={timeLimit}
+                    onChange={(e) => setTimeLimit(parseInt(e.target.value))}
+                    className="w-full h-2 bg-surface-container-highest rounded-full appearance-none cursor-pointer accent-primary"
+                  />
+                </div>
+                <div className="flex justify-between items-end px-2">
+                  <span className="text-[9px] font-technical font-black text-on-surface-variant/30 uppercase tracking-widest">30m</span>
+                  <span className="text-xl font-technical font-black text-primary tracking-tighter">{timeLimit} <span className="text-[10px] opacity-40 uppercase ml-1">Manifests</span></span>
+                  <span className="text-[9px] font-technical font-black text-on-surface-variant/30 uppercase tracking-widest">180m</span>
                 </div>
               </div>
             </div>
           </div>
         </div>
 
-        {/* Footer */}
-        <div className="p-6 bg-surface-container-low dark:bg-slate-800/30 border-t border-slate-100 dark:border-slate-800">
+        {/* Footer ritual */}
+        <div className="p-8 sm:p-10 bg-surface-container-low/50 border-t border-on-surface/5 flex flex-col gap-4">
           <button
             onClick={handleStart}
             disabled={!acceptedInstructions || loading}
-            className={`w-full py-4 rounded-2xl font-black text-lg transition-all shadow-2xl flex items-center justify-center gap-3 ${
+            className={`w-full py-5 rounded-full font-black text-xs lg:text-sm uppercase tracking-[0.3em] transition-all shadow-xl flex items-center justify-center gap-4 group ${
               acceptedInstructions && !loading
-                ? "bg-[#16a34a] text-white hover:bg-primary hover:shadow-green-500/25 active:scale-[0.98]"
-                : "bg-slate-200 dark:bg-slate-800 text-slate-400 cursor-not-allowed"
+                ? "bg-linear-to-r from-primary to-primary-container text-white hover:scale-105 active:scale-95 shadow-primary/20"
+                : "bg-surface-container-high text-on-surface-variant opacity-40 cursor-not-allowed"
             }`}
           >
             {loading ? (
               <div className="size-6 border-2 border-white border-t-transparent rounded-full animate-spin" />
             ) : (
               <>
-                {cameraStatus === "granted" ? "Start Mock Exam" : "Verify Camera & Start"}
-                <Zap size={20} fill="white" />
+                {cameraStatus === "granted" ? "Begin Simulation" : "Sync Environment & Begin"}
+                <Zap size={20} className="group-hover:rotate-12 transition-transform" />
               </>
             )}
           </button>
+          
           {!acceptedInstructions && (
-            <div className="mt-3 flex items-center justify-center gap-2 text-rose-500 text-xs font-bold animate-pulse">
+            <div className="flex items-center justify-center gap-3 text-tertiary text-[9px] font-technical font-black uppercase tracking-widest animate-pulse">
               <AlertCircle size={14} />
-              Please accept the instructions to proceed
+              Acknowledge Manifesto to Proceed
             </div>
           )}
         </div>

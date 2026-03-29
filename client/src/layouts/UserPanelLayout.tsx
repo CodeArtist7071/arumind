@@ -110,8 +110,8 @@ export default function UserPanelLayout() {
 
   return (
     <div className={`flex h-screen bg-surface font-narrative text-on-surface overflow-hidden transition-colors duration-500 ${isEyeProtectionActive ? "eye-protection-active" : ""}`}>
-      {/* Action Center Component */}
-      <ActionCenter />
+      {/* Action Center Component - Temporarily Suspended */}
+      {/* <ActionCenter /> */}
 
       {/* Blue Light Shield: Amber Overlay */}
       {blueLightShield && (
@@ -131,7 +131,7 @@ export default function UserPanelLayout() {
         }`}
       >
         {/* Logo Section */}
-// ... (Logo logic)
+
         <div className="h-28 flex items-center px-8 mb-4">
           <div className="flex items-center gap-4 group cursor-pointer" onClick={() => navigate("/")}>
              <div className="size-12 bg-linear-to-br from-primary to-primary-container rounded-2xl flex items-center justify-center text-white shadow-lg shadow-primary/20 group-hover:rotate-6 transition-all duration-300">
@@ -234,14 +234,14 @@ export default function UserPanelLayout() {
                </div>
 
                <div className="flex items-center gap-6">
-                  {/* Action Center Toggle */}
-                  <button 
+                  {/* Action Center Toggle - Temporarily Suspended */}
+                  {/* <button 
                     onClick={() => dispatch(toggleActionCenter())}
                     className="size-14 rounded-4xl bg-surface-container-high/40 text-on-surface-variant hover:bg-surface-container-highest hover:text-primary transition-all duration-500 flex items-center justify-center group shadow-sm border border-outline-variant/5"
                     title="Action Center"
                   >
                     <LayoutGrid className="size-6 group-hover:rotate-90 transition-transform duration-700" />
-                  </button>
+                  </button> */}
 
                   <div className="flex flex-col items-end mr-2">
                      <p className="text-[9px] font-technical font-black text-on-surface-variant opacity-40 uppercase tracking-widest">{user?.email?.split('@')[0]}</p>

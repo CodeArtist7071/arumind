@@ -252,73 +252,80 @@ const Exam = () => {
             );
         })}
 
-        {/* --- PREFERENCES MODAL --- */}
+        {/* --- ADAPTIVE PREFERENCES MANIFEST (ACTION SHEET) --- */}
         {showPrefs && (
-          <div className="fixed inset-0 z-50 flex items-center justify-center p-4">
+          <div className="fixed inset-0 z-50 flex items-end sm:items-center justify-center p-0 sm:p-4">
             <div 
-              className="absolute inset-0 bg-on-surface/20 backdrop-blur-md"
+              className="absolute inset-0 bg-on-surface/20 backdrop-blur-md transition-all duration-1000 ease-botanical"
               onClick={() => setShowPrefs(false)}
             />
-            <div className="relative bg-surface-container-lowest w-full max-w-xl rounded-[2.5rem] shadow-ambient-lg overflow-hidden animate-in zoom-in-95 duration-300">
-              {/* Modal Header */}
-              <div className="p-10 pb-6 bg-surface-container-low/50">
-                <h3 className="text-3xl font-black tracking-tighter text-on-surface">Exam Preferences</h3>
-                <p className="text-on-surface-variant text-base mt-2 opacity-70">Tailor your attempt for this chapter</p>
+            <div className="relative bg-surface-container-lowest w-full sm:max-w-xl rounded-t-[2.5rem] rounded-b-none sm:rounded-b-[2.5rem] shadow-ambient-lg overflow-hidden animate-in fade-in slide-in-from-bottom sm:slide-in-from-bottom-0 sm:zoom-in-95 duration-700 ease-botanical">
+              {/* Mobile Drag Handle Ritual */}
+              <div className="pt-4 pb-0 sm:hidden">
+                <div className="w-12 h-1.5 bg-on-surface/10 rounded-full mx-auto" />
               </div>
 
-              {/* Modal Content */}
-              <div className="p-10 pt-4 space-y-4">
+              {/* Modal Header */}
+              <div className="p-8 sm:p-10 pb-4 sm:pb-6 bg-surface-container-low/50">
+                <h3 className="text-2xl sm:text-3xl font-black tracking-tighter text-on-surface">Exam Preferences</h3>
+                <p className="text-on-surface-variant text-sm sm:text-base mt-2 opacity-70">Tailor your attempt for this chapter</p>
+              </div>
+
+              {/* Modal Content - Scrollable for small screens */}
+              <div className="p-8 sm:p-10 pt-4 space-y-4 max-h-[70vh] overflow-y-auto custom-scrollbar">
                 {/* 1. Normal Mode */}
                 <div 
                   onClick={() => setPrefs(p => ({ ...p, mode: "normal" }))}
-                  className={`p-6 rounded-3xl transition-all duration-300 cursor-pointer flex items-center gap-5 ${
+                  className={`p-5 sm:p-6 rounded-3xl transition-all duration-300 cursor-pointer flex items-center gap-4 sm:gap-5 ${
                     prefs.mode === "normal" 
                       ? "bg-primary/5 ring-2 ring-primary" 
                       : "bg-surface-container-low hover:bg-surface-container-high"
-                  }`}
+                  } ${showPrefs ? "animate-reveal" : "opacity-0"}`}
+                  style={{ animationDelay: '100ms' }}
                 >
-                  <div className={`p-4 rounded-2xl ${prefs.mode === "normal" ? "bg-primary text-white" : "bg-surface-container-highest text-on-surface-variant"}`}>
+                  <div className={`p-3 sm:p-4 rounded-2xl ${prefs.mode === "normal" ? "bg-primary text-white" : "bg-surface-container-highest text-on-surface-variant"}`}>
                     <Coffee size={24} />
                   </div>
                   <div className="flex-1">
-                    <h4 className="font-bold text-lg flex items-center gap-2 text-on-surface">
+                    <h4 className="font-bold text-base sm:text-lg flex items-center gap-2 text-on-surface">
                       Relaxed Practice
-                      {prefs.mode === "normal" && <CheckCircle2 size={18} className="text-primary" />}
+                      {prefs.mode === "normal" && <CheckCircle2 size={16} className="text-primary" />}
                     </h4>
-                    <p className="text-sm text-on-surface-variant opacity-70">No timer, no proctoring. Study at your own pace.</p>
+                    <p className="text-xs sm:text-sm text-on-surface-variant opacity-70">No timer, no proctoring. Study at your own pace.</p>
                   </div>
                 </div>
 
                 {/* 2. Speed Drill */}
                 <div 
                   onClick={() => setPrefs(p => ({ ...p, mode: "speed" }))}
-                  className={`p-6 rounded-3xl transition-all duration-300 cursor-pointer space-y-5 ${
+                  className={`p-5 sm:p-6 rounded-3xl transition-all duration-300 cursor-pointer space-y-4 sm:space-y-5 ${
                     prefs.mode === "speed" 
                       ? "bg-tertiary/5 ring-2 ring-tertiary" 
                       : "bg-surface-container-low hover:bg-surface-container-high"
-                  }`}
+                  } ${showPrefs ? "animate-reveal" : "opacity-0"}`}
+                  style={{ animationDelay: '200ms' }}
                 >
-                  <div className="flex items-center gap-5">
-                    <div className={`p-4 rounded-2xl ${prefs.mode === "speed" ? "bg-tertiary text-white" : "bg-surface-container-highest text-on-surface-variant"}`}>
+                  <div className="flex items-center gap-4 sm:gap-5">
+                    <div className={`p-3 sm:p-4 rounded-2xl ${prefs.mode === "speed" ? "bg-tertiary text-white" : "bg-surface-container-highest text-on-surface-variant"}`}>
                       <Zap size={24} />
                     </div>
                     <div className="flex-1">
-                      <h4 className="font-bold text-lg flex items-center gap-2 text-tertiary">
+                      <h4 className="font-bold text-base sm:text-lg flex items-center gap-2 text-tertiary">
                         Speed Drill
-                        {prefs.mode === "speed" && <CheckCircle2 size={18} className="text-tertiary" />}
+                        {prefs.mode === "speed" && <CheckCircle2 size={16} className="text-tertiary" />}
                       </h4>
-                      <p className="text-sm text-on-surface-variant opacity-70">Timer enabled, Camera disabled. Perfect for speed.</p>
+                      <p className="text-xs sm:text-sm text-on-surface-variant opacity-70">Timer enabled, Camera disabled. Perfect for speed.</p>
                     </div>
                   </div>
 
                   {prefs.mode === "speed" && (
-                    <div className="pl-16 flex items-center gap-3 animate-in fade-in slide-in-from-top-2">
-                       <span className="text-[10px] font-mono font-bold text-on-surface-variant/40 uppercase tracking-widest">Select Duration:</span>
+                    <div className="pl-12 sm:pl-16 flex items-center gap-2 sm:gap-3 animate-in fade-in slide-in-from-top-2">
+                       <span className="text-[9px] sm:text-[10px] font-mono font-bold text-on-surface-variant/40 uppercase tracking-widest">Tempo:</span>
                        {[30, 60, 90].map(t => (
                          <button
                             key={t}
                             onClick={(e) => { e.stopPropagation(); setPrefs(p => ({ ...p, time: t })); }}
-                            className={`px-5 py-2 rounded-full text-xs font-mono font-bold transition-all duration-300 ${
+                            className={`px-4 sm:px-5 py-1.5 sm:py-2 rounded-full text-[10px] sm:text-xs font-mono font-bold transition-all duration-300 ${
                               prefs.time === t 
                                 ? "bg-tertiary text-white shadow-lg shadow-tertiary/20" 
                                 : "bg-surface-container-highest text-on-surface-variant hover:bg-surface-dim"
@@ -334,38 +341,39 @@ const Exam = () => {
                 {/* 3. Proctored Mode */}
                 <div 
                   onClick={() => setPrefs(p => ({ ...p, mode: "proctored" }))}
-                  className={`p-6 rounded-3xl transition-all duration-300 cursor-pointer flex items-center gap-5 ${
+                  className={`p-5 sm:p-6 rounded-3xl transition-all duration-300 cursor-pointer flex items-center gap-4 sm:gap-5 ${
                     prefs.mode === "proctored" 
                       ? "bg-on-surface ring-2 ring-on-surface" 
                       : "bg-surface-container-low hover:bg-surface-container-high"
-                  }`}
+                  } ${showPrefs ? "animate-reveal" : "opacity-0"}`}
+                  style={{ animationDelay: '300ms' }}
                 >
-                  <div className={`p-4 rounded-2xl ${prefs.mode === "proctored" ? "bg-on-surface text-surface" : "bg-surface-container-highest text-on-surface-variant"}`}>
+                  <div className={`p-3 sm:p-4 rounded-2xl ${prefs.mode === "proctored" ? "bg-on-surface text-surface" : "bg-surface-container-highest text-on-surface-variant"}`}>
                     <Shield size={24} />
                   </div>
                   <div className="flex-1">
-                    <h4 className="font-bold text-lg flex items-center gap-2 text-on-surface">
+                    <h4 className="font-bold text-base sm:text-lg flex items-center gap-2 text-on-surface">
                       Full Simulation
-                      {prefs.mode === "proctored" && <CheckCircle2 size={18} className="text-primary" />}
+                      {prefs.mode === "proctored" && <CheckCircle2 size={16} className="text-secondary" />}
                     </h4>
-                    <p className="text-sm text-on-surface-variant opacity-70">Camera + Timer. The ultimate exam environment.</p>
+                    <p className="text-xs sm:text-sm text-on-surface-variant opacity-70">Camera + Timer. The ultimate exam environment.</p>
                   </div>
                 </div>
               </div>
 
               {/* Modal Footer */}
-              <div className="p-10 bg-surface-container-low flex gap-4">
+              <div className="p-8 sm:p-10 bg-surface-container-low flex gap-3 sm:gap-4">
                 <button 
                   onClick={() => setShowPrefs(false)}
-                  className="flex-1 py-5 text-sm font-black text-on-surface-variant hover:bg-surface-container-highest rounded-full transition-all duration-300"
+                  className="flex-1 py-4 sm:py-5 text-xs sm:text-sm font-black text-on-surface-variant hover:bg-surface-container-highest rounded-full transition-all duration-300"
                 >
-                  Go Back
+                  Cancel
                 </button>
                 <button 
                   onClick={handleStartTest}
-                  className="flex-[1.5] py-5 text-sm font-black bg-primary text-white rounded-full hover:scale-105 active:scale-95 transition-all duration-300 flex items-center justify-center gap-2 shadow-xl shadow-primary/20"
+                  className="flex-[1.5] py-4 sm:py-5 text-xs sm:text-sm font-black bg-primary text-white rounded-full hover:scale-105 active:scale-95 transition-all duration-300 flex items-center justify-center gap-2 shadow-xl shadow-primary/20"
                 >
-                  Begin Attempt
+                  Start Manifestation
                   <ChevronRight size={18} />
                 </button>
               </div>
