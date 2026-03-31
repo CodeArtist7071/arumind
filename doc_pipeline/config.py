@@ -5,7 +5,7 @@ GOOGLE_DRIVE_FOLDER_ID = "1SuwqJXY1znzIMUvIVISC1IY2z-EfOyKM"
 
 # Supabase configuration
 SUPABASE_URL = "https://vqrkyepybgcieeypqimh.supabase.co"
-
+SUPABASE_SERVICE_ROLE_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InZxcmt5ZXB5YmdjaWVleXBxaW1oIiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTc3MjM1NDQwMiwiZXhwIjoyMDg3OTMwNDAyfQ.he_7CQxBUWudUql2Uphfj6SdW7mFaQEpvtD3hCNhJQs"
 SUPABASE_KEY = "sb_publishable_Z6iU-xfJQLOa5wpdm-mwsg_WVgqoo3T"
 
 # Google Vision OCR credentials
@@ -36,7 +36,7 @@ LOCATION = "us-central1"
 
 REGION = "us-central1"
 PROJECT_ID = "aruedu"
-API_KEY = "AQ.Ab8RN6JJ10IPiniP59l4e2x9NcseOxdeCjKEFWtS-659Ky2Sww"
+API_KEY = "AIzaSyC_O5m_HebPhcyMDjP_IqKj3pNdaW9-DQ0"
 GEMINI_MODEL = "gemini-2.5-flash-lite"
 
 

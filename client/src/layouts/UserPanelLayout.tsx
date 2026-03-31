@@ -328,10 +328,9 @@ export default function UserPanelLayout() {
            )}
         </header>
 
-        {/* Content Viewport */}
         <div 
           key={location.pathname}
-          className="flex-1 bg-surface-container-low overflow-y-auto custom-scrollbar p-6 lg:p-10"
+          className="flex-1 bg-surface-container-low overflow-y-auto custom-scrollbar p-0 lg:p-10"
         >
           <Outlet />
         </div>

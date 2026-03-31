@@ -1,13 +1,18 @@
-import { QueueListIcon } from "@heroicons/react/24/solid";
 import {
   BarChart,
+  Box,
+  HelpCircle,
   LayoutDashboard,
+  Layers,
+  LogOut,
   Notebook,
+  NotebookText,
   Package,
   School,
+  Users,
+  Layout,
 } from "lucide-react";
 import { useDispatch, useSelector } from "react-redux";
-
 import { Link, NavLink, Outlet } from "react-router-dom";
 import type { AppDispatch, RootState } from "../store";
 import { supabase } from "../utils/supabase";
@@ -16,29 +21,44 @@ import { useState } from "react";
 
 const navItems = [
   {
+    label: "Lattice Architect",
+    icon: <BarChart size={20} />,
+    path: "/admin/lattice",
+  },
+  {
     label: "Dashboard",
-    icon: <LayoutDashboard color="white" size={20} />,
-    path: "dashboard",
+    icon: <LayoutDashboard size={20} />,
+    path: "/admin/dashboard",
+  },
+  {
+    label: "Boards",
+    icon: <Layout size={20} />,
+    path: "/admin/boards",
   },
   {
     label: "Exams",
-    icon: <BarChart color="white" size={20} />,
-    path: "exams",
+    icon: <School size={20} />,
+    path: "/admin/exams",
   },
   {
-    label: "Users Management",
-    icon: <Notebook color="white" size={20} />,
+    label: "Subjects",
+    icon: <Notebook size={20} />,
+    path: "/admin/subjects",
+  },
+  {
+    label: "Chapters",
+    icon: <Layers size={20} />,
+    path: "/admin/chapters",
+  },
+  {
+    label: "Questions",
+    icon: <HelpCircle size={20} />,
+    path: "/admin/questions",
+  },
+  {
+    label: "Users",
+    icon: <Users size={20} />,
     path: "/admin/users",
-  },
-  {
-    label: "Reports",
-    icon: <Package color="white" size={20} />,
-    path: "reports",
-  },
-  {
-    label: "Settings",
-    icon: <Package color="white" size={20} />,
-    path: "settings",
   },
 ];
 

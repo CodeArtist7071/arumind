@@ -32,15 +32,21 @@ class GeminiModel:
             )
             print("[MODEL] Gemini initialized via Gemini Developer API")
 
-    def generate(self, prompt, response_mime_type="text/plain"):
+    def generate(self, prompt, response_mime_type="text/plain", config=None):
         try:
+            # Prepare configuration, default to response_mime_type if no config is provided
+            gen_config = types.GenerateContentConfig(response_mime_type=response_mime_type)
+            if config:
+                for key, val in config.items():
+                    setattr(gen_config, key, val)
+
             if self.async_mode:
                 import asyncio
                 async def async_generate():
                     response = await self.client.models.generate_content(
                         model=self.model_id,
                         contents=prompt,
-                        config=types.GenerateContentConfig(response_mime_type=response_mime_type)
+                        config=gen_config
                     )
                     return response.text
                 return asyncio.run(async_generate())
@@ -48,7 +54,7 @@ class GeminiModel:
                 response = self.client.models.generate_content(
                     model=self.model_id,
                     contents=prompt,
-                    config=types.GenerateContentConfig(response_mime_type=response_mime_type)
+                    config=gen_config
                 )
                 return response.text
         except Exception as e:

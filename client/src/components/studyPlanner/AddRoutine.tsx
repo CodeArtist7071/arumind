@@ -8,6 +8,9 @@ import { useGoogleCalendar } from "../../utils/useGoogleCalender";
 import { getChaptersByExamID } from "../../services/examService";
 import { useEffect, useState } from "react";
 import type { Habit } from "./TrackerGrid";
+import { TimePicker } from "./TimePicker";
+import { getLocalDateString } from "../../utils/getLocaleDateString";
+import { parseRoutineWithAI } from "../../utils/parseRoutineWithAI";
 
 interface AddRoutineProps {
   isOpen: boolean;
@@ -21,6 +24,7 @@ interface AddRoutineProps {
   onRefresh?: () => void;
   initialProgress?: Record<string, boolean[]>;
   onRequestConnection?: () => void;
+  initialUseChapter?: boolean;
 }
 
 type ToastType = "success" | "error" | "info" | "loading";
@@ -39,43 +43,6 @@ type FormValues = {
   date?: string; 
   is_recurring: boolean;
   syncToCalendar: boolean;
-};
-
-// ── AI parser ──────────────────────────────────────────────────────────────
-const parseRoutineWithAI = async (text: string): Promise<Partial<FormValues>> => {
-  const key = import.meta.env.VITE_GEMINI_API_KEY;
-  if (!key) throw new Error("No Gemini API key found");
-
-  const res = await fetch(
-    `https://aiplatform.googleapis.com/v1/publishers/google/models/gemini-2.0-flash:generateContent?key=${key}`,
-    {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({
-        contents: [{
-          parts: [{
-            text: `Extract routine details from this text and return ONLY valid JSON with no markdown.
-
-Text: "${text}"
-
-Return this exact shape:
-{
-  "habit": "short routine name as string",
-  "priority": "HIGH or MEDIUM or LOW",
-  "start_time": "HH:MM in 24h format or empty string",
-  "end_time": "HH:MM in 24h format or empty string"
-}`,
-          }],
-        }],
-        generationConfig: { temperature: 0.1, maxOutputTokens: 150 },
-      }),
-    },
-  );
-
-  if (!res.ok) throw new Error(`Gemini error ${res.status}`);
-  const data = await res.json();
-  const raw = data.candidates?.[0]?.content?.parts?.[0]?.text || "";
-  return JSON.parse(raw.replace(/```json|```/g, "").trim());
 };
 
 // ── Toast component ────────────────────────────────────────────────────────
@@ -98,54 +65,7 @@ const ToastBanner = ({ toast }: { toast: Toast | null }) => {
   );
 };
 
-// ── Friendly Time Picker ────────────────────────────────────────────────────
-const FriendlyTimePicker = ({ label, value, onChange, error }: { label: string; value: string; onChange: (val: string) => void; error?: string; }) => {
-  const [h24, m] = (value || "09:00").split(":");
-  let hNum = parseInt(h24);
-  const ampm = hNum >= 12 ? "PM" : "AM";
-  const h12 = hNum % 12 || 12;
 
-  const handleHChange = (newH12: string) => {
-    let nh = parseInt(newH12);
-    if (ampm === "PM" && nh < 12) nh += 12;
-    if (ampm === "AM" && nh === 12) nh = 0;
-    onChange(`${nh.toString().padStart(2, "0")}:${m}`);
-  };
-
-  const handleMChange = (newM: string) => { onChange(`${h24}:${newM.padStart(2, "0")}`); };
-  const handleAMPMChange = (newAMPM: string) => {
-    if (newAMPM === ampm) return;
-    let nh = hNum;
-    if (newAMPM === "PM" && hNum < 12) nh += 12;
-    if (newAMPM === "AM" && hNum >= 12) nh -= 12;
-    onChange(`${nh.toString().padStart(2, "0")}:${m}`);
-  };
-
-  const hours = Array.from({ length: 12 }, (_, i) => (i + 1).toString());
-
-  return (
-    <div className="space-y-1.5 flex-1">
-      <label className="text-[10px] font-black uppercase text-green-700 flex items-center gap-1.5 ml-1"><Clock size={10} /> {label}</label>
-      <div className={`flex items-center gap-1 p-1 bg-surface-container-low border rounded-xl transition-all ${error ? "border-red-300 ring-2 ring-red-50" : "border-slate-200 focus-within:ring-2 focus-within:ring-green-100 focus-within:border-green-300"}`}>
-        <select value={h12.toString()} onChange={(e) => handleHChange(e.target.value)} className="bg-transparent text-sm font-bold text-slate-700 outline-none px-1 py-1 cursor-pointer">
-          {hours.map(h => <option key={h} value={h}>{h}</option>)}
-        </select>
-        <span className="text-slate-400 font-bold">:</span>
-        <select value={m} onChange={(e) => handleMChange(e.target.value)} className="bg-transparent text-sm font-bold text-slate-700 outline-none px-1 py-1 cursor-pointer">
-          {Array.from({length: 60}, (_, i) => i.toString().padStart(2, "0")).map(min => (
-             <option key={min} value={min}>{min}</option>
-          ))}
-        </select>
-        <div className="flex ml-auto bg-surface  rounded-lg p-0.5 shadow-sm">
-          {["AM", "PM"].map(type => (
-            <button key={type} type="button" onClick={() => handleAMPMChange(type)} className={`px-2 py-1 rounded-md text-[9px] font-black transition-all ${ampm === type ? "bg-green-600 text-white shadow-sm" : "text-slate-400 hover:text-slate-600"}`}>{type}</button>
-          ))}
-        </div>
-      </div>
-      {error && <p className="text-[9px] font-bold text-red-500 pl-1">{error}</p>}
-    </div>
-  );
-};
 
 // ── Priority badge ──────────────────────────────────────────────────────────
 const priorityMeta = {
@@ -153,6 +73,8 @@ const priorityMeta = {
   MEDIUM: { bg: "bg-amber-100",  text: "text-amber-700",  dot: "bg-amber-500"  },
   LOW:    { bg: "bg-surface-container-high",  text: "text-slate-600",  dot: "bg-slate-400"  },
 };
+
+
 
 export const AddRoutine = ({
   isOpen,
@@ -166,8 +88,9 @@ export const AddRoutine = ({
   onRefresh,
   initialProgress: incomingProgress,
   onRequestConnection,
+  initialUseChapter,
 }: AddRoutineProps) => {
-  const { user, profile } = useSelector((state: RootState) => state.user ?? null);
+  const { user, profile } = useSelector((state: RootState) => state.user || { user: null, profile: null });
   const dispatch = useDispatch<AppDispatch>();
   const { connected, addEvent, editEvent } = useGoogleCalendar();
 
@@ -218,21 +141,26 @@ export const AddRoutine = ({
             const dayIdx = prog.findIndex((x: boolean) => x === true);
             if (dayIdx >= 0) {
               const d = new Date(viewYear, viewMonth - 1, dayIdx + 1);
-              setValue("date", d.toISOString().split('T')[0]);
+              setValue("date", getLocalDateString(d));
             }
           }
         }
       }
     } else if (isOpen) {
+      const now = new Date();
+      // If we are in the view month/year, use exact today. Else 1st.
+      const isCurrentView = now.getMonth() + 1 === viewMonth && now.getFullYear() === viewYear;
+      const initialDay = isCurrentView ? now.getDate() : 1;
+
       reset({ 
         priority: "MEDIUM", 
         is_recurring: true, 
         syncToCalendar: connected,
-        date: new Date(viewYear, viewMonth - 1, new Date().getDate()).toISOString().split('T')[0]
+        date: getLocalDateString(new Date(viewYear, viewMonth - 1, initialDay))
       });
-      setUseChapter(false);
+      setUseChapter(initialUseChapter || false);
     }
-  }, [editingHabitId, isOpen, initialHabits, reset, setValue, connected, viewYear, viewMonth, incomingProgress]);
+  }, [editingHabitId, isOpen, initialHabits, reset, setValue, connected, viewYear, viewMonth, incomingProgress, initialUseChapter]);
 
   const handleAIParse = async () => {
     if (!aiInput.trim()) { showToast("error", "Please describe your routine first"); return; }
@@ -266,7 +194,7 @@ export const AddRoutine = ({
         const habit = initialHabits.find((h) => h.id === editingHabitId);
         if (!habit) return;
         const table = habit.is_mastery ? "user_mastery" : "study_habits";
-        const updateData: any = { priority: data.priority, start_time: data.start_time, end_time: data.end_time, chapter_id: useChapter ? data.chapter_id : null, scheduled_date: !data.is_recurring ? data.date : null, is_recurring: data.is_recurring };
+        const updateData: any = { priority: data.priority, start_time: data.start_time, end_time: data.end_time, chapter_id: useChapter ? data.chapter_id : null, is_recurring: data.is_recurring };
         if (!habit.is_mastery) updateData.name = name;
         await supabase.from(table).update(updateData).eq("id", editingHabitId);
 
@@ -277,7 +205,7 @@ export const AddRoutine = ({
            const newYear = newDate.getFullYear();
            const newProgress = Array(31).fill(false);
            if (!data.is_recurring || habit.is_mastery) newProgress[newDayIdx] = true;
-           await supabase.from(table).update({ progress: newProgress, month: newMonth, year: newYear, scheduled_date: !data.is_recurring ? data.date : null }).eq("id", editingHabitId);
+           await supabase.from(table).update({ progress: newProgress, month: newMonth, year: newYear }).eq("id", editingHabitId);
         }
 
         if (connected && data.syncToCalendar) {
@@ -304,7 +232,8 @@ export const AddRoutine = ({
           await supabase.from("profiles").update({ planner_start_date: new Date().toISOString() }).eq("id", user.id);
           dispatch(updateUserLocally({ planner_start_date: new Date().toISOString() }));
         }
-        const habitData: any = { user_id: user.id, name, priority: data.priority, start_time: data.start_time, end_time: data.end_time, category: "theory", progress: Array(31).fill(false), month: viewMonth, year: viewYear, exam_id: examId, chapter_id: useChapter ? data.chapter_id : null, scheduled_date: !data.is_recurring ? data.date : null, is_recurring: data.is_recurring };
+        const habitData: any = { user_id: user.id, priority: data.priority, start_time: data.start_time, end_time: data.end_time, progress: Array(31).fill(false), month: viewMonth, year: viewYear, exam_id: examId, chapter_id: useChapter ? data.chapter_id : null, is_recurring: data.is_recurring };
+        if (!useChapter) habitData.name = name;
         const scheduledDate = data.date ? new Date(data.date) : new Date();
         const isTargetMonth = scheduledDate.getMonth() + 1 === viewMonth && scheduledDate.getFullYear() === viewYear;
         if (isTargetMonth) habitData.progress[scheduledDate.getDate() - 1] = true;
@@ -337,9 +266,9 @@ export const AddRoutine = ({
   const pm = priorityMeta[priority || "MEDIUM"];
 
   return (
-    <div className="fixed inset-0 flex items-center justify-center bg-black/50 z-60 p-4">
+    <div className="fixed inset-0 flex items-center justify-center bg-black/50 z-100 p-4">
       <div className="bg-surface w-full max-w-md rounded-2xl shadow-2xl relative overflow-hidden">
-        <div className="h-1 w-full bg-gradient-to-r from-green-500 via-emerald-400 to-green-600" />
+        <div className="h-1 w-full bg-linear-to-r from-green-500 via-emerald-400 to-green-600" />
         <div className="flex items-center justify-between px-6 pt-5 pb-3">
           <div>
             <p className="text-lg font-black text-green-800">{title || (editingHabitId ? "Update Routine" : "Add New Routine")}</p>
@@ -352,7 +281,7 @@ export const AddRoutine = ({
           <ToastBanner toast={toast} />
 
           {!editingHabitId && (
-            <div className="bg-gradient-to-br from-green-50 to-emerald-50 border border-green-200 rounded-xl p-4 space-y-3">
+            <div className="bg-linear-to-br from-green-50 to-emerald-50 border border-green-200 rounded-xl p-4 space-y-3">
               <div className="flex items-center gap-2">
                 <Sparkles size={13} className="text-green-600" />
                 <span className="text-[10px] font-black uppercase tracking-widest text-green-700">AI Smart Fill</span>
@@ -393,10 +322,10 @@ export const AddRoutine = ({
 
           <div className="flex gap-4">
             <Controller name="start_time" control={control} rules={{ required: "Start time is mandatory" }} render={({ field }) => (
-              <FriendlyTimePicker label="Start Time" value={field.value} onChange={field.onChange} error={errors.start_time?.message} />
+              <TimePicker label="Start Time" value={field.value} onChange={field.onChange} error={errors.start_time?.message} />
             )} />
             <Controller name="end_time" control={control} rules={{ required: "End time is mandatory" }} render={({ field }) => (
-              <FriendlyTimePicker label="End Time" value={field.value} onChange={field.onChange} error={errors.end_time?.message} />
+              <TimePicker label="End Time" value={field.value} onChange={field.onChange} error={errors.end_time?.message} />
             )} />
           </div>
 

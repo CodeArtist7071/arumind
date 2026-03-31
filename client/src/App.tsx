@@ -30,12 +30,25 @@ const MockTest = lazy(() => import("./components/ui/MockTest"));
 const ConfirmOAuthPage = lazy(() => import("./components/ConfirmOAuth"));
 const Profile = lazy(() => import("./pages/Profile"));
 const AdminPanelLayout = lazy(() => import("./layouts/AdminPanelLayout"));
+const AdminDashboard = lazy(() => import("./pages/adminPanel/AdminDashboard"));
 const UserManagement = lazy(() => import("./pages/adminPanel/UserManagement"));
+const ExamsManagement = lazy(() => import("./pages/adminPanel/ExamsManagement"));
+const SubjectsManagement = lazy(() => import("./pages/adminPanel/SubjectsManagement"));
+const ChaptersManagement = lazy(() => import("./pages/adminPanel/ChaptersManagement"));
+const QuestionsManagement = lazy(() => import("./pages/adminPanel/QuestionsManagement"));
+const FeaturesManagement = lazy(() => import("./pages/adminPanel/FeaturesManagement"));
+const CurriculumLattice = lazy(() => import("./pages/adminPanel/CurriculumLattice"));
+const ExamBoardsManagement = lazy(() => import("./pages/adminPanel/ExamBoardsManagement"));
 const ExamGoalSelection = lazy(() => import("./pages/ExamSelection"));
 const UserStudyPlanner = lazy(() => import("./layouts/UserStudyPlanner").then(m => ({ default: m.UserStudyPlanner })));
 const ExamsPlanning = lazy(() => import("./pages/userPanel/ExamsPlanning").then(m => ({ default: m.ExamsPlanning })));
 const ExamsList = lazy(() => import("./pages/ExamsList").then(m => ({ default: m.ExamsList })));
 const ResultSelection = lazy(() => import("./pages/resultpage/ResultSelection"));
+const AdminGuard = lazy(() => import("./components/AdminGuard").then(m => ({ default: m.AdminGuard })));
+const MockTestPreferencePage = lazy(() => import("./pages/userPanel/MockTestPreferencePage"));
+
+
+
 
 function App() {
   const dispatch = useDispatch<AppDispatch>();
@@ -99,10 +112,22 @@ function App() {
             element={!user ? <Register /> : <Navigate to="/user/dashboard" replace />}
           />
         </Route>
-        <Route path="admin" element={<AdminPanelLayout />}>
-          <Route path="users" element={<UserManagement />} />
+
+        {/* --- ADMIN MANIFESTATION --- */}
+        <Route path="admin" element={<AdminGuard />}>
+          <Route element={<AdminPanelLayout />}>
+            <Route path="dashboard" element={<AdminDashboard />} />
+            <Route path="lattice" element={<CurriculumLattice />} />
+            <Route path="boards" element={<ExamBoardsManagement />} />
+            <Route path="users" element={<UserManagement />} />
+            <Route path="features" element={<FeaturesManagement />} />
+            <Route path="exams" element={<ExamsManagement />} />
+            <Route path="subjects" element={<SubjectsManagement />} />
+            <Route path="chapters" element={<ChaptersManagement />} />
+            <Route path="questions" element={<QuestionsManagement />} />
+          </Route>
         </Route>
-        <Route path="admin/login" element={<Login />} />
+        
         <Route path="/select-exam-goals" element={<ExamGoalSelection />} />
         
         <Route
@@ -122,7 +147,9 @@ function App() {
           <Route path="profile" element={<Profile />} />
           <Route path="performance" element={<PerformanceAnalytics />} />
           <Route path="plan-exams" element={<ExamsPlanning />} />
-          <Route path="mock-tests" element={<MockTests />} />
+          <Route path="mock-tests" element={<MockTests />}>
+            <Route path="preference/:examId" element={<MockTestPreferencePage />} />
+          </Route>
           <Route path="mock-tests/session/:attemptId" element={<MockTest />} />
           <Route path="confirm-oauth" element={<ConfirmOAuthPage />} />
           <Route path="results/history" element={<ResultsHistory />} />

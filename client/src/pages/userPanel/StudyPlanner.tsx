@@ -6,6 +6,9 @@ import FocusTimer from "../../components/studyPlanner/FocusTimer";
 import GrowthMetrics from "../../components/studyPlanner/GrowthMetrics";
 import { GoogleCalendarButton } from "../../components/ui/GoogleCalenderButton";
 import GoogleCalendarModal from "../../components/studyPlanner/GoogleCalendarModal";
+import { MobileStudyPlanner } from "../../components/studyPlanner/MobileStudyPlanner";
+import { AddRoutine } from "../../components/studyPlanner/AddRoutine";
+import { MobileAddTask } from "../../components/studyPlanner/MobileAddTask";
 import {
   GraduationCap,
   Sparkles,
@@ -60,6 +63,9 @@ export default function StudyPlannerPage() {
   const [hasPrevMonthTasks, setHasPrevMonthTasks] = useState(false);
   const [isGooglePopupOpen, setIsGooglePopupOpen] = useState(false);
   const [isMilestoneDrawerOpen, setIsMilestoneDrawerOpen] = useState(false);
+  const [addMode, setAddMode] = useState<"routine" | "test">("routine");
+  const [editingHabitId, setEditingHabitId] = useState<string | null>(null);
+  const [showSelector, setShowSelector] = useState(false);
 
   const monthName = useMemo(() => {
     return new Date(viewYear, viewMonth - 1).toLocaleString('default', { month: 'long' });
@@ -247,10 +253,10 @@ export default function StudyPlannerPage() {
     // "Today-only" restriction for one-off tasks
     const isOneOff = (habit as any).is_recurring === false;
     const isToday = viewMonth === currentMonth && viewYear === currentYear && index === today - 1;
-    
+
     if (isOneOff && !isToday && !unlockPastDays) {
-       // Optional: show a toast or alert
-       return;
+      // Optional: show a toast or alert
+      return;
     }
 
     const newProg = [...(progress[id] || Array(31).fill(false))];
@@ -306,7 +312,7 @@ export default function StudyPlannerPage() {
 
     setViewMonth(newMonth);
     setViewYear(newYear);
-    
+
     // Also reset selectedDate to the 1st of the new month to stay within view
     setSelectedDate(new Date(newYear, newMonth - 1, 1));
   };
@@ -425,7 +431,7 @@ export default function StudyPlannerPage() {
       setIsGooglePopupOpen(true);
       return;
     }
-    
+
     setLoading(true);
     try {
       for (const habit of habits) {
@@ -438,7 +444,7 @@ export default function StudyPlannerPage() {
   };
 
   const trackerHabits = useMemo(() => {
-     return habits.filter(h => !h.is_mastery && h.is_recurring !== false);
+    return habits.filter(h => !h.is_mastery && h.is_recurring !== false);
   }, [habits]);
 
   const masteryOnly = useMemo(() => {
@@ -455,16 +461,76 @@ export default function StudyPlannerPage() {
   return (
     <div className="text-on-surface transition-colors duration-500">
       <GoogleCalendarModal isOpen={isGooglePopupOpen} onClose={() => setIsGooglePopupOpen(false)} />
-      
-      <main className="mx-auto space-y-12 pb-20">
-        {/* Main Planning Desk */}
-        <div className="grid lg:grid-cols-12 gap-10 items-start">
-          
+
+      <main className="mx-auto md:space-y-12 pb-20">
+        <div className="hidden lg:block">
+          <AddRoutine
+            isOpen={autoOpenAddModal}
+            onClose={() => { setAutoOpenAddModal(false); setEditingHabitId(null); }}
+            editingHabitId={editingHabitId || undefined}
+            title={editingHabitId ? "Update Routine" : (addMode === "test" ? "Schedule Test" : "Add New Routine")}
+            initialHabits={habits}
+            initialProgress={progress}
+            examId={examId || ""}
+            viewMonth={viewMonth}
+            viewYear={viewYear}
+            onRefresh={fetchData}
+            onRequestConnection={() => setIsGooglePopupOpen(true)}
+            initialUseChapter={addMode === "test"}
+          />
+        </div>
+
+        <div className="block lg:hidden">
+          <MobileAddTask
+            isOpen={autoOpenAddModal}
+            onClose={() => { setAutoOpenAddModal(false); setEditingHabitId(null); }}
+            editingHabitId={editingHabitId || undefined}
+            title={editingHabitId ? "Update Routine" : (addMode === "test" ? "Schedule Test" : "Add New Routine")}
+            initialHabits={habits}
+            initialProgress={progress}
+            examId={examId || ""}
+            viewMonth={viewMonth}
+            viewYear={viewYear}
+            onRefresh={fetchData}
+            onRequestConnection={() => setIsGooglePopupOpen(true)}
+            initialUseChapter={addMode === "test"}
+          />
+        </div>
+
+        {/* MOBILE MANIFESTATION (Ribbon & Stack) */}
+        <div className="block lg:hidden animate-reveal">
+          <MobileStudyPlanner
+            habits={habits}
+            progress={progress}
+            onToggle={handleToggle}
+            viewMonth={viewMonth}
+            viewYear={viewYear}
+            selectedDate={selectedDate || new Date()}
+            onSelectDate={setSelectedDate}
+            onMonthChange={handleMonthChange}
+            stats={stats}
+            onAddHabit={(mode: "routine" | "test") => {
+              setAddMode(mode);
+              setAutoOpenAddModal(true);
+            }}
+            onSync={handleSyncTaskToCalendar}
+            onSyncAll={handleSyncAllTasks}
+            isSettingUp={isSettingUp}
+            hasPrevMonthTasks={hasPrevMonthTasks}
+            onCopyPrevious={handleCopyPreviousMonth}
+            onStartFresh={handleStartFresh}
+            masteryOnly={masteryOnly}
+          />
+        </div>
+
+        {/* DESKTOP MANIFESTATION (Persistence Grid) */}
+        <div className="hidden lg:grid grid-cols-12 gap-10 items-start">
+
           {/* SPREADSHEET ZONE: Full Width Technical Desk */}
           <section className="lg:col-span-12">
             <div className="px-2 mb-8">
-               <h3 className="text-[11px] font-technical font-black uppercase tracking-[0.4em] text-on-surface-variant opacity-60">Monthly Persistence Grid</h3>
-               <p className="text-sm font-bold text-on-surface mt-2 tracking-tight">Your botanical routines and recurring study rituals.</p>
+              <h3 className="text-[11px] font-technical font-black uppercase tracking-[0.4em] text-on-surface-variant opacity-60">Monthly Persistence Grid</h3>
+              <p className="text-sm font-bold text-on-surface mt-2 tracking-tight">Your botanical routines and recurring study rituals.</p>
             </div>
             <div className="bg-surface-container-low rounded-[3rem] overflow-hidden border border-outline-variant/5">
               <TrackerGrid
@@ -479,6 +545,7 @@ export default function StudyPlannerPage() {
                 onSelectDate={setSelectedDate}
                 onMonthChange={handleMonthChange}
                 isSettingUp={isSettingUp}
+                initialUseChapter={addMode === "test"}
                 isPastMonth={
                   viewYear < currentYear ||
                   (viewYear === currentYear && viewMonth < currentMonth)
@@ -488,6 +555,11 @@ export default function StudyPlannerPage() {
                 onStartFresh={handleStartFresh}
                 autoOpenAddModal={autoOpenAddModal}
                 onModalOpenHandled={() => setAutoOpenAddModal(false)}
+                editingHabitId={editingHabitId}
+                setEditingHabitId={setEditingHabitId}
+                setShowSelector={setShowSelector}
+                onShowAddTask={() => { setAddMode("routine"); setAutoOpenAddModal(true); }}
+                onShowMastery={() => { setAddMode("test"); setAutoOpenAddModal(true); }}
               />
             </div>
           </section>
@@ -506,12 +578,12 @@ export default function StudyPlannerPage() {
 
           <section className="lg:col-span-8 animate-in fade-in slide-in-from-right-4 duration-1000">
             <div className="bg-surface-container-low p-2 rounded-[3.5rem] shadow-ambient">
-              <DailyRoutine 
-                habits={habits} 
+              <DailyRoutine
+                habits={habits}
                 progress={progress}
                 selectedDate={selectedDate}
-                onRefresh={fetchData} 
-                onSync={handleSyncTaskToCalendar} 
+                onRefresh={fetchData}
+                onSync={handleSyncTaskToCalendar}
                 onSyncAll={handleSyncAllTasks}
               />
             </div>
@@ -521,9 +593,10 @@ export default function StudyPlannerPage() {
       </main>
 
       {/* FIXED FAB: Monthly Milestones Trigger */}
+
       <button
         onClick={() => setIsMilestoneDrawerOpen(true)}
-        className="fixed bottom-10 right-10 size-16 bg-primary text-white rounded-[2.5rem] shadow-ambient-lg shadow-primary/20 flex items-center justify-center hover:scale-110 active:scale-95 transition-all duration-500 z-50 group overflow-hidden"
+        className="hidden fixed bottom-10 right-10 size-16 bg-primary text-white rounded-[2.5rem] shadow-ambient-lg shadow-primary/20 md:flex items-center justify-center hover:scale-110 active:scale-95 transition-all duration-500 z-50 group overflow-hidden"
       >
         <div className="absolute inset-0 bg-linear-to-br from-white/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
         <GraduationCap className="size-6 transition-transform group-hover:rotate-12" />
@@ -535,22 +608,22 @@ export default function StudyPlannerPage() {
       </button>
 
       {/* MILESTONE DRAWER: Monthly Test Overview */}
-      <div 
+      <div
         className={`fixed inset-0 z-60 transition-all duration-700 ease-botanical ${isMilestoneDrawerOpen ? "opacity-100" : "opacity-0 pointer-events-none"}`}
       >
-        <div 
+        <div
           className="absolute inset-0 bg-on-surface/5 backdrop-blur-sm"
           onClick={() => setIsMilestoneDrawerOpen(false)}
         />
-        <div 
+        <div
           className={`absolute top-0 right-0 h-full w-full max-w-96 bg-surface-container-high/95 backdrop-blur-3xl shadow-ambient-lg border-l border-on-surface/5 px-4 py-10 transform transition-transform duration-700 ease-botanical ${isMilestoneDrawerOpen ? "translate-x-0" : "translate-x-full"}`}
         >
           <div className="flex justify-between items-center mb-12 px-2">
             <div>
-               <h3 className="text-2xl font-black tracking-tighter text-on-surface leading-none">Monthly Milestones</h3>
-               <p className="text-[10px] font-technical font-black uppercase tracking-widest text-primary mt-2">Active Cycle: {monthName} {viewYear}</p>
+              <h3 className="text-2xl font-black tracking-tighter text-on-surface leading-none">Monthly Milestones</h3>
+              <p className="text-[10px] font-technical font-black uppercase tracking-widest text-primary mt-2">Active Cycle: {monthName} {viewYear}</p>
             </div>
-            <button 
+            <button
               onClick={() => setIsMilestoneDrawerOpen(false)}
               className="size-10 rounded-full bg-on-surface/5 flex items-center justify-center hover:bg-on-surface/10 transition-colors"
             >
@@ -559,57 +632,55 @@ export default function StudyPlannerPage() {
           </div>
 
           <div className="px-2 space-y-6">
-             <div className="p-6 bg-white/40 rounded-[2.5rem] border border-on-surface/5 shadow-inner">
-                <p className="text-[10px] font-technical font-black uppercase tracking-[0.2em] text-on-surface-variant opacity-40 leading-relaxed italic">
-                  "Each test is a seedling. Master them to grow your OPSC knowledge forest."
-                </p>
-             </div>
+            <div className="p-6 bg-white/40 rounded-[2.5rem] border border-on-surface/5 shadow-inner">
+              <p className="text-[10px] font-technical font-black uppercase tracking-[0.2em] text-on-surface-variant opacity-40 leading-relaxed italic">
+                "Each test is a seedling. Master them to grow your OPSC knowledge forest."
+              </p>
+            </div>
 
-             <div className="space-y-4 max-h-[calc(100vh-320px)] overflow-y-auto custom-scrollbar pr-4 pb-10">
-                {masteryOnly.length === 0 ? (
-                  <div className="py-20 text-center bg-white/40 rounded-4xl border border-dashed border-primary/20 p-8">
-                      <Sparkles className="size-8 text-primary/40 mx-auto mb-4 opacity-40" />
-                      <p className="text-[10px] font-technical font-black uppercase tracking-widest text-on-surface-variant opacity-40">Zero milestones manifested for this cycle</p>
-                  </div>
-                ) : (
-                  masteryOnly.map((test) => (
-                    <button
-                      key={test.id}
-                      onClick={() => {
-                        setSelectedDate(new Date(viewYear, viewMonth - 1, test.scheduledDay));
-                        setIsMilestoneDrawerOpen(false);
-                      }}
-                      className={`w-full group/test text-left p-4 rounded-4xl transition-all duration-500 border border-outline-variant/10 ${
-                        selectedDate?.getDate() === test.scheduledDay ? 'bg-primary text-on-primary shadow-lg scale-105' : 'bg-white hover:shadow-md hover:scale-[1.02]'
+            <div className="space-y-4 max-h-[calc(100vh-320px)] overflow-y-auto custom-scrollbar pr-4 pb-10">
+              {masteryOnly.length === 0 ? (
+                <div className="py-20 text-center bg-white/40 rounded-4xl border border-dashed border-primary/20 p-8">
+                  <Sparkles className="size-8 text-primary/40 mx-auto mb-4 opacity-40" />
+                  <p className="text-[10px] font-technical font-black uppercase tracking-widest text-on-surface-variant opacity-40">Zero milestones manifested for this cycle</p>
+                </div>
+              ) : (
+                masteryOnly.map((test) => (
+                  <button
+                    key={test.id}
+                    onClick={() => {
+                      setSelectedDate(new Date(viewYear, viewMonth - 1, test.scheduledDay));
+                      setIsMilestoneDrawerOpen(false);
+                    }}
+                    className={`w-full group/test text-left p-4 rounded-4xl transition-all duration-500 border border-outline-variant/10 ${selectedDate?.getDate() === test.scheduledDay ? 'bg-primary text-on-primary shadow-lg scale-105' : 'bg-white hover:shadow-md hover:scale-[1.02]'
                       }`}
-                    >
-                        <div className="flex items-center gap-4">
-                          <div className={`size-12 rounded-2xl flex items-center justify-center font-technical font-black text-xs transition-colors ${
-                              selectedDate?.getDate() === test.scheduledDay ? 'bg-white/20 text-white' : 'bg-primary/10 text-primary'
-                          }`}>
-                              {test.scheduledDay}
-                          </div>
-                          <div className="flex-1 min-w-0">
-                              <p className={`text-sm font-black tracking-tight truncate ${selectedDate?.getDate() === test.scheduledDay ? 'text-on-primary' : 'text-on-surface'}`}>{test.name}</p>
-                              <div className="flex items-center gap-2 mt-0.5 opacity-60">
-                                <span className={`text-[9px] font-technical font-black uppercase tracking-widest ${selectedDate?.getDate() === test.scheduledDay ? 'text-white' : 'text-primary'}`}>Day {test.scheduledDay}</span>
-                                {test.start_time && <span className="text-[9px] font-technical font-black">• {test.start_time}</span>}
-                              </div>
-                          </div>
+                  >
+                    <div className="flex items-center gap-4">
+                      <div className={`size-12 rounded-2xl flex items-center justify-center font-technical font-black text-xs transition-colors ${selectedDate?.getDate() === test.scheduledDay ? 'bg-white/20 text-white' : 'bg-primary/10 text-primary'
+                        }`}>
+                        {test.scheduledDay}
+                      </div>
+                      <div className="flex-1 min-w-0">
+                        <p className={`text-sm font-black tracking-tight truncate ${selectedDate?.getDate() === test.scheduledDay ? 'text-on-primary' : 'text-on-surface'}`}>{test.name}</p>
+                        <div className="flex items-center gap-2 mt-0.5 opacity-60">
+                          <span className={`text-[9px] font-technical font-black uppercase tracking-widest ${selectedDate?.getDate() === test.scheduledDay ? 'text-white' : 'text-primary'}`}>Day {test.scheduledDay}</span>
+                          {test.start_time && <span className="text-[9px] font-technical font-black">• {test.start_time}</span>}
                         </div>
-                    </button>
-                  ))
-                )}
-             </div>
+                      </div>
+                    </div>
+                  </button>
+                ))
+              )}
+            </div>
           </div>
 
           <div className="absolute bottom-10 left-10 right-10">
-             <button 
-               onClick={() => { setIsMilestoneDrawerOpen(false); setAutoOpenAddModal(true); }}
-               className="w-full py-4 bg-tertiary text-on-tertiary rounded-full font-technical font-black text-[11px] uppercase tracking-widest shadow-lg shadow-tertiary/20 hover:scale-105 active:scale-95 transition-all"
-             >
-               Add Milestone +
-             </button>
+            <button
+              onClick={() => { setIsMilestoneDrawerOpen(false); setAutoOpenAddModal(true); }}
+              className="w-full py-4 bg-tertiary text-on-tertiary rounded-full font-technical font-black text-[11px] uppercase tracking-widest shadow-lg shadow-tertiary/20 hover:scale-105 active:scale-95 transition-all"
+            >
+              Add Milestone +
+            </button>
           </div>
         </div>
       </div>
