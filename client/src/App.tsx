@@ -151,11 +151,11 @@ function App() {
             <Route path="preference/:examId" element={<MockTestPreferencePage />} />
           </Route>
           <Route path="mock-tests/session/:attemptId" element={<MockTest />} />
-          <Route path="confirm-oauth" element={<ConfirmOAuthPage />} />
           <Route path="results/history" element={<ResultsHistory />} />
           <Route path="results" element={<ResultSelection />} />
           <Route path="results/:attemptId" element={<Results />} />
         </Route>
+        <Route path="/user/confirm-oauth" element={<ConfirmOAuthPage />} />
       </>
     )
   );
