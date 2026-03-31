@@ -2,10 +2,10 @@ import React from "react";
 
 const Leaderboard = () => {
   return (
-    <div className="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-slate-100 min-h-screen">
+    <div className="bg-background-light dark:bg-background-dark font-display text-on-surface dark:text-slate-100 min-h-screen">
 
       {/* Header */}
-      <header className="sticky top-0 z-50 bg-white/80 dark:bg-background-dark/80 backdrop-blur-md border-b border-slate-200 dark:border-slate-800 px-4 md:px-10 lg:px-20 py-3">
+      <header className="sticky top-0 z-50 bg-surface/80 dark:bg-background-dark/80 backdrop-blur-md  dark:border-slate-800 px-4 md:px-10 lg:px-20 py-3">
         <div className="max-w-7xl mx-auto flex items-center justify-between">
 
           {/* Logo */}
@@ -30,7 +30,7 @@ const Leaderboard = () => {
               <input
                 type="text"
                 placeholder="Search exams..."
-                className="bg-slate-100 dark:bg-slate-800 rounded-lg px-4 py-2 text-sm w-40 md:w-64 focus:ring-2 focus:ring-primary"
+                className="bg-surface-container-high dark:bg-slate-800 rounded-lg px-4 py-2 text-sm w-40 md:w-64 focus:ring-2 focus:ring-primary"
               />
             </div>
             <button className="bg-primary/10 text-primary p-2 rounded-full">
@@ -58,23 +58,23 @@ const Leaderboard = () => {
 
           {/* Filters */}
           <div className="flex flex-wrap gap-2">
-            <div className="bg-white dark:bg-slate-800 p-1 rounded-xl border flex">
+            <div className="bg-surface dark:bg-slate-800 p-1 rounded-xl border flex">
               <button className="px-4 py-2 text-sm font-bold bg-primary text-white rounded-lg">
                 Global
               </button>
-              <button className="px-4 py-2 text-sm font-bold text-slate-500">
+              <button className="px-4 py-2 text-sm font-bold text-on-surface-variant">
                 Odisha Only
               </button>
             </div>
 
-            <div className="bg-white dark:bg-slate-800 p-1 rounded-xl border flex">
-              <button className="px-4 py-2 text-sm font-bold text-slate-500">
+            <div className="bg-surface dark:bg-slate-800 p-1 rounded-xl border flex">
+              <button className="px-4 py-2 text-sm font-bold text-on-surface-variant">
                 Daily
               </button>
               <button className="px-4 py-2 text-sm font-bold bg-primary text-white rounded-lg">
                 Weekly
               </button>
-              <button className="px-4 py-2 text-sm font-bold text-slate-500">
+              <button className="px-4 py-2 text-sm font-bold text-on-surface-variant">
                 Monthly
               </button>
             </div>
@@ -88,7 +88,7 @@ const Leaderboard = () => {
           <div className="lg:col-span-8 space-y-8">
 
             {/* Podium */}
-            <div className="grid grid-cols-3 items-end gap-2 md:gap-6 bg-white dark:bg-slate-800 rounded-2xl p-4 md:p-6 shadow border">
+            <div className="grid grid-cols-3 items-end gap-2 md:gap-6 bg-surface dark:bg-slate-800 rounded-2xl p-4 md:p-6 shadow border">
 
               {/* Rank 2 */}
               <div className="flex flex-col items-center gap-3">
@@ -125,19 +125,19 @@ const Leaderboard = () => {
             </div>
 
             {/* Table */}
-            <div className="bg-white dark:bg-slate-800 rounded-2xl shadow border overflow-hidden">
+            <div className="bg-surface dark:bg-slate-800 rounded-2xl shadow border overflow-hidden">
               <div className="p-4 border-b flex flex-col sm:flex-row justify-between gap-4">
                 <h3 className="font-bold text-lg">Top Rankings</h3>
                 <input
                   type="text"
                   placeholder="Search student..."
-                  className="bg-slate-100 dark:bg-slate-900 rounded-lg px-4 py-2 text-sm w-full sm:w-72"
+                  className="bg-surface-container-high dark:bg-slate-900 rounded-lg px-4 py-2 text-sm w-full sm:w-72"
                 />
               </div>
 
               <div className="overflow-x-auto">
                 <table className="w-full text-left text-sm">
-                  <thead className="bg-slate-50 dark:bg-slate-900/50 text-xs uppercase">
+                  <thead className="bg-surface-container-low dark:bg-slate-900/50 text-xs uppercase">
                     <tr>
                       <th className="px-4 py-3">Rank</th>
                       <th className="px-4 py-3">Student</th>
@@ -152,7 +152,7 @@ const Leaderboard = () => {
                       { rank: 5, name: "Ritu Tripathy", score: 1580, acc: "88%" },
                       { rank: 6, name: "Bikram Jena", score: 1450, acc: "85%" },
                     ].map((student) => (
-                      <tr key={student.rank} className="border-t hover:bg-slate-50 dark:hover:bg-slate-700/30">
+                      <tr key={student.rank} className="border-t hover:bg-surface-container-low dark:hover:bg-slate-700/30">
                         <td className="px-4 py-3 font-bold">#{student.rank}</td>
                         <td className="px-4 py-3 font-semibold">{student.name}</td>
                         <td className="px-4 py-3 hidden md:table-cell">OPSC</td>
@@ -183,7 +183,7 @@ const Leaderboard = () => {
                   <p className="font-bold text-lg">76%</p>
                 </div>
               </div>
-              <button className="w-full py-3 bg-white text-primary rounded-xl font-bold text-sm">
+              <button className="w-full py-3 bg-surface text-primary rounded-xl font-bold text-sm">
                 Improve Your Rank
               </button>
             </div>
@@ -194,7 +194,7 @@ const Leaderboard = () => {
               <p className="text-sm mb-4">
                 Top 10 finishers this month get a free toolkit!
               </p>
-              <button className="bg-white/20 px-4 py-2 rounded-lg text-sm font-bold">
+              <button className="bg-surface/20 px-4 py-2 rounded-lg text-sm font-bold">
                 Learn more
               </button>
             </div>
@@ -203,7 +203,7 @@ const Leaderboard = () => {
 
         {/* Quote */}
         <div className="mt-12 text-center max-w-2xl mx-auto border-t pt-8">
-          <p className="text-lg italic text-slate-500 dark:text-slate-400">
+          <p className="text-lg italic text-on-surface-variant dark:text-slate-400">
             "Success is not final, failure is not fatal."
           </p>
           <p className="mt-4 text-sm font-bold uppercase tracking-widest text-slate-400">

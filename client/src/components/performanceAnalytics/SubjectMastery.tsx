@@ -18,29 +18,41 @@ const SubjectMastery = ({ examid, metrics }: { examid?: string, metrics: any }) 
     const displayData = data?.length > 0 ? data : (metrics?.subjectBreakdown || []);
 
     return (
-        <div className="md:col-span-6 bg-[#efeee3] p-8 rounded-2xl shadow-sm border border-[#efeee3] hover:border-[#1a57db]/10 transition-all">
-            <h3 className="text-xl font-black text-gray-900 mb-8 tracking-tight flex items-center gap-3">
-                <Target className="text-green-700" size={24} />
+        <div className="bg-surface-container-high p-10 rounded-[3rem] shadow-ambient">
+            <h3 className="text-xl font-black text-on-surface mb-10 tracking-tight flex items-center gap-4">
+                <div className="size-10 bg-primary/10 rounded-xl flex items-center justify-center text-primary">
+                   <Target size={20} />
+                </div>
                 Subject Mastery
             </h3>
             {displayData?.length > 0 ? (
-                displayData?.slice(0, 5).map((s: any, i: number) => (
-                    <div key={i} className="mb-6 last:mb-0">
-                        <div className="flex justify-between items-center mb-2">
-                            <span className="font-bold text-gray-700">{s.name || s.subject}</span>
-                            <span className="text-sm font-black text-green-700">{(s.mastery_level || s.accuracy)}%</span>
+                <div className="space-y-8">
+                    {displayData?.slice(0, 5).map((s: any, i: number) => (
+                        <div key={i} className="group">
+                            <div className="flex justify-between items-end mb-3">
+                                <span className="text-[10px] font-technical font-black text-on-surface-variant uppercase tracking-[0.2em] opacity-40 group-hover:opacity-100 transition-opacity">
+                                    {s.name || s.subject}
+                                </span>
+                                <span className="text-sm font-technical font-black text-primary tracking-tighter">
+                                    {(s.mastery_level || s.accuracy)}%
+                                </span>
+                            </div>
+                            <div className="h-4 bg-on-surface/5 rounded-full overflow-hidden relative border border-outline-variant/5 shadow-inner">
+                                <div
+                                    className="h-full bg-linear-to-r from-primary to-primary-container rounded-full transition-all duration-1000 ease-out shadow-sm relative"
+                                    style={{ width: `${(s.mastery_level || s.accuracy)}%` }}
+                                >
+                                   <div className="absolute inset-0 bg-white/10 animate-pulse" />
+                                </div>
+                            </div>
                         </div>
-                        <div className="h-3 bg-gray-200/50 rounded-full overflow-hidden shadow-inner">
-                            <div
-                                className="h-full bg-linear-to-r from-green-600 to-green-700 rounded-full transition-all duration-1000 ease-out shadow-lg"
-                                style={{ width: `${(s.mastery_level || s.accuracy)}%` }}
-                            />
-                        </div>
-                    </div>
-                ))
+                    ))}
+                </div>
             ) : (
-                <div className="flex flex-col items-center justify-center py-10 opacity-50">
-                    <p className="text-gray-500 text-sm font-bold animate-pulse italic">Complete tests to unlock subject analysis.</p>
+                <div className="flex flex-col items-center justify-center py-20 bg-on-surface/5 rounded-4xl border border-dashed border-outline-variant/20 opacity-40">
+                    <p className="text-on-surface-variant text-xs font-black uppercase tracking-widest italic animate-pulse">
+                        Complete tests to cultivate analysis.
+                    </p>
                 </div>
             )}
         </div>

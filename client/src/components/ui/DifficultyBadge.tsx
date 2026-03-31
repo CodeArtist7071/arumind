@@ -22,9 +22,9 @@ export default function DifficultyBadge() {
         {c.label}
       </span>
       <div className="flex flex-col">
-        <div className="w-32 h-1.5 bg-slate-100 rounded-full overflow-hidden">
+        <div className="w-32 h-1.5 bg-surface-container-high rounded-full overflow-hidden">
           <div
-            className="h-full bg-blue-500 rounded-full transition-all duration-500"
+            className="h-full bg-primary rounded-full transition-all duration-500"
             style={{ width: `${pct}%` }}
           />
         </div>

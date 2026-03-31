@@ -51,67 +51,112 @@ export const ExamsList = () => {
   }
 
   return (
-    <>
-      <div className="mb-10 cursor-pointer">
-        <ArrowLeftCircle onClick={() => navigate(-1)} size={30} />
+    <div className="space-y-12 pb-20 animate-reveal">
+      {/* Editorial Header */}
+      <div className="flex flex-col md:flex-row md:items-end justify-between gap-8 mb-16 border-b border-outline-variant/30 pb-12">
+        <div className="flex items-center gap-8">
+           <button
+             type="button"
+             onClick={() => navigate(-1)}
+             className="size-12 flex items-center justify-center bg-surface-container-high hover:bg-surface-dim rounded-full transition-all duration-500 cursor-pointer group hover:scale-110 active:scale-95 shadow-sm shadow-black/5"
+           >
+             <ArrowLeftCircle className="size-6 text-on-surface-variant group-hover:text-primary transition-colors" />
+           </button>
+           
+           <div className="flex flex-col">
+              <span className="text-[10px] font-technical font-black text-on-surface-variant/40 uppercase tracking-[0.4em] mb-2">Registry Access</span>
+              <h1 className="text-5xl lg:text-7xl font-black tracking-tighter text-on-surface leading-none">Exam Library.</h1>
+           </div>
+        </div>
+
+        <div className="flex flex-col md:items-end">
+           <p className="text-sm font-medium text-on-surface-variant max-w-xs md:text-right leading-relaxed opacity-70">
+              Select your targeted syllabus from our curated botanical records.
+           </p>
+        </div>
       </div>
 
-      <div className="grid">
-        <span className="text-3xl font-bold mb-5">Select Exams..</span>
-        <span className="text-xl mb-4">Please Add Exams to your Lists...</span>
+      {/* Board Selector: Tactical Pods */}
+      <div className="space-y-4">
+        <span className="text-[10px] font-technical font-black text-primary uppercase tracking-[0.2em] opacity-40">Classification</span>
+        <div className="flex flex-wrap gap-4">
+          {examData?.map((el) => {
+            const isSelected = el.id === selectedBoardId;
+            return (
+              <button
+                key={el.id}
+                onClick={() => handleSelectBoard(el.id)}
+                className={`px-8 py-3 rounded-full cursor-pointer transition-all duration-500 font-technical font-black text-[10px] uppercase tracking-widest
+                  ${
+                    isSelected
+                      ? "bg-linear-to-r from-primary to-primary-container text-white shadow-ambient scale-105"
+                      : "bg-surface-container-low text-on-surface-variant/60 hover:bg-surface-container-high hover:text-on-surface hover:scale-102"
+                  }`}
+              >
+                {el.name}
+              </button>
+            );
+          })}
+        </div>
       </div>
 
-      {/* Board selector tabs */}
-      <div className="flex flex-wrap gap-3 mb-10">
-        {examData?.map((el) => {
-          const isSelected = el.id === selectedBoardId;
-          return (
-            <span
-              key={el.id}
-              onClick={() => handleSelectBoard(el.id)}
-              className={`px-6 py-2 rounded-full border cursor-pointer transition-all duration-200 font-medium text-sm
-                ${
-                  isSelected
-                    ? "bg-[#1a57db] text-white border-[#1a57db] shadow-md"
-                    : "bg-white dark:bg-slate-900 text-slate-700 dark:text-slate-300 border-slate-200 dark:border-slate-700 hover:border-[#1a57db] hover:text-[#1a57db]"
-                }`}
-            >
-              {el.name}
-            </span>
-          );
-        })}
-      </div>
-
-      {/* Exams grid */}
+      {/* Exams Grid: Botanical Registry */}
       {loading ? (
-        <div className="text-slate-400 text-sm">Loading exams...</div>
+        <div className="flex flex-col items-center justify-center py-40 animate-pulse">
+           <p className="text-sm font-technical font-black text-primary uppercase tracking-[0.4em]">Restoring Records...</p>
+        </div>
       ) : filteredExams.length === 0 ? (
-        <div className="text-slate-400 text-sm">No exams found for this board.</div>
+        <div className="bg-surface-container-low rounded-4xl p-20 text-center shadow-inner">
+           <p className="text-xs font-technical font-black text-on-surface-variant/40 uppercase tracking-[0.2em]">Zero Records Found for this Pod.</p>
+        </div>
       ) : (
-        <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
           {filteredExams.map((exam, index) => (
             <div
               key={exam.id ?? index}
-              className="p-6 bg-white dark:bg-slate-900 rounded-xl border border-slate-200 dark:border-slate-800 shadow-sm hover:border-[#1a57db] hover:shadow-xl transition-all duration-300 group cursor-pointer"
+              className="group p-10 bg-surface-container-low rounded-4xl shadow-ambient hover-bloom cursor-pointer relative overflow-hidden"
               onClick={() => {}}
             >
-              <div className="w-10 h-10 bg-gradient-to-r from-[#1a57db]/10 to-[#1a57db]/20 rounded-lg flex items-center justify-center text-[#1a57db] mb-4 group-hover:bg-gradient-to-r group-hover:from-[#1a57db] group-hover:to-blue-600 group-hover:text-white transition-all duration-300">
-                <Book />
+              <div className="relative z-10">
+                <div className="size-16 bg-primary/10 rounded-2xl flex items-center justify-center text-primary mb-8 group-hover:bg-linear-to-r group-hover:from-primary group-hover:to-primary-container group-hover:text-white transition-all duration-700 ease-botanical shadow-sm group-hover:rotate-3">
+                  <Book className="size-8" />
+                </div>
+
+                <div className="space-y-4">
+                  <div>
+                    <h3 className="text-2xl font-black text-on-surface tracking-tight group-hover:text-primary transition-colors leading-none mb-2">
+                       {exam.name}
+                    </h3>
+                    <p className="text-xs font-medium text-on-surface-variant/60 leading-relaxed truncate">
+                       {exam.full_name}
+                    </p>
+                  </div>
+
+                  <div className="pt-8 border-t border-outline-variant/30 mt-6">
+                    <div className="flex items-center justify-between">
+                       <div className="flex flex-col">
+                          <p className="text-[8px] font-technical font-black text-on-surface-variant/40 uppercase tracking-[0.3em] mb-1">
+                            Syllabus Type
+                          </p>
+                          <p className="text-[10px] font-technical font-black text-primary uppercase tracking-widest">
+                            {exam.type}
+                          </p>
+                       </div>
+                       
+                       <div className="size-8 rounded-full bg-surface-container-high flex items-center justify-center group-hover:bg-primary/10 transition-colors">
+                          <span className="material-symbols-outlined text-on-surface-variant text-sm group-hover:text-primary">arrow_forward</span>
+                       </div>
+                    </div>
+                  </div>
+                </div>
               </div>
-              <h3 className="font-black text-lg mb-1">{exam.name}</h3>
-              <p className="text-xs text-slate-500 mb-4">{exam.full_name}</p>
-              <div className="mt-4 pt-4 border-t border-slate-100 dark:border-slate-800">
-                <p className="text-[10px] text-slate-400 font-bold uppercase mb-2 tracking-wider">
-                  Exam Type
-                </p>
-                <p className="text-sm font-semibold text-slate-900 dark:text-white">
-                  {exam.type}
-                </p>
-              </div>
+
+              {/* Decorative Corner Element */}
+              <div className="absolute -right-4 -bottom-4 size-32 bg-primary/5 rounded-full blur-3xl group-hover:bg-primary/20 transition-all duration-1000" />
             </div>
           ))}
         </div>
       )}
-    </>
+    </div>
   );
 };

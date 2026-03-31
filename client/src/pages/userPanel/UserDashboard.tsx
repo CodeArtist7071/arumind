@@ -1,490 +1,559 @@
 import { FireIcon } from "@heroicons/react/24/outline";
 import {
   Bell,
-  Book,
   ChevronRight,
   SearchAlert,
   Settings,
-  Tags,
-  Calendar as CalendarIcon,
+  Notebook,
+  TrendingUp,
+  History,
+  Target,
   CheckSquare,
-  BarChart2,
-  BookMarked,
+  Clock,
+  Loader,
+  Sparkles,
+  Trash,
+  Edit3
 } from "lucide-react";
-import React, { Suspense, useEffect } from "react";
+import React, { useEffect, useRef, useState, useMemo } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import type { AppDispatch, RootState } from "../../store";
+import { fetchExams } from "../../slice/examSlice";
+import { useNavigate, Outlet } from "react-router-dom";
 import { supabase } from "../../utils/supabase";
-import { fetchUserProfile } from "../../slice/userSlice";
+import { UpcomingMockTest } from "../../components/userDashboard/UpcomingMockTest";
+import { DashboardDailyRoutine } from "../../components/userDashboard/DashboardDailyRoutine";
+import { ExamSelectorCard } from "../../components/ui/ExamSelectorCard";
+import Exam from "../../components/Exam";
 
-import { fetchExams, type examProps } from "../../slice/examSlice";
-import { Outlet, useNavigate } from "react-router-dom";
+export interface Habit {
+  id: string;
+  name: string;
+  priority: "HIGH" | "MEDIUM" | "LOW";
+  category: "theory" | "mcq" | "revision" | "mock";
+  start_time?: string;
+  end_time?: string;
+  is_mastery?: boolean;
+  chapter_id?: string;
+  exam_id?: string;
+  is_recurring?: boolean;
+}
 
+const format12h = (timeStr: string | undefined) => {
+  if (!timeStr) return "";
+  const [h, m] = timeStr.split(":").map(Number);
+  const ampm = h >= 12 ? "PM" : "AM";
+  const hour12 = h % 12 || 12;
+  return `${hour12}:${m.toString().padStart(2, "0")} ${ampm}`;
+};
 
 const UserDashboard = () => {
   const { user, profile } = useSelector((state: RootState) => state.user);
-  const { examData, loading } = useSelector(
-    (state: RootState) => state.exams ?? null,
-  );
+  const { examData, loading: examsLoading } = useSelector((state: RootState) => state.exams ?? { examData: [], loading: false });
   const dispatch = useDispatch<AppDispatch>();
   const navigate = useNavigate();
 
+  const targetRef = useRef<HTMLDivElement>(null);
+
+  const [habits, setHabits] = useState<Habit[]>([]);
+  const [progress, setProgress] = useState<Record<string, boolean[]>>({});
+  const [ritualsLoading, setRitualsLoading] = useState(true);
+
+  const now = new Date();
+  const currentMonthIdx = now.getMonth();
+  const currentYear = now.getFullYear();
+  const currentMonth = currentMonthIdx + 1;
+  const today = now.getDate();
+
+  const [isDailRoutineOpen, setIsDailRoutineOpen] = useState(false);
+  // const [selectedExamInDrawer, setSelectedExamInDrawer] = useState<string | null>(null);
+
+  const [isQuickEditOpen, setIsQuickEditOpen] = useState(false);
+  const [quickEditData, setQuickEditData] = useState<{ habit: Habit, day: number } | null>(null);
+
+  const fetchDailyData = async () => {
+    if (!user?.id) return;
+    try {
+      setRitualsLoading(true);
+      const [habitsRes, masteryRes] = await Promise.all([
+        supabase
+          .from("study_habits")
+          .select("*")
+          .eq("user_id", user.id)
+          .eq("month", currentMonth)
+          .eq("year", currentYear),
+        supabase
+          .from("user_mastery")
+          .select("*, chapters(name)")
+          .eq("user_id", user.id)
+          .eq("month", currentMonth)
+          .eq("year", currentYear),
+      ]);
+
+      const allHabits: Habit[] = [];
+      const allProgress: Record<string, boolean[]> = {};
+
+      (habitsRes.data || []).forEach((h) => {
+        allHabits.push({
+          id: h.id,
+          name: h.name,
+          priority: h.priority,
+          category: h.category,
+          start_time: h.start_time,
+          end_time: h.end_time,
+          is_recurring: h.is_recurring !== false,
+        });
+        allProgress[h.id] = h.progress || Array(31).fill(false);
+      });
+
+      (masteryRes.data || []).forEach((m) => {
+        allHabits.push({
+          id: m.id,
+          name: m.chapters?.name || "Unknown Chapter",
+          priority: m.priority as any,
+          category: "theory",
+          start_time: m.start_time,
+          end_time: m.end_time,
+          is_mastery: true,
+          chapter_id: m.chapter_id,
+          exam_id: m.exam_id,
+          is_recurring: m.is_recurring !== false,
+        });
+        allProgress[m.id] = m.progress || Array(31).fill(false);
+      });
+
+      setHabits(allHabits);
+      setProgress(allProgress);
+    } catch (err) {
+      console.error("Error fetching daily data:", err);
+    } finally {
+      setRitualsLoading(false);
+    }
+  };
+
+  const handleUpdateSchedule = async (id: string, isMastery: boolean, newDay: number, newTime: string) => {
+    if (!user?.id) return;
+    try {
+      const table = isMastery ? "user_mastery" : "study_habits";
+      const newProgress = Array(31).fill(false);
+      newProgress[newDay - 1] = true;
+
+      const { error } = await supabase
+        .from(table)
+        .update({
+          progress: newProgress,
+          start_time: newTime,
+          updated_at: new Date().toISOString()
+        })
+        .eq("id", id);
+
+      if (error) throw error;
+      await fetchDailyData();
+    } catch (err) {
+      console.error("Timeline Sync Failed:", err);
+      alert("Temporal Manifestation Alert: " + (err as Error).message);
+    }
+  };
+
+  const handleDeleteRitual = async (id: string, isMastery: boolean) => {
+    if (!user?.id) return;
+    try {
+      const table = isMastery ? "user_mastery" : "study_habits";
+      const { error } = await supabase.from(table).delete().eq("id", id);
+      if (error) throw error;
+      fetchDailyData();
+    } catch (err) {
+      console.error("Deletion failed:", err);
+    }
+  };
+
   useEffect(() => {
     dispatch(fetchExams());
-  }, [dispatch]);
+    fetchDailyData();
 
-  const targetedExams = examData.filter((el) =>
-    profile.target_exams.includes(el.id),
-  );
+    const timer = setTimeout(() => {
+      const element = targetRef.current;
+      if (!element) return;
+
+      const scrollableParent = element.closest('.overflow-y-auto');
+      if (scrollableParent) {
+        const targetPos = element.offsetTop - 80;
+        const startPos = scrollableParent.scrollTop;
+        const distance = targetPos - startPos;
+        const duration = 1500;
+
+        const cubicBezier = (t: number) => t < 0.5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2;
+
+        const step = (timestamp: number) => {
+          if (!start) start = timestamp;
+          const progressStep = Math.min((timestamp - start) / duration, 1);
+          scrollableParent.scrollTop = startPos + distance * cubicBezier(progressStep);
+          if (progressStep < 1) {
+            requestAnimationFrame(step);
+          }
+        };
+        let start: number | null = null;
+        requestAnimationFrame(step);
+      }
+    }, 1000);
+
+    return () => clearTimeout(timer);
+  }, [dispatch, user?.id]);
+
+  const handleToggle = async (id: string) => {
+    if (!user?.id) return;
+    const habit = habits.find((h) => h.id === id);
+    if (!habit) return;
+
+    const dayIdx = today - 1;
+    const newProg = [...(progress[id] || Array(31).fill(false))];
+    newProg[dayIdx] = !newProg[dayIdx];
+
+    setProgress((prev) => ({ ...prev, [id]: newProg }));
+
+    try {
+      const table = habit.is_mastery ? "user_mastery" : "study_habits";
+      const { error } = await supabase
+        .from(table)
+        .update({ progress: newProg, updated_at: new Date().toISOString() })
+        .eq("id", id);
+
+      if (error) {
+        console.error("Update Error:", error);
+        fetchDailyData();
+      }
+    } catch (err) {
+      console.error("Toggle failed:", err);
+      fetchDailyData();
+    }
+  };
+
+  const dailyRituals = useMemo(() => {
+    return habits
+      .filter((h) => !h.is_mastery)
+      .sort((a, b) => (a.start_time || "").localeCompare(b.start_time || ""));
+  }, [habits]);
+
+
+
+  console.log("Daily Rituals:", dailyRituals);
+
+  const targetedExams = useMemo(() => {
+    if (!examData || !profile?.target_exams) return [];
+    return examData.filter((el) => profile.target_exams.includes(el.id));
+  }, [examData, profile?.target_exams]);
 
   const subjectProgress = [
-    {
-      name: "History & Geography of Odisha",
-      percent: 82,
-      color: "bg-[#1a57db]",
-    },
-    {
-      name: "General Studies & Current Affairs",
-      percent: 45,
-      color: "bg-[#1a57db]",
-    },
-    { name: "Odia Language & Literature", percent: 95, color: "bg-green-500" },
-    { name: "Aptitude & Mental Ability", percent: 30, color: "bg-orange-500" },
+    { name: "History & Geography of Odisha", percent: 82 },
+    { name: "General Studies & Current Affairs", percent: 45 },
+    { name: "Odia Language & Literature", percent: 95 },
+    { name: "Aptitude & Mental Ability", percent: 30 },
   ];
 
+  if (examsLoading) return <DashboardSkeleton />;
 
-
-  const checklist = [
-    { text: "Read Current Affairs (Odia)", checked: true },
-    { text: "Solve 20 Math PYQs", checked: true },
-    { text: "Attempt GS Sectional Mock", checked: false, active: true },
-    { text: "Revise Odisha History notes", checked: false },
-  ];
-
-  function handleButton(id: string) {
-    navigate(`exam/${id}`);
-  }
-
-
-
-  if (loading) {
-    return <DashboardSkeleton />;
-  }
 
   return (
-    <div className="flex h-screen overflow-hidden bg-linear-to-br from-slate-50 to-slate-100 dark:from-slate-900 dark:to-slate-950 font-['Inter'] text-slate-900 dark:text-slate-100">
-      {/* Sidebar */}
-
-      {/* Main Content */}
-      <main className="flex-1 overflow-y-auto flex flex-col">
-        {/* Header */}
-        <header className="h-20 border-b border-slate-200 dark:border-slate-800 bg-white/80 dark:bg-slate-900/80 backdrop-blur-md flex items-center justify-between px-8 sticky top-0 z-10 shadow-sm">
-          <div className="flex items-center gap-4 bg-slate-100 dark:bg-slate-800 px-4 py-2 rounded-xl w-96 shadow-sm ring-1 ring-slate-200 dark:ring-slate-700">
-            <SearchAlert className="text-slate-400" size={18} />
-            <input
-              className="bg-transparent border-none focus:ring-0 text-sm w-full outline-none placeholder-slate-500 font-medium"
-              placeholder="Search study material, tests..."
-              type="text"
-            />
-          </div>
-          <div className="flex items-center gap-6">
-            <div className="flex items-center gap-3">
-              <button className="p-2.5 text-slate-500 hover:bg-slate-100 dark:hover:bg-slate-800 rounded-xl relative transition-all duration-200 border border-transparent hover:border-slate-200 dark:hover:border-slate-700">
-                <Bell size={20} />
-                <span className="absolute top-2.5 right-2.5 w-2 h-2 bg-red-500 rounded-full border-2 border-white dark:border-slate-900"></span>
-              </button>
-              <button className="p-2.5 text-slate-500 hover:bg-slate-100 dark:hover:bg-slate-800 rounded-xl transition-all duration-200 border border-transparent hover:border-slate-200 dark:hover:border-slate-700">
-                <Settings size={20} />
-              </button>
-            </div>
-          </div>
-        </header>
-        <div className="p-8 max-w-7xl mx-auto w-full space-y-8">
-          <section className="flex flex-wrap items-center justify-between gap-6">
-            <div>
-              <h1 className="text-3xl font-black tracking-tight mb-2 bg-linear-to-r from-slate-900 to-slate-700 dark:from-white dark:to-slate-200 bg-clip-text text-transparent">
-                Namaskar,{user?.identities?.[0]?.identity_data?.name}!
+    <div className="relative min-h-screen">
+      <div className="space-y-12 pb-20 p-2 lg:p-6 animate-reveal">
+        <section className="relative px-2">
+          <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-8">
+            <div className="animate-greeting">
+              <h1 className="text-4xl lg:text-6xl font-black tracking-tighter text-on-surface leading-[0.85] mb-8">
+                Namaskar,<br />
+                <span className="text-primary italic font-serif -ml-2 lg:-ml-4 drop-shadow-sm select-none">
+                  {(profile?.full_name || user?.identities?.[0]?.identity_data?.name)?.split(' ')[0]}
+                </span>
               </h1>
-              <p className="text-slate-500 max-w-md text-lg">
-                Your OPSC preparation is 65% complete. You are in the top 5% of
-                aspirants this week.
+              <p className="text-on-surface-variant max-w-xl text-xl lg:text-2xl leading-relaxed opacity-0 animate-greeting-delay font-medium font-narrative">
+                Your OPSC preparation is <span className="font-technical font-black text-primary border-b-2 border-primary/20">65%</span> complete.
+                You are currently in the top <span className="font-technical font-black text-primary border-b-2 border-primary/20">5%</span> of botanical aspirants.
               </p>
             </div>
+
             <div className="flex gap-4">
-              <div className="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 px-6 py-4 rounded-xl shadow-sm hover:shadow-md transition-all duration-200">
-                <p className="text-xs text-slate-500 uppercase font-bold tracking-wider mb-1">
+              <div className="bg-surface-container-low px-8 py-6 rounded-[2.5rem] shadow-ambient hover:scale-105 transition-transform duration-500 group">
+                <p className="text-[9px] font-technical text-on-surface-variant uppercase font-black tracking-[0.2em] mb-2 opacity-50 group-hover:opacity-100 transition-opacity">
                   Daily Streak
                 </p>
-                <div className="flex items-center gap-2">
-                  <span className="text-2xl font-bold text-orange-600">
-                    12 Days
-                  </span>
-                  <FireIcon
-                    className="text-orange-500 text-2xl"
-                    style={{ fontVariationSettings: "'FILL' 1" }}
-                  />
+                <div className="flex items-center gap-3">
+                  <span className="text-4xl font-technical font-black text-tertiary">12</span>
+                  <FireIcon className="size-8 text-tertiary animate-pulse" />
                 </div>
               </div>
 
-              <div className="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 px-6 py-4 rounded-xl shadow-sm hover:shadow-md transition-all duration-200">
-                <p className="text-xs text-slate-500 uppercase font-bold tracking-wider mb-1">
+              <div className="bg-surface-container-low px-8 py-6 rounded-[2.5rem] shadow-ambient hover:scale-105 transition-transform duration-500 group">
+                <p className="text-[9px] font-technical text-on-surface-variant uppercase font-black tracking-[0.2em] mb-2 opacity-50 group-hover:opacity-100 transition-opacity">
                   Daily Goal
                 </p>
-                <div className="flex items-center gap-2">
-                  <span className="text-2xl font-bold">4/6 Hrs</span>
-                  <div className="w-16 h-2 bg-slate-200 rounded-full overflow-hidden">
-                    <div className="bg-green-500 h-full w-[66%] rounded-full shadow-sm"></div>
+                <div className="flex items-center gap-4">
+                  <span className="text-3xl font-technical font-black text-on-surface">4/6 <span className="text-[10px] opacity-40 uppercase tracking-tighter ml-1">Hrs</span></span>
+                  <div className="w-20 h-5 bg-surface-container-high rounded-full overflow-hidden p-1 shadow-inner ring-1 ring-black/5">
+                    <div className="bg-primary h-full w-[66%] rounded-full shadow-sm transition-all duration-1000" />
                   </div>
                 </div>
               </div>
             </div>
-          </section>
+          </div>
+        </section>
 
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-            {/* Left Column */}
-            <div className="lg:col-span-2 space-y-8">
-              {/* Target Exams */}
-              <section>
-                <div className="flex justify-between items-center">
-                  <h2 className="text-xl font-bold mb-6 text-slate-900 dark:text-white">
-                    Your Target Exams
-                  </h2>
-                  <span
-                    onClick={() => navigate("exam-lists")}
-                    className="text-blue-500 underline cursor-pointer"
-                  >
-                    Add More Exams To your List.!!
-                  </span>
-                </div>
-                <div className="grid sm:grid-cols-1 md:grid-cols-3 gap-6">
-                  {targetedExams.map((exam, index) => (
-                    <div
-                      key={index}
-                      className="p-6 bg-white dark:bg-slate-900 rounded-xl border border-slate-200 dark:border-slate-800 shadow-sm hover:border-[#1a57db] hover:shadow-xl transition-all duration-300 group cursor-pointer"
-                      onClick={() => handleButton(exam.id)}
-                    >
-                      <div className="w-10 h-10 bg-linear-to-r from-[#1a57db]/10 to-[#1a57db]/20 rounded-lg flex items-center justify-center text-[#1a57db] mb-4 group-hover:bg-linear-to-r group-hover:from-[#1a57db] group-hover:to-blue-600 group-hover:text-white transition-all duration-300">
-                        <Book />
-                      </div>
-                      <h3 className="font-black text-lg mb-1">{exam.name}</h3>
-                      <p className="text-xs text-slate-500 mb-4">
-                        {exam.full_name}
-                      </p>
-                      <div className="mt-4 pt-4 border-t border-slate-100 dark:border-slate-800">
-                        <p className="text-[10px] text-slate-400 font-bold uppercase mb-2 tracking-wider">
-                          Exam Type
-                        </p>
-                        <p className="text-sm font-semibold text-slate-900 dark:text-white">
-                          {exam.type}
-                        </p>
-                      </div>
-                    </div>
-                  ))}
-                </div>
-              </section>
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 pt-8">
+          <div className="lg:col-span-8 space-y-12">
+           <ExamSelectorCard targetRef={targetRef} targetedExams={targetedExams} />
 
-              {/* Subject Progress */}
-              <section>
-                <div className="flex items-center justify-between mb-6">
-                  <h2 className="text-xl font-bold">Subject Progress</h2>
-                  <a
-                    className="text-[#1a57db] text-sm font-bold hover:underline"
-                    href="#"
-                  >
-                    View Curriculum
-                  </a>
-                </div>
-                <div className="bg-white dark:bg-slate-900 rounded-xl border border-slate-200 dark:border-slate-800 p-6 shadow-sm">
+            <section>
+              <h3 className="text-[11px] font-technical font-black uppercase tracking-[0.4em] text-on-surface-variant opacity-60 mb-8 px-2">Growth Analytics</h3>
+              <div className="bg-surface-container-high rounded-[3rem] p-10 shadow-ambient">
+                <div className="space-y-10">
                   {subjectProgress.map((subject, index) => (
-                    <div key={index} className="mb-6 last:mb-0">
-                      <div className="flex justify-between text-sm mb-2">
-                        <span className="font-medium">{subject.name}</span>
-                        <span className="text-slate-500 font-bold">
+                    <div key={index}>
+                      <div className="flex justify-between items-end mb-4 px-1">
+                        <span className="font-bold text-on-surface tracking-tight">{subject.name}</span>
+                        <span className="text-xs font-technical font-black text-primary tracking-widest">
                           {subject.percent}%
                         </span>
                       </div>
-                      <div className="w-full h-2.5 bg-slate-100 dark:bg-slate-800 rounded-full overflow-hidden shadow-inner">
+                      <div className="w-full h-6 bg-surface-container-high rounded-full overflow-hidden p-1.5 shadow-inner ring-1 ring-black/5">
                         <div
-                          className={`${subject.color} h-full rounded-full shadow-sm transition-all duration-500`}
+                          className="bg-linear-to-r from-primary to-primary-container h-full rounded-full shadow-sm transition-all duration-2000 ease-out shadow-primary/20"
                           style={{ width: `${subject.percent}%` }}
                         />
                       </div>
                     </div>
                   ))}
                 </div>
-              </section>
-            </div>
+              </div>
+            </section>
+          </div>
 
-            {/* Right Column */}
-            <div className="lg:col-span-4 space-y-8">
-              {/* Quick Links */}
-              {/* <section>
-                <h2 className="text-xl font-bold mb-6 text-slate-900 dark:text-white">
-                  Quick Links
-                </h2>
-                <div className="grid grid-cols-2 gap-4">
-                  {quickLinks.map((link, index) => (
-                    <button
-                      key={index}
-                      className="flex flex-col items-center justify-center p-6 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl hover:shadow-xl hover:-translate-y-1 hover:border-[#1a57db]/50 transition-all duration-300 text-center cursor-pointer"
-                      onClick={() => navigate(link.path)}
-                    >
-                      <div className="mb-2 text-[#1a57db]">{link.icon}</div>
-                      <span className="text-xs font-bold text-slate-900 dark:text-white">
-                        {link.label}
-                      </span>
-                    </button>
-                  ))}
-                </div>
-              </section> */}
+          <div className="lg:col-span-4 space-y-12">
+            <UpcomingMockTest
+              habits={habits}
+              progress={progress}
+              onDelete={handleDeleteRitual}
+              onNavigate={(examId, chapterId) => navigate(`exam/${examId}`, { state: { autoOpenChapterId: chapterId } })}
+              onEdit={(habit, day) => {
+                setQuickEditData({ habit, day });
+                setIsQuickEditOpen(true);
+              }}
+            />
 
-              <UpcomingMockTest />
-
-              {/* Daily Checklist */}
-              <section className="bg-[#1a57db]/5 border border-[#1a57db]/20 rounded-xl p-6 shadow-sm">
-                <h3 className="font-bold mb-6 flex items-center gap-2 text-slate-900 dark:text-white">
-                  <Tags className="text-[#1a57db]" />
-                  Today's Checklist
-                </h3>
-                <div className="space-y-3">
-                  {checklist.map((item, index) => (
+            {/* <section className="bg-surface-container-high rounded-[3rem] p-10 shadow-ambient">
+              <h3 className="text-[11px] font-technical font-black uppercase tracking-[0.4em] text-on-surface-variant opacity-50 mb-10 flex items-center gap-4">
+                <div className="size-2.5 bg-primary rounded-full animate-pulse shadow-[0_0_10px_rgba(0,110,47,0.5)]" />
+                Daily Rituals
+              </h3>
+              <div className="space-y-4">
+                {ritualsLoading ? (
+                  <div className="flex flex-col items-center justify-center py-12 text-slate-400 gap-4 opacity-50">
+                    <Loader className="size-6 animate-spin" />
+                    <span className="text-[10px] font-technical uppercase tracking-widest font-black">Aligning Rituals...</span>
+                  </div>
+                ) : dailyRituals.length === 0 ? (
+                  <div className="p-8 text-center bg-white/40 rounded-4xl border border-dashed border-primary/20">
+                     <Sparkles className="size-8 text-primary/40 mx-auto mb-4" />
+                     <p className="text-xs font-technical font-black uppercase tracking-widest text-on-surface-variant opacity-60">
+                       No rituals set for today.<br />
+                       Plant your seeds in the planner.
+                     </p>
+                  </div>
+                ) : dailyRituals.map((habit) => {
+                  const isDone = progress[habit.id]?.[today - 1];
+                  return (
                     <label
-                      key={index}
-                      className={`flex items-center gap-3 p-3 bg-white dark:bg-slate-900 rounded-lg cursor-pointer border transition-all duration-200 hover:shadow-sm ${
-                        item.active
-                          ? "border-[#1a57db]/30 shadow-sm shadow-[#1a57db]/10 ring-1 ring-[#1a57db]/20"
-                          : "border-slate-100 dark:border-slate-800"
-                      }`}
+                      key={habit.id}
+                      className={`flex items-center gap-5 p-6 rounded-4xl cursor-pointer transition-all duration-500 ease-(--ease-botanical) hover:scale-[1.03] ${!isDone
+                        ? "bg-white shadow-ambient ring-2 ring-primary/5"
+                        : "bg-surface-container-high/40 opacity-60 grayscale hover:grayscale-0 hover:opacity-100"
+                        }`}
                     >
-                      <input
-                        className="rounded border-slate-300 text-[#1a57db] focus:ring-[#1a57db] h-4 w-4 shadow-sm cursor-pointer"
-                        type="checkbox"
-                        checked={item.checked}
-                        readOnly
-                      />
-                      <span
-                        className={`text-sm ${item.checked ? "line-through text-slate-400" : "font-medium text-slate-900 dark:text-white"}`}
-                      >
-                        {item.text}
-                      </span>
+                      <div className="relative size-6 shrink-0">
+                        <input
+                          className="peer hidden"
+                          type="checkbox"
+                          checked={isDone || false}
+                          onChange={() => handleToggle(habit.id)}
+                        />
+                        <div className="size-full rounded-lg border-2 border-primary/20 flex items-center justify-center transition-all peer-checked:bg-primary peer-checked:border-primary peer-checked:rotate-0 rotate-45 group">
+                          {isDone && <CheckSquare className="size-4 text-white" strokeWidth={3} />}
+                        </div>
+                      </div>
+                      <div className="flex flex-col gap-0.5">
+                        <span
+                          className={`text-sm font-black tracking-tight transition-all duration-500 ${isDone ? "line-through text-on-surface-variant opacity-40 font-medium" : "text-on-surface"}`}
+                        >
+                          {habit.name}
+                        </span>
+                        {habit.start_time && (
+                          <span className="text-[9px] font-technical font-black tracking-widest text-primary uppercase flex items-center gap-1 opacity-60">
+                            <Clock size={8} /> {format12h(habit.start_time)}
+                          </span>
+                        )}
+                      </div>
+                      {habit.is_mastery && (
+                         <div className="ml-auto px-2 py-0.5 rounded-full bg-tertiary/10 text-tertiary text-[8px] font-black uppercase tracking-widest">Test</div>
+                      )}
                     </label>
-                  ))}
-                </div>
-              </section>
-            </div>
+                  );
+                })}
+              </div>
+            </section> */}
           </div>
         </div>
-        <Outlet />
-        {/* Footer */}
-        <footer className="p-8 mt-auto border-t border-slate-200 dark:border-slate-800 text-center bg-white/50 dark:bg-slate-900/50 backdrop-blur-sm">
-          <p className="text-xs text-slate-400">
-            © 2023 Odisha Prep Portal. Dedicated to the aspirants of Odisha
-            State Government Exams.
+
+        <footer className="pt-20 pb-10 px-2 flex flex-col lg:flex-row items-center justify-between gap-8 border-t border-on-surface/5 opacity-30 group">
+          <p className="text-[9px] font-technical font-black uppercase tracking-[0.4em] leading-relaxed max-w-sm text-center lg:text-left">
+            © 2026 ARUMIND DIGITAL JOURNAL. ARCHITECTED FOR CONSISTENT GROWTH AND INTENTIONAL LEARNING.
           </p>
+          <div className="flex gap-8">
+            <span className="text-[9px] font-technical font-black uppercase tracking-widest cursor-help hover:text-primary transition-colors hover:underline">Privacy</span>
+            <span className="text-[9px] font-technical font-black uppercase tracking-widest cursor-help hover:text-primary transition-colors hover:underline">Terms</span>
+          </div>
         </footer>
-      </main>
+      </div>
+
+      <button
+        onClick={() => setIsDailRoutineOpen(true)}
+        className="fixed bottom-10 right-10 size-16 bg-primary text-white rounded-[2.5rem] shadow-ambient-lg shadow-primary/20 flex items-center justify-center hover:scale-110 active:scale-95 transition-all duration-500 z-50 group overflow-hidden"
+      >
+        <div className="absolute inset-0 bg-linear-to-br from-white/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
+        <CheckSquare className="size-6 transition-transform group-hover:rotate-12" />
+        <div className="absolute -top-1 -right-1 size-4 bg-tertiary rounded-full border-2 border-primary flex items-center justify-center animate-bounce">
+          <span className="text-[8px] font-black">{dailyRituals.filter(r => !progress[r.id]?.[today - 1]).length}</span>
+        </div>
+      </button>
+
+      <DashboardDailyRoutine 
+        isOpen={isDailRoutineOpen} 
+        onClose={() => setIsDailRoutineOpen(false)} 
+        targetedExams={targetedExams} 
+        dailyRituals={dailyRituals} 
+        progress={progress} 
+        today={today} 
+        handleToggle={handleToggle}
+      />
+      <QuickScheduleModal
+        isOpen={isQuickEditOpen}
+        onClose={() => setIsQuickEditOpen(false)}
+        habit={quickEditData?.habit || null}
+        day={quickEditData?.day || 0}
+        onUpdate={handleUpdateSchedule}
+      />
     </div>
   );
 };
 
 export default UserDashboard;
 
-const UpcomingMockTest = () => {
-  const upcomingMocks = [
-    {
-      date: "2025-08-24", // Changed to ISO for parsing
-      displayDate: "24",
-      month: "Aug",
-      title: "OPSC Prelims Full Mock 12",
-      time: "10:00",
-      displayTime: "10:00 AM",
-      marks: "200 Marks",
-    },
-    {
-      date: "2025-08-26",
-      displayDate: "26",
-      month: "Aug",
-      title: "Odisha GK Sectional Test",
-      time: "16:00",
-      displayTime: "04:00 PM",
-      marks: "50 Marks",
-    },
-    {
-      date: "2025-08-30",
-      displayDate: "30",
-      month: "Aug",
-      title: "OSSC CGL Quantitative",
-      time: "11:00",
-      displayTime: "11:00 AM",
-      marks: "100 Marks",
-    },
-  ];
+
+
+const QuickScheduleModal = ({
+  isOpen,
+  onClose,
+  habit,
+  day,
+  onUpdate
+}: {
+  isOpen: boolean,
+  onClose: () => void,
+  habit: Habit | null,
+  day: number,
+  onUpdate: (id: string, isMastery: boolean, newDay: number, newTime: string) => Promise<void>
+}) => {
+  const [selectedDay, setSelectedDay] = useState(day);
+  const [selectedTime, setSelectedTime] = useState(habit?.start_time || "09:00");
+  const [updating, setUpdating] = useState(false);
+
+  useEffect(() => {
+    if (habit) {
+      setSelectedDay(day);
+      setSelectedTime(habit.start_time || "09:00");
+    }
+  }, [habit, day]);
+
+  if (!isOpen || !habit) return null;
+
+  const daysInMonth = Array.from({ length: 31 }, (_, i) => i + 1);
 
   return (
-    <section>
-      <div className="flex items-center justify-between mb-6">
-        <h2 className="text-xl font-bold text-slate-900 dark:text-white">
-          Upcoming Mock Tests
-        </h2>
-      </div>
-      <div className="bg-white dark:bg-slate-900 rounded-2xl border border-slate-200 dark:border-slate-800 overflow-hidden shadow-sm">
-        <div className="divide-y divide-slate-100 dark:divide-slate-800">
-          {upcomingMocks.map((mock, index) => (
-            <div
-              key={index}
-              className="p-5 flex items-center gap-5 hover:bg-slate-50/80 dark:hover:bg-slate-800/50 transition-all duration-200 group"
-            >
-              <div className="flex flex-col items-center justify-center min-w-[56px] bg-slate-100 dark:bg-slate-800/80 py-3 rounded-xl group-hover:bg-blue-50 dark:group-hover:bg-blue-900/20 transition-colors">
-                <span className="text-[10px] font-black text-slate-400 dark:text-slate-500 uppercase tracking-widest mb-0.5 group-hover:text-blue-500 transition-colors">
-                  {mock.month}
-                </span>
-                <span className="text-xl font-black text-slate-900 dark:text-white group-hover:text-blue-600 transition-colors">
-                  {mock.displayDate}
-                </span>
-              </div>
-              <div className="flex-1 min-w-0">
-                <h4 className="text-sm font-bold text-slate-900 dark:text-white group-hover:text-[#1a57db] transition-colors truncate">
-                  {mock.title}
-                </h4>
-                <div className="flex items-center gap-2 mt-1">
-                  <p className="text-xs text-slate-500 font-medium whitespace-nowrap">
-                    {mock.displayTime} • {mock.marks}
-                  </p>
-                </div>
-              </div>
-              <button
-                className="p-2 text-slate-400 hover:text-blue-600 hover:bg-blue-100 dark:hover:bg-blue-900/30 rounded-lg transition-all"
-                title="View Details"
-              >
-                <ChevronRight size={18} />
-              </button>
-              <ChevronRight className="text-slate-300 group-hover:translate-x-1 transition-transform" />
+    <div className="fixed inset-0 z-100 flex items-center justify-center p-6 lg:p-12 animate-in fade-in duration-500">
+      <div className="absolute inset-0 bg-on-surface/20 backdrop-blur-xl" onClick={onClose} />
+      <div className="relative bg-white dark:bg-surface-container-high rounded-[3rem] shadow-ambient-lg w-full max-w-lg overflow-hidden border border-white/20 p-10 animate-in zoom-in-95 slide-in-from-bottom-8 duration-700 scale-105">
+        <header className="mb-8">
+          <h3 className="text-3xl font-black tracking-tighter leading-none mb-2">Sync Timeline</h3>
+          <p className="text-xs opacity-60 font-medium">Update the temporal manifest for <span className="font-bold text-primary italic">“{habit.name}”</span></p>
+        </header>
+
+        <div className="space-y-8">
+          <div>
+            <label className="text-[10px] font-technical font-black uppercase tracking-[0.4em] text-primary mb-4 block">Day of the Month</label>
+            <div className="grid grid-cols-7 gap-1">
+              {daysInMonth.map(d => (
+                <button
+                  key={d}
+                  onClick={() => setSelectedDay(d)}
+                  className={`h-10 rounded-xl text-[11px] font-black transition-all ${selectedDay === d
+                    ? "bg-primary text-white shadow-md shadow-primary/20 scale-110"
+                    : "bg-surface-container-low/40 hover:bg-surface-container-low text-on-surface opacity-60"
+                    }`}
+                >
+                  {d}
+                </button>
+              ))}
             </div>
-          ))}
+          </div>
+
+          <div>
+            <label className="text-[10px] font-technical font-black uppercase tracking-[0.4em] text-primary mb-4 block">Start Time manifest</label>
+            <input
+              type="time"
+              value={selectedTime}
+              onChange={(e) => setSelectedTime(e.target.value)}
+              className="w-full bg-surface-container-low/40 border-2 border-primary/5 rounded-2xl px-6 py-4 text-xl font-black outline-none focus:border-primary/20 transition-colors"
+            />
+          </div>
+
+          <div className="pt-4 flex gap-4">
+            <button
+              onClick={onClose}
+              className="flex-1 py-5 rounded-full font-technical font-black text-[11px] uppercase tracking-widest text-on-surface-variant hover:bg-on-surface/5 transition-all"
+            >
+              Discard
+            </button>
+            <button
+              disabled={updating}
+              onClick={async () => {
+                setUpdating(true);
+                await onUpdate(habit.id, habit.is_mastery || false, selectedDay, selectedTime);
+                setUpdating(false);
+                onClose();
+              }}
+              className="flex-1 py-5 bg-primary text-white rounded-full font-technical font-black text-[11px] uppercase tracking-widest shadow-xl shadow-primary/20 hover:scale-105 active:scale-95 transition-all flex items-center justify-center gap-3"
+            >
+              {updating ? <Loader className="size-4 animate-spin" /> : <Sparkles className="size-4" />}
+              Sync Timeline
+            </button>
+          </div>
         </div>
-        <button className="w-full py-4 text-[11px] font-black uppercase tracking-widest text-slate-500 dark:text-slate-400 border-t border-slate-100 dark:border-slate-800 hover:bg-slate-50 dark:hover:bg-slate-800 hover:text-[#1a57db] transition-all duration-200">
-          View All Scheduled Tests
-        </button>
       </div>
-    </section>
+    </div>
   );
 };
 
 const DashboardSkeleton = () => {
   return (
-    <div className="flex h-screen overflow-hidden bg-linear-to-br from-slate-50 to-slate-100 dark:from-slate-900 dark:to-slate-950 animate-pulse">
-      <main className="flex-1 overflow-y-auto flex flex-col">
-        {/* Header */}
-        <header className="h-16 border-b border-slate-200 dark:border-slate-800 flex items-center justify-between px-8">
-          {/* Search */}
-          <div className="w-96 h-10 bg-slate-200 dark:bg-slate-700 rounded-lg"></div>
-
-          {/* Icons */}
-          <div className="flex items-center gap-4">
-            <div className="w-24 h-8 rounded-lg bg-slate-200 dark:bg-slate-700"></div>
-            <div className="w-8 h-8 rounded-lg bg-slate-200 dark:bg-slate-700"></div>
-            <div className="w-8 h-8 rounded-lg bg-slate-200 dark:bg-slate-700"></div>
-          </div>
-        </header>
-
-        <div className="p-8 max-w-7xl mx-auto w-full space-y-8">
-          {/* Greeting Section */}
-          <section className="flex flex-wrap items-center justify-between gap-6">
-            <div>
-              <div className="h-8 w-72 bg-slate-300 dark:bg-slate-700 rounded mb-3"></div>
-              <div className="h-4 w-96 bg-slate-200 dark:bg-slate-700 rounded"></div>
-            </div>
-
-            <div className="flex gap-4">
-              <div className="w-40 h-20 bg-slate-200 dark:bg-slate-700 rounded-xl"></div>
-              <div className="w-40 h-20 bg-slate-200 dark:bg-slate-700 rounded-xl"></div>
-            </div>
-          </section>
-
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-            {/* Left Column */}
-            <div className="lg:col-span-2 space-y-8">
-              {/* Target Exams */}
-              <section>
-                <div className="h-6 w-48 bg-slate-300 dark:bg-slate-700 rounded mb-6"></div>
-
-                <div className="grid md:grid-cols-3 gap-6">
-                  {Array.from({ length: 3 }).map((_, i) => (
-                    <div
-                      key={i}
-                      className="p-6 bg-white dark:bg-slate-900 rounded-xl border border-slate-200 dark:border-slate-800"
-                    >
-                      <div className="w-10 h-10 bg-slate-300 dark:bg-slate-700 rounded-lg mb-4"></div>
-                      <div className="h-5 w-28 bg-slate-300 dark:bg-slate-700 rounded mb-2"></div>
-                      <div className="h-3 w-40 bg-slate-200 dark:bg-slate-700 rounded mb-4"></div>
-
-                      <div className="mt-4 pt-4 border-t border-slate-200 dark:border-slate-800">
-                        <div className="h-3 w-20 bg-slate-300 dark:bg-slate-700 rounded mb-2"></div>
-                        <div className="h-4 w-24 bg-slate-200 dark:bg-slate-700 rounded"></div>
-                      </div>
-                    </div>
-                  ))}
-                </div>
-              </section>
-
-              {/* Subject Progress */}
-              <section>
-                <div className="h-6 w-40 bg-slate-300 dark:bg-slate-700 rounded mb-6"></div>
-
-                <div className="bg-white dark:bg-slate-900 rounded-xl border border-slate-200 dark:border-slate-800 p-6 space-y-6">
-                  {Array.from({ length: 4 }).map((_, i) => (
-                    <div key={i}>
-                      <div className="flex justify-between mb-2">
-                        <div className="h-4 w-32 bg-slate-300 dark:bg-slate-700 rounded"></div>
-                        <div className="h-4 w-10 bg-slate-200 dark:bg-slate-700 rounded"></div>
-                      </div>
-
-                      <div className="w-full h-2.5 bg-slate-200 dark:bg-slate-700 rounded-full"></div>
-                    </div>
-                  ))}
-                </div>
-              </section>
-            </div>
-
-            {/* Right Column */}
-            <div className="space-y-8">
-              {/* Quick Links */}
-              <section>
-                <div className="h-6 w-32 bg-slate-300 dark:bg-slate-700 rounded mb-6"></div>
-
-                <div className="grid grid-cols-2 gap-4">
-                  {Array.from({ length: 4 }).map((_, i) => (
-                    <div
-                      key={i}
-                      className="h-24 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl"
-                    ></div>
-                  ))}
-                </div>
-              </section>
-
-              {/* Upcoming Mock */}
-              <div className="h-40 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl"></div>
-
-              {/* Checklist */}
-              <section className="bg-slate-100 dark:bg-slate-800 rounded-xl p-6 space-y-3">
-                <div className="h-5 w-40 bg-slate-300 dark:bg-slate-700 rounded mb-4"></div>
-
-                {Array.from({ length: 4 }).map((_, i) => (
-                  <div
-                    key={i}
-                    className="h-10 bg-white dark:bg-slate-900 rounded-lg"
-                  ></div>
-                ))}
-              </section>
-            </div>
-          </div>
+    <div className="space-y-12 animate-pulse pb-20 p-2 lg:p-6">
+      <div className="h-4 w-48 bg-surface-container-low rounded-full mb-8"></div>
+      <div className="flex flex-col lg:flex-row justify-between gap-12">
+        <div className="space-y-6">
+          <div className="h-20 w-160 bg-surface-container-low rounded-3xl"></div>
+          <div className="h-24 w-120 bg-surface-container-low rounded-3xl"></div>
         </div>
-
-        {/* Footer */}
-        <footer className="p-8 border-t border-slate-200 dark:border-slate-800">
-          <div className="h-3 w-72 mx-auto bg-slate-300 dark:bg-slate-700 rounded"></div>
-        </footer>
-      </main>
+        <div className="flex gap-6">
+          <div className="size-40 bg-surface-container-low rounded-[3rem]"></div>
+          <div className="size-40 bg-surface-container-low rounded-[3rem]"></div>
+        </div>
+      </div>
     </div>
   );
 };

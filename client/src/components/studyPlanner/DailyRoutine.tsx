@@ -49,19 +49,19 @@ export default function DailyRoutine({ habits = [], progress = {}, selectedDate 
   });
 
   return (
-    <div className="bg-white dark:bg-slate-900 rounded-xl p-8 border border-slate-200 dark:border-slate-800 shadow-xl space-y-8 relative overflow-hidden group">
-      <div className="absolute -top-7.5 -right-7.5 p-8 opacity-5 group-hover:scale-110 transition-transform">
-         <Clock size={100} />
+    <div className="bg-surface-container-low rounded-[2.5rem] p-8 shadow-ambient space-y-8 relative overflow-hidden group min-h-[500px]">
+      <div className="absolute -top-10 -right-10 p-10 opacity-[0.02] group-hover:scale-110 transition-transform duration-3000 pointer-events-none">
+         <Clock size={200} />
       </div>
 
-      <div className="flex items-center justify-between relative z-10">
+      <div className="flex items-center justify-between relative z-10 px-1">
         <div>
-          <h3 className="text-2xl font-black tracking-tight text-slate-900 dark:text-white">Daily Routine</h3>
-          <p className="text-md text-slate-400 font-bold mt-1">
-            {isToday ? "Today's Schedule" : `Schedule for ${selectedDate.toLocaleDateString('default', { month: 'short', day: 'numeric' })}`}
+          <h3 className="text-[11px] font-technical font-black uppercase tracking-[0.4em] text-on-surface-variant opacity-60 mb-2">Daily Cycle</h3>
+          <p className="text-2xl font-black text-on-surface tracking-tighter">
+            {isToday ? "Today's Rituals" : `${selectedDate.toLocaleDateString('default', { month: 'short', day: 'numeric' })} Rituals`}
           </p>
         </div>
-        <div className="flex items-center gap-3">
+        <div className="flex items-center gap-4">
           {(onSyncAll || onSync) && sortedHabits.length > 0 && (
             <button
               onClick={() => {
@@ -71,53 +71,56 @@ export default function DailyRoutine({ habits = [], progress = {}, selectedDate 
                   sortedHabits.forEach((h) => onSync?.(h));
                 }
               }}
-              className="px-3 py-1.5 bg-blue-50 dark:bg-blue-900/20 text-[#1a57db] rounded-lg text-[10px] font-black uppercase tracking-widest flex items-center gap-2 hover:bg-blue-100 dark:hover:bg-blue-900/40 transition-all border border-blue-100 dark:border-blue-800"
+              className="px-4 py-2 bg-white text-primary rounded-full text-[10px] font-technical font-black uppercase tracking-[0.2em] flex items-center gap-2 hover:bg-primary hover:text-white transition-all duration-500 shadow-sm shadow-primary/5"
               title="Add all to Google Calendar"
             >
               <Calendar size={12} />
               Sync All
             </button>
           )}
-          <div className="px-3 py-1 bg-emerald-50 dark:bg-emerald-950 text-emerald-600 rounded-lg text-[10px] font-black uppercase tracking-widest flex items-center gap-2">
-            <Sparkles size={12} />
+          <div className="px-4 py-2 bg-primary/10 text-primary rounded-full text-[10px] font-technical font-black uppercase tracking-[0.3em] flex items-center gap-2 animate-pulse">
+            <Sparkles size={12} fill="currentColor" />
             Live
           </div>
         </div>
       </div>
 
-      <div className="space-y-6 h-66.5 overflow-y-auto  relative z-10">
+      <div className="space-y-4 h-[320px] overflow-y-auto relative z-10 custom-scrollbar pr-2">
         {sortedHabits.length > 0 ? (
           sortedHabits.map((habit, i) => (
-            <div key={habit.id} className="flex items-start gap-4 group/item">
-              <div className="flex flex-col items-center">
-                <div className={`size-10 rounded-2xl flex items-center justify-center shadow-xs border transition-all ${
-                  habit.priority === 'HIGH' ? 'bg-rose-50 border-rose-100 text-rose-500' : 'bg-slate-50 border-slate-100 text-slate-400'
-                }`}>
-                   {parseInt(habit.start_time?.split(':')[0] || '12') < 18 ? <Sun size={18} /> : <Moon size={18} />}
+            <div key={habit.id} className="flex items-start gap-6 group/item relative">
+              <div className="flex flex-col items-center pt-1.5">
+                <div className={`size-12 rounded-2xl flex items-center justify-center shadow-sm transition-all duration-500 ${
+                  habit.priority === 'HIGH' ? 'bg-tertiary/10 text-tertiary' : 'bg-surface-container-high text-on-surface-variant/40'
+                } group-hover/item:scale-110 group-hover/item:shadow-md`}>
+                   {parseInt(habit.start_time?.split(':')[0] || '12') < 18 ? <Sun size={20} /> : <Moon size={20} />}
                 </div>
-                {i !== sortedHabits.length - 1 && <div className="w-px h-10 bg-slate-300 dark:bg-slate-800 my-1" />}
+                {i !== sortedHabits.length - 1 && <div className="w-px h-12 bg-on-surface/5 my-2 opacity-50" />}
               </div>
               
-              <div className="flex-1 pt-1">
-                <div className="flex justify-between items-start">
+              <div className="flex-1 transition-all duration-500 group-hover/item:translate-x-1">
+                <div className="flex justify-between items-start bg-white/30 p-5 rounded-4xl hover:bg-white/80 transition-all duration-500 group-hover/item:shadow-ambient">
                   <div>
-                    <p className="text-sm font-bold text-slate-900 dark:text-white group-hover/item:text-[#1a57db] transition-colors">{habit.name}</p>
-                    <p className="text-xs font-bold text-slate-400 uppercase tracking-wide mt-0.5">
-                       {habit.start_time || "Anytime"} — {habit.end_time || "Anytime"}
-                    </p>
+                    <p className="text-lg font-black text-on-surface tracking-tight group-hover/item:text-primary transition-colors leading-tight mb-1">{habit.name}</p>
+                    <div className="flex items-center gap-2 opacity-40">
+                      <Clock size={10} className="text-on-surface-variant" />
+                      <p className="text-[10px] font-technical uppercase tracking-[0.2em] text-on-surface-variant">
+                         {habit.start_time || "Anytime"} <span className="opacity-30 mx-1">—</span> {habit.end_time || "Anytime"}
+                      </p>
+                    </div>
                   </div>
-                  <div className="flex items-center gap-2">
+                  <div className="flex items-center gap-3">
                     {onSync && (
                       <button
                         onClick={() => onSync(habit)}
-                        className="p-1.5 text-slate-400 hover:text-[#1a57db] hover:bg-blue-50 dark:hover:bg-blue-900/20 rounded-lg transition-all"
+                        className="size-10 flex items-center justify-center text-on-surface-variant/30 hover:text-primary hover:bg-primary/5 rounded-full transition-all duration-500"
                         title="Sync to Google Calendar"
                       >
-                        <Calendar size={14} />
+                        <Calendar size={16} />
                       </button>
                     )}
-                    <span className={`text-[12px] font-bold px-1.5 py-0.5 rounded-md uppercase tracking-wide ${
-                      habit.priority === 'HIGH' ? 'bg-rose-100 text-rose-600' : 'bg-slate-100 text-slate-500'
+                    <span className={`text-[10px] font-technical font-black px-3 py-1.5 rounded-full uppercase tracking-[0.2em] ${
+                      habit.priority === 'HIGH' ? 'bg-tertiary/10 text-tertiary' : 'bg-surface-container-high text-on-surface-variant opacity-40'
                     }`}>
                       {habit.priority}
                     </span>
@@ -127,23 +130,25 @@ export default function DailyRoutine({ habits = [], progress = {}, selectedDate 
             </div>
           ))
         ) : (
-          <div className="py-10 text-center space-y-3">
-             <div className="size-16 bg-slate-50 dark:bg-slate-800 rounded-4xl flex items-center justify-center mx-auto text-slate-300">
-                <Clock size={32} />
+          <div className="py-20 text-center space-y-6">
+             <div className="size-20 bg-surface-container-high rounded-[2.5rem] flex items-center justify-center mx-auto text-on-surface-variant opacity-10 rotate-12 group-hover:rotate-0 transition-transform duration-1000">
+                <Clock size={40} />
              </div>
-             <p className="text-xs font-bold text-slate-400 uppercase tracking-widest">No tasks scheduled yet</p>
-             <button 
-              onClick={onRefresh}
-              className="text-[10px] font-black text-[#1a57db] uppercase hover:underline"
-             >
-                Add some to get started
-             </button>
+             <div>
+               <p className="text-[10px] font-technical font-black text-on-surface-variant uppercase tracking-[0.4em] opacity-30 mb-4">No tasks manifested</p>
+               <button 
+                onClick={onRefresh}
+                className="px-6 py-3 bg-primary text-white rounded-full text-[10px] font-technical font-black uppercase tracking-[0.3em] shadow-lg shadow-primary/20 hover:scale-105 transition-all"
+               >
+                  Generate Path +
+               </button>
+             </div>
           </div>
         )}
       </div>
 
-      <div className="pt-4 border-t border-slate-100 dark:border-slate-800 relative z-10">
-        <p className="text-[10px] text-slate-400 font-medium italic">
+      <div className="pt-6 border-t border-on-surface/5 relative z-10 px-1">
+        <p className="text-[10px] font-technical font-black uppercase tracking-[0.2em] text-on-surface-variant opacity-30 italic leading-relaxed">
           "Your schedule is your roadmap to OPSC success. Stick to the timings!"
         </p>
       </div>

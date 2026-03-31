@@ -19,6 +19,7 @@ import {
   ChevronDown,
   Info,
   History,
+  Shield,
 } from "lucide-react";
 import { PieChart, Pie, Cell, ResponsiveContainer, Tooltip } from "recharts";
 
@@ -214,14 +215,14 @@ const Results = () => {
 
   if (loading) {
     return (
-      <div className="min-h-screen bg-slate-50 dark:bg-slate-950 flex flex-col items-center justify-center gap-6 p-8">
-        <div className="relative size-24">
-          <div className="absolute inset-0 border-4 border-[#1a57db]/20 rounded-full" />
-          <div className="absolute inset-0 border-4 border-[#1a57db] border-t-transparent rounded-full animate-spin" />
-          <Trophy className="absolute inset-0 m-auto size-8 text-[#1a57db] animate-bounce" />
+    <div className="min-h-screen bg-surface-container-low dark:bg-slate-950 px-4 md:px-10 pb-20 animate-reveal">
+      <div className="max-w-5xl mx-auto pt-12 space-y-12">
+          <div className="absolute inset-0 border-4 border-[#16a34a]/20 rounded-full" />
+          <div className="absolute inset-0 border-4 border-[#16a34a] border-t-transparent rounded-full animate-spin" />
+          <Trophy className="absolute inset-0 m-auto size-8 text-[#16a34a] animate-bounce" />
         </div>
         <div className="text-center space-y-2">
-          <h2 className="text-xl font-black text-slate-900 dark:text-white uppercase tracking-tighter">
+          <h2 className="text-xl font-black text-on-surface dark:text-white uppercase tracking-tighter">
             Analyzing Mastery
           </h2>
           <p className="text-sm font-bold text-slate-400 animate-pulse uppercase tracking-[0.2em]">
@@ -233,37 +234,37 @@ const Results = () => {
   }
 
   return (
-    <div className="min-h-screen bg-linear-to-br from-slate-50 to-slate-100 dark:from-slate-900 dark:to-slate-950 text-slate-900 dark:text-slate-100 pb-20">
-      {/* HEADER */}
-      <header className="sticky top-0 z-50 bg-white/80 dark:bg-slate-900/80 backdrop-blur-xl border-b border-slate-200 dark:border-slate-800 px-6 py-4">
+    <div className="min-h-screen bg-surface font-narrative text-on-surface antialiased transition-colors duration-700 pb-20">
+      {/* HEADER - Glassmorphic & Borderless */}
+      <header className="sticky top-0 z-50 glass px-6 py-4">
         <div className="max-w-7xl mx-auto flex items-center justify-between">
-          <div className="flex items-center gap-4">
+          <div className="flex items-center gap-5">
             <button
               onClick={() => navigate("/user/results")}
-              className="p-2.5 bg-slate-100 dark:bg-slate-800 rounded-2xl hover:bg-slate-200 dark:hover:bg-slate-700 transition-all text-slate-500"
+              className="p-3 bg-surface-container-high rounded-2xl hover:scale-110 active:scale-90 transition-all text-on-surface-variant shadow-sm"
             >
-              <ArrowLeft size={18} />
+              <ArrowLeft size={20} />
             </button>
             <div>
-              <h1 className="text-lg font-black tracking-tight text-slate-900 dark:text-white flex items-center gap-2">
-                <Target className="text-[#1a57db]" size={18} />
-                Performance Report
+              <h1 className="text-xl font-black tracking-tighter text-on-surface flex items-center gap-2">
+                <Target className="text-primary" size={20} />
+                Mastery Report
               </h1>
-              <p className="text-[10px] text-slate-400 font-black uppercase tracking-widest mt-0.5">
-                Attempt #{attempt?.id.slice(0, 8)}
+              <p className="text-[10px] text-on-surface-variant/40 font-mono font-bold uppercase tracking-[0.2em] mt-0.5">
+                Session ID <span className="text-on-surface-variant">#{attempt?.id.slice(0, 8)}</span>
               </p>
             </div>
           </div>
 
-          <div className="flex items-center gap-3">
+          <div className="flex items-center gap-4">
             <button
               onClick={() => navigate("/user/dashboard")}
-              className="hidden md:flex items-center gap-2 px-5 py-2.5 bg-[#1a57db]/5 text-[#1a57db] rounded-2xl text-xs font-black uppercase tracking-widest hover:bg-[#1a57db]/10 transition-all"
+              className="hidden md:flex items-center gap-2 px-6 py-3 bg-primary text-white rounded-full text-[10px] font-mono font-bold uppercase tracking-widest hover:scale-105 active:scale-95 transition-all shadow-lg shadow-primary/20"
             >
               <LayoutDashboard size={14} />
-              Dashboard
+              Return Home
             </button>
-            <div className="size-10 bg-slate-100 dark:bg-slate-800 rounded-2xl flex items-center justify-center text-slate-400 font-black text-xs">
+            <div className="size-12 bg-surface-container-highest rounded-2xl flex items-center justify-center text-on-surface font-mono font-bold text-sm shadow-inner">
               {metrics.totalScore}
             </div>
           </div>
@@ -281,20 +282,24 @@ const Results = () => {
         <div className="grid sm:grid-cols-1 lg:grid-cols-12 gap-10">
           {/* PERFORMANCE INSIGHTS */}
           <div className="lg:col-span-5 space-y-8">
-            <div className="bg-white dark:bg-slate-900 p-8 rounded-xl border border-slate-200 dark:border-slate-800 space-y-8 shadow-xl">
-              <h3 className="text-xs font-black uppercase tracking-[0.2em] text-slate-400 flex items-center gap-3">
-                <BarChart3 size={16} className="text-[#1a57db]" />
-                Question Distribution
+            <div className="bg-surface-container-low p-8 rounded-[2.5rem] space-y-8 shadow-ambient-sm">
+              <h3 className="text-[10px] font-mono font-black uppercase tracking-[0.2em] text-on-surface-variant/40 flex items-center gap-3">
+                <BarChart3 size={16} className="text-primary" />
+                Distribution Metrics
               </h3>
 
-              <div className="h-[240px] w-full">
+              <div className="h-[240px] w-full relative">
+                <div className="absolute inset-0 flex flex-col items-center justify-center pointer-events-none">
+                  <span className="text-3xl font-mono font-black">{metrics.accuracy}%</span>
+                  <span className="text-[8px] font-mono font-bold uppercase tracking-widest opacity-40">Accuracy</span>
+                </div>
                 <ResponsiveContainer width="100%" height="100%">
                   <PieChart>
                     <Pie
                       data={distributionData}
-                      innerRadius={60}
-                      outerRadius={90}
-                      paddingAngle={5}
+                      innerRadius={70}
+                      outerRadius={95}
+                      paddingAngle={8}
                       dataKey="value"
                       stroke="none"
                     >
@@ -304,31 +309,33 @@ const Results = () => {
                     </Pie>
                     <Tooltip
                       contentStyle={{
-                        borderRadius: "16px",
+                        borderRadius: "20px",
                         border: "none",
-                        fontWeight: "bold",
+                        fontSize: "12px",
+                        fontFamily: "Space Grotesk, monospace",
+                        boxShadow: "0 10px 25px -5px rgba(0,0,0,0.1)"
                       }}
                     />
                   </PieChart>
                 </ResponsiveContainer>
               </div>
 
-              <div className="space-y-3">
+              <div className="space-y-2">
                 {distributionData.map((d, i) => (
                   <div
                     key={i}
-                    className="flex items-center justify-between p-4 bg-slate-50 dark:bg-slate-800/50 rounded-xl border border-slate-100 dark:border-slate-800"
+                    className="flex items-center justify-between p-4 bg-surface-container-high/40 rounded-2xl group transition-all duration-300 hover:bg-surface-container-high"
                   >
                     <div className="flex items-center gap-3">
                       <div
-                        className="size-3 rounded-full"
+                        className="size-2.5 rounded-full"
                         style={{ backgroundColor: d.color }}
                       />
-                      <span className="text-xs font-black uppercase tracking-tight text-slate-600 dark:text-slate-300">
+                      <span className="text-[11px] font-mono font-bold uppercase tracking-tight text-on-surface-variant/70">
                         {d.name}
                       </span>
                     </div>
-                    <span className="text-sm font-black text-slate-900 dark:text-white">
+                    <span className="text-sm font-mono font-black text-on-surface">
                       {d.value}
                     </span>
                   </div>
@@ -336,50 +343,48 @@ const Results = () => {
               </div>
             </div>
 
-            <div className="bg-linear-to-br from-indigo-600 to-blue-700 p-8 rounded-xl text-white shadow-2xl relative overflow-hidden group">
-              <div className="absolute top-0 right-0 p-8 opacity-10 group-hover:scale-110 transition-transform">
-                <BrainCircuit size={120} />
+            <div className="bg-primary text-white p-10 rounded-[2.5rem] shadow-2xl relative overflow-hidden group">
+              <div className="absolute -top-10 -right-10 p-8 opacity-10 group-hover:scale-125 group-hover:-rotate-12 transition-all duration-700">
+                <BrainCircuit size={160} />
               </div>
-              <h3 className="text-xs font-black uppercase text-blue-100/70 mb-6 flex items-center gap-3">
-                <Zap size={16} />
-                AI Action Plan
+              <h3 className="text-[10px] font-mono font-black uppercase tracking-[0.3em] text-white/50 mb-6 flex items-center gap-3">
+                <Zap size={16} fill="currentColor" />
+                Living Insights
               </h3>
-              <div className="space-y-6 relative z-10">
-                <div className="bg-white/10 p-5 rounded-3xl border border-white/10 backdrop-blur-sm">
-                  <p className="text-sm font-bold leading-relaxed italic">
-                    {metrics.accuracy < 50
-                      ? `Focus on rebuilding basic concepts of ${attempt?.chapters?.name}. Your strength in accuracy is low.`
-                      : `You're ready for more complex subjects. Double down on mock tests to maintain this momentum.`}
-                  </p>
-                </div>
+              <div className="space-y-8 relative z-10">
+                <p className="text-xl font-narrative font-bold leading-relaxed tracking-tight">
+                  {metrics.accuracy < 50
+                    ? `Our systems suggest focusing on the foundational structure of ${attempt?.chapters?.name}. Your current mastery profile requires reinforcement.`
+                    : `Remarkable synthesis of ${attempt?.chapters?.name}. You are demonstrating the cognitive patterns required for advanced complex reasoning.`}
+                </p>
                 <button
                   onClick={() => navigate(`/user/dashboard`)}
-                  className="w-full py-4 cursor-pointer bg-white text-blue-500 rounded-xl font-black text-xs uppercase shadow-xl hover:scale-105 transition-all"
+                  className="w-full py-4 cursor-pointer bg-white text-primary rounded-full font-mono font-black text-[10px] uppercase tracking-widest shadow-xl hover:scale-105 active:scale-95 transition-all"
                 >
-                  Start Targeted Practice
+                  Accelerate Growth
                 </button>
               </div>
             </div>
           </div>
 
           {/* QUESTION REVIEW */}
-          <div className="lg:col-span-7 h-185 overflow-y-auto space-y-8">
+          <div className="lg:col-span-7 h-185 overflow-y-auto space-y-8 pr-2 custom-scrollbar">
             <div className="flex items-center justify-between px-4">
-              <h3 className="text-sm font-black uppercase tracking-wide text-slate-400 flex items-center gap-3">
-                <History size={16} className="text-[#1a57db]" />
-                Question Review
+              <h3 className="text-[10px] font-mono font-black uppercase tracking-[0.3em] text-on-surface-variant/40 flex items-center gap-3">
+                <History size={16} className="text-primary" />
+                Analytical Review
               </h3>
-              <div className="flex items-center gap-4">
+              <div className="flex items-center gap-6">
                 <div className="flex items-center gap-2">
-                  <div className="size-2 rounded-full bg-emerald-500" />
-                  <span className="text-xs font-black uppercase text-slate-400">
+                  <div className="size-2 rounded-full bg-primary" />
+                  <span className="text-[9px] font-mono font-bold uppercase tracking-widest text-on-surface-variant/60">
                     Correct
                   </span>
                 </div>
                 <div className="flex items-center gap-2">
-                  <div className="size-2 rounded-full bg-rose-500" />
-                  <span className="text-xs font-black uppercase text-slate-400">
-                    Wrong
+                  <div className="size-2 rounded-full bg-error" />
+                  <span className="text-[9px] font-mono font-bold uppercase tracking-widest text-on-surface-variant/60">
+                    Erroneous
                   </span>
                 </div>
               </div>
@@ -394,101 +399,94 @@ const Results = () => {
                 return (
                   <div
                     key={q.id}
-                    className="bg-white dark:bg-slate-900 rounded-xl border border-slate-200 dark:border-slate-800 shadow-sm overflow-hidden group/q transition-all"
+                    className="bg-surface-container-low rounded-4xl overflow-hidden group/q transition-all duration-500 hover-bloom"
                   >
                     <div
                       onClick={() => setOpenQuestion(isOpened ? null : q.id)}
-                      className="p-6 md:p-8 flex items-start justify-between gap-6 cursor-pointer hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors"
+                      className="p-8 flex items-start justify-between gap-6 cursor-pointer hover:bg-surface-container-high/60 transition-colors"
                     >
-                      <div className="flex items-start gap-5">
+                      <div className="flex items-start gap-6">
                         <div
-                          className={`size-10 shrink-0 rounded-xl flex items-center justify-center font-black text-sm border-2 transition-all ${
+                          className={`size-12 shrink-0 rounded-2xl flex items-center justify-center font-mono font-black text-sm border-2 transition-all duration-500 ${
                             !ans?.selected_option
-                              ? "border-slate-300 rounded-full bg-slate-50 text-slate-500"
+                              ? "border-surface-container-highest bg-surface-container-high text-on-surface-variant/40"
                               : isCorrect
-                                ? "border-emerald-100 bg-emerald-50 text-emerald-500"
-                                : "border-rose-100 bg-rose-50 text-rose-500"
+                                ? "border-primary/20 bg-primary/5 text-primary"
+                                : "border-error/20 bg-error/5 text-error"
                           }`}
                         >
-                          {i + 1}
+                          {String(i + 1).padStart(2, '0')}
                         </div>
-                        <div className="space-y-1">
-                          <h4 className="text-md font-semibold text-slate-800 dark:text-white">
+                        <div className="space-y-2">
+                          <h4 className="text-lg font-bold text-on-surface leading-snug group-hover/q:text-primary transition-colors">
                             {q.question}
                           </h4>
-                          <div className="flex items-center gap-3">
-                            <span className="text-xs font-bold text-[#1a57db]">
+                          <div className="flex items-center gap-4">
+                            <span className="text-[10px] font-mono font-bold uppercase tracking-widest text-primary">
                               {q.difficulty_level || "Medium"}
                             </span>
-                            <div className="h-1 w-1 rounded-full bg-slate-200" />
-                            <span className="text-xs uppercase font-bold text-slate-400">
-                              {q.marks} Marks
+                            <div className="h-1 w-1 rounded-full bg-on-surface-variant/20" />
+                            <span className="text-[10px] font-mono font-bold uppercase tracking-widest text-on-surface-variant/40">
+                              Valuation <span className="text-on-surface-variant">{q.marks}u</span>
                             </span>
                           </div>
                         </div>
                       </div>
                       <div
-                        className={`p-2 rounded-full transition-all ${isOpened ? "bg-[#1a57db] text-white rotate-180" : "bg-slate-200 dark:bg-slate-800 text-slate-400"}`}
+                        className={`p-2.5 rounded-full transition-all duration-500 ${isOpened ? "bg-primary text-white rotate-180" : "bg-surface-container-highest text-on-surface-variant/40"}`}
                       >
-                        <ChevronDown size={15} />
+                        <ChevronDown size={14} />
                       </div>
                     </div>
 
                     {isOpened && (
-                      <div className="px-8 pb-8 pt-2 space-y-6 animate-in slide-in-from-top-2 duration-300">
+                      <div className="px-8 pb-10 pt-2 space-y-8 animate-in slide-in-from-top-4 duration-500 ease-botanical">
                         <div className="grid sm:grid-cols-1 md:grid-cols-2 gap-4">
                           {q.options?.map((opt) => {
-                            let style =
-                              "bg-slate-50 dark:bg-slate-800 border-slate-100 dark:border-slate-800 text-slate-600 dark:text-slate-100";
+                            let style = "bg-surface-container-high text-on-surface-variant/70 border-transparent";
                             if (opt.l === q.correct_answer)
-                              style =
-                                "bg-emerald-50 dark:bg-emerald-950/30 border-emerald-200 dark:border-emerald-800 text-emerald-700 dark:text-emerald-400 shadow-md shadow-emerald-500/5";
-                            if (
-                              ans?.selected_option === opt.l &&
-                              opt.l !== q.correct_answer
-                            )
-                              style =
-                                "bg-rose-50 dark:bg-rose-950/30 border-rose-200 dark:border-rose-800 text-rose-700 dark:text-rose-400 shadow-md shadow-rose-500/5";
+                              style = "bg-primary/10 text-primary border-primary/20 shadow-emerald-500/10";
+                            if (ans?.selected_option === opt.l && opt.l !== q.correct_answer)
+                              style = "bg-error/10 text-error border-error/20 shadow-rose-500/10";
 
                             return (
                               <div
                                 key={opt.l}
-                                className={`p-4 rounded-xl border-2 flex items-center gap-4 transition-all ${style}`}
+                                className={`p-5 rounded-3xl border-2 flex items-center gap-4 transition-all duration-300 ${style}`}
                               >
                                 <div
-                                  className={`size-6 rounded-lg flex items-center justify-center font-bold text-sm border ${
+                                  className={`size-8 rounded-xl flex items-center justify-center font-mono font-bold text-sm border transition-colors ${
                                     opt.l === q.correct_answer
-                                      ? "bg-white border-emerald-100"
-                                      : "bg-white/50 border-slate-200"
+                                      ? "bg-white border-primary/30 text-primary"
+                                      : "bg-surface-container-highest/50 border-on-surface-variant/10 text-on-surface-variant/40"
                                   }`}
                                 >
                                   {opt.l}
                                 </div>
-                                <span className="text-sm font-medium">
+                                <span className="text-sm font-bold tracking-tight">
                                   {opt.v}
                                 </span>
                                 {opt.l === q.correct_answer && (
-                                  <CheckCircle2 size={16} className="ml-auto" />
+                                  <CheckCircle2 size={18} className="ml-auto opacity-100" />
                                 )}
-                                {ans?.selected_option === opt.l &&
-                                  opt.l !== q.correct_answer && (
-                                    <XCircle size={16} className="ml-auto" />
-                                  )}
+                                {ans?.selected_option === opt.l && opt.l !== q.correct_answer && (
+                                  <XCircle size={18} className="ml-auto opacity-100" />
+                                )}
                               </div>
                             );
                           })}
                         </div>
 
-                        <div className="bg-slate-50 dark:bg-slate-800/50 p-6 rounded-3xl border border-dashed border-slate-200 dark:border-slate-700">
-                          <div className="flex items-center gap-3 mb-3 text-[#1a57db]">
-                            <Info size={16} />
-                            <span className="text-[10px] font-black uppercase tracking-widest">
-                              Expert Explanation
+                        <div className="bg-surface-container-high/40 p-8 rounded-4xl border-2 border-dashed border-on-surface-variant/10">
+                          <div className="flex items-center gap-3 mb-4 text-primary">
+                            <Info size={18} />
+                            <span className="text-[10px] font-mono font-black uppercase tracking-[0.3em]">
+                              Botanical Insights
                             </span>
                           </div>
-                          <p className="text-xs font-medium text-slate-500 leading-relaxed italic">
+                          <p className="text-sm font-medium text-on-surface-variant/80 leading-relaxed italic pr-6">
                             {q.explanation ||
-                              `The correct answer is Option ${q.correct_answer}. This topic covers essential concepts related to ${attempt?.subjects?.name}. Review your notes on this chapter for more clarity.`}
+                              `This data sequence confirms that Option ${q.correct_answer} is the optimal synthesis. Reviewing the core architectural patterns of ${attempt?.subjects?.name} will clarify this logical branch.`}
                           </p>
                         </div>
                       </div>
@@ -508,74 +506,74 @@ export default Results;
 
 const PerformanceCard = ({ metrics, attempt, questions }) => {
   return (
-    <section className="bg-white dark:bg-slate-900 p-8 md:p-12 rounded-xl border border-slate-200 dark:border-slate-800 shadow-2xl relative overflow-hidden group">
-      <div className="absolute top-0 right-0 -mt-20 -mr-20 size-80 bg-[#1a57db]/5 rounded-full blur-3xl group-hover:bg-[#1a57db]/10 transition-colors" />
+    <section className="bg-surface-container-low p-10 md:p-20 rounded-[3rem] shadow-ambient-lg relative overflow-hidden group transition-all duration-700 hover:shadow-ambient-xl">
+      <div className="absolute top-0 right-0 -mt-20 -mr-20 size-96 bg-primary/5 rounded-full blur-3xl group-hover:bg-primary/10 transition-all duration-1000" />
 
-      <div className="flex sm:flex-col lg:flex-row items-center gap-12 relative z-10">
+      <div className="flex sm:flex-col lg:flex-row items-center gap-16 relative z-10">
         {/* Score Ring */}
-        <div className="relative size-60 md:size-72 shrink-0">
+        <div className="relative size-64 md:size-80 shrink-0">
           <svg className="w-full h-full transform -rotate-90">
             <circle
               cx="50%"
               cy="50%"
               r="45%"
-              strokeWidth="20"
+              strokeWidth="16"
               fill="transparent"
-              className="text-slate-100 dark:text-slate-800"
+              className="text-surface-container-highest"
               stroke="currentColor"
             />
             <circle
               cx="50%"
               cy="50%"
               r="45%"
-              strokeWidth="20"
+              strokeWidth="16"
               fill="transparent"
               strokeDasharray="283%"
               strokeDashoffset={283 - metrics.scorePercent * 2.83}
-              className="text-[#1a57db]"
+              className="text-primary transition-all duration-1000 ease-botanical"
               stroke="currentColor"
               strokeLinecap="round"
             />
           </svg>
           <div className="absolute inset-0 flex flex-col items-center justify-center">
-            <span className="text-6xl font-black text-slate-900 dark:text-white tracking-tighter">
+            <span className="text-7xl font-mono font-black text-on-surface tracking-tighter">
               {metrics.totalScore}
             </span>
-            <span className="text-[10px] font-black uppercase text-slate-400 tracking-[0.2em] mt-1">
-              Score Out of {metrics.maxScore}
+            <span className="text-[10px] font-mono font-bold uppercase text-on-surface-variant/40 tracking-[0.2em] mt-1">
+              Limit <span className="text-on-surface-variant">{metrics.maxScore}</span>
             </span>
           </div>
         </div>
 
-        <div className="flex-1 space-y-8 w-full">
-          <div className="space-y-4 text-center lg:text-left">
-            <div className="inline-flex items-center gap-2 px-3 py-1 bg-emerald-50 dark:bg-emerald-900/30 text-emerald-600 rounded-full text-[10px] font-black uppercase tracking-widest">
+        <div className="flex-1 space-y-10 w-full">
+          <div className="space-y-6 text-center lg:text-left">
+            <div className="inline-flex items-center gap-2 px-4 py-1.5 bg-primary/10 text-primary rounded-full text-[10px] font-mono font-bold uppercase tracking-widest">
               <Zap size={12} fill="currentColor" />
-              {metrics.accuracy}% Accuracy Achieved
+              {metrics.accuracy}% System Accuracy
             </div>
-            <h2 className="text-4xl md:text-5xl font-black text-slate-900 dark:text-white tracking-tighter">
+            <h2 className="text-5xl md:text-7xl font-narrative font-black text-on-surface tracking-tighter leading-[0.9]">
               {metrics.accuracy >= 80
-                ? "Phenomenal Mastery!"
+                ? "Absolute Mastery"
                 : metrics.accuracy >= 50
-                  ? "Solid Progress!"
-                  : "Keep Pushing Harder!"}
+                  ? "Steady Growth"
+                  : "Needs Pruning"}
             </h2>
-            <p className="text-slate-500 dark:text-slate-400 text-lg font-medium leading-relaxed max-w-2xl mx-auto lg:mx-0">
-              You've completed the assessment for{" "}
-              <span className="text-[#1a57db] font-black">
+            <p className="text-on-surface-variant text-xl font-medium leading-relaxed max-w-2xl mx-auto lg:mx-0 opacity-70">
+              You've completed the evaluation for{" "}
+              <span className="text-primary font-bold">
                 {attempt?.chapters?.name}
               </span>
-              . Your performance indicates a{" "}
-              <span className="font-bold underline">
+              . Your cognitive profile indicators suggest a{" "}
+              <span className="font-bold underline decoration-primary/30 underline-offset-4">
                 {metrics.accuracy < 50
-                  ? "need for foundational revision"
-                  : "strong grasp of concepts"}
+                  ? "foundational discrepancy"
+                  : "robust internal synthesis"}
               </span>
               .
             </p>
           </div>
 
-          <div className="grid sm:grid-cols-2 md:grid-cols-4 gap-4">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {[
               {
                 label: "Time Taken",
@@ -583,32 +581,32 @@ const PerformanceCard = ({ metrics, attempt, questions }) => {
                 icon: <Clock size={16} />,
               },
               {
-                label: "Questions",
+                label: "Inventory",
                 value: questions.length,
                 icon: <BookOpen size={16} />,
               },
               {
-                label: "Exam Date",
+                label: "Record Date",
                 value: formatDate(attempt?.submitted_at || "").split(",")[0],
                 icon: <Calendar size={16} />,
               },
               {
-                label: "Status",
+                label: "Status Code",
                 value: attempt?.status,
-                icon: <Zap size={16} />,
+                icon: <Shield size={16} />,
               },
             ].map((item, i) => (
               <div
                 key={i}
-                className="bg-slate-50 dark:bg-slate-800/50 p-5 rounded-xl border border-slate-100 dark:border-slate-800 space-y-2 group/stat hover:border-[#1a57db]/30 transition-all"
+                className="p-6 rounded-2xl bg-surface-container-high/40 transition-all duration-300 group/stat hover:bg-surface-container-highest"
               >
-                <div className="text-slate-400 group-hover/stat:text-[#1a57db] transition-colors">
+                <div className="text-on-surface-variant/40 group-hover/stat:text-primary transition-colors mb-3">
                   {item.icon}
                 </div>
-                <p className="text-xl font-black text-slate-900 dark:text-white">
+                <p className="text-2xl font-mono font-black text-on-surface">
                   {item.value}
                 </p>
-                <p className="text-[9px] font-black uppercase text-slate-400 tracking-widest">
+                <p className="text-[9px] font-mono font-bold uppercase text-on-surface-variant/40 tracking-[0.2em] mt-1">
                   {item.label}
                 </p>
               </div>

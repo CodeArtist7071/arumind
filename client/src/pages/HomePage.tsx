@@ -1,320 +1,242 @@
-import { BellAlertIcon } from "@heroicons/react/24/solid";
-import {
-  Antenna,
-  ArrowRight,
-  Badge,
-  BanknoteIcon,
-  Book,
-  ChevronRight,
-  GalleryHorizontal,
-  Group,
-  NotebookPen,
-  PlayCircle,
+import { 
+  Verified, 
+  ChevronRight, 
+  ArrowRight, 
+  Notebook, 
+  GalleryHorizontal, 
+  User2Icon, 
+  NotebookPen, 
   Presentation,
-  Tv,
-  User2Icon,
-  Verified,
+  TrendingUp,
+  Award,
+  Zap,
+  Globe
 } from "lucide-react";
 import React, { useState, useEffect } from "react";
 import Footer from "../components/Footer";
 import { Header } from "../components/Header";
-import { useNotifications } from "reapop";
-
-interface featuresDataTypes {
-  icon: Element | any;
-  status: boolean;
-  title: string;
-  desc: string;
-}
-
-const featuresData: featuresDataTypes[] = [
-  {
-    icon: <Book />,
-    status: true,
-    title: "Daily Mock Tests",
-    desc: "Simulate the real exam experience with daily tests based on the latest OPSC and OSSC exam patterns.",
-  },
-  {
-    icon: <GalleryHorizontal />,
-    status: true,
-    title: "Comprehensive Material",
-    desc: "Access curated PDF notes, previous year question banks, and localized current affairs for Odisha.",
-  },
-
-  {
-    icon: <User2Icon />,
-    status: true,
-    title: "Personalized Analytics",
-    desc: "Track your performance with detailed reports highlighting your strengths and areas needing improvement.",
-  },
-  {
-    icon: <NotebookPen />,
-    status: true,
-    title: "Learn on the Go",
-    desc: "Download videos and study material to learn anytime, anywhere with our high-speed mobile app.",
-  },
-  {
-    icon: <Presentation />,
-    status: false,
-    title: "AI Expert Faculty",
-    desc: "Learn from educators who have cracked these exams themselves. Get insights and shortcuts you won't find in textbooks.",
-  },
-  // {
-  //   icon: <Tv />,
-  //   status: false,
-  //   title: "Live Interactive Classes",
-  //   desc: "Real-time doubt clearing sessions and interactive lectures to keep you engaged and on track.",
-  // },
-];
-
-const examData = [
-  {
-    icon: <BanknoteIcon />,
-    title: "OPSC",
-    desc: "Odisha Public Service Commission - Group A & B Civil Services, Medical & Judicial exams.",
-  },
-  {
-    icon: <Badge />,
-    title: "OSSC",
-    desc: "Odisha Staff Selection Commission - Combined Graduate Level (CGL), CTS, and specialized cadres.",
-  },
-  {
-    icon: <Group />,
-    title: "OSSSC",
-    desc: "Odisha Sub-Ordinate Staff Selection Commission - RI, ARI, Amin, Forest Guard, and LSI.",
-  },
-];
+import { useNavigate } from "react-router-dom";
 
 const Hompage = () => {
-  const { notify } = useNotifications();
-  const [countdown, setCountdown] = useState({
-    days: 2,
-    hours: 14,
-    minutes: 35,
-  });
+  const navigate = useNavigate();
 
-  useEffect(() => {
-    const timer = setInterval(() => {
-      setCountdown((prev) => {
-        let { days, hours, minutes } = prev;
-        if (minutes > 0) {
-          minutes--;
-        } else if (hours > 0) {
-          hours--;
-          minutes = 59;
-        } else if (days > 0) {
-          days--;
-          hours = 23;
-          minutes = 59;
-        }
-        return { days, hours, minutes };
-      });
-    }, 60000); // Update every minute
-
-    return () => clearInterval(timer);
-  }, []);
-
-  const MaterialIcon = ({ name, className = "material-symbols-outlined" }) => (
-    <span className={`${className} font-normal leading-none`}>{name}</span>
-  );
+  const featuresData = [
+    {
+      icon: <Notebook className="size-6" />,
+      title: "Daily Mock Tests",
+      desc: "Simulate the real exam experience with daily tests based on the latest OPSC and OSSC exam patterns.",
+      tag: "Active Cycle"
+    },
+    {
+      icon: <GalleryHorizontal className="size-6" />,
+      title: "Comprehensive Material",
+      desc: "Access curated PDF notes, previous year question banks, and localized current affairs for Odisha.",
+      tag: "Curated"
+    },
+    {
+      icon: <TrendingUp className="size-6" />,
+      title: "Personalized Analytics",
+      desc: "Track your performance with detailed reports highlighting your strengths and areas needing improvement.",
+      tag: "AI Powered"
+    }
+  ];
 
   return (
-    <div className="min-h-screen w-full flex flex-col overflow-x-hidden bg-linear-to-br from-orange-50 to-amber-50 dark:from-slate-900 dark:to-slate-950 text-slate-800 dark:text-slate-100 font-['Inter'] transition-colors duration-300">
+    <div className="min-h-screen bg-surface text-on-surface font-narrative overflow-x-hidden animate-reveal transition-colors duration-700">
       <Header />
-      <main className="flex-1">
-        {/* Hero Section */}
-        <section className="max-w-7xl mx-auto px-6 py-12 lg:py-20">
-          <div className="grid sm:grid-cols-1 md:grid-cols-2 gap-12">
-            <div className="w-full">
-              <div className="inline-flex items-center gap-2 bg-[#1e3a5f]/10 text-[#1e3a5f] px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider">
-                <Verified className="text-sm" />
-                Odisha's 1st AI Focus Oriented Learning Platform
+      
+      <main>
+        {/* Editorial Hero Section */}
+        <section className="relative pt-20 pb-32 px-6 lg:px-12 max-w-7xl mx-auto">
+          <div className="grid lg:grid-cols-2 gap-16 items-center">
+            <div className="space-y-10 relative z-10">
+              <div className="inline-flex items-center gap-3 bg-primary/5 text-primary px-4 py-1.5 rounded-full text-[10px] font-technical font-black uppercase tracking-[0.2em] animate-greeting">
+                <Verified size={14} />
+                Odisha's 1st AI Focus Journal
               </div>
-              <h1 className="text-5xl lg:text-6xl font-black leading-tight tracking-tight">
-                Ace Your <span className="text-[#1e3a5f]">Mind</span> Conquer
-                Every Test.
+              
+              <h1 className="text-7xl lg:text-8xl font-black leading-[0.85] tracking-tighter text-on-surface animate-greeting">
+                Ace Your <span className="text-primary italic font-serif -ml-2 lg:-ml-4">Mind</span> <br />
+                Conquer Tests.
               </h1>
-              <p className="text-slate-600 dark:text-slate-400 text-lg leading-relaxed max-w-135">
-                Comprehensive coaching and real-time mock tests for OPSC, OSSC,
-                and OSSSC aspirants. Join over 50,000 students achieving their
-                dream government careers.
+              
+              <p className="text-on-surface-variant max-w-lg text-xl lg:text-2xl leading-relaxed opacity-0 animate-greeting-delay font-medium">
+                Comprehensive coaching and real-time mock tests for <span className="text-primary font-black border-b-2 border-primary/20">OPSC</span> & <span className="text-primary font-black border-b-2 border-primary/10">OSSC</span> aspirants. 
               </p>
-              <div className="flex flex-wrap gap-4 mt-2">
-                <button className="bg-[#1e3a5f] text-white px-8 py-4 rounded-lg text-lg font-bold shadow-lg shadow-[#1e3a5f]/20 hover:scale-[1.02] active:scale-[0.98] transition-all duration-200">
-                  Try Your Level
+
+              <div className="flex flex-wrap gap-6 pt-4 opacity-0 animate-greeting-delay">
+                <button 
+                  onClick={() => navigate("/register")}
+                  className="bg-linear-to-r from-primary to-primary-container text-on-primary px-10 py-5 rounded-full text-xs font-technical font-black uppercase tracking-[0.2em] shadow-xl shadow-primary/20 hover:scale-105 active:scale-95 transition-all duration-300"
+                >
+                  Begin Your Journey
                 </button>
-                {/* <button className="dark:bg-slate-800 border border-slate-200 dark:border-slate-700 dark:text-white px-8 py-4 rounded-lg text-lg font-bold hover:bg-slate-50 dark:hover:bg-slate-700 transition-all duration-200 flex items-center gap-2">
-                  <PlayCircle />
-                  Free Demo Class
-                </button> */}
+                <div className="flex items-center gap-4 px-6 py-5 rounded-full bg-surface-container-low shadow-ambient group cursor-pointer hover:bg-white transition-all duration-500">
+                   <div className="size-10 bg-primary/10 rounded-full flex items-center justify-center text-primary group-hover:scale-110 transition-transform">
+                      <Presentation size={18} />
+                   </div>
+                   <span className="text-[10px] font-technical font-black uppercase tracking-widest text-on-surface-variant group-hover:text-primary transition-colors">Free Orientation</span>
+                </div>
               </div>
-              <div className="flex items-center gap-4 text-sm text-slate-500 mt-4">
-                <div className="flex -space-x-2">
-                  {[0, 1, 2].map((i) => (
-                    <div
-                      key={i}
-                      className="w-8 h-8 rounded-full bg-slate-300 border-2 border-white dark:border-slate-900 shadow-sm"
-                      style={{
-                        backgroundColor: `hsl(${300 + i * 50}, 40%, ${60 - i * 10}%)`,
-                      }}
-                    />
+
+              <div className="flex items-center gap-6 pt-8 opacity-0 animate-greeting-delay">
+                <div className="flex -space-x-3">
+                  {[1,2,3,4].map(i => (
+                    <div key={i} className="size-12 rounded-full border-4 border-surface overflow-hidden bg-surface-container-high shadow-sm">
+                      <img src={`https://i.pravatar.cc/100?img=${i+10}`} alt="user" className="size-full object-cover" />
+                    </div>
                   ))}
                 </div>
-                <span>
-                  Trusted by <strong>leading</strong> successful candidates
-                </span>
+                <div className="flex flex-col">
+                  <span className="text-2xl font-technical font-black text-on-surface tracking-tighter leading-none">52,480+</span>
+                  <span className="text-[9px] font-technical font-black uppercase tracking-widest text-on-surface-variant opacity-40">Verified Aspirants</span>
+                </div>
               </div>
             </div>
-            <div className="w-full">
-              <div className="relative rounded-2xl overflow-hidden shadow-2xl aspect-4/3 bg-slate-200 group">
-                <div className="absolute inset-0 bg-linear-to-tr from-[#1e3a5f]/20 to-transparent" />
-                <div
-                  className="w-full h-full bg-cover bg-center transition-transform duration-700 group-hover:scale-105"
-                  style={{
-                    backgroundImage:
-                      'url("https://lh3.googleusercontent.com/aida-public/AB6AXuAQUenS4aOtdqIYCzU1M80UYchn7-IMxiZrWTbKYhRqLY-cmbrFDZr9wFv8O4TVc3yM4Gghx79lB6nHCN-wdrdqEEcU_tzAzT3SBbIqmvz8FGaE40zT_T3KkqmxT0V8Z4YyeAAxqoceWiYrKnqSvNlHyQJBYE11Y47vtMYx4Ydcm5bBptsGxDPIQHvew1PizByxJeTvjr3dbtyEzvTIIL3vdeRG5q8qZtc2NeG69WB3Jb_IYZ33t3myi9NcaV1-Gks_gTy_Ow6GPQ")',
-                  }}
+
+            <div className="relative lg:scale-110 translate-x-12 opacity-0 animate-greeting-delay">
+              <div className="absolute inset-0 bg-primary/5 rounded-[4rem] -rotate-3 translate-x-4 translate-y-4" />
+              <div className="relative aspect-4/5 bg-surface-container-low rounded-[4rem] overflow-hidden shadow-ambient group border-8 border-surface-container-lowest">
+                <img 
+                  src="https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?q=80&w=1974&auto=format&fit=crop" 
+                  alt="Journaling" 
+                  className="size-full object-cover group-hover:scale-105 transition-transform duration-3000"
                 />
-                {/* <div className="absolute bottom-6 left-6 right-6 backdrop-blur-md p-6 rounded-xl border border-white/20 shadow-xl bg-white/90 dark:bg-slate-900/90">
-                  <div className="flex items-center justify-between">
-                    <div>
-                      <p className="text-xs text-slate-500 font-bold uppercase tracking-wide">
-                        Next Batch Starts In
-                      </p>
-                      <p className="text-xl font-black text-[#1e3a5f]">
-                        {countdown.days}d :{" "}
-                        {countdown.hours.toString().padStart(2, "0")}h :{" "}
-                        {countdown.minutes.toString().padStart(2, "0")}m
-                      </p>
-                    </div>
-                    <div className="bg-[#1e3a5f] text-white p-3 rounded-lg">
-                      <BellAlertIcon />
-                    </div>
-                  </div>
-                </div> */}
+                <div className="absolute inset-0 bg-linear-to-t from-on-surface/40 to-transparent opacity-60" />
+                <div className="absolute bottom-10 left-10 text-white">
+                  <p className="text-[10px] font-technical font-black uppercase tracking-[0.4em] mb-2 opacity-80">Next Intake</p>
+                  <p className="text-4xl font-black tracking-tighter leading-none">Sept 2024</p>
+                </div>
               </div>
             </div>
           </div>
         </section>
 
-        {/* Target Exams */}
-        <section className="py-16 bg-white/50 dark:bg-slate-900/50">
-          <div className="max-w-7xl mx-auto px-6">
-            <div className="flex flex-col md:flex-row md:items-start justify-between mb-10 gap-4">
-              <div>
-                <h2 className="text-[#1e3a5f] font-bold tracking-widest uppercase text-sm mb-2">
-                  Target Exams
+        {/* Tonal Sectioning: Target Landscapes */}
+        <section className="bg-surface-container-low pt-32 pb-40 relative">
+          <div className="max-w-7xl mx-auto px-6 lg:px-12">
+            <div className="flex flex-col lg:flex-row justify-between items-end gap-8 mb-20">
+              <div className="space-y-4">
+                <h3 className="text-[11px] font-technical font-black uppercase tracking-[0.4em] text-primary">Landscape Discovery</h3>
+                <h2 className="text-5xl lg:text-6xl font-black tracking-tighter text-on-surface leading-none">
+                  What defines your <br /> <span className="italic font-serif">Horizon?</span>
                 </h2>
-                <h3 className="text-3xl font-black dark:text-white">
-                  What are you preparing for?
-                </h3>
               </div>
-              <a
-                className="text-[#1e3a5f] font-bold flex items-center gap-1 hover:underline underline-offset-4"
-                href="#"
-              >
-                View all exam categories <ChevronRight size={20} />
-              </a>
+              <p className="text-on-surface-variant max-w-sm text-lg font-medium opacity-60 leading-relaxed">
+                Choose your specific target path. Our AI identifies the most critical nodes for your success.
+              </p>
             </div>
-            <div className="grid sm:grid-cols-1 md:grid-cols-3 gap-6">
-              {examData.map(({ icon, title, desc }, i) => (
-                <div
-                  key={i}
-                  className="group flex flex-col gap-4 rounded-xl border border-slate-200 dark:border-slate-800 p-8 hover:border-[#1e3a5f] transition-all duration-200 hover:shadow-xl bg-white/70 dark:bg-slate-900/70"
-                >
-                  <div className="w-14 h-14 bg-[#1e3a5f]/10 text-[#1e3a5f] rounded-xl flex items-center justify-center group-hover:bg-[#1e3a5f] group-hover:text-white transition-colors duration-200">
-                    {icon}
-                  </div>
-                  <div className="flex flex-col gap-2">
-                    <h2 className="dark:text-white text-2xl font-black">
-                      {title}
-                    </h2>
-                    <p className="text-slate-500 dark:text-slate-400 text-sm leading-relaxed">
-                      {desc}
-                    </p>
-                  </div>
-                  <button className="mt-4 flex items-center gap-2 text-[#1e3a5f] font-bold text-sm hover:translate-x-1 transition-transform">
-                    Explore Courses <ArrowRight className="text-sm" />
-                  </button>
+
+            <div className="grid md:grid-cols-3 gap-8">
+              {[
+                { name: "OPSC", desc: "Group A & B Civil Services, Medical & Judicial excellence.", icon: <Award className="size-8" /> },
+                { name: "OSSC", desc: "Combined Graduate Level (CGL) and specialized technical cadres.", icon: <Zap className="size-8" /> },
+                { name: "OSSSC", desc: "RI, ARI, Amin, and vital field administration roles.", icon: <Globe className="size-8" /> }
+              ].map((exam, i) => (
+                <div key={i} className="bg-surface p-10 rounded-[3rem] shadow-ambient hover-bloom group cursor-pointer relative overflow-hidden transition-colors duration-500">
+                   <div className="size-16 bg-surface-container-low rounded-2xl flex items-center justify-center text-primary mb-8 group-hover:bg-primary group-hover:text-on-primary transition-all duration-500 shadow-sm">
+                      {exam.icon}
+                   </div>
+                   <h4 className="text-3xl font-black text-on-surface mb-4 tracking-tighter">{exam.name}</h4>
+                   <p className="text-sm text-on-surface-variant font-medium leading-relaxed opacity-60 mb-10">
+                    {exam.desc}
+                   </p>
+                   <div className="pt-8 border-t border-on-surface/5 flex justify-between items-center group-hover:border-primary/20 transition-colors">
+                      <span className="text-[10px] font-technical font-black uppercase tracking-widest text-primary">Explore Syllabus</span>
+                      <ArrowRight className="size-5 text-on-surface-variant opacity-20 group-hover:opacity-100 group-hover:translate-x-2 transition-all duration-500" />
+                   </div>
                 </div>
               ))}
             </div>
           </div>
         </section>
 
-        {/* Features */}
-        <section className="max-w-7xl mx-auto px-6 py-20">
-          <div className="text-center mb-16">
-            <h2 className="text-[#1e3a5f] font-bold tracking-widest uppercase text-sm mb-2">
-              Our Features
-            </h2>
-            <h3 className="text-4xl font-black dark:text-white">
-              Why Choose Odisha Exam Prep?
-            </h3>
-            <p className="text-slate-600 dark:text-slate-400 mt-4 max-w-2xl mx-auto text-lg">
-              We combine traditional teaching excellence with modern technology
-              to deliver the most effective learning experience.
-            </p>
-          </div>
-          <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
-            {featuresData.map(({ icon, title, desc, status }, i) => (
-              <div
-                key={i}
-                className={
-                  status
-                    ? "cursor-pointer flex flex-col  gap-5 p-4 hover:scale-[1.02] transition-transform duration-200"
-                    : "cursor-not-allowed flex flex-col  gap-5 p-4 hover:scale-[1.02] transition-transform duration-200"
-                }
-              >
-                <span className="flex justify-between items-center ">
-                  <div className="w-12 h-12 bg-[#1e3a5f] rounded-lg flex items-center justify-center text-white shadow-lg">
-                    {icon}
+        {/* Feature Pods: Intentional Asymmetry */}
+        <section className="py-40 max-w-7xl mx-auto px-6 lg:px-12">
+          <div className="grid lg:grid-cols-12 gap-16 items-center">
+            <div className="lg:col-span-5 space-y-12">
+               <div className="space-y-4">
+                <h3 className="text-[11px] font-technical font-black uppercase tracking-[0.4em] text-primary">Growth Architecture</h3>
+                <h2 className="text-5xl font-black tracking-tighter text-on-surface leading-tight">
+                  A learning experience that <span className="text-primary italic">breathes.</span>
+                </h2>
+              </div>
+              
+              <div className="space-y-8">
+                {featuresData.map((f, i) => (
+                  <div key={i} className="flex gap-8 group">
+                    <div className="size-14 bg-surface-container-low rounded-2xl flex items-center justify-center text-primary group-hover:shadow-lg transition-shadow">
+                      {f.icon}
+                    </div>
+                    <div className="space-y-2">
+                       <div className="flex items-center gap-3">
+                         <h4 className="text-xl font-black text-on-surface tracking-tight">{f.title}</h4>
+                         <span className="text-[8px] font-technical font-black uppercase tracking-widest text-tertiary px-2 py-0.5 bg-tertiary/10 rounded-full">{f.tag}</span>
+                       </div>
+                       <p className="text-on-surface-variant text-sm font-medium leading-relaxed opacity-60">{f.desc}</p>
+                    </div>
                   </div>
-                  <p
-                    className={
-                      status
-                        ? `bg-green-500 text-white px-3 py-1 text-xs rounded-full`
-                        : `bg-yellow-500 text-white px-3 py-1 text-xs rounded-full`
-                    }
-                  >
-                    {status ? "try yourself" : "coming soon"}
-                  </p>
-                </span>
+                ))}
+              </div>
+            </div>
 
-                <div className="flex flex-col gap-2">
-                  <h4 className="dark:text-white text-xl font-bold">{title}</h4>
-                  <p className="text-slate-500 dark:text-slate-400 leading-relaxed">
-                    {desc}
-                  </p>
+            <div className="lg:col-span-7 grid grid-cols-2 gap-8 translate-y-12">
+              <div className="space-y-8 pt-20">
+                <div className="aspect-square bg-surface-container-high rounded-[3rem] overflow-hidden shadow-ambient hover-bloom">
+                   <img src="https://images.unsplash.com/photo-1434030216411-0b793f4b4173?q=80&w=2070&auto=format&fit=crop" alt="study" className="size-full object-cover" />
+                </div>
+                <div className="bg-primary p-12 rounded-[3.5rem] text-on-primary shadow-xl shadow-primary/20">
+                   <p className="text-5xl font-technical font-black tracking-tighter mb-2">98<span className="text-xl opacity-60">%</span></p>
+                   <p className="text-[10px] font-technical font-black uppercase tracking-widest leading-relaxed">Syllabus <br /> Penetration Rate</p>
                 </div>
               </div>
-            ))}
+              <div className="space-y-8">
+                 <div className="bg-surface-container-highest p-10 rounded-[3.5rem] shadow-ambient overflow-hidden relative group">
+                    <div className="absolute -top-4 -right-4 size-24 bg-primary/10 rounded-full blur-2xl group-hover:scale-150 transition-transform duration-1000" />
+                    <NotebookPen className="size-10 text-primary mb-6" />
+                    <p className="text-sm font-bold text-on-surface leading-relaxed">Personalized focus timers and session-tracking journals.</p>
+                 </div>
+                 <div className="aspect-3/4 bg-surface-container-low rounded-[3.5rem] overflow-hidden shadow-ambient hover-bloom">
+                    <img src="https://images.unsplash.com/photo-1517842645767-c639042777db?q=80&w=2070&auto=format&fit=crop" alt="notes" className="size-full object-cover" />
+                 </div>
+              </div>
+            </div>
           </div>
         </section>
 
-        {/* CTA Section */}
-        <section className="max-w-7xl mx-auto px-6 py-10">
-          <div className="bg-[#1e3a5f] rounded-3xl p-8 lg:p-16 flex flex-col lg:flex-row items-center justify-between gap-10">
-            <div className="text-center lg:text-left">
-              <h3 className="text-white text-3xl lg:text-4xl font-black mb-4">
-                Ready to start your preparation?
-              </h3>
-              <p className="text-blue-100 text-lg">
-                Join Odisha's most trusted learning community and secure your
-                future.
-              </p>
+        {/* CTA Section: The Big Journal Entry */}
+        <section className="max-w-7xl mx-auto px-6 lg:px-12 pb-32">
+          <div className="bg-linear-to-br from-primary to-primary-container rounded-[4rem] p-16 lg:p-24 relative overflow-hidden text-center lg:text-left">
+            <div className="absolute top-0 right-0 p-20 opacity-10 animate-pulse">
+               <Notebook size={300} className="text-on-primary" />
             </div>
-            <div className="flex flex-col sm:flex-row gap-4">
-              <button className="bg-white text-[#1e3a5f] px-8 py-4 rounded-xl text-lg font-bold hover:bg-slate-50 transition-all duration-200 shadow-lg">
-                Get Started for Free
-              </button>
-              <button className="bg-transparent border-2 border-white text-white px-8 py-4 rounded-xl text-lg font-bold hover:bg-white/10 transition-all duration-200">
-                Talk to Academic Expert
-              </button>
+            
+            <div className="grid lg:grid-cols-2 gap-12 items-center relative z-10">
+              <div className="space-y-6">
+                <h3 className="text-4xl lg:text-6xl font-black text-on-primary tracking-tighter leading-none">
+                  Ready to draft your <br /> <span className="italic">Success?</span>
+                </h3>
+                <p className="text-on-primary/80 text-xl font-medium max-w-md">
+                  Join Odisha's most intentional learning community and secure your government career.
+                </p>
+              </div>
+              
+              <div className="flex flex-col sm:flex-row gap-6 lg:justify-end">
+                <button 
+                  onClick={() => navigate("/register")}
+                  className="bg-surface-container-lowest text-primary px-10 py-5 rounded-full text-[11px] font-technical font-black uppercase tracking-[0.3em] shadow-xl hover:scale-105 active:scale-95 transition-all"
+                >
+                  Create Account
+                </button>
+                <button className="bg-transparent border-2 border-on-primary/30 text-on-primary px-10 py-5 rounded-full text-[11px] font-technical font-black uppercase tracking-[0.3em] hover:bg-on-primary/10 transition-all">
+                  Consult Faculty
+                </button>
+              </div>
             </div>
           </div>
         </section>
       </main>
+
       <Footer />
     </div>
   );

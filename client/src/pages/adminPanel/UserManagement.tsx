@@ -1,181 +1,129 @@
-import { useEffect } from "react";
-import  {supabase, adminSupabase } from "../../utils/supabase";
-import { useDispatch, useSelector } from "react-redux";
-import type { AppDispatch, RootState } from "../../store";
+import React, { useState } from "react";
+import { useTableData } from "../../hooks/useTableData";
+import { AdminTable } from "../../components/admin/AdminTable";
+import { AdminFormModal } from "../../components/admin/AdminFormModal";
+import { Plus, UserPlus } from "lucide-react";
 
-export default function UserManagement() {
-  const { user } = useSelector((state: RootState) => state.user ?? null);
-  const dispatch = useDispatch<AppDispatch>();
-  console.log("user", user);
-  useEffect(() => {
-    const loadData = async () => {
-      try {
-        const { data } = await adminSupabase.from("profiles").select("*");
+/**
+ * User Management Manifestation.
+ * Synchronized with the 'profiles' table to manage student registrations.
+ */
+const UserManagement: React.FC = () => {
+  const { data, loading, addItem, updateItem, deleteItem } = useTableData("profiles");
+  
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [editingItem, setEditingItem] = useState<any>(null);
 
-        const JsonData = data;
-        console.log("JSON", data);
-      } catch (error: any) {
-        console.log(error);
-      }
-    };
-
-    loadData();
-  }, [user]);
-  async function dates() {
-    const  { data: profiles, error } = await adminSupabase
-  .from('profiles')
-  .select('*')
-    return profiles
-  }
-
-  console.log(dates());
-
-  return (
-    <div className="flex min-h-screen bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100">
-      {/* Main */}
-      <main className="flex-1 ml-64 p-8">
-        {/* Header */}
-        <header className="flex items-center justify-between mb-8">
-          <div>
-            <h2 className="text-2xl font-bold">User Management</h2>
-            <p className="text-sm text-slate-500">
-              Manage student registrations and verification status.
-            </p>
-          </div>
-
-          <button className="bg-primary text-white px-5 py-2.5 rounded-lg flex items-center gap-2">
-            <span className="material-symbols-outlined">person_add</span>
-            Add New User
-          </button>
-        </header>
-
-        {/* Stats */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
-          <StatCard title="Total Students" value="12,450" change="+2.5%" />
-          <StatCard title="Active Today" value="856" change="+5.2%" />
-          <StatCard title="Verified Accounts" value="98%" change="+0.5%" />
-          <StatCard title="New This Week" value="+150" change="+12%" />
+  const columns = [
+    { 
+      header: "Student", 
+      key: "email",
+      render: (val: string, item: any) => (
+        <div className="flex flex-col">
+          <span className="font-bold text-slate-800 dark:text-slate-100">{item.full_name || "Anonymous Student"}</span>
+          <span className="text-[10px] opacity-60 font-mono italic">{val || item.id.split('-')[0]}</span>
         </div>
-
-        {/* Search */}
-        <div className="bg-white dark:bg-slate-900 rounded-xl border p-4 mb-6">
-          <div className="flex flex-wrap items-center gap-4">
-            <input
-              type="text"
-              placeholder="Search students..."
-              className="flex-1 min-w-[300px] bg-slate-100 dark:bg-slate-800 rounded-lg px-4 py-2 text-sm"
-            />
-
-            <select className="bg-slate-100 dark:bg-slate-800 rounded-lg px-4 py-2 text-sm">
-              <option>Status: All</option>
-              <option>Active</option>
-              <option>Inactive</option>
-              <option>Pending</option>
-            </select>
-          </div>
-        </div>
-
-        {/* Table */}
-        <div className="bg-white dark:bg-slate-900 rounded-xl border overflow-x-auto">
-          <table className="w-full text-left">
-            <thead className="text-xs uppercase text-slate-500">
-              <tr>
-                <th className="px-6 py-4">Student</th>
-                <th className="px-6 py-4">Exam</th>
-                <th className="px-6 py-4">Reg Date</th>
-                <th className="px-6 py-4">Status</th>
-                <th className="px-6 py-4 text-right">Actions</th>
-              </tr>
-            </thead>
-
-            <tbody>
-              <UserRow
-                name="Amitav Mohapatra"
-                email="amitav.m@example.com"
-                exam="OPSC Civil"
-                date="Oct 12, 2023"
-                status="Verified"
-              />
-
-              <UserRow
-                name="Priyanka Das"
-                email="priyanka.das@outlook.com"
-                exam="OSSC GL"
-                date="Oct 14, 2023"
-                status="Pending"
-              />
-            </tbody>
-          </table>
-        </div>
-      </main>
-    </div>
-  );
-}
-
-/* Components */
-
-function SidebarItem({ icon, label, active }) {
-  return (
-    <a
-      href="#"
-      className={`flex items-center gap-3 px-3 py-2 rounded-lg text-sm ${
-        active
-          ? "bg-primary/10 text-primary font-semibold"
-          : "text-slate-600 hover:bg-slate-100"
-      }`}
-    >
-      <span className="material-symbols-outlined">{icon}</span>
-      {label}
-    </a>
-  );
-}
-
-function StatCard({ title, value, change }) {
-  return (
-    <div className="bg-white dark:bg-slate-900 p-6 rounded-xl border shadow-sm">
-      <p className="text-xs text-slate-500 mb-1">{title}</p>
-
-      <div className="flex items-end justify-between">
-        <h3 className="text-2xl font-bold">{value}</h3>
-
-        <span className="text-emerald-500 text-xs flex items-center">
-          {change}
-          <span className="material-symbols-outlined text-sm">trending_up</span>
+      )
+    },
+    { 
+      header: "Role", 
+      key: "role",
+      render: (val: string) => (
+        <span className={`text-[10px] font-black tracking-widest px-2 py-0.5 rounded ${
+            val === 'admin' ? 'bg-[#16a34a]/10 text-[#16a34a]' : 'bg-slate-100 dark:bg-slate-800 text-slate-500'
+        }`}>
+          {(val || 'STUDENT').toUpperCase()}
         </span>
-      </div>
+      )
+    },
+    { 
+        header: "Verified", 
+        key: "is_verified",
+        render: (val: boolean) => (val ? "✅" : "⏳")
+    },
+    { 
+        header: "Reg Date", 
+        key: "created_at",
+        render: (val: string) => <span className="text-[10px] opacity-60">{new Date(val).toLocaleDateString()}</span>
+    },
+  ];
+
+  const fields: any[] = [
+    { name: "full_name", label: "Full Name", type: "text", required: true },
+    { name: "email", label: "Email Address", type: "text", required: true },
+    { 
+      name: "role", 
+      label: "Platform Role", 
+      type: "select", 
+      options: [
+        { label: "Student", value: "student" },
+        { label: "Admin", value: "admin" }
+      ]
+    },
+    { name: "is_verified", label: "Verification Status", type: "checkbox" },
+  ];
+
+  const handleApply = async (formData: any) => {
+    try {
+      if (editingItem) {
+        await updateItem(editingItem.id, formData);
+      } else {
+        await addItem(formData);
+      }
+      setIsModalOpen(false);
+      setEditingItem(null);
+    } catch (err: any) {
+      alert("Synchronization Error: " + err.message);
+    }
+  };
+
+  return (
+    <div className="p-10 space-y-10 animate-in fade-in slide-in-from-bottom-6 duration-700">
+      <header className="flex items-center justify-between">
+        <div>
+          <h2 className="text-4xl font-bold tracking-tight text-slate-800 dark:text-slate-100 italic">
+            User Manifestations
+          </h2>
+          <p className="text-[10px] text-[#16a34a] uppercase font-black tracking-[0.3em] mt-2">
+            Managing Student Registrations and Permissions
+          </p>
+        </div>
+        <button
+          onClick={() => {
+            setEditingItem(null);
+            setIsModalOpen(true);
+          }}
+          className="group flex items-center gap-3 px-8 py-4 bg-[#16a34a] text-white rounded-xl font-black text-xs uppercase tracking-widest hover:shadow-2xl hover:shadow-[#16a34a]/30 hover:-translate-y-1 transition-all duration-300"
+        >
+          <UserPlus size={18} className="group-hover:scale-110 transition-transform duration-300" />
+          Add New User
+        </button>
+      </header>
+
+      <AdminTable
+        columns={columns}
+        data={data}
+        onEdit={(item) => {
+          setEditingItem(item);
+          setIsModalOpen(true);
+        }}
+        onDelete={(id) => {
+          if (window.confirm("Verify: Terminate this user profile?"))
+            deleteItem(id);
+        }}
+        loading={loading}
+      />
+
+      <AdminFormModal
+        isOpen={isModalOpen}
+        title={editingItem ? "Alter Profile" : "Manifest New User"}
+        fields={fields}
+        initialData={editingItem}
+        onClose={() => setIsModalOpen(false)}
+        onSubmit={handleApply}
+      />
     </div>
   );
-}
+};
 
-function UserRow({ name, email, exam, date, status }) {
-  return (
-    <tr className="border-t hover:bg-slate-50 dark:hover:bg-slate-800/30">
-      <td className="px-6 py-4">
-        <div>
-          <p className="font-semibold">{name}</p>
-          <p className="text-xs text-slate-500">{email}</p>
-        </div>
-      </td>
-
-      <td className="px-6 py-4 text-sm">{exam}</td>
-
-      <td className="px-6 py-4 text-sm">{date}</td>
-
-      <td className="px-6 py-4 text-sm">{status}</td>
-
-      <td className="px-6 py-4 text-right flex justify-end gap-2">
-        <button className="p-1 hover:text-primary">
-          <span className="material-symbols-outlined">visibility</span>
-        </button>
-
-        <button className="p-1 hover:text-primary">
-          <span className="material-symbols-outlined">edit</span>
-        </button>
-
-        <button className="p-1 hover:text-red-600">
-          <span className="material-symbols-outlined">block</span>
-        </button>
-      </td>
-    </tr>
-  );
-}
+export default UserManagement;

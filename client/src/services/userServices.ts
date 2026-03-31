@@ -15,14 +15,16 @@ export const getUserProfile = async () => {
   return { user: session.user, profile: data };
 };
 
-export const examService = async (updates: string, id: string) => {
+export const updateUserProfile = async (updates: any, id: string) => {
   const { data, error } = await supabase
     .from("profiles")
     .update(updates)
     .eq("id", id)
-    .select();
+    .select()
+    .single();
+  
   if (error) {
-    return new Error("error", error);
+    throw error;
   }
-  return { data };
+  return data;
 };

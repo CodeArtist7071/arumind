@@ -8,6 +8,9 @@ import { useGoogleCalendar } from "../../utils/useGoogleCalender";
 import { getChaptersByExamID } from "../../services/examService";
 import { useEffect, useState } from "react";
 import type { Habit } from "./TrackerGrid";
+import { TimePicker } from "./TimePicker";
+import { getLocalDateString } from "../../utils/getLocaleDateString";
+import { parseRoutineWithAI } from "../../utils/parseRoutineWithAI";
 
 interface AddRoutineProps {
   isOpen: boolean;
@@ -21,6 +24,7 @@ interface AddRoutineProps {
   onRefresh?: () => void;
   initialProgress?: Record<string, boolean[]>;
   onRequestConnection?: () => void;
+  initialUseChapter?: boolean;
 }
 
 type ToastType = "success" | "error" | "info" | "loading";
@@ -41,43 +45,6 @@ type FormValues = {
   syncToCalendar: boolean;
 };
 
-// ── AI parser ──────────────────────────────────────────────────────────────
-const parseRoutineWithAI = async (text: string): Promise<Partial<FormValues>> => {
-  const key = import.meta.env.VITE_GEMINI_API_KEY;
-  if (!key) throw new Error("No Gemini API key found");
-
-  const res = await fetch(
-    `https://aiplatform.googleapis.com/v1/publishers/google/models/gemini-2.0-flash:generateContent?key=${key}`,
-    {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({
-        contents: [{
-          parts: [{
-            text: `Extract routine details from this text and return ONLY valid JSON with no markdown.
-
-Text: "${text}"
-
-Return this exact shape:
-{
-  "habit": "short routine name as string",
-  "priority": "HIGH or MEDIUM or LOW",
-  "start_time": "HH:MM in 24h format or empty string",
-  "end_time": "HH:MM in 24h format or empty string"
-}`,
-          }],
-        }],
-        generationConfig: { temperature: 0.1, maxOutputTokens: 150 },
-      }),
-    },
-  );
-
-  if (!res.ok) throw new Error(`Gemini error ${res.status}`);
-  const data = await res.json();
-  const raw = data.candidates?.[0]?.content?.parts?.[0]?.text || "";
-  return JSON.parse(raw.replace(/```json|```/g, "").trim());
-};
-
 // ── Toast component ────────────────────────────────────────────────────────
 const ToastBanner = ({ toast }: { toast: Toast | null }) => {
   if (!toast) return null;
@@ -85,8 +52,8 @@ const ToastBanner = ({ toast }: { toast: Toast | null }) => {
   const styles: Record<ToastType, { bg: string; text: string; border: string; icon: React.ReactNode }> = {
     success: { bg: "bg-green-50", text: "text-green-700", border: "border-green-200", icon: <CheckCircle2 size={14} className="text-green-600 shrink-0" /> },
     error: { bg: "bg-red-50", text: "text-red-700", border: "border-red-200", icon: <AlertCircle size={14} className="text-red-600 shrink-0" /> },
-    info: { bg: "bg-blue-50", text: "text-blue-700", border: "border-blue-200", icon: <Zap size={14} className="text-blue-600 shrink-0" /> },
-    loading: { bg: "bg-slate-50", text: "text-slate-600", border: "border-slate-200", icon: <Loader size={14} className="animate-spin text-slate-500 shrink-0" /> },
+    info: { bg: "bg-green-50", text: "text-green-700", border: "border-green-200", icon: <Zap size={14} className="text-primary shrink-0" /> },
+    loading: { bg: "bg-surface-container-low", text: "text-slate-600", border: "border-slate-200", icon: <Loader size={14} className="animate-spin text-on-surface-variant shrink-0" /> },
   };
 
   const s = styles[toast.type];
@@ -98,61 +65,16 @@ const ToastBanner = ({ toast }: { toast: Toast | null }) => {
   );
 };
 
-// ── Friendly Time Picker ────────────────────────────────────────────────────
-const FriendlyTimePicker = ({ label, value, onChange, error }: { label: string; value: string; onChange: (val: string) => void; error?: string; }) => {
-  const [h24, m] = (value || "09:00").split(":");
-  let hNum = parseInt(h24);
-  const ampm = hNum >= 12 ? "PM" : "AM";
-  const h12 = hNum % 12 || 12;
 
-  const handleHChange = (newH12: string) => {
-    let nh = parseInt(newH12);
-    if (ampm === "PM" && nh < 12) nh += 12;
-    if (ampm === "AM" && nh === 12) nh = 0;
-    onChange(`${nh.toString().padStart(2, "0")}:${m}`);
-  };
-
-  const handleMChange = (newM: string) => { onChange(`${h24}:${newM.padStart(2, "0")}`); };
-  const handleAMPMChange = (newAMPM: string) => {
-    if (newAMPM === ampm) return;
-    let nh = hNum;
-    if (newAMPM === "PM" && hNum < 12) nh += 12;
-    if (newAMPM === "AM" && hNum >= 12) nh -= 12;
-    onChange(`${nh.toString().padStart(2, "0")}:${m}`);
-  };
-
-  const hours = Array.from({ length: 12 }, (_, i) => (i + 1).toString());
-
-  return (
-    <div className="space-y-1.5 flex-1">
-      <label className="text-[10px] font-black uppercase text-green-700 flex items-center gap-1.5 ml-1"><Clock size={10} /> {label}</label>
-      <div className={`flex items-center gap-1 p-1 bg-slate-50 border rounded-xl transition-all ${error ? "border-red-300 ring-2 ring-red-50" : "border-slate-200 focus-within:ring-2 focus-within:ring-green-100 focus-within:border-green-300"}`}>
-        <select value={h12.toString()} onChange={(e) => handleHChange(e.target.value)} className="bg-transparent text-sm font-bold text-slate-700 outline-none px-1 py-1 cursor-pointer">
-          {hours.map(h => <option key={h} value={h}>{h}</option>)}
-        </select>
-        <span className="text-slate-400 font-bold">:</span>
-        <select value={m} onChange={(e) => handleMChange(e.target.value)} className="bg-transparent text-sm font-bold text-slate-700 outline-none px-1 py-1 cursor-pointer">
-          {Array.from({length: 60}, (_, i) => i.toString().padStart(2, "0")).map(min => (
-             <option key={min} value={min}>{min}</option>
-          ))}
-        </select>
-        <div className="flex ml-auto bg-white border border-slate-100 rounded-lg p-0.5 shadow-sm">
-          {["AM", "PM"].map(type => (
-            <button key={type} type="button" onClick={() => handleAMPMChange(type)} className={`px-2 py-1 rounded-md text-[9px] font-black transition-all ${ampm === type ? "bg-green-600 text-white shadow-sm" : "text-slate-400 hover:text-slate-600"}`}>{type}</button>
-          ))}
-        </div>
-      </div>
-      {error && <p className="text-[9px] font-bold text-red-500 pl-1">{error}</p>}
-    </div>
-  );
-};
 
 // ── Priority badge ──────────────────────────────────────────────────────────
 const priorityMeta = {
   HIGH:   { bg: "bg-red-100",    text: "text-red-700",    dot: "bg-red-500"    },
   MEDIUM: { bg: "bg-amber-100",  text: "text-amber-700",  dot: "bg-amber-500"  },
-  LOW:    { bg: "bg-slate-100",  text: "text-slate-600",  dot: "bg-slate-400"  },
+  LOW:    { bg: "bg-surface-container-high",  text: "text-slate-600",  dot: "bg-slate-400"  },
 };
+
+
 
 export const AddRoutine = ({
   isOpen,
@@ -166,8 +88,9 @@ export const AddRoutine = ({
   onRefresh,
   initialProgress: incomingProgress,
   onRequestConnection,
+  initialUseChapter,
 }: AddRoutineProps) => {
-  const { user, profile } = useSelector((state: RootState) => state.user ?? null);
+  const { user, profile } = useSelector((state: RootState) => state.user || { user: null, profile: null });
   const dispatch = useDispatch<AppDispatch>();
   const { connected, addEvent, editEvent } = useGoogleCalendar();
 
@@ -218,21 +141,26 @@ export const AddRoutine = ({
             const dayIdx = prog.findIndex((x: boolean) => x === true);
             if (dayIdx >= 0) {
               const d = new Date(viewYear, viewMonth - 1, dayIdx + 1);
-              setValue("date", d.toISOString().split('T')[0]);
+              setValue("date", getLocalDateString(d));
             }
           }
         }
       }
     } else if (isOpen) {
+      const now = new Date();
+      // If we are in the view month/year, use exact today. Else 1st.
+      const isCurrentView = now.getMonth() + 1 === viewMonth && now.getFullYear() === viewYear;
+      const initialDay = isCurrentView ? now.getDate() : 1;
+
       reset({ 
         priority: "MEDIUM", 
         is_recurring: true, 
         syncToCalendar: connected,
-        date: new Date(viewYear, viewMonth - 1, new Date().getDate()).toISOString().split('T')[0]
+        date: getLocalDateString(new Date(viewYear, viewMonth - 1, initialDay))
       });
-      setUseChapter(false);
+      setUseChapter(initialUseChapter || false);
     }
-  }, [editingHabitId, isOpen, initialHabits, reset, setValue, connected, viewYear, viewMonth, incomingProgress]);
+  }, [editingHabitId, isOpen, initialHabits, reset, setValue, connected, viewYear, viewMonth, incomingProgress, initialUseChapter]);
 
   const handleAIParse = async () => {
     if (!aiInput.trim()) { showToast("error", "Please describe your routine first"); return; }
@@ -266,7 +194,7 @@ export const AddRoutine = ({
         const habit = initialHabits.find((h) => h.id === editingHabitId);
         if (!habit) return;
         const table = habit.is_mastery ? "user_mastery" : "study_habits";
-        const updateData: any = { priority: data.priority, start_time: data.start_time, end_time: data.end_time, chapter_id: useChapter ? data.chapter_id : null, scheduled_date: !data.is_recurring ? data.date : null, is_recurring: data.is_recurring };
+        const updateData: any = { priority: data.priority, start_time: data.start_time, end_time: data.end_time, chapter_id: useChapter ? data.chapter_id : null, is_recurring: data.is_recurring };
         if (!habit.is_mastery) updateData.name = name;
         await supabase.from(table).update(updateData).eq("id", editingHabitId);
 
@@ -277,7 +205,7 @@ export const AddRoutine = ({
            const newYear = newDate.getFullYear();
            const newProgress = Array(31).fill(false);
            if (!data.is_recurring || habit.is_mastery) newProgress[newDayIdx] = true;
-           await supabase.from(table).update({ progress: newProgress, month: newMonth, year: newYear, scheduled_date: !data.is_recurring ? data.date : null }).eq("id", editingHabitId);
+           await supabase.from(table).update({ progress: newProgress, month: newMonth, year: newYear }).eq("id", editingHabitId);
         }
 
         if (connected && data.syncToCalendar) {
@@ -304,7 +232,8 @@ export const AddRoutine = ({
           await supabase.from("profiles").update({ planner_start_date: new Date().toISOString() }).eq("id", user.id);
           dispatch(updateUserLocally({ planner_start_date: new Date().toISOString() }));
         }
-        const habitData: any = { user_id: user.id, name, priority: data.priority, start_time: data.start_time, end_time: data.end_time, category: "theory", progress: Array(31).fill(false), month: viewMonth, year: viewYear, exam_id: examId, chapter_id: useChapter ? data.chapter_id : null, scheduled_date: !data.is_recurring ? data.date : null, is_recurring: data.is_recurring };
+        const habitData: any = { user_id: user.id, priority: data.priority, start_time: data.start_time, end_time: data.end_time, progress: Array(31).fill(false), month: viewMonth, year: viewYear, exam_id: examId, chapter_id: useChapter ? data.chapter_id : null, is_recurring: data.is_recurring };
+        if (!useChapter) habitData.name = name;
         const scheduledDate = data.date ? new Date(data.date) : new Date();
         const isTargetMonth = scheduledDate.getMonth() + 1 === viewMonth && scheduledDate.getFullYear() === viewYear;
         if (isTargetMonth) habitData.progress[scheduledDate.getDate() - 1] = true;
@@ -337,52 +266,52 @@ export const AddRoutine = ({
   const pm = priorityMeta[priority || "MEDIUM"];
 
   return (
-    <div className="fixed inset-0 flex items-center justify-center bg-black/50 z-60 p-4">
-      <div className="bg-white w-full max-w-md rounded-2xl shadow-2xl relative overflow-hidden">
-        <div className="h-1 w-full bg-gradient-to-r from-green-500 via-emerald-400 to-green-600" />
+    <div className="fixed inset-0 flex items-center justify-center bg-black/50 z-100 p-4">
+      <div className="bg-surface w-full max-w-md rounded-2xl shadow-2xl relative overflow-hidden">
+        <div className="h-1 w-full bg-linear-to-r from-green-500 via-emerald-400 to-green-600" />
         <div className="flex items-center justify-between px-6 pt-5 pb-3">
           <div>
             <p className="text-lg font-black text-green-800">{title || (editingHabitId ? "Update Routine" : "Add New Routine")}</p>
             <p className="text-xs text-slate-400 font-medium mt-0.5">{editingHabitId ? "Modify your existing routine details below" : "Describe it naturally or fill in the fields"}</p>
           </div>
-          <button onClick={onClose} className="p-2 rounded-full hover:bg-slate-100 text-slate-400 hover:text-slate-700 transition-colors"><X size={18} /></button>
+          <button onClick={onClose} className="p-2 rounded-full hover:bg-surface-container-high text-slate-400 hover:text-slate-700 transition-colors"><X size={18} /></button>
         </div>
 
         <div className="px-6 pb-6 space-y-4">
           <ToastBanner toast={toast} />
 
           {!editingHabitId && (
-            <div className="bg-gradient-to-br from-green-50 to-emerald-50 border border-green-200 rounded-xl p-4 space-y-3">
+            <div className="bg-linear-to-br from-green-50 to-emerald-50 border border-green-200 rounded-xl p-4 space-y-3">
               <div className="flex items-center gap-2">
                 <Sparkles size={13} className="text-green-600" />
                 <span className="text-[10px] font-black uppercase tracking-widest text-green-700">AI Smart Fill</span>
                 {aiFilled && <span className="ml-auto text-[10px] font-bold text-green-600 flex items-center gap-1"><CheckCircle2 size={11} /> Filled</span>}
               </div>
               <div className="flex gap-2">
-                <input value={aiInput} onChange={(e) => setAiInput(e.target.value)} onKeyDown={(e) => e.key === "Enter" && handleAIParse()} placeholder="e.g. Wake up at 9am, Study from 10 to 12..." className="flex-1 px-3 py-2.5 rounded-lg border border-green-200 bg-white text-sm text-slate-700 outline-none focus:ring-2 focus:ring-green-300 placeholder:text-slate-400" />
+                <input value={aiInput} onChange={(e) => setAiInput(e.target.value)} onKeyDown={(e) => e.key === "Enter" && handleAIParse()} placeholder="e.g. Wake up at 9am, Study from 10 to 12..." className="flex-1 px-3 py-2.5 rounded-lg border border-green-200 bg-surface text-sm text-slate-700 outline-none focus:ring-2 focus:ring-green-300 placeholder:text-slate-400" />
                 <button type="button" onClick={handleAIParse} disabled={aiParsing} className="px-4 py-2.5 bg-green-600 hover:bg-green-700 disabled:opacity-60 text-white rounded-lg text-xs font-black uppercase flex items-center gap-1.5 transition-colors">{aiParsing ? <Loader size={13} className="animate-spin" /> : <Sparkles size={13} />}{aiParsing ? "..." : "Fill"}</button>
               </div>
             </div>
           )}
 
           {!editingHabitId && (
-            <div className="flex bg-slate-100 p-1 rounded-lg">
-              <button type="button" onClick={() => setValue("is_recurring", true)} className={`flex-1 py-1.5 text-[10px] font-black uppercase rounded-md transition-all ${isRecurring ? "bg-white text-green-700 shadow-sm" : "text-slate-400"}`}>Monthly Habit</button>
-              <button type="button" onClick={() => setValue("is_recurring", false)} className={`flex-1 py-1.5 text-[10px] font-black uppercase rounded-md transition-all ${!isRecurring ? "bg-white text-green-700 shadow-sm" : "text-slate-400"}`}>One-off Task</button>
+            <div className="flex bg-surface-container-high p-1 rounded-lg">
+              <button type="button" onClick={() => setValue("is_recurring", true)} className={`flex-1 py-1.5 text-[10px] font-black uppercase rounded-md transition-all ${isRecurring ? "bg-surface text-green-700 shadow-sm" : "text-slate-400"}`}>Monthly Habit</button>
+              <button type="button" onClick={() => setValue("is_recurring", false)} className={`flex-1 py-1.5 text-[10px] font-black uppercase rounded-md transition-all ${!isRecurring ? "bg-surface text-green-700 shadow-sm" : "text-slate-400"}`}>One-off Task</button>
             </div>
           )}
 
           {!editingHabitId && (
-            <div className="flex bg-slate-100 p-1 rounded-lg">
-              <button type="button" onClick={() => setUseChapter(false)} className={`flex-1 py-1.5 text-[10px] font-black uppercase rounded-md transition-all ${!useChapter ? "bg-white text-green-700 shadow-sm" : "text-slate-400"}`}>Manual Entry</button>
-              <button type="button" onClick={() => setUseChapter(true)} className={`flex-1 py-1.5 text-[10px] font-black uppercase rounded-md transition-all ${useChapter ? "bg-white text-green-700 shadow-sm" : "text-slate-400"}`}>From Syllabus</button>
+            <div className="flex bg-surface-container-high p-1 rounded-lg">
+              <button type="button" onClick={() => setUseChapter(false)} className={`flex-1 py-1.5 text-[10px] font-black uppercase rounded-md transition-all ${!useChapter ? "bg-surface text-green-700 shadow-sm" : "text-slate-400"}`}>Manual Entry</button>
+              <button type="button" onClick={() => setUseChapter(true)} className={`flex-1 py-1.5 text-[10px] font-black uppercase rounded-md transition-all ${useChapter ? "bg-surface text-green-700 shadow-sm" : "text-slate-400"}`}>From Syllabus</button>
             </div>
           )}
 
           <div>
             <label className="text-[10px] font-black uppercase text-green-700 mb-1.5 flex items-center gap-1.5"><Tag size={10} /> {useChapter ? "Select Chapter" : "Routine Name"}</label>
             {useChapter ? (
-              <select {...register("chapter_id", { required: useChapter ? "Chapter is required" : false })} className="w-full px-4 py-3 rounded-lg border border-slate-200 text-sm text-green-800 outline-none focus:ring-2 focus:ring-green-200 appearance-none bg-white">
+              <select {...register("chapter_id", { required: useChapter ? "Chapter is required" : false })} className="w-full px-4 py-3 rounded-lg  text-sm text-green-800 outline-none focus:ring-2 focus:ring-green-200 appearance-none bg-surface">
                 <option value="">-- Choose Chapter --</option>
                 {chapters.map(c => <option key={c.id} value={c.id}>{c.name}</option>)}
               </select>
@@ -393,17 +322,17 @@ export const AddRoutine = ({
 
           <div className="flex gap-4">
             <Controller name="start_time" control={control} rules={{ required: "Start time is mandatory" }} render={({ field }) => (
-              <FriendlyTimePicker label="Start Time" value={field.value} onChange={field.onChange} error={errors.start_time?.message} />
+              <TimePicker label="Start Time" value={field.value} onChange={field.onChange} error={errors.start_time?.message} />
             )} />
             <Controller name="end_time" control={control} rules={{ required: "End time is mandatory" }} render={({ field }) => (
-              <FriendlyTimePicker label="End Time" value={field.value} onChange={field.onChange} error={errors.end_time?.message} />
+              <TimePicker label="End Time" value={field.value} onChange={field.onChange} error={errors.end_time?.message} />
             )} />
           </div>
 
           {(useChapter || !isRecurring || (editingHabitId && initialHabits.find(h => h.id === editingHabitId)?.is_mastery)) && (
             <div className="space-y-1.5 animate-in fade-in slide-in-from-top-1 duration-300">
               <label className="text-[10px] font-black uppercase text-green-700 flex items-center gap-1.5 ml-1"><Calendar size={10} /> Scheduled Date</label>
-              <input type="date" {...register("date")} disabled={!isRecurring && !unlockPastDays && dateValue !== new Date().toISOString().split('T')[0]} className="w-full px-4 py-2.5 rounded-xl border border-slate-200 bg-slate-50 text-sm font-bold text-slate-700 outline-none focus:ring-2 focus:ring-green-100 disabled:opacity-50" />
+              <input type="date" {...register("date")} disabled={!isRecurring && !unlockPastDays && dateValue !== new Date().toISOString().split('T')[0]} className="w-full px-4 py-2.5 rounded-xl  bg-surface-container-low text-sm font-bold text-slate-700 outline-none focus:ring-2 focus:ring-green-100 disabled:opacity-50" />
             </div>
           )}
 
@@ -414,7 +343,7 @@ export const AddRoutine = ({
                  const m = priorityMeta[p];
                  const isSelected = priority === p;
                  return (
-                   <label key={p} className={`flex items-center justify-center gap-1.5 py-2.5 rounded-lg border-2 cursor-pointer transition-all text-xs font-black uppercase ${isSelected ? `${m.bg} ${m.text} border-current` : "bg-slate-50 text-slate-400 border-slate-200"}`}>
+                   <label key={p} className={`flex items-center justify-center gap-1.5 py-2.5 rounded-lg border-2 cursor-pointer transition-all text-xs font-black uppercase ${isSelected ? `${m.bg} ${m.text} border-current` : "bg-surface-container-low text-slate-400 border-slate-200"}`}>
                      <input type="radio" value={p} {...register("priority", { required: true })} className="hidden" />
                      <span className={`w-2 h-2 rounded-full ${isSelected ? m.dot : "bg-slate-300"}`} />
                      {p}
@@ -424,18 +353,18 @@ export const AddRoutine = ({
              </div>
           </div>
 
-          <div className="flex items-center justify-between p-4 bg-blue-50/50 rounded-2xl border border-blue-100/50">
+          <div className="flex items-center justify-between p-4 bg-green-50/50 rounded-2xl border border-green-100/50">
              <div className="flex items-center gap-2.5">
-               <div className={`p-2 rounded-lg ${connected ? 'bg-blue-100 text-blue-600' : 'bg-slate-100 text-slate-400'}`}><Calendar size={16} /></div>
+               <div className={`p-2 rounded-lg ${connected ? 'bg-primary/10 text-primary' : 'bg-surface-container-high text-slate-400'}`}><Calendar size={16} /></div>
                <div>
                   <p className="text-xs font-black text-slate-700">Google Calendar Sync</p>
-                  <p className="text-[10px] text-slate-500 font-medium">{connected ? "Enabled for this routine" : "Connect calendar to enable"}</p>
+                  <p className="text-[10px] text-on-surface-variant font-medium">{connected ? "Enabled for this routine" : "Connect calendar to enable"}</p>
                </div>
              </div>
              {connected ? (
                  <label className="relative inline-flex items-center cursor-pointer">
                     <input type="checkbox" {...register("syncToCalendar")} className="sr-only peer" />
-                    <div className="w-11 h-6 rounded-full transition-all bg-slate-200 peer-checked:bg-green-600 after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:after:translate-x-full"></div>
+                    <div className="w-11 h-6 rounded-full transition-all bg-slate-200 peer-checked:bg-green-600 after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-surface after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:after:translate-x-full"></div>
                  </label>
              ) : (
                  <div className="relative inline-flex items-center cursor-pointer" onClick={() => onRequestConnection && onRequestConnection()}><div className="w-11 h-6 rounded-full transition-all bg-slate-200"></div></div>

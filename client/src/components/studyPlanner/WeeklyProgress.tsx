@@ -20,7 +20,7 @@ const ProgressPie = ({ completed, total, size = 60, strokeWidth = 6 }: { complet
     { value: completed },
     { value: Math.max(0, total - completed) }
   ];
-  const COLORS = ['#1a57db', '#e2e8f0'];
+  const COLORS = ['var(--color-primary)', 'var(--color-surface-container-highest)'];
 
   return (
     <div className="relative flex flex-col items-center">
@@ -38,13 +38,13 @@ const ProgressPie = ({ completed, total, size = 60, strokeWidth = 6 }: { complet
               endAngle={-270}
             >
               <Cell fill={COLORS[0]} />
-              <Cell fill={COLORS[1]} className="dark:fill-slate-800" />
+              <Cell fill={COLORS[1]} />
             </Pie>
           </PieChart>
         </ResponsiveContainer>
       </div>
-      <div className="absolute inset-x-0 top-[20%] flex flex-col items-center justify-center pointer-events-none">
-        <span className="text-[10px] font-black leading-none">{percent}%</span>
+      <div className="absolute inset-x-0 top-[22%] flex flex-col items-center justify-center pointer-events-none">
+        <span className="text-[10px] font-technical font-black leading-none opacity-40">{percent}%</span>
       </div>
     </div>
   );
@@ -74,99 +74,100 @@ export default function WeeklyProgress({
     { 
       label: "Mastery Score", 
       value: `${averageConsistency}%`, 
-      icon: <Zap size={16} className="text-amber-500" />,
+      icon: <Zap size={18} fill="currentColor" />,
+      color: "text-tertiary",
       desc: "Overall syllabus mastery" 
     },
     { 
       label: "Items Finished", 
       value: monthlyCompleted, 
-      icon: <CheckCircle2 size={16} className="text-emerald-500" />,
+      icon: <CheckCircle2 size={18} />,
+      color: "text-primary",
       desc: `${monthlyTotal} total tasks scheduled` 
     },
     { 
       label: "Planner Status", 
-      value: averageConsistency > 80 ? "Elite" : averageConsistency > 50 ? "Productive" : "Starting", 
-      icon: <Award size={16} className="text-blue-500" />,
+      value: averageConsistency > 80 ? "Elite" : averageConsistency > 50 ? "Pro" : "Seed", 
+      icon: <Award size={18} />,
+      color: "text-primary",
       desc: "Your current study rank" 
     },
     { 
       label: "Est. Completion", 
       value: `${estDays} Days`, 
-      icon: <Calendar size={16} className="text-rose-500" />,
+      icon: <Calendar size={18} />,
+      color: "text-tertiary",
       desc: "Based on current focus" 
     }
   ];
 
   return (
-    <div className="space-y-8">
-      <div className="flex items-center justify-between">
+    <div className="space-y-12">
+      <div className="flex items-center justify-between px-2">
         <div>
-          <h2 className="text-xl font-black tracking-tight flex items-center gap-2">
-            <TrendingUp className="text-[#1a57db]" size={20} />
-            Academic Progress Hub
+          <h3 className="text-[11px] font-technical font-black uppercase tracking-[0.4em] text-on-surface-variant opacity-60 mb-2">Academic Vitals</h3>
+          <h2 className="text-3xl font-black tracking-tighter text-on-surface">
+            Progress Metrics
           </h2>
-          <p className="text-[10px] text-slate-400 uppercase font-bold tracking-widest mt-1">Syllabus mastery & milestone analysis</p>
         </div>
       </div>
 
-      <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
         {perks.map((perk, i) => (
-          <div key={i} className="bg-white dark:bg-slate-900/50 p-5 rounded-3xl border border-slate-100 dark:border-slate-800 hover:shadow-xl hover:shadow-[#1a57db]/5 transition-all group">
-            <div className="flex items-start justify-between mb-4">
-               <div className="p-2.5 bg-slate-50 dark:bg-slate-800 rounded-2xl group-hover:scale-110 transition-transform">
+          <div key={i} className="bg-surface-container-low p-8 rounded-4xl shadow-ambient hover:scale-105 transition-all duration-500 group">
+            <div className="flex items-start justify-between mb-8">
+               <div className={`p-4 bg-surface-container-high rounded-2xl group-hover:bg-primary group-hover:text-white transition-all duration-500 ${perk.color}`}>
                   {perk.icon}
                </div>
-               <span className="text-[8px] font-black uppercase tracking-widest text-slate-400">Live Metric</span>
+               <span className="text-[9px] font-technical font-black uppercase tracking-widest text-on-surface-variant opacity-30">Live</span>
             </div>
             <div className="space-y-1">
-              <h4 className="text-2xl font-black text-slate-900 dark:text-white">{perk.value}</h4>
-              <p className="text-[10px] font-bold text-slate-500 uppercase tracking-tight">{perk.label}</p>
-            </div>
-            <div className="mt-4 pt-4 border-t border-slate-50 dark:border-slate-800/50">
-               <p className="text-[10px] text-slate-400 font-medium italic">"{perk.desc}"</p>
+              <h4 className="text-4xl font-technical font-black text-on-surface tracking-tighter">{perk.value}</h4>
+              <p className="text-[10px] font-technical font-black text-on-surface-variant uppercase tracking-[0.2em] opacity-40">{perk.label}</p>
             </div>
           </div>
         ))}
       </div>
 
-      <div className="grid grid-cols-1 lg:grid-cols-12 gap-6">
+      <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 pt-4">
         {/* Monthly Master Pie */}
-        <div className="lg:col-span-5 bg-slate-50 dark:bg-slate-800/20 p-8 rounded-[2.5rem] border border-slate-200/50 dark:border-slate-800 flex flex-col items-center justify-center gap-6">
-          <h3 className="text-xs font-black uppercase tracking-[0.2em] text-slate-400">Monthly Mastery</h3>
-          <div className="relative size-48">
-            <ProgressPie completed={monthlyCompleted} total={monthlyTotal} size={200} strokeWidth={20} />
+        <div className="lg:col-span-5 bg-surface-container-low p-10 rounded-[3rem] shadow-ambient flex flex-col items-center justify-center gap-10">
+          <h3 className="text-[11px] font-technical font-black uppercase tracking-[0.4em] text-on-surface-variant opacity-40">Monthly Mastery</h3>
+          <div className="relative size-60">
+            <ProgressPie completed={monthlyCompleted} total={monthlyTotal} size={240} strokeWidth={24} />
             <div className="absolute inset-0 flex flex-col items-center justify-center pointer-events-none">
-               <span className="text-3xl font-black text-[#1a57db]">{averageConsistency}%</span>
-               <span className="text-[9px] font-black uppercase text-slate-400 tracking-tighter">Completed</span>
+               <span className="text-5xl font-technical font-black text-primary tracking-tighter">{averageConsistency}%</span>
+               <span className="text-[10px] font-technical font-black uppercase text-on-surface-variant opacity-40 tracking-widest mt-1">Syllabus</span>
             </div>
           </div>
-          <div className="text-center">
-            <p className="text-xs font-bold text-slate-600 dark:text-slate-300">Total Progress: {monthlyCompleted} / {monthlyTotal}</p>
-            <p className="text-[10px] text-slate-400 font-medium mt-1 uppercase tracking-widest">30-Day Goal Status</p>
+          <div className="text-center bg-white/30 px-8 py-4 rounded-full">
+            <p className="text-[10px] font-technical font-black text-on-surface-variant uppercase tracking-widest opacity-60">
+              Validated Progress: <span className="text-primary">{monthlyCompleted}</span> <span className="opacity-20">/</span> {monthlyTotal}
+            </p>
           </div>
         </div>
 
         {/* Weekly Breakdown Pies */}
-        <div className="lg:col-span-7 bg-white dark:bg-slate-900/50 p-8 rounded-[2.5rem] border border-slate-200 dark:border-slate-800">
-           <h3 className="text-xs font-black uppercase tracking-[0.2em] text-slate-400 mb-8 ml-2">Weekly Milestones</h3>
-           <div className="grid sm:grid-cols-2 md:grid-cols-4 gap-6">
+        <div className="lg:col-span-7 bg-surface-container-low p-10 rounded-[3rem] shadow-ambient">
+           <h3 className="text-[11px] font-technical font-black uppercase tracking-[0.4em] text-on-surface-variant opacity-40 mb-12">Weekly Milestones</h3>
+           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
               {weekDetails.map((w, i) => (
-                <div key={i} className="flex flex-col items-center gap-4 group">
-                  <div className="relative p-2 bg-slate-50 dark:bg-slate-800 rounded-3xl group-hover:scale-105 transition-transform">
-                    <ProgressPie completed={w.completed} total={w.total} size={150} strokeWidth={20} />
+                <div key={i} className="flex flex-col items-center gap-6 group">
+                  <div className="relative p-2 bg-surface-container-high rounded-4xl group-hover:scale-110 group-hover:bg-white transition-all duration-500 shadow-sm shadow-black/5">
+                    <ProgressPie completed={w.completed} total={w.total} size={120} strokeWidth={12} />
                   </div>
                   <div className="text-center">
-                    <span className="text-[10px] font-black uppercase text-slate-400 tracking-widest block mb-1">Week {i+1}</span>
-                    <span className="text-[9px] font-bold text-[#1a57db] bg-blue-50 dark:bg-blue-900/30 px-2 py-0.5 rounded-lg">
-                      {w.completed}/{w.total !== 0 ? w.total / totalHabits : 0} tasks
+                    <span className="text-[10px] font-technical font-black uppercase text-on-surface-variant opacity-40 tracking-[0.3em] block mb-2">Week {i+1}</span>
+                    <span className="text-[9px] font-technical font-black text-primary bg-primary/5 px-3 py-1.5 rounded-full tracking-widest whitespace-nowrap">
+                      {w.completed}<span className="opacity-30">/</span>{w.total !== 0 ? w.total / totalHabits : 0} ITEMS
                     </span>
                   </div>
                 </div>
               ))}
            </div>
            
-           <div className="mt-10 p-6 bg-slate-50 dark:bg-slate-800/30 rounded-3xl border border-dashed border-slate-200 dark:border-slate-700">
-             <p className="text-[10px] text-slate-500 font-medium leading-relaxed italic text-center">
+           <div className="mt-12 p-8 bg-white/20 rounded-4xl border border-on-surface/5">
+             <p className="text-[10px] font-technical font-black text-on-surface-variant uppercase tracking-[0.2em] opacity-40 leading-relaxed text-center italic">
                "Each pie chart represents your focus for the week. Complete all items to hit 100% and unlock your potential."
              </p>
            </div>

@@ -16,7 +16,7 @@ export const SearchBar = forwardRef<HTMLInputElement, SearchBarProps>(
           placeholder={placeholder}
           value={value}
           onChange={onChange}
-          className="w-full p-3 rounded-lg border border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-900 focus:outline-none focus:ring-2 focus:ring-primary"
+          className="w-full p-3 rounded-lg border border-slate-300 dark:border-slate-700 bg-surface dark:bg-slate-900 focus:outline-none focus:ring-2 focus:ring-primary"
         />
       </div>
     );

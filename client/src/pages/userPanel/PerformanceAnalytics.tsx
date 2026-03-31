@@ -24,6 +24,11 @@ import { fetchExams } from "../../slice/examSlice";
 import SubjectMastery from "../../components/performanceAnalytics/SubjectMastery";
 import AiInsights from "../../components/performanceAnalytics/AiInsights";
 import QuestionDistribution from "../../components/performanceAnalytics/QuestionDistribution";
+import { GrowthChart } from "../../components/performanceAnalytics/GrowthChart";
+import { MastHeadChapters } from "../../components/performanceAnalytics/MastHeadChapters";
+import { SoilEnrichment } from "../../components/performanceAnalytics/SoilEnrichment";
+import { FocusBalance } from "../../components/performanceAnalytics/FocusBalance";
+import { ExamTicker } from "../../components/ui/ExamTicker";
 
 const PerformanceAnalytics = () => {
   const { profile } = useSelector(
@@ -38,10 +43,14 @@ const PerformanceAnalytics = () => {
   const [subjects, setSubjects] = useState<any[]>([]);
   const [selectedExam, setSelectedExam] = useState<string>("");
   const [chartMode, setChartMode] = useState<"Practice" | "Mock">("Practice");
-  const { examData } = useSelector((state: RootState) => state.exams ?? null);
-  const targetedExams = examData.filter((el) =>
-    profile.target_exams.includes(el.id),
+  const { examData } = useSelector(
+    (state: RootState) => state.exams ?? { examData: [] },
   );
+
+  const targetedExams = useMemo(() => {
+    if (!examData || !profile?.target_exams) return [];
+    return examData.filter((el) => profile.target_exams.includes(el.id));
+  }, [examData, profile?.target_exams]);
 
   useEffect(() => {
     dispatch(fetchExams());
@@ -51,7 +60,7 @@ const PerformanceAnalytics = () => {
     if (profile?.target_exams?.[0] && !selectedExam) {
       setSelectedExam(profile.target_exams[0]);
     }
-  }, [profile, selectedExam, targetedExams]);
+  }, [profile, selectedExam]);
 
   useEffect(() => {
     const fetchData = async () => {
@@ -111,7 +120,6 @@ const PerformanceAnalytics = () => {
     const subjectStats: Record<string, any> = {};
     const chapterStats: Record<string, any> = {};
 
-    // Per-attempt scores for growth chart
     const answersByAttempt: Record<string, any[]> = {};
     filteredAnswers.forEach((ans) => {
       if (!answersByAttempt[ans.attempt_id])
@@ -216,7 +224,7 @@ const PerformanceAnalytics = () => {
         .filter((c) => c.accuracy >= 80)
         .slice(0, 2),
       weakChapters: sortedChapters.filter((c) => c.accuracy < 50).slice(0, 2),
-      performanceTrajectory: performanceTrajectory.slice(-12), // Show up to 12
+      performanceTrajectory: performanceTrajectory.slice(-12),
     };
   }, [filteredAttempts, filteredAnswers, chapters, subjects]);
 
@@ -248,88 +256,80 @@ const PerformanceAnalytics = () => {
       type: "Next Recommended",
       title:
         metrics.strongChapters.length > 0
-          ? `Advanced ${metrics.strongChapters[0].subject} Quiz`
-          : "General Overview Quiz",
-      desc: "Strengthen your base by taking a mixed-subject practice set.",
+          ? `${metrics.strongChapters[0].subject} Mastery`
+          : "General Practice",
+      desc: "Maintain your momentum with a personalized session.",
     });
     return insights.slice(0, 3);
   }, [metrics]);
 
-  // Latest report from the most recent attempt
-  const latestReport =
-    attempts.length > 0
-      ? {
-          title:
-            chapters.find((c) => c.id === attempts[0].chapter_id)?.name ||
-            "Practice Session",
-          date: attempts[0].submitted_at
-            ? `Completed on ${new Date(attempts[0].submitted_at).toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric" })}`
-            : "In Progress",
-          score: `${metrics?.accuracy || 0}%`,
-          attemptId: attempts[0].id,
-        }
-      : null;
+  if (loading) return <PerformanceSkeleton />;
 
-  if (loading) {
+  if (!metrics) {
     return (
-      <div className="flex min-h-screen items-center justify-center bg-white">
-        <div className="flex flex-col items-center gap-4">
-          <div className="size-12 border-4 border-green-700 border-t-transparent rounded-full animate-spin" />
-          <p className="font-bold text-gray-500 animate-pulse">
-            Calculating your performance...
+      <main className="pb-20 px-6 lg:px-12 max-w-7xl mx-auto space-y-16 animate-reveal">
+        <section className="pt-8 text-center py-20 bg-surface-container-high rounded-[3rem]">
+          <FlaskConical className="size-16 text-primary/20 mx-auto mb-6" />
+          <h2 className="text-3xl font-black text-on-surface">
+            Data Seedlings Needed
+          </h2>
+          <p className="text-on-surface-variant max-w-md mx-auto mt-4">
+            Complete your first exam to begin generating growth trends and AI
+            insights.
           </p>
-        </div>
-      </div>
+          <button
+            onClick={() => navigate("/user/dashboard")}
+            className="mt-8 px-8 py-4 bg-primary text-white rounded-full font-technical font-black uppercase tracking-widest text-[11px] shadow-lg shadow-primary/20 hover:scale-105 transition-all"
+          >
+            Start Preparation
+          </button>
+        </section>
+      </main>
     );
   }
 
-  const performanceTrajectory = metrics?.performanceTrajectory || [];
-  const maxScore = 100; // Accuracy is 0-100
+  const performanceTrajectory = metrics.performanceTrajectory;
+  const maxScore = 100;
 
   return (
-    <main className="md:ml-64 pt-24 pb-12 px-6 md:px-12 max-w-7xl mx-auto">
-      {/* Hero */}
-      <section className="mb-12">
-        <h1 className="text-5xl font-extrabold leading-tight">
-          Growth <span className="text-green-700">&</span> Precision.
+    <main className="pb-20 px-6 lg:px-12 max-w-7xl mx-auto space-y-16 animate-reveal">
+      <section className="pt-8">
+        <h1 className="text-6xl font-black leading-[0.9] tracking-tighter text-on-surface">
+          Growth <span className="text-primary italic">&</span> <br />
+          Precision.
         </h1>
-        <p className="mt-4 text-gray-600 max-w-xl text-lg font-medium">
-          Your{" "}
-          <span className="text-green-700 font-bold">
+        <p className="mt-8 text-on-surface-variant max-w-lg text-lg font-medium leading-relaxed opacity-80">
+          Your journey through the{" "}
+          <span className="text-primary font-black px-2 py-0.5 bg-primary/5 rounded-lg">
             {targetedExams?.find((e: any) => e.id === selectedExam)?.name ||
-              "exam"}
+              "curriculum"}
           </span>{" "}
-          preparation trajectory is showing consistent growth.
+          ecosystem shows developing technical mastery and consistent momentum.
         </p>
       </section>
-      <div className="bg-green-200 rounded-full p-2 mb-12 w-fit">
-        <div
-          className={`flex flex-wrap gap-6`}
-        >
-          {targetedExams?.map((item: any, index: number) => (
-            <button
-              key={index}
-              onClick={() => setSelectedExam(item.id)}
-              className={`px-8 py-3 rounded-full font-black text-sm uppercase tracking-widest transition-all cursor-pointer shadow-sm border-2 ${selectedExam === item.id ? "bg-green-700 text-white border-green-700 shadow-green-200 shadow-lg scale-105" : "bg-white text-green-800 border-green-100 hover:border-green-300 hover:bg-green-50"}`}
-            >
-              {item.name}
-            </button>
-          ))}
-        </div>
-      </div>
 
-      {/* Grid */}
-      <div className="grid md:grid-cols-12 gap-6">
-        {/* Ranking */}
-        <div className="md:col-span-4 bg-white p-6 rounded-xl shadow">
-          <h3 className="text-xl font-bold mb-4">Odisha Rankings</h3>
-          <p className="text-6xl font-bold text-green-700">
-            {metrics?.testsCount || 0}
+      <ExamTicker
+        targetedExams={targetedExams}
+        selectedExam={selectedExam}
+        setSelectedExam={setSelectedExam}
+      />
+
+      <div className="grid sm:grid-cols-1 lg:grid-cols-12 overflow-hidden gap-8">
+        <div className="w-full mx-auto bg-primary p-10 rounded-[3rem] shadow-ambient hover-bloom group">
+          <div className="size-16 bg-surface-container-high rounded-2xl flex items-center justify-center text-primary mb-8 shadow-sm group-hover:bg-primary group-hover:text-white transition-all duration-500">
+            <TrendingUp size={28} />
+          </div>
+          <h3 className="text-[11px] font-technical font-black uppercase tracking-widest text-white opacity-60 mb-2">
+            Momentum Trend
+          </h3>
+          <p className="text-8xl font-technical font-black text-white tracking-tighter leading-none">
+            {metrics.testsCount || 0}
           </p>
-          <p className="text-sm text-gray-500">Tests Completed</p>
+          <p className="text-sm font-bold text-white mt-4">
+            Completed Sessions
+          </p>
         </div>
 
-        {/* Growth Chart */}
         <GrowthChart
           performanceTrajectory={performanceTrajectory}
           maxScore={maxScore}
@@ -337,194 +337,142 @@ const PerformanceAnalytics = () => {
           setChartMode={setChartMode}
         />
 
-        <SubjectMastery examid={selectedExam} metrics={metrics} />
-
-        {/* Accuracy vs Speed */}
-        <div className="md:col-span-6 bg-white p-6 rounded-xl shadow">
-          <h3 className="text-xl font-bold mb-6">Accuracy vs Speed</h3>
-          <div className="flex justify-around">
-            <div className="text-center">
-              <div className="w-20 h-20 border-4 border-green-300 rounded-full flex items-center justify-center text-xl font-black text-green-800">
-                {metrics?.accuracy || 0}%
-              </div>
-              <p className="text-xs mt-2 text-gray-500 font-medium">Accuracy</p>
-            </div>
-            <div className="text-center">
-              <div className="w-20 h-20 border-4 border-gray-300 rounded-full flex items-center justify-center text-xl font-black text-gray-700">
-                {metrics?.avgTimeSec || 0}s
-              </div>
-              <p className="text-xs mt-2 text-gray-500 font-medium">
-                Avg Time/Test
-              </p>
-            </div>
-          </div>
-        </div>
-        <QuestionDistribution metrics={metrics} />
-        <AiInsights aiInsights={aiInsights} />
-
-        {/* Strong vs Weak Chapters */}
-        <div className="md:col-span-6 bg-white p-6 rounded-xl shadow">
-          <h3 className="text-lg font-bold flex items-center gap-2 mb-4">
-            <CheckCircle className="text-green-600" size={20} />
-            Strongest Chapters
-          </h3>
-          {(metrics?.strongChapters || []).length > 0 ? (
-            metrics!.strongChapters.map((ch, i) => (
-              <div
-                key={i}
-                className="flex justify-between items-center py-3 border-b border-gray-100 last:border-0"
-              >
-                <div>
-                  <p className="font-bold text-sm">{ch.name}</p>
-                  <p className="text-xs text-gray-500">{ch.subject}</p>
-                </div>
-                <p className="text-green-700 font-black text-lg">
-                  {ch.accuracy}%
-                </p>
-              </div>
-            ))
-          ) : (
-            <p className="text-gray-400 text-sm italic">
-              Complete more tests to see strengths.
-            </p>
-          )}
+        <div className="sm:col-span-full lg:col-span-8">
+          <SubjectMastery examid={selectedExam} metrics={metrics} />
         </div>
 
-        <div className="md:col-span-6 bg-white p-6 rounded-xl shadow">
-          <h3 className="text-lg font-bold flex items-center gap-2 mb-4">
-            <FileWarning className="text-red-500" size={20} />
-            Focus Areas
-          </h3>
-          {(metrics?.weakChapters || []).length > 0 ? (
-            metrics!.weakChapters.map((ch, i) => (
-              <div
-                key={i}
-                className="flex justify-between items-center py-3 border-b border-gray-100 last:border-0"
-              >
-                <div>
-                  <p className="font-bold text-sm">{ch.name}</p>
-                  <p className="text-xs text-gray-500">{ch.subject}</p>
-                </div>
-                <p className="text-red-600 font-black text-lg">
-                  {ch.accuracy}%
-                </p>
-              </div>
-            ))
-          ) : (
-            <p className="text-gray-400 text-sm italic">
-              No weak areas identified yet.
-            </p>
-          )}
+        <FocusBalance metrics={metrics} />
+        <div className="sm:col-span-full lg:col-span-6">
+          <QuestionDistribution metrics={metrics} />
         </div>
+        <div className="lg:col-span-6">
+          <AiInsights aiInsights={aiInsights} />
+        </div>
+        <MastHeadChapters metrics={metrics} />
+        <SoilEnrichment metrics={metrics} />
       </div>
-      <div className="flex flex-col md:flex-row items-center justify-between gap-6 p-8 bg-green-50 border border-green-100 rounded-xl mb-8">
-        <div className="flex items-center gap-6">
-          <div className="size-16 rounded-xl bg-white flex items-center justify-center shadow text-green-700">
-            <Pen size={28} />
+
+      <footer className="flex flex-col md:flex-row items-center justify-between gap-8 p-12 bg-primary/5 rounded-[4rem] border border-primary/10 overflow-hidden relative">
+        <div className="absolute top-0 right-0 p-8 opacity-5">
+          <TrendingUp size={200} />
+        </div>
+        <div className="flex items-center gap-8 relative z-10">
+          <div className="size-20 rounded-3xl bg-primary flex items-center justify-center shadow-xl shadow-primary/30 text-white group hover:scale-105 transition-transform duration-500">
+            <TrendingUp
+              size={36}
+              className="group-hover:translate-y-[-4px] transition-transform"
+            />
           </div>
           <div>
-            <h3 className="text-xl font-bold mb-1">
-              Ready to master the concepts?
+            <h3 className="text-2xl font-black text-on-surface mb-2 tracking-tight">
+              Cultivate your potential.
             </h3>
-            <p className="text-gray-600 text-sm max-w-md">
-              We've generated a custom study plan based on these results.
+            <p className="text-on-surface-variant text-sm font-medium leading-relaxed max-w-sm">
+              We've synthesized your performance data into a specialized growth
+              path.
             </p>
           </div>
         </div>
-        <div className="flex gap-4">
+        <div className="flex gap-4 relative z-10">
           <button
             onClick={() =>
               attempts.length > 0 && navigate(`/user/results/${attempts[0].id}`)
             }
-            className="px-6 py-3 bg-white border border-gray-200 rounded-xl font-bold text-sm shadow hover:shadow-lg transition-all"
+            className="px-8 py-4 bg-surface rounded-full font-technical font-black text-[11px] uppercase tracking-[0.2em] text-on-surface-variant shadow-sm hover:shadow-xl hover:text-on-surface transition-all active:scale-95"
           >
             Review Errors
           </button>
           <button
             onClick={() => navigate("/user/dashboard")}
-            className="px-6 py-3 bg-green-700 text-white rounded-xl font-bold text-sm shadow-lg hover:bg-green-800 transition-all"
+            className="px-8 py-4 bg-linear-to-r from-primary to-primary-container text-on-primary rounded-full font-technical font-black text-[11px] uppercase tracking-[0.2em] shadow-lg shadow-primary/20 hover:scale-[1.02] active:scale-[0.98] transition-all"
           >
-            Go to Study Plan
+            Return to Study
           </button>
         </div>
-      </div>
+      </footer>
     </main>
   );
 };
 
 export default PerformanceAnalytics;
 
-const GrowthChart = ({
-  performanceTrajectory,
-  maxScore,
-  chartMode,
-  setChartMode,
-}: {
-  performanceTrajectory: any[];
-  maxScore: number;
-  chartMode: "Practice" | "Mock";
-  setChartMode: (m: "Practice" | "Mock") => void;
-}) => {
+function PerformanceSkeleton() {
   return (
-    <div className="md:col-span-8 bg-[#f5f4e8] p-8 rounded-2xl shadow-sm border border-gray-100">
-      <div className="flex justify-between items-center mb-8">
-        <h3 className="text-xl font-black text-gray-900 tracking-tight flex items-center gap-3">
-          <TrendingUp className="text-green-700" />
-          Performance Trajectory
-        </h3>
-        <div className="flex gap-1 bg-green-100 p-1 text-white rounded-xl items-center shadow-inner">
-          <button
-            onClick={() => setChartMode("Practice")}
-            className={`text-[10px] font-black uppercase tracking-widest px-6 py-2 rounded-lg transition-all cursor-pointer ${chartMode === "Practice" ? "bg-green-700 text-white shadow-md" : "text-green-800 hover:bg-green-200"}`}
-          >
-            Practice
-          </button>
-          <button
-            onClick={() => setChartMode("Mock")}
-            className={`text-[10px] font-black uppercase tracking-widest px-6 py-2 rounded-lg transition-all cursor-pointer ${chartMode === "Mock" ? "bg-green-700 text-white shadow-md" : "text-green-800 hover:bg-green-200"}`}
-          >
-            Mock
-          </button>
-        </div>
-      </div>
-      <div className="flex items-end gap-3 h-48">
-        {(performanceTrajectory.length > 0
-          ? performanceTrajectory
-          : Array(10).fill({ accuracy: 0, chapterName: "No Data" })
-        ).map((item, i) => (
+    <main className="pb-20 px-6 lg:px-12 max-w-7xl mx-auto space-y-16 animate-pulse">
+      <section className="pt-8 space-y-6">
+        <div className="h-16 w-2/3 bg-surface-container-high rounded-xl" />
+        <div className="h-6 w-1/2 bg-surface-container-high rounded-lg" />
+      </section>
+
+      <div className="flex gap-3 flex-wrap">
+        {Array.from({ length: 4 }).map((_, i) => (
           <div
             key={i}
-            className="flex-1 bg-green-200/50 rounded-t-xl relative group h-full flex flex-col justify-end"
-          >
-            <div
-              className={`rounded-t-xl transition-all duration-700 ease-out ${chartMode === "Practice" ? "bg-green-700" : "bg-green-900"}`}
-              style={{ height: `${(item.accuracy / maxScore) * 100}%` }}
-            />
-            <div className="absolute -top-14 left-1/2 -translate-x-1/2 bg-gray-900 text-white text-[10px] font-black px-3 py-2 rounded shadow-xl opacity-0 group-hover:opacity-100 transition-all group-hover:-top-16 pointer-events-none whitespace-nowrap z-20 flex flex-col items-center gap-1">
-              <span className="text-green-400 font-black">
-                {item.accuracy}%
-              </span>
-              <span className="text-[8px] uppercase tracking-tighter opacity-80">
-                {item.chapterName}
-              </span>
-              <div className="absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-full w-0 h-0 border-l-4 border-l-transparent border-r-4 border-r-transparent border-t-4 border-t-gray-900" />
+            className="h-10 w-28 rounded-full bg-surface-container-high"
+          />
+        ))}
+      </div>
+
+      <div className="grid lg:grid-cols-12 gap-8">
+        <div className="lg:col-span-4 bg-surface-container-low p-10 rounded-[3rem] space-y-6">
+          <div className="size-16 bg-surface-container-high rounded-2xl" />
+          <div className="h-4 w-24 bg-surface-container-high rounded" />
+          <div className="h-16 w-32 bg-surface-container-high rounded" />
+          <div className="h-4 w-40 bg-surface-container-high rounded" />
+        </div>
+        <div className="lg:col-span-8 bg-surface-container-low p-10 rounded-[3rem] h-[300px]" />
+        <div className="lg:col-span-8 bg-surface-container-low p-10 rounded-[3rem] h-[250px]" />
+        <div className="lg:col-span-4 bg-surface-container-low p-10 rounded-[3rem] space-y-10">
+          {Array.from({ length: 2 }).map((_, i) => (
+            <div key={i} className="flex items-center gap-6">
+              <div className="size-20 rounded-full bg-surface-container-high" />
+              <div className="space-y-2">
+                <div className="h-3 w-20 bg-surface-container-high rounded" />
+                <div className="h-4 w-32 bg-surface-container-high rounded" />
+              </div>
             </div>
+          ))}
+        </div>
+        <div className="lg:col-span-6 bg-surface-container-low p-10 rounded-[3rem] h-[200px]" />
+        <div className="lg:col-span-6 bg-surface-container-low p-10 rounded-[3rem] space-y-4">
+          {Array.from({ length: 3 }).map((_, i) => (
+            <div
+              key={i}
+              className="h-16 bg-surface-container-high rounded-2xl"
+            />
+          ))}
+        </div>
+        <div className="lg:col-span-6 bg-surface-container-low p-10 rounded-[3rem] space-y-4">
+          {Array.from({ length: 3 }).map((_, i) => (
+            <div
+              key={i}
+              className="h-20 bg-surface-container-high rounded-2xl"
+            />
+          ))}
+        </div>
+        <div className="lg:col-span-6 bg-surface-container-low p-10 rounded-[3rem] space-y-4">
+          {Array.from({ length: 3 }).map((_, i) => (
+            <div
+              key={i}
+              className="h-20 bg-surface-container-high rounded-2xl"
+            />
+          ))}
+        </div>
+      </div>
+
+      <footer className="p-12 rounded-[4rem] bg-primary/5 flex flex-col md:flex-row gap-8 justify-between items-center">
+        <div className="flex items-center gap-6">
+          <div className="size-20 bg-primary/20 rounded-3xl" />
+          <div className="space-y-3">
+            <div className="h-6 w-48 bg-surface-container-high rounded" />
+            <div className="h-4 w-64 bg-surface-container-high rounded" />
           </div>
-        ))}
-      </div>
-      <div className="flex justify-between mt-4">
-        {(performanceTrajectory.length > 0
-          ? performanceTrajectory
-          : Array(10).fill(null)
-        ).map((_, i) => (
-          <span
-            key={i}
-            className="flex-1 text-center text-[10px] text-gray-400 font-black uppercase tracking-widest"
-          >
-            Set {i + 1}
-          </span>
-        ))}
-      </div>
-    </div>
+        </div>
+        <div className="flex gap-4">
+          <div className="h-12 w-32 bg-surface-container-high rounded-full" />
+          <div className="h-12 w-36 bg-surface-container-high rounded-full" />
+        </div>
+      </footer>
+    </main>
   );
-};
+}

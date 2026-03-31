@@ -66,13 +66,13 @@ export default function ExamGoalSelection() {
   });
 
   return (
-    <div className="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 min-h-screen flex flex-col font-display">
+    <div className="bg-background-light dark:bg-background-dark text-on-surface dark:text-slate-100 min-h-screen flex flex-col font-display">
       <div className="fixed top-0 right-0 -z-10 opacity-20 pointer-events-none">
-        <div className="w-[500px] h-[500px] rounded-full bg-gradient-to-br from-blue-500 via-indigo-500 to-purple-500 blur-[120px] -mr-40 -mt-40"></div>
+        <div className="w-[500px] h-[500px] rounded-full bg-gradient-to-br from-green-500 via-indigo-500 to-purple-500 blur-[120px] -mr-40 -mt-40"></div>
       </div>
       <div className="flex-1 flex flex-col max-w-[960px] mx-auto w-full px-4 sm:px-6 lg:px-8">
         {/* HEADER */}
-        <header className="flex items-center justify-between border-b border-slate-200 dark:border-slate-800 py-6">
+        <header className="flex items-center justify-between  dark:border-slate-800 py-6">
           <div className="flex items-center gap-3">
             <div className="text-primary">
               <svg className="w-8 h-8" viewBox="0 0 48 48" fill="none">
@@ -88,7 +88,7 @@ export default function ExamGoalSelection() {
             </h1>
           </div>
 
-          <button className="p-2 rounded-full bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300">
+          <button className="p-2 rounded-full bg-surface-container-high dark:bg-slate-800 text-slate-600 dark:text-slate-300">
             🔔
           </button>
         </header>
@@ -104,7 +104,7 @@ export default function ExamGoalSelection() {
         {/* EXAM CARDS */}
         <div className="mt-8 space-y-4 pb-32">
           {filteredExams.length === 0 && (
-            <p className="text-slate-500">No exams found.</p>
+            <p className="text-on-surface-variant">No exams found.</p>
           )}
 
           {filteredExams.map((exam) => {
@@ -117,7 +117,7 @@ export default function ExamGoalSelection() {
                 ${
                   isSelected
                     ? "border-primary bg-primary/5"
-                    : "border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900"
+                    : "border-slate-200 dark:border-slate-800 bg-surface dark:bg-slate-900"
                 }`}
               >
                 <input
@@ -156,7 +156,7 @@ export default function ExamGoalSelection() {
         <Button onClick={handleSaveExams} title="Proceed to The Dashboard" />
       </div>
       <div className="fixed bottom-0 left-0 -z-10 opacity-20 pointer-events-none">
-        <div className="w-[500px] h-[500px] rounded-full bg-gradient-to-br from-blue-500 via-indigo-500 to-purple-500 blur-[120px] -mr-40 -mt-40"></div>
+        <div className="w-[500px] h-[500px] rounded-full bg-gradient-to-br from-green-500 via-indigo-500 to-purple-500 blur-[120px] -mr-40 -mt-40"></div>
       </div>
     </div>
   );

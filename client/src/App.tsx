@@ -1,123 +1,133 @@
 import "./App.css";
-import HomePage from "../src/pages/HomePage";
+import React, { Suspense, lazy, useEffect, useState } from "react";
 import { Navigate, createBrowserRouter, createRoutesFromElements, RouterProvider } from "react-router";
 import { Route } from "react-router";
 import { Authlayout } from "./layouts/AuthLayout";
-import Login from "./components/Login";
-import Register from "./components/Register";
-import Results from "./pages/userPanel/Results";
-import ResultsHistory from "./pages/userPanel/ResultsHistory";
-import PerformanceAnalytics from "./pages/userPanel/PerformanceAnalytics";
-import StudyPlanner from "./pages/userPanel/StudyPlanner";
-import MockTests from "./pages/userPanel/MockTests";
-import UserDashboard from "./pages/userPanel/UserDashboard";
-import UserPanelLayout from "./layouts/UserPanelLayout";
 import { supabase } from "./utils/supabase";
-import { useEffect, useState } from "react";
 import { fetchUserProfile } from "./slice/userSlice";
 import { useDispatch, useSelector } from "react-redux";
 import type { AppDispatch, RootState } from "./store";
 import { fetchExams } from "./slice/examSlice";
-import Exam from "./components/Exam";
-import { UserDashboardLayout } from "./layouts/UserDashboardLayout";
-import PracticeTest from "./components/ui/PracticeTest";
-import MockTest from "./components/ui/MockTest";
-import ConfirmOAuthPage from "./components/ConfirmOAuth";
-import Profile from "./pages/Profile";
-import AdminPanelLayout from "./layouts/AdminPanelLayout";
-import UserManagement from "./pages/adminPanel/UserManagement";
-import NotificationsSystem, {
-  atalhoTheme,
-  setUpNotifications,
-  useNotifications,
-  wyboTheme,
-} from "reapop";
-import ExamGoalSelection from "./pages/ExamSelection";
-import { UserStudyPlanner } from "./layouts/UserStudyPlanner";
-import { ExamsPlanning } from "./pages/userPanel/ExamsPlanning";
-import { ExamsList } from "./pages/ExamsList";
-import ResultSelection from "./pages/resultpage/ResultSelection";
+import { SplashScreen } from "./components/ui/SplashScreen";
+import NotificationsSystem, { wyboTheme, useNotifications, setUpNotifications } from "reapop";
 import ScrollToTop from "./components/ScrollToTop";
+
+// --- PERFORMANCE: DYNAMIC MANIFESTATIONS (CODE SPLITTING) ---
+const HomePage = lazy(() => import("./pages/HomePage"));
+const Login = lazy(() => import("./components/Login"));
+const Register = lazy(() => import("./components/Register"));
+const Results = lazy(() => import("./pages/userPanel/Results"));
+const ResultsHistory = lazy(() => import("./pages/userPanel/ResultsHistory"));
+const PerformanceAnalytics = lazy(() => import("./pages/userPanel/PerformanceAnalytics"));
+const StudyPlanner = lazy(() => import("./pages/userPanel/StudyPlanner"));
+const MockTests = lazy(() => import("./pages/userPanel/MockTests"));
+const UserDashboard = lazy(() => import("./pages/userPanel/UserDashboard"));
+const UserPanelLayout = lazy(() => import("./layouts/UserPanelLayout"));
+const Exam = lazy(() => import("./components/Exam"));
+const UserDashboardLayout = lazy(() => import("./layouts/UserDashboardLayout").then(m => ({ default: m.UserDashboardLayout })));
+const PracticeTest = lazy(() => import("./components/ui/PracticeTest"));
+const MockTest = lazy(() => import("./components/ui/MockTest"));
+const ConfirmOAuthPage = lazy(() => import("./components/ConfirmOAuth"));
+const Profile = lazy(() => import("./pages/Profile"));
+const AdminPanelLayout = lazy(() => import("./layouts/AdminPanelLayout"));
+const AdminDashboard = lazy(() => import("./pages/adminPanel/AdminDashboard"));
+const UserManagement = lazy(() => import("./pages/adminPanel/UserManagement"));
+const ExamsManagement = lazy(() => import("./pages/adminPanel/ExamsManagement"));
+const SubjectsManagement = lazy(() => import("./pages/adminPanel/SubjectsManagement"));
+const ChaptersManagement = lazy(() => import("./pages/adminPanel/ChaptersManagement"));
+const QuestionsManagement = lazy(() => import("./pages/adminPanel/QuestionsManagement"));
+const FeaturesManagement = lazy(() => import("./pages/adminPanel/FeaturesManagement"));
+const CurriculumLattice = lazy(() => import("./pages/adminPanel/CurriculumLattice"));
+const ExamBoardsManagement = lazy(() => import("./pages/adminPanel/ExamBoardsManagement"));
+const ExamGoalSelection = lazy(() => import("./pages/ExamSelection"));
+const UserStudyPlanner = lazy(() => import("./layouts/UserStudyPlanner").then(m => ({ default: m.UserStudyPlanner })));
+const ExamsPlanning = lazy(() => import("./pages/userPanel/ExamsPlanning").then(m => ({ default: m.ExamsPlanning })));
+const ExamsList = lazy(() => import("./pages/ExamsList").then(m => ({ default: m.ExamsList })));
+const ResultSelection = lazy(() => import("./pages/resultpage/ResultSelection"));
+const AdminGuard = lazy(() => import("./components/AdminGuard").then(m => ({ default: m.AdminGuard })));
+const MockTestPreferencePage = lazy(() => import("./pages/userPanel/MockTestPreferencePage"));
+
+
+
 
 function App() {
   const dispatch = useDispatch<AppDispatch>();
   const { notifications, dismissNotification } = useNotifications();
-  const { user, loading } = useSelector(
-    (state: RootState) => state.user ?? null,
-  );
+  // Safe destructuring of userSlice state manifestation
+  const { user, loading: userLoading } = useSelector((state: RootState) => state.user ?? { user: null, loading: false });
+  const [isInitializing, setIsInitializing] = useState(true);
+
   setUpNotifications({
     defaultProps: {
       position: "top-right",
       dismissible: true,
+      dismissAfter: 1,
     },
   });
-  // useEffect(() => {
-  //   // 1️⃣ Restore session on page load
-  //   supabase.auth.getSession().then(({ data: { session } }) => {
-  //     setUser(session?.user ?? null);
-  //     setLoading(false);
-  //   });
-
-  //   // 2️⃣ Listen for login/logout changes
-  //   const { data: subscription } = supabase.auth.onAuthStateChange(
-  //     (_event, session) => {
-  //       setUser(session?.user ?? null);
-  //     }
-  //   );
-
-  //   // 3️⃣ Cleanup subscription
-  //   return () => {
-  //     subscription.subscription.unsubscribe();
-  //   };
-  // }, []);
 
   useEffect(() => {
+    let subscription: any = null;
+
     const initAuth = async () => {
-      setUpNotifications({
-        defaultProps: {
-          position: "top-right",
-          dismissible: true,
-          dismissAfter: 1,
-        },
-      });
-      const { data: listener } = supabase.auth.onAuthStateChange(
-        (_event, session) => {
-          if (session?.user) {
-            dispatch(fetchUserProfile());
-          }
-        },
-      );
-
-      const { data } = await supabase.auth.getSession();
-
-      if (data?.session?.user) {
-        dispatch(fetchUserProfile());
+      // 1. Identify existing session carefully
+      const { data: { session } } = await supabase.auth.getSession();
+      
+      if (session?.user) {
+        // Only fetch if session exists, avoid double-dispatch
+        await dispatch(fetchUserProfile());
       }
-      return () => {
-        listener.subscription.unsubscribe();
-      };
+
+      // 2. Listen for future auth manifestations
+      const { data } = supabase.auth.onAuthStateChange(
+        (event, session) => {
+          if (event === 'SIGNED_IN' && session?.user) {
+             dispatch(fetchUserProfile());
+          }
+        }
+      );
+      subscription = data.subscription;
+
+      // Finalize initialization manifest
+      setIsInitializing(false);
     };
 
     initAuth();
-  }, []);
+
+    return () => {
+      if (subscription) subscription.unsubscribe();
+    };
+  }, [dispatch]);
 
   const router = createBrowserRouter(
     createRoutesFromElements(
       <>
-       
         <Route path="/" element={<HomePage />} />
-        <Route
-          path="/login"
-          element={!user ? <Login /> : <Navigate to="/user/dashboard" replace />}
-        />
-        <Route
-          path="/register"
-          element={!user ? <Register /> : <Navigate to="/user/dashboard" replace />}
-        />
-        <Route path="admin" element={<AdminPanelLayout />}>
-          <Route path="users" element={<UserManagement />} />
+        <Route element={<Authlayout />}>
+          <Route
+            path="/login"
+            element={!user ? <Login /> : <Navigate to="/user/dashboard" replace />}
+          />
+          <Route
+            path="/register"
+            element={!user ? <Register /> : <Navigate to="/user/dashboard" replace />}
+          />
         </Route>
-        <Route path="admin/login" element={<Login />} />
+
+        {/* --- ADMIN MANIFESTATION --- */}
+        <Route path="admin" element={<AdminGuard />}>
+          <Route element={<AdminPanelLayout />}>
+            <Route path="dashboard" element={<AdminDashboard />} />
+            <Route path="lattice" element={<CurriculumLattice />} />
+            <Route path="boards" element={<ExamBoardsManagement />} />
+            <Route path="users" element={<UserManagement />} />
+            <Route path="features" element={<FeaturesManagement />} />
+            <Route path="exams" element={<ExamsManagement />} />
+            <Route path="subjects" element={<SubjectsManagement />} />
+            <Route path="chapters" element={<ChaptersManagement />} />
+            <Route path="questions" element={<QuestionsManagement />} />
+          </Route>
+        </Route>
+        
         <Route path="/select-exam-goals" element={<ExamGoalSelection />} />
         
         <Route
@@ -137,7 +147,9 @@ function App() {
           <Route path="profile" element={<Profile />} />
           <Route path="performance" element={<PerformanceAnalytics />} />
           <Route path="plan-exams" element={<ExamsPlanning />} />
-          <Route path="mock-tests" element={<MockTests />} />
+          <Route path="mock-tests" element={<MockTests />}>
+            <Route path="preference/:examId" element={<MockTestPreferencePage />} />
+          </Route>
           <Route path="mock-tests/session/:attemptId" element={<MockTest />} />
           <Route path="confirm-oauth" element={<ConfirmOAuthPage />} />
           <Route path="results/history" element={<ResultsHistory />} />
@@ -148,23 +160,25 @@ function App() {
     )
   );
 
-  if (loading) {
-    return (
-      <div className="min-h-screen flex items-center justify-center">
-        Loading...
-      </div>
-    );
-  }
+  // --- FLAGSHIP: PRESENCE LAYER ---
+  // The SplashScreen stays visible while Redux is loading OR the app is initializing
+  const isSplashVisible = isInitializing || userLoading;
 
   return (
     <>
+      <SplashScreen isVisible={isSplashVisible} />
+      
       <NotificationsSystem
         notifications={notifications}
         dismissNotification={(id) => dismissNotification(id)}
         theme={wyboTheme}
       />
-      <RouterProvider router={router} />
-      <ScrollToTop/>
+      
+      <Suspense fallback={<SplashScreen isVisible={true} />}>
+        <RouterProvider router={router} />
+      </Suspense>
+      
+      <ScrollToTop />
     </>
   );
 }

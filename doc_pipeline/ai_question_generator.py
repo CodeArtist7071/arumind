@@ -45,7 +45,7 @@ def get_mapping():
 
 
 def get_round_robin_subject_chapter(mapping):
-    tracker_file = "chapter_tracker.json"
+    tracker_file = "govt_chapter_tracker.json"
     
     current_index = 0
     priority_board = None
@@ -126,7 +126,7 @@ def push_to_supabase(questions_data, exam_id, subject_id, chapter_id):
     existing_res = supabase.table("questions").select("question").eq("chapter_id", chapter_id).execute()
     existing_questions = [row["question"].strip().lower() for row in (existing_res.data or [])]
     
-    diff_map = {"E": "Easy", "M": "Moderate", "H": "Hard"}
+    diff_map = {"M": "Moderate", "H": "Hard"}
     inserted_count = 0
     
     for q in questions_data:

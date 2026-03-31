@@ -1,18 +1,20 @@
-import { Suspense, useEffect, useState } from "react";
-import { useNavigate, useParams } from "react-router";
+import React, { Suspense, useEffect, useState } from "react";
+import { useNavigate, useParams, useLocation } from "react-router-dom";
 import { getExamSubjects } from "../services/examService";
 import { useDispatch, useSelector } from "react-redux";
 import { fetchExamSubjects } from "../slice/examSubjectSlice";
 import type { AppDispatch, RootState } from "../store";
-import { BookCopy, Shield, Zap, Coffee, Clock, CheckCircle2, ChevronRight } from "lucide-react";
+import { BookCopy, Shield, Zap, Coffee, Clock, CheckCircle2, ChevronRight, ChevronDown, Target } from "lucide-react";
 import { fetchChapter } from "../slice/chapterSlice";
 import { useNotifications } from "reapop";
 import { supabase } from "../utils/supabase";
 
 const Exam = () => {
+
   const { eid } = useParams<{ eid: string }>();
-  const dispatch = useDispatch<AppDispatch>();
+  const dispatch = useDispatch< AppDispatch>();
   const navigate = useNavigate();
+  const location = useLocation();
   const { notify } = useNotifications();
   
   const [showPrefs, setShowPrefs] = useState(false);
@@ -23,11 +25,32 @@ const Exam = () => {
     time: 30
   });
 
+  const { examData } = useSelector((state: RootState) => state.exams ?? { examData: [] });
   const { data, e_data, loading, error } = useSelector(
     (state: RootState) => state.examSubject ?? null,
   );
-  const { user } = useSelector((state: RootState) => state.user);
+  const { user, profile } = useSelector((state: RootState) => state.user ?? { user: null, profile: null });
   const [attemptedChapters, setAttemptedChapters] = useState<Set<string>>(new Set());
+  const [expandedSubjects, setExpandedSubjects] = useState<Set<string>>(new Set());
+  
+  const targetedExams = React.useMemo(() => {
+    if (!profile?.target_exams || !examData) return [];
+    return examData.filter((ex) => profile.target_exams.includes(ex.id));
+  }, [profile, examData]);
+
+  const autoOpenChapterId = location.state?.autoOpenChapterId;
+
+  const toggleSubject = (sid: string) => {
+    setExpandedSubjects(prev => {
+      const next = new Set(prev);
+      if (next.has(sid)) {
+        next.delete(sid);
+      } else {
+        next.add(sid);
+      }
+      return next;
+    });
+  };
 
   useEffect(() => {
     const fetchAttempts = async () => {
@@ -59,6 +82,20 @@ const Exam = () => {
     }
   }, [dispatch, eid]);
 
+  // Handle Automation from Dashboard
+  useEffect(() => {
+    if (autoOpenChapterId && data.length > 0 && e_data.length > 0) {
+      const chapter = e_data.find(c => c.id === autoOpenChapterId);
+      if (chapter) {
+        const sid = chapter.subjects.id;
+        setExpandedSubjects(new Set([sid]));
+        setTimeout(() => {
+           handleButton(sid, autoOpenChapterId);
+        }, 1200); // Wait for open animation
+      }
+    }
+  }, [autoOpenChapterId, data, e_data]);
+
   function handleButton(sid: string, cid: string) {
     setPrefs(prev => ({ ...prev, sid, cid }));
     setShowPrefs(true);
@@ -77,16 +114,41 @@ const Exam = () => {
   }
 
   return (
-    <div className="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-slate-100 min-h-screen">
+    <div className="text-on-surface min-h-screen font-narrative antialiased transition-colors duration-700">
       {/* Main Content */}
-      <main className="max-w-300 mx-auto w-full px-4 py-6 md:px-10">
-        {/* Page Header */}
-        <div className="mb-8">
-          <h1 className="text-3xl font-black mb-2">Subject-wise Curriculum</h1>
-          <p className="text-slate-600 dark:text-slate-400">
-            Target your weak areas and track your progress across all OSSC CGL
-            subjects.
+      <main className="max-w-300 mx-auto w-full px-4 md:px-10">
+        {/* Page Header - Asymmetrical & Editorial */}
+        <div className="mb-16 max-w-2xl">
+          <h1 className="text-5xl md:text-6xl font-black tracking-tight mb-6 leading-[0.9] text-on-surface animate-reveal">
+            Subject-wise <span className="text-primary italic">Curriculum</span>
+          </h1>
+          <p className="text-on-surface-variant text-lg leading-relaxed max-w-md animate-reveal opacity-80" style={{ animationDelay: '0.1s' }}>
+            Target your weak areas and track your growth across the OSSC CGL
+            ecosystem.
           </p>
+        </div>
+
+        {/* --- STICKY EXAM PREFERENCE BAR --- */}
+        <div className="sticky -top-6 lg:-top-10 z-40 bg-white/80 dark:bg-surface-container-low/80 backdrop-blur-3xl border-b border-on-surface/5 -mx-6 lg:-mx-10 px-6 lg:px-10 py-6 mb-12 shadow-sm transition-all duration-500">
+           <div className="max-w-300 mx-auto overflow-x-auto custom-scrollbar-hide flex items-center gap-2">
+              <div className="flex items-center gap-3 mr-6 shrink-0">
+                 <Target className="size-4 text-primary" />
+                 <span className="text-[10px] font-technical uppercase tracking-[0.3em] font-black opacity-40">Active Landscapes:</span>
+              </div>
+              {targetedExams.map((exam) => (
+                <button
+                  key={exam.id}
+                  onClick={() => navigate(`../exam/${exam.id}`)}
+                  className={`px-6 py-2 rounded-full font-technical font-black text-[10px] uppercase tracking-widest transition-all duration-500 shrink-0 ${
+                    eid === exam.id
+                      ? "bg-primary text-white shadow-lg shadow-primary/20 scale-105"
+                      : "text-on-surface-variant hover:bg-surface-container-high"
+                  }`}
+                >
+                  {exam.name}
+                </button>
+              ))}
+           </div>
         </div>
 
         {data.map((subject: any, index: number) => {
@@ -95,141 +157,178 @@ const Exam = () => {
             return (
               <section
                 key={index}
-                className="bg-white dark:bg-slate-900 rounded-xl border border-slate-200 dark:border-slate-800 shadow-sm mb-8"
+                className="bg-surface-container-low rounded-3xl overflow-hidden hover-bloom mb-12 transition-all duration-500 ease-botanical"
               >
-                <div className="p-6 border-b border-slate-100 dark:border-slate-800 flex justify-between">
-                  <div className="flex items-center gap-4">
-                    <div className="size-12 bg-blue-100 dark:bg-blue-900/30 rounded-xl flex items-center justify-center">
-                      <span className="material-symbols-outlined text-blue-600 text-2xl">
-                        <BookCopy />
+                {/* Subject Header - Accordion Toggle */}
+                <div 
+                  onClick={() => toggleSubject(subject.subjects.id)}
+                  className="p-8 bg-surface-container-high/40 flex flex-col md:flex-row justify-between items-start md:items-center gap-6 cursor-pointer group"
+                >
+                  <div className="flex items-center gap-4 flex-1">
+                    <div className="size-14 bg-primary/10 rounded-2xl flex text-black items-center justify-center transition-transform duration-500 group-hover:scale-110">
+                      <span className="text-primary text-2xl">
+                        <BookCopy size={28} />
                       </span>
                     </div>
                     <div>
-                      <h2 className="text-xl font-bold">
+                      <h2 className="text-2xl font-bold tracking-tight text-on-surface">
                         {subject.subjects.name}
                       </h2>
-                      <p className="text-sm w-90 text-slate-500 truncate">
+                      <p className="text-sm text-on-surface-variant max-w-sm opacity-60">
                         {subject.subjects.description}
                       </p>
                     </div>
                   </div>
 
-                  <div className="min-w-[140px]">
-                    <div className="flex justify-between text-xs font-semibold mb-1">
-                      <span className="text-primary">Progress</span>
-                      <span>4 / 12 Chapters</span>
+                  <div className="flex items-center gap-8 w-full md:w-auto">
+                    <div className="w-full md:w-48">
+                      <div className="flex justify-between items-baseline mb-3">
+                        <span className="text-[10px] font-bold uppercase tracking-widest text-primary font-mono opacity-70">Study Progress</span>
+                        <span className="text-sm font-bold font-mono">4 <span className="text-on-surface-variant/40 font-normal">/</span> 12</span>
+                      </div>
+                      <div className="w-full h-3 bg-surface-container-highest rounded-full overflow-hidden">
+                        <div
+                          className="h-full bg-primary-container rounded-full transition-all duration-1000 ease-botanical"
+                          style={{ width: "33%" }}
+                        />
+                      </div>
                     </div>
-                    <div className="w-full h-2 bg-slate-100 dark:bg-slate-800 rounded-full">
-                      <div
-                        className="h-full bg-primary rounded-full"
-                        style={{ width: "33%" }}
-                      />
+
+                    <div className={`p-2 rounded-full bg-surface-container-highest text-on-surface-variant transition-transform duration-500 ${expandedSubjects.has(subject.subjects.id) ? "rotate-180" : ""}`}>
+                      <ChevronDown size={20} />
                     </div>
                   </div>
                 </div>
 
-                {/* Chapter Items */}
-                {e_data.map((item, idx) => {
-                  // Check if chapter belongs to current subject
-                  if (subject.subjects.id === item.subjects.id) {
-                    return (
-                      <div
-                        key={idx}
-                        className="p-4 flex justify-between items-center cursor-pointer hover:bg-slate-100 dark:hover:bg-slate-800/50"
-                      >
-                        <div>
-                          <h4 className="font-medium">{item.name}</h4>
-                          <span className="text-xs text-slate-400">
-                            Completed 2 days ago
-                          </span>
-                        </div>
-                        <button
+                {/* Collapsible Content */}
+                <div className={`grid transition-all duration-500 ease-botanical ${expandedSubjects.has(subject.subjects.id) ? "grid-rows-[1fr] opacity-100" : "grid-rows-[0fr] opacity-0"}`}>
+                  <div className="overflow-hidden">
+                    <div className="px-4 py-8 space-y-2 bg-surface/30">
+                      {/* Chapter Items */}
+                      {e_data.map((item, idx) => {
+                    // Check if chapter belongs to current subject
+                    if (subject.subjects.id === item.subjects.id) {
+                      return (
+                        <div
                           onClick={() =>
-                            handleButton(item.subjects.id, item.id)
-                          }
-                          className={`px-4 py-2 border ${attemptedChapters.has(item.id) ? "bg-blue-600" : "bg-green-600"} text-white cursor-pointer hover:text-blue-400 hover:border-slate-400 rounded-lg text-sm font-semibold hover:bg-slate-200`}
+                              handleButton(item.subjects.id, item.id)
+                            }
+                          key={idx}
+                          className="group p-5 mx-2 rounded-2xl flex justify-between items-center cursor-pointer hover:bg-surface-container-high transition-all duration-300 ease-botanical"
                         >
-                          {attemptedChapters.has(item.id) ? "Retake Test" : "Take Test"}
-                        </button>
-                      </div>
-                    );
-                  }
-                  return null; // don't forget this for map
-                })}
+                          <div className="flex items-center gap-5">
+                            <div className={`size-2 rounded-full ${attemptedChapters.has(item.id) ? "bg-primary" : "bg-on-surface-variant/20 group-hover:bg-primary/40"}`} />
+                            <div>
+                              <h4 className="font-bold text-on-surface text-lg group-hover:text-primary transition-colors">
+                                {item.name}
+                              </h4>
+                              <span className="text-xs font-mono font-bold uppercase tracking-wider text-on-surface-variant/60">
+                                Completed 2 days ago
+                              </span>
+                            </div>
+                          </div>
+                          <button
+                            onClick={(e) => {
+                              e.stopPropagation();
+                              handleButton(item.subjects.id, item.id);
+                            }}
+                            className={`px-6 py-2.5 rounded-full text-sm font-black transition-all duration-300 shadow-sm ${
+                              attemptedChapters.has(item.id) 
+                                ? "bg-surface-container-highest text-on-surface hover:bg-surface-dim" 
+                                : "bg-linear-to-r from-primary to-primary-container text-white hover:scale-105 active:scale-95 shadow-primary/20 hover:shadow-lg"
+                            }`}
+                          >
+                            {attemptedChapters.has(item.id) ? "Retake Test" : "Take Test"}
+                          </button>
+                        </div>
+                          );
+                        }
+                        return null;
+                      })}
+                    </div>
+                  </div>
+                </div>
               </section>
             );
         })}
 
-        {/* --- PREFERENCES MODAL --- */}
+        {/* --- ADAPTIVE PREFERENCES MANIFEST (ACTION SHEET) --- */}
         {showPrefs && (
-          <div className="fixed inset-0 z-50 flex items-center justify-center p-4">
+          <div className="fixed inset-0 z-50 flex items-end sm:items-center justify-center p-0 sm:p-4">
             <div 
-              className="absolute inset-0 bg-slate-900/60 backdrop-blur-sm"
+              className="absolute inset-0 bg-on-surface/20 backdrop-blur-md transition-all duration-1000 ease-botanical"
               onClick={() => setShowPrefs(false)}
             />
-            <div className="relative bg-white dark:bg-slate-900 w-full max-w-xl rounded-4xl shadow-2xl border border-slate-200 dark:border-slate-800 overflow-hidden animate-in zoom-in-95 duration-200">
-              {/* Modal Header */}
-              <div className="p-8 border-b border-slate-100 dark:border-slate-800 bg-slate-50/50 dark:bg-slate-800/50">
-                <h3 className="text-2xl font-black tracking-tight">Exam Preferences</h3>
-                <p className="text-slate-500 text-sm mt-1">Select how you want to attempt this chapter</p>
+            <div className="relative bg-surface-container-lowest w-full sm:max-w-xl rounded-t-[2.5rem] rounded-b-none sm:rounded-b-[2.5rem] shadow-ambient-lg overflow-hidden animate-in fade-in slide-in-from-bottom sm:slide-in-from-bottom-0 sm:zoom-in-95 duration-700 ease-botanical">
+              {/* Mobile Drag Handle Ritual */}
+              <div className="pt-4 pb-0 sm:hidden">
+                <div className="w-12 h-1.5 bg-on-surface/10 rounded-full mx-auto" />
               </div>
 
-              {/* Modal Content */}
-              <div className="p-8 space-y-4">
+              {/* Modal Header */}
+              <div className="p-8 sm:p-10 pb-4 sm:pb-6 bg-surface-container-low/50">
+                <h3 className="text-2xl sm:text-3xl font-black tracking-tighter text-on-surface">Exam Preferences</h3>
+                <p className="text-on-surface-variant text-sm sm:text-base mt-2 opacity-70">Tailor your attempt for this chapter</p>
+              </div>
+
+              {/* Modal Content - Scrollable for small screens */}
+              <div className="p-8 sm:p-10 pt-4 space-y-4 max-h-[70vh] overflow-y-auto custom-scrollbar">
                 {/* 1. Normal Mode */}
                 <div 
                   onClick={() => setPrefs(p => ({ ...p, mode: "normal" }))}
-                  className={`p-5 rounded-2xl border-2 transition-all cursor-pointer flex items-center gap-4 ${
+                  className={`p-5 sm:p-6 rounded-3xl transition-all duration-300 cursor-pointer flex items-center gap-4 sm:gap-5 ${
                     prefs.mode === "normal" 
-                      ? "border-blue-600 bg-blue-50/50 dark:bg-blue-900/20" 
-                      : "border-slate-100 dark:border-slate-800 hover:border-slate-200"
-                  }`}
+                      ? "bg-primary/5 ring-2 ring-primary" 
+                      : "bg-surface-container-low hover:bg-surface-container-high"
+                  } ${showPrefs ? "animate-reveal" : "opacity-0"}`}
+                  style={{ animationDelay: '100ms' }}
                 >
-                  <div className={`p-3 rounded-xl ${prefs.mode === "normal" ? "bg-blue-600 text-white" : "bg-slate-100 dark:bg-slate-800 text-slate-500"}`}>
+                  <div className={`p-3 sm:p-4 rounded-2xl ${prefs.mode === "normal" ? "bg-primary text-white" : "bg-surface-container-highest text-on-surface-variant"}`}>
                     <Coffee size={24} />
                   </div>
                   <div className="flex-1">
-                    <h4 className="font-bold flex items-center gap-2">
+                    <h4 className="font-bold text-base sm:text-lg flex items-center gap-2 text-on-surface">
                       Relaxed Practice
-                      {prefs.mode === "normal" && <CheckCircle2 size={16} className="text-blue-600" />}
+                      {prefs.mode === "normal" && <CheckCircle2 size={16} className="text-primary" />}
                     </h4>
-                    <p className="text-xs text-slate-500">No timer, no proctoring. Study at your own pace.</p>
+                    <p className="text-xs sm:text-sm text-on-surface-variant opacity-70">No timer, no proctoring. Study at your own pace.</p>
                   </div>
                 </div>
 
                 {/* 2. Speed Drill */}
                 <div 
                   onClick={() => setPrefs(p => ({ ...p, mode: "speed" }))}
-                  className={`p-5 rounded-2xl border-2 transition-all cursor-pointer space-y-4 ${
+                  className={`p-5 sm:p-6 rounded-3xl transition-all duration-300 cursor-pointer space-y-4 sm:space-y-5 ${
                     prefs.mode === "speed" 
-                      ? "border-orange-500 bg-orange-50/50 dark:bg-orange-900/10" 
-                      : "border-slate-100 dark:border-slate-800 hover:border-slate-200"
-                  }`}
+                      ? "bg-tertiary/5 ring-2 ring-tertiary" 
+                      : "bg-surface-container-low hover:bg-surface-container-high"
+                  } ${showPrefs ? "animate-reveal" : "opacity-0"}`}
+                  style={{ animationDelay: '200ms' }}
                 >
-                  <div className="flex items-center gap-4">
-                    <div className={`p-3 rounded-xl ${prefs.mode === "speed" ? "bg-orange-500 text-white" : "bg-slate-100 dark:bg-slate-800 text-slate-500"}`}>
+                  <div className="flex items-center gap-4 sm:gap-5">
+                    <div className={`p-3 sm:p-4 rounded-2xl ${prefs.mode === "speed" ? "bg-tertiary text-white" : "bg-surface-container-highest text-on-surface-variant"}`}>
                       <Zap size={24} />
                     </div>
                     <div className="flex-1">
-                      <h4 className="font-bold flex items-center gap-2">
+                      <h4 className="font-bold text-base sm:text-lg flex items-center gap-2 text-tertiary">
                         Speed Drill
-                        {prefs.mode === "speed" && <CheckCircle2 size={16} className="text-orange-500" />}
+                        {prefs.mode === "speed" && <CheckCircle2 size={16} className="text-tertiary" />}
                       </h4>
-                      <p className="text-xs text-slate-500">Timer enabled, Camera disabled. Perfect for speed.</p>
+                      <p className="text-xs sm:text-sm text-on-surface-variant opacity-70">Timer enabled, Camera disabled. Perfect for speed.</p>
                     </div>
                   </div>
 
                   {prefs.mode === "speed" && (
-                    <div className="pl-14 flex items-center gap-3 animate-in fade-in slide-in-from-top-2">
-                       <span className="text-xs font-bold text-slate-400 uppercase tracking-widest">Time:</span>
+                    <div className="pl-12 sm:pl-16 flex items-center gap-2 sm:gap-3 animate-in fade-in slide-in-from-top-2">
+                       <span className="text-[9px] sm:text-[10px] font-mono font-bold text-on-surface-variant/40 uppercase tracking-widest">Tempo:</span>
                        {[30, 60, 90].map(t => (
                          <button
                             key={t}
                             onClick={(e) => { e.stopPropagation(); setPrefs(p => ({ ...p, time: t })); }}
-                            className={`px-4 py-1.5 rounded-full text-xs font-bold transition-all ${
+                            className={`px-4 sm:px-5 py-1.5 sm:py-2 rounded-full text-[10px] sm:text-xs font-mono font-bold transition-all duration-300 ${
                               prefs.time === t 
-                                ? "bg-orange-500 text-white shadow-lg shadow-orange-500/30" 
-                                : "bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-slate-600 hover:bg-slate-50"
+                                ? "bg-tertiary text-white shadow-lg shadow-tertiary/20" 
+                                : "bg-surface-container-highest text-on-surface-variant hover:bg-surface-dim"
                             }`}
                          >
                            {t}m
@@ -242,38 +341,39 @@ const Exam = () => {
                 {/* 3. Proctored Mode */}
                 <div 
                   onClick={() => setPrefs(p => ({ ...p, mode: "proctored" }))}
-                  className={`p-5 rounded-2xl border-2 transition-all cursor-pointer flex items-center gap-4 ${
+                  className={`p-5 sm:p-6 rounded-3xl transition-all duration-300 cursor-pointer flex items-center gap-4 sm:gap-5 ${
                     prefs.mode === "proctored" 
-                      ? "border-emerald-600 bg-emerald-50/50 dark:bg-emerald-900/20" 
-                      : "border-slate-100 dark:border-slate-800 hover:border-slate-200"
-                  }`}
+                      ? "bg-on-surface ring-2 ring-on-surface" 
+                      : "bg-surface-container-low hover:bg-surface-container-high"
+                  } ${showPrefs ? "animate-reveal" : "opacity-0"}`}
+                  style={{ animationDelay: '300ms' }}
                 >
-                  <div className={`p-3 rounded-xl ${prefs.mode === "proctored" ? "bg-emerald-600 text-white" : "bg-slate-100 dark:bg-slate-800 text-slate-500"}`}>
+                  <div className={`p-3 sm:p-4 rounded-2xl ${prefs.mode === "proctored" ? "bg-on-surface text-surface" : "bg-surface-container-highest text-on-surface-variant"}`}>
                     <Shield size={24} />
                   </div>
                   <div className="flex-1">
-                    <h4 className="font-bold flex items-center gap-2">
+                    <h4 className="font-bold text-base sm:text-lg flex items-center gap-2 text-on-surface">
                       Full Simulation
-                      {prefs.mode === "proctored" && <CheckCircle2 size={16} className="text-emerald-600" />}
+                      {prefs.mode === "proctored" && <CheckCircle2 size={16} className="text-secondary" />}
                     </h4>
-                    <p className="text-xs text-slate-500">Camera + Timer. The ultimate exam environment.</p>
+                    <p className="text-xs sm:text-sm text-on-surface-variant opacity-70">Camera + Timer. The ultimate exam environment.</p>
                   </div>
                 </div>
               </div>
 
               {/* Modal Footer */}
-              <div className="p-8 bg-slate-50 dark:bg-slate-800/50 flex gap-4">
+              <div className="p-8 sm:p-10 bg-surface-container-low flex gap-3 sm:gap-4">
                 <button 
                   onClick={() => setShowPrefs(false)}
-                  className="flex-1 py-4 text-sm font-bold text-slate-500 hover:bg-white dark:hover:bg-slate-800 rounded-2xl transition-all border border-transparent hover:border-slate-200 cursor-pointer"
+                  className="flex-1 py-4 sm:py-5 text-xs sm:text-sm font-black text-on-surface-variant hover:bg-surface-container-highest rounded-full transition-all duration-300"
                 >
                   Cancel
                 </button>
                 <button 
                   onClick={handleStartTest}
-                  className="flex-1 py-4 text-sm font-bold bg-slate-900 dark:bg-blue-600 text-white rounded-2xl hover:opacity-90 transition-all flex items-center justify-center gap-2 cursor-pointer shadow-xl"
+                  className="flex-[1.5] py-4 sm:py-5 text-xs sm:text-sm font-black bg-primary text-white rounded-full hover:scale-105 active:scale-95 transition-all duration-300 flex items-center justify-center gap-2 shadow-xl shadow-primary/20"
                 >
-                  Start Now
+                  Start Manifestation
                   <ChevronRight size={18} />
                 </button>
               </div>
@@ -282,10 +382,17 @@ const Exam = () => {
         )}
       </main>
 
-      {/* Footer */}
-      <footer className="mt-12 border-t border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 py-10 px-4 md:px-10">
-        <div className="max-w-300 mx-auto text-sm text-slate-500">
-          © 2024 OSSC CGL Prep. All rights reserved.
+      {/* Footer - Minimal & Technical */}
+      <footer className="mt-20 py-12 px-4 md:px-10 border-t border-on-surface/5 opacity-40">
+        <div className="max-w-300 mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
+          <div className="text-[10px] font-mono font-bold uppercase tracking-[0.2em]">
+            © 2024 ARU.EDU <span className="mx-2 text-primary">•</span> DIGITAL GREENHOUSE v1.0
+          </div>
+          <div className="flex gap-8 text-[10px] font-mono font-bold uppercase tracking-widest">
+            <a href="#" className="hover:text-primary transition-colors">Integrity Policy</a>
+            <a href="#" className="hover:text-primary transition-colors">Privacy</a>
+            <a href="#" className="hover:text-primary transition-colors">Support</a>
+          </div>
         </div>
       </footer>
     </div>
@@ -297,40 +404,36 @@ export default Exam;
 
 const ExamSkeleton = () => {
   return (
-    <div className="bg-background-light dark:bg-background-dark font-display min-h-screen animate-pulse">
-      
-      <main className="max-w-300 mx-auto w-full px-4 py-6 md:px-10">
+    <div className="bg-surface font-narrative min-h-screen animate-pulse">
+      <main className="max-w-300 mx-auto w-full px-4 py-12 md:px-10">
         
         {/* Header Skeleton */}
-        <div className="mb-8">
-          <div className="h-8 w-72 bg-slate-300 dark:bg-slate-700 rounded mb-3"></div>
-          <div className="h-4 w-96 bg-slate-200 dark:bg-slate-700 rounded"></div>
+        <div className="mb-16 mt-8">
+          <div className="h-16 w-96 bg-surface-container-high rounded-2xl mb-6"></div>
+          <div className="h-6 w-80 bg-surface-container-low rounded-xl"></div>
         </div>
 
         {/* Subject Card Skeleton */}
-        {[1,2,3].map((_, index) => (
+        {[1,2].map((_, index) => (
           <section
             key={index}
-            className="bg-white dark:bg-slate-900 rounded-xl border border-slate-200 dark:border-slate-800 shadow-sm mb-8"
+            className="bg-surface-container-low rounded-3xl mb-12 overflow-hidden"
           >
             {/* Subject Header */}
-            <div className="p-6 border-b border-slate-100 dark:border-slate-800 flex justify-between">
+            <div className="p-8 bg-surface-container-high/40 flex justify-between items-center">
               
               <div className="flex items-center gap-4">
-                
-                <div className="size-12 bg-slate-300 dark:bg-slate-700 rounded-xl"></div>
-
+                <div className="size-14 bg-surface-container-highest rounded-2xl"></div>
                 <div>
-                  <div className="h-5 w-40 bg-slate-300 dark:bg-slate-700 rounded mb-2"></div>
-                  <div className="h-3 w-72 bg-slate-200 dark:bg-slate-700 rounded"></div>
+                  <div className="h-6 w-48 bg-surface-container-highest rounded-lg mb-2"></div>
+                  <div className="h-4 w-64 bg-surface-container-highest rounded-lg opacity-50"></div>
                 </div>
-
               </div>
 
               {/* Progress Skeleton */}
-              <div className="min-w-[140px]">
-                <div className="h-3 w-24 bg-slate-300 dark:bg-slate-700 rounded mb-2"></div>
-                <div className="w-full h-2 bg-slate-200 dark:bg-slate-700 rounded"></div>
+              <div className="w-48">
+                <div className="h-4 w-24 bg-surface-container-highest rounded mb-3"></div>
+                <div className="w-full h-3 bg-surface-container-highest rounded-full"></div>
               </div>
 
             </div>
@@ -339,27 +442,22 @@ const ExamSkeleton = () => {
             {[1,2,3].map((_, idx) => (
               <div
                 key={idx}
-                className="p-4 flex justify-between items-center"
+                className="p-5 mx-2 flex justify-between items-center"
               >
-                <div>
-                  <div className="h-4 w-40 bg-slate-300 dark:bg-slate-700 rounded mb-2"></div>
-                  <div className="h-3 w-28 bg-slate-200 dark:bg-slate-700 rounded"></div>
+                <div className="flex items-center gap-5">
+                  <div className="size-2 rounded-full bg-surface-container-highest"></div>
+                  <div>
+                    <div className="h-5 w-48 bg-surface-container-high rounded-lg mb-2"></div>
+                    <div className="h-3 w-32 bg-surface-container-high rounded-lg opacity-50"></div>
+                  </div>
                 </div>
 
-                <div className="h-8 w-20 bg-slate-300 dark:bg-slate-700 rounded-lg"></div>
+                <div className="h-10 w-28 bg-surface-container-high rounded-full"></div>
               </div>
             ))}
           </section>
         ))}
       </main>
-
-      {/* Footer Skeleton */}
-      <footer className="mt-12 border-t border-slate-200 dark:border-slate-800 py-10 px-4 md:px-10">
-        <div className="max-w-300 mx-auto">
-          <div className="h-4 w-60 bg-slate-300 dark:bg-slate-700 rounded"></div>
-        </div>
-      </footer>
-
     </div>
   );
 };

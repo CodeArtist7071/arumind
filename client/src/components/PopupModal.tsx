@@ -19,9 +19,9 @@ export const PopupModal = ({
 
   return (
     <div className="fixed inset-0 flex items-center justify-center bg-black/50 z-60">
-      <div className="bg-white w-lg rounded-xl shadow-lg  relative">
+      <div className="bg-surface w-lg rounded-xl shadow-lg  relative">
         <div className="bg-amber-200 rounded-t-xl rounded-r-xl h-30 flex justify-center items-center">
-          <span className="bg-white rounded-full w-20 h-20 flex justify-center items-center">
+          <span className="bg-surface rounded-full w-20 h-20 flex justify-center items-center">
             <CalendarRange className="w-9 h-9 text-center text-amber-400" />
           </span>
         </div>

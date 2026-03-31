@@ -18,69 +18,69 @@ export default function GrowthMetrics({
   const xpPercentage = (xp / nextLevelXP) * 100;
 
   const badges = [
-    { name: 'Consistency', icon: <Star className="size-4" />, color: streak >= 7 ? 'text-amber-500' : 'text-slate-400', bg: 'bg-slate-50' },
-    { name: 'syllabus pro', icon: <Target className="size-4" />, color: totalXp > 1000 ? 'text-blue-500' : 'text-slate-400', bg: 'bg-slate-50' },
-    { name: 'exam ready', icon: <Trophy className="size-4" />, color: level > 10 ? 'text-purple-500' : 'text-slate-400', bg: 'bg-slate-50' }
+    { name: 'Consistency', icon: <Star className="size-4" />, color: streak >= 7 ? 'text-amber-500' : 'text-slate-400', bg: 'bg-surface-container-low' },
+    { name: 'syllabus pro', icon: <Target className="size-4" />, color: totalXp > 1000 ? 'text-primary' : 'text-slate-400', bg: 'bg-surface-container-low' },
+    { name: 'exam ready', icon: <Trophy className="size-4" />, color: level > 10 ? 'text-purple-500' : 'text-slate-400', bg: 'bg-surface-container-low' }
   ];
 
   return (
-    <div className="bg-white dark:bg-slate-900 rounded-xl p-8 border border-slate-200 dark:border-slate-800 shadow-xl space-y-8">
+    <div className="bg-surface-container-low rounded-[2.5rem] p-8 shadow-ambient space-y-8">
       <div className="flex items-center justify-between">
         <div>
-          <h3 className="text-2xl font-black tracking-tight text-slate-900 dark:text-white">Growth Level</h3>
-          <p className="text-sm text-slate-300 uppercase font-bold tracking-wide mt-1">
-             Rank: {level > 10 ? 'Elite Aspirant' : 'Pro Aspirant'}
+          <h3 className="text-[11px] font-technical font-black uppercase tracking-[0.4em] text-on-surface-variant opacity-60 mb-2">Growth Lifecycle</h3>
+          <p className="text-2xl font-black text-on-surface tracking-tighter transition-all hover:text-primary cursor-default">
+             {level > 10 ? 'Elite' : 'Pro'} Aspirant
           </p>
         </div>
-        <div className="size-16 rounded-full bg-linear-to-br from-[#1a57db] to-blue-600 flex items-center justify-center text-white text-2xl font-black shadow-lg shadow-blue-500/30">
+        <div className="size-16 rounded-3xl bg-primary flex items-center justify-center text-white text-3xl font-technical font-black shadow-lg shadow-primary/20 transform -rotate-3 hover:rotate-0 transition-transform duration-500">
           {level}
         </div>
       </div>
 
-      <div className="space-y-3">
-        <div className="flex justify-between items-end">
-          <span className="text-xs font-black text-slate-500 uppercase tracking-widest">Mastery XP</span>
-          <span className="text-sm font-black text-[#1a57db]">{xp} / {nextLevelXP} XP</span>
+      <div className="space-y-4">
+        <div className="flex justify-between items-end px-1">
+          <span className="text-[9px] font-technical font-black text-on-surface-variant uppercase tracking-[0.2em] opacity-40">Mastery XP</span>
+          <span className="text-sm font-technical font-black text-primary tracking-widest">
+            {xp} <span className="opacity-20">/</span> {nextLevelXP} <span className="text-[10px] opacity-40">XP</span>
+          </span>
         </div>
-        <div className="w-full h-4 bg-slate-100 dark:bg-slate-800 rounded-full overflow-hidden shadow-inner p-1">
+        <div className="w-full h-6 bg-surface-container-high rounded-full overflow-hidden p-1.5 shadow-inner ring-1 ring-black/5">
           <div 
-            className="h-full bg-linear-to-r from-[#1a57db] to-blue-400 rounded-full shadow-sm transition-all duration-1000 relative"
+            className="h-full bg-linear-to-r from-primary to-primary-container rounded-full shadow-sm transition-all duration-2000 ease-out relative"
             style={{ width: `${xpPercentage}%` }}
-          >
-            <div className="absolute top-0 right-0 h-full w-4 bg-white/20 skew-x-12 animate-pulse" />
-          </div>
+          />
         </div>
       </div>
 
-      <div className="grid grid-cols-2 gap-4">
-        <div className="bg-orange-50 dark:bg-orange-950/20 p-4 rounded-2xl border border-orange-100 dark:border-orange-900/30 flex items-center gap-4">
-          <div className="size-10 bg-white dark:bg-slate-900 rounded-xl flex items-center justify-center text-orange-500 shadow-sm">
-            <Zap size={20} fill="currentColor" />
+      <div className="grid grid-cols-2 gap-6">
+        <div className="bg-white/50 p-6 rounded-4xl flex flex-col gap-4 shadow-ambient hover:scale-105 transition-all duration-500 group">
+          <div className="size-12 bg-surface-container-low rounded-2xl flex items-center justify-center text-tertiary shadow-sm group-hover:bg-tertiary group-hover:text-white transition-all duration-500">
+            <Zap size={22} fill="currentColor" />
           </div>
           <div>
-            <p className="text-xl font-black text-orange-600">{streak} Days</p>
-            <p className="text-[9px] uppercase font-bold text-orange-400 tracking-wider">Active Streak</p>
+            <p className="text-3xl font-technical font-black text-on-surface tracking-tighter">{streak}</p>
+            <p className="text-[9px] font-technical uppercase font-black text-on-surface-variant tracking-[0.2em] opacity-40">Active Streak</p>
           </div>
         </div>
         
-        <div className="bg-blue-50 dark:bg-blue-950/20 p-4 rounded-2xl border border-blue-100 dark:border-blue-900/30 flex items-center gap-4">
-          <div className="size-10 bg-white dark:bg-slate-900 rounded-xl flex items-center justify-center text-blue-500 shadow-sm">
-            <TrendingUp size={20} />
+        <div className="bg-white/50 p-6 rounded-4xl flex flex-col gap-4 shadow-ambient hover:scale-105 transition-all duration-500 group">
+          <div className="size-12 bg-surface-container-low rounded-2xl flex items-center justify-center text-primary shadow-sm group-hover:bg-primary group-hover:text-white transition-all duration-500">
+            <TrendingUp size={22} />
           </div>
           <div>
-            <p className="text-xl font-black text-blue-600">+{totalXp}</p>
-            <p className="text-[9px] uppercase font-bold text-blue-400 tracking-wider">Total XP Earned</p>
+            <p className="text-3xl font-technical font-black text-on-surface tracking-tighter">+{totalXp}</p>
+            <p className="text-[9px] font-technical uppercase font-black text-on-surface-variant tracking-[0.2em] opacity-40">XP Earned</p>
           </div>
         </div>
       </div>
 
-      <div className="space-y-4">
-        <h4 className="text-[10px] font-black uppercase tracking-[0.2em] text-slate-400 px-1">Progress Milestones</h4>
-        <div className="flex flex-wrap gap-2">
+      <div className="space-y-6 pt-4">
+        <h4 className="text-[10px] font-technical font-black uppercase tracking-[0.4em] text-on-surface-variant opacity-40 px-1">Progress Milestones</h4>
+        <div className="flex flex-wrap gap-3">
           {badges.map((badge) => (
-            <div key={badge.name} className={`${badge.bg} ${badge.color} px-3 py-1.5 rounded-xl border border-current/10 flex items-center gap-2 shadow-xs group cursor-default transition-all`}>
-              {badge.icon}
-              <span className="text-[10px] font-black uppercase tracking-tight">{badge.name}</span>
+            <div key={badge.name} className={`bg-surface-container-high ${badge.color} px-4 py-2 rounded-2xl flex items-center gap-3 shadow-sm hover:bg-white transition-all duration-300 group cursor-default`}>
+              <div className="opacity-60 group-hover:opacity-100 transition-opacity">{badge.icon}</div>
+              <span className="text-[9px] font-technical font-black uppercase tracking-widest">{badge.name}</span>
             </div>
           ))}
         </div>

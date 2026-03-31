@@ -1,13 +1,18 @@
-import { QueueListIcon } from "@heroicons/react/24/solid";
 import {
   BarChart,
+  Box,
+  HelpCircle,
   LayoutDashboard,
+  Layers,
+  LogOut,
   Notebook,
+  NotebookText,
   Package,
   School,
+  Users,
+  Layout,
 } from "lucide-react";
 import { useDispatch, useSelector } from "react-redux";
-
 import { Link, NavLink, Outlet } from "react-router-dom";
 import type { AppDispatch, RootState } from "../store";
 import { supabase } from "../utils/supabase";
@@ -16,29 +21,44 @@ import { useState } from "react";
 
 const navItems = [
   {
+    label: "Lattice Architect",
+    icon: <BarChart size={20} />,
+    path: "/admin/lattice",
+  },
+  {
     label: "Dashboard",
-    icon: <LayoutDashboard color="white" size={20} />,
-    path: "dashboard",
+    icon: <LayoutDashboard size={20} />,
+    path: "/admin/dashboard",
+  },
+  {
+    label: "Boards",
+    icon: <Layout size={20} />,
+    path: "/admin/boards",
   },
   {
     label: "Exams",
-    icon: <BarChart color="white" size={20} />,
-    path: "exams",
+    icon: <School size={20} />,
+    path: "/admin/exams",
   },
   {
-    label: "Users Management",
-    icon: <Notebook color="white" size={20} />,
+    label: "Subjects",
+    icon: <Notebook size={20} />,
+    path: "/admin/subjects",
+  },
+  {
+    label: "Chapters",
+    icon: <Layers size={20} />,
+    path: "/admin/chapters",
+  },
+  {
+    label: "Questions",
+    icon: <HelpCircle size={20} />,
+    path: "/admin/questions",
+  },
+  {
+    label: "Users",
+    icon: <Users size={20} />,
     path: "/admin/users",
-  },
-  {
-    label: "Reports",
-    icon: <Package color="white" size={20} />,
-    path: "reports",
-  },
-  {
-    label: "Settings",
-    icon: <Package color="white" size={20} />,
-    path: "settings",
   },
 ];
 
@@ -55,12 +75,12 @@ export default function AdminPanelLayout() {
     console.log("Logout Successfully");
   };
   return (
-    <div className="flex h-screen bg-slate-50 dark:bg-slate-950">
+    <div className="flex h-screen bg-surface-container-low dark:bg-slate-950">
       {/* Sidebar */}
-      <aside className="w-64 border-r border-slate-200 dark:border-slate-800 bg-white/90 dark:bg-slate-900/90 backdrop-blur-md flex flex-col">
+      <aside className="w-64  dark:border-slate-800 bg-surface/90 dark:bg-slate-900/90 backdrop-blur-md flex flex-col">
         {/* Logo */}
         <div className="p-6 flex items-center gap-3">
-          <div className="w-8 h-8 bg-[#1a57db] rounded-lg flex items-center justify-center text-white">
+          <div className="w-8 h-8 bg-[#16a34a] rounded-lg flex items-center justify-center text-white">
             <School color="white" size={20} />
           </div>
           <h2 className="text-xl font-bold tracking-tight">OPrep Portal</h2>
@@ -78,8 +98,8 @@ export default function AdminPanelLayout() {
               className={({ isActive }) =>
                 `flex items-center gap-3 px-3 py-2.5 rounded-lg transition-all duration-200 ${
                   isActive
-                    ? "bg-[#1a57db]/10 text-[#1a57db] font-medium shadow-sm"
-                    : "hover:bg-slate-100 dark:hover:bg-slate-800 text-slate-700 dark:text-slate-300"
+                    ? "bg-[#16a34a]/10 text-[#16a34a] font-medium shadow-sm"
+                    : "hover:bg-surface-container-high dark:hover:bg-slate-800 text-slate-700 dark:text-slate-300"
                 }`
               }
             >
@@ -90,10 +110,10 @@ export default function AdminPanelLayout() {
         </nav>
 
         {/* Upgrade CTA */}
-        <div className="p-4 border-t border-slate-200 dark:border-slate-800">
+        <div className="p-4  dark:border-slate-800">
           <button
             onClick={handleLogout}
-            className="w-full py-2 bg-white text-[#1a57db] text-xs font-bold rounded-lg hover:bg-slate-100 transition-all duration-200"
+            className="w-full py-2 bg-surface text-[#16a34a] text-xs font-bold rounded-lg hover:bg-surface-container-high transition-all duration-200"
           >
             Log Out
           </button>
@@ -111,19 +131,19 @@ export default function AdminPanelLayout() {
 const UserProfile = ({ user }: any) => {
   return (
     <div className="px-4 mb-6">
-      <div className="p-4 bg-[#1a57db]/5 rounded-xl border border-[#1a57db]/10">
+      <div className="p-4 bg-[#16a34a]/5 rounded-xl border border-[#16a34a]/10">
         <div className="flex items-center gap-3 mb-2">
-          <div className="w-10 h-10 bg-blue-200 px-5 flex justify-center items-center rounded-full bg-cover bg-center shadow-lg"></div>
+          <div className="w-10 h-10 bg-primary/20 px-5 flex justify-center items-center rounded-full bg-cover bg-center shadow-lg"></div>
           <div className="flex flex-col">
             <span className="w-30 text-sm font-semibold truncate">
               {user?.email || ""}
             </span>
-            <span className="text-xs text-slate-500">OPSC Aspirant</span>
+            <span className="text-xs text-on-surface-variant">OPSC Aspirant</span>
           </div>
         </div>
         <Link
           to={"/user/profile"}
-          className="w-full px-5 flex items-center justify-center py-1.5 text-xs font-bold bg-[#1a57db] text-white rounded-lg hover:bg-[#1a57db]/90 transition-all duration-200"
+          className="w-full px-5 flex items-center justify-center py-1.5 text-xs font-bold bg-[#16a34a] text-white rounded-lg hover:bg-[#16a34a]/90 transition-all duration-200"
         >
           View Profile
         </Link>
