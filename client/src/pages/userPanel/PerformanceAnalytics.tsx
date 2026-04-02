@@ -315,7 +315,7 @@ const PerformanceAnalytics = () => {
       />
 
       <div className="grid sm:grid-cols-1 lg:grid-cols-12 overflow-hidden gap-8">
-        <div className="w-full mx-auto bg-primary p-10 rounded-[3rem] shadow-ambient hover-bloom group">
+        <div className="w-full md:col-span-6 lg:col-span-4 mx-auto bg-primary p-10 rounded-[3rem] shadow-ambient hover-bloom group">
           <div className="size-16 bg-surface-container-high rounded-2xl flex items-center justify-center text-primary mb-8 shadow-sm group-hover:bg-primary group-hover:text-white transition-all duration-500">
             <TrendingUp size={28} />
           </div>

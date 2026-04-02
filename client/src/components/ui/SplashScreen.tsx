@@ -44,12 +44,12 @@ export const SplashScreen: React.FC<SplashScreenProps> = ({ isVisible }) => {
         {/* Textual Identity */}
         <div className="text-center space-y-3 animate-reveal" style={{ animationDelay: '0.2s' }}>
           <h1 className="text-4xl font-black tracking-tighter text-on-surface">
-            ARU<span className="text-primary">.EDU</span>
+            ARU<span className="text-primary">MIND</span>
           </h1>
           <div className="flex items-center gap-4 justify-center">
              <div className="h-px w-8 bg-on-surface/10" />
              <p className="text-[10px] font-technical font-black uppercase tracking-[0.4em] text-on-surface-variant opacity-40">
-               Digital Greenhouse
+               AI STUDY SPACE
              </p>
              <div className="h-px w-8 bg-on-surface/10" />
           </div>

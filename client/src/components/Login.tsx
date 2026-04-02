@@ -54,7 +54,15 @@ const Login = () => {
         email: info.email,
         password: info.password,
       });
-      if (error) setError(error);
+      
+      if (error) {
+        setError(error);
+        return;
+      }
+
+      if (data.session) {
+        navigate("/user/dashboard");
+      }
     } catch (err) {
       setError(err);
     }

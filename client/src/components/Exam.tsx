@@ -4,7 +4,7 @@ import { getExamSubjects } from "../services/examService";
 import { useDispatch, useSelector } from "react-redux";
 import { fetchExamSubjects } from "../slice/examSubjectSlice";
 import type { AppDispatch, RootState } from "../store";
-import { BookCopy, Shield, Zap, Coffee, Clock, CheckCircle2, ChevronRight, ChevronDown, Target } from "lucide-react";
+import { BookCopy, Shield, Zap, Coffee, Clock, CheckCircle2, ChevronRight, ChevronDown, Target, ArrowRight } from "lucide-react";
 import { fetchChapter } from "../slice/chapterSlice";
 import { useNotifications } from "reapop";
 import { supabase } from "../utils/supabase";
@@ -214,12 +214,12 @@ const Exam = () => {
                               handleButton(item.subjects.id, item.id)
                             }
                           key={idx}
-                          className="group p-5 mx-2 rounded-2xl flex justify-between items-center cursor-pointer hover:bg-surface-container-high transition-all duration-300 ease-botanical"
+                          className="group flex flex-row p-2 md:p-5 mx-2 rounded-2xl  justify-between items-center cursor-pointer hover:bg-surface-container-high transition-all duration-300 ease-botanical"
                         >
-                          <div className="flex items-center gap-5">
+                          <div className="flex mb-6 md:mb-0  items-center gap-5">
                             <div className={`size-2 rounded-full ${attemptedChapters.has(item.id) ? "bg-primary" : "bg-on-surface-variant/20 group-hover:bg-primary/40"}`} />
                             <div>
-                              <h4 className="font-bold text-on-surface text-lg group-hover:text-primary transition-colors">
+                              <h4 className="font-bold text-on-surface  text-lg group-hover:text-primary transition-colors">
                                 {item.name}
                               </h4>
                               <span className="text-xs font-mono font-bold uppercase tracking-wider text-on-surface-variant/60">
@@ -227,12 +227,13 @@ const Exam = () => {
                               </span>
                             </div>
                           </div>
+                          <div className="hidden md:block">
                           <button
                             onClick={(e) => {
                               e.stopPropagation();
                               handleButton(item.subjects.id, item.id);
                             }}
-                            className={`px-6 py-2.5 rounded-full text-sm font-black transition-all duration-300 shadow-sm ${
+                            className={`md:mt-0 px-6 py-2.5 rounded-full text-sm font-black transition-all duration-300 shadow-sm ${
                               attemptedChapters.has(item.id) 
                                 ? "bg-surface-container-highest text-on-surface hover:bg-surface-dim" 
                                 : "bg-linear-to-r from-primary to-primary-container text-white hover:scale-105 active:scale-95 shadow-primary/20 hover:shadow-lg"
@@ -240,6 +241,22 @@ const Exam = () => {
                           >
                             {attemptedChapters.has(item.id) ? "Retake Test" : "Take Test"}
                           </button>
+                          </div>
+                          <div className="block md:hidden">
+                             <button
+                            onClick={(e) => {
+                              e.stopPropagation();
+                              handleButton(item.subjects.id, item.id);
+                            }}
+                            className={`md:mt-0 p-2 rounded-full text-sm font-black transition-all duration-300 shadow-sm ${
+                              attemptedChapters.has(item.id) 
+                                ? "bg-surface-container-highest text-on-surface hover:bg-surface-dim" 
+                                : "bg-linear-to-r from-primary to-primary-container text-white hover:scale-105 active:scale-95 shadow-primary/20 hover:shadow-lg"
+                            }`}
+                          >
+                             <ArrowRight />
+                          </button>
+                          </div>
                         </div>
                           );
                         }
@@ -386,7 +403,7 @@ const Exam = () => {
       <footer className="mt-20 py-12 px-4 md:px-10 border-t border-on-surface/5 opacity-40">
         <div className="max-w-300 mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
           <div className="text-[10px] font-mono font-bold uppercase tracking-[0.2em]">
-            © 2024 ARU.EDU <span className="mx-2 text-primary">•</span> DIGITAL GREENHOUSE v1.0
+            © 2024 ARUMIND <span className="mx-2 text-primary">•</span> AI STYDY SPACE v1.0
           </div>
           <div className="flex gap-8 text-[10px] font-mono font-bold uppercase tracking-widest">
             <a href="#" className="hover:text-primary transition-colors">Integrity Policy</a>
