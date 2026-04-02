@@ -711,8 +711,8 @@ export default function TrackerGrid({
         </div>
 
         <div className="w-1/3 flex justify-end items-center gap-4 relative z-10">
-          {/* View Mode Toggle */}
-          <div className="flex bg-white/10 p-1 rounded-xl border border-white/10 mr-4">
+        
+          {/* <div className="flex bg-white/10 p-1 rounded-xl border border-white/10 mr-4">
             <button
               onClick={() => setViewMode('monthly')}
               className={`px-3 py-1.5 rounded-lg text-[9px] font-technical font-black uppercase tracking-widest transition-all ${viewMode === 'monthly' ? 'bg-white text-primary shadow-sm' : 'text-white/40 hover:text-white'}`}
@@ -725,7 +725,7 @@ export default function TrackerGrid({
             >
               Week
             </button>
-          </div>
+          </div> */}
 
           <GoogleCalendarButton />
 

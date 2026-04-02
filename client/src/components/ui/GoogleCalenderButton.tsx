@@ -34,7 +34,7 @@ export const GoogleCalendarButton = () => {
         <button
           onClick={connect}
           disabled={loading}
-          className="flex text-white cursor-pointer w-full justify-center items-center gap-2 px-4 py-3 bg-green-700 dark:bg-slate-800  dark:border-slate-700 rounded-xl text-sm font-bold shadow-sm hover:shadow-md transition-all disabled:opacity-50"
+          className="flex text-white truncate cursor-pointer w-full justify-center items-center gap-2 px-4 py-3 bg-green-700 dark:bg-slate-800  dark:border-slate-700 rounded-xl text-sm font-bold shadow-sm hover:shadow-md transition-all disabled:opacity-50"
         >
           
           <svg width="16" height="16" viewBox="0 0 24 24">

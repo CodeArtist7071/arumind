@@ -108,7 +108,7 @@ export const MobileStudyPlanner: React.FC<MobileStudyPlannerProps> = ({
 
         {/* 0. Setup Ritual: Botanical Overlay */}
         {isSettingUp && (
-          <div className="absolute inset-x-2 top-0 z-40 p-1 animate-in fade-in zoom-in-95 duration-1000 ease-botanical">
+          <div className="absolute inset-x-2 bottom-0 z-40 p-1 animate-in fade-in zoom-in-95 duration-1000 ease-botanical">
             <div className="bg-surface-container-high/95 backdrop-blur-xl rounded-[3rem] p-8 shadow-ambient-lg border border-primary/10 text-center space-y-6">
               <div className="size-16 bg-primary/10 rounded-4xl flex items-center justify-center mx-auto text-primary">
                 <Calendar className="size-8" />
@@ -178,8 +178,8 @@ export const MobileStudyPlanner: React.FC<MobileStudyPlannerProps> = ({
                 key={d.dayNum}
                 data-selected={isSelected}
                 onClick={() => onSelectDate(d.date)}
-                className={`min-w-[70px] flex flex-col items-center gap-2 p-4 rounded-4xl transition-all duration-500 ease-botanical relative group touch-manipulation cursor-pointer ${isSelected
-                    ? "bg-primary text-white shadow-ambient-lg scale-105 z-10"
+                className={`min-w-[50px] min-h-[50px] flex flex-col items-center gap-2 p-4 rounded-4xl transition-all duration-500 ease-botanical relative group touch-manipulation cursor-pointer ${isSelected
+                    ? "bg-primary text-white shadow-ambient-lg scale-110 z-10"
                     : "bg-surface-container-low text-on-surface-variant hover:bg-surface-container-high active:scale-95"
                   }`}
               >
@@ -194,10 +194,10 @@ export const MobileStudyPlanner: React.FC<MobileStudyPlannerProps> = ({
                   {d.dayNum}
                 </span>
                 {isToday && !isSelected && (
-                  <div className="absolute -top-1 size-2 bg-primary rounded-full ring-2 ring-surface animate-pulse" />
+                  <div className="absolute -top-1 size-3 bg-primary rounded-full ring-2 ring-surface animate-pulse" />
                 )}
                 {isSelected && (
-                  <div className="absolute -bottom-1 size-1 bg-white rounded-full" />
+                  <div className="absolute -bottom-1 size-2 bg-white rounded-full" />
                 )}
               </button>
             );
@@ -243,54 +243,6 @@ export const MobileStudyPlanner: React.FC<MobileStudyPlannerProps> = ({
 
 
         {/* 5. Mobile Dynamic FAB Cluster: Speed Dial Ritual */}
-        <div className="fixed bottom-10 right-6 flex flex-col gap-4 items-end z-50">
-          {/* Milestone Drawer Trigger */}
-          <button
-            onClick={() => setIsMilestoneOpen(true)}
-            className="size-14 bg-tertiary text-on-tertiary rounded-[1.75rem] shadow-ambient-lg shadow-tertiary/20 flex items-center justify-center hover:scale-110 active:scale-95 transition-all duration-500 overflow-hidden relative"
-          >
-            <Award className="size-5" />
-            {masteryOnly.length > 0 && (
-              <div className="absolute -top-1 -right-1 size-5 bg-primary text-white rounded-full border-2 border-white flex items-center justify-center animate-bounce">
-                <span className="text-[9px] font-black">{masteryOnly.length}</span>
-              </div>
-            )}
-          </button>
-
-          {/* Speed Dial Actions */}
-          <div className={`flex flex-col gap-3 transition-all duration-500 ease-botanical transform ${isAddExpanded ? "scale-100 opacity-100 translate-y-0" : "scale-50 opacity-0 translate-y-10 pointer-events-none"}`}>
-            {/* Add Test Milestone */}
-            <div 
-              className="flex items-center gap-3 group"
-              style={{ transitionDelay: isAddExpanded ? '100ms' : '0ms' }}
-            >
-              <span className="bg-surface/95 backdrop-blur-md px-3 py-1.5 rounded-xl text-[10px] font-technical font-black text-tertiary uppercase tracking-widest shadow-sm">Manifest Test</span>
-              <button
-                onClick={() => { onAddHabit("test"); setIsAddExpanded(false); }}
-                className="size-14 bg-tertiary text-on-tertiary rounded-2xl shadow-ambient-lg shadow-tertiary/10 flex items-center justify-center hover:scale-110 active:scale-95 transition-all duration-300"
-              >
-                <Award className="size-5" />
-              </button>
-            </div>
- 
-            {/* Add Daily Routine */}
-            <div 
-              className="flex items-center gap-3 group"
-              style={{ transitionDelay: isAddExpanded ? '50ms' : '0ms' }}
-            >
-              <span className="bg-surface/95 backdrop-blur-md px-3 py-1.5 rounded-xl text-[10px] font-technical font-black text-primary uppercase tracking-widest shadow-sm">Manifest Routine</span>
-              <button
-                onClick={() => { onAddHabit("routine"); setIsAddExpanded(false); }}
-                className="size-14 bg-primary text-white rounded-2xl shadow-ambient-lg shadow-primary/10 flex items-center justify-center hover:scale-110 active:scale-95 transition-all duration-300"
-              >
-                <Zap className="size-5" />
-              </button>
-            </div>
-          </div>
-
-          {/* Main Speed Dial FAB */}
- 
-        </div>
 
         {/* 6. Mobile Milestone Overlay: mastery tests */}
         <div className={`fixed inset-0 z-60 transition-all duration-700 ease-botanical ${isMilestoneOpen ? "opacity-100" : "opacity-0 pointer-events-none"}`}>

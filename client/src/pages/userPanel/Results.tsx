@@ -234,9 +234,9 @@ const Results = () => {
   }
 
   return (
-    <div className="min-h-screen bg-surface font-narrative text-on-surface antialiased transition-colors duration-700 pb-20">
+    <div className="min-h-screen font-narrative text-on-surface antialiased transition-colors duration-700 pb-20">
       {/* HEADER - Glassmorphic & Borderless */}
-      <header className="sticky top-0 z-50 glass px-6 py-4">
+      {/* <header className="sticky top-0 z-50 glass px-6 py-4">
         <div className="max-w-7xl mx-auto flex items-center justify-between">
           <div className="flex items-center gap-5">
             <button
@@ -269,7 +269,7 @@ const Results = () => {
             </div>
           </div>
         </div>
-      </header>
+      </header> */}
 
       <main className="max-w-7xl mx-auto p-6 md:p-10 space-y-12">
         {/* HERO PERFORMANCE CARD */}

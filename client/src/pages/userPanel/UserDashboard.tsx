@@ -19,7 +19,7 @@ import React, { useEffect, useRef, useState, useMemo } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import type { AppDispatch, RootState } from "../../store";
 import { fetchExams } from "../../slice/examSlice";
-import { useNavigate, Outlet } from "react-router-dom";
+import { useNavigate, Outlet, useLocation } from "react-router";
 import { supabase } from "../../utils/supabase";
 import { UpcomingMockTest } from "../../components/userDashboard/UpcomingMockTest";
 import { DashboardDailyRoutine } from "../../components/userDashboard/DashboardDailyRoutine";
@@ -265,14 +265,14 @@ const UserDashboard = () => {
                   {(profile?.full_name || user?.identities?.[0]?.identity_data?.name)?.split(' ')[0]}
                 </span>
               </h1>
-              <p className="text-on-surface-variant max-w-xl text-xl lg:text-2xl leading-relaxed opacity-0 animate-greeting-delay font-medium font-narrative">
+              <p className="text-on-surface-variant max-w-xl text-md lg:text-2xl leading-relaxed opacity-0 animate-greeting-delay font-medium font-narrative">
                 Your OPSC preparation is <span className="font-technical font-black text-primary border-b-2 border-primary/20">65%</span> complete.
                 You are currently in the top <span className="font-technical font-black text-primary border-b-2 border-primary/20">5%</span> of botanical aspirants.
               </p>
             </div>
 
-            <div className="flex gap-4">
-              <div className="bg-surface-container-low px-8 py-6 rounded-[2.5rem] shadow-ambient hover:scale-105 transition-transform duration-500 group">
+            <div className="flex  gap-4">
+              <div className="bg-surface-container-low px-2 py-4 md:px-8 md:py-6 rounded-[2.5rem] shadow-ambient hover:scale-105 transition-transform duration-500 group">
                 <p className="text-[9px] font-technical text-on-surface-variant uppercase font-black tracking-[0.2em] mb-2 opacity-50 group-hover:opacity-100 transition-opacity">
                   Daily Streak
                 </p>
@@ -282,7 +282,7 @@ const UserDashboard = () => {
                 </div>
               </div>
 
-              <div className="bg-surface-container-low px-8 py-6 rounded-[2.5rem] shadow-ambient hover:scale-105 transition-transform duration-500 group">
+              <div className="bg-surface-container-low px-2 py-4 md:px-8 md:py-6 rounded-[2.5rem] shadow-ambient hover:scale-105 transition-transform duration-500 group">
                 <p className="text-[9px] font-technical text-on-surface-variant uppercase font-black tracking-[0.2em] mb-2 opacity-50 group-hover:opacity-100 transition-opacity">
                   Daily Goal
                 </p>
@@ -414,7 +414,7 @@ const UserDashboard = () => {
 
       <button
         onClick={() => setIsDailRoutineOpen(true)}
-        className="fixed bottom-10 right-10 size-16 bg-primary text-white rounded-[2.5rem] shadow-ambient-lg shadow-primary/20 flex items-center justify-center hover:scale-110 active:scale-95 transition-all duration-500 z-50 group overflow-hidden"
+        className="fixed bottom-25 lg:bottom-10 right-5 size-16 bg-primary text-white rounded-[2.5rem] shadow-ambient-lg shadow-primary/20 flex items-center justify-center hover:scale-110 active:scale-95 transition-all duration-500 z-50 group overflow-hidden"
       >
         <div className="absolute inset-0 bg-linear-to-br from-white/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
         <CheckSquare className="size-6 transition-transform group-hover:rotate-12" />

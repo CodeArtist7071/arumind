@@ -11,6 +11,7 @@ import { fetchExams } from "./slice/examSlice";
 import { SplashScreen } from "./components/ui/SplashScreen";
 import NotificationsSystem, { wyboTheme, useNotifications, setUpNotifications } from "reapop";
 import ScrollToTop from "./components/ScrollToTop";
+import { Outlet, useLocation } from "react-router";
 
 // --- PERFORMANCE: DYNAMIC MANIFESTATIONS (CODE SPLITTING) ---
 const HomePage = lazy(() => import("./pages/HomePage"));
@@ -46,15 +47,102 @@ const ExamsList = lazy(() => import("./pages/ExamsList").then(m => ({ default: m
 const ResultSelection = lazy(() => import("./pages/resultpage/ResultSelection"));
 const AdminGuard = lazy(() => import("./components/AdminGuard").then(m => ({ default: m.AdminGuard })));
 const MockTestPreferencePage = lazy(() => import("./pages/userPanel/MockTestPreferencePage"));
+const AddRoutine = lazy(() => import("./components/studyPlanner/AddRoutine").then(m => ({ default: m.AddRoutine })));
 
+// --- ROUTING GUARDS: STABLE MANIFESTATIONS ---
+const GoalGuard = () => {
+  const { profile, loading } = useSelector((state: RootState) => state.user);
+  const location = useLocation();
 
+  if (loading) return <SplashScreen isVisible={true} />;
 
+  const needsSelection = !profile?.target_exams || profile.target_exams.length === 0;
+
+  if (needsSelection && location.pathname !== "/select-exams") {
+    return <Navigate to="/select-exams" replace />;
+  }
+
+  return <Outlet />;
+};
+
+const ProtectedRoute = ({ children }: { children: React.ReactNode }) => {
+  const { user } = useSelector((state: RootState) => state.user);
+  if (!user) return <Navigate to="/login" replace />;
+  return <>{children}</>;
+};
+
+const AuthRoute = ({ children }: { children: React.ReactNode }) => {
+  const { user } = useSelector((state: RootState) => state.user);
+  if (user) return <Navigate to="/user/dashboard" replace />;
+  return <>{children}</>;
+};
+
+// --- ROUTER CONFIGURATION: STATIC IDENTITY ---
+const router = createBrowserRouter(
+  createRoutesFromElements(
+    <>
+      <Route path="/" element={<HomePage />} />
+      <Route element={<Authlayout />}>
+        <Route path="/login" element={<AuthRoute><Login /></AuthRoute>} />
+        <Route path="/register" element={<AuthRoute><Register /></AuthRoute>} />
+      </Route>
+
+      {/* --- ADMIN MANIFESTATION --- */}
+      <Route path="admin" element={<AdminGuard />}>
+        <Route element={<AdminPanelLayout />}>
+          <Route path="dashboard" element={<AdminDashboard />} />
+          <Route path="lattice" element={<CurriculumLattice />} />
+          <Route path="boards" element={<ExamBoardsManagement />} />
+          <Route path="users" element={<UserManagement />} />
+          <Route path="features" element={<FeaturesManagement />} />
+          <Route path="exams" element={<ExamsManagement />} />
+          <Route path="subjects" element={<SubjectsManagement />} />
+          <Route path="chapters" element={<ChaptersManagement />} />
+          <Route path="questions" element={<QuestionsManagement />} />
+        </Route>
+      </Route>
+
+      <Route path="/select-exams" element={<ProtectedRoute><ExamGoalSelection /></ProtectedRoute>} />
+
+      <Route
+        path="/user"
+        element={<ProtectedRoute><UserPanelLayout /></ProtectedRoute>}
+      >
+        <Route element={<GoalGuard />}>
+          <Route element={<UserDashboardLayout />}>
+            <Route path="dashboard" element={<UserDashboard />} />
+            <Route path="dashboard/exam-lists" element={<ExamsList />} />
+            <Route path="dashboard/exam/:eid" element={<Exam />} />
+            <Route path="dashboard/exam/:eid/test/:sid/:cid" element={<PracticeTest />} />
+          </Route>
+          <Route element={<UserStudyPlanner />}>
+            <Route path="plan-study/:eid?" element={<StudyPlanner />}>
+              <Route path="add" element={<AddRoutine />} />
+              <Route path="edit/:habitId" element={<AddRoutine />} />
+            </Route>
+          </Route>
+          <Route path="profile" element={<Profile />} />
+          <Route path="performance" element={<PerformanceAnalytics />} />
+          <Route path="mock-tests" element={<MockTests />}>
+            <Route path="preference/:examId" element={<MockTestPreferencePage />} />
+          </Route>
+          <Route path="mock-tests/session/:attemptId" element={<MockTest />} />
+          <Route path="results/history" element={<ResultsHistory />} />
+          <Route path="results" element={<ResultSelection />} />
+          {/* <Route path="/select-exams" element={<ExamGoalSelection />} /> */}
+
+          <Route path="results/:attemptId" element={<Results />} />
+        </Route>
+      </Route>
+      <Route path="/user/confirm-oauth" element={<ConfirmOAuthPage />} />
+    </>
+  )
+);
 
 function App() {
   const dispatch = useDispatch<AppDispatch>();
   const { notifications, dismissNotification } = useNotifications();
-  // Safe destructuring of userSlice state manifestation
-  const { user, loading: userLoading } = useSelector((state: RootState) => state.user ?? { user: null, loading: false });
+  const { loading: userLoading } = useSelector((state: RootState) => state.user ?? { user: null, loading: false });
   const [isInitializing, setIsInitializing] = useState(true);
 
   setUpNotifications({
@@ -69,25 +157,20 @@ function App() {
     let subscription: any = null;
 
     const initAuth = async () => {
-      // 1. Identify existing session carefully
       const { data: { session } } = await supabase.auth.getSession();
-      
+
       if (session?.user) {
-        // Only fetch if session exists, avoid double-dispatch
         await dispatch(fetchUserProfile());
       }
 
-      // 2. Listen for future auth manifestations
       const { data } = supabase.auth.onAuthStateChange(
         (event, session) => {
           if (event === 'SIGNED_IN' && session?.user) {
-             dispatch(fetchUserProfile());
+            dispatch(fetchUserProfile());
           }
         }
       );
       subscription = data.subscription;
-
-      // Finalize initialization manifest
       setIsInitializing(false);
     };
 
@@ -98,86 +181,22 @@ function App() {
     };
   }, [dispatch]);
 
-  const router = createBrowserRouter(
-    createRoutesFromElements(
-      <>
-        <Route path="/" element={<HomePage />} />
-        <Route element={<Authlayout />}>
-          <Route
-            path="/login"
-            element={!user ? <Login /> : <Navigate to="/user/dashboard" replace />}
-          />
-          <Route
-            path="/register"
-            element={!user ? <Register /> : <Navigate to="/user/dashboard" replace />}
-          />
-        </Route>
-
-        {/* --- ADMIN MANIFESTATION --- */}
-        <Route path="admin" element={<AdminGuard />}>
-          <Route element={<AdminPanelLayout />}>
-            <Route path="dashboard" element={<AdminDashboard />} />
-            <Route path="lattice" element={<CurriculumLattice />} />
-            <Route path="boards" element={<ExamBoardsManagement />} />
-            <Route path="users" element={<UserManagement />} />
-            <Route path="features" element={<FeaturesManagement />} />
-            <Route path="exams" element={<ExamsManagement />} />
-            <Route path="subjects" element={<SubjectsManagement />} />
-            <Route path="chapters" element={<ChaptersManagement />} />
-            <Route path="questions" element={<QuestionsManagement />} />
-          </Route>
-        </Route>
-        
-        <Route path="/select-exam-goals" element={<ExamGoalSelection />} />
-        
-        <Route
-          path="/user"
-          element={user ? <UserPanelLayout /> : <Navigate to="/login" replace />}
-        >
-          <Route element={<UserDashboardLayout />}>
-            <Route path="select-exam-goals" element={<ExamGoalSelection />} />
-            <Route path="dashboard" element={<UserDashboard />} />
-            <Route path="dashboard/exam-lists" element={<ExamsList />} />
-            <Route path="dashboard/exam/:eid" element={<Exam />} />
-            <Route path="dashboard/exam/:eid/test/:sid/:cid" element={<PracticeTest />} />
-          </Route>
-          <Route element={<UserStudyPlanner />}>
-            <Route path="plan-study/:eid" element={<StudyPlanner />} />
-          </Route>
-          <Route path="profile" element={<Profile />} />
-          <Route path="performance" element={<PerformanceAnalytics />} />
-          <Route path="plan-exams" element={<ExamsPlanning />} />
-          <Route path="mock-tests" element={<MockTests />}>
-            <Route path="preference/:examId" element={<MockTestPreferencePage />} />
-          </Route>
-          <Route path="mock-tests/session/:attemptId" element={<MockTest />} />
-          <Route path="results/history" element={<ResultsHistory />} />
-          <Route path="results" element={<ResultSelection />} />
-          <Route path="results/:attemptId" element={<Results />} />
-        </Route>
-        <Route path="/user/confirm-oauth" element={<ConfirmOAuthPage />} />
-      </>
-    )
-  );
-
-  // --- FLAGSHIP: PRESENCE LAYER ---
-  // The SplashScreen stays visible while Redux is loading OR the app is initializing
   const isSplashVisible = isInitializing || userLoading;
 
   return (
     <>
       <SplashScreen isVisible={isSplashVisible} />
-      
+
       <NotificationsSystem
         notifications={notifications}
         dismissNotification={(id) => dismissNotification(id)}
         theme={wyboTheme}
       />
-      
+
       <Suspense fallback={<SplashScreen isVisible={true} />}>
         <RouterProvider router={router} />
       </Suspense>
-      
+
       <ScrollToTop />
     </>
   );
