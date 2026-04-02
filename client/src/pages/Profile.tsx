@@ -20,15 +20,20 @@ import {
   Calendar,
   Settings,
   ChevronRight,
-  Eye
+  Eye,
+  LogOut
 } from "lucide-react";
+import { useNavigate } from "react-router";
+import { supabase } from "../utils/supabase";
 import { useState } from "react";
 import { MobileProfile } from "../components/profile/MobileProfile";
+import { clearUser } from "../slice/userSlice";
 
-const Profile = () => {
+    const Profile = () => {
     const { user, profile } = useSelector((state: RootState) => state.user);
     const { isEyeProtectionActive, blueLightShield } = useSelector((state: RootState) => state.ui);
     const dispatch = useDispatch<AppDispatch>();
+    const navigate = useNavigate();
     const [isEditModalOpen, setIsEditModalOpen] = useState(false);
     
     const userData = user?.user_metadata;
@@ -49,6 +54,26 @@ const Profile = () => {
             console.error("Update failed", error);
             throw error;
         }
+    };
+
+    const handleLogoutThisDevice = async () => {
+        const { error } = await supabase.auth.signOut();
+        if (error) {
+            console.error("Local Sign Out Error", error);
+            return;
+        }
+        dispatch(clearUser());
+        navigate("/login");
+    };
+
+    const handleLogoutAllDevices = async () => {
+        const { error } = await supabase.auth.signOut({ scope: 'global' });
+        if (error) {
+            console.error("Global Sign Out Error", error);
+            return;
+        }
+        dispatch(clearUser());
+        navigate("/login");
     };
 
     return (
@@ -215,8 +240,52 @@ const Profile = () => {
                             </div>
                         </section>
 
+                        <section className="bg-surface-container-low rounded-4xl p-10 shadow-ambient border border-red-500/5">
+                             <div className="flex items-center gap-4 mb-8">
+                                  <div className="size-10 bg-red-500/10 rounded-xl flex items-center justify-center text-red-600">
+                                      <Zap size={20} />
+                                  </div>
+                                  <h3 className="text-[11px] font-technical font-black uppercase tracking-[0.4em] text-red-600/60">Security & Access</h3>
+                             </div>
+                             <div className="space-y-6">
+                                 {/* This Device Ritual */}
+                                 <div className="p-8 bg-surface-container-high/40 rounded-[2.5rem] border border-outline-variant/10 space-y-6">
+                                     <div className="space-y-2 text-center md:text-left">
+                                         <p className="text-sm font-black text-on-surface tracking-tight">Current Node Disconnect</p>
+                                         <p className="text-[10px] font-technical text-on-surface-variant opacity-60 leading-relaxed uppercase tracking-widest">
+                                            Close the active journal session on this specific device only.
+                                         </p>
+                                     </div>
+                                     <button 
+                                        onClick={handleLogoutThisDevice}
+                                        className="w-full py-4 bg-outline-variant text-on-surface rounded-full font-technical font-black text-[10px] uppercase tracking-[0.3em] hover:bg-on-surface hover:text-white hover:scale-[1.02] active:scale-95 transition-all flex items-center justify-center gap-3"
+                                     >
+                                         Logout This Device
+                                         <LogOut size={16} />
+                                     </button>
+                                 </div>
+
+                                 {/* All Devices Ritual */}
+                                 <div className="p-8 bg-red-500/5 rounded-[2.5rem] border border-red-500/10 space-y-6">
+                                     <div className="space-y-2 text-center md:text-left">
+                                         <p className="text-sm font-black text-on-surface tracking-tight">Global Session Termination</p>
+                                         <p className="text-[10px] font-technical text-on-surface-variant opacity-60 leading-relaxed uppercase tracking-widest">
+                                            Immediately invalidate all active journal sessions across all nodes and browsers.
+                                         </p>
+                                     </div>
+                                     <button 
+                                        onClick={handleLogoutAllDevices}
+                                        className="w-full py-4 bg-red-500 text-white rounded-full font-technical font-black text-[10px] uppercase tracking-[0.3em] shadow-lg shadow-red-500/20 hover:bg-red-600 hover:scale-[1.02] active:scale-95 transition-all flex items-center justify-center gap-3"
+                                     >
+                                         Terminate All Sessions
+                                         <RefreshCcw size={16} />
+                                     </button>
+                                 </div>
+                             </div>
+                        </section>
+
                         <section className="bg-surface-container-low rounded-4xl p-10 shadow-ambient">
-                            <h3 className="text-[11px] font-technical font-black uppercase tracking-[0.4em] text-on-surface-variant opacity-60 mb-10">Mastery Snapshot</h3>
+                             <h3 className="text-[11px] font-technical font-black uppercase tracking-[0.4em] text-on-surface-variant opacity-60 mb-10">Mastery Snapshot</h3>
                             <div className="space-y-8">
                                 <div>
                                     <div className="flex justify-between items-end mb-4">

@@ -1,9 +1,11 @@
 import { supabase } from "../utils/supabase";
 
 export const getExams = async () => {
-  const { data, error } = await supabase.from("exams").select("*");
+  const { data, error } = await supabase
+    .from("exams")
+    .select("*")
+    .eq("is_active", true);
   if (error) throw error;
-  // console.log("is examsss coming....", data);
   return data;
 };
 
@@ -11,9 +13,9 @@ export const getExamsById = async (exam_id: string[]) => {
   const { data, error } = await supabase
     .from("exams")
     .select("*")
-    .eq("id", exam_id);
+    .eq("id", exam_id)
+    .eq("is_active", true);
   if (error) throw error;
-  console.log("is examss list coming....", data);
   return data;
 };
 
@@ -24,10 +26,10 @@ export const getExamSubjects = async (exam_id: string) => {
       ` exam_id,
       subject_id,
       subjects (*)
-      
     `,
     )
-    .eq("exam_id", exam_id);
+    .eq("exam_id", exam_id)
+    .eq("subjects.is_active", true);
 
   if (error) throw error;
 
@@ -45,12 +47,15 @@ export const getChaptersByExamID = async (examId: string) => {
       subjects (
         id,
         name,
+        is_active,
         exam_subjects (
           exam_id
         )
       )
     `,
     )
+    .eq("is_active", true)
+    .eq("subjects.is_active", true)
     .eq("subjects.exam_subjects.exam_id", examId)
     .order("name", { foreignTable: "subjects" }) // optional: order by subject
     .order("display_order"); // optional: order by chapter display_order
@@ -67,9 +72,9 @@ export const getChapters = async (subject_id: string) => {
   const { data, error } = await supabase
     .from("chapters")
     .select(`subject_id,chapters(*)`)
-    .eq("subject_id", subject_id);
+    .eq("subject_id", subject_id)
+    .eq("is_active", true);
   if (error) throw error;
-  console.log("checking...", data);
   return data;
 };
 
@@ -94,6 +99,7 @@ export const getExamBoards = async () => {
   `,
     )
     .eq("is_active", true)
+    .eq("exams.is_active", true)
     .order("description");
   if (error) throw new Error();
   return data;

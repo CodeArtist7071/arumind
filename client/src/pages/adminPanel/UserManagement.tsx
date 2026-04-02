@@ -16,20 +16,50 @@ const UserManagement: React.FC = () => {
 
   const columns = [
     { 
-      header: "Student", 
-      key: "email",
+        header: "Portal ID", 
+        key: "id",
+        render: (val: string) => (
+            <span className="text-[10px] font-mono font-black text-primary opacity-40 hover:opacity-100 transition-opacity cursor-copy" title="Click to manifest UUID">
+                {val}
+            </span>
+        ),
+        width: 140
+    },
+    { 
+      header: "Aspirant Identity", 
+      key: "full_name",
       render: (val: string, item: any) => (
         <div className="flex flex-col">
-          <span className="font-bold text-slate-800 dark:text-slate-100">{item.full_name || "Anonymous Student"}</span>
-          <span className="text-[10px] opacity-60 font-mono italic">{val || item.id.split('-')[0]}</span>
+          <span className="font-bold text-slate-800 dark:text-slate-100">{val || "Anonymous Student"}</span>
+          <span className="text-[10px] opacity-60 font-mono italic">{item.phone || "No Comm Link"}</span>
         </div>
       )
     },
     { 
-      header: "Role", 
+      header: "Location Node", 
+      key: "district",
+      render: (_: string, item: any) => (
+        <span className="text-[10px] font-bold text-slate-500 uppercase tracking-wider">
+           {item.district && item.state ? `${item.district}, ${item.state}` : "Unspecified"}
+        </span>
+      )
+    },
+    { 
+        header: "Manifest Plan", 
+        key: "subscription_plan",
+        render: (val: string) => (
+          <span className={`text-[9px] font-black tracking-widest px-2 py-0.5 rounded border ${
+              val === 'pro' ? 'bg-[#16a34a]/10 text-[#16a34a] border-[#16a34a]/20' : 'bg-slate-100 text-slate-400 border-slate-200'
+          }`}>
+            {(val || 'FREE').toUpperCase()}
+          </span>
+        )
+    },
+    { 
+      header: "Manifest Role", 
       key: "role",
       render: (val: string) => (
-        <span className={`text-[10px] font-black tracking-widest px-2 py-0.5 rounded ${
+        <span className={`text-[9px] font-black tracking-widest px-2 py-0.5 rounded ${
             val === 'admin' ? 'bg-[#16a34a]/10 text-[#16a34a]' : 'bg-slate-100 dark:bg-slate-800 text-slate-500'
         }`}>
           {(val || 'STUDENT').toUpperCase()}
@@ -37,20 +67,24 @@ const UserManagement: React.FC = () => {
       )
     },
     { 
-        header: "Verified", 
-        key: "is_verified",
-        render: (val: boolean) => (val ? "✅" : "⏳")
+        header: "Status", 
+        key: "role_status", // Changed from 'role' to avoid collision manifestation
+        render: () => (
+            <span className="text-[10px] font-black uppercase tracking-widest text-[#16a34a]">Active Portal</span>
+        )
     },
     { 
         header: "Reg Date", 
         key: "created_at",
-        render: (val: string) => <span className="text-[10px] opacity-60">{new Date(val).toLocaleDateString()}</span>
+        render: (val: string) => <span className="text-[10px] opacity-60 font-mono italic">{new Date(val).toLocaleDateString()}</span>
     },
   ];
 
   const fields: any[] = [
     { name: "full_name", label: "Full Name", type: "text", required: true },
-    { name: "email", label: "Email Address", type: "text", required: true },
+    { name: "phone", label: "Comm Link (Phone)", type: "text" },
+    { name: "state", label: "State Manifestation", type: "text" },
+    { name: "district", label: "District Node", type: "text" },
     { 
       name: "role", 
       label: "Platform Role", 
@@ -60,7 +94,15 @@ const UserManagement: React.FC = () => {
         { label: "Admin", value: "admin" }
       ]
     },
-    { name: "is_verified", label: "Verification Status", type: "checkbox" },
+    { 
+      name: "subscription_plan", 
+      label: "Manifest Plan", 
+      type: "select", 
+      options: [
+        { label: "Free Manifestation", value: "free" },
+        { label: "Pro Manifestation", value: "pro" }
+      ]
+    }
   ];
 
   const handleApply = async (formData: any) => {

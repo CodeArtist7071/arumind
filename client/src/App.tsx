@@ -48,6 +48,7 @@ const ResultSelection = lazy(() => import("./pages/resultpage/ResultSelection"))
 const AdminGuard = lazy(() => import("./components/AdminGuard").then(m => ({ default: m.AdminGuard })));
 const MockTestPreferencePage = lazy(() => import("./pages/userPanel/MockTestPreferencePage"));
 const AddRoutine = lazy(() => import("./components/studyPlanner/AddRoutine").then(m => ({ default: m.AddRoutine })));
+const ResetPassword = lazy(() => import("./pages/ResetPassword"));
 
 // --- ROUTING GUARDS: STABLE MANIFESTATIONS ---
 const GoalGuard = () => {
@@ -85,6 +86,7 @@ const router = createBrowserRouter(
       <Route element={<Authlayout />}>
         <Route path="/login" element={<AuthRoute><Login /></AuthRoute>} />
         <Route path="/register" element={<AuthRoute><Register /></AuthRoute>} />
+        <Route path="/reset-password" element={<ResetPassword />} />
       </Route>
 
       {/* --- ADMIN MANIFESTATION --- */}

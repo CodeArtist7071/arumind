@@ -663,6 +663,19 @@ export default function StudyPlannerPage() {
         onAddHabit={onAddHabit}
         masteryOnly={masteryOnly}
       />
+      <div className="hidden fixed bottom-20 lg:bottom-10 right-6 md:flex flex-col gap-4 items-end z-50">
+           <button
+            onClick={() => setIsMilestoneDrawerOpen(true)}
+            className="hidden size-14 bg-tertiary text-on-tertiary rounded-[1.75rem] shadow-ambient-lg shadow-tertiary/20 lg:flex items-center justify-center hover:scale-110 active:scale-95 transition-all duration-500 overflow-hidden relative"
+          >
+            <Award className="size-5" />
+            {masteryOnly.length > 0 && (
+              <div className="absolute -top-1 -right-1 size-5 bg-primary text-white rounded-full border-2 border-white flex items-center justify-center animate-bounce">
+                <span className="text-[9px] font-black">{masteryOnly.length}</span>
+              </div>
+            )}
+          </button>
+      </div>
 
       {/* MILESTONE DRAWER: Monthly Test Overview */}
       <div
@@ -786,17 +799,6 @@ const AddMileStone = ({
   return (
     <div className="fixed bottom-20 lg:bottom-10 right-6 flex flex-col gap-4 items-end z-50">
       {/* Milestone Drawer Trigger */}
-      <button
-        onClick={() => setIsMilestoneOpen(true)}
-        className="hidden size-14 bg-tertiary text-on-tertiary rounded-[1.75rem] shadow-ambient-lg shadow-tertiary/20 lg:flex items-center justify-center hover:scale-110 active:scale-95 transition-all duration-500 overflow-hidden relative"
-      >
-        <Award className="size-5" />
-        {masteryOnly.length > 0 && (
-          <div className="absolute -top-1 -right-1 size-5 bg-primary text-white rounded-full border-2 border-white flex items-center justify-center animate-bounce">
-            <span className="text-[9px] font-black">{masteryOnly.length}</span>
-          </div>
-        )}
-      </button>
       {/* Speed Dial Actions */}
       <div className={`flex flex-col gap-3 transition-all duration-500 ease-botanical transform ${isAddExpanded ? "scale-100 opacity-100 translate-y-0" : "scale-50 opacity-0 translate-y-10 pointer-events-none"}`}>
         {/* Add Test Milestone */}

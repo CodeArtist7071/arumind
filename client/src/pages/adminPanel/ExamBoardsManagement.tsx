@@ -25,12 +25,26 @@ const ExamBoardsManagement: React.FC = () => {
     { 
         header: "Status", 
         key: "is_active",
-        render: (val: boolean) => (
-            <span className={`text-[8px] font-black uppercase tracking-[0.2em] px-2 py-0.5 rounded ${
-                val ? 'bg-green-100 dark:bg-green-950 text-green-600' : 'bg-red-100 dark:bg-red-950 text-red-600'
-            }`}>
-                {val ? 'Active' : 'Archived'}
-            </span>
+        render: (val: boolean, row: any) => (
+            <select
+              value={val ? "active" : "inactive"}
+              onChange={async (e) => {
+                const newValue = e.target.value === "active";
+                try {
+                  await updateItem(row.id, { is_active: newValue });
+                } catch (err: any) {
+                  alert("State Synchronization Failure: " + err.message);
+                }
+              }}
+              className={`px-3 py-1.5 rounded-lg text-[10px] font-black uppercase tracking-widest border transition-all cursor-pointer outline-none
+                ${val 
+                  ? "bg-[#16a34a]/10 text-[#16a34a] border-[#16a34a]/20 hover:bg-[#16a34a]/20" 
+                  : "bg-red-500/10 text-red-500 border-red-500/20 hover:bg-red-500/20"
+                }`}
+            >
+              <option value="active">Active</option>
+              <option value="inactive">Inactive</option>
+            </select>
         )
     },
   ];
