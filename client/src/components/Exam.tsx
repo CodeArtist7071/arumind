@@ -8,15 +8,16 @@ import { BookCopy, Shield, Zap, Coffee, Clock, CheckCircle2, ChevronRight, Chevr
 import { fetchChapter } from "../slice/chapterSlice";
 import { useNotifications } from "reapop";
 import { supabase } from "../utils/supabase";
+import { ExamTicker } from "../components/ui/ExamTicker";
 
 const Exam = () => {
 
   const { eid } = useParams<{ eid: string }>();
-  const dispatch = useDispatch< AppDispatch>();
+  const dispatch = useDispatch<AppDispatch>();
   const navigate = useNavigate();
   const location = useLocation();
   const { notify } = useNotifications();
-  
+
   const [showPrefs, setShowPrefs] = useState(false);
   const [prefs, setPrefs] = useState({
     sid: "",
@@ -32,7 +33,7 @@ const Exam = () => {
   const { user, profile } = useSelector((state: RootState) => state.user ?? { user: null, profile: null });
   const [attemptedChapters, setAttemptedChapters] = useState<Set<string>>(new Set());
   const [expandedSubjects, setExpandedSubjects] = useState<Set<string>>(new Set());
-  
+
   const targetedExams = React.useMemo(() => {
     if (!profile?.target_exams || !examData) return [];
     return examData.filter((ex) => profile.target_exams.includes(ex.id));
@@ -55,7 +56,7 @@ const Exam = () => {
   useEffect(() => {
     const fetchAttempts = async () => {
       if (!user?.id) return;
-      
+
       const { data, error } = await supabase
         .from("test_attempts")
         .select("chapter_id")
@@ -86,11 +87,11 @@ const Exam = () => {
   useEffect(() => {
     if (autoOpenChapterId && data.length > 0 && e_data.length > 0) {
       const chapter = e_data.find(c => c.id === autoOpenChapterId);
-      if (chapter) {
+      if (chapter && chapter.subjects) {
         const sid = chapter.subjects.id;
         setExpandedSubjects(new Set([sid]));
         setTimeout(() => {
-           handleButton(sid, autoOpenChapterId);
+          handleButton(sid, autoOpenChapterId);
         }, 1200); // Wait for open animation
       }
     }
@@ -110,7 +111,7 @@ const Exam = () => {
   console.log("Redux Data:", data);
 
   if (loading) {
-    return <ExamSkeleton/>;
+    return <ExamSkeleton />;
   }
 
   return (
@@ -128,31 +129,28 @@ const Exam = () => {
           </p>
         </div>
 
-        {/* --- STICKY EXAM PREFERENCE BAR --- */}
-        <div className="sticky -top-6 lg:-top-10 z-40 bg-white/80 dark:bg-surface-container-low/80 backdrop-blur-3xl border-b border-on-surface/5 -mx-6 lg:-mx-10 px-6 lg:px-10 py-6 mb-12 shadow-sm transition-all duration-500">
-           <div className="max-w-300 mx-auto overflow-x-auto custom-scrollbar-hide flex items-center gap-2">
-              <div className="flex items-center gap-3 mr-6 shrink-0">
-                 <Target className="size-4 text-primary" />
-                 <span className="text-[10px] font-technical uppercase tracking-[0.3em] font-black opacity-40">Active Landscapes:</span>
-              </div>
-              {targetedExams.map((exam) => (
-                <button
-                  key={exam.id}
-                  onClick={() => navigate(`../exam/${exam.id}`)}
-                  className={`px-6 py-2 rounded-full font-technical font-black text-[10px] uppercase tracking-widest transition-all duration-500 shrink-0 ${
-                    eid === exam.id
-                      ? "bg-primary text-white shadow-lg shadow-primary/20 scale-105"
-                      : "text-on-surface-variant hover:bg-surface-container-high"
-                  }`}
-                >
-                  {exam.name}
-                </button>
-              ))}
-           </div>
+        {/* --- STICKY EXAM PREFERENCE TICKER --- */}
+        <div className="sticky -top-6 lg:-top-10 z-40 dark:bg-surface-container-low/80 backdrop-blur-3xl border-b border-on-surface/5 -mx-6 lg:-mx-10 px-6 lg:px-10 py-6 mb-12 shadow-sm transition-all duration-500">
+          <div className="flex-col md:flex-row max-w-300 mx-auto overflow-x-auto custom-scrollbar-hide flex items-center justify-between gap-2">
+            <div className="flex items-center gap-3 mr-6 shrink-0">
+              <Target className="size-4 text-primary" />
+              <span className="text-[10px] font-technical uppercase tracking-[0.3em] font-black opacity-40">Active Landscapes:</span>
+            </div>
+            <div className="overflow-x-auto">
+              <ExamTicker
+                targetedExams={targetedExams}
+                selectedExam={eid || ""}
+                setSelectedExam={(id) => navigate(`/user/dashboard/exam/${id}`)}
+              />
+            </div>
+
+          </div>
         </div>
 
         {data.map((subject: any, index: number) => {
-          console.log("is exam id true...", subject.subjects.exam_subjects);
+          // Technical Verification: ensure parent subject existence manifestation
+          if (!subject.subjects) return null;
+
           if (subject.exam_id === eid)
             return (
               <section
@@ -160,7 +158,7 @@ const Exam = () => {
                 className="bg-surface-container-low rounded-3xl overflow-hidden hover-bloom mb-12 transition-all duration-500 ease-botanical"
               >
                 {/* Subject Header - Accordion Toggle */}
-                <div 
+                <div
                   onClick={() => toggleSubject(subject.subjects.id)}
                   className="p-8 bg-surface-container-high/40 flex flex-col md:flex-row justify-between items-start md:items-center gap-6 cursor-pointer group"
                 >
@@ -206,58 +204,58 @@ const Exam = () => {
                     <div className="px-4 py-8 space-y-2 bg-surface/30">
                       {/* Chapter Items */}
                       {e_data.map((item, idx) => {
-                    // Check if chapter belongs to current subject
-                    if (subject.subjects.id === item.subjects.id) {
-                      return (
-                        <div
-                          onClick={() =>
-                              handleButton(item.subjects.id, item.id)
-                            }
-                          key={idx}
-                          className="group flex flex-row p-2 md:p-5 mx-2 rounded-2xl  justify-between items-center cursor-pointer hover:bg-surface-container-high transition-all duration-300 ease-botanical"
-                        >
-                          <div className="flex mb-6 md:mb-0  items-center gap-5">
-                            <div className={`size-2 rounded-full ${attemptedChapters.has(item.id) ? "bg-primary" : "bg-on-surface-variant/20 group-hover:bg-primary/40"}`} />
-                            <div>
-                              <h4 className="font-bold text-on-surface  text-lg group-hover:text-primary transition-colors">
-                                {item.name}
-                              </h4>
-                              <span className="text-xs font-mono font-bold uppercase tracking-wider text-on-surface-variant/60">
-                                Completed 2 days ago
-                              </span>
+                        // Technical Verification: ensure chapter subject manifestation
+                        if (!item.subjects || !subject.subjects) return null;
+
+                        if (subject.subjects.id === item.subjects.id) {
+                          return (
+                            <div
+                              onClick={() =>
+                                handleButton(item.subjects.id, item.id)
+                              }
+                              key={idx}
+                              className="group flex flex-row p-2 md:p-5 mx-2 rounded-2xl  justify-between items-center cursor-pointer hover:bg-surface-container-high transition-all duration-300 ease-botanical"
+                            >
+                              <div className="flex mb-6 md:mb-0  items-center gap-5">
+                                <div className={`size-2 rounded-full ${attemptedChapters.has(item.id) ? "bg-primary" : "bg-on-surface-variant/20 group-hover:bg-primary/40"}`} />
+                                <div>
+                                  <h4 className="font-bold text-on-surface  text-lg group-hover:text-primary transition-colors">
+                                    {item.name}
+                                  </h4>
+                                  <span className="text-xs font-mono font-bold uppercase tracking-wider text-on-surface-variant/60">
+                                    Completed 2 days ago
+                                  </span>
+                                </div>
+                              </div>
+                              <div className="hidden md:block">
+                                <button
+                                  onClick={(e) => {
+                                    e.stopPropagation();
+                                    handleButton(item.subjects.id, item.id);
+                                  }}
+                                  className={`md:mt-0 px-6 py-2.5 rounded-full text-sm font-black transition-all duration-300 shadow-sm ${attemptedChapters.has(item.id)
+                                      ? "bg-surface-container-highest text-on-surface hover:bg-surface-dim"
+                                      : "bg-linear-to-r from-primary to-primary-container text-white hover:scale-105 active:scale-95 shadow-primary/20 hover:shadow-lg"
+                                    }`}
+                                >
+                                  {attemptedChapters.has(item.id) ? "Retake Test" : "Take Test"}
+                                </button>
+                              </div>
+                              <div className="block md:hidden">
+                                <button
+                                  onClick={(e) => {
+                                    e.stopPropagation();
+                                    handleButton(item.subjects.id, item.id);
+                                  }}
+                                  className={`md:mt-0 p-2 rounded-full text-sm font-black transition-all duration-300 shadow-sm ${attemptedChapters.has(item.id)
+                                      ? "bg-surface-container-highest text-on-surface hover:bg-surface-dim"
+                                      : "bg-linear-to-r from-primary to-primary-container text-white hover:scale-105 active:scale-95 shadow-primary/20 hover:shadow-lg"
+                                    }`}
+                                >
+                                  <ArrowRight />
+                                </button>
+                              </div>
                             </div>
-                          </div>
-                          <div className="hidden md:block">
-                          <button
-                            onClick={(e) => {
-                              e.stopPropagation();
-                              handleButton(item.subjects.id, item.id);
-                            }}
-                            className={`md:mt-0 px-6 py-2.5 rounded-full text-sm font-black transition-all duration-300 shadow-sm ${
-                              attemptedChapters.has(item.id) 
-                                ? "bg-surface-container-highest text-on-surface hover:bg-surface-dim" 
-                                : "bg-linear-to-r from-primary to-primary-container text-white hover:scale-105 active:scale-95 shadow-primary/20 hover:shadow-lg"
-                            }`}
-                          >
-                            {attemptedChapters.has(item.id) ? "Retake Test" : "Take Test"}
-                          </button>
-                          </div>
-                          <div className="block md:hidden">
-                             <button
-                            onClick={(e) => {
-                              e.stopPropagation();
-                              handleButton(item.subjects.id, item.id);
-                            }}
-                            className={`md:mt-0 p-2 rounded-full text-sm font-black transition-all duration-300 shadow-sm ${
-                              attemptedChapters.has(item.id) 
-                                ? "bg-surface-container-highest text-on-surface hover:bg-surface-dim" 
-                                : "bg-linear-to-r from-primary to-primary-container text-white hover:scale-105 active:scale-95 shadow-primary/20 hover:shadow-lg"
-                            }`}
-                          >
-                             <ArrowRight />
-                          </button>
-                          </div>
-                        </div>
                           );
                         }
                         return null;
@@ -272,7 +270,7 @@ const Exam = () => {
         {/* --- ADAPTIVE PREFERENCES MANIFEST (ACTION SHEET) --- */}
         {showPrefs && (
           <div className="fixed inset-0 z-50 flex items-end sm:items-center justify-center p-0 sm:p-4">
-            <div 
+            <div
               className="absolute inset-0 bg-on-surface/20 backdrop-blur-md transition-all duration-1000 ease-botanical"
               onClick={() => setShowPrefs(false)}
             />
@@ -291,13 +289,12 @@ const Exam = () => {
               {/* Modal Content - Scrollable for small screens */}
               <div className="p-8 sm:p-10 pt-4 space-y-4 max-h-[70vh] overflow-y-auto custom-scrollbar">
                 {/* 1. Normal Mode */}
-                <div 
+                <div
                   onClick={() => setPrefs(p => ({ ...p, mode: "normal" }))}
-                  className={`p-5 sm:p-6 rounded-3xl transition-all duration-300 cursor-pointer flex items-center gap-4 sm:gap-5 ${
-                    prefs.mode === "normal" 
-                      ? "bg-primary/5 ring-2 ring-primary" 
+                  className={`p-5 sm:p-6 rounded-3xl transition-all duration-300 cursor-pointer flex items-center gap-4 sm:gap-5 ${prefs.mode === "normal"
+                      ? "bg-primary/5 ring-2 ring-primary"
                       : "bg-surface-container-low hover:bg-surface-container-high"
-                  } ${showPrefs ? "animate-reveal" : "opacity-0"}`}
+                    } ${showPrefs ? "animate-reveal" : "opacity-0"}`}
                   style={{ animationDelay: '100ms' }}
                 >
                   <div className={`p-3 sm:p-4 rounded-2xl ${prefs.mode === "normal" ? "bg-primary text-white" : "bg-surface-container-highest text-on-surface-variant"}`}>
@@ -313,13 +310,12 @@ const Exam = () => {
                 </div>
 
                 {/* 2. Speed Drill */}
-                <div 
+                <div
                   onClick={() => setPrefs(p => ({ ...p, mode: "speed" }))}
-                  className={`p-5 sm:p-6 rounded-3xl transition-all duration-300 cursor-pointer space-y-4 sm:space-y-5 ${
-                    prefs.mode === "speed" 
-                      ? "bg-tertiary/5 ring-2 ring-tertiary" 
+                  className={`p-5 sm:p-6 rounded-3xl transition-all duration-300 cursor-pointer space-y-4 sm:space-y-5 ${prefs.mode === "speed"
+                      ? "bg-tertiary/5 ring-2 ring-tertiary"
                       : "bg-surface-container-low hover:bg-surface-container-high"
-                  } ${showPrefs ? "animate-reveal" : "opacity-0"}`}
+                    } ${showPrefs ? "animate-reveal" : "opacity-0"}`}
                   style={{ animationDelay: '200ms' }}
                 >
                   <div className="flex items-center gap-4 sm:gap-5">
@@ -337,32 +333,30 @@ const Exam = () => {
 
                   {prefs.mode === "speed" && (
                     <div className="pl-12 sm:pl-16 flex items-center gap-2 sm:gap-3 animate-in fade-in slide-in-from-top-2">
-                       <span className="text-[9px] sm:text-[10px] font-mono font-bold text-on-surface-variant/40 uppercase tracking-widest">Tempo:</span>
-                       {[30, 60, 90].map(t => (
-                         <button
-                            key={t}
-                            onClick={(e) => { e.stopPropagation(); setPrefs(p => ({ ...p, time: t })); }}
-                            className={`px-4 sm:px-5 py-1.5 sm:py-2 rounded-full text-[10px] sm:text-xs font-mono font-bold transition-all duration-300 ${
-                              prefs.time === t 
-                                ? "bg-tertiary text-white shadow-lg shadow-tertiary/20" 
-                                : "bg-surface-container-highest text-on-surface-variant hover:bg-surface-dim"
+                      <span className="text-[9px] sm:text-[10px] font-mono font-bold text-on-surface-variant/40 uppercase tracking-widest">Tempo:</span>
+                      {[30, 60, 90].map(t => (
+                        <button
+                          key={t}
+                          onClick={(e) => { e.stopPropagation(); setPrefs(p => ({ ...p, time: t })); }}
+                          className={`px-4 sm:px-5 py-1.5 sm:py-2 rounded-full text-[10px] sm:text-xs font-mono font-bold transition-all duration-300 ${prefs.time === t
+                              ? "bg-tertiary text-white shadow-lg shadow-tertiary/20"
+                              : "bg-surface-container-highest text-on-surface-variant hover:bg-surface-dim"
                             }`}
-                         >
-                           {t}m
-                         </button>
-                       ))}
+                        >
+                          {t}m
+                        </button>
+                      ))}
                     </div>
                   )}
                 </div>
 
                 {/* 3. Proctored Mode */}
-                <div 
+                <div
                   onClick={() => setPrefs(p => ({ ...p, mode: "proctored" }))}
-                  className={`p-5 sm:p-6 rounded-3xl transition-all duration-300 cursor-pointer flex items-center gap-4 sm:gap-5 ${
-                    prefs.mode === "proctored" 
-                      ? "bg-on-surface ring-2 ring-on-surface" 
+                  className={`p-5 sm:p-6 rounded-3xl transition-all duration-300 cursor-pointer flex items-center gap-4 sm:gap-5 ${prefs.mode === "proctored"
+                      ? "bg-on-surface ring-2 ring-on-surface"
                       : "bg-surface-container-low hover:bg-surface-container-high"
-                  } ${showPrefs ? "animate-reveal" : "opacity-0"}`}
+                    } ${showPrefs ? "animate-reveal" : "opacity-0"}`}
                   style={{ animationDelay: '300ms' }}
                 >
                   <div className={`p-3 sm:p-4 rounded-2xl ${prefs.mode === "proctored" ? "bg-on-surface text-surface" : "bg-surface-container-highest text-on-surface-variant"}`}>
@@ -380,13 +374,13 @@ const Exam = () => {
 
               {/* Modal Footer */}
               <div className="p-8 sm:p-10 bg-surface-container-low flex gap-3 sm:gap-4">
-                <button 
+                <button
                   onClick={() => setShowPrefs(false)}
                   className="flex-1 py-4 sm:py-5 text-xs sm:text-sm font-black text-on-surface-variant hover:bg-surface-container-highest rounded-full transition-all duration-300"
                 >
                   Cancel
                 </button>
-                <button 
+                <button
                   onClick={handleStartTest}
                   className="flex-[1.5] py-4 sm:py-5 text-xs sm:text-sm font-black bg-primary text-white rounded-full hover:scale-105 active:scale-95 transition-all duration-300 flex items-center justify-center gap-2 shadow-xl shadow-primary/20"
                 >
@@ -423,7 +417,7 @@ const ExamSkeleton = () => {
   return (
     <div className="bg-surface font-narrative min-h-screen animate-pulse">
       <main className="max-w-300 mx-auto w-full px-4 py-12 md:px-10">
-        
+
         {/* Header Skeleton */}
         <div className="mb-16 mt-8">
           <div className="h-16 w-96 bg-surface-container-high rounded-2xl mb-6"></div>
@@ -431,14 +425,14 @@ const ExamSkeleton = () => {
         </div>
 
         {/* Subject Card Skeleton */}
-        {[1,2].map((_, index) => (
+        {[1, 2].map((_, index) => (
           <section
             key={index}
             className="bg-surface-container-low rounded-3xl mb-12 overflow-hidden"
           >
             {/* Subject Header */}
             <div className="p-8 bg-surface-container-high/40 flex justify-between items-center">
-              
+
               <div className="flex items-center gap-4">
                 <div className="size-14 bg-surface-container-highest rounded-2xl"></div>
                 <div>
@@ -456,7 +450,7 @@ const ExamSkeleton = () => {
             </div>
 
             {/* Chapter Skeleton Rows */}
-            {[1,2,3].map((_, idx) => (
+            {[1, 2, 3].map((_, idx) => (
               <div
                 key={idx}
                 className="p-5 mx-2 flex justify-between items-center"

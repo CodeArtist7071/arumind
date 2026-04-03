@@ -59,28 +59,51 @@ export function useTableData(tableName: string, options: {
 
   const addItem = async (item: any) => {
     const { id: _, created_at, updated_at, ...payload } = item;
-    const { data: newItem, error: insertError } = await supabase
+    const { data: results, error: insertError } = await supabase
       .from(tableName)
       .insert(payload)
-      .select()
-      .single();
+      .select();
 
     if (insertError) throw insertError;
+    const newItem = Array.isArray(results) ? results[0] : results;
+    
     await fetchData();
     return newItem;
   };
 
   const updateItem = async (id: string, updates: any) => {
     const { id: _, created_at, updated_at, ...payload } = updates;
-    const { data: updatedItem, error: updateError } = await supabase
+    console.log(`[Lattice Hook] Initiating Authoritative Verification for ID:`, id);
+    
+    // 1. Visibility Check Manifestation
+    const { data: visibilityCheck } = await supabase.from(tableName).select("id").eq("id", id).maybeSingle();
+    if (!visibilityCheck) {
+        console.error(`[Lattice Hook] Visibility Failure: The entity with ID ${id} is NOT accessible or does not exist with current credentials.`);
+        throw new Error("Lattice Visibility Failure: Access Denied or Entity Missing.");
+    }
+
+    console.log(`[Lattice Hook] Executing UPDATE on ${tableName} for ID:`, id);
+    const { data: results, error: updateError } = await supabase
       .from(tableName)
       .update(payload)
       .eq("id", id)
-      .select()
-      .single();
+      .select();
 
-    if (updateError) throw updateError;
-    setData((prev) => prev.map((item) => (item.id === id ? updatedItem : item)));
+    if (updateError) {
+        console.error(`[Lattice Hook] ${tableName} Update ERROR:`, updateError);
+        throw updateError;
+    }
+
+    console.log(`[Lattice Hook] PostgreSQL Manifestation Results:`, results);
+    const updatedItem = Array.isArray(results) ? results[0] : results;
+    
+    if (updatedItem) {
+      setData((prev) => prev.map((item) => (item.id === id ? updatedItem : item)));
+      console.log(`[Lattice Hook] Local State Synchronized for ID:`, id);
+    } else {
+      console.warn(`[Lattice Hook] Update matched exactly ONE row but returned NO results. (High Probability of RLS Select Censorship).`);
+      await fetchData(); 
+    }
     return updatedItem;
   };
 

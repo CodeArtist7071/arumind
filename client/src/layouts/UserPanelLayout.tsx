@@ -18,7 +18,8 @@ import {
   EyeOff,
   Timer,
   LayoutGrid,
-  Book
+  Book,
+  ShieldCheck
 } from "lucide-react";
 import { useDispatch, useSelector } from "react-redux";
 import InstallAppButton from "../components/InstallAppButton";
@@ -63,6 +64,41 @@ export default function UserPanelLayout() {
 
   const firstExamId = profile?.target_exams?.[0] || "";
 
+
+
+  const mobileNavItems = [
+    {
+      label: "Dashboard",
+      icon: <LayoutDashboard size={20} />,
+      path: "/user/dashboard",
+    },
+    {
+      label: "Analytics",
+      icon: <TrendingUp size={20} />,
+      path: "/user/performance",
+    },
+    {
+      label: "Planner",
+      icon: <History size={20} />,
+      path: `/user/plan-study/${firstExamId}`,
+    },
+    {
+      label: "Inventory",
+      icon: <Package size={20} />,
+      path: "/user/mock-tests",
+    },
+    // {
+    //   label: "Practice",
+    //   icon: <Book size={20} />,
+    //   path: `/user/dashboard/exam/${firstExamId}`,
+    // },
+    {
+      label: "Results",
+      icon: <Target size={20} />,
+      path: "/user/results",
+    },
+  ];
+
   const navItems = [
     {
       label: "Dashboard",
@@ -83,16 +119,22 @@ export default function UserPanelLayout() {
       label: "Inventory",
       icon: <Package size={20} />,
       path: "/user/mock-tests",
-    },{
+    },
+    {
       label: "Practice",
       icon: <Book size={20} />,
-      path: "/user/mock-tests",
+      path: `/user/dashboard/exam/${firstExamId}`,
     },
     {
       label: "Results",
       icon: <Target size={20} />,
       path: "/user/results",
     },
+    ...(profile?.role === 'admin' ? [{
+      label: "Admin Portal",
+      icon: <ShieldCheck size={20} />,
+      path: "/admin/dashboard",
+    }] : []),
   ];
 
   const handleEyeProtectionToggle = () => {
@@ -198,8 +240,8 @@ export default function UserPanelLayout() {
             <button
               onClick={handleEyeProtectionToggle}
               className={`flex-1 flex items-center justify-center p-2 rounded-full transition-all duration-300 group ${isEyeProtectionActive
-                  ? "bg-primary text-white shadow-sm"
-                  : "bg-surface-container-high text-on-surface-variant hover:bg-surface-container-highest hover:text-primary"
+                ? "bg-primary text-white shadow-sm"
+                : "bg-surface-container-high text-on-surface-variant hover:bg-surface-container-highest hover:text-primary"
                 }`}
               title="Eye Protection Mode"
             >
@@ -339,19 +381,33 @@ export default function UserPanelLayout() {
         </div>
 
         {/* Mobile Nav - "The Bottom Bar" */}
-        <nav className="lg:hidden h-20 bg-surface-container-highest/80 backdrop-blur-xl flex justify-around items-center px-4 sticky bottom-0 z-30 border-t border-outline-variant/10 shadow-ambient">
-          {navItems.slice(0, 4).map((item) => (
-            <NavLink
-              key={item.label}
-              to={item.path}
-              className={({ isActive }) =>
-                `flex flex-col items-center justify-center size-14 rounded-2xl transition-all ${isActive ? "text-primary bg-surface shadow-sm" : "text-on-surface-variant"
-                }`
-              }
-            >
-              {cloneElement(item.icon as React.ReactElement<any>, { size: 20 })}
-            </NavLink>
+        <nav className="lg:hidden h-15 bg-surface-container-highest backdrop-blur-xl flex justify-between items-center px-3 sticky bottom-0 z-30 border-t border-outline-variant/10 shadow-ambient">
+          {mobileNavItems.filter(i => i.label !== "Admin Portal").slice(0, 7).map((item) => (
+            <div>
+              <NavLink
+                key={item.label}
+                to={item.path}
+                className={({ isActive }) =>
+                  `flex flex-col items-center justify-center size-14 rounded-full transition-all ${isActive ? "text-primary scale-105 translate-y-[-25px] duration-500 bg-surface  shadow-lg" : "text-on-surface-variant translate-y-[-5px]"
+                  }`
+                }
+              >
+                {cloneElement(item.icon as React.ReactElement<any>, { size: 20 })}
+                {/* <span className="text-[8px] bg-amber-300 mt-1">{item.label}</span> */}
+              </NavLink>
+
+            </div>
+
           ))}
+          {profile?.role === "admin" && (
+            <button
+              onClick={() => navigate("/admin/dashboard")}
+              className="hidden md:flex flex-col items-center justify-center size-14 rounded-2xl text-primary bg-primary/10 transition-all active:scale-90"
+              title="Admin Portal"
+            >
+              <ShieldCheck size={20} />
+            </button>
+          )}
         </nav>
       </main>
     </div>

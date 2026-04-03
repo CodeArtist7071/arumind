@@ -99,7 +99,7 @@ export default function AdminPanelLayout() {
                 `flex items-center gap-3 px-3 py-2.5 rounded-lg transition-all duration-200 ${
                   isActive
                     ? "bg-[#16a34a]/10 text-[#16a34a] font-medium shadow-sm"
-                    : "hover:bg-surface-container-high dark:hover:bg-slate-800 text-slate-700 dark:text-slate-300"
+                    : "hover:bg-surface-container-high dark:hover:bg-slate-800 text-on-surface-variant dark:text-slate-300"
                 }`
               }
             >

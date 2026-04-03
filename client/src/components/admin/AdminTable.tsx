@@ -24,6 +24,8 @@ interface Column {
   width?: number;
   minWidth?: number;
   flex?: number;
+  autoHeight?: boolean;
+  wrapText?: boolean;
 }
 
 interface AdminTableProps {
@@ -148,6 +150,8 @@ export const AdminTable: React.FC<AdminTableProps> = memo(({
         pinned: col.pinned,
         rowGroup: col.rowGroup,
         hide: col.hide,
+        autoHeight: col.autoHeight,
+        wrapText: col.wrapText,
         cellRenderer: (params: any) => {
           if (col.render) {
             try {
