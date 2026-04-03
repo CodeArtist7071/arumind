@@ -12,6 +12,7 @@ import { SplashScreen } from "./components/ui/SplashScreen";
 import NotificationsSystem, { wyboTheme, useNotifications, setUpNotifications } from "reapop";
 import ScrollToTop from "./components/ScrollToTop";
 import { Outlet, useLocation } from "react-router";
+import { IOSInstallPrompt } from "./components/ui/IOSInstallPrompt";
 
 // --- PERFORMANCE: DYNAMIC MANIFESTATIONS (CODE SPLITTING) ---
 const HomePage = lazy(() => import("./pages/HomePage"));
@@ -202,6 +203,7 @@ function App() {
       </Suspense>
 
       <ScrollToTop />
+      <IOSInstallPrompt />
     </>
   );
 }
