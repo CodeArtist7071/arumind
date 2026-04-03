@@ -9,11 +9,21 @@ import { Plus, UserPlus } from "lucide-react";
  * Synchronized with the 'profiles' table to manage student registrations.
  */
 const UserManagement: React.FC = () => {
-  const { data, loading, addItem, updateItem, deleteItem } = useTableData("profiles");
+  const { 
+    data, 
+    loading, 
+    totalCount, 
+    page, 
+    setPage, 
+    refresh, 
+    addItem, 
+    updateItem, 
+    deleteItem 
+  } = useTableData("profiles", { pageSize: 20 }); // established a larger default viewport manifestation
   
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [editingItem, setEditingItem] = useState<any>(null);
-
+  console.log("deloooo", data)
   const columns = [
     { 
         header: "Portal ID", 
@@ -45,7 +55,7 @@ const UserManagement: React.FC = () => {
       )
     },
     { 
-        header: "Manifest Plan", 
+        header: "Subscription Plan", 
         key: "subscription_plan",
         render: (val: string) => (
           <span className={`text-[9px] font-black tracking-widest px-2 py-0.5 rounded border ${
@@ -56,7 +66,7 @@ const UserManagement: React.FC = () => {
         )
     },
     { 
-      header: "Manifest Role", 
+      header: "Role", 
       key: "role",
       render: (val: string) => (
         <span className={`text-[9px] font-black tracking-widest px-2 py-0.5 rounded ${
@@ -145,6 +155,10 @@ const UserManagement: React.FC = () => {
       <AdminTable
         columns={columns}
         data={data}
+        totalCount={totalCount}
+        page={page}
+        onPageChange={setPage}
+        onRefresh={refresh}
         onEdit={(item) => {
           setEditingItem(item);
           setIsModalOpen(true);

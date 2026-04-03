@@ -627,7 +627,7 @@ export default function StudyPlannerPage() {
 
           {/* LOWER ANALYSIS ZONE: Split Routine & Growth */}
           <div className="hidden lg:grid grid-cols-12 gap-10 mt-20">
-            <section className="lg:col-span-4 space-y-10 animate-in fade-in slide-in-from-left-4 duration-1000">
+            {/* <section className="lg:col-span-4 space-y-10 animate-in fade-in slide-in-from-left-4 duration-1000">
               <div className="bg-surface-container-low p-2 rounded-[3.5rem] shadow-ambient">
                 <GrowthMetrics
                   level={stats.level}
@@ -636,9 +636,9 @@ export default function StudyPlannerPage() {
                   streak={stats.currentStreak}
                 />
               </div>
-            </section>
+            </section> */}
 
-            <section className="lg:col-span-8 animate-in fade-in slide-in-from-right-4 duration-1000">
+            {/* <section className="lg:col-span-8 animate-in fade-in slide-in-from-right-4 duration-1000">
               <div className="bg-surface-container-low p-2 rounded-[3.5rem] shadow-ambient">
                 <DailyRoutine
                   habits={habits}
@@ -649,7 +649,7 @@ export default function StudyPlannerPage() {
                   onSyncAll={handleSyncAllTasks}
                 />
               </div>
-            </section>
+            </section> */}
           </div>
         </div>
       </main>

@@ -112,7 +112,7 @@ const CurriculumLattice: React.FC = () => {
         {exams.map((exam) => (
           <div
             key={exam.id}
-            className={`bg-white dark:bg-slate-900/80 rounded-3xl border transition-all duration-500 overflow-hidden ${
+            className={`bg-surface-container-high dark:bg-slate-900/80 rounded-3xl border transition-all duration-500 overflow-hidden ${
               expandedExams.has(exam.id)
                 ? "border-[#16a34a]/40 shadow-2xl shadow-[#16a34a]/5"
                 : "border-slate-100 dark:border-slate-800 hover:border-slate-200"
@@ -145,12 +145,12 @@ const CurriculumLattice: React.FC = () => {
               <div className="flex items-center gap-6 w-full lg:w-auto">
                 <div className="flex -space-x-3 overflow-hidden opacity-40 group-hover:opacity-100 transition-opacity">
                    {exam.subjects.slice(0, 3).map((s: any, i: number) => (
-                       <div key={i} className="w-8 h-8 rounded-full bg-slate-100 border-2 border-white dark:border-slate-900 flex items-center justify-center text-[10px] font-black uppercase">
+                       <div key={i} className="w-8 h-8 rounded-full bg-primary border-2 border-white dark:border-slate-900 flex items-center justify-center text-[10px] font-black uppercase">
                            {s.name.charAt(0)}
                        </div>
                    ))}
                 </div>
-                <div className={`p-2 rounded-full bg-slate-50 dark:bg-slate-800 transition-transform duration-500 ${expandedExams.has(exam.id) ? 'rotate-180 bg-[#16a34a]/10 text-[#16a34a]' : ''}`}>
+                <div className={`p-2 rounded-full bg-primary transition-transform duration-500 ${expandedExams.has(exam.id) ? 'rotate-180 bg-[#16a34a]/10 text-[#16a34a]' : ''}`}>
                    <ChevronDown size={20} />
                 </div>
               </div>
@@ -158,19 +158,19 @@ const CurriculumLattice: React.FC = () => {
 
             {/* Subject Level Manifestation */}
             <div className={`grid transition-all duration-500 ease-botanical ${expandedExams.has(exam.id) ? 'grid-rows-[1fr] opacity-100' : 'grid-rows-[0fr] opacity-0'}`}>
-                <div className="overflow-hidden bg-slate-50/50 dark:bg-slate-950/20 px-8 pb-8 space-y-4">
+                <div className="overflow-hidden bg-surface-container-high px-8 pb-8 space-y-4">
                     {exam.subjects.map((subject: any) => (
-                        <div key={subject.id} className="bg-white dark:bg-slate-900/40 rounded-2xl border border-slate-100 dark:border-slate-800/50 shadow-sm overflow-hidden">
+                        <div key={subject.id} className="bg-surface-container-low rounded-2xl border border-slate-100 dark:border-slate-800/50 shadow-sm overflow-hidden">
                             <div 
                                 onClick={(e) => { e.stopPropagation(); toggleSubject(subject.id); }}
                                 className="p-6 flex items-center justify-between cursor-pointer hover:bg-[#16a34a]/5 transition-colors group/subject"
                             >
                                 <div className="flex items-center gap-4">
-                                    <div className="p-2 bg-slate-100 dark:bg-slate-800 rounded-lg text-slate-400 group-hover/subject:text-[#16a34a] transition-colors">
+                                    <div className="p-2 bg-slate-100 dark:bg-slate-800 rounded-lg text-primary group-hover/subject:text-[#16a34a] transition-colors">
                                         <BookOpen size={16} />
                                     </div>
-                                    <span className="font-bold text-slate-700 dark:text-slate-200">{subject.name}</span>
-                                    <span className="text-[9px] font-black tracking-widest text-slate-400 px-2 py-0.5 bg-slate-100 rounded">
+                                    <span className="font-bold text-primary ">{subject.name}</span>
+                                    <span className="text-[9px] font-black tracking-widest text-primary px-2 py-0.5 bg-slate-100 rounded">
                                         {subject.chapterCount} Chapters
                                     </span>
                                 </div>
@@ -182,17 +182,17 @@ const CurriculumLattice: React.FC = () => {
 
                             {/* Chapter Level Manifestation */}
                             <div className={`grid transition-all duration-300 ${expandedSubjects.has(subject.id) ? 'grid-rows-[1fr] opacity-100' : 'grid-rows-[0fr] opacity-0'}`}>
-                                <div className="overflow-hidden bg-slate-50/80 dark:bg-slate-950/40 border-t border-slate-50 dark:border-slate-800">
+                                <div className="overflow-hidden bg-surface-container-low dark:bg-slate-950/40 border-t border-slate-50 dark:border-slate-800">
                                     <div className="p-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
                                         {chapters.filter(c => c.subject_id === subject.id).map(chapter => (
                                             <div 
                                                 key={chapter.id}
                                                 onClick={() => setDrawerState({ isOpen: true, chapterId: chapter.id, chapterName: chapter.name })}
-                                                className="bg-white dark:bg-slate-900 p-4 rounded-xl border border-slate-100 dark:border-slate-800 hover:border-[#16a34a] hover:shadow-lg hover:shadow-[#16a34a]/5 transition-all cursor-pointer group/chapter"
+                                                className="bg-surface-container-lowest p-4 rounded-xl border border-slate-100 dark:border-slate-800 hover:border-[#16a34a] hover:shadow-lg hover:shadow-[#16a34a]/5 transition-all cursor-pointer group/chapter"
                                             >
                                                 <div className="flex items-center justify-between mb-2">
                                                     <div className="flex items-center gap-2">
-                                                        <Layers size={14} className="text-slate-300 group-hover/chapter:text-[#16a34a]" />
+                                                        <Layers size={14} className="text-primary group-hover/chapter:text-[#16a34a]" />
                                                         <span className="text-sm font-bold opacity-80 group-hover/chapter:opacity-100">{chapter.name}</span>
                                                     </div>
                                                 </div>

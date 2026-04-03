@@ -3,8 +3,7 @@ import { supabase } from "../utils/supabase";
 export const getExams = async () => {
   const { data, error } = await supabase
     .from("exams")
-    .select("*")
-    .eq("is_active", true);
+    .select("*");
   if (error) throw error;
   return data;
 };
@@ -13,8 +12,7 @@ export const getExamsById = async (exam_id: string[]) => {
   const { data, error } = await supabase
     .from("exams")
     .select("*")
-    .eq("id", exam_id)
-    .eq("is_active", true);
+    .eq("id", exam_id);
   if (error) throw error;
   return data;
 };
@@ -28,8 +26,7 @@ export const getExamSubjects = async (exam_id: string) => {
       subjects (*)
     `,
     )
-    .eq("exam_id", exam_id)
-    .eq("subjects.is_active", true);
+    .eq("exam_id", exam_id);
 
   if (error) throw error;
 
@@ -54,8 +51,6 @@ export const getChaptersByExamID = async (examId: string) => {
       )
     `,
     )
-    .eq("is_active", true)
-    .eq("subjects.is_active", true)
     .eq("subjects.exam_subjects.exam_id", examId)
     .order("name", { foreignTable: "subjects" }) // optional: order by subject
     .order("display_order"); // optional: order by chapter display_order
@@ -72,8 +67,7 @@ export const getChapters = async (subject_id: string) => {
   const { data, error } = await supabase
     .from("chapters")
     .select(`subject_id,chapters(*)`)
-    .eq("subject_id", subject_id)
-    .eq("is_active", true);
+    .eq("subject_id", subject_id);
   if (error) throw error;
   return data;
 };
@@ -99,7 +93,6 @@ export const getExamBoards = async () => {
   `,
     )
     .eq("is_active", true)
-    .eq("exams.is_active", true)
     .order("description");
   if (error) throw new Error();
   return data;

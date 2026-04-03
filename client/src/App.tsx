@@ -49,6 +49,7 @@ const AdminGuard = lazy(() => import("./components/AdminGuard").then(m => ({ def
 const MockTestPreferencePage = lazy(() => import("./pages/userPanel/MockTestPreferencePage"));
 const AddRoutine = lazy(() => import("./components/studyPlanner/AddRoutine").then(m => ({ default: m.AddRoutine })));
 const ResetPassword = lazy(() => import("./pages/ResetPassword"));
+const NotFound = lazy(() => import("./pages/NotFound"));
 
 // --- ROUTING GUARDS: STABLE MANIFESTATIONS ---
 const GoalGuard = () => {
@@ -137,6 +138,7 @@ const router = createBrowserRouter(
         </Route>
       </Route>
       <Route path="/user/confirm-oauth" element={<ConfirmOAuthPage />} />
+      <Route path="*" element={<NotFound />} />
     </>
   )
 );
