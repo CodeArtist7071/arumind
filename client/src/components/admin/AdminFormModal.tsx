@@ -1,12 +1,12 @@
 import React from "react";
 import { useForm, useWatch, Controller } from "react-hook-form";
-import { X, Save, Check } from "lucide-react";
+import { X, Save, Check, Plus, Trash2 } from "lucide-react";
 import { getHtmlMarkup, HtmlContent } from "../ui/HtmlContent";
 
 interface Field {
   name: string;
   label: string;
-  type: "text" | "number" | "checkbox" | "textarea" | "select";
+  type: "text" | "number" | "checkbox" | "textarea" | "select" | "options";
   options?: { label: string; value: any }[];
   required?: boolean;
   multiple?: boolean;
@@ -93,7 +93,7 @@ export const AdminFormModal: React.FC<AdminFormModalProps> = ({
           <div className="flex-1 space-y-5 overflow-y-auto px-5 py-6 sm:px-7">
             <div className="grid grid-cols-1 gap-5 sm:grid-cols-2">
               {fields.map((field) => (
-                <div key={field.name} className={`flex flex-col gap-2 ${field.type === "textarea" || (field.type === "select" && field.multiple) ? "sm:col-span-2" : ""}`}>
+                <div key={field.name} className={`flex flex-col gap-2 ${field.type === "textarea" || field.type === "options" || (field.type === "select" && field.multiple) ? "sm:col-span-2" : ""}`}>
                   <label htmlFor={`admin-field-${field.name}`} className="flex items-center gap-1.5 text-sm font-medium text-[#34402f] dark:text-[#d6dfd1]">
                     {field.label} {field.required && <span className="text-[#16a34a]">*</span>}
                   </label>
@@ -104,6 +104,39 @@ export const AdminFormModal: React.FC<AdminFormModalProps> = ({
                       disabled={field.disabled}
                       {...register(field.name, { required: field.required })}
                       className="min-h-28 rounded-xl border border-[#dfe6d9] bg-white px-3.5 py-3 text-sm text-[#263b22] outline-none transition placeholder:text-[#9aa493] focus:border-[#7ba36e] focus:ring-4 focus:ring-[#7ba36e]/10 disabled:opacity-50 dark:border-white/10 dark:bg-[#111711] dark:text-[#e8eee4]"
+                    />
+                  ) : field.type === "options" ? (
+                    <Controller
+                      name={field.name}
+                      control={control}
+                      rules={{ validate: (value: any[]) => Array.isArray(value) && value.length >= 2 || "Add at least two options" }}
+                      render={({ field: { value, onChange } }) => {
+                        const optionRows = Array.isArray(value) ? value : [];
+                        return <div className="space-y-3">
+                          <p className="text-xs text-[#778171] dark:text-[#a6b09f]">Add 2 to 6 choices, then select the correct answer(s).</p>
+                          <div className="space-y-2">
+                            {optionRows.map((option: any, index: number) => (
+                              <div key={index} className="flex items-center gap-2">
+                                <span className="w-8 shrink-0 text-center text-xs font-semibold text-[#596851] dark:text-[#c3cebd]">{String.fromCharCode(65 + index)}</span>
+                                <input
+                                  aria-label={`Option ${String.fromCharCode(65 + index)}`}
+                                  value={option?.text ?? ""}
+                                  onChange={event => onChange(optionRows.map((row, rowIndex) => rowIndex === index ? { ...row, text: event.target.value } : row))}
+                                  placeholder={`Enter option ${String.fromCharCode(65 + index)}`}
+                                  className="min-h-11 min-w-0 flex-1 rounded-xl border border-[#dfe6d9] bg-white px-3.5 text-sm text-[#263b22] outline-none focus:border-[#7ba36e] focus:ring-4 focus:ring-[#7ba36e]/10 dark:border-white/10 dark:bg-[#111711] dark:text-[#e8eee4]"
+                                />
+                                <label className="flex min-h-10 items-center gap-2 rounded-lg px-2 text-xs text-[#596851] dark:text-[#c3cebd]">
+                                  <input type="checkbox" checked={Boolean(option?.is_correct)} onChange={event => onChange(optionRows.map((row, rowIndex) => rowIndex === index ? { ...row, is_correct: event.target.checked } : row))} className="size-4 accent-[#315f29]" />
+                                  Correct
+                                </label>
+                                <button type="button" aria-label={`Remove option ${String.fromCharCode(65 + index)}`} disabled={optionRows.length <= 2} onClick={() => onChange(optionRows.filter((_, rowIndex) => rowIndex !== index).map((row, rowIndex) => ({ ...row, is_correct: row.is_correct })))} className="grid size-10 shrink-0 place-items-center rounded-lg text-[#8b625e] hover:bg-red-50 disabled:opacity-40 dark:hover:bg-red-950/30"><Trash2 size={16} /></button>
+                              </div>
+                            ))}
+                          </div>
+                          {optionRows.length < 6 && <button type="button" onClick={() => onChange([...optionRows, { text: "", is_correct: false }])} className="inline-flex min-h-10 items-center gap-2 rounded-lg border border-dashed border-[#b9c9b1] px-3 text-sm font-medium text-[#315f29] hover:bg-[#edf4e9] dark:border-white/20 dark:text-[#c9e4c0]"><Plus size={16} />Add option</button>}
+                          {!optionRows.some(option => option?.is_correct) && <p role="status" className="text-xs text-amber-700 dark:text-amber-300">Select at least one correct option.</p>}
+                        </div>;
+                      }}
                     />
                   ) : field.type === "select" && field.multiple ? (
                     <Controller

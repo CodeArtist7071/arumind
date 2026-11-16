@@ -170,20 +170,7 @@ const QuestionsManagement: React.FC = () => {
   const fields: any[] = [
     { name: "question", label: "Question", type: "textarea", required: true, previewAsHtml: true },
     { name: "question_type", label: "Question type", type: "select", options: ["SINGLE_CHOICE", "MULTIPLE_CHOICE", "TRUE_FALSE"].map(value => ({ label: value.replaceAll("_", " "), value })), required: true },
-    { name: "option_A", label: "Option A", type: "text", required: true, previewAsHtml: true },
-    { name: "option_B", label: "Option B", type: "text", required: true, previewAsHtml: true },
-    { name: "option_C", label: "Option C", type: "text", required: true, previewAsHtml: true },
-    { name: "option_D", label: "Option D", type: "text", required: true, previewAsHtml: true },
-    { name: "option_E", label: "Option E", type: "text", previewAsHtml: true },
-    { name: "option_F", label: "Option F", type: "text", previewAsHtml: true },
-    {
-      name: "correct_options",
-      label: "Correct option(s)",
-      type: "select",
-      multiple: true,
-      options: ["A", "B", "C", "D", "E", "F"].map(value => ({ label: `Option ${value}`, value })),
-      required: true
-    }, {
+    { name: "options", label: "Answer options", type: "options", defaultValue: [{ text: "", is_correct: false }, { text: "", is_correct: false }] }, {
       name: "difficulty_level",
       label: "Question Difficulty Level",
       type: "select",
@@ -218,6 +205,11 @@ const QuestionsManagement: React.FC = () => {
 
   const handleApply = async (formData: any) => {
     try {
+      const optionRows = (formData.options || []).flatMap((option: any, index: number) => {
+        const value = option.text?.trim();
+        return value ? [{ option_key: String.fromCharCode(65 + index), option_text: value, display_order: index + 1, is_correct: Boolean(option.is_correct) }] : [];
+      });
+      if (optionRows.length < 2 || !optionRows.some((option: any) => option.is_correct)) throw new Error("Add at least two options and mark one correct answer.");
       // Orchestrate authoritative technical bundling
       const bundledData = {
         question: formData.question,
@@ -242,15 +234,12 @@ const QuestionsManagement: React.FC = () => {
         questionId = inserted.id;
       }
 
-      const optionRows = ["A", "B", "C", "D", "E", "F"].flatMap((key, index) => {
-        const value = formData[`option_${key}`]?.trim();
-        return value ? [{ question_id: questionId, option_key: key, option_text: value, display_order: index + 1, is_correct: (formData.correct_options || []).includes(key) }] : [];
-      });
+      const rowsWithQuestion = optionRows.map((option: any) => ({ ...option, question_id: questionId }));
       if (editingItem) {
         const { error } = await supabase.from("question_options").delete().eq("question_id", questionId);
         if (error) throw error;
       }
-      const { error: optionsError } = await supabase.from("question_options").insert(optionRows);
+      const { error: optionsError } = await supabase.from("question_options").insert(rowsWithQuestion);
       if (optionsError) throw optionsError;
 
       setIsModalOpen(false);
@@ -268,13 +257,7 @@ const QuestionsManagement: React.FC = () => {
     return {
       ...item,
       question_type: item.question_type || "SINGLE_CHOICE",
-      correct_options: opts.filter((o: any) => o.is_correct).map((o: any) => o.l),
-      option_A: opts.find((o: any) => o.l === 'A')?.v || "",
-      option_B: opts.find((o: any) => o.l === 'B')?.v || "",
-      option_C: opts.find((o: any) => o.l === 'C')?.v || "",
-      option_D: opts.find((o: any) => o.l === 'D')?.v || "",
-      option_E: opts.find((o: any) => o.l === 'E')?.v || "",
-      option_F: opts.find((o: any) => o.l === 'F')?.v || ""
+      options: opts.map((option: any) => ({ text: option.v, is_correct: option.is_correct }))
     };
   };
 
