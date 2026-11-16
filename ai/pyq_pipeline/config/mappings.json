@@ -1,0 +1,10 @@
+{
+  "version": 1,
+  "option_labels": {
+    "a": ["A", "a", "(a)",".a"],
+    "b": ["B", "b", "(b)",".b"],
+    "c": ["C", "c", "(c)",".c"],
+    "d": ["D", "d", "(d)",".d"]
+  },
+  "answer_aliases": { "true": ["true", "yes"], "false": ["false", "no"] }
+}

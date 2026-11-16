@@ -1,0 +1,6811 @@
+{
+  "document_id": "english",
+  "source": "english.pdf",
+  "pdf_page": 19,
+  "page_width": 596.0,
+  "page_height": 842.0,
+  "extracted_at": "2026-09-09T10:07:45.805973+00:00",
+  "extraction_version": 4,
+  "ocr_enabled": true,
+  "extraction_detection": {
+    "requested_profile": "auto",
+    "effective_profile": "hybrid",
+    "embedded_text_characters": 4390,
+    "auto_text_threshold": 80
+  },
+  "docling_result": {
+    "status": "success",
+    "errors": []
+  },
+  "content_summary": {
+    "text_items": 82,
+    "text_characters": 5420,
+    "table_items": 0,
+    "picture_items": 0,
+    "group_items": 12,
+    "warnings": []
+  },
+  "reading_order": {
+    "source": "docling_iterate_items",
+    "items": [
+      {
+        "reading_order_index": 0,
+        "element_ref": "#/texts/2",
+        "label": "text",
+        "level": 1,
+        "text_preview": "Graduate Level 26/07/2025 (Shift - 3)"
+      },
+      {
+        "reading_order_index": 1,
+        "element_ref": "#/texts/3",
+        "label": "list_item",
+        "level": 2,
+        "text_preview": "(a) (1)"
+      },
+      {
+        "reading_order_index": 2,
+        "element_ref": "#/texts/4",
+        "label": "list_item",
+        "level": 2,
+        "text_preview": "(b) (2)"
+      },
+      {
+        "reading_order_index": 3,
+        "element_ref": "#/texts/5",
+        "label": "list_item",
+        "level": 2,
+        "text_preview": "(c) (3)"
+      },
+      {
+        "reading_order_index": 4,
+        "element_ref": "#/texts/6",
+        "label": "list_item",
+        "level": 2,
+        "text_preview": "(d) (4)"
+      },
+      {
+        "reading_order_index": 5,
+        "element_ref": "#/texts/7",
+        "label": "text",
+        "level": 1,
+        "text_preview": "Q.140. Find the part of the sentence that contains an error: The scientist explained (1)/ that  the  experiment  (2)/  was unsuccessful  because  the  equipment"
+      },
+      {
+        "reading_order_index": 6,
+        "element_ref": "#/texts/8",
+        "label": "text",
+        "level": 1,
+        "text_preview": "Graduate Level 28/07/2025 (Shift - 3)"
+      },
+      {
+        "reading_order_index": 7,
+        "element_ref": "#/texts/9",
+        "label": "formula",
+        "level": 1,
+        "text_preview": ""
+      },
+      {
+        "reading_order_index": 8,
+        "element_ref": "#/texts/10",
+        "label": "list_item",
+        "level": 2,
+        "text_preview": "(d) (4)"
+      },
+      {
+        "reading_order_index": 9,
+        "element_ref": "#/texts/11",
+        "label": "list_item",
+        "level": 2,
+        "text_preview": "Q.141. Find the part of the sentence that contains an error: The document was replete by errors (1)/ despite several rounds (2)/ of proofreading (3)/ by the edi"
+      },
+      {
+        "reading_order_index": 10,
+        "element_ref": "#/texts/12",
+        "label": "text",
+        "level": 1,
+        "text_preview": "Graduate Level 28/07/2025 (Shift - 3)"
+      },
+      {
+        "reading_order_index": 11,
+        "element_ref": "#/texts/13",
+        "label": "formula",
+        "level": 1,
+        "text_preview": ""
+      },
+      {
+        "reading_order_index": 12,
+        "element_ref": "#/texts/14",
+        "label": "list_item",
+        "level": 2,
+        "text_preview": "(c) (3)"
+      },
+      {
+        "reading_order_index": 13,
+        "element_ref": "#/texts/15",
+        "label": "list_item",
+        "level": 2,
+        "text_preview": "(d) (4)"
+      },
+      {
+        "reading_order_index": 14,
+        "element_ref": "#/texts/16",
+        "label": "section_header",
+        "level": 1,
+        "text_preview": "Q.142. Find the part of the sentence that contains an error: The  agreement  (1)/  remained  effective  since  three  years  (2)/ despite multiple challenges (3"
+      },
+      {
+        "reading_order_index": 15,
+        "element_ref": "#/texts/17",
+        "label": "text",
+        "level": 1,
+        "text_preview": "Graduate Level 29/07/2025 (Shift - 3)"
+      },
+      {
+        "reading_order_index": 16,
+        "element_ref": "#/texts/18",
+        "label": "list_item",
+        "level": 2,
+        "text_preview": "(a) (1) (b) (2) (c) (3) (d) (4)"
+      },
+      {
+        "reading_order_index": 17,
+        "element_ref": "#/texts/19",
+        "label": "text",
+        "level": 1,
+        "text_preview": "Q.143."
+      },
+      {
+        "reading_order_index": 18,
+        "element_ref": "#/texts/20",
+        "label": "text",
+        "level": 1,
+        "text_preview": "Find the part of the sentence that contains an error:"
+      },
+      {
+        "reading_order_index": 19,
+        "element_ref": "#/texts/21",
+        "label": "text",
+        "level": 1,
+        "text_preview": "The committee's  revised  proposal  (1)/  aimed  at  improving transparency  (2)/  unexpectedly  creating  (3)/  new  layers  of administrative delay. (4)"
+      },
+      {
+        "reading_order_index": 20,
+        "element_ref": "#/texts/22",
+        "label": "text",
+        "level": 1,
+        "text_preview": "Graduate Level 29/07/2025 (Shift - 3)"
+      },
+      {
+        "reading_order_index": 21,
+        "element_ref": "#/texts/23",
+        "label": "formula",
+        "level": 1,
+        "text_preview": ""
+      },
+      {
+        "reading_order_index": 22,
+        "element_ref": "#/texts/24",
+        "label": "list_item",
+        "level": 2,
+        "text_preview": "(d) (4)"
+      },
+      {
+        "reading_order_index": 23,
+        "element_ref": "#/texts/25",
+        "label": "section_header",
+        "level": 1,
+        "text_preview": "Q.144 Find the part of the sentence that contains an error:"
+      },
+      {
+        "reading_order_index": 24,
+        "element_ref": "#/texts/26",
+        "label": "text",
+        "level": 1,
+        "text_preview": "She  is  one  of  the  best (1)/ dancer who (2)/ perform flawlessly (3)/ on stage. (4)"
+      },
+      {
+        "reading_order_index": 25,
+        "element_ref": "#/texts/27",
+        "label": "text",
+        "level": 1,
+        "text_preview": "Graduate Level 31/07/2025 (Shift - 3)"
+      },
+      {
+        "reading_order_index": 26,
+        "element_ref": "#/texts/28",
+        "label": "formula",
+        "level": 1,
+        "text_preview": ""
+      },
+      {
+        "reading_order_index": 27,
+        "element_ref": "#/texts/29",
+        "label": "list_item",
+        "level": 2,
+        "text_preview": "(d) (4)"
+      },
+      {
+        "reading_order_index": 28,
+        "element_ref": "#/texts/30",
+        "label": "text",
+        "level": 1,
+        "text_preview": "Q.145 Find the part of the sentence that contains an error: Had  they  been  understanding  (1)/  the  financial  risks  involved, (2)/ they would not have (3)/"
+      },
+      {
+        "reading_order_index": 29,
+        "element_ref": "#/texts/31",
+        "label": "text",
+        "level": 1,
+        "text_preview": "Graduate Level 31/07/2025 (Shift - 3)"
+      },
+      {
+        "reading_order_index": 30,
+        "element_ref": "#/texts/32",
+        "label": "list_item",
+        "level": 2,
+        "text_preview": "(a) (1)"
+      },
+      {
+        "reading_order_index": 31,
+        "element_ref": "#/texts/33",
+        "label": "list_item",
+        "level": 2,
+        "text_preview": "(b) (2)"
+      },
+      {
+        "reading_order_index": 32,
+        "element_ref": "#/texts/34",
+        "label": "section_header",
+        "level": 1,
+        "text_preview": "Q.146."
+      },
+      {
+        "reading_order_index": 33,
+        "element_ref": "#/texts/35",
+        "label": "list_item",
+        "level": 2,
+        "text_preview": "(c) (3) (d) (4)"
+      },
+      {
+        "reading_order_index": 34,
+        "element_ref": "#/texts/36",
+        "label": "list_item",
+        "level": 2,
+        "text_preview": "Find the part of the sentence that contains an error:"
+      },
+      {
+        "reading_order_index": 35,
+        "element_ref": "#/texts/37",
+        "label": "text",
+        "level": 1,
+        "text_preview": "Her  presentation  displayed  (1)/  strong  arguments  (2)/  yet  it missed (3)/ structure and coherent. (4)"
+      },
+      {
+        "reading_order_index": 36,
+        "element_ref": "#/texts/38",
+        "label": "text",
+        "level": 1,
+        "text_preview": "Graduate Level 02/08/2025 (Shift - 3)"
+      },
+      {
+        "reading_order_index": 37,
+        "element_ref": "#/texts/39",
+        "label": "formula",
+        "level": 1,
+        "text_preview": ""
+      },
+      {
+        "reading_order_index": 38,
+        "element_ref": "#/texts/40",
+        "label": "list_item",
+        "level": 2,
+        "text_preview": "(d) (4)"
+      },
+      {
+        "reading_order_index": 39,
+        "element_ref": "#/texts/41",
+        "label": "section_header",
+        "level": 1,
+        "text_preview": "Q.147. Find the part of the sentence that contains an error:"
+      },
+      {
+        "reading_order_index": 40,
+        "element_ref": "#/texts/42",
+        "label": "text",
+        "level": 1,
+        "text_preview": "The company tried to bring over (1)/ fresh ideas (2)/ to improve customer (3)/ engagement strategies. (4)"
+      },
+      {
+        "reading_order_index": 41,
+        "element_ref": "#/texts/43",
+        "label": "text",
+        "level": 1,
+        "text_preview": "Graduate Level 02/08/2025 (Shift - 3)"
+      },
+      {
+        "reading_order_index": 42,
+        "element_ref": "#/texts/44",
+        "label": "list_item",
+        "level": 2,
+        "text_preview": "(a) (1)"
+      },
+      {
+        "reading_order_index": 43,
+        "element_ref": "#/texts/45",
+        "label": "list_item",
+        "level": 2,
+        "text_preview": "(b) (2)"
+      },
+      {
+        "reading_order_index": 44,
+        "element_ref": "#/texts/46",
+        "label": "list_item",
+        "level": 2,
+        "text_preview": "(c) (3) (d) (4)"
+      },
+      {
+        "reading_order_index": 45,
+        "element_ref": "#/texts/47",
+        "label": "section_header",
+        "level": 1,
+        "text_preview": "Q.148. Identify the error in the sentence."
+      },
+      {
+        "reading_order_index": 46,
+        "element_ref": "#/texts/48",
+        "label": "text",
+        "level": 1,
+        "text_preview": "Of all the applicants, she was the smarter."
+      },
+      {
+        "reading_order_index": 47,
+        "element_ref": "#/texts/49",
+        "label": "text",
+        "level": 1,
+        "text_preview": "Graduate Level 29/08/2025 (Shift - 1)"
+      },
+      {
+        "reading_order_index": 48,
+        "element_ref": "#/texts/50",
+        "label": "list_item",
+        "level": 2,
+        "text_preview": "(a) applicants"
+      },
+      {
+        "reading_order_index": 49,
+        "element_ref": "#/texts/51",
+        "label": "list_item",
+        "level": 2,
+        "text_preview": "(b) smarter"
+      },
+      {
+        "reading_order_index": 50,
+        "element_ref": "#/texts/52",
+        "label": "section_header",
+        "level": 1,
+        "text_preview": "Solutions :-"
+      },
+      {
+        "reading_order_index": 51,
+        "element_ref": "#/texts/53",
+        "label": "section_header",
+        "level": 1,
+        "text_preview": "Sol.83.(b) of murder after (2)"
+      },
+      {
+        "reading_order_index": 52,
+        "element_ref": "#/texts/54",
+        "label": "text",
+        "level": 1,
+        "text_preview": "The verb \"charged\" is followed by the preposition \"with\" when we talk  about  accusing  someone  of a crime. Hence, 'charged with murder' is the most appropriat"
+      },
+      {
+        "reading_order_index": 53,
+        "element_ref": "#/texts/55",
+        "label": "section_header",
+        "level": 1,
+        "text_preview": "Sol.84.(b) (2) - across the riverbank"
+      },
+      {
+        "reading_order_index": 54,
+        "element_ref": "#/texts/56",
+        "label": "list_item",
+        "level": 2,
+        "text_preview": "(c) was          (d) all"
+      },
+      {
+        "reading_order_index": 55,
+        "element_ref": "#/texts/57",
+        "label": "text",
+        "level": 1,
+        "text_preview": "'Across'  must  be  replaced  with  'along'.  'Across'  is  used  when moving from one side to the other.  'Along' is used to indicate the movement next to some"
+      },
+      {
+        "reading_order_index": 56,
+        "element_ref": "#/texts/58",
+        "label": "section_header",
+        "level": 1,
+        "text_preview": "Sol.85.(d) a FIR. (4)"
+      },
+      {
+        "reading_order_index": 57,
+        "element_ref": "#/texts/59",
+        "label": "text",
+        "level": 1,
+        "text_preview": "The  article  'an'  is  used  before  the  words  starting  with a vowel sound. Similarly, in the given sentence, the word 'FIR' starts with a vowel sound. Henc"
+      },
+      {
+        "reading_order_index": 58,
+        "element_ref": "#/texts/60",
+        "label": "section_header",
+        "level": 1,
+        "text_preview": "Sol.86.(b) a furniture (2)"
+      },
+      {
+        "reading_order_index": 59,
+        "element_ref": "#/texts/61",
+        "label": "text",
+        "level": 1,
+        "text_preview": "'Furniture' is uncountable, so it cannot take the indefinite article 'a.' Rather, we use words like 'some' or 'a piece of'. Hence, 'some furniture' or 'a piece "
+      },
+      {
+        "reading_order_index": 60,
+        "element_ref": "#/texts/62",
+        "label": "section_header",
+        "level": 1,
+        "text_preview": "Sol.87.(a) The information are (1)"
+      },
+      {
+        "reading_order_index": 61,
+        "element_ref": "#/texts/63",
+        "label": "text",
+        "level": 1,
+        "text_preview": "'Information'  is  an  uncountable  noun  and  we  always  use  a singular  verb  with  uncountable  nouns.  Therefore,  'are' must be replaced  with  'is'.  He"
+      },
+      {
+        "reading_order_index": 62,
+        "element_ref": "#/texts/64",
+        "label": "section_header",
+        "level": 1,
+        "text_preview": "Sol.88.(b) were excited (2)"
+      },
+      {
+        "reading_order_index": 63,
+        "element_ref": "#/texts/65",
+        "label": "text",
+        "level": 1,
+        "text_preview": "'Everyone/each/  every/  nothing/  everything/  anything/  either/ neither' represents a singular noun. Therefore, singular verbs will be  used  with  them.  'W"
+      },
+      {
+        "reading_order_index": 64,
+        "element_ref": "#/texts/66",
+        "label": "section_header",
+        "level": 1,
+        "text_preview": "Sol.89.(a) She speaks very soft (1)"
+      },
+      {
+        "reading_order_index": 65,
+        "element_ref": "#/texts/67",
+        "label": "text",
+        "level": 1,
+        "text_preview": "The given sentence needs an adverb, 'softly', to modify the verb 'speaks',  not the adjective 'soft'. Hence, 'She speaks very softly' is the most appropriate an"
+      },
+      {
+        "reading_order_index": 66,
+        "element_ref": "#/texts/68",
+        "label": "section_header",
+        "level": 1,
+        "text_preview": "Sol.90.(c) and a owl (3)"
+      },
+      {
+        "reading_order_index": 67,
+        "element_ref": "#/texts/69",
+        "label": "text",
+        "level": 1,
+        "text_preview": "The article 'an' is used before words starting with a vowel sound. Similarly, in the given sentence, the word 'owl' starts with a vowel sound. Hence, 'and an ow"
+      },
+      {
+        "reading_order_index": 68,
+        "element_ref": "#/texts/70",
+        "label": "section_header",
+        "level": 1,
+        "text_preview": "Sol.91.(b) strongly reply (2)"
+      },
+      {
+        "reading_order_index": 69,
+        "element_ref": "#/texts/71",
+        "label": "text",
+        "level": 1,
+        "text_preview": "The  given  sentence  needs  an  adjective 'strong' to describe the noun 'reply', not the adverb 'strongly'. Hence, 'strong reply' is the most appropriate answe"
+      },
+      {
+        "reading_order_index": 70,
+        "element_ref": "#/texts/72",
+        "label": "section_header",
+        "level": 1,
+        "text_preview": "Sol.92.(a) He repeated again (1)"
+      },
+      {
+        "reading_order_index": 71,
+        "element_ref": "#/texts/73",
+        "label": "text",
+        "level": 1,
+        "text_preview": "In the given sentence, the use of the word 'again' is superfluous and should be removed. The verb 'repeated' already means said again. Hence, 'He repeated' is t"
+      },
+      {
+        "reading_order_index": 72,
+        "element_ref": "#/texts/74",
+        "label": "section_header",
+        "level": 1,
+        "text_preview": "Sol.93.(c) to a new solution (3)"
+      },
+      {
+        "reading_order_index": 73,
+        "element_ref": "#/texts/75",
+        "label": "text",
+        "level": 1,
+        "text_preview": "The phrasal verb \"to come up with\" means to produce or suggest an  idea  or  solution.  The  use of 'to' is incorrect here. Therefore, 'to'  must  be  removed. "
+      },
+      {
+        "reading_order_index": 74,
+        "element_ref": "#/texts/76",
+        "label": "section_header",
+        "level": 1,
+        "text_preview": "Sol.94.(b) the mistake out (2)"
+      },
+      {
+        "reading_order_index": 75,
+        "element_ref": "#/texts/77",
+        "label": "text",
+        "level": 1,
+        "text_preview": "In  part  (2),  'out'  must  be  removed because it is already part of the  phrasal  verb  'point  out'.  Hence,  'the  mistake'  is  the  most appropriate answ"
+      },
+      {
+        "reading_order_index": 76,
+        "element_ref": "#/texts/78",
+        "label": "section_header",
+        "level": 1,
+        "text_preview": "Sol.95.(b) poems and recite (2)"
+      },
+      {
+        "reading_order_index": 77,
+        "element_ref": "#/texts/79",
+        "label": "text",
+        "level": 1,
+        "text_preview": "In  the  given  sentence,  'He'  is  a  singular  subject  that  will  take 'recites'  as  a  singular  verb.  Hence,  'poems  and  recites'  is  the most appro"
+      },
+      {
+        "reading_order_index": 78,
+        "element_ref": "#/texts/80",
+        "label": "section_header",
+        "level": 1,
+        "text_preview": "Sol.96.(c) a great dance (3)"
+      }
+    ]
+  },
+  "layout_analysis": {
+    "method": "docling_bbox_left_edge_clustering_v1",
+    "column_count": 3,
+    "confidence": 0.914,
+    "page_width": 596.0,
+    "page_height": 842.0,
+    "columns": [
+      {
+        "column_index": 1,
+        "left": 0.0,
+        "right": 124.321,
+        "detected_start": 36.569,
+        "supporting_elements": 44
+      },
+      {
+        "column_index": 2,
+        "left": 124.321,
+        "right": 260.311,
+        "detected_start": 212.073,
+        "supporting_elements": 11
+      },
+      {
+        "column_index": 3,
+        "left": 260.311,
+        "right": 596.0,
+        "detected_start": 308.55,
+        "supporting_elements": 24
+      }
+    ],
+    "elements": [
+      {
+        "element_ref": "#/texts/0",
+        "element_type": "text",
+        "label": "page_header",
+        "column_index": 1,
+        "column_indices": [
+          1
+        ],
+        "spans_columns": false,
+        "reading_order_index": null,
+        "bbox": {
+          "l": 28.800003,
+          "t": 830.7935546594726,
+          "r": 95.7084616875,
+          "b": 822.5652585957749,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/1",
+        "element_type": "text",
+        "label": "page_header",
+        "column_index": 3,
+        "column_indices": [
+          3
+        ],
+        "spans_columns": false,
+        "reading_order_index": null,
+        "bbox": {
+          "l": 291.757038,
+          "t": 830.7935546594726,
+          "r": 570.3032679375,
+          "b": 822.5652585957749,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/2",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 0,
+        "bbox": {
+          "l": 28.800003,
+          "t": 814.6972656875,
+          "r": 179.78290992,
+          "b": 806.6150288199854,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/3",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 1,
+        "column_indices": [
+          1
+        ],
+        "spans_columns": false,
+        "reading_order_index": 1,
+        "bbox": {
+          "l": 28.800003,
+          "t": 802.2753906875,
+          "r": 55.64619417,
+          "b": 794.1931538199854,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/4",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 1,
+        "column_indices": [
+          1
+        ],
+        "spans_columns": false,
+        "reading_order_index": 2,
+        "bbox": {
+          "l": 100.800003,
+          "t": 802.2753906875,
+          "r": 127.80439767000001,
+          "b": 794.1931538199854,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/5",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 2,
+        "column_indices": [
+          2
+        ],
+        "spans_columns": false,
+        "reading_order_index": 3,
+        "bbox": {
+          "l": 172.800003,
+          "t": 802.2753906875,
+          "r": 199.46162742,
+          "b": 794.1931538199854,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/6",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 0,
+        "column_indices": [
+          2,
+          3
+        ],
+        "spans_columns": true,
+        "reading_order_index": 4,
+        "bbox": {
+          "l": 244.800003,
+          "t": 802.2753906875,
+          "r": 271.82636742,
+          "b": 794.1931538199854,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/7",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 5,
+        "bbox": {
+          "l": 28.800003,
+          "t": 781.5722656875,
+          "r": 288.95332242,
+          "b": 736.2234268199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/8",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 6,
+        "bbox": {
+          "l": 28.800003,
+          "t": 731.8837886875,
+          "r": 179.78290992,
+          "b": 723.8015518199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/9",
+        "element_type": "text",
+        "label": "formula",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 7,
+        "bbox": {
+          "l": 28.800003,
+          "t": 719.4619136875,
+          "r": 199.46162742,
+          "b": 711.3796768199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/10",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 0,
+        "column_indices": [
+          2,
+          3
+        ],
+        "spans_columns": true,
+        "reading_order_index": 8,
+        "bbox": {
+          "l": 244.800003,
+          "t": 719.4619136875,
+          "r": 271.82636742,
+          "b": 711.3796768199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/11",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 9,
+        "bbox": {
+          "l": 28.800003,
+          "t": 698.7587886875,
+          "r": 288.41133492,
+          "b": 665.8318258199854,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/12",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 10,
+        "bbox": {
+          "l": 28.800003,
+          "t": 661.4921896875001,
+          "r": 179.78290992,
+          "b": 653.4099528199854,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/13",
+        "element_type": "text",
+        "label": "formula",
+        "column_index": 1,
+        "column_indices": [
+          1
+        ],
+        "spans_columns": false,
+        "reading_order_index": 11,
+        "bbox": {
+          "l": 28.800003,
+          "t": 649.0703096875,
+          "r": 127.80439767000001,
+          "b": 640.9880728199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/14",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 2,
+        "column_indices": [
+          2
+        ],
+        "spans_columns": false,
+        "reading_order_index": 12,
+        "bbox": {
+          "l": 172.800003,
+          "t": 649.0703096875,
+          "r": 199.46162742,
+          "b": 640.9880728199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/15",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 0,
+        "column_indices": [
+          2,
+          3
+        ],
+        "spans_columns": true,
+        "reading_order_index": 13,
+        "bbox": {
+          "l": 244.800003,
+          "t": 649.0703096875,
+          "r": 271.82636742,
+          "b": 640.9880728199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/16",
+        "element_type": "text",
+        "label": "section_header",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 14,
+        "bbox": {
+          "l": 28.800003,
+          "t": 628.3671896875001,
+          "r": 288.91523742,
+          "b": 595.4402228199854,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/17",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 15,
+        "bbox": {
+          "l": 28.800003,
+          "t": 591.1005896875,
+          "r": 179.78290992,
+          "b": 583.0183528199854,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/18",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 16,
+        "bbox": {
+          "l": 28.800003,
+          "t": 578.6787096875,
+          "r": 271.82636742,
+          "b": 570.5964728199854,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/19",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 1,
+        "column_indices": [
+          1
+        ],
+        "spans_columns": false,
+        "reading_order_index": 17,
+        "bbox": {
+          "l": 28.800003,
+          "t": 556.5947296874999,
+          "r": 55.716506939999995,
+          "b": 548.5124928199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/20",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 18,
+        "bbox": {
+          "l": 55.716507,
+          "t": 556.5947296874999,
+          "r": 265.02363491999995,
+          "b": 548.5124928199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/21",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 19,
+        "bbox": {
+          "l": 28.800003,
+          "t": 544.1728496875,
+          "r": 288.78486491999996,
+          "b": 511.2468628199854,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/22",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 20,
+        "bbox": {
+          "l": 28.800003,
+          "t": 506.9072296875,
+          "r": 179.78290992,
+          "b": 498.8249928199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/23",
+        "element_type": "text",
+        "label": "formula",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 21,
+        "bbox": {
+          "l": 28.800003,
+          "t": 494.4853496875,
+          "r": 199.46162742,
+          "b": 486.4031128199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/24",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 0,
+        "column_indices": [
+          2,
+          3
+        ],
+        "spans_columns": true,
+        "reading_order_index": 22,
+        "bbox": {
+          "l": 244.800003,
+          "t": 494.4853496875,
+          "r": 271.82636742,
+          "b": 486.4031128199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/25",
+        "element_type": "text",
+        "label": "section_header",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 23,
+        "bbox": {
+          "l": 28.800003,
+          "t": 472.4013696875,
+          "r": 262.41328242,
+          "b": 464.3191328199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/26",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 24,
+        "bbox": {
+          "l": 28.800003,
+          "t": 459.9794896875,
+          "r": 288.63398742,
+          "b": 439.4753828199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/27",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 25,
+        "bbox": {
+          "l": 28.800003,
+          "t": 435.1357396875,
+          "r": 179.78290992,
+          "b": 427.05350281998534,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/28",
+        "element_type": "text",
+        "label": "formula",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 26,
+        "bbox": {
+          "l": 28.800003,
+          "t": 422.7138696875,
+          "r": 199.46162742,
+          "b": 414.6316328199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/29",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 0,
+        "column_indices": [
+          2,
+          3
+        ],
+        "spans_columns": true,
+        "reading_order_index": 27,
+        "bbox": {
+          "l": 244.800003,
+          "t": 422.7138696875,
+          "r": 271.82636742,
+          "b": 414.6316328199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/30",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 28,
+        "bbox": {
+          "l": 28.800003,
+          "t": 400.6298796875,
+          "r": 288.80098242,
+          "b": 367.70389281998536,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/31",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 29,
+        "bbox": {
+          "l": 28.800003,
+          "t": 363.3642596875,
+          "r": 179.78290992,
+          "b": 355.28202281998534,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/32",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 1,
+        "column_indices": [
+          1
+        ],
+        "spans_columns": false,
+        "reading_order_index": 30,
+        "bbox": {
+          "l": 28.800003,
+          "t": 350.9423796875,
+          "r": 55.64619417,
+          "b": 342.86014281998536,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/33",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 1,
+        "column_indices": [
+          1
+        ],
+        "spans_columns": false,
+        "reading_order_index": 31,
+        "bbox": {
+          "l": 100.800003,
+          "t": 350.9423796875,
+          "r": 127.80439767000001,
+          "b": 342.86014281998536,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/34",
+        "element_type": "text",
+        "label": "section_header",
+        "column_index": 1,
+        "column_indices": [
+          1
+        ],
+        "spans_columns": false,
+        "reading_order_index": 32,
+        "bbox": {
+          "l": 28.800003,
+          "t": 328.85839968749997,
+          "r": 55.716506939999995,
+          "b": 320.7761628199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/35",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 2,
+        "column_indices": [
+          2
+        ],
+        "spans_columns": false,
+        "reading_order_index": 33,
+        "bbox": {
+          "l": 172.800003,
+          "t": 350.9423796875,
+          "r": 271.82636742,
+          "b": 342.86014281998536,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/36",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 34,
+        "bbox": {
+          "l": 55.716507,
+          "t": 328.85839968749997,
+          "r": 265.02363491999995,
+          "b": 320.7761628199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/37",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 35,
+        "bbox": {
+          "l": 28.800003,
+          "t": 316.4365196875,
+          "r": 289.00165992,
+          "b": 295.9324128199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/38",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 36,
+        "bbox": {
+          "l": 28.800003,
+          "t": 291.5927696875,
+          "r": 179.78290992,
+          "b": 283.5105328199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/39",
+        "element_type": "text",
+        "label": "formula",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 37,
+        "bbox": {
+          "l": 28.800003,
+          "t": 279.17089968749997,
+          "r": 199.46162742,
+          "b": 271.0886628199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/40",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 0,
+        "column_indices": [
+          2,
+          3
+        ],
+        "spans_columns": true,
+        "reading_order_index": 38,
+        "bbox": {
+          "l": 244.800003,
+          "t": 279.17089968749997,
+          "r": 269.59395069,
+          "b": 271.0886628199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/41",
+        "element_type": "text",
+        "label": "section_header",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 39,
+        "bbox": {
+          "l": 28.800003,
+          "t": 257.0869096875,
+          "r": 265.02363491999995,
+          "b": 249.00467281998533,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/42",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 40,
+        "bbox": {
+          "l": 28.800003,
+          "t": 244.66503968749998,
+          "r": 288.62519742,
+          "b": 224.16092281998533,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/43",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 41,
+        "bbox": {
+          "l": 28.800003,
+          "t": 219.82128968749998,
+          "r": 179.78290992,
+          "b": 211.73905281998532,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/44",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 1,
+        "column_indices": [
+          1
+        ],
+        "spans_columns": false,
+        "reading_order_index": 42,
+        "bbox": {
+          "l": 28.800003,
+          "t": 207.39843968749994,
+          "r": 55.64619417,
+          "b": 199.31620281998528,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/45",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 1,
+        "column_indices": [
+          1
+        ],
+        "spans_columns": false,
+        "reading_order_index": 43,
+        "bbox": {
+          "l": 100.800003,
+          "t": 207.39843968749994,
+          "r": 127.80439767000001,
+          "b": 199.31620281998528,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/46",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 2,
+        "column_indices": [
+          2
+        ],
+        "spans_columns": false,
+        "reading_order_index": 44,
+        "bbox": {
+          "l": 172.800003,
+          "t": 207.39843968749994,
+          "r": 271.82636742,
+          "b": 199.31620281998528,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/47",
+        "element_type": "text",
+        "label": "section_header",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 45,
+        "bbox": {
+          "l": 28.800003,
+          "t": 183.93456968750002,
+          "r": 191.53828242,
+          "b": 175.85233281998535,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/48",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 46,
+        "bbox": {
+          "l": 28.800003,
+          "t": 171.5126996875,
+          "r": 197.89717242,
+          "b": 163.43046281998534,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/49",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 47,
+        "bbox": {
+          "l": 28.800003,
+          "t": 159.09081968750002,
+          "r": 179.78290992,
+          "b": 151.00858281998535,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/50",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 1,
+        "column_indices": [
+          1
+        ],
+        "spans_columns": false,
+        "reading_order_index": 48,
+        "bbox": {
+          "l": 28.800003,
+          "t": 146.6689496875,
+          "r": 85.92012042,
+          "b": 138.58671281998534,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/51",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 49,
+        "bbox": {
+          "l": 100.800003,
+          "t": 146.6689496875,
+          "r": 152.46650666999997,
+          "b": 138.58671281998534,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/52",
+        "element_type": "text",
+        "label": "section_header",
+        "column_index": 1,
+        "column_indices": [
+          1
+        ],
+        "spans_columns": false,
+        "reading_order_index": 50,
+        "bbox": {
+          "l": 28.800003,
+          "t": 121.26269588447258,
+          "r": 82.40311443750001,
+          "b": 113.03439982077487,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/53",
+        "element_type": "text",
+        "label": "section_header",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 51,
+        "bbox": {
+          "l": 28.800003,
+          "t": 96.17870968750003,
+          "r": 146.92939767000001,
+          "b": 88.09647281998537,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/54",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 52,
+        "bbox": {
+          "l": 28.800003,
+          "t": 83.75683968750002,
+          "r": 288.48310992,
+          "b": 50.83085281998535,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/55",
+        "element_type": "text",
+        "label": "section_header",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 53,
+        "bbox": {
+          "l": 28.800003,
+          "t": 36.82909968750005,
+          "r": 172.38691992,
+          "b": 28.74686281998538,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/56",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 2,
+        "column_indices": [
+          2
+        ],
+        "spans_columns": false,
+        "reading_order_index": 54,
+        "bbox": {
+          "l": 172.800003,
+          "t": 146.6689496875,
+          "r": 251.68623492,
+          "b": 138.58671281998534,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/57",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 3,
+        "column_indices": [
+          3
+        ],
+        "spans_columns": false,
+        "reading_order_index": 55,
+        "bbox": {
+          "l": 308.54999,
+          "t": 814.6972656875,
+          "r": 568.35028442,
+          "b": 756.9265518199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/58",
+        "element_type": "text",
+        "label": "section_header",
+        "column_index": 3,
+        "column_indices": [
+          3
+        ],
+        "spans_columns": false,
+        "reading_order_index": 56,
+        "bbox": {
+          "l": 308.54999,
+          "t": 741.5458986875,
+          "r": 388.91278292,
+          "b": 733.4636618199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/59",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 3,
+        "column_indices": [
+          3
+        ],
+        "spans_columns": false,
+        "reading_order_index": 57,
+        "bbox": {
+          "l": 308.54999,
+          "t": 729.1240236875,
+          "r": 568.4879769199999,
+          "b": 683.7751848199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/60",
+        "element_type": "text",
+        "label": "section_header",
+        "column_index": 3,
+        "column_indices": [
+          3
+        ],
+        "spans_columns": false,
+        "reading_order_index": 58,
+        "bbox": {
+          "l": 308.54999,
+          "t": 669.7744096875,
+          "r": 407.5104391699999,
+          "b": 661.6921728199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/61",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 3,
+        "column_indices": [
+          3
+        ],
+        "spans_columns": false,
+        "reading_order_index": 59,
+        "bbox": {
+          "l": 308.54999,
+          "t": 657.3525396875,
+          "r": 568.11883442,
+          "b": 624.4255728199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/62",
+        "element_type": "text",
+        "label": "section_header",
+        "column_index": 3,
+        "column_indices": [
+          3
+        ],
+        "spans_columns": false,
+        "reading_order_index": 60,
+        "bbox": {
+          "l": 308.54999,
+          "t": 609.0439496875,
+          "r": 444.89032441999996,
+          "b": 600.9617128199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/63",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 3,
+        "column_indices": [
+          3
+        ],
+        "spans_columns": false,
+        "reading_order_index": 61,
+        "bbox": {
+          "l": 308.54999,
+          "t": 596.6220696875,
+          "r": 568.29315692,
+          "b": 551.2732328199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/64",
+        "element_type": "text",
+        "label": "section_header",
+        "column_index": 3,
+        "column_indices": [
+          3
+        ],
+        "spans_columns": false,
+        "reading_order_index": 62,
+        "bbox": {
+          "l": 308.54999,
+          "t": 537.2724596875,
+          "r": 416.7916891699999,
+          "b": 529.1902228199854,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/65",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 3,
+        "column_indices": [
+          3
+        ],
+        "spans_columns": false,
+        "reading_order_index": 63,
+        "bbox": {
+          "l": 308.54999,
+          "t": 524.8505896875,
+          "r": 568.45574942,
+          "b": 479.50174281998534,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/66",
+        "element_type": "text",
+        "label": "section_header",
+        "column_index": 3,
+        "column_indices": [
+          3
+        ],
+        "spans_columns": false,
+        "reading_order_index": 64,
+        "bbox": {
+          "l": 308.54999,
+          "t": 465.5009796875,
+          "r": 448.84979192,
+          "b": 457.4187428199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/67",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 3,
+        "column_indices": [
+          3
+        ],
+        "spans_columns": false,
+        "reading_order_index": 65,
+        "bbox": {
+          "l": 308.54999,
+          "t": 453.0781296875,
+          "r": 568.72820942,
+          "b": 420.15214281998533,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/68",
+        "element_type": "text",
+        "label": "section_header",
+        "column_index": 3,
+        "column_indices": [
+          3
+        ],
+        "spans_columns": false,
+        "reading_order_index": 66,
+        "bbox": {
+          "l": 308.54999,
+          "t": 406.1513696875,
+          "r": 404.45624042,
+          "b": 398.0691328199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/69",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 3,
+        "column_indices": [
+          3
+        ],
+        "spans_columns": false,
+        "reading_order_index": 67,
+        "bbox": {
+          "l": 308.54999,
+          "t": 393.7285196875,
+          "r": 568.7223519199999,
+          "b": 360.80253281998534,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/70",
+        "element_type": "text",
+        "label": "section_header",
+        "column_index": 3,
+        "column_indices": [
+          3
+        ],
+        "spans_columns": false,
+        "reading_order_index": 68,
+        "bbox": {
+          "l": 308.54999,
+          "t": 346.8017596875,
+          "r": 420.07000967,
+          "b": 338.71952281998534,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/71",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 3,
+        "column_indices": [
+          3
+        ],
+        "spans_columns": false,
+        "reading_order_index": 69,
+        "bbox": {
+          "l": 308.54999,
+          "t": 334.3789096875,
+          "r": 568.2272394199999,
+          "b": 301.45292281998536,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/72",
+        "element_type": "text",
+        "label": "section_header",
+        "column_index": 3,
+        "column_indices": [
+          3
+        ],
+        "spans_columns": false,
+        "reading_order_index": 70,
+        "bbox": {
+          "l": 308.54999,
+          "t": 287.45116968750006,
+          "r": 439.11151441999993,
+          "b": 279.3689328199854,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/73",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 3,
+        "column_indices": [
+          3
+        ],
+        "spans_columns": false,
+        "reading_order_index": 71,
+        "bbox": {
+          "l": 308.54999,
+          "t": 275.02929968750004,
+          "r": 568.49090942,
+          "b": 242.10331281998538,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/74",
+        "element_type": "text",
+        "label": "section_header",
+        "column_index": 3,
+        "column_indices": [
+          3
+        ],
+        "spans_columns": false,
+        "reading_order_index": 72,
+        "bbox": {
+          "l": 308.54999,
+          "t": 228.10155968749996,
+          "r": 434.32147441999996,
+          "b": 220.0193228199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/75",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 3,
+        "column_indices": [
+          3
+        ],
+        "spans_columns": false,
+        "reading_order_index": 73,
+        "bbox": {
+          "l": 308.54999,
+          "t": 215.67968968749994,
+          "r": 568.64324942,
+          "b": 170.3318228199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/76",
+        "element_type": "text",
+        "label": "section_header",
+        "column_index": 3,
+        "column_indices": [
+          3
+        ],
+        "spans_columns": false,
+        "reading_order_index": 74,
+        "bbox": {
+          "l": 308.54999,
+          "t": 156.33007968749996,
+          "r": 428.43280292,
+          "b": 148.2478428199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/77",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 3,
+        "column_indices": [
+          3
+        ],
+        "spans_columns": false,
+        "reading_order_index": 75,
+        "bbox": {
+          "l": 308.54999,
+          "t": 143.90819968749997,
+          "r": 568.71209942,
+          "b": 110.9822128199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/78",
+        "element_type": "text",
+        "label": "section_header",
+        "column_index": 3,
+        "column_indices": [
+          3
+        ],
+        "spans_columns": false,
+        "reading_order_index": 76,
+        "bbox": {
+          "l": 308.54999,
+          "t": 96.98046968749998,
+          "r": 435.69696242,
+          "b": 88.89823281998531,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/79",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 3,
+        "column_indices": [
+          3
+        ],
+        "spans_columns": false,
+        "reading_order_index": 77,
+        "bbox": {
+          "l": 308.54999,
+          "t": 84.55858968749999,
+          "r": 568.27850942,
+          "b": 51.631632819985384,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/80",
+        "element_type": "text",
+        "label": "section_header",
+        "column_index": 3,
+        "column_indices": [
+          3
+        ],
+        "spans_columns": false,
+        "reading_order_index": 78,
+        "bbox": {
+          "l": 308.54999,
+          "t": 37.63085968749999,
+          "r": 420.48749042,
+          "b": 29.548622819985326,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/81",
+        "element_type": "text",
+        "label": "page_footer",
+        "column_index": 0,
+        "column_indices": [
+          2,
+          3
+        ],
+        "spans_columns": true,
+        "reading_order_index": null,
+        "bbox": {
+          "l": 99.3266505,
+          "t": 21.98847795947256,
+          "r": 495.95088382500006,
+          "b": 13.76018189577485,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      }
+    ],
+    "warnings": []
+  },
+  "structure_chunks": {
+    "enabled": true,
+    "method": "docling_hybrid_chunker",
+    "scope": "page",
+    "items": [
+      {
+        "text": "Graduate Level 26/07/2025 (Shift - 3)\n- (a) (1)\n- (b) (2)\n- (c) (3)\n- (d) (4)\nQ.140. Find the part of the sentence that contains an error: The scientist explained (1)/ that  the  experiment  (2)/  was unsuccessful  because  the  equipment  (3)/  malfunctions  during the final stage. (4)\nGraduate Level 28/07/2025 (Shift - 3)\n<!-- formula-not-decoded -->\n- (d) (4)\n- Q.141. Find the part of the sentence that contains an error: The document was replete by errors (1)/ despite several rounds (2)/ of proofreading (3)/ by the editorial team. (4)\nGraduate Level 28/07/2025 (Shift - 3)\n<!-- formula-not-decoded -->\n- (c) (3)\n- (d) (4)",
+        "meta": {
+          "schema_name": "docling_core.transforms.chunker.DocMeta",
+          "version": "1.0.0",
+          "doc_items": [
+            {
+              "self_ref": "#/texts/2",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 814.6972656875,
+                    "r": 179.78290992,
+                    "b": 806.6150288199854,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    37
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/3",
+              "parent": {
+                "cref": "#/groups/0"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 802.2753906875,
+                    "r": 55.64619417,
+                    "b": 794.1931538199854,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    7
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/4",
+              "parent": {
+                "cref": "#/groups/0"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 100.800003,
+                    "t": 802.2753906875,
+                    "r": 127.80439767000001,
+                    "b": 794.1931538199854,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    7
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/5",
+              "parent": {
+                "cref": "#/groups/0"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 172.800003,
+                    "t": 802.2753906875,
+                    "r": 199.46162742,
+                    "b": 794.1931538199854,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    7
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/6",
+              "parent": {
+                "cref": "#/groups/0"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 244.800003,
+                    "t": 802.2753906875,
+                    "r": 271.82636742,
+                    "b": 794.1931538199854,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    7
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/7",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 781.5722656875,
+                    "r": 288.95332242,
+                    "b": 736.2234268199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    209
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/8",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 731.8837886875,
+                    "r": 179.78290992,
+                    "b": 723.8015518199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    37
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/9",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "formula",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 719.4619136875,
+                    "r": 199.46162742,
+                    "b": 711.3796768199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    23
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/10",
+              "parent": {
+                "cref": "#/groups/1"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 244.800003,
+                    "t": 719.4619136875,
+                    "r": 271.82636742,
+                    "b": 711.3796768199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    7
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/11",
+              "parent": {
+                "cref": "#/groups/1"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 698.7587886875,
+                    "r": 288.41133492,
+                    "b": 665.8318258199854,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    176
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/12",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 661.4921896875001,
+                    "r": 179.78290992,
+                    "b": 653.4099528199854,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    37
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/13",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "formula",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 649.0703096875,
+                    "r": 127.80439767000001,
+                    "b": 640.9880728199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    15
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/14",
+              "parent": {
+                "cref": "#/groups/2"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 172.800003,
+                    "t": 649.0703096875,
+                    "r": 199.46162742,
+                    "b": 640.9880728199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    7
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/15",
+              "parent": {
+                "cref": "#/groups/2"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 244.800003,
+                    "t": 649.0703096875,
+                    "r": 271.82636742,
+                    "b": 640.9880728199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    7
+                  ]
+                }
+              ]
+            }
+          ],
+          "headings": null,
+          "captions": null,
+          "origin": {
+            "mimetype": "application/pdf",
+            "binary_hash": 13779247704854244166,
+            "filename": "english_page_0019.pdf",
+            "uri": null
+          }
+        },
+        "chunk_index": 0,
+        "contextualized_text": "Graduate Level 26/07/2025 (Shift - 3)\n- (a) (1)\n- (b) (2)\n- (c) (3)\n- (d) (4)\nQ.140. Find the part of the sentence that contains an error: The scientist explained (1)/ that  the  experiment  (2)/  was unsuccessful  because  the  equipment  (3)/  malfunctions  during the final stage. (4)\nGraduate Level 28/07/2025 (Shift - 3)\n<!-- formula-not-decoded -->\n- (d) (4)\n- Q.141. Find the part of the sentence that contains an error: The document was replete by errors (1)/ despite several rounds (2)/ of proofreading (3)/ by the editorial team. (4)\nGraduate Level 28/07/2025 (Shift - 3)\n<!-- formula-not-decoded -->\n- (c) (3)\n- (d) (4)"
+      },
+      {
+        "text": "Graduate Level 29/07/2025 (Shift - 3)\n- (a) (1) (b) (2) (c) (3) (d) (4)\nQ.143.\nFind the part of the sentence that contains an error:\nThe committee's  revised  proposal  (1)/  aimed  at  improving transparency  (2)/  unexpectedly  creating  (3)/  new  layers  of administrative delay. (4)\nGraduate Level 29/07/2025 (Shift - 3)\n<!-- formula-not-decoded -->\n- (d) (4)",
+        "meta": {
+          "schema_name": "docling_core.transforms.chunker.DocMeta",
+          "version": "1.0.0",
+          "doc_items": [
+            {
+              "self_ref": "#/texts/17",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 591.1005896875,
+                    "r": 179.78290992,
+                    "b": 583.0183528199854,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    37
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/18",
+              "parent": {
+                "cref": "#/groups/3"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 578.6787096875,
+                    "r": 271.82636742,
+                    "b": 570.5964728199854,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    31
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/19",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 556.5947296874999,
+                    "r": 55.716506939999995,
+                    "b": 548.5124928199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    6
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/20",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 55.716507,
+                    "t": 556.5947296874999,
+                    "r": 265.02363491999995,
+                    "b": 548.5124928199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    53
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/21",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 544.1728496875,
+                    "r": 288.78486491999996,
+                    "b": 511.2468628199854,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    154
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/22",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 506.9072296875,
+                    "r": 179.78290992,
+                    "b": 498.8249928199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    37
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/23",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "formula",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 494.4853496875,
+                    "r": 199.46162742,
+                    "b": 486.4031128199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    23
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/24",
+              "parent": {
+                "cref": "#/groups/4"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 244.800003,
+                    "t": 494.4853496875,
+                    "r": 271.82636742,
+                    "b": 486.4031128199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    7
+                  ]
+                }
+              ]
+            }
+          ],
+          "headings": [
+            "Q.142. Find the part of the sentence that contains an error: The  agreement  (1)/  remained  effective  since  three  years  (2)/ despite multiple challenges (3)/ from stakeholders. (4)"
+          ],
+          "captions": null,
+          "origin": {
+            "mimetype": "application/pdf",
+            "binary_hash": 13779247704854244166,
+            "filename": "english_page_0019.pdf",
+            "uri": null
+          }
+        },
+        "chunk_index": 1,
+        "contextualized_text": "Q.142. Find the part of the sentence that contains an error: The  agreement  (1)/  remained  effective  since  three  years  (2)/ despite multiple challenges (3)/ from stakeholders. (4)\nGraduate Level 29/07/2025 (Shift - 3)\n- (a) (1) (b) (2) (c) (3) (d) (4)\nQ.143.\nFind the part of the sentence that contains an error:\nThe committee's  revised  proposal  (1)/  aimed  at  improving transparency  (2)/  unexpectedly  creating  (3)/  new  layers  of administrative delay. (4)\nGraduate Level 29/07/2025 (Shift - 3)\n<!-- formula-not-decoded -->\n- (d) (4)"
+      },
+      {
+        "text": "She  is  one  of  the  best (1)/ dancer who (2)/ perform flawlessly (3)/ on stage. (4)\nGraduate Level 31/07/2025 (Shift - 3)\n<!-- formula-not-decoded -->\n- (d) (4)\nQ.145 Find the part of the sentence that contains an error: Had  they  been  understanding  (1)/  the  financial  risks  involved, (2)/ they would not have (3)/ invested so aggressively. (4)\nGraduate Level 31/07/2025 (Shift - 3)\n- (a) (1)\n- (b) (2)",
+        "meta": {
+          "schema_name": "docling_core.transforms.chunker.DocMeta",
+          "version": "1.0.0",
+          "doc_items": [
+            {
+              "self_ref": "#/texts/26",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 459.9794896875,
+                    "r": 288.63398742,
+                    "b": 439.4753828199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    86
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/27",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 435.1357396875,
+                    "r": 179.78290992,
+                    "b": 427.05350281998534,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    37
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/28",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "formula",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 422.7138696875,
+                    "r": 199.46162742,
+                    "b": 414.6316328199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    23
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/29",
+              "parent": {
+                "cref": "#/groups/5"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 244.800003,
+                    "t": 422.7138696875,
+                    "r": 271.82636742,
+                    "b": 414.6316328199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    7
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/30",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 400.6298796875,
+                    "r": 288.80098242,
+                    "b": 367.70389281998536,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    190
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/31",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 363.3642596875,
+                    "r": 179.78290992,
+                    "b": 355.28202281998534,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    37
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/32",
+              "parent": {
+                "cref": "#/groups/6"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 350.9423796875,
+                    "r": 55.64619417,
+                    "b": 342.86014281998536,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    7
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/33",
+              "parent": {
+                "cref": "#/groups/6"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 100.800003,
+                    "t": 350.9423796875,
+                    "r": 127.80439767000001,
+                    "b": 342.86014281998536,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    7
+                  ]
+                }
+              ]
+            }
+          ],
+          "headings": [
+            "Q.144 Find the part of the sentence that contains an error:"
+          ],
+          "captions": null,
+          "origin": {
+            "mimetype": "application/pdf",
+            "binary_hash": 13779247704854244166,
+            "filename": "english_page_0019.pdf",
+            "uri": null
+          }
+        },
+        "chunk_index": 2,
+        "contextualized_text": "Q.144 Find the part of the sentence that contains an error:\nShe  is  one  of  the  best (1)/ dancer who (2)/ perform flawlessly (3)/ on stage. (4)\nGraduate Level 31/07/2025 (Shift - 3)\n<!-- formula-not-decoded -->\n- (d) (4)\nQ.145 Find the part of the sentence that contains an error: Had  they  been  understanding  (1)/  the  financial  risks  involved, (2)/ they would not have (3)/ invested so aggressively. (4)\nGraduate Level 31/07/2025 (Shift - 3)\n- (a) (1)\n- (b) (2)"
+      },
+      {
+        "text": "- (c) (3) (d) (4)\n- Find the part of the sentence that contains an error:\nHer  presentation  displayed  (1)/  strong  arguments  (2)/  yet  it missed (3)/ structure and coherent. (4)\nGraduate Level 02/08/2025 (Shift - 3)\n<!-- formula-not-decoded -->\n- (d) (4)",
+        "meta": {
+          "schema_name": "docling_core.transforms.chunker.DocMeta",
+          "version": "1.0.0",
+          "doc_items": [
+            {
+              "self_ref": "#/texts/35",
+              "parent": {
+                "cref": "#/groups/7"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 172.800003,
+                    "t": 350.9423796875,
+                    "r": 271.82636742,
+                    "b": 342.86014281998536,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    15
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/36",
+              "parent": {
+                "cref": "#/groups/7"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 55.716507,
+                    "t": 328.85839968749997,
+                    "r": 265.02363491999995,
+                    "b": 320.7761628199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    53
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/37",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 316.4365196875,
+                    "r": 289.00165992,
+                    "b": 295.9324128199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    108
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/38",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 291.5927696875,
+                    "r": 179.78290992,
+                    "b": 283.5105328199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    37
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/39",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "formula",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 279.17089968749997,
+                    "r": 199.46162742,
+                    "b": 271.0886628199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    23
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/40",
+              "parent": {
+                "cref": "#/groups/8"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 244.800003,
+                    "t": 279.17089968749997,
+                    "r": 269.59395069,
+                    "b": 271.0886628199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    7
+                  ]
+                }
+              ]
+            }
+          ],
+          "headings": [
+            "Q.146."
+          ],
+          "captions": null,
+          "origin": {
+            "mimetype": "application/pdf",
+            "binary_hash": 13779247704854244166,
+            "filename": "english_page_0019.pdf",
+            "uri": null
+          }
+        },
+        "chunk_index": 3,
+        "contextualized_text": "Q.146.\n- (c) (3) (d) (4)\n- Find the part of the sentence that contains an error:\nHer  presentation  displayed  (1)/  strong  arguments  (2)/  yet  it missed (3)/ structure and coherent. (4)\nGraduate Level 02/08/2025 (Shift - 3)\n<!-- formula-not-decoded -->\n- (d) (4)"
+      },
+      {
+        "text": "The company tried to bring over (1)/ fresh ideas (2)/ to improve customer (3)/ engagement strategies. (4)\nGraduate Level 02/08/2025 (Shift - 3)\n- (a) (1)\n- (b) (2)\n- (c) (3) (d) (4)",
+        "meta": {
+          "schema_name": "docling_core.transforms.chunker.DocMeta",
+          "version": "1.0.0",
+          "doc_items": [
+            {
+              "self_ref": "#/texts/42",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 244.66503968749998,
+                    "r": 288.62519742,
+                    "b": 224.16092281998533,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    105
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/43",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 219.82128968749998,
+                    "r": 179.78290992,
+                    "b": 211.73905281998532,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    37
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/44",
+              "parent": {
+                "cref": "#/groups/9"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 207.39843968749994,
+                    "r": 55.64619417,
+                    "b": 199.31620281998528,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    7
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/45",
+              "parent": {
+                "cref": "#/groups/9"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 100.800003,
+                    "t": 207.39843968749994,
+                    "r": 127.80439767000001,
+                    "b": 199.31620281998528,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    7
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/46",
+              "parent": {
+                "cref": "#/groups/9"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 172.800003,
+                    "t": 207.39843968749994,
+                    "r": 271.82636742,
+                    "b": 199.31620281998528,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    15
+                  ]
+                }
+              ]
+            }
+          ],
+          "headings": [
+            "Q.147. Find the part of the sentence that contains an error:"
+          ],
+          "captions": null,
+          "origin": {
+            "mimetype": "application/pdf",
+            "binary_hash": 13779247704854244166,
+            "filename": "english_page_0019.pdf",
+            "uri": null
+          }
+        },
+        "chunk_index": 4,
+        "contextualized_text": "Q.147. Find the part of the sentence that contains an error:\nThe company tried to bring over (1)/ fresh ideas (2)/ to improve customer (3)/ engagement strategies. (4)\nGraduate Level 02/08/2025 (Shift - 3)\n- (a) (1)\n- (b) (2)\n- (c) (3) (d) (4)"
+      },
+      {
+        "text": "Of all the applicants, she was the smarter.\nGraduate Level 29/08/2025 (Shift - 1)\n- (a) applicants\n- (b) smarter",
+        "meta": {
+          "schema_name": "docling_core.transforms.chunker.DocMeta",
+          "version": "1.0.0",
+          "doc_items": [
+            {
+              "self_ref": "#/texts/48",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 171.5126996875,
+                    "r": 197.89717242,
+                    "b": 163.43046281998534,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    43
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/49",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 159.09081968750002,
+                    "r": 179.78290992,
+                    "b": 151.00858281998535,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    37
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/50",
+              "parent": {
+                "cref": "#/groups/10"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 146.6689496875,
+                    "r": 85.92012042,
+                    "b": 138.58671281998534,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    14
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/51",
+              "parent": {
+                "cref": "#/groups/10"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 100.800003,
+                    "t": 146.6689496875,
+                    "r": 152.46650666999997,
+                    "b": 138.58671281998534,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    11
+                  ]
+                }
+              ]
+            }
+          ],
+          "headings": [
+            "Q.148. Identify the error in the sentence."
+          ],
+          "captions": null,
+          "origin": {
+            "mimetype": "application/pdf",
+            "binary_hash": 13779247704854244166,
+            "filename": "english_page_0019.pdf",
+            "uri": null
+          }
+        },
+        "chunk_index": 5,
+        "contextualized_text": "Q.148. Identify the error in the sentence.\nOf all the applicants, she was the smarter.\nGraduate Level 29/08/2025 (Shift - 1)\n- (a) applicants\n- (b) smarter"
+      },
+      {
+        "text": "The verb \"charged\" is followed by the preposition \"with\" when we talk  about  accusing  someone  of a crime. Hence, 'charged with murder' is the most appropriate answer.",
+        "meta": {
+          "schema_name": "docling_core.transforms.chunker.DocMeta",
+          "version": "1.0.0",
+          "doc_items": [
+            {
+              "self_ref": "#/texts/54",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 83.75683968750002,
+                    "r": 288.48310992,
+                    "b": 50.83085281998535,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    169
+                  ]
+                }
+              ]
+            }
+          ],
+          "headings": [
+            "Sol.83.(b) of murder after (2)"
+          ],
+          "captions": null,
+          "origin": {
+            "mimetype": "application/pdf",
+            "binary_hash": 13779247704854244166,
+            "filename": "english_page_0019.pdf",
+            "uri": null
+          }
+        },
+        "chunk_index": 6,
+        "contextualized_text": "Sol.83.(b) of murder after (2)\nThe verb \"charged\" is followed by the preposition \"with\" when we talk  about  accusing  someone  of a crime. Hence, 'charged with murder' is the most appropriate answer."
+      },
+      {
+        "text": "- (c) was          (d) all\n'Across'  must  be  replaced  with  'along'.  'Across'  is  used  when moving from one side to the other.  'Along' is used to indicate the movement next to something long such as a road or a river. The given sentence talks about walking beside the riverbank. Hence, 'along the riverbank' is the most appropriate answer.",
+        "meta": {
+          "schema_name": "docling_core.transforms.chunker.DocMeta",
+          "version": "1.0.0",
+          "doc_items": [
+            {
+              "self_ref": "#/texts/56",
+              "parent": {
+                "cref": "#/groups/11"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 172.800003,
+                    "t": 146.6689496875,
+                    "r": 251.68623492,
+                    "b": 138.58671281998534,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    24
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/57",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 308.54999,
+                    "t": 814.6972656875,
+                    "r": 568.35028442,
+                    "b": 756.9265518199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    319
+                  ]
+                }
+              ]
+            }
+          ],
+          "headings": [
+            "Sol.84.(b) (2) - across the riverbank"
+          ],
+          "captions": null,
+          "origin": {
+            "mimetype": "application/pdf",
+            "binary_hash": 13779247704854244166,
+            "filename": "english_page_0019.pdf",
+            "uri": null
+          }
+        },
+        "chunk_index": 7,
+        "contextualized_text": "Sol.84.(b) (2) - across the riverbank\n- (c) was          (d) all\n'Across'  must  be  replaced  with  'along'.  'Across'  is  used  when moving from one side to the other.  'Along' is used to indicate the movement next to something long such as a road or a river. The given sentence talks about walking beside the riverbank. Hence, 'along the riverbank' is the most appropriate answer."
+      },
+      {
+        "text": "The  article  'an'  is  used  before  the  words  starting  with a vowel sound. Similarly, in the given sentence, the word 'FIR' starts with a vowel sound. Hence, 'to lodge an FIR' is the most appropriate answer.",
+        "meta": {
+          "schema_name": "docling_core.transforms.chunker.DocMeta",
+          "version": "1.0.0",
+          "doc_items": [
+            {
+              "self_ref": "#/texts/59",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 308.54999,
+                    "t": 729.1240236875,
+                    "r": 568.4879769199999,
+                    "b": 683.7751848199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    212
+                  ]
+                }
+              ]
+            }
+          ],
+          "headings": [
+            "Sol.85.(d) a FIR. (4)"
+          ],
+          "captions": null,
+          "origin": {
+            "mimetype": "application/pdf",
+            "binary_hash": 13779247704854244166,
+            "filename": "english_page_0019.pdf",
+            "uri": null
+          }
+        },
+        "chunk_index": 8,
+        "contextualized_text": "Sol.85.(d) a FIR. (4)\nThe  article  'an'  is  used  before  the  words  starting  with a vowel sound. Similarly, in the given sentence, the word 'FIR' starts with a vowel sound. Hence, 'to lodge an FIR' is the most appropriate answer."
+      },
+      {
+        "text": "'Furniture' is uncountable, so it cannot take the indefinite article 'a.' Rather, we use words like 'some' or 'a piece of'. Hence, 'some furniture' or 'a piece of furniture' is the most appropriate answer.",
+        "meta": {
+          "schema_name": "docling_core.transforms.chunker.DocMeta",
+          "version": "1.0.0",
+          "doc_items": [
+            {
+              "self_ref": "#/texts/61",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 308.54999,
+                    "t": 657.3525396875,
+                    "r": 568.11883442,
+                    "b": 624.4255728199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    205
+                  ]
+                }
+              ]
+            }
+          ],
+          "headings": [
+            "Sol.86.(b) a furniture (2)"
+          ],
+          "captions": null,
+          "origin": {
+            "mimetype": "application/pdf",
+            "binary_hash": 13779247704854244166,
+            "filename": "english_page_0019.pdf",
+            "uri": null
+          }
+        },
+        "chunk_index": 9,
+        "contextualized_text": "Sol.86.(b) a furniture (2)\n'Furniture' is uncountable, so it cannot take the indefinite article 'a.' Rather, we use words like 'some' or 'a piece of'. Hence, 'some furniture' or 'a piece of furniture' is the most appropriate answer."
+      },
+      {
+        "text": "'Information'  is  an  uncountable  noun  and  we  always  use  a singular  verb  with  uncountable  nouns.  Therefore,  'are' must be replaced  with  'is'.  Hence,  'The  information  is'  is  the  most appropriate answer.",
+        "meta": {
+          "schema_name": "docling_core.transforms.chunker.DocMeta",
+          "version": "1.0.0",
+          "doc_items": [
+            {
+              "self_ref": "#/texts/63",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 308.54999,
+                    "t": 596.6220696875,
+                    "r": 568.29315692,
+                    "b": 551.2732328199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    223
+                  ]
+                }
+              ]
+            }
+          ],
+          "headings": [
+            "Sol.87.(a) The information are (1)"
+          ],
+          "captions": null,
+          "origin": {
+            "mimetype": "application/pdf",
+            "binary_hash": 13779247704854244166,
+            "filename": "english_page_0019.pdf",
+            "uri": null
+          }
+        },
+        "chunk_index": 10,
+        "contextualized_text": "Sol.87.(a) The information are (1)\n'Information'  is  an  uncountable  noun  and  we  always  use  a singular  verb  with  uncountable  nouns.  Therefore,  'are' must be replaced  with  'is'.  Hence,  'The  information  is'  is  the  most appropriate answer."
+      },
+      {
+        "text": "'Everyone/each/  every/  nothing/  everything/  anything/  either/ neither' represents a singular noun. Therefore, singular verbs will be  used  with  them.  'Were'  must be replaced with 'was'. Hence, 'was excited' is the most appropriate answer.",
+        "meta": {
+          "schema_name": "docling_core.transforms.chunker.DocMeta",
+          "version": "1.0.0",
+          "doc_items": [
+            {
+              "self_ref": "#/texts/65",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 308.54999,
+                    "t": 524.8505896875,
+                    "r": 568.45574942,
+                    "b": 479.50174281998534,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    247
+                  ]
+                }
+              ]
+            }
+          ],
+          "headings": [
+            "Sol.88.(b) were excited (2)"
+          ],
+          "captions": null,
+          "origin": {
+            "mimetype": "application/pdf",
+            "binary_hash": 13779247704854244166,
+            "filename": "english_page_0019.pdf",
+            "uri": null
+          }
+        },
+        "chunk_index": 11,
+        "contextualized_text": "Sol.88.(b) were excited (2)\n'Everyone/each/  every/  nothing/  everything/  anything/  either/ neither' represents a singular noun. Therefore, singular verbs will be  used  with  them.  'Were'  must be replaced with 'was'. Hence, 'was excited' is the most appropriate answer."
+      },
+      {
+        "text": "The given sentence needs an adverb, 'softly', to modify the verb 'speaks',  not the adjective 'soft'. Hence, 'She speaks very softly' is the most appropriate answer.",
+        "meta": {
+          "schema_name": "docling_core.transforms.chunker.DocMeta",
+          "version": "1.0.0",
+          "doc_items": [
+            {
+              "self_ref": "#/texts/67",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 308.54999,
+                    "t": 453.0781296875,
+                    "r": 568.72820942,
+                    "b": 420.15214281998533,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    165
+                  ]
+                }
+              ]
+            }
+          ],
+          "headings": [
+            "Sol.89.(a) She speaks very soft (1)"
+          ],
+          "captions": null,
+          "origin": {
+            "mimetype": "application/pdf",
+            "binary_hash": 13779247704854244166,
+            "filename": "english_page_0019.pdf",
+            "uri": null
+          }
+        },
+        "chunk_index": 12,
+        "contextualized_text": "Sol.89.(a) She speaks very soft (1)\nThe given sentence needs an adverb, 'softly', to modify the verb 'speaks',  not the adjective 'soft'. Hence, 'She speaks very softly' is the most appropriate answer."
+      },
+      {
+        "text": "The article 'an' is used before words starting with a vowel sound. Similarly, in the given sentence, the word 'owl' starts with a vowel sound. Hence, 'and an owl' is the most appropriate answer.",
+        "meta": {
+          "schema_name": "docling_core.transforms.chunker.DocMeta",
+          "version": "1.0.0",
+          "doc_items": [
+            {
+              "self_ref": "#/texts/69",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 308.54999,
+                    "t": 393.7285196875,
+                    "r": 568.7223519199999,
+                    "b": 360.80253281998534,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    194
+                  ]
+                }
+              ]
+            }
+          ],
+          "headings": [
+            "Sol.90.(c) and a owl (3)"
+          ],
+          "captions": null,
+          "origin": {
+            "mimetype": "application/pdf",
+            "binary_hash": 13779247704854244166,
+            "filename": "english_page_0019.pdf",
+            "uri": null
+          }
+        },
+        "chunk_index": 13,
+        "contextualized_text": "Sol.90.(c) and a owl (3)\nThe article 'an' is used before words starting with a vowel sound. Similarly, in the given sentence, the word 'owl' starts with a vowel sound. Hence, 'and an owl' is the most appropriate answer."
+      },
+      {
+        "text": "The  given  sentence  needs  an  adjective 'strong' to describe the noun 'reply', not the adverb 'strongly'. Hence, 'strong reply' is the most appropriate answer.",
+        "meta": {
+          "schema_name": "docling_core.transforms.chunker.DocMeta",
+          "version": "1.0.0",
+          "doc_items": [
+            {
+              "self_ref": "#/texts/71",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 308.54999,
+                    "t": 334.3789096875,
+                    "r": 568.2272394199999,
+                    "b": 301.45292281998536,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    162
+                  ]
+                }
+              ]
+            }
+          ],
+          "headings": [
+            "Sol.91.(b) strongly reply (2)"
+          ],
+          "captions": null,
+          "origin": {
+            "mimetype": "application/pdf",
+            "binary_hash": 13779247704854244166,
+            "filename": "english_page_0019.pdf",
+            "uri": null
+          }
+        },
+        "chunk_index": 14,
+        "contextualized_text": "Sol.91.(b) strongly reply (2)\nThe  given  sentence  needs  an  adjective 'strong' to describe the noun 'reply', not the adverb 'strongly'. Hence, 'strong reply' is the most appropriate answer."
+      },
+      {
+        "text": "In the given sentence, the use of the word 'again' is superfluous and should be removed. The verb 'repeated' already means said again. Hence, 'He repeated' is the most appropriate usage.",
+        "meta": {
+          "schema_name": "docling_core.transforms.chunker.DocMeta",
+          "version": "1.0.0",
+          "doc_items": [
+            {
+              "self_ref": "#/texts/73",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 308.54999,
+                    "t": 275.02929968750004,
+                    "r": 568.49090942,
+                    "b": 242.10331281998538,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    186
+                  ]
+                }
+              ]
+            }
+          ],
+          "headings": [
+            "Sol.92.(a) He repeated again (1)"
+          ],
+          "captions": null,
+          "origin": {
+            "mimetype": "application/pdf",
+            "binary_hash": 13779247704854244166,
+            "filename": "english_page_0019.pdf",
+            "uri": null
+          }
+        },
+        "chunk_index": 15,
+        "contextualized_text": "Sol.92.(a) He repeated again (1)\nIn the given sentence, the use of the word 'again' is superfluous and should be removed. The verb 'repeated' already means said again. Hence, 'He repeated' is the most appropriate usage."
+      },
+      {
+        "text": "The phrasal verb \"to come up with\" means to produce or suggest an  idea  or  solution.  The  use of 'to' is incorrect here. Therefore, 'to'  must  be  removed.  Hence,  'a  new  solution'  is  the  most appropriate answer.",
+        "meta": {
+          "schema_name": "docling_core.transforms.chunker.DocMeta",
+          "version": "1.0.0",
+          "doc_items": [
+            {
+              "self_ref": "#/texts/75",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 308.54999,
+                    "t": 215.67968968749994,
+                    "r": 568.64324942,
+                    "b": 170.3318228199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    222
+                  ]
+                }
+              ]
+            }
+          ],
+          "headings": [
+            "Sol.93.(c) to a new solution (3)"
+          ],
+          "captions": null,
+          "origin": {
+            "mimetype": "application/pdf",
+            "binary_hash": 13779247704854244166,
+            "filename": "english_page_0019.pdf",
+            "uri": null
+          }
+        },
+        "chunk_index": 16,
+        "contextualized_text": "Sol.93.(c) to a new solution (3)\nThe phrasal verb \"to come up with\" means to produce or suggest an  idea  or  solution.  The  use of 'to' is incorrect here. Therefore, 'to'  must  be  removed.  Hence,  'a  new  solution'  is  the  most appropriate answer."
+      },
+      {
+        "text": "In  part  (2),  'out'  must  be  removed because it is already part of the  phrasal  verb  'point  out'.  Hence,  'the  mistake'  is  the  most appropriate answer.",
+        "meta": {
+          "schema_name": "docling_core.transforms.chunker.DocMeta",
+          "version": "1.0.0",
+          "doc_items": [
+            {
+              "self_ref": "#/texts/77",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 308.54999,
+                    "t": 143.90819968749997,
+                    "r": 568.71209942,
+                    "b": 110.9822128199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    163
+                  ]
+                }
+              ]
+            }
+          ],
+          "headings": [
+            "Sol.94.(b) the mistake out (2)"
+          ],
+          "captions": null,
+          "origin": {
+            "mimetype": "application/pdf",
+            "binary_hash": 13779247704854244166,
+            "filename": "english_page_0019.pdf",
+            "uri": null
+          }
+        },
+        "chunk_index": 17,
+        "contextualized_text": "Sol.94.(b) the mistake out (2)\nIn  part  (2),  'out'  must  be  removed because it is already part of the  phrasal  verb  'point  out'.  Hence,  'the  mistake'  is  the  most appropriate answer."
+      },
+      {
+        "text": "In  the  given  sentence,  'He'  is  a  singular  subject  that  will  take 'recites'  as  a  singular  verb.  Hence,  'poems  and  recites'  is  the most appropriate answer.",
+        "meta": {
+          "schema_name": "docling_core.transforms.chunker.DocMeta",
+          "version": "1.0.0",
+          "doc_items": [
+            {
+              "self_ref": "#/texts/79",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 308.54999,
+                    "t": 84.55858968749999,
+                    "r": 568.27850942,
+                    "b": 51.631632819985384,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    174
+                  ]
+                }
+              ]
+            }
+          ],
+          "headings": [
+            "Sol.95.(b) poems and recite (2)"
+          ],
+          "captions": null,
+          "origin": {
+            "mimetype": "application/pdf",
+            "binary_hash": 13779247704854244166,
+            "filename": "english_page_0019.pdf",
+            "uri": null
+          }
+        },
+        "chunk_index": 18,
+        "contextualized_text": "Sol.95.(b) poems and recite (2)\nIn  the  given  sentence,  'He'  is  a  singular  subject  that  will  take 'recites'  as  a  singular  verb.  Hence,  'poems  and  recites'  is  the most appropriate answer."
+      }
+    ]
+  },
+  "content_assets": {
+    "tables": [],
+    "figures": []
+  },
+  "docling_document": {
+    "schema_name": "DoclingDocument",
+    "version": "1.10.0",
+    "name": "english_page_0019",
+    "origin": {
+      "mimetype": "application/pdf",
+      "binary_hash": 13779247704854244166,
+      "filename": "english_page_0019.pdf"
+    },
+    "furniture": {
+      "self_ref": "#/furniture",
+      "children": [],
+      "content_layer": "furniture",
+      "name": "_root_",
+      "label": "unspecified"
+    },
+    "body": {
+      "self_ref": "#/body",
+      "children": [
+        {
+          "$ref": "#/texts/0"
+        },
+        {
+          "$ref": "#/texts/1"
+        },
+        {
+          "$ref": "#/texts/2"
+        },
+        {
+          "$ref": "#/groups/0"
+        },
+        {
+          "$ref": "#/texts/7"
+        },
+        {
+          "$ref": "#/texts/8"
+        },
+        {
+          "$ref": "#/texts/9"
+        },
+        {
+          "$ref": "#/groups/1"
+        },
+        {
+          "$ref": "#/texts/12"
+        },
+        {
+          "$ref": "#/texts/13"
+        },
+        {
+          "$ref": "#/groups/2"
+        },
+        {
+          "$ref": "#/texts/16"
+        },
+        {
+          "$ref": "#/texts/17"
+        },
+        {
+          "$ref": "#/groups/3"
+        },
+        {
+          "$ref": "#/texts/19"
+        },
+        {
+          "$ref": "#/texts/20"
+        },
+        {
+          "$ref": "#/texts/21"
+        },
+        {
+          "$ref": "#/texts/22"
+        },
+        {
+          "$ref": "#/texts/23"
+        },
+        {
+          "$ref": "#/groups/4"
+        },
+        {
+          "$ref": "#/texts/25"
+        },
+        {
+          "$ref": "#/texts/26"
+        },
+        {
+          "$ref": "#/texts/27"
+        },
+        {
+          "$ref": "#/texts/28"
+        },
+        {
+          "$ref": "#/groups/5"
+        },
+        {
+          "$ref": "#/texts/30"
+        },
+        {
+          "$ref": "#/texts/31"
+        },
+        {
+          "$ref": "#/groups/6"
+        },
+        {
+          "$ref": "#/texts/34"
+        },
+        {
+          "$ref": "#/groups/7"
+        },
+        {
+          "$ref": "#/texts/37"
+        },
+        {
+          "$ref": "#/texts/38"
+        },
+        {
+          "$ref": "#/texts/39"
+        },
+        {
+          "$ref": "#/groups/8"
+        },
+        {
+          "$ref": "#/texts/41"
+        },
+        {
+          "$ref": "#/texts/42"
+        },
+        {
+          "$ref": "#/texts/43"
+        },
+        {
+          "$ref": "#/groups/9"
+        },
+        {
+          "$ref": "#/texts/47"
+        },
+        {
+          "$ref": "#/texts/48"
+        },
+        {
+          "$ref": "#/texts/49"
+        },
+        {
+          "$ref": "#/groups/10"
+        },
+        {
+          "$ref": "#/texts/52"
+        },
+        {
+          "$ref": "#/texts/53"
+        },
+        {
+          "$ref": "#/texts/54"
+        },
+        {
+          "$ref": "#/texts/55"
+        },
+        {
+          "$ref": "#/groups/11"
+        },
+        {
+          "$ref": "#/texts/57"
+        },
+        {
+          "$ref": "#/texts/58"
+        },
+        {
+          "$ref": "#/texts/59"
+        },
+        {
+          "$ref": "#/texts/60"
+        },
+        {
+          "$ref": "#/texts/61"
+        },
+        {
+          "$ref": "#/texts/62"
+        },
+        {
+          "$ref": "#/texts/63"
+        },
+        {
+          "$ref": "#/texts/64"
+        },
+        {
+          "$ref": "#/texts/65"
+        },
+        {
+          "$ref": "#/texts/66"
+        },
+        {
+          "$ref": "#/texts/67"
+        },
+        {
+          "$ref": "#/texts/68"
+        },
+        {
+          "$ref": "#/texts/69"
+        },
+        {
+          "$ref": "#/texts/70"
+        },
+        {
+          "$ref": "#/texts/71"
+        },
+        {
+          "$ref": "#/texts/72"
+        },
+        {
+          "$ref": "#/texts/73"
+        },
+        {
+          "$ref": "#/texts/74"
+        },
+        {
+          "$ref": "#/texts/75"
+        },
+        {
+          "$ref": "#/texts/76"
+        },
+        {
+          "$ref": "#/texts/77"
+        },
+        {
+          "$ref": "#/texts/78"
+        },
+        {
+          "$ref": "#/texts/79"
+        },
+        {
+          "$ref": "#/texts/80"
+        },
+        {
+          "$ref": "#/texts/81"
+        }
+      ],
+      "content_layer": "body",
+      "name": "_root_",
+      "label": "unspecified"
+    },
+    "groups": [
+      {
+        "self_ref": "#/groups/0",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [
+          {
+            "$ref": "#/texts/3"
+          },
+          {
+            "$ref": "#/texts/4"
+          },
+          {
+            "$ref": "#/texts/5"
+          },
+          {
+            "$ref": "#/texts/6"
+          }
+        ],
+        "content_layer": "body",
+        "name": "list",
+        "label": "list"
+      },
+      {
+        "self_ref": "#/groups/1",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [
+          {
+            "$ref": "#/texts/10"
+          },
+          {
+            "$ref": "#/texts/11"
+          }
+        ],
+        "content_layer": "body",
+        "name": "list",
+        "label": "list"
+      },
+      {
+        "self_ref": "#/groups/2",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [
+          {
+            "$ref": "#/texts/14"
+          },
+          {
+            "$ref": "#/texts/15"
+          }
+        ],
+        "content_layer": "body",
+        "name": "list",
+        "label": "list"
+      },
+      {
+        "self_ref": "#/groups/3",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [
+          {
+            "$ref": "#/texts/18"
+          }
+        ],
+        "content_layer": "body",
+        "name": "list",
+        "label": "list"
+      },
+      {
+        "self_ref": "#/groups/4",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [
+          {
+            "$ref": "#/texts/24"
+          }
+        ],
+        "content_layer": "body",
+        "name": "list",
+        "label": "list"
+      },
+      {
+        "self_ref": "#/groups/5",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [
+          {
+            "$ref": "#/texts/29"
+          }
+        ],
+        "content_layer": "body",
+        "name": "list",
+        "label": "list"
+      },
+      {
+        "self_ref": "#/groups/6",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [
+          {
+            "$ref": "#/texts/32"
+          },
+          {
+            "$ref": "#/texts/33"
+          }
+        ],
+        "content_layer": "body",
+        "name": "list",
+        "label": "list"
+      },
+      {
+        "self_ref": "#/groups/7",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [
+          {
+            "$ref": "#/texts/35"
+          },
+          {
+            "$ref": "#/texts/36"
+          }
+        ],
+        "content_layer": "body",
+        "name": "list",
+        "label": "list"
+      },
+      {
+        "self_ref": "#/groups/8",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [
+          {
+            "$ref": "#/texts/40"
+          }
+        ],
+        "content_layer": "body",
+        "name": "list",
+        "label": "list"
+      },
+      {
+        "self_ref": "#/groups/9",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [
+          {
+            "$ref": "#/texts/44"
+          },
+          {
+            "$ref": "#/texts/45"
+          },
+          {
+            "$ref": "#/texts/46"
+          }
+        ],
+        "content_layer": "body",
+        "name": "list",
+        "label": "list"
+      },
+      {
+        "self_ref": "#/groups/10",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [
+          {
+            "$ref": "#/texts/50"
+          },
+          {
+            "$ref": "#/texts/51"
+          }
+        ],
+        "content_layer": "body",
+        "name": "list",
+        "label": "list"
+      },
+      {
+        "self_ref": "#/groups/11",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [
+          {
+            "$ref": "#/texts/56"
+          }
+        ],
+        "content_layer": "body",
+        "name": "list",
+        "label": "list"
+      }
+    ],
+    "texts": [
+      {
+        "self_ref": "#/texts/0",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "furniture",
+        "label": "page_header",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 830.7935546594726,
+              "r": 95.7084616875,
+              "b": 822.5652585957749,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              8
+            ]
+          }
+        ],
+        "orig": "Pinnacle",
+        "text": "Pinnacle"
+      },
+      {
+        "self_ref": "#/texts/1",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "furniture",
+        "label": "page_header",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 291.757038,
+              "t": 830.7935546594726,
+              "r": 570.3032679375,
+              "b": 822.5652585957749,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              14
+            ]
+          }
+        ],
+        "orig": "Spot the Error",
+        "text": "Spot the Error"
+      },
+      {
+        "self_ref": "#/texts/2",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 814.6972656875,
+              "r": 179.78290992,
+              "b": 806.6150288199854,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              37
+            ]
+          }
+        ],
+        "orig": "Graduate Level 26/07/2025 (Shift - 3)",
+        "text": "Graduate Level 26/07/2025 (Shift - 3)"
+      },
+      {
+        "self_ref": "#/texts/3",
+        "parent": {
+          "$ref": "#/groups/0"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 802.2753906875,
+              "r": 55.64619417,
+              "b": 794.1931538199854,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              7
+            ]
+          }
+        ],
+        "orig": "(a) (1)",
+        "text": "(a) (1)",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/4",
+        "parent": {
+          "$ref": "#/groups/0"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 100.800003,
+              "t": 802.2753906875,
+              "r": 127.80439767000001,
+              "b": 794.1931538199854,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              7
+            ]
+          }
+        ],
+        "orig": "(b) (2)",
+        "text": "(b) (2)",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/5",
+        "parent": {
+          "$ref": "#/groups/0"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 172.800003,
+              "t": 802.2753906875,
+              "r": 199.46162742,
+              "b": 794.1931538199854,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              7
+            ]
+          }
+        ],
+        "orig": "(c) (3)",
+        "text": "(c) (3)",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/6",
+        "parent": {
+          "$ref": "#/groups/0"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 244.800003,
+              "t": 802.2753906875,
+              "r": 271.82636742,
+              "b": 794.1931538199854,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              7
+            ]
+          }
+        ],
+        "orig": "(d) (4)",
+        "text": "(d) (4)",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/7",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 781.5722656875,
+              "r": 288.95332242,
+              "b": 736.2234268199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              209
+            ]
+          }
+        ],
+        "orig": "Q.140. Find the part of the sentence that contains an error: The scientist explained (1)/ that  the  experiment  (2)/  was unsuccessful  because  the  equipment  (3)/  malfunctions  during the final stage. (4)",
+        "text": "Q.140. Find the part of the sentence that contains an error: The scientist explained (1)/ that  the  experiment  (2)/  was unsuccessful  because  the  equipment  (3)/  malfunctions  during the final stage. (4)"
+      },
+      {
+        "self_ref": "#/texts/8",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 731.8837886875,
+              "r": 179.78290992,
+              "b": 723.8015518199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              37
+            ]
+          }
+        ],
+        "orig": "Graduate Level 28/07/2025 (Shift - 3)",
+        "text": "Graduate Level 28/07/2025 (Shift - 3)"
+      },
+      {
+        "self_ref": "#/texts/9",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "formula",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 719.4619136875,
+              "r": 199.46162742,
+              "b": 711.3796768199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              23
+            ]
+          }
+        ],
+        "orig": "(a) (1) (b) (2) (c) (3)",
+        "text": ""
+      },
+      {
+        "self_ref": "#/texts/10",
+        "parent": {
+          "$ref": "#/groups/1"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 244.800003,
+              "t": 719.4619136875,
+              "r": 271.82636742,
+              "b": 711.3796768199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              7
+            ]
+          }
+        ],
+        "orig": "(d) (4)",
+        "text": "(d) (4)",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/11",
+        "parent": {
+          "$ref": "#/groups/1"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 698.7587886875,
+              "r": 288.41133492,
+              "b": 665.8318258199854,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              176
+            ]
+          }
+        ],
+        "orig": "Q.141. Find the part of the sentence that contains an error: The document was replete by errors (1)/ despite several rounds (2)/ of proofreading (3)/ by the editorial team. (4)",
+        "text": "Q.141. Find the part of the sentence that contains an error: The document was replete by errors (1)/ despite several rounds (2)/ of proofreading (3)/ by the editorial team. (4)",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/12",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 661.4921896875001,
+              "r": 179.78290992,
+              "b": 653.4099528199854,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              37
+            ]
+          }
+        ],
+        "orig": "Graduate Level 28/07/2025 (Shift - 3)",
+        "text": "Graduate Level 28/07/2025 (Shift - 3)"
+      },
+      {
+        "self_ref": "#/texts/13",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "formula",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 649.0703096875,
+              "r": 127.80439767000001,
+              "b": 640.9880728199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              15
+            ]
+          }
+        ],
+        "orig": "(a) (1) (b) (2)",
+        "text": ""
+      },
+      {
+        "self_ref": "#/texts/14",
+        "parent": {
+          "$ref": "#/groups/2"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 172.800003,
+              "t": 649.0703096875,
+              "r": 199.46162742,
+              "b": 640.9880728199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              7
+            ]
+          }
+        ],
+        "orig": "(c) (3)",
+        "text": "(c) (3)",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/15",
+        "parent": {
+          "$ref": "#/groups/2"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 244.800003,
+              "t": 649.0703096875,
+              "r": 271.82636742,
+              "b": 640.9880728199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              7
+            ]
+          }
+        ],
+        "orig": "(d) (4)",
+        "text": "(d) (4)",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/16",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "section_header",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 628.3671896875001,
+              "r": 288.91523742,
+              "b": 595.4402228199854,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              185
+            ]
+          }
+        ],
+        "orig": "Q.142. Find the part of the sentence that contains an error: The  agreement  (1)/  remained  effective  since  three  years  (2)/ despite multiple challenges (3)/ from stakeholders. (4)",
+        "text": "Q.142. Find the part of the sentence that contains an error: The  agreement  (1)/  remained  effective  since  three  years  (2)/ despite multiple challenges (3)/ from stakeholders. (4)",
+        "level": 1
+      },
+      {
+        "self_ref": "#/texts/17",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 591.1005896875,
+              "r": 179.78290992,
+              "b": 583.0183528199854,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              37
+            ]
+          }
+        ],
+        "orig": "Graduate Level 29/07/2025 (Shift - 3)",
+        "text": "Graduate Level 29/07/2025 (Shift - 3)"
+      },
+      {
+        "self_ref": "#/texts/18",
+        "parent": {
+          "$ref": "#/groups/3"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 578.6787096875,
+              "r": 271.82636742,
+              "b": 570.5964728199854,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              31
+            ]
+          }
+        ],
+        "orig": "(a) (1) (b) (2) (c) (3) (d) (4)",
+        "text": "(a) (1) (b) (2) (c) (3) (d) (4)",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/19",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 556.5947296874999,
+              "r": 55.716506939999995,
+              "b": 548.5124928199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              6
+            ]
+          }
+        ],
+        "orig": "Q.143.",
+        "text": "Q.143."
+      },
+      {
+        "self_ref": "#/texts/20",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 55.716507,
+              "t": 556.5947296874999,
+              "r": 265.02363491999995,
+              "b": 548.5124928199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              53
+            ]
+          }
+        ],
+        "orig": "Find the part of the sentence that contains an error:",
+        "text": "Find the part of the sentence that contains an error:"
+      },
+      {
+        "self_ref": "#/texts/21",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 544.1728496875,
+              "r": 288.78486491999996,
+              "b": 511.2468628199854,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              154
+            ]
+          }
+        ],
+        "orig": "The committee's  revised  proposal  (1)/  aimed  at  improving transparency  (2)/  unexpectedly  creating  (3)/  new  layers  of administrative delay. (4)",
+        "text": "The committee's  revised  proposal  (1)/  aimed  at  improving transparency  (2)/  unexpectedly  creating  (3)/  new  layers  of administrative delay. (4)"
+      },
+      {
+        "self_ref": "#/texts/22",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 506.9072296875,
+              "r": 179.78290992,
+              "b": 498.8249928199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              37
+            ]
+          }
+        ],
+        "orig": "Graduate Level 29/07/2025 (Shift - 3)",
+        "text": "Graduate Level 29/07/2025 (Shift - 3)"
+      },
+      {
+        "self_ref": "#/texts/23",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "formula",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 494.4853496875,
+              "r": 199.46162742,
+              "b": 486.4031128199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              23
+            ]
+          }
+        ],
+        "orig": "(a) (1) (b) (2) (c) (3)",
+        "text": ""
+      },
+      {
+        "self_ref": "#/texts/24",
+        "parent": {
+          "$ref": "#/groups/4"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 244.800003,
+              "t": 494.4853496875,
+              "r": 271.82636742,
+              "b": 486.4031128199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              7
+            ]
+          }
+        ],
+        "orig": "(d) (4)",
+        "text": "(d) (4)",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/25",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "section_header",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 472.4013696875,
+              "r": 262.41328242,
+              "b": 464.3191328199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              59
+            ]
+          }
+        ],
+        "orig": "Q.144 Find the part of the sentence that contains an error:",
+        "text": "Q.144 Find the part of the sentence that contains an error:",
+        "level": 1
+      },
+      {
+        "self_ref": "#/texts/26",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 459.9794896875,
+              "r": 288.63398742,
+              "b": 439.4753828199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              86
+            ]
+          }
+        ],
+        "orig": "She  is  one  of  the  best (1)/ dancer who (2)/ perform flawlessly (3)/ on stage. (4)",
+        "text": "She  is  one  of  the  best (1)/ dancer who (2)/ perform flawlessly (3)/ on stage. (4)"
+      },
+      {
+        "self_ref": "#/texts/27",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 435.1357396875,
+              "r": 179.78290992,
+              "b": 427.05350281998534,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              37
+            ]
+          }
+        ],
+        "orig": "Graduate Level 31/07/2025 (Shift - 3)",
+        "text": "Graduate Level 31/07/2025 (Shift - 3)"
+      },
+      {
+        "self_ref": "#/texts/28",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "formula",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 422.7138696875,
+              "r": 199.46162742,
+              "b": 414.6316328199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              23
+            ]
+          }
+        ],
+        "orig": "(a) (1) (b) (2) (c) (3)",
+        "text": ""
+      },
+      {
+        "self_ref": "#/texts/29",
+        "parent": {
+          "$ref": "#/groups/5"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 244.800003,
+              "t": 422.7138696875,
+              "r": 271.82636742,
+              "b": 414.6316328199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              7
+            ]
+          }
+        ],
+        "orig": "(d) (4)",
+        "text": "(d) (4)",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/30",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 400.6298796875,
+              "r": 288.80098242,
+              "b": 367.70389281998536,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              190
+            ]
+          }
+        ],
+        "orig": "Q.145 Find the part of the sentence that contains an error: Had  they  been  understanding  (1)/  the  financial  risks  involved, (2)/ they would not have (3)/ invested so aggressively. (4)",
+        "text": "Q.145 Find the part of the sentence that contains an error: Had  they  been  understanding  (1)/  the  financial  risks  involved, (2)/ they would not have (3)/ invested so aggressively. (4)"
+      },
+      {
+        "self_ref": "#/texts/31",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 363.3642596875,
+              "r": 179.78290992,
+              "b": 355.28202281998534,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              37
+            ]
+          }
+        ],
+        "orig": "Graduate Level 31/07/2025 (Shift - 3)",
+        "text": "Graduate Level 31/07/2025 (Shift - 3)"
+      },
+      {
+        "self_ref": "#/texts/32",
+        "parent": {
+          "$ref": "#/groups/6"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 350.9423796875,
+              "r": 55.64619417,
+              "b": 342.86014281998536,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              7
+            ]
+          }
+        ],
+        "orig": "(a) (1)",
+        "text": "(a) (1)",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/33",
+        "parent": {
+          "$ref": "#/groups/6"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 100.800003,
+              "t": 350.9423796875,
+              "r": 127.80439767000001,
+              "b": 342.86014281998536,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              7
+            ]
+          }
+        ],
+        "orig": "(b) (2)",
+        "text": "(b) (2)",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/34",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "section_header",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 328.85839968749997,
+              "r": 55.716506939999995,
+              "b": 320.7761628199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              6
+            ]
+          }
+        ],
+        "orig": "Q.146.",
+        "text": "Q.146.",
+        "level": 1
+      },
+      {
+        "self_ref": "#/texts/35",
+        "parent": {
+          "$ref": "#/groups/7"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 172.800003,
+              "t": 350.9423796875,
+              "r": 271.82636742,
+              "b": 342.86014281998536,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              15
+            ]
+          }
+        ],
+        "orig": "(c) (3) (d) (4)",
+        "text": "(c) (3) (d) (4)",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/36",
+        "parent": {
+          "$ref": "#/groups/7"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 55.716507,
+              "t": 328.85839968749997,
+              "r": 265.02363491999995,
+              "b": 320.7761628199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              53
+            ]
+          }
+        ],
+        "orig": "Find the part of the sentence that contains an error:",
+        "text": "Find the part of the sentence that contains an error:",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/37",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 316.4365196875,
+              "r": 289.00165992,
+              "b": 295.9324128199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              108
+            ]
+          }
+        ],
+        "orig": "Her  presentation  displayed  (1)/  strong  arguments  (2)/  yet  it missed (3)/ structure and coherent. (4)",
+        "text": "Her  presentation  displayed  (1)/  strong  arguments  (2)/  yet  it missed (3)/ structure and coherent. (4)"
+      },
+      {
+        "self_ref": "#/texts/38",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 291.5927696875,
+              "r": 179.78290992,
+              "b": 283.5105328199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              37
+            ]
+          }
+        ],
+        "orig": "Graduate Level 02/08/2025 (Shift - 3)",
+        "text": "Graduate Level 02/08/2025 (Shift - 3)"
+      },
+      {
+        "self_ref": "#/texts/39",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "formula",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 279.17089968749997,
+              "r": 199.46162742,
+              "b": 271.0886628199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              23
+            ]
+          }
+        ],
+        "orig": "(a) (1) (b) (2) (c) (3)",
+        "text": ""
+      },
+      {
+        "self_ref": "#/texts/40",
+        "parent": {
+          "$ref": "#/groups/8"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 244.800003,
+              "t": 279.17089968749997,
+              "r": 269.59395069,
+              "b": 271.0886628199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              7
+            ]
+          }
+        ],
+        "orig": "(d) (4)",
+        "text": "(d) (4)",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/41",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "section_header",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 257.0869096875,
+              "r": 265.02363491999995,
+              "b": 249.00467281998533,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              60
+            ]
+          }
+        ],
+        "orig": "Q.147. Find the part of the sentence that contains an error:",
+        "text": "Q.147. Find the part of the sentence that contains an error:",
+        "level": 1
+      },
+      {
+        "self_ref": "#/texts/42",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 244.66503968749998,
+              "r": 288.62519742,
+              "b": 224.16092281998533,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              105
+            ]
+          }
+        ],
+        "orig": "The company tried to bring over (1)/ fresh ideas (2)/ to improve customer (3)/ engagement strategies. (4)",
+        "text": "The company tried to bring over (1)/ fresh ideas (2)/ to improve customer (3)/ engagement strategies. (4)"
+      },
+      {
+        "self_ref": "#/texts/43",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 219.82128968749998,
+              "r": 179.78290992,
+              "b": 211.73905281998532,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              37
+            ]
+          }
+        ],
+        "orig": "Graduate Level 02/08/2025 (Shift - 3)",
+        "text": "Graduate Level 02/08/2025 (Shift - 3)"
+      },
+      {
+        "self_ref": "#/texts/44",
+        "parent": {
+          "$ref": "#/groups/9"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 207.39843968749994,
+              "r": 55.64619417,
+              "b": 199.31620281998528,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              7
+            ]
+          }
+        ],
+        "orig": "(a) (1)",
+        "text": "(a) (1)",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/45",
+        "parent": {
+          "$ref": "#/groups/9"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 100.800003,
+              "t": 207.39843968749994,
+              "r": 127.80439767000001,
+              "b": 199.31620281998528,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              7
+            ]
+          }
+        ],
+        "orig": "(b) (2)",
+        "text": "(b) (2)",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/46",
+        "parent": {
+          "$ref": "#/groups/9"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 172.800003,
+              "t": 207.39843968749994,
+              "r": 271.82636742,
+              "b": 199.31620281998528,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              15
+            ]
+          }
+        ],
+        "orig": "(c) (3) (d) (4)",
+        "text": "(c) (3) (d) (4)",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/47",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "section_header",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 183.93456968750002,
+              "r": 191.53828242,
+              "b": 175.85233281998535,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              42
+            ]
+          }
+        ],
+        "orig": "Q.148. Identify the error in the sentence.",
+        "text": "Q.148. Identify the error in the sentence.",
+        "level": 1
+      },
+      {
+        "self_ref": "#/texts/48",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 171.5126996875,
+              "r": 197.89717242,
+              "b": 163.43046281998534,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              43
+            ]
+          }
+        ],
+        "orig": "Of all the applicants, she was the smarter.",
+        "text": "Of all the applicants, she was the smarter."
+      },
+      {
+        "self_ref": "#/texts/49",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 159.09081968750002,
+              "r": 179.78290992,
+              "b": 151.00858281998535,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              37
+            ]
+          }
+        ],
+        "orig": "Graduate Level 29/08/2025 (Shift - 1)",
+        "text": "Graduate Level 29/08/2025 (Shift - 1)"
+      },
+      {
+        "self_ref": "#/texts/50",
+        "parent": {
+          "$ref": "#/groups/10"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 146.6689496875,
+              "r": 85.92012042,
+              "b": 138.58671281998534,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              14
+            ]
+          }
+        ],
+        "orig": "(a) applicants",
+        "text": "(a) applicants",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/51",
+        "parent": {
+          "$ref": "#/groups/10"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 100.800003,
+              "t": 146.6689496875,
+              "r": 152.46650666999997,
+              "b": 138.58671281998534,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              11
+            ]
+          }
+        ],
+        "orig": "(b) smarter",
+        "text": "(b) smarter",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/52",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "section_header",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 121.26269588447258,
+              "r": 82.40311443750001,
+              "b": 113.03439982077487,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              12
+            ]
+          }
+        ],
+        "orig": "Solutions :-",
+        "text": "Solutions :-",
+        "level": 1
+      },
+      {
+        "self_ref": "#/texts/53",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "section_header",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 96.17870968750003,
+              "r": 146.92939767000001,
+              "b": 88.09647281998537,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              30
+            ]
+          }
+        ],
+        "orig": "Sol.83.(b) of murder after (2)",
+        "text": "Sol.83.(b) of murder after (2)",
+        "level": 1
+      },
+      {
+        "self_ref": "#/texts/54",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 83.75683968750002,
+              "r": 288.48310992,
+              "b": 50.83085281998535,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              169
+            ]
+          }
+        ],
+        "orig": "The verb \"charged\" is followed by the preposition \"with\" when we talk  about  accusing  someone  of a crime. Hence, 'charged with murder' is the most appropriate answer.",
+        "text": "The verb \"charged\" is followed by the preposition \"with\" when we talk  about  accusing  someone  of a crime. Hence, 'charged with murder' is the most appropriate answer."
+      },
+      {
+        "self_ref": "#/texts/55",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "section_header",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 36.82909968750005,
+              "r": 172.38691992,
+              "b": 28.74686281998538,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              37
+            ]
+          }
+        ],
+        "orig": "Sol.84.(b) (2) - across the riverbank",
+        "text": "Sol.84.(b) (2) - across the riverbank",
+        "level": 1
+      },
+      {
+        "self_ref": "#/texts/56",
+        "parent": {
+          "$ref": "#/groups/11"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 172.800003,
+              "t": 146.6689496875,
+              "r": 251.68623492,
+              "b": 138.58671281998534,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              24
+            ]
+          }
+        ],
+        "orig": "(c) was          (d) all",
+        "text": "(c) was          (d) all",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/57",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 308.54999,
+              "t": 814.6972656875,
+              "r": 568.35028442,
+              "b": 756.9265518199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              319
+            ]
+          }
+        ],
+        "orig": "'Across'  must  be  replaced  with  'along'.  'Across'  is  used  when moving from one side to the other.  'Along' is used to indicate the movement next to something long such as a road or a river. The given sentence talks about walking beside the riverbank. Hence, 'along the riverbank' is the most appropriate answer.",
+        "text": "'Across'  must  be  replaced  with  'along'.  'Across'  is  used  when moving from one side to the other.  'Along' is used to indicate the movement next to something long such as a road or a river. The given sentence talks about walking beside the riverbank. Hence, 'along the riverbank' is the most appropriate answer."
+      },
+      {
+        "self_ref": "#/texts/58",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "section_header",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 308.54999,
+              "t": 741.5458986875,
+              "r": 388.91278292,
+              "b": 733.4636618199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              21
+            ]
+          }
+        ],
+        "orig": "Sol.85.(d) a FIR. (4)",
+        "text": "Sol.85.(d) a FIR. (4)",
+        "level": 1
+      },
+      {
+        "self_ref": "#/texts/59",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 308.54999,
+              "t": 729.1240236875,
+              "r": 568.4879769199999,
+              "b": 683.7751848199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              212
+            ]
+          }
+        ],
+        "orig": "The  article  'an'  is  used  before  the  words  starting  with a vowel sound. Similarly, in the given sentence, the word 'FIR' starts with a vowel sound. Hence, 'to lodge an FIR' is the most appropriate answer.",
+        "text": "The  article  'an'  is  used  before  the  words  starting  with a vowel sound. Similarly, in the given sentence, the word 'FIR' starts with a vowel sound. Hence, 'to lodge an FIR' is the most appropriate answer."
+      },
+      {
+        "self_ref": "#/texts/60",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "section_header",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 308.54999,
+              "t": 669.7744096875,
+              "r": 407.5104391699999,
+              "b": 661.6921728199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              26
+            ]
+          }
+        ],
+        "orig": "Sol.86.(b) a furniture (2)",
+        "text": "Sol.86.(b) a furniture (2)",
+        "level": 1
+      },
+      {
+        "self_ref": "#/texts/61",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 308.54999,
+              "t": 657.3525396875,
+              "r": 568.11883442,
+              "b": 624.4255728199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              205
+            ]
+          }
+        ],
+        "orig": "'Furniture' is uncountable, so it cannot take the indefinite article 'a.' Rather, we use words like 'some' or 'a piece of'. Hence, 'some furniture' or 'a piece of furniture' is the most appropriate answer.",
+        "text": "'Furniture' is uncountable, so it cannot take the indefinite article 'a.' Rather, we use words like 'some' or 'a piece of'. Hence, 'some furniture' or 'a piece of furniture' is the most appropriate answer."
+      },
+      {
+        "self_ref": "#/texts/62",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "section_header",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 308.54999,
+              "t": 609.0439496875,
+              "r": 444.89032441999996,
+              "b": 600.9617128199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              34
+            ]
+          }
+        ],
+        "orig": "Sol.87.(a) The information are (1)",
+        "text": "Sol.87.(a) The information are (1)",
+        "level": 1
+      },
+      {
+        "self_ref": "#/texts/63",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 308.54999,
+              "t": 596.6220696875,
+              "r": 568.29315692,
+              "b": 551.2732328199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              223
+            ]
+          }
+        ],
+        "orig": "'Information'  is  an  uncountable  noun  and  we  always  use  a singular  verb  with  uncountable  nouns.  Therefore,  'are' must be replaced  with  'is'.  Hence,  'The  information  is'  is  the  most appropriate answer.",
+        "text": "'Information'  is  an  uncountable  noun  and  we  always  use  a singular  verb  with  uncountable  nouns.  Therefore,  'are' must be replaced  with  'is'.  Hence,  'The  information  is'  is  the  most appropriate answer."
+      },
+      {
+        "self_ref": "#/texts/64",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "section_header",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 308.54999,
+              "t": 537.2724596875,
+              "r": 416.7916891699999,
+              "b": 529.1902228199854,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              27
+            ]
+          }
+        ],
+        "orig": "Sol.88.(b) were excited (2)",
+        "text": "Sol.88.(b) were excited (2)",
+        "level": 1
+      },
+      {
+        "self_ref": "#/texts/65",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 308.54999,
+              "t": 524.8505896875,
+              "r": 568.45574942,
+              "b": 479.50174281998534,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              247
+            ]
+          }
+        ],
+        "orig": "'Everyone/each/  every/  nothing/  everything/  anything/  either/ neither' represents a singular noun. Therefore, singular verbs will be  used  with  them.  'Were'  must be replaced with 'was'. Hence, 'was excited' is the most appropriate answer.",
+        "text": "'Everyone/each/  every/  nothing/  everything/  anything/  either/ neither' represents a singular noun. Therefore, singular verbs will be  used  with  them.  'Were'  must be replaced with 'was'. Hence, 'was excited' is the most appropriate answer."
+      },
+      {
+        "self_ref": "#/texts/66",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "section_header",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 308.54999,
+              "t": 465.5009796875,
+              "r": 448.84979192,
+              "b": 457.4187428199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              35
+            ]
+          }
+        ],
+        "orig": "Sol.89.(a) She speaks very soft (1)",
+        "text": "Sol.89.(a) She speaks very soft (1)",
+        "level": 1
+      },
+      {
+        "self_ref": "#/texts/67",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 308.54999,
+              "t": 453.0781296875,
+              "r": 568.72820942,
+              "b": 420.15214281998533,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              165
+            ]
+          }
+        ],
+        "orig": "The given sentence needs an adverb, 'softly', to modify the verb 'speaks',  not the adjective 'soft'. Hence, 'She speaks very softly' is the most appropriate answer.",
+        "text": "The given sentence needs an adverb, 'softly', to modify the verb 'speaks',  not the adjective 'soft'. Hence, 'She speaks very softly' is the most appropriate answer."
+      },
+      {
+        "self_ref": "#/texts/68",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "section_header",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 308.54999,
+              "t": 406.1513696875,
+              "r": 404.45624042,
+              "b": 398.0691328199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              24
+            ]
+          }
+        ],
+        "orig": "Sol.90.(c) and a owl (3)",
+        "text": "Sol.90.(c) and a owl (3)",
+        "level": 1
+      },
+      {
+        "self_ref": "#/texts/69",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 308.54999,
+              "t": 393.7285196875,
+              "r": 568.7223519199999,
+              "b": 360.80253281998534,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              194
+            ]
+          }
+        ],
+        "orig": "The article 'an' is used before words starting with a vowel sound. Similarly, in the given sentence, the word 'owl' starts with a vowel sound. Hence, 'and an owl' is the most appropriate answer.",
+        "text": "The article 'an' is used before words starting with a vowel sound. Similarly, in the given sentence, the word 'owl' starts with a vowel sound. Hence, 'and an owl' is the most appropriate answer."
+      },
+      {
+        "self_ref": "#/texts/70",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "section_header",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 308.54999,
+              "t": 346.8017596875,
+              "r": 420.07000967,
+              "b": 338.71952281998534,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              29
+            ]
+          }
+        ],
+        "orig": "Sol.91.(b) strongly reply (2)",
+        "text": "Sol.91.(b) strongly reply (2)",
+        "level": 1
+      },
+      {
+        "self_ref": "#/texts/71",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 308.54999,
+              "t": 334.3789096875,
+              "r": 568.2272394199999,
+              "b": 301.45292281998536,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              162
+            ]
+          }
+        ],
+        "orig": "The  given  sentence  needs  an  adjective 'strong' to describe the noun 'reply', not the adverb 'strongly'. Hence, 'strong reply' is the most appropriate answer.",
+        "text": "The  given  sentence  needs  an  adjective 'strong' to describe the noun 'reply', not the adverb 'strongly'. Hence, 'strong reply' is the most appropriate answer."
+      },
+      {
+        "self_ref": "#/texts/72",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "section_header",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 308.54999,
+              "t": 287.45116968750006,
+              "r": 439.11151441999993,
+              "b": 279.3689328199854,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              32
+            ]
+          }
+        ],
+        "orig": "Sol.92.(a) He repeated again (1)",
+        "text": "Sol.92.(a) He repeated again (1)",
+        "level": 1
+      },
+      {
+        "self_ref": "#/texts/73",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 308.54999,
+              "t": 275.02929968750004,
+              "r": 568.49090942,
+              "b": 242.10331281998538,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              186
+            ]
+          }
+        ],
+        "orig": "In the given sentence, the use of the word 'again' is superfluous and should be removed. The verb 'repeated' already means said again. Hence, 'He repeated' is the most appropriate usage.",
+        "text": "In the given sentence, the use of the word 'again' is superfluous and should be removed. The verb 'repeated' already means said again. Hence, 'He repeated' is the most appropriate usage."
+      },
+      {
+        "self_ref": "#/texts/74",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "section_header",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 308.54999,
+              "t": 228.10155968749996,
+              "r": 434.32147441999996,
+              "b": 220.0193228199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              32
+            ]
+          }
+        ],
+        "orig": "Sol.93.(c) to a new solution (3)",
+        "text": "Sol.93.(c) to a new solution (3)",
+        "level": 1
+      },
+      {
+        "self_ref": "#/texts/75",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 308.54999,
+              "t": 215.67968968749994,
+              "r": 568.64324942,
+              "b": 170.3318228199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              222
+            ]
+          }
+        ],
+        "orig": "The phrasal verb \"to come up with\" means to produce or suggest an  idea  or  solution.  The  use of 'to' is incorrect here. Therefore, 'to'  must  be  removed.  Hence,  'a  new  solution'  is  the  most appropriate answer.",
+        "text": "The phrasal verb \"to come up with\" means to produce or suggest an  idea  or  solution.  The  use of 'to' is incorrect here. Therefore, 'to'  must  be  removed.  Hence,  'a  new  solution'  is  the  most appropriate answer."
+      },
+      {
+        "self_ref": "#/texts/76",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "section_header",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 308.54999,
+              "t": 156.33007968749996,
+              "r": 428.43280292,
+              "b": 148.2478428199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              30
+            ]
+          }
+        ],
+        "orig": "Sol.94.(b) the mistake out (2)",
+        "text": "Sol.94.(b) the mistake out (2)",
+        "level": 1
+      },
+      {
+        "self_ref": "#/texts/77",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 308.54999,
+              "t": 143.90819968749997,
+              "r": 568.71209942,
+              "b": 110.9822128199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              163
+            ]
+          }
+        ],
+        "orig": "In  part  (2),  'out'  must  be  removed because it is already part of the  phrasal  verb  'point  out'.  Hence,  'the  mistake'  is  the  most appropriate answer.",
+        "text": "In  part  (2),  'out'  must  be  removed because it is already part of the  phrasal  verb  'point  out'.  Hence,  'the  mistake'  is  the  most appropriate answer."
+      },
+      {
+        "self_ref": "#/texts/78",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "section_header",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 308.54999,
+              "t": 96.98046968749998,
+              "r": 435.69696242,
+              "b": 88.89823281998531,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              31
+            ]
+          }
+        ],
+        "orig": "Sol.95.(b) poems and recite (2)",
+        "text": "Sol.95.(b) poems and recite (2)",
+        "level": 1
+      },
+      {
+        "self_ref": "#/texts/79",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 308.54999,
+              "t": 84.55858968749999,
+              "r": 568.27850942,
+              "b": 51.631632819985384,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              174
+            ]
+          }
+        ],
+        "orig": "In  the  given  sentence,  'He'  is  a  singular  subject  that  will  take 'recites'  as  a  singular  verb.  Hence,  'poems  and  recites'  is  the most appropriate answer.",
+        "text": "In  the  given  sentence,  'He'  is  a  singular  subject  that  will  take 'recites'  as  a  singular  verb.  Hence,  'poems  and  recites'  is  the most appropriate answer."
+      },
+      {
+        "self_ref": "#/texts/80",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "section_header",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 308.54999,
+              "t": 37.63085968749999,
+              "r": 420.48749042,
+              "b": 29.548622819985326,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              28
+            ]
+          }
+        ],
+        "orig": "Sol.96.(c) a great dance (3)",
+        "text": "Sol.96.(c) a great dance (3)",
+        "level": 1
+      },
+      {
+        "self_ref": "#/texts/81",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "furniture",
+        "label": "page_footer",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 99.3266505,
+              "t": 21.98847795947256,
+              "r": 495.95088382500006,
+              "b": 13.76018189577485,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              109
+            ]
+          }
+        ],
+        "orig": "www.ssccglpinnacle.com                                                 Download Pinnacle Exam Preparation App",
+        "text": "www.ssccglpinnacle.com                                                 Download Pinnacle Exam Preparation App"
+      }
+    ],
+    "pictures": [],
+    "tables": [],
+    "key_value_items": [],
+    "form_items": [],
+    "pages": {
+      "1": {
+        "size": {
+          "width": 596.0,
+          "height": 842.0
+        },
+        "page_no": 1
+      }
+    }
+  }
+}

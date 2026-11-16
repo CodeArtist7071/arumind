@@ -1,0 +1,6426 @@
+{
+  "document_id": "english",
+  "source": "english.pdf",
+  "pdf_page": 407,
+  "page_width": 596.0,
+  "page_height": 842.0,
+  "extracted_at": "2026-09-09T10:51:39.798446+00:00",
+  "extraction_version": 4,
+  "ocr_enabled": true,
+  "extraction_detection": {
+    "requested_profile": "auto",
+    "effective_profile": "hybrid",
+    "embedded_text_characters": 4947,
+    "auto_text_threshold": 80
+  },
+  "docling_result": {
+    "status": "success",
+    "errors": []
+  },
+  "content_summary": {
+    "text_items": 76,
+    "text_characters": 6032,
+    "table_items": 0,
+    "picture_items": 0,
+    "group_items": 0,
+    "warnings": []
+  },
+  "reading_order": {
+    "source": "docling_iterate_items",
+    "items": [
+      {
+        "reading_order_index": 0,
+        "element_ref": "#/texts/1",
+        "label": "text",
+        "level": 1,
+        "text_preview": "Pedant -  a  person  who  overemphasizes rules or minor details, often in learning or teaching."
+      },
+      {
+        "reading_order_index": 1,
+        "element_ref": "#/texts/2",
+        "label": "text",
+        "level": 1,
+        "text_preview": "Realist - a person who accepts things as they are and deals with facts rather than ideas or emotions."
+      },
+      {
+        "reading_order_index": 2,
+        "element_ref": "#/texts/3",
+        "label": "text",
+        "level": 1,
+        "text_preview": "Sol.62.(c) Monarchy -a government ruled by a king or queen."
+      },
+      {
+        "reading_order_index": 3,
+        "element_ref": "#/texts/4",
+        "label": "text",
+        "level": 1,
+        "text_preview": "Democracy -  a  system  of  government where power rests with the people, usually through elected representatives."
+      },
+      {
+        "reading_order_index": 4,
+        "element_ref": "#/texts/5",
+        "label": "text",
+        "level": 1,
+        "text_preview": "Oligarchy -  a  government  ruled  by  a small group of people."
+      },
+      {
+        "reading_order_index": 5,
+        "element_ref": "#/texts/6",
+        "label": "text",
+        "level": 1,
+        "text_preview": "Autocracy -a  system  of  government ruled  by  a  single  person  with  absolute power."
+      },
+      {
+        "reading_order_index": 6,
+        "element_ref": "#/texts/7",
+        "label": "text",
+        "level": 1,
+        "text_preview": "Sol.63.(c) Cabal -a secret plot or conspiracy,  especially  one  intended  to overthrow a government or leader."
+      },
+      {
+        "reading_order_index": 7,
+        "element_ref": "#/texts/8",
+        "label": "text",
+        "level": 1,
+        "text_preview": "Coup  a sudden,  violent,  and  illegal seizure of power from a government."
+      },
+      {
+        "reading_order_index": 8,
+        "element_ref": "#/texts/9",
+        "label": "text",
+        "level": 1,
+        "text_preview": "Mutiny an open rebellion against lawful authority, especially by soldiers or sailors against their officers."
+      },
+      {
+        "reading_order_index": 9,
+        "element_ref": "#/texts/10",
+        "label": "text",
+        "level": 1,
+        "text_preview": "Machination a crafty or secret scheme, usually intended to achieve an evil purpose."
+      },
+      {
+        "reading_order_index": 10,
+        "element_ref": "#/texts/11",
+        "label": "text",
+        "level": 1,
+        "text_preview": "Sol.64.(a) Pedant  a  person  who  is excessively concerned with minor details and rules."
+      },
+      {
+        "reading_order_index": 11,
+        "element_ref": "#/texts/12",
+        "label": "text",
+        "level": 1,
+        "text_preview": "Altruist a person unselfishly concerned for or devoted to the welfare of others."
+      },
+      {
+        "reading_order_index": 12,
+        "element_ref": "#/texts/13",
+        "label": "text",
+        "level": 1,
+        "text_preview": "Philistine  a  person  who  is  hostile  or indifferent to culture and the arts, or who has no understanding of them."
+      },
+      {
+        "reading_order_index": 13,
+        "element_ref": "#/texts/14",
+        "label": "text",
+        "level": 1,
+        "text_preview": "Dilettante  a  person  who  cultivates  an area of interest, such as the arts, without real commitment or knowledge."
+      },
+      {
+        "reading_order_index": 14,
+        "element_ref": "#/texts/15",
+        "label": "text",
+        "level": 1,
+        "text_preview": "Sol.65.(a) Hypocrite -a person  who pretends to have virtues, moral or religious beliefs he does not possess."
+      },
+      {
+        "reading_order_index": 15,
+        "element_ref": "#/texts/16",
+        "label": "text",
+        "level": 1,
+        "text_preview": "Charlatan -  a  person  who falsely claims to have special knowledge  or skills. Fraud - a person who deceives others for personal gain."
+      },
+      {
+        "reading_order_index": 16,
+        "element_ref": "#/texts/17",
+        "label": "text",
+        "level": 1,
+        "text_preview": "Indolent - a person who is habitually lazy."
+      },
+      {
+        "reading_order_index": 17,
+        "element_ref": "#/texts/18",
+        "label": "text",
+        "level": 1,
+        "text_preview": "Sol.66.(b) Insatiable -Impossible to satisfy; having an unquenchable desire."
+      },
+      {
+        "reading_order_index": 18,
+        "element_ref": "#/texts/19",
+        "label": "text",
+        "level": 1,
+        "text_preview": "Contented -  Pleased  or  satisfied  with what one has; not wanting more."
+      },
+      {
+        "reading_order_index": 19,
+        "element_ref": "#/texts/20",
+        "label": "text",
+        "level": 1,
+        "text_preview": "Avaricious - Extremely greedy, especially for wealth."
+      },
+      {
+        "reading_order_index": 20,
+        "element_ref": "#/texts/21",
+        "label": "text",
+        "level": 1,
+        "text_preview": "Sanguine -Optimistic or positive, especially in a difficult situation."
+      },
+      {
+        "reading_order_index": 21,
+        "element_ref": "#/texts/22",
+        "label": "text",
+        "level": 1,
+        "text_preview": "Sol.67.(b)  Sadist  a  person  who  finds joy in the pain or suffering of others."
+      },
+      {
+        "reading_order_index": 22,
+        "element_ref": "#/texts/23",
+        "label": "text",
+        "level": 1,
+        "text_preview": "Pessimist  a  person  who  tends  to  see the worst aspect of things."
+      },
+      {
+        "reading_order_index": 23,
+        "element_ref": "#/texts/24",
+        "label": "text",
+        "level": 1,
+        "text_preview": "Masochist a person who derives sexual OWS"
+      },
+      {
+        "reading_order_index": 24,
+        "element_ref": "#/texts/25",
+        "label": "text",
+        "level": 1,
+        "text_preview": "gratification from their own pain or humiliation."
+      },
+      {
+        "reading_order_index": 25,
+        "element_ref": "#/texts/26",
+        "label": "text",
+        "level": 1,
+        "text_preview": "Narcissist -a person who has an excessive  interest  in  or  admiration  of themselves."
+      },
+      {
+        "reading_order_index": 26,
+        "element_ref": "#/texts/27",
+        "label": "text",
+        "level": 1,
+        "text_preview": "Sol.68.(b) Paradox a seemingly absurd or self-contradictory statement or proposition that when  investigated  or explained  may  prove  to be well founded or tr"
+      },
+      {
+        "reading_order_index": 27,
+        "element_ref": "#/texts/28",
+        "label": "text",
+        "level": 1,
+        "text_preview": "Conundrum  a  confusing  and  difficult problem or question."
+      },
+      {
+        "reading_order_index": 28,
+        "element_ref": "#/texts/29",
+        "label": "text",
+        "level": 1,
+        "text_preview": "Riddle -a question or statement intentionally  phrased  so  as  to  require ingenuity  in  ascertaining  its  answer  or meaning."
+      },
+      {
+        "reading_order_index": 29,
+        "element_ref": "#/texts/30",
+        "label": "text",
+        "level": 1,
+        "text_preview": "Puzzle -a game, toy, or problem designed to test ingenuity or knowledge."
+      },
+      {
+        "reading_order_index": 30,
+        "element_ref": "#/texts/31",
+        "label": "text",
+        "level": 1,
+        "text_preview": "Sol.69.(c) Ascetic -a person who chooses  to  live  a  simple  life,  often  for religious  or  spiritual  reasons,  abstaining from worldly pleasures."
+      },
+      {
+        "reading_order_index": 31,
+        "element_ref": "#/texts/32",
+        "label": "text",
+        "level": 1,
+        "text_preview": "Hedonist  a  person  who  believes  that the pursuit of pleasure is the  most important thing in life."
+      },
+      {
+        "reading_order_index": 32,
+        "element_ref": "#/texts/33",
+        "label": "text",
+        "level": 1,
+        "text_preview": "Sybarite a person who is self-indulgent in their fondness for sensuous luxury."
+      },
+      {
+        "reading_order_index": 33,
+        "element_ref": "#/texts/34",
+        "label": "text",
+        "level": 1,
+        "text_preview": "Libertine  a  person,  especially  a  man, who behaves without moral principles or a  sense  of  responsibility,  especially  in sexual matters."
+      },
+      {
+        "reading_order_index": 34,
+        "element_ref": "#/texts/35",
+        "label": "text",
+        "level": 1,
+        "text_preview": "Sol.70.(d)  Clone  an  organism  that  is genetically identical to another organism. other"
+      },
+      {
+        "reading_order_index": 35,
+        "element_ref": "#/texts/36",
+        "label": "text",
+        "level": 1,
+        "text_preview": "Blueprint -a design plan or technical drawing."
+      },
+      {
+        "reading_order_index": 36,
+        "element_ref": "#/texts/37",
+        "label": "text",
+        "level": 1,
+        "text_preview": "Prototype a first or preliminary version of  a  device  or  vehicle  from  which  other forms are developed."
+      },
+      {
+        "reading_order_index": 37,
+        "element_ref": "#/texts/38",
+        "label": "text",
+        "level": 1,
+        "text_preview": "Schema  a  representation  of  a  plan  or theory in the form of an outline or model."
+      },
+      {
+        "reading_order_index": 38,
+        "element_ref": "#/texts/39",
+        "label": "text",
+        "level": 1,
+        "text_preview": "Sol.71.(b)  Scavenger -  an  animal  that feeds on dead animals."
+      },
+      {
+        "reading_order_index": 39,
+        "element_ref": "#/texts/40",
+        "label": "text",
+        "level": 1,
+        "text_preview": "Predator - an animal that hunts and kills other animals for food."
+      },
+      {
+        "reading_order_index": 40,
+        "element_ref": "#/texts/41",
+        "label": "text",
+        "level": 1,
+        "text_preview": "Omnivore - an animal or person that eats both plants and animals."
+      },
+      {
+        "reading_order_index": 41,
+        "element_ref": "#/texts/42",
+        "label": "text",
+        "level": 1,
+        "text_preview": "Herbivore - an animal that feeds only on plants."
+      },
+      {
+        "reading_order_index": 42,
+        "element_ref": "#/texts/43",
+        "label": "section_header",
+        "level": 1,
+        "text_preview": "Sol.72.(d) All are correct"
+      },
+      {
+        "reading_order_index": 43,
+        "element_ref": "#/texts/44",
+        "label": "text",
+        "level": 1,
+        "text_preview": "Arrogance - an attitude of superiority and overbearing pride."
+      },
+      {
+        "reading_order_index": 44,
+        "element_ref": "#/texts/45",
+        "label": "text",
+        "level": 1,
+        "text_preview": "Hubris -excessive pride or self -confidence, often leading to downfall."
+      },
+      {
+        "reading_order_index": 45,
+        "element_ref": "#/texts/46",
+        "label": "text",
+        "level": 1,
+        "text_preview": "Vanity -excessive pride in one's appearance or achievements."
+      },
+      {
+        "reading_order_index": 46,
+        "element_ref": "#/texts/47",
+        "label": "text",
+        "level": 1,
+        "text_preview": "Sol.73.(c) Aristocracy -a form of government in which power is held by the nobility."
+      },
+      {
+        "reading_order_index": 47,
+        "element_ref": "#/texts/48",
+        "label": "text",
+        "level": 1,
+        "text_preview": "Monarchy a form of government with a monarch at the head."
+      },
+      {
+        "reading_order_index": 48,
+        "element_ref": "#/texts/49",
+        "label": "text",
+        "level": 1,
+        "text_preview": "Gerontocracy -a state, society, or group governed by old people."
+      },
+      {
+        "reading_order_index": 49,
+        "element_ref": "#/texts/50",
+        "label": "text",
+        "level": 1,
+        "text_preview": "Authoritarianism  a  way  of  governing that values order and control over personal freedom."
+      },
+      {
+        "reading_order_index": 50,
+        "element_ref": "#/texts/51",
+        "label": "text",
+        "level": 1,
+        "text_preview": "Sol.74.(b) Consultant -a person appointed to advise an organization on a particular subject."
+      },
+      {
+        "reading_order_index": 51,
+        "element_ref": "#/texts/52",
+        "label": "text",
+        "level": 1,
+        "text_preview": "Delegate a person sent or authorized to represent others, in particular an elected representative sent to a conference."
+      },
+      {
+        "reading_order_index": 52,
+        "element_ref": "#/texts/53",
+        "label": "text",
+        "level": 1,
+        "text_preview": "Intrusive  a  person  who  is  unwantedly present or involved."
+      },
+      {
+        "reading_order_index": 53,
+        "element_ref": "#/texts/54",
+        "label": "text",
+        "level": 1,
+        "text_preview": "Mentor  an  experienced  and  trusted adviser."
+      },
+      {
+        "reading_order_index": 54,
+        "element_ref": "#/texts/55",
+        "label": "text",
+        "level": 1,
+        "text_preview": "Sol.75.(a) Murder - a group of crows."
+      },
+      {
+        "reading_order_index": 55,
+        "element_ref": "#/texts/56",
+        "label": "text",
+        "level": 1,
+        "text_preview": "Pride - a group of lions."
+      },
+      {
+        "reading_order_index": 56,
+        "element_ref": "#/texts/57",
+        "label": "text",
+        "level": 1,
+        "text_preview": "Swarm - a large group of insects or small creatures moving together."
+      },
+      {
+        "reading_order_index": 57,
+        "element_ref": "#/texts/58",
+        "label": "text",
+        "level": 1,
+        "text_preview": "Cluster -  a  close  group  of  things  or people gathered together."
+      },
+      {
+        "reading_order_index": 58,
+        "element_ref": "#/texts/59",
+        "label": "text",
+        "level": 1,
+        "text_preview": "Sol.76.(a) Pedestrian -  a  person  who travels on foot."
+      },
+      {
+        "reading_order_index": 59,
+        "element_ref": "#/texts/60",
+        "label": "text",
+        "level": 1,
+        "text_preview": "Voyager -  a  person  who  goes on a long journey, especially by sea or in space."
+      },
+      {
+        "reading_order_index": 60,
+        "element_ref": "#/texts/61",
+        "label": "text",
+        "level": 1,
+        "text_preview": "Walker - a general term for someone who walks; not necessarily formal or precise."
+      },
+      {
+        "reading_order_index": 61,
+        "element_ref": "#/texts/62",
+        "label": "text",
+        "level": 1,
+        "text_preview": "Hiker -a person who walks long distances,  usually  in  nature  or  on  trails for recreation."
+      },
+      {
+        "reading_order_index": 62,
+        "element_ref": "#/texts/63",
+        "label": "text",
+        "level": 1,
+        "text_preview": "Sol.77.(b) Recluse a person who lives a solitary  life  and  tends  to  avoid  other people."
+      },
+      {
+        "reading_order_index": 63,
+        "element_ref": "#/texts/64",
+        "label": "text",
+        "level": 1,
+        "text_preview": "Hedonist  a  person  who  believes  that the pursuit of pleasure is the  most important thing in life; a pleasure-seeker."
+      },
+      {
+        "reading_order_index": 64,
+        "element_ref": "#/texts/65",
+        "label": "text",
+        "level": 1,
+        "text_preview": "Stoic a person who can endure pain or hardship  without  showing  their  feelings or complaining."
+      },
+      {
+        "reading_order_index": 65,
+        "element_ref": "#/texts/66",
+        "label": "text",
+        "level": 1,
+        "text_preview": "Epicurean a person devoted to sensual enjoyment,  especially  that  derived  from fine food and drink."
+      },
+      {
+        "reading_order_index": 66,
+        "element_ref": "#/texts/67",
+        "label": "text",
+        "level": 1,
+        "text_preview": "Sol.78.(a) Amnesiac a drug that causes temporary loss of memory."
+      },
+      {
+        "reading_order_index": 67,
+        "element_ref": "#/texts/68",
+        "label": "text",
+        "level": 1,
+        "text_preview": "Narcotic  a  drug  that  relieves  pain and induces drowsiness, stupor, or insensibility."
+      },
+      {
+        "reading_order_index": 68,
+        "element_ref": "#/texts/69",
+        "label": "text",
+        "level": 1,
+        "text_preview": "Hypnotic a drug that induces sleep."
+      },
+      {
+        "reading_order_index": 69,
+        "element_ref": "#/texts/70",
+        "label": "text",
+        "level": 1,
+        "text_preview": "Purgative  a substance that makes you empty your bowels."
+      },
+      {
+        "reading_order_index": 70,
+        "element_ref": "#/texts/71",
+        "label": "text",
+        "level": 1,
+        "text_preview": "Sol.79.(b) Epigraphy -the study of ancient inscriptions."
+      },
+      {
+        "reading_order_index": 71,
+        "element_ref": "#/texts/72",
+        "label": "text",
+        "level": 1,
+        "text_preview": "Numismatics - the study or collection of coins, currency, and medals."
+      },
+      {
+        "reading_order_index": 72,
+        "element_ref": "#/texts/73",
+        "label": "text",
+        "level": 1,
+        "text_preview": "Cartography -  the  study  and  practice  of making maps."
+      },
+      {
+        "reading_order_index": 73,
+        "element_ref": "#/texts/74",
+        "label": "text",
+        "level": 1,
+        "text_preview": "Archaeology - the study of human history and prehistory through excavation of"
+      }
+    ]
+  },
+  "layout_analysis": {
+    "method": "docling_bbox_left_edge_clustering_v1",
+    "column_count": 3,
+    "confidence": 1.0,
+    "page_width": 596.0,
+    "page_height": 842.0,
+    "columns": [
+      {
+        "column_index": 1,
+        "left": 0.0,
+        "right": 122.175,
+        "detected_start": 28.8,
+        "supporting_elements": 24
+      },
+      {
+        "column_index": 2,
+        "left": 122.175,
+        "right": 308.925,
+        "detected_start": 215.55,
+        "supporting_elements": 24
+      },
+      {
+        "column_index": 3,
+        "left": 308.925,
+        "right": 596.0,
+        "detected_start": 402.3,
+        "supporting_elements": 26
+      }
+    ],
+    "elements": [
+      {
+        "element_ref": "#/texts/0",
+        "element_type": "text",
+        "label": "page_header",
+        "column_index": 1,
+        "column_indices": [
+          1
+        ],
+        "spans_columns": false,
+        "reading_order_index": null,
+        "bbox": {
+          "l": 28.800003,
+          "t": 830.7935546594726,
+          "r": 95.7084616875,
+          "b": 822.5652585957749,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/1",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 0,
+        "bbox": {
+          "l": 28.800003,
+          "t": 814.6972656875,
+          "r": 195.46113492,
+          "b": 781.7712788199854,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/2",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 1,
+        "bbox": {
+          "l": 28.800003,
+          "t": 777.4311526875,
+          "r": 195.62519742,
+          "b": 744.5046768199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/3",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 2,
+        "bbox": {
+          "l": 28.800003,
+          "t": 730.5039066875,
+          "r": 195.98848242,
+          "b": 709.9993058199854,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/4",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 3,
+        "bbox": {
+          "l": 28.800003,
+          "t": 705.6596676875,
+          "r": 196.00752492,
+          "b": 672.7331928199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/5",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 4,
+        "bbox": {
+          "l": 28.800003,
+          "t": 668.3935496875,
+          "r": 195.46552992,
+          "b": 647.8894428199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/6",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 5,
+        "bbox": {
+          "l": 28.800003,
+          "t": 643.5497996875,
+          "r": 195.96796992,
+          "b": 610.6233328199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/7",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 6,
+        "bbox": {
+          "l": 28.800003,
+          "t": 596.6220696875,
+          "r": 195.95332242,
+          "b": 563.6955928199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/8",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 7,
+        "bbox": {
+          "l": 28.800003,
+          "t": 559.3559596875,
+          "r": 195.96064992,
+          "b": 538.8513528199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/9",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 8,
+        "bbox": {
+          "l": 28.800003,
+          "t": 534.5117196875,
+          "r": 195.89765742,
+          "b": 501.58524281998535,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/10",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 9,
+        "bbox": {
+          "l": 28.800003,
+          "t": 497.2456096875,
+          "r": 195.42158742,
+          "b": 464.3191328199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/11",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 10,
+        "bbox": {
+          "l": 28.800003,
+          "t": 450.3178696875,
+          "r": 195.68965242,
+          "b": 417.39139281998536,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/12",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 11,
+        "bbox": {
+          "l": 28.800003,
+          "t": 413.0517596875,
+          "r": 195.86542992,
+          "b": 392.54764281998536,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/13",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 12,
+        "bbox": {
+          "l": 28.800003,
+          "t": 388.2080096875,
+          "r": 195.86982491999999,
+          "b": 355.28153281998533,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/14",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 13,
+        "bbox": {
+          "l": 28.800003,
+          "t": 350.9418896875,
+          "r": 195.59150742,
+          "b": 318.01542281998536,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/15",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 14,
+        "bbox": {
+          "l": 28.800003,
+          "t": 304.01415968749995,
+          "r": 195.82294991999999,
+          "b": 271.0876828199854,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/16",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 15,
+        "bbox": {
+          "l": 28.800003,
+          "t": 266.74804968750004,
+          "r": 195.76289742,
+          "b": 221.4001828199854,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/17",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 16,
+        "bbox": {
+          "l": 28.800003,
+          "t": 217.06005968750003,
+          "r": 194.75508492,
+          "b": 208.97782281998536,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/18",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 17,
+        "bbox": {
+          "l": 28.800003,
+          "t": 194.97655968749996,
+          "r": 195.79804991999998,
+          "b": 174.47245281998528,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/19",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 18,
+        "bbox": {
+          "l": 28.800003,
+          "t": 170.13280968749996,
+          "r": 195.84052992,
+          "b": 149.62821281998538,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/20",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 19,
+        "bbox": {
+          "l": 28.800003,
+          "t": 145.28856968749994,
+          "r": 195.32929991999998,
+          "b": 124.78397281998537,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/21",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 20,
+        "bbox": {
+          "l": 28.800003,
+          "t": 120.44433968750002,
+          "r": 195.45527742,
+          "b": 99.94022281998537,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/22",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 21,
+        "bbox": {
+          "l": 28.800003,
+          "t": 85.93896968750005,
+          "r": 195.92842242,
+          "b": 65.43436281998538,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/23",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 22,
+        "bbox": {
+          "l": 28.800003,
+          "t": 61.094729687500035,
+          "r": 195.49775742,
+          "b": 40.59012281998537,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/24",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 23,
+        "bbox": {
+          "l": 28.800003,
+          "t": 36.25048968750002,
+          "r": 194.26289742,
+          "b": 28.168252819985355,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/25",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 0,
+        "column_indices": [
+          2,
+          3
+        ],
+        "spans_columns": true,
+        "reading_order_index": 24,
+        "bbox": {
+          "l": 215.54999,
+          "t": 814.6972656875,
+          "r": 382.16570942,
+          "b": 794.1931538199854,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/26",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 0,
+        "column_indices": [
+          2,
+          3
+        ],
+        "spans_columns": true,
+        "reading_order_index": 25,
+        "bbox": {
+          "l": 215.54999,
+          "t": 789.8535156875,
+          "r": 382.24481191999996,
+          "b": 756.9270408199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/27",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 0,
+        "column_indices": [
+          2,
+          3
+        ],
+        "spans_columns": true,
+        "reading_order_index": 26,
+        "bbox": {
+          "l": 215.54999,
+          "t": 742.9257816875,
+          "r": 382.75604192000003,
+          "b": 685.1550678199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/28",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 0,
+        "column_indices": [
+          2,
+          3
+        ],
+        "spans_columns": true,
+        "reading_order_index": 27,
+        "bbox": {
+          "l": 215.54999,
+          "t": 680.8154296875,
+          "r": 382.64324941999996,
+          "b": 660.3113128199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/29",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 0,
+        "column_indices": [
+          2,
+          3
+        ],
+        "spans_columns": true,
+        "reading_order_index": 28,
+        "bbox": {
+          "l": 215.54999,
+          "t": 655.9716796875,
+          "r": 382.60809692,
+          "b": 610.6233328199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/30",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 0,
+        "column_indices": [
+          2,
+          3
+        ],
+        "spans_columns": true,
+        "reading_order_index": 29,
+        "bbox": {
+          "l": 215.54999,
+          "t": 606.2836896875,
+          "r": 382.72088942,
+          "b": 585.7790928199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/31",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 0,
+        "column_indices": [
+          2,
+          3
+        ],
+        "spans_columns": true,
+        "reading_order_index": 30,
+        "bbox": {
+          "l": 215.54999,
+          "t": 571.7778296875,
+          "r": 382.71063692,
+          "b": 526.4294828199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/32",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 0,
+        "column_indices": [
+          2,
+          3
+        ],
+        "spans_columns": true,
+        "reading_order_index": 31,
+        "bbox": {
+          "l": 215.54999,
+          "t": 522.0898396875,
+          "r": 382.43670692,
+          "b": 489.16337281998534,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/33",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 0,
+        "column_indices": [
+          2,
+          3
+        ],
+        "spans_columns": true,
+        "reading_order_index": 32,
+        "bbox": {
+          "l": 215.54999,
+          "t": 484.8232396875,
+          "r": 382.56561692,
+          "b": 464.3191328199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/34",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 0,
+        "column_indices": [
+          2,
+          3
+        ],
+        "spans_columns": true,
+        "reading_order_index": 33,
+        "bbox": {
+          "l": 215.54999,
+          "t": 459.9794896875,
+          "r": 382.75897441999996,
+          "b": 414.6311428199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/35",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 0,
+        "column_indices": [
+          2,
+          3
+        ],
+        "spans_columns": true,
+        "reading_order_index": 34,
+        "bbox": {
+          "l": 215.54999,
+          "t": 400.6298796875,
+          "r": 382.41913442,
+          "b": 367.70389281998536,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/36",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 0,
+        "column_indices": [
+          2,
+          3
+        ],
+        "spans_columns": true,
+        "reading_order_index": 35,
+        "bbox": {
+          "l": 215.54999,
+          "t": 375.7861296875,
+          "r": 353.99383442,
+          "b": 355.28153281998533,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/37",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 0,
+        "column_indices": [
+          2,
+          3
+        ],
+        "spans_columns": true,
+        "reading_order_index": 36,
+        "bbox": {
+          "l": 215.54999,
+          "t": 350.9418896875,
+          "r": 382.51288442,
+          "b": 318.01542281998536,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/38",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 0,
+        "column_indices": [
+          2,
+          3
+        ],
+        "spans_columns": true,
+        "reading_order_index": 37,
+        "bbox": {
+          "l": 215.54999,
+          "t": 313.67577968750004,
+          "r": 382.29168691999996,
+          "b": 293.17167281998536,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/39",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 0,
+        "column_indices": [
+          2,
+          3
+        ],
+        "spans_columns": true,
+        "reading_order_index": 38,
+        "bbox": {
+          "l": 215.54999,
+          "t": 279.16991968750006,
+          "r": 382.43231191999996,
+          "b": 258.6658128199854,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/40",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 0,
+        "column_indices": [
+          2,
+          3
+        ],
+        "spans_columns": true,
+        "reading_order_index": 39,
+        "bbox": {
+          "l": 215.54999,
+          "t": 254.32616968750006,
+          "r": 376.78973942000005,
+          "b": 233.82206281998538,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/41",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 0,
+        "column_indices": [
+          2,
+          3
+        ],
+        "spans_columns": true,
+        "reading_order_index": 40,
+        "bbox": {
+          "l": 215.54999,
+          "t": 229.48241968750006,
+          "r": 382.17449941999996,
+          "b": 208.97782281998536,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/42",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 0,
+        "column_indices": [
+          2,
+          3
+        ],
+        "spans_columns": true,
+        "reading_order_index": 41,
+        "bbox": {
+          "l": 215.54999,
+          "t": 204.63817968750004,
+          "r": 382.32977192,
+          "b": 184.13407281998536,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/43",
+        "element_type": "text",
+        "label": "section_header",
+        "column_index": 2,
+        "column_indices": [
+          2
+        ],
+        "spans_columns": false,
+        "reading_order_index": 42,
+        "bbox": {
+          "l": 215.54999,
+          "t": 170.13280968749996,
+          "r": 316.99334969000006,
+          "b": 162.0505728199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/44",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 0,
+        "column_indices": [
+          2,
+          3
+        ],
+        "spans_columns": true,
+        "reading_order_index": 43,
+        "bbox": {
+          "l": 215.54999,
+          "t": 157.71044968750005,
+          "r": 382.59344942,
+          "b": 137.20633281998528,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/45",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 0,
+        "column_indices": [
+          2,
+          3
+        ],
+        "spans_columns": true,
+        "reading_order_index": 44,
+        "bbox": {
+          "l": 215.54999,
+          "t": 132.86620968750003,
+          "r": 382.43817692000005,
+          "b": 112.36210281998535,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/46",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 0,
+        "column_indices": [
+          2,
+          3
+        ],
+        "spans_columns": true,
+        "reading_order_index": 45,
+        "bbox": {
+          "l": 215.54999,
+          "t": 108.02245968750003,
+          "r": 382.14666692000003,
+          "b": 87.51786281998534,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/47",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 0,
+        "column_indices": [
+          2,
+          3
+        ],
+        "spans_columns": true,
+        "reading_order_index": 46,
+        "bbox": {
+          "l": 215.54999,
+          "t": 73.51659968750005,
+          "r": 382.47626192,
+          "b": 40.59012281998537,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/48",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 0,
+        "column_indices": [
+          2,
+          3
+        ],
+        "spans_columns": true,
+        "reading_order_index": 47,
+        "bbox": {
+          "l": 215.54999,
+          "t": 36.25048968750002,
+          "r": 379.15838942,
+          "b": 28.168252819985355,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/49",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 3,
+        "column_indices": [
+          3
+        ],
+        "spans_columns": false,
+        "reading_order_index": 48,
+        "bbox": {
+          "l": 402.30002,
+          "t": 802.2753906875,
+          "r": 569.05343942,
+          "b": 781.7712788199854,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/50",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 3,
+        "column_indices": [
+          3
+        ],
+        "spans_columns": false,
+        "reading_order_index": 49,
+        "bbox": {
+          "l": 402.30002,
+          "t": 777.4311526875,
+          "r": 569.26583942,
+          "b": 744.5046768199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/51",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 3,
+        "column_indices": [
+          3
+        ],
+        "spans_columns": false,
+        "reading_order_index": 50,
+        "bbox": {
+          "l": 402.30002,
+          "t": 730.5039066875,
+          "r": 569.47238192,
+          "b": 697.5774308199854,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/52",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 3,
+        "column_indices": [
+          3
+        ],
+        "spans_columns": false,
+        "reading_order_index": 51,
+        "bbox": {
+          "l": 402.30002,
+          "t": 693.2373046875,
+          "r": 569.42550692,
+          "b": 660.3113128199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/53",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 3,
+        "column_indices": [
+          3
+        ],
+        "spans_columns": false,
+        "reading_order_index": 52,
+        "bbox": {
+          "l": 402.30002,
+          "t": 655.9716796875,
+          "r": 569.4123219200001,
+          "b": 635.4675628199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/54",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 3,
+        "column_indices": [
+          3
+        ],
+        "spans_columns": false,
+        "reading_order_index": 53,
+        "bbox": {
+          "l": 402.30002,
+          "t": 631.1274396875,
+          "r": 568.89083942,
+          "b": 610.6233328199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/55",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 3,
+        "column_indices": [
+          3
+        ],
+        "spans_columns": false,
+        "reading_order_index": 54,
+        "bbox": {
+          "l": 402.30002,
+          "t": 596.6220696875,
+          "r": 554.58810692,
+          "b": 588.5398328199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/56",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 3,
+        "column_indices": [
+          3
+        ],
+        "spans_columns": false,
+        "reading_order_index": 55,
+        "bbox": {
+          "l": 402.30002,
+          "t": 584.2001996875,
+          "r": 497.41086017000003,
+          "b": 576.1179628199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/57",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 3,
+        "column_indices": [
+          3
+        ],
+        "spans_columns": false,
+        "reading_order_index": 56,
+        "bbox": {
+          "l": 402.30002,
+          "t": 571.7778296875,
+          "r": 569.50900442,
+          "b": 551.2737228199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/58",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 3,
+        "column_indices": [
+          3
+        ],
+        "spans_columns": false,
+        "reading_order_index": 57,
+        "bbox": {
+          "l": 402.30002,
+          "t": 546.9335896875,
+          "r": 569.49875192,
+          "b": 526.4294828199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/59",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 3,
+        "column_indices": [
+          3
+        ],
+        "spans_columns": false,
+        "reading_order_index": 58,
+        "bbox": {
+          "l": 402.30002,
+          "t": 512.4282196875,
+          "r": 568.97140442,
+          "b": 491.92411281998534,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/60",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 3,
+        "column_indices": [
+          3
+        ],
+        "spans_columns": false,
+        "reading_order_index": 59,
+        "bbox": {
+          "l": 402.30002,
+          "t": 487.5839796875,
+          "r": 569.2248219200001,
+          "b": 467.0798728199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/61",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 3,
+        "column_indices": [
+          3
+        ],
+        "spans_columns": false,
+        "reading_order_index": 60,
+        "bbox": {
+          "l": 402.30002,
+          "t": 462.7397496875,
+          "r": 569.01974942,
+          "b": 442.2356328199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/62",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 3,
+        "column_indices": [
+          3
+        ],
+        "spans_columns": false,
+        "reading_order_index": 61,
+        "bbox": {
+          "l": 402.30002,
+          "t": 437.8959996875,
+          "r": 569.33468942,
+          "b": 404.96952281998534,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/63",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 3,
+        "column_indices": [
+          3
+        ],
+        "spans_columns": false,
+        "reading_order_index": 62,
+        "bbox": {
+          "l": 402.30002,
+          "t": 390.9682596875,
+          "r": 568.94650442,
+          "b": 358.0417828199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/64",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 3,
+        "column_indices": [
+          3
+        ],
+        "spans_columns": false,
+        "reading_order_index": 63,
+        "bbox": {
+          "l": 402.30002,
+          "t": 353.7021496875,
+          "r": 569.18673692,
+          "b": 320.7761628199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/65",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 3,
+        "column_indices": [
+          3
+        ],
+        "spans_columns": false,
+        "reading_order_index": 64,
+        "bbox": {
+          "l": 402.30002,
+          "t": 316.4365196875,
+          "r": 569.32004192,
+          "b": 283.5100528199854,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/66",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 3,
+        "column_indices": [
+          3
+        ],
+        "spans_columns": false,
+        "reading_order_index": 65,
+        "bbox": {
+          "l": 402.30002,
+          "t": 279.16991968750006,
+          "r": 571.22726384,
+          "b": 246.2439328199854,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/67",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 3,
+        "column_indices": [
+          3
+        ],
+        "spans_columns": false,
+        "reading_order_index": 66,
+        "bbox": {
+          "l": 402.30002,
+          "t": 232.24267968749996,
+          "r": 569.42697692,
+          "b": 211.7380728199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/68",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 3,
+        "column_indices": [
+          3
+        ],
+        "spans_columns": false,
+        "reading_order_index": 67,
+        "bbox": {
+          "l": 402.30002,
+          "t": 207.39843968749994,
+          "r": 569.10177692,
+          "b": 174.47245281998528,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/69",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 3,
+        "column_indices": [
+          3
+        ],
+        "spans_columns": false,
+        "reading_order_index": 68,
+        "bbox": {
+          "l": 402.30002,
+          "t": 170.13280968749996,
+          "r": 551.5734594200001,
+          "b": 162.0505728199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/70",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 3,
+        "column_indices": [
+          3
+        ],
+        "spans_columns": false,
+        "reading_order_index": 69,
+        "bbox": {
+          "l": 402.30002,
+          "t": 157.71044968750005,
+          "r": 569.47823942,
+          "b": 137.20633281998528,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/71",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 3,
+        "column_indices": [
+          3
+        ],
+        "spans_columns": false,
+        "reading_order_index": 70,
+        "bbox": {
+          "l": 402.30002,
+          "t": 123.20507968749996,
+          "r": 568.92599942,
+          "b": 102.70048281998538,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/72",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 3,
+        "column_indices": [
+          3
+        ],
+        "spans_columns": false,
+        "reading_order_index": 71,
+        "bbox": {
+          "l": 402.30002,
+          "t": 98.36083968749995,
+          "r": 569.1545094200001,
+          "b": 77.85673281998538,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/73",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 3,
+        "column_indices": [
+          3
+        ],
+        "spans_columns": false,
+        "reading_order_index": 72,
+        "bbox": {
+          "l": 402.30002,
+          "t": 73.51659968750005,
+          "r": 569.30099942,
+          "b": 53.01249281998537,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/74",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 3,
+        "column_indices": [
+          3
+        ],
+        "spans_columns": false,
+        "reading_order_index": 73,
+        "bbox": {
+          "l": 402.30002,
+          "t": 48.672359687500034,
+          "r": 568.96261442,
+          "b": 28.168252819985355,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/75",
+        "element_type": "text",
+        "label": "page_footer",
+        "column_index": 0,
+        "column_indices": [
+          2,
+          3
+        ],
+        "spans_columns": true,
+        "reading_order_index": null,
+        "bbox": {
+          "l": 99.3266505,
+          "t": 21.98847795947256,
+          "r": 495.95088382500006,
+          "b": 13.76018189577485,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      }
+    ],
+    "warnings": []
+  },
+  "structure_chunks": {
+    "enabled": true,
+    "method": "docling_hybrid_chunker",
+    "scope": "page",
+    "items": [
+      {
+        "text": "Pedant -  a  person  who  overemphasizes rules or minor details, often in learning or teaching.\nRealist - a person who accepts things as they are and deals with facts rather than ideas or emotions.\nSol.62.(c) Monarchy -a government ruled by a king or queen.\nDemocracy -  a  system  of  government where power rests with the people, usually through elected representatives.\nOligarchy -  a  government  ruled  by  a small group of people.\nAutocracy -a  system  of  government ruled  by  a  single  person  with  absolute power.\nSol.63.(c) Cabal -a secret plot or conspiracy,  especially  one  intended  to overthrow a government or leader.\nCoup  a sudden,  violent,  and  illegal seizure of power from a government.\nMutiny an open rebellion against lawful authority, especially by soldiers or sailors against their officers.\nMachination a crafty or secret scheme, usually intended to achieve an evil purpose.\nSol.64.(a) Pedant  a  person  who  is excessively concerned with minor details and rules.\nAltruist a person unselfishly concerned for or devoted to the welfare of others.\nPhilistine  a  person  who  is  hostile  or indifferent to culture and the arts, or who has no understanding of them.",
+        "meta": {
+          "schema_name": "docling_core.transforms.chunker.DocMeta",
+          "version": "1.0.0",
+          "doc_items": [
+            {
+              "self_ref": "#/texts/1",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 814.6972656875,
+                    "r": 195.46113492,
+                    "b": 781.7712788199854,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    95
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/2",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 777.4311526875,
+                    "r": 195.62519742,
+                    "b": 744.5046768199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    101
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/3",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 730.5039066875,
+                    "r": 195.98848242,
+                    "b": 709.9993058199854,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    59
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/4",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 705.6596676875,
+                    "r": 196.00752492,
+                    "b": 672.7331928199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    114
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/5",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 668.3935496875,
+                    "r": 195.46552992,
+                    "b": 647.8894428199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    63
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/6",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 643.5497996875,
+                    "r": 195.96796992,
+                    "b": 610.6233328199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    88
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/7",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 596.6220696875,
+                    "r": 195.95332242,
+                    "b": 563.6955928199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    111
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/8",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 559.3559596875,
+                    "r": 195.96064992,
+                    "b": 538.8513528199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    75
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/9",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 534.5117196875,
+                    "r": 195.89765742,
+                    "b": 501.58524281998535,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    108
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/10",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 497.2456096875,
+                    "r": 195.42158742,
+                    "b": 464.3191328199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    83
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/11",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 450.3178696875,
+                    "r": 195.68965242,
+                    "b": 417.39139281998536,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    89
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/12",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 413.0517596875,
+                    "r": 195.86542992,
+                    "b": 392.54764281998536,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    80
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/13",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 388.2080096875,
+                    "r": 195.86982491999999,
+                    "b": 355.28153281998533,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    117
+                  ]
+                }
+              ]
+            }
+          ],
+          "headings": null,
+          "captions": null,
+          "origin": {
+            "mimetype": "application/pdf",
+            "binary_hash": 11104226555895073868,
+            "filename": "english_page_0407.pdf",
+            "uri": null
+          }
+        },
+        "chunk_index": 0,
+        "contextualized_text": "Pedant -  a  person  who  overemphasizes rules or minor details, often in learning or teaching.\nRealist - a person who accepts things as they are and deals with facts rather than ideas or emotions.\nSol.62.(c) Monarchy -a government ruled by a king or queen.\nDemocracy -  a  system  of  government where power rests with the people, usually through elected representatives.\nOligarchy -  a  government  ruled  by  a small group of people.\nAutocracy -a  system  of  government ruled  by  a  single  person  with  absolute power.\nSol.63.(c) Cabal -a secret plot or conspiracy,  especially  one  intended  to overthrow a government or leader.\nCoup  a sudden,  violent,  and  illegal seizure of power from a government.\nMutiny an open rebellion against lawful authority, especially by soldiers or sailors against their officers.\nMachination a crafty or secret scheme, usually intended to achieve an evil purpose.\nSol.64.(a) Pedant  a  person  who  is excessively concerned with minor details and rules.\nAltruist a person unselfishly concerned for or devoted to the welfare of others.\nPhilistine  a  person  who  is  hostile  or indifferent to culture and the arts, or who has no understanding of them."
+      },
+      {
+        "text": "Dilettante  a  person  who  cultivates  an area of interest, such as the arts, without real commitment or knowledge.\nSol.65.(a) Hypocrite -a person  who pretends to have virtues, moral or religious beliefs he does not possess.\nCharlatan -  a  person  who falsely claims to have special knowledge  or skills. Fraud - a person who deceives others for personal gain.\nIndolent - a person who is habitually lazy.\nSol.66.(b) Insatiable -Impossible to satisfy; having an unquenchable desire.\nContented -  Pleased  or  satisfied  with what one has; not wanting more.\nAvaricious - Extremely greedy, especially for wealth.\nSanguine -Optimistic or positive, especially in a difficult situation.\nSol.67.(b)  Sadist  a  person  who  finds joy in the pain or suffering of others.\nPessimist  a  person  who  tends  to  see the worst aspect of things.\nMasochist a person who derives sexual OWS\ngratification from their own pain or humiliation.\nNarcissist -a person who has an excessive  interest  in  or  admiration  of themselves.",
+        "meta": {
+          "schema_name": "docling_core.transforms.chunker.DocMeta",
+          "version": "1.0.0",
+          "doc_items": [
+            {
+              "self_ref": "#/texts/14",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 350.9418896875,
+                    "r": 195.59150742,
+                    "b": 318.01542281998536,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    116
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/15",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 304.01415968749995,
+                    "r": 195.82294991999999,
+                    "b": 271.0876828199854,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    109
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/16",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 266.74804968750004,
+                    "r": 195.76289742,
+                    "b": 221.4001828199854,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    136
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/17",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 217.06005968750003,
+                    "r": 194.75508492,
+                    "b": 208.97782281998536,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    43
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/18",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 194.97655968749996,
+                    "r": 195.79804991999998,
+                    "b": 174.47245281998528,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    76
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/19",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 170.13280968749996,
+                    "r": 195.84052992,
+                    "b": 149.62821281998538,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    73
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/20",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 145.28856968749994,
+                    "r": 195.32929991999998,
+                    "b": 124.78397281998537,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    53
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/21",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 120.44433968750002,
+                    "r": 195.45527742,
+                    "b": 99.94022281998537,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    70
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/22",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 85.93896968750005,
+                    "r": 195.92842242,
+                    "b": 65.43436281998538,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    81
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/23",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 61.094729687500035,
+                    "r": 195.49775742,
+                    "b": 40.59012281998537,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    69
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/24",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 36.25048968750002,
+                    "r": 194.26289742,
+                    "b": 28.168252819985355,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    37
+                  ]
+                },
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 291.757038,
+                    "t": 830.7935546594726,
+                    "r": 568.8714279374999,
+                    "b": 822.5652585957749,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    38,
+                    41
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/25",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 215.54999,
+                    "t": 814.6972656875,
+                    "r": 382.16570942,
+                    "b": 794.1931538199854,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    49
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/26",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 215.54999,
+                    "t": 789.8535156875,
+                    "r": 382.24481191999996,
+                    "b": 756.9270408199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    87
+                  ]
+                }
+              ]
+            }
+          ],
+          "headings": null,
+          "captions": null,
+          "origin": {
+            "mimetype": "application/pdf",
+            "binary_hash": 11104226555895073868,
+            "filename": "english_page_0407.pdf",
+            "uri": null
+          }
+        },
+        "chunk_index": 1,
+        "contextualized_text": "Dilettante  a  person  who  cultivates  an area of interest, such as the arts, without real commitment or knowledge.\nSol.65.(a) Hypocrite -a person  who pretends to have virtues, moral or religious beliefs he does not possess.\nCharlatan -  a  person  who falsely claims to have special knowledge  or skills. Fraud - a person who deceives others for personal gain.\nIndolent - a person who is habitually lazy.\nSol.66.(b) Insatiable -Impossible to satisfy; having an unquenchable desire.\nContented -  Pleased  or  satisfied  with what one has; not wanting more.\nAvaricious - Extremely greedy, especially for wealth.\nSanguine -Optimistic or positive, especially in a difficult situation.\nSol.67.(b)  Sadist  a  person  who  finds joy in the pain or suffering of others.\nPessimist  a  person  who  tends  to  see the worst aspect of things.\nMasochist a person who derives sexual OWS\ngratification from their own pain or humiliation.\nNarcissist -a person who has an excessive  interest  in  or  admiration  of themselves."
+      },
+      {
+        "text": "Sol.68.(b) Paradox a seemingly absurd or self-contradictory statement or proposition that when  investigated  or explained  may  prove  to be well founded or true.\nConundrum  a  confusing  and  difficult problem or question.\nRiddle -a question or statement intentionally  phrased  so  as  to  require ingenuity  in  ascertaining  its  answer  or meaning.\nPuzzle -a game, toy, or problem designed to test ingenuity or knowledge.\nSol.69.(c) Ascetic -a person who chooses  to  live  a  simple  life,  often  for religious  or  spiritual  reasons,  abstaining from worldly pleasures.\nHedonist  a  person  who  believes  that the pursuit of pleasure is the  most important thing in life.\nSybarite a person who is self-indulgent in their fondness for sensuous luxury.\nLibertine  a  person,  especially  a  man, who behaves without moral principles or a  sense  of  responsibility,  especially  in sexual matters.\nSol.70.(d)  Clone  an  organism  that  is genetically identical to another organism. other\nBlueprint -a design plan or technical drawing.\nPrototype a first or preliminary version of  a  device  or  vehicle  from  which  other forms are developed.",
+        "meta": {
+          "schema_name": "docling_core.transforms.chunker.DocMeta",
+          "version": "1.0.0",
+          "doc_items": [
+            {
+              "self_ref": "#/texts/27",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 215.54999,
+                    "t": 742.9257816875,
+                    "r": 382.75604192000003,
+                    "b": 685.1550678199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    163
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/28",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 215.54999,
+                    "t": 680.8154296875,
+                    "r": 382.64324941999996,
+                    "b": 660.3113128199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    60
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/29",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 215.54999,
+                    "t": 655.9716796875,
+                    "r": 382.60809692,
+                    "b": 610.6233328199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    129
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/30",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 215.54999,
+                    "t": 606.2836896875,
+                    "r": 382.72088942,
+                    "b": 585.7790928199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    72
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/31",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 215.54999,
+                    "t": 571.7778296875,
+                    "r": 382.71063692,
+                    "b": 526.4294828199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    151
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/32",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 215.54999,
+                    "t": 522.0898396875,
+                    "r": 382.43670692,
+                    "b": 489.16337281998534,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    102
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/33",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 215.54999,
+                    "t": 484.8232396875,
+                    "r": 382.56561692,
+                    "b": 464.3191328199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    78
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/34",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 215.54999,
+                    "t": 459.9794896875,
+                    "r": 382.75897441999996,
+                    "b": 414.6311428199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    144
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/35",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 215.54999,
+                    "t": 400.6298796875,
+                    "r": 382.41913442,
+                    "b": 367.70389281998536,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    90
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/36",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 215.54999,
+                    "t": 375.7861296875,
+                    "r": 353.99383442,
+                    "b": 355.28153281998533,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    46
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/37",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 215.54999,
+                    "t": 350.9418896875,
+                    "r": 382.51288442,
+                    "b": 318.01542281998536,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    108
+                  ]
+                }
+              ]
+            }
+          ],
+          "headings": null,
+          "captions": null,
+          "origin": {
+            "mimetype": "application/pdf",
+            "binary_hash": 11104226555895073868,
+            "filename": "english_page_0407.pdf",
+            "uri": null
+          }
+        },
+        "chunk_index": 2,
+        "contextualized_text": "Sol.68.(b) Paradox a seemingly absurd or self-contradictory statement or proposition that when  investigated  or explained  may  prove  to be well founded or true.\nConundrum  a  confusing  and  difficult problem or question.\nRiddle -a question or statement intentionally  phrased  so  as  to  require ingenuity  in  ascertaining  its  answer  or meaning.\nPuzzle -a game, toy, or problem designed to test ingenuity or knowledge.\nSol.69.(c) Ascetic -a person who chooses  to  live  a  simple  life,  often  for religious  or  spiritual  reasons,  abstaining from worldly pleasures.\nHedonist  a  person  who  believes  that the pursuit of pleasure is the  most important thing in life.\nSybarite a person who is self-indulgent in their fondness for sensuous luxury.\nLibertine  a  person,  especially  a  man, who behaves without moral principles or a  sense  of  responsibility,  especially  in sexual matters.\nSol.70.(d)  Clone  an  organism  that  is genetically identical to another organism. other\nBlueprint -a design plan or technical drawing.\nPrototype a first or preliminary version of  a  device  or  vehicle  from  which  other forms are developed."
+      },
+      {
+        "text": "Schema  a  representation  of  a  plan  or theory in the form of an outline or model.\nSol.71.(b)  Scavenger -  an  animal  that feeds on dead animals.\nPredator - an animal that hunts and kills other animals for food.\nOmnivore - an animal or person that eats both plants and animals.\nHerbivore - an animal that feeds only on plants.",
+        "meta": {
+          "schema_name": "docling_core.transforms.chunker.DocMeta",
+          "version": "1.0.0",
+          "doc_items": [
+            {
+              "self_ref": "#/texts/38",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 215.54999,
+                    "t": 313.67577968750004,
+                    "r": 382.29168691999996,
+                    "b": 293.17167281998536,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    85
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/39",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 215.54999,
+                    "t": 279.16991968750006,
+                    "r": 382.43231191999996,
+                    "b": 258.6658128199854,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    64
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/40",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 215.54999,
+                    "t": 254.32616968750006,
+                    "r": 376.78973942000005,
+                    "b": 233.82206281998538,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    65
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/41",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 215.54999,
+                    "t": 229.48241968750006,
+                    "r": 382.17449941999996,
+                    "b": 208.97782281998536,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    65
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/42",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 215.54999,
+                    "t": 204.63817968750004,
+                    "r": 382.32977192,
+                    "b": 184.13407281998536,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    48
+                  ]
+                }
+              ]
+            }
+          ],
+          "headings": null,
+          "captions": null,
+          "origin": {
+            "mimetype": "application/pdf",
+            "binary_hash": 11104226555895073868,
+            "filename": "english_page_0407.pdf",
+            "uri": null
+          }
+        },
+        "chunk_index": 3,
+        "contextualized_text": "Schema  a  representation  of  a  plan  or theory in the form of an outline or model.\nSol.71.(b)  Scavenger -  an  animal  that feeds on dead animals.\nPredator - an animal that hunts and kills other animals for food.\nOmnivore - an animal or person that eats both plants and animals.\nHerbivore - an animal that feeds only on plants."
+      },
+      {
+        "text": "Arrogance - an attitude of superiority and overbearing pride.\nHubris -excessive pride or self -confidence, often leading to downfall.\nVanity -excessive pride in one's appearance or achievements.\nSol.73.(c) Aristocracy -a form of government in which power is held by the nobility.\nMonarchy a form of government with a monarch at the head.\nGerontocracy -a state, society, or group governed by old people.\nAuthoritarianism  a  way  of  governing that values order and control over personal freedom.\nSol.74.(b) Consultant -a person appointed to advise an organization on a particular subject.\nDelegate a person sent or authorized to represent others, in particular an elected representative sent to a conference.\nIntrusive  a  person  who  is  unwantedly present or involved.\nMentor  an  experienced  and  trusted adviser.\nSol.75.(a) Murder - a group of crows.\nPride - a group of lions.\nSwarm - a large group of insects or small creatures moving together.\nCluster -  a  close  group  of  things  or people gathered together.\nSol.76.(a) Pedestrian -  a  person  who travels on foot.",
+        "meta": {
+          "schema_name": "docling_core.transforms.chunker.DocMeta",
+          "version": "1.0.0",
+          "doc_items": [
+            {
+              "self_ref": "#/texts/44",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 215.54999,
+                    "t": 157.71044968750005,
+                    "r": 382.59344942,
+                    "b": 137.20633281998528,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    61
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/45",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 215.54999,
+                    "t": 132.86620968750003,
+                    "r": 382.43817692000005,
+                    "b": 112.36210281998535,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    71
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/46",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 215.54999,
+                    "t": 108.02245968750003,
+                    "r": 382.14666692000003,
+                    "b": 87.51786281998534,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    60
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/47",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 215.54999,
+                    "t": 73.51659968750005,
+                    "r": 382.47626192,
+                    "b": 40.59012281998537,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    84
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/48",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 215.54999,
+                    "t": 36.25048968750002,
+                    "r": 379.15838942,
+                    "b": 28.168252819985355,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    36
+                  ]
+                },
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 402.30002,
+                    "t": 814.6972656875,
+                    "r": 489.34250042,
+                    "b": 806.6150288199854,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    37,
+                    57
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/49",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 402.30002,
+                    "t": 802.2753906875,
+                    "r": 569.05343942,
+                    "b": 781.7712788199854,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    64
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/50",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 402.30002,
+                    "t": 777.4311526875,
+                    "r": 569.26583942,
+                    "b": 744.5046768199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    92
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/51",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 402.30002,
+                    "t": 730.5039066875,
+                    "r": 569.47238192,
+                    "b": 697.5774308199854,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    92
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/52",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 402.30002,
+                    "t": 693.2373046875,
+                    "r": 569.42550692,
+                    "b": 660.3113128199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    119
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/53",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 402.30002,
+                    "t": 655.9716796875,
+                    "r": 569.4123219200001,
+                    "b": 635.4675628199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    62
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/54",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 402.30002,
+                    "t": 631.1274396875,
+                    "r": 568.89083942,
+                    "b": 610.6233328199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    46
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/55",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 402.30002,
+                    "t": 596.6220696875,
+                    "r": 554.58810692,
+                    "b": 588.5398328199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    37
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/56",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 402.30002,
+                    "t": 584.2001996875,
+                    "r": 497.41086017000003,
+                    "b": 576.1179628199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    25
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/57",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 402.30002,
+                    "t": 571.7778296875,
+                    "r": 569.50900442,
+                    "b": 551.2737228199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    68
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/58",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 402.30002,
+                    "t": 546.9335896875,
+                    "r": 569.49875192,
+                    "b": 526.4294828199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    68
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/59",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 402.30002,
+                    "t": 512.4282196875,
+                    "r": 568.97140442,
+                    "b": 491.92411281998534,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    56
+                  ]
+                }
+              ]
+            }
+          ],
+          "headings": [
+            "Sol.72.(d) All are correct"
+          ],
+          "captions": null,
+          "origin": {
+            "mimetype": "application/pdf",
+            "binary_hash": 11104226555895073868,
+            "filename": "english_page_0407.pdf",
+            "uri": null
+          }
+        },
+        "chunk_index": 4,
+        "contextualized_text": "Sol.72.(d) All are correct\nArrogance - an attitude of superiority and overbearing pride.\nHubris -excessive pride or self -confidence, often leading to downfall.\nVanity -excessive pride in one's appearance or achievements.\nSol.73.(c) Aristocracy -a form of government in which power is held by the nobility.\nMonarchy a form of government with a monarch at the head.\nGerontocracy -a state, society, or group governed by old people.\nAuthoritarianism  a  way  of  governing that values order and control over personal freedom.\nSol.74.(b) Consultant -a person appointed to advise an organization on a particular subject.\nDelegate a person sent or authorized to represent others, in particular an elected representative sent to a conference.\nIntrusive  a  person  who  is  unwantedly present or involved.\nMentor  an  experienced  and  trusted adviser.\nSol.75.(a) Murder - a group of crows.\nPride - a group of lions.\nSwarm - a large group of insects or small creatures moving together.\nCluster -  a  close  group  of  things  or people gathered together.\nSol.76.(a) Pedestrian -  a  person  who travels on foot."
+      },
+      {
+        "text": "Voyager -  a  person  who  goes on a long journey, especially by sea or in space.\nWalker - a general term for someone who walks; not necessarily formal or precise.\nHiker -a person who walks long distances,  usually  in  nature  or  on  trails for recreation.\nSol.77.(b) Recluse a person who lives a solitary  life  and  tends  to  avoid  other people.\nHedonist  a  person  who  believes  that the pursuit of pleasure is the  most important thing in life; a pleasure-seeker.\nStoic a person who can endure pain or hardship  without  showing  their  feelings or complaining.\nEpicurean a person devoted to sensual enjoyment,  especially  that  derived  from fine food and drink.\nSol.78.(a) Amnesiac a drug that causes temporary loss of memory.\nNarcotic  a  drug  that  relieves  pain and induces drowsiness, stupor, or insensibility.\nHypnotic a drug that induces sleep.\nPurgative  a substance that makes you empty your bowels.\nSol.79.(b) Epigraphy -the study of ancient inscriptions.\nNumismatics - the study or collection of coins, currency, and medals.\nCartography -  the  study  and  practice  of making maps.",
+        "meta": {
+          "schema_name": "docling_core.transforms.chunker.DocMeta",
+          "version": "1.0.0",
+          "doc_items": [
+            {
+              "self_ref": "#/texts/60",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 402.30002,
+                    "t": 487.5839796875,
+                    "r": 569.2248219200001,
+                    "b": 467.0798728199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    81
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/61",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 402.30002,
+                    "t": 462.7397496875,
+                    "r": 569.01974942,
+                    "b": 442.2356328199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    81
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/62",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 402.30002,
+                    "t": 437.8959996875,
+                    "r": 569.33468942,
+                    "b": 404.96952281998534,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    94
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/63",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 402.30002,
+                    "t": 390.9682596875,
+                    "r": 568.94650442,
+                    "b": 358.0417828199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    92
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/64",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 402.30002,
+                    "t": 353.7021496875,
+                    "r": 569.18673692,
+                    "b": 320.7761628199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    121
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/65",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 402.30002,
+                    "t": 316.4365196875,
+                    "r": 569.32004192,
+                    "b": 283.5100528199854,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    97
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/66",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 402.30002,
+                    "t": 279.16991968750006,
+                    "r": 571.22726384,
+                    "b": 246.2439328199854,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    102
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/67",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 402.30002,
+                    "t": 232.24267968749996,
+                    "r": 569.42697692,
+                    "b": 211.7380728199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    64
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/68",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 402.30002,
+                    "t": 207.39843968749994,
+                    "r": 569.10177692,
+                    "b": 174.47245281998528,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    89
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/69",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 402.30002,
+                    "t": 170.13280968749996,
+                    "r": 551.5734594200001,
+                    "b": 162.0505728199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    35
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/70",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 402.30002,
+                    "t": 157.71044968750005,
+                    "r": 569.47823942,
+                    "b": 137.20633281998528,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    56
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/71",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 402.30002,
+                    "t": 123.20507968749996,
+                    "r": 568.92599942,
+                    "b": 102.70048281998538,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    56
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/72",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 402.30002,
+                    "t": 98.36083968749995,
+                    "r": 569.1545094200001,
+                    "b": 77.85673281998538,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    69
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/73",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 402.30002,
+                    "t": 73.51659968750005,
+                    "r": 569.30099942,
+                    "b": 53.01249281998537,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    57
+                  ]
+                }
+              ]
+            }
+          ],
+          "headings": [
+            "Sol.72.(d) All are correct"
+          ],
+          "captions": null,
+          "origin": {
+            "mimetype": "application/pdf",
+            "binary_hash": 11104226555895073868,
+            "filename": "english_page_0407.pdf",
+            "uri": null
+          }
+        },
+        "chunk_index": 5,
+        "contextualized_text": "Sol.72.(d) All are correct\nVoyager -  a  person  who  goes on a long journey, especially by sea or in space.\nWalker - a general term for someone who walks; not necessarily formal or precise.\nHiker -a person who walks long distances,  usually  in  nature  or  on  trails for recreation.\nSol.77.(b) Recluse a person who lives a solitary  life  and  tends  to  avoid  other people.\nHedonist  a  person  who  believes  that the pursuit of pleasure is the  most important thing in life; a pleasure-seeker.\nStoic a person who can endure pain or hardship  without  showing  their  feelings or complaining.\nEpicurean a person devoted to sensual enjoyment,  especially  that  derived  from fine food and drink.\nSol.78.(a) Amnesiac a drug that causes temporary loss of memory.\nNarcotic  a  drug  that  relieves  pain and induces drowsiness, stupor, or insensibility.\nHypnotic a drug that induces sleep.\nPurgative  a substance that makes you empty your bowels.\nSol.79.(b) Epigraphy -the study of ancient inscriptions.\nNumismatics - the study or collection of coins, currency, and medals.\nCartography -  the  study  and  practice  of making maps."
+      },
+      {
+        "text": "Archaeology - the study of human history and prehistory through excavation of",
+        "meta": {
+          "schema_name": "docling_core.transforms.chunker.DocMeta",
+          "version": "1.0.0",
+          "doc_items": [
+            {
+              "self_ref": "#/texts/74",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 402.30002,
+                    "t": 48.672359687500034,
+                    "r": 568.96261442,
+                    "b": 28.168252819985355,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    77
+                  ]
+                }
+              ]
+            }
+          ],
+          "headings": [
+            "Sol.72.(d) All are correct"
+          ],
+          "captions": null,
+          "origin": {
+            "mimetype": "application/pdf",
+            "binary_hash": 11104226555895073868,
+            "filename": "english_page_0407.pdf",
+            "uri": null
+          }
+        },
+        "chunk_index": 6,
+        "contextualized_text": "Sol.72.(d) All are correct\nArchaeology - the study of human history and prehistory through excavation of"
+      }
+    ]
+  },
+  "content_assets": {
+    "tables": [],
+    "figures": []
+  },
+  "docling_document": {
+    "schema_name": "DoclingDocument",
+    "version": "1.10.0",
+    "name": "english_page_0407",
+    "origin": {
+      "mimetype": "application/pdf",
+      "binary_hash": 11104226555895073868,
+      "filename": "english_page_0407.pdf"
+    },
+    "furniture": {
+      "self_ref": "#/furniture",
+      "children": [],
+      "content_layer": "furniture",
+      "name": "_root_",
+      "label": "unspecified"
+    },
+    "body": {
+      "self_ref": "#/body",
+      "children": [
+        {
+          "$ref": "#/texts/0"
+        },
+        {
+          "$ref": "#/texts/1"
+        },
+        {
+          "$ref": "#/texts/2"
+        },
+        {
+          "$ref": "#/texts/3"
+        },
+        {
+          "$ref": "#/texts/4"
+        },
+        {
+          "$ref": "#/texts/5"
+        },
+        {
+          "$ref": "#/texts/6"
+        },
+        {
+          "$ref": "#/texts/7"
+        },
+        {
+          "$ref": "#/texts/8"
+        },
+        {
+          "$ref": "#/texts/9"
+        },
+        {
+          "$ref": "#/texts/10"
+        },
+        {
+          "$ref": "#/texts/11"
+        },
+        {
+          "$ref": "#/texts/12"
+        },
+        {
+          "$ref": "#/texts/13"
+        },
+        {
+          "$ref": "#/texts/14"
+        },
+        {
+          "$ref": "#/texts/15"
+        },
+        {
+          "$ref": "#/texts/16"
+        },
+        {
+          "$ref": "#/texts/17"
+        },
+        {
+          "$ref": "#/texts/18"
+        },
+        {
+          "$ref": "#/texts/19"
+        },
+        {
+          "$ref": "#/texts/20"
+        },
+        {
+          "$ref": "#/texts/21"
+        },
+        {
+          "$ref": "#/texts/22"
+        },
+        {
+          "$ref": "#/texts/23"
+        },
+        {
+          "$ref": "#/texts/24"
+        },
+        {
+          "$ref": "#/texts/25"
+        },
+        {
+          "$ref": "#/texts/26"
+        },
+        {
+          "$ref": "#/texts/27"
+        },
+        {
+          "$ref": "#/texts/28"
+        },
+        {
+          "$ref": "#/texts/29"
+        },
+        {
+          "$ref": "#/texts/30"
+        },
+        {
+          "$ref": "#/texts/31"
+        },
+        {
+          "$ref": "#/texts/32"
+        },
+        {
+          "$ref": "#/texts/33"
+        },
+        {
+          "$ref": "#/texts/34"
+        },
+        {
+          "$ref": "#/texts/35"
+        },
+        {
+          "$ref": "#/texts/36"
+        },
+        {
+          "$ref": "#/texts/37"
+        },
+        {
+          "$ref": "#/texts/38"
+        },
+        {
+          "$ref": "#/texts/39"
+        },
+        {
+          "$ref": "#/texts/40"
+        },
+        {
+          "$ref": "#/texts/41"
+        },
+        {
+          "$ref": "#/texts/42"
+        },
+        {
+          "$ref": "#/texts/43"
+        },
+        {
+          "$ref": "#/texts/44"
+        },
+        {
+          "$ref": "#/texts/45"
+        },
+        {
+          "$ref": "#/texts/46"
+        },
+        {
+          "$ref": "#/texts/47"
+        },
+        {
+          "$ref": "#/texts/48"
+        },
+        {
+          "$ref": "#/texts/49"
+        },
+        {
+          "$ref": "#/texts/50"
+        },
+        {
+          "$ref": "#/texts/51"
+        },
+        {
+          "$ref": "#/texts/52"
+        },
+        {
+          "$ref": "#/texts/53"
+        },
+        {
+          "$ref": "#/texts/54"
+        },
+        {
+          "$ref": "#/texts/55"
+        },
+        {
+          "$ref": "#/texts/56"
+        },
+        {
+          "$ref": "#/texts/57"
+        },
+        {
+          "$ref": "#/texts/58"
+        },
+        {
+          "$ref": "#/texts/59"
+        },
+        {
+          "$ref": "#/texts/60"
+        },
+        {
+          "$ref": "#/texts/61"
+        },
+        {
+          "$ref": "#/texts/62"
+        },
+        {
+          "$ref": "#/texts/63"
+        },
+        {
+          "$ref": "#/texts/64"
+        },
+        {
+          "$ref": "#/texts/65"
+        },
+        {
+          "$ref": "#/texts/66"
+        },
+        {
+          "$ref": "#/texts/67"
+        },
+        {
+          "$ref": "#/texts/68"
+        },
+        {
+          "$ref": "#/texts/69"
+        },
+        {
+          "$ref": "#/texts/70"
+        },
+        {
+          "$ref": "#/texts/71"
+        },
+        {
+          "$ref": "#/texts/72"
+        },
+        {
+          "$ref": "#/texts/73"
+        },
+        {
+          "$ref": "#/texts/74"
+        },
+        {
+          "$ref": "#/texts/75"
+        }
+      ],
+      "content_layer": "body",
+      "name": "_root_",
+      "label": "unspecified"
+    },
+    "groups": [],
+    "texts": [
+      {
+        "self_ref": "#/texts/0",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "furniture",
+        "label": "page_header",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 830.7935546594726,
+              "r": 95.7084616875,
+              "b": 822.5652585957749,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              8
+            ]
+          }
+        ],
+        "orig": "Pinnacle",
+        "text": "Pinnacle"
+      },
+      {
+        "self_ref": "#/texts/1",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 814.6972656875,
+              "r": 195.46113492,
+              "b": 781.7712788199854,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              95
+            ]
+          }
+        ],
+        "orig": "Pedant -  a  person  who  overemphasizes rules or minor details, often in learning or teaching.",
+        "text": "Pedant -  a  person  who  overemphasizes rules or minor details, often in learning or teaching."
+      },
+      {
+        "self_ref": "#/texts/2",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 777.4311526875,
+              "r": 195.62519742,
+              "b": 744.5046768199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              101
+            ]
+          }
+        ],
+        "orig": "Realist - a person who accepts things as they are and deals with facts rather than ideas or emotions.",
+        "text": "Realist - a person who accepts things as they are and deals with facts rather than ideas or emotions."
+      },
+      {
+        "self_ref": "#/texts/3",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 730.5039066875,
+              "r": 195.98848242,
+              "b": 709.9993058199854,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              59
+            ]
+          }
+        ],
+        "orig": "Sol.62.(c) Monarchy -a government ruled by a king or queen.",
+        "text": "Sol.62.(c) Monarchy -a government ruled by a king or queen."
+      },
+      {
+        "self_ref": "#/texts/4",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 705.6596676875,
+              "r": 196.00752492,
+              "b": 672.7331928199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              114
+            ]
+          }
+        ],
+        "orig": "Democracy -  a  system  of  government where power rests with the people, usually through elected representatives.",
+        "text": "Democracy -  a  system  of  government where power rests with the people, usually through elected representatives."
+      },
+      {
+        "self_ref": "#/texts/5",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 668.3935496875,
+              "r": 195.46552992,
+              "b": 647.8894428199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              63
+            ]
+          }
+        ],
+        "orig": "Oligarchy -  a  government  ruled  by  a small group of people.",
+        "text": "Oligarchy -  a  government  ruled  by  a small group of people."
+      },
+      {
+        "self_ref": "#/texts/6",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 643.5497996875,
+              "r": 195.96796992,
+              "b": 610.6233328199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              88
+            ]
+          }
+        ],
+        "orig": "Autocracy -a  system  of  government ruled  by  a  single  person  with  absolute power.",
+        "text": "Autocracy -a  system  of  government ruled  by  a  single  person  with  absolute power."
+      },
+      {
+        "self_ref": "#/texts/7",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 596.6220696875,
+              "r": 195.95332242,
+              "b": 563.6955928199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              111
+            ]
+          }
+        ],
+        "orig": "Sol.63.(c) Cabal -a secret plot or conspiracy,  especially  one  intended  to overthrow a government or leader.",
+        "text": "Sol.63.(c) Cabal -a secret plot or conspiracy,  especially  one  intended  to overthrow a government or leader."
+      },
+      {
+        "self_ref": "#/texts/8",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 559.3559596875,
+              "r": 195.96064992,
+              "b": 538.8513528199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              75
+            ]
+          }
+        ],
+        "orig": "Coup  a sudden,  violent,  and  illegal seizure of power from a government.",
+        "text": "Coup  a sudden,  violent,  and  illegal seizure of power from a government."
+      },
+      {
+        "self_ref": "#/texts/9",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 534.5117196875,
+              "r": 195.89765742,
+              "b": 501.58524281998535,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              108
+            ]
+          }
+        ],
+        "orig": "Mutiny an open rebellion against lawful authority, especially by soldiers or sailors against their officers.",
+        "text": "Mutiny an open rebellion against lawful authority, especially by soldiers or sailors against their officers."
+      },
+      {
+        "self_ref": "#/texts/10",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 497.2456096875,
+              "r": 195.42158742,
+              "b": 464.3191328199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              83
+            ]
+          }
+        ],
+        "orig": "Machination a crafty or secret scheme, usually intended to achieve an evil purpose.",
+        "text": "Machination a crafty or secret scheme, usually intended to achieve an evil purpose."
+      },
+      {
+        "self_ref": "#/texts/11",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 450.3178696875,
+              "r": 195.68965242,
+              "b": 417.39139281998536,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              89
+            ]
+          }
+        ],
+        "orig": "Sol.64.(a) Pedant  a  person  who  is excessively concerned with minor details and rules.",
+        "text": "Sol.64.(a) Pedant  a  person  who  is excessively concerned with minor details and rules."
+      },
+      {
+        "self_ref": "#/texts/12",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 413.0517596875,
+              "r": 195.86542992,
+              "b": 392.54764281998536,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              80
+            ]
+          }
+        ],
+        "orig": "Altruist a person unselfishly concerned for or devoted to the welfare of others.",
+        "text": "Altruist a person unselfishly concerned for or devoted to the welfare of others."
+      },
+      {
+        "self_ref": "#/texts/13",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 388.2080096875,
+              "r": 195.86982491999999,
+              "b": 355.28153281998533,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              117
+            ]
+          }
+        ],
+        "orig": "Philistine  a  person  who  is  hostile  or indifferent to culture and the arts, or who has no understanding of them.",
+        "text": "Philistine  a  person  who  is  hostile  or indifferent to culture and the arts, or who has no understanding of them."
+      },
+      {
+        "self_ref": "#/texts/14",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 350.9418896875,
+              "r": 195.59150742,
+              "b": 318.01542281998536,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              116
+            ]
+          }
+        ],
+        "orig": "Dilettante  a  person  who  cultivates  an area of interest, such as the arts, without real commitment or knowledge.",
+        "text": "Dilettante  a  person  who  cultivates  an area of interest, such as the arts, without real commitment or knowledge."
+      },
+      {
+        "self_ref": "#/texts/15",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 304.01415968749995,
+              "r": 195.82294991999999,
+              "b": 271.0876828199854,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              109
+            ]
+          }
+        ],
+        "orig": "Sol.65.(a) Hypocrite -a person  who pretends to have virtues, moral or religious beliefs he does not possess.",
+        "text": "Sol.65.(a) Hypocrite -a person  who pretends to have virtues, moral or religious beliefs he does not possess."
+      },
+      {
+        "self_ref": "#/texts/16",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 266.74804968750004,
+              "r": 195.76289742,
+              "b": 221.4001828199854,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              136
+            ]
+          }
+        ],
+        "orig": "Charlatan -  a  person  who falsely claims to have special knowledge  or skills. Fraud - a person who deceives others for personal gain.",
+        "text": "Charlatan -  a  person  who falsely claims to have special knowledge  or skills. Fraud - a person who deceives others for personal gain."
+      },
+      {
+        "self_ref": "#/texts/17",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 217.06005968750003,
+              "r": 194.75508492,
+              "b": 208.97782281998536,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              43
+            ]
+          }
+        ],
+        "orig": "Indolent - a person who is habitually lazy.",
+        "text": "Indolent - a person who is habitually lazy."
+      },
+      {
+        "self_ref": "#/texts/18",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 194.97655968749996,
+              "r": 195.79804991999998,
+              "b": 174.47245281998528,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              76
+            ]
+          }
+        ],
+        "orig": "Sol.66.(b) Insatiable -Impossible to satisfy; having an unquenchable desire.",
+        "text": "Sol.66.(b) Insatiable -Impossible to satisfy; having an unquenchable desire."
+      },
+      {
+        "self_ref": "#/texts/19",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 170.13280968749996,
+              "r": 195.84052992,
+              "b": 149.62821281998538,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              73
+            ]
+          }
+        ],
+        "orig": "Contented -  Pleased  or  satisfied  with what one has; not wanting more.",
+        "text": "Contented -  Pleased  or  satisfied  with what one has; not wanting more."
+      },
+      {
+        "self_ref": "#/texts/20",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 145.28856968749994,
+              "r": 195.32929991999998,
+              "b": 124.78397281998537,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              53
+            ]
+          }
+        ],
+        "orig": "Avaricious - Extremely greedy, especially for wealth.",
+        "text": "Avaricious - Extremely greedy, especially for wealth."
+      },
+      {
+        "self_ref": "#/texts/21",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 120.44433968750002,
+              "r": 195.45527742,
+              "b": 99.94022281998537,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              70
+            ]
+          }
+        ],
+        "orig": "Sanguine -Optimistic or positive, especially in a difficult situation.",
+        "text": "Sanguine -Optimistic or positive, especially in a difficult situation."
+      },
+      {
+        "self_ref": "#/texts/22",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 85.93896968750005,
+              "r": 195.92842242,
+              "b": 65.43436281998538,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              81
+            ]
+          }
+        ],
+        "orig": "Sol.67.(b)  Sadist  a  person  who  finds joy in the pain or suffering of others.",
+        "text": "Sol.67.(b)  Sadist  a  person  who  finds joy in the pain or suffering of others."
+      },
+      {
+        "self_ref": "#/texts/23",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 61.094729687500035,
+              "r": 195.49775742,
+              "b": 40.59012281998537,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              69
+            ]
+          }
+        ],
+        "orig": "Pessimist  a  person  who  tends  to  see the worst aspect of things.",
+        "text": "Pessimist  a  person  who  tends  to  see the worst aspect of things."
+      },
+      {
+        "self_ref": "#/texts/24",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 36.25048968750002,
+              "r": 194.26289742,
+              "b": 28.168252819985355,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              37
+            ]
+          },
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 291.757038,
+              "t": 830.7935546594726,
+              "r": 568.8714279374999,
+              "b": 822.5652585957749,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              38,
+              41
+            ]
+          }
+        ],
+        "orig": "Masochist a person who derives sexual OWS",
+        "text": "Masochist a person who derives sexual OWS"
+      },
+      {
+        "self_ref": "#/texts/25",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 215.54999,
+              "t": 814.6972656875,
+              "r": 382.16570942,
+              "b": 794.1931538199854,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              49
+            ]
+          }
+        ],
+        "orig": "gratification from their own pain or humiliation.",
+        "text": "gratification from their own pain or humiliation."
+      },
+      {
+        "self_ref": "#/texts/26",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 215.54999,
+              "t": 789.8535156875,
+              "r": 382.24481191999996,
+              "b": 756.9270408199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              87
+            ]
+          }
+        ],
+        "orig": "Narcissist -a person who has an excessive  interest  in  or  admiration  of themselves.",
+        "text": "Narcissist -a person who has an excessive  interest  in  or  admiration  of themselves."
+      },
+      {
+        "self_ref": "#/texts/27",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 215.54999,
+              "t": 742.9257816875,
+              "r": 382.75604192000003,
+              "b": 685.1550678199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              163
+            ]
+          }
+        ],
+        "orig": "Sol.68.(b) Paradox a seemingly absurd or self-contradictory statement or proposition that when  investigated  or explained  may  prove  to be well founded or true.",
+        "text": "Sol.68.(b) Paradox a seemingly absurd or self-contradictory statement or proposition that when  investigated  or explained  may  prove  to be well founded or true."
+      },
+      {
+        "self_ref": "#/texts/28",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 215.54999,
+              "t": 680.8154296875,
+              "r": 382.64324941999996,
+              "b": 660.3113128199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              60
+            ]
+          }
+        ],
+        "orig": "Conundrum  a  confusing  and  difficult problem or question.",
+        "text": "Conundrum  a  confusing  and  difficult problem or question."
+      },
+      {
+        "self_ref": "#/texts/29",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 215.54999,
+              "t": 655.9716796875,
+              "r": 382.60809692,
+              "b": 610.6233328199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              129
+            ]
+          }
+        ],
+        "orig": "Riddle -a question or statement intentionally  phrased  so  as  to  require ingenuity  in  ascertaining  its  answer  or meaning.",
+        "text": "Riddle -a question or statement intentionally  phrased  so  as  to  require ingenuity  in  ascertaining  its  answer  or meaning."
+      },
+      {
+        "self_ref": "#/texts/30",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 215.54999,
+              "t": 606.2836896875,
+              "r": 382.72088942,
+              "b": 585.7790928199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              72
+            ]
+          }
+        ],
+        "orig": "Puzzle -a game, toy, or problem designed to test ingenuity or knowledge.",
+        "text": "Puzzle -a game, toy, or problem designed to test ingenuity or knowledge."
+      },
+      {
+        "self_ref": "#/texts/31",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 215.54999,
+              "t": 571.7778296875,
+              "r": 382.71063692,
+              "b": 526.4294828199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              151
+            ]
+          }
+        ],
+        "orig": "Sol.69.(c) Ascetic -a person who chooses  to  live  a  simple  life,  often  for religious  or  spiritual  reasons,  abstaining from worldly pleasures.",
+        "text": "Sol.69.(c) Ascetic -a person who chooses  to  live  a  simple  life,  often  for religious  or  spiritual  reasons,  abstaining from worldly pleasures."
+      },
+      {
+        "self_ref": "#/texts/32",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 215.54999,
+              "t": 522.0898396875,
+              "r": 382.43670692,
+              "b": 489.16337281998534,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              102
+            ]
+          }
+        ],
+        "orig": "Hedonist  a  person  who  believes  that the pursuit of pleasure is the  most important thing in life.",
+        "text": "Hedonist  a  person  who  believes  that the pursuit of pleasure is the  most important thing in life."
+      },
+      {
+        "self_ref": "#/texts/33",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 215.54999,
+              "t": 484.8232396875,
+              "r": 382.56561692,
+              "b": 464.3191328199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              78
+            ]
+          }
+        ],
+        "orig": "Sybarite a person who is self-indulgent in their fondness for sensuous luxury.",
+        "text": "Sybarite a person who is self-indulgent in their fondness for sensuous luxury."
+      },
+      {
+        "self_ref": "#/texts/34",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 215.54999,
+              "t": 459.9794896875,
+              "r": 382.75897441999996,
+              "b": 414.6311428199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              144
+            ]
+          }
+        ],
+        "orig": "Libertine  a  person,  especially  a  man, who behaves without moral principles or a  sense  of  responsibility,  especially  in sexual matters.",
+        "text": "Libertine  a  person,  especially  a  man, who behaves without moral principles or a  sense  of  responsibility,  especially  in sexual matters."
+      },
+      {
+        "self_ref": "#/texts/35",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 215.54999,
+              "t": 400.6298796875,
+              "r": 382.41913442,
+              "b": 367.70389281998536,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              90
+            ]
+          }
+        ],
+        "orig": "Sol.70.(d)  Clone  an  organism  that  is genetically identical to another organism. other",
+        "text": "Sol.70.(d)  Clone  an  organism  that  is genetically identical to another organism. other"
+      },
+      {
+        "self_ref": "#/texts/36",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 215.54999,
+              "t": 375.7861296875,
+              "r": 353.99383442,
+              "b": 355.28153281998533,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              46
+            ]
+          }
+        ],
+        "orig": "Blueprint -a design plan or technical drawing.",
+        "text": "Blueprint -a design plan or technical drawing."
+      },
+      {
+        "self_ref": "#/texts/37",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 215.54999,
+              "t": 350.9418896875,
+              "r": 382.51288442,
+              "b": 318.01542281998536,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              108
+            ]
+          }
+        ],
+        "orig": "Prototype a first or preliminary version of  a  device  or  vehicle  from  which  other forms are developed.",
+        "text": "Prototype a first or preliminary version of  a  device  or  vehicle  from  which  other forms are developed."
+      },
+      {
+        "self_ref": "#/texts/38",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 215.54999,
+              "t": 313.67577968750004,
+              "r": 382.29168691999996,
+              "b": 293.17167281998536,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              85
+            ]
+          }
+        ],
+        "orig": "Schema  a  representation  of  a  plan  or theory in the form of an outline or model.",
+        "text": "Schema  a  representation  of  a  plan  or theory in the form of an outline or model."
+      },
+      {
+        "self_ref": "#/texts/39",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 215.54999,
+              "t": 279.16991968750006,
+              "r": 382.43231191999996,
+              "b": 258.6658128199854,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              64
+            ]
+          }
+        ],
+        "orig": "Sol.71.(b)  Scavenger -  an  animal  that feeds on dead animals.",
+        "text": "Sol.71.(b)  Scavenger -  an  animal  that feeds on dead animals."
+      },
+      {
+        "self_ref": "#/texts/40",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 215.54999,
+              "t": 254.32616968750006,
+              "r": 376.78973942000005,
+              "b": 233.82206281998538,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              65
+            ]
+          }
+        ],
+        "orig": "Predator - an animal that hunts and kills other animals for food.",
+        "text": "Predator - an animal that hunts and kills other animals for food."
+      },
+      {
+        "self_ref": "#/texts/41",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 215.54999,
+              "t": 229.48241968750006,
+              "r": 382.17449941999996,
+              "b": 208.97782281998536,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              65
+            ]
+          }
+        ],
+        "orig": "Omnivore - an animal or person that eats both plants and animals.",
+        "text": "Omnivore - an animal or person that eats both plants and animals."
+      },
+      {
+        "self_ref": "#/texts/42",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 215.54999,
+              "t": 204.63817968750004,
+              "r": 382.32977192,
+              "b": 184.13407281998536,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              48
+            ]
+          }
+        ],
+        "orig": "Herbivore - an animal that feeds only on plants.",
+        "text": "Herbivore - an animal that feeds only on plants."
+      },
+      {
+        "self_ref": "#/texts/43",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "section_header",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 215.54999,
+              "t": 170.13280968749996,
+              "r": 316.99334969000006,
+              "b": 162.0505728199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              26
+            ]
+          }
+        ],
+        "orig": "Sol.72.(d) All are correct",
+        "text": "Sol.72.(d) All are correct",
+        "level": 1
+      },
+      {
+        "self_ref": "#/texts/44",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 215.54999,
+              "t": 157.71044968750005,
+              "r": 382.59344942,
+              "b": 137.20633281998528,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              61
+            ]
+          }
+        ],
+        "orig": "Arrogance - an attitude of superiority and overbearing pride.",
+        "text": "Arrogance - an attitude of superiority and overbearing pride."
+      },
+      {
+        "self_ref": "#/texts/45",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 215.54999,
+              "t": 132.86620968750003,
+              "r": 382.43817692000005,
+              "b": 112.36210281998535,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              71
+            ]
+          }
+        ],
+        "orig": "Hubris -excessive pride or self -confidence, often leading to downfall.",
+        "text": "Hubris -excessive pride or self -confidence, often leading to downfall."
+      },
+      {
+        "self_ref": "#/texts/46",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 215.54999,
+              "t": 108.02245968750003,
+              "r": 382.14666692000003,
+              "b": 87.51786281998534,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              60
+            ]
+          }
+        ],
+        "orig": "Vanity -excessive pride in one's appearance or achievements.",
+        "text": "Vanity -excessive pride in one's appearance or achievements."
+      },
+      {
+        "self_ref": "#/texts/47",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 215.54999,
+              "t": 73.51659968750005,
+              "r": 382.47626192,
+              "b": 40.59012281998537,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              84
+            ]
+          }
+        ],
+        "orig": "Sol.73.(c) Aristocracy -a form of government in which power is held by the nobility.",
+        "text": "Sol.73.(c) Aristocracy -a form of government in which power is held by the nobility."
+      },
+      {
+        "self_ref": "#/texts/48",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 215.54999,
+              "t": 36.25048968750002,
+              "r": 379.15838942,
+              "b": 28.168252819985355,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              36
+            ]
+          },
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 402.30002,
+              "t": 814.6972656875,
+              "r": 489.34250042,
+              "b": 806.6150288199854,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              37,
+              57
+            ]
+          }
+        ],
+        "orig": "Monarchy a form of government with a monarch at the head.",
+        "text": "Monarchy a form of government with a monarch at the head."
+      },
+      {
+        "self_ref": "#/texts/49",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 402.30002,
+              "t": 802.2753906875,
+              "r": 569.05343942,
+              "b": 781.7712788199854,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              64
+            ]
+          }
+        ],
+        "orig": "Gerontocracy -a state, society, or group governed by old people.",
+        "text": "Gerontocracy -a state, society, or group governed by old people."
+      },
+      {
+        "self_ref": "#/texts/50",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 402.30002,
+              "t": 777.4311526875,
+              "r": 569.26583942,
+              "b": 744.5046768199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              92
+            ]
+          }
+        ],
+        "orig": "Authoritarianism  a  way  of  governing that values order and control over personal freedom.",
+        "text": "Authoritarianism  a  way  of  governing that values order and control over personal freedom."
+      },
+      {
+        "self_ref": "#/texts/51",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 402.30002,
+              "t": 730.5039066875,
+              "r": 569.47238192,
+              "b": 697.5774308199854,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              92
+            ]
+          }
+        ],
+        "orig": "Sol.74.(b) Consultant -a person appointed to advise an organization on a particular subject.",
+        "text": "Sol.74.(b) Consultant -a person appointed to advise an organization on a particular subject."
+      },
+      {
+        "self_ref": "#/texts/52",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 402.30002,
+              "t": 693.2373046875,
+              "r": 569.42550692,
+              "b": 660.3113128199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              119
+            ]
+          }
+        ],
+        "orig": "Delegate a person sent or authorized to represent others, in particular an elected representative sent to a conference.",
+        "text": "Delegate a person sent or authorized to represent others, in particular an elected representative sent to a conference."
+      },
+      {
+        "self_ref": "#/texts/53",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 402.30002,
+              "t": 655.9716796875,
+              "r": 569.4123219200001,
+              "b": 635.4675628199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              62
+            ]
+          }
+        ],
+        "orig": "Intrusive  a  person  who  is  unwantedly present or involved.",
+        "text": "Intrusive  a  person  who  is  unwantedly present or involved."
+      },
+      {
+        "self_ref": "#/texts/54",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 402.30002,
+              "t": 631.1274396875,
+              "r": 568.89083942,
+              "b": 610.6233328199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              46
+            ]
+          }
+        ],
+        "orig": "Mentor  an  experienced  and  trusted adviser.",
+        "text": "Mentor  an  experienced  and  trusted adviser."
+      },
+      {
+        "self_ref": "#/texts/55",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 402.30002,
+              "t": 596.6220696875,
+              "r": 554.58810692,
+              "b": 588.5398328199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              37
+            ]
+          }
+        ],
+        "orig": "Sol.75.(a) Murder - a group of crows.",
+        "text": "Sol.75.(a) Murder - a group of crows."
+      },
+      {
+        "self_ref": "#/texts/56",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 402.30002,
+              "t": 584.2001996875,
+              "r": 497.41086017000003,
+              "b": 576.1179628199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              25
+            ]
+          }
+        ],
+        "orig": "Pride - a group of lions.",
+        "text": "Pride - a group of lions."
+      },
+      {
+        "self_ref": "#/texts/57",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 402.30002,
+              "t": 571.7778296875,
+              "r": 569.50900442,
+              "b": 551.2737228199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              68
+            ]
+          }
+        ],
+        "orig": "Swarm - a large group of insects or small creatures moving together.",
+        "text": "Swarm - a large group of insects or small creatures moving together."
+      },
+      {
+        "self_ref": "#/texts/58",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 402.30002,
+              "t": 546.9335896875,
+              "r": 569.49875192,
+              "b": 526.4294828199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              68
+            ]
+          }
+        ],
+        "orig": "Cluster -  a  close  group  of  things  or people gathered together.",
+        "text": "Cluster -  a  close  group  of  things  or people gathered together."
+      },
+      {
+        "self_ref": "#/texts/59",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 402.30002,
+              "t": 512.4282196875,
+              "r": 568.97140442,
+              "b": 491.92411281998534,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              56
+            ]
+          }
+        ],
+        "orig": "Sol.76.(a) Pedestrian -  a  person  who travels on foot.",
+        "text": "Sol.76.(a) Pedestrian -  a  person  who travels on foot."
+      },
+      {
+        "self_ref": "#/texts/60",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 402.30002,
+              "t": 487.5839796875,
+              "r": 569.2248219200001,
+              "b": 467.0798728199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              81
+            ]
+          }
+        ],
+        "orig": "Voyager -  a  person  who  goes on a long journey, especially by sea or in space.",
+        "text": "Voyager -  a  person  who  goes on a long journey, especially by sea or in space."
+      },
+      {
+        "self_ref": "#/texts/61",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 402.30002,
+              "t": 462.7397496875,
+              "r": 569.01974942,
+              "b": 442.2356328199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              81
+            ]
+          }
+        ],
+        "orig": "Walker - a general term for someone who walks; not necessarily formal or precise.",
+        "text": "Walker - a general term for someone who walks; not necessarily formal or precise."
+      },
+      {
+        "self_ref": "#/texts/62",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 402.30002,
+              "t": 437.8959996875,
+              "r": 569.33468942,
+              "b": 404.96952281998534,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              94
+            ]
+          }
+        ],
+        "orig": "Hiker -a person who walks long distances,  usually  in  nature  or  on  trails for recreation.",
+        "text": "Hiker -a person who walks long distances,  usually  in  nature  or  on  trails for recreation."
+      },
+      {
+        "self_ref": "#/texts/63",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 402.30002,
+              "t": 390.9682596875,
+              "r": 568.94650442,
+              "b": 358.0417828199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              92
+            ]
+          }
+        ],
+        "orig": "Sol.77.(b) Recluse a person who lives a solitary  life  and  tends  to  avoid  other people.",
+        "text": "Sol.77.(b) Recluse a person who lives a solitary  life  and  tends  to  avoid  other people."
+      },
+      {
+        "self_ref": "#/texts/64",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 402.30002,
+              "t": 353.7021496875,
+              "r": 569.18673692,
+              "b": 320.7761628199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              121
+            ]
+          }
+        ],
+        "orig": "Hedonist  a  person  who  believes  that the pursuit of pleasure is the  most important thing in life; a pleasure-seeker.",
+        "text": "Hedonist  a  person  who  believes  that the pursuit of pleasure is the  most important thing in life; a pleasure-seeker."
+      },
+      {
+        "self_ref": "#/texts/65",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 402.30002,
+              "t": 316.4365196875,
+              "r": 569.32004192,
+              "b": 283.5100528199854,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              97
+            ]
+          }
+        ],
+        "orig": "Stoic a person who can endure pain or hardship  without  showing  their  feelings or complaining.",
+        "text": "Stoic a person who can endure pain or hardship  without  showing  their  feelings or complaining."
+      },
+      {
+        "self_ref": "#/texts/66",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 402.30002,
+              "t": 279.16991968750006,
+              "r": 571.22726384,
+              "b": 246.2439328199854,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              102
+            ]
+          }
+        ],
+        "orig": "Epicurean a person devoted to sensual enjoyment,  especially  that  derived  from fine food and drink.",
+        "text": "Epicurean a person devoted to sensual enjoyment,  especially  that  derived  from fine food and drink."
+      },
+      {
+        "self_ref": "#/texts/67",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 402.30002,
+              "t": 232.24267968749996,
+              "r": 569.42697692,
+              "b": 211.7380728199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              64
+            ]
+          }
+        ],
+        "orig": "Sol.78.(a) Amnesiac a drug that causes temporary loss of memory.",
+        "text": "Sol.78.(a) Amnesiac a drug that causes temporary loss of memory."
+      },
+      {
+        "self_ref": "#/texts/68",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 402.30002,
+              "t": 207.39843968749994,
+              "r": 569.10177692,
+              "b": 174.47245281998528,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              89
+            ]
+          }
+        ],
+        "orig": "Narcotic  a  drug  that  relieves  pain and induces drowsiness, stupor, or insensibility.",
+        "text": "Narcotic  a  drug  that  relieves  pain and induces drowsiness, stupor, or insensibility."
+      },
+      {
+        "self_ref": "#/texts/69",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 402.30002,
+              "t": 170.13280968749996,
+              "r": 551.5734594200001,
+              "b": 162.0505728199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              35
+            ]
+          }
+        ],
+        "orig": "Hypnotic a drug that induces sleep.",
+        "text": "Hypnotic a drug that induces sleep."
+      },
+      {
+        "self_ref": "#/texts/70",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 402.30002,
+              "t": 157.71044968750005,
+              "r": 569.47823942,
+              "b": 137.20633281998528,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              56
+            ]
+          }
+        ],
+        "orig": "Purgative  a substance that makes you empty your bowels.",
+        "text": "Purgative  a substance that makes you empty your bowels."
+      },
+      {
+        "self_ref": "#/texts/71",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 402.30002,
+              "t": 123.20507968749996,
+              "r": 568.92599942,
+              "b": 102.70048281998538,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              56
+            ]
+          }
+        ],
+        "orig": "Sol.79.(b) Epigraphy -the study of ancient inscriptions.",
+        "text": "Sol.79.(b) Epigraphy -the study of ancient inscriptions."
+      },
+      {
+        "self_ref": "#/texts/72",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 402.30002,
+              "t": 98.36083968749995,
+              "r": 569.1545094200001,
+              "b": 77.85673281998538,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              69
+            ]
+          }
+        ],
+        "orig": "Numismatics - the study or collection of coins, currency, and medals.",
+        "text": "Numismatics - the study or collection of coins, currency, and medals."
+      },
+      {
+        "self_ref": "#/texts/73",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 402.30002,
+              "t": 73.51659968750005,
+              "r": 569.30099942,
+              "b": 53.01249281998537,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              57
+            ]
+          }
+        ],
+        "orig": "Cartography -  the  study  and  practice  of making maps.",
+        "text": "Cartography -  the  study  and  practice  of making maps."
+      },
+      {
+        "self_ref": "#/texts/74",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 402.30002,
+              "t": 48.672359687500034,
+              "r": 568.96261442,
+              "b": 28.168252819985355,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              77
+            ]
+          }
+        ],
+        "orig": "Archaeology - the study of human history and prehistory through excavation of",
+        "text": "Archaeology - the study of human history and prehistory through excavation of"
+      },
+      {
+        "self_ref": "#/texts/75",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "furniture",
+        "label": "page_footer",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 99.3266505,
+              "t": 21.98847795947256,
+              "r": 495.95088382500006,
+              "b": 13.76018189577485,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              109
+            ]
+          }
+        ],
+        "orig": "www.ssccglpinnacle.com                                                 Download Pinnacle Exam Preparation App",
+        "text": "www.ssccglpinnacle.com                                                 Download Pinnacle Exam Preparation App"
+      }
+    ],
+    "pictures": [],
+    "tables": [],
+    "key_value_items": [],
+    "form_items": [],
+    "pages": {
+      "1": {
+        "size": {
+          "width": 596.0,
+          "height": 842.0
+        },
+        "page_no": 1
+      }
+    }
+  }
+}

@@ -1,0 +1,6101 @@
+{
+  "document_id": "english",
+  "source": "english.pdf",
+  "pdf_page": 200,
+  "page_width": 596.0,
+  "page_height": 842.0,
+  "extracted_at": "2026-09-09T10:24:37.565589+00:00",
+  "extraction_version": 4,
+  "ocr_enabled": true,
+  "extraction_detection": {
+    "requested_profile": "auto",
+    "effective_profile": "hybrid",
+    "embedded_text_characters": 4394,
+    "auto_text_threshold": 80
+  },
+  "docling_result": {
+    "status": "success",
+    "errors": []
+  },
+  "content_summary": {
+    "text_items": 70,
+    "text_characters": 5330,
+    "table_items": 0,
+    "picture_items": 2,
+    "group_items": 3,
+    "warnings": []
+  },
+  "reading_order": {
+    "source": "docling_iterate_items",
+    "items": [
+      {
+        "reading_order_index": 0,
+        "element_ref": "#/texts/2",
+        "label": "text",
+        "level": 1,
+        "text_preview": "the scientist, revealing new insights into the nature of dark matter."
+      },
+      {
+        "reading_order_index": 1,
+        "element_ref": "#/texts/3",
+        "label": "list_item",
+        "level": 2,
+        "text_preview": "Q.239. Are  the  students  discussing  the  upcoming  exam in the library?"
+      },
+      {
+        "reading_order_index": 2,
+        "element_ref": "#/texts/4",
+        "label": "list_item",
+        "level": 2,
+        "text_preview": "(a) Is the upcoming exam being discussed by the students in the library?"
+      },
+      {
+        "reading_order_index": 3,
+        "element_ref": "#/texts/5",
+        "label": "list_item",
+        "level": 2,
+        "text_preview": "(b) Has the upcoming exam been discussed by the students in the library?"
+      },
+      {
+        "reading_order_index": 4,
+        "element_ref": "#/texts/6",
+        "label": "list_item",
+        "level": 2,
+        "text_preview": "(c) Was the upcoming exam being discussed by the students in the library?"
+      },
+      {
+        "reading_order_index": 5,
+        "element_ref": "#/texts/7",
+        "label": "list_item",
+        "level": 2,
+        "text_preview": "(d) What upcoming exam is being discussed by the students in the library?"
+      },
+      {
+        "reading_order_index": 6,
+        "element_ref": "#/texts/8",
+        "label": "list_item",
+        "level": 2,
+        "text_preview": "Q.240. Was the food finished by Kavya?"
+      },
+      {
+        "reading_order_index": 7,
+        "element_ref": "#/texts/9",
+        "label": "text",
+        "level": 1,
+        "text_preview": "(a) Does Kavya finish the food? (b) Has Kavya finished the food?"
+      },
+      {
+        "reading_order_index": 8,
+        "element_ref": "#/texts/10",
+        "label": "list_item",
+        "level": 2,
+        "text_preview": "(c) Did Kavya finish the food?    (d) Had Kavya finished the food?"
+      },
+      {
+        "reading_order_index": 9,
+        "element_ref": "#/texts/11",
+        "label": "list_item",
+        "level": 2,
+        "text_preview": "Q.241. The  courier  gave  my  parcel  to  my  neighbour  in  my absence."
+      },
+      {
+        "reading_order_index": 10,
+        "element_ref": "#/texts/12",
+        "label": "list_item",
+        "level": 2,
+        "text_preview": "(a) My parcel needs to be given to my neighbour by the courier in my absence."
+      },
+      {
+        "reading_order_index": 11,
+        "element_ref": "#/texts/13",
+        "label": "list_item",
+        "level": 2,
+        "text_preview": "(b) My neighbour was given to my parcel by the courier in my absence."
+      },
+      {
+        "reading_order_index": 12,
+        "element_ref": "#/texts/14",
+        "label": "list_item",
+        "level": 2,
+        "text_preview": "(c) My parcel had been given to my neighbour by the courier in my absence."
+      },
+      {
+        "reading_order_index": 13,
+        "element_ref": "#/texts/15",
+        "label": "list_item",
+        "level": 2,
+        "text_preview": "(d) My parcel was given to my neighbour by the courier in my absence."
+      },
+      {
+        "reading_order_index": 14,
+        "element_ref": "#/texts/16",
+        "label": "list_item",
+        "level": 2,
+        "text_preview": "Q.242. The director organised a meeting to discuss the upcoming projects."
+      },
+      {
+        "reading_order_index": 15,
+        "element_ref": "#/texts/17",
+        "label": "list_item",
+        "level": 2,
+        "text_preview": "(a) The upcoming projects were organised by the director to discuss the meeting."
+      },
+      {
+        "reading_order_index": 16,
+        "element_ref": "#/texts/18",
+        "label": "list_item",
+        "level": 2,
+        "text_preview": "(b) A meeting has been organised by the director to discuss the upcoming projects."
+      },
+      {
+        "reading_order_index": 17,
+        "element_ref": "#/texts/19",
+        "label": "list_item",
+        "level": 2,
+        "text_preview": "(c) A meeting was organised by the director to discuss the upcoming projects."
+      },
+      {
+        "reading_order_index": 18,
+        "element_ref": "#/texts/20",
+        "label": "list_item",
+        "level": 2,
+        "text_preview": "(d) A meeting is organised by the director to discuss the upcoming projects."
+      },
+      {
+        "reading_order_index": 19,
+        "element_ref": "#/texts/21",
+        "label": "list_item",
+        "level": 2,
+        "text_preview": "Q.243. The mechanic did not fix the car yesterday."
+      },
+      {
+        "reading_order_index": 20,
+        "element_ref": "#/texts/22",
+        "label": "list_item",
+        "level": 2,
+        "text_preview": "(a) The car was not fixed by the mechanic yesterday."
+      },
+      {
+        "reading_order_index": 21,
+        "element_ref": "#/texts/23",
+        "label": "list_item",
+        "level": 2,
+        "text_preview": "(b) The car had not been fixed by the mechanic yesterday."
+      },
+      {
+        "reading_order_index": 22,
+        "element_ref": "#/texts/24",
+        "label": "list_item",
+        "level": 2,
+        "text_preview": "(c) The mechanic was not fixed by the car yesterday."
+      },
+      {
+        "reading_order_index": 23,
+        "element_ref": "#/texts/25",
+        "label": "list_item",
+        "level": 2,
+        "text_preview": "(d) The car did not fix by the mechanic yesterday."
+      },
+      {
+        "reading_order_index": 24,
+        "element_ref": "#/texts/26",
+        "label": "list_item",
+        "level": 2,
+        "text_preview": "Q.244. A  remarkable  discovery  in  Paestum,  an  ancient  Greek city, has been made by archaeologists."
+      },
+      {
+        "reading_order_index": 25,
+        "element_ref": "#/texts/27",
+        "label": "list_item",
+        "level": 2,
+        "text_preview": "(a) Archaeologists are making a remarkable discovery in Paestum, an ancient Greek city."
+      },
+      {
+        "reading_order_index": 26,
+        "element_ref": "#/texts/28",
+        "label": "list_item",
+        "level": 2,
+        "text_preview": "(b) Archaeologists have made a remarkable discovery in Paestum, an ancient Greek city."
+      },
+      {
+        "reading_order_index": 27,
+        "element_ref": "#/texts/29",
+        "label": "list_item",
+        "level": 2,
+        "text_preview": "(c) Archaeologists make a remarkable discovery in Paestum, an ancient Greek city."
+      },
+      {
+        "reading_order_index": 28,
+        "element_ref": "#/texts/30",
+        "label": "list_item",
+        "level": 2,
+        "text_preview": "(d) Archaeologists made a remarkable discovery in Paestum, an ancient Greek city."
+      },
+      {
+        "reading_order_index": 29,
+        "element_ref": "#/texts/31",
+        "label": "list_item",
+        "level": 2,
+        "text_preview": "Q.245. Open the window to let in some fresh air."
+      },
+      {
+        "reading_order_index": 30,
+        "element_ref": "#/texts/32",
+        "label": "list_item",
+        "level": 2,
+        "text_preview": "(a) You can open the window to let in some fresh air."
+      },
+      {
+        "reading_order_index": 31,
+        "element_ref": "#/texts/33",
+        "label": "list_item",
+        "level": 2,
+        "text_preview": "(b) The window is to be open to let in some fresh air."
+      },
+      {
+        "reading_order_index": 32,
+        "element_ref": "#/texts/34",
+        "label": "list_item",
+        "level": 2,
+        "text_preview": "(c) Let the window be opened to let in some fresh air."
+      },
+      {
+        "reading_order_index": 33,
+        "element_ref": "#/texts/35",
+        "label": "list_item",
+        "level": 2,
+        "text_preview": "(d) Let the window open to let in some fresh air"
+      },
+      {
+        "reading_order_index": 34,
+        "element_ref": "#/texts/36",
+        "label": "list_item",
+        "level": 2,
+        "text_preview": "Q.246. Let  a  statement  addressing  the  recent  controversy  be issued by the company."
+      },
+      {
+        "reading_order_index": 35,
+        "element_ref": "#/texts/37",
+        "label": "list_item",
+        "level": 2,
+        "text_preview": "(a) The company is issuing a statement addressing the recent controversy."
+      },
+      {
+        "reading_order_index": 36,
+        "element_ref": "#/texts/38",
+        "label": "list_item",
+        "level": 2,
+        "text_preview": "(b) Let the company issue a statement addressing the recent controversy."
+      },
+      {
+        "reading_order_index": 37,
+        "element_ref": "#/texts/39",
+        "label": "list_item",
+        "level": 2,
+        "text_preview": "(c) The company can issue a statement addressing the recent controversy."
+      },
+      {
+        "reading_order_index": 38,
+        "element_ref": "#/texts/40",
+        "label": "list_item",
+        "level": 2,
+        "text_preview": "(d) The company should issue a statement addressing the recent controversy."
+      },
+      {
+        "reading_order_index": 39,
+        "element_ref": "#/texts/41",
+        "label": "list_item",
+        "level": 2,
+        "text_preview": "Q.247. The team completed the project ahead of schedule."
+      },
+      {
+        "reading_order_index": 40,
+        "element_ref": "#/texts/42",
+        "label": "list_item",
+        "level": 2,
+        "text_preview": "(a) The project had completed ahead of schedule by the team."
+      },
+      {
+        "reading_order_index": 41,
+        "element_ref": "#/texts/43",
+        "label": "list_item",
+        "level": 2,
+        "text_preview": "(b) The project has been completed ahead of schedule by the team."
+      },
+      {
+        "reading_order_index": 42,
+        "element_ref": "#/texts/44",
+        "label": "list_item",
+        "level": 2,
+        "text_preview": "(c) The schedule was completed ahead of project by the team."
+      },
+      {
+        "reading_order_index": 43,
+        "element_ref": "#/texts/45",
+        "label": "list_item",
+        "level": 2,
+        "text_preview": "(d) The project was completed ahead of schedule by the team."
+      },
+      {
+        "reading_order_index": 44,
+        "element_ref": "#/texts/46",
+        "label": "list_item",
+        "level": 2,
+        "text_preview": "Q.248. The  author  wrote  a  compelling  novel, weaving together multiple storylines that captivated readers until the last page."
+      },
+      {
+        "reading_order_index": 45,
+        "element_ref": "#/texts/47",
+        "label": "list_item",
+        "level": 2,
+        "text_preview": "(a) A compelling novel has been written by the author, weaving together multiple storylines that captivated readers until the last page."
+      },
+      {
+        "reading_order_index": 46,
+        "element_ref": "#/texts/48",
+        "label": "list_item",
+        "level": 2,
+        "text_preview": "(b) A compelling novel was written by the author, weaving together multiple storylines that captivated readers until the last page."
+      },
+      {
+        "reading_order_index": 47,
+        "element_ref": "#/texts/49",
+        "label": "list_item",
+        "level": 2,
+        "text_preview": "(c) A compelling novel was written by the reader, weaving together multiple storylines that captivated the author until the last page."
+      },
+      {
+        "reading_order_index": 48,
+        "element_ref": "#/texts/50",
+        "label": "list_item",
+        "level": 2,
+        "text_preview": "(d) A compelling novel was writing the author, weaving together multiple storylines that captivated readers until the last page."
+      },
+      {
+        "reading_order_index": 49,
+        "element_ref": "#/texts/51",
+        "label": "list_item",
+        "level": 2,
+        "text_preview": "Q.249. My grandmother called me to the worship place."
+      },
+      {
+        "reading_order_index": 50,
+        "element_ref": "#/texts/52",
+        "label": "list_item",
+        "level": 2,
+        "text_preview": "(a) The grandmother was called by me to the worship place."
+      },
+      {
+        "reading_order_index": 51,
+        "element_ref": "#/texts/53",
+        "label": "list_item",
+        "level": 2,
+        "text_preview": "(b) The worship place was called by me to the grandmother."
+      },
+      {
+        "reading_order_index": 52,
+        "element_ref": "#/texts/54",
+        "label": "list_item",
+        "level": 2,
+        "text_preview": "(c) I was called by my grandmother to the worship place."
+      },
+      {
+        "reading_order_index": 53,
+        "element_ref": "#/texts/55",
+        "label": "list_item",
+        "level": 2,
+        "text_preview": "(d) I called my grandmother to the worship place."
+      },
+      {
+        "reading_order_index": 54,
+        "element_ref": "#/texts/56",
+        "label": "list_item",
+        "level": 2,
+        "text_preview": "Q.250. All  the  arrangements  will  have  been  completed  by  the hotel staff by the time the PM reaches here."
+      },
+      {
+        "reading_order_index": 55,
+        "element_ref": "#/texts/57",
+        "label": "list_item",
+        "level": 2,
+        "text_preview": "(a) The hotel staff will have completed all the arrangements by the time the PM reaches here."
+      },
+      {
+        "reading_order_index": 56,
+        "element_ref": "#/texts/58",
+        "label": "list_item",
+        "level": 2,
+        "text_preview": "(b) The hotel staff have completed all the arrangements by the time the PM reaches here."
+      },
+      {
+        "reading_order_index": 57,
+        "element_ref": "#/texts/59",
+        "label": "list_item",
+        "level": 2,
+        "text_preview": "(c) The hotel staff will be completing all the arrangements by the time the PM reaches here."
+      },
+      {
+        "reading_order_index": 58,
+        "element_ref": "#/texts/60",
+        "label": "list_item",
+        "level": 2,
+        "text_preview": "(d) The hotel staff will complete all the arrangements by the time the PM reaches here."
+      },
+      {
+        "reading_order_index": 59,
+        "element_ref": "#/pictures/0",
+        "label": "picture",
+        "level": 1,
+        "text_preview": ""
+      },
+      {
+        "reading_order_index": 60,
+        "element_ref": "#/pictures/1",
+        "label": "picture",
+        "level": 1,
+        "text_preview": ""
+      },
+      {
+        "reading_order_index": 61,
+        "element_ref": "#/texts/61",
+        "label": "section_header",
+        "level": 1,
+        "text_preview": "Solutions :-"
+      },
+      {
+        "reading_order_index": 62,
+        "element_ref": "#/texts/62",
+        "label": "list_item",
+        "level": 2,
+        "text_preview": "Sol.238.(d) A series of ground-breaking experiments were conducted by the scientist, revealing new insights into the nature of dark matter. (Correct)"
+      },
+      {
+        "reading_order_index": 63,
+        "element_ref": "#/texts/63",
+        "label": "list_item",
+        "level": 2,
+        "text_preview": "(a) A series of ground-breaking experiments are conducted by the  scientist,  revealing  new  insights  into  the  nature   of  dark matter. (Incorrect Tense)"
+      },
+      {
+        "reading_order_index": 64,
+        "element_ref": "#/texts/64",
+        "label": "list_item",
+        "level": 2,
+        "text_preview": "(b) A series of ground-breaking insights were conducted by the scientist, revealing new experiments into the nature of dark matter. (Incorrect Sentence Structur"
+      },
+      {
+        "reading_order_index": 65,
+        "element_ref": "#/texts/65",
+        "label": "list_item",
+        "level": 2,
+        "text_preview": "(c) A series of ground-breaking experiments have been conducted by the scientist, revealing new insights into the nature of dark matter. (Incorrect Tense)"
+      },
+      {
+        "reading_order_index": 66,
+        "element_ref": "#/texts/66",
+        "label": "list_item",
+        "level": 2,
+        "text_preview": "Sol.239.(a) Is  the  upcoming  exam  being  discussed  by  the students in the library? (Correct)"
+      },
+      {
+        "reading_order_index": 67,
+        "element_ref": "#/texts/67",
+        "label": "list_item",
+        "level": 2,
+        "text_preview": "(b) Has the upcoming exam been discussed by the students in"
+      }
+    ]
+  },
+  "layout_analysis": {
+    "method": "docling_bbox_left_edge_clustering_v1",
+    "column_count": 2,
+    "confidence": 1.0,
+    "page_width": 596.0,
+    "page_height": 842.0,
+    "columns": [
+      {
+        "column_index": 1,
+        "left": 0.0,
+        "right": 168.745,
+        "detected_start": 28.94,
+        "supporting_elements": 37
+      },
+      {
+        "column_index": 2,
+        "left": 168.745,
+        "right": 596.0,
+        "detected_start": 308.55,
+        "supporting_elements": 31
+      }
+    ],
+    "elements": [
+      {
+        "element_ref": "#/texts/0",
+        "element_type": "text",
+        "label": "page_header",
+        "column_index": 1,
+        "column_indices": [
+          1
+        ],
+        "spans_columns": false,
+        "reading_order_index": null,
+        "bbox": {
+          "l": 28.800003,
+          "t": 830.7925780594726,
+          "r": 95.7084616875,
+          "b": 822.5642819957749,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/1",
+        "element_type": "text",
+        "label": "page_header",
+        "column_index": 2,
+        "column_indices": [
+          2
+        ],
+        "spans_columns": false,
+        "reading_order_index": null,
+        "bbox": {
+          "l": 291.757038,
+          "t": 830.7925780594726,
+          "r": 568.3052679374999,
+          "b": 822.5642819957749,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/2",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 0,
+        "bbox": {
+          "l": 28.800003,
+          "t": 814.6982416875001,
+          "r": 276.30000492,
+          "b": 794.1941298199854,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/3",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 1,
+        "bbox": {
+          "l": 28.800003,
+          "t": 778.8115236875,
+          "r": 288.86250492,
+          "b": 758.3074118199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/4",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 2,
+        "bbox": {
+          "l": 28.800003,
+          "t": 753.9677736875,
+          "r": 290.17353492,
+          "b": 733.4636618199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/5",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 3,
+        "bbox": {
+          "l": 28.800003,
+          "t": 729.1220706875,
+          "r": 281.82392741999996,
+          "b": 708.6179588199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/6",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 4,
+        "bbox": {
+          "l": 28.800003,
+          "t": 704.2783206875,
+          "r": 285.37031742,
+          "b": 683.7742088199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/7",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 5,
+        "bbox": {
+          "l": 28.800003,
+          "t": 679.4345706875,
+          "r": 283.29609492,
+          "b": 658.9304628199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/8",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 1,
+        "column_indices": [
+          1
+        ],
+        "spans_columns": false,
+        "reading_order_index": 6,
+        "bbox": {
+          "l": 28.800003,
+          "t": 643.5497996875,
+          "r": 188.90596242,
+          "b": 635.4675628199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/9",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 7,
+        "bbox": {
+          "l": 28.800003,
+          "t": 631.1279296875,
+          "r": 290.83711242,
+          "b": 623.0456928199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/10",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 8,
+        "bbox": {
+          "l": 28.800003,
+          "t": 618.7060496875,
+          "r": 286.05146742,
+          "b": 610.6238128199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/11",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 9,
+        "bbox": {
+          "l": 28.800003,
+          "t": 596.6201196874999,
+          "r": 288.52412742,
+          "b": 576.1160028199854,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/12",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 10,
+        "bbox": {
+          "l": 28.800003,
+          "t": 571.7763696874999,
+          "r": 290.67890742000003,
+          "b": 551.2722528199854,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/13",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 11,
+        "bbox": {
+          "l": 28.800003,
+          "t": 546.9326196874999,
+          "r": 275.00800991999995,
+          "b": 526.4285028199854,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/14",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 12,
+        "bbox": {
+          "l": 28.800003,
+          "t": 522.0888696874999,
+          "r": 280.70771742,
+          "b": 501.58475281998534,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/15",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 13,
+        "bbox": {
+          "l": 28.800003,
+          "t": 497.2451196875,
+          "r": 275.02998492,
+          "b": 476.74100281998534,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/16",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 14,
+        "bbox": {
+          "l": 28.800003,
+          "t": 462.7412096875,
+          "r": 288.63984492000003,
+          "b": 442.23710281998535,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/17",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 15,
+        "bbox": {
+          "l": 28.800003,
+          "t": 437.8974596875,
+          "r": 271.55830241999996,
+          "b": 417.39335281998535,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/18",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 16,
+        "bbox": {
+          "l": 28.800003,
+          "t": 413.0537096875,
+          "r": 285.54609492000003,
+          "b": 392.54960281998535,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/19",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 17,
+        "bbox": {
+          "l": 28.800003,
+          "t": 388.2099596875,
+          "r": 265.20820992,
+          "b": 367.70585281998535,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/20",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 18,
+        "bbox": {
+          "l": 28.800003,
+          "t": 363.3662096875,
+          "r": 256.10273742,
+          "b": 342.85819281998533,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/21",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 19,
+        "bbox": {
+          "l": 28.800003,
+          "t": 328.85839968749997,
+          "r": 232.77656742,
+          "b": 320.7761628199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/22",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 20,
+        "bbox": {
+          "l": 28.800003,
+          "t": 316.4365196875,
+          "r": 239.95723242000003,
+          "b": 308.3542828199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/23",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 21,
+        "bbox": {
+          "l": 28.800003,
+          "t": 304.01464968749997,
+          "r": 262.77363491999995,
+          "b": 295.9324128199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/24",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 22,
+        "bbox": {
+          "l": 28.800003,
+          "t": 291.5908196875,
+          "r": 242.00508492,
+          "b": 283.50858281998535,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/25",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 23,
+        "bbox": {
+          "l": 28.800003,
+          "t": 279.1689496875,
+          "r": 228.64570992,
+          "b": 271.08671281998534,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/26",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 24,
+        "bbox": {
+          "l": 28.800003,
+          "t": 257.08886968750005,
+          "r": 288.57246492,
+          "b": 236.58475281998528,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/27",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 25,
+        "bbox": {
+          "l": 28.800003,
+          "t": 232.24120968750003,
+          "r": 257.55292992,
+          "b": 211.73710281998535,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/28",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 26,
+        "bbox": {
+          "l": 28.800003,
+          "t": 207.39745968750003,
+          "r": 257.01240492,
+          "b": 186.89335281998535,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/29",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 27,
+        "bbox": {
+          "l": 28.800003,
+          "t": 182.55370968750003,
+          "r": 286.81611491999996,
+          "b": 162.04960281998535,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/30",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 28,
+        "bbox": {
+          "l": 28.800003,
+          "t": 157.70995968750003,
+          "r": 287.78290992,
+          "b": 137.20585281998535,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/31",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 29,
+        "bbox": {
+          "l": 28.800003,
+          "t": 123.20409968750005,
+          "r": 224.76533741999998,
+          "b": 115.12186281998538,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/32",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 30,
+        "bbox": {
+          "l": 28.800003,
+          "t": 110.78222968750003,
+          "r": 239.91767742,
+          "b": 102.69999281998537,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/33",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 31,
+        "bbox": {
+          "l": 28.800003,
+          "t": 98.36034968750005,
+          "r": 239.59248492,
+          "b": 90.27811281998538,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/34",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 32,
+        "bbox": {
+          "l": 28.800003,
+          "t": 85.93847968750003,
+          "r": 246.64570992,
+          "b": 77.85624281998537,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/35",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 33,
+        "bbox": {
+          "l": 28.800003,
+          "t": 73.51659968750005,
+          "r": 218.80634742,
+          "b": 65.43436281998538,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/36",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 34,
+        "bbox": {
+          "l": 28.800003,
+          "t": 51.43261968750005,
+          "r": 288.54316992,
+          "b": 30.928502819985283,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/37",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 2,
+        "column_indices": [
+          2
+        ],
+        "spans_columns": false,
+        "reading_order_index": 35,
+        "bbox": {
+          "l": 308.54999,
+          "t": 814.6982416875001,
+          "r": 559.49090942,
+          "b": 794.1941298199854,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/38",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 2,
+        "column_indices": [
+          2
+        ],
+        "spans_columns": false,
+        "reading_order_index": 36,
+        "bbox": {
+          "l": 308.54999,
+          "t": 789.8544916875001,
+          "r": 555.5138544199999,
+          "b": 769.3503798199854,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/39",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 2,
+        "column_indices": [
+          2
+        ],
+        "spans_columns": false,
+        "reading_order_index": 37,
+        "bbox": {
+          "l": 308.54999,
+          "t": 765.0068356875,
+          "r": 559.60955942,
+          "b": 744.5027238199854,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/40",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 2,
+        "column_indices": [
+          2
+        ],
+        "spans_columns": false,
+        "reading_order_index": 38,
+        "bbox": {
+          "l": 308.54999,
+          "t": 740.1630856875,
+          "r": 544.98895442,
+          "b": 719.6589738199854,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/41",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 2,
+        "column_indices": [
+          2
+        ],
+        "spans_columns": false,
+        "reading_order_index": 39,
+        "bbox": {
+          "l": 308.54999,
+          "t": 707.0419916875001,
+          "r": 547.66082942,
+          "b": 698.9597548199854,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/42",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 2,
+        "column_indices": [
+          2
+        ],
+        "spans_columns": false,
+        "reading_order_index": 40,
+        "bbox": {
+          "l": 308.54999,
+          "t": 694.6201166875001,
+          "r": 562.73846942,
+          "b": 686.5378798199854,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/43",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 2,
+        "column_indices": [
+          2
+        ],
+        "spans_columns": false,
+        "reading_order_index": 41,
+        "bbox": {
+          "l": 308.54999,
+          "t": 682.1943356875,
+          "r": 556.92449942,
+          "b": 661.6902228199854,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/44",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 2,
+        "column_indices": [
+          2
+        ],
+        "spans_columns": false,
+        "reading_order_index": 42,
+        "bbox": {
+          "l": 308.54999,
+          "t": 657.3505896875,
+          "r": 561.69695942,
+          "b": 649.2683528199854,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/45",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 2,
+        "column_indices": [
+          2
+        ],
+        "spans_columns": false,
+        "reading_order_index": 43,
+        "bbox": {
+          "l": 308.54999,
+          "t": 644.9287096875,
+          "r": 559.82928692,
+          "b": 636.8464728199854,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/46",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 2,
+        "column_indices": [
+          2
+        ],
+        "spans_columns": false,
+        "reading_order_index": 44,
+        "bbox": {
+          "l": 308.54999,
+          "t": 622.8447296875,
+          "r": 568.27264442,
+          "b": 602.3406128199854,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/47",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 2,
+        "column_indices": [
+          2
+        ],
+        "spans_columns": false,
+        "reading_order_index": 45,
+        "bbox": {
+          "l": 308.54999,
+          "t": 598.0009796875,
+          "r": 564.17108192,
+          "b": 565.0749928199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/48",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 2,
+        "column_indices": [
+          2
+        ],
+        "spans_columns": false,
+        "reading_order_index": 46,
+        "bbox": {
+          "l": 308.54999,
+          "t": 560.7353496875,
+          "r": 564.17108192,
+          "b": 527.8093628199854,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/49",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 2,
+        "column_indices": [
+          2
+        ],
+        "spans_columns": false,
+        "reading_order_index": 47,
+        "bbox": {
+          "l": 308.54999,
+          "t": 523.4697296874999,
+          "r": 559.93475942,
+          "b": 490.5437428199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/50",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 2,
+        "column_indices": [
+          2
+        ],
+        "spans_columns": false,
+        "reading_order_index": 48,
+        "bbox": {
+          "l": 308.54999,
+          "t": 486.2040996875,
+          "r": 567.4538019199999,
+          "b": 465.6999928199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/51",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 2,
+        "column_indices": [
+          2
+        ],
+        "spans_columns": false,
+        "reading_order_index": 49,
+        "bbox": {
+          "l": 308.54999,
+          "t": 451.6982396875,
+          "r": 534.47284442,
+          "b": 443.61600281998534,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/52",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 2,
+        "column_indices": [
+          2
+        ],
+        "spans_columns": false,
+        "reading_order_index": 50,
+        "bbox": {
+          "l": 308.54999,
+          "t": 439.2763696875,
+          "r": 551.6774319199999,
+          "b": 431.1941328199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/53",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 2,
+        "column_indices": [
+          2
+        ],
+        "spans_columns": false,
+        "reading_order_index": 51,
+        "bbox": {
+          "l": 308.54999,
+          "t": 426.8544896875,
+          "r": 551.2951044199999,
+          "b": 418.77225281998534,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/54",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 2,
+        "column_indices": [
+          2
+        ],
+        "spans_columns": false,
+        "reading_order_index": 52,
+        "bbox": {
+          "l": 308.54999,
+          "t": 414.4326196875,
+          "r": 536.0944269199999,
+          "b": 406.3503828199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/55",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 2,
+        "column_indices": [
+          2
+        ],
+        "spans_columns": false,
+        "reading_order_index": 53,
+        "bbox": {
+          "l": 308.54999,
+          "t": 402.0107396875,
+          "r": 506.42694692,
+          "b": 393.92850281998534,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/56",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 2,
+        "column_indices": [
+          2
+        ],
+        "spans_columns": false,
+        "reading_order_index": 54,
+        "bbox": {
+          "l": 308.54999,
+          "t": 379.9267596875,
+          "r": 568.44257192,
+          "b": 359.42264281998536,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/57",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 2,
+        "column_indices": [
+          2
+        ],
+        "spans_columns": false,
+        "reading_order_index": 55,
+        "bbox": {
+          "l": 308.54999,
+          "t": 355.0830096875,
+          "r": 561.96503192,
+          "b": 334.57889281998536,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/58",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 2,
+        "column_indices": [
+          2
+        ],
+        "spans_columns": false,
+        "reading_order_index": 56,
+        "bbox": {
+          "l": 308.54999,
+          "t": 330.2392596875,
+          "r": 561.46844942,
+          "b": 309.7351428199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/59",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 2,
+        "column_indices": [
+          2
+        ],
+        "spans_columns": false,
+        "reading_order_index": 57,
+        "bbox": {
+          "l": 308.54999,
+          "t": 305.39550968749995,
+          "r": 555.10955942,
+          "b": 284.8913928199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/60",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 2,
+        "column_indices": [
+          2
+        ],
+        "spans_columns": false,
+        "reading_order_index": 58,
+        "bbox": {
+          "l": 308.54999,
+          "t": 280.55175968749995,
+          "r": 570.9122919199999,
+          "b": 260.04569281998533,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/61",
+        "element_type": "text",
+        "label": "section_header",
+        "column_index": 2,
+        "column_indices": [
+          2
+        ],
+        "spans_columns": false,
+        "reading_order_index": 61,
+        "bbox": {
+          "l": 308.54999,
+          "t": 242.72265588447272,
+          "r": 359.65407743749995,
+          "b": 234.4943598207749,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/62",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 2,
+        "column_indices": [
+          2
+        ],
+        "spans_columns": false,
+        "reading_order_index": 62,
+        "bbox": {
+          "l": 308.54999,
+          "t": 219.0185496875,
+          "r": 568.42938692,
+          "b": 186.09256281998535,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/63",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 2,
+        "column_indices": [
+          2
+        ],
+        "spans_columns": false,
+        "reading_order_index": 63,
+        "bbox": {
+          "l": 308.54999,
+          "t": 181.7529296875,
+          "r": 564.9796794199999,
+          "b": 148.82499281998537,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/64",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 2,
+        "column_indices": [
+          2
+        ],
+        "spans_columns": false,
+        "reading_order_index": 64,
+        "bbox": {
+          "l": 308.54999,
+          "t": 144.48534968750005,
+          "r": 560.61151442,
+          "b": 111.55936281998538,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/65",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 2,
+        "column_indices": [
+          2
+        ],
+        "spans_columns": false,
+        "reading_order_index": 65,
+        "bbox": {
+          "l": 308.54999,
+          "t": 107.21972968750003,
+          "r": 568.42938692,
+          "b": 74.29374281998537,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/66",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 2,
+        "column_indices": [
+          2
+        ],
+        "spans_columns": false,
+        "reading_order_index": 66,
+        "bbox": {
+          "l": 308.54999,
+          "t": 61.67089968749997,
+          "r": 568.43084942,
+          "b": 41.166782819985315,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/67",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 2,
+        "column_indices": [
+          2
+        ],
+        "spans_columns": false,
+        "reading_order_index": 67,
+        "bbox": {
+          "l": 308.54999,
+          "t": 36.82714968749997,
+          "r": 561.5739144199999,
+          "b": 28.744912819985302,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/68",
+        "element_type": "text",
+        "label": "page_footer",
+        "column_index": 2,
+        "column_indices": [
+          2
+        ],
+        "spans_columns": false,
+        "reading_order_index": null,
+        "bbox": {
+          "l": 99.3266505,
+          "t": 21.989447959472614,
+          "r": 495.95088382500006,
+          "b": 13.761151895774901,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/69",
+        "element_type": "text",
+        "label": "page_footer",
+        "column_index": 1,
+        "column_indices": [
+          1
+        ],
+        "spans_columns": false,
+        "reading_order_index": null,
+        "bbox": {
+          "l": 32.0,
+          "t": 20.17999999999995,
+          "r": 101.77000000000001,
+          "b": 10.92999999999995,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/pictures/0",
+        "element_type": "picture",
+        "label": "picture",
+        "column_index": 1,
+        "column_indices": [
+          1
+        ],
+        "spans_columns": false,
+        "reading_order_index": 59,
+        "bbox": {
+          "l": 11.937705039978027,
+          "t": 25.1075439453125,
+          "r": 48.00816345214844,
+          "b": 8.5093994140625,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/pictures/1",
+        "element_type": "picture",
+        "label": "picture",
+        "column_index": 1,
+        "column_indices": [
+          1
+        ],
+        "spans_columns": false,
+        "reading_order_index": 60,
+        "bbox": {
+          "l": 50.85194396972656,
+          "t": 21.57330322265625,
+          "r": 103.0561752319336,
+          "b": 9.372314453125,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      }
+    ],
+    "warnings": []
+  },
+  "structure_chunks": {
+    "enabled": true,
+    "method": "docling_hybrid_chunker",
+    "scope": "page",
+    "items": [
+      {
+        "text": "the scientist, revealing new insights into the nature of dark matter.\n- Q.239. Are  the  students  discussing  the  upcoming  exam in the library?\n- (a) Is the upcoming exam being discussed by the students in the library?\n- (b) Has the upcoming exam been discussed by the students in the library?\n- (c) Was the upcoming exam being discussed by the students in the library?\n- (d) What upcoming exam is being discussed by the students in the library?\n- Q.240. Was the food finished by Kavya?\n(a) Does Kavya finish the food? (b) Has Kavya finished the food?",
+        "meta": {
+          "schema_name": "docling_core.transforms.chunker.DocMeta",
+          "version": "1.0.0",
+          "doc_items": [
+            {
+              "self_ref": "#/texts/2",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 814.6982416875001,
+                    "r": 276.30000492,
+                    "b": 794.1941298199854,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    69
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/3",
+              "parent": {
+                "cref": "#/groups/0"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 778.8115236875,
+                    "r": 288.86250492,
+                    "b": 758.3074118199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    74
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/4",
+              "parent": {
+                "cref": "#/groups/0"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 753.9677736875,
+                    "r": 290.17353492,
+                    "b": 733.4636618199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    72
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/5",
+              "parent": {
+                "cref": "#/groups/0"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 729.1220706875,
+                    "r": 281.82392741999996,
+                    "b": 708.6179588199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    72
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/6",
+              "parent": {
+                "cref": "#/groups/0"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 704.2783206875,
+                    "r": 285.37031742,
+                    "b": 683.7742088199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    73
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/7",
+              "parent": {
+                "cref": "#/groups/0"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 679.4345706875,
+                    "r": 283.29609492,
+                    "b": 658.9304628199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    73
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/8",
+              "parent": {
+                "cref": "#/groups/0"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 643.5497996875,
+                    "r": 188.90596242,
+                    "b": 635.4675628199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    38
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/9",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 631.1279296875,
+                    "r": 290.83711242,
+                    "b": 623.0456928199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    64
+                  ]
+                }
+              ]
+            }
+          ],
+          "headings": null,
+          "captions": null,
+          "origin": {
+            "mimetype": "application/pdf",
+            "binary_hash": 16269877806455133648,
+            "filename": "english_page_0200.pdf",
+            "uri": null
+          }
+        },
+        "chunk_index": 0,
+        "contextualized_text": "the scientist, revealing new insights into the nature of dark matter.\n- Q.239. Are  the  students  discussing  the  upcoming  exam in the library?\n- (a) Is the upcoming exam being discussed by the students in the library?\n- (b) Has the upcoming exam been discussed by the students in the library?\n- (c) Was the upcoming exam being discussed by the students in the library?\n- (d) What upcoming exam is being discussed by the students in the library?\n- Q.240. Was the food finished by Kavya?\n(a) Does Kavya finish the food? (b) Has Kavya finished the food?"
+      },
+      {
+        "text": "- (c) Did Kavya finish the food?    (d) Had Kavya finished the food?\n- Q.241. The  courier  gave  my  parcel  to  my  neighbour  in  my absence.\n- (a) My parcel needs to be given to my neighbour by the courier in my absence.\n- (b) My neighbour was given to my parcel by the courier in my absence.\n- (c) My parcel had been given to my neighbour by the courier in my absence.\n- (d) My parcel was given to my neighbour by the courier in my absence.\n- Q.242. The director organised a meeting to discuss the upcoming projects.\n- (a) The upcoming projects were organised by the director to discuss the meeting.\n- (b) A meeting has been organised by the director to discuss the upcoming projects.\n- (c) A meeting was organised by the director to discuss the upcoming projects.\n- (d) A meeting is organised by the director to discuss the upcoming projects.\n- Q.243. The mechanic did not fix the car yesterday.\n- (a) The car was not fixed by the mechanic yesterday.\n- (b) The car had not been fixed by the mechanic yesterday.",
+        "meta": {
+          "schema_name": "docling_core.transforms.chunker.DocMeta",
+          "version": "1.0.0",
+          "doc_items": [
+            {
+              "self_ref": "#/texts/10",
+              "parent": {
+                "cref": "#/groups/1"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 618.7060496875,
+                    "r": 286.05146742,
+                    "b": 610.6238128199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    66
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/11",
+              "parent": {
+                "cref": "#/groups/1"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 596.6201196874999,
+                    "r": 288.52412742,
+                    "b": 576.1160028199854,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    73
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/12",
+              "parent": {
+                "cref": "#/groups/1"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 571.7763696874999,
+                    "r": 290.67890742000003,
+                    "b": 551.2722528199854,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    77
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/13",
+              "parent": {
+                "cref": "#/groups/1"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 546.9326196874999,
+                    "r": 275.00800991999995,
+                    "b": 526.4285028199854,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    69
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/14",
+              "parent": {
+                "cref": "#/groups/1"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 522.0888696874999,
+                    "r": 280.70771742,
+                    "b": 501.58475281998534,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    74
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/15",
+              "parent": {
+                "cref": "#/groups/1"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 497.2451196875,
+                    "r": 275.02998492,
+                    "b": 476.74100281998534,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    69
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/16",
+              "parent": {
+                "cref": "#/groups/1"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 462.7412096875,
+                    "r": 288.63984492000003,
+                    "b": 442.23710281998535,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    73
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/17",
+              "parent": {
+                "cref": "#/groups/1"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 437.8974596875,
+                    "r": 271.55830241999996,
+                    "b": 417.39335281998535,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    80
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/18",
+              "parent": {
+                "cref": "#/groups/1"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 413.0537096875,
+                    "r": 285.54609492000003,
+                    "b": 392.54960281998535,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    82
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/19",
+              "parent": {
+                "cref": "#/groups/1"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 388.2099596875,
+                    "r": 265.20820992,
+                    "b": 367.70585281998535,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    77
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/20",
+              "parent": {
+                "cref": "#/groups/1"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 363.3662096875,
+                    "r": 256.10273742,
+                    "b": 342.85819281998533,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    76
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/21",
+              "parent": {
+                "cref": "#/groups/1"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 328.85839968749997,
+                    "r": 232.77656742,
+                    "b": 320.7761628199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    50
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/22",
+              "parent": {
+                "cref": "#/groups/1"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 316.4365196875,
+                    "r": 239.95723242000003,
+                    "b": 308.3542828199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    52
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/23",
+              "parent": {
+                "cref": "#/groups/1"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 304.01464968749997,
+                    "r": 262.77363491999995,
+                    "b": 295.9324128199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    57
+                  ]
+                }
+              ]
+            }
+          ],
+          "headings": null,
+          "captions": null,
+          "origin": {
+            "mimetype": "application/pdf",
+            "binary_hash": 16269877806455133648,
+            "filename": "english_page_0200.pdf",
+            "uri": null
+          }
+        },
+        "chunk_index": 1,
+        "contextualized_text": "- (c) Did Kavya finish the food?    (d) Had Kavya finished the food?\n- Q.241. The  courier  gave  my  parcel  to  my  neighbour  in  my absence.\n- (a) My parcel needs to be given to my neighbour by the courier in my absence.\n- (b) My neighbour was given to my parcel by the courier in my absence.\n- (c) My parcel had been given to my neighbour by the courier in my absence.\n- (d) My parcel was given to my neighbour by the courier in my absence.\n- Q.242. The director organised a meeting to discuss the upcoming projects.\n- (a) The upcoming projects were organised by the director to discuss the meeting.\n- (b) A meeting has been organised by the director to discuss the upcoming projects.\n- (c) A meeting was organised by the director to discuss the upcoming projects.\n- (d) A meeting is organised by the director to discuss the upcoming projects.\n- Q.243. The mechanic did not fix the car yesterday.\n- (a) The car was not fixed by the mechanic yesterday.\n- (b) The car had not been fixed by the mechanic yesterday."
+      },
+      {
+        "text": "- (c) The mechanic was not fixed by the car yesterday.\n- (d) The car did not fix by the mechanic yesterday.\n- Q.244. A  remarkable  discovery  in  Paestum,  an  ancient  Greek city, has been made by archaeologists.\n- (a) Archaeologists are making a remarkable discovery in Paestum, an ancient Greek city.\n- (b) Archaeologists have made a remarkable discovery in Paestum, an ancient Greek city.\n- (c) Archaeologists make a remarkable discovery in Paestum, an ancient Greek city.\n- (d) Archaeologists made a remarkable discovery in Paestum, an ancient Greek city.\n- Q.245. Open the window to let in some fresh air.\n- (a) You can open the window to let in some fresh air.\n- (b) The window is to be open to let in some fresh air.\n- (c) Let the window be opened to let in some fresh air.\n- (d) Let the window open to let in some fresh air\n- Q.246. Let  a  statement  addressing  the  recent  controversy  be issued by the company.\n- (a) The company is issuing a statement addressing the recent controversy.\n- (b) Let the company issue a statement addressing the recent controversy.",
+        "meta": {
+          "schema_name": "docling_core.transforms.chunker.DocMeta",
+          "version": "1.0.0",
+          "doc_items": [
+            {
+              "self_ref": "#/texts/24",
+              "parent": {
+                "cref": "#/groups/1"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 291.5908196875,
+                    "r": 242.00508492,
+                    "b": 283.50858281998535,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    52
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/25",
+              "parent": {
+                "cref": "#/groups/1"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 279.1689496875,
+                    "r": 228.64570992,
+                    "b": 271.08671281998534,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    50
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/26",
+              "parent": {
+                "cref": "#/groups/1"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 257.08886968750005,
+                    "r": 288.57246492,
+                    "b": 236.58475281998528,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    104
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/27",
+              "parent": {
+                "cref": "#/groups/1"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 232.24120968750003,
+                    "r": 257.55292992,
+                    "b": 211.73710281998535,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    87
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/28",
+              "parent": {
+                "cref": "#/groups/1"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 207.39745968750003,
+                    "r": 257.01240492,
+                    "b": 186.89335281998535,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    86
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/29",
+              "parent": {
+                "cref": "#/groups/1"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 182.55370968750003,
+                    "r": 286.81611491999996,
+                    "b": 162.04960281998535,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    81
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/30",
+              "parent": {
+                "cref": "#/groups/1"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 157.70995968750003,
+                    "r": 287.78290992,
+                    "b": 137.20585281998535,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    81
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/31",
+              "parent": {
+                "cref": "#/groups/1"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 123.20409968750005,
+                    "r": 224.76533741999998,
+                    "b": 115.12186281998538,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    48
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/32",
+              "parent": {
+                "cref": "#/groups/1"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 110.78222968750003,
+                    "r": 239.91767742,
+                    "b": 102.69999281998537,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    53
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/33",
+              "parent": {
+                "cref": "#/groups/1"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 98.36034968750005,
+                    "r": 239.59248492,
+                    "b": 90.27811281998538,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    54
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/34",
+              "parent": {
+                "cref": "#/groups/1"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 85.93847968750003,
+                    "r": 246.64570992,
+                    "b": 77.85624281998537,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    54
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/35",
+              "parent": {
+                "cref": "#/groups/1"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 73.51659968750005,
+                    "r": 218.80634742,
+                    "b": 65.43436281998538,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    48
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/36",
+              "parent": {
+                "cref": "#/groups/1"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 51.43261968750005,
+                    "r": 288.54316992,
+                    "b": 30.928502819985283,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    89
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/37",
+              "parent": {
+                "cref": "#/groups/1"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 308.54999,
+                    "t": 814.6982416875001,
+                    "r": 559.49090942,
+                    "b": 794.1941298199854,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    73
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/38",
+              "parent": {
+                "cref": "#/groups/1"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 308.54999,
+                    "t": 789.8544916875001,
+                    "r": 555.5138544199999,
+                    "b": 769.3503798199854,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    72
+                  ]
+                }
+              ]
+            }
+          ],
+          "headings": null,
+          "captions": null,
+          "origin": {
+            "mimetype": "application/pdf",
+            "binary_hash": 16269877806455133648,
+            "filename": "english_page_0200.pdf",
+            "uri": null
+          }
+        },
+        "chunk_index": 2,
+        "contextualized_text": "- (c) The mechanic was not fixed by the car yesterday.\n- (d) The car did not fix by the mechanic yesterday.\n- Q.244. A  remarkable  discovery  in  Paestum,  an  ancient  Greek city, has been made by archaeologists.\n- (a) Archaeologists are making a remarkable discovery in Paestum, an ancient Greek city.\n- (b) Archaeologists have made a remarkable discovery in Paestum, an ancient Greek city.\n- (c) Archaeologists make a remarkable discovery in Paestum, an ancient Greek city.\n- (d) Archaeologists made a remarkable discovery in Paestum, an ancient Greek city.\n- Q.245. Open the window to let in some fresh air.\n- (a) You can open the window to let in some fresh air.\n- (b) The window is to be open to let in some fresh air.\n- (c) Let the window be opened to let in some fresh air.\n- (d) Let the window open to let in some fresh air\n- Q.246. Let  a  statement  addressing  the  recent  controversy  be issued by the company.\n- (a) The company is issuing a statement addressing the recent controversy.\n- (b) Let the company issue a statement addressing the recent controversy."
+      },
+      {
+        "text": "- (c) The company can issue a statement addressing the recent controversy.\n- (d) The company should issue a statement addressing the recent controversy.\n- Q.247. The team completed the project ahead of schedule.\n- (a) The project had completed ahead of schedule by the team.\n- (b) The project has been completed ahead of schedule by the team.\n- (c) The schedule was completed ahead of project by the team.\n- (d) The project was completed ahead of schedule by the team.\n- Q.248. The  author  wrote  a  compelling  novel, weaving together multiple storylines that captivated readers until the last page.\n- (a) A compelling novel has been written by the author, weaving together multiple storylines that captivated readers until the last page.\n- (b) A compelling novel was written by the author, weaving together multiple storylines that captivated readers until the last page.\n- (c) A compelling novel was written by the reader, weaving together multiple storylines that captivated the author until the last page.\n- (d) A compelling novel was writing the author, weaving together multiple storylines that captivated readers until the last page.\n- Q.249. My grandmother called me to the worship place.",
+        "meta": {
+          "schema_name": "docling_core.transforms.chunker.DocMeta",
+          "version": "1.0.0",
+          "doc_items": [
+            {
+              "self_ref": "#/texts/39",
+              "parent": {
+                "cref": "#/groups/1"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 308.54999,
+                    "t": 765.0068356875,
+                    "r": 559.60955942,
+                    "b": 744.5027238199854,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    72
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/40",
+              "parent": {
+                "cref": "#/groups/1"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 308.54999,
+                    "t": 740.1630856875,
+                    "r": 544.98895442,
+                    "b": 719.6589738199854,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    75
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/41",
+              "parent": {
+                "cref": "#/groups/1"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 308.54999,
+                    "t": 707.0419916875001,
+                    "r": 547.66082942,
+                    "b": 698.9597548199854,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    56
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/42",
+              "parent": {
+                "cref": "#/groups/1"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 308.54999,
+                    "t": 694.6201166875001,
+                    "r": 562.73846942,
+                    "b": 686.5378798199854,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    60
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/43",
+              "parent": {
+                "cref": "#/groups/1"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 308.54999,
+                    "t": 682.1943356875,
+                    "r": 556.92449942,
+                    "b": 661.6902228199854,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    65
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/44",
+              "parent": {
+                "cref": "#/groups/1"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 308.54999,
+                    "t": 657.3505896875,
+                    "r": 561.69695942,
+                    "b": 649.2683528199854,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    60
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/45",
+              "parent": {
+                "cref": "#/groups/1"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 308.54999,
+                    "t": 644.9287096875,
+                    "r": 559.82928692,
+                    "b": 636.8464728199854,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    60
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/46",
+              "parent": {
+                "cref": "#/groups/1"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 308.54999,
+                    "t": 622.8447296875,
+                    "r": 568.27264442,
+                    "b": 602.3406128199854,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    130
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/47",
+              "parent": {
+                "cref": "#/groups/1"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 308.54999,
+                    "t": 598.0009796875,
+                    "r": 564.17108192,
+                    "b": 565.0749928199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    136
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/48",
+              "parent": {
+                "cref": "#/groups/1"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 308.54999,
+                    "t": 560.7353496875,
+                    "r": 564.17108192,
+                    "b": 527.8093628199854,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    131
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/49",
+              "parent": {
+                "cref": "#/groups/1"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 308.54999,
+                    "t": 523.4697296874999,
+                    "r": 559.93475942,
+                    "b": 490.5437428199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    134
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/50",
+              "parent": {
+                "cref": "#/groups/1"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 308.54999,
+                    "t": 486.2040996875,
+                    "r": 567.4538019199999,
+                    "b": 465.6999928199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    128
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/51",
+              "parent": {
+                "cref": "#/groups/1"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 308.54999,
+                    "t": 451.6982396875,
+                    "r": 534.47284442,
+                    "b": 443.61600281998534,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    53
+                  ]
+                }
+              ]
+            }
+          ],
+          "headings": null,
+          "captions": null,
+          "origin": {
+            "mimetype": "application/pdf",
+            "binary_hash": 16269877806455133648,
+            "filename": "english_page_0200.pdf",
+            "uri": null
+          }
+        },
+        "chunk_index": 3,
+        "contextualized_text": "- (c) The company can issue a statement addressing the recent controversy.\n- (d) The company should issue a statement addressing the recent controversy.\n- Q.247. The team completed the project ahead of schedule.\n- (a) The project had completed ahead of schedule by the team.\n- (b) The project has been completed ahead of schedule by the team.\n- (c) The schedule was completed ahead of project by the team.\n- (d) The project was completed ahead of schedule by the team.\n- Q.248. The  author  wrote  a  compelling  novel, weaving together multiple storylines that captivated readers until the last page.\n- (a) A compelling novel has been written by the author, weaving together multiple storylines that captivated readers until the last page.\n- (b) A compelling novel was written by the author, weaving together multiple storylines that captivated readers until the last page.\n- (c) A compelling novel was written by the reader, weaving together multiple storylines that captivated the author until the last page.\n- (d) A compelling novel was writing the author, weaving together multiple storylines that captivated readers until the last page.\n- Q.249. My grandmother called me to the worship place."
+      },
+      {
+        "text": "- (a) The grandmother was called by me to the worship place.\n- (b) The worship place was called by me to the grandmother.\n- (c) I was called by my grandmother to the worship place.\n- (d) I called my grandmother to the worship place.\n- Q.250. All  the  arrangements  will  have  been  completed  by  the hotel staff by the time the PM reaches here.\n- (a) The hotel staff will have completed all the arrangements by the time the PM reaches here.\n- (b) The hotel staff have completed all the arrangements by the time the PM reaches here.\n- (c) The hotel staff will be completing all the arrangements by the time the PM reaches here.\n- (d) The hotel staff will complete all the arrangements by the time the PM reaches here.",
+        "meta": {
+          "schema_name": "docling_core.transforms.chunker.DocMeta",
+          "version": "1.0.0",
+          "doc_items": [
+            {
+              "self_ref": "#/texts/52",
+              "parent": {
+                "cref": "#/groups/1"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 308.54999,
+                    "t": 439.2763696875,
+                    "r": 551.6774319199999,
+                    "b": 431.1941328199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    58
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/53",
+              "parent": {
+                "cref": "#/groups/1"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 308.54999,
+                    "t": 426.8544896875,
+                    "r": 551.2951044199999,
+                    "b": 418.77225281998534,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    58
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/54",
+              "parent": {
+                "cref": "#/groups/1"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 308.54999,
+                    "t": 414.4326196875,
+                    "r": 536.0944269199999,
+                    "b": 406.3503828199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    56
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/55",
+              "parent": {
+                "cref": "#/groups/1"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 308.54999,
+                    "t": 402.0107396875,
+                    "r": 506.42694692,
+                    "b": 393.92850281998534,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    49
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/56",
+              "parent": {
+                "cref": "#/groups/1"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 308.54999,
+                    "t": 379.9267596875,
+                    "r": 568.44257192,
+                    "b": 359.42264281998536,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    112
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/57",
+              "parent": {
+                "cref": "#/groups/1"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 308.54999,
+                    "t": 355.0830096875,
+                    "r": 561.96503192,
+                    "b": 334.57889281998536,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    93
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/58",
+              "parent": {
+                "cref": "#/groups/1"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 308.54999,
+                    "t": 330.2392596875,
+                    "r": 561.46844942,
+                    "b": 309.7351428199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    88
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/59",
+              "parent": {
+                "cref": "#/groups/1"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 308.54999,
+                    "t": 305.39550968749995,
+                    "r": 555.10955942,
+                    "b": 284.8913928199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    92
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/60",
+              "parent": {
+                "cref": "#/groups/1"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 308.54999,
+                    "t": 280.55175968749995,
+                    "r": 570.9122919199999,
+                    "b": 260.04569281998533,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    87
+                  ]
+                }
+              ]
+            }
+          ],
+          "headings": null,
+          "captions": null,
+          "origin": {
+            "mimetype": "application/pdf",
+            "binary_hash": 16269877806455133648,
+            "filename": "english_page_0200.pdf",
+            "uri": null
+          }
+        },
+        "chunk_index": 4,
+        "contextualized_text": "- (a) The grandmother was called by me to the worship place.\n- (b) The worship place was called by me to the grandmother.\n- (c) I was called by my grandmother to the worship place.\n- (d) I called my grandmother to the worship place.\n- Q.250. All  the  arrangements  will  have  been  completed  by  the hotel staff by the time the PM reaches here.\n- (a) The hotel staff will have completed all the arrangements by the time the PM reaches here.\n- (b) The hotel staff have completed all the arrangements by the time the PM reaches here.\n- (c) The hotel staff will be completing all the arrangements by the time the PM reaches here.\n- (d) The hotel staff will complete all the arrangements by the time the PM reaches here."
+      },
+      {
+        "text": "- Sol.238.(d) A series of ground-breaking experiments were conducted by the scientist, revealing new insights into the nature of dark matter. (Correct)\n- (a) A series of ground-breaking experiments are conducted by the  scientist,  revealing  new  insights  into  the  nature   of  dark matter. (Incorrect Tense)\n- (b) A series of ground-breaking insights were conducted by the scientist, revealing new experiments into the nature of dark matter. (Incorrect Sentence Structure)\n- (c) A series of ground-breaking experiments have been conducted by the scientist, revealing new insights into the nature of dark matter. (Incorrect Tense)\n- Sol.239.(a) Is  the  upcoming  exam  being  discussed  by  the students in the library? (Correct)\n- (b) Has the upcoming exam been discussed by the students in",
+        "meta": {
+          "schema_name": "docling_core.transforms.chunker.DocMeta",
+          "version": "1.0.0",
+          "doc_items": [
+            {
+              "self_ref": "#/texts/62",
+              "parent": {
+                "cref": "#/groups/2"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 308.54999,
+                    "t": 219.0185496875,
+                    "r": 568.42938692,
+                    "b": 186.09256281998535,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    149
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/63",
+              "parent": {
+                "cref": "#/groups/2"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 308.54999,
+                    "t": 181.7529296875,
+                    "r": 564.9796794199999,
+                    "b": 148.82499281998537,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    158
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/64",
+              "parent": {
+                "cref": "#/groups/2"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 308.54999,
+                    "t": 144.48534968750005,
+                    "r": 560.61151442,
+                    "b": 111.55936281998538,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    162
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/65",
+              "parent": {
+                "cref": "#/groups/2"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 308.54999,
+                    "t": 107.21972968750003,
+                    "r": 568.42938692,
+                    "b": 74.29374281998537,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    154
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/66",
+              "parent": {
+                "cref": "#/groups/2"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 308.54999,
+                    "t": 61.67089968749997,
+                    "r": 568.43084942,
+                    "b": 41.166782819985315,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    97
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/67",
+              "parent": {
+                "cref": "#/groups/2"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 308.54999,
+                    "t": 36.82714968749997,
+                    "r": 561.5739144199999,
+                    "b": 28.744912819985302,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    59
+                  ]
+                }
+              ]
+            }
+          ],
+          "headings": [
+            "Solutions :-"
+          ],
+          "captions": null,
+          "origin": {
+            "mimetype": "application/pdf",
+            "binary_hash": 16269877806455133648,
+            "filename": "english_page_0200.pdf",
+            "uri": null
+          }
+        },
+        "chunk_index": 5,
+        "contextualized_text": "Solutions :-\n- Sol.238.(d) A series of ground-breaking experiments were conducted by the scientist, revealing new insights into the nature of dark matter. (Correct)\n- (a) A series of ground-breaking experiments are conducted by the  scientist,  revealing  new  insights  into  the  nature   of  dark matter. (Incorrect Tense)\n- (b) A series of ground-breaking insights were conducted by the scientist, revealing new experiments into the nature of dark matter. (Incorrect Sentence Structure)\n- (c) A series of ground-breaking experiments have been conducted by the scientist, revealing new insights into the nature of dark matter. (Incorrect Tense)\n- Sol.239.(a) Is  the  upcoming  exam  being  discussed  by  the students in the library? (Correct)\n- (b) Has the upcoming exam been discussed by the students in"
+      }
+    ]
+  },
+  "content_assets": {
+    "tables": [],
+    "figures": [
+      {
+        "element_ref": "#/pictures/0",
+        "label": "picture",
+        "provenance": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 11.937705039978027,
+              "t": 25.1075439453125,
+              "r": 48.00816345214844,
+              "b": 8.5093994140625,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              0
+            ]
+          }
+        ],
+        "captions": []
+      },
+      {
+        "element_ref": "#/pictures/1",
+        "label": "picture",
+        "provenance": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 50.85194396972656,
+              "t": 21.57330322265625,
+              "r": 103.0561752319336,
+              "b": 9.372314453125,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              0
+            ]
+          }
+        ],
+        "captions": []
+      }
+    ]
+  },
+  "docling_document": {
+    "schema_name": "DoclingDocument",
+    "version": "1.10.0",
+    "name": "english_page_0200",
+    "origin": {
+      "mimetype": "application/pdf",
+      "binary_hash": 16269877806455133648,
+      "filename": "english_page_0200.pdf"
+    },
+    "furniture": {
+      "self_ref": "#/furniture",
+      "children": [],
+      "content_layer": "furniture",
+      "name": "_root_",
+      "label": "unspecified"
+    },
+    "body": {
+      "self_ref": "#/body",
+      "children": [
+        {
+          "$ref": "#/texts/0"
+        },
+        {
+          "$ref": "#/texts/1"
+        },
+        {
+          "$ref": "#/texts/2"
+        },
+        {
+          "$ref": "#/groups/0"
+        },
+        {
+          "$ref": "#/texts/9"
+        },
+        {
+          "$ref": "#/groups/1"
+        },
+        {
+          "$ref": "#/pictures/0"
+        },
+        {
+          "$ref": "#/pictures/1"
+        },
+        {
+          "$ref": "#/texts/61"
+        },
+        {
+          "$ref": "#/groups/2"
+        },
+        {
+          "$ref": "#/texts/68"
+        },
+        {
+          "$ref": "#/texts/69"
+        }
+      ],
+      "content_layer": "body",
+      "name": "_root_",
+      "label": "unspecified"
+    },
+    "groups": [
+      {
+        "self_ref": "#/groups/0",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [
+          {
+            "$ref": "#/texts/3"
+          },
+          {
+            "$ref": "#/texts/4"
+          },
+          {
+            "$ref": "#/texts/5"
+          },
+          {
+            "$ref": "#/texts/6"
+          },
+          {
+            "$ref": "#/texts/7"
+          },
+          {
+            "$ref": "#/texts/8"
+          }
+        ],
+        "content_layer": "body",
+        "name": "list",
+        "label": "list"
+      },
+      {
+        "self_ref": "#/groups/1",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [
+          {
+            "$ref": "#/texts/10"
+          },
+          {
+            "$ref": "#/texts/11"
+          },
+          {
+            "$ref": "#/texts/12"
+          },
+          {
+            "$ref": "#/texts/13"
+          },
+          {
+            "$ref": "#/texts/14"
+          },
+          {
+            "$ref": "#/texts/15"
+          },
+          {
+            "$ref": "#/texts/16"
+          },
+          {
+            "$ref": "#/texts/17"
+          },
+          {
+            "$ref": "#/texts/18"
+          },
+          {
+            "$ref": "#/texts/19"
+          },
+          {
+            "$ref": "#/texts/20"
+          },
+          {
+            "$ref": "#/texts/21"
+          },
+          {
+            "$ref": "#/texts/22"
+          },
+          {
+            "$ref": "#/texts/23"
+          },
+          {
+            "$ref": "#/texts/24"
+          },
+          {
+            "$ref": "#/texts/25"
+          },
+          {
+            "$ref": "#/texts/26"
+          },
+          {
+            "$ref": "#/texts/27"
+          },
+          {
+            "$ref": "#/texts/28"
+          },
+          {
+            "$ref": "#/texts/29"
+          },
+          {
+            "$ref": "#/texts/30"
+          },
+          {
+            "$ref": "#/texts/31"
+          },
+          {
+            "$ref": "#/texts/32"
+          },
+          {
+            "$ref": "#/texts/33"
+          },
+          {
+            "$ref": "#/texts/34"
+          },
+          {
+            "$ref": "#/texts/35"
+          },
+          {
+            "$ref": "#/texts/36"
+          },
+          {
+            "$ref": "#/texts/37"
+          },
+          {
+            "$ref": "#/texts/38"
+          },
+          {
+            "$ref": "#/texts/39"
+          },
+          {
+            "$ref": "#/texts/40"
+          },
+          {
+            "$ref": "#/texts/41"
+          },
+          {
+            "$ref": "#/texts/42"
+          },
+          {
+            "$ref": "#/texts/43"
+          },
+          {
+            "$ref": "#/texts/44"
+          },
+          {
+            "$ref": "#/texts/45"
+          },
+          {
+            "$ref": "#/texts/46"
+          },
+          {
+            "$ref": "#/texts/47"
+          },
+          {
+            "$ref": "#/texts/48"
+          },
+          {
+            "$ref": "#/texts/49"
+          },
+          {
+            "$ref": "#/texts/50"
+          },
+          {
+            "$ref": "#/texts/51"
+          },
+          {
+            "$ref": "#/texts/52"
+          },
+          {
+            "$ref": "#/texts/53"
+          },
+          {
+            "$ref": "#/texts/54"
+          },
+          {
+            "$ref": "#/texts/55"
+          },
+          {
+            "$ref": "#/texts/56"
+          },
+          {
+            "$ref": "#/texts/57"
+          },
+          {
+            "$ref": "#/texts/58"
+          },
+          {
+            "$ref": "#/texts/59"
+          },
+          {
+            "$ref": "#/texts/60"
+          }
+        ],
+        "content_layer": "body",
+        "name": "list",
+        "label": "list"
+      },
+      {
+        "self_ref": "#/groups/2",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [
+          {
+            "$ref": "#/texts/62"
+          },
+          {
+            "$ref": "#/texts/63"
+          },
+          {
+            "$ref": "#/texts/64"
+          },
+          {
+            "$ref": "#/texts/65"
+          },
+          {
+            "$ref": "#/texts/66"
+          },
+          {
+            "$ref": "#/texts/67"
+          }
+        ],
+        "content_layer": "body",
+        "name": "list",
+        "label": "list"
+      }
+    ],
+    "texts": [
+      {
+        "self_ref": "#/texts/0",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "furniture",
+        "label": "page_header",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 830.7925780594726,
+              "r": 95.7084616875,
+              "b": 822.5642819957749,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              8
+            ]
+          }
+        ],
+        "orig": "Pinnacle",
+        "text": "Pinnacle"
+      },
+      {
+        "self_ref": "#/texts/1",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "furniture",
+        "label": "page_header",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 291.757038,
+              "t": 830.7925780594726,
+              "r": 568.3052679374999,
+              "b": 822.5642819957749,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              14
+            ]
+          }
+        ],
+        "orig": "Active Passive",
+        "text": "Active Passive"
+      },
+      {
+        "self_ref": "#/texts/2",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 814.6982416875001,
+              "r": 276.30000492,
+              "b": 794.1941298199854,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              69
+            ]
+          }
+        ],
+        "orig": "the scientist, revealing new insights into the nature of dark matter.",
+        "text": "the scientist, revealing new insights into the nature of dark matter."
+      },
+      {
+        "self_ref": "#/texts/3",
+        "parent": {
+          "$ref": "#/groups/0"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 778.8115236875,
+              "r": 288.86250492,
+              "b": 758.3074118199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              74
+            ]
+          }
+        ],
+        "orig": "Q.239. Are  the  students  discussing  the  upcoming  exam in the library?",
+        "text": "Q.239. Are  the  students  discussing  the  upcoming  exam in the library?",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/4",
+        "parent": {
+          "$ref": "#/groups/0"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 753.9677736875,
+              "r": 290.17353492,
+              "b": 733.4636618199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              72
+            ]
+          }
+        ],
+        "orig": "(a) Is the upcoming exam being discussed by the students in the library?",
+        "text": "(a) Is the upcoming exam being discussed by the students in the library?",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/5",
+        "parent": {
+          "$ref": "#/groups/0"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 729.1220706875,
+              "r": 281.82392741999996,
+              "b": 708.6179588199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              72
+            ]
+          }
+        ],
+        "orig": "(b) Has the upcoming exam been discussed by the students in the library?",
+        "text": "(b) Has the upcoming exam been discussed by the students in the library?",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/6",
+        "parent": {
+          "$ref": "#/groups/0"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 704.2783206875,
+              "r": 285.37031742,
+              "b": 683.7742088199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              73
+            ]
+          }
+        ],
+        "orig": "(c) Was the upcoming exam being discussed by the students in the library?",
+        "text": "(c) Was the upcoming exam being discussed by the students in the library?",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/7",
+        "parent": {
+          "$ref": "#/groups/0"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 679.4345706875,
+              "r": 283.29609492,
+              "b": 658.9304628199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              73
+            ]
+          }
+        ],
+        "orig": "(d) What upcoming exam is being discussed by the students in the library?",
+        "text": "(d) What upcoming exam is being discussed by the students in the library?",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/8",
+        "parent": {
+          "$ref": "#/groups/0"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 643.5497996875,
+              "r": 188.90596242,
+              "b": 635.4675628199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              38
+            ]
+          }
+        ],
+        "orig": "Q.240. Was the food finished by Kavya?",
+        "text": "Q.240. Was the food finished by Kavya?",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/9",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 631.1279296875,
+              "r": 290.83711242,
+              "b": 623.0456928199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              64
+            ]
+          }
+        ],
+        "orig": "(a) Does Kavya finish the food? (b) Has Kavya finished the food?",
+        "text": "(a) Does Kavya finish the food? (b) Has Kavya finished the food?"
+      },
+      {
+        "self_ref": "#/texts/10",
+        "parent": {
+          "$ref": "#/groups/1"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 618.7060496875,
+              "r": 286.05146742,
+              "b": 610.6238128199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              66
+            ]
+          }
+        ],
+        "orig": "(c) Did Kavya finish the food?    (d) Had Kavya finished the food?",
+        "text": "(c) Did Kavya finish the food?    (d) Had Kavya finished the food?",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/11",
+        "parent": {
+          "$ref": "#/groups/1"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 596.6201196874999,
+              "r": 288.52412742,
+              "b": 576.1160028199854,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              73
+            ]
+          }
+        ],
+        "orig": "Q.241. The  courier  gave  my  parcel  to  my  neighbour  in  my absence.",
+        "text": "Q.241. The  courier  gave  my  parcel  to  my  neighbour  in  my absence.",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/12",
+        "parent": {
+          "$ref": "#/groups/1"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 571.7763696874999,
+              "r": 290.67890742000003,
+              "b": 551.2722528199854,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              77
+            ]
+          }
+        ],
+        "orig": "(a) My parcel needs to be given to my neighbour by the courier in my absence.",
+        "text": "(a) My parcel needs to be given to my neighbour by the courier in my absence.",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/13",
+        "parent": {
+          "$ref": "#/groups/1"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 546.9326196874999,
+              "r": 275.00800991999995,
+              "b": 526.4285028199854,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              69
+            ]
+          }
+        ],
+        "orig": "(b) My neighbour was given to my parcel by the courier in my absence.",
+        "text": "(b) My neighbour was given to my parcel by the courier in my absence.",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/14",
+        "parent": {
+          "$ref": "#/groups/1"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 522.0888696874999,
+              "r": 280.70771742,
+              "b": 501.58475281998534,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              74
+            ]
+          }
+        ],
+        "orig": "(c) My parcel had been given to my neighbour by the courier in my absence.",
+        "text": "(c) My parcel had been given to my neighbour by the courier in my absence.",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/15",
+        "parent": {
+          "$ref": "#/groups/1"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 497.2451196875,
+              "r": 275.02998492,
+              "b": 476.74100281998534,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              69
+            ]
+          }
+        ],
+        "orig": "(d) My parcel was given to my neighbour by the courier in my absence.",
+        "text": "(d) My parcel was given to my neighbour by the courier in my absence.",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/16",
+        "parent": {
+          "$ref": "#/groups/1"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 462.7412096875,
+              "r": 288.63984492000003,
+              "b": 442.23710281998535,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              73
+            ]
+          }
+        ],
+        "orig": "Q.242. The director organised a meeting to discuss the upcoming projects.",
+        "text": "Q.242. The director organised a meeting to discuss the upcoming projects.",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/17",
+        "parent": {
+          "$ref": "#/groups/1"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 437.8974596875,
+              "r": 271.55830241999996,
+              "b": 417.39335281998535,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              80
+            ]
+          }
+        ],
+        "orig": "(a) The upcoming projects were organised by the director to discuss the meeting.",
+        "text": "(a) The upcoming projects were organised by the director to discuss the meeting.",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/18",
+        "parent": {
+          "$ref": "#/groups/1"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 413.0537096875,
+              "r": 285.54609492000003,
+              "b": 392.54960281998535,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              82
+            ]
+          }
+        ],
+        "orig": "(b) A meeting has been organised by the director to discuss the upcoming projects.",
+        "text": "(b) A meeting has been organised by the director to discuss the upcoming projects.",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/19",
+        "parent": {
+          "$ref": "#/groups/1"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 388.2099596875,
+              "r": 265.20820992,
+              "b": 367.70585281998535,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              77
+            ]
+          }
+        ],
+        "orig": "(c) A meeting was organised by the director to discuss the upcoming projects.",
+        "text": "(c) A meeting was organised by the director to discuss the upcoming projects.",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/20",
+        "parent": {
+          "$ref": "#/groups/1"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 363.3662096875,
+              "r": 256.10273742,
+              "b": 342.85819281998533,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              76
+            ]
+          }
+        ],
+        "orig": "(d) A meeting is organised by the director to discuss the upcoming projects.",
+        "text": "(d) A meeting is organised by the director to discuss the upcoming projects.",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/21",
+        "parent": {
+          "$ref": "#/groups/1"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 328.85839968749997,
+              "r": 232.77656742,
+              "b": 320.7761628199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              50
+            ]
+          }
+        ],
+        "orig": "Q.243. The mechanic did not fix the car yesterday.",
+        "text": "Q.243. The mechanic did not fix the car yesterday.",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/22",
+        "parent": {
+          "$ref": "#/groups/1"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 316.4365196875,
+              "r": 239.95723242000003,
+              "b": 308.3542828199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              52
+            ]
+          }
+        ],
+        "orig": "(a) The car was not fixed by the mechanic yesterday.",
+        "text": "(a) The car was not fixed by the mechanic yesterday.",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/23",
+        "parent": {
+          "$ref": "#/groups/1"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 304.01464968749997,
+              "r": 262.77363491999995,
+              "b": 295.9324128199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              57
+            ]
+          }
+        ],
+        "orig": "(b) The car had not been fixed by the mechanic yesterday.",
+        "text": "(b) The car had not been fixed by the mechanic yesterday.",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/24",
+        "parent": {
+          "$ref": "#/groups/1"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 291.5908196875,
+              "r": 242.00508492,
+              "b": 283.50858281998535,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              52
+            ]
+          }
+        ],
+        "orig": "(c) The mechanic was not fixed by the car yesterday.",
+        "text": "(c) The mechanic was not fixed by the car yesterday.",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/25",
+        "parent": {
+          "$ref": "#/groups/1"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 279.1689496875,
+              "r": 228.64570992,
+              "b": 271.08671281998534,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              50
+            ]
+          }
+        ],
+        "orig": "(d) The car did not fix by the mechanic yesterday.",
+        "text": "(d) The car did not fix by the mechanic yesterday.",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/26",
+        "parent": {
+          "$ref": "#/groups/1"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 257.08886968750005,
+              "r": 288.57246492,
+              "b": 236.58475281998528,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              104
+            ]
+          }
+        ],
+        "orig": "Q.244. A  remarkable  discovery  in  Paestum,  an  ancient  Greek city, has been made by archaeologists.",
+        "text": "Q.244. A  remarkable  discovery  in  Paestum,  an  ancient  Greek city, has been made by archaeologists.",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/27",
+        "parent": {
+          "$ref": "#/groups/1"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 232.24120968750003,
+              "r": 257.55292992,
+              "b": 211.73710281998535,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              87
+            ]
+          }
+        ],
+        "orig": "(a) Archaeologists are making a remarkable discovery in Paestum, an ancient Greek city.",
+        "text": "(a) Archaeologists are making a remarkable discovery in Paestum, an ancient Greek city.",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/28",
+        "parent": {
+          "$ref": "#/groups/1"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 207.39745968750003,
+              "r": 257.01240492,
+              "b": 186.89335281998535,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              86
+            ]
+          }
+        ],
+        "orig": "(b) Archaeologists have made a remarkable discovery in Paestum, an ancient Greek city.",
+        "text": "(b) Archaeologists have made a remarkable discovery in Paestum, an ancient Greek city.",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/29",
+        "parent": {
+          "$ref": "#/groups/1"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 182.55370968750003,
+              "r": 286.81611491999996,
+              "b": 162.04960281998535,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              81
+            ]
+          }
+        ],
+        "orig": "(c) Archaeologists make a remarkable discovery in Paestum, an ancient Greek city.",
+        "text": "(c) Archaeologists make a remarkable discovery in Paestum, an ancient Greek city.",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/30",
+        "parent": {
+          "$ref": "#/groups/1"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 157.70995968750003,
+              "r": 287.78290992,
+              "b": 137.20585281998535,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              81
+            ]
+          }
+        ],
+        "orig": "(d) Archaeologists made a remarkable discovery in Paestum, an ancient Greek city.",
+        "text": "(d) Archaeologists made a remarkable discovery in Paestum, an ancient Greek city.",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/31",
+        "parent": {
+          "$ref": "#/groups/1"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 123.20409968750005,
+              "r": 224.76533741999998,
+              "b": 115.12186281998538,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              48
+            ]
+          }
+        ],
+        "orig": "Q.245. Open the window to let in some fresh air.",
+        "text": "Q.245. Open the window to let in some fresh air.",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/32",
+        "parent": {
+          "$ref": "#/groups/1"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 110.78222968750003,
+              "r": 239.91767742,
+              "b": 102.69999281998537,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              53
+            ]
+          }
+        ],
+        "orig": "(a) You can open the window to let in some fresh air.",
+        "text": "(a) You can open the window to let in some fresh air.",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/33",
+        "parent": {
+          "$ref": "#/groups/1"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 98.36034968750005,
+              "r": 239.59248492,
+              "b": 90.27811281998538,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              54
+            ]
+          }
+        ],
+        "orig": "(b) The window is to be open to let in some fresh air.",
+        "text": "(b) The window is to be open to let in some fresh air.",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/34",
+        "parent": {
+          "$ref": "#/groups/1"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 85.93847968750003,
+              "r": 246.64570992,
+              "b": 77.85624281998537,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              54
+            ]
+          }
+        ],
+        "orig": "(c) Let the window be opened to let in some fresh air.",
+        "text": "(c) Let the window be opened to let in some fresh air.",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/35",
+        "parent": {
+          "$ref": "#/groups/1"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 73.51659968750005,
+              "r": 218.80634742,
+              "b": 65.43436281998538,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              48
+            ]
+          }
+        ],
+        "orig": "(d) Let the window open to let in some fresh air",
+        "text": "(d) Let the window open to let in some fresh air",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/36",
+        "parent": {
+          "$ref": "#/groups/1"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 51.43261968750005,
+              "r": 288.54316992,
+              "b": 30.928502819985283,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              89
+            ]
+          }
+        ],
+        "orig": "Q.246. Let  a  statement  addressing  the  recent  controversy  be issued by the company.",
+        "text": "Q.246. Let  a  statement  addressing  the  recent  controversy  be issued by the company.",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/37",
+        "parent": {
+          "$ref": "#/groups/1"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 308.54999,
+              "t": 814.6982416875001,
+              "r": 559.49090942,
+              "b": 794.1941298199854,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              73
+            ]
+          }
+        ],
+        "orig": "(a) The company is issuing a statement addressing the recent controversy.",
+        "text": "(a) The company is issuing a statement addressing the recent controversy.",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/38",
+        "parent": {
+          "$ref": "#/groups/1"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 308.54999,
+              "t": 789.8544916875001,
+              "r": 555.5138544199999,
+              "b": 769.3503798199854,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              72
+            ]
+          }
+        ],
+        "orig": "(b) Let the company issue a statement addressing the recent controversy.",
+        "text": "(b) Let the company issue a statement addressing the recent controversy.",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/39",
+        "parent": {
+          "$ref": "#/groups/1"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 308.54999,
+              "t": 765.0068356875,
+              "r": 559.60955942,
+              "b": 744.5027238199854,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              72
+            ]
+          }
+        ],
+        "orig": "(c) The company can issue a statement addressing the recent controversy.",
+        "text": "(c) The company can issue a statement addressing the recent controversy.",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/40",
+        "parent": {
+          "$ref": "#/groups/1"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 308.54999,
+              "t": 740.1630856875,
+              "r": 544.98895442,
+              "b": 719.6589738199854,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              75
+            ]
+          }
+        ],
+        "orig": "(d) The company should issue a statement addressing the recent controversy.",
+        "text": "(d) The company should issue a statement addressing the recent controversy.",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/41",
+        "parent": {
+          "$ref": "#/groups/1"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 308.54999,
+              "t": 707.0419916875001,
+              "r": 547.66082942,
+              "b": 698.9597548199854,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              56
+            ]
+          }
+        ],
+        "orig": "Q.247. The team completed the project ahead of schedule.",
+        "text": "Q.247. The team completed the project ahead of schedule.",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/42",
+        "parent": {
+          "$ref": "#/groups/1"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 308.54999,
+              "t": 694.6201166875001,
+              "r": 562.73846942,
+              "b": 686.5378798199854,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              60
+            ]
+          }
+        ],
+        "orig": "(a) The project had completed ahead of schedule by the team.",
+        "text": "(a) The project had completed ahead of schedule by the team.",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/43",
+        "parent": {
+          "$ref": "#/groups/1"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 308.54999,
+              "t": 682.1943356875,
+              "r": 556.92449942,
+              "b": 661.6902228199854,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              65
+            ]
+          }
+        ],
+        "orig": "(b) The project has been completed ahead of schedule by the team.",
+        "text": "(b) The project has been completed ahead of schedule by the team.",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/44",
+        "parent": {
+          "$ref": "#/groups/1"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 308.54999,
+              "t": 657.3505896875,
+              "r": 561.69695942,
+              "b": 649.2683528199854,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              60
+            ]
+          }
+        ],
+        "orig": "(c) The schedule was completed ahead of project by the team.",
+        "text": "(c) The schedule was completed ahead of project by the team.",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/45",
+        "parent": {
+          "$ref": "#/groups/1"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 308.54999,
+              "t": 644.9287096875,
+              "r": 559.82928692,
+              "b": 636.8464728199854,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              60
+            ]
+          }
+        ],
+        "orig": "(d) The project was completed ahead of schedule by the team.",
+        "text": "(d) The project was completed ahead of schedule by the team.",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/46",
+        "parent": {
+          "$ref": "#/groups/1"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 308.54999,
+              "t": 622.8447296875,
+              "r": 568.27264442,
+              "b": 602.3406128199854,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              130
+            ]
+          }
+        ],
+        "orig": "Q.248. The  author  wrote  a  compelling  novel, weaving together multiple storylines that captivated readers until the last page.",
+        "text": "Q.248. The  author  wrote  a  compelling  novel, weaving together multiple storylines that captivated readers until the last page.",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/47",
+        "parent": {
+          "$ref": "#/groups/1"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 308.54999,
+              "t": 598.0009796875,
+              "r": 564.17108192,
+              "b": 565.0749928199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              136
+            ]
+          }
+        ],
+        "orig": "(a) A compelling novel has been written by the author, weaving together multiple storylines that captivated readers until the last page.",
+        "text": "(a) A compelling novel has been written by the author, weaving together multiple storylines that captivated readers until the last page.",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/48",
+        "parent": {
+          "$ref": "#/groups/1"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 308.54999,
+              "t": 560.7353496875,
+              "r": 564.17108192,
+              "b": 527.8093628199854,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              131
+            ]
+          }
+        ],
+        "orig": "(b) A compelling novel was written by the author, weaving together multiple storylines that captivated readers until the last page.",
+        "text": "(b) A compelling novel was written by the author, weaving together multiple storylines that captivated readers until the last page.",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/49",
+        "parent": {
+          "$ref": "#/groups/1"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 308.54999,
+              "t": 523.4697296874999,
+              "r": 559.93475942,
+              "b": 490.5437428199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              134
+            ]
+          }
+        ],
+        "orig": "(c) A compelling novel was written by the reader, weaving together multiple storylines that captivated the author until the last page.",
+        "text": "(c) A compelling novel was written by the reader, weaving together multiple storylines that captivated the author until the last page.",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/50",
+        "parent": {
+          "$ref": "#/groups/1"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 308.54999,
+              "t": 486.2040996875,
+              "r": 567.4538019199999,
+              "b": 465.6999928199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              128
+            ]
+          }
+        ],
+        "orig": "(d) A compelling novel was writing the author, weaving together multiple storylines that captivated readers until the last page.",
+        "text": "(d) A compelling novel was writing the author, weaving together multiple storylines that captivated readers until the last page.",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/51",
+        "parent": {
+          "$ref": "#/groups/1"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 308.54999,
+              "t": 451.6982396875,
+              "r": 534.47284442,
+              "b": 443.61600281998534,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              53
+            ]
+          }
+        ],
+        "orig": "Q.249. My grandmother called me to the worship place.",
+        "text": "Q.249. My grandmother called me to the worship place.",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/52",
+        "parent": {
+          "$ref": "#/groups/1"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 308.54999,
+              "t": 439.2763696875,
+              "r": 551.6774319199999,
+              "b": 431.1941328199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              58
+            ]
+          }
+        ],
+        "orig": "(a) The grandmother was called by me to the worship place.",
+        "text": "(a) The grandmother was called by me to the worship place.",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/53",
+        "parent": {
+          "$ref": "#/groups/1"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 308.54999,
+              "t": 426.8544896875,
+              "r": 551.2951044199999,
+              "b": 418.77225281998534,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              58
+            ]
+          }
+        ],
+        "orig": "(b) The worship place was called by me to the grandmother.",
+        "text": "(b) The worship place was called by me to the grandmother.",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/54",
+        "parent": {
+          "$ref": "#/groups/1"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 308.54999,
+              "t": 414.4326196875,
+              "r": 536.0944269199999,
+              "b": 406.3503828199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              56
+            ]
+          }
+        ],
+        "orig": "(c) I was called by my grandmother to the worship place.",
+        "text": "(c) I was called by my grandmother to the worship place.",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/55",
+        "parent": {
+          "$ref": "#/groups/1"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 308.54999,
+              "t": 402.0107396875,
+              "r": 506.42694692,
+              "b": 393.92850281998534,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              49
+            ]
+          }
+        ],
+        "orig": "(d) I called my grandmother to the worship place.",
+        "text": "(d) I called my grandmother to the worship place.",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/56",
+        "parent": {
+          "$ref": "#/groups/1"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 308.54999,
+              "t": 379.9267596875,
+              "r": 568.44257192,
+              "b": 359.42264281998536,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              112
+            ]
+          }
+        ],
+        "orig": "Q.250. All  the  arrangements  will  have  been  completed  by  the hotel staff by the time the PM reaches here.",
+        "text": "Q.250. All  the  arrangements  will  have  been  completed  by  the hotel staff by the time the PM reaches here.",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/57",
+        "parent": {
+          "$ref": "#/groups/1"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 308.54999,
+              "t": 355.0830096875,
+              "r": 561.96503192,
+              "b": 334.57889281998536,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              93
+            ]
+          }
+        ],
+        "orig": "(a) The hotel staff will have completed all the arrangements by the time the PM reaches here.",
+        "text": "(a) The hotel staff will have completed all the arrangements by the time the PM reaches here.",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/58",
+        "parent": {
+          "$ref": "#/groups/1"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 308.54999,
+              "t": 330.2392596875,
+              "r": 561.46844942,
+              "b": 309.7351428199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              88
+            ]
+          }
+        ],
+        "orig": "(b) The hotel staff have completed all the arrangements by the time the PM reaches here.",
+        "text": "(b) The hotel staff have completed all the arrangements by the time the PM reaches here.",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/59",
+        "parent": {
+          "$ref": "#/groups/1"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 308.54999,
+              "t": 305.39550968749995,
+              "r": 555.10955942,
+              "b": 284.8913928199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              92
+            ]
+          }
+        ],
+        "orig": "(c) The hotel staff will be completing all the arrangements by the time the PM reaches here.",
+        "text": "(c) The hotel staff will be completing all the arrangements by the time the PM reaches here.",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/60",
+        "parent": {
+          "$ref": "#/groups/1"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 308.54999,
+              "t": 280.55175968749995,
+              "r": 570.9122919199999,
+              "b": 260.04569281998533,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              87
+            ]
+          }
+        ],
+        "orig": "(d) The hotel staff will complete all the arrangements by the time the PM reaches here.",
+        "text": "(d) The hotel staff will complete all the arrangements by the time the PM reaches here.",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/61",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "section_header",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 308.54999,
+              "t": 242.72265588447272,
+              "r": 359.65407743749995,
+              "b": 234.4943598207749,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              12
+            ]
+          }
+        ],
+        "orig": "Solutions :-",
+        "text": "Solutions :-",
+        "level": 1
+      },
+      {
+        "self_ref": "#/texts/62",
+        "parent": {
+          "$ref": "#/groups/2"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 308.54999,
+              "t": 219.0185496875,
+              "r": 568.42938692,
+              "b": 186.09256281998535,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              149
+            ]
+          }
+        ],
+        "orig": "Sol.238.(d) A series of ground-breaking experiments were conducted by the scientist, revealing new insights into the nature of dark matter. (Correct)",
+        "text": "Sol.238.(d) A series of ground-breaking experiments were conducted by the scientist, revealing new insights into the nature of dark matter. (Correct)",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/63",
+        "parent": {
+          "$ref": "#/groups/2"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 308.54999,
+              "t": 181.7529296875,
+              "r": 564.9796794199999,
+              "b": 148.82499281998537,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              158
+            ]
+          }
+        ],
+        "orig": "(a) A series of ground-breaking experiments are conducted by the  scientist,  revealing  new  insights  into  the  nature   of  dark matter. (Incorrect Tense)",
+        "text": "(a) A series of ground-breaking experiments are conducted by the  scientist,  revealing  new  insights  into  the  nature   of  dark matter. (Incorrect Tense)",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/64",
+        "parent": {
+          "$ref": "#/groups/2"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 308.54999,
+              "t": 144.48534968750005,
+              "r": 560.61151442,
+              "b": 111.55936281998538,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              162
+            ]
+          }
+        ],
+        "orig": "(b) A series of ground-breaking insights were conducted by the scientist, revealing new experiments into the nature of dark matter. (Incorrect Sentence Structure)",
+        "text": "(b) A series of ground-breaking insights were conducted by the scientist, revealing new experiments into the nature of dark matter. (Incorrect Sentence Structure)",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/65",
+        "parent": {
+          "$ref": "#/groups/2"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 308.54999,
+              "t": 107.21972968750003,
+              "r": 568.42938692,
+              "b": 74.29374281998537,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              154
+            ]
+          }
+        ],
+        "orig": "(c) A series of ground-breaking experiments have been conducted by the scientist, revealing new insights into the nature of dark matter. (Incorrect Tense)",
+        "text": "(c) A series of ground-breaking experiments have been conducted by the scientist, revealing new insights into the nature of dark matter. (Incorrect Tense)",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/66",
+        "parent": {
+          "$ref": "#/groups/2"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 308.54999,
+              "t": 61.67089968749997,
+              "r": 568.43084942,
+              "b": 41.166782819985315,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              97
+            ]
+          }
+        ],
+        "orig": "Sol.239.(a) Is  the  upcoming  exam  being  discussed  by  the students in the library? (Correct)",
+        "text": "Sol.239.(a) Is  the  upcoming  exam  being  discussed  by  the students in the library? (Correct)",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/67",
+        "parent": {
+          "$ref": "#/groups/2"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 308.54999,
+              "t": 36.82714968749997,
+              "r": 561.5739144199999,
+              "b": 28.744912819985302,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              59
+            ]
+          }
+        ],
+        "orig": "(b) Has the upcoming exam been discussed by the students in",
+        "text": "(b) Has the upcoming exam been discussed by the students in",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/68",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "furniture",
+        "label": "page_footer",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 99.3266505,
+              "t": 21.989447959472614,
+              "r": 495.95088382500006,
+              "b": 13.761151895774901,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              109
+            ]
+          }
+        ],
+        "orig": "www.ssccglpinnacle.com                                                 Download Pinnacle Exam Preparation App",
+        "text": "www.ssccglpinnacle.com                                                 Download Pinnacle Exam Preparation App"
+      },
+      {
+        "self_ref": "#/texts/69",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "furniture",
+        "label": "page_footer",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 32.0,
+              "t": 20.17999999999995,
+              "r": 101.77000000000001,
+              "b": 10.92999999999995,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              13
+            ]
+          }
+        ],
+        "orig": "TG: @ikunal_x",
+        "text": "TG: @ikunal_x"
+      }
+    ],
+    "pictures": [
+      {
+        "self_ref": "#/pictures/0",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "picture",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 11.937705039978027,
+              "t": 25.1075439453125,
+              "r": 48.00816345214844,
+              "b": 8.5093994140625,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              0
+            ]
+          }
+        ],
+        "captions": [],
+        "references": [],
+        "footnotes": [],
+        "annotations": []
+      },
+      {
+        "self_ref": "#/pictures/1",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "picture",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 50.85194396972656,
+              "t": 21.57330322265625,
+              "r": 103.0561752319336,
+              "b": 9.372314453125,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              0
+            ]
+          }
+        ],
+        "captions": [],
+        "references": [],
+        "footnotes": [],
+        "annotations": []
+      }
+    ],
+    "tables": [],
+    "key_value_items": [],
+    "form_items": [],
+    "pages": {
+      "1": {
+        "size": {
+          "width": 596.0,
+          "height": 842.0
+        },
+        "page_no": 1
+      }
+    }
+  }
+}

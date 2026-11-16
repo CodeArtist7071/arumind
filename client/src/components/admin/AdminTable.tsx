@@ -27,6 +27,7 @@ interface Column {
   flex?: number;
   autoHeight?: boolean;
   wrapText?: boolean;
+  comparator?: (valueA: any, valueB: any) => number;
 }
 
 interface AdminTableProps {
@@ -40,6 +41,7 @@ interface AdminTableProps {
   pageSize?: number;
   onPageChange?: (page: number) => void;
   onRefresh?: () => void;
+  searchPlaceholder?: string;
   enableCellSpan?: boolean;
   isFullWidthRow?: (params: any) => boolean;
   fullWidthCellRenderer?: any;
@@ -73,8 +75,10 @@ const CleanHeader = memo((props: any) => {
 
   return (
     <div className="flex items-center justify-between w-full h-full group">
-      <div 
-        className="flex items-center gap-2 cursor-pointer select-none py-1 h-full flex-1"
+      <button
+        type="button"
+        aria-label={`Sort by ${props.displayName}`}
+        className="flex items-center gap-2 cursor-pointer select-none py-1 h-full flex-1 text-left focus-visible:outline focus-visible:outline-2 focus-visible:outline-[#4c8b3e]"
         onClick={onSortRequested}
       >
         <span className="text-[11px] font-bold uppercase tracking-wider text-slate-800 dark:text-slate-200">
@@ -83,10 +87,11 @@ const CleanHeader = memo((props: any) => {
         <div className="text-slate-400 group-hover:text-[#16a34a] transition-all">
           {sort === 'asc' ? <ArrowUp size={12} /> : sort === 'desc' ? <ArrowDown size={12} /> : <ArrowUpDown size={12} className="opacity-0 group-hover:opacity-40" />}
         </div>
-      </div>
+      </button>
       <button 
         onClick={onMenuClicked}
-        className="p-1 text-slate-400 hover:text-[#16a34a] hover:bg-[#16a34a]/10 rounded transition-all opacity-0 group-hover:opacity-100"
+        aria-label={`Column options for ${props.displayName}`}
+        className="p-1 text-slate-400 hover:text-[#16a34a] hover:bg-[#16a34a]/10 rounded transition-all opacity-0 group-hover:opacity-100 focus-visible:opacity-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-[#4c8b3e]"
         title="Column Options"
       >
         <Menu size={14} />
@@ -106,7 +111,8 @@ const ActionCell = memo(({ data, onEdit, onDelete }: any) => (
         e.stopPropagation();
         onEdit(data);
       }}
-      className="p-1.5 text-slate-400 hover:text-[#16a34a] hover:bg-[#16a34a]/5 rounded-lg transition-all"
+      aria-label="Edit record"
+      className="p-2 text-slate-500 hover:text-[#16a34a] hover:bg-[#16a34a]/10 rounded-lg transition-all focus-visible:outline focus-visible:outline-2 focus-visible:outline-[#4c8b3e]"
       title="Edit"
     >
       <Edit3 size={15} />
@@ -116,7 +122,8 @@ const ActionCell = memo(({ data, onEdit, onDelete }: any) => (
         e.stopPropagation();
         onDelete(data.id);
       }}
-      className="p-1.5 text-slate-400 hover:text-red-500 hover:bg-red-500/5 rounded-lg transition-all"
+      aria-label="Delete record"
+      className="p-2 text-slate-500 hover:text-red-600 hover:bg-red-500/10 rounded-lg transition-all focus-visible:outline focus-visible:outline-2 focus-visible:outline-red-500"
       title="Delete"
     >
       <Trash2 size={15} />
@@ -134,11 +141,12 @@ export const AdminTable: React.FC<AdminTableProps> = memo(({
   onEdit,
   onDelete,
   loading = false,
-  totalCount = 0,
+  totalCount,
   page = 0,
   pageSize = 10,
   onPageChange,
   onRefresh,
+  searchPlaceholder = "Search records...",
   enableCellSpan,
   isFullWidthRow,
   fullWidthCellRenderer,
@@ -148,6 +156,7 @@ export const AdminTable: React.FC<AdminTableProps> = memo(({
   groupDefaultExpanded
 }) => {
   const [quickFilterText, setQuickFilterText] = useState("");
+  const recordCount = totalCount ?? data?.length ?? 0;
 
   const columnDefs = useMemo(() => {
     const defs: any[] = columns.map((col) => {
@@ -157,6 +166,7 @@ export const AdminTable: React.FC<AdminTableProps> = memo(({
         headerName: col.header,
         field: col.key,
         sortable: true,
+        comparator: col.comparator,
         filter: true,
         headerComponent: CleanHeader,
         flex: col.width ? col.flex : (col.flex ?? 1),
@@ -206,7 +216,7 @@ export const AdminTable: React.FC<AdminTableProps> = memo(({
     return defs;
   }, [columns, onEdit, onDelete]);
 
-  const totalPages = Math.ceil(totalCount / pageSize);
+  const totalPages = Math.ceil(recordCount / pageSize);
 
   if (loading && (!data || data.length === 0)) {
     return (
@@ -218,43 +228,40 @@ export const AdminTable: React.FC<AdminTableProps> = memo(({
   }
 
   return (
-    <div className="flex flex-col gap-5 w-full">
-      {/* SaaS Professional Toolbar */}
-      <div className="flex flex-col md:flex-row items-center justify-between gap-4 px-1">
-        <div className="relative w-full max-md:max-w-md group">
+      <div className="w-full overflow-hidden rounded-2xl border border-[#e5e9e0] bg-[#fbfcf8] p-4 dark:border-white/10 dark:bg-[#171e17] sm:p-5">
+      <div className="flex flex-col gap-3 pb-4 sm:flex-row sm:items-center sm:justify-between">
+        <div className="group relative w-full sm:max-w-sm">
           <Search 
-            size={14} 
-            className="absolute left-4 top-1/2 -translate-y-1/2 text-slate-400 group-focus-within:text-[#16a34a] transition-all" 
+            size={16} 
+            className="absolute left-3.5 top-1/2 -translate-y-1/2 text-[#879181] transition-colors group-focus-within:text-[#315f29]" 
           />
           <input
             type="text"
-            placeholder="Search..."
+            aria-label="Search records in table"
+            placeholder={searchPlaceholder}
             value={quickFilterText}
             onChange={(e) => setQuickFilterText(e.target.value)}
-            className="w-full bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl pl-11 pr-5 py-2.5 text-sm font-medium outline-none focus:ring-2 focus:ring-[#16a34a]/20 focus:border-[#16a34a]/30 transition-all"
+            className="min-h-11 w-full rounded-xl border border-[#e2e8dc] bg-white pl-10 pr-4 text-sm text-[#263b22] outline-none transition placeholder:text-[#9aa493] focus:border-[#7ba36e] focus:ring-4 focus:ring-[#7ba36e]/10 dark:border-white/10 dark:bg-[#111711] dark:text-[#e8eee4]"
           />
         </div>
-        
-        <div className="flex items-center gap-6">
+        <div className="flex items-center justify-between gap-4 sm:justify-end">
           <button 
             onClick={onRefresh}
-            className="group p-2 text-slate-500 hover:text-[#16a34a] hover:bg-[#16a34a]/5 rounded-lg transition-all"
+            aria-label="Refresh table"
+            disabled={!onRefresh}
+            className="grid size-10 place-items-center rounded-xl text-[#73806e] transition hover:bg-[#edf3e9] hover:text-[#315f29] disabled:cursor-default disabled:opacity-40 dark:hover:bg-white/[0.06]"
             title="Refresh"
           >
-            <RefreshCw size={16} className="group-active:rotate-180 transition-transform duration-500" />
+            <RefreshCw size={16} />
           </button>
-          
-          <div className="h-4 w-px bg-slate-200 dark:bg-slate-800" />
-          
-          <div className="flex items-center gap-2">
-            <span className="text-[10px] font-bold uppercase tracking-wider text-slate-400">Total:</span>
-            <span className="text-xs font-black text-slate-900 dark:text-slate-100 tabular-nums">{totalCount}</span>
+          <div className="rounded-lg bg-[#f0f4ec] px-3 py-2 text-xs text-[#687565] dark:bg-white/[0.06] dark:text-[#aeb9aa]">
+            <span className="font-semibold tabular-nums text-[#263b22] dark:text-white">{recordCount}</span> {recordCount === 1 ? "record" : "records"}
           </div>
         </div>
       </div>
 
       {/* High-Fidelity Grid Container */}
-      <div className="ag-theme-alpine w-full rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-800 shadow-sm" style={{ height: 550 }}>
+      <div className="ag-theme-alpine w-full overflow-hidden rounded-xl border border-[#e6eae2] dark:border-white/10" style={{ height: 520 }}>
         <AgGridReact
           rowData={data || []}
           columnDefs={columnDefs}
@@ -269,7 +276,6 @@ export const AdminTable: React.FC<AdminTableProps> = memo(({
           quickFilterText={quickFilterText}
           getRowId={(params: any) => params.data?.id}
           animateRows={true}
-          suppressCellFocus={true}
           defaultColDef={{
             flex: 1,
             minWidth: 100,
@@ -278,22 +284,23 @@ export const AdminTable: React.FC<AdminTableProps> = memo(({
           onGridReady={(params: any) => {
             params.api.sizeColumnsToFit();
           }}
-          overlayNoRowsTemplate='<span class="text-[11px] font-bold uppercase tracking-widest opacity-20 italic">No data available</span>'
+          overlayNoRowsTemplate='<span class="text-sm text-slate-500">No matching records found</span>'
         />
       </div>
 
       {/* SaaS Pagination Orchestration */}
       {totalPages > 1 && onPageChange && (
-        <div className="flex flex-col sm:flex-row justify-between items-center px-4 py-2 gap-4">
-          <div className="text-[10px] font-bold uppercase tracking-widest text-slate-500">
-             Showing <span className="text-[#16a34a] font-black">{Math.min(page * pageSize + 1, totalCount)}</span> - <span className="text-[#16a34a] font-black">{Math.min((page + 1) * pageSize, totalCount)}</span> of <span className="text-slate-900 dark:text-slate-100 font-extrabold">{totalCount}</span>
+        <div className="flex flex-col gap-3 px-1 pt-4 sm:flex-row sm:items-center sm:justify-between">
+          <div className="text-xs text-[#778171] dark:text-[#a6b09f]">
+             Showing <span className="font-semibold tabular-nums text-[#263b22] dark:text-white">{Math.min(page * pageSize + 1, recordCount)}</span>–<span className="font-semibold tabular-nums text-[#263b22] dark:text-white">{Math.min((page + 1) * pageSize, recordCount)}</span> of <span className="font-semibold tabular-nums text-[#263b22] dark:text-white">{recordCount}</span>
           </div>
           
-          <div className="flex items-center gap-1.5 p-1 bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl">
+          <div className="flex items-center gap-1 rounded-xl border border-[#e5e9e0] bg-white p-1 dark:border-white/10 dark:bg-[#111711]">
             <button
                onClick={() => onPageChange(page - 1)}
+               aria-label="Previous page"
                disabled={page === 0}
-               className="p-2 text-slate-500 hover:text-[#16a34a] hover:bg-white dark:hover:bg-slate-800 disabled:opacity-30 disabled:hover:bg-transparent rounded-lg transition-all"
+               className="p-2 text-slate-500 hover:text-[#16a34a] hover:bg-white dark:hover:bg-slate-800 disabled:opacity-30 disabled:hover:bg-transparent rounded-lg transition-all focus-visible:outline focus-visible:outline-2 focus-visible:outline-[#4c8b3e]"
             >
               <ChevronLeft size={16} />
             </button>
@@ -304,12 +311,13 @@ export const AdminTable: React.FC<AdminTableProps> = memo(({
                   {page + 1}
                </span>
                <span className="text-[10px] font-bold text-slate-400">OF {totalPages}</span>
-            </div>
+      </div>
 
             <button
                onClick={() => onPageChange(page + 1)}
+               aria-label="Next page"
                disabled={page >= totalPages - 1}
-               className="p-2 text-slate-500 hover:text-[#16a34a] hover:bg-white dark:hover:bg-slate-800 disabled:opacity-30 disabled:hover:bg-transparent rounded-lg transition-all"
+               className="p-2 text-slate-500 hover:text-[#16a34a] hover:bg-white dark:hover:bg-slate-800 disabled:opacity-30 disabled:hover:bg-transparent rounded-lg transition-all focus-visible:outline focus-visible:outline-2 focus-visible:outline-[#4c8b3e]"
             >
               <ChevronRight size={16} />
             </button>

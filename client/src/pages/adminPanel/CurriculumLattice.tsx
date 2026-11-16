@@ -85,22 +85,21 @@ const CurriculumLattice: React.FC = () => {
   }
 
   return (
-    <div className="p-10 space-y-12 animate-in fade-in duration-500">
+    <div className="mx-auto w-full max-w-[1440px] space-y-6 px-4 py-6 sm:px-7 sm:py-8 lg:px-10 lg:py-10">
       {/* Editorial Header */}
-      <header className="flex flex-col md:flex-row justify-between items-end gap-6 border-b border-slate-100 dark:border-slate-800 pb-10">
+      <header className="flex flex-col justify-between gap-5 border-b border-[#e5e9e0] pb-6 dark:border-white/10 md:flex-row md:items-end">
         <div className="max-w-xl">
-          <h2 className="text-5xl font-bold tracking-tighter text-slate-800 dark:text-slate-100 italic leading-none">
-            Curriculum <span className="text-[#16a34a]">Lattice</span>
+          <h2 className="text-2xl font-semibold tracking-tight text-[#1b2419] dark:text-[#e8eee4] sm:text-3xl">
+            Curriculum designer
           </h2>
-          <p className="text-sm text-slate-500 mt-4 leading-relaxed font-medium">
-            Analyze and orchestrate the hierarchical manifestation of knowledge sectors, 
-            ranging from primary board examinations to specific assessment entities.
+          <p className="mt-2 max-w-xl text-sm leading-relaxed text-[#778171] dark:text-[#a6b09f]">
+            Browse the curriculum from exam to subject and chapter, then open a chapter to manage its questions.
           </p>
         </div>
         <div className="flex gap-4">
             <button 
                 onClick={refresh}
-                className="px-6 py-3 rounded-xl border border-slate-200 dark:border-slate-800 text-[10px] font-black uppercase tracking-widest hover:bg-slate-50 transition-all flex items-center gap-2"
+                className="flex min-h-10 items-center gap-2 rounded-xl border border-[#dfe6d9] px-3.5 text-sm font-medium text-[#52604d] transition hover:bg-[#edf3e9] dark:border-white/10 dark:text-[#c3cdbd] dark:hover:bg-white/[0.06]"
             >
                 <Database size={14} /> Re-sync
             </button>

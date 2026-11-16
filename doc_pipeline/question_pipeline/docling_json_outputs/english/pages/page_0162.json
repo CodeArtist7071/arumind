@@ -1,0 +1,5043 @@
+{
+  "document_id": "english",
+  "source": "english.pdf",
+  "pdf_page": 162,
+  "page_width": 596.0,
+  "page_height": 842.0,
+  "extracted_at": "2026-09-09T10:20:41.858808+00:00",
+  "extraction_version": 4,
+  "ocr_enabled": true,
+  "extraction_detection": {
+    "requested_profile": "auto",
+    "effective_profile": "hybrid",
+    "embedded_text_characters": 4424,
+    "auto_text_threshold": 80
+  },
+  "docling_result": {
+    "status": "success",
+    "errors": []
+  },
+  "content_summary": {
+    "text_items": 57,
+    "text_characters": 5567,
+    "table_items": 0,
+    "picture_items": 0,
+    "group_items": 4,
+    "warnings": []
+  },
+  "reading_order": {
+    "source": "docling_iterate_items",
+    "items": [
+      {
+        "reading_order_index": 0,
+        "element_ref": "#/texts/1",
+        "label": "list_item",
+        "level": 2,
+        "text_preview": "(b) She said, \"I am going to the market.\""
+      },
+      {
+        "reading_order_index": 1,
+        "element_ref": "#/texts/2",
+        "label": "list_item",
+        "level": 2,
+        "text_preview": "(c) She said, \"I will go to the market.\""
+      },
+      {
+        "reading_order_index": 2,
+        "element_ref": "#/texts/3",
+        "label": "list_item",
+        "level": 2,
+        "text_preview": "(d) She said, \"I was going to the market.\""
+      },
+      {
+        "reading_order_index": 3,
+        "element_ref": "#/texts/4",
+        "label": "section_header",
+        "level": 1,
+        "text_preview": "Solutions :-"
+      },
+      {
+        "reading_order_index": 4,
+        "element_ref": "#/texts/5",
+        "label": "text",
+        "level": 1,
+        "text_preview": "Sol.153.(d) My friend said, \"I can meet you after lunch.\" (Correct)"
+      },
+      {
+        "reading_order_index": 5,
+        "element_ref": "#/texts/6",
+        "label": "list_item",
+        "level": 2,
+        "text_preview": "(a)  My  friend  said,  \"Shall  I  meet  you  after  lunch?\"  (Incorrect Modal)"
+      },
+      {
+        "reading_order_index": 6,
+        "element_ref": "#/texts/7",
+        "label": "list_item",
+        "level": 2,
+        "text_preview": "(b)  My  friend  said,  \"I  could  meet  you  after  lunch.\"  (Incorrect Modal)"
+      },
+      {
+        "reading_order_index": 7,
+        "element_ref": "#/texts/8",
+        "label": "list_item",
+        "level": 2,
+        "text_preview": "(c)  My  friend  said,  \"May  I  meet  you  after  lunch?\"  (Incorrect Modal)"
+      },
+      {
+        "reading_order_index": 8,
+        "element_ref": "#/texts/9",
+        "label": "list_item",
+        "level": 2,
+        "text_preview": "Sol.154.(d) Rehan told Mallika that the Somnath Temple is in Prabhas Patan in Gujarat. (Correct)"
+      },
+      {
+        "reading_order_index": 9,
+        "element_ref": "#/texts/10",
+        "label": "list_item",
+        "level": 2,
+        "text_preview": "(a) Rehan told Mallika that the Somnath Temple was in Prabhas Patan in Gujarat. (Incorrect Verb)"
+      },
+      {
+        "reading_order_index": 10,
+        "element_ref": "#/texts/11",
+        "label": "list_item",
+        "level": 2,
+        "text_preview": "(b)  Rehan  told  Mallika  that  the  Somnath  Temple  had  been  in Prabhas Patan in Gujarat. (Incorrect Verb)"
+      },
+      {
+        "reading_order_index": 11,
+        "element_ref": "#/texts/12",
+        "label": "list_item",
+        "level": 2,
+        "text_preview": "(c)  Rehan  told  Mallika  that  the  Somnath  Temple  has  been  in Prabhas Patan in Gujarat. (Incorrect Verb)"
+      },
+      {
+        "reading_order_index": 12,
+        "element_ref": "#/texts/13",
+        "label": "list_item",
+        "level": 2,
+        "text_preview": "Sol.155.(d) The  officer  said  that  if  he  had  known  about  the problem earlier, he would have helped. (Correct)"
+      },
+      {
+        "reading_order_index": 13,
+        "element_ref": "#/texts/14",
+        "label": "list_item",
+        "level": 2,
+        "text_preview": "(a) The officer said he had helped if he had known it. (Incorrect Sentence Structure)"
+      },
+      {
+        "reading_order_index": 14,
+        "element_ref": "#/texts/15",
+        "label": "list_item",
+        "level": 2,
+        "text_preview": "(b) The officer told if he knew about the problem, he would help. (Incorrect Tense)"
+      },
+      {
+        "reading_order_index": 15,
+        "element_ref": "#/texts/16",
+        "label": "list_item",
+        "level": 2,
+        "text_preview": "(c)  The  officer  said  that  he  know  if  he  had  helped.  (Incorrect Tense)"
+      },
+      {
+        "reading_order_index": 16,
+        "element_ref": "#/texts/17",
+        "label": "list_item",
+        "level": 2,
+        "text_preview": "Sol.156.(b) Roshni told Rakesh that time and tide waits for none. (Correct)  'Time  and  tide  waits  for  none'  is  a  proverb,  which means  that people  can"
+      },
+      {
+        "reading_order_index": 17,
+        "element_ref": "#/texts/18",
+        "label": "list_item",
+        "level": 2,
+        "text_preview": "Sol.157.(d) The teacher  said,  \"The  sun  rises  in  the  east.\" (Correct)"
+      },
+      {
+        "reading_order_index": 18,
+        "element_ref": "#/texts/19",
+        "label": "list_item",
+        "level": 2,
+        "text_preview": "(a) The teacher said, \"The sun rising in the east.\" (Incorrect form of Verb)"
+      },
+      {
+        "reading_order_index": 19,
+        "element_ref": "#/texts/20",
+        "label": "list_item",
+        "level": 2,
+        "text_preview": "(b) The teacher said, \"The sun rose in the east.\" (Incorrect Tense) (c)  The  teacher  said,  \"The sun has risen in the east.\" (Incorrect Tense)"
+      },
+      {
+        "reading_order_index": 20,
+        "element_ref": "#/texts/21",
+        "label": "list_item",
+        "level": 2,
+        "text_preview": "Sol.158.(a) She  exclaimed  to  her  friend  that  she  had  made  a very beautiful painting. (Correct)"
+      },
+      {
+        "reading_order_index": 21,
+        "element_ref": "#/texts/22",
+        "label": "list_item",
+        "level": 2,
+        "text_preview": "(b) She told her that the painting is beautiful. (Incorrect Sentence Structure)"
+      },
+      {
+        "reading_order_index": 22,
+        "element_ref": "#/texts/23",
+        "label": "list_item",
+        "level": 2,
+        "text_preview": "(c)  She  exclaimed  to  her  friend  that she made a very beautiful painting. (Incorrect Tense)"
+      },
+      {
+        "reading_order_index": 23,
+        "element_ref": "#/texts/24",
+        "label": "list_item",
+        "level": 2,
+        "text_preview": "(d) She shouted that painting was very nice. (Incorrect Sentence Structure)"
+      },
+      {
+        "reading_order_index": 24,
+        "element_ref": "#/texts/25",
+        "label": "list_item",
+        "level": 2,
+        "text_preview": "Sol.159.(a) The teacher asked  them  to  open  their  books. (Correct)"
+      },
+      {
+        "reading_order_index": 25,
+        "element_ref": "#/texts/26",
+        "label": "list_item",
+        "level": 2,
+        "text_preview": "(b)  The  teacher  asked  to open books. (The verb 'ask' needs an object)"
+      },
+      {
+        "reading_order_index": 26,
+        "element_ref": "#/texts/27",
+        "label": "list_item",
+        "level": 2,
+        "text_preview": "(c)  The  teacher  ordered  them  opening  the  books.  (Incorrect Verb)"
+      },
+      {
+        "reading_order_index": 27,
+        "element_ref": "#/texts/28",
+        "label": "list_item",
+        "level": 2,
+        "text_preview": "(d) The teacher said them open your books. (Incorrect Verb)"
+      },
+      {
+        "reading_order_index": 28,
+        "element_ref": "#/texts/29",
+        "label": "text",
+        "level": 1,
+        "text_preview": "Sol.160.(c) He said, 'I was waiting here for more than two hours Narration before the gates finally opened.' (Correct)"
+      },
+      {
+        "reading_order_index": 29,
+        "element_ref": "#/texts/30",
+        "label": "list_item",
+        "level": 2,
+        "text_preview": "(a) He said, 'I have been waiting here since two hours before the gates opened.' (Incorrect preposition)"
+      },
+      {
+        "reading_order_index": 30,
+        "element_ref": "#/texts/31",
+        "label": "list_item",
+        "level": 2,
+        "text_preview": "(b)  He  said,  'I  waited  here  two  hours  before  gates  opened.' (Incorrect Tense)"
+      },
+      {
+        "reading_order_index": 31,
+        "element_ref": "#/texts/32",
+        "label": "list_item",
+        "level": 2,
+        "text_preview": "(d)  He  said,  'I  had  waiting  there  before  the  gates  opened.' (Incorrect Tense)"
+      },
+      {
+        "reading_order_index": 32,
+        "element_ref": "#/texts/33",
+        "label": "list_item",
+        "level": 2,
+        "text_preview": "Sol.161.(c) They said that they would visit the museum the next day. (Correct)"
+      },
+      {
+        "reading_order_index": 33,
+        "element_ref": "#/texts/34",
+        "label": "list_item",
+        "level": 2,
+        "text_preview": "(a)  They  said  that  we  shall  have  visited  the  museum  the following day. (Incorrect Verb)"
+      },
+      {
+        "reading_order_index": 34,
+        "element_ref": "#/texts/35",
+        "label": "list_item",
+        "level": 2,
+        "text_preview": "(b)  They  told  that  they  should  visit  the  museum  the  following day. (Incorrect Verb)"
+      },
+      {
+        "reading_order_index": 35,
+        "element_ref": "#/texts/36",
+        "label": "list_item",
+        "level": 2,
+        "text_preview": "(d) They said they would be visiting the museum. (Incorrect Verb)"
+      },
+      {
+        "reading_order_index": 36,
+        "element_ref": "#/texts/37",
+        "label": "list_item",
+        "level": 2,
+        "text_preview": "Sol.162.(c) Roshan  says that he has completed his homework. (Correct)"
+      },
+      {
+        "reading_order_index": 37,
+        "element_ref": "#/texts/38",
+        "label": "list_item",
+        "level": 2,
+        "text_preview": "(a) Roshan said that he had completed his homework. (Incorrect Verb)"
+      },
+      {
+        "reading_order_index": 38,
+        "element_ref": "#/texts/39",
+        "label": "list_item",
+        "level": 2,
+        "text_preview": "(b) Roshan says that he had completed his  homework. (Incorrect Tense)"
+      },
+      {
+        "reading_order_index": 39,
+        "element_ref": "#/texts/40",
+        "label": "list_item",
+        "level": 2,
+        "text_preview": "(d) Roshan said that he has completed his homework. (Incorrect Verb)"
+      },
+      {
+        "reading_order_index": 40,
+        "element_ref": "#/texts/41",
+        "label": "list_item",
+        "level": 2,
+        "text_preview": "Sol.163.(d) The  labourers asked the contractor if he had asked the manager when they were going to receive their remuneration that had been pending for the pre"
+      },
+      {
+        "reading_order_index": 41,
+        "element_ref": "#/texts/42",
+        "label": "list_item",
+        "level": 2,
+        "text_preview": "was pending for the last three months. (Incorrect Word Order)"
+      },
+      {
+        "reading_order_index": 42,
+        "element_ref": "#/texts/43",
+        "label": "list_item",
+        "level": 2,
+        "text_preview": "Sol.164.(b) Rajesh  tells  Malini  that  they  did  not  like the dance the previous year. (Correct)"
+      },
+      {
+        "reading_order_index": 43,
+        "element_ref": "#/texts/44",
+        "label": "list_item",
+        "level": 2,
+        "text_preview": "(a)  Rajesh  tells  Malini  that  they  had  not  liked  the  dance  the previous year. (Incorrect Tense)"
+      },
+      {
+        "reading_order_index": 44,
+        "element_ref": "#/texts/45",
+        "label": "list_item",
+        "level": 2,
+        "text_preview": "(c)  Rajesh  told  Malini that they did not like the dance last year. (Incorrect Reporting Verb)"
+      },
+      {
+        "reading_order_index": 45,
+        "element_ref": "#/texts/46",
+        "label": "list_item",
+        "level": 2,
+        "text_preview": "(d)  Rajesh  told  Malini  that  they  had  not  liked  the  dance  the previous year. (Incorrect Reporting Verb and Tense)"
+      },
+      {
+        "reading_order_index": 46,
+        "element_ref": "#/texts/47",
+        "label": "text",
+        "level": 1,
+        "text_preview": "Sol.165.(b) He said, \"Did you take the medications?\" (Correct)"
+      },
+      {
+        "reading_order_index": 47,
+        "element_ref": "#/texts/48",
+        "label": "list_item",
+        "level": 2,
+        "text_preview": "(a)  He  said,  \"Whether  you  take  the  medications?\"  (Incorrect Sentence Structure)"
+      },
+      {
+        "reading_order_index": 48,
+        "element_ref": "#/texts/49",
+        "label": "list_item",
+        "level": 2,
+        "text_preview": "(c) He said, \"Did I take the medications?\" (Incorrect Pronoun)"
+      },
+      {
+        "reading_order_index": 49,
+        "element_ref": "#/texts/50",
+        "label": "list_item",
+        "level": 2,
+        "text_preview": "(d) He said, \"Did you took the medications?\" (Incorrect Verb)"
+      },
+      {
+        "reading_order_index": 50,
+        "element_ref": "#/texts/51",
+        "label": "list_item",
+        "level": 2,
+        "text_preview": "Sol.166.(d) They said, \"We have already completed our homework.\" (Correct)"
+      },
+      {
+        "reading_order_index": 51,
+        "element_ref": "#/texts/52",
+        "label": "list_item",
+        "level": 2,
+        "text_preview": "(a) They said, \"We already completed their homework.\" (Incorrect Pronoun)"
+      },
+      {
+        "reading_order_index": 52,
+        "element_ref": "#/texts/53",
+        "label": "list_item",
+        "level": 2,
+        "text_preview": "(b)  They  said,  \"We  have  completed  our  homework.\"  (Incorrect Tense)"
+      },
+      {
+        "reading_order_index": 53,
+        "element_ref": "#/texts/54",
+        "label": "list_item",
+        "level": 2,
+        "text_preview": "(c)  They  said,  \"We  have already completed homework of ours.\" (Incorrect Wording)"
+      },
+      {
+        "reading_order_index": 54,
+        "element_ref": "#/texts/55",
+        "label": "list_item",
+        "level": 2,
+        "text_preview": "Sol.167.(c) Rashmi told Reshma that Mahima had been dancing on the floor when she had been called by her mother. (Correct)"
+      }
+    ]
+  },
+  "layout_analysis": {
+    "method": "docling_bbox_left_edge_clustering_v1",
+    "column_count": 2,
+    "confidence": 1.0,
+    "page_width": 596.0,
+    "page_height": 842.0,
+    "columns": [
+      {
+        "column_index": 1,
+        "left": 0.0,
+        "right": 168.675,
+        "detected_start": 28.8,
+        "supporting_elements": 29
+      },
+      {
+        "column_index": 2,
+        "left": 168.675,
+        "right": 596.0,
+        "detected_start": 308.55,
+        "supporting_elements": 26
+      }
+    ],
+    "elements": [
+      {
+        "element_ref": "#/texts/0",
+        "element_type": "text",
+        "label": "page_header",
+        "column_index": 1,
+        "column_indices": [
+          1
+        ],
+        "spans_columns": false,
+        "reading_order_index": null,
+        "bbox": {
+          "l": 28.800003,
+          "t": 830.7925780594726,
+          "r": 95.7084616875,
+          "b": 822.5642819957749,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/1",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 1,
+        "column_indices": [
+          1
+        ],
+        "spans_columns": false,
+        "reading_order_index": 0,
+        "bbox": {
+          "l": 28.800003,
+          "t": 814.6962886875,
+          "r": 187.52607491999999,
+          "b": 806.6140518199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/2",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 1,
+        "column_indices": [
+          1
+        ],
+        "spans_columns": false,
+        "reading_order_index": 1,
+        "bbox": {
+          "l": 28.800003,
+          "t": 802.2744136875,
+          "r": 175.51142742,
+          "b": 794.1921768199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/3",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 1,
+        "column_indices": [
+          1
+        ],
+        "spans_columns": false,
+        "reading_order_index": 2,
+        "bbox": {
+          "l": 28.800003,
+          "t": 789.8525386875,
+          "r": 188.831254725,
+          "b": 781.7703018199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/4",
+        "element_type": "text",
+        "label": "section_header",
+        "column_index": 1,
+        "column_indices": [
+          1
+        ],
+        "spans_columns": false,
+        "reading_order_index": 3,
+        "bbox": {
+          "l": 28.800003,
+          "t": 765.8281248844726,
+          "r": 79.90409043749999,
+          "b": 757.5998288207749,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/5",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 4,
+        "bbox": {
+          "l": 28.800003,
+          "t": 742.1240236875,
+          "r": 287.63789742,
+          "b": 734.0417868199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/6",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 5,
+        "bbox": {
+          "l": 28.800003,
+          "t": 729.7021486875,
+          "r": 288.41719242,
+          "b": 709.1980368199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/7",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 6,
+        "bbox": {
+          "l": 28.800003,
+          "t": 704.8583986875,
+          "r": 288.44355492,
+          "b": 684.3523338199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/8",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 7,
+        "bbox": {
+          "l": 28.800003,
+          "t": 680.0126956875,
+          "r": 288.60469242,
+          "b": 659.5085828199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/9",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 8,
+        "bbox": {
+          "l": 28.800003,
+          "t": 646.8896496875,
+          "r": 275.77705241999996,
+          "b": 626.3855328199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/10",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 9,
+        "bbox": {
+          "l": 28.800003,
+          "t": 622.0458996875,
+          "r": 288.76289742,
+          "b": 601.5398328199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/11",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 10,
+        "bbox": {
+          "l": 28.800003,
+          "t": 597.2001996875,
+          "r": 288.36592242,
+          "b": 576.6960828199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/12",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 11,
+        "bbox": {
+          "l": 28.800003,
+          "t": 572.3564496875,
+          "r": 288.34248492,
+          "b": 551.8523328199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/13",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 12,
+        "bbox": {
+          "l": 28.800003,
+          "t": 539.2314496875,
+          "r": 288.97675992,
+          "b": 518.7253828199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/14",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 13,
+        "bbox": {
+          "l": 28.800003,
+          "t": 514.3857396875001,
+          "r": 288.57539742,
+          "b": 493.8816328199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/15",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 14,
+        "bbox": {
+          "l": 28.800003,
+          "t": 489.5419896875,
+          "r": 288.33808992,
+          "b": 469.0378828199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/16",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 15,
+        "bbox": {
+          "l": 28.800003,
+          "t": 464.6982396875,
+          "r": 288.86836242,
+          "b": 444.1941328199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/17",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 16,
+        "bbox": {
+          "l": 28.800003,
+          "t": 431.5732396875,
+          "r": 288.99433992,
+          "b": 348.95975281998534,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/18",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 17,
+        "bbox": {
+          "l": 28.800003,
+          "t": 336.3369096875,
+          "r": 288.70283742,
+          "b": 315.8328028199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/19",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 18,
+        "bbox": {
+          "l": 28.800003,
+          "t": 311.4931596875,
+          "r": 288.46992492,
+          "b": 290.9890528199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/20",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 19,
+        "bbox": {
+          "l": 28.800003,
+          "t": 286.6494096875,
+          "r": 288.60908742,
+          "b": 253.72342281998533,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/21",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 20,
+        "bbox": {
+          "l": 28.800003,
+          "t": 241.10253968749998,
+          "r": 288.67500492,
+          "b": 220.59842281998533,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/22",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 21,
+        "bbox": {
+          "l": 28.800003,
+          "t": 216.25878968749998,
+          "r": 288.75410742,
+          "b": 195.75467281998533,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/23",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 22,
+        "bbox": {
+          "l": 28.800003,
+          "t": 191.41503968749998,
+          "r": 288.36884742,
+          "b": 170.91092281998533,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/24",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 23,
+        "bbox": {
+          "l": 28.800003,
+          "t": 166.57128968749998,
+          "r": 288.80537742,
+          "b": 146.06522281998537,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/25",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 24,
+        "bbox": {
+          "l": 28.800003,
+          "t": 133.44433968750002,
+          "r": 288.34394742,
+          "b": 112.94022281998537,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/26",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 25,
+        "bbox": {
+          "l": 28.800003,
+          "t": 108.60058968750002,
+          "r": 288.93427992,
+          "b": 88.09647281998537,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/27",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 26,
+        "bbox": {
+          "l": 28.800003,
+          "t": 83.75683968750002,
+          "r": 288.59736491999996,
+          "b": 63.252722819985365,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/28",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 27,
+        "bbox": {
+          "l": 28.800003,
+          "t": 58.91308968750002,
+          "r": 269.48408742,
+          "b": 50.83085281998535,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/29",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 28,
+        "bbox": {
+          "l": 28.800003,
+          "t": 38.20800968749995,
+          "r": 288.13447242,
+          "b": 30.125772819985286,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/30",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 2,
+        "column_indices": [
+          2
+        ],
+        "spans_columns": false,
+        "reading_order_index": 29,
+        "bbox": {
+          "l": 308.54999,
+          "t": 802.2744136875,
+          "r": 568.6051644199999,
+          "b": 781.7703018199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/31",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 2,
+        "column_indices": [
+          2
+        ],
+        "spans_columns": false,
+        "reading_order_index": 30,
+        "bbox": {
+          "l": 308.54999,
+          "t": 777.4306636875,
+          "r": 568.2243069199999,
+          "b": 756.9265518199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/32",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 2,
+        "column_indices": [
+          2
+        ],
+        "spans_columns": false,
+        "reading_order_index": 31,
+        "bbox": {
+          "l": 308.54999,
+          "t": 752.5869136875,
+          "r": 568.07049692,
+          "b": 732.0828018199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/33",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 2,
+        "column_indices": [
+          2
+        ],
+        "spans_columns": false,
+        "reading_order_index": 32,
+        "bbox": {
+          "l": 308.54999,
+          "t": 719.4619136875,
+          "r": 568.36053692,
+          "b": 698.9578018199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/34",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 2,
+        "column_indices": [
+          2
+        ],
+        "spans_columns": false,
+        "reading_order_index": 33,
+        "bbox": {
+          "l": 308.54999,
+          "t": 694.6181636875,
+          "r": 568.73114192,
+          "b": 674.1140518199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/35",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 2,
+        "column_indices": [
+          2
+        ],
+        "spans_columns": false,
+        "reading_order_index": 34,
+        "bbox": {
+          "l": 308.54999,
+          "t": 669.7744096875,
+          "r": 568.55096942,
+          "b": 649.2703028199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/36",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 2,
+        "column_indices": [
+          2
+        ],
+        "spans_columns": false,
+        "reading_order_index": 35,
+        "bbox": {
+          "l": 308.54999,
+          "t": 644.9306596875,
+          "r": 548.8209894199999,
+          "b": 624.4265528199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/37",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 2,
+        "column_indices": [
+          2
+        ],
+        "spans_columns": false,
+        "reading_order_index": 36,
+        "bbox": {
+          "l": 308.54999,
+          "t": 610.4247996875,
+          "r": 568.31366192,
+          "b": 589.9206928199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/38",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 2,
+        "column_indices": [
+          2
+        ],
+        "spans_columns": false,
+        "reading_order_index": 37,
+        "bbox": {
+          "l": 308.54999,
+          "t": 585.5810496875,
+          "r": 569.32147442,
+          "b": 565.0769428199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/39",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 2,
+        "column_indices": [
+          2
+        ],
+        "spans_columns": false,
+        "reading_order_index": 38,
+        "bbox": {
+          "l": 308.54999,
+          "t": 560.7353496875,
+          "r": 568.30194692,
+          "b": 540.2312428199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/40",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 2,
+        "column_indices": [
+          2
+        ],
+        "spans_columns": false,
+        "reading_order_index": 39,
+        "bbox": {
+          "l": 308.54999,
+          "t": 535.8915996875,
+          "r": 569.0709894199999,
+          "b": 515.3874928199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/41",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 2,
+        "column_indices": [
+          2
+        ],
+        "spans_columns": false,
+        "reading_order_index": 40,
+        "bbox": {
+          "l": 308.54999,
+          "t": 501.3857396875,
+          "r": 568.78241192,
+          "b": 369.0828028199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/42",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 2,
+        "column_indices": [
+          2
+        ],
+        "spans_columns": false,
+        "reading_order_index": 41,
+        "bbox": {
+          "l": 308.54999,
+          "t": 364.7431596875,
+          "r": 556.2477444199999,
+          "b": 356.66092281998533,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/43",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 2,
+        "column_indices": [
+          2
+        ],
+        "spans_columns": false,
+        "reading_order_index": 42,
+        "bbox": {
+          "l": 308.54999,
+          "t": 342.6611296875,
+          "r": 568.41620192,
+          "b": 322.15506281998535,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/44",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 2,
+        "column_indices": [
+          2
+        ],
+        "spans_columns": false,
+        "reading_order_index": 43,
+        "bbox": {
+          "l": 308.54999,
+          "t": 317.8154296875,
+          "r": 568.25799692,
+          "b": 297.31131281998535,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/45",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 2,
+        "column_indices": [
+          2
+        ],
+        "spans_columns": false,
+        "reading_order_index": 44,
+        "bbox": {
+          "l": 308.54999,
+          "t": 292.9716796875,
+          "r": 568.40741192,
+          "b": 272.46756281998535,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/46",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 2,
+        "column_indices": [
+          2
+        ],
+        "spans_columns": false,
+        "reading_order_index": 45,
+        "bbox": {
+          "l": 308.54999,
+          "t": 268.1279296875,
+          "r": 568.45282442,
+          "b": 247.62381281998535,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/47",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 2,
+        "column_indices": [
+          2
+        ],
+        "spans_columns": false,
+        "reading_order_index": 46,
+        "bbox": {
+          "l": 308.54999,
+          "t": 233.62206968750002,
+          "r": 558.0319269199999,
+          "b": 225.53983281998535,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/48",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 2,
+        "column_indices": [
+          2
+        ],
+        "spans_columns": false,
+        "reading_order_index": 47,
+        "bbox": {
+          "l": 308.54999,
+          "t": 221.2001996875,
+          "r": 568.47626192,
+          "b": 200.69608281998535,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/49",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 2,
+        "column_indices": [
+          2
+        ],
+        "spans_columns": false,
+        "reading_order_index": 48,
+        "bbox": {
+          "l": 308.54999,
+          "t": 196.3564496875,
+          "r": 552.10809692,
+          "b": 188.27421281998534,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/50",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 2,
+        "column_indices": [
+          2
+        ],
+        "spans_columns": false,
+        "reading_order_index": 49,
+        "bbox": {
+          "l": 308.54999,
+          "t": 183.93456968750002,
+          "r": 549.51532442,
+          "b": 175.85233281998535,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/51",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 2,
+        "column_indices": [
+          2
+        ],
+        "spans_columns": false,
+        "reading_order_index": 50,
+        "bbox": {
+          "l": 308.54999,
+          "t": 161.85058968750002,
+          "r": 568.22870192,
+          "b": 141.34647281998537,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/52",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 2,
+        "column_indices": [
+          2
+        ],
+        "spans_columns": false,
+        "reading_order_index": 51,
+        "bbox": {
+          "l": 308.54999,
+          "t": 137.00683968750002,
+          "r": 568.19647442,
+          "b": 116.50272281998537,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/53",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 2,
+        "column_indices": [
+          2
+        ],
+        "spans_columns": false,
+        "reading_order_index": 52,
+        "bbox": {
+          "l": 308.54999,
+          "t": 112.16308968750002,
+          "r": 568.39569692,
+          "b": 91.65897281998537,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/54",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 2,
+        "column_indices": [
+          2
+        ],
+        "spans_columns": false,
+        "reading_order_index": 53,
+        "bbox": {
+          "l": 308.54999,
+          "t": 87.31933968750002,
+          "r": 568.20819692,
+          "b": 66.81522281998537,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/55",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 2,
+        "column_indices": [
+          2
+        ],
+        "spans_columns": false,
+        "reading_order_index": 54,
+        "bbox": {
+          "l": 308.54999,
+          "t": 52.81151968749998,
+          "r": 568.4821194199999,
+          "b": 32.3074128199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/56",
+        "element_type": "text",
+        "label": "page_footer",
+        "column_index": 2,
+        "column_indices": [
+          2
+        ],
+        "spans_columns": false,
+        "reading_order_index": null,
+        "bbox": {
+          "l": 99.3266505,
+          "t": 21.989447959472614,
+          "r": 495.95088382500006,
+          "b": 13.761151895774901,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      }
+    ],
+    "warnings": []
+  },
+  "structure_chunks": {
+    "enabled": true,
+    "method": "docling_hybrid_chunker",
+    "scope": "page",
+    "items": [
+      {
+        "text": "- (b) She said, \"I am going to the market.\"\n- (c) She said, \"I will go to the market.\"\n- (d) She said, \"I was going to the market.\"",
+        "meta": {
+          "schema_name": "docling_core.transforms.chunker.DocMeta",
+          "version": "1.0.0",
+          "doc_items": [
+            {
+              "self_ref": "#/texts/1",
+              "parent": {
+                "cref": "#/groups/0"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 814.6962886875,
+                    "r": 187.52607491999999,
+                    "b": 806.6140518199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    41
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/2",
+              "parent": {
+                "cref": "#/groups/0"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 802.2744136875,
+                    "r": 175.51142742,
+                    "b": 794.1921768199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    40
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/3",
+              "parent": {
+                "cref": "#/groups/0"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 789.8525386875,
+                    "r": 188.831254725,
+                    "b": 781.7703018199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    42
+                  ]
+                }
+              ]
+            }
+          ],
+          "headings": null,
+          "captions": null,
+          "origin": {
+            "mimetype": "application/pdf",
+            "binary_hash": 7011984004679710152,
+            "filename": "english_page_0162.pdf",
+            "uri": null
+          }
+        },
+        "chunk_index": 0,
+        "contextualized_text": "- (b) She said, \"I am going to the market.\"\n- (c) She said, \"I will go to the market.\"\n- (d) She said, \"I was going to the market.\""
+      },
+      {
+        "text": "Sol.153.(d) My friend said, \"I can meet you after lunch.\" (Correct)",
+        "meta": {
+          "schema_name": "docling_core.transforms.chunker.DocMeta",
+          "version": "1.0.0",
+          "doc_items": [
+            {
+              "self_ref": "#/texts/5",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 742.1240236875,
+                    "r": 287.63789742,
+                    "b": 734.0417868199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    67
+                  ]
+                }
+              ]
+            }
+          ],
+          "headings": [
+            "Solutions :-"
+          ],
+          "captions": null,
+          "origin": {
+            "mimetype": "application/pdf",
+            "binary_hash": 7011984004679710152,
+            "filename": "english_page_0162.pdf",
+            "uri": null
+          }
+        },
+        "chunk_index": 1,
+        "contextualized_text": "Solutions :-\nSol.153.(d) My friend said, \"I can meet you after lunch.\" (Correct)"
+      },
+      {
+        "text": "- (a)  My  friend  said,  \"Shall  I  meet  you  after  lunch?\"  (Incorrect Modal)\n- (b)  My  friend  said,  \"I  could  meet  you  after  lunch.\"  (Incorrect Modal)\n- (c)  My  friend  said,  \"May  I  meet  you  after  lunch?\"  (Incorrect Modal)\n- Sol.154.(d) Rehan told Mallika that the Somnath Temple is in Prabhas Patan in Gujarat. (Correct)\n- (a) Rehan told Mallika that the Somnath Temple was in Prabhas Patan in Gujarat. (Incorrect Verb)\n- (b)  Rehan  told  Mallika  that  the  Somnath  Temple  had  been  in Prabhas Patan in Gujarat. (Incorrect Verb)\n- (c)  Rehan  told  Mallika  that  the  Somnath  Temple  has  been  in Prabhas Patan in Gujarat. (Incorrect Verb)\n- Sol.155.(d) The  officer  said  that  if  he  had  known  about  the problem earlier, he would have helped. (Correct)\n- (a) The officer said he had helped if he had known it. (Incorrect Sentence Structure)",
+        "meta": {
+          "schema_name": "docling_core.transforms.chunker.DocMeta",
+          "version": "1.0.0",
+          "doc_items": [
+            {
+              "self_ref": "#/texts/6",
+              "parent": {
+                "cref": "#/groups/1"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 729.7021486875,
+                    "r": 288.41719242,
+                    "b": 709.1980368199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    79
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/7",
+              "parent": {
+                "cref": "#/groups/1"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 704.8583986875,
+                    "r": 288.44355492,
+                    "b": 684.3523338199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    79
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/8",
+              "parent": {
+                "cref": "#/groups/1"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 680.0126956875,
+                    "r": 288.60469242,
+                    "b": 659.5085828199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    77
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/9",
+              "parent": {
+                "cref": "#/groups/1"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 646.8896496875,
+                    "r": 275.77705241999996,
+                    "b": 626.3855328199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    96
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/10",
+              "parent": {
+                "cref": "#/groups/1"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 622.0458996875,
+                    "r": 288.76289742,
+                    "b": 601.5398328199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    96
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/11",
+              "parent": {
+                "cref": "#/groups/1"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 597.2001996875,
+                    "r": 288.36592242,
+                    "b": 576.6960828199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    111
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/12",
+              "parent": {
+                "cref": "#/groups/1"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 572.3564496875,
+                    "r": 288.34248492,
+                    "b": 551.8523328199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    111
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/13",
+              "parent": {
+                "cref": "#/groups/1"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 539.2314496875,
+                    "r": 288.97675992,
+                    "b": 518.7253828199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    117
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/14",
+              "parent": {
+                "cref": "#/groups/1"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 514.3857396875001,
+                    "r": 288.57539742,
+                    "b": 493.8816328199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    85
+                  ]
+                }
+              ]
+            }
+          ],
+          "headings": [
+            "Solutions :-"
+          ],
+          "captions": null,
+          "origin": {
+            "mimetype": "application/pdf",
+            "binary_hash": 7011984004679710152,
+            "filename": "english_page_0162.pdf",
+            "uri": null
+          }
+        },
+        "chunk_index": 2,
+        "contextualized_text": "Solutions :-\n- (a)  My  friend  said,  \"Shall  I  meet  you  after  lunch?\"  (Incorrect Modal)\n- (b)  My  friend  said,  \"I  could  meet  you  after  lunch.\"  (Incorrect Modal)\n- (c)  My  friend  said,  \"May  I  meet  you  after  lunch?\"  (Incorrect Modal)\n- Sol.154.(d) Rehan told Mallika that the Somnath Temple is in Prabhas Patan in Gujarat. (Correct)\n- (a) Rehan told Mallika that the Somnath Temple was in Prabhas Patan in Gujarat. (Incorrect Verb)\n- (b)  Rehan  told  Mallika  that  the  Somnath  Temple  had  been  in Prabhas Patan in Gujarat. (Incorrect Verb)\n- (c)  Rehan  told  Mallika  that  the  Somnath  Temple  has  been  in Prabhas Patan in Gujarat. (Incorrect Verb)\n- Sol.155.(d) The  officer  said  that  if  he  had  known  about  the problem earlier, he would have helped. (Correct)\n- (a) The officer said he had helped if he had known it. (Incorrect Sentence Structure)"
+      },
+      {
+        "text": "- (b) The officer told if he knew about the problem, he would help. (Incorrect Tense)\n- (c)  The  officer  said  that  he  know  if  he  had  helped.  (Incorrect Tense)\n- Sol.156.(b) Roshni told Rakesh that time and tide waits for none. (Correct)  'Time  and  tide  waits  for  none'  is  a  proverb,  which means  that people  cannot  stop  the  passing  of  time,  and therefore  should  not  delay  doing  things.  When  the  reported speech is a general truth or a proverb, its tense does not change. Hence,  option  (b)  gives  the  correct  indirect  form  of  the  given sentence.\n- Sol.157.(d) The teacher  said,  \"The  sun  rises  in  the  east.\" (Correct)\n- (a) The teacher said, \"The sun rising in the east.\" (Incorrect form of Verb)\n- (b) The teacher said, \"The sun rose in the east.\" (Incorrect Tense) (c)  The  teacher  said,  \"The sun has risen in the east.\" (Incorrect Tense)\n- Sol.158.(a) She  exclaimed  to  her  friend  that  she  had  made  a very beautiful painting. (Correct)",
+        "meta": {
+          "schema_name": "docling_core.transforms.chunker.DocMeta",
+          "version": "1.0.0",
+          "doc_items": [
+            {
+              "self_ref": "#/texts/15",
+              "parent": {
+                "cref": "#/groups/1"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 489.5419896875,
+                    "r": 288.33808992,
+                    "b": 469.0378828199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    83
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/16",
+              "parent": {
+                "cref": "#/groups/1"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 464.6982396875,
+                    "r": 288.86836242,
+                    "b": 444.1941328199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    80
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/17",
+              "parent": {
+                "cref": "#/groups/1"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 431.5732396875,
+                    "r": 288.99433992,
+                    "b": 348.95975281998534,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    416
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/18",
+              "parent": {
+                "cref": "#/groups/1"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 336.3369096875,
+                    "r": 288.70283742,
+                    "b": 315.8328028199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    75
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/19",
+              "parent": {
+                "cref": "#/groups/1"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 311.4931596875,
+                    "r": 288.46992492,
+                    "b": 290.9890528199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    76
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/20",
+              "parent": {
+                "cref": "#/groups/1"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 286.6494096875,
+                    "r": 288.60908742,
+                    "b": 253.72342281998533,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    144
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/21",
+              "parent": {
+                "cref": "#/groups/1"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 241.10253968749998,
+                    "r": 288.67500492,
+                    "b": 220.59842281998533,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    103
+                  ]
+                }
+              ]
+            }
+          ],
+          "headings": [
+            "Solutions :-"
+          ],
+          "captions": null,
+          "origin": {
+            "mimetype": "application/pdf",
+            "binary_hash": 7011984004679710152,
+            "filename": "english_page_0162.pdf",
+            "uri": null
+          }
+        },
+        "chunk_index": 3,
+        "contextualized_text": "Solutions :-\n- (b) The officer told if he knew about the problem, he would help. (Incorrect Tense)\n- (c)  The  officer  said  that  he  know  if  he  had  helped.  (Incorrect Tense)\n- Sol.156.(b) Roshni told Rakesh that time and tide waits for none. (Correct)  'Time  and  tide  waits  for  none'  is  a  proverb,  which means  that people  cannot  stop  the  passing  of  time,  and therefore  should  not  delay  doing  things.  When  the  reported speech is a general truth or a proverb, its tense does not change. Hence,  option  (b)  gives  the  correct  indirect  form  of  the  given sentence.\n- Sol.157.(d) The teacher  said,  \"The  sun  rises  in  the  east.\" (Correct)\n- (a) The teacher said, \"The sun rising in the east.\" (Incorrect form of Verb)\n- (b) The teacher said, \"The sun rose in the east.\" (Incorrect Tense) (c)  The  teacher  said,  \"The sun has risen in the east.\" (Incorrect Tense)\n- Sol.158.(a) She  exclaimed  to  her  friend  that  she  had  made  a very beautiful painting. (Correct)"
+      },
+      {
+        "text": "- (b) She told her that the painting is beautiful. (Incorrect Sentence Structure)\n- (c)  She  exclaimed  to  her  friend  that she made a very beautiful painting. (Incorrect Tense)\n- (d) She shouted that painting was very nice. (Incorrect Sentence Structure)\n- Sol.159.(a) The teacher asked  them  to  open  their  books. (Correct)\n- (b)  The  teacher  asked  to open books. (The verb 'ask' needs an object)\n- (c)  The  teacher  ordered  them  opening  the  books.  (Incorrect Verb)\n- (d) The teacher said them open your books. (Incorrect Verb)\nSol.160.(c) He said, 'I was waiting here for more than two hours Narration before the gates finally opened.' (Correct)",
+        "meta": {
+          "schema_name": "docling_core.transforms.chunker.DocMeta",
+          "version": "1.0.0",
+          "doc_items": [
+            {
+              "self_ref": "#/texts/22",
+              "parent": {
+                "cref": "#/groups/1"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 216.25878968749998,
+                    "r": 288.75410742,
+                    "b": 195.75467281998533,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    79
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/23",
+              "parent": {
+                "cref": "#/groups/1"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 191.41503968749998,
+                    "r": 288.36884742,
+                    "b": 170.91092281998533,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    96
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/24",
+              "parent": {
+                "cref": "#/groups/1"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 166.57128968749998,
+                    "r": 288.80537742,
+                    "b": 146.06522281998537,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    75
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/25",
+              "parent": {
+                "cref": "#/groups/1"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 133.44433968750002,
+                    "r": 288.34394742,
+                    "b": 112.94022281998537,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    70
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/26",
+              "parent": {
+                "cref": "#/groups/1"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 108.60058968750002,
+                    "r": 288.93427992,
+                    "b": 88.09647281998537,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    73
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/27",
+              "parent": {
+                "cref": "#/groups/1"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 83.75683968750002,
+                    "r": 288.59736491999996,
+                    "b": 63.252722819985365,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    72
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/28",
+              "parent": {
+                "cref": "#/groups/1"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 58.91308968750002,
+                    "r": 269.48408742,
+                    "b": 50.83085281998535,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    59
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/29",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 38.20800968749995,
+                    "r": 288.13447242,
+                    "b": 30.125772819985286,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    64
+                  ]
+                },
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 291.757038,
+                    "t": 830.7925780594726,
+                    "r": 569.9647554374999,
+                    "b": 822.5642819957749,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    65,
+                    74
+                  ]
+                },
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 308.54999,
+                    "t": 814.6962886875,
+                    "r": 474.28094744,
+                    "b": 806.6140518199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    75,
+                    118
+                  ]
+                }
+              ]
+            }
+          ],
+          "headings": [
+            "Solutions :-"
+          ],
+          "captions": null,
+          "origin": {
+            "mimetype": "application/pdf",
+            "binary_hash": 7011984004679710152,
+            "filename": "english_page_0162.pdf",
+            "uri": null
+          }
+        },
+        "chunk_index": 4,
+        "contextualized_text": "Solutions :-\n- (b) She told her that the painting is beautiful. (Incorrect Sentence Structure)\n- (c)  She  exclaimed  to  her  friend  that she made a very beautiful painting. (Incorrect Tense)\n- (d) She shouted that painting was very nice. (Incorrect Sentence Structure)\n- Sol.159.(a) The teacher asked  them  to  open  their  books. (Correct)\n- (b)  The  teacher  asked  to open books. (The verb 'ask' needs an object)\n- (c)  The  teacher  ordered  them  opening  the  books.  (Incorrect Verb)\n- (d) The teacher said them open your books. (Incorrect Verb)\nSol.160.(c) He said, 'I was waiting here for more than two hours Narration before the gates finally opened.' (Correct)"
+      },
+      {
+        "text": "- (a) He said, 'I have been waiting here since two hours before the gates opened.' (Incorrect preposition)\n- (b)  He  said,  'I  waited  here  two  hours  before  gates  opened.' (Incorrect Tense)\n- (d)  He  said,  'I  had  waiting  there  before  the  gates  opened.' (Incorrect Tense)\n- Sol.161.(c) They said that they would visit the museum the next day. (Correct)\n- (a)  They  said  that  we  shall  have  visited  the  museum  the following day. (Incorrect Verb)\n- (b)  They  told  that  they  should  visit  the  museum  the  following day. (Incorrect Verb)\n- (d) They said they would be visiting the museum. (Incorrect Verb)\n- Sol.162.(c) Roshan  says that he has completed his homework. (Correct)\n- (a) Roshan said that he had completed his homework. (Incorrect Verb)\n- (b) Roshan says that he had completed his  homework. (Incorrect Tense)\n- (d) Roshan said that he has completed his homework. (Incorrect Verb)",
+        "meta": {
+          "schema_name": "docling_core.transforms.chunker.DocMeta",
+          "version": "1.0.0",
+          "doc_items": [
+            {
+              "self_ref": "#/texts/30",
+              "parent": {
+                "cref": "#/groups/2"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 308.54999,
+                    "t": 802.2744136875,
+                    "r": 568.6051644199999,
+                    "b": 781.7703018199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    104
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/31",
+              "parent": {
+                "cref": "#/groups/2"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 308.54999,
+                    "t": 777.4306636875,
+                    "r": 568.2243069199999,
+                    "b": 756.9265518199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    87
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/32",
+              "parent": {
+                "cref": "#/groups/2"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 308.54999,
+                    "t": 752.5869136875,
+                    "r": 568.07049692,
+                    "b": 732.0828018199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    87
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/33",
+              "parent": {
+                "cref": "#/groups/2"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 308.54999,
+                    "t": 719.4619136875,
+                    "r": 568.36053692,
+                    "b": 698.9578018199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    78
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/34",
+              "parent": {
+                "cref": "#/groups/2"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 308.54999,
+                    "t": 694.6181636875,
+                    "r": 568.73114192,
+                    "b": 674.1140518199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    97
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/35",
+              "parent": {
+                "cref": "#/groups/2"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 308.54999,
+                    "t": 669.7744096875,
+                    "r": 568.55096942,
+                    "b": 649.2703028199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    93
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/36",
+              "parent": {
+                "cref": "#/groups/2"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 308.54999,
+                    "t": 644.9306596875,
+                    "r": 548.8209894199999,
+                    "b": 624.4265528199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    65
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/37",
+              "parent": {
+                "cref": "#/groups/2"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 308.54999,
+                    "t": 610.4247996875,
+                    "r": 568.31366192,
+                    "b": 589.9206928199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    70
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/38",
+              "parent": {
+                "cref": "#/groups/2"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 308.54999,
+                    "t": 585.5810496875,
+                    "r": 569.32147442,
+                    "b": 565.0769428199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    68
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/39",
+              "parent": {
+                "cref": "#/groups/2"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 308.54999,
+                    "t": 560.7353496875,
+                    "r": 568.30194692,
+                    "b": 540.2312428199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    70
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/40",
+              "parent": {
+                "cref": "#/groups/2"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 308.54999,
+                    "t": 535.8915996875,
+                    "r": 569.0709894199999,
+                    "b": 515.3874928199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    68
+                  ]
+                }
+              ]
+            }
+          ],
+          "headings": [
+            "Solutions :-"
+          ],
+          "captions": null,
+          "origin": {
+            "mimetype": "application/pdf",
+            "binary_hash": 7011984004679710152,
+            "filename": "english_page_0162.pdf",
+            "uri": null
+          }
+        },
+        "chunk_index": 5,
+        "contextualized_text": "Solutions :-\n- (a) He said, 'I have been waiting here since two hours before the gates opened.' (Incorrect preposition)\n- (b)  He  said,  'I  waited  here  two  hours  before  gates  opened.' (Incorrect Tense)\n- (d)  He  said,  'I  had  waiting  there  before  the  gates  opened.' (Incorrect Tense)\n- Sol.161.(c) They said that they would visit the museum the next day. (Correct)\n- (a)  They  said  that  we  shall  have  visited  the  museum  the following day. (Incorrect Verb)\n- (b)  They  told  that  they  should  visit  the  museum  the  following day. (Incorrect Verb)\n- (d) They said they would be visiting the museum. (Incorrect Verb)\n- Sol.162.(c) Roshan  says that he has completed his homework. (Correct)\n- (a) Roshan said that he had completed his homework. (Incorrect Verb)\n- (b) Roshan says that he had completed his  homework. (Incorrect Tense)\n- (d) Roshan said that he has completed his homework. (Incorrect Verb)"
+      },
+      {
+        "text": "- Sol.163.(d) The  labourers asked the contractor if he had asked the manager when they were going to receive their remuneration that had been pending for the previous three months. (Correct) (a) The labourers asked the contractor if he asked the manager when  they  were  going  to  receive  their  remuneration  that  had been pending for the previous three months. (Incorrect Verb) (b)  The  labourers  asked  the  contractor  if  he  had  asked  the manager when they are going to receive their remuneration that was pending for the previous three months. (Incorrect Tense) (c)  The  labourers  asked  the  contractor  if  had  he  asked  the manager when they are going to receive their remuneration that\n- was pending for the last three months. (Incorrect Word Order)\n- Sol.164.(b) Rajesh  tells  Malini  that  they  did  not  like the dance the previous year. (Correct)\n- (a)  Rajesh  tells  Malini  that  they  had  not  liked  the  dance  the previous year. (Incorrect Tense)\n- (c)  Rajesh  told  Malini that they did not like the dance last year. (Incorrect Reporting Verb)",
+        "meta": {
+          "schema_name": "docling_core.transforms.chunker.DocMeta",
+          "version": "1.0.0",
+          "doc_items": [
+            {
+              "self_ref": "#/texts/41",
+              "parent": {
+                "cref": "#/groups/2"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 308.54999,
+                    "t": 501.3857396875,
+                    "r": 568.78241192,
+                    "b": 369.0828028199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    707
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/42",
+              "parent": {
+                "cref": "#/groups/2"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 308.54999,
+                    "t": 364.7431596875,
+                    "r": 556.2477444199999,
+                    "b": 356.66092281998533,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    61
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/43",
+              "parent": {
+                "cref": "#/groups/2"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 308.54999,
+                    "t": 342.6611296875,
+                    "r": 568.41620192,
+                    "b": 322.15506281998535,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    100
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/44",
+              "parent": {
+                "cref": "#/groups/2"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 308.54999,
+                    "t": 317.8154296875,
+                    "r": 568.25799692,
+                    "b": 297.31131281998535,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    105
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/45",
+              "parent": {
+                "cref": "#/groups/2"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 308.54999,
+                    "t": 292.9716796875,
+                    "r": 568.40741192,
+                    "b": 272.46756281998535,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    96
+                  ]
+                }
+              ]
+            }
+          ],
+          "headings": [
+            "Solutions :-"
+          ],
+          "captions": null,
+          "origin": {
+            "mimetype": "application/pdf",
+            "binary_hash": 7011984004679710152,
+            "filename": "english_page_0162.pdf",
+            "uri": null
+          }
+        },
+        "chunk_index": 6,
+        "contextualized_text": "Solutions :-\n- Sol.163.(d) The  labourers asked the contractor if he had asked the manager when they were going to receive their remuneration that had been pending for the previous three months. (Correct) (a) The labourers asked the contractor if he asked the manager when  they  were  going  to  receive  their  remuneration  that  had been pending for the previous three months. (Incorrect Verb) (b)  The  labourers  asked  the  contractor  if  he  had  asked  the manager when they are going to receive their remuneration that was pending for the previous three months. (Incorrect Tense) (c)  The  labourers  asked  the  contractor  if  had  he  asked  the manager when they are going to receive their remuneration that\n- was pending for the last three months. (Incorrect Word Order)\n- Sol.164.(b) Rajesh  tells  Malini  that  they  did  not  like the dance the previous year. (Correct)\n- (a)  Rajesh  tells  Malini  that  they  had  not  liked  the  dance  the previous year. (Incorrect Tense)\n- (c)  Rajesh  told  Malini that they did not like the dance last year. (Incorrect Reporting Verb)"
+      },
+      {
+        "text": "- (d)  Rajesh  told  Malini  that  they  had  not  liked  the  dance  the previous year. (Incorrect Reporting Verb and Tense)\nSol.165.(b) He said, \"Did you take the medications?\" (Correct)\n- (a)  He  said,  \"Whether  you  take  the  medications?\"  (Incorrect Sentence Structure)\n- (c) He said, \"Did I take the medications?\" (Incorrect Pronoun)\n- (d) He said, \"Did you took the medications?\" (Incorrect Verb)\n- Sol.166.(d) They said, \"We have already completed our homework.\" (Correct)\n- (a) They said, \"We already completed their homework.\" (Incorrect Pronoun)\n- (b)  They  said,  \"We  have  completed  our  homework.\"  (Incorrect Tense)\n- (c)  They  said,  \"We  have already completed homework of ours.\" (Incorrect Wording)\n- Sol.167.(c) Rashmi told Reshma that Mahima had been dancing on the floor when she had been called by her mother. (Correct)",
+        "meta": {
+          "schema_name": "docling_core.transforms.chunker.DocMeta",
+          "version": "1.0.0",
+          "doc_items": [
+            {
+              "self_ref": "#/texts/46",
+              "parent": {
+                "cref": "#/groups/2"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 308.54999,
+                    "t": 268.1279296875,
+                    "r": 568.45282442,
+                    "b": 247.62381281998535,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    123
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/47",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 308.54999,
+                    "t": 233.62206968750002,
+                    "r": 558.0319269199999,
+                    "b": 225.53983281998535,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    62
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/48",
+              "parent": {
+                "cref": "#/groups/3"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 308.54999,
+                    "t": 221.2001996875,
+                    "r": 568.47626192,
+                    "b": 200.69608281998535,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    87
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/49",
+              "parent": {
+                "cref": "#/groups/3"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 308.54999,
+                    "t": 196.3564496875,
+                    "r": 552.10809692,
+                    "b": 188.27421281998534,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    62
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/50",
+              "parent": {
+                "cref": "#/groups/3"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 308.54999,
+                    "t": 183.93456968750002,
+                    "r": 549.51532442,
+                    "b": 175.85233281998535,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    61
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/51",
+              "parent": {
+                "cref": "#/groups/3"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 308.54999,
+                    "t": 161.85058968750002,
+                    "r": 568.22870192,
+                    "b": 141.34647281998537,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    74
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/52",
+              "parent": {
+                "cref": "#/groups/3"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 308.54999,
+                    "t": 137.00683968750002,
+                    "r": 568.19647442,
+                    "b": 116.50272281998537,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    73
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/53",
+              "parent": {
+                "cref": "#/groups/3"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 308.54999,
+                    "t": 112.16308968750002,
+                    "r": 568.39569692,
+                    "b": 91.65897281998537,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    74
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/54",
+              "parent": {
+                "cref": "#/groups/3"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 308.54999,
+                    "t": 87.31933968750002,
+                    "r": 568.20819692,
+                    "b": 66.81522281998537,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    84
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/55",
+              "parent": {
+                "cref": "#/groups/3"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 308.54999,
+                    "t": 52.81151968749998,
+                    "r": 568.4821194199999,
+                    "b": 32.3074128199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    122
+                  ]
+                }
+              ]
+            }
+          ],
+          "headings": [
+            "Solutions :-"
+          ],
+          "captions": null,
+          "origin": {
+            "mimetype": "application/pdf",
+            "binary_hash": 7011984004679710152,
+            "filename": "english_page_0162.pdf",
+            "uri": null
+          }
+        },
+        "chunk_index": 7,
+        "contextualized_text": "Solutions :-\n- (d)  Rajesh  told  Malini  that  they  had  not  liked  the  dance  the previous year. (Incorrect Reporting Verb and Tense)\nSol.165.(b) He said, \"Did you take the medications?\" (Correct)\n- (a)  He  said,  \"Whether  you  take  the  medications?\"  (Incorrect Sentence Structure)\n- (c) He said, \"Did I take the medications?\" (Incorrect Pronoun)\n- (d) He said, \"Did you took the medications?\" (Incorrect Verb)\n- Sol.166.(d) They said, \"We have already completed our homework.\" (Correct)\n- (a) They said, \"We already completed their homework.\" (Incorrect Pronoun)\n- (b)  They  said,  \"We  have  completed  our  homework.\"  (Incorrect Tense)\n- (c)  They  said,  \"We  have already completed homework of ours.\" (Incorrect Wording)\n- Sol.167.(c) Rashmi told Reshma that Mahima had been dancing on the floor when she had been called by her mother. (Correct)"
+      }
+    ]
+  },
+  "content_assets": {
+    "tables": [],
+    "figures": []
+  },
+  "docling_document": {
+    "schema_name": "DoclingDocument",
+    "version": "1.10.0",
+    "name": "english_page_0162",
+    "origin": {
+      "mimetype": "application/pdf",
+      "binary_hash": 7011984004679710152,
+      "filename": "english_page_0162.pdf"
+    },
+    "furniture": {
+      "self_ref": "#/furniture",
+      "children": [],
+      "content_layer": "furniture",
+      "name": "_root_",
+      "label": "unspecified"
+    },
+    "body": {
+      "self_ref": "#/body",
+      "children": [
+        {
+          "$ref": "#/texts/0"
+        },
+        {
+          "$ref": "#/groups/0"
+        },
+        {
+          "$ref": "#/texts/4"
+        },
+        {
+          "$ref": "#/texts/5"
+        },
+        {
+          "$ref": "#/groups/1"
+        },
+        {
+          "$ref": "#/texts/29"
+        },
+        {
+          "$ref": "#/groups/2"
+        },
+        {
+          "$ref": "#/texts/47"
+        },
+        {
+          "$ref": "#/groups/3"
+        },
+        {
+          "$ref": "#/texts/56"
+        }
+      ],
+      "content_layer": "body",
+      "name": "_root_",
+      "label": "unspecified"
+    },
+    "groups": [
+      {
+        "self_ref": "#/groups/0",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [
+          {
+            "$ref": "#/texts/1"
+          },
+          {
+            "$ref": "#/texts/2"
+          },
+          {
+            "$ref": "#/texts/3"
+          }
+        ],
+        "content_layer": "body",
+        "name": "list",
+        "label": "list"
+      },
+      {
+        "self_ref": "#/groups/1",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [
+          {
+            "$ref": "#/texts/6"
+          },
+          {
+            "$ref": "#/texts/7"
+          },
+          {
+            "$ref": "#/texts/8"
+          },
+          {
+            "$ref": "#/texts/9"
+          },
+          {
+            "$ref": "#/texts/10"
+          },
+          {
+            "$ref": "#/texts/11"
+          },
+          {
+            "$ref": "#/texts/12"
+          },
+          {
+            "$ref": "#/texts/13"
+          },
+          {
+            "$ref": "#/texts/14"
+          },
+          {
+            "$ref": "#/texts/15"
+          },
+          {
+            "$ref": "#/texts/16"
+          },
+          {
+            "$ref": "#/texts/17"
+          },
+          {
+            "$ref": "#/texts/18"
+          },
+          {
+            "$ref": "#/texts/19"
+          },
+          {
+            "$ref": "#/texts/20"
+          },
+          {
+            "$ref": "#/texts/21"
+          },
+          {
+            "$ref": "#/texts/22"
+          },
+          {
+            "$ref": "#/texts/23"
+          },
+          {
+            "$ref": "#/texts/24"
+          },
+          {
+            "$ref": "#/texts/25"
+          },
+          {
+            "$ref": "#/texts/26"
+          },
+          {
+            "$ref": "#/texts/27"
+          },
+          {
+            "$ref": "#/texts/28"
+          }
+        ],
+        "content_layer": "body",
+        "name": "list",
+        "label": "list"
+      },
+      {
+        "self_ref": "#/groups/2",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [
+          {
+            "$ref": "#/texts/30"
+          },
+          {
+            "$ref": "#/texts/31"
+          },
+          {
+            "$ref": "#/texts/32"
+          },
+          {
+            "$ref": "#/texts/33"
+          },
+          {
+            "$ref": "#/texts/34"
+          },
+          {
+            "$ref": "#/texts/35"
+          },
+          {
+            "$ref": "#/texts/36"
+          },
+          {
+            "$ref": "#/texts/37"
+          },
+          {
+            "$ref": "#/texts/38"
+          },
+          {
+            "$ref": "#/texts/39"
+          },
+          {
+            "$ref": "#/texts/40"
+          },
+          {
+            "$ref": "#/texts/41"
+          },
+          {
+            "$ref": "#/texts/42"
+          },
+          {
+            "$ref": "#/texts/43"
+          },
+          {
+            "$ref": "#/texts/44"
+          },
+          {
+            "$ref": "#/texts/45"
+          },
+          {
+            "$ref": "#/texts/46"
+          }
+        ],
+        "content_layer": "body",
+        "name": "list",
+        "label": "list"
+      },
+      {
+        "self_ref": "#/groups/3",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [
+          {
+            "$ref": "#/texts/48"
+          },
+          {
+            "$ref": "#/texts/49"
+          },
+          {
+            "$ref": "#/texts/50"
+          },
+          {
+            "$ref": "#/texts/51"
+          },
+          {
+            "$ref": "#/texts/52"
+          },
+          {
+            "$ref": "#/texts/53"
+          },
+          {
+            "$ref": "#/texts/54"
+          },
+          {
+            "$ref": "#/texts/55"
+          }
+        ],
+        "content_layer": "body",
+        "name": "list",
+        "label": "list"
+      }
+    ],
+    "texts": [
+      {
+        "self_ref": "#/texts/0",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "furniture",
+        "label": "page_header",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 830.7925780594726,
+              "r": 95.7084616875,
+              "b": 822.5642819957749,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              8
+            ]
+          }
+        ],
+        "orig": "Pinnacle",
+        "text": "Pinnacle"
+      },
+      {
+        "self_ref": "#/texts/1",
+        "parent": {
+          "$ref": "#/groups/0"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 814.6962886875,
+              "r": 187.52607491999999,
+              "b": 806.6140518199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              41
+            ]
+          }
+        ],
+        "orig": "(b) She said, \"I am going to the market.\"",
+        "text": "(b) She said, \"I am going to the market.\"",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/2",
+        "parent": {
+          "$ref": "#/groups/0"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 802.2744136875,
+              "r": 175.51142742,
+              "b": 794.1921768199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              40
+            ]
+          }
+        ],
+        "orig": "(c) She said, \"I will go to the market.\"",
+        "text": "(c) She said, \"I will go to the market.\"",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/3",
+        "parent": {
+          "$ref": "#/groups/0"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 789.8525386875,
+              "r": 188.831254725,
+              "b": 781.7703018199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              42
+            ]
+          }
+        ],
+        "orig": "(d) She said, \"I was going to the market.\"",
+        "text": "(d) She said, \"I was going to the market.\"",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/4",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "section_header",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 765.8281248844726,
+              "r": 79.90409043749999,
+              "b": 757.5998288207749,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              12
+            ]
+          }
+        ],
+        "orig": "Solutions :-",
+        "text": "Solutions :-",
+        "level": 1
+      },
+      {
+        "self_ref": "#/texts/5",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 742.1240236875,
+              "r": 287.63789742,
+              "b": 734.0417868199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              67
+            ]
+          }
+        ],
+        "orig": "Sol.153.(d) My friend said, \"I can meet you after lunch.\" (Correct)",
+        "text": "Sol.153.(d) My friend said, \"I can meet you after lunch.\" (Correct)"
+      },
+      {
+        "self_ref": "#/texts/6",
+        "parent": {
+          "$ref": "#/groups/1"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 729.7021486875,
+              "r": 288.41719242,
+              "b": 709.1980368199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              79
+            ]
+          }
+        ],
+        "orig": "(a)  My  friend  said,  \"Shall  I  meet  you  after  lunch?\"  (Incorrect Modal)",
+        "text": "(a)  My  friend  said,  \"Shall  I  meet  you  after  lunch?\"  (Incorrect Modal)",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/7",
+        "parent": {
+          "$ref": "#/groups/1"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 704.8583986875,
+              "r": 288.44355492,
+              "b": 684.3523338199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              79
+            ]
+          }
+        ],
+        "orig": "(b)  My  friend  said,  \"I  could  meet  you  after  lunch.\"  (Incorrect Modal)",
+        "text": "(b)  My  friend  said,  \"I  could  meet  you  after  lunch.\"  (Incorrect Modal)",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/8",
+        "parent": {
+          "$ref": "#/groups/1"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 680.0126956875,
+              "r": 288.60469242,
+              "b": 659.5085828199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              77
+            ]
+          }
+        ],
+        "orig": "(c)  My  friend  said,  \"May  I  meet  you  after  lunch?\"  (Incorrect Modal)",
+        "text": "(c)  My  friend  said,  \"May  I  meet  you  after  lunch?\"  (Incorrect Modal)",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/9",
+        "parent": {
+          "$ref": "#/groups/1"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 646.8896496875,
+              "r": 275.77705241999996,
+              "b": 626.3855328199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              96
+            ]
+          }
+        ],
+        "orig": "Sol.154.(d) Rehan told Mallika that the Somnath Temple is in Prabhas Patan in Gujarat. (Correct)",
+        "text": "Sol.154.(d) Rehan told Mallika that the Somnath Temple is in Prabhas Patan in Gujarat. (Correct)",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/10",
+        "parent": {
+          "$ref": "#/groups/1"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 622.0458996875,
+              "r": 288.76289742,
+              "b": 601.5398328199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              96
+            ]
+          }
+        ],
+        "orig": "(a) Rehan told Mallika that the Somnath Temple was in Prabhas Patan in Gujarat. (Incorrect Verb)",
+        "text": "(a) Rehan told Mallika that the Somnath Temple was in Prabhas Patan in Gujarat. (Incorrect Verb)",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/11",
+        "parent": {
+          "$ref": "#/groups/1"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 597.2001996875,
+              "r": 288.36592242,
+              "b": 576.6960828199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              111
+            ]
+          }
+        ],
+        "orig": "(b)  Rehan  told  Mallika  that  the  Somnath  Temple  had  been  in Prabhas Patan in Gujarat. (Incorrect Verb)",
+        "text": "(b)  Rehan  told  Mallika  that  the  Somnath  Temple  had  been  in Prabhas Patan in Gujarat. (Incorrect Verb)",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/12",
+        "parent": {
+          "$ref": "#/groups/1"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 572.3564496875,
+              "r": 288.34248492,
+              "b": 551.8523328199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              111
+            ]
+          }
+        ],
+        "orig": "(c)  Rehan  told  Mallika  that  the  Somnath  Temple  has  been  in Prabhas Patan in Gujarat. (Incorrect Verb)",
+        "text": "(c)  Rehan  told  Mallika  that  the  Somnath  Temple  has  been  in Prabhas Patan in Gujarat. (Incorrect Verb)",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/13",
+        "parent": {
+          "$ref": "#/groups/1"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 539.2314496875,
+              "r": 288.97675992,
+              "b": 518.7253828199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              117
+            ]
+          }
+        ],
+        "orig": "Sol.155.(d) The  officer  said  that  if  he  had  known  about  the problem earlier, he would have helped. (Correct)",
+        "text": "Sol.155.(d) The  officer  said  that  if  he  had  known  about  the problem earlier, he would have helped. (Correct)",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/14",
+        "parent": {
+          "$ref": "#/groups/1"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 514.3857396875001,
+              "r": 288.57539742,
+              "b": 493.8816328199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              85
+            ]
+          }
+        ],
+        "orig": "(a) The officer said he had helped if he had known it. (Incorrect Sentence Structure)",
+        "text": "(a) The officer said he had helped if he had known it. (Incorrect Sentence Structure)",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/15",
+        "parent": {
+          "$ref": "#/groups/1"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 489.5419896875,
+              "r": 288.33808992,
+              "b": 469.0378828199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              83
+            ]
+          }
+        ],
+        "orig": "(b) The officer told if he knew about the problem, he would help. (Incorrect Tense)",
+        "text": "(b) The officer told if he knew about the problem, he would help. (Incorrect Tense)",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/16",
+        "parent": {
+          "$ref": "#/groups/1"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 464.6982396875,
+              "r": 288.86836242,
+              "b": 444.1941328199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              80
+            ]
+          }
+        ],
+        "orig": "(c)  The  officer  said  that  he  know  if  he  had  helped.  (Incorrect Tense)",
+        "text": "(c)  The  officer  said  that  he  know  if  he  had  helped.  (Incorrect Tense)",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/17",
+        "parent": {
+          "$ref": "#/groups/1"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 431.5732396875,
+              "r": 288.99433992,
+              "b": 348.95975281998534,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              416
+            ]
+          }
+        ],
+        "orig": "Sol.156.(b) Roshni told Rakesh that time and tide waits for none. (Correct)  'Time  and  tide  waits  for  none'  is  a  proverb,  which means  that people  cannot  stop  the  passing  of  time,  and therefore  should  not  delay  doing  things.  When  the  reported speech is a general truth or a proverb, its tense does not change. Hence,  option  (b)  gives  the  correct  indirect  form  of  the  given sentence.",
+        "text": "Sol.156.(b) Roshni told Rakesh that time and tide waits for none. (Correct)  'Time  and  tide  waits  for  none'  is  a  proverb,  which means  that people  cannot  stop  the  passing  of  time,  and therefore  should  not  delay  doing  things.  When  the  reported speech is a general truth or a proverb, its tense does not change. Hence,  option  (b)  gives  the  correct  indirect  form  of  the  given sentence.",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/18",
+        "parent": {
+          "$ref": "#/groups/1"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 336.3369096875,
+              "r": 288.70283742,
+              "b": 315.8328028199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              75
+            ]
+          }
+        ],
+        "orig": "Sol.157.(d) The teacher  said,  \"The  sun  rises  in  the  east.\" (Correct)",
+        "text": "Sol.157.(d) The teacher  said,  \"The  sun  rises  in  the  east.\" (Correct)",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/19",
+        "parent": {
+          "$ref": "#/groups/1"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 311.4931596875,
+              "r": 288.46992492,
+              "b": 290.9890528199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              76
+            ]
+          }
+        ],
+        "orig": "(a) The teacher said, \"The sun rising in the east.\" (Incorrect form of Verb)",
+        "text": "(a) The teacher said, \"The sun rising in the east.\" (Incorrect form of Verb)",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/20",
+        "parent": {
+          "$ref": "#/groups/1"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 286.6494096875,
+              "r": 288.60908742,
+              "b": 253.72342281998533,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              144
+            ]
+          }
+        ],
+        "orig": "(b) The teacher said, \"The sun rose in the east.\" (Incorrect Tense) (c)  The  teacher  said,  \"The sun has risen in the east.\" (Incorrect Tense)",
+        "text": "(b) The teacher said, \"The sun rose in the east.\" (Incorrect Tense) (c)  The  teacher  said,  \"The sun has risen in the east.\" (Incorrect Tense)",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/21",
+        "parent": {
+          "$ref": "#/groups/1"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 241.10253968749998,
+              "r": 288.67500492,
+              "b": 220.59842281998533,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              103
+            ]
+          }
+        ],
+        "orig": "Sol.158.(a) She  exclaimed  to  her  friend  that  she  had  made  a very beautiful painting. (Correct)",
+        "text": "Sol.158.(a) She  exclaimed  to  her  friend  that  she  had  made  a very beautiful painting. (Correct)",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/22",
+        "parent": {
+          "$ref": "#/groups/1"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 216.25878968749998,
+              "r": 288.75410742,
+              "b": 195.75467281998533,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              79
+            ]
+          }
+        ],
+        "orig": "(b) She told her that the painting is beautiful. (Incorrect Sentence Structure)",
+        "text": "(b) She told her that the painting is beautiful. (Incorrect Sentence Structure)",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/23",
+        "parent": {
+          "$ref": "#/groups/1"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 191.41503968749998,
+              "r": 288.36884742,
+              "b": 170.91092281998533,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              96
+            ]
+          }
+        ],
+        "orig": "(c)  She  exclaimed  to  her  friend  that she made a very beautiful painting. (Incorrect Tense)",
+        "text": "(c)  She  exclaimed  to  her  friend  that she made a very beautiful painting. (Incorrect Tense)",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/24",
+        "parent": {
+          "$ref": "#/groups/1"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 166.57128968749998,
+              "r": 288.80537742,
+              "b": 146.06522281998537,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              75
+            ]
+          }
+        ],
+        "orig": "(d) She shouted that painting was very nice. (Incorrect Sentence Structure)",
+        "text": "(d) She shouted that painting was very nice. (Incorrect Sentence Structure)",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/25",
+        "parent": {
+          "$ref": "#/groups/1"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 133.44433968750002,
+              "r": 288.34394742,
+              "b": 112.94022281998537,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              70
+            ]
+          }
+        ],
+        "orig": "Sol.159.(a) The teacher asked  them  to  open  their  books. (Correct)",
+        "text": "Sol.159.(a) The teacher asked  them  to  open  their  books. (Correct)",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/26",
+        "parent": {
+          "$ref": "#/groups/1"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 108.60058968750002,
+              "r": 288.93427992,
+              "b": 88.09647281998537,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              73
+            ]
+          }
+        ],
+        "orig": "(b)  The  teacher  asked  to open books. (The verb 'ask' needs an object)",
+        "text": "(b)  The  teacher  asked  to open books. (The verb 'ask' needs an object)",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/27",
+        "parent": {
+          "$ref": "#/groups/1"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 83.75683968750002,
+              "r": 288.59736491999996,
+              "b": 63.252722819985365,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              72
+            ]
+          }
+        ],
+        "orig": "(c)  The  teacher  ordered  them  opening  the  books.  (Incorrect Verb)",
+        "text": "(c)  The  teacher  ordered  them  opening  the  books.  (Incorrect Verb)",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/28",
+        "parent": {
+          "$ref": "#/groups/1"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 58.91308968750002,
+              "r": 269.48408742,
+              "b": 50.83085281998535,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              59
+            ]
+          }
+        ],
+        "orig": "(d) The teacher said them open your books. (Incorrect Verb)",
+        "text": "(d) The teacher said them open your books. (Incorrect Verb)",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/29",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 38.20800968749995,
+              "r": 288.13447242,
+              "b": 30.125772819985286,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              64
+            ]
+          },
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 291.757038,
+              "t": 830.7925780594726,
+              "r": 569.9647554374999,
+              "b": 822.5642819957749,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              65,
+              74
+            ]
+          },
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 308.54999,
+              "t": 814.6962886875,
+              "r": 474.28094744,
+              "b": 806.6140518199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              75,
+              118
+            ]
+          }
+        ],
+        "orig": "Sol.160.(c) He said, 'I was waiting here for more than two hours Narration before the gates finally opened.' (Correct)",
+        "text": "Sol.160.(c) He said, 'I was waiting here for more than two hours Narration before the gates finally opened.' (Correct)"
+      },
+      {
+        "self_ref": "#/texts/30",
+        "parent": {
+          "$ref": "#/groups/2"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 308.54999,
+              "t": 802.2744136875,
+              "r": 568.6051644199999,
+              "b": 781.7703018199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              104
+            ]
+          }
+        ],
+        "orig": "(a) He said, 'I have been waiting here since two hours before the gates opened.' (Incorrect preposition)",
+        "text": "(a) He said, 'I have been waiting here since two hours before the gates opened.' (Incorrect preposition)",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/31",
+        "parent": {
+          "$ref": "#/groups/2"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 308.54999,
+              "t": 777.4306636875,
+              "r": 568.2243069199999,
+              "b": 756.9265518199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              87
+            ]
+          }
+        ],
+        "orig": "(b)  He  said,  'I  waited  here  two  hours  before  gates  opened.' (Incorrect Tense)",
+        "text": "(b)  He  said,  'I  waited  here  two  hours  before  gates  opened.' (Incorrect Tense)",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/32",
+        "parent": {
+          "$ref": "#/groups/2"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 308.54999,
+              "t": 752.5869136875,
+              "r": 568.07049692,
+              "b": 732.0828018199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              87
+            ]
+          }
+        ],
+        "orig": "(d)  He  said,  'I  had  waiting  there  before  the  gates  opened.' (Incorrect Tense)",
+        "text": "(d)  He  said,  'I  had  waiting  there  before  the  gates  opened.' (Incorrect Tense)",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/33",
+        "parent": {
+          "$ref": "#/groups/2"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 308.54999,
+              "t": 719.4619136875,
+              "r": 568.36053692,
+              "b": 698.9578018199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              78
+            ]
+          }
+        ],
+        "orig": "Sol.161.(c) They said that they would visit the museum the next day. (Correct)",
+        "text": "Sol.161.(c) They said that they would visit the museum the next day. (Correct)",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/34",
+        "parent": {
+          "$ref": "#/groups/2"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 308.54999,
+              "t": 694.6181636875,
+              "r": 568.73114192,
+              "b": 674.1140518199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              97
+            ]
+          }
+        ],
+        "orig": "(a)  They  said  that  we  shall  have  visited  the  museum  the following day. (Incorrect Verb)",
+        "text": "(a)  They  said  that  we  shall  have  visited  the  museum  the following day. (Incorrect Verb)",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/35",
+        "parent": {
+          "$ref": "#/groups/2"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 308.54999,
+              "t": 669.7744096875,
+              "r": 568.55096942,
+              "b": 649.2703028199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              93
+            ]
+          }
+        ],
+        "orig": "(b)  They  told  that  they  should  visit  the  museum  the  following day. (Incorrect Verb)",
+        "text": "(b)  They  told  that  they  should  visit  the  museum  the  following day. (Incorrect Verb)",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/36",
+        "parent": {
+          "$ref": "#/groups/2"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 308.54999,
+              "t": 644.9306596875,
+              "r": 548.8209894199999,
+              "b": 624.4265528199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              65
+            ]
+          }
+        ],
+        "orig": "(d) They said they would be visiting the museum. (Incorrect Verb)",
+        "text": "(d) They said they would be visiting the museum. (Incorrect Verb)",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/37",
+        "parent": {
+          "$ref": "#/groups/2"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 308.54999,
+              "t": 610.4247996875,
+              "r": 568.31366192,
+              "b": 589.9206928199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              70
+            ]
+          }
+        ],
+        "orig": "Sol.162.(c) Roshan  says that he has completed his homework. (Correct)",
+        "text": "Sol.162.(c) Roshan  says that he has completed his homework. (Correct)",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/38",
+        "parent": {
+          "$ref": "#/groups/2"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 308.54999,
+              "t": 585.5810496875,
+              "r": 569.32147442,
+              "b": 565.0769428199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              68
+            ]
+          }
+        ],
+        "orig": "(a) Roshan said that he had completed his homework. (Incorrect Verb)",
+        "text": "(a) Roshan said that he had completed his homework. (Incorrect Verb)",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/39",
+        "parent": {
+          "$ref": "#/groups/2"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 308.54999,
+              "t": 560.7353496875,
+              "r": 568.30194692,
+              "b": 540.2312428199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              70
+            ]
+          }
+        ],
+        "orig": "(b) Roshan says that he had completed his  homework. (Incorrect Tense)",
+        "text": "(b) Roshan says that he had completed his  homework. (Incorrect Tense)",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/40",
+        "parent": {
+          "$ref": "#/groups/2"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 308.54999,
+              "t": 535.8915996875,
+              "r": 569.0709894199999,
+              "b": 515.3874928199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              68
+            ]
+          }
+        ],
+        "orig": "(d) Roshan said that he has completed his homework. (Incorrect Verb)",
+        "text": "(d) Roshan said that he has completed his homework. (Incorrect Verb)",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/41",
+        "parent": {
+          "$ref": "#/groups/2"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 308.54999,
+              "t": 501.3857396875,
+              "r": 568.78241192,
+              "b": 369.0828028199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              707
+            ]
+          }
+        ],
+        "orig": "Sol.163.(d) The  labourers asked the contractor if he had asked the manager when they were going to receive their remuneration that had been pending for the previous three months. (Correct) (a) The labourers asked the contractor if he asked the manager when  they  were  going  to  receive  their  remuneration  that  had been pending for the previous three months. (Incorrect Verb) (b)  The  labourers  asked  the  contractor  if  he  had  asked  the manager when they are going to receive their remuneration that was pending for the previous three months. (Incorrect Tense) (c)  The  labourers  asked  the  contractor  if  had  he  asked  the manager when they are going to receive their remuneration that",
+        "text": "Sol.163.(d) The  labourers asked the contractor if he had asked the manager when they were going to receive their remuneration that had been pending for the previous three months. (Correct) (a) The labourers asked the contractor if he asked the manager when  they  were  going  to  receive  their  remuneration  that  had been pending for the previous three months. (Incorrect Verb) (b)  The  labourers  asked  the  contractor  if  he  had  asked  the manager when they are going to receive their remuneration that was pending for the previous three months. (Incorrect Tense) (c)  The  labourers  asked  the  contractor  if  had  he  asked  the manager when they are going to receive their remuneration that",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/42",
+        "parent": {
+          "$ref": "#/groups/2"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 308.54999,
+              "t": 364.7431596875,
+              "r": 556.2477444199999,
+              "b": 356.66092281998533,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              61
+            ]
+          }
+        ],
+        "orig": "was pending for the last three months. (Incorrect Word Order)",
+        "text": "was pending for the last three months. (Incorrect Word Order)",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/43",
+        "parent": {
+          "$ref": "#/groups/2"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 308.54999,
+              "t": 342.6611296875,
+              "r": 568.41620192,
+              "b": 322.15506281998535,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              100
+            ]
+          }
+        ],
+        "orig": "Sol.164.(b) Rajesh  tells  Malini  that  they  did  not  like the dance the previous year. (Correct)",
+        "text": "Sol.164.(b) Rajesh  tells  Malini  that  they  did  not  like the dance the previous year. (Correct)",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/44",
+        "parent": {
+          "$ref": "#/groups/2"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 308.54999,
+              "t": 317.8154296875,
+              "r": 568.25799692,
+              "b": 297.31131281998535,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              105
+            ]
+          }
+        ],
+        "orig": "(a)  Rajesh  tells  Malini  that  they  had  not  liked  the  dance  the previous year. (Incorrect Tense)",
+        "text": "(a)  Rajesh  tells  Malini  that  they  had  not  liked  the  dance  the previous year. (Incorrect Tense)",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/45",
+        "parent": {
+          "$ref": "#/groups/2"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 308.54999,
+              "t": 292.9716796875,
+              "r": 568.40741192,
+              "b": 272.46756281998535,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              96
+            ]
+          }
+        ],
+        "orig": "(c)  Rajesh  told  Malini that they did not like the dance last year. (Incorrect Reporting Verb)",
+        "text": "(c)  Rajesh  told  Malini that they did not like the dance last year. (Incorrect Reporting Verb)",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/46",
+        "parent": {
+          "$ref": "#/groups/2"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 308.54999,
+              "t": 268.1279296875,
+              "r": 568.45282442,
+              "b": 247.62381281998535,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              123
+            ]
+          }
+        ],
+        "orig": "(d)  Rajesh  told  Malini  that  they  had  not  liked  the  dance  the previous year. (Incorrect Reporting Verb and Tense)",
+        "text": "(d)  Rajesh  told  Malini  that  they  had  not  liked  the  dance  the previous year. (Incorrect Reporting Verb and Tense)",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/47",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 308.54999,
+              "t": 233.62206968750002,
+              "r": 558.0319269199999,
+              "b": 225.53983281998535,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              62
+            ]
+          }
+        ],
+        "orig": "Sol.165.(b) He said, \"Did you take the medications?\" (Correct)",
+        "text": "Sol.165.(b) He said, \"Did you take the medications?\" (Correct)"
+      },
+      {
+        "self_ref": "#/texts/48",
+        "parent": {
+          "$ref": "#/groups/3"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 308.54999,
+              "t": 221.2001996875,
+              "r": 568.47626192,
+              "b": 200.69608281998535,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              87
+            ]
+          }
+        ],
+        "orig": "(a)  He  said,  \"Whether  you  take  the  medications?\"  (Incorrect Sentence Structure)",
+        "text": "(a)  He  said,  \"Whether  you  take  the  medications?\"  (Incorrect Sentence Structure)",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/49",
+        "parent": {
+          "$ref": "#/groups/3"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 308.54999,
+              "t": 196.3564496875,
+              "r": 552.10809692,
+              "b": 188.27421281998534,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              62
+            ]
+          }
+        ],
+        "orig": "(c) He said, \"Did I take the medications?\" (Incorrect Pronoun)",
+        "text": "(c) He said, \"Did I take the medications?\" (Incorrect Pronoun)",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/50",
+        "parent": {
+          "$ref": "#/groups/3"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 308.54999,
+              "t": 183.93456968750002,
+              "r": 549.51532442,
+              "b": 175.85233281998535,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              61
+            ]
+          }
+        ],
+        "orig": "(d) He said, \"Did you took the medications?\" (Incorrect Verb)",
+        "text": "(d) He said, \"Did you took the medications?\" (Incorrect Verb)",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/51",
+        "parent": {
+          "$ref": "#/groups/3"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 308.54999,
+              "t": 161.85058968750002,
+              "r": 568.22870192,
+              "b": 141.34647281998537,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              74
+            ]
+          }
+        ],
+        "orig": "Sol.166.(d) They said, \"We have already completed our homework.\" (Correct)",
+        "text": "Sol.166.(d) They said, \"We have already completed our homework.\" (Correct)",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/52",
+        "parent": {
+          "$ref": "#/groups/3"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 308.54999,
+              "t": 137.00683968750002,
+              "r": 568.19647442,
+              "b": 116.50272281998537,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              73
+            ]
+          }
+        ],
+        "orig": "(a) They said, \"We already completed their homework.\" (Incorrect Pronoun)",
+        "text": "(a) They said, \"We already completed their homework.\" (Incorrect Pronoun)",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/53",
+        "parent": {
+          "$ref": "#/groups/3"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 308.54999,
+              "t": 112.16308968750002,
+              "r": 568.39569692,
+              "b": 91.65897281998537,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              74
+            ]
+          }
+        ],
+        "orig": "(b)  They  said,  \"We  have  completed  our  homework.\"  (Incorrect Tense)",
+        "text": "(b)  They  said,  \"We  have  completed  our  homework.\"  (Incorrect Tense)",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/54",
+        "parent": {
+          "$ref": "#/groups/3"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 308.54999,
+              "t": 87.31933968750002,
+              "r": 568.20819692,
+              "b": 66.81522281998537,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              84
+            ]
+          }
+        ],
+        "orig": "(c)  They  said,  \"We  have already completed homework of ours.\" (Incorrect Wording)",
+        "text": "(c)  They  said,  \"We  have already completed homework of ours.\" (Incorrect Wording)",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/55",
+        "parent": {
+          "$ref": "#/groups/3"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 308.54999,
+              "t": 52.81151968749998,
+              "r": 568.4821194199999,
+              "b": 32.3074128199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              122
+            ]
+          }
+        ],
+        "orig": "Sol.167.(c) Rashmi told Reshma that Mahima had been dancing on the floor when she had been called by her mother. (Correct)",
+        "text": "Sol.167.(c) Rashmi told Reshma that Mahima had been dancing on the floor when she had been called by her mother. (Correct)",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/56",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "furniture",
+        "label": "page_footer",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 99.3266505,
+              "t": 21.989447959472614,
+              "r": 495.95088382500006,
+              "b": 13.761151895774901,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              109
+            ]
+          }
+        ],
+        "orig": "www.ssccglpinnacle.com                                                 Download Pinnacle Exam Preparation App",
+        "text": "www.ssccglpinnacle.com                                                 Download Pinnacle Exam Preparation App"
+      }
+    ],
+    "pictures": [],
+    "tables": [],
+    "key_value_items": [],
+    "form_items": [],
+    "pages": {
+      "1": {
+        "size": {
+          "width": 596.0,
+          "height": 842.0
+        },
+        "page_no": 1
+      }
+    }
+  }
+}

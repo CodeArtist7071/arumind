@@ -130,14 +130,14 @@ const UserManagement: React.FC = () => {
   };
 
   return (
-    <div className="p-10 space-y-10 animate-in fade-in slide-in-from-bottom-6 duration-700">
+    <div className="mx-auto w-full max-w-[1440px] space-y-6 px-4 py-6 sm:px-7 sm:py-8 lg:px-10 lg:py-10">
       <header className="flex items-center justify-between">
         <div>
-          <h2 className="text-4xl font-bold tracking-tight text-slate-800 dark:text-slate-100 italic">
+          <h2 className="text-2xl font-semibold tracking-tight text-[#1b2419] dark:text-[#e8eee4] sm:text-3xl">
             User Management
           </h2>
-          <p className="text-[10px] text-[#16a34a] uppercase font-black tracking-[0.3em] mt-2">
-            Managing Student Registrations and Permissions
+          <p className="mt-1.5 text-sm text-[#778171] dark:text-[#a6b09f]">
+            Review learner accounts and manage platform access.
           </p>
         </div>
         <button
@@ -145,10 +145,10 @@ const UserManagement: React.FC = () => {
             setEditingItem(null);
             setIsModalOpen(true);
           }}
-          className="group flex items-center gap-3 px-8 py-4 bg-[#16a34a] text-white rounded-xl font-black text-xs uppercase tracking-widest hover:shadow-2xl hover:shadow-[#16a34a]/30 hover:-translate-y-1 transition-all duration-300"
+          className="group flex min-h-11 items-center gap-2 rounded-xl bg-[#24551e] px-4 text-sm font-semibold text-white transition hover:bg-[#173f19] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#4c8b3e]"
         >
-          <UserPlus size={18} className="group-hover:scale-110 transition-transform duration-300" />
-          Add New User
+          <UserPlus size={18} />
+          Add user
         </button>
       </header>
 

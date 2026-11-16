@@ -1,0 +1,5488 @@
+{
+  "document_id": "english",
+  "source": "english.pdf",
+  "pdf_page": 361,
+  "page_width": 596.0,
+  "page_height": 842.0,
+  "extracted_at": "2026-09-09T10:48:02.493413+00:00",
+  "extraction_version": 4,
+  "ocr_enabled": true,
+  "extraction_detection": {
+    "requested_profile": "auto",
+    "effective_profile": "hybrid",
+    "embedded_text_characters": 4935,
+    "auto_text_threshold": 80
+  },
+  "docling_result": {
+    "status": "success",
+    "errors": []
+  },
+  "content_summary": {
+    "text_items": 64,
+    "text_characters": 6006,
+    "table_items": 0,
+    "picture_items": 0,
+    "group_items": 5,
+    "warnings": []
+  },
+  "reading_order": {
+    "source": "docling_iterate_items",
+    "items": [
+      {
+        "reading_order_index": 0,
+        "element_ref": "#/texts/2",
+        "label": "list_item",
+        "level": 2,
+        "text_preview": "(b) It reduces deep engagement and comprehension"
+      },
+      {
+        "reading_order_index": 1,
+        "element_ref": "#/texts/3",
+        "label": "list_item",
+        "level": 2,
+        "text_preview": "(c) It is unavailable in rural areas"
+      },
+      {
+        "reading_order_index": 2,
+        "element_ref": "#/texts/4",
+        "label": "list_item",
+        "level": 2,
+        "text_preview": "(d) It discourages vocabulary development"
+      },
+      {
+        "reading_order_index": 3,
+        "element_ref": "#/texts/5",
+        "label": "list_item",
+        "level": 2,
+        "text_preview": "Q.27. What advantage does digital  reading  offer according to the passage ?"
+      },
+      {
+        "reading_order_index": 4,
+        "element_ref": "#/texts/6",
+        "label": "list_item",
+        "level": 2,
+        "text_preview": "(a) It increases paper usage"
+      },
+      {
+        "reading_order_index": 5,
+        "element_ref": "#/texts/7",
+        "label": "list_item",
+        "level": 2,
+        "text_preview": "(b) It limits accessibility"
+      },
+      {
+        "reading_order_index": 6,
+        "element_ref": "#/texts/8",
+        "label": "list_item",
+        "level": 2,
+        "text_preview": "(c) It provides portability and convenience"
+      },
+      {
+        "reading_order_index": 7,
+        "element_ref": "#/texts/9",
+        "label": "list_item",
+        "level": 2,
+        "text_preview": "(d) It reduces technological dependency"
+      },
+      {
+        "reading_order_index": 8,
+        "element_ref": "#/texts/10",
+        "label": "list_item",
+        "level": 2,
+        "text_preview": "Q.28. What  does  the  word  'immersive'  imply  in  the  following sentence from the passage ?"
+      },
+      {
+        "reading_order_index": 9,
+        "element_ref": "#/texts/11",
+        "label": "text",
+        "level": 1,
+        "text_preview": "'Printed books, on the other hand, encourage focus and retention through a more immersive experience.'"
+      },
+      {
+        "reading_order_index": 10,
+        "element_ref": "#/texts/12",
+        "label": "list_item",
+        "level": 2,
+        "text_preview": "(a) Distracting"
+      },
+      {
+        "reading_order_index": 11,
+        "element_ref": "#/texts/13",
+        "label": "list_item",
+        "level": 2,
+        "text_preview": "(c) Superficial"
+      },
+      {
+        "reading_order_index": 12,
+        "element_ref": "#/texts/14",
+        "label": "list_item",
+        "level": 2,
+        "text_preview": "(b) Deeply engaging"
+      },
+      {
+        "reading_order_index": 13,
+        "element_ref": "#/texts/15",
+        "label": "list_item",
+        "level": 2,
+        "text_preview": "(d) Boring"
+      },
+      {
+        "reading_order_index": 14,
+        "element_ref": "#/texts/16",
+        "label": "list_item",
+        "level": 2,
+        "text_preview": "Q.29. How does digital reading support environmental sustainability ?"
+      },
+      {
+        "reading_order_index": 15,
+        "element_ref": "#/texts/17",
+        "label": "list_item",
+        "level": 2,
+        "text_preview": "(a) By reducing electricity use"
+      },
+      {
+        "reading_order_index": 16,
+        "element_ref": "#/texts/18",
+        "label": "list_item",
+        "level": 2,
+        "text_preview": "(b) By promoting online advertisements"
+      },
+      {
+        "reading_order_index": 17,
+        "element_ref": "#/texts/19",
+        "label": "list_item",
+        "level": 2,
+        "text_preview": "(c) By reducing paper consumption"
+      },
+      {
+        "reading_order_index": 18,
+        "element_ref": "#/texts/20",
+        "label": "list_item",
+        "level": 2,
+        "text_preview": "(d) By recycling electronic waste"
+      },
+      {
+        "reading_order_index": 19,
+        "element_ref": "#/texts/21",
+        "label": "list_item",
+        "level": 2,
+        "text_preview": "Q.30. What balance does the author suggest in the passage ?"
+      },
+      {
+        "reading_order_index": 20,
+        "element_ref": "#/texts/22",
+        "label": "list_item",
+        "level": 2,
+        "text_preview": "(a) Completely avoiding digital reading"
+      },
+      {
+        "reading_order_index": 21,
+        "element_ref": "#/texts/23",
+        "label": "list_item",
+        "level": 2,
+        "text_preview": "(b) Preferring printed books over everything"
+      },
+      {
+        "reading_order_index": 22,
+        "element_ref": "#/texts/24",
+        "label": "list_item",
+        "level": 2,
+        "text_preview": "(c) Using both digital and print reading mindfully"
+      },
+      {
+        "reading_order_index": 23,
+        "element_ref": "#/texts/25",
+        "label": "list_item",
+        "level": 2,
+        "text_preview": "(d) Replacing all books with e-readers"
+      },
+      {
+        "reading_order_index": 24,
+        "element_ref": "#/texts/26",
+        "label": "section_header",
+        "level": 1,
+        "text_preview": "SET - 7 [Q .31. to Q .35.]"
+      },
+      {
+        "reading_order_index": 25,
+        "element_ref": "#/texts/27",
+        "label": "text",
+        "level": 1,
+        "text_preview": "India's  journey  in  space  exploration  began  in  1962  with  the establishment  of  the  Indian  National  Committee  for  Space Research (INCOSPAR)  under "
+      },
+      {
+        "reading_order_index": 26,
+        "element_ref": "#/texts/28",
+        "label": "text",
+        "level": 1,
+        "text_preview": "SSC CGL 14/09/2025 (Shift 1)"
+      },
+      {
+        "reading_order_index": 27,
+        "element_ref": "#/texts/29",
+        "label": "list_item",
+        "level": 2,
+        "text_preview": "Q.31. When was the Indian Space Research Organisation (ISRO) established ?"
+      },
+      {
+        "reading_order_index": 28,
+        "element_ref": "#/texts/30",
+        "label": "text",
+        "level": 1,
+        "text_preview": "(a) 1962      (b) 1969       (c) 1975      (d) 1984"
+      },
+      {
+        "reading_order_index": 29,
+        "element_ref": "#/texts/31",
+        "label": "list_item",
+        "level": 2,
+        "text_preview": "Q.32. Which mission made India the first country to land on the Moon's south pole?"
+      },
+      {
+        "reading_order_index": 30,
+        "element_ref": "#/texts/32",
+        "label": "list_item",
+        "level": 2,
+        "text_preview": "(a) Chandrayaan-2"
+      },
+      {
+        "reading_order_index": 31,
+        "element_ref": "#/texts/33",
+        "label": "list_item",
+        "level": 2,
+        "text_preview": "(c) Chandrayaan-3"
+      },
+      {
+        "reading_order_index": 32,
+        "element_ref": "#/texts/34",
+        "label": "list_item",
+        "level": 2,
+        "text_preview": "(b) Mangalyaan"
+      },
+      {
+        "reading_order_index": 33,
+        "element_ref": "#/texts/35",
+        "label": "list_item",
+        "level": 2,
+        "text_preview": "(d) Gaganyaan"
+      },
+      {
+        "reading_order_index": 34,
+        "element_ref": "#/texts/36",
+        "label": "list_item",
+        "level": 2,
+        "text_preview": "Q.33. What does the Gaganyaan project aim to achieve ?"
+      },
+      {
+        "reading_order_index": 35,
+        "element_ref": "#/texts/37",
+        "label": "list_item",
+        "level": 2,
+        "text_preview": "(a) Launch India's first Mars rover"
+      },
+      {
+        "reading_order_index": 36,
+        "element_ref": "#/texts/38",
+        "label": "list_item",
+        "level": 2,
+        "text_preview": "(b) Conduct India's first human spaceflight"
+      },
+      {
+        "reading_order_index": 37,
+        "element_ref": "#/texts/39",
+        "label": "list_item",
+        "level": 2,
+        "text_preview": "(c) Build a permanent space station"
+      },
+      {
+        "reading_order_index": 38,
+        "element_ref": "#/texts/40",
+        "label": "list_item",
+        "level": 2,
+        "text_preview": "(d) Launch low-cost communication satellites"
+      },
+      {
+        "reading_order_index": 39,
+        "element_ref": "#/texts/41",
+        "label": "list_item",
+        "level": 2,
+        "text_preview": "Q.34. Which factor is NOT mentioned as a challenge for India's space program ?"
+      },
+      {
+        "reading_order_index": 40,
+        "element_ref": "#/texts/42",
+        "label": "list_item",
+        "level": 2,
+        "text_preview": "(a) Limited funding                 (b) Brain drain"
+      },
+      {
+        "reading_order_index": 41,
+        "element_ref": "#/texts/43",
+        "label": "list_item",
+        "level": 2,
+        "text_preview": "(c) Lack of public interest     (d) Need for technological upgrades"
+      },
+      {
+        "reading_order_index": 42,
+        "element_ref": "#/texts/44",
+        "label": "list_item",
+        "level": 2,
+        "text_preview": "Q.35. What  best  describes  India's  long  -term  vision  in  space exploration ?"
+      },
+      {
+        "reading_order_index": 43,
+        "element_ref": "#/texts/45",
+        "label": "list_item",
+        "level": 2,
+        "text_preview": "(a) To compete with Western nations at any cost"
+      },
+      {
+        "reading_order_index": 44,
+        "element_ref": "#/texts/46",
+        "label": "list_item",
+        "level": 2,
+        "text_preview": "(b) To combine affordability, innovation, and collaboration"
+      },
+      {
+        "reading_order_index": 45,
+        "element_ref": "#/texts/47",
+        "label": "list_item",
+        "level": 2,
+        "text_preview": "(c) To focus only on manned missions"
+      },
+      {
+        "reading_order_index": 46,
+        "element_ref": "#/texts/48",
+        "label": "list_item",
+        "level": 2,
+        "text_preview": "(d) To depend entirely on foreign space agencies"
+      },
+      {
+        "reading_order_index": 47,
+        "element_ref": "#/texts/49",
+        "label": "section_header",
+        "level": 1,
+        "text_preview": "SET - 8 [Q .36. to Q .40.]"
+      },
+      {
+        "reading_order_index": 48,
+        "element_ref": "#/texts/50",
+        "label": "text",
+        "level": 1,
+        "text_preview": "In  the  contemporary  era,  the  relationship  between  technology and  human  cognition  has  become  increasingly  intertwined. Digital  tools  have  transfo"
+      },
+      {
+        "reading_order_index": 49,
+        "element_ref": "#/texts/51",
+        "label": "text",
+        "level": 1,
+        "text_preview": "SSC CGL 14/09/2025 (Shift 2)"
+      },
+      {
+        "reading_order_index": 50,
+        "element_ref": "#/texts/52",
+        "label": "list_item",
+        "level": 2,
+        "text_preview": "Q.36. Which  of  the  following  best  captures the essence of the passage ?"
+      },
+      {
+        "reading_order_index": 51,
+        "element_ref": "#/texts/53",
+        "label": "list_item",
+        "level": 2,
+        "text_preview": "(a) Technology has made human cognition obsolete."
+      },
+      {
+        "reading_order_index": 52,
+        "element_ref": "#/texts/54",
+        "label": "list_item",
+        "level": 2,
+        "text_preview": "(b) Technology has both enhanced and challenged human cognition."
+      },
+      {
+        "reading_order_index": 53,
+        "element_ref": "#/texts/55",
+        "label": "list_item",
+        "level": 2,
+        "text_preview": "(c) Digital tools have replaced human intelligence."
+      },
+      {
+        "reading_order_index": 54,
+        "element_ref": "#/texts/56",
+        "label": "list_item",
+        "level": 2,
+        "text_preview": "(d) People should completely avoid dependence on technology."
+      },
+      {
+        "reading_order_index": 55,
+        "element_ref": "#/texts/57",
+        "label": "list_item",
+        "level": 2,
+        "text_preview": "Q.37. Which of the following is a concern raised by psychologists in the passage?"
+      },
+      {
+        "reading_order_index": 56,
+        "element_ref": "#/texts/58",
+        "label": "list_item",
+        "level": 2,
+        "text_preview": "(a) Technology limits creativity and curiosity."
+      },
+      {
+        "reading_order_index": 57,
+        "element_ref": "#/texts/59",
+        "label": "list_item",
+        "level": 2,
+        "text_preview": "(b) Technology causes people to forget essential information."
+      },
+      {
+        "reading_order_index": 58,
+        "element_ref": "#/texts/60",
+        "label": "list_item",
+        "level": 2,
+        "text_preview": "(c) Technology has made learning too slow."
+      },
+      {
+        "reading_order_index": 59,
+        "element_ref": "#/texts/61",
+        "label": "list_item",
+        "level": 2,
+        "text_preview": "(d) Technology eliminates the need for education."
+      },
+      {
+        "reading_order_index": 60,
+        "element_ref": "#/texts/62",
+        "label": "list_item",
+        "level": 2,
+        "text_preview": "Q.38. How do advocates of digital integration defend technology"
+      }
+    ]
+  },
+  "layout_analysis": {
+    "method": "docling_bbox_left_edge_clustering_v1",
+    "column_count": 2,
+    "confidence": 1.0,
+    "page_width": 596.0,
+    "page_height": 842.0,
+    "columns": [
+      {
+        "column_index": 1,
+        "left": 0.0,
+        "right": 168.675,
+        "detected_start": 28.8,
+        "supporting_elements": 30
+      },
+      {
+        "column_index": 2,
+        "left": 168.675,
+        "right": 596.0,
+        "detected_start": 308.55,
+        "supporting_elements": 31
+      }
+    ],
+    "elements": [
+      {
+        "element_ref": "#/texts/0",
+        "element_type": "text",
+        "label": "page_header",
+        "column_index": 1,
+        "column_indices": [
+          1
+        ],
+        "spans_columns": false,
+        "reading_order_index": null,
+        "bbox": {
+          "l": 28.800003,
+          "t": 830.7937988594726,
+          "r": 95.7084616875,
+          "b": 822.5655027957749,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/1",
+        "element_type": "text",
+        "label": "page_header",
+        "column_index": 2,
+        "column_indices": [
+          2
+        ],
+        "spans_columns": false,
+        "reading_order_index": null,
+        "bbox": {
+          "l": 291.757038,
+          "t": 830.7937988594726,
+          "r": 567.4754754375,
+          "b": 822.5655027957749,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/2",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 0,
+        "bbox": {
+          "l": 28.800003,
+          "t": 814.6972656875,
+          "r": 239.86933992000002,
+          "b": 806.6150288199854,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/3",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 1,
+        "column_indices": [
+          1
+        ],
+        "spans_columns": false,
+        "reading_order_index": 1,
+        "bbox": {
+          "l": 28.800003,
+          "t": 802.2753906875,
+          "r": 160.11738492,
+          "b": 794.1931538199854,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/4",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 2,
+        "bbox": {
+          "l": 28.800003,
+          "t": 789.8532716875,
+          "r": 200.93818992,
+          "b": 781.7710348199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/5",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 3,
+        "bbox": {
+          "l": 28.800003,
+          "t": 770.5300296875,
+          "r": 288.48750492,
+          "b": 750.0256728199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/6",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 1,
+        "column_indices": [
+          1
+        ],
+        "spans_columns": false,
+        "reading_order_index": 4,
+        "bbox": {
+          "l": 28.800003,
+          "t": 745.6860346875,
+          "r": 142.18330392000001,
+          "b": 737.6037978199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/7",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 1,
+        "column_indices": [
+          1
+        ],
+        "spans_columns": false,
+        "reading_order_index": 5,
+        "bbox": {
+          "l": 28.800003,
+          "t": 733.2641596875,
+          "r": 125.82685842000001,
+          "b": 725.1819228199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/8",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 1,
+        "column_indices": [
+          1
+        ],
+        "spans_columns": false,
+        "reading_order_index": 6,
+        "bbox": {
+          "l": 28.800003,
+          "t": 720.8420406875,
+          "r": 197.96748492,
+          "b": 712.7598038199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/9",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 1,
+        "column_indices": [
+          1
+        ],
+        "spans_columns": false,
+        "reading_order_index": 7,
+        "bbox": {
+          "l": 28.800003,
+          "t": 708.4199216874999,
+          "r": 190.82636742,
+          "b": 700.3376848199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/10",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 8,
+        "bbox": {
+          "l": 28.800003,
+          "t": 687.7165526875,
+          "r": 288.59883492,
+          "b": 667.2121968199854,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/11",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 9,
+        "bbox": {
+          "l": 28.800003,
+          "t": 662.8725596875,
+          "r": 288.76582242,
+          "b": 642.3684428199854,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/12",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 1,
+        "column_indices": [
+          1
+        ],
+        "spans_columns": false,
+        "reading_order_index": 10,
+        "bbox": {
+          "l": 28.800003,
+          "t": 638.0285596875,
+          "r": 87.69551067,
+          "b": 629.9463228199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/13",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 1,
+        "column_indices": [
+          1
+        ],
+        "spans_columns": false,
+        "reading_order_index": 11,
+        "bbox": {
+          "l": 28.800003,
+          "t": 625.6064496875,
+          "r": 86.34199542,
+          "b": 617.5242128199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/14",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 12,
+        "bbox": {
+          "l": 136.800003,
+          "t": 638.0285596875,
+          "r": 218.67451241999999,
+          "b": 629.9463228199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/15",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 13,
+        "bbox": {
+          "l": 136.800003,
+          "t": 625.6064496875,
+          "r": 178.55683992,
+          "b": 617.5242128199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/16",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 14,
+        "bbox": {
+          "l": 28.800003,
+          "t": 604.9030796874999,
+          "r": 288.65888742,
+          "b": 584.3987228199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/17",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 1,
+        "column_indices": [
+          1
+        ],
+        "spans_columns": false,
+        "reading_order_index": 15,
+        "bbox": {
+          "l": 28.800003,
+          "t": 580.0590796875,
+          "r": 148.74433917,
+          "b": 571.9768428199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/18",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 1,
+        "column_indices": [
+          1
+        ],
+        "spans_columns": false,
+        "reading_order_index": 16,
+        "bbox": {
+          "l": 28.800003,
+          "t": 567.6372096875,
+          "r": 188.73896742,
+          "b": 559.5549728199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/19",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 1,
+        "column_indices": [
+          1
+        ],
+        "spans_columns": false,
+        "reading_order_index": 17,
+        "bbox": {
+          "l": 28.800003,
+          "t": 555.2150896875,
+          "r": 170.87959242,
+          "b": 547.1328528199854,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/20",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 1,
+        "column_indices": [
+          1
+        ],
+        "spans_columns": false,
+        "reading_order_index": 18,
+        "bbox": {
+          "l": 28.800003,
+          "t": 542.7929696875,
+          "r": 160.25361492,
+          "b": 534.7107328199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/21",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 19,
+        "bbox": {
+          "l": 28.800003,
+          "t": 522.0895996875,
+          "r": 275.74189992,
+          "b": 514.0073628199854,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/22",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 1,
+        "column_indices": [
+          1
+        ],
+        "spans_columns": false,
+        "reading_order_index": 20,
+        "bbox": {
+          "l": 28.800003,
+          "t": 509.6674796875,
+          "r": 184.32246492,
+          "b": 501.58524281998535,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/23",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 21,
+        "bbox": {
+          "l": 28.800003,
+          "t": 497.2456096875,
+          "r": 204.04951241999999,
+          "b": 489.16337281998534,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/24",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 22,
+        "bbox": {
+          "l": 28.800003,
+          "t": 484.8237296875,
+          "r": 222.82294992,
+          "b": 476.74149281998535,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/25",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 1,
+        "column_indices": [
+          1
+        ],
+        "spans_columns": false,
+        "reading_order_index": 23,
+        "bbox": {
+          "l": 28.800003,
+          "t": 472.4016096875,
+          "r": 180.95185992,
+          "b": 464.31937281998535,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/26",
+        "element_type": "text",
+        "label": "section_header",
+        "column_index": 1,
+        "column_indices": [
+          1
+        ],
+        "spans_columns": false,
+        "reading_order_index": 24,
+        "bbox": {
+          "l": 28.800003,
+          "t": 453.0786096875,
+          "r": 128.16914394000003,
+          "b": 444.9963728199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/27",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 25,
+        "bbox": {
+          "l": 28.800003,
+          "t": 440.6564896875,
+          "r": 289.02363492,
+          "b": 122.02372281998532,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/28",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 1,
+        "column_indices": [
+          1
+        ],
+        "spans_columns": false,
+        "reading_order_index": 26,
+        "bbox": {
+          "l": 28.800003,
+          "t": 117.68383968750004,
+          "r": 148.836624,
+          "b": 109.60160281998537,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/29",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 27,
+        "bbox": {
+          "l": 28.800003,
+          "t": 95.6000996875,
+          "r": 288.68671992000003,
+          "b": 75.09598281998535,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/30",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 28,
+        "bbox": {
+          "l": 28.800003,
+          "t": 70.75609968749995,
+          "r": 207.89912742,
+          "b": 62.67386281998529,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/31",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 29,
+        "bbox": {
+          "l": 28.800003,
+          "t": 48.672359687500034,
+          "r": 288.32490492,
+          "b": 28.168252819985355,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/32",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 2,
+        "column_indices": [
+          2
+        ],
+        "spans_columns": false,
+        "reading_order_index": 30,
+        "bbox": {
+          "l": 308.54999,
+          "t": 814.6972656875,
+          "r": 384.08319316999996,
+          "b": 806.6150288199854,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/33",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 2,
+        "column_indices": [
+          2
+        ],
+        "spans_columns": false,
+        "reading_order_index": 31,
+        "bbox": {
+          "l": 308.54999,
+          "t": 802.2753906875,
+          "r": 383.89862267,
+          "b": 794.1931538199854,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/34",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 2,
+        "column_indices": [
+          2
+        ],
+        "spans_columns": false,
+        "reading_order_index": 32,
+        "bbox": {
+          "l": 416.54999,
+          "t": 814.6972656875,
+          "r": 481.09686691999997,
+          "b": 806.6150288199854,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/35",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 2,
+        "column_indices": [
+          2
+        ],
+        "spans_columns": false,
+        "reading_order_index": 33,
+        "bbox": {
+          "l": 416.54999,
+          "t": 802.2753906875,
+          "r": 477.20330942,
+          "b": 794.1931538199854,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/36",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 2,
+        "column_indices": [
+          2
+        ],
+        "spans_columns": false,
+        "reading_order_index": 34,
+        "bbox": {
+          "l": 308.54999,
+          "t": 780.1916506875,
+          "r": 536.10320942,
+          "b": 772.1094138199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/37",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 2,
+        "column_indices": [
+          2
+        ],
+        "spans_columns": false,
+        "reading_order_index": 35,
+        "bbox": {
+          "l": 308.54999,
+          "t": 767.7697756875,
+          "r": 443.86199941999996,
+          "b": 759.6875388199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/38",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 2,
+        "column_indices": [
+          2
+        ],
+        "spans_columns": false,
+        "reading_order_index": 36,
+        "bbox": {
+          "l": 308.54999,
+          "t": 755.3476566875,
+          "r": 479.73895441999997,
+          "b": 747.2654198199854,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/39",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 2,
+        "column_indices": [
+          2
+        ],
+        "spans_columns": false,
+        "reading_order_index": 37,
+        "bbox": {
+          "l": 308.54999,
+          "t": 742.9257816875,
+          "r": 452.90594941999996,
+          "b": 734.8435448199854,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/40",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 2,
+        "column_indices": [
+          2
+        ],
+        "spans_columns": false,
+        "reading_order_index": 38,
+        "bbox": {
+          "l": 308.54999,
+          "t": 730.5036616875,
+          "r": 493.12469941999996,
+          "b": 722.4214248199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/41",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 2,
+        "column_indices": [
+          2
+        ],
+        "spans_columns": false,
+        "reading_order_index": 39,
+        "bbox": {
+          "l": 308.54999,
+          "t": 708.4199216874999,
+          "r": 568.59784442,
+          "b": 687.9158098199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/42",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 2,
+        "column_indices": [
+          2
+        ],
+        "spans_columns": false,
+        "reading_order_index": 40,
+        "bbox": {
+          "l": 308.54999,
+          "t": 683.5761716874999,
+          "r": 480.83758442,
+          "b": 675.4939348199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/43",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 2,
+        "column_indices": [
+          2
+        ],
+        "spans_columns": false,
+        "reading_order_index": 41,
+        "bbox": {
+          "l": 308.54999,
+          "t": 671.1540496875,
+          "r": 567.1857294199999,
+          "b": 663.0718128199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/44",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 2,
+        "column_indices": [
+          2
+        ],
+        "spans_columns": false,
+        "reading_order_index": 42,
+        "bbox": {
+          "l": 308.54999,
+          "t": 649.0703096875,
+          "r": 568.44257192,
+          "b": 628.5662028199854,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/45",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 2,
+        "column_indices": [
+          2
+        ],
+        "spans_columns": false,
+        "reading_order_index": 43,
+        "bbox": {
+          "l": 308.54999,
+          "t": 624.2263196875,
+          "r": 504.09784442,
+          "b": 616.1440828199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/46",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 2,
+        "column_indices": [
+          2
+        ],
+        "spans_columns": false,
+        "reading_order_index": 44,
+        "bbox": {
+          "l": 308.54999,
+          "t": 611.8044396875,
+          "r": 540.22088942,
+          "b": 603.7222028199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/47",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 2,
+        "column_indices": [
+          2
+        ],
+        "spans_columns": false,
+        "reading_order_index": 45,
+        "bbox": {
+          "l": 308.54999,
+          "t": 599.3823196875001,
+          "r": 463.28582941999997,
+          "b": 591.3000828199854,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/48",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 2,
+        "column_indices": [
+          2
+        ],
+        "spans_columns": false,
+        "reading_order_index": 46,
+        "bbox": {
+          "l": 308.54999,
+          "t": 586.9602096875,
+          "r": 504.95038442,
+          "b": 578.8779728199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/49",
+        "element_type": "text",
+        "label": "section_header",
+        "column_index": 2,
+        "column_indices": [
+          2
+        ],
+        "spans_columns": false,
+        "reading_order_index": 47,
+        "bbox": {
+          "l": 308.54999,
+          "t": 564.8767096875,
+          "r": 407.91913094,
+          "b": 556.7944728199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/50",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 2,
+        "column_indices": [
+          2
+        ],
+        "spans_columns": false,
+        "reading_order_index": 48,
+        "bbox": {
+          "l": 308.54999,
+          "t": 552.4545896875,
+          "r": 568.77508442,
+          "b": 246.2439328199854,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/51",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 2,
+        "column_indices": [
+          2
+        ],
+        "spans_columns": false,
+        "reading_order_index": 49,
+        "bbox": {
+          "l": 308.54999,
+          "t": 241.9040496875,
+          "r": 430.8190329199999,
+          "b": 233.82181281998533,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/52",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 2,
+        "column_indices": [
+          2
+        ],
+        "spans_columns": false,
+        "reading_order_index": 50,
+        "bbox": {
+          "l": 308.54999,
+          "t": 218.44018968750004,
+          "r": 568.60809692,
+          "b": 197.93607281998538,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/53",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 2,
+        "column_indices": [
+          2
+        ],
+        "spans_columns": false,
+        "reading_order_index": 51,
+        "bbox": {
+          "l": 308.54999,
+          "t": 193.5961896875,
+          "r": 520.51580942,
+          "b": 185.51395281998532,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/54",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 2,
+        "column_indices": [
+          2
+        ],
+        "spans_columns": false,
+        "reading_order_index": 52,
+        "bbox": {
+          "l": 308.54999,
+          "t": 181.17431968749997,
+          "r": 543.93426692,
+          "b": 160.67020281998532,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/55",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 2,
+        "column_indices": [
+          2
+        ],
+        "spans_columns": false,
+        "reading_order_index": 53,
+        "bbox": {
+          "l": 308.54999,
+          "t": 156.33007968749996,
+          "r": 509.48993191999995,
+          "b": 148.2478428199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/56",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 2,
+        "column_indices": [
+          2
+        ],
+        "spans_columns": false,
+        "reading_order_index": 54,
+        "bbox": {
+          "l": 308.54999,
+          "t": 143.90819968749997,
+          "r": 562.70770442,
+          "b": 135.8259628199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/57",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 2,
+        "column_indices": [
+          2
+        ],
+        "spans_columns": false,
+        "reading_order_index": 55,
+        "bbox": {
+          "l": 308.54999,
+          "t": 121.82470968749999,
+          "r": 568.36932692,
+          "b": 101.32059281998534,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/58",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 2,
+        "column_indices": [
+          2
+        ],
+        "spans_columns": false,
+        "reading_order_index": 56,
+        "bbox": {
+          "l": 308.54999,
+          "t": 96.98046968749998,
+          "r": 488.36541692,
+          "b": 88.89823281998531,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/59",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 2,
+        "column_indices": [
+          2
+        ],
+        "spans_columns": false,
+        "reading_order_index": 57,
+        "bbox": {
+          "l": 308.54999,
+          "t": 84.55858968749999,
+          "r": 556.26971942,
+          "b": 76.47635281998532,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/60",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 2,
+        "column_indices": [
+          2
+        ],
+        "spans_columns": false,
+        "reading_order_index": 58,
+        "bbox": {
+          "l": 308.54999,
+          "t": 72.13622968749996,
+          "r": 484.11590942,
+          "b": 64.0539928199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/61",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 2,
+        "column_indices": [
+          2
+        ],
+        "spans_columns": false,
+        "reading_order_index": 59,
+        "bbox": {
+          "l": 308.54999,
+          "t": 59.71435968749995,
+          "r": 508.63739191999997,
+          "b": 51.632122819985284,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/62",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 2,
+        "column_indices": [
+          2
+        ],
+        "spans_columns": false,
+        "reading_order_index": 60,
+        "bbox": {
+          "l": 308.54999,
+          "t": 37.63085968749999,
+          "r": 567.82733192,
+          "b": 29.548622819985326,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/63",
+        "element_type": "text",
+        "label": "page_footer",
+        "column_index": 2,
+        "column_indices": [
+          2
+        ],
+        "spans_columns": false,
+        "reading_order_index": null,
+        "bbox": {
+          "l": 99.3266505,
+          "t": 21.988717959472638,
+          "r": 495.95088382500006,
+          "b": 13.760421895774925,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      }
+    ],
+    "warnings": []
+  },
+  "structure_chunks": {
+    "enabled": true,
+    "method": "docling_hybrid_chunker",
+    "scope": "page",
+    "items": [
+      {
+        "text": "- (b) It reduces deep engagement and comprehension\n- (c) It is unavailable in rural areas\n- (d) It discourages vocabulary development\n- Q.27. What advantage does digital  reading  offer according to the passage ?\n- (a) It increases paper usage\n- (b) It limits accessibility\n- (c) It provides portability and convenience\n- (d) It reduces technological dependency\n- Q.28. What  does  the  word  'immersive'  imply  in  the  following sentence from the passage ?\n'Printed books, on the other hand, encourage focus and retention through a more immersive experience.'\n- (a) Distracting\n- (c) Superficial\n- (b) Deeply engaging\n- (d) Boring\n- Q.29. How does digital reading support environmental sustainability ?\n- (a) By reducing electricity use\n- (b) By promoting online advertisements\n- (c) By reducing paper consumption\n- (d) By recycling electronic waste\n- Q.30. What balance does the author suggest in the passage ?\n- (a) Completely avoiding digital reading\n- (b) Preferring printed books over everything\n- (c) Using both digital and print reading mindfully\n- (d) Replacing all books with e-readers",
+        "meta": {
+          "schema_name": "docling_core.transforms.chunker.DocMeta",
+          "version": "1.0.0",
+          "doc_items": [
+            {
+              "self_ref": "#/texts/2",
+              "parent": {
+                "cref": "#/groups/0"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 814.6972656875,
+                    "r": 239.86933992000002,
+                    "b": 806.6150288199854,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    48
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/3",
+              "parent": {
+                "cref": "#/groups/0"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 802.2753906875,
+                    "r": 160.11738492,
+                    "b": 794.1931538199854,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    36
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/4",
+              "parent": {
+                "cref": "#/groups/0"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 789.8532716875,
+                    "r": 200.93818992,
+                    "b": 781.7710348199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    41
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/5",
+              "parent": {
+                "cref": "#/groups/0"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 770.5300296875,
+                    "r": 288.48750492,
+                    "b": 750.0256728199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    76
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/6",
+              "parent": {
+                "cref": "#/groups/0"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 745.6860346875,
+                    "r": 142.18330392000001,
+                    "b": 737.6037978199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    28
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/7",
+              "parent": {
+                "cref": "#/groups/0"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 733.2641596875,
+                    "r": 125.82685842000001,
+                    "b": 725.1819228199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    27
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/8",
+              "parent": {
+                "cref": "#/groups/0"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 720.8420406875,
+                    "r": 197.96748492,
+                    "b": 712.7598038199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    43
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/9",
+              "parent": {
+                "cref": "#/groups/0"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 708.4199216874999,
+                    "r": 190.82636742,
+                    "b": 700.3376848199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    39
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/10",
+              "parent": {
+                "cref": "#/groups/0"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 687.7165526875,
+                    "r": 288.59883492,
+                    "b": 667.2121968199854,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    95
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/11",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 662.8725596875,
+                    "r": 288.76582242,
+                    "b": 642.3684428199854,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    102
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/12",
+              "parent": {
+                "cref": "#/groups/1"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 638.0285596875,
+                    "r": 87.69551067,
+                    "b": 629.9463228199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    15
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/13",
+              "parent": {
+                "cref": "#/groups/1"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 625.6064496875,
+                    "r": 86.34199542,
+                    "b": 617.5242128199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    15
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/14",
+              "parent": {
+                "cref": "#/groups/1"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 136.800003,
+                    "t": 638.0285596875,
+                    "r": 218.67451241999999,
+                    "b": 629.9463228199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    19
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/15",
+              "parent": {
+                "cref": "#/groups/1"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 136.800003,
+                    "t": 625.6064496875,
+                    "r": 178.55683992,
+                    "b": 617.5242128199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    10
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/16",
+              "parent": {
+                "cref": "#/groups/1"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 604.9030796874999,
+                    "r": 288.65888742,
+                    "b": 584.3987228199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    69
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/17",
+              "parent": {
+                "cref": "#/groups/1"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 580.0590796875,
+                    "r": 148.74433917,
+                    "b": 571.9768428199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    31
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/18",
+              "parent": {
+                "cref": "#/groups/1"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 567.6372096875,
+                    "r": 188.73896742,
+                    "b": 559.5549728199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    38
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/19",
+              "parent": {
+                "cref": "#/groups/1"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 555.2150896875,
+                    "r": 170.87959242,
+                    "b": 547.1328528199854,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    33
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/20",
+              "parent": {
+                "cref": "#/groups/1"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 542.7929696875,
+                    "r": 160.25361492,
+                    "b": 534.7107328199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    33
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/21",
+              "parent": {
+                "cref": "#/groups/1"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 522.0895996875,
+                    "r": 275.74189992,
+                    "b": 514.0073628199854,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    59
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/22",
+              "parent": {
+                "cref": "#/groups/1"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 509.6674796875,
+                    "r": 184.32246492,
+                    "b": 501.58524281998535,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    39
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/23",
+              "parent": {
+                "cref": "#/groups/1"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 497.2456096875,
+                    "r": 204.04951241999999,
+                    "b": 489.16337281998534,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    44
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/24",
+              "parent": {
+                "cref": "#/groups/1"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 484.8237296875,
+                    "r": 222.82294992,
+                    "b": 476.74149281998535,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    50
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/25",
+              "parent": {
+                "cref": "#/groups/1"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 472.4016096875,
+                    "r": 180.95185992,
+                    "b": 464.31937281998535,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    38
+                  ]
+                }
+              ]
+            }
+          ],
+          "headings": null,
+          "captions": null,
+          "origin": {
+            "mimetype": "application/pdf",
+            "binary_hash": 5028870418609140341,
+            "filename": "english_page_0361.pdf",
+            "uri": null
+          }
+        },
+        "chunk_index": 0,
+        "contextualized_text": "- (b) It reduces deep engagement and comprehension\n- (c) It is unavailable in rural areas\n- (d) It discourages vocabulary development\n- Q.27. What advantage does digital  reading  offer according to the passage ?\n- (a) It increases paper usage\n- (b) It limits accessibility\n- (c) It provides portability and convenience\n- (d) It reduces technological dependency\n- Q.28. What  does  the  word  'immersive'  imply  in  the  following sentence from the passage ?\n'Printed books, on the other hand, encourage focus and retention through a more immersive experience.'\n- (a) Distracting\n- (c) Superficial\n- (b) Deeply engaging\n- (d) Boring\n- Q.29. How does digital reading support environmental sustainability ?\n- (a) By reducing electricity use\n- (b) By promoting online advertisements\n- (c) By reducing paper consumption\n- (d) By recycling electronic waste\n- Q.30. What balance does the author suggest in the passage ?\n- (a) Completely avoiding digital reading\n- (b) Preferring printed books over everything\n- (c) Using both digital and print reading mindfully\n- (d) Replacing all books with e-readers"
+      },
+      {
+        "text": "India's  journey  in  space  exploration  began  in  1962  with  the establishment  of  the  Indian  National  Committee  for  Space Research (INCOSPAR)  under the leadership of Dr. Vikram Sarabhai. What  started  with  modest  rocket  launches  from Thumba  soon evolved  into  one  of  the  world's  most  respected space  programs.  The  formation  of  the  Indian  Space  Research Organisation  (ISRO)  in  1969  marked  a  turning  point,  reflecting India's ambition to harness space technology  for  national development. Over  the  decades,  ISRO  achieved  remarkable milestones  -  from launching the Aryabhata satellite in 1975 to the  Chandrayaan  and  Mangalyaan  missions  that  showcased India's prowess in lunar and interplanetary exploration. However, the  true  transformation  occurred  in  the  21st  century.  With  the successful  launch  of  the Chandrayaan-3 mission in 2023, India became the first nation to land on the Moon's south pole, a feat celebrated globally. The mission highlighted ISRO's cost-effective  innovation  and  technical  expertise.  Meanwhile, projects like Gaganyaan, India's first human spaceflight program, signify  the  country's  leap  toward  manned  missions.  ISRO's collaborations  with  private  space  startups and global agencies are  also  expanding",
+        "meta": {
+          "schema_name": "docling_core.transforms.chunker.DocMeta",
+          "version": "1.0.0",
+          "doc_items": [
+            {
+              "self_ref": "#/texts/27",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 440.6564896875,
+                    "r": 289.02363492,
+                    "b": 122.02372281998532,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    1665
+                  ]
+                }
+              ]
+            }
+          ],
+          "headings": [
+            "SET - 7 [Q .31. to Q .35.]"
+          ],
+          "captions": null,
+          "origin": {
+            "mimetype": "application/pdf",
+            "binary_hash": 5028870418609140341,
+            "filename": "english_page_0361.pdf",
+            "uri": null
+          }
+        },
+        "chunk_index": 1,
+        "contextualized_text": "SET - 7 [Q .31. to Q .35.]\nIndia's  journey  in  space  exploration  began  in  1962  with  the establishment  of  the  Indian  National  Committee  for  Space Research (INCOSPAR)  under the leadership of Dr. Vikram Sarabhai. What  started  with  modest  rocket  launches  from Thumba  soon evolved  into  one  of  the  world's  most  respected space  programs.  The  formation  of  the  Indian  Space  Research Organisation  (ISRO)  in  1969  marked  a  turning  point,  reflecting India's ambition to harness space technology  for  national development. Over  the  decades,  ISRO  achieved  remarkable milestones  -  from launching the Aryabhata satellite in 1975 to the  Chandrayaan  and  Mangalyaan  missions  that  showcased India's prowess in lunar and interplanetary exploration. However, the  true  transformation  occurred  in  the  21st  century.  With  the successful  launch  of  the Chandrayaan-3 mission in 2023, India became the first nation to land on the Moon's south pole, a feat celebrated globally. The mission highlighted ISRO's cost-effective  innovation  and  technical  expertise.  Meanwhile, projects like Gaganyaan, India's first human spaceflight program, signify  the  country's  leap  toward  manned  missions.  ISRO's collaborations  with  private  space  startups and global agencies are  also  expanding"
+      },
+      {
+        "text": "the  frontiers  of  innovation, aiming to make India  a key player in the global space economy. Yet, challenges persist -  limited budgets, brain drain, and the need for continuous  technological  upgrades.  Still,  India's  space  vision remains  clear:  to  combine  affordability,  innovation,  and  global collaboration to reach new cosmic milestones.\nSSC CGL 14/09/2025 (Shift 1)\n- Q.31. When was the Indian Space Research Organisation (ISRO) established ?\n(a) 1962      (b) 1969       (c) 1975      (d) 1984",
+        "meta": {
+          "schema_name": "docling_core.transforms.chunker.DocMeta",
+          "version": "1.0.0",
+          "doc_items": [
+            {
+              "self_ref": "#/texts/27",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 440.6564896875,
+                    "r": 289.02363492,
+                    "b": 122.02372281998532,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    1665
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/28",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 117.68383968750004,
+                    "r": 148.836624,
+                    "b": 109.60160281998537,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    28
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/29",
+              "parent": {
+                "cref": "#/groups/2"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 95.6000996875,
+                    "r": 288.68671992000003,
+                    "b": 75.09598281998535,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    74
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/30",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 70.75609968749995,
+                    "r": 207.89912742,
+                    "b": 62.67386281998529,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    51
+                  ]
+                }
+              ]
+            }
+          ],
+          "headings": [
+            "SET - 7 [Q .31. to Q .35.]"
+          ],
+          "captions": null,
+          "origin": {
+            "mimetype": "application/pdf",
+            "binary_hash": 5028870418609140341,
+            "filename": "english_page_0361.pdf",
+            "uri": null
+          }
+        },
+        "chunk_index": 2,
+        "contextualized_text": "SET - 7 [Q .31. to Q .35.]\nthe  frontiers  of  innovation, aiming to make India  a key player in the global space economy. Yet, challenges persist -  limited budgets, brain drain, and the need for continuous  technological  upgrades.  Still,  India's  space  vision remains  clear:  to  combine  affordability,  innovation,  and  global collaboration to reach new cosmic milestones.\nSSC CGL 14/09/2025 (Shift 1)\n- Q.31. When was the Indian Space Research Organisation (ISRO) established ?\n(a) 1962      (b) 1969       (c) 1975      (d) 1984"
+      },
+      {
+        "text": "- Q.32. Which mission made India the first country to land on the Moon's south pole?\n- (a) Chandrayaan-2\n- (c) Chandrayaan-3\n- (b) Mangalyaan\n- (d) Gaganyaan\n- Q.33. What does the Gaganyaan project aim to achieve ?\n- (a) Launch India's first Mars rover\n- (b) Conduct India's first human spaceflight\n- (c) Build a permanent space station\n- (d) Launch low-cost communication satellites\n- Q.34. Which factor is NOT mentioned as a challenge for India's space program ?\n- (a) Limited funding                 (b) Brain drain\n- (c) Lack of public interest     (d) Need for technological upgrades\n- Q.35. What  best  describes  India's  long  -term  vision  in  space exploration ?\n- (a) To compete with Western nations at any cost\n- (b) To combine affordability, innovation, and collaboration\n- (c) To focus only on manned missions\n- (d) To depend entirely on foreign space agencies",
+        "meta": {
+          "schema_name": "docling_core.transforms.chunker.DocMeta",
+          "version": "1.0.0",
+          "doc_items": [
+            {
+              "self_ref": "#/texts/31",
+              "parent": {
+                "cref": "#/groups/3"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 48.672359687500034,
+                    "r": 288.32490492,
+                    "b": 28.168252819985355,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    82
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/32",
+              "parent": {
+                "cref": "#/groups/3"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 308.54999,
+                    "t": 814.6972656875,
+                    "r": 384.08319316999996,
+                    "b": 806.6150288199854,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    17
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/33",
+              "parent": {
+                "cref": "#/groups/3"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 308.54999,
+                    "t": 802.2753906875,
+                    "r": 383.89862267,
+                    "b": 794.1931538199854,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    17
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/34",
+              "parent": {
+                "cref": "#/groups/3"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 416.54999,
+                    "t": 814.6972656875,
+                    "r": 481.09686691999997,
+                    "b": 806.6150288199854,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    14
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/35",
+              "parent": {
+                "cref": "#/groups/3"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 416.54999,
+                    "t": 802.2753906875,
+                    "r": 477.20330942,
+                    "b": 794.1931538199854,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    13
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/36",
+              "parent": {
+                "cref": "#/groups/3"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 308.54999,
+                    "t": 780.1916506875,
+                    "r": 536.10320942,
+                    "b": 772.1094138199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    54
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/37",
+              "parent": {
+                "cref": "#/groups/3"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 308.54999,
+                    "t": 767.7697756875,
+                    "r": 443.86199941999996,
+                    "b": 759.6875388199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    35
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/38",
+              "parent": {
+                "cref": "#/groups/3"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 308.54999,
+                    "t": 755.3476566875,
+                    "r": 479.73895441999997,
+                    "b": 747.2654198199854,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    43
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/39",
+              "parent": {
+                "cref": "#/groups/3"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 308.54999,
+                    "t": 742.9257816875,
+                    "r": 452.90594941999996,
+                    "b": 734.8435448199854,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    35
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/40",
+              "parent": {
+                "cref": "#/groups/3"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 308.54999,
+                    "t": 730.5036616875,
+                    "r": 493.12469941999996,
+                    "b": 722.4214248199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    44
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/41",
+              "parent": {
+                "cref": "#/groups/3"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 308.54999,
+                    "t": 708.4199216874999,
+                    "r": 568.59784442,
+                    "b": 687.9158098199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    78
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/42",
+              "parent": {
+                "cref": "#/groups/3"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 308.54999,
+                    "t": 683.5761716874999,
+                    "r": 480.83758442,
+                    "b": 675.4939348199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    51
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/43",
+              "parent": {
+                "cref": "#/groups/3"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 308.54999,
+                    "t": 671.1540496875,
+                    "r": 567.1857294199999,
+                    "b": 663.0718128199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    67
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/44",
+              "parent": {
+                "cref": "#/groups/3"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 308.54999,
+                    "t": 649.0703096875,
+                    "r": 568.44257192,
+                    "b": 628.5662028199854,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    82
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/45",
+              "parent": {
+                "cref": "#/groups/3"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 308.54999,
+                    "t": 624.2263196875,
+                    "r": 504.09784442,
+                    "b": 616.1440828199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    47
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/46",
+              "parent": {
+                "cref": "#/groups/3"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 308.54999,
+                    "t": 611.8044396875,
+                    "r": 540.22088942,
+                    "b": 603.7222028199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    59
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/47",
+              "parent": {
+                "cref": "#/groups/3"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 308.54999,
+                    "t": 599.3823196875001,
+                    "r": 463.28582941999997,
+                    "b": 591.3000828199854,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    36
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/48",
+              "parent": {
+                "cref": "#/groups/3"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 308.54999,
+                    "t": 586.9602096875,
+                    "r": 504.95038442,
+                    "b": 578.8779728199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    48
+                  ]
+                }
+              ]
+            }
+          ],
+          "headings": [
+            "SET - 7 [Q .31. to Q .35.]"
+          ],
+          "captions": null,
+          "origin": {
+            "mimetype": "application/pdf",
+            "binary_hash": 5028870418609140341,
+            "filename": "english_page_0361.pdf",
+            "uri": null
+          }
+        },
+        "chunk_index": 3,
+        "contextualized_text": "SET - 7 [Q .31. to Q .35.]\n- Q.32. Which mission made India the first country to land on the Moon's south pole?\n- (a) Chandrayaan-2\n- (c) Chandrayaan-3\n- (b) Mangalyaan\n- (d) Gaganyaan\n- Q.33. What does the Gaganyaan project aim to achieve ?\n- (a) Launch India's first Mars rover\n- (b) Conduct India's first human spaceflight\n- (c) Build a permanent space station\n- (d) Launch low-cost communication satellites\n- Q.34. Which factor is NOT mentioned as a challenge for India's space program ?\n- (a) Limited funding                 (b) Brain drain\n- (c) Lack of public interest     (d) Need for technological upgrades\n- Q.35. What  best  describes  India's  long  -term  vision  in  space exploration ?\n- (a) To compete with Western nations at any cost\n- (b) To combine affordability, innovation, and collaboration\n- (c) To focus only on manned missions\n- (d) To depend entirely on foreign space agencies"
+      },
+      {
+        "text": "In  the  contemporary  era,  the  relationship  between  technology and  human  cognition  has  become  increasingly  intertwined. Digital  tools  have  transformed  how  we  process,  store,  and retrieve information. On one hand, technology enhances efficiency -  allowing instantaneous access to knowledge, fostering global communication, and enabling complex problem-solving. On the other hand, constant digital engagement has raised concerns about attention fragmentation, superficial learning, and declining memory retention. Psychologists argue that reliance on external devices for information storage-commonly termed as 'digital amnesia'-may  erode  our  natural cognitive abilities.  When individuals  delegate  tasks  like  remembering  phone  numbers, dates, or even directions to devices, they strengthen convenience but weaken mental endurance. However, advocates of  digital  integration  claim  that  such  delegation  allows  the human  mind  to  focus  on  higher-order  thinking  rather  than routine recall. They argue that every technological revolution-printing press, calculator, or computer-has similarly redefined  intelligence  rather  than  diminished  it.  The  central challenge,  therefore,  is  not  resisting  technology  but  using  it judiciously-balancing cognitive independence with technological assistance. The future of human intellect will likely depend  on  how  effectively  individuals  cultivate  mindfulness  in an age of mental automation.",
+        "meta": {
+          "schema_name": "docling_core.transforms.chunker.DocMeta",
+          "version": "1.0.0",
+          "doc_items": [
+            {
+              "self_ref": "#/texts/50",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 308.54999,
+                    "t": 552.4545896875,
+                    "r": 568.77508442,
+                    "b": 246.2439328199854,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    1485
+                  ]
+                }
+              ]
+            }
+          ],
+          "headings": [
+            "SET - 8 [Q .36. to Q .40.]"
+          ],
+          "captions": null,
+          "origin": {
+            "mimetype": "application/pdf",
+            "binary_hash": 5028870418609140341,
+            "filename": "english_page_0361.pdf",
+            "uri": null
+          }
+        },
+        "chunk_index": 4,
+        "contextualized_text": "SET - 8 [Q .36. to Q .40.]\nIn  the  contemporary  era,  the  relationship  between  technology and  human  cognition  has  become  increasingly  intertwined. Digital  tools  have  transformed  how  we  process,  store,  and retrieve information. On one hand, technology enhances efficiency -  allowing instantaneous access to knowledge, fostering global communication, and enabling complex problem-solving. On the other hand, constant digital engagement has raised concerns about attention fragmentation, superficial learning, and declining memory retention. Psychologists argue that reliance on external devices for information storage-commonly termed as 'digital amnesia'-may  erode  our  natural cognitive abilities.  When individuals  delegate  tasks  like  remembering  phone  numbers, dates, or even directions to devices, they strengthen convenience but weaken mental endurance. However, advocates of  digital  integration  claim  that  such  delegation  allows  the human  mind  to  focus  on  higher-order  thinking  rather  than routine recall. They argue that every technological revolution-printing press, calculator, or computer-has similarly redefined  intelligence  rather  than  diminished  it.  The  central challenge,  therefore,  is  not  resisting  technology  but  using  it judiciously-balancing cognitive independence with technological assistance. The future of human intellect will likely depend  on  how  effectively  individuals  cultivate  mindfulness  in an age of mental automation."
+      },
+      {
+        "text": "SSC CGL 14/09/2025 (Shift 2)\n- Q.36. Which  of  the  following  best  captures the essence of the passage ?\n- (a) Technology has made human cognition obsolete.\n- (b) Technology has both enhanced and challenged human cognition.\n- (c) Digital tools have replaced human intelligence.\n- (d) People should completely avoid dependence on technology.\n- Q.37. Which of the following is a concern raised by psychologists in the passage?\n- (a) Technology limits creativity and curiosity.\n- (b) Technology causes people to forget essential information.\n- (c) Technology has made learning too slow.\n- (d) Technology eliminates the need for education.\n- Q.38. How do advocates of digital integration defend technology",
+        "meta": {
+          "schema_name": "docling_core.transforms.chunker.DocMeta",
+          "version": "1.0.0",
+          "doc_items": [
+            {
+              "self_ref": "#/texts/51",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 308.54999,
+                    "t": 241.9040496875,
+                    "r": 430.8190329199999,
+                    "b": 233.82181281998533,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    28
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/52",
+              "parent": {
+                "cref": "#/groups/4"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 308.54999,
+                    "t": 218.44018968750004,
+                    "r": 568.60809692,
+                    "b": 197.93607281998538,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    76
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/53",
+              "parent": {
+                "cref": "#/groups/4"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 308.54999,
+                    "t": 193.5961896875,
+                    "r": 520.51580942,
+                    "b": 185.51395281998532,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    49
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/54",
+              "parent": {
+                "cref": "#/groups/4"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 308.54999,
+                    "t": 181.17431968749997,
+                    "r": 543.93426692,
+                    "b": 160.67020281998532,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    64
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/55",
+              "parent": {
+                "cref": "#/groups/4"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 308.54999,
+                    "t": 156.33007968749996,
+                    "r": 509.48993191999995,
+                    "b": 148.2478428199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    51
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/56",
+              "parent": {
+                "cref": "#/groups/4"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 308.54999,
+                    "t": 143.90819968749997,
+                    "r": 562.70770442,
+                    "b": 135.8259628199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    60
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/57",
+              "parent": {
+                "cref": "#/groups/4"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 308.54999,
+                    "t": 121.82470968749999,
+                    "r": 568.36932692,
+                    "b": 101.32059281998534,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    81
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/58",
+              "parent": {
+                "cref": "#/groups/4"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 308.54999,
+                    "t": 96.98046968749998,
+                    "r": 488.36541692,
+                    "b": 88.89823281998531,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    47
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/59",
+              "parent": {
+                "cref": "#/groups/4"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 308.54999,
+                    "t": 84.55858968749999,
+                    "r": 556.26971942,
+                    "b": 76.47635281998532,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    61
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/60",
+              "parent": {
+                "cref": "#/groups/4"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 308.54999,
+                    "t": 72.13622968749996,
+                    "r": 484.11590942,
+                    "b": 64.0539928199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    42
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/61",
+              "parent": {
+                "cref": "#/groups/4"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 308.54999,
+                    "t": 59.71435968749995,
+                    "r": 508.63739191999997,
+                    "b": 51.632122819985284,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    49
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/62",
+              "parent": {
+                "cref": "#/groups/4"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 308.54999,
+                    "t": 37.63085968749999,
+                    "r": 567.82733192,
+                    "b": 29.548622819985326,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    63
+                  ]
+                }
+              ]
+            }
+          ],
+          "headings": [
+            "SET - 8 [Q .36. to Q .40.]"
+          ],
+          "captions": null,
+          "origin": {
+            "mimetype": "application/pdf",
+            "binary_hash": 5028870418609140341,
+            "filename": "english_page_0361.pdf",
+            "uri": null
+          }
+        },
+        "chunk_index": 5,
+        "contextualized_text": "SET - 8 [Q .36. to Q .40.]\nSSC CGL 14/09/2025 (Shift 2)\n- Q.36. Which  of  the  following  best  captures the essence of the passage ?\n- (a) Technology has made human cognition obsolete.\n- (b) Technology has both enhanced and challenged human cognition.\n- (c) Digital tools have replaced human intelligence.\n- (d) People should completely avoid dependence on technology.\n- Q.37. Which of the following is a concern raised by psychologists in the passage?\n- (a) Technology limits creativity and curiosity.\n- (b) Technology causes people to forget essential information.\n- (c) Technology has made learning too slow.\n- (d) Technology eliminates the need for education.\n- Q.38. How do advocates of digital integration defend technology"
+      }
+    ]
+  },
+  "content_assets": {
+    "tables": [],
+    "figures": []
+  },
+  "docling_document": {
+    "schema_name": "DoclingDocument",
+    "version": "1.10.0",
+    "name": "english_page_0361",
+    "origin": {
+      "mimetype": "application/pdf",
+      "binary_hash": 5028870418609140341,
+      "filename": "english_page_0361.pdf"
+    },
+    "furniture": {
+      "self_ref": "#/furniture",
+      "children": [],
+      "content_layer": "furniture",
+      "name": "_root_",
+      "label": "unspecified"
+    },
+    "body": {
+      "self_ref": "#/body",
+      "children": [
+        {
+          "$ref": "#/texts/0"
+        },
+        {
+          "$ref": "#/texts/1"
+        },
+        {
+          "$ref": "#/groups/0"
+        },
+        {
+          "$ref": "#/texts/11"
+        },
+        {
+          "$ref": "#/groups/1"
+        },
+        {
+          "$ref": "#/texts/26"
+        },
+        {
+          "$ref": "#/texts/27"
+        },
+        {
+          "$ref": "#/texts/28"
+        },
+        {
+          "$ref": "#/groups/2"
+        },
+        {
+          "$ref": "#/texts/30"
+        },
+        {
+          "$ref": "#/groups/3"
+        },
+        {
+          "$ref": "#/texts/49"
+        },
+        {
+          "$ref": "#/texts/50"
+        },
+        {
+          "$ref": "#/texts/51"
+        },
+        {
+          "$ref": "#/groups/4"
+        },
+        {
+          "$ref": "#/texts/63"
+        }
+      ],
+      "content_layer": "body",
+      "name": "_root_",
+      "label": "unspecified"
+    },
+    "groups": [
+      {
+        "self_ref": "#/groups/0",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [
+          {
+            "$ref": "#/texts/2"
+          },
+          {
+            "$ref": "#/texts/3"
+          },
+          {
+            "$ref": "#/texts/4"
+          },
+          {
+            "$ref": "#/texts/5"
+          },
+          {
+            "$ref": "#/texts/6"
+          },
+          {
+            "$ref": "#/texts/7"
+          },
+          {
+            "$ref": "#/texts/8"
+          },
+          {
+            "$ref": "#/texts/9"
+          },
+          {
+            "$ref": "#/texts/10"
+          }
+        ],
+        "content_layer": "body",
+        "name": "list",
+        "label": "list"
+      },
+      {
+        "self_ref": "#/groups/1",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [
+          {
+            "$ref": "#/texts/12"
+          },
+          {
+            "$ref": "#/texts/13"
+          },
+          {
+            "$ref": "#/texts/14"
+          },
+          {
+            "$ref": "#/texts/15"
+          },
+          {
+            "$ref": "#/texts/16"
+          },
+          {
+            "$ref": "#/texts/17"
+          },
+          {
+            "$ref": "#/texts/18"
+          },
+          {
+            "$ref": "#/texts/19"
+          },
+          {
+            "$ref": "#/texts/20"
+          },
+          {
+            "$ref": "#/texts/21"
+          },
+          {
+            "$ref": "#/texts/22"
+          },
+          {
+            "$ref": "#/texts/23"
+          },
+          {
+            "$ref": "#/texts/24"
+          },
+          {
+            "$ref": "#/texts/25"
+          }
+        ],
+        "content_layer": "body",
+        "name": "list",
+        "label": "list"
+      },
+      {
+        "self_ref": "#/groups/2",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [
+          {
+            "$ref": "#/texts/29"
+          }
+        ],
+        "content_layer": "body",
+        "name": "list",
+        "label": "list"
+      },
+      {
+        "self_ref": "#/groups/3",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [
+          {
+            "$ref": "#/texts/31"
+          },
+          {
+            "$ref": "#/texts/32"
+          },
+          {
+            "$ref": "#/texts/33"
+          },
+          {
+            "$ref": "#/texts/34"
+          },
+          {
+            "$ref": "#/texts/35"
+          },
+          {
+            "$ref": "#/texts/36"
+          },
+          {
+            "$ref": "#/texts/37"
+          },
+          {
+            "$ref": "#/texts/38"
+          },
+          {
+            "$ref": "#/texts/39"
+          },
+          {
+            "$ref": "#/texts/40"
+          },
+          {
+            "$ref": "#/texts/41"
+          },
+          {
+            "$ref": "#/texts/42"
+          },
+          {
+            "$ref": "#/texts/43"
+          },
+          {
+            "$ref": "#/texts/44"
+          },
+          {
+            "$ref": "#/texts/45"
+          },
+          {
+            "$ref": "#/texts/46"
+          },
+          {
+            "$ref": "#/texts/47"
+          },
+          {
+            "$ref": "#/texts/48"
+          }
+        ],
+        "content_layer": "body",
+        "name": "list",
+        "label": "list"
+      },
+      {
+        "self_ref": "#/groups/4",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [
+          {
+            "$ref": "#/texts/52"
+          },
+          {
+            "$ref": "#/texts/53"
+          },
+          {
+            "$ref": "#/texts/54"
+          },
+          {
+            "$ref": "#/texts/55"
+          },
+          {
+            "$ref": "#/texts/56"
+          },
+          {
+            "$ref": "#/texts/57"
+          },
+          {
+            "$ref": "#/texts/58"
+          },
+          {
+            "$ref": "#/texts/59"
+          },
+          {
+            "$ref": "#/texts/60"
+          },
+          {
+            "$ref": "#/texts/61"
+          },
+          {
+            "$ref": "#/texts/62"
+          }
+        ],
+        "content_layer": "body",
+        "name": "list",
+        "label": "list"
+      }
+    ],
+    "texts": [
+      {
+        "self_ref": "#/texts/0",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "furniture",
+        "label": "page_header",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 830.7937988594726,
+              "r": 95.7084616875,
+              "b": 822.5655027957749,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              8
+            ]
+          }
+        ],
+        "orig": "Pinnacle",
+        "text": "Pinnacle"
+      },
+      {
+        "self_ref": "#/texts/1",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "furniture",
+        "label": "page_header",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 291.757038,
+              "t": 830.7937988594726,
+              "r": 567.4754754375,
+              "b": 822.5655027957749,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              13
+            ]
+          }
+        ],
+        "orig": "Comprehension",
+        "text": "Comprehension"
+      },
+      {
+        "self_ref": "#/texts/2",
+        "parent": {
+          "$ref": "#/groups/0"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 814.6972656875,
+              "r": 239.86933992000002,
+              "b": 806.6150288199854,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              48
+            ]
+          }
+        ],
+        "orig": "(b) It reduces deep engagement and comprehension",
+        "text": "(b) It reduces deep engagement and comprehension",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/3",
+        "parent": {
+          "$ref": "#/groups/0"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 802.2753906875,
+              "r": 160.11738492,
+              "b": 794.1931538199854,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              36
+            ]
+          }
+        ],
+        "orig": "(c) It is unavailable in rural areas",
+        "text": "(c) It is unavailable in rural areas",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/4",
+        "parent": {
+          "$ref": "#/groups/0"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 789.8532716875,
+              "r": 200.93818992,
+              "b": 781.7710348199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              41
+            ]
+          }
+        ],
+        "orig": "(d) It discourages vocabulary development",
+        "text": "(d) It discourages vocabulary development",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/5",
+        "parent": {
+          "$ref": "#/groups/0"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 770.5300296875,
+              "r": 288.48750492,
+              "b": 750.0256728199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              76
+            ]
+          }
+        ],
+        "orig": "Q.27. What advantage does digital  reading  offer according to the passage ?",
+        "text": "Q.27. What advantage does digital  reading  offer according to the passage ?",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/6",
+        "parent": {
+          "$ref": "#/groups/0"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 745.6860346875,
+              "r": 142.18330392000001,
+              "b": 737.6037978199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              28
+            ]
+          }
+        ],
+        "orig": "(a) It increases paper usage",
+        "text": "(a) It increases paper usage",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/7",
+        "parent": {
+          "$ref": "#/groups/0"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 733.2641596875,
+              "r": 125.82685842000001,
+              "b": 725.1819228199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              27
+            ]
+          }
+        ],
+        "orig": "(b) It limits accessibility",
+        "text": "(b) It limits accessibility",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/8",
+        "parent": {
+          "$ref": "#/groups/0"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 720.8420406875,
+              "r": 197.96748492,
+              "b": 712.7598038199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              43
+            ]
+          }
+        ],
+        "orig": "(c) It provides portability and convenience",
+        "text": "(c) It provides portability and convenience",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/9",
+        "parent": {
+          "$ref": "#/groups/0"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 708.4199216874999,
+              "r": 190.82636742,
+              "b": 700.3376848199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              39
+            ]
+          }
+        ],
+        "orig": "(d) It reduces technological dependency",
+        "text": "(d) It reduces technological dependency",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/10",
+        "parent": {
+          "$ref": "#/groups/0"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 687.7165526875,
+              "r": 288.59883492,
+              "b": 667.2121968199854,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              95
+            ]
+          }
+        ],
+        "orig": "Q.28. What  does  the  word  'immersive'  imply  in  the  following sentence from the passage ?",
+        "text": "Q.28. What  does  the  word  'immersive'  imply  in  the  following sentence from the passage ?",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/11",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 662.8725596875,
+              "r": 288.76582242,
+              "b": 642.3684428199854,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              102
+            ]
+          }
+        ],
+        "orig": "'Printed books, on the other hand, encourage focus and retention through a more immersive experience.'",
+        "text": "'Printed books, on the other hand, encourage focus and retention through a more immersive experience.'"
+      },
+      {
+        "self_ref": "#/texts/12",
+        "parent": {
+          "$ref": "#/groups/1"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 638.0285596875,
+              "r": 87.69551067,
+              "b": 629.9463228199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              15
+            ]
+          }
+        ],
+        "orig": "(a) Distracting",
+        "text": "(a) Distracting",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/13",
+        "parent": {
+          "$ref": "#/groups/1"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 625.6064496875,
+              "r": 86.34199542,
+              "b": 617.5242128199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              15
+            ]
+          }
+        ],
+        "orig": "(c) Superficial",
+        "text": "(c) Superficial",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/14",
+        "parent": {
+          "$ref": "#/groups/1"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 136.800003,
+              "t": 638.0285596875,
+              "r": 218.67451241999999,
+              "b": 629.9463228199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              19
+            ]
+          }
+        ],
+        "orig": "(b) Deeply engaging",
+        "text": "(b) Deeply engaging",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/15",
+        "parent": {
+          "$ref": "#/groups/1"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 136.800003,
+              "t": 625.6064496875,
+              "r": 178.55683992,
+              "b": 617.5242128199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              10
+            ]
+          }
+        ],
+        "orig": "(d) Boring",
+        "text": "(d) Boring",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/16",
+        "parent": {
+          "$ref": "#/groups/1"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 604.9030796874999,
+              "r": 288.65888742,
+              "b": 584.3987228199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              69
+            ]
+          }
+        ],
+        "orig": "Q.29. How does digital reading support environmental sustainability ?",
+        "text": "Q.29. How does digital reading support environmental sustainability ?",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/17",
+        "parent": {
+          "$ref": "#/groups/1"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 580.0590796875,
+              "r": 148.74433917,
+              "b": 571.9768428199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              31
+            ]
+          }
+        ],
+        "orig": "(a) By reducing electricity use",
+        "text": "(a) By reducing electricity use",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/18",
+        "parent": {
+          "$ref": "#/groups/1"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 567.6372096875,
+              "r": 188.73896742,
+              "b": 559.5549728199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              38
+            ]
+          }
+        ],
+        "orig": "(b) By promoting online advertisements",
+        "text": "(b) By promoting online advertisements",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/19",
+        "parent": {
+          "$ref": "#/groups/1"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 555.2150896875,
+              "r": 170.87959242,
+              "b": 547.1328528199854,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              33
+            ]
+          }
+        ],
+        "orig": "(c) By reducing paper consumption",
+        "text": "(c) By reducing paper consumption",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/20",
+        "parent": {
+          "$ref": "#/groups/1"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 542.7929696875,
+              "r": 160.25361492,
+              "b": 534.7107328199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              33
+            ]
+          }
+        ],
+        "orig": "(d) By recycling electronic waste",
+        "text": "(d) By recycling electronic waste",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/21",
+        "parent": {
+          "$ref": "#/groups/1"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 522.0895996875,
+              "r": 275.74189992,
+              "b": 514.0073628199854,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              59
+            ]
+          }
+        ],
+        "orig": "Q.30. What balance does the author suggest in the passage ?",
+        "text": "Q.30. What balance does the author suggest in the passage ?",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/22",
+        "parent": {
+          "$ref": "#/groups/1"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 509.6674796875,
+              "r": 184.32246492,
+              "b": 501.58524281998535,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              39
+            ]
+          }
+        ],
+        "orig": "(a) Completely avoiding digital reading",
+        "text": "(a) Completely avoiding digital reading",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/23",
+        "parent": {
+          "$ref": "#/groups/1"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 497.2456096875,
+              "r": 204.04951241999999,
+              "b": 489.16337281998534,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              44
+            ]
+          }
+        ],
+        "orig": "(b) Preferring printed books over everything",
+        "text": "(b) Preferring printed books over everything",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/24",
+        "parent": {
+          "$ref": "#/groups/1"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 484.8237296875,
+              "r": 222.82294992,
+              "b": 476.74149281998535,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              50
+            ]
+          }
+        ],
+        "orig": "(c) Using both digital and print reading mindfully",
+        "text": "(c) Using both digital and print reading mindfully",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/25",
+        "parent": {
+          "$ref": "#/groups/1"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 472.4016096875,
+              "r": 180.95185992,
+              "b": 464.31937281998535,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              38
+            ]
+          }
+        ],
+        "orig": "(d) Replacing all books with e-readers",
+        "text": "(d) Replacing all books with e-readers",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/26",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "section_header",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 453.0786096875,
+              "r": 128.16914394000003,
+              "b": 444.9963728199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              26
+            ]
+          }
+        ],
+        "orig": "SET - 7 [Q .31. to Q .35.]",
+        "text": "SET - 7 [Q .31. to Q .35.]",
+        "level": 1
+      },
+      {
+        "self_ref": "#/texts/27",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 440.6564896875,
+              "r": 289.02363492,
+              "b": 122.02372281998532,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              1665
+            ]
+          }
+        ],
+        "orig": "India's  journey  in  space  exploration  began  in  1962  with  the establishment  of  the  Indian  National  Committee  for  Space Research (INCOSPAR)  under the leadership of Dr. Vikram Sarabhai. What  started  with  modest  rocket  launches  from Thumba  soon evolved  into  one  of  the  world's  most  respected space  programs.  The  formation  of  the  Indian  Space  Research Organisation  (ISRO)  in  1969  marked  a  turning  point,  reflecting India's ambition to harness space technology  for  national development. Over  the  decades,  ISRO  achieved  remarkable milestones  -  from launching the Aryabhata satellite in 1975 to the  Chandrayaan  and  Mangalyaan  missions  that  showcased India's prowess in lunar and interplanetary exploration. However, the  true  transformation  occurred  in  the  21st  century.  With  the successful  launch  of  the Chandrayaan-3 mission in 2023, India became the first nation to land on the Moon's south pole, a feat celebrated globally. The mission highlighted ISRO's cost-effective  innovation  and  technical  expertise.  Meanwhile, projects like Gaganyaan, India's first human spaceflight program, signify  the  country's  leap  toward  manned  missions.  ISRO's collaborations  with  private  space  startups and global agencies are  also  expanding  the  frontiers  of  innovation, aiming to make India  a key player in the global space economy. Yet, challenges persist -  limited budgets, brain drain, and the need for continuous  technological  upgrades.  Still,  India's  space  vision remains  clear:  to  combine  affordability,  innovation,  and  global collaboration to reach new cosmic milestones.",
+        "text": "India's  journey  in  space  exploration  began  in  1962  with  the establishment  of  the  Indian  National  Committee  for  Space Research (INCOSPAR)  under the leadership of Dr. Vikram Sarabhai. What  started  with  modest  rocket  launches  from Thumba  soon evolved  into  one  of  the  world's  most  respected space  programs.  The  formation  of  the  Indian  Space  Research Organisation  (ISRO)  in  1969  marked  a  turning  point,  reflecting India's ambition to harness space technology  for  national development. Over  the  decades,  ISRO  achieved  remarkable milestones  -  from launching the Aryabhata satellite in 1975 to the  Chandrayaan  and  Mangalyaan  missions  that  showcased India's prowess in lunar and interplanetary exploration. However, the  true  transformation  occurred  in  the  21st  century.  With  the successful  launch  of  the Chandrayaan-3 mission in 2023, India became the first nation to land on the Moon's south pole, a feat celebrated globally. The mission highlighted ISRO's cost-effective  innovation  and  technical  expertise.  Meanwhile, projects like Gaganyaan, India's first human spaceflight program, signify  the  country's  leap  toward  manned  missions.  ISRO's collaborations  with  private  space  startups and global agencies are  also  expanding  the  frontiers  of  innovation, aiming to make India  a key player in the global space economy. Yet, challenges persist -  limited budgets, brain drain, and the need for continuous  technological  upgrades.  Still,  India's  space  vision remains  clear:  to  combine  affordability,  innovation,  and  global collaboration to reach new cosmic milestones."
+      },
+      {
+        "self_ref": "#/texts/28",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 117.68383968750004,
+              "r": 148.836624,
+              "b": 109.60160281998537,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              28
+            ]
+          }
+        ],
+        "orig": "SSC CGL 14/09/2025 (Shift 1)",
+        "text": "SSC CGL 14/09/2025 (Shift 1)"
+      },
+      {
+        "self_ref": "#/texts/29",
+        "parent": {
+          "$ref": "#/groups/2"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 95.6000996875,
+              "r": 288.68671992000003,
+              "b": 75.09598281998535,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              74
+            ]
+          }
+        ],
+        "orig": "Q.31. When was the Indian Space Research Organisation (ISRO) established ?",
+        "text": "Q.31. When was the Indian Space Research Organisation (ISRO) established ?",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/30",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 70.75609968749995,
+              "r": 207.89912742,
+              "b": 62.67386281998529,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              51
+            ]
+          }
+        ],
+        "orig": "(a) 1962      (b) 1969       (c) 1975      (d) 1984",
+        "text": "(a) 1962      (b) 1969       (c) 1975      (d) 1984"
+      },
+      {
+        "self_ref": "#/texts/31",
+        "parent": {
+          "$ref": "#/groups/3"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 48.672359687500034,
+              "r": 288.32490492,
+              "b": 28.168252819985355,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              82
+            ]
+          }
+        ],
+        "orig": "Q.32. Which mission made India the first country to land on the Moon's south pole?",
+        "text": "Q.32. Which mission made India the first country to land on the Moon's south pole?",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/32",
+        "parent": {
+          "$ref": "#/groups/3"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 308.54999,
+              "t": 814.6972656875,
+              "r": 384.08319316999996,
+              "b": 806.6150288199854,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              17
+            ]
+          }
+        ],
+        "orig": "(a) Chandrayaan-2",
+        "text": "(a) Chandrayaan-2",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/33",
+        "parent": {
+          "$ref": "#/groups/3"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 308.54999,
+              "t": 802.2753906875,
+              "r": 383.89862267,
+              "b": 794.1931538199854,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              17
+            ]
+          }
+        ],
+        "orig": "(c) Chandrayaan-3",
+        "text": "(c) Chandrayaan-3",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/34",
+        "parent": {
+          "$ref": "#/groups/3"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 416.54999,
+              "t": 814.6972656875,
+              "r": 481.09686691999997,
+              "b": 806.6150288199854,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              14
+            ]
+          }
+        ],
+        "orig": "(b) Mangalyaan",
+        "text": "(b) Mangalyaan",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/35",
+        "parent": {
+          "$ref": "#/groups/3"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 416.54999,
+              "t": 802.2753906875,
+              "r": 477.20330942,
+              "b": 794.1931538199854,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              13
+            ]
+          }
+        ],
+        "orig": "(d) Gaganyaan",
+        "text": "(d) Gaganyaan",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/36",
+        "parent": {
+          "$ref": "#/groups/3"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 308.54999,
+              "t": 780.1916506875,
+              "r": 536.10320942,
+              "b": 772.1094138199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              54
+            ]
+          }
+        ],
+        "orig": "Q.33. What does the Gaganyaan project aim to achieve ?",
+        "text": "Q.33. What does the Gaganyaan project aim to achieve ?",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/37",
+        "parent": {
+          "$ref": "#/groups/3"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 308.54999,
+              "t": 767.7697756875,
+              "r": 443.86199941999996,
+              "b": 759.6875388199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              35
+            ]
+          }
+        ],
+        "orig": "(a) Launch India's first Mars rover",
+        "text": "(a) Launch India's first Mars rover",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/38",
+        "parent": {
+          "$ref": "#/groups/3"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 308.54999,
+              "t": 755.3476566875,
+              "r": 479.73895441999997,
+              "b": 747.2654198199854,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              43
+            ]
+          }
+        ],
+        "orig": "(b) Conduct India's first human spaceflight",
+        "text": "(b) Conduct India's first human spaceflight",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/39",
+        "parent": {
+          "$ref": "#/groups/3"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 308.54999,
+              "t": 742.9257816875,
+              "r": 452.90594941999996,
+              "b": 734.8435448199854,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              35
+            ]
+          }
+        ],
+        "orig": "(c) Build a permanent space station",
+        "text": "(c) Build a permanent space station",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/40",
+        "parent": {
+          "$ref": "#/groups/3"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 308.54999,
+              "t": 730.5036616875,
+              "r": 493.12469941999996,
+              "b": 722.4214248199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              44
+            ]
+          }
+        ],
+        "orig": "(d) Launch low-cost communication satellites",
+        "text": "(d) Launch low-cost communication satellites",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/41",
+        "parent": {
+          "$ref": "#/groups/3"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 308.54999,
+              "t": 708.4199216874999,
+              "r": 568.59784442,
+              "b": 687.9158098199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              78
+            ]
+          }
+        ],
+        "orig": "Q.34. Which factor is NOT mentioned as a challenge for India's space program ?",
+        "text": "Q.34. Which factor is NOT mentioned as a challenge for India's space program ?",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/42",
+        "parent": {
+          "$ref": "#/groups/3"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 308.54999,
+              "t": 683.5761716874999,
+              "r": 480.83758442,
+              "b": 675.4939348199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              51
+            ]
+          }
+        ],
+        "orig": "(a) Limited funding                 (b) Brain drain",
+        "text": "(a) Limited funding                 (b) Brain drain",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/43",
+        "parent": {
+          "$ref": "#/groups/3"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 308.54999,
+              "t": 671.1540496875,
+              "r": 567.1857294199999,
+              "b": 663.0718128199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              67
+            ]
+          }
+        ],
+        "orig": "(c) Lack of public interest     (d) Need for technological upgrades",
+        "text": "(c) Lack of public interest     (d) Need for technological upgrades",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/44",
+        "parent": {
+          "$ref": "#/groups/3"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 308.54999,
+              "t": 649.0703096875,
+              "r": 568.44257192,
+              "b": 628.5662028199854,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              82
+            ]
+          }
+        ],
+        "orig": "Q.35. What  best  describes  India's  long  -term  vision  in  space exploration ?",
+        "text": "Q.35. What  best  describes  India's  long  -term  vision  in  space exploration ?",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/45",
+        "parent": {
+          "$ref": "#/groups/3"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 308.54999,
+              "t": 624.2263196875,
+              "r": 504.09784442,
+              "b": 616.1440828199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              47
+            ]
+          }
+        ],
+        "orig": "(a) To compete with Western nations at any cost",
+        "text": "(a) To compete with Western nations at any cost",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/46",
+        "parent": {
+          "$ref": "#/groups/3"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 308.54999,
+              "t": 611.8044396875,
+              "r": 540.22088942,
+              "b": 603.7222028199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              59
+            ]
+          }
+        ],
+        "orig": "(b) To combine affordability, innovation, and collaboration",
+        "text": "(b) To combine affordability, innovation, and collaboration",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/47",
+        "parent": {
+          "$ref": "#/groups/3"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 308.54999,
+              "t": 599.3823196875001,
+              "r": 463.28582941999997,
+              "b": 591.3000828199854,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              36
+            ]
+          }
+        ],
+        "orig": "(c) To focus only on manned missions",
+        "text": "(c) To focus only on manned missions",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/48",
+        "parent": {
+          "$ref": "#/groups/3"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 308.54999,
+              "t": 586.9602096875,
+              "r": 504.95038442,
+              "b": 578.8779728199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              48
+            ]
+          }
+        ],
+        "orig": "(d) To depend entirely on foreign space agencies",
+        "text": "(d) To depend entirely on foreign space agencies",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/49",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "section_header",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 308.54999,
+              "t": 564.8767096875,
+              "r": 407.91913094,
+              "b": 556.7944728199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              26
+            ]
+          }
+        ],
+        "orig": "SET - 8 [Q .36. to Q .40.]",
+        "text": "SET - 8 [Q .36. to Q .40.]",
+        "level": 1
+      },
+      {
+        "self_ref": "#/texts/50",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 308.54999,
+              "t": 552.4545896875,
+              "r": 568.77508442,
+              "b": 246.2439328199854,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              1485
+            ]
+          }
+        ],
+        "orig": "In  the  contemporary  era,  the  relationship  between  technology and  human  cognition  has  become  increasingly  intertwined. Digital  tools  have  transformed  how  we  process,  store,  and retrieve information. On one hand, technology enhances efficiency -  allowing instantaneous access to knowledge, fostering global communication, and enabling complex problem-solving. On the other hand, constant digital engagement has raised concerns about attention fragmentation, superficial learning, and declining memory retention. Psychologists argue that reliance on external devices for information storage-commonly termed as 'digital amnesia'-may  erode  our  natural cognitive abilities.  When individuals  delegate  tasks  like  remembering  phone  numbers, dates, or even directions to devices, they strengthen convenience but weaken mental endurance. However, advocates of  digital  integration  claim  that  such  delegation  allows  the human  mind  to  focus  on  higher-order  thinking  rather  than routine recall. They argue that every technological revolution-printing press, calculator, or computer-has similarly redefined  intelligence  rather  than  diminished  it.  The  central challenge,  therefore,  is  not  resisting  technology  but  using  it judiciously-balancing cognitive independence with technological assistance. The future of human intellect will likely depend  on  how  effectively  individuals  cultivate  mindfulness  in an age of mental automation.",
+        "text": "In  the  contemporary  era,  the  relationship  between  technology and  human  cognition  has  become  increasingly  intertwined. Digital  tools  have  transformed  how  we  process,  store,  and retrieve information. On one hand, technology enhances efficiency -  allowing instantaneous access to knowledge, fostering global communication, and enabling complex problem-solving. On the other hand, constant digital engagement has raised concerns about attention fragmentation, superficial learning, and declining memory retention. Psychologists argue that reliance on external devices for information storage-commonly termed as 'digital amnesia'-may  erode  our  natural cognitive abilities.  When individuals  delegate  tasks  like  remembering  phone  numbers, dates, or even directions to devices, they strengthen convenience but weaken mental endurance. However, advocates of  digital  integration  claim  that  such  delegation  allows  the human  mind  to  focus  on  higher-order  thinking  rather  than routine recall. They argue that every technological revolution-printing press, calculator, or computer-has similarly redefined  intelligence  rather  than  diminished  it.  The  central challenge,  therefore,  is  not  resisting  technology  but  using  it judiciously-balancing cognitive independence with technological assistance. The future of human intellect will likely depend  on  how  effectively  individuals  cultivate  mindfulness  in an age of mental automation."
+      },
+      {
+        "self_ref": "#/texts/51",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 308.54999,
+              "t": 241.9040496875,
+              "r": 430.8190329199999,
+              "b": 233.82181281998533,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              28
+            ]
+          }
+        ],
+        "orig": "SSC CGL 14/09/2025 (Shift 2)",
+        "text": "SSC CGL 14/09/2025 (Shift 2)"
+      },
+      {
+        "self_ref": "#/texts/52",
+        "parent": {
+          "$ref": "#/groups/4"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 308.54999,
+              "t": 218.44018968750004,
+              "r": 568.60809692,
+              "b": 197.93607281998538,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              76
+            ]
+          }
+        ],
+        "orig": "Q.36. Which  of  the  following  best  captures the essence of the passage ?",
+        "text": "Q.36. Which  of  the  following  best  captures the essence of the passage ?",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/53",
+        "parent": {
+          "$ref": "#/groups/4"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 308.54999,
+              "t": 193.5961896875,
+              "r": 520.51580942,
+              "b": 185.51395281998532,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              49
+            ]
+          }
+        ],
+        "orig": "(a) Technology has made human cognition obsolete.",
+        "text": "(a) Technology has made human cognition obsolete.",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/54",
+        "parent": {
+          "$ref": "#/groups/4"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 308.54999,
+              "t": 181.17431968749997,
+              "r": 543.93426692,
+              "b": 160.67020281998532,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              64
+            ]
+          }
+        ],
+        "orig": "(b) Technology has both enhanced and challenged human cognition.",
+        "text": "(b) Technology has both enhanced and challenged human cognition.",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/55",
+        "parent": {
+          "$ref": "#/groups/4"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 308.54999,
+              "t": 156.33007968749996,
+              "r": 509.48993191999995,
+              "b": 148.2478428199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              51
+            ]
+          }
+        ],
+        "orig": "(c) Digital tools have replaced human intelligence.",
+        "text": "(c) Digital tools have replaced human intelligence.",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/56",
+        "parent": {
+          "$ref": "#/groups/4"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 308.54999,
+              "t": 143.90819968749997,
+              "r": 562.70770442,
+              "b": 135.8259628199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              60
+            ]
+          }
+        ],
+        "orig": "(d) People should completely avoid dependence on technology.",
+        "text": "(d) People should completely avoid dependence on technology.",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/57",
+        "parent": {
+          "$ref": "#/groups/4"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 308.54999,
+              "t": 121.82470968749999,
+              "r": 568.36932692,
+              "b": 101.32059281998534,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              81
+            ]
+          }
+        ],
+        "orig": "Q.37. Which of the following is a concern raised by psychologists in the passage?",
+        "text": "Q.37. Which of the following is a concern raised by psychologists in the passage?",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/58",
+        "parent": {
+          "$ref": "#/groups/4"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 308.54999,
+              "t": 96.98046968749998,
+              "r": 488.36541692,
+              "b": 88.89823281998531,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              47
+            ]
+          }
+        ],
+        "orig": "(a) Technology limits creativity and curiosity.",
+        "text": "(a) Technology limits creativity and curiosity.",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/59",
+        "parent": {
+          "$ref": "#/groups/4"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 308.54999,
+              "t": 84.55858968749999,
+              "r": 556.26971942,
+              "b": 76.47635281998532,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              61
+            ]
+          }
+        ],
+        "orig": "(b) Technology causes people to forget essential information.",
+        "text": "(b) Technology causes people to forget essential information.",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/60",
+        "parent": {
+          "$ref": "#/groups/4"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 308.54999,
+              "t": 72.13622968749996,
+              "r": 484.11590942,
+              "b": 64.0539928199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              42
+            ]
+          }
+        ],
+        "orig": "(c) Technology has made learning too slow.",
+        "text": "(c) Technology has made learning too slow.",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/61",
+        "parent": {
+          "$ref": "#/groups/4"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 308.54999,
+              "t": 59.71435968749995,
+              "r": 508.63739191999997,
+              "b": 51.632122819985284,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              49
+            ]
+          }
+        ],
+        "orig": "(d) Technology eliminates the need for education.",
+        "text": "(d) Technology eliminates the need for education.",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/62",
+        "parent": {
+          "$ref": "#/groups/4"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 308.54999,
+              "t": 37.63085968749999,
+              "r": 567.82733192,
+              "b": 29.548622819985326,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              63
+            ]
+          }
+        ],
+        "orig": "Q.38. How do advocates of digital integration defend technology",
+        "text": "Q.38. How do advocates of digital integration defend technology",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/63",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "furniture",
+        "label": "page_footer",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 99.3266505,
+              "t": 21.988717959472638,
+              "r": 495.95088382500006,
+              "b": 13.760421895774925,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              109
+            ]
+          }
+        ],
+        "orig": "www.ssccglpinnacle.com                                                 Download Pinnacle Exam Preparation App",
+        "text": "www.ssccglpinnacle.com                                                 Download Pinnacle Exam Preparation App"
+      }
+    ],
+    "pictures": [],
+    "tables": [],
+    "key_value_items": [],
+    "form_items": [],
+    "pages": {
+      "1": {
+        "size": {
+          "width": 596.0,
+          "height": 842.0
+        },
+        "page_no": 1
+      }
+    }
+  }
+}

@@ -1,215 +1,189 @@
 import {
-  BarChart,
-  Box,
-  HelpCircle,
+  BarChart3,
+  BookOpen,
+  CircleHelp,
+  GraduationCap,
   LayoutDashboard,
-  Layers,
+  LayoutGrid,
+  Layers3,
   LogOut,
-  Notebook,
-  NotebookText,
-  Package,
-  School,
-  Users,
-  Layout,
   Menu,
+  PanelLeftClose,
+  PanelLeftOpen,
+  School,
+  SlidersHorizontal,
+  Users,
   X,
-  ChevronLeft,
 } from "lucide-react";
-import { useDispatch, useSelector } from "react-redux";
-import { Link, NavLink, Outlet } from "react-router-dom";
-import type { AppDispatch, RootState } from "../store";
-import { supabase } from "../utils/supabase";
-import { clearUser } from "../slice/userSlice";
 import { useState } from "react";
+import { useDispatch, useSelector } from "react-redux";
+import { Link, NavLink, Outlet, useLocation } from "react-router-dom";
+import type { AppDispatch, RootState } from "../store";
+import { clearUser } from "../slice/userSlice";
+import { supabase } from "../utils/supabase";
 
 const navItems = [
-  {
-    label: "Curriculum Designer",
-    icon: <BarChart size={20} />,
-    path: "/admin/lattice",
-  },
-  {
-    label: "Dashboard",
-    icon: <LayoutDashboard size={20} />,
-    path: "/admin/dashboard",
-  },
-  {
-    label: "Boards",
-    icon: <Layout size={20} />,
-    path: "/admin/boards",
-  },
-  {
-    label: "Exams",
-    icon: <School size={20} />,
-    path: "/admin/exams",
-  },
-  {
-    label: "Subjects",
-    icon: <Notebook size={20} />,
-    path: "/admin/subjects",
-  },
-  {
-    label: "Chapters",
-    icon: <Layers size={20} />,
-    path: "/admin/chapters",
-  },
-  {
-    label: "Questions",
-    icon: <HelpCircle size={20} />,
-    path: "/admin/questions",
-  },
-  {
-    label: "Users",
-    icon: <Users size={20} />,
-    path: "/admin/users",
-  },
+  { label: "Overview", icon: LayoutDashboard, path: "/admin/dashboard" },
+  { label: "Curriculum designer", icon: BarChart3, path: "/admin/lattice" },
+  { label: "Exam boards", icon: LayoutGrid, path: "/admin/boards" },
+  { label: "Exams", icon: GraduationCap, path: "/admin/exams" },
+  { label: "Subjects", icon: BookOpen, path: "/admin/subjects" },
+  { label: "Chapters", icon: Layers3, path: "/admin/chapters" },
+  { label: "Questions", icon: CircleHelp, path: "/admin/questions" },
+  { label: "Features", icon: SlidersHorizontal, path: "/admin/features" },
+  { label: "Users", icon: Users, path: "/admin/users" },
 ];
 
+const pageTitles = new Map(navItems.map(({ path, label }) => [path, label]));
+
 export default function AdminPanelLayout() {
-  const { user } = useSelector((state: RootState) => state.user ?? null);
+  const { user } = useSelector((state: RootState) => state.user);
   const dispatch = useDispatch<AppDispatch>();
+  const location = useLocation();
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
   const [isCollapsed, setIsCollapsed] = useState(false);
+  const [isLoggingOut, setIsLoggingOut] = useState(false);
 
-  const handleLogout = () => {
-    const { error }: any = supabase.auth.signOut();
+  const pageTitle = pageTitles.get(location.pathname) ?? "Admin workspace";
+  const displayName = user?.email?.split("@")[0] || "Administrator";
+  const initials = displayName.slice(0, 2).toUpperCase();
+
+  const handleLogout = async () => {
+    setIsLoggingOut(true);
+    const { error } = await supabase.auth.signOut();
     if (error) {
-      console.log("Logout Error", error);
+      console.error("Unable to sign out:", error.message);
+      setIsLoggingOut(false);
+      return;
     }
     dispatch(clearUser());
-    console.log("Logout Successfully");
   };
-   return (
-    <div className="flex h-screen bg-surface-container-low dark:bg-slate-950 overflow-hidden relative">
-      {/* Mobile Top Bar */}
-      <div className="lg:hidden fixed top-0 left-0 right-0 h-16 bg-surface/80 backdrop-blur-xl border-b border-outline-variant/5 flex items-center justify-between px-5 z-50">
-        <div className="flex items-center gap-3">
-          <button 
-            onClick={() => setIsSidebarOpen(true)}
-            className="p-2 -ml-2 text-on-surface-variant hover:text-primary transition-colors"
-          >
-            <Menu size={24} />
-          </button>
-          <div className="flex items-center gap-2">
-            <div className="w-7 h-7 bg-[#16a34a] rounded flex items-center justify-center text-white">
-              <School size={16} />
-            </div>
-            <span className="text-xs font-technical font-black tracking-[0.2em] uppercase text-on-surface">Exam Portal</span>
-          </div>
-        </div>
-        <div className="w-8 h-8 rounded-full bg-primary/20 flex items-center justify-center text-[10px] font-bold text-primary">
-          AD
-        </div>
-      </div>
 
-      {/* Backdrop for Mobile Drawer */}
+  return (
+    <div className="relative flex h-dvh overflow-hidden bg-[#f4f5ef] text-[#1b2419] dark:bg-[#101510] dark:text-[#e8eee4]">
       {isSidebarOpen && (
-        <div 
-          className="lg:hidden fixed inset-0 bg-black/40 backdrop-blur-sm z-50 animate-in fade-in duration-300"
+        <button
+          aria-label="Close navigation menu"
+          className="fixed inset-0 z-40 bg-black/40 backdrop-blur-[2px] lg:hidden"
           onClick={() => setIsSidebarOpen(false)}
         />
       )}
 
-      {/* Sidebar / Responsive Drawer */}
-      <aside className={`
-        fixed lg:static inset-y-0 left-0 ${isCollapsed ? "w-20" : "w-72 lg:w-64"} 
-        bg-surface dark:bg-slate-900 border-r border-outline-variant/5 lg:border-r 
-        z-50 flex flex-col transition-all duration-500 ease-botanical
-        ${isSidebarOpen ? "translate-x-0 shadow-2xl shadow-black/20" : "-translate-x-full lg:translate-x-0"}
-      `}>
-        {/* Mobile Close Button */}
-        <div className="lg:hidden absolute top-4 right-4">
-          <button 
+      <aside
+        className={`fixed inset-y-0 left-0 z-50 flex w-[276px] flex-col border-r border-[#dfe5d9] bg-[#fbfcf8] transition-[transform,width] duration-300 ease-botanical dark:border-white/10 dark:bg-[#151c15] lg:static lg:translate-x-0 ${
+          isCollapsed ? "lg:w-[84px]" : "lg:w-[276px]"
+        } ${isSidebarOpen ? "translate-x-0 shadow-2xl" : "-translate-x-full"}`}
+      >
+        <div className={`flex h-[84px] shrink-0 items-center ${isCollapsed ? "justify-center px-3" : "gap-3 px-6"}`}>
+          <div className="grid size-10 shrink-0 place-items-center rounded-2xl bg-[#154212] text-white shadow-sm dark:bg-[#2d5a27]">
+            <School size={21} strokeWidth={1.8} />
+          </div>
+          <div className={`min-w-0 ${isCollapsed ? "hidden lg:block" : ""}`}>
+              <p className="truncate text-[15px] font-bold tracking-tight">Arumind</p>
+              <p className="mt-0.5 text-[10px] font-semibold uppercase tracking-[0.18em] text-[#72806c]">Admin workspace</p>
+          </div>
+          <button
+            aria-label="Close navigation menu"
+            className="ml-auto rounded-lg p-2 text-[#71806c] hover:bg-[#edf1e9] lg:hidden"
             onClick={() => setIsSidebarOpen(false)}
-            className="p-2 text-on-surface-variant hover:text-primary transition-colors"
           >
-            <X size={20} />
+            <X size={18} />
           </button>
         </div>
 
-        {/* Logo */}
-        <div className={`p-6 lg:p-8 flex items-center ${isCollapsed ? 'justify-center px-2' : 'gap-3'}`}>
-          <div className="w-8 h-8 shrink-0 bg-[#16a34a] rounded-lg flex items-center justify-center text-white">
-            <School color="white" size={20} />
-          </div>
-          {!isCollapsed && <h2 className="text-xl font-bold tracking-tight text-on-surface whitespace-nowrap overflow-hidden">Exam Portal</h2>}
+        <div className={`mx-4 mb-5 rounded-2xl bg-[#f0f4ec] p-3 dark:bg-white/[0.045] ${isCollapsed ? "lg:hidden" : ""}`}>
+            <div className="flex items-center gap-3">
+              <div className="grid size-9 shrink-0 place-items-center rounded-full bg-[#dce9d4] text-xs font-bold text-[#285922] dark:bg-[#254226] dark:text-[#cce6c2]">
+                {initials}
+              </div>
+              <div className="min-w-0">
+                <p className="truncate text-xs font-semibold">{displayName}</p>
+                <p className="mt-0.5 text-[11px] text-[#788473]">Administrator</p>
+              </div>
+              <span className="ml-auto size-2 rounded-full bg-[#4c9a43]" title="Account active" />
+            </div>
         </div>
 
-        {/* User Profile */}
-        {!isCollapsed && <UserProfile user={user} />}
-
-        {/* Navigation */}
-        <nav className="flex-1 px-4 space-y-1 overflow-y-auto custom-scrollbar">
-          {navItems.map((item, index) => (
+        <div className={`mb-2 px-6 text-[10px] font-bold uppercase tracking-[0.16em] text-[#879181] ${isCollapsed ? "lg:px-0 lg:text-center" : ""}`}>
+          {isCollapsed ? "Menu" : "Workspace"}
+        </div>
+        <nav aria-label="Admin navigation" className="flex-1 space-y-1 overflow-y-auto px-3 pb-4">
+          {navItems.map(({ label, icon: Icon, path }) => (
             <NavLink
-              key={index}
-              to={item.path}
+              key={path}
+              to={path}
               onClick={() => setIsSidebarOpen(false)}
+              title={isCollapsed ? label : undefined}
               className={({ isActive }) =>
-                `flex items-center ${isCollapsed ? 'justify-center p-3' : 'gap-3 px-4 py-3'} rounded-xl transition-all duration-300 ${
+                `group flex min-h-11 items-center rounded-xl transition-colors ${
+                  isCollapsed ? "justify-center px-2" : "gap-3 px-3.5"
+                } ${
                   isActive
-                    ? "bg-[#16a34a]/10 text-[#16a34a] font-bold shadow-xs"
-                    : "hover:bg-surface-container-high dark:hover:bg-slate-800 text-on-surface-variant"
+                    ? "bg-[#e8f0e3] text-[#24551e] dark:bg-[#244024] dark:text-[#d8efd0]"
+                    : "text-[#687565] hover:bg-[#f0f3ed] hover:text-[#263b22] dark:text-[#aeb9aa] dark:hover:bg-white/[0.06] dark:hover:text-white"
                 }`
               }
-              title={isCollapsed ? item.label : undefined}
             >
-              <span className="opacity-70 shrink-0">{item.icon}</span>
-              {!isCollapsed && <span className="text-sm tracking-tight whitespace-nowrap overflow-hidden">{item.label}</span>}
+              {({ isActive }) => (
+                <>
+                  <Icon size={18} strokeWidth={isActive ? 2.2 : 1.8} />
+                  <span className={`truncate text-[13px] font-medium ${isCollapsed ? "lg:hidden" : ""}`}>{label}</span>
+                  {isActive && <span className={`ml-auto size-1.5 rounded-full bg-[#4c8b3e] ${isCollapsed ? "lg:hidden" : ""}`} />}
+                </>
+              )}
             </NavLink>
           ))}
         </nav>
 
-        {/* Upgrade CTA / Footer */}
-        <div className="p-4 border-t border-outline-variant/5 space-y-4">
-          <div className="flex gap-2">
-            <button
-              onClick={() => setIsCollapsed(!isCollapsed)}
-              className="flex-1 hidden lg:flex items-center justify-center p-2 rounded-full bg-surface-container-high text-[#16a34a] hover:bg-surface-container-highest transition-all duration-300"
-            >
-              <ChevronLeft
-                className={`size-5 transition-transform duration-500 ${isCollapsed ? "rotate-180" : ""}`}
-              />
-            </button>
-          </div>
+        <div className="shrink-0 border-t border-[#e7ebe2] p-3 dark:border-white/10">
           <button
-            onClick={handleLogout}
-            className={`w-full py-3 bg-surface-container-high dark:bg-slate-800 text-[#16a34a] flex items-center justify-center gap-2 text-[10px] font-black uppercase tracking-widest rounded-xl hover:bg-primary hover:text-white transition-all duration-300 ${isCollapsed ? "px-2" : ""}`}
-            title={isCollapsed ? "Sign Out" : undefined}
+            aria-label={isCollapsed ? "Expand sidebar" : "Collapse sidebar"}
+            className="mb-2 hidden min-h-10 w-full items-center justify-center gap-3 rounded-xl px-3 text-[#687565] hover:bg-[#f0f3ed] hover:text-[#263b22] dark:hover:bg-white/[0.06] lg:flex"
+            onClick={() => setIsCollapsed((value) => !value)}
           >
-            {isCollapsed ? <LogOut size={18} /> : "Sign Out"}
+            {isCollapsed ? <PanelLeftOpen size={18} /> : <><PanelLeftClose size={18} /><span className="text-xs font-medium">Collapse menu</span></>}
+          </button>
+          <button
+            className={`flex min-h-10 w-full items-center justify-center gap-3 rounded-xl px-3 text-[#788473] transition-colors hover:bg-[#f7e9e5] hover:text-[#9e4638] dark:hover:bg-[#3b2521] dark:hover:text-[#f0b3a6] ${isCollapsed ? "" : "justify-start"}`}
+            disabled={isLoggingOut}
+            onClick={handleLogout}
+            title={isCollapsed ? "Sign out" : undefined}
+          >
+            <LogOut size={17} />
+            <span className={`text-xs font-semibold ${isCollapsed ? "lg:hidden" : ""}`}>{isLoggingOut ? "Signing out…" : "Sign out"}</span>
           </button>
         </div>
       </aside>
 
-      {/* Main Content */}
-      <main className="flex-1 overflow-y-auto h-full pt-16 lg:pt-0">
-        <Outlet />
-      </main>
-    </div>
-  );
-}
-
-const UserProfile = ({ user }: any) => {
-  return (
-    <div className="px-4 mb-6">
-      <div className="p-4 bg-[#16a34a]/5 rounded-xl border border-[#16a34a]/10">
-        <div className="flex items-center gap-3 mb-2">
-          <div className="w-10 h-10 bg-primary/20 px-5 flex justify-center items-center rounded-full bg-cover bg-center shadow-lg"></div>
-          <div className="flex flex-col">
-            <span className="w-30 text-sm font-semibold truncate">
-              {user?.email || ""}
-            </span>
-            <span className="text-xs text-on-surface-variant">OPSC Aspirant</span>
+      <div className="flex min-w-0 flex-1 flex-col">
+        <header className="z-30 flex h-[72px] shrink-0 items-center justify-between border-b border-[#e1e6dc] bg-[#fbfcf8]/90 px-4 backdrop-blur-md dark:border-white/10 dark:bg-[#151c15]/90 sm:px-7 lg:px-9">
+          <div className="flex min-w-0 items-center gap-3">
+            <button
+              aria-label="Open navigation menu"
+              className="-ml-2 rounded-xl p-2 text-[#64715f] hover:bg-[#edf1e9] lg:hidden"
+              onClick={() => setIsSidebarOpen(true)}
+            >
+              <Menu size={21} />
+            </button>
+            <div className="min-w-0">
+              <p className="truncate text-sm font-semibold tracking-tight sm:text-[15px]">{pageTitle}</p>
+              <p className="mt-0.5 hidden text-[11px] text-[#818b7c] sm:block">Manage your learning platform</p>
+            </div>
           </div>
-        </div>
-        <Link
-          to={"/user/profile"}
-          className="w-full px-5 flex items-center justify-center py-1.5 text-xs font-bold bg-[#16a34a] text-white rounded-lg hover:bg-[#16a34a]/90 transition-all duration-200"
-        >
-          View Profile
-        </Link>
+          <div className="flex items-center gap-2 sm:gap-3">
+            <div className="hidden items-center gap-2 rounded-full bg-[#edf4e9] px-3 py-1.5 text-[10px] font-semibold text-[#426b39] dark:bg-[#203620] dark:text-[#b7d7ad] sm:flex">
+              <span className="size-1.5 rounded-full bg-[#4c9a43]" />
+              System online
+            </div>
+            <Link to="/user/profile" aria-label="View administrator profile" className="grid size-9 place-items-center rounded-full bg-[#dce9d4] text-xs font-bold text-[#285922] transition-transform hover:scale-105 dark:bg-[#254226] dark:text-[#cce6c2]">
+              {initials || "AD"}
+            </Link>
+          </div>
+        </header>
+        <main className="min-h-0 flex-1 overflow-y-auto">
+          <Outlet />
+        </main>
       </div>
     </div>
   );
-};
+}

@@ -1,0 +1,19 @@
+{
+  "dataset_id": null,
+  "options_format": null,
+  "correct_answer_format": null,
+  "defaults": {
+    "exam_id": null,
+    "subject_id": null,
+    "chapter_id": null,
+    "pdf_id": null,
+    "paper_set": null,
+    "difficulty_level": "MODERATE",
+    "marks": 1,
+    "negative_marks": 0,
+    "is_active": true,
+    "question_type": "SINGLE_CHOICE",
+    "diagram_present": false
+  },
+  "overrides": {}
+}

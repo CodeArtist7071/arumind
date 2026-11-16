@@ -1,0 +1,6305 @@
+{
+  "document_id": "english",
+  "source": "english.pdf",
+  "pdf_page": 412,
+  "page_width": 596.0,
+  "page_height": 842.0,
+  "extracted_at": "2026-09-09T10:52:07.416271+00:00",
+  "extraction_version": 4,
+  "ocr_enabled": true,
+  "extraction_detection": {
+    "requested_profile": "auto",
+    "effective_profile": "hybrid",
+    "embedded_text_characters": 4948,
+    "auto_text_threshold": 80
+  },
+  "docling_result": {
+    "status": "success",
+    "errors": []
+  },
+  "content_summary": {
+    "text_items": 75,
+    "text_characters": 6075,
+    "table_items": 0,
+    "picture_items": 0,
+    "group_items": 1,
+    "warnings": []
+  },
+  "reading_order": {
+    "source": "docling_iterate_items",
+    "items": [
+      {
+        "reading_order_index": 0,
+        "element_ref": "#/texts/1",
+        "label": "text",
+        "level": 1,
+        "text_preview": "Sol.115.(a)  Posse -a  group  of  people who  have  a  common  characteristic  or occupation."
+      },
+      {
+        "reading_order_index": 1,
+        "element_ref": "#/texts/2",
+        "label": "text",
+        "level": 1,
+        "text_preview": "Convoy -  a  group  of  vehicles  or  ships traveling together for protection."
+      },
+      {
+        "reading_order_index": 2,
+        "element_ref": "#/texts/3",
+        "label": "text",
+        "level": 1,
+        "text_preview": "Caravan - a group of travelers journeying together, especially across a desert."
+      },
+      {
+        "reading_order_index": 3,
+        "element_ref": "#/texts/4",
+        "label": "text",
+        "level": 1,
+        "text_preview": "Regiment - a permanent unit of an army typically commanded by a colonel."
+      },
+      {
+        "reading_order_index": 4,
+        "element_ref": "#/texts/5",
+        "label": "text",
+        "level": 1,
+        "text_preview": "Sol.116.(b) Iatrophobia -the fear of doctors or medical treatment."
+      },
+      {
+        "reading_order_index": 5,
+        "element_ref": "#/texts/6",
+        "label": "text",
+        "level": 1,
+        "text_preview": "Astraphobia -  the  fear  of  thunder  and lightning."
+      },
+      {
+        "reading_order_index": 6,
+        "element_ref": "#/texts/7",
+        "label": "text",
+        "level": 2,
+        "text_preview": "Zoophobia - the fear of animals."
+      },
+      {
+        "reading_order_index": 7,
+        "element_ref": "#/texts/8",
+        "label": "text",
+        "level": 2,
+        "text_preview": "Phonophobia - the fear of loud sounds."
+      },
+      {
+        "reading_order_index": 8,
+        "element_ref": "#/texts/9",
+        "label": "text",
+        "level": 1,
+        "text_preview": "Sol.117.(a) Slang -language that is informal and  typically  used  in  casual conversation."
+      },
+      {
+        "reading_order_index": 9,
+        "element_ref": "#/texts/10",
+        "label": "text",
+        "level": 1,
+        "text_preview": "Patois - the dialect of a particular region, especially one with low status in relation to the standard language of the country."
+      },
+      {
+        "reading_order_index": 10,
+        "element_ref": "#/texts/11",
+        "label": "text",
+        "level": 1,
+        "text_preview": "Vernacular -  the  language  spoken  by ordinary  people  in  a  particular  region or country."
+      },
+      {
+        "reading_order_index": 11,
+        "element_ref": "#/texts/12",
+        "label": "text",
+        "level": 1,
+        "text_preview": "Phrase - a small group of words standing together as a conceptual unit."
+      },
+      {
+        "reading_order_index": 12,
+        "element_ref": "#/texts/13",
+        "label": "text",
+        "level": 1,
+        "text_preview": "Sol.118.(b)  Hedonist -  a  person  who believes that pleasure is the most important goal in life."
+      },
+      {
+        "reading_order_index": 13,
+        "element_ref": "#/texts/14",
+        "label": "text",
+        "level": 1,
+        "text_preview": "Pessimist -  a  person  who  tends  to  see the worst aspect of things or believe that the worst will happen."
+      },
+      {
+        "reading_order_index": 14,
+        "element_ref": "#/texts/15",
+        "label": "text",
+        "level": 1,
+        "text_preview": "Activist -  a  person  who  campaigns  for social or political change."
+      },
+      {
+        "reading_order_index": 15,
+        "element_ref": "#/texts/16",
+        "label": "text",
+        "level": 1,
+        "text_preview": "Nominee - a person proposed or formally entered for a position."
+      },
+      {
+        "reading_order_index": 16,
+        "element_ref": "#/texts/17",
+        "label": "text",
+        "level": 1,
+        "text_preview": "Sol.119.(b)  Acrophobia -the fear of heights that causes anxiety when  a person is at an elevated place."
+      },
+      {
+        "reading_order_index": 17,
+        "element_ref": "#/texts/18",
+        "label": "text",
+        "level": 1,
+        "text_preview": "Claustrophobia -fear of enclosed spaces."
+      },
+      {
+        "reading_order_index": 18,
+        "element_ref": "#/texts/19",
+        "label": "text",
+        "level": 1,
+        "text_preview": "Nyctophobia - fear of darkness."
+      },
+      {
+        "reading_order_index": 19,
+        "element_ref": "#/texts/20",
+        "label": "text",
+        "level": 1,
+        "text_preview": "Xenophobia - fear or dislike of strangers or foreigners."
+      },
+      {
+        "reading_order_index": 20,
+        "element_ref": "#/texts/21",
+        "label": "text",
+        "level": 1,
+        "text_preview": "Sol.120.(a) Pedology -the scientific study of soils in relation to growth."
+      },
+      {
+        "reading_order_index": 21,
+        "element_ref": "#/texts/22",
+        "label": "text",
+        "level": 1,
+        "text_preview": "Bryology -the scientific study of bryophytes."
+      },
+      {
+        "reading_order_index": 22,
+        "element_ref": "#/texts/23",
+        "label": "text",
+        "level": 1,
+        "text_preview": "Botany -the scientific study of the physiology,  structure,  genetics,  ecology, distribution, classification, and economic importance of plants."
+      },
+      {
+        "reading_order_index": 23,
+        "element_ref": "#/texts/24",
+        "label": "text",
+        "level": 1,
+        "text_preview": "Anatomy -  the  study  of  the  internal and external structure of organisms and their parts."
+      },
+      {
+        "reading_order_index": 24,
+        "element_ref": "#/texts/25",
+        "label": "text",
+        "level": 1,
+        "text_preview": "Sol.121.(a) Bibliophile - a lover of books. Pedant - a person overly concerned with"
+      },
+      {
+        "reading_order_index": 25,
+        "element_ref": "#/texts/26",
+        "label": "text",
+        "level": 1,
+        "text_preview": "minor details or rules."
+      },
+      {
+        "reading_order_index": 26,
+        "element_ref": "#/texts/27",
+        "label": "text",
+        "level": 1,
+        "text_preview": "Misogynist - a person who hates women."
+      },
+      {
+        "reading_order_index": 27,
+        "element_ref": "#/texts/28",
+        "label": "text",
+        "level": 1,
+        "text_preview": "OWS"
+      },
+      {
+        "reading_order_index": 28,
+        "element_ref": "#/texts/29",
+        "label": "text",
+        "level": 1,
+        "text_preview": "Nihilist -one who believes life is meaningless."
+      },
+      {
+        "reading_order_index": 29,
+        "element_ref": "#/texts/30",
+        "label": "text",
+        "level": 1,
+        "text_preview": "Sol.122.  (b)  Agnostic -  a  person  who believes that nothing is known or can be known of the existence or nature of God."
+      },
+      {
+        "reading_order_index": 30,
+        "element_ref": "#/texts/31",
+        "label": "text",
+        "level": 1,
+        "text_preview": "Atheist -  a  person who does not believe in the existence of God."
+      },
+      {
+        "reading_order_index": 31,
+        "element_ref": "#/texts/32",
+        "label": "text",
+        "level": 1,
+        "text_preview": "Theist -  a  person  who  believes  in  the existence of God."
+      },
+      {
+        "reading_order_index": 32,
+        "element_ref": "#/texts/33",
+        "label": "text",
+        "level": 1,
+        "text_preview": "Mystic -  a  person  who  seeks  spiritual truth beyond the intellect."
+      },
+      {
+        "reading_order_index": 33,
+        "element_ref": "#/texts/34",
+        "label": "text",
+        "level": 1,
+        "text_preview": "Sol.123.(a)  Ascetic - a person who lives in  extreme  self-denial,  rejecting physical comforts for spiritual discipline."
+      },
+      {
+        "reading_order_index": 34,
+        "element_ref": "#/texts/35",
+        "label": "text",
+        "level": 1,
+        "text_preview": "Iconoclast -a person who attacks traditional beliefs or institutions."
+      },
+      {
+        "reading_order_index": 35,
+        "element_ref": "#/texts/36",
+        "label": "text",
+        "level": 1,
+        "text_preview": "Luminary -  a  person  who  inspires  or influences others."
+      },
+      {
+        "reading_order_index": 36,
+        "element_ref": "#/texts/37",
+        "label": "text",
+        "level": 1,
+        "text_preview": "Vitalist -one who believes life is governed by a special vital principle."
+      },
+      {
+        "reading_order_index": 37,
+        "element_ref": "#/texts/38",
+        "label": "text",
+        "level": 1,
+        "text_preview": "Sol.124.(a)  Agoraphobia -the fear  of open or crowded public places"
+      },
+      {
+        "reading_order_index": 38,
+        "element_ref": "#/texts/39",
+        "label": "text",
+        "level": 1,
+        "text_preview": "Monophobia - fear of being alone."
+      },
+      {
+        "reading_order_index": 39,
+        "element_ref": "#/texts/40",
+        "label": "text",
+        "level": 1,
+        "text_preview": "Anthropophobia -fear of people or society."
+      },
+      {
+        "reading_order_index": 40,
+        "element_ref": "#/texts/41",
+        "label": "text",
+        "level": 1,
+        "text_preview": "Pyrophobia - fear of fire."
+      },
+      {
+        "reading_order_index": 41,
+        "element_ref": "#/texts/42",
+        "label": "text",
+        "level": 1,
+        "text_preview": "Sol.125.(a) Metalepsis -a figure of speech in which a word or a phrase from figurative speech is used in a  new context."
+      },
+      {
+        "reading_order_index": 42,
+        "element_ref": "#/texts/43",
+        "label": "text",
+        "level": 1,
+        "text_preview": "Anachrony -  a  discrepancy  between  the chronological  order  of  events  and  the order  in  which  they  are presented in the plot."
+      },
+      {
+        "reading_order_index": 43,
+        "element_ref": "#/texts/44",
+        "label": "text",
+        "level": 1,
+        "text_preview": "Epiphany -  a  moment  of  sudden  and great revelation or realization."
+      },
+      {
+        "reading_order_index": 44,
+        "element_ref": "#/texts/45",
+        "label": "text",
+        "level": 1,
+        "text_preview": "Allusion - an expression designed to call something to mind without mentioning it explicitly; an indirect or passing reference."
+      },
+      {
+        "reading_order_index": 45,
+        "element_ref": "#/texts/46",
+        "label": "text",
+        "level": 1,
+        "text_preview": "Sol.126.(a) Rumination - a state in which a  person  experiences  a  continuous  and intrusive stream of anxious thoughts that they can not control."
+      },
+      {
+        "reading_order_index": 46,
+        "element_ref": "#/texts/47",
+        "label": "text",
+        "level": 1,
+        "text_preview": "Cataplexy -sudden, brief muscular weakness while you're awake that's triggered by strong emotions, like laughter."
+      },
+      {
+        "reading_order_index": 47,
+        "element_ref": "#/texts/48",
+        "label": "text",
+        "level": 1,
+        "text_preview": "Echolalia -the repetition  of  words  or phrases spoken by someone else."
+      },
+      {
+        "reading_order_index": 48,
+        "element_ref": "#/texts/49",
+        "label": "text",
+        "level": 1,
+        "text_preview": "Derealization -  a  mental state where you feel detached from your surroundings."
+      },
+      {
+        "reading_order_index": 49,
+        "element_ref": "#/texts/50",
+        "label": "text",
+        "level": 1,
+        "text_preview": "Sol.127.(a) Constructivism -the philosophical view that reality is mentally constructed and  that  external  objects cannot be known independently of human perc"
+      },
+      {
+        "reading_order_index": 50,
+        "element_ref": "#/texts/51",
+        "label": "text",
+        "level": 1,
+        "text_preview": "Dualism -  the  belief  that mind and body are fundamentally distinct substances."
+      },
+      {
+        "reading_order_index": 51,
+        "element_ref": "#/texts/52",
+        "label": "text",
+        "level": 1,
+        "text_preview": "Rationalism - the view that knowledge is primarily gained through reason."
+      },
+      {
+        "reading_order_index": 52,
+        "element_ref": "#/texts/53",
+        "label": "text",
+        "level": 1,
+        "text_preview": "Positivism -  the  belief  that  knowledge should be based on observable scientific facts."
+      },
+      {
+        "reading_order_index": 53,
+        "element_ref": "#/texts/54",
+        "label": "text",
+        "level": 1,
+        "text_preview": "Sol.128.(b)  Dramatic  Irony -  a  device where the audience is aware of information  unknown  to  the  characters, causing contrast between perception and real"
+      },
+      {
+        "reading_order_index": 54,
+        "element_ref": "#/texts/55",
+        "label": "text",
+        "level": 1,
+        "text_preview": "Satire -the use of humour, irony, exaggeration,  or  ridicule  to  expose  and criticize people's stupidity or vices."
+      },
+      {
+        "reading_order_index": 55,
+        "element_ref": "#/texts/56",
+        "label": "text",
+        "level": 1,
+        "text_preview": "Hyperbole -  exaggerated  statements  or claims not meant to be taken literally."
+      },
+      {
+        "reading_order_index": 56,
+        "element_ref": "#/texts/57",
+        "label": "text",
+        "level": 1,
+        "text_preview": "Cosmic  Irony -  a  literary  device  where events  are  manipulated  by  a  powerful force (such as destiny, fate, or the gods) to  mock  or  frustrate  human "
+      },
+      {
+        "reading_order_index": 57,
+        "element_ref": "#/texts/58",
+        "label": "text",
+        "level": 1,
+        "text_preview": "Sol.129.(a) Phenomenology -the science  of  phenomena  as  distinct  from that of the nature of being."
+      },
+      {
+        "reading_order_index": 58,
+        "element_ref": "#/texts/59",
+        "label": "text",
+        "level": 1,
+        "text_preview": "Empiricism -  the  belief  that  knowledge comes through sensory experience."
+      },
+      {
+        "reading_order_index": 59,
+        "element_ref": "#/texts/60",
+        "label": "text",
+        "level": 1,
+        "text_preview": "Determinism -  the  belief  that  all  events are causally predetermined."
+      },
+      {
+        "reading_order_index": 60,
+        "element_ref": "#/texts/61",
+        "label": "text",
+        "level": 1,
+        "text_preview": "Positivism -the view that genuine knowledge is derived from scientific observation."
+      },
+      {
+        "reading_order_index": 61,
+        "element_ref": "#/texts/62",
+        "label": "text",
+        "level": 1,
+        "text_preview": "Sol.130.(a)  Parody -  an  imitation  of  the style of a particular writer, artist, or genre with  deliberate  exaggeration  for  comic effect."
+      },
+      {
+        "reading_order_index": 62,
+        "element_ref": "#/texts/63",
+        "label": "text",
+        "level": 1,
+        "text_preview": "Metonymy - the substitution of the name of  an  attribute  or  adjunct for that of the thing meant."
+      },
+      {
+        "reading_order_index": 63,
+        "element_ref": "#/texts/64",
+        "label": "text",
+        "level": 1,
+        "text_preview": "Parable - a simple story used to illustrate a moral or spiritual lesson."
+      },
+      {
+        "reading_order_index": 64,
+        "element_ref": "#/texts/65",
+        "label": "text",
+        "level": 1,
+        "text_preview": "Symbolism -the use of symbols  to represent ideas or qualities."
+      },
+      {
+        "reading_order_index": 65,
+        "element_ref": "#/texts/66",
+        "label": "text",
+        "level": 1,
+        "text_preview": "Sol.131.(a)  Mosaicism -  the condition in which  some  cells  in  an  organism  have different chromosome numbers or genetic makeup from others."
+      },
+      {
+        "reading_order_index": 66,
+        "element_ref": "#/texts/67",
+        "label": "text",
+        "level": 1,
+        "text_preview": "Polyploidy -  multiple  complete  sets  of chromosomes."
+      },
+      {
+        "reading_order_index": 67,
+        "element_ref": "#/texts/68",
+        "label": "text",
+        "level": 1,
+        "text_preview": "Disjunction -the separation of chromosomes during cell division."
+      },
+      {
+        "reading_order_index": 68,
+        "element_ref": "#/texts/69",
+        "label": "text",
+        "level": 1,
+        "text_preview": "Translocation -the transfer of a chromosome segment to a non-homologous chromosome."
+      },
+      {
+        "reading_order_index": 69,
+        "element_ref": "#/texts/70",
+        "label": "text",
+        "level": 1,
+        "text_preview": "Sol.132.(a)  Apologue -a moral  fable, especially one with animals as characters."
+      },
+      {
+        "reading_order_index": 70,
+        "element_ref": "#/texts/71",
+        "label": "text",
+        "level": 1,
+        "text_preview": "Chronicle -  a  factual  written  account  of historical events."
+      },
+      {
+        "reading_order_index": 71,
+        "element_ref": "#/texts/72",
+        "label": "text",
+        "level": 1,
+        "text_preview": "Vignette -  a  brief  descriptive  scene  or sketch."
+      },
+      {
+        "reading_order_index": 72,
+        "element_ref": "#/texts/73",
+        "label": "text",
+        "level": 1,
+        "text_preview": "Anecdote -     a     short,       amusing     or"
+      }
+    ]
+  },
+  "layout_analysis": {
+    "method": "docling_bbox_left_edge_clustering_v1",
+    "column_count": 3,
+    "confidence": 1.0,
+    "page_width": 596.0,
+    "page_height": 842.0,
+    "columns": [
+      {
+        "column_index": 1,
+        "left": 0.0,
+        "right": 122.175,
+        "detected_start": 28.8,
+        "supporting_elements": 27
+      },
+      {
+        "column_index": 2,
+        "left": 122.175,
+        "right": 308.925,
+        "detected_start": 215.55,
+        "supporting_elements": 24
+      },
+      {
+        "column_index": 3,
+        "left": 308.925,
+        "right": 596.0,
+        "detected_start": 402.3,
+        "supporting_elements": 22
+      }
+    ],
+    "elements": [
+      {
+        "element_ref": "#/texts/0",
+        "element_type": "text",
+        "label": "page_header",
+        "column_index": 1,
+        "column_indices": [
+          1
+        ],
+        "spans_columns": false,
+        "reading_order_index": null,
+        "bbox": {
+          "l": 28.800003,
+          "t": 830.7935546594726,
+          "r": 95.7084616875,
+          "b": 822.5652585957749,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/1",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 0,
+        "bbox": {
+          "l": 28.800003,
+          "t": 814.6972656875,
+          "r": 195.71748492,
+          "b": 781.7703018199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/2",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 1,
+        "bbox": {
+          "l": 28.800003,
+          "t": 777.4306636875,
+          "r": 195.73066992,
+          "b": 756.9265518199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/3",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 2,
+        "bbox": {
+          "l": 28.800003,
+          "t": 752.5869136875,
+          "r": 195.78046992,
+          "b": 732.0828018199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/4",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 3,
+        "bbox": {
+          "l": 28.800003,
+          "t": 727.7431636875,
+          "r": 195.55195992,
+          "b": 707.2390518199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/5",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 4,
+        "bbox": {
+          "l": 28.800003,
+          "t": 693.2373046875,
+          "r": 195.87421992,
+          "b": 672.7331928199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/6",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 5,
+        "bbox": {
+          "l": 28.800003,
+          "t": 668.3935496875,
+          "r": 195.64423992,
+          "b": 647.8894428199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/7",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 6,
+        "bbox": {
+          "l": 28.800003,
+          "t": 643.5497996875,
+          "r": 158.38594242,
+          "b": 635.4675628199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/8",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 7,
+        "bbox": {
+          "l": 28.800003,
+          "t": 631.1279296875,
+          "r": 186.24727242,
+          "b": 623.0456928199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/9",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 8,
+        "bbox": {
+          "l": 28.800003,
+          "t": 609.0439496875,
+          "r": 195.81562992,
+          "b": 576.1179628199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/10",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 9,
+        "bbox": {
+          "l": 28.800003,
+          "t": 571.7783196875,
+          "r": 195.91669991999999,
+          "b": 538.8513528199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/11",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 10,
+        "bbox": {
+          "l": 28.800003,
+          "t": 534.5117196875,
+          "r": 195.89033742,
+          "b": 501.5857328199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/12",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 11,
+        "bbox": {
+          "l": 28.800003,
+          "t": 497.2451196875,
+          "r": 195.65009742,
+          "b": 476.74100281998534,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/13",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 12,
+        "bbox": {
+          "l": 28.800003,
+          "t": 462.7402296875,
+          "r": 195.84931992,
+          "b": 429.81327281998534,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/14",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 13,
+        "bbox": {
+          "l": 28.800003,
+          "t": 425.4736296875,
+          "r": 195.93867491999998,
+          "b": 392.54764281998536,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/15",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 14,
+        "bbox": {
+          "l": 28.800003,
+          "t": 388.2080096875,
+          "r": 195.42890742,
+          "b": 367.70389281998536,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/16",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 15,
+        "bbox": {
+          "l": 28.800003,
+          "t": 363.3642596875,
+          "r": 195.30732491999999,
+          "b": 342.86014281998536,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/17",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 16,
+        "bbox": {
+          "l": 28.800003,
+          "t": 328.85839968749997,
+          "r": 195.68671992,
+          "b": 295.9324128199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/18",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 17,
+        "bbox": {
+          "l": 28.800003,
+          "t": 291.5927696875,
+          "r": 195.70429991999998,
+          "b": 271.0886628199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/19",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 18,
+        "bbox": {
+          "l": 28.800003,
+          "t": 266.74804968750004,
+          "r": 156.40840167,
+          "b": 258.6658128199854,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/20",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 19,
+        "bbox": {
+          "l": 28.800003,
+          "t": 254.32616968750006,
+          "r": 195.76435992,
+          "b": 233.82206281998538,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/21",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 20,
+        "bbox": {
+          "l": 28.800003,
+          "t": 219.82128968749998,
+          "r": 195.72334242,
+          "b": 199.31620281998528,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/22",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 21,
+        "bbox": {
+          "l": 28.800003,
+          "t": 194.97655968749996,
+          "r": 197.65547184,
+          "b": 174.47245281998528,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/23",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 22,
+        "bbox": {
+          "l": 28.800003,
+          "t": 170.13280968749996,
+          "r": 195.67060992,
+          "b": 124.78397281998537,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/24",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 23,
+        "bbox": {
+          "l": 28.800003,
+          "t": 120.44433968750002,
+          "r": 195.96357491999999,
+          "b": 87.51835281998535,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/25",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 24,
+        "bbox": {
+          "l": 28.800003,
+          "t": 73.51659968750005,
+          "r": 195.92256492,
+          "b": 53.01249281998537,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/26",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 1,
+        "column_indices": [
+          1
+        ],
+        "spans_columns": false,
+        "reading_order_index": 25,
+        "bbox": {
+          "l": 28.800003,
+          "t": 48.67284968750005,
+          "r": 117.84638967000001,
+          "b": 40.59061281998538,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/27",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 26,
+        "bbox": {
+          "l": 28.800003,
+          "t": 36.250979687500035,
+          "r": 195.14179991999998,
+          "b": 28.16874281998537,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/28",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 3,
+        "column_indices": [
+          3
+        ],
+        "spans_columns": false,
+        "reading_order_index": 27,
+        "bbox": {
+          "l": 291.757038,
+          "t": 830.7935546594726,
+          "r": 568.8714279374999,
+          "b": 822.5652585957749,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/29",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 0,
+        "column_indices": [
+          2,
+          3
+        ],
+        "spans_columns": true,
+        "reading_order_index": 28,
+        "bbox": {
+          "l": 215.54999,
+          "t": 814.6972656875,
+          "r": 382.37811692,
+          "b": 794.1931538199854,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/30",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 0,
+        "column_indices": [
+          2,
+          3
+        ],
+        "spans_columns": true,
+        "reading_order_index": 29,
+        "bbox": {
+          "l": 215.54999,
+          "t": 780.1914066875,
+          "r": 382.32245192,
+          "b": 747.2654198199854,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/31",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 0,
+        "column_indices": [
+          2,
+          3
+        ],
+        "spans_columns": true,
+        "reading_order_index": 30,
+        "bbox": {
+          "l": 215.54999,
+          "t": 742.9248046875,
+          "r": 382.40887441999996,
+          "b": 722.4206928199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/32",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 0,
+        "column_indices": [
+          2,
+          3
+        ],
+        "spans_columns": true,
+        "reading_order_index": 31,
+        "bbox": {
+          "l": 215.54999,
+          "t": 718.0810546875,
+          "r": 382.77215942,
+          "b": 697.5769428199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/33",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 0,
+        "column_indices": [
+          2,
+          3
+        ],
+        "spans_columns": true,
+        "reading_order_index": 32,
+        "bbox": {
+          "l": 215.54999,
+          "t": 693.2373046875,
+          "r": 382.20233192,
+          "b": 672.7331928199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/34",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 0,
+        "column_indices": [
+          2,
+          3
+        ],
+        "spans_columns": true,
+        "reading_order_index": 33,
+        "bbox": {
+          "l": 215.54999,
+          "t": 658.7314496875,
+          "r": 382.31512441999996,
+          "b": 625.8054628199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/35",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 0,
+        "column_indices": [
+          2,
+          3
+        ],
+        "spans_columns": true,
+        "reading_order_index": 34,
+        "bbox": {
+          "l": 215.54999,
+          "t": 621.4658196875,
+          "r": 382.48797692,
+          "b": 600.9617128199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/36",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 0,
+        "column_indices": [
+          2,
+          3
+        ],
+        "spans_columns": true,
+        "reading_order_index": 35,
+        "bbox": {
+          "l": 215.54999,
+          "t": 596.6220696875,
+          "r": 382.15253192,
+          "b": 576.1179628199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/37",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 0,
+        "column_indices": [
+          2,
+          3
+        ],
+        "spans_columns": true,
+        "reading_order_index": 36,
+        "bbox": {
+          "l": 215.54999,
+          "t": 571.7783196875,
+          "r": 382.34735192,
+          "b": 551.2732328199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/38",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 0,
+        "column_indices": [
+          2,
+          3
+        ],
+        "spans_columns": true,
+        "reading_order_index": 37,
+        "bbox": {
+          "l": 215.54999,
+          "t": 537.2724596875,
+          "r": 382.63445942,
+          "b": 516.7683528199854,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/39",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 0,
+        "column_indices": [
+          2,
+          3
+        ],
+        "spans_columns": true,
+        "reading_order_index": 38,
+        "bbox": {
+          "l": 215.54999,
+          "t": 512.4287096875,
+          "r": 352.33856191999996,
+          "b": 504.34647281998537,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/40",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 0,
+        "column_indices": [
+          2,
+          3
+        ],
+        "spans_columns": true,
+        "reading_order_index": 39,
+        "bbox": {
+          "l": 215.54999,
+          "t": 500.0058596875,
+          "r": 382.45428691999996,
+          "b": 479.50174281998534,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/41",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 2,
+        "column_indices": [
+          2
+        ],
+        "spans_columns": false,
+        "reading_order_index": 40,
+        "bbox": {
+          "l": 215.54999,
+          "t": 475.1621096875,
+          "r": 314.38739267,
+          "b": 467.0798728199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/42",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 0,
+        "column_indices": [
+          2,
+          3
+        ],
+        "spans_columns": true,
+        "reading_order_index": 41,
+        "bbox": {
+          "l": 215.54999,
+          "t": 453.0781296875,
+          "r": 382.66668691999996,
+          "b": 407.73026281998534,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/43",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 0,
+        "column_indices": [
+          2,
+          3
+        ],
+        "spans_columns": true,
+        "reading_order_index": 42,
+        "bbox": {
+          "l": 215.54999,
+          "t": 403.3906296875,
+          "r": 382.70624192,
+          "b": 358.0417828199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/44",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 0,
+        "column_indices": [
+          2,
+          3
+        ],
+        "spans_columns": true,
+        "reading_order_index": 43,
+        "bbox": {
+          "l": 215.54999,
+          "t": 353.7021496875,
+          "r": 382.12469942,
+          "b": 333.1980328199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/45",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 0,
+        "column_indices": [
+          2,
+          3
+        ],
+        "spans_columns": true,
+        "reading_order_index": 44,
+        "bbox": {
+          "l": 215.54999,
+          "t": 328.85839968749997,
+          "r": 382.72528442,
+          "b": 283.5105328199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/46",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 0,
+        "column_indices": [
+          2,
+          3
+        ],
+        "spans_columns": true,
+        "reading_order_index": 45,
+        "bbox": {
+          "l": 215.54999,
+          "t": 269.5087896875,
+          "r": 382.69012441999996,
+          "b": 224.16092281998533,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/47",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 0,
+        "column_indices": [
+          2,
+          3
+        ],
+        "spans_columns": true,
+        "reading_order_index": 46,
+        "bbox": {
+          "l": 215.54999,
+          "t": 219.82128968749998,
+          "r": 384.36591134,
+          "b": 174.47245281998528,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/48",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 0,
+        "column_indices": [
+          2,
+          3
+        ],
+        "spans_columns": true,
+        "reading_order_index": 47,
+        "bbox": {
+          "l": 215.54999,
+          "t": 170.13280968749996,
+          "r": 382.11590942,
+          "b": 149.62870281998528,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/49",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 0,
+        "column_indices": [
+          2,
+          3
+        ],
+        "spans_columns": true,
+        "reading_order_index": 48,
+        "bbox": {
+          "l": 215.54999,
+          "t": 145.28808968750002,
+          "r": 382.75311692,
+          "b": 124.78397281998537,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/50",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 0,
+        "column_indices": [
+          2,
+          3
+        ],
+        "spans_columns": true,
+        "reading_order_index": 49,
+        "bbox": {
+          "l": 215.54999,
+          "t": 110.78319968749997,
+          "r": 382.72967942,
+          "b": 53.01249281998537,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/51",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 0,
+        "column_indices": [
+          2,
+          3
+        ],
+        "spans_columns": true,
+        "reading_order_index": 50,
+        "bbox": {
+          "l": 215.54999,
+          "t": 48.67284968750005,
+          "r": 382.14813692,
+          "b": 28.16874281998537,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/52",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 3,
+        "column_indices": [
+          3
+        ],
+        "spans_columns": false,
+        "reading_order_index": 51,
+        "bbox": {
+          "l": 402.30002,
+          "t": 814.6972656875,
+          "r": 568.92452942,
+          "b": 794.1931538199854,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/53",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 3,
+        "column_indices": [
+          3
+        ],
+        "spans_columns": false,
+        "reading_order_index": 52,
+        "bbox": {
+          "l": 402.30002,
+          "t": 789.8525386875,
+          "r": 569.33175692,
+          "b": 756.9265518199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/54",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 3,
+        "column_indices": [
+          3
+        ],
+        "spans_columns": false,
+        "reading_order_index": 53,
+        "bbox": {
+          "l": 402.30002,
+          "t": 744.3056636875,
+          "r": 569.42550692,
+          "b": 686.5359268199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/55",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 3,
+        "column_indices": [
+          3
+        ],
+        "spans_columns": false,
+        "reading_order_index": 54,
+        "bbox": {
+          "l": 402.30002,
+          "t": 682.1962886875,
+          "r": 569.3390844200001,
+          "b": 649.2703028199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/56",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 3,
+        "column_indices": [
+          3
+        ],
+        "spans_columns": false,
+        "reading_order_index": 55,
+        "bbox": {
+          "l": 402.30002,
+          "t": 644.9296896875001,
+          "r": 568.87619192,
+          "b": 624.4255728199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/57",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 3,
+        "column_indices": [
+          3
+        ],
+        "spans_columns": false,
+        "reading_order_index": 56,
+        "bbox": {
+          "l": 402.30002,
+          "t": 620.0859396875001,
+          "r": 569.27902442,
+          "b": 562.3152228199854,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/58",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 3,
+        "column_indices": [
+          3
+        ],
+        "spans_columns": false,
+        "reading_order_index": 57,
+        "bbox": {
+          "l": 402.30002,
+          "t": 548.3144496875,
+          "r": 569.46798692,
+          "b": 515.3874928199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/59",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 3,
+        "column_indices": [
+          3
+        ],
+        "spans_columns": false,
+        "reading_order_index": 58,
+        "bbox": {
+          "l": 402.30002,
+          "t": 511.04784968750005,
+          "r": 569.46652442,
+          "b": 490.5437428199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/60",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 3,
+        "column_indices": [
+          3
+        ],
+        "spans_columns": false,
+        "reading_order_index": 59,
+        "bbox": {
+          "l": 402.30002,
+          "t": 486.2040996875,
+          "r": 568.99484192,
+          "b": 465.69901281998534,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/61",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 3,
+        "column_indices": [
+          3
+        ],
+        "spans_columns": false,
+        "reading_order_index": 60,
+        "bbox": {
+          "l": 402.30002,
+          "t": 461.3593796875,
+          "r": 569.0578344200001,
+          "b": 428.43339281998533,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/62",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 3,
+        "column_indices": [
+          3
+        ],
+        "spans_columns": false,
+        "reading_order_index": 61,
+        "bbox": {
+          "l": 402.30002,
+          "t": 415.8124996875,
+          "r": 569.15744192,
+          "b": 370.46366281998536,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/63",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 3,
+        "column_indices": [
+          3
+        ],
+        "spans_columns": false,
+        "reading_order_index": 62,
+        "bbox": {
+          "l": 402.30002,
+          "t": 366.1240196875,
+          "r": 569.15597942,
+          "b": 333.1980328199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/64",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 3,
+        "column_indices": [
+          3
+        ],
+        "spans_columns": false,
+        "reading_order_index": 63,
+        "bbox": {
+          "l": 402.30002,
+          "t": 328.85839968749997,
+          "r": 569.4460194200001,
+          "b": 308.3542828199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/65",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 3,
+        "column_indices": [
+          3
+        ],
+        "spans_columns": false,
+        "reading_order_index": 64,
+        "bbox": {
+          "l": 402.30002,
+          "t": 304.01464968749997,
+          "r": 568.98166442,
+          "b": 283.5105328199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/66",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 3,
+        "column_indices": [
+          3
+        ],
+        "spans_columns": false,
+        "reading_order_index": 65,
+        "bbox": {
+          "l": 402.30002,
+          "t": 269.5087896875,
+          "r": 568.9406469200001,
+          "b": 224.16092281998533,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/67",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 3,
+        "column_indices": [
+          3
+        ],
+        "spans_columns": false,
+        "reading_order_index": 66,
+        "bbox": {
+          "l": 402.30002,
+          "t": 219.82128968749998,
+          "r": 568.85275442,
+          "b": 199.31620281998528,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/68",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 3,
+        "column_indices": [
+          3
+        ],
+        "spans_columns": false,
+        "reading_order_index": 67,
+        "bbox": {
+          "l": 402.30002,
+          "t": 194.97655968749996,
+          "r": 571.26681884,
+          "b": 174.47245281998528,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/69",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 3,
+        "column_indices": [
+          3
+        ],
+        "spans_columns": false,
+        "reading_order_index": 68,
+        "bbox": {
+          "l": 402.30002,
+          "t": 170.13280968749996,
+          "r": 569.39621192,
+          "b": 137.20585281998535,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/70",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 3,
+        "column_indices": [
+          3
+        ],
+        "spans_columns": false,
+        "reading_order_index": 69,
+        "bbox": {
+          "l": 402.30002,
+          "t": 123.20507968749996,
+          "r": 569.26144442,
+          "b": 90.2790928199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/71",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 3,
+        "column_indices": [
+          3
+        ],
+        "spans_columns": false,
+        "reading_order_index": 70,
+        "bbox": {
+          "l": 402.30002,
+          "t": 85.93847968750003,
+          "r": 568.78683692,
+          "b": 65.43436281998538,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/72",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 3,
+        "column_indices": [
+          3
+        ],
+        "spans_columns": false,
+        "reading_order_index": 71,
+        "bbox": {
+          "l": 402.30002,
+          "t": 61.094729687500035,
+          "r": 569.27462942,
+          "b": 40.59061281998538,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/73",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 3,
+        "column_indices": [
+          3
+        ],
+        "spans_columns": false,
+        "reading_order_index": 72,
+        "bbox": {
+          "l": 402.30002,
+          "t": 36.250979687500035,
+          "r": 567.3234594200001,
+          "b": 28.16874281998537,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/74",
+        "element_type": "text",
+        "label": "page_footer",
+        "column_index": 0,
+        "column_indices": [
+          2,
+          3
+        ],
+        "spans_columns": true,
+        "reading_order_index": null,
+        "bbox": {
+          "l": 99.3266505,
+          "t": 21.98847795947256,
+          "r": 495.95088382500006,
+          "b": 13.76018189577485,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      }
+    ],
+    "warnings": []
+  },
+  "structure_chunks": {
+    "enabled": true,
+    "method": "docling_hybrid_chunker",
+    "scope": "page",
+    "items": [
+      {
+        "text": "Sol.115.(a)  Posse -a  group  of  people who  have  a  common  characteristic  or occupation.\nConvoy -  a  group  of  vehicles  or  ships traveling together for protection.\nCaravan - a group of travelers journeying together, especially across a desert.\nRegiment - a permanent unit of an army typically commanded by a colonel.\nSol.116.(b) Iatrophobia -the fear of doctors or medical treatment.\nAstraphobia -  the  fear  of  thunder  and lightning.\nZoophobia - the fear of animals.\nPhonophobia - the fear of loud sounds.\nSol.117.(a) Slang -language that is informal and  typically  used  in  casual conversation.\nPatois - the dialect of a particular region, especially one with low status in relation to the standard language of the country.\nVernacular -  the  language  spoken  by ordinary  people  in  a  particular  region or country.\nPhrase - a small group of words standing together as a conceptual unit.\nSol.118.(b)  Hedonist -  a  person  who believes that pleasure is the most important goal in life.\nPessimist -  a  person  who  tends  to  see the worst aspect of things or believe that the worst will happen.\nActivist -  a  person  who  campaigns  for social or political change.",
+        "meta": {
+          "schema_name": "docling_core.transforms.chunker.DocMeta",
+          "version": "1.0.0",
+          "doc_items": [
+            {
+              "self_ref": "#/texts/1",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 814.6972656875,
+                    "r": 195.71748492,
+                    "b": 781.7703018199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    93
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/2",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 777.4306636875,
+                    "r": 195.73066992,
+                    "b": 756.9265518199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    78
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/3",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 752.5869136875,
+                    "r": 195.78046992,
+                    "b": 732.0828018199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    79
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/4",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 727.7431636875,
+                    "r": 195.55195992,
+                    "b": 707.2390518199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    72
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/5",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 693.2373046875,
+                    "r": 195.87421992,
+                    "b": 672.7331928199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    66
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/6",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 668.3935496875,
+                    "r": 195.64423992,
+                    "b": 647.8894428199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    53
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/7",
+              "parent": {
+                "cref": "#/groups/0"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 643.5497996875,
+                    "r": 158.38594242,
+                    "b": 635.4675628199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    32
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/8",
+              "parent": {
+                "cref": "#/groups/0"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 631.1279296875,
+                    "r": 186.24727242,
+                    "b": 623.0456928199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    38
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/9",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 609.0439496875,
+                    "r": 195.81562992,
+                    "b": 576.1179628199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    91
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/10",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 571.7783196875,
+                    "r": 195.91669991999999,
+                    "b": 538.8513528199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    128
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/11",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 534.5117196875,
+                    "r": 195.89033742,
+                    "b": 501.5857328199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    95
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/12",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 497.2451196875,
+                    "r": 195.65009742,
+                    "b": 476.74100281998534,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    71
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/13",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 462.7402296875,
+                    "r": 195.84931992,
+                    "b": 429.81327281998534,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    98
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/14",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 425.4736296875,
+                    "r": 195.93867491999998,
+                    "b": 392.54764281998536,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    109
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/15",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 388.2080096875,
+                    "r": 195.42890742,
+                    "b": 367.70389281998536,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    70
+                  ]
+                }
+              ]
+            }
+          ],
+          "headings": null,
+          "captions": null,
+          "origin": {
+            "mimetype": "application/pdf",
+            "binary_hash": 5021117110877980111,
+            "filename": "english_page_0412.pdf",
+            "uri": null
+          }
+        },
+        "chunk_index": 0,
+        "contextualized_text": "Sol.115.(a)  Posse -a  group  of  people who  have  a  common  characteristic  or occupation.\nConvoy -  a  group  of  vehicles  or  ships traveling together for protection.\nCaravan - a group of travelers journeying together, especially across a desert.\nRegiment - a permanent unit of an army typically commanded by a colonel.\nSol.116.(b) Iatrophobia -the fear of doctors or medical treatment.\nAstraphobia -  the  fear  of  thunder  and lightning.\nZoophobia - the fear of animals.\nPhonophobia - the fear of loud sounds.\nSol.117.(a) Slang -language that is informal and  typically  used  in  casual conversation.\nPatois - the dialect of a particular region, especially one with low status in relation to the standard language of the country.\nVernacular -  the  language  spoken  by ordinary  people  in  a  particular  region or country.\nPhrase - a small group of words standing together as a conceptual unit.\nSol.118.(b)  Hedonist -  a  person  who believes that pleasure is the most important goal in life.\nPessimist -  a  person  who  tends  to  see the worst aspect of things or believe that the worst will happen.\nActivist -  a  person  who  campaigns  for social or political change."
+      },
+      {
+        "text": "Nominee - a person proposed or formally entered for a position.\nSol.119.(b)  Acrophobia -the fear of heights that causes anxiety when  a person is at an elevated place.\nClaustrophobia -fear of enclosed spaces.\nNyctophobia - fear of darkness.\nXenophobia - fear or dislike of strangers or foreigners.\nSol.120.(a) Pedology -the scientific study of soils in relation to growth.\nBryology -the scientific study of bryophytes.\nBotany -the scientific study of the physiology,  structure,  genetics,  ecology, distribution, classification, and economic importance of plants.\nAnatomy -  the  study  of  the  internal and external structure of organisms and their parts.\nSol.121.(a) Bibliophile - a lover of books. Pedant - a person overly concerned with\nminor details or rules.\nMisogynist - a person who hates women.\nOWS\nNihilist -one who believes life is meaningless.\nSol.122.  (b)  Agnostic -  a  person  who believes that nothing is known or can be known of the existence or nature of God.\nAtheist -  a  person who does not believe in the existence of God.\nTheist -  a  person  who  believes  in  the existence of God.",
+        "meta": {
+          "schema_name": "docling_core.transforms.chunker.DocMeta",
+          "version": "1.0.0",
+          "doc_items": [
+            {
+              "self_ref": "#/texts/16",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 363.3642596875,
+                    "r": 195.30732491999999,
+                    "b": 342.86014281998536,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    63
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/17",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 328.85839968749997,
+                    "r": 195.68671992,
+                    "b": 295.9324128199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    104
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/18",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 291.5927696875,
+                    "r": 195.70429991999998,
+                    "b": 271.0886628199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    40
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/19",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 266.74804968750004,
+                    "r": 156.40840167,
+                    "b": 258.6658128199854,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    31
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/20",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 254.32616968750006,
+                    "r": 195.76435992,
+                    "b": 233.82206281998538,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    56
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/21",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 219.82128968749998,
+                    "r": 195.72334242,
+                    "b": 199.31620281998528,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    74
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/22",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 194.97655968749996,
+                    "r": 197.65547184,
+                    "b": 174.47245281998528,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    45
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/23",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 170.13280968749996,
+                    "r": 195.67060992,
+                    "b": 124.78397281998537,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    145
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/24",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 120.44433968750002,
+                    "r": 195.96357491999999,
+                    "b": 87.51835281998535,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    93
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/25",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 73.51659968750005,
+                    "r": 195.92256492,
+                    "b": 53.01249281998537,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    83
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/26",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 48.67284968750005,
+                    "r": 117.84638967000001,
+                    "b": 40.59061281998538,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    23
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/27",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 36.250979687500035,
+                    "r": 195.14179991999998,
+                    "b": 28.16874281998537,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    38
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/28",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 291.757038,
+                    "t": 830.7935546594726,
+                    "r": 568.8714279374999,
+                    "b": 822.5652585957749,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    3
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/29",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 215.54999,
+                    "t": 814.6972656875,
+                    "r": 382.37811692,
+                    "b": 794.1931538199854,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    47
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/30",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 215.54999,
+                    "t": 780.1914066875,
+                    "r": 382.32245192,
+                    "b": 747.2654198199854,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    123
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/31",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 215.54999,
+                    "t": 742.9248046875,
+                    "r": 382.40887441999996,
+                    "b": 722.4206928199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    66
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/32",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 215.54999,
+                    "t": 718.0810546875,
+                    "r": 382.77215942,
+                    "b": 697.5769428199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    61
+                  ]
+                }
+              ]
+            }
+          ],
+          "headings": null,
+          "captions": null,
+          "origin": {
+            "mimetype": "application/pdf",
+            "binary_hash": 5021117110877980111,
+            "filename": "english_page_0412.pdf",
+            "uri": null
+          }
+        },
+        "chunk_index": 1,
+        "contextualized_text": "Nominee - a person proposed or formally entered for a position.\nSol.119.(b)  Acrophobia -the fear of heights that causes anxiety when  a person is at an elevated place.\nClaustrophobia -fear of enclosed spaces.\nNyctophobia - fear of darkness.\nXenophobia - fear or dislike of strangers or foreigners.\nSol.120.(a) Pedology -the scientific study of soils in relation to growth.\nBryology -the scientific study of bryophytes.\nBotany -the scientific study of the physiology,  structure,  genetics,  ecology, distribution, classification, and economic importance of plants.\nAnatomy -  the  study  of  the  internal and external structure of organisms and their parts.\nSol.121.(a) Bibliophile - a lover of books. Pedant - a person overly concerned with\nminor details or rules.\nMisogynist - a person who hates women.\nOWS\nNihilist -one who believes life is meaningless.\nSol.122.  (b)  Agnostic -  a  person  who believes that nothing is known or can be known of the existence or nature of God.\nAtheist -  a  person who does not believe in the existence of God.\nTheist -  a  person  who  believes  in  the existence of God."
+      },
+      {
+        "text": "Mystic -  a  person  who  seeks  spiritual truth beyond the intellect.\nSol.123.(a)  Ascetic - a person who lives in  extreme  self-denial,  rejecting physical comforts for spiritual discipline.\nIconoclast -a person who attacks traditional beliefs or institutions.\nLuminary -  a  person  who  inspires  or influences others.\nVitalist -one who believes life is governed by a special vital principle.\nSol.124.(a)  Agoraphobia -the fear  of open or crowded public places\nMonophobia - fear of being alone.\nAnthropophobia -fear of people or society.\nPyrophobia - fear of fire.\nSol.125.(a) Metalepsis -a figure of speech in which a word or a phrase from figurative speech is used in a  new context.\nAnachrony -  a  discrepancy  between  the chronological  order  of  events  and  the order  in  which  they  are presented in the plot.\nEpiphany -  a  moment  of  sudden  and great revelation or realization.\nAllusion - an expression designed to call something to mind without mentioning it explicitly; an indirect or passing reference.",
+        "meta": {
+          "schema_name": "docling_core.transforms.chunker.DocMeta",
+          "version": "1.0.0",
+          "doc_items": [
+            {
+              "self_ref": "#/texts/33",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 215.54999,
+                    "t": 693.2373046875,
+                    "r": 382.20233192,
+                    "b": 672.7331928199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    70
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/34",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 215.54999,
+                    "t": 658.7314496875,
+                    "r": 382.31512441999996,
+                    "b": 625.8054628199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    122
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/35",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 215.54999,
+                    "t": 621.4658196875,
+                    "r": 382.48797692,
+                    "b": 600.9617128199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    69
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/36",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 215.54999,
+                    "t": 596.6220696875,
+                    "r": 382.15253192,
+                    "b": 576.1179628199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    59
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/37",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 215.54999,
+                    "t": 571.7783196875,
+                    "r": 382.34735192,
+                    "b": 551.2732328199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    73
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/38",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 215.54999,
+                    "t": 537.2724596875,
+                    "r": 382.63445942,
+                    "b": 516.7683528199854,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    68
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/39",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 215.54999,
+                    "t": 512.4287096875,
+                    "r": 352.33856191999996,
+                    "b": 504.34647281998537,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    33
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/40",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 215.54999,
+                    "t": 500.0058596875,
+                    "r": 382.45428691999996,
+                    "b": 479.50174281998534,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    42
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/41",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 215.54999,
+                    "t": 475.1621096875,
+                    "r": 314.38739267,
+                    "b": 467.0798728199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    26
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/42",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 215.54999,
+                    "t": 453.0781296875,
+                    "r": 382.66668691999996,
+                    "b": 407.73026281998534,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    120
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/43",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 215.54999,
+                    "t": 403.3906296875,
+                    "r": 382.70624192,
+                    "b": 358.0417828199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    135
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/44",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 215.54999,
+                    "t": 353.7021496875,
+                    "r": 382.12469942,
+                    "b": 333.1980328199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    71
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/45",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 215.54999,
+                    "t": 328.85839968749997,
+                    "r": 382.72528442,
+                    "b": 283.5105328199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    127
+                  ]
+                }
+              ]
+            }
+          ],
+          "headings": null,
+          "captions": null,
+          "origin": {
+            "mimetype": "application/pdf",
+            "binary_hash": 5021117110877980111,
+            "filename": "english_page_0412.pdf",
+            "uri": null
+          }
+        },
+        "chunk_index": 2,
+        "contextualized_text": "Mystic -  a  person  who  seeks  spiritual truth beyond the intellect.\nSol.123.(a)  Ascetic - a person who lives in  extreme  self-denial,  rejecting physical comforts for spiritual discipline.\nIconoclast -a person who attacks traditional beliefs or institutions.\nLuminary -  a  person  who  inspires  or influences others.\nVitalist -one who believes life is governed by a special vital principle.\nSol.124.(a)  Agoraphobia -the fear  of open or crowded public places\nMonophobia - fear of being alone.\nAnthropophobia -fear of people or society.\nPyrophobia - fear of fire.\nSol.125.(a) Metalepsis -a figure of speech in which a word or a phrase from figurative speech is used in a  new context.\nAnachrony -  a  discrepancy  between  the chronological  order  of  events  and  the order  in  which  they  are presented in the plot.\nEpiphany -  a  moment  of  sudden  and great revelation or realization.\nAllusion - an expression designed to call something to mind without mentioning it explicitly; an indirect or passing reference."
+      },
+      {
+        "text": "Sol.126.(a) Rumination - a state in which a  person  experiences  a  continuous  and intrusive stream of anxious thoughts that they can not control.\nCataplexy -sudden, brief muscular weakness while you're awake that's triggered by strong emotions, like laughter.\nEcholalia -the repetition  of  words  or phrases spoken by someone else.\nDerealization -  a  mental state where you feel detached from your surroundings.\nSol.127.(a) Constructivism -the philosophical view that reality is mentally constructed and  that  external  objects cannot be known independently of human perception.\nDualism -  the  belief  that mind and body are fundamentally distinct substances.\nRationalism - the view that knowledge is primarily gained through reason.\nPositivism -  the  belief  that  knowledge should be based on observable scientific facts.\nSol.128.(b)  Dramatic  Irony -  a  device where the audience is aware of information  unknown  to  the  characters, causing contrast between perception and reality.\nSatire -the use of humour, irony, exaggeration,  or  ridicule  to  expose  and criticize people's stupidity or vices.\nHyperbole -  exaggerated  statements  or claims not meant to be taken literally.",
+        "meta": {
+          "schema_name": "docling_core.transforms.chunker.DocMeta",
+          "version": "1.0.0",
+          "doc_items": [
+            {
+              "self_ref": "#/texts/46",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 215.54999,
+                    "t": 269.5087896875,
+                    "r": 382.69012441999996,
+                    "b": 224.16092281998533,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    148
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/47",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 215.54999,
+                    "t": 219.82128968749998,
+                    "r": 384.36591134,
+                    "b": 174.47245281998528,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    113
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/48",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 215.54999,
+                    "t": 170.13280968749996,
+                    "r": 382.11590942,
+                    "b": 149.62870281998528,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    72
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/49",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 215.54999,
+                    "t": 145.28808968750002,
+                    "r": 382.75311692,
+                    "b": 124.78397281998537,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    80
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/50",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 215.54999,
+                    "t": 110.78319968749997,
+                    "r": 382.72967942,
+                    "b": 53.01249281998537,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    167
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/51",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 215.54999,
+                    "t": 48.67284968750005,
+                    "r": 382.14813692,
+                    "b": 28.16874281998537,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    81
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/52",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 402.30002,
+                    "t": 814.6972656875,
+                    "r": 568.92452942,
+                    "b": 794.1931538199854,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    73
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/53",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 402.30002,
+                    "t": 789.8525386875,
+                    "r": 569.33175692,
+                    "b": 756.9265518199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    90
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/54",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 402.30002,
+                    "t": 744.3056636875,
+                    "r": 569.42550692,
+                    "b": 686.5359268199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    164
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/55",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 402.30002,
+                    "t": 682.1962886875,
+                    "r": 569.3390844200001,
+                    "b": 649.2703028199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    117
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/56",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 402.30002,
+                    "t": 644.9296896875001,
+                    "r": 568.87619192,
+                    "b": 624.4255728199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    80
+                  ]
+                }
+              ]
+            }
+          ],
+          "headings": null,
+          "captions": null,
+          "origin": {
+            "mimetype": "application/pdf",
+            "binary_hash": 5021117110877980111,
+            "filename": "english_page_0412.pdf",
+            "uri": null
+          }
+        },
+        "chunk_index": 3,
+        "contextualized_text": "Sol.126.(a) Rumination - a state in which a  person  experiences  a  continuous  and intrusive stream of anxious thoughts that they can not control.\nCataplexy -sudden, brief muscular weakness while you're awake that's triggered by strong emotions, like laughter.\nEcholalia -the repetition  of  words  or phrases spoken by someone else.\nDerealization -  a  mental state where you feel detached from your surroundings.\nSol.127.(a) Constructivism -the philosophical view that reality is mentally constructed and  that  external  objects cannot be known independently of human perception.\nDualism -  the  belief  that mind and body are fundamentally distinct substances.\nRationalism - the view that knowledge is primarily gained through reason.\nPositivism -  the  belief  that  knowledge should be based on observable scientific facts.\nSol.128.(b)  Dramatic  Irony -  a  device where the audience is aware of information  unknown  to  the  characters, causing contrast between perception and reality.\nSatire -the use of humour, irony, exaggeration,  or  ridicule  to  expose  and criticize people's stupidity or vices.\nHyperbole -  exaggerated  statements  or claims not meant to be taken literally."
+      },
+      {
+        "text": "Cosmic  Irony -  a  literary  device  where events  are  manipulated  by  a  powerful force (such as destiny, fate, or the gods) to  mock  or  frustrate  human  efforts  and expectations.\nSol.129.(a) Phenomenology -the science  of  phenomena  as  distinct  from that of the nature of being.\nEmpiricism -  the  belief  that  knowledge comes through sensory experience.\nDeterminism -  the  belief  that  all  events are causally predetermined.\nPositivism -the view that genuine knowledge is derived from scientific observation.\nSol.130.(a)  Parody -  an  imitation  of  the style of a particular writer, artist, or genre with  deliberate  exaggeration  for  comic effect.\nMetonymy - the substitution of the name of  an  attribute  or  adjunct for that of the thing meant.\nParable - a simple story used to illustrate a moral or spiritual lesson.\nSymbolism -the use of symbols  to represent ideas or qualities.\nSol.131.(a)  Mosaicism -  the condition in which  some  cells  in  an  organism  have different chromosome numbers or genetic makeup from others.\nPolyploidy -  multiple  complete  sets  of chromosomes.\nDisjunction -the separation of chromosomes during cell division.",
+        "meta": {
+          "schema_name": "docling_core.transforms.chunker.DocMeta",
+          "version": "1.0.0",
+          "doc_items": [
+            {
+              "self_ref": "#/texts/57",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 402.30002,
+                    "t": 620.0859396875001,
+                    "r": 569.27902442,
+                    "b": 562.3152228199854,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    187
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/58",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 402.30002,
+                    "t": 548.3144496875,
+                    "r": 569.46798692,
+                    "b": 515.3874928199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    102
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/59",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 402.30002,
+                    "t": 511.04784968750005,
+                    "r": 569.46652442,
+                    "b": 490.5437428199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    76
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/60",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 402.30002,
+                    "t": 486.2040996875,
+                    "r": 568.99484192,
+                    "b": 465.69901281998534,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    73
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/61",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 402.30002,
+                    "t": 461.3593796875,
+                    "r": 569.0578344200001,
+                    "b": 428.43339281998533,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    83
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/62",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 402.30002,
+                    "t": 415.8124996875,
+                    "r": 569.15744192,
+                    "b": 370.46366281998536,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    143
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/63",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 402.30002,
+                    "t": 366.1240196875,
+                    "r": 569.15597942,
+                    "b": 333.1980328199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    99
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/64",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 402.30002,
+                    "t": 328.85839968749997,
+                    "r": 569.4460194200001,
+                    "b": 308.3542828199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    72
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/65",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 402.30002,
+                    "t": 304.01464968749997,
+                    "r": 568.98166442,
+                    "b": 283.5105328199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    63
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/66",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 402.30002,
+                    "t": 269.5087896875,
+                    "r": 568.9406469200001,
+                    "b": 224.16092281998533,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    145
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/67",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 402.30002,
+                    "t": 219.82128968749998,
+                    "r": 568.85275442,
+                    "b": 199.31620281998528,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    55
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/68",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 402.30002,
+                    "t": 194.97655968749996,
+                    "r": 571.26681884,
+                    "b": 174.47245281998528,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    64
+                  ]
+                }
+              ]
+            }
+          ],
+          "headings": null,
+          "captions": null,
+          "origin": {
+            "mimetype": "application/pdf",
+            "binary_hash": 5021117110877980111,
+            "filename": "english_page_0412.pdf",
+            "uri": null
+          }
+        },
+        "chunk_index": 4,
+        "contextualized_text": "Cosmic  Irony -  a  literary  device  where events  are  manipulated  by  a  powerful force (such as destiny, fate, or the gods) to  mock  or  frustrate  human  efforts  and expectations.\nSol.129.(a) Phenomenology -the science  of  phenomena  as  distinct  from that of the nature of being.\nEmpiricism -  the  belief  that  knowledge comes through sensory experience.\nDeterminism -  the  belief  that  all  events are causally predetermined.\nPositivism -the view that genuine knowledge is derived from scientific observation.\nSol.130.(a)  Parody -  an  imitation  of  the style of a particular writer, artist, or genre with  deliberate  exaggeration  for  comic effect.\nMetonymy - the substitution of the name of  an  attribute  or  adjunct for that of the thing meant.\nParable - a simple story used to illustrate a moral or spiritual lesson.\nSymbolism -the use of symbols  to represent ideas or qualities.\nSol.131.(a)  Mosaicism -  the condition in which  some  cells  in  an  organism  have different chromosome numbers or genetic makeup from others.\nPolyploidy -  multiple  complete  sets  of chromosomes.\nDisjunction -the separation of chromosomes during cell division."
+      },
+      {
+        "text": "Translocation -the transfer of a chromosome segment to a non-homologous chromosome.\nSol.132.(a)  Apologue -a moral  fable, especially one with animals as characters.\nChronicle -  a  factual  written  account  of historical events.\nVignette -  a  brief  descriptive  scene  or sketch.\nAnecdote -     a     short,       amusing     or",
+        "meta": {
+          "schema_name": "docling_core.transforms.chunker.DocMeta",
+          "version": "1.0.0",
+          "doc_items": [
+            {
+              "self_ref": "#/texts/69",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 402.30002,
+                    "t": 170.13280968749996,
+                    "r": 569.39621192,
+                    "b": 137.20585281998535,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    83
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/70",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 402.30002,
+                    "t": 123.20507968749996,
+                    "r": 569.26144442,
+                    "b": 90.2790928199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    81
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/71",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 402.30002,
+                    "t": 85.93847968750003,
+                    "r": 568.78683692,
+                    "b": 65.43436281998538,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    64
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/72",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 402.30002,
+                    "t": 61.094729687500035,
+                    "r": 569.27462942,
+                    "b": 40.59061281998538,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    52
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/73",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 402.30002,
+                    "t": 36.250979687500035,
+                    "r": 567.3234594200001,
+                    "b": 28.16874281998537,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    48
+                  ]
+                }
+              ]
+            }
+          ],
+          "headings": null,
+          "captions": null,
+          "origin": {
+            "mimetype": "application/pdf",
+            "binary_hash": 5021117110877980111,
+            "filename": "english_page_0412.pdf",
+            "uri": null
+          }
+        },
+        "chunk_index": 5,
+        "contextualized_text": "Translocation -the transfer of a chromosome segment to a non-homologous chromosome.\nSol.132.(a)  Apologue -a moral  fable, especially one with animals as characters.\nChronicle -  a  factual  written  account  of historical events.\nVignette -  a  brief  descriptive  scene  or sketch.\nAnecdote -     a     short,       amusing     or"
+      }
+    ]
+  },
+  "content_assets": {
+    "tables": [],
+    "figures": []
+  },
+  "docling_document": {
+    "schema_name": "DoclingDocument",
+    "version": "1.10.0",
+    "name": "english_page_0412",
+    "origin": {
+      "mimetype": "application/pdf",
+      "binary_hash": 5021117110877980111,
+      "filename": "english_page_0412.pdf"
+    },
+    "furniture": {
+      "self_ref": "#/furniture",
+      "children": [],
+      "content_layer": "furniture",
+      "name": "_root_",
+      "label": "unspecified"
+    },
+    "body": {
+      "self_ref": "#/body",
+      "children": [
+        {
+          "$ref": "#/texts/0"
+        },
+        {
+          "$ref": "#/texts/1"
+        },
+        {
+          "$ref": "#/texts/2"
+        },
+        {
+          "$ref": "#/texts/3"
+        },
+        {
+          "$ref": "#/texts/4"
+        },
+        {
+          "$ref": "#/texts/5"
+        },
+        {
+          "$ref": "#/texts/6"
+        },
+        {
+          "$ref": "#/groups/0"
+        },
+        {
+          "$ref": "#/texts/9"
+        },
+        {
+          "$ref": "#/texts/10"
+        },
+        {
+          "$ref": "#/texts/11"
+        },
+        {
+          "$ref": "#/texts/12"
+        },
+        {
+          "$ref": "#/texts/13"
+        },
+        {
+          "$ref": "#/texts/14"
+        },
+        {
+          "$ref": "#/texts/15"
+        },
+        {
+          "$ref": "#/texts/16"
+        },
+        {
+          "$ref": "#/texts/17"
+        },
+        {
+          "$ref": "#/texts/18"
+        },
+        {
+          "$ref": "#/texts/19"
+        },
+        {
+          "$ref": "#/texts/20"
+        },
+        {
+          "$ref": "#/texts/21"
+        },
+        {
+          "$ref": "#/texts/22"
+        },
+        {
+          "$ref": "#/texts/23"
+        },
+        {
+          "$ref": "#/texts/24"
+        },
+        {
+          "$ref": "#/texts/25"
+        },
+        {
+          "$ref": "#/texts/26"
+        },
+        {
+          "$ref": "#/texts/27"
+        },
+        {
+          "$ref": "#/texts/28"
+        },
+        {
+          "$ref": "#/texts/29"
+        },
+        {
+          "$ref": "#/texts/30"
+        },
+        {
+          "$ref": "#/texts/31"
+        },
+        {
+          "$ref": "#/texts/32"
+        },
+        {
+          "$ref": "#/texts/33"
+        },
+        {
+          "$ref": "#/texts/34"
+        },
+        {
+          "$ref": "#/texts/35"
+        },
+        {
+          "$ref": "#/texts/36"
+        },
+        {
+          "$ref": "#/texts/37"
+        },
+        {
+          "$ref": "#/texts/38"
+        },
+        {
+          "$ref": "#/texts/39"
+        },
+        {
+          "$ref": "#/texts/40"
+        },
+        {
+          "$ref": "#/texts/41"
+        },
+        {
+          "$ref": "#/texts/42"
+        },
+        {
+          "$ref": "#/texts/43"
+        },
+        {
+          "$ref": "#/texts/44"
+        },
+        {
+          "$ref": "#/texts/45"
+        },
+        {
+          "$ref": "#/texts/46"
+        },
+        {
+          "$ref": "#/texts/47"
+        },
+        {
+          "$ref": "#/texts/48"
+        },
+        {
+          "$ref": "#/texts/49"
+        },
+        {
+          "$ref": "#/texts/50"
+        },
+        {
+          "$ref": "#/texts/51"
+        },
+        {
+          "$ref": "#/texts/52"
+        },
+        {
+          "$ref": "#/texts/53"
+        },
+        {
+          "$ref": "#/texts/54"
+        },
+        {
+          "$ref": "#/texts/55"
+        },
+        {
+          "$ref": "#/texts/56"
+        },
+        {
+          "$ref": "#/texts/57"
+        },
+        {
+          "$ref": "#/texts/58"
+        },
+        {
+          "$ref": "#/texts/59"
+        },
+        {
+          "$ref": "#/texts/60"
+        },
+        {
+          "$ref": "#/texts/61"
+        },
+        {
+          "$ref": "#/texts/62"
+        },
+        {
+          "$ref": "#/texts/63"
+        },
+        {
+          "$ref": "#/texts/64"
+        },
+        {
+          "$ref": "#/texts/65"
+        },
+        {
+          "$ref": "#/texts/66"
+        },
+        {
+          "$ref": "#/texts/67"
+        },
+        {
+          "$ref": "#/texts/68"
+        },
+        {
+          "$ref": "#/texts/69"
+        },
+        {
+          "$ref": "#/texts/70"
+        },
+        {
+          "$ref": "#/texts/71"
+        },
+        {
+          "$ref": "#/texts/72"
+        },
+        {
+          "$ref": "#/texts/73"
+        },
+        {
+          "$ref": "#/texts/74"
+        }
+      ],
+      "content_layer": "body",
+      "name": "_root_",
+      "label": "unspecified"
+    },
+    "groups": [
+      {
+        "self_ref": "#/groups/0",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [
+          {
+            "$ref": "#/texts/7"
+          },
+          {
+            "$ref": "#/texts/8"
+          }
+        ],
+        "content_layer": "body",
+        "name": "group",
+        "label": "key_value_area"
+      }
+    ],
+    "texts": [
+      {
+        "self_ref": "#/texts/0",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "furniture",
+        "label": "page_header",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 830.7935546594726,
+              "r": 95.7084616875,
+              "b": 822.5652585957749,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              8
+            ]
+          }
+        ],
+        "orig": "Pinnacle",
+        "text": "Pinnacle"
+      },
+      {
+        "self_ref": "#/texts/1",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 814.6972656875,
+              "r": 195.71748492,
+              "b": 781.7703018199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              93
+            ]
+          }
+        ],
+        "orig": "Sol.115.(a)  Posse -a  group  of  people who  have  a  common  characteristic  or occupation.",
+        "text": "Sol.115.(a)  Posse -a  group  of  people who  have  a  common  characteristic  or occupation."
+      },
+      {
+        "self_ref": "#/texts/2",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 777.4306636875,
+              "r": 195.73066992,
+              "b": 756.9265518199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              78
+            ]
+          }
+        ],
+        "orig": "Convoy -  a  group  of  vehicles  or  ships traveling together for protection.",
+        "text": "Convoy -  a  group  of  vehicles  or  ships traveling together for protection."
+      },
+      {
+        "self_ref": "#/texts/3",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 752.5869136875,
+              "r": 195.78046992,
+              "b": 732.0828018199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              79
+            ]
+          }
+        ],
+        "orig": "Caravan - a group of travelers journeying together, especially across a desert.",
+        "text": "Caravan - a group of travelers journeying together, especially across a desert."
+      },
+      {
+        "self_ref": "#/texts/4",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 727.7431636875,
+              "r": 195.55195992,
+              "b": 707.2390518199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              72
+            ]
+          }
+        ],
+        "orig": "Regiment - a permanent unit of an army typically commanded by a colonel.",
+        "text": "Regiment - a permanent unit of an army typically commanded by a colonel."
+      },
+      {
+        "self_ref": "#/texts/5",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 693.2373046875,
+              "r": 195.87421992,
+              "b": 672.7331928199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              66
+            ]
+          }
+        ],
+        "orig": "Sol.116.(b) Iatrophobia -the fear of doctors or medical treatment.",
+        "text": "Sol.116.(b) Iatrophobia -the fear of doctors or medical treatment."
+      },
+      {
+        "self_ref": "#/texts/6",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 668.3935496875,
+              "r": 195.64423992,
+              "b": 647.8894428199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              53
+            ]
+          }
+        ],
+        "orig": "Astraphobia -  the  fear  of  thunder  and lightning.",
+        "text": "Astraphobia -  the  fear  of  thunder  and lightning."
+      },
+      {
+        "self_ref": "#/texts/7",
+        "parent": {
+          "$ref": "#/groups/0"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 643.5497996875,
+              "r": 158.38594242,
+              "b": 635.4675628199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              32
+            ]
+          }
+        ],
+        "orig": "Zoophobia - the fear of animals.",
+        "text": "Zoophobia - the fear of animals."
+      },
+      {
+        "self_ref": "#/texts/8",
+        "parent": {
+          "$ref": "#/groups/0"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 631.1279296875,
+              "r": 186.24727242,
+              "b": 623.0456928199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              38
+            ]
+          }
+        ],
+        "orig": "Phonophobia - the fear of loud sounds.",
+        "text": "Phonophobia - the fear of loud sounds."
+      },
+      {
+        "self_ref": "#/texts/9",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 609.0439496875,
+              "r": 195.81562992,
+              "b": 576.1179628199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              91
+            ]
+          }
+        ],
+        "orig": "Sol.117.(a) Slang -language that is informal and  typically  used  in  casual conversation.",
+        "text": "Sol.117.(a) Slang -language that is informal and  typically  used  in  casual conversation."
+      },
+      {
+        "self_ref": "#/texts/10",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 571.7783196875,
+              "r": 195.91669991999999,
+              "b": 538.8513528199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              128
+            ]
+          }
+        ],
+        "orig": "Patois - the dialect of a particular region, especially one with low status in relation to the standard language of the country.",
+        "text": "Patois - the dialect of a particular region, especially one with low status in relation to the standard language of the country."
+      },
+      {
+        "self_ref": "#/texts/11",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 534.5117196875,
+              "r": 195.89033742,
+              "b": 501.5857328199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              95
+            ]
+          }
+        ],
+        "orig": "Vernacular -  the  language  spoken  by ordinary  people  in  a  particular  region or country.",
+        "text": "Vernacular -  the  language  spoken  by ordinary  people  in  a  particular  region or country."
+      },
+      {
+        "self_ref": "#/texts/12",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 497.2451196875,
+              "r": 195.65009742,
+              "b": 476.74100281998534,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              71
+            ]
+          }
+        ],
+        "orig": "Phrase - a small group of words standing together as a conceptual unit.",
+        "text": "Phrase - a small group of words standing together as a conceptual unit."
+      },
+      {
+        "self_ref": "#/texts/13",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 462.7402296875,
+              "r": 195.84931992,
+              "b": 429.81327281998534,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              98
+            ]
+          }
+        ],
+        "orig": "Sol.118.(b)  Hedonist -  a  person  who believes that pleasure is the most important goal in life.",
+        "text": "Sol.118.(b)  Hedonist -  a  person  who believes that pleasure is the most important goal in life."
+      },
+      {
+        "self_ref": "#/texts/14",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 425.4736296875,
+              "r": 195.93867491999998,
+              "b": 392.54764281998536,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              109
+            ]
+          }
+        ],
+        "orig": "Pessimist -  a  person  who  tends  to  see the worst aspect of things or believe that the worst will happen.",
+        "text": "Pessimist -  a  person  who  tends  to  see the worst aspect of things or believe that the worst will happen."
+      },
+      {
+        "self_ref": "#/texts/15",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 388.2080096875,
+              "r": 195.42890742,
+              "b": 367.70389281998536,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              70
+            ]
+          }
+        ],
+        "orig": "Activist -  a  person  who  campaigns  for social or political change.",
+        "text": "Activist -  a  person  who  campaigns  for social or political change."
+      },
+      {
+        "self_ref": "#/texts/16",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 363.3642596875,
+              "r": 195.30732491999999,
+              "b": 342.86014281998536,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              63
+            ]
+          }
+        ],
+        "orig": "Nominee - a person proposed or formally entered for a position.",
+        "text": "Nominee - a person proposed or formally entered for a position."
+      },
+      {
+        "self_ref": "#/texts/17",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 328.85839968749997,
+              "r": 195.68671992,
+              "b": 295.9324128199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              104
+            ]
+          }
+        ],
+        "orig": "Sol.119.(b)  Acrophobia -the fear of heights that causes anxiety when  a person is at an elevated place.",
+        "text": "Sol.119.(b)  Acrophobia -the fear of heights that causes anxiety when  a person is at an elevated place."
+      },
+      {
+        "self_ref": "#/texts/18",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 291.5927696875,
+              "r": 195.70429991999998,
+              "b": 271.0886628199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              40
+            ]
+          }
+        ],
+        "orig": "Claustrophobia -fear of enclosed spaces.",
+        "text": "Claustrophobia -fear of enclosed spaces."
+      },
+      {
+        "self_ref": "#/texts/19",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 266.74804968750004,
+              "r": 156.40840167,
+              "b": 258.6658128199854,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              31
+            ]
+          }
+        ],
+        "orig": "Nyctophobia - fear of darkness.",
+        "text": "Nyctophobia - fear of darkness."
+      },
+      {
+        "self_ref": "#/texts/20",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 254.32616968750006,
+              "r": 195.76435992,
+              "b": 233.82206281998538,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              56
+            ]
+          }
+        ],
+        "orig": "Xenophobia - fear or dislike of strangers or foreigners.",
+        "text": "Xenophobia - fear or dislike of strangers or foreigners."
+      },
+      {
+        "self_ref": "#/texts/21",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 219.82128968749998,
+              "r": 195.72334242,
+              "b": 199.31620281998528,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              74
+            ]
+          }
+        ],
+        "orig": "Sol.120.(a) Pedology -the scientific study of soils in relation to growth.",
+        "text": "Sol.120.(a) Pedology -the scientific study of soils in relation to growth."
+      },
+      {
+        "self_ref": "#/texts/22",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 194.97655968749996,
+              "r": 197.65547184,
+              "b": 174.47245281998528,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              45
+            ]
+          }
+        ],
+        "orig": "Bryology -the scientific study of bryophytes.",
+        "text": "Bryology -the scientific study of bryophytes."
+      },
+      {
+        "self_ref": "#/texts/23",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 170.13280968749996,
+              "r": 195.67060992,
+              "b": 124.78397281998537,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              145
+            ]
+          }
+        ],
+        "orig": "Botany -the scientific study of the physiology,  structure,  genetics,  ecology, distribution, classification, and economic importance of plants.",
+        "text": "Botany -the scientific study of the physiology,  structure,  genetics,  ecology, distribution, classification, and economic importance of plants."
+      },
+      {
+        "self_ref": "#/texts/24",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 120.44433968750002,
+              "r": 195.96357491999999,
+              "b": 87.51835281998535,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              93
+            ]
+          }
+        ],
+        "orig": "Anatomy -  the  study  of  the  internal and external structure of organisms and their parts.",
+        "text": "Anatomy -  the  study  of  the  internal and external structure of organisms and their parts."
+      },
+      {
+        "self_ref": "#/texts/25",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 73.51659968750005,
+              "r": 195.92256492,
+              "b": 53.01249281998537,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              83
+            ]
+          }
+        ],
+        "orig": "Sol.121.(a) Bibliophile - a lover of books. Pedant - a person overly concerned with",
+        "text": "Sol.121.(a) Bibliophile - a lover of books. Pedant - a person overly concerned with"
+      },
+      {
+        "self_ref": "#/texts/26",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 48.67284968750005,
+              "r": 117.84638967000001,
+              "b": 40.59061281998538,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              23
+            ]
+          }
+        ],
+        "orig": "minor details or rules.",
+        "text": "minor details or rules."
+      },
+      {
+        "self_ref": "#/texts/27",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 36.250979687500035,
+              "r": 195.14179991999998,
+              "b": 28.16874281998537,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              38
+            ]
+          }
+        ],
+        "orig": "Misogynist - a person who hates women.",
+        "text": "Misogynist - a person who hates women."
+      },
+      {
+        "self_ref": "#/texts/28",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 291.757038,
+              "t": 830.7935546594726,
+              "r": 568.8714279374999,
+              "b": 822.5652585957749,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              3
+            ]
+          }
+        ],
+        "orig": "OWS",
+        "text": "OWS"
+      },
+      {
+        "self_ref": "#/texts/29",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 215.54999,
+              "t": 814.6972656875,
+              "r": 382.37811692,
+              "b": 794.1931538199854,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              47
+            ]
+          }
+        ],
+        "orig": "Nihilist -one who believes life is meaningless.",
+        "text": "Nihilist -one who believes life is meaningless."
+      },
+      {
+        "self_ref": "#/texts/30",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 215.54999,
+              "t": 780.1914066875,
+              "r": 382.32245192,
+              "b": 747.2654198199854,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              123
+            ]
+          }
+        ],
+        "orig": "Sol.122.  (b)  Agnostic -  a  person  who believes that nothing is known or can be known of the existence or nature of God.",
+        "text": "Sol.122.  (b)  Agnostic -  a  person  who believes that nothing is known or can be known of the existence or nature of God."
+      },
+      {
+        "self_ref": "#/texts/31",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 215.54999,
+              "t": 742.9248046875,
+              "r": 382.40887441999996,
+              "b": 722.4206928199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              66
+            ]
+          }
+        ],
+        "orig": "Atheist -  a  person who does not believe in the existence of God.",
+        "text": "Atheist -  a  person who does not believe in the existence of God."
+      },
+      {
+        "self_ref": "#/texts/32",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 215.54999,
+              "t": 718.0810546875,
+              "r": 382.77215942,
+              "b": 697.5769428199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              61
+            ]
+          }
+        ],
+        "orig": "Theist -  a  person  who  believes  in  the existence of God.",
+        "text": "Theist -  a  person  who  believes  in  the existence of God."
+      },
+      {
+        "self_ref": "#/texts/33",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 215.54999,
+              "t": 693.2373046875,
+              "r": 382.20233192,
+              "b": 672.7331928199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              70
+            ]
+          }
+        ],
+        "orig": "Mystic -  a  person  who  seeks  spiritual truth beyond the intellect.",
+        "text": "Mystic -  a  person  who  seeks  spiritual truth beyond the intellect."
+      },
+      {
+        "self_ref": "#/texts/34",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 215.54999,
+              "t": 658.7314496875,
+              "r": 382.31512441999996,
+              "b": 625.8054628199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              122
+            ]
+          }
+        ],
+        "orig": "Sol.123.(a)  Ascetic - a person who lives in  extreme  self-denial,  rejecting physical comforts for spiritual discipline.",
+        "text": "Sol.123.(a)  Ascetic - a person who lives in  extreme  self-denial,  rejecting physical comforts for spiritual discipline."
+      },
+      {
+        "self_ref": "#/texts/35",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 215.54999,
+              "t": 621.4658196875,
+              "r": 382.48797692,
+              "b": 600.9617128199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              69
+            ]
+          }
+        ],
+        "orig": "Iconoclast -a person who attacks traditional beliefs or institutions.",
+        "text": "Iconoclast -a person who attacks traditional beliefs or institutions."
+      },
+      {
+        "self_ref": "#/texts/36",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 215.54999,
+              "t": 596.6220696875,
+              "r": 382.15253192,
+              "b": 576.1179628199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              59
+            ]
+          }
+        ],
+        "orig": "Luminary -  a  person  who  inspires  or influences others.",
+        "text": "Luminary -  a  person  who  inspires  or influences others."
+      },
+      {
+        "self_ref": "#/texts/37",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 215.54999,
+              "t": 571.7783196875,
+              "r": 382.34735192,
+              "b": 551.2732328199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              73
+            ]
+          }
+        ],
+        "orig": "Vitalist -one who believes life is governed by a special vital principle.",
+        "text": "Vitalist -one who believes life is governed by a special vital principle."
+      },
+      {
+        "self_ref": "#/texts/38",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 215.54999,
+              "t": 537.2724596875,
+              "r": 382.63445942,
+              "b": 516.7683528199854,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              68
+            ]
+          }
+        ],
+        "orig": "Sol.124.(a)  Agoraphobia -the fear  of open or crowded public places",
+        "text": "Sol.124.(a)  Agoraphobia -the fear  of open or crowded public places"
+      },
+      {
+        "self_ref": "#/texts/39",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 215.54999,
+              "t": 512.4287096875,
+              "r": 352.33856191999996,
+              "b": 504.34647281998537,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              33
+            ]
+          }
+        ],
+        "orig": "Monophobia - fear of being alone.",
+        "text": "Monophobia - fear of being alone."
+      },
+      {
+        "self_ref": "#/texts/40",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 215.54999,
+              "t": 500.0058596875,
+              "r": 382.45428691999996,
+              "b": 479.50174281998534,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              42
+            ]
+          }
+        ],
+        "orig": "Anthropophobia -fear of people or society.",
+        "text": "Anthropophobia -fear of people or society."
+      },
+      {
+        "self_ref": "#/texts/41",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 215.54999,
+              "t": 475.1621096875,
+              "r": 314.38739267,
+              "b": 467.0798728199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              26
+            ]
+          }
+        ],
+        "orig": "Pyrophobia - fear of fire.",
+        "text": "Pyrophobia - fear of fire."
+      },
+      {
+        "self_ref": "#/texts/42",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 215.54999,
+              "t": 453.0781296875,
+              "r": 382.66668691999996,
+              "b": 407.73026281998534,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              120
+            ]
+          }
+        ],
+        "orig": "Sol.125.(a) Metalepsis -a figure of speech in which a word or a phrase from figurative speech is used in a  new context.",
+        "text": "Sol.125.(a) Metalepsis -a figure of speech in which a word or a phrase from figurative speech is used in a  new context."
+      },
+      {
+        "self_ref": "#/texts/43",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 215.54999,
+              "t": 403.3906296875,
+              "r": 382.70624192,
+              "b": 358.0417828199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              135
+            ]
+          }
+        ],
+        "orig": "Anachrony -  a  discrepancy  between  the chronological  order  of  events  and  the order  in  which  they  are presented in the plot.",
+        "text": "Anachrony -  a  discrepancy  between  the chronological  order  of  events  and  the order  in  which  they  are presented in the plot."
+      },
+      {
+        "self_ref": "#/texts/44",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 215.54999,
+              "t": 353.7021496875,
+              "r": 382.12469942,
+              "b": 333.1980328199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              71
+            ]
+          }
+        ],
+        "orig": "Epiphany -  a  moment  of  sudden  and great revelation or realization.",
+        "text": "Epiphany -  a  moment  of  sudden  and great revelation or realization."
+      },
+      {
+        "self_ref": "#/texts/45",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 215.54999,
+              "t": 328.85839968749997,
+              "r": 382.72528442,
+              "b": 283.5105328199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              127
+            ]
+          }
+        ],
+        "orig": "Allusion - an expression designed to call something to mind without mentioning it explicitly; an indirect or passing reference.",
+        "text": "Allusion - an expression designed to call something to mind without mentioning it explicitly; an indirect or passing reference."
+      },
+      {
+        "self_ref": "#/texts/46",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 215.54999,
+              "t": 269.5087896875,
+              "r": 382.69012441999996,
+              "b": 224.16092281998533,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              148
+            ]
+          }
+        ],
+        "orig": "Sol.126.(a) Rumination - a state in which a  person  experiences  a  continuous  and intrusive stream of anxious thoughts that they can not control.",
+        "text": "Sol.126.(a) Rumination - a state in which a  person  experiences  a  continuous  and intrusive stream of anxious thoughts that they can not control."
+      },
+      {
+        "self_ref": "#/texts/47",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 215.54999,
+              "t": 219.82128968749998,
+              "r": 384.36591134,
+              "b": 174.47245281998528,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              113
+            ]
+          }
+        ],
+        "orig": "Cataplexy -sudden, brief muscular weakness while you're awake that's triggered by strong emotions, like laughter.",
+        "text": "Cataplexy -sudden, brief muscular weakness while you're awake that's triggered by strong emotions, like laughter."
+      },
+      {
+        "self_ref": "#/texts/48",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 215.54999,
+              "t": 170.13280968749996,
+              "r": 382.11590942,
+              "b": 149.62870281998528,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              72
+            ]
+          }
+        ],
+        "orig": "Echolalia -the repetition  of  words  or phrases spoken by someone else.",
+        "text": "Echolalia -the repetition  of  words  or phrases spoken by someone else."
+      },
+      {
+        "self_ref": "#/texts/49",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 215.54999,
+              "t": 145.28808968750002,
+              "r": 382.75311692,
+              "b": 124.78397281998537,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              80
+            ]
+          }
+        ],
+        "orig": "Derealization -  a  mental state where you feel detached from your surroundings.",
+        "text": "Derealization -  a  mental state where you feel detached from your surroundings."
+      },
+      {
+        "self_ref": "#/texts/50",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 215.54999,
+              "t": 110.78319968749997,
+              "r": 382.72967942,
+              "b": 53.01249281998537,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              167
+            ]
+          }
+        ],
+        "orig": "Sol.127.(a) Constructivism -the philosophical view that reality is mentally constructed and  that  external  objects cannot be known independently of human perception.",
+        "text": "Sol.127.(a) Constructivism -the philosophical view that reality is mentally constructed and  that  external  objects cannot be known independently of human perception."
+      },
+      {
+        "self_ref": "#/texts/51",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 215.54999,
+              "t": 48.67284968750005,
+              "r": 382.14813692,
+              "b": 28.16874281998537,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              81
+            ]
+          }
+        ],
+        "orig": "Dualism -  the  belief  that mind and body are fundamentally distinct substances.",
+        "text": "Dualism -  the  belief  that mind and body are fundamentally distinct substances."
+      },
+      {
+        "self_ref": "#/texts/52",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 402.30002,
+              "t": 814.6972656875,
+              "r": 568.92452942,
+              "b": 794.1931538199854,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              73
+            ]
+          }
+        ],
+        "orig": "Rationalism - the view that knowledge is primarily gained through reason.",
+        "text": "Rationalism - the view that knowledge is primarily gained through reason."
+      },
+      {
+        "self_ref": "#/texts/53",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 402.30002,
+              "t": 789.8525386875,
+              "r": 569.33175692,
+              "b": 756.9265518199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              90
+            ]
+          }
+        ],
+        "orig": "Positivism -  the  belief  that  knowledge should be based on observable scientific facts.",
+        "text": "Positivism -  the  belief  that  knowledge should be based on observable scientific facts."
+      },
+      {
+        "self_ref": "#/texts/54",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 402.30002,
+              "t": 744.3056636875,
+              "r": 569.42550692,
+              "b": 686.5359268199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              164
+            ]
+          }
+        ],
+        "orig": "Sol.128.(b)  Dramatic  Irony -  a  device where the audience is aware of information  unknown  to  the  characters, causing contrast between perception and reality.",
+        "text": "Sol.128.(b)  Dramatic  Irony -  a  device where the audience is aware of information  unknown  to  the  characters, causing contrast between perception and reality."
+      },
+      {
+        "self_ref": "#/texts/55",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 402.30002,
+              "t": 682.1962886875,
+              "r": 569.3390844200001,
+              "b": 649.2703028199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              117
+            ]
+          }
+        ],
+        "orig": "Satire -the use of humour, irony, exaggeration,  or  ridicule  to  expose  and criticize people's stupidity or vices.",
+        "text": "Satire -the use of humour, irony, exaggeration,  or  ridicule  to  expose  and criticize people's stupidity or vices."
+      },
+      {
+        "self_ref": "#/texts/56",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 402.30002,
+              "t": 644.9296896875001,
+              "r": 568.87619192,
+              "b": 624.4255728199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              80
+            ]
+          }
+        ],
+        "orig": "Hyperbole -  exaggerated  statements  or claims not meant to be taken literally.",
+        "text": "Hyperbole -  exaggerated  statements  or claims not meant to be taken literally."
+      },
+      {
+        "self_ref": "#/texts/57",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 402.30002,
+              "t": 620.0859396875001,
+              "r": 569.27902442,
+              "b": 562.3152228199854,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              187
+            ]
+          }
+        ],
+        "orig": "Cosmic  Irony -  a  literary  device  where events  are  manipulated  by  a  powerful force (such as destiny, fate, or the gods) to  mock  or  frustrate  human  efforts  and expectations.",
+        "text": "Cosmic  Irony -  a  literary  device  where events  are  manipulated  by  a  powerful force (such as destiny, fate, or the gods) to  mock  or  frustrate  human  efforts  and expectations."
+      },
+      {
+        "self_ref": "#/texts/58",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 402.30002,
+              "t": 548.3144496875,
+              "r": 569.46798692,
+              "b": 515.3874928199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              102
+            ]
+          }
+        ],
+        "orig": "Sol.129.(a) Phenomenology -the science  of  phenomena  as  distinct  from that of the nature of being.",
+        "text": "Sol.129.(a) Phenomenology -the science  of  phenomena  as  distinct  from that of the nature of being."
+      },
+      {
+        "self_ref": "#/texts/59",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 402.30002,
+              "t": 511.04784968750005,
+              "r": 569.46652442,
+              "b": 490.5437428199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              76
+            ]
+          }
+        ],
+        "orig": "Empiricism -  the  belief  that  knowledge comes through sensory experience.",
+        "text": "Empiricism -  the  belief  that  knowledge comes through sensory experience."
+      },
+      {
+        "self_ref": "#/texts/60",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 402.30002,
+              "t": 486.2040996875,
+              "r": 568.99484192,
+              "b": 465.69901281998534,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              73
+            ]
+          }
+        ],
+        "orig": "Determinism -  the  belief  that  all  events are causally predetermined.",
+        "text": "Determinism -  the  belief  that  all  events are causally predetermined."
+      },
+      {
+        "self_ref": "#/texts/61",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 402.30002,
+              "t": 461.3593796875,
+              "r": 569.0578344200001,
+              "b": 428.43339281998533,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              83
+            ]
+          }
+        ],
+        "orig": "Positivism -the view that genuine knowledge is derived from scientific observation.",
+        "text": "Positivism -the view that genuine knowledge is derived from scientific observation."
+      },
+      {
+        "self_ref": "#/texts/62",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 402.30002,
+              "t": 415.8124996875,
+              "r": 569.15744192,
+              "b": 370.46366281998536,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              143
+            ]
+          }
+        ],
+        "orig": "Sol.130.(a)  Parody -  an  imitation  of  the style of a particular writer, artist, or genre with  deliberate  exaggeration  for  comic effect.",
+        "text": "Sol.130.(a)  Parody -  an  imitation  of  the style of a particular writer, artist, or genre with  deliberate  exaggeration  for  comic effect."
+      },
+      {
+        "self_ref": "#/texts/63",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 402.30002,
+              "t": 366.1240196875,
+              "r": 569.15597942,
+              "b": 333.1980328199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              99
+            ]
+          }
+        ],
+        "orig": "Metonymy - the substitution of the name of  an  attribute  or  adjunct for that of the thing meant.",
+        "text": "Metonymy - the substitution of the name of  an  attribute  or  adjunct for that of the thing meant."
+      },
+      {
+        "self_ref": "#/texts/64",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 402.30002,
+              "t": 328.85839968749997,
+              "r": 569.4460194200001,
+              "b": 308.3542828199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              72
+            ]
+          }
+        ],
+        "orig": "Parable - a simple story used to illustrate a moral or spiritual lesson.",
+        "text": "Parable - a simple story used to illustrate a moral or spiritual lesson."
+      },
+      {
+        "self_ref": "#/texts/65",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 402.30002,
+              "t": 304.01464968749997,
+              "r": 568.98166442,
+              "b": 283.5105328199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              63
+            ]
+          }
+        ],
+        "orig": "Symbolism -the use of symbols  to represent ideas or qualities.",
+        "text": "Symbolism -the use of symbols  to represent ideas or qualities."
+      },
+      {
+        "self_ref": "#/texts/66",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 402.30002,
+              "t": 269.5087896875,
+              "r": 568.9406469200001,
+              "b": 224.16092281998533,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              145
+            ]
+          }
+        ],
+        "orig": "Sol.131.(a)  Mosaicism -  the condition in which  some  cells  in  an  organism  have different chromosome numbers or genetic makeup from others.",
+        "text": "Sol.131.(a)  Mosaicism -  the condition in which  some  cells  in  an  organism  have different chromosome numbers or genetic makeup from others."
+      },
+      {
+        "self_ref": "#/texts/67",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 402.30002,
+              "t": 219.82128968749998,
+              "r": 568.85275442,
+              "b": 199.31620281998528,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              55
+            ]
+          }
+        ],
+        "orig": "Polyploidy -  multiple  complete  sets  of chromosomes.",
+        "text": "Polyploidy -  multiple  complete  sets  of chromosomes."
+      },
+      {
+        "self_ref": "#/texts/68",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 402.30002,
+              "t": 194.97655968749996,
+              "r": 571.26681884,
+              "b": 174.47245281998528,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              64
+            ]
+          }
+        ],
+        "orig": "Disjunction -the separation of chromosomes during cell division.",
+        "text": "Disjunction -the separation of chromosomes during cell division."
+      },
+      {
+        "self_ref": "#/texts/69",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 402.30002,
+              "t": 170.13280968749996,
+              "r": 569.39621192,
+              "b": 137.20585281998535,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              83
+            ]
+          }
+        ],
+        "orig": "Translocation -the transfer of a chromosome segment to a non-homologous chromosome.",
+        "text": "Translocation -the transfer of a chromosome segment to a non-homologous chromosome."
+      },
+      {
+        "self_ref": "#/texts/70",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 402.30002,
+              "t": 123.20507968749996,
+              "r": 569.26144442,
+              "b": 90.2790928199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              81
+            ]
+          }
+        ],
+        "orig": "Sol.132.(a)  Apologue -a moral  fable, especially one with animals as characters.",
+        "text": "Sol.132.(a)  Apologue -a moral  fable, especially one with animals as characters."
+      },
+      {
+        "self_ref": "#/texts/71",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 402.30002,
+              "t": 85.93847968750003,
+              "r": 568.78683692,
+              "b": 65.43436281998538,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              64
+            ]
+          }
+        ],
+        "orig": "Chronicle -  a  factual  written  account  of historical events.",
+        "text": "Chronicle -  a  factual  written  account  of historical events."
+      },
+      {
+        "self_ref": "#/texts/72",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 402.30002,
+              "t": 61.094729687500035,
+              "r": 569.27462942,
+              "b": 40.59061281998538,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              52
+            ]
+          }
+        ],
+        "orig": "Vignette -  a  brief  descriptive  scene  or sketch.",
+        "text": "Vignette -  a  brief  descriptive  scene  or sketch."
+      },
+      {
+        "self_ref": "#/texts/73",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 402.30002,
+              "t": 36.250979687500035,
+              "r": 567.3234594200001,
+              "b": 28.16874281998537,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              48
+            ]
+          }
+        ],
+        "orig": "Anecdote -     a     short,       amusing     or",
+        "text": "Anecdote -     a     short,       amusing     or"
+      },
+      {
+        "self_ref": "#/texts/74",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "furniture",
+        "label": "page_footer",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 99.3266505,
+              "t": 21.98847795947256,
+              "r": 495.95088382500006,
+              "b": 13.76018189577485,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              109
+            ]
+          }
+        ],
+        "orig": "www.ssccglpinnacle.com                                                 Download Pinnacle Exam Preparation App",
+        "text": "www.ssccglpinnacle.com                                                 Download Pinnacle Exam Preparation App"
+      }
+    ],
+    "pictures": [],
+    "tables": [],
+    "key_value_items": [],
+    "form_items": [],
+    "pages": {
+      "1": {
+        "size": {
+          "width": 596.0,
+          "height": 842.0
+        },
+        "page_no": 1
+      }
+    }
+  }
+}

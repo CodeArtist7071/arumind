@@ -1,0 +1,6028 @@
+{
+  "document_id": "english",
+  "source": "english.pdf",
+  "pdf_page": 392,
+  "page_width": 596.0,
+  "page_height": 842.0,
+  "extracted_at": "2026-09-09T10:50:26.658480+00:00",
+  "extraction_version": 4,
+  "ocr_enabled": true,
+  "extraction_detection": {
+    "requested_profile": "auto",
+    "effective_profile": "hybrid",
+    "embedded_text_characters": 5032,
+    "auto_text_threshold": 80
+  },
+  "docling_result": {
+    "status": "success",
+    "errors": []
+  },
+  "content_summary": {
+    "text_items": 70,
+    "text_characters": 6157,
+    "table_items": 0,
+    "picture_items": 0,
+    "group_items": 5,
+    "warnings": []
+  },
+  "reading_order": {
+    "source": "docling_iterate_items",
+    "items": [
+      {
+        "reading_order_index": 0,
+        "element_ref": "#/texts/2",
+        "label": "list_item",
+        "level": 2,
+        "text_preview": "(b) Frequent tech upgrades"
+      },
+      {
+        "reading_order_index": 1,
+        "element_ref": "#/texts/3",
+        "label": "list_item",
+        "level": 2,
+        "text_preview": "(c) Sufficient funding and long-term planning"
+      },
+      {
+        "reading_order_index": 2,
+        "element_ref": "#/texts/4",
+        "label": "list_item",
+        "level": 2,
+        "text_preview": "(d) Higher taxes on private vehicles"
+      },
+      {
+        "reading_order_index": 3,
+        "element_ref": "#/texts/5",
+        "label": "list_item",
+        "level": 2,
+        "text_preview": "Q.231. How does public transport contribute to equity?"
+      },
+      {
+        "reading_order_index": 4,
+        "element_ref": "#/texts/6",
+        "label": "list_item",
+        "level": 2,
+        "text_preview": "(a) By keeping fares high"
+      },
+      {
+        "reading_order_index": 5,
+        "element_ref": "#/texts/7",
+        "label": "list_item",
+        "level": 2,
+        "text_preview": "(b) By focusing only on commercial zones"
+      },
+      {
+        "reading_order_index": 6,
+        "element_ref": "#/texts/8",
+        "label": "list_item",
+        "level": 2,
+        "text_preview": "(c) By connecting low-income communities with wealthy areas"
+      },
+      {
+        "reading_order_index": 7,
+        "element_ref": "#/texts/9",
+        "label": "list_item",
+        "level": 2,
+        "text_preview": "(d) By offering free rides on weekends"
+      },
+      {
+        "reading_order_index": 8,
+        "element_ref": "#/texts/10",
+        "label": "list_item",
+        "level": 2,
+        "text_preview": "Q.232. What is the tone of the passage?"
+      },
+      {
+        "reading_order_index": 9,
+        "element_ref": "#/texts/11",
+        "label": "list_item",
+        "level": 2,
+        "text_preview": "(a) Skeptical                        (b) Analytical and supportive"
+      },
+      {
+        "reading_order_index": 10,
+        "element_ref": "#/texts/12",
+        "label": "list_item",
+        "level": 2,
+        "text_preview": "(c) Neutral                            (d) Aggressive"
+      },
+      {
+        "reading_order_index": 11,
+        "element_ref": "#/texts/13",
+        "label": "section_header",
+        "level": 1,
+        "text_preview": "SET - 48 [Q .233. to Q .237.]"
+      },
+      {
+        "reading_order_index": 12,
+        "element_ref": "#/texts/14",
+        "label": "text",
+        "level": 1,
+        "text_preview": "Universal immunization campaigns have eradicated or controlled  fatal  conditions  such  as  smallpox  and  polio.  Mass immunization  relies  on  cold-chain  a"
+      },
+      {
+        "reading_order_index": 13,
+        "element_ref": "#/texts/15",
+        "label": "text",
+        "level": 1,
+        "text_preview": "SSC Stenographer 06/08/2025 (Shift 3)"
+      },
+      {
+        "reading_order_index": 14,
+        "element_ref": "#/texts/16",
+        "label": "text",
+        "level": 1,
+        "text_preview": "Q.233. What does \"cold-chain logistics\" refer to in the passage ?"
+      },
+      {
+        "reading_order_index": 15,
+        "element_ref": "#/texts/17",
+        "label": "list_item",
+        "level": 2,
+        "text_preview": "(a) Transporting vaccines under controlled temperatures"
+      },
+      {
+        "reading_order_index": 16,
+        "element_ref": "#/texts/18",
+        "label": "list_item",
+        "level": 2,
+        "text_preview": "(b) Selling vaccines in cold climates"
+      },
+      {
+        "reading_order_index": 17,
+        "element_ref": "#/texts/19",
+        "label": "list_item",
+        "level": 2,
+        "text_preview": "(c) Developing new vaccine formulas"
+      },
+      {
+        "reading_order_index": 18,
+        "element_ref": "#/texts/20",
+        "label": "list_item",
+        "level": 2,
+        "text_preview": "(d) Distributing medicines door-to-door"
+      },
+      {
+        "reading_order_index": 19,
+        "element_ref": "#/texts/21",
+        "label": "list_item",
+        "level": 2,
+        "text_preview": "Q.234. According to the passage, which method helps maintain vaccine potency in remote areas ?"
+      },
+      {
+        "reading_order_index": 20,
+        "element_ref": "#/texts/22",
+        "label": "list_item",
+        "level": 2,
+        "text_preview": "(a) Air-conditioned cars"
+      },
+      {
+        "reading_order_index": 21,
+        "element_ref": "#/texts/23",
+        "label": "list_item",
+        "level": 2,
+        "text_preview": "(b) Solar-powered refrigerators"
+      },
+      {
+        "reading_order_index": 22,
+        "element_ref": "#/texts/24",
+        "label": "list_item",
+        "level": 2,
+        "text_preview": "(c) Vaccine-heated containers"
+      },
+      {
+        "reading_order_index": 23,
+        "element_ref": "#/texts/25",
+        "label": "list_item",
+        "level": 2,
+        "text_preview": "(d) Underground storage"
+      },
+      {
+        "reading_order_index": 24,
+        "element_ref": "#/texts/26",
+        "label": "section_header",
+        "level": 1,
+        "text_preview": "Q.235. Vaccine hesitancy is primarily caused by :"
+      },
+      {
+        "reading_order_index": 25,
+        "element_ref": "#/texts/27",
+        "label": "list_item",
+        "level": 2,
+        "text_preview": "(a) Lack of refrigerators"
+      },
+      {
+        "reading_order_index": 26,
+        "element_ref": "#/texts/28",
+        "label": "list_item",
+        "level": 2,
+        "text_preview": "(c) Cold-chain failures"
+      },
+      {
+        "reading_order_index": 27,
+        "element_ref": "#/texts/29",
+        "label": "list_item",
+        "level": 2,
+        "text_preview": "(b) Misinformation"
+      },
+      {
+        "reading_order_index": 28,
+        "element_ref": "#/texts/30",
+        "label": "list_item",
+        "level": 2,
+        "text_preview": "(d) Overproduction"
+      },
+      {
+        "reading_order_index": 29,
+        "element_ref": "#/texts/31",
+        "label": "text",
+        "level": 1,
+        "text_preview": "Q.236. Which strategy is NOT mentioned as part of public-education initiatives ?"
+      },
+      {
+        "reading_order_index": 30,
+        "element_ref": "#/texts/32",
+        "label": "list_item",
+        "level": 2,
+        "text_preview": "(a) Radio broadcasts"
+      },
+      {
+        "reading_order_index": 31,
+        "element_ref": "#/texts/33",
+        "label": "list_item",
+        "level": 2,
+        "text_preview": "(c) School programs"
+      },
+      {
+        "reading_order_index": 32,
+        "element_ref": "#/texts/34",
+        "label": "list_item",
+        "level": 2,
+        "text_preview": "(b) Social-media influencers"
+      },
+      {
+        "reading_order_index": 33,
+        "element_ref": "#/texts/35",
+        "label": "list_item",
+        "level": 2,
+        "text_preview": "(d) Financial incentives"
+      },
+      {
+        "reading_order_index": 34,
+        "element_ref": "#/texts/36",
+        "label": "list_item",
+        "level": 2,
+        "text_preview": "Q.237. The passage suggests that to protect public health, it is essential to :"
+      },
+      {
+        "reading_order_index": 35,
+        "element_ref": "#/texts/37",
+        "label": "list_item",
+        "level": 2,
+        "text_preview": "(a) Eliminate door-to-door visits"
+      },
+      {
+        "reading_order_index": 36,
+        "element_ref": "#/texts/38",
+        "label": "list_item",
+        "level": 2,
+        "text_preview": "(b) Halt solar-powered technology"
+      },
+      {
+        "reading_order_index": 37,
+        "element_ref": "#/texts/39",
+        "label": "list_item",
+        "level": 2,
+        "text_preview": "(c) Ensure equitable access and clear communication"
+      },
+      {
+        "reading_order_index": 38,
+        "element_ref": "#/texts/40",
+        "label": "list_item",
+        "level": 2,
+        "text_preview": "(d) Focus solely on urban areas"
+      },
+      {
+        "reading_order_index": 39,
+        "element_ref": "#/texts/41",
+        "label": "section_header",
+        "level": 1,
+        "text_preview": "SET - 49 [Q .238. to Q .242.]"
+      },
+      {
+        "reading_order_index": 40,
+        "element_ref": "#/texts/42",
+        "label": "text",
+        "level": 1,
+        "text_preview": "Microfinance institutions (MFIs) have become crucial agents for advancing  financial  inclusion  in  rural  areas. Through extending small  loans  and  savings "
+      },
+      {
+        "reading_order_index": 41,
+        "element_ref": "#/texts/43",
+        "label": "text",
+        "level": 1,
+        "text_preview": "SSC Stenographer 06/08/2025 (Shift 3)"
+      },
+      {
+        "reading_order_index": 42,
+        "element_ref": "#/texts/44",
+        "label": "text",
+        "level": 1,
+        "text_preview": "Q.238. The primary function of microfinance institutions, according to the passage, is to:"
+      },
+      {
+        "reading_order_index": 43,
+        "element_ref": "#/texts/45",
+        "label": "list_item",
+        "level": 2,
+        "text_preview": "(a) Charge high interest rates to rural borrowers"
+      },
+      {
+        "reading_order_index": 44,
+        "element_ref": "#/texts/46",
+        "label": "list_item",
+        "level": 2,
+        "text_preview": "(b) Provide large corporate loans"
+      },
+      {
+        "reading_order_index": 45,
+        "element_ref": "#/texts/47",
+        "label": "list_item",
+        "level": 2,
+        "text_preview": "(c) Offer financial services to those excluded from traditional banking systems"
+      },
+      {
+        "reading_order_index": 46,
+        "element_ref": "#/texts/48",
+        "label": "list_item",
+        "level": 2,
+        "text_preview": "(d) Regulate national monetary policy"
+      },
+      {
+        "reading_order_index": 47,
+        "element_ref": "#/texts/49",
+        "label": "list_item",
+        "level": 2,
+        "text_preview": "Q.239. In  the  context  of the above passage, \"microenterprises\" most nearly means:"
+      },
+      {
+        "reading_order_index": 48,
+        "element_ref": "#/texts/50",
+        "label": "list_item",
+        "level": 2,
+        "text_preview": "(a) Multinational corporations   (b) Small-scale businesses"
+      },
+      {
+        "reading_order_index": 49,
+        "element_ref": "#/texts/51",
+        "label": "list_item",
+        "level": 2,
+        "text_preview": "(c) Government agencies           (d) Family-owned farms"
+      },
+      {
+        "reading_order_index": 50,
+        "element_ref": "#/texts/52",
+        "label": "list_item",
+        "level": 2,
+        "text_preview": "Q.240. Which  benefit  of  MFIs  is  mentioned  besides  lending money ?"
+      },
+      {
+        "reading_order_index": 51,
+        "element_ref": "#/texts/53",
+        "label": "list_item",
+        "level": 2,
+        "text_preview": "(a) Granting land titles    (b) Financial literacy training"
+      },
+      {
+        "reading_order_index": 52,
+        "element_ref": "#/texts/54",
+        "label": "list_item",
+        "level": 2,
+        "text_preview": "(c) Tax exemptions         (d) Import-export facilitation"
+      },
+      {
+        "reading_order_index": 53,
+        "element_ref": "#/texts/55",
+        "label": "list_item",
+        "level": 2,
+        "text_preview": "Q.241. What is a key criticism of microfinance highlighted in the passage?"
+      },
+      {
+        "reading_order_index": 54,
+        "element_ref": "#/texts/56",
+        "label": "list_item",
+        "level": 2,
+        "text_preview": "(a) It fails to reach women borrowers."
+      },
+      {
+        "reading_order_index": 55,
+        "element_ref": "#/texts/57",
+        "label": "list_item",
+        "level": 2,
+        "text_preview": "(b) It offers only savings accounts."
+      },
+      {
+        "reading_order_index": 56,
+        "element_ref": "#/texts/58",
+        "label": "list_item",
+        "level": 2,
+        "text_preview": "(c) High interest and repayment pressure can cause debt."
+      },
+      {
+        "reading_order_index": 57,
+        "element_ref": "#/texts/59",
+        "label": "list_item",
+        "level": 2,
+        "text_preview": "(d) It mandates market linkages."
+      },
+      {
+        "reading_order_index": 58,
+        "element_ref": "#/texts/60",
+        "label": "list_item",
+        "level": 2,
+        "text_preview": "Q.242. According to the author, sustainable impact occurs when microfinance is combined with:"
+      },
+      {
+        "reading_order_index": 59,
+        "element_ref": "#/texts/61",
+        "label": "list_item",
+        "level": 2,
+        "text_preview": "(a) High interest rates"
+      },
+      {
+        "reading_order_index": 60,
+        "element_ref": "#/texts/62",
+        "label": "list_item",
+        "level": 2,
+        "text_preview": "(b) Market linkages"
+      },
+      {
+        "reading_order_index": 61,
+        "element_ref": "#/texts/63",
+        "label": "list_item",
+        "level": 2,
+        "text_preview": "(c) Shorter loan tenures"
+      },
+      {
+        "reading_order_index": 62,
+        "element_ref": "#/texts/64",
+        "label": "list_item",
+        "level": 2,
+        "text_preview": "(d) Government bailouts"
+      },
+      {
+        "reading_order_index": 63,
+        "element_ref": "#/texts/65",
+        "label": "section_header",
+        "level": 1,
+        "text_preview": "SET - 50 [Q .243. to Q .247.]"
+      },
+      {
+        "reading_order_index": 64,
+        "element_ref": "#/texts/66",
+        "label": "text",
+        "level": 1,
+        "text_preview": "As artificial intelligence (AI) technologies continue to proliferate across every sector of human activity, the ethical implications of their deployment have be"
+      },
+      {
+        "reading_order_index": 65,
+        "element_ref": "#/texts/67",
+        "label": "text",
+        "level": 1,
+        "text_preview": "At  the  heart  of  the  debate lies a fundamental tension between technological  progress  and  moral  responsibility.  Machines,  no matter  how  sophisticate"
+      },
+      {
+        "reading_order_index": 66,
+        "element_ref": "#/texts/68",
+        "label": "text",
+        "level": 1,
+        "text_preview": "Moreover,  the  opacity  of  many AI systems, often referred to as the  \"black  box\"  problem,  poses  a  significant  ethical  challenge. When  even  developer"
+      }
+    ]
+  },
+  "layout_analysis": {
+    "method": "docling_bbox_left_edge_clustering_v1",
+    "column_count": 3,
+    "confidence": 0.958,
+    "page_width": 596.0,
+    "page_height": 842.0,
+    "columns": [
+      {
+        "column_index": 1,
+        "left": 0.0,
+        "right": 82.8,
+        "detected_start": 28.8,
+        "supporting_elements": 37
+      },
+      {
+        "column_index": 2,
+        "left": 82.8,
+        "right": 222.675,
+        "detected_start": 136.8,
+        "supporting_elements": 4
+      },
+      {
+        "column_index": 3,
+        "left": 222.675,
+        "right": 596.0,
+        "detected_start": 308.55,
+        "supporting_elements": 26
+      }
+    ],
+    "elements": [
+      {
+        "element_ref": "#/texts/0",
+        "element_type": "text",
+        "label": "page_header",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": null,
+        "bbox": {
+          "l": 28.800003,
+          "t": 830.7925780594726,
+          "r": 95.7084616875,
+          "b": 822.5642819957749,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/1",
+        "element_type": "text",
+        "label": "page_header",
+        "column_index": 3,
+        "column_indices": [
+          3
+        ],
+        "spans_columns": false,
+        "reading_order_index": null,
+        "bbox": {
+          "l": 291.757038,
+          "t": 830.7925780594726,
+          "r": 567.4754754375,
+          "b": 822.5642819957749,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/2",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 0,
+        "bbox": {
+          "l": 28.800003,
+          "t": 814.6982416875001,
+          "r": 139.07637042,
+          "b": 806.6160048199854,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/3",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 1,
+        "bbox": {
+          "l": 28.800003,
+          "t": 802.2763666875001,
+          "r": 208.76484492,
+          "b": 794.1941298199854,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/4",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 2,
+        "bbox": {
+          "l": 28.800003,
+          "t": 789.8544916875001,
+          "r": 171.39814992,
+          "b": 781.7722548199854,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/5",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 3,
+        "bbox": {
+          "l": 28.800003,
+          "t": 767.7705076875,
+          "r": 247.38837867,
+          "b": 759.6882708199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/6",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 4,
+        "bbox": {
+          "l": 28.800003,
+          "t": 755.3486326875,
+          "r": 129.78633116999998,
+          "b": 747.2663958199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/7",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 5,
+        "bbox": {
+          "l": 28.800003,
+          "t": 742.9267576875,
+          "r": 198.27070992,
+          "b": 734.8445208199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/8",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2,
+          3
+        ],
+        "spans_columns": true,
+        "reading_order_index": 6,
+        "bbox": {
+          "l": 28.800003,
+          "t": 730.5048826875,
+          "r": 280.21992492,
+          "b": 722.4226458199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/9",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 7,
+        "bbox": {
+          "l": 28.800003,
+          "t": 718.0830076875,
+          "r": 182.62177992,
+          "b": 710.0007708199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/10",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 8,
+        "bbox": {
+          "l": 28.800003,
+          "t": 695.9990236875,
+          "r": 190.75165992,
+          "b": 687.9167868199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/11",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 9,
+        "bbox": {
+          "l": 28.800003,
+          "t": 683.5771486875,
+          "r": 248.86494491999997,
+          "b": 675.4949118199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/12",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 10,
+        "bbox": {
+          "l": 28.800003,
+          "t": 671.1552696875,
+          "r": 193.54658742,
+          "b": 663.0730328199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/13",
+        "element_type": "text",
+        "label": "section_header",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 11,
+        "bbox": {
+          "l": 28.800003,
+          "t": 649.0712896875,
+          "r": 143.65986669,
+          "b": 640.9890528199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/14",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2,
+          3
+        ],
+        "spans_columns": true,
+        "reading_order_index": 12,
+        "bbox": {
+          "l": 28.800003,
+          "t": 636.6494096875,
+          "r": 288.96943992,
+          "b": 479.5027228199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/15",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 13,
+        "bbox": {
+          "l": 28.800003,
+          "t": 475.1630896875,
+          "r": 188.05342242,
+          "b": 467.08085281998535,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/16",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2,
+          3
+        ],
+        "spans_columns": true,
+        "reading_order_index": 14,
+        "bbox": {
+          "l": 28.800003,
+          "t": 462.7412096875,
+          "r": 285.82294992,
+          "b": 454.6589728199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/17",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 15,
+        "bbox": {
+          "l": 28.800003,
+          "t": 450.3193396875,
+          "r": 255.93134742,
+          "b": 442.23710281998535,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/18",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 16,
+        "bbox": {
+          "l": 28.800003,
+          "t": 437.8974596875,
+          "r": 173.85908742,
+          "b": 429.8152228199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/19",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 17,
+        "bbox": {
+          "l": 28.800003,
+          "t": 425.4755896875,
+          "r": 178.11298992,
+          "b": 417.39335281998535,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/20",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 18,
+        "bbox": {
+          "l": 28.800003,
+          "t": 413.0537096875,
+          "r": 186.07588242,
+          "b": 404.9714728199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/21",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2,
+          3
+        ],
+        "spans_columns": true,
+        "reading_order_index": 19,
+        "bbox": {
+          "l": 28.800003,
+          "t": 392.3486296875,
+          "r": 288.29707242,
+          "b": 371.84452281998534,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/22",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 20,
+        "bbox": {
+          "l": 28.800003,
+          "t": 367.5048796875,
+          "r": 124.66670217000001,
+          "b": 359.42264281998536,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/23",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 21,
+        "bbox": {
+          "l": 28.800003,
+          "t": 355.0830096875,
+          "r": 153.78486642000001,
+          "b": 347.00077281998534,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/24",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 22,
+        "bbox": {
+          "l": 28.800003,
+          "t": 342.6611296875,
+          "r": 150.38349942,
+          "b": 334.57889281998536,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/25",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 23,
+        "bbox": {
+          "l": 28.800003,
+          "t": 330.2392596875,
+          "r": 128.79316692,
+          "b": 322.1570228199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/26",
+        "element_type": "text",
+        "label": "section_header",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 24,
+        "bbox": {
+          "l": 28.800003,
+          "t": 309.5341796875,
+          "r": 225.79804991999998,
+          "b": 301.45194281998533,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/27",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 25,
+        "bbox": {
+          "l": 28.800003,
+          "t": 297.1122996875,
+          "r": 125.50166292,
+          "b": 289.03006281998535,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/28",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 26,
+        "bbox": {
+          "l": 28.800003,
+          "t": 284.6904296875,
+          "r": 118.63301067,
+          "b": 276.60819281998533,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/29",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 2,
+        "column_indices": [
+          2
+        ],
+        "spans_columns": false,
+        "reading_order_index": 27,
+        "bbox": {
+          "l": 136.800003,
+          "t": 297.1122996875,
+          "r": 213.71748492,
+          "b": 289.03006281998535,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/30",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 2,
+        "column_indices": [
+          2
+        ],
+        "spans_columns": false,
+        "reading_order_index": 28,
+        "bbox": {
+          "l": 136.800003,
+          "t": 284.6904296875,
+          "r": 214.00312992,
+          "b": 276.60819281998533,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/31",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2,
+          3
+        ],
+        "spans_columns": true,
+        "reading_order_index": 29,
+        "bbox": {
+          "l": 28.800003,
+          "t": 262.60839968749997,
+          "r": 288.37617492,
+          "b": 242.10428281998531,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/32",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 30,
+        "bbox": {
+          "l": 28.800003,
+          "t": 237.76464968749997,
+          "r": 114.40547217000001,
+          "b": 229.6824128199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/33",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 31,
+        "bbox": {
+          "l": 28.800003,
+          "t": 225.34276968749998,
+          "r": 112.39717092000001,
+          "b": 217.26053281998531,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/34",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 0,
+        "column_indices": [
+          2,
+          3
+        ],
+        "spans_columns": true,
+        "reading_order_index": 32,
+        "bbox": {
+          "l": 136.800003,
+          "t": 237.76464968749997,
+          "r": 250.68867491999998,
+          "b": 229.6824128199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/35",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 2,
+        "column_indices": [
+          2
+        ],
+        "spans_columns": false,
+        "reading_order_index": 33,
+        "bbox": {
+          "l": 136.800003,
+          "t": 225.34276968749998,
+          "r": 231.23408741999998,
+          "b": 217.26053281998531,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/36",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2,
+          3
+        ],
+        "spans_columns": true,
+        "reading_order_index": 34,
+        "bbox": {
+          "l": 28.800003,
+          "t": 206.0185496875,
+          "r": 288.41425992,
+          "b": 185.51444281998533,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/37",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 35,
+        "bbox": {
+          "l": 28.800003,
+          "t": 181.1747996875,
+          "r": 156.71162442,
+          "b": 173.09256281998535,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/38",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 36,
+        "bbox": {
+          "l": 28.800003,
+          "t": 168.7529296875,
+          "r": 166.50263741999999,
+          "b": 160.67069281998533,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/39",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 37,
+        "bbox": {
+          "l": 28.800003,
+          "t": 156.3310496875,
+          "r": 245.20429991999998,
+          "b": 148.24881281998535,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/40",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 38,
+        "bbox": {
+          "l": 28.800003,
+          "t": 143.9091796875,
+          "r": 156.21064767000001,
+          "b": 135.82694281998533,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/41",
+        "element_type": "text",
+        "label": "section_header",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 39,
+        "bbox": {
+          "l": 28.800003,
+          "t": 124.58495968750003,
+          "r": 141.42305025000005,
+          "b": 116.50272281998537,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/42",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2,
+          3
+        ],
+        "spans_columns": true,
+        "reading_order_index": 40,
+        "bbox": {
+          "l": 28.800003,
+          "t": 112.16308968750002,
+          "r": 288.93427992,
+          "b": 29.549602819985353,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/43",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 3,
+        "column_indices": [
+          3
+        ],
+        "spans_columns": false,
+        "reading_order_index": 41,
+        "bbox": {
+          "l": 308.54999,
+          "t": 702.8974606875,
+          "r": 467.80340942,
+          "b": 694.8152238199854,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/44",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 3,
+        "column_indices": [
+          3
+        ],
+        "spans_columns": false,
+        "reading_order_index": 42,
+        "bbox": {
+          "l": 308.54999,
+          "t": 683.5771486875,
+          "r": 536.61737192,
+          "b": 663.0730328199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/45",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 3,
+        "column_indices": [
+          3
+        ],
+        "spans_columns": false,
+        "reading_order_index": 43,
+        "bbox": {
+          "l": 308.54999,
+          "t": 658.7333996875,
+          "r": 500.03289692,
+          "b": 650.6511628199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/46",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 3,
+        "column_indices": [
+          3
+        ],
+        "spans_columns": false,
+        "reading_order_index": 44,
+        "bbox": {
+          "l": 308.54999,
+          "t": 646.3076196874999,
+          "r": 441.35711942,
+          "b": 638.2253828199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/47",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 3,
+        "column_indices": [
+          3
+        ],
+        "spans_columns": false,
+        "reading_order_index": 45,
+        "bbox": {
+          "l": 308.54999,
+          "t": 633.8857396875001,
+          "r": 554.7843669199999,
+          "b": 613.3816328199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/48",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 3,
+        "column_indices": [
+          3
+        ],
+        "spans_columns": false,
+        "reading_order_index": 46,
+        "bbox": {
+          "l": 308.54999,
+          "t": 609.0419896875001,
+          "r": 459.84930692,
+          "b": 600.9597528199854,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/49",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 3,
+        "column_indices": [
+          3
+        ],
+        "spans_columns": false,
+        "reading_order_index": 47,
+        "bbox": {
+          "l": 308.54999,
+          "t": 588.3427696875,
+          "r": 568.7765544199999,
+          "b": 567.8386628199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/50",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 3,
+        "column_indices": [
+          3
+        ],
+        "spans_columns": false,
+        "reading_order_index": 48,
+        "bbox": {
+          "l": 308.54999,
+          "t": 563.4951196874999,
+          "r": 543.3497919199999,
+          "b": 555.4128828199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/51",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 3,
+        "column_indices": [
+          3
+        ],
+        "spans_columns": false,
+        "reading_order_index": 49,
+        "bbox": {
+          "l": 308.54999,
+          "t": 551.0732396875001,
+          "r": 530.4254769199999,
+          "b": 542.9910028199854,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/52",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 3,
+        "column_indices": [
+          3
+        ],
+        "spans_columns": false,
+        "reading_order_index": 50,
+        "bbox": {
+          "l": 308.54999,
+          "t": 530.3720696875,
+          "r": 568.46893442,
+          "b": 509.86796281998534,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/53",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 3,
+        "column_indices": [
+          3
+        ],
+        "spans_columns": false,
+        "reading_order_index": 51,
+        "bbox": {
+          "l": 308.54999,
+          "t": 505.5283196875,
+          "r": 521.22332942,
+          "b": 497.44608281998535,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/54",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 3,
+        "column_indices": [
+          3
+        ],
+        "spans_columns": false,
+        "reading_order_index": 52,
+        "bbox": {
+          "l": 308.54999,
+          "t": 493.1064496875,
+          "r": 520.24334942,
+          "b": 485.02421281998534,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/55",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 3,
+        "column_indices": [
+          3
+        ],
+        "spans_columns": false,
+        "reading_order_index": 53,
+        "bbox": {
+          "l": 308.54999,
+          "t": 473.7822296875,
+          "r": 565.12469942,
+          "b": 453.2781128199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/56",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 3,
+        "column_indices": [
+          3
+        ],
+        "spans_columns": false,
+        "reading_order_index": 54,
+        "bbox": {
+          "l": 308.54999,
+          "t": 448.9384796875,
+          "r": 460.48211942,
+          "b": 440.8562428199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/57",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 3,
+        "column_indices": [
+          3
+        ],
+        "spans_columns": false,
+        "reading_order_index": 55,
+        "bbox": {
+          "l": 308.54999,
+          "t": 436.5165996875,
+          "r": 448.94207941999997,
+          "b": 428.4343628199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/58",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 3,
+        "column_indices": [
+          3
+        ],
+        "spans_columns": false,
+        "reading_order_index": 56,
+        "bbox": {
+          "l": 308.54999,
+          "t": 424.0947296875,
+          "r": 539.3551644199999,
+          "b": 416.0124928199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/59",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 3,
+        "column_indices": [
+          3
+        ],
+        "spans_columns": false,
+        "reading_order_index": 57,
+        "bbox": {
+          "l": 308.54999,
+          "t": 411.6728496875,
+          "r": 440.16180692,
+          "b": 403.5906128199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/60",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 3,
+        "column_indices": [
+          3
+        ],
+        "spans_columns": false,
+        "reading_order_index": 58,
+        "bbox": {
+          "l": 308.54999,
+          "t": 392.3486296875,
+          "r": 568.09247192,
+          "b": 371.84452281998534,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/61",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 3,
+        "column_indices": [
+          3
+        ],
+        "spans_columns": false,
+        "reading_order_index": 59,
+        "bbox": {
+          "l": 308.54999,
+          "t": 367.5048796875,
+          "r": 397.54364267,
+          "b": 359.42264281998536,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/62",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 3,
+        "column_indices": [
+          3
+        ],
+        "spans_columns": false,
+        "reading_order_index": 60,
+        "bbox": {
+          "l": 416.54999,
+          "t": 367.5048796875,
+          "r": 495.78338941999993,
+          "b": 359.42264281998536,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/63",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 3,
+        "column_indices": [
+          3
+        ],
+        "spans_columns": false,
+        "reading_order_index": 61,
+        "bbox": {
+          "l": 308.54999,
+          "t": 355.0830096875,
+          "r": 405.09344717,
+          "b": 347.00077281998534,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/64",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 3,
+        "column_indices": [
+          3
+        ],
+        "spans_columns": false,
+        "reading_order_index": 62,
+        "bbox": {
+          "l": 416.54999,
+          "t": 355.0830096875,
+          "r": 513.18573308,
+          "b": 347.00077281998534,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/65",
+        "element_type": "text",
+        "label": "section_header",
+        "column_index": 3,
+        "column_indices": [
+          3
+        ],
+        "spans_columns": false,
+        "reading_order_index": 63,
+        "bbox": {
+          "l": 308.54999,
+          "t": 334.3779296875,
+          "r": 421.17303725,
+          "b": 326.29569281998533,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/66",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 3,
+        "column_indices": [
+          3
+        ],
+        "spans_columns": false,
+        "reading_order_index": 64,
+        "bbox": {
+          "l": 308.54999,
+          "t": 321.9560496875,
+          "r": 568.78094942,
+          "b": 202.07694281998533,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/67",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 3,
+        "column_indices": [
+          3
+        ],
+        "spans_columns": false,
+        "reading_order_index": 65,
+        "bbox": {
+          "l": 308.54999,
+          "t": 197.7372996875,
+          "r": 568.5758694199999,
+          "b": 90.27811281998538,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/68",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 3,
+        "column_indices": [
+          3
+        ],
+        "spans_columns": false,
+        "reading_order_index": 66,
+        "bbox": {
+          "l": 308.54999,
+          "t": 85.93847968750003,
+          "r": 568.68719942,
+          "b": 28.16874281998537,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/69",
+        "element_type": "text",
+        "label": "page_footer",
+        "column_index": 0,
+        "column_indices": [
+          2,
+          3
+        ],
+        "spans_columns": true,
+        "reading_order_index": null,
+        "bbox": {
+          "l": 99.3266505,
+          "t": 21.989447959472614,
+          "r": 495.95088382500006,
+          "b": 13.761151895774901,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      }
+    ],
+    "warnings": []
+  },
+  "structure_chunks": {
+    "enabled": true,
+    "method": "docling_hybrid_chunker",
+    "scope": "page",
+    "items": [
+      {
+        "text": "- (b) Frequent tech upgrades\n- (c) Sufficient funding and long-term planning\n- (d) Higher taxes on private vehicles\n- Q.231. How does public transport contribute to equity?\n- (a) By keeping fares high\n- (b) By focusing only on commercial zones\n- (c) By connecting low-income communities with wealthy areas\n- (d) By offering free rides on weekends\n- Q.232. What is the tone of the passage?\n- (a) Skeptical                        (b) Analytical and supportive\n- (c) Neutral                            (d) Aggressive",
+        "meta": {
+          "schema_name": "docling_core.transforms.chunker.DocMeta",
+          "version": "1.0.0",
+          "doc_items": [
+            {
+              "self_ref": "#/texts/2",
+              "parent": {
+                "cref": "#/groups/0"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 814.6982416875001,
+                    "r": 139.07637042,
+                    "b": 806.6160048199854,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    26
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/3",
+              "parent": {
+                "cref": "#/groups/0"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 802.2763666875001,
+                    "r": 208.76484492,
+                    "b": 794.1941298199854,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    45
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/4",
+              "parent": {
+                "cref": "#/groups/0"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 789.8544916875001,
+                    "r": 171.39814992,
+                    "b": 781.7722548199854,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    36
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/5",
+              "parent": {
+                "cref": "#/groups/0"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 767.7705076875,
+                    "r": 247.38837867,
+                    "b": 759.6882708199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    54
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/6",
+              "parent": {
+                "cref": "#/groups/0"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 755.3486326875,
+                    "r": 129.78633116999998,
+                    "b": 747.2663958199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    25
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/7",
+              "parent": {
+                "cref": "#/groups/0"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 742.9267576875,
+                    "r": 198.27070992,
+                    "b": 734.8445208199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    40
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/8",
+              "parent": {
+                "cref": "#/groups/0"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 730.5048826875,
+                    "r": 280.21992492,
+                    "b": 722.4226458199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    59
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/9",
+              "parent": {
+                "cref": "#/groups/0"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 718.0830076875,
+                    "r": 182.62177992,
+                    "b": 710.0007708199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    38
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/10",
+              "parent": {
+                "cref": "#/groups/0"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 695.9990236875,
+                    "r": 190.75165992,
+                    "b": 687.9167868199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    39
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/11",
+              "parent": {
+                "cref": "#/groups/0"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 683.5771486875,
+                    "r": 248.86494491999997,
+                    "b": 675.4949118199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    66
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/12",
+              "parent": {
+                "cref": "#/groups/0"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 671.1552696875,
+                    "r": 193.54658742,
+                    "b": 663.0730328199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    53
+                  ]
+                }
+              ]
+            }
+          ],
+          "headings": null,
+          "captions": null,
+          "origin": {
+            "mimetype": "application/pdf",
+            "binary_hash": 14120233847363579816,
+            "filename": "english_page_0392.pdf",
+            "uri": null
+          }
+        },
+        "chunk_index": 0,
+        "contextualized_text": "- (b) Frequent tech upgrades\n- (c) Sufficient funding and long-term planning\n- (d) Higher taxes on private vehicles\n- Q.231. How does public transport contribute to equity?\n- (a) By keeping fares high\n- (b) By focusing only on commercial zones\n- (c) By connecting low-income communities with wealthy areas\n- (d) By offering free rides on weekends\n- Q.232. What is the tone of the passage?\n- (a) Skeptical                        (b) Analytical and supportive\n- (c) Neutral                            (d) Aggressive"
+      },
+      {
+        "text": "Universal immunization campaigns have eradicated or controlled  fatal  conditions  such  as  smallpox  and  polio.  Mass immunization  relies  on  cold-chain  availability: vaccines have to be  stored  at  precise temperatures from manufacturing through inoculation. Solar-powered refrigerators and insulated containers are lifelines for remote locations. Door-to-door interactions  by  community  health  workers educate households regarding dosage routines and myths. Vaccine hesitancy fueled by  misinformation  is  also  a  major  obstacle  to  herd  immunity. Campaigns  of  public  education-  capitalizing  on  radio,  social media,  and  school  initiatives-seek  to  revive  public  faith  in science. Preserving accessibility and communication in an open nature is crucial in order to secure public health.\nSSC Stenographer 06/08/2025 (Shift 3)\nQ.233. What does \"cold-chain logistics\" refer to in the passage ?",
+        "meta": {
+          "schema_name": "docling_core.transforms.chunker.DocMeta",
+          "version": "1.0.0",
+          "doc_items": [
+            {
+              "self_ref": "#/texts/14",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 636.6494096875,
+                    "r": 288.96943992,
+                    "b": 479.5027228199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    816
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/15",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 475.1630896875,
+                    "r": 188.05342242,
+                    "b": 467.08085281998535,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    37
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/16",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 462.7412096875,
+                    "r": 285.82294992,
+                    "b": 454.6589728199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    65
+                  ]
+                }
+              ]
+            }
+          ],
+          "headings": [
+            "SET - 48 [Q .233. to Q .237.]"
+          ],
+          "captions": null,
+          "origin": {
+            "mimetype": "application/pdf",
+            "binary_hash": 14120233847363579816,
+            "filename": "english_page_0392.pdf",
+            "uri": null
+          }
+        },
+        "chunk_index": 1,
+        "contextualized_text": "SET - 48 [Q .233. to Q .237.]\nUniversal immunization campaigns have eradicated or controlled  fatal  conditions  such  as  smallpox  and  polio.  Mass immunization  relies  on  cold-chain  availability: vaccines have to be  stored  at  precise temperatures from manufacturing through inoculation. Solar-powered refrigerators and insulated containers are lifelines for remote locations. Door-to-door interactions  by  community  health  workers educate households regarding dosage routines and myths. Vaccine hesitancy fueled by  misinformation  is  also  a  major  obstacle  to  herd  immunity. Campaigns  of  public  education-  capitalizing  on  radio,  social media,  and  school  initiatives-seek  to  revive  public  faith  in science. Preserving accessibility and communication in an open nature is crucial in order to secure public health.\nSSC Stenographer 06/08/2025 (Shift 3)\nQ.233. What does \"cold-chain logistics\" refer to in the passage ?"
+      },
+      {
+        "text": "- (a) Transporting vaccines under controlled temperatures\n- (b) Selling vaccines in cold climates\n- (c) Developing new vaccine formulas\n- (d) Distributing medicines door-to-door\n- Q.234. According to the passage, which method helps maintain vaccine potency in remote areas ?\n- (a) Air-conditioned cars\n- (b) Solar-powered refrigerators\n- (c) Vaccine-heated containers\n- (d) Underground storage",
+        "meta": {
+          "schema_name": "docling_core.transforms.chunker.DocMeta",
+          "version": "1.0.0",
+          "doc_items": [
+            {
+              "self_ref": "#/texts/17",
+              "parent": {
+                "cref": "#/groups/1"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 450.3193396875,
+                    "r": 255.93134742,
+                    "b": 442.23710281998535,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    55
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/18",
+              "parent": {
+                "cref": "#/groups/1"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 437.8974596875,
+                    "r": 173.85908742,
+                    "b": 429.8152228199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    37
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/19",
+              "parent": {
+                "cref": "#/groups/1"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 425.4755896875,
+                    "r": 178.11298992,
+                    "b": 417.39335281998535,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    35
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/20",
+              "parent": {
+                "cref": "#/groups/1"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 413.0537096875,
+                    "r": 186.07588242,
+                    "b": 404.9714728199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    39
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/21",
+              "parent": {
+                "cref": "#/groups/1"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 392.3486296875,
+                    "r": 288.29707242,
+                    "b": 371.84452281998534,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    94
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/22",
+              "parent": {
+                "cref": "#/groups/1"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 367.5048796875,
+                    "r": 124.66670217000001,
+                    "b": 359.42264281998536,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    24
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/23",
+              "parent": {
+                "cref": "#/groups/1"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 355.0830096875,
+                    "r": 153.78486642000001,
+                    "b": 347.00077281998534,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    31
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/24",
+              "parent": {
+                "cref": "#/groups/1"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 342.6611296875,
+                    "r": 150.38349942,
+                    "b": 334.57889281998536,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    29
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/25",
+              "parent": {
+                "cref": "#/groups/1"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 330.2392596875,
+                    "r": 128.79316692,
+                    "b": 322.1570228199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    23
+                  ]
+                }
+              ]
+            }
+          ],
+          "headings": [
+            "SET - 48 [Q .233. to Q .237.]"
+          ],
+          "captions": null,
+          "origin": {
+            "mimetype": "application/pdf",
+            "binary_hash": 14120233847363579816,
+            "filename": "english_page_0392.pdf",
+            "uri": null
+          }
+        },
+        "chunk_index": 2,
+        "contextualized_text": "SET - 48 [Q .233. to Q .237.]\n- (a) Transporting vaccines under controlled temperatures\n- (b) Selling vaccines in cold climates\n- (c) Developing new vaccine formulas\n- (d) Distributing medicines door-to-door\n- Q.234. According to the passage, which method helps maintain vaccine potency in remote areas ?\n- (a) Air-conditioned cars\n- (b) Solar-powered refrigerators\n- (c) Vaccine-heated containers\n- (d) Underground storage"
+      },
+      {
+        "text": "- (a) Lack of refrigerators\n- (c) Cold-chain failures\n- (b) Misinformation\n- (d) Overproduction\nQ.236. Which strategy is NOT mentioned as part of public-education initiatives ?\n- (a) Radio broadcasts\n- (c) School programs\n- (b) Social-media influencers\n- (d) Financial incentives\n- Q.237. The passage suggests that to protect public health, it is essential to :\n- (a) Eliminate door-to-door visits\n- (b) Halt solar-powered technology\n- (c) Ensure equitable access and clear communication\n- (d) Focus solely on urban areas",
+        "meta": {
+          "schema_name": "docling_core.transforms.chunker.DocMeta",
+          "version": "1.0.0",
+          "doc_items": [
+            {
+              "self_ref": "#/texts/27",
+              "parent": {
+                "cref": "#/groups/2"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 297.1122996875,
+                    "r": 125.50166292,
+                    "b": 289.03006281998535,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    25
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/28",
+              "parent": {
+                "cref": "#/groups/2"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 284.6904296875,
+                    "r": 118.63301067,
+                    "b": 276.60819281998533,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    23
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/29",
+              "parent": {
+                "cref": "#/groups/2"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 136.800003,
+                    "t": 297.1122996875,
+                    "r": 213.71748492,
+                    "b": 289.03006281998535,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    18
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/30",
+              "parent": {
+                "cref": "#/groups/2"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 136.800003,
+                    "t": 284.6904296875,
+                    "r": 214.00312992,
+                    "b": 276.60819281998533,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    18
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/31",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 262.60839968749997,
+                    "r": 288.37617492,
+                    "b": 242.10428281998531,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    80
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/32",
+              "parent": {
+                "cref": "#/groups/3"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 237.76464968749997,
+                    "r": 114.40547217000001,
+                    "b": 229.6824128199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    20
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/33",
+              "parent": {
+                "cref": "#/groups/3"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 225.34276968749998,
+                    "r": 112.39717092000001,
+                    "b": 217.26053281998531,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    19
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/34",
+              "parent": {
+                "cref": "#/groups/3"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 136.800003,
+                    "t": 237.76464968749997,
+                    "r": 250.68867491999998,
+                    "b": 229.6824128199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    28
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/35",
+              "parent": {
+                "cref": "#/groups/3"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 136.800003,
+                    "t": 225.34276968749998,
+                    "r": 231.23408741999998,
+                    "b": 217.26053281998531,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    24
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/36",
+              "parent": {
+                "cref": "#/groups/3"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 206.0185496875,
+                    "r": 288.41425992,
+                    "b": 185.51444281998533,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    79
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/37",
+              "parent": {
+                "cref": "#/groups/3"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 181.1747996875,
+                    "r": 156.71162442,
+                    "b": 173.09256281998535,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    33
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/38",
+              "parent": {
+                "cref": "#/groups/3"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 168.7529296875,
+                    "r": 166.50263741999999,
+                    "b": 160.67069281998533,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    33
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/39",
+              "parent": {
+                "cref": "#/groups/3"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 156.3310496875,
+                    "r": 245.20429991999998,
+                    "b": 148.24881281998535,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    51
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/40",
+              "parent": {
+                "cref": "#/groups/3"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 143.9091796875,
+                    "r": 156.21064767000001,
+                    "b": 135.82694281998533,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    31
+                  ]
+                }
+              ]
+            }
+          ],
+          "headings": [
+            "Q.235. Vaccine hesitancy is primarily caused by :"
+          ],
+          "captions": null,
+          "origin": {
+            "mimetype": "application/pdf",
+            "binary_hash": 14120233847363579816,
+            "filename": "english_page_0392.pdf",
+            "uri": null
+          }
+        },
+        "chunk_index": 3,
+        "contextualized_text": "Q.235. Vaccine hesitancy is primarily caused by :\n- (a) Lack of refrigerators\n- (c) Cold-chain failures\n- (b) Misinformation\n- (d) Overproduction\nQ.236. Which strategy is NOT mentioned as part of public-education initiatives ?\n- (a) Radio broadcasts\n- (c) School programs\n- (b) Social-media influencers\n- (d) Financial incentives\n- Q.237. The passage suggests that to protect public health, it is essential to :\n- (a) Eliminate door-to-door visits\n- (b) Halt solar-powered technology\n- (c) Ensure equitable access and clear communication\n- (d) Focus solely on urban areas"
+      },
+      {
+        "text": "Microfinance institutions (MFIs) have become crucial agents for advancing  financial  inclusion  in  rural  areas. Through extending small  loans  and  savings  accounts  to  people  who  don't  have access to conventional banks, MFIs empower entrepreneurs-most often women-to initiate or scale up microenterprises.  In  most  villages,  these  loans support poultry farming,  handloom  weaving,  or  tiny  retailing  outlets.  MFIs  go beyond  credit  by  regularly  offering  financial  education training, teaching borrowers to cope with cash flows  and  interest charges. Critics warn, however, that excessive interest rates and repayment  pressure  can  result  in  over-indebtedness.  To  avoid such risks, some MFIs limit interest rates and spread repayment terms.  Research  indicates  that  when complemented by market linkages-such  as  guaranteed  buyers  for  fruits  and  vegetables -microfinance  can  trigger  sustainable  economic  growth  and poverty reduction.\nSSC Stenographer 06/08/2025 (Shift 3)\nQ.238. The primary function of microfinance institutions, according to the passage, is to:",
+        "meta": {
+          "schema_name": "docling_core.transforms.chunker.DocMeta",
+          "version": "1.0.0",
+          "doc_items": [
+            {
+              "self_ref": "#/texts/42",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 112.16308968750002,
+                    "r": 288.93427992,
+                    "b": 29.549602819985353,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    436
+                  ]
+                },
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 308.54999,
+                    "t": 814.6982416875001,
+                    "r": 568.71356192,
+                    "b": 707.2370988199854,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    437,
+                    978
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/43",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 308.54999,
+                    "t": 702.8974606875,
+                    "r": 467.80340942,
+                    "b": 694.8152238199854,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    37
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/44",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 308.54999,
+                    "t": 683.5771486875,
+                    "r": 536.61737192,
+                    "b": 663.0730328199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    90
+                  ]
+                }
+              ]
+            }
+          ],
+          "headings": [
+            "SET - 49 [Q .238. to Q .242.]"
+          ],
+          "captions": null,
+          "origin": {
+            "mimetype": "application/pdf",
+            "binary_hash": 14120233847363579816,
+            "filename": "english_page_0392.pdf",
+            "uri": null
+          }
+        },
+        "chunk_index": 4,
+        "contextualized_text": "SET - 49 [Q .238. to Q .242.]\nMicrofinance institutions (MFIs) have become crucial agents for advancing  financial  inclusion  in  rural  areas. Through extending small  loans  and  savings  accounts  to  people  who  don't  have access to conventional banks, MFIs empower entrepreneurs-most often women-to initiate or scale up microenterprises.  In  most  villages,  these  loans support poultry farming,  handloom  weaving,  or  tiny  retailing  outlets.  MFIs  go beyond  credit  by  regularly  offering  financial  education training, teaching borrowers to cope with cash flows  and  interest charges. Critics warn, however, that excessive interest rates and repayment  pressure  can  result  in  over-indebtedness.  To  avoid such risks, some MFIs limit interest rates and spread repayment terms.  Research  indicates  that  when complemented by market linkages-such  as  guaranteed  buyers  for  fruits  and  vegetables -microfinance  can  trigger  sustainable  economic  growth  and poverty reduction.\nSSC Stenographer 06/08/2025 (Shift 3)\nQ.238. The primary function of microfinance institutions, according to the passage, is to:"
+      },
+      {
+        "text": "- (a) Charge high interest rates to rural borrowers\n- (b) Provide large corporate loans\n- (c) Offer financial services to those excluded from traditional banking systems\n- (d) Regulate national monetary policy\n- Q.239. In  the  context  of the above passage, \"microenterprises\" most nearly means:\n- (a) Multinational corporations   (b) Small-scale businesses\n- (c) Government agencies           (d) Family-owned farms\n- Q.240. Which  benefit  of  MFIs  is  mentioned  besides  lending money ?\n- (a) Granting land titles    (b) Financial literacy training\n- (c) Tax exemptions         (d) Import-export facilitation\n- Q.241. What is a key criticism of microfinance highlighted in the passage?\n- (a) It fails to reach women borrowers.\n- (b) It offers only savings accounts.\n- (c) High interest and repayment pressure can cause debt.\n- (d) It mandates market linkages.\n- Q.242. According to the author, sustainable impact occurs when microfinance is combined with:\n- (a) High interest rates\n- (b) Market linkages",
+        "meta": {
+          "schema_name": "docling_core.transforms.chunker.DocMeta",
+          "version": "1.0.0",
+          "doc_items": [
+            {
+              "self_ref": "#/texts/45",
+              "parent": {
+                "cref": "#/groups/4"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 308.54999,
+                    "t": 658.7333996875,
+                    "r": 500.03289692,
+                    "b": 650.6511628199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    49
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/46",
+              "parent": {
+                "cref": "#/groups/4"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 308.54999,
+                    "t": 646.3076196874999,
+                    "r": 441.35711942,
+                    "b": 638.2253828199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    33
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/47",
+              "parent": {
+                "cref": "#/groups/4"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 308.54999,
+                    "t": 633.8857396875001,
+                    "r": 554.7843669199999,
+                    "b": 613.3816328199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    79
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/48",
+              "parent": {
+                "cref": "#/groups/4"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 308.54999,
+                    "t": 609.0419896875001,
+                    "r": 459.84930692,
+                    "b": 600.9597528199854,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    37
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/49",
+              "parent": {
+                "cref": "#/groups/4"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 308.54999,
+                    "t": 588.3427696875,
+                    "r": 568.7765544199999,
+                    "b": 567.8386628199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    84
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/50",
+              "parent": {
+                "cref": "#/groups/4"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 308.54999,
+                    "t": 563.4951196874999,
+                    "r": 543.3497919199999,
+                    "b": 555.4128828199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    59
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/51",
+              "parent": {
+                "cref": "#/groups/4"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 308.54999,
+                    "t": 551.0732396875001,
+                    "r": 530.4254769199999,
+                    "b": 542.9910028199854,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    56
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/52",
+              "parent": {
+                "cref": "#/groups/4"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 308.54999,
+                    "t": 530.3720696875,
+                    "r": 568.46893442,
+                    "b": 509.86796281998534,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    72
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/53",
+              "parent": {
+                "cref": "#/groups/4"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 308.54999,
+                    "t": 505.5283196875,
+                    "r": 521.22332942,
+                    "b": 497.44608281998535,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    59
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/54",
+              "parent": {
+                "cref": "#/groups/4"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 308.54999,
+                    "t": 493.1064496875,
+                    "r": 520.24334942,
+                    "b": 485.02421281998534,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    57
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/55",
+              "parent": {
+                "cref": "#/groups/4"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 308.54999,
+                    "t": 473.7822296875,
+                    "r": 565.12469942,
+                    "b": 453.2781128199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    74
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/56",
+              "parent": {
+                "cref": "#/groups/4"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 308.54999,
+                    "t": 448.9384796875,
+                    "r": 460.48211942,
+                    "b": 440.8562428199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    38
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/57",
+              "parent": {
+                "cref": "#/groups/4"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 308.54999,
+                    "t": 436.5165996875,
+                    "r": 448.94207941999997,
+                    "b": 428.4343628199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    36
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/58",
+              "parent": {
+                "cref": "#/groups/4"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 308.54999,
+                    "t": 424.0947296875,
+                    "r": 539.3551644199999,
+                    "b": 416.0124928199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    56
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/59",
+              "parent": {
+                "cref": "#/groups/4"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 308.54999,
+                    "t": 411.6728496875,
+                    "r": 440.16180692,
+                    "b": 403.5906128199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    32
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/60",
+              "parent": {
+                "cref": "#/groups/4"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 308.54999,
+                    "t": 392.3486296875,
+                    "r": 568.09247192,
+                    "b": 371.84452281998534,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    93
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/61",
+              "parent": {
+                "cref": "#/groups/4"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 308.54999,
+                    "t": 367.5048796875,
+                    "r": 397.54364267,
+                    "b": 359.42264281998536,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    23
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/62",
+              "parent": {
+                "cref": "#/groups/4"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 416.54999,
+                    "t": 367.5048796875,
+                    "r": 495.78338941999993,
+                    "b": 359.42264281998536,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    19
+                  ]
+                }
+              ]
+            }
+          ],
+          "headings": [
+            "SET - 49 [Q .238. to Q .242.]"
+          ],
+          "captions": null,
+          "origin": {
+            "mimetype": "application/pdf",
+            "binary_hash": 14120233847363579816,
+            "filename": "english_page_0392.pdf",
+            "uri": null
+          }
+        },
+        "chunk_index": 5,
+        "contextualized_text": "SET - 49 [Q .238. to Q .242.]\n- (a) Charge high interest rates to rural borrowers\n- (b) Provide large corporate loans\n- (c) Offer financial services to those excluded from traditional banking systems\n- (d) Regulate national monetary policy\n- Q.239. In  the  context  of the above passage, \"microenterprises\" most nearly means:\n- (a) Multinational corporations   (b) Small-scale businesses\n- (c) Government agencies           (d) Family-owned farms\n- Q.240. Which  benefit  of  MFIs  is  mentioned  besides  lending money ?\n- (a) Granting land titles    (b) Financial literacy training\n- (c) Tax exemptions         (d) Import-export facilitation\n- Q.241. What is a key criticism of microfinance highlighted in the passage?\n- (a) It fails to reach women borrowers.\n- (b) It offers only savings accounts.\n- (c) High interest and repayment pressure can cause debt.\n- (d) It mandates market linkages.\n- Q.242. According to the author, sustainable impact occurs when microfinance is combined with:\n- (a) High interest rates\n- (b) Market linkages"
+      },
+      {
+        "text": "- (c) Shorter loan tenures\n- (d) Government bailouts",
+        "meta": {
+          "schema_name": "docling_core.transforms.chunker.DocMeta",
+          "version": "1.0.0",
+          "doc_items": [
+            {
+              "self_ref": "#/texts/63",
+              "parent": {
+                "cref": "#/groups/4"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 308.54999,
+                    "t": 355.0830096875,
+                    "r": 405.09344717,
+                    "b": 347.00077281998534,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    24
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/64",
+              "parent": {
+                "cref": "#/groups/4"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 416.54999,
+                    "t": 355.0830096875,
+                    "r": 513.18573308,
+                    "b": 347.00077281998534,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    23
+                  ]
+                }
+              ]
+            }
+          ],
+          "headings": [
+            "SET - 49 [Q .238. to Q .242.]"
+          ],
+          "captions": null,
+          "origin": {
+            "mimetype": "application/pdf",
+            "binary_hash": 14120233847363579816,
+            "filename": "english_page_0392.pdf",
+            "uri": null
+          }
+        },
+        "chunk_index": 6,
+        "contextualized_text": "SET - 49 [Q .238. to Q .242.]\n- (c) Shorter loan tenures\n- (d) Government bailouts"
+      },
+      {
+        "text": "As artificial intelligence (AI) technologies continue to proliferate across every sector of human activity, the ethical implications of their deployment have become a matter of urgent concern. Once relegated  to  the realm of speculative fiction, AI now permeates decision-making  in  fields  as  diverse  as  healthcare,  finance, education,  and  criminal  justice. While proponents argue that AI can  increase  efficiency,  reduce  human  bias,  and  democratize access  to  services,  critics  warn of the potential for algorithmic discrimination, erosion of privacy, and the deepening of existing social inequalities.\nAt  the  heart  of  the  debate lies a fundamental tension between technological  progress  and  moral  responsibility.  Machines,  no matter  how  sophisticated,  lack  consciousness  and  intrinsic values;  they  merely  execute  instructions  based  on  data  inputs and programmed algorithms. Thus, when an AI system makes a life-altering  decision  -such  as  denying  a  loan  application  or predicting  a  defendant's  likelihood  of  reoffending-it  is  not the machine  itself  that  is  accountable,  but  the  human  architects behind its creation and training.",
+        "meta": {
+          "schema_name": "docling_core.transforms.chunker.DocMeta",
+          "version": "1.0.0",
+          "doc_items": [
+            {
+              "self_ref": "#/texts/66",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 308.54999,
+                    "t": 321.9560496875,
+                    "r": 568.78094942,
+                    "b": 202.07694281998533,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    622
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/67",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 308.54999,
+                    "t": 197.7372996875,
+                    "r": 568.5758694199999,
+                    "b": 90.27811281998538,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    573
+                  ]
+                }
+              ]
+            }
+          ],
+          "headings": [
+            "SET - 50 [Q .243. to Q .247.]"
+          ],
+          "captions": null,
+          "origin": {
+            "mimetype": "application/pdf",
+            "binary_hash": 14120233847363579816,
+            "filename": "english_page_0392.pdf",
+            "uri": null
+          }
+        },
+        "chunk_index": 7,
+        "contextualized_text": "SET - 50 [Q .243. to Q .247.]\nAs artificial intelligence (AI) technologies continue to proliferate across every sector of human activity, the ethical implications of their deployment have become a matter of urgent concern. Once relegated  to  the realm of speculative fiction, AI now permeates decision-making  in  fields  as  diverse  as  healthcare,  finance, education,  and  criminal  justice. While proponents argue that AI can  increase  efficiency,  reduce  human  bias,  and  democratize access  to  services,  critics  warn of the potential for algorithmic discrimination, erosion of privacy, and the deepening of existing social inequalities.\nAt  the  heart  of  the  debate lies a fundamental tension between technological  progress  and  moral  responsibility.  Machines,  no matter  how  sophisticated,  lack  consciousness  and  intrinsic values;  they  merely  execute  instructions  based  on  data  inputs and programmed algorithms. Thus, when an AI system makes a life-altering  decision  -such  as  denying  a  loan  application  or predicting  a  defendant's  likelihood  of  reoffending-it  is  not the machine  itself  that  is  accountable,  but  the  human  architects behind its creation and training."
+      },
+      {
+        "text": "Moreover,  the  opacity  of  many AI systems, often referred to as the  \"black  box\"  problem,  poses  a  significant  ethical  challenge. When  even  developers  cannot  fully  explain  how  a  machine arrived  at  a  given  outcome,  the  prospect  of  ensuring  fairness, transparency,  and  accountability  becomes  deeply  problematic.",
+        "meta": {
+          "schema_name": "docling_core.transforms.chunker.DocMeta",
+          "version": "1.0.0",
+          "doc_items": [
+            {
+              "self_ref": "#/texts/68",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 308.54999,
+                    "t": 85.93847968750003,
+                    "r": 568.68719942,
+                    "b": 28.16874281998537,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    340
+                  ]
+                }
+              ]
+            }
+          ],
+          "headings": [
+            "SET - 50 [Q .243. to Q .247.]"
+          ],
+          "captions": null,
+          "origin": {
+            "mimetype": "application/pdf",
+            "binary_hash": 14120233847363579816,
+            "filename": "english_page_0392.pdf",
+            "uri": null
+          }
+        },
+        "chunk_index": 8,
+        "contextualized_text": "SET - 50 [Q .243. to Q .247.]\nMoreover,  the  opacity  of  many AI systems, often referred to as the  \"black  box\"  problem,  poses  a  significant  ethical  challenge. When  even  developers  cannot  fully  explain  how  a  machine arrived  at  a  given  outcome,  the  prospect  of  ensuring  fairness, transparency,  and  accountability  becomes  deeply  problematic."
+      }
+    ]
+  },
+  "content_assets": {
+    "tables": [],
+    "figures": []
+  },
+  "docling_document": {
+    "schema_name": "DoclingDocument",
+    "version": "1.10.0",
+    "name": "english_page_0392",
+    "origin": {
+      "mimetype": "application/pdf",
+      "binary_hash": 14120233847363579816,
+      "filename": "english_page_0392.pdf"
+    },
+    "furniture": {
+      "self_ref": "#/furniture",
+      "children": [],
+      "content_layer": "furniture",
+      "name": "_root_",
+      "label": "unspecified"
+    },
+    "body": {
+      "self_ref": "#/body",
+      "children": [
+        {
+          "$ref": "#/texts/0"
+        },
+        {
+          "$ref": "#/texts/1"
+        },
+        {
+          "$ref": "#/groups/0"
+        },
+        {
+          "$ref": "#/texts/13"
+        },
+        {
+          "$ref": "#/texts/14"
+        },
+        {
+          "$ref": "#/texts/15"
+        },
+        {
+          "$ref": "#/texts/16"
+        },
+        {
+          "$ref": "#/groups/1"
+        },
+        {
+          "$ref": "#/texts/26"
+        },
+        {
+          "$ref": "#/groups/2"
+        },
+        {
+          "$ref": "#/texts/31"
+        },
+        {
+          "$ref": "#/groups/3"
+        },
+        {
+          "$ref": "#/texts/41"
+        },
+        {
+          "$ref": "#/texts/42"
+        },
+        {
+          "$ref": "#/texts/43"
+        },
+        {
+          "$ref": "#/texts/44"
+        },
+        {
+          "$ref": "#/groups/4"
+        },
+        {
+          "$ref": "#/texts/65"
+        },
+        {
+          "$ref": "#/texts/66"
+        },
+        {
+          "$ref": "#/texts/67"
+        },
+        {
+          "$ref": "#/texts/68"
+        },
+        {
+          "$ref": "#/texts/69"
+        }
+      ],
+      "content_layer": "body",
+      "name": "_root_",
+      "label": "unspecified"
+    },
+    "groups": [
+      {
+        "self_ref": "#/groups/0",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [
+          {
+            "$ref": "#/texts/2"
+          },
+          {
+            "$ref": "#/texts/3"
+          },
+          {
+            "$ref": "#/texts/4"
+          },
+          {
+            "$ref": "#/texts/5"
+          },
+          {
+            "$ref": "#/texts/6"
+          },
+          {
+            "$ref": "#/texts/7"
+          },
+          {
+            "$ref": "#/texts/8"
+          },
+          {
+            "$ref": "#/texts/9"
+          },
+          {
+            "$ref": "#/texts/10"
+          },
+          {
+            "$ref": "#/texts/11"
+          },
+          {
+            "$ref": "#/texts/12"
+          }
+        ],
+        "content_layer": "body",
+        "name": "list",
+        "label": "list"
+      },
+      {
+        "self_ref": "#/groups/1",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [
+          {
+            "$ref": "#/texts/17"
+          },
+          {
+            "$ref": "#/texts/18"
+          },
+          {
+            "$ref": "#/texts/19"
+          },
+          {
+            "$ref": "#/texts/20"
+          },
+          {
+            "$ref": "#/texts/21"
+          },
+          {
+            "$ref": "#/texts/22"
+          },
+          {
+            "$ref": "#/texts/23"
+          },
+          {
+            "$ref": "#/texts/24"
+          },
+          {
+            "$ref": "#/texts/25"
+          }
+        ],
+        "content_layer": "body",
+        "name": "list",
+        "label": "list"
+      },
+      {
+        "self_ref": "#/groups/2",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [
+          {
+            "$ref": "#/texts/27"
+          },
+          {
+            "$ref": "#/texts/28"
+          },
+          {
+            "$ref": "#/texts/29"
+          },
+          {
+            "$ref": "#/texts/30"
+          }
+        ],
+        "content_layer": "body",
+        "name": "list",
+        "label": "list"
+      },
+      {
+        "self_ref": "#/groups/3",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [
+          {
+            "$ref": "#/texts/32"
+          },
+          {
+            "$ref": "#/texts/33"
+          },
+          {
+            "$ref": "#/texts/34"
+          },
+          {
+            "$ref": "#/texts/35"
+          },
+          {
+            "$ref": "#/texts/36"
+          },
+          {
+            "$ref": "#/texts/37"
+          },
+          {
+            "$ref": "#/texts/38"
+          },
+          {
+            "$ref": "#/texts/39"
+          },
+          {
+            "$ref": "#/texts/40"
+          }
+        ],
+        "content_layer": "body",
+        "name": "list",
+        "label": "list"
+      },
+      {
+        "self_ref": "#/groups/4",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [
+          {
+            "$ref": "#/texts/45"
+          },
+          {
+            "$ref": "#/texts/46"
+          },
+          {
+            "$ref": "#/texts/47"
+          },
+          {
+            "$ref": "#/texts/48"
+          },
+          {
+            "$ref": "#/texts/49"
+          },
+          {
+            "$ref": "#/texts/50"
+          },
+          {
+            "$ref": "#/texts/51"
+          },
+          {
+            "$ref": "#/texts/52"
+          },
+          {
+            "$ref": "#/texts/53"
+          },
+          {
+            "$ref": "#/texts/54"
+          },
+          {
+            "$ref": "#/texts/55"
+          },
+          {
+            "$ref": "#/texts/56"
+          },
+          {
+            "$ref": "#/texts/57"
+          },
+          {
+            "$ref": "#/texts/58"
+          },
+          {
+            "$ref": "#/texts/59"
+          },
+          {
+            "$ref": "#/texts/60"
+          },
+          {
+            "$ref": "#/texts/61"
+          },
+          {
+            "$ref": "#/texts/62"
+          },
+          {
+            "$ref": "#/texts/63"
+          },
+          {
+            "$ref": "#/texts/64"
+          }
+        ],
+        "content_layer": "body",
+        "name": "list",
+        "label": "list"
+      }
+    ],
+    "texts": [
+      {
+        "self_ref": "#/texts/0",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "furniture",
+        "label": "page_header",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 830.7925780594726,
+              "r": 95.7084616875,
+              "b": 822.5642819957749,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              8
+            ]
+          }
+        ],
+        "orig": "Pinnacle",
+        "text": "Pinnacle"
+      },
+      {
+        "self_ref": "#/texts/1",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "furniture",
+        "label": "page_header",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 291.757038,
+              "t": 830.7925780594726,
+              "r": 567.4754754375,
+              "b": 822.5642819957749,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              13
+            ]
+          }
+        ],
+        "orig": "Comprehension",
+        "text": "Comprehension"
+      },
+      {
+        "self_ref": "#/texts/2",
+        "parent": {
+          "$ref": "#/groups/0"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 814.6982416875001,
+              "r": 139.07637042,
+              "b": 806.6160048199854,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              26
+            ]
+          }
+        ],
+        "orig": "(b) Frequent tech upgrades",
+        "text": "(b) Frequent tech upgrades",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/3",
+        "parent": {
+          "$ref": "#/groups/0"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 802.2763666875001,
+              "r": 208.76484492,
+              "b": 794.1941298199854,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              45
+            ]
+          }
+        ],
+        "orig": "(c) Sufficient funding and long-term planning",
+        "text": "(c) Sufficient funding and long-term planning",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/4",
+        "parent": {
+          "$ref": "#/groups/0"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 789.8544916875001,
+              "r": 171.39814992,
+              "b": 781.7722548199854,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              36
+            ]
+          }
+        ],
+        "orig": "(d) Higher taxes on private vehicles",
+        "text": "(d) Higher taxes on private vehicles",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/5",
+        "parent": {
+          "$ref": "#/groups/0"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 767.7705076875,
+              "r": 247.38837867,
+              "b": 759.6882708199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              54
+            ]
+          }
+        ],
+        "orig": "Q.231. How does public transport contribute to equity?",
+        "text": "Q.231. How does public transport contribute to equity?",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/6",
+        "parent": {
+          "$ref": "#/groups/0"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 755.3486326875,
+              "r": 129.78633116999998,
+              "b": 747.2663958199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              25
+            ]
+          }
+        ],
+        "orig": "(a) By keeping fares high",
+        "text": "(a) By keeping fares high",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/7",
+        "parent": {
+          "$ref": "#/groups/0"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 742.9267576875,
+              "r": 198.27070992,
+              "b": 734.8445208199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              40
+            ]
+          }
+        ],
+        "orig": "(b) By focusing only on commercial zones",
+        "text": "(b) By focusing only on commercial zones",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/8",
+        "parent": {
+          "$ref": "#/groups/0"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 730.5048826875,
+              "r": 280.21992492,
+              "b": 722.4226458199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              59
+            ]
+          }
+        ],
+        "orig": "(c) By connecting low-income communities with wealthy areas",
+        "text": "(c) By connecting low-income communities with wealthy areas",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/9",
+        "parent": {
+          "$ref": "#/groups/0"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 718.0830076875,
+              "r": 182.62177992,
+              "b": 710.0007708199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              38
+            ]
+          }
+        ],
+        "orig": "(d) By offering free rides on weekends",
+        "text": "(d) By offering free rides on weekends",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/10",
+        "parent": {
+          "$ref": "#/groups/0"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 695.9990236875,
+              "r": 190.75165992,
+              "b": 687.9167868199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              39
+            ]
+          }
+        ],
+        "orig": "Q.232. What is the tone of the passage?",
+        "text": "Q.232. What is the tone of the passage?",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/11",
+        "parent": {
+          "$ref": "#/groups/0"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 683.5771486875,
+              "r": 248.86494491999997,
+              "b": 675.4949118199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              66
+            ]
+          }
+        ],
+        "orig": "(a) Skeptical                        (b) Analytical and supportive",
+        "text": "(a) Skeptical                        (b) Analytical and supportive",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/12",
+        "parent": {
+          "$ref": "#/groups/0"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 671.1552696875,
+              "r": 193.54658742,
+              "b": 663.0730328199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              53
+            ]
+          }
+        ],
+        "orig": "(c) Neutral                            (d) Aggressive",
+        "text": "(c) Neutral                            (d) Aggressive",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/13",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "section_header",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 649.0712896875,
+              "r": 143.65986669,
+              "b": 640.9890528199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              29
+            ]
+          }
+        ],
+        "orig": "SET - 48 [Q .233. to Q .237.]",
+        "text": "SET - 48 [Q .233. to Q .237.]",
+        "level": 1
+      },
+      {
+        "self_ref": "#/texts/14",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 636.6494096875,
+              "r": 288.96943992,
+              "b": 479.5027228199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              816
+            ]
+          }
+        ],
+        "orig": "Universal immunization campaigns have eradicated or controlled  fatal  conditions  such  as  smallpox  and  polio.  Mass immunization  relies  on  cold-chain  availability: vaccines have to be  stored  at  precise temperatures from manufacturing through inoculation. Solar-powered refrigerators and insulated containers are lifelines for remote locations. Door-to-door interactions  by  community  health  workers educate households regarding dosage routines and myths. Vaccine hesitancy fueled by  misinformation  is  also  a  major  obstacle  to  herd  immunity. Campaigns  of  public  education-  capitalizing  on  radio,  social media,  and  school  initiatives-seek  to  revive  public  faith  in science. Preserving accessibility and communication in an open nature is crucial in order to secure public health.",
+        "text": "Universal immunization campaigns have eradicated or controlled  fatal  conditions  such  as  smallpox  and  polio.  Mass immunization  relies  on  cold-chain  availability: vaccines have to be  stored  at  precise temperatures from manufacturing through inoculation. Solar-powered refrigerators and insulated containers are lifelines for remote locations. Door-to-door interactions  by  community  health  workers educate households regarding dosage routines and myths. Vaccine hesitancy fueled by  misinformation  is  also  a  major  obstacle  to  herd  immunity. Campaigns  of  public  education-  capitalizing  on  radio,  social media,  and  school  initiatives-seek  to  revive  public  faith  in science. Preserving accessibility and communication in an open nature is crucial in order to secure public health."
+      },
+      {
+        "self_ref": "#/texts/15",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 475.1630896875,
+              "r": 188.05342242,
+              "b": 467.08085281998535,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              37
+            ]
+          }
+        ],
+        "orig": "SSC Stenographer 06/08/2025 (Shift 3)",
+        "text": "SSC Stenographer 06/08/2025 (Shift 3)"
+      },
+      {
+        "self_ref": "#/texts/16",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 462.7412096875,
+              "r": 285.82294992,
+              "b": 454.6589728199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              65
+            ]
+          }
+        ],
+        "orig": "Q.233. What does \"cold-chain logistics\" refer to in the passage ?",
+        "text": "Q.233. What does \"cold-chain logistics\" refer to in the passage ?"
+      },
+      {
+        "self_ref": "#/texts/17",
+        "parent": {
+          "$ref": "#/groups/1"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 450.3193396875,
+              "r": 255.93134742,
+              "b": 442.23710281998535,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              55
+            ]
+          }
+        ],
+        "orig": "(a) Transporting vaccines under controlled temperatures",
+        "text": "(a) Transporting vaccines under controlled temperatures",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/18",
+        "parent": {
+          "$ref": "#/groups/1"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 437.8974596875,
+              "r": 173.85908742,
+              "b": 429.8152228199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              37
+            ]
+          }
+        ],
+        "orig": "(b) Selling vaccines in cold climates",
+        "text": "(b) Selling vaccines in cold climates",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/19",
+        "parent": {
+          "$ref": "#/groups/1"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 425.4755896875,
+              "r": 178.11298992,
+              "b": 417.39335281998535,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              35
+            ]
+          }
+        ],
+        "orig": "(c) Developing new vaccine formulas",
+        "text": "(c) Developing new vaccine formulas",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/20",
+        "parent": {
+          "$ref": "#/groups/1"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 413.0537096875,
+              "r": 186.07588242,
+              "b": 404.9714728199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              39
+            ]
+          }
+        ],
+        "orig": "(d) Distributing medicines door-to-door",
+        "text": "(d) Distributing medicines door-to-door",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/21",
+        "parent": {
+          "$ref": "#/groups/1"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 392.3486296875,
+              "r": 288.29707242,
+              "b": 371.84452281998534,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              94
+            ]
+          }
+        ],
+        "orig": "Q.234. According to the passage, which method helps maintain vaccine potency in remote areas ?",
+        "text": "Q.234. According to the passage, which method helps maintain vaccine potency in remote areas ?",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/22",
+        "parent": {
+          "$ref": "#/groups/1"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 367.5048796875,
+              "r": 124.66670217000001,
+              "b": 359.42264281998536,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              24
+            ]
+          }
+        ],
+        "orig": "(a) Air-conditioned cars",
+        "text": "(a) Air-conditioned cars",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/23",
+        "parent": {
+          "$ref": "#/groups/1"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 355.0830096875,
+              "r": 153.78486642000001,
+              "b": 347.00077281998534,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              31
+            ]
+          }
+        ],
+        "orig": "(b) Solar-powered refrigerators",
+        "text": "(b) Solar-powered refrigerators",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/24",
+        "parent": {
+          "$ref": "#/groups/1"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 342.6611296875,
+              "r": 150.38349942,
+              "b": 334.57889281998536,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              29
+            ]
+          }
+        ],
+        "orig": "(c) Vaccine-heated containers",
+        "text": "(c) Vaccine-heated containers",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/25",
+        "parent": {
+          "$ref": "#/groups/1"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 330.2392596875,
+              "r": 128.79316692,
+              "b": 322.1570228199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              23
+            ]
+          }
+        ],
+        "orig": "(d) Underground storage",
+        "text": "(d) Underground storage",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/26",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "section_header",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 309.5341796875,
+              "r": 225.79804991999998,
+              "b": 301.45194281998533,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              49
+            ]
+          }
+        ],
+        "orig": "Q.235. Vaccine hesitancy is primarily caused by :",
+        "text": "Q.235. Vaccine hesitancy is primarily caused by :",
+        "level": 1
+      },
+      {
+        "self_ref": "#/texts/27",
+        "parent": {
+          "$ref": "#/groups/2"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 297.1122996875,
+              "r": 125.50166292,
+              "b": 289.03006281998535,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              25
+            ]
+          }
+        ],
+        "orig": "(a) Lack of refrigerators",
+        "text": "(a) Lack of refrigerators",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/28",
+        "parent": {
+          "$ref": "#/groups/2"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 284.6904296875,
+              "r": 118.63301067,
+              "b": 276.60819281998533,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              23
+            ]
+          }
+        ],
+        "orig": "(c) Cold-chain failures",
+        "text": "(c) Cold-chain failures",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/29",
+        "parent": {
+          "$ref": "#/groups/2"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 136.800003,
+              "t": 297.1122996875,
+              "r": 213.71748492,
+              "b": 289.03006281998535,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              18
+            ]
+          }
+        ],
+        "orig": "(b) Misinformation",
+        "text": "(b) Misinformation",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/30",
+        "parent": {
+          "$ref": "#/groups/2"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 136.800003,
+              "t": 284.6904296875,
+              "r": 214.00312992,
+              "b": 276.60819281998533,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              18
+            ]
+          }
+        ],
+        "orig": "(d) Overproduction",
+        "text": "(d) Overproduction",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/31",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 262.60839968749997,
+              "r": 288.37617492,
+              "b": 242.10428281998531,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              80
+            ]
+          }
+        ],
+        "orig": "Q.236. Which strategy is NOT mentioned as part of public-education initiatives ?",
+        "text": "Q.236. Which strategy is NOT mentioned as part of public-education initiatives ?"
+      },
+      {
+        "self_ref": "#/texts/32",
+        "parent": {
+          "$ref": "#/groups/3"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 237.76464968749997,
+              "r": 114.40547217000001,
+              "b": 229.6824128199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              20
+            ]
+          }
+        ],
+        "orig": "(a) Radio broadcasts",
+        "text": "(a) Radio broadcasts",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/33",
+        "parent": {
+          "$ref": "#/groups/3"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 225.34276968749998,
+              "r": 112.39717092000001,
+              "b": 217.26053281998531,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              19
+            ]
+          }
+        ],
+        "orig": "(c) School programs",
+        "text": "(c) School programs",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/34",
+        "parent": {
+          "$ref": "#/groups/3"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 136.800003,
+              "t": 237.76464968749997,
+              "r": 250.68867491999998,
+              "b": 229.6824128199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              28
+            ]
+          }
+        ],
+        "orig": "(b) Social-media influencers",
+        "text": "(b) Social-media influencers",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/35",
+        "parent": {
+          "$ref": "#/groups/3"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 136.800003,
+              "t": 225.34276968749998,
+              "r": 231.23408741999998,
+              "b": 217.26053281998531,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              24
+            ]
+          }
+        ],
+        "orig": "(d) Financial incentives",
+        "text": "(d) Financial incentives",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/36",
+        "parent": {
+          "$ref": "#/groups/3"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 206.0185496875,
+              "r": 288.41425992,
+              "b": 185.51444281998533,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              79
+            ]
+          }
+        ],
+        "orig": "Q.237. The passage suggests that to protect public health, it is essential to :",
+        "text": "Q.237. The passage suggests that to protect public health, it is essential to :",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/37",
+        "parent": {
+          "$ref": "#/groups/3"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 181.1747996875,
+              "r": 156.71162442,
+              "b": 173.09256281998535,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              33
+            ]
+          }
+        ],
+        "orig": "(a) Eliminate door-to-door visits",
+        "text": "(a) Eliminate door-to-door visits",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/38",
+        "parent": {
+          "$ref": "#/groups/3"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 168.7529296875,
+              "r": 166.50263741999999,
+              "b": 160.67069281998533,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              33
+            ]
+          }
+        ],
+        "orig": "(b) Halt solar-powered technology",
+        "text": "(b) Halt solar-powered technology",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/39",
+        "parent": {
+          "$ref": "#/groups/3"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 156.3310496875,
+              "r": 245.20429991999998,
+              "b": 148.24881281998535,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              51
+            ]
+          }
+        ],
+        "orig": "(c) Ensure equitable access and clear communication",
+        "text": "(c) Ensure equitable access and clear communication",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/40",
+        "parent": {
+          "$ref": "#/groups/3"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 143.9091796875,
+              "r": 156.21064767000001,
+              "b": 135.82694281998533,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              31
+            ]
+          }
+        ],
+        "orig": "(d) Focus solely on urban areas",
+        "text": "(d) Focus solely on urban areas",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/41",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "section_header",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 124.58495968750003,
+              "r": 141.42305025000005,
+              "b": 116.50272281998537,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              29
+            ]
+          }
+        ],
+        "orig": "SET - 49 [Q .238. to Q .242.]",
+        "text": "SET - 49 [Q .238. to Q .242.]",
+        "level": 1
+      },
+      {
+        "self_ref": "#/texts/42",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 112.16308968750002,
+              "r": 288.93427992,
+              "b": 29.549602819985353,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              436
+            ]
+          },
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 308.54999,
+              "t": 814.6982416875001,
+              "r": 568.71356192,
+              "b": 707.2370988199854,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              437,
+              978
+            ]
+          }
+        ],
+        "orig": "Microfinance institutions (MFIs) have become crucial agents for advancing  financial  inclusion  in  rural  areas. Through extending small  loans  and  savings  accounts  to  people  who  don't  have access to conventional banks, MFIs empower entrepreneurs-most often women-to initiate or scale up microenterprises.  In  most  villages,  these  loans support poultry farming,  handloom  weaving,  or  tiny  retailing  outlets.  MFIs  go beyond  credit  by  regularly  offering  financial  education training, teaching borrowers to cope with cash flows  and  interest charges. Critics warn, however, that excessive interest rates and repayment  pressure  can  result  in  over-indebtedness.  To  avoid such risks, some MFIs limit interest rates and spread repayment terms.  Research  indicates  that  when complemented by market linkages-such  as  guaranteed  buyers  for  fruits  and  vegetables -microfinance  can  trigger  sustainable  economic  growth  and poverty reduction.",
+        "text": "Microfinance institutions (MFIs) have become crucial agents for advancing  financial  inclusion  in  rural  areas. Through extending small  loans  and  savings  accounts  to  people  who  don't  have access to conventional banks, MFIs empower entrepreneurs-most often women-to initiate or scale up microenterprises.  In  most  villages,  these  loans support poultry farming,  handloom  weaving,  or  tiny  retailing  outlets.  MFIs  go beyond  credit  by  regularly  offering  financial  education training, teaching borrowers to cope with cash flows  and  interest charges. Critics warn, however, that excessive interest rates and repayment  pressure  can  result  in  over-indebtedness.  To  avoid such risks, some MFIs limit interest rates and spread repayment terms.  Research  indicates  that  when complemented by market linkages-such  as  guaranteed  buyers  for  fruits  and  vegetables -microfinance  can  trigger  sustainable  economic  growth  and poverty reduction."
+      },
+      {
+        "self_ref": "#/texts/43",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 308.54999,
+              "t": 702.8974606875,
+              "r": 467.80340942,
+              "b": 694.8152238199854,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              37
+            ]
+          }
+        ],
+        "orig": "SSC Stenographer 06/08/2025 (Shift 3)",
+        "text": "SSC Stenographer 06/08/2025 (Shift 3)"
+      },
+      {
+        "self_ref": "#/texts/44",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 308.54999,
+              "t": 683.5771486875,
+              "r": 536.61737192,
+              "b": 663.0730328199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              90
+            ]
+          }
+        ],
+        "orig": "Q.238. The primary function of microfinance institutions, according to the passage, is to:",
+        "text": "Q.238. The primary function of microfinance institutions, according to the passage, is to:"
+      },
+      {
+        "self_ref": "#/texts/45",
+        "parent": {
+          "$ref": "#/groups/4"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 308.54999,
+              "t": 658.7333996875,
+              "r": 500.03289692,
+              "b": 650.6511628199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              49
+            ]
+          }
+        ],
+        "orig": "(a) Charge high interest rates to rural borrowers",
+        "text": "(a) Charge high interest rates to rural borrowers",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/46",
+        "parent": {
+          "$ref": "#/groups/4"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 308.54999,
+              "t": 646.3076196874999,
+              "r": 441.35711942,
+              "b": 638.2253828199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              33
+            ]
+          }
+        ],
+        "orig": "(b) Provide large corporate loans",
+        "text": "(b) Provide large corporate loans",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/47",
+        "parent": {
+          "$ref": "#/groups/4"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 308.54999,
+              "t": 633.8857396875001,
+              "r": 554.7843669199999,
+              "b": 613.3816328199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              79
+            ]
+          }
+        ],
+        "orig": "(c) Offer financial services to those excluded from traditional banking systems",
+        "text": "(c) Offer financial services to those excluded from traditional banking systems",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/48",
+        "parent": {
+          "$ref": "#/groups/4"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 308.54999,
+              "t": 609.0419896875001,
+              "r": 459.84930692,
+              "b": 600.9597528199854,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              37
+            ]
+          }
+        ],
+        "orig": "(d) Regulate national monetary policy",
+        "text": "(d) Regulate national monetary policy",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/49",
+        "parent": {
+          "$ref": "#/groups/4"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 308.54999,
+              "t": 588.3427696875,
+              "r": 568.7765544199999,
+              "b": 567.8386628199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              84
+            ]
+          }
+        ],
+        "orig": "Q.239. In  the  context  of the above passage, \"microenterprises\" most nearly means:",
+        "text": "Q.239. In  the  context  of the above passage, \"microenterprises\" most nearly means:",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/50",
+        "parent": {
+          "$ref": "#/groups/4"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 308.54999,
+              "t": 563.4951196874999,
+              "r": 543.3497919199999,
+              "b": 555.4128828199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              59
+            ]
+          }
+        ],
+        "orig": "(a) Multinational corporations   (b) Small-scale businesses",
+        "text": "(a) Multinational corporations   (b) Small-scale businesses",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/51",
+        "parent": {
+          "$ref": "#/groups/4"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 308.54999,
+              "t": 551.0732396875001,
+              "r": 530.4254769199999,
+              "b": 542.9910028199854,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              56
+            ]
+          }
+        ],
+        "orig": "(c) Government agencies           (d) Family-owned farms",
+        "text": "(c) Government agencies           (d) Family-owned farms",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/52",
+        "parent": {
+          "$ref": "#/groups/4"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 308.54999,
+              "t": 530.3720696875,
+              "r": 568.46893442,
+              "b": 509.86796281998534,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              72
+            ]
+          }
+        ],
+        "orig": "Q.240. Which  benefit  of  MFIs  is  mentioned  besides  lending money ?",
+        "text": "Q.240. Which  benefit  of  MFIs  is  mentioned  besides  lending money ?",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/53",
+        "parent": {
+          "$ref": "#/groups/4"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 308.54999,
+              "t": 505.5283196875,
+              "r": 521.22332942,
+              "b": 497.44608281998535,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              59
+            ]
+          }
+        ],
+        "orig": "(a) Granting land titles    (b) Financial literacy training",
+        "text": "(a) Granting land titles    (b) Financial literacy training",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/54",
+        "parent": {
+          "$ref": "#/groups/4"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 308.54999,
+              "t": 493.1064496875,
+              "r": 520.24334942,
+              "b": 485.02421281998534,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              57
+            ]
+          }
+        ],
+        "orig": "(c) Tax exemptions         (d) Import-export facilitation",
+        "text": "(c) Tax exemptions         (d) Import-export facilitation",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/55",
+        "parent": {
+          "$ref": "#/groups/4"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 308.54999,
+              "t": 473.7822296875,
+              "r": 565.12469942,
+              "b": 453.2781128199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              74
+            ]
+          }
+        ],
+        "orig": "Q.241. What is a key criticism of microfinance highlighted in the passage?",
+        "text": "Q.241. What is a key criticism of microfinance highlighted in the passage?",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/56",
+        "parent": {
+          "$ref": "#/groups/4"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 308.54999,
+              "t": 448.9384796875,
+              "r": 460.48211942,
+              "b": 440.8562428199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              38
+            ]
+          }
+        ],
+        "orig": "(a) It fails to reach women borrowers.",
+        "text": "(a) It fails to reach women borrowers.",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/57",
+        "parent": {
+          "$ref": "#/groups/4"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 308.54999,
+              "t": 436.5165996875,
+              "r": 448.94207941999997,
+              "b": 428.4343628199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              36
+            ]
+          }
+        ],
+        "orig": "(b) It offers only savings accounts.",
+        "text": "(b) It offers only savings accounts.",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/58",
+        "parent": {
+          "$ref": "#/groups/4"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 308.54999,
+              "t": 424.0947296875,
+              "r": 539.3551644199999,
+              "b": 416.0124928199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              56
+            ]
+          }
+        ],
+        "orig": "(c) High interest and repayment pressure can cause debt.",
+        "text": "(c) High interest and repayment pressure can cause debt.",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/59",
+        "parent": {
+          "$ref": "#/groups/4"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 308.54999,
+              "t": 411.6728496875,
+              "r": 440.16180692,
+              "b": 403.5906128199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              32
+            ]
+          }
+        ],
+        "orig": "(d) It mandates market linkages.",
+        "text": "(d) It mandates market linkages.",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/60",
+        "parent": {
+          "$ref": "#/groups/4"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 308.54999,
+              "t": 392.3486296875,
+              "r": 568.09247192,
+              "b": 371.84452281998534,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              93
+            ]
+          }
+        ],
+        "orig": "Q.242. According to the author, sustainable impact occurs when microfinance is combined with:",
+        "text": "Q.242. According to the author, sustainable impact occurs when microfinance is combined with:",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/61",
+        "parent": {
+          "$ref": "#/groups/4"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 308.54999,
+              "t": 367.5048796875,
+              "r": 397.54364267,
+              "b": 359.42264281998536,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              23
+            ]
+          }
+        ],
+        "orig": "(a) High interest rates",
+        "text": "(a) High interest rates",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/62",
+        "parent": {
+          "$ref": "#/groups/4"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 416.54999,
+              "t": 367.5048796875,
+              "r": 495.78338941999993,
+              "b": 359.42264281998536,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              19
+            ]
+          }
+        ],
+        "orig": "(b) Market linkages",
+        "text": "(b) Market linkages",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/63",
+        "parent": {
+          "$ref": "#/groups/4"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 308.54999,
+              "t": 355.0830096875,
+              "r": 405.09344717,
+              "b": 347.00077281998534,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              24
+            ]
+          }
+        ],
+        "orig": "(c) Shorter loan tenures",
+        "text": "(c) Shorter loan tenures",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/64",
+        "parent": {
+          "$ref": "#/groups/4"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 416.54999,
+              "t": 355.0830096875,
+              "r": 513.18573308,
+              "b": 347.00077281998534,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              23
+            ]
+          }
+        ],
+        "orig": "(d) Government bailouts",
+        "text": "(d) Government bailouts",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/65",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "section_header",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 308.54999,
+              "t": 334.3779296875,
+              "r": 421.17303725,
+              "b": 326.29569281998533,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              29
+            ]
+          }
+        ],
+        "orig": "SET - 50 [Q .243. to Q .247.]",
+        "text": "SET - 50 [Q .243. to Q .247.]",
+        "level": 1
+      },
+      {
+        "self_ref": "#/texts/66",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 308.54999,
+              "t": 321.9560496875,
+              "r": 568.78094942,
+              "b": 202.07694281998533,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              622
+            ]
+          }
+        ],
+        "orig": "As artificial intelligence (AI) technologies continue to proliferate across every sector of human activity, the ethical implications of their deployment have become a matter of urgent concern. Once relegated  to  the realm of speculative fiction, AI now permeates decision-making  in  fields  as  diverse  as  healthcare,  finance, education,  and  criminal  justice. While proponents argue that AI can  increase  efficiency,  reduce  human  bias,  and  democratize access  to  services,  critics  warn of the potential for algorithmic discrimination, erosion of privacy, and the deepening of existing social inequalities.",
+        "text": "As artificial intelligence (AI) technologies continue to proliferate across every sector of human activity, the ethical implications of their deployment have become a matter of urgent concern. Once relegated  to  the realm of speculative fiction, AI now permeates decision-making  in  fields  as  diverse  as  healthcare,  finance, education,  and  criminal  justice. While proponents argue that AI can  increase  efficiency,  reduce  human  bias,  and  democratize access  to  services,  critics  warn of the potential for algorithmic discrimination, erosion of privacy, and the deepening of existing social inequalities."
+      },
+      {
+        "self_ref": "#/texts/67",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 308.54999,
+              "t": 197.7372996875,
+              "r": 568.5758694199999,
+              "b": 90.27811281998538,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              573
+            ]
+          }
+        ],
+        "orig": "At  the  heart  of  the  debate lies a fundamental tension between technological  progress  and  moral  responsibility.  Machines,  no matter  how  sophisticated,  lack  consciousness  and  intrinsic values;  they  merely  execute  instructions  based  on  data  inputs and programmed algorithms. Thus, when an AI system makes a life-altering  decision  -such  as  denying  a  loan  application  or predicting  a  defendant's  likelihood  of  reoffending-it  is  not the machine  itself  that  is  accountable,  but  the  human  architects behind its creation and training.",
+        "text": "At  the  heart  of  the  debate lies a fundamental tension between technological  progress  and  moral  responsibility.  Machines,  no matter  how  sophisticated,  lack  consciousness  and  intrinsic values;  they  merely  execute  instructions  based  on  data  inputs and programmed algorithms. Thus, when an AI system makes a life-altering  decision  -such  as  denying  a  loan  application  or predicting  a  defendant's  likelihood  of  reoffending-it  is  not the machine  itself  that  is  accountable,  but  the  human  architects behind its creation and training."
+      },
+      {
+        "self_ref": "#/texts/68",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 308.54999,
+              "t": 85.93847968750003,
+              "r": 568.68719942,
+              "b": 28.16874281998537,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              340
+            ]
+          }
+        ],
+        "orig": "Moreover,  the  opacity  of  many AI systems, often referred to as the  \"black  box\"  problem,  poses  a  significant  ethical  challenge. When  even  developers  cannot  fully  explain  how  a  machine arrived  at  a  given  outcome,  the  prospect  of  ensuring  fairness, transparency,  and  accountability  becomes  deeply  problematic.",
+        "text": "Moreover,  the  opacity  of  many AI systems, often referred to as the  \"black  box\"  problem,  poses  a  significant  ethical  challenge. When  even  developers  cannot  fully  explain  how  a  machine arrived  at  a  given  outcome,  the  prospect  of  ensuring  fairness, transparency,  and  accountability  becomes  deeply  problematic."
+      },
+      {
+        "self_ref": "#/texts/69",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "furniture",
+        "label": "page_footer",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 99.3266505,
+              "t": 21.989447959472614,
+              "r": 495.95088382500006,
+              "b": 13.761151895774901,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              109
+            ]
+          }
+        ],
+        "orig": "www.ssccglpinnacle.com                                                 Download Pinnacle Exam Preparation App",
+        "text": "www.ssccglpinnacle.com                                                 Download Pinnacle Exam Preparation App"
+      }
+    ],
+    "pictures": [],
+    "tables": [],
+    "key_value_items": [],
+    "form_items": [],
+    "pages": {
+      "1": {
+        "size": {
+          "width": 596.0,
+          "height": 842.0
+        },
+        "page_no": 1
+      }
+    }
+  }
+}

@@ -1,0 +1,3 @@
+-r requirements-charts.txt
+paddleocr>=3.0,<4
+paddlepaddle>=3.0,<4

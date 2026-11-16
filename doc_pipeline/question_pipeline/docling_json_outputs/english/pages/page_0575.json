@@ -1,0 +1,4392 @@
+{
+  "document_id": "english",
+  "source": "english.pdf",
+  "pdf_page": 575,
+  "page_width": 596.0,
+  "page_height": 842.0,
+  "extracted_at": "2026-09-09T11:05:17.550286+00:00",
+  "extraction_version": 4,
+  "ocr_enabled": true,
+  "extraction_detection": {
+    "requested_profile": "auto",
+    "effective_profile": "hybrid",
+    "embedded_text_characters": 4351,
+    "auto_text_threshold": 80
+  },
+  "docling_result": {
+    "status": "success",
+    "errors": []
+  },
+  "content_summary": {
+    "text_items": 52,
+    "text_characters": 5121,
+    "table_items": 0,
+    "picture_items": 0,
+    "group_items": 0,
+    "warnings": []
+  },
+  "reading_order": {
+    "source": "docling_iterate_items",
+    "items": [
+      {
+        "reading_order_index": 0,
+        "element_ref": "#/texts/1",
+        "label": "text",
+        "level": 1,
+        "text_preview": "Q.225."
+      },
+      {
+        "reading_order_index": 1,
+        "element_ref": "#/texts/2",
+        "label": "text",
+        "level": 1,
+        "text_preview": "Lady Stranleigh"
+      },
+      {
+        "reading_order_index": 2,
+        "element_ref": "#/texts/3",
+        "label": "text",
+        "level": 1,
+        "text_preview": "smile at him brilliantly."
+      },
+      {
+        "reading_order_index": 3,
+        "element_ref": "#/texts/4",
+        "label": "text",
+        "level": 1,
+        "text_preview": "(a) Brightly"
+      },
+      {
+        "reading_order_index": 4,
+        "element_ref": "#/texts/5",
+        "label": "text",
+        "level": 1,
+        "text_preview": "(b) Dimly"
+      },
+      {
+        "reading_order_index": 5,
+        "element_ref": "#/texts/6",
+        "label": "text",
+        "level": 1,
+        "text_preview": "(c) Cunningly"
+      },
+      {
+        "reading_order_index": 6,
+        "element_ref": "#/texts/7",
+        "label": "text",
+        "level": 1,
+        "text_preview": "(d) Strangely"
+      },
+      {
+        "reading_order_index": 7,
+        "element_ref": "#/texts/8",
+        "label": "section_header",
+        "level": 1,
+        "text_preview": "Q.226. Purify (a) Chant (b) Invite  (c) Pollute  (d) Wash"
+      },
+      {
+        "reading_order_index": 8,
+        "element_ref": "#/texts/9",
+        "label": "text",
+        "level": 1,
+        "text_preview": "Q.227. The teammates  made  several jibes  at  the  opponent  team  members during the interview. (a) Consolation (b) Mockery (c) Inspiration (d) Contradict"
+      },
+      {
+        "reading_order_index": 9,
+        "element_ref": "#/texts/10",
+        "label": "text",
+        "level": 1,
+        "text_preview": "Q.228. Her behaviour was so ostentatious that it attracted the attention of everyone in the room. (a) Attractive (b) Restrained (c) Gentle (d) Repulsive"
+      },
+      {
+        "reading_order_index": 10,
+        "element_ref": "#/texts/11",
+        "label": "text",
+        "level": 1,
+        "text_preview": "Q.229. Her remarks were relevant to the discussion. (a) Inappropriate     (b) Suitable (c) Introductory       (d) Conclusive"
+      },
+      {
+        "reading_order_index": 11,
+        "element_ref": "#/texts/12",
+        "label": "section_header",
+        "level": 1,
+        "text_preview": "Q.230. Lethargic"
+      },
+      {
+        "reading_order_index": 12,
+        "element_ref": "#/texts/13",
+        "label": "text",
+        "level": 1,
+        "text_preview": "(a) Active (b) Languid (c) Moderate (d) Angry"
+      },
+      {
+        "reading_order_index": 13,
+        "element_ref": "#/texts/14",
+        "label": "section_header",
+        "level": 1,
+        "text_preview": "Q.231. Foment"
+      },
+      {
+        "reading_order_index": 14,
+        "element_ref": "#/texts/15",
+        "label": "text",
+        "level": 1,
+        "text_preview": "(a) Proximity (b) Remoteness (c) Separation (d) Regulate"
+      },
+      {
+        "reading_order_index": 15,
+        "element_ref": "#/texts/16",
+        "label": "section_header",
+        "level": 1,
+        "text_preview": "Q.232. Intelligible"
+      },
+      {
+        "reading_order_index": 16,
+        "element_ref": "#/texts/17",
+        "label": "text",
+        "level": 1,
+        "text_preview": "(a) Scriptable (b) Embezzle (c) Incoherent (d) Deliberate"
+      },
+      {
+        "reading_order_index": 17,
+        "element_ref": "#/texts/18",
+        "label": "section_header",
+        "level": 1,
+        "text_preview": "Q.233. Laudable (a) Commendable   (b) Severe (c) Deplorable (d) Humorous"
+      },
+      {
+        "reading_order_index": 18,
+        "element_ref": "#/texts/19",
+        "label": "text",
+        "level": 1,
+        "text_preview": "Q.234. Dissolve (a) Vanish  (b) Fade  (c) Solve  (d) Appear"
+      },
+      {
+        "reading_order_index": 19,
+        "element_ref": "#/texts/20",
+        "label": "section_header",
+        "level": 1,
+        "text_preview": "Q.235. Nominal"
+      },
+      {
+        "reading_order_index": 20,
+        "element_ref": "#/texts/21",
+        "label": "text",
+        "level": 1,
+        "text_preview": "(a) Nasty (b) Sound (c) Constant (d) Significant"
+      },
+      {
+        "reading_order_index": 21,
+        "element_ref": "#/texts/22",
+        "label": "text",
+        "level": 1,
+        "text_preview": "Q.236. Concede (a) Surrender (b) Battle (c) Avow (d) Deny"
+      },
+      {
+        "reading_order_index": 22,
+        "element_ref": "#/texts/23",
+        "label": "section_header",
+        "level": 1,
+        "text_preview": "Q.237. Bombastic"
+      },
+      {
+        "reading_order_index": 23,
+        "element_ref": "#/texts/24",
+        "label": "text",
+        "level": 1,
+        "text_preview": "(a) Simple (b) Wicked (c) Elevated (d) Pastoral"
+      },
+      {
+        "reading_order_index": 24,
+        "element_ref": "#/texts/25",
+        "label": "section_header",
+        "level": 1,
+        "text_preview": "Q.238. Forgive"
+      },
+      {
+        "reading_order_index": 25,
+        "element_ref": "#/texts/26",
+        "label": "text",
+        "level": 1,
+        "text_preview": "(a) Unburden (b) Requite (c) Clear (d) Loathe"
+      },
+      {
+        "reading_order_index": 26,
+        "element_ref": "#/texts/27",
+        "label": "text",
+        "level": 1,
+        "text_preview": "Q.239. The pool was too _________ at this end for kids to play. [SHALLOW] (a) green  (b) blue  (c) deep  (d) cold"
+      },
+      {
+        "reading_order_index": 27,
+        "element_ref": "#/texts/28",
+        "label": "text",
+        "level": 1,
+        "text_preview": "Q.240. She left the party ______ because of  her  parents'  strict  time  restrictions. [late]"
+      },
+      {
+        "reading_order_index": 28,
+        "element_ref": "#/texts/29",
+        "label": "text",
+        "level": 1,
+        "text_preview": "(a) exit   (b) early   (c) small   (d) suffer"
+      },
+      {
+        "reading_order_index": 29,
+        "element_ref": "#/texts/30",
+        "label": "text",
+        "level": 1,
+        "text_preview": "continued to"
+      },
+      {
+        "reading_order_index": 30,
+        "element_ref": "#/texts/31",
+        "label": "section_header",
+        "level": 1,
+        "text_preview": "Solutions : -"
+      },
+      {
+        "reading_order_index": 31,
+        "element_ref": "#/texts/32",
+        "label": "text",
+        "level": 1,
+        "text_preview": "Sol.141.(c) Intensifyto make something stronger or more severe. Mitigateto make something less harmful or severe. Weakento reduce in strength. Diminishto make o"
+      },
+      {
+        "reading_order_index": 32,
+        "element_ref": "#/texts/33",
+        "label": "text",
+        "level": 1,
+        "text_preview": "Sol.142.(a)  Smartintelligent  and  quick in thinking. Oafa stupid and clumsy person. Blockheada person with very little intelligence. Magnificentvery impressiv"
+      },
+      {
+        "reading_order_index": 33,
+        "element_ref": "#/texts/34",
+        "label": "text",
+        "level": 1,
+        "text_preview": "Sol.143.(d)  Restrainedcontrolled  and moderate in spending or behavior. Extravagantspending  excessively  and wastefully. Lavishrich, elaborate, or luxurious. "
+      },
+      {
+        "reading_order_index": 34,
+        "element_ref": "#/texts/35",
+        "label": "text",
+        "level": 1,
+        "text_preview": "Sol.144.(b) Impairto weaken or damage something. Enhanceto improve the quality or value of something. Enrichto  make  something  better  by adding value or qual"
+      },
+      {
+        "reading_order_index": 35,
+        "element_ref": "#/texts/36",
+        "label": "text",
+        "level": 1,
+        "text_preview": "Sol.145.(c) Selfish -lacking consideration for others and being concerned chiefly with one's own personal profit or pleasure. Generouswilling to give more of so"
+      },
+      {
+        "reading_order_index": 36,
+        "element_ref": "#/texts/37",
+        "label": "text",
+        "level": 1,
+        "text_preview": "Sol.146.(d)  Scatteredspread  widely  in different directions. Accumulatedgathered together in a growing quantity. Bunchedcollected into a compact group. Garner"
+      },
+      {
+        "reading_order_index": 37,
+        "element_ref": "#/texts/38",
+        "label": "text",
+        "level": 1,
+        "text_preview": "Sol.147.(c) Exacerbateto make situation worse. Ameliorateto make something better."
+      },
+      {
+        "reading_order_index": 38,
+        "element_ref": "#/texts/39",
+        "label": "text",
+        "level": 1,
+        "text_preview": "a"
+      },
+      {
+        "reading_order_index": 39,
+        "element_ref": "#/texts/40",
+        "label": "text",
+        "level": 1,
+        "text_preview": "Antonyms"
+      },
+      {
+        "reading_order_index": 40,
+        "element_ref": "#/texts/41",
+        "label": "text",
+        "level": 1,
+        "text_preview": "Succourto  provide  help  in  times  of difficulty. Reconditedifficult to understand. Mottoa short phrase expressing a guiding principle."
+      },
+      {
+        "reading_order_index": 41,
+        "element_ref": "#/texts/42",
+        "label": "text",
+        "level": 1,
+        "text_preview": "Sol.148.(c) Extravagantspending much more than is necessary. Thriftyusing money and other resources carefully and not wastefully. Indifferentshowing no interest"
+      },
+      {
+        "reading_order_index": 42,
+        "element_ref": "#/texts/43",
+        "label": "text",
+        "level": 1,
+        "text_preview": "expressing gratitude and relief. not  tolerant  of views, beliefs, or behaviour that differ from one's own."
+      },
+      {
+        "reading_order_index": 43,
+        "element_ref": "#/texts/44",
+        "label": "text",
+        "level": 1,
+        "text_preview": "Sol.149.(d)  Pleasantgiving  a  sense  of happy satisfaction or enjoyment. Melancholysadness  that  lasts  for  a long  period  of  time,  often  without  any o"
+      },
+      {
+        "reading_order_index": 44,
+        "element_ref": "#/texts/45",
+        "label": "text",
+        "level": 1,
+        "text_preview": "Sol.150.(a) Generosity  the  quality  of being kind and giving. Rapaciousness  aggressive  greed  or grasping behavior. Voracity excessive eagerness or hunger G"
+      },
+      {
+        "reading_order_index": 45,
+        "element_ref": "#/texts/46",
+        "label": "text",
+        "level": 1,
+        "text_preview": "Sol.151.(c)  Regular  conforming  to  a usual or expected pattern. Hallucinogenic  causing  hallucinations or altered perceptions. Freaky strange, unusual, or b"
+      },
+      {
+        "reading_order_index": 46,
+        "element_ref": "#/texts/47",
+        "label": "text",
+        "level": 1,
+        "text_preview": "Sol.152.(c) Subservient willing to obey others without question. Intransigent -unwilling to change opinions or agree with others. Pertinacious  stubbornly  hold"
+      },
+      {
+        "reading_order_index": 47,
+        "element_ref": "#/texts/48",
+        "label": "text",
+        "level": 1,
+        "text_preview": "Sol.153.(b) Flourishing -growing or developing successfully. Languishing  becoming weak or losing strength. Diminutive very small or tiny. Mesmerising -capturin"
+      },
+      {
+        "reading_order_index": 48,
+        "element_ref": "#/texts/49",
+        "label": "text",
+        "level": 1,
+        "text_preview": "Temporary -"
+      },
+      {
+        "reading_order_index": 49,
+        "element_ref": "#/texts/50",
+        "label": "text",
+        "level": 1,
+        "text_preview": "lasting only for a short time."
+      }
+    ]
+  },
+  "layout_analysis": {
+    "method": "docling_bbox_left_edge_clustering_v1",
+    "column_count": 3,
+    "confidence": 1.0,
+    "page_width": 596.0,
+    "page_height": 842.0,
+    "columns": [
+      {
+        "column_index": 1,
+        "left": 0.0,
+        "right": 124.746,
+        "detected_start": 33.943,
+        "supporting_elements": 29
+      },
+      {
+        "column_index": 2,
+        "left": 124.746,
+        "right": 307.59,
+        "detected_start": 215.55,
+        "supporting_elements": 10
+      },
+      {
+        "column_index": 3,
+        "left": 307.59,
+        "right": 596.0,
+        "detected_start": 399.63,
+        "supporting_elements": 11
+      }
+    ],
+    "elements": [
+      {
+        "element_ref": "#/texts/0",
+        "element_type": "text",
+        "label": "page_header",
+        "column_index": 1,
+        "column_indices": [
+          1
+        ],
+        "spans_columns": false,
+        "reading_order_index": null,
+        "bbox": {
+          "l": 28.800003,
+          "t": 830.7935546594726,
+          "r": 95.7084616875,
+          "b": 822.5652585957749,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/1",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 1,
+        "column_indices": [
+          1
+        ],
+        "spans_columns": false,
+        "reading_order_index": 0,
+        "bbox": {
+          "l": 28.800003,
+          "t": 814.6972656875,
+          "r": 55.716506939999995,
+          "b": 806.6150288199854,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/2",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 1,
+        "column_indices": [
+          1
+        ],
+        "spans_columns": false,
+        "reading_order_index": 1,
+        "bbox": {
+          "l": 63.94892850000001,
+          "t": 814.6972656875,
+          "r": 85.25801067,
+          "b": 806.6150288199854,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/3",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 1,
+        "column_indices": [
+          1
+        ],
+        "spans_columns": false,
+        "reading_order_index": 2,
+        "bbox": {
+          "l": 28.800003,
+          "t": 802.2753906875,
+          "r": 120.78193692,
+          "b": 794.1931538199854,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/4",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 1,
+        "column_indices": [
+          1
+        ],
+        "spans_columns": false,
+        "reading_order_index": 3,
+        "bbox": {
+          "l": 28.800003,
+          "t": 789.8525386875,
+          "r": 74.62178066999999,
+          "b": 781.7703018199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/5",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 4,
+        "bbox": {
+          "l": 100.800003,
+          "t": 789.8525386875,
+          "r": 138.96650666999997,
+          "b": 781.7703018199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/6",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 1,
+        "column_indices": [
+          1
+        ],
+        "spans_columns": false,
+        "reading_order_index": 5,
+        "bbox": {
+          "l": 28.800003,
+          "t": 777.4306636875,
+          "r": 83.60859717000001,
+          "b": 769.3484268199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/7",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 6,
+        "bbox": {
+          "l": 100.800003,
+          "t": 777.4306636875,
+          "r": 153.85517892000001,
+          "b": 769.3484268199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/8",
+        "element_type": "text",
+        "label": "section_header",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 7,
+        "bbox": {
+          "l": 28.800003,
+          "t": 755.3476566875,
+          "r": 191.16914742,
+          "b": 734.8425678199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/9",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 8,
+        "bbox": {
+          "l": 28.800003,
+          "t": 720.8417966874999,
+          "r": 195.91669991999999,
+          "b": 650.6492128199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/10",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 9,
+        "bbox": {
+          "l": 28.800003,
+          "t": 636.6484396875001,
+          "r": 196.01191992,
+          "b": 578.8777228199854,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/11",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 10,
+        "bbox": {
+          "l": 28.800003,
+          "t": 564.8759796874999,
+          "r": 195.30732491999999,
+          "b": 519.5281128199854,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/12",
+        "element_type": "text",
+        "label": "section_header",
+        "column_index": 1,
+        "column_indices": [
+          1
+        ],
+        "spans_columns": false,
+        "reading_order_index": 11,
+        "bbox": {
+          "l": 28.800003,
+          "t": 505.5263696875,
+          "r": 95.28926100000001,
+          "b": 497.4441328199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/13",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 12,
+        "bbox": {
+          "l": 28.800003,
+          "t": 493.1044896875,
+          "r": 148.52461241999998,
+          "b": 472.6003828199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/14",
+        "element_type": "text",
+        "label": "section_header",
+        "column_index": 1,
+        "column_indices": [
+          1
+        ],
+        "spans_columns": false,
+        "reading_order_index": 13,
+        "bbox": {
+          "l": 28.800003,
+          "t": 458.5986296875,
+          "r": 90.78047159999998,
+          "b": 450.51639281998536,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/15",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 14,
+        "bbox": {
+          "l": 28.800003,
+          "t": 446.1767596875,
+          "r": 168.85810992,
+          "b": 425.67264281998536,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/16",
+        "element_type": "text",
+        "label": "section_header",
+        "column_index": 1,
+        "column_indices": [
+          1
+        ],
+        "spans_columns": false,
+        "reading_order_index": 15,
+        "bbox": {
+          "l": 28.800003,
+          "t": 413.0517596875,
+          "r": 98.91035475000001,
+          "b": 404.96952281998534,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/17",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 16,
+        "bbox": {
+          "l": 28.800003,
+          "t": 400.6298796875,
+          "r": 156.92256492,
+          "b": 380.12577281998534,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/18",
+        "element_type": "text",
+        "label": "section_header",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 17,
+        "bbox": {
+          "l": 28.800003,
+          "t": 367.5048796875,
+          "r": 167.59248492,
+          "b": 334.57792281998536,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/19",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 18,
+        "bbox": {
+          "l": 28.800003,
+          "t": 321.95702968750004,
+          "r": 197.36982491999999,
+          "b": 301.45292281998536,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/20",
+        "element_type": "text",
+        "label": "section_header",
+        "column_index": 1,
+        "column_indices": [
+          1
+        ],
+        "spans_columns": false,
+        "reading_order_index": 19,
+        "bbox": {
+          "l": 28.800003,
+          "t": 288.83202968750004,
+          "r": 93.87422217000001,
+          "b": 280.7497928199854,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/21",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 20,
+        "bbox": {
+          "l": 28.800003,
+          "t": 276.4101596875,
+          "r": 158.80781742,
+          "b": 255.90604281998537,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/22",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 21,
+        "bbox": {
+          "l": 28.800003,
+          "t": 243.2841796875,
+          "r": 195.31318992,
+          "b": 222.78006281998535,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/23",
+        "element_type": "text",
+        "label": "section_header",
+        "column_index": 1,
+        "column_indices": [
+          1
+        ],
+        "spans_columns": false,
+        "reading_order_index": 22,
+        "bbox": {
+          "l": 28.800003,
+          "t": 210.1591796875,
+          "r": 103.25654592000001,
+          "b": 202.07694281998533,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/24",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 23,
+        "bbox": {
+          "l": 28.800003,
+          "t": 197.7372996875,
+          "r": 149.67158517000001,
+          "b": 177.23319281998533,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/25",
+        "element_type": "text",
+        "label": "section_header",
+        "column_index": 1,
+        "column_indices": [
+          1
+        ],
+        "spans_columns": false,
+        "reading_order_index": 24,
+        "bbox": {
+          "l": 28.800003,
+          "t": 164.61132968749996,
+          "r": 91.71650667,
+          "b": 156.5290928199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/26",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 25,
+        "bbox": {
+          "l": 28.800003,
+          "t": 152.18944968749997,
+          "r": 146.83271817,
+          "b": 131.6853428199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/27",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 26,
+        "bbox": {
+          "l": 28.800003,
+          "t": 119.06444968749997,
+          "r": 195.47871492,
+          "b": 86.13749281998537,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/28",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 27,
+        "bbox": {
+          "l": 28.800003,
+          "t": 73.51659968750005,
+          "r": 195.97529742,
+          "b": 40.59061281998538,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/29",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 28,
+        "bbox": {
+          "l": 28.800003,
+          "t": 36.250979687500035,
+          "r": 183.57100242,
+          "b": 28.16874281998537,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/30",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 2,
+        "column_indices": [
+          2
+        ],
+        "spans_columns": false,
+        "reading_order_index": 29,
+        "bbox": {
+          "l": 138.17842125,
+          "t": 814.6972656875,
+          "r": 180.13740492,
+          "b": 806.6150288199854,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/31",
+        "element_type": "text",
+        "label": "section_header",
+        "column_index": 2,
+        "column_indices": [
+          2
+        ],
+        "spans_columns": false,
+        "reading_order_index": 30,
+        "bbox": {
+          "l": 215.54999,
+          "t": 814.1357418844726,
+          "r": 271.6521246875,
+          "b": 805.9074458207749,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/32",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 0,
+        "column_indices": [
+          2,
+          3
+        ],
+        "spans_columns": true,
+        "reading_order_index": 31,
+        "bbox": {
+          "l": 215.54999,
+          "t": 789.0517576875,
+          "r": 382.64178691999996,
+          "b": 706.4363178199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/33",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 0,
+        "column_indices": [
+          2,
+          3
+        ],
+        "spans_columns": true,
+        "reading_order_index": 32,
+        "bbox": {
+          "l": 215.54999,
+          "t": 692.4355466874999,
+          "r": 382.75751192,
+          "b": 609.8210828199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/34",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 0,
+        "column_indices": [
+          2,
+          3
+        ],
+        "spans_columns": true,
+        "reading_order_index": 33,
+        "bbox": {
+          "l": 215.54999,
+          "t": 595.8193396875,
+          "r": 382.47918691999996,
+          "b": 500.7839728049853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/35",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 0,
+        "column_indices": [
+          2,
+          3
+        ],
+        "spans_columns": true,
+        "reading_order_index": 34,
+        "bbox": {
+          "l": 215.54999,
+          "t": 486.7822296875,
+          "r": 382.65057692,
+          "b": 366.90214281998533,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/36",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 0,
+        "column_indices": [
+          2,
+          3
+        ],
+        "spans_columns": true,
+        "reading_order_index": 35,
+        "bbox": {
+          "l": 215.54999,
+          "t": 354.2812496875,
+          "r": 382.75604192000003,
+          "b": 197.13358281998535,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/37",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 0,
+        "column_indices": [
+          2,
+          3
+        ],
+        "spans_columns": true,
+        "reading_order_index": 36,
+        "bbox": {
+          "l": 215.54999,
+          "t": 183.13280968749996,
+          "r": 382.76190692,
+          "b": 75.67460281998535,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/38",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 0,
+        "column_indices": [
+          2,
+          3
+        ],
+        "spans_columns": true,
+        "reading_order_index": 37,
+        "bbox": {
+          "l": 215.54999,
+          "t": 61.67284968750005,
+          "r": 372.48309692,
+          "b": 28.74686281998538,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/39",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 3,
+        "column_indices": [
+          3
+        ],
+        "spans_columns": false,
+        "reading_order_index": 38,
+        "bbox": {
+          "l": 375.60174500000005,
+          "t": 61.67284968750005,
+          "r": 382.72967942,
+          "b": 53.59061281998538,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/40",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 3,
+        "column_indices": [
+          3
+        ],
+        "spans_columns": false,
+        "reading_order_index": 39,
+        "bbox": {
+          "l": 291.757038,
+          "t": 830.7935546594726,
+          "r": 570.8188929375,
+          "b": 822.5652585957749,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/41",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 3,
+        "column_indices": [
+          3
+        ],
+        "spans_columns": false,
+        "reading_order_index": 40,
+        "bbox": {
+          "l": 402.30002,
+          "t": 814.6972656875,
+          "r": 569.47677692,
+          "b": 756.9265518199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/42",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 3,
+        "column_indices": [
+          3
+        ],
+        "spans_columns": false,
+        "reading_order_index": 41,
+        "bbox": {
+          "l": 402.30002,
+          "t": 744.3056636875,
+          "r": 569.18673692,
+          "b": 649.2703028199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/43",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 3,
+        "column_indices": [
+          3
+        ],
+        "spans_columns": false,
+        "reading_order_index": 42,
+        "bbox": {
+          "l": 402.30002,
+          "t": 669.7744096875,
+          "r": 569.51193692,
+          "b": 636.8474528199854,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/44",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 3,
+        "column_indices": [
+          3
+        ],
+        "spans_columns": false,
+        "reading_order_index": 43,
+        "bbox": {
+          "l": 402.30002,
+          "t": 624.2255896875,
+          "r": 569.49875192,
+          "b": 491.9236228199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/45",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 3,
+        "column_indices": [
+          3
+        ],
+        "spans_columns": false,
+        "reading_order_index": 44,
+        "bbox": {
+          "l": 402.30002,
+          "t": 479.3027296875,
+          "r": 569.48702942,
+          "b": 371.84452281998534,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/46",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 3,
+        "column_indices": [
+          3
+        ],
+        "spans_columns": false,
+        "reading_order_index": 45,
+        "bbox": {
+          "l": 402.30002,
+          "t": 360.6035196875,
+          "r": 569.38156442,
+          "b": 253.14530281998532,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/47",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 3,
+        "column_indices": [
+          3
+        ],
+        "spans_columns": false,
+        "reading_order_index": 46,
+        "bbox": {
+          "l": 402.30002,
+          "t": 241.90429968750004,
+          "r": 569.4591969200001,
+          "b": 134.44510281998532,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/48",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 3,
+        "column_indices": [
+          3
+        ],
+        "spans_columns": false,
+        "reading_order_index": 47,
+        "bbox": {
+          "l": 402.30002,
+          "t": 123.20507968749996,
+          "r": 569.50900442,
+          "b": 40.59061281998538,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/49",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 3,
+        "column_indices": [
+          3
+        ],
+        "spans_columns": false,
+        "reading_order_index": 48,
+        "bbox": {
+          "l": 402.30002,
+          "t": 36.250979687500035,
+          "r": 451.92746123,
+          "b": 28.16874281998537,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/50",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 3,
+        "column_indices": [
+          3
+        ],
+        "spans_columns": false,
+        "reading_order_index": 49,
+        "bbox": {
+          "l": 451.92746150000005,
+          "t": 36.250979687500035,
+          "r": 568.31662442,
+          "b": 28.16874281998537,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/51",
+        "element_type": "text",
+        "label": "page_footer",
+        "column_index": 0,
+        "column_indices": [
+          2,
+          3
+        ],
+        "spans_columns": true,
+        "reading_order_index": null,
+        "bbox": {
+          "l": 99.3266505,
+          "t": 21.98847795947256,
+          "r": 495.95088382500006,
+          "b": 13.76018189577485,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      }
+    ],
+    "warnings": []
+  },
+  "structure_chunks": {
+    "enabled": true,
+    "method": "docling_hybrid_chunker",
+    "scope": "page",
+    "items": [
+      {
+        "text": "Q.225.\nLady Stranleigh\nsmile at him brilliantly.\n(a) Brightly\n(b) Dimly\n(c) Cunningly\n(d) Strangely",
+        "meta": {
+          "schema_name": "docling_core.transforms.chunker.DocMeta",
+          "version": "1.0.0",
+          "doc_items": [
+            {
+              "self_ref": "#/texts/1",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 814.6972656875,
+                    "r": 55.716506939999995,
+                    "b": 806.6150288199854,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    6
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/2",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 63.94892850000001,
+                    "t": 814.6972656875,
+                    "r": 85.25801067,
+                    "b": 806.6150288199854,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    4
+                  ]
+                },
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 90.508011,
+                    "t": 814.6972656875,
+                    "r": 132.92842091999998,
+                    "b": 806.6150288199854,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    5,
+                    15
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/3",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 802.2753906875,
+                    "r": 120.78193692,
+                    "b": 794.1931538199854,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    25
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/4",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 789.8525386875,
+                    "r": 74.62178066999999,
+                    "b": 781.7703018199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    12
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/5",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 100.800003,
+                    "t": 789.8525386875,
+                    "r": 138.96650666999997,
+                    "b": 781.7703018199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    9
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/6",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 777.4306636875,
+                    "r": 83.60859717000001,
+                    "b": 769.3484268199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    13
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/7",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 100.800003,
+                    "t": 777.4306636875,
+                    "r": 153.85517892000001,
+                    "b": 769.3484268199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    13
+                  ]
+                }
+              ]
+            }
+          ],
+          "headings": null,
+          "captions": null,
+          "origin": {
+            "mimetype": "application/pdf",
+            "binary_hash": 4088937740843140903,
+            "filename": "english_page_0575.pdf",
+            "uri": null
+          }
+        },
+        "chunk_index": 0,
+        "contextualized_text": "Q.225.\nLady Stranleigh\nsmile at him brilliantly.\n(a) Brightly\n(b) Dimly\n(c) Cunningly\n(d) Strangely"
+      },
+      {
+        "text": "Q.227. The teammates  made  several jibes  at  the  opponent  team  members during the interview. (a) Consolation (b) Mockery (c) Inspiration (d) Contradict\nQ.228. Her behaviour was so ostentatious that it attracted the attention of everyone in the room. (a) Attractive (b) Restrained (c) Gentle (d) Repulsive\nQ.229. Her remarks were relevant to the discussion. (a) Inappropriate     (b) Suitable (c) Introductory       (d) Conclusive",
+        "meta": {
+          "schema_name": "docling_core.transforms.chunker.DocMeta",
+          "version": "1.0.0",
+          "doc_items": [
+            {
+              "self_ref": "#/texts/9",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 720.8417966874999,
+                    "r": 195.91669991999999,
+                    "b": 650.6492128199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    156
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/10",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 636.6484396875001,
+                    "r": 196.01191992,
+                    "b": 578.8777228199854,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    152
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/11",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 564.8759796874999,
+                    "r": 195.30732491999999,
+                    "b": 519.5281128199854,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    124
+                  ]
+                }
+              ]
+            }
+          ],
+          "headings": [
+            "Q.226. Purify (a) Chant (b) Invite  (c) Pollute  (d) Wash"
+          ],
+          "captions": null,
+          "origin": {
+            "mimetype": "application/pdf",
+            "binary_hash": 4088937740843140903,
+            "filename": "english_page_0575.pdf",
+            "uri": null
+          }
+        },
+        "chunk_index": 1,
+        "contextualized_text": "Q.226. Purify (a) Chant (b) Invite  (c) Pollute  (d) Wash\nQ.227. The teammates  made  several jibes  at  the  opponent  team  members during the interview. (a) Consolation (b) Mockery (c) Inspiration (d) Contradict\nQ.228. Her behaviour was so ostentatious that it attracted the attention of everyone in the room. (a) Attractive (b) Restrained (c) Gentle (d) Repulsive\nQ.229. Her remarks were relevant to the discussion. (a) Inappropriate     (b) Suitable (c) Introductory       (d) Conclusive"
+      },
+      {
+        "text": "(a) Active (b) Languid (c) Moderate (d) Angry",
+        "meta": {
+          "schema_name": "docling_core.transforms.chunker.DocMeta",
+          "version": "1.0.0",
+          "doc_items": [
+            {
+              "self_ref": "#/texts/13",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 493.1044896875,
+                    "r": 148.52461241999998,
+                    "b": 472.6003828199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    45
+                  ]
+                }
+              ]
+            }
+          ],
+          "headings": [
+            "Q.230. Lethargic"
+          ],
+          "captions": null,
+          "origin": {
+            "mimetype": "application/pdf",
+            "binary_hash": 4088937740843140903,
+            "filename": "english_page_0575.pdf",
+            "uri": null
+          }
+        },
+        "chunk_index": 2,
+        "contextualized_text": "Q.230. Lethargic\n(a) Active (b) Languid (c) Moderate (d) Angry"
+      },
+      {
+        "text": "(a) Proximity (b) Remoteness (c) Separation (d) Regulate",
+        "meta": {
+          "schema_name": "docling_core.transforms.chunker.DocMeta",
+          "version": "1.0.0",
+          "doc_items": [
+            {
+              "self_ref": "#/texts/15",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 446.1767596875,
+                    "r": 168.85810992,
+                    "b": 425.67264281998536,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    56
+                  ]
+                }
+              ]
+            }
+          ],
+          "headings": [
+            "Q.231. Foment"
+          ],
+          "captions": null,
+          "origin": {
+            "mimetype": "application/pdf",
+            "binary_hash": 4088937740843140903,
+            "filename": "english_page_0575.pdf",
+            "uri": null
+          }
+        },
+        "chunk_index": 3,
+        "contextualized_text": "Q.231. Foment\n(a) Proximity (b) Remoteness (c) Separation (d) Regulate"
+      },
+      {
+        "text": "(a) Scriptable (b) Embezzle (c) Incoherent (d) Deliberate",
+        "meta": {
+          "schema_name": "docling_core.transforms.chunker.DocMeta",
+          "version": "1.0.0",
+          "doc_items": [
+            {
+              "self_ref": "#/texts/17",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 400.6298796875,
+                    "r": 156.92256492,
+                    "b": 380.12577281998534,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    57
+                  ]
+                }
+              ]
+            }
+          ],
+          "headings": [
+            "Q.232. Intelligible"
+          ],
+          "captions": null,
+          "origin": {
+            "mimetype": "application/pdf",
+            "binary_hash": 4088937740843140903,
+            "filename": "english_page_0575.pdf",
+            "uri": null
+          }
+        },
+        "chunk_index": 4,
+        "contextualized_text": "Q.232. Intelligible\n(a) Scriptable (b) Embezzle (c) Incoherent (d) Deliberate"
+      },
+      {
+        "text": "Q.234. Dissolve (a) Vanish  (b) Fade  (c) Solve  (d) Appear",
+        "meta": {
+          "schema_name": "docling_core.transforms.chunker.DocMeta",
+          "version": "1.0.0",
+          "doc_items": [
+            {
+              "self_ref": "#/texts/19",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 321.95702968750004,
+                    "r": 197.36982491999999,
+                    "b": 301.45292281998536,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    59
+                  ]
+                }
+              ]
+            }
+          ],
+          "headings": [
+            "Q.233. Laudable (a) Commendable   (b) Severe (c) Deplorable (d) Humorous"
+          ],
+          "captions": null,
+          "origin": {
+            "mimetype": "application/pdf",
+            "binary_hash": 4088937740843140903,
+            "filename": "english_page_0575.pdf",
+            "uri": null
+          }
+        },
+        "chunk_index": 5,
+        "contextualized_text": "Q.233. Laudable (a) Commendable   (b) Severe (c) Deplorable (d) Humorous\nQ.234. Dissolve (a) Vanish  (b) Fade  (c) Solve  (d) Appear"
+      },
+      {
+        "text": "(a) Nasty (b) Sound (c) Constant (d) Significant\nQ.236. Concede (a) Surrender (b) Battle (c) Avow (d) Deny",
+        "meta": {
+          "schema_name": "docling_core.transforms.chunker.DocMeta",
+          "version": "1.0.0",
+          "doc_items": [
+            {
+              "self_ref": "#/texts/21",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 276.4101596875,
+                    "r": 158.80781742,
+                    "b": 255.90604281998537,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    48
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/22",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 243.2841796875,
+                    "r": 195.31318992,
+                    "b": 222.78006281998535,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    57
+                  ]
+                }
+              ]
+            }
+          ],
+          "headings": [
+            "Q.235. Nominal"
+          ],
+          "captions": null,
+          "origin": {
+            "mimetype": "application/pdf",
+            "binary_hash": 4088937740843140903,
+            "filename": "english_page_0575.pdf",
+            "uri": null
+          }
+        },
+        "chunk_index": 6,
+        "contextualized_text": "Q.235. Nominal\n(a) Nasty (b) Sound (c) Constant (d) Significant\nQ.236. Concede (a) Surrender (b) Battle (c) Avow (d) Deny"
+      },
+      {
+        "text": "(a) Simple (b) Wicked (c) Elevated (d) Pastoral",
+        "meta": {
+          "schema_name": "docling_core.transforms.chunker.DocMeta",
+          "version": "1.0.0",
+          "doc_items": [
+            {
+              "self_ref": "#/texts/24",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 197.7372996875,
+                    "r": 149.67158517000001,
+                    "b": 177.23319281998533,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    47
+                  ]
+                }
+              ]
+            }
+          ],
+          "headings": [
+            "Q.237. Bombastic"
+          ],
+          "captions": null,
+          "origin": {
+            "mimetype": "application/pdf",
+            "binary_hash": 4088937740843140903,
+            "filename": "english_page_0575.pdf",
+            "uri": null
+          }
+        },
+        "chunk_index": 7,
+        "contextualized_text": "Q.237. Bombastic\n(a) Simple (b) Wicked (c) Elevated (d) Pastoral"
+      },
+      {
+        "text": "(a) Unburden (b) Requite (c) Clear (d) Loathe\nQ.239. The pool was too _________ at this end for kids to play. [SHALLOW] (a) green  (b) blue  (c) deep  (d) cold\nQ.240. She left the party ______ because of  her  parents'  strict  time  restrictions. [late]\n(a) exit   (b) early   (c) small   (d) suffer\ncontinued to",
+        "meta": {
+          "schema_name": "docling_core.transforms.chunker.DocMeta",
+          "version": "1.0.0",
+          "doc_items": [
+            {
+              "self_ref": "#/texts/26",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 152.18944968749997,
+                    "r": 146.83271817,
+                    "b": 131.6853428199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    45
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/27",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 119.06444968749997,
+                    "r": 195.47871492,
+                    "b": 86.13749281998537,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    113
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/28",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 73.51659968750005,
+                    "r": 195.97529742,
+                    "b": 40.59061281998538,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    94
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/29",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 36.250979687500035,
+                    "r": 183.57100242,
+                    "b": 28.16874281998537,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    45
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/30",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 138.17842125,
+                    "t": 814.6972656875,
+                    "r": 180.13740492,
+                    "b": 806.6150288199854,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    9
+                  ]
+                },
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 185.387403,
+                    "t": 814.6972656875,
+                    "r": 195.60908742,
+                    "b": 806.6150288199854,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    10,
+                    12
+                  ]
+                }
+              ]
+            }
+          ],
+          "headings": [
+            "Q.238. Forgive"
+          ],
+          "captions": null,
+          "origin": {
+            "mimetype": "application/pdf",
+            "binary_hash": 4088937740843140903,
+            "filename": "english_page_0575.pdf",
+            "uri": null
+          }
+        },
+        "chunk_index": 8,
+        "contextualized_text": "Q.238. Forgive\n(a) Unburden (b) Requite (c) Clear (d) Loathe\nQ.239. The pool was too _________ at this end for kids to play. [SHALLOW] (a) green  (b) blue  (c) deep  (d) cold\nQ.240. She left the party ______ because of  her  parents'  strict  time  restrictions. [late]\n(a) exit   (b) early   (c) small   (d) suffer\ncontinued to"
+      },
+      {
+        "text": "Sol.141.(c) Intensifyto make something stronger or more severe. Mitigateto make something less harmful or severe. Weakento reduce in strength. Diminishto make or become smaller. Alleviateto reduce pain or difficulty.\nSol.142.(a)  Smartintelligent  and  quick in thinking. Oafa stupid and clumsy person. Blockheada person with very little intelligence. Magnificentvery impressive and grand. Simpletona person who is easily fooled.\nSol.143.(d)  Restrainedcontrolled  and moderate in spending or behavior. Extravagantspending  excessively  and wastefully. Lavishrich, elaborate, or luxurious. Enrichto improve the quality or value of something. Righteousmorally right or justifiable.\nSol.144.(b) Impairto weaken or damage something. Enhanceto improve the quality or value of something. Enrichto  make  something  better  by adding value or quality. Miraclean extraordinary and remarkable event. Relevancethe quality of being related to a subject or matter.",
+        "meta": {
+          "schema_name": "docling_core.transforms.chunker.DocMeta",
+          "version": "1.0.0",
+          "doc_items": [
+            {
+              "self_ref": "#/texts/32",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 215.54999,
+                    "t": 789.0517576875,
+                    "r": 382.64178691999996,
+                    "b": 706.4363178199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    216
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/33",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 215.54999,
+                    "t": 692.4355466874999,
+                    "r": 382.75751192,
+                    "b": 609.8210828199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    212
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/34",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 215.54999,
+                    "t": 595.8193396875,
+                    "r": 382.47918691999996,
+                    "b": 500.7839728049853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    250
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/35",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 215.54999,
+                    "t": 486.7822296875,
+                    "r": 382.65057692,
+                    "b": 366.90214281998533,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    272
+                  ]
+                }
+              ]
+            }
+          ],
+          "headings": [
+            "Solutions : -"
+          ],
+          "captions": null,
+          "origin": {
+            "mimetype": "application/pdf",
+            "binary_hash": 4088937740843140903,
+            "filename": "english_page_0575.pdf",
+            "uri": null
+          }
+        },
+        "chunk_index": 9,
+        "contextualized_text": "Solutions : -\nSol.141.(c) Intensifyto make something stronger or more severe. Mitigateto make something less harmful or severe. Weakento reduce in strength. Diminishto make or become smaller. Alleviateto reduce pain or difficulty.\nSol.142.(a)  Smartintelligent  and  quick in thinking. Oafa stupid and clumsy person. Blockheada person with very little intelligence. Magnificentvery impressive and grand. Simpletona person who is easily fooled.\nSol.143.(d)  Restrainedcontrolled  and moderate in spending or behavior. Extravagantspending  excessively  and wastefully. Lavishrich, elaborate, or luxurious. Enrichto improve the quality or value of something. Righteousmorally right or justifiable.\nSol.144.(b) Impairto weaken or damage something. Enhanceto improve the quality or value of something. Enrichto  make  something  better  by adding value or quality. Miraclean extraordinary and remarkable event. Relevancethe quality of being related to a subject or matter."
+      },
+      {
+        "text": "Sol.145.(c) Selfish -lacking consideration for others and being concerned chiefly with one's own personal profit or pleasure. Generouswilling to give more of something, especially money  or  time, than is strictly necessary or expected. Magnanimousvery generous or forgiving, especially toward a rival or less powerful person. Altruisticshowing a selfless concern for the well-being of others. Benevolentwell-meaning and kindly.\nSol.146.(d)  Scatteredspread  widely  in different directions. Accumulatedgathered together in a growing quantity. Bunchedcollected into a compact group. Garneredacquired  or collected through effort. Sparedkept from harm or loss.\nSol.147.(c) Exacerbateto make situation worse. Ameliorateto make something better.\na\nAntonyms\nSuccourto  provide  help  in  times  of difficulty. Reconditedifficult to understand. Mottoa short phrase expressing a guiding principle.\nSol.148.(c) Extravagantspending much more than is necessary. Thriftyusing money and other resources carefully and not wastefully. Indifferentshowing no interest or concern. ThankfulIntolerant-",
+        "meta": {
+          "schema_name": "docling_core.transforms.chunker.DocMeta",
+          "version": "1.0.0",
+          "doc_items": [
+            {
+              "self_ref": "#/texts/36",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 215.54999,
+                    "t": 354.2812496875,
+                    "r": 382.75604192000003,
+                    "b": 197.13358281998535,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    428
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/37",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 215.54999,
+                    "t": 183.13280968749996,
+                    "r": 382.76190692,
+                    "b": 75.67460281998535,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    230
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/38",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 215.54999,
+                    "t": 61.67284968750005,
+                    "r": 372.48309692,
+                    "b": 28.74686281998538,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    82
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/39",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 375.60174500000005,
+                    "t": 61.67284968750005,
+                    "r": 382.72967942,
+                    "b": 53.59061281998538,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    1
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/40",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 291.757038,
+                    "t": 830.7935546594726,
+                    "r": 570.8188929375,
+                    "b": 822.5652585957749,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    8
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/41",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 402.30002,
+                    "t": 814.6972656875,
+                    "r": 569.47677692,
+                    "b": 756.9265518199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    137
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/42",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 402.30002,
+                    "t": 744.3056636875,
+                    "r": 569.18673692,
+                    "b": 649.2703028199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    192
+                  ]
+                }
+              ]
+            }
+          ],
+          "headings": [
+            "Solutions : -"
+          ],
+          "captions": null,
+          "origin": {
+            "mimetype": "application/pdf",
+            "binary_hash": 4088937740843140903,
+            "filename": "english_page_0575.pdf",
+            "uri": null
+          }
+        },
+        "chunk_index": 10,
+        "contextualized_text": "Solutions : -\nSol.145.(c) Selfish -lacking consideration for others and being concerned chiefly with one's own personal profit or pleasure. Generouswilling to give more of something, especially money  or  time, than is strictly necessary or expected. Magnanimousvery generous or forgiving, especially toward a rival or less powerful person. Altruisticshowing a selfless concern for the well-being of others. Benevolentwell-meaning and kindly.\nSol.146.(d)  Scatteredspread  widely  in different directions. Accumulatedgathered together in a growing quantity. Bunchedcollected into a compact group. Garneredacquired  or collected through effort. Sparedkept from harm or loss.\nSol.147.(c) Exacerbateto make situation worse. Ameliorateto make something better.\na\nAntonyms\nSuccourto  provide  help  in  times  of difficulty. Reconditedifficult to understand. Mottoa short phrase expressing a guiding principle.\nSol.148.(c) Extravagantspending much more than is necessary. Thriftyusing money and other resources carefully and not wastefully. Indifferentshowing no interest or concern. ThankfulIntolerant-"
+      },
+      {
+        "text": "expressing gratitude and relief. not  tolerant  of views, beliefs, or behaviour that differ from one's own.\nSol.149.(d)  Pleasantgiving  a  sense  of happy satisfaction or enjoyment. Melancholysadness  that  lasts  for  a long  period  of  time,  often  without  any obvious reason. Mechanicaloperated  by  a  machine  or machinery. Profitable  yielding  profit  or  financial gain. Miserablevery  unpleasant  or  bad,  and causing someone to feel unhappy.\nSol.150.(a) Generosity  the  quality  of being kind and giving. Rapaciousness  aggressive  greed  or grasping behavior. Voracity excessive eagerness or hunger Greed  an  intense  desire for more than one needs. Violence  the  use  of  physical  force  to harm or damage.\nSol.151.(c)  Regular  conforming  to  a usual or expected pattern. Hallucinogenic  causing  hallucinations or altered perceptions. Freaky strange, unusual, or bizarre. Psychedelic  relating to vivid  colors, patterns, or altered mental states. Abnormal -deviating from what is normal or typical.",
+        "meta": {
+          "schema_name": "docling_core.transforms.chunker.DocMeta",
+          "version": "1.0.0",
+          "doc_items": [
+            {
+              "self_ref": "#/texts/43",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 402.30002,
+                    "t": 669.7744096875,
+                    "r": 569.51193692,
+                    "b": 636.8474528199854,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    107
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/44",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 402.30002,
+                    "t": 624.2255896875,
+                    "r": 569.49875192,
+                    "b": 491.9236228199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    348
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/45",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 402.30002,
+                    "t": 479.3027296875,
+                    "r": 569.48702942,
+                    "b": 371.84452281998534,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    270
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/46",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 402.30002,
+                    "t": 360.6035196875,
+                    "r": 569.38156442,
+                    "b": 253.14530281998532,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    295
+                  ]
+                }
+              ]
+            }
+          ],
+          "headings": [
+            "Solutions : -"
+          ],
+          "captions": null,
+          "origin": {
+            "mimetype": "application/pdf",
+            "binary_hash": 4088937740843140903,
+            "filename": "english_page_0575.pdf",
+            "uri": null
+          }
+        },
+        "chunk_index": 11,
+        "contextualized_text": "Solutions : -\nexpressing gratitude and relief. not  tolerant  of views, beliefs, or behaviour that differ from one's own.\nSol.149.(d)  Pleasantgiving  a  sense  of happy satisfaction or enjoyment. Melancholysadness  that  lasts  for  a long  period  of  time,  often  without  any obvious reason. Mechanicaloperated  by  a  machine  or machinery. Profitable  yielding  profit  or  financial gain. Miserablevery  unpleasant  or  bad,  and causing someone to feel unhappy.\nSol.150.(a) Generosity  the  quality  of being kind and giving. Rapaciousness  aggressive  greed  or grasping behavior. Voracity excessive eagerness or hunger Greed  an  intense  desire for more than one needs. Violence  the  use  of  physical  force  to harm or damage.\nSol.151.(c)  Regular  conforming  to  a usual or expected pattern. Hallucinogenic  causing  hallucinations or altered perceptions. Freaky strange, unusual, or bizarre. Psychedelic  relating to vivid  colors, patterns, or altered mental states. Abnormal -deviating from what is normal or typical."
+      },
+      {
+        "text": "Sol.152.(c) Subservient willing to obey others without question. Intransigent -unwilling to change opinions or agree with others. Pertinacious  stubbornly  holding  on  to an idea or purpose. Obstinate  refusing  to  change behavior or beliefs, even when persuaded. Tenacious not giving up easily.\nSol.153.(b) Flourishing -growing or developing successfully. Languishing  becoming weak or losing strength. Diminutive very small or tiny. Mesmerising -capturing complete attention.\nTemporary -\nlasting only for a short time.",
+        "meta": {
+          "schema_name": "docling_core.transforms.chunker.DocMeta",
+          "version": "1.0.0",
+          "doc_items": [
+            {
+              "self_ref": "#/texts/47",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 402.30002,
+                    "t": 241.90429968750004,
+                    "r": 569.4591969200001,
+                    "b": 134.44510281998532,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    297
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/48",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 402.30002,
+                    "t": 123.20507968749996,
+                    "r": 569.50900442,
+                    "b": 40.59061281998538,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    181
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/49",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 402.30002,
+                    "t": 36.250979687500035,
+                    "r": 451.92746123,
+                    "b": 28.16874281998537,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    11
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/50",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 451.92746150000005,
+                    "t": 36.250979687500035,
+                    "r": 568.31662442,
+                    "b": 28.16874281998537,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    30
+                  ]
+                }
+              ]
+            }
+          ],
+          "headings": [
+            "Solutions : -"
+          ],
+          "captions": null,
+          "origin": {
+            "mimetype": "application/pdf",
+            "binary_hash": 4088937740843140903,
+            "filename": "english_page_0575.pdf",
+            "uri": null
+          }
+        },
+        "chunk_index": 12,
+        "contextualized_text": "Solutions : -\nSol.152.(c) Subservient willing to obey others without question. Intransigent -unwilling to change opinions or agree with others. Pertinacious  stubbornly  holding  on  to an idea or purpose. Obstinate  refusing  to  change behavior or beliefs, even when persuaded. Tenacious not giving up easily.\nSol.153.(b) Flourishing -growing or developing successfully. Languishing  becoming weak or losing strength. Diminutive very small or tiny. Mesmerising -capturing complete attention.\nTemporary -\nlasting only for a short time."
+      }
+    ]
+  },
+  "content_assets": {
+    "tables": [],
+    "figures": []
+  },
+  "docling_document": {
+    "schema_name": "DoclingDocument",
+    "version": "1.10.0",
+    "name": "english_page_0575",
+    "origin": {
+      "mimetype": "application/pdf",
+      "binary_hash": 4088937740843140903,
+      "filename": "english_page_0575.pdf"
+    },
+    "furniture": {
+      "self_ref": "#/furniture",
+      "children": [],
+      "content_layer": "furniture",
+      "name": "_root_",
+      "label": "unspecified"
+    },
+    "body": {
+      "self_ref": "#/body",
+      "children": [
+        {
+          "$ref": "#/texts/0"
+        },
+        {
+          "$ref": "#/texts/1"
+        },
+        {
+          "$ref": "#/texts/2"
+        },
+        {
+          "$ref": "#/texts/3"
+        },
+        {
+          "$ref": "#/texts/4"
+        },
+        {
+          "$ref": "#/texts/5"
+        },
+        {
+          "$ref": "#/texts/6"
+        },
+        {
+          "$ref": "#/texts/7"
+        },
+        {
+          "$ref": "#/texts/8"
+        },
+        {
+          "$ref": "#/texts/9"
+        },
+        {
+          "$ref": "#/texts/10"
+        },
+        {
+          "$ref": "#/texts/11"
+        },
+        {
+          "$ref": "#/texts/12"
+        },
+        {
+          "$ref": "#/texts/13"
+        },
+        {
+          "$ref": "#/texts/14"
+        },
+        {
+          "$ref": "#/texts/15"
+        },
+        {
+          "$ref": "#/texts/16"
+        },
+        {
+          "$ref": "#/texts/17"
+        },
+        {
+          "$ref": "#/texts/18"
+        },
+        {
+          "$ref": "#/texts/19"
+        },
+        {
+          "$ref": "#/texts/20"
+        },
+        {
+          "$ref": "#/texts/21"
+        },
+        {
+          "$ref": "#/texts/22"
+        },
+        {
+          "$ref": "#/texts/23"
+        },
+        {
+          "$ref": "#/texts/24"
+        },
+        {
+          "$ref": "#/texts/25"
+        },
+        {
+          "$ref": "#/texts/26"
+        },
+        {
+          "$ref": "#/texts/27"
+        },
+        {
+          "$ref": "#/texts/28"
+        },
+        {
+          "$ref": "#/texts/29"
+        },
+        {
+          "$ref": "#/texts/30"
+        },
+        {
+          "$ref": "#/texts/31"
+        },
+        {
+          "$ref": "#/texts/32"
+        },
+        {
+          "$ref": "#/texts/33"
+        },
+        {
+          "$ref": "#/texts/34"
+        },
+        {
+          "$ref": "#/texts/35"
+        },
+        {
+          "$ref": "#/texts/36"
+        },
+        {
+          "$ref": "#/texts/37"
+        },
+        {
+          "$ref": "#/texts/38"
+        },
+        {
+          "$ref": "#/texts/39"
+        },
+        {
+          "$ref": "#/texts/40"
+        },
+        {
+          "$ref": "#/texts/41"
+        },
+        {
+          "$ref": "#/texts/42"
+        },
+        {
+          "$ref": "#/texts/43"
+        },
+        {
+          "$ref": "#/texts/44"
+        },
+        {
+          "$ref": "#/texts/45"
+        },
+        {
+          "$ref": "#/texts/46"
+        },
+        {
+          "$ref": "#/texts/47"
+        },
+        {
+          "$ref": "#/texts/48"
+        },
+        {
+          "$ref": "#/texts/49"
+        },
+        {
+          "$ref": "#/texts/50"
+        },
+        {
+          "$ref": "#/texts/51"
+        }
+      ],
+      "content_layer": "body",
+      "name": "_root_",
+      "label": "unspecified"
+    },
+    "groups": [],
+    "texts": [
+      {
+        "self_ref": "#/texts/0",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "furniture",
+        "label": "page_header",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 830.7935546594726,
+              "r": 95.7084616875,
+              "b": 822.5652585957749,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              8
+            ]
+          }
+        ],
+        "orig": "Pinnacle",
+        "text": "Pinnacle"
+      },
+      {
+        "self_ref": "#/texts/1",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 814.6972656875,
+              "r": 55.716506939999995,
+              "b": 806.6150288199854,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              6
+            ]
+          }
+        ],
+        "orig": "Q.225.",
+        "text": "Q.225."
+      },
+      {
+        "self_ref": "#/texts/2",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 63.94892850000001,
+              "t": 814.6972656875,
+              "r": 85.25801067,
+              "b": 806.6150288199854,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              4
+            ]
+          },
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 90.508011,
+              "t": 814.6972656875,
+              "r": 132.92842091999998,
+              "b": 806.6150288199854,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              5,
+              15
+            ]
+          }
+        ],
+        "orig": "Lady Stranleigh",
+        "text": "Lady Stranleigh"
+      },
+      {
+        "self_ref": "#/texts/3",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 802.2753906875,
+              "r": 120.78193692,
+              "b": 794.1931538199854,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              25
+            ]
+          }
+        ],
+        "orig": "smile at him brilliantly.",
+        "text": "smile at him brilliantly."
+      },
+      {
+        "self_ref": "#/texts/4",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 789.8525386875,
+              "r": 74.62178066999999,
+              "b": 781.7703018199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              12
+            ]
+          }
+        ],
+        "orig": "(a) Brightly",
+        "text": "(a) Brightly"
+      },
+      {
+        "self_ref": "#/texts/5",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 100.800003,
+              "t": 789.8525386875,
+              "r": 138.96650666999997,
+              "b": 781.7703018199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              9
+            ]
+          }
+        ],
+        "orig": "(b) Dimly",
+        "text": "(b) Dimly"
+      },
+      {
+        "self_ref": "#/texts/6",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 777.4306636875,
+              "r": 83.60859717000001,
+              "b": 769.3484268199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              13
+            ]
+          }
+        ],
+        "orig": "(c) Cunningly",
+        "text": "(c) Cunningly"
+      },
+      {
+        "self_ref": "#/texts/7",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 100.800003,
+              "t": 777.4306636875,
+              "r": 153.85517892000001,
+              "b": 769.3484268199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              13
+            ]
+          }
+        ],
+        "orig": "(d) Strangely",
+        "text": "(d) Strangely"
+      },
+      {
+        "self_ref": "#/texts/8",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "section_header",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 755.3476566875,
+              "r": 191.16914742,
+              "b": 734.8425678199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              57
+            ]
+          }
+        ],
+        "orig": "Q.226. Purify (a) Chant (b) Invite  (c) Pollute  (d) Wash",
+        "text": "Q.226. Purify (a) Chant (b) Invite  (c) Pollute  (d) Wash",
+        "level": 1
+      },
+      {
+        "self_ref": "#/texts/9",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 720.8417966874999,
+              "r": 195.91669991999999,
+              "b": 650.6492128199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              156
+            ]
+          }
+        ],
+        "orig": "Q.227. The teammates  made  several jibes  at  the  opponent  team  members during the interview. (a) Consolation (b) Mockery (c) Inspiration (d) Contradict",
+        "text": "Q.227. The teammates  made  several jibes  at  the  opponent  team  members during the interview. (a) Consolation (b) Mockery (c) Inspiration (d) Contradict"
+      },
+      {
+        "self_ref": "#/texts/10",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 636.6484396875001,
+              "r": 196.01191992,
+              "b": 578.8777228199854,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              152
+            ]
+          }
+        ],
+        "orig": "Q.228. Her behaviour was so ostentatious that it attracted the attention of everyone in the room. (a) Attractive (b) Restrained (c) Gentle (d) Repulsive",
+        "text": "Q.228. Her behaviour was so ostentatious that it attracted the attention of everyone in the room. (a) Attractive (b) Restrained (c) Gentle (d) Repulsive"
+      },
+      {
+        "self_ref": "#/texts/11",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 564.8759796874999,
+              "r": 195.30732491999999,
+              "b": 519.5281128199854,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              124
+            ]
+          }
+        ],
+        "orig": "Q.229. Her remarks were relevant to the discussion. (a) Inappropriate     (b) Suitable (c) Introductory       (d) Conclusive",
+        "text": "Q.229. Her remarks were relevant to the discussion. (a) Inappropriate     (b) Suitable (c) Introductory       (d) Conclusive"
+      },
+      {
+        "self_ref": "#/texts/12",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "section_header",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 505.5263696875,
+              "r": 95.28926100000001,
+              "b": 497.4441328199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              16
+            ]
+          }
+        ],
+        "orig": "Q.230. Lethargic",
+        "text": "Q.230. Lethargic",
+        "level": 1
+      },
+      {
+        "self_ref": "#/texts/13",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 493.1044896875,
+              "r": 148.52461241999998,
+              "b": 472.6003828199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              45
+            ]
+          }
+        ],
+        "orig": "(a) Active (b) Languid (c) Moderate (d) Angry",
+        "text": "(a) Active (b) Languid (c) Moderate (d) Angry"
+      },
+      {
+        "self_ref": "#/texts/14",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "section_header",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 458.5986296875,
+              "r": 90.78047159999998,
+              "b": 450.51639281998536,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              13
+            ]
+          }
+        ],
+        "orig": "Q.231. Foment",
+        "text": "Q.231. Foment",
+        "level": 1
+      },
+      {
+        "self_ref": "#/texts/15",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 446.1767596875,
+              "r": 168.85810992,
+              "b": 425.67264281998536,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              56
+            ]
+          }
+        ],
+        "orig": "(a) Proximity (b) Remoteness (c) Separation (d) Regulate",
+        "text": "(a) Proximity (b) Remoteness (c) Separation (d) Regulate"
+      },
+      {
+        "self_ref": "#/texts/16",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "section_header",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 413.0517596875,
+              "r": 98.91035475000001,
+              "b": 404.96952281998534,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              19
+            ]
+          }
+        ],
+        "orig": "Q.232. Intelligible",
+        "text": "Q.232. Intelligible",
+        "level": 1
+      },
+      {
+        "self_ref": "#/texts/17",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 400.6298796875,
+              "r": 156.92256492,
+              "b": 380.12577281998534,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              57
+            ]
+          }
+        ],
+        "orig": "(a) Scriptable (b) Embezzle (c) Incoherent (d) Deliberate",
+        "text": "(a) Scriptable (b) Embezzle (c) Incoherent (d) Deliberate"
+      },
+      {
+        "self_ref": "#/texts/18",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "section_header",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 367.5048796875,
+              "r": 167.59248492,
+              "b": 334.57792281998536,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              72
+            ]
+          }
+        ],
+        "orig": "Q.233. Laudable (a) Commendable   (b) Severe (c) Deplorable (d) Humorous",
+        "text": "Q.233. Laudable (a) Commendable   (b) Severe (c) Deplorable (d) Humorous",
+        "level": 1
+      },
+      {
+        "self_ref": "#/texts/19",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 321.95702968750004,
+              "r": 197.36982491999999,
+              "b": 301.45292281998536,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              59
+            ]
+          }
+        ],
+        "orig": "Q.234. Dissolve (a) Vanish  (b) Fade  (c) Solve  (d) Appear",
+        "text": "Q.234. Dissolve (a) Vanish  (b) Fade  (c) Solve  (d) Appear"
+      },
+      {
+        "self_ref": "#/texts/20",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "section_header",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 288.83202968750004,
+              "r": 93.87422217000001,
+              "b": 280.7497928199854,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              14
+            ]
+          }
+        ],
+        "orig": "Q.235. Nominal",
+        "text": "Q.235. Nominal",
+        "level": 1
+      },
+      {
+        "self_ref": "#/texts/21",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 276.4101596875,
+              "r": 158.80781742,
+              "b": 255.90604281998537,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              48
+            ]
+          }
+        ],
+        "orig": "(a) Nasty (b) Sound (c) Constant (d) Significant",
+        "text": "(a) Nasty (b) Sound (c) Constant (d) Significant"
+      },
+      {
+        "self_ref": "#/texts/22",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 243.2841796875,
+              "r": 195.31318992,
+              "b": 222.78006281998535,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              57
+            ]
+          }
+        ],
+        "orig": "Q.236. Concede (a) Surrender (b) Battle (c) Avow (d) Deny",
+        "text": "Q.236. Concede (a) Surrender (b) Battle (c) Avow (d) Deny"
+      },
+      {
+        "self_ref": "#/texts/23",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "section_header",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 210.1591796875,
+              "r": 103.25654592000001,
+              "b": 202.07694281998533,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              16
+            ]
+          }
+        ],
+        "orig": "Q.237. Bombastic",
+        "text": "Q.237. Bombastic",
+        "level": 1
+      },
+      {
+        "self_ref": "#/texts/24",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 197.7372996875,
+              "r": 149.67158517000001,
+              "b": 177.23319281998533,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              47
+            ]
+          }
+        ],
+        "orig": "(a) Simple (b) Wicked (c) Elevated (d) Pastoral",
+        "text": "(a) Simple (b) Wicked (c) Elevated (d) Pastoral"
+      },
+      {
+        "self_ref": "#/texts/25",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "section_header",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 164.61132968749996,
+              "r": 91.71650667,
+              "b": 156.5290928199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              14
+            ]
+          }
+        ],
+        "orig": "Q.238. Forgive",
+        "text": "Q.238. Forgive",
+        "level": 1
+      },
+      {
+        "self_ref": "#/texts/26",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 152.18944968749997,
+              "r": 146.83271817,
+              "b": 131.6853428199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              45
+            ]
+          }
+        ],
+        "orig": "(a) Unburden (b) Requite (c) Clear (d) Loathe",
+        "text": "(a) Unburden (b) Requite (c) Clear (d) Loathe"
+      },
+      {
+        "self_ref": "#/texts/27",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 119.06444968749997,
+              "r": 195.47871492,
+              "b": 86.13749281998537,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              113
+            ]
+          }
+        ],
+        "orig": "Q.239. The pool was too _________ at this end for kids to play. [SHALLOW] (a) green  (b) blue  (c) deep  (d) cold",
+        "text": "Q.239. The pool was too _________ at this end for kids to play. [SHALLOW] (a) green  (b) blue  (c) deep  (d) cold"
+      },
+      {
+        "self_ref": "#/texts/28",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 73.51659968750005,
+              "r": 195.97529742,
+              "b": 40.59061281998538,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              94
+            ]
+          }
+        ],
+        "orig": "Q.240. She left the party ______ because of  her  parents'  strict  time  restrictions. [late]",
+        "text": "Q.240. She left the party ______ because of  her  parents'  strict  time  restrictions. [late]"
+      },
+      {
+        "self_ref": "#/texts/29",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 36.250979687500035,
+              "r": 183.57100242,
+              "b": 28.16874281998537,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              45
+            ]
+          }
+        ],
+        "orig": "(a) exit   (b) early   (c) small   (d) suffer",
+        "text": "(a) exit   (b) early   (c) small   (d) suffer"
+      },
+      {
+        "self_ref": "#/texts/30",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 138.17842125,
+              "t": 814.6972656875,
+              "r": 180.13740492,
+              "b": 806.6150288199854,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              9
+            ]
+          },
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 185.387403,
+              "t": 814.6972656875,
+              "r": 195.60908742,
+              "b": 806.6150288199854,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              10,
+              12
+            ]
+          }
+        ],
+        "orig": "continued to",
+        "text": "continued to"
+      },
+      {
+        "self_ref": "#/texts/31",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "section_header",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 215.54999,
+              "t": 814.1357418844726,
+              "r": 271.6521246875,
+              "b": 805.9074458207749,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              13
+            ]
+          }
+        ],
+        "orig": "Solutions : -",
+        "text": "Solutions : -",
+        "level": 1
+      },
+      {
+        "self_ref": "#/texts/32",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 215.54999,
+              "t": 789.0517576875,
+              "r": 382.64178691999996,
+              "b": 706.4363178199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              216
+            ]
+          }
+        ],
+        "orig": "Sol.141.(c) Intensifyto make something stronger or more severe. Mitigateto make something less harmful or severe. Weakento reduce in strength. Diminishto make or become smaller. Alleviateto reduce pain or difficulty.",
+        "text": "Sol.141.(c) Intensifyto make something stronger or more severe. Mitigateto make something less harmful or severe. Weakento reduce in strength. Diminishto make or become smaller. Alleviateto reduce pain or difficulty."
+      },
+      {
+        "self_ref": "#/texts/33",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 215.54999,
+              "t": 692.4355466874999,
+              "r": 382.75751192,
+              "b": 609.8210828199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              212
+            ]
+          }
+        ],
+        "orig": "Sol.142.(a)  Smartintelligent  and  quick in thinking. Oafa stupid and clumsy person. Blockheada person with very little intelligence. Magnificentvery impressive and grand. Simpletona person who is easily fooled.",
+        "text": "Sol.142.(a)  Smartintelligent  and  quick in thinking. Oafa stupid and clumsy person. Blockheada person with very little intelligence. Magnificentvery impressive and grand. Simpletona person who is easily fooled."
+      },
+      {
+        "self_ref": "#/texts/34",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 215.54999,
+              "t": 595.8193396875,
+              "r": 382.47918691999996,
+              "b": 500.7839728049853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              250
+            ]
+          }
+        ],
+        "orig": "Sol.143.(d)  Restrainedcontrolled  and moderate in spending or behavior. Extravagantspending  excessively  and wastefully. Lavishrich, elaborate, or luxurious. Enrichto improve the quality or value of something. Righteousmorally right or justifiable.",
+        "text": "Sol.143.(d)  Restrainedcontrolled  and moderate in spending or behavior. Extravagantspending  excessively  and wastefully. Lavishrich, elaborate, or luxurious. Enrichto improve the quality or value of something. Righteousmorally right or justifiable."
+      },
+      {
+        "self_ref": "#/texts/35",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 215.54999,
+              "t": 486.7822296875,
+              "r": 382.65057692,
+              "b": 366.90214281998533,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              272
+            ]
+          }
+        ],
+        "orig": "Sol.144.(b) Impairto weaken or damage something. Enhanceto improve the quality or value of something. Enrichto  make  something  better  by adding value or quality. Miraclean extraordinary and remarkable event. Relevancethe quality of being related to a subject or matter.",
+        "text": "Sol.144.(b) Impairto weaken or damage something. Enhanceto improve the quality or value of something. Enrichto  make  something  better  by adding value or quality. Miraclean extraordinary and remarkable event. Relevancethe quality of being related to a subject or matter."
+      },
+      {
+        "self_ref": "#/texts/36",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 215.54999,
+              "t": 354.2812496875,
+              "r": 382.75604192000003,
+              "b": 197.13358281998535,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              428
+            ]
+          }
+        ],
+        "orig": "Sol.145.(c) Selfish -lacking consideration for others and being concerned chiefly with one's own personal profit or pleasure. Generouswilling to give more of something, especially money  or  time, than is strictly necessary or expected. Magnanimousvery generous or forgiving, especially toward a rival or less powerful person. Altruisticshowing a selfless concern for the well-being of others. Benevolentwell-meaning and kindly.",
+        "text": "Sol.145.(c) Selfish -lacking consideration for others and being concerned chiefly with one's own personal profit or pleasure. Generouswilling to give more of something, especially money  or  time, than is strictly necessary or expected. Magnanimousvery generous or forgiving, especially toward a rival or less powerful person. Altruisticshowing a selfless concern for the well-being of others. Benevolentwell-meaning and kindly."
+      },
+      {
+        "self_ref": "#/texts/37",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 215.54999,
+              "t": 183.13280968749996,
+              "r": 382.76190692,
+              "b": 75.67460281998535,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              230
+            ]
+          }
+        ],
+        "orig": "Sol.146.(d)  Scatteredspread  widely  in different directions. Accumulatedgathered together in a growing quantity. Bunchedcollected into a compact group. Garneredacquired  or collected through effort. Sparedkept from harm or loss.",
+        "text": "Sol.146.(d)  Scatteredspread  widely  in different directions. Accumulatedgathered together in a growing quantity. Bunchedcollected into a compact group. Garneredacquired  or collected through effort. Sparedkept from harm or loss."
+      },
+      {
+        "self_ref": "#/texts/38",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 215.54999,
+              "t": 61.67284968750005,
+              "r": 372.48309692,
+              "b": 28.74686281998538,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              82
+            ]
+          }
+        ],
+        "orig": "Sol.147.(c) Exacerbateto make situation worse. Ameliorateto make something better.",
+        "text": "Sol.147.(c) Exacerbateto make situation worse. Ameliorateto make something better."
+      },
+      {
+        "self_ref": "#/texts/39",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 375.60174500000005,
+              "t": 61.67284968750005,
+              "r": 382.72967942,
+              "b": 53.59061281998538,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              1
+            ]
+          }
+        ],
+        "orig": "a",
+        "text": "a"
+      },
+      {
+        "self_ref": "#/texts/40",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 291.757038,
+              "t": 830.7935546594726,
+              "r": 570.8188929375,
+              "b": 822.5652585957749,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              8
+            ]
+          }
+        ],
+        "orig": "Antonyms",
+        "text": "Antonyms"
+      },
+      {
+        "self_ref": "#/texts/41",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 402.30002,
+              "t": 814.6972656875,
+              "r": 569.47677692,
+              "b": 756.9265518199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              137
+            ]
+          }
+        ],
+        "orig": "Succourto  provide  help  in  times  of difficulty. Reconditedifficult to understand. Mottoa short phrase expressing a guiding principle.",
+        "text": "Succourto  provide  help  in  times  of difficulty. Reconditedifficult to understand. Mottoa short phrase expressing a guiding principle."
+      },
+      {
+        "self_ref": "#/texts/42",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 402.30002,
+              "t": 744.3056636875,
+              "r": 569.18673692,
+              "b": 649.2703028199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              192
+            ]
+          }
+        ],
+        "orig": "Sol.148.(c) Extravagantspending much more than is necessary. Thriftyusing money and other resources carefully and not wastefully. Indifferentshowing no interest or concern. ThankfulIntolerant-",
+        "text": "Sol.148.(c) Extravagantspending much more than is necessary. Thriftyusing money and other resources carefully and not wastefully. Indifferentshowing no interest or concern. ThankfulIntolerant-"
+      },
+      {
+        "self_ref": "#/texts/43",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 402.30002,
+              "t": 669.7744096875,
+              "r": 569.51193692,
+              "b": 636.8474528199854,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              107
+            ]
+          }
+        ],
+        "orig": "expressing gratitude and relief. not  tolerant  of views, beliefs, or behaviour that differ from one's own.",
+        "text": "expressing gratitude and relief. not  tolerant  of views, beliefs, or behaviour that differ from one's own."
+      },
+      {
+        "self_ref": "#/texts/44",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 402.30002,
+              "t": 624.2255896875,
+              "r": 569.49875192,
+              "b": 491.9236228199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              348
+            ]
+          }
+        ],
+        "orig": "Sol.149.(d)  Pleasantgiving  a  sense  of happy satisfaction or enjoyment. Melancholysadness  that  lasts  for  a long  period  of  time,  often  without  any obvious reason. Mechanicaloperated  by  a  machine  or machinery. Profitable  yielding  profit  or  financial gain. Miserablevery  unpleasant  or  bad,  and causing someone to feel unhappy.",
+        "text": "Sol.149.(d)  Pleasantgiving  a  sense  of happy satisfaction or enjoyment. Melancholysadness  that  lasts  for  a long  period  of  time,  often  without  any obvious reason. Mechanicaloperated  by  a  machine  or machinery. Profitable  yielding  profit  or  financial gain. Miserablevery  unpleasant  or  bad,  and causing someone to feel unhappy."
+      },
+      {
+        "self_ref": "#/texts/45",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 402.30002,
+              "t": 479.3027296875,
+              "r": 569.48702942,
+              "b": 371.84452281998534,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              270
+            ]
+          }
+        ],
+        "orig": "Sol.150.(a) Generosity  the  quality  of being kind and giving. Rapaciousness  aggressive  greed  or grasping behavior. Voracity excessive eagerness or hunger Greed  an  intense  desire for more than one needs. Violence  the  use  of  physical  force  to harm or damage.",
+        "text": "Sol.150.(a) Generosity  the  quality  of being kind and giving. Rapaciousness  aggressive  greed  or grasping behavior. Voracity excessive eagerness or hunger Greed  an  intense  desire for more than one needs. Violence  the  use  of  physical  force  to harm or damage."
+      },
+      {
+        "self_ref": "#/texts/46",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 402.30002,
+              "t": 360.6035196875,
+              "r": 569.38156442,
+              "b": 253.14530281998532,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              295
+            ]
+          }
+        ],
+        "orig": "Sol.151.(c)  Regular  conforming  to  a usual or expected pattern. Hallucinogenic  causing  hallucinations or altered perceptions. Freaky strange, unusual, or bizarre. Psychedelic  relating to vivid  colors, patterns, or altered mental states. Abnormal -deviating from what is normal or typical.",
+        "text": "Sol.151.(c)  Regular  conforming  to  a usual or expected pattern. Hallucinogenic  causing  hallucinations or altered perceptions. Freaky strange, unusual, or bizarre. Psychedelic  relating to vivid  colors, patterns, or altered mental states. Abnormal -deviating from what is normal or typical."
+      },
+      {
+        "self_ref": "#/texts/47",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 402.30002,
+              "t": 241.90429968750004,
+              "r": 569.4591969200001,
+              "b": 134.44510281998532,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              297
+            ]
+          }
+        ],
+        "orig": "Sol.152.(c) Subservient willing to obey others without question. Intransigent -unwilling to change opinions or agree with others. Pertinacious  stubbornly  holding  on  to an idea or purpose. Obstinate  refusing  to  change behavior or beliefs, even when persuaded. Tenacious not giving up easily.",
+        "text": "Sol.152.(c) Subservient willing to obey others without question. Intransigent -unwilling to change opinions or agree with others. Pertinacious  stubbornly  holding  on  to an idea or purpose. Obstinate  refusing  to  change behavior or beliefs, even when persuaded. Tenacious not giving up easily."
+      },
+      {
+        "self_ref": "#/texts/48",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 402.30002,
+              "t": 123.20507968749996,
+              "r": 569.50900442,
+              "b": 40.59061281998538,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              181
+            ]
+          }
+        ],
+        "orig": "Sol.153.(b) Flourishing -growing or developing successfully. Languishing  becoming weak or losing strength. Diminutive very small or tiny. Mesmerising -capturing complete attention.",
+        "text": "Sol.153.(b) Flourishing -growing or developing successfully. Languishing  becoming weak or losing strength. Diminutive very small or tiny. Mesmerising -capturing complete attention."
+      },
+      {
+        "self_ref": "#/texts/49",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 402.30002,
+              "t": 36.250979687500035,
+              "r": 451.92746123,
+              "b": 28.16874281998537,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              11
+            ]
+          }
+        ],
+        "orig": "Temporary -",
+        "text": "Temporary -"
+      },
+      {
+        "self_ref": "#/texts/50",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 451.92746150000005,
+              "t": 36.250979687500035,
+              "r": 568.31662442,
+              "b": 28.16874281998537,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              30
+            ]
+          }
+        ],
+        "orig": "lasting only for a short time.",
+        "text": "lasting only for a short time."
+      },
+      {
+        "self_ref": "#/texts/51",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "furniture",
+        "label": "page_footer",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 99.3266505,
+              "t": 21.98847795947256,
+              "r": 495.95088382500006,
+              "b": 13.76018189577485,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              109
+            ]
+          }
+        ],
+        "orig": "www.ssccglpinnacle.com                                                 Download Pinnacle Exam Preparation App",
+        "text": "www.ssccglpinnacle.com                                                 Download Pinnacle Exam Preparation App"
+      }
+    ],
+    "pictures": [],
+    "tables": [],
+    "key_value_items": [],
+    "form_items": [],
+    "pages": {
+      "1": {
+        "size": {
+          "width": 596.0,
+          "height": 842.0
+        },
+        "page_no": 1
+      }
+    }
+  }
+}

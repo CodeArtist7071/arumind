@@ -1,4 +1,4 @@
-import { ChevronRight, Notebook, Plus } from "lucide-react";
+import { ChevronRight, Notebook, Plus, Zap } from "lucide-react";
 import type { examProps } from "../../slice/examSlice";
 import { useRef, useState, useEffect, useCallback } from "react";
 
@@ -11,16 +11,26 @@ interface ExamSelectorCardProps {
 }
 
 const ExamSkeleton = () => (
-  <div className="px-3 py-4 w-full bg-surface-container-high/20 rounded-4xl animate-pulse border border-on-surface/5 flex-shrink-0">
-    <div className="flex flex-row items-center gap-4">
-      <div className="size-8 lg:size-14 bg-surface-container-high rounded-2xl" />
-      <div className="flex-1 space-y-2">
-        <div className="h-4 bg-surface-container-high rounded w-24" />
-        <div className="h-3 bg-surface-container-high rounded w-32" />
+  <div className="shrink-0 w-[260px] snap-start">
+    <div className="px-5 py-5 bg-surface-container-high/30 rounded-3xl animate-pulse border border-on-surface/5 h-[180px] flex flex-col gap-4">
+      <div className="flex items-center gap-3">
+        <div className="size-10 bg-surface-container-highest rounded-xl" />
+        <div className="flex-1 space-y-2">
+          <div className="h-4 bg-surface-container-highest rounded w-28" />
+          <div className="h-3 bg-surface-container-highest rounded w-40" />
+        </div>
       </div>
+      <div className="h-2 bg-surface-container-highest rounded-full w-full mt-auto" />
     </div>
   </div>
 );
+
+const examColorPalette = [
+  { gradient: "from-primary/20 via-primary/10 to-transparent", iconBg: "bg-primary/15 text-primary", bar: "bg-primary", dot: "bg-primary" },
+  { gradient: "from-blue-500/20 via-blue-500/10 to-transparent", iconBg: "bg-blue-500/15 text-blue-600", bar: "bg-blue-500", dot: "bg-blue-500" },
+  { gradient: "from-amber-500/20 via-amber-500/10 to-transparent", iconBg: "bg-amber-500/15 text-amber-600", bar: "bg-amber-500", dot: "bg-amber-500" },
+  { gradient: "from-violet-500/20 via-violet-500/10 to-transparent", iconBg: "bg-violet-500/15 text-violet-600", bar: "bg-violet-500", dot: "bg-violet-500" },
+];
 
 export const ExamSelectorCardMobile = ({
   targetedExams,
@@ -31,15 +41,18 @@ export const ExamSelectorCardMobile = ({
   const scrollRef = useRef<HTMLDivElement>(null);
   const [canScrollLeft, setCanScrollLeft] = useState(false);
   const [canScrollRight, setCanScrollRight] = useState(true);
+  const [activeIndex, setActiveIndex] = useState(0);
 
-  // Check scroll position — left arrow hides at exactly 0
   const checkScroll = useCallback(() => {
     if (scrollRef.current) {
       const { scrollLeft, scrollWidth, clientWidth } = scrollRef.current;
-      // Left arrow: hidden when scrollLeft is 0 (at start)
       setCanScrollLeft(scrollLeft > 17);
-      // Right arrow: hidden when near end (with 10px buffer)
       setCanScrollRight(scrollLeft < scrollWidth - clientWidth - 10);
+
+      // Update active dot
+      const cardWidth = 268; // approx w-[260px] + gap
+      const newIndex = Math.round(scrollLeft / cardWidth);
+      setActiveIndex(newIndex);
     }
   }, []);
 
@@ -48,7 +61,6 @@ export const ExamSelectorCardMobile = ({
     const el = scrollRef.current;
     if (el) {
       el.addEventListener("scroll", checkScroll, { passive: true });
-      // Also check on resize
       window.addEventListener("resize", checkScroll);
       return () => {
         el.removeEventListener("scroll", checkScroll);
@@ -70,151 +82,142 @@ export const ExamSelectorCardMobile = ({
   return (
     <section className="block md:hidden scroll-mt-15">
       {/* Header */}
-      <div className="flex justify-between items-center mb-4 px-4">
-        <div className="space-y-1">
-          <h3 className="text-md font-technical font-black text-primary">
-            Continue Learning
+      <div className="flex justify-between items-center mb-4 px-1">
+        <div className="space-y-0.5">
+          <p className="text-[10px] font-technical font-black uppercase tracking-[0.25em] text-on-surface-variant opacity-50">
+            Your Exams
+          </p>
+          <h3 className="text-lg font-black text-on-surface tracking-tight">
+            Take Mock Tests
           </h3>
         </div>
         <button
           onClick={onViewAll}
-          className="text-xs cursor-pointer text-primary hover:bg-primary hover:text-white transition-all duration-300 px-3 py-1.5 rounded-full"
+          className="flex items-center gap-1.5 text-[10px] cursor-pointer font-technical bg-primary text-white px-3 py-2 rounded-full font-black uppercase tracking-widest hover:bg-primary/90 transition-all duration-300"
         >
-          View All
+          <Plus size={12} />
+          Add
         </button>
       </div>
 
-      {/* Horizontal Scroll Container */}
+      {/* Scroll Container */}
       <div className="relative">
-        {/* Left Arrow — ONLY shows when scrolled past start (scrollLeft > 0) */}
+        {/* Left Arrow */}
         <button
           onClick={() => scroll("left")}
           className={`absolute left-2 top-1/2 -translate-y-1/2 z-10 w-8 h-8 rounded-full bg-white/90 shadow-md flex items-center justify-center backdrop-blur-sm transition-opacity duration-300 ${
-            canScrollLeft
-              ? "opacity-100 pointer-events-auto"
-              : "opacity-0 pointer-events-none"
+            canScrollLeft ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"
           }`}
           aria-hidden={!canScrollLeft}
         >
           <ChevronRight className="size-4 text-primary rotate-180" />
         </button>
 
-        {/* Right Arrow — shows when more content exists */}
+        {/* Right Arrow */}
         <button
           onClick={() => scroll("right")}
           className={`absolute right-2 top-1/2 -translate-y-1/2 z-10 w-8 h-8 rounded-full bg-white/90 shadow-md flex items-center justify-center backdrop-blur-sm transition-opacity duration-300 ${
-            canScrollRight
-              ? "opacity-100 pointer-events-auto"
-              : "opacity-0 pointer-events-none"
+            canScrollRight ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"
           }`}
           aria-hidden={!canScrollRight}
         >
           <ChevronRight className="size-4 text-primary" />
         </button>
 
-        {/* Scrollable Track — padding is on container, not affecting scrollLeft */}
+        {/* Scrollable Track */}
         <div
           ref={scrollRef}
-          className="flex gap-3 overflow-x-auto px-4 pb-4 snap-x snap-mandatory scrollbar-hide scroll-smooth"
-          style={{
-            scrollbarWidth: "none",
-            msOverflowStyle: "none",
-          }}
+          className="flex gap-3 overflow-x-auto px-1 pb-4 snap-x snap-mandatory scroll-smooth"
+          style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}
         >
-          {/* Add Exam Card (Always First) */}
-          {/* <button
-            onClick={onViewAll}
-            className="flex-shrink-0 w-[160px] snap-start px-5 py-6 bg-surface-container-high/30 rounded-2xl border-2 border-dashed border-primary/20 flex flex-col items-center justify-center gap-2 hover:bg-surface-container-high/50 transition-all duration-300"
-          >
-            <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center">
-              <Plus className="size-5 text-primary" />
-            </div>
-            <span className="text-xs font-technical font-black text-primary uppercase tracking-widest">
-              Add Exam
-            </span>
-          </button> */}
-
-          {/* Loading State */}
           {loading ? (
-            Array.from({ length: 3 }).map((_, i) => (
-              <div key={i} className="shrink-0 w-70 snap-start">
-                <ExamSkeleton />
-              </div>
-            ))
+            Array.from({ length: 3 }).map((_, i) => <ExamSkeleton key={i} />)
           ) : targetedExams.length > 0 ? (
-            targetedExams.map((exam, index) => (
-              <div
-                key={index}
-                className="shrink-0 w-70 snap-start"
-                onClick={() => onSelect(exam)}
-              >
-                <div className="px-5 py-10 bg-surface-container-high/40 rounded-2xl shadow-ambient hover:bg-surface-container-high group cursor-pointer relative overflow-hidden transition-all duration-300">
-                  {/* Progress Badge */}
-                  <div className="absolute right-3 top-3">
-                    <div className="rounded-full">
-                      <span className="text-[10px] font-technical font-black text-primary">
-                      0% Done
-                      </span>
-                    </div>
-                  </div>
+            targetedExams.map((exam, index) => {
+              const palette = examColorPalette[index % examColorPalette.length];
+              return (
+                <div
+                  key={exam.id}
+                  className="shrink-0 w-[260px] snap-start"
+                  onClick={() => onSelect(exam)}
+                >
+                  <div className="relative overflow-hidden rounded-3xl border border-on-surface/5 bg-surface-container-high/70 shadow-ambient cursor-pointer group transition-all duration-500 hover:shadow-ambient-lg hover:-translate-y-0.5 p-5">
+                    {/* Background gradient blob */}
+                    <div className={`absolute top-0 right-0 w-32 h-32 rounded-full bg-gradient-to-br ${palette.gradient} -translate-y-8 translate-x-8`} />
 
-                  <div className="flex flex-row items-center gap-3">
-                    <div className="size-10 bg-surface-container-high px-3 rounded-xl flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-all duration-500 shadow-sm">
-                      <Notebook className="size-5" />
-                    </div>
-                    <div className="flex flex-col pr-16">
-                      <h4 className="font-black text-sm text-on-surface tracking-tight leading-tight">
-                        {exam.name}
-                      </h4>
-                      <p className="text-[11px] text-on-surface-variant font-medium leading-relaxed opacity-60 line-clamp-1">
-                        {exam.full_name}
-                      </p>
-                    </div>
-                  </div>
+                    <div className="relative z-10 flex flex-col gap-3">
+                      {/* Top row: Icon + Type */}
+                      <div className="flex items-center justify-between">
+                        <div className={`size-10 rounded-2xl ${palette.iconBg} flex items-center justify-center shadow-sm transition-transform duration-500 group-hover:scale-110`}>
+                          <Notebook className="size-5" />
+                        </div>
+                        <div className="flex items-center gap-1 opacity-50">
+                          <Zap className="size-3 text-on-surface-variant" />
+                          <span className="text-[9px] font-technical font-black uppercase tracking-wider text-on-surface-variant">{exam.type || "Govt"}</span>
+                        </div>
+                      </div>
 
-                  {/* Progress Bar */}
-                  <div className="mt-4">
-                    <div className="h-2 bg-surface-container-high rounded-full overflow-hidden">
-                      <div
-                        className="h-full bg-gradient-to-r from-primary to-primary-container rounded-full transition-all duration-500"
-                        // style={{ width: `${exam.progress || 0}%` }}
-                      />
-                    </div>
-                  </div>
+                      {/* Exam title */}
+                      <div>
+                        <h4 className="font-black text-base text-on-surface tracking-tight leading-tight">
+                          {exam.name}
+                        </h4>
+                        <p className="text-[11px] text-on-surface-variant font-medium opacity-55 line-clamp-1 mt-0.5">
+                          {exam.full_name}
+                        </p>
+                      </div>
 
-                  {/* Bottom Action */}
-                  <div className="mt-3 flex items-center justify-between">
-                    <span className="text-[10px] font-technical text-on-surface-variant opacity-50">
-                      {/* Last: {exam?.last_practiced || "Not started"} */}
-                    </span>
-                    <div className="flex items-center gap-1 text-primary">
-                      <span className="text-[10px] font-technical font-black uppercase tracking-widest">
-                        Resume
-                      </span>
-                      <ChevronRight className="size-3" />
+                      {/* Progress */}
+                      <div className="space-y-1">
+                        <div className="flex items-center justify-between">
+                          <span className="text-[9px] font-technical font-black uppercase tracking-wider text-on-surface-variant opacity-40">Progress</span>
+                          <span className="text-[9px] font-technical font-black text-on-surface-variant opacity-40">0%</span>
+                        </div>
+                        <div className="h-1.5 bg-on-surface/8 rounded-full overflow-hidden">
+                          <div className={`h-full ${palette.bar} rounded-full`} style={{ width: "0%" }} />
+                        </div>
+                      </div>
+
+                      {/* CTA Button */}
+                      <div className="flex items-center justify-center w-full bg-primary group-hover:bg-primary/90 rounded-2xl text-white h-10 gap-1.5 transition-all duration-300 mt-1">
+                        <span className="text-[10px] font-technical font-black uppercase tracking-widest">Start Mock Test</span>
+                        <ChevronRight className="size-3 group-hover:translate-x-0.5 transition-transform" />
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
-            ))
+              );
+            })
           ) : (
-            /* Empty State */
-            <div className="shrink-0 w-70 snap-start py-8 px-4 text-center bg-surface-container-high/20 rounded-2xl border-2 border-dashed border-on-surface/5">
-              <h2 className="text-on-surface-variant font-black text-primary text-sm">
-                No exams yet
-              </h2>
-              <p className="text-on-surface-variant font-medium text-xs mb-4">
-                Add exams to start preparing
-              </p>
+            <div className="shrink-0 w-[260px] snap-start py-10 px-5 text-center bg-surface-container-high/30 rounded-3xl border-2 border-dashed border-on-surface/8">
+              <div className="size-12 bg-primary/10 rounded-2xl flex items-center justify-center mx-auto mb-3">
+                <Notebook className="size-6 text-primary opacity-60" />
+              </div>
+              <h4 className="text-sm font-black text-on-surface mb-1.5">No exams yet</h4>
+              <p className="text-xs text-on-surface-variant opacity-50 font-medium mb-4">Add exams to start preparing</p>
               <button
                 onClick={onViewAll}
-                className="text-xs font-technical bg-primary/10 text-primary border border-primary/20 px-4 py-2 rounded-full font-black uppercase tracking-widest hover:bg-primary hover:text-white transition-all duration-300"
+                className="text-[10px] font-technical bg-primary text-white px-4 py-2 rounded-full font-black uppercase tracking-widest hover:bg-primary/90 transition-all"
               >
                 Add Exams
               </button>
             </div>
           )}
         </div>
+
+        {/* Scroll Indicator Dots */}
+        {targetedExams.length > 1 && (
+          <div className="flex items-center justify-center gap-1.5 pt-1">
+            {targetedExams.map((_, i) => (
+              <div
+                key={i}
+                className={`rounded-full transition-all duration-300 ${
+                  i === activeIndex ? "w-4 h-1.5 bg-primary" : "w-1.5 h-1.5 bg-on-surface/20"
+                }`}
+              />
+            ))}
+          </div>
+        )}
       </div>
     </section>
   );

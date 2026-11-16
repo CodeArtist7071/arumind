@@ -1,5 +1,7 @@
 import type { DifficultyLevel } from "../utils/adaptiveDifficulty";
 import { supabase } from "../utils/supabase";
+import { getChaptersByExamID } from "./examService";
+import { normalizeExplanations } from "./questionService";
 
 export const getMockTestQuestions = async (
   examId: string,
@@ -30,6 +32,9 @@ export const getMockTestQuestions = async (
     difficulty: DifficultyLevel,
     count: number
   ) => {
+    const chapterRows = await getChaptersByExamID(examId);
+    const eligibleChapterIds = chapterRows.map((chapter: any) => chapter.id).filter(Boolean);
+    if (!eligibleChapterIds.length) return [];
     // If user has weak chapters, fetch 60% from those, 40% from all
     const weakCount = weakChapterIds.length > 0
       ? Math.round(count * 0.6)
@@ -41,8 +46,7 @@ export const getMockTestQuestions = async (
     if (weakCount > 0) {
       const { data } = await supabase
         .from("questions")
-        .select("id, question, options, correct_answer, difficulty_level, marks, chapter_id, subject_id")
-        .eq("exam_id", examId)
+        .select("id, question, question_type, question_options(option_key, option_text, display_order, is_correct), difficulty_level, marks, negative_marks, chapter_id, subject_id")
         .eq("difficulty_level", difficulty)
         .eq("is_active", true)
         .in("chapter_id", weakChapterIds)
@@ -54,10 +58,10 @@ export const getMockTestQuestions = async (
       const existingIds = results.map((r) => r.id);
       let query = supabase
         .from("questions")
-        .select("id, question, options, correct_answer, difficulty_level, marks, chapter_id, subject_id")
-        .eq("exam_id", examId)
+        .select("id, question, question_type, question_options(option_key, option_text, display_order, is_correct), difficulty_level, marks, negative_marks, chapter_id, subject_id")
         .eq("difficulty_level", difficulty)
         .eq("is_active", true)
+        .in("chapter_id", eligibleChapterIds)
         .limit(generalCount);
 
       if (existingIds.length > 0) {
@@ -79,5 +83,5 @@ export const getMockTestQuestions = async (
 
   // Merge and shuffle
   const all = [...easy, ...moderate, ...hard];
-  return all.sort(() => Math.random() - 0.5);
+  return normalizeExplanations(all).sort(() => Math.random() - 0.5);
 };

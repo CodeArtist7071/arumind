@@ -1,0 +1,5422 @@
+{
+  "document_id": "english",
+  "source": "english.pdf",
+  "pdf_page": 60,
+  "page_width": 596.0,
+  "page_height": 842.0,
+  "extracted_at": "2026-09-09T10:11:20.373546+00:00",
+  "extraction_version": 4,
+  "ocr_enabled": true,
+  "extraction_detection": {
+    "requested_profile": "auto",
+    "effective_profile": "hybrid",
+    "embedded_text_characters": 4635,
+    "auto_text_threshold": 80
+  },
+  "docling_result": {
+    "status": "success",
+    "errors": []
+  },
+  "content_summary": {
+    "text_items": 65,
+    "text_characters": 5808,
+    "table_items": 0,
+    "picture_items": 1,
+    "group_items": 3,
+    "warnings": []
+  },
+  "reading_order": {
+    "source": "docling_iterate_items",
+    "items": [
+      {
+        "reading_order_index": 0,
+        "element_ref": "#/texts/2",
+        "label": "list_item",
+        "level": 2,
+        "text_preview": "Q.629. I  am sure that / the postman would be / coming shortly / to deliver the letter."
+      },
+      {
+        "reading_order_index": 1,
+        "element_ref": "#/texts/3",
+        "label": "list_item",
+        "level": 2,
+        "text_preview": "(a) I am sure that"
+      },
+      {
+        "reading_order_index": 2,
+        "element_ref": "#/texts/4",
+        "label": "list_item",
+        "level": 2,
+        "text_preview": "(c) to deliver the letter"
+      },
+      {
+        "reading_order_index": 3,
+        "element_ref": "#/texts/5",
+        "label": "list_item",
+        "level": 2,
+        "text_preview": "Q.630. Maruti likes adventures of Tarzan."
+      },
+      {
+        "reading_order_index": 4,
+        "element_ref": "#/texts/6",
+        "label": "list_item",
+        "level": 2,
+        "text_preview": "(a) stories, especially"
+      },
+      {
+        "reading_order_index": 5,
+        "element_ref": "#/texts/7",
+        "label": "list_item",
+        "level": 2,
+        "text_preview": "(c) Maruti likes"
+      },
+      {
+        "reading_order_index": 6,
+        "element_ref": "#/texts/8",
+        "label": "list_item",
+        "level": 2,
+        "text_preview": "(b) coming shortly"
+      },
+      {
+        "reading_order_index": 7,
+        "element_ref": "#/texts/9",
+        "label": "list_item",
+        "level": 2,
+        "text_preview": "(d) the postman would be"
+      },
+      {
+        "reading_order_index": 8,
+        "element_ref": "#/texts/10",
+        "label": "list_item",
+        "level": 2,
+        "text_preview": "adventure  /  stories,  especially  /  an"
+      },
+      {
+        "reading_order_index": 9,
+        "element_ref": "#/texts/11",
+        "label": "list_item",
+        "level": 2,
+        "text_preview": "(b) an adventures of Tarzan"
+      },
+      {
+        "reading_order_index": 10,
+        "element_ref": "#/texts/12",
+        "label": "list_item",
+        "level": 2,
+        "text_preview": "(d) adventure"
+      },
+      {
+        "reading_order_index": 11,
+        "element_ref": "#/texts/13",
+        "label": "text",
+        "level": 1,
+        "text_preview": "Q.631. The  historians  /  are  a  great  /  asset  to  the/  field  of academia."
+      },
+      {
+        "reading_order_index": 12,
+        "element_ref": "#/texts/14",
+        "label": "list_item",
+        "level": 2,
+        "text_preview": "(a) field of academia"
+      },
+      {
+        "reading_order_index": 13,
+        "element_ref": "#/texts/15",
+        "label": "list_item",
+        "level": 2,
+        "text_preview": "(c) asset to the"
+      },
+      {
+        "reading_order_index": 14,
+        "element_ref": "#/texts/16",
+        "label": "list_item",
+        "level": 2,
+        "text_preview": "(b) are a great"
+      },
+      {
+        "reading_order_index": 15,
+        "element_ref": "#/texts/17",
+        "label": "list_item",
+        "level": 2,
+        "text_preview": "(d) The historians"
+      },
+      {
+        "reading_order_index": 16,
+        "element_ref": "#/texts/18",
+        "label": "list_item",
+        "level": 2,
+        "text_preview": "Q.632. Select the grammatically correct sentence."
+      },
+      {
+        "reading_order_index": 17,
+        "element_ref": "#/texts/19",
+        "label": "list_item",
+        "level": 2,
+        "text_preview": "(a) The warrior was waiting for an right  time to attack the lion hiding in a cave."
+      },
+      {
+        "reading_order_index": 18,
+        "element_ref": "#/texts/20",
+        "label": "list_item",
+        "level": 2,
+        "text_preview": "(b) The warrior was waiting for the right time to attack the lion hiding in the cave."
+      },
+      {
+        "reading_order_index": 19,
+        "element_ref": "#/texts/21",
+        "label": "list_item",
+        "level": 2,
+        "text_preview": "(c) An warrior was waiting for a right time to attack the lion hiding in the cave."
+      },
+      {
+        "reading_order_index": 20,
+        "element_ref": "#/texts/22",
+        "label": "list_item",
+        "level": 2,
+        "text_preview": "(d) The warrior was waiting for a right time to attack an lion hiding in the cave."
+      },
+      {
+        "reading_order_index": 21,
+        "element_ref": "#/texts/23",
+        "label": "list_item",
+        "level": 2,
+        "text_preview": "Q.633. We hardly knew nothing / about the manager / who had recently joined."
+      },
+      {
+        "reading_order_index": 22,
+        "element_ref": "#/texts/24",
+        "label": "list_item",
+        "level": 2,
+        "text_preview": "(a) We hardly knew nothing"
+      },
+      {
+        "reading_order_index": 23,
+        "element_ref": "#/texts/25",
+        "label": "list_item",
+        "level": 2,
+        "text_preview": "(c) about the manager"
+      },
+      {
+        "reading_order_index": 24,
+        "element_ref": "#/texts/26",
+        "label": "section_header",
+        "level": 1,
+        "text_preview": "Solutions :-"
+      },
+      {
+        "reading_order_index": 25,
+        "element_ref": "#/texts/27",
+        "label": "section_header",
+        "level": 1,
+        "text_preview": "Sol.552.(d)  This  is  the  oldest  standing  structure  of  Chola architecture in India."
+      },
+      {
+        "reading_order_index": 26,
+        "element_ref": "#/texts/28",
+        "label": "text",
+        "level": 1,
+        "text_preview": "'Eldest'  must  be  replaced  with  'oldest'.  We  use  superlative degree  'eldest'  for  blood  relations  of  the  same  generation  or lower generation & 'o"
+      },
+      {
+        "reading_order_index": 27,
+        "element_ref": "#/texts/29",
+        "label": "section_header",
+        "level": 1,
+        "text_preview": "Sol.553.(b) travel in train"
+      },
+      {
+        "reading_order_index": 28,
+        "element_ref": "#/texts/30",
+        "label": "text",
+        "level": 1,
+        "text_preview": "Preposition  'in'  must  be  replaced with 'by' as preposition 'by' is used with the means or method of transportation. For exampleby  train,  by  bus,  by  car"
+      },
+      {
+        "reading_order_index": 29,
+        "element_ref": "#/texts/31",
+        "label": "section_header",
+        "level": 1,
+        "text_preview": "Sol.554.(c) she will have married"
+      },
+      {
+        "reading_order_index": 30,
+        "element_ref": "#/texts/32",
+        "label": "text",
+        "level": 1,
+        "text_preview": "'Will  have'  must  be  replaced  with  'will  be'.  Simple  Present Tense(Singular  Sub.  +  V-s/es)  is  used  with  the  phrase  'by  the time' to indicate t"
+      },
+      {
+        "reading_order_index": 31,
+        "element_ref": "#/texts/33",
+        "label": "section_header",
+        "level": 1,
+        "text_preview": "Sol.555.(d) on an Atlas-Agena D rocket"
+      },
+      {
+        "reading_order_index": 32,
+        "element_ref": "#/texts/34",
+        "label": "text",
+        "level": 1,
+        "text_preview": "Article 'a' must be replaced with 'article 'an' as we generally use article 'an' with the nouns starting with a vowel sound. Similarly, in the given sentence, '"
+      },
+      {
+        "reading_order_index": 33,
+        "element_ref": "#/texts/35",
+        "label": "section_header",
+        "level": 1,
+        "text_preview": "Sol.556.(d) less"
+      },
+      {
+        "reading_order_index": 34,
+        "element_ref": "#/texts/36",
+        "label": "text",
+        "level": 1,
+        "text_preview": "'Lesser'  is  used  to  indicate  something  of  lower  importance  or significance & 'less' used to indicate a lower amount or degree. Hence, 'less' is the mos"
+      },
+      {
+        "reading_order_index": 35,
+        "element_ref": "#/texts/37",
+        "label": "section_header",
+        "level": 1,
+        "text_preview": "Sol.557.(c) He is chef who specialises in Italian cuisine."
+      },
+      {
+        "reading_order_index": 36,
+        "element_ref": "#/texts/38",
+        "label": "text",
+        "level": 1,
+        "text_preview": "The  article  'the'  is  used  to refer to specific or particular nouns. Similarly, in the  given  sentence,  'chef'  is  a  specific  person."
+      },
+      {
+        "reading_order_index": 37,
+        "element_ref": "#/pictures/0",
+        "label": "picture",
+        "level": 1,
+        "text_preview": ""
+      },
+      {
+        "reading_order_index": 38,
+        "element_ref": "#/texts/40",
+        "label": "list_item",
+        "level": 2,
+        "text_preview": "(b) No error"
+      },
+      {
+        "reading_order_index": 39,
+        "element_ref": "#/texts/41",
+        "label": "list_item",
+        "level": 2,
+        "text_preview": "(d) who had recently joined"
+      },
+      {
+        "reading_order_index": 40,
+        "element_ref": "#/texts/42",
+        "label": "text",
+        "level": 1,
+        "text_preview": "/"
+      },
+      {
+        "reading_order_index": 41,
+        "element_ref": "#/texts/43",
+        "label": "text",
+        "level": 1,
+        "text_preview": "Hence,  'He  is  the  chef  who  specialises in Italian cuisine' is the most appropriate answer."
+      },
+      {
+        "reading_order_index": 42,
+        "element_ref": "#/texts/44",
+        "label": "section_header",
+        "level": 1,
+        "text_preview": "Sol.558.(d) wealth off"
+      },
+      {
+        "reading_order_index": 43,
+        "element_ref": "#/texts/45",
+        "label": "text",
+        "level": 1,
+        "text_preview": "'Wealth of something' is the correct phrase which means a lot of something. Hence, 'wealth of' is the most appropriate answer."
+      },
+      {
+        "reading_order_index": 44,
+        "element_ref": "#/texts/46",
+        "label": "section_header",
+        "level": 1,
+        "text_preview": "Sol.559.(c) glitters was not gold"
+      },
+      {
+        "reading_order_index": 45,
+        "element_ref": "#/texts/47",
+        "label": "text",
+        "level": 1,
+        "text_preview": "'Was'  must  be  replaced  with  'is'  as  we  generally  use  Simple Present Tense to write proverbs or old sayings. 'All that glitters is not gold' is a prove"
+      },
+      {
+        "reading_order_index": 46,
+        "element_ref": "#/texts/48",
+        "label": "section_header",
+        "level": 1,
+        "text_preview": "Sol.560.(b) A"
+      },
+      {
+        "reading_order_index": 47,
+        "element_ref": "#/texts/49",
+        "label": "text",
+        "level": 1,
+        "text_preview": "'Is' must be replaced with 'has been' as we generally use present perfect tense(has/have + V 3 ) to discuss a situation that began in the  past  and  continues "
+      },
+      {
+        "reading_order_index": 48,
+        "element_ref": "#/texts/50",
+        "label": "text",
+        "level": 1,
+        "text_preview": "Hence, 'it has been a' is the most appropriate answer."
+      },
+      {
+        "reading_order_index": 49,
+        "element_ref": "#/texts/51",
+        "label": "section_header",
+        "level": 1,
+        "text_preview": "Sol.561.(d) and good communicator"
+      },
+      {
+        "reading_order_index": 50,
+        "element_ref": "#/texts/52",
+        "label": "text",
+        "level": 1,
+        "text_preview": "Use  of  the  adjective  'good'  is  superfluous  in  this  sentence  as there is already  an  adjective(excellent)  which  qualifies  the meaning of both the n"
+      },
+      {
+        "reading_order_index": 51,
+        "element_ref": "#/texts/53",
+        "label": "text",
+        "level": 1,
+        "text_preview": "Sol.562.(c) With cloud streaming, people can play games from a The  article  'An'  is  used  before the words starting from a vowel sound(an imminent danger, an"
+      },
+      {
+        "reading_order_index": 52,
+        "element_ref": "#/texts/54",
+        "label": "section_header",
+        "level": 1,
+        "text_preview": "Sol.563.(a) B"
+      },
+      {
+        "reading_order_index": 53,
+        "element_ref": "#/texts/55",
+        "label": "text",
+        "level": 1,
+        "text_preview": "We use the phrase 'including' to give further examples of people or  things  that  we  are  talking  about.  The  phrase  'come  with' means having something as"
+      },
+      {
+        "reading_order_index": 54,
+        "element_ref": "#/texts/56",
+        "label": "section_header",
+        "level": 1,
+        "text_preview": "Sol.564.(c) to much"
+      },
+      {
+        "reading_order_index": 55,
+        "element_ref": "#/texts/57",
+        "label": "text",
+        "level": 1,
+        "text_preview": "'To'  must  be  replaced  with  'too'  as  'too'  is  used  to  indicate  an excessive or more than necessary amount. Hence, 'too much' is the most appropriate "
+      },
+      {
+        "reading_order_index": 56,
+        "element_ref": "#/texts/58",
+        "label": "section_header",
+        "level": 1,
+        "text_preview": "Sol.565.(d) whose the sister"
+      },
+      {
+        "reading_order_index": 57,
+        "element_ref": "#/texts/59",
+        "label": "text",
+        "level": 1,
+        "text_preview": "Article 'the' must be removed before 'sister' as the word 'whose' is  used  to  indicate  possession or association, and it should be followed  directly  by  th"
+      },
+      {
+        "reading_order_index": 58,
+        "element_ref": "#/texts/60",
+        "label": "section_header",
+        "level": 1,
+        "text_preview": "Sol.566.(c) before orbiting an astronaut"
+      },
+      {
+        "reading_order_index": 59,
+        "element_ref": "#/texts/61",
+        "label": "text",
+        "level": 1,
+        "text_preview": "Article  'A'  is  used  before  the  words  starting  from  a consonant sound - (a conversation, a story). Whereas, the article 'An' is used before  the  words "
+      },
+      {
+        "reading_order_index": 60,
+        "element_ref": "#/texts/62",
+        "label": "section_header",
+        "level": 1,
+        "text_preview": "Sol.567.(b) he had not"
+      },
+      {
+        "reading_order_index": 61,
+        "element_ref": "#/texts/63",
+        "label": "text",
+        "level": 1,
+        "text_preview": "The given sentence is an example  of  a  third  conditional sentence  and  the  correct  grammatical  structure  is  'If  +  past perfect(had  +  V 3 )……..  Wou"
+      }
+    ]
+  },
+  "layout_analysis": {
+    "method": "docling_bbox_left_edge_clustering_v1",
+    "column_count": 3,
+    "confidence": 1.0,
+    "page_width": 596.0,
+    "page_height": 842.0,
+    "columns": [
+      {
+        "column_index": 1,
+        "left": 0.0,
+        "right": 92.188,
+        "detected_start": 28.275,
+        "supporting_elements": 31
+      },
+      {
+        "column_index": 2,
+        "left": 92.188,
+        "right": 232.326,
+        "detected_start": 156.101,
+        "supporting_elements": 10
+      },
+      {
+        "column_index": 3,
+        "left": 232.326,
+        "right": 596.0,
+        "detected_start": 308.55,
+        "supporting_elements": 21
+      }
+    ],
+    "elements": [
+      {
+        "element_ref": "#/texts/0",
+        "element_type": "text",
+        "label": "page_header",
+        "column_index": 1,
+        "column_indices": [
+          1
+        ],
+        "spans_columns": false,
+        "reading_order_index": null,
+        "bbox": {
+          "l": 28.800003,
+          "t": 830.7925780594726,
+          "r": 95.7084616875,
+          "b": 822.5642819957749,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/1",
+        "element_type": "text",
+        "label": "page_header",
+        "column_index": 3,
+        "column_indices": [
+          3
+        ],
+        "spans_columns": false,
+        "reading_order_index": null,
+        "bbox": {
+          "l": 291.757038,
+          "t": 830.7925780594726,
+          "r": 570.3032679375,
+          "b": 822.5642819957749,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/2",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2,
+          3
+        ],
+        "spans_columns": true,
+        "reading_order_index": 0,
+        "bbox": {
+          "l": 28.800003,
+          "t": 814.6982416875001,
+          "r": 288.93281742,
+          "b": 794.1941298199854,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/3",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 1,
+        "column_indices": [
+          1
+        ],
+        "spans_columns": false,
+        "reading_order_index": 1,
+        "bbox": {
+          "l": 28.800003,
+          "t": 789.8544916875001,
+          "r": 103.85859717000001,
+          "b": 781.7722548199854,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/4",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 2,
+        "bbox": {
+          "l": 28.800003,
+          "t": 777.4326166875001,
+          "r": 120.80390967000001,
+          "b": 769.3503798199854,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/5",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 3,
+        "bbox": {
+          "l": 28.800003,
+          "t": 756.7294916875001,
+          "r": 117.58711242000001,
+          "b": 736.2253798199854,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/6",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 4,
+        "bbox": {
+          "l": 28.800003,
+          "t": 731.8857416875001,
+          "r": 115.34150667,
+          "b": 723.8035048199854,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/7",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 1,
+        "column_indices": [
+          1
+        ],
+        "spans_columns": false,
+        "reading_order_index": 5,
+        "bbox": {
+          "l": 28.800003,
+          "t": 719.4638666875001,
+          "r": 92.81953467000001,
+          "b": 711.3816298199854,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/8",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 0,
+        "column_indices": [
+          2,
+          3
+        ],
+        "spans_columns": true,
+        "reading_order_index": 6,
+        "bbox": {
+          "l": 172.800003,
+          "t": 789.8544916875001,
+          "r": 252.57392742,
+          "b": 781.7722548199854,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/9",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 0,
+        "column_indices": [
+          2,
+          3
+        ],
+        "spans_columns": true,
+        "reading_order_index": 7,
+        "bbox": {
+          "l": 172.800003,
+          "t": 777.4326166875001,
+          "r": 277.40742492,
+          "b": 769.3503798199854,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/10",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 0,
+        "column_indices": [
+          2,
+          3
+        ],
+        "spans_columns": true,
+        "reading_order_index": 8,
+        "bbox": {
+          "l": 130.529007,
+          "t": 756.7294916875001,
+          "r": 288.36152742,
+          "b": 748.6472548199854,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/11",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 2,
+        "column_indices": [
+          2
+        ],
+        "spans_columns": false,
+        "reading_order_index": 9,
+        "bbox": {
+          "l": 136.800003,
+          "t": 731.8857416875001,
+          "r": 248.81221241999998,
+          "b": 723.8035048199854,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/12",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 2,
+        "column_indices": [
+          2
+        ],
+        "spans_columns": false,
+        "reading_order_index": 10,
+        "bbox": {
+          "l": 136.800003,
+          "t": 719.4638666875001,
+          "r": 192.21504492,
+          "b": 711.3816298199854,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/13",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2,
+          3
+        ],
+        "spans_columns": true,
+        "reading_order_index": 11,
+        "bbox": {
+          "l": 28.800003,
+          "t": 698.7607416875001,
+          "r": 288.77461242,
+          "b": 678.2566298199854,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/14",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 12,
+        "bbox": {
+          "l": 28.800003,
+          "t": 673.9169916875001,
+          "r": 115.68428067,
+          "b": 665.8347548199854,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/15",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 1,
+        "column_indices": [
+          1
+        ],
+        "spans_columns": false,
+        "reading_order_index": 13,
+        "bbox": {
+          "l": 28.800003,
+          "t": 661.4951196874999,
+          "r": 93.45234717000001,
+          "b": 653.4128828199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/16",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 2,
+        "column_indices": [
+          2
+        ],
+        "spans_columns": false,
+        "reading_order_index": 14,
+        "bbox": {
+          "l": 172.800003,
+          "t": 673.9169916875001,
+          "r": 233.39179991999998,
+          "b": 665.8347548199854,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/17",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 0,
+        "column_indices": [
+          2,
+          3
+        ],
+        "spans_columns": true,
+        "reading_order_index": 15,
+        "bbox": {
+          "l": 172.800003,
+          "t": 661.4951196874999,
+          "r": 245.41523741999998,
+          "b": 653.4128828199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/18",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 16,
+        "bbox": {
+          "l": 28.800003,
+          "t": 639.4091796875,
+          "r": 232.85566992000003,
+          "b": 631.3269428199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/19",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2,
+          3
+        ],
+        "spans_columns": true,
+        "reading_order_index": 17,
+        "bbox": {
+          "l": 28.800003,
+          "t": 626.9872996875,
+          "r": 279.19600242,
+          "b": 606.4831928199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/20",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2,
+          3
+        ],
+        "spans_columns": true,
+        "reading_order_index": 18,
+        "bbox": {
+          "l": 28.800003,
+          "t": 602.1435496875,
+          "r": 279.92988491999995,
+          "b": 581.6394428199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/21",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 19,
+        "bbox": {
+          "l": 28.800003,
+          "t": 577.2997996875,
+          "r": 267.55048991999996,
+          "b": 556.7956928199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/22",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 20,
+        "bbox": {
+          "l": 28.800003,
+          "t": 552.4560496875,
+          "r": 269.36542992,
+          "b": 531.9480328199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/23",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2,
+          3
+        ],
+        "spans_columns": true,
+        "reading_order_index": 21,
+        "bbox": {
+          "l": 28.800003,
+          "t": 517.9482396875001,
+          "r": 288.65596242,
+          "b": 497.4441328199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/24",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 22,
+        "bbox": {
+          "l": 28.800003,
+          "t": 493.1044896875,
+          "r": 141.55049142000001,
+          "b": 485.02225281998534,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/25",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 23,
+        "bbox": {
+          "l": 28.800003,
+          "t": 480.6826196875,
+          "r": 122.07832317,
+          "b": 472.6003828199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/26",
+        "element_type": "text",
+        "label": "section_header",
+        "column_index": 1,
+        "column_indices": [
+          1
+        ],
+        "spans_columns": false,
+        "reading_order_index": 24,
+        "bbox": {
+          "l": 28.800003,
+          "t": 455.27734588447265,
+          "r": 79.90409043749999,
+          "b": 447.0490498207749,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/27",
+        "element_type": "text",
+        "label": "section_header",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2,
+          3
+        ],
+        "spans_columns": true,
+        "reading_order_index": 25,
+        "bbox": {
+          "l": 28.800003,
+          "t": 430.1943396875,
+          "r": 288.67646693999995,
+          "b": 409.6902228199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/28",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2,
+          3
+        ],
+        "spans_columns": true,
+        "reading_order_index": 26,
+        "bbox": {
+          "l": 28.800003,
+          "t": 405.3466796875,
+          "r": 288.56953242000003,
+          "b": 359.99881281998535,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/29",
+        "element_type": "text",
+        "label": "section_header",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 27,
+        "bbox": {
+          "l": 28.800003,
+          "t": 347.3818396875,
+          "r": 131.38594043999998,
+          "b": 339.29960281998535,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/30",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2,
+          3
+        ],
+        "spans_columns": true,
+        "reading_order_index": 28,
+        "bbox": {
+          "l": 28.800003,
+          "t": 334.9599596875,
+          "r": 288.94600242,
+          "b": 289.60819281998533,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/31",
+        "element_type": "text",
+        "label": "section_header",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 29,
+        "bbox": {
+          "l": 28.800003,
+          "t": 275.60448968749995,
+          "r": 163.63740444,
+          "b": 267.5222528199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/32",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2,
+          3
+        ],
+        "spans_columns": true,
+        "reading_order_index": 30,
+        "bbox": {
+          "l": 28.800003,
+          "t": 263.18261968750005,
+          "r": 288.98848242,
+          "b": 205.41288281998538,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/33",
+        "element_type": "text",
+        "label": "section_header",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 31,
+        "bbox": {
+          "l": 28.800003,
+          "t": 191.41308968750002,
+          "r": 188.99385444,
+          "b": 183.33085281998535,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/34",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2,
+          3
+        ],
+        "spans_columns": true,
+        "reading_order_index": 32,
+        "bbox": {
+          "l": 28.800003,
+          "t": 178.99120968750003,
+          "r": 288.70869491999997,
+          "b": 133.64335281998535,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/35",
+        "element_type": "text",
+        "label": "section_header",
+        "column_index": 1,
+        "column_indices": [
+          1
+        ],
+        "spans_columns": false,
+        "reading_order_index": 33,
+        "bbox": {
+          "l": 28.800003,
+          "t": 119.64354968750001,
+          "r": 94.84980744,
+          "b": 111.56131281998535,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/36",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2,
+          3
+        ],
+        "spans_columns": true,
+        "reading_order_index": 34,
+        "bbox": {
+          "l": 28.800003,
+          "t": 107.2216796875,
+          "r": 288.54169992,
+          "b": 74.29569281998533,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/37",
+        "element_type": "text",
+        "label": "section_header",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 35,
+        "bbox": {
+          "l": 28.800003,
+          "t": 60.29198968749995,
+          "r": 255.87861443999998,
+          "b": 52.20975281998528,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/38",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2,
+          3
+        ],
+        "spans_columns": true,
+        "reading_order_index": 36,
+        "bbox": {
+          "l": 28.800003,
+          "t": 47.87011968750005,
+          "r": 288.89765742000003,
+          "b": 27.366002819985283,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/39",
+        "element_type": "text",
+        "label": "page_footer",
+        "column_index": 1,
+        "column_indices": [
+          1
+        ],
+        "spans_columns": false,
+        "reading_order_index": null,
+        "bbox": {
+          "l": 32.0,
+          "t": 20.17999999999995,
+          "r": 101.77000000000001,
+          "b": 10.92999999999995,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/40",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 2,
+        "column_indices": [
+          2
+        ],
+        "spans_columns": false,
+        "reading_order_index": 38,
+        "bbox": {
+          "l": 172.800003,
+          "t": 493.1044896875,
+          "r": 223.51728492,
+          "b": 485.02225281998534,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/41",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 0,
+        "column_indices": [
+          2,
+          3
+        ],
+        "spans_columns": true,
+        "reading_order_index": 39,
+        "bbox": {
+          "l": 172.800003,
+          "t": 480.6826196875,
+          "r": 282.90937992,
+          "b": 472.6003828199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/42",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 2,
+        "column_indices": [
+          2
+        ],
+        "spans_columns": false,
+        "reading_order_index": 40,
+        "bbox": {
+          "l": 120.0832065,
+          "t": 756.7294916875001,
+          "r": 126.02900667,
+          "b": 748.6472548199854,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/43",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 3,
+        "column_indices": [
+          3
+        ],
+        "spans_columns": false,
+        "reading_order_index": 41,
+        "bbox": {
+          "l": 308.54999,
+          "t": 814.6982416875001,
+          "r": 568.21991192,
+          "b": 794.1941298199854,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/44",
+        "element_type": "text",
+        "label": "section_header",
+        "column_index": 3,
+        "column_indices": [
+          3
+        ],
+        "spans_columns": false,
+        "reading_order_index": 42,
+        "bbox": {
+          "l": 308.54999,
+          "t": 782.9521486875,
+          "r": 398.62469744,
+          "b": 774.8699118199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/45",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 3,
+        "column_indices": [
+          3
+        ],
+        "spans_columns": false,
+        "reading_order_index": 43,
+        "bbox": {
+          "l": 308.54999,
+          "t": 770.5302736875,
+          "r": 568.03534442,
+          "b": 750.0261618199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/46",
+        "element_type": "text",
+        "label": "section_header",
+        "column_index": 3,
+        "column_indices": [
+          3
+        ],
+        "spans_columns": false,
+        "reading_order_index": 44,
+        "bbox": {
+          "l": 308.54999,
+          "t": 737.4052736875,
+          "r": 440.10907394,
+          "b": 729.3230368199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/47",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 3,
+        "column_indices": [
+          3
+        ],
+        "spans_columns": false,
+        "reading_order_index": 45,
+        "bbox": {
+          "l": 308.54999,
+          "t": 724.9833986875,
+          "r": 568.7223519199999,
+          "b": 667.2136618199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/48",
+        "element_type": "text",
+        "label": "section_header",
+        "column_index": 3,
+        "column_indices": [
+          3
+        ],
+        "spans_columns": false,
+        "reading_order_index": 46,
+        "bbox": {
+          "l": 308.54999,
+          "t": 654.5888696874999,
+          "r": 364.15399393999996,
+          "b": 646.5066328199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/49",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 3,
+        "column_indices": [
+          3
+        ],
+        "spans_columns": false,
+        "reading_order_index": 47,
+        "bbox": {
+          "l": 308.54999,
+          "t": 642.1669896875001,
+          "r": 569.26171442,
+          "b": 584.3972528199854,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/50",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 3,
+        "column_indices": [
+          3
+        ],
+        "spans_columns": false,
+        "reading_order_index": 48,
+        "bbox": {
+          "l": 308.54999,
+          "t": 580.0576196874999,
+          "r": 522.2521355979882,
+          "b": 571.9753828199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/51",
+        "element_type": "text",
+        "label": "section_header",
+        "column_index": 3,
+        "column_indices": [
+          3
+        ],
+        "spans_columns": false,
+        "reading_order_index": 49,
+        "bbox": {
+          "l": 308.54999,
+          "t": 559.3544896875001,
+          "r": 456.51824894,
+          "b": 551.2722528199854,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/52",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 3,
+        "column_indices": [
+          3
+        ],
+        "spans_columns": false,
+        "reading_order_index": 50,
+        "bbox": {
+          "l": 308.54999,
+          "t": 546.9326196874999,
+          "r": 568.51288442,
+          "b": 489.1628828199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/53",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 3,
+        "column_indices": [
+          3
+        ],
+        "spans_columns": false,
+        "reading_order_index": 51,
+        "bbox": {
+          "l": 308.54999,
+          "t": 476.5419896875,
+          "r": 568.70038442,
+          "b": 406.3503828199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/54",
+        "element_type": "text",
+        "label": "section_header",
+        "column_index": 3,
+        "column_indices": [
+          3
+        ],
+        "spans_columns": false,
+        "reading_order_index": 52,
+        "bbox": {
+          "l": 308.54999,
+          "t": 393.7294896875,
+          "r": 363.60467744,
+          "b": 385.64725281998534,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/55",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 3,
+        "column_indices": [
+          3
+        ],
+        "spans_columns": false,
+        "reading_order_index": 53,
+        "bbox": {
+          "l": 308.54999,
+          "t": 381.3076196875,
+          "r": 568.7091669199999,
+          "b": 323.53788281998527,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/56",
+        "element_type": "text",
+        "label": "section_header",
+        "column_index": 3,
+        "column_indices": [
+          3
+        ],
+        "spans_columns": false,
+        "reading_order_index": 54,
+        "bbox": {
+          "l": 308.54999,
+          "t": 310.91698968749995,
+          "r": 390.54315419,
+          "b": 302.8347528199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/57",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 3,
+        "column_indices": [
+          3
+        ],
+        "spans_columns": false,
+        "reading_order_index": 55,
+        "bbox": {
+          "l": 308.54999,
+          "t": 298.49511968750005,
+          "r": 568.62713942,
+          "b": 265.5691328199854,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/58",
+        "element_type": "text",
+        "label": "section_header",
+        "column_index": 3,
+        "column_indices": [
+          3
+        ],
+        "spans_columns": false,
+        "reading_order_index": 56,
+        "bbox": {
+          "l": 308.54999,
+          "t": 252.94433968750002,
+          "r": 424.57440419,
+          "b": 244.86210281998535,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/59",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 3,
+        "column_indices": [
+          3
+        ],
+        "spans_columns": false,
+        "reading_order_index": 57,
+        "bbox": {
+          "l": 308.54999,
+          "t": 240.52245968750003,
+          "r": 568.62420692,
+          "b": 195.17460281998535,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/60",
+        "element_type": "text",
+        "label": "section_header",
+        "column_index": 3,
+        "column_indices": [
+          3
+        ],
+        "spans_columns": false,
+        "reading_order_index": 58,
+        "bbox": {
+          "l": 308.54999,
+          "t": 183.93261968750005,
+          "r": 468.47137709,
+          "b": 175.85038281998538,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/61",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 3,
+        "column_indices": [
+          3
+        ],
+        "spans_columns": false,
+        "reading_order_index": 59,
+        "bbox": {
+          "l": 308.54999,
+          "t": 171.51073968749995,
+          "r": 568.75897442,
+          "b": 101.31913281998538,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/62",
+        "element_type": "text",
+        "label": "section_header",
+        "column_index": 3,
+        "column_indices": [
+          3
+        ],
+        "spans_columns": false,
+        "reading_order_index": 60,
+        "bbox": {
+          "l": 308.54999,
+          "t": 88.69823968749995,
+          "r": 400.57586893999996,
+          "b": 80.61600281998528,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/63",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 3,
+        "column_indices": [
+          3
+        ],
+        "spans_columns": false,
+        "reading_order_index": 61,
+        "bbox": {
+          "l": 308.54999,
+          "t": 76.27636968750005,
+          "r": 568.6877919199999,
+          "b": 30.928502819985283,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/64",
+        "element_type": "text",
+        "label": "page_footer",
+        "column_index": 0,
+        "column_indices": [
+          2,
+          3
+        ],
+        "spans_columns": true,
+        "reading_order_index": null,
+        "bbox": {
+          "l": 99.3266505,
+          "t": 21.989447959472614,
+          "r": 495.95088382500006,
+          "b": 13.761151895774901,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/pictures/0",
+        "element_type": "picture",
+        "label": "picture",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 37,
+        "bbox": {
+          "l": 12.521380424499512,
+          "t": 23.35528564453125,
+          "r": 201.1107177734375,
+          "b": 8.2919921875,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      }
+    ],
+    "warnings": []
+  },
+  "structure_chunks": {
+    "enabled": true,
+    "method": "docling_hybrid_chunker",
+    "scope": "page",
+    "items": [
+      {
+        "text": "- Q.629. I  am sure that / the postman would be / coming shortly / to deliver the letter.\n- (a) I am sure that\n- (c) to deliver the letter\n- Q.630. Maruti likes adventures of Tarzan.\n- (a) stories, especially\n- (c) Maruti likes\n- (b) coming shortly\n- (d) the postman would be\n- adventure  /  stories,  especially  /  an\n- (b) an adventures of Tarzan\n- (d) adventure\nQ.631. The  historians  /  are  a  great  /  asset  to  the/  field  of academia.",
+        "meta": {
+          "schema_name": "docling_core.transforms.chunker.DocMeta",
+          "version": "1.0.0",
+          "doc_items": [
+            {
+              "self_ref": "#/texts/2",
+              "parent": {
+                "cref": "#/groups/0"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 814.6982416875001,
+                    "r": 288.93281742,
+                    "b": 794.1941298199854,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    87
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/3",
+              "parent": {
+                "cref": "#/groups/0"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 789.8544916875001,
+                    "r": 103.85859717000001,
+                    "b": 781.7722548199854,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    18
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/4",
+              "parent": {
+                "cref": "#/groups/0"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 777.4326166875001,
+                    "r": 120.80390967000001,
+                    "b": 769.3503798199854,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    25
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/5",
+              "parent": {
+                "cref": "#/groups/0"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 756.7294916875001,
+                    "r": 117.58711242000001,
+                    "b": 736.2253798199854,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    41
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/6",
+              "parent": {
+                "cref": "#/groups/0"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 731.8857416875001,
+                    "r": 115.34150667,
+                    "b": 723.8035048199854,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    23
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/7",
+              "parent": {
+                "cref": "#/groups/0"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 719.4638666875001,
+                    "r": 92.81953467000001,
+                    "b": 711.3816298199854,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    16
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/8",
+              "parent": {
+                "cref": "#/groups/0"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 172.800003,
+                    "t": 789.8544916875001,
+                    "r": 252.57392742,
+                    "b": 781.7722548199854,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    18
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/9",
+              "parent": {
+                "cref": "#/groups/0"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 172.800003,
+                    "t": 777.4326166875001,
+                    "r": 277.40742492,
+                    "b": 769.3503798199854,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    24
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/10",
+              "parent": {
+                "cref": "#/groups/0"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 130.529007,
+                    "t": 756.7294916875001,
+                    "r": 288.36152742,
+                    "b": 748.6472548199854,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    41
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/11",
+              "parent": {
+                "cref": "#/groups/0"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 136.800003,
+                    "t": 731.8857416875001,
+                    "r": 248.81221241999998,
+                    "b": 723.8035048199854,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    27
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/12",
+              "parent": {
+                "cref": "#/groups/0"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 136.800003,
+                    "t": 719.4638666875001,
+                    "r": 192.21504492,
+                    "b": 711.3816298199854,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    13
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/13",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 698.7607416875001,
+                    "r": 288.77461242,
+                    "b": 678.2566298199854,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    81
+                  ]
+                }
+              ]
+            }
+          ],
+          "headings": null,
+          "captions": null,
+          "origin": {
+            "mimetype": "application/pdf",
+            "binary_hash": 5732266094214002291,
+            "filename": "english_page_0060.pdf",
+            "uri": null
+          }
+        },
+        "chunk_index": 0,
+        "contextualized_text": "- Q.629. I  am sure that / the postman would be / coming shortly / to deliver the letter.\n- (a) I am sure that\n- (c) to deliver the letter\n- Q.630. Maruti likes adventures of Tarzan.\n- (a) stories, especially\n- (c) Maruti likes\n- (b) coming shortly\n- (d) the postman would be\n- adventure  /  stories,  especially  /  an\n- (b) an adventures of Tarzan\n- (d) adventure\nQ.631. The  historians  /  are  a  great  /  asset  to  the/  field  of academia."
+      },
+      {
+        "text": "- (a) field of academia\n- (c) asset to the\n- (b) are a great\n- (d) The historians\n- Q.632. Select the grammatically correct sentence.\n- (a) The warrior was waiting for an right  time to attack the lion hiding in a cave.\n- (b) The warrior was waiting for the right time to attack the lion hiding in the cave.\n- (c) An warrior was waiting for a right time to attack the lion hiding in the cave.\n- (d) The warrior was waiting for a right time to attack an lion hiding in the cave.\n- Q.633. We hardly knew nothing / about the manager / who had recently joined.\n- (a) We hardly knew nothing\n- (c) about the manager",
+        "meta": {
+          "schema_name": "docling_core.transforms.chunker.DocMeta",
+          "version": "1.0.0",
+          "doc_items": [
+            {
+              "self_ref": "#/texts/14",
+              "parent": {
+                "cref": "#/groups/1"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 673.9169916875001,
+                    "r": 115.68428067,
+                    "b": 665.8347548199854,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    21
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/15",
+              "parent": {
+                "cref": "#/groups/1"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 661.4951196874999,
+                    "r": 93.45234717000001,
+                    "b": 653.4128828199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    16
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/16",
+              "parent": {
+                "cref": "#/groups/1"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 172.800003,
+                    "t": 673.9169916875001,
+                    "r": 233.39179991999998,
+                    "b": 665.8347548199854,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    15
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/17",
+              "parent": {
+                "cref": "#/groups/1"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 172.800003,
+                    "t": 661.4951196874999,
+                    "r": 245.41523741999998,
+                    "b": 653.4128828199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    18
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/18",
+              "parent": {
+                "cref": "#/groups/1"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 639.4091796875,
+                    "r": 232.85566992000003,
+                    "b": 631.3269428199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    49
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/19",
+              "parent": {
+                "cref": "#/groups/1"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 626.9872996875,
+                    "r": 279.19600242,
+                    "b": 606.4831928199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    83
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/20",
+              "parent": {
+                "cref": "#/groups/1"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 602.1435496875,
+                    "r": 279.92988491999995,
+                    "b": 581.6394428199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    85
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/21",
+              "parent": {
+                "cref": "#/groups/1"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 577.2997996875,
+                    "r": 267.55048991999996,
+                    "b": 556.7956928199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    82
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/22",
+              "parent": {
+                "cref": "#/groups/1"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 552.4560496875,
+                    "r": 269.36542992,
+                    "b": 531.9480328199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    82
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/23",
+              "parent": {
+                "cref": "#/groups/1"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 517.9482396875001,
+                    "r": 288.65596242,
+                    "b": 497.4441328199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    76
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/24",
+              "parent": {
+                "cref": "#/groups/1"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 493.1044896875,
+                    "r": 141.55049142000001,
+                    "b": 485.02225281998534,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    26
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/25",
+              "parent": {
+                "cref": "#/groups/1"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 480.6826196875,
+                    "r": 122.07832317,
+                    "b": 472.6003828199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    21
+                  ]
+                }
+              ]
+            }
+          ],
+          "headings": null,
+          "captions": null,
+          "origin": {
+            "mimetype": "application/pdf",
+            "binary_hash": 5732266094214002291,
+            "filename": "english_page_0060.pdf",
+            "uri": null
+          }
+        },
+        "chunk_index": 1,
+        "contextualized_text": "- (a) field of academia\n- (c) asset to the\n- (b) are a great\n- (d) The historians\n- Q.632. Select the grammatically correct sentence.\n- (a) The warrior was waiting for an right  time to attack the lion hiding in a cave.\n- (b) The warrior was waiting for the right time to attack the lion hiding in the cave.\n- (c) An warrior was waiting for a right time to attack the lion hiding in the cave.\n- (d) The warrior was waiting for a right time to attack an lion hiding in the cave.\n- Q.633. We hardly knew nothing / about the manager / who had recently joined.\n- (a) We hardly knew nothing\n- (c) about the manager"
+      },
+      {
+        "text": "'Eldest'  must  be  replaced  with  'oldest'.  We  use  superlative degree  'eldest'  for  blood  relations  of  the  same  generation  or lower generation & 'oldest' for something that was created first of all. Hence, 'option (d)' is the most appropriate answer.",
+        "meta": {
+          "schema_name": "docling_core.transforms.chunker.DocMeta",
+          "version": "1.0.0",
+          "doc_items": [
+            {
+              "self_ref": "#/texts/28",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 405.3466796875,
+                    "r": 288.56953242000003,
+                    "b": 359.99881281998535,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    263
+                  ]
+                }
+              ]
+            }
+          ],
+          "headings": [
+            "Sol.552.(d)  This  is  the  oldest  standing  structure  of  Chola architecture in India."
+          ],
+          "captions": null,
+          "origin": {
+            "mimetype": "application/pdf",
+            "binary_hash": 5732266094214002291,
+            "filename": "english_page_0060.pdf",
+            "uri": null
+          }
+        },
+        "chunk_index": 2,
+        "contextualized_text": "Sol.552.(d)  This  is  the  oldest  standing  structure  of  Chola architecture in India.\n'Eldest'  must  be  replaced  with  'oldest'.  We  use  superlative degree  'eldest'  for  blood  relations  of  the  same  generation  or lower generation & 'oldest' for something that was created first of all. Hence, 'option (d)' is the most appropriate answer."
+      },
+      {
+        "text": "Preposition  'in'  must  be  replaced with 'by' as preposition 'by' is used with the means or method of transportation. For exampleby  train,  by  bus,  by  car,  etc.  Hence,  'travel  by train' is the most appropriate answer.",
+        "meta": {
+          "schema_name": "docling_core.transforms.chunker.DocMeta",
+          "version": "1.0.0",
+          "doc_items": [
+            {
+              "self_ref": "#/texts/30",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 334.9599596875,
+                    "r": 288.94600242,
+                    "b": 289.60819281998533,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    227
+                  ]
+                }
+              ]
+            }
+          ],
+          "headings": [
+            "Sol.553.(b) travel in train"
+          ],
+          "captions": null,
+          "origin": {
+            "mimetype": "application/pdf",
+            "binary_hash": 5732266094214002291,
+            "filename": "english_page_0060.pdf",
+            "uri": null
+          }
+        },
+        "chunk_index": 3,
+        "contextualized_text": "Sol.553.(b) travel in train\nPreposition  'in'  must  be  replaced with 'by' as preposition 'by' is used with the means or method of transportation. For exampleby  train,  by  bus,  by  car,  etc.  Hence,  'travel  by train' is the most appropriate answer."
+      },
+      {
+        "text": "'Will  have'  must  be  replaced  with  'will  be'.  Simple  Present Tense(Singular  Sub.  +  V-s/es)  is  used  with  the  phrase  'by  the time' to indicate the point of time in the future when some action will  have  been  completed.  Hence,  'she  marries'  is  the  most appropriate answer.",
+        "meta": {
+          "schema_name": "docling_core.transforms.chunker.DocMeta",
+          "version": "1.0.0",
+          "doc_items": [
+            {
+              "self_ref": "#/texts/32",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 263.18261968750005,
+                    "r": 288.98848242,
+                    "b": 205.41288281998538,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    295
+                  ]
+                }
+              ]
+            }
+          ],
+          "headings": [
+            "Sol.554.(c) she will have married"
+          ],
+          "captions": null,
+          "origin": {
+            "mimetype": "application/pdf",
+            "binary_hash": 5732266094214002291,
+            "filename": "english_page_0060.pdf",
+            "uri": null
+          }
+        },
+        "chunk_index": 4,
+        "contextualized_text": "Sol.554.(c) she will have married\n'Will  have'  must  be  replaced  with  'will  be'.  Simple  Present Tense(Singular  Sub.  +  V-s/es)  is  used  with  the  phrase  'by  the time' to indicate the point of time in the future when some action will  have  been  completed.  Hence,  'she  marries'  is  the  most appropriate answer."
+      },
+      {
+        "text": "Article 'a' must be replaced with 'article 'an' as we generally use article 'an' with the nouns starting with a vowel sound. Similarly, in the given sentence, 'Atlas-Agena D' starts with a vowel sound. Hence, 'an' is the most appropriate answer.",
+        "meta": {
+          "schema_name": "docling_core.transforms.chunker.DocMeta",
+          "version": "1.0.0",
+          "doc_items": [
+            {
+              "self_ref": "#/texts/34",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 178.99120968750003,
+                    "r": 288.70869491999997,
+                    "b": 133.64335281998535,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    245
+                  ]
+                }
+              ]
+            }
+          ],
+          "headings": [
+            "Sol.555.(d) on an Atlas-Agena D rocket"
+          ],
+          "captions": null,
+          "origin": {
+            "mimetype": "application/pdf",
+            "binary_hash": 5732266094214002291,
+            "filename": "english_page_0060.pdf",
+            "uri": null
+          }
+        },
+        "chunk_index": 5,
+        "contextualized_text": "Sol.555.(d) on an Atlas-Agena D rocket\nArticle 'a' must be replaced with 'article 'an' as we generally use article 'an' with the nouns starting with a vowel sound. Similarly, in the given sentence, 'Atlas-Agena D' starts with a vowel sound. Hence, 'an' is the most appropriate answer."
+      },
+      {
+        "text": "'Lesser'  is  used  to  indicate  something  of  lower  importance  or significance & 'less' used to indicate a lower amount or degree. Hence, 'less' is the most appropriate answer.",
+        "meta": {
+          "schema_name": "docling_core.transforms.chunker.DocMeta",
+          "version": "1.0.0",
+          "doc_items": [
+            {
+              "self_ref": "#/texts/36",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 107.2216796875,
+                    "r": 288.54169992,
+                    "b": 74.29569281998533,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    181
+                  ]
+                }
+              ]
+            }
+          ],
+          "headings": [
+            "Sol.556.(d) less"
+          ],
+          "captions": null,
+          "origin": {
+            "mimetype": "application/pdf",
+            "binary_hash": 5732266094214002291,
+            "filename": "english_page_0060.pdf",
+            "uri": null
+          }
+        },
+        "chunk_index": 6,
+        "contextualized_text": "Sol.556.(d) less\n'Lesser'  is  used  to  indicate  something  of  lower  importance  or significance & 'less' used to indicate a lower amount or degree. Hence, 'less' is the most appropriate answer."
+      },
+      {
+        "text": "The  article  'the'  is  used  to refer to specific or particular nouns. Similarly, in the  given  sentence,  'chef'  is  a  specific  person.\n- (b) No error\n- (d) who had recently joined\n/\nHence,  'He  is  the  chef  who  specialises in Italian cuisine' is the most appropriate answer.",
+        "meta": {
+          "schema_name": "docling_core.transforms.chunker.DocMeta",
+          "version": "1.0.0",
+          "doc_items": [
+            {
+              "self_ref": "#/texts/38",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 47.87011968750005,
+                    "r": 288.89765742000003,
+                    "b": 27.366002819985283,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    142
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/40",
+              "parent": {
+                "cref": "#/groups/2"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 172.800003,
+                    "t": 493.1044896875,
+                    "r": 223.51728492,
+                    "b": 485.02225281998534,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    12
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/41",
+              "parent": {
+                "cref": "#/groups/2"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 172.800003,
+                    "t": 480.6826196875,
+                    "r": 282.90937992,
+                    "b": 472.6003828199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    27
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/42",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 120.0832065,
+                    "t": 756.7294916875001,
+                    "r": 126.02900667,
+                    "b": 748.6472548199854,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    1
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/43",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 308.54999,
+                    "t": 814.6982416875001,
+                    "r": 568.21991192,
+                    "b": 794.1941298199854,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    96
+                  ]
+                }
+              ]
+            }
+          ],
+          "headings": [
+            "Sol.557.(c) He is chef who specialises in Italian cuisine."
+          ],
+          "captions": null,
+          "origin": {
+            "mimetype": "application/pdf",
+            "binary_hash": 5732266094214002291,
+            "filename": "english_page_0060.pdf",
+            "uri": null
+          }
+        },
+        "chunk_index": 7,
+        "contextualized_text": "Sol.557.(c) He is chef who specialises in Italian cuisine.\nThe  article  'the'  is  used  to refer to specific or particular nouns. Similarly, in the  given  sentence,  'chef'  is  a  specific  person.\n- (b) No error\n- (d) who had recently joined\n/\nHence,  'He  is  the  chef  who  specialises in Italian cuisine' is the most appropriate answer."
+      },
+      {
+        "text": "'Wealth of something' is the correct phrase which means a lot of something. Hence, 'wealth of' is the most appropriate answer.",
+        "meta": {
+          "schema_name": "docling_core.transforms.chunker.DocMeta",
+          "version": "1.0.0",
+          "doc_items": [
+            {
+              "self_ref": "#/texts/45",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 308.54999,
+                    "t": 770.5302736875,
+                    "r": 568.03534442,
+                    "b": 750.0261618199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    126
+                  ]
+                }
+              ]
+            }
+          ],
+          "headings": [
+            "Sol.558.(d) wealth off"
+          ],
+          "captions": null,
+          "origin": {
+            "mimetype": "application/pdf",
+            "binary_hash": 5732266094214002291,
+            "filename": "english_page_0060.pdf",
+            "uri": null
+          }
+        },
+        "chunk_index": 8,
+        "contextualized_text": "Sol.558.(d) wealth off\n'Wealth of something' is the correct phrase which means a lot of something. Hence, 'wealth of' is the most appropriate answer."
+      },
+      {
+        "text": "'Was'  must  be  replaced  with  'is'  as  we  generally  use  Simple Present Tense to write proverbs or old sayings. 'All that glitters is not gold' is a proverb which means everything that shines is not necessarily  good  from inside. Hence, 'glitters is not gold' is the most appropriate answer.",
+        "meta": {
+          "schema_name": "docling_core.transforms.chunker.DocMeta",
+          "version": "1.0.0",
+          "doc_items": [
+            {
+              "self_ref": "#/texts/47",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 308.54999,
+                    "t": 724.9833986875,
+                    "r": 568.7223519199999,
+                    "b": 667.2136618199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    298
+                  ]
+                }
+              ]
+            }
+          ],
+          "headings": [
+            "Sol.559.(c) glitters was not gold"
+          ],
+          "captions": null,
+          "origin": {
+            "mimetype": "application/pdf",
+            "binary_hash": 5732266094214002291,
+            "filename": "english_page_0060.pdf",
+            "uri": null
+          }
+        },
+        "chunk_index": 9,
+        "contextualized_text": "Sol.559.(c) glitters was not gold\n'Was'  must  be  replaced  with  'is'  as  we  generally  use  Simple Present Tense to write proverbs or old sayings. 'All that glitters is not gold' is a proverb which means everything that shines is not necessarily  good  from inside. Hence, 'glitters is not gold' is the most appropriate answer."
+      },
+      {
+        "text": "'Is' must be replaced with 'has been' as we generally use present perfect tense(has/have + V 3 ) to discuss a situation that began in the  past  and  continues  into  the  present.  Similarly,  in  the given sentence,  a  state  of  chaos  began in the past and still exists in the present.\nHence, 'it has been a' is the most appropriate answer.",
+        "meta": {
+          "schema_name": "docling_core.transforms.chunker.DocMeta",
+          "version": "1.0.0",
+          "doc_items": [
+            {
+              "self_ref": "#/texts/49",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 308.54999,
+                    "t": 642.1669896875001,
+                    "r": 569.26171442,
+                    "b": 584.3972528199854,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    290
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/50",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 308.54999,
+                    "t": 580.0576196874999,
+                    "r": 522.2521355979882,
+                    "b": 571.9753828199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    54
+                  ]
+                }
+              ]
+            }
+          ],
+          "headings": [
+            "Sol.560.(b) A"
+          ],
+          "captions": null,
+          "origin": {
+            "mimetype": "application/pdf",
+            "binary_hash": 5732266094214002291,
+            "filename": "english_page_0060.pdf",
+            "uri": null
+          }
+        },
+        "chunk_index": 10,
+        "contextualized_text": "Sol.560.(b) A\n'Is' must be replaced with 'has been' as we generally use present perfect tense(has/have + V 3 ) to discuss a situation that began in the  past  and  continues  into  the  present.  Similarly,  in  the given sentence,  a  state  of  chaos  began in the past and still exists in the present.\nHence, 'it has been a' is the most appropriate answer."
+      },
+      {
+        "text": "Use  of  the  adjective  'good'  is  superfluous  in  this  sentence  as there is already  an  adjective(excellent)  which  qualifies  the meaning of both the nouns, 'writer' and 'communicator'. Therefore,  'good'  must be removed. Hence, 'and communicator' is the most appropriate answer.\nSol.562.(c) With cloud streaming, people can play games from a The  article  'An'  is  used  before the words starting from a vowel sound(an imminent danger, an apple). Similarly, the word 'internet' starts with a vowel sound. Hence, 'With cloud streaming, people can play games  from  an' is the  most appropriate answer.",
+        "meta": {
+          "schema_name": "docling_core.transforms.chunker.DocMeta",
+          "version": "1.0.0",
+          "doc_items": [
+            {
+              "self_ref": "#/texts/52",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 308.54999,
+                    "t": 546.9326196874999,
+                    "r": 568.51288442,
+                    "b": 489.1628828199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    289
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/53",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 308.54999,
+                    "t": 476.5419896875,
+                    "r": 568.70038442,
+                    "b": 406.3503828199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    322
+                  ]
+                }
+              ]
+            }
+          ],
+          "headings": [
+            "Sol.561.(d) and good communicator"
+          ],
+          "captions": null,
+          "origin": {
+            "mimetype": "application/pdf",
+            "binary_hash": 5732266094214002291,
+            "filename": "english_page_0060.pdf",
+            "uri": null
+          }
+        },
+        "chunk_index": 11,
+        "contextualized_text": "Sol.561.(d) and good communicator\nUse  of  the  adjective  'good'  is  superfluous  in  this  sentence  as there is already  an  adjective(excellent)  which  qualifies  the meaning of both the nouns, 'writer' and 'communicator'. Therefore,  'good'  must be removed. Hence, 'and communicator' is the most appropriate answer.\nSol.562.(c) With cloud streaming, people can play games from a The  article  'An'  is  used  before the words starting from a vowel sound(an imminent danger, an apple). Similarly, the word 'internet' starts with a vowel sound. Hence, 'With cloud streaming, people can play games  from  an' is the  most appropriate answer."
+      },
+      {
+        "text": "We use the phrase 'including' to give further examples of people or  things  that  we  are  talking  about.  The  phrase  'come  with' means having something as an essential part. Similarly, warranty is an essential part of the fridge. 'Hence, 'comes with' is the most appropriate answer.",
+        "meta": {
+          "schema_name": "docling_core.transforms.chunker.DocMeta",
+          "version": "1.0.0",
+          "doc_items": [
+            {
+              "self_ref": "#/texts/55",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 308.54999,
+                    "t": 381.3076196875,
+                    "r": 568.7091669199999,
+                    "b": 323.53788281998527,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    288
+                  ]
+                }
+              ]
+            }
+          ],
+          "headings": [
+            "Sol.563.(a) B"
+          ],
+          "captions": null,
+          "origin": {
+            "mimetype": "application/pdf",
+            "binary_hash": 5732266094214002291,
+            "filename": "english_page_0060.pdf",
+            "uri": null
+          }
+        },
+        "chunk_index": 12,
+        "contextualized_text": "Sol.563.(a) B\nWe use the phrase 'including' to give further examples of people or  things  that  we  are  talking  about.  The  phrase  'come  with' means having something as an essential part. Similarly, warranty is an essential part of the fridge. 'Hence, 'comes with' is the most appropriate answer."
+      },
+      {
+        "text": "'To'  must  be  replaced  with  'too'  as  'too'  is  used  to  indicate  an excessive or more than necessary amount. Hence, 'too much' is the most appropriate answer.",
+        "meta": {
+          "schema_name": "docling_core.transforms.chunker.DocMeta",
+          "version": "1.0.0",
+          "doc_items": [
+            {
+              "self_ref": "#/texts/57",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 308.54999,
+                    "t": 298.49511968750005,
+                    "r": 568.62713942,
+                    "b": 265.5691328199854,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    167
+                  ]
+                }
+              ]
+            }
+          ],
+          "headings": [
+            "Sol.564.(c) to much"
+          ],
+          "captions": null,
+          "origin": {
+            "mimetype": "application/pdf",
+            "binary_hash": 5732266094214002291,
+            "filename": "english_page_0060.pdf",
+            "uri": null
+          }
+        },
+        "chunk_index": 13,
+        "contextualized_text": "Sol.564.(c) to much\n'To'  must  be  replaced  with  'too'  as  'too'  is  used  to  indicate  an excessive or more than necessary amount. Hence, 'too much' is the most appropriate answer."
+      },
+      {
+        "text": "Article 'the' must be removed before 'sister' as the word 'whose' is  used  to  indicate  possession or association, and it should be followed  directly  by  the  noun  it  is  describing.  Hence,  'whose sister' is the most appropriate answer.",
+        "meta": {
+          "schema_name": "docling_core.transforms.chunker.DocMeta",
+          "version": "1.0.0",
+          "doc_items": [
+            {
+              "self_ref": "#/texts/59",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 308.54999,
+                    "t": 240.52245968750003,
+                    "r": 568.62420692,
+                    "b": 195.17460281998535,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    244
+                  ]
+                }
+              ]
+            }
+          ],
+          "headings": [
+            "Sol.565.(d) whose the sister"
+          ],
+          "captions": null,
+          "origin": {
+            "mimetype": "application/pdf",
+            "binary_hash": 5732266094214002291,
+            "filename": "english_page_0060.pdf",
+            "uri": null
+          }
+        },
+        "chunk_index": 14,
+        "contextualized_text": "Sol.565.(d) whose the sister\nArticle 'the' must be removed before 'sister' as the word 'whose' is  used  to  indicate  possession or association, and it should be followed  directly  by  the  noun  it  is  describing.  Hence,  'whose sister' is the most appropriate answer."
+      },
+      {
+        "text": "Article  'A'  is  used  before  the  words  starting  from  a consonant sound - (a conversation, a story). Whereas, the article 'An' is used before  the  words  starting  with  a  vowel  sound(an  imminent danger, an apple). Similarly, in the given sentence, 'astronaut' is a noun  starting  with  a  vowel  sound.  Hence,  'an  astronaut' is the most appropriate answer.",
+        "meta": {
+          "schema_name": "docling_core.transforms.chunker.DocMeta",
+          "version": "1.0.0",
+          "doc_items": [
+            {
+              "self_ref": "#/texts/61",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 308.54999,
+                    "t": 171.51073968749995,
+                    "r": 568.75897442,
+                    "b": 101.31913281998538,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    371
+                  ]
+                }
+              ]
+            }
+          ],
+          "headings": [
+            "Sol.566.(c) before orbiting an astronaut"
+          ],
+          "captions": null,
+          "origin": {
+            "mimetype": "application/pdf",
+            "binary_hash": 5732266094214002291,
+            "filename": "english_page_0060.pdf",
+            "uri": null
+          }
+        },
+        "chunk_index": 15,
+        "contextualized_text": "Sol.566.(c) before orbiting an astronaut\nArticle  'A'  is  used  before  the  words  starting  from  a consonant sound - (a conversation, a story). Whereas, the article 'An' is used before  the  words  starting  with  a  vowel  sound(an  imminent danger, an apple). Similarly, in the given sentence, 'astronaut' is a noun  starting  with  a  vowel  sound.  Hence,  'an  astronaut' is the most appropriate answer."
+      },
+      {
+        "text": "The given sentence is an example  of  a  third  conditional sentence  and  the  correct  grammatical  structure  is  'If  +  past perfect(had  +  V 3 )……..  Would  have  +  V 3 '.  Hence,  'he  would  not have' is the most appropriate answer.",
+        "meta": {
+          "schema_name": "docling_core.transforms.chunker.DocMeta",
+          "version": "1.0.0",
+          "doc_items": [
+            {
+              "self_ref": "#/texts/63",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 308.54999,
+                    "t": 76.27636968750005,
+                    "r": 568.6877919199999,
+                    "b": 30.928502819985283,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    242
+                  ]
+                }
+              ]
+            }
+          ],
+          "headings": [
+            "Sol.567.(b) he had not"
+          ],
+          "captions": null,
+          "origin": {
+            "mimetype": "application/pdf",
+            "binary_hash": 5732266094214002291,
+            "filename": "english_page_0060.pdf",
+            "uri": null
+          }
+        },
+        "chunk_index": 16,
+        "contextualized_text": "Sol.567.(b) he had not\nThe given sentence is an example  of  a  third  conditional sentence  and  the  correct  grammatical  structure  is  'If  +  past perfect(had  +  V 3 )……..  Would  have  +  V 3 '.  Hence,  'he  would  not have' is the most appropriate answer."
+      }
+    ]
+  },
+  "content_assets": {
+    "tables": [],
+    "figures": [
+      {
+        "element_ref": "#/pictures/0",
+        "label": "picture",
+        "provenance": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 12.521380424499512,
+              "t": 23.35528564453125,
+              "r": 201.1107177734375,
+              "b": 8.2919921875,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              0
+            ]
+          }
+        ],
+        "captions": []
+      }
+    ]
+  },
+  "docling_document": {
+    "schema_name": "DoclingDocument",
+    "version": "1.10.0",
+    "name": "english_page_0060",
+    "origin": {
+      "mimetype": "application/pdf",
+      "binary_hash": 5732266094214002291,
+      "filename": "english_page_0060.pdf"
+    },
+    "furniture": {
+      "self_ref": "#/furniture",
+      "children": [],
+      "content_layer": "furniture",
+      "name": "_root_",
+      "label": "unspecified"
+    },
+    "body": {
+      "self_ref": "#/body",
+      "children": [
+        {
+          "$ref": "#/texts/0"
+        },
+        {
+          "$ref": "#/texts/1"
+        },
+        {
+          "$ref": "#/groups/0"
+        },
+        {
+          "$ref": "#/texts/13"
+        },
+        {
+          "$ref": "#/groups/1"
+        },
+        {
+          "$ref": "#/texts/26"
+        },
+        {
+          "$ref": "#/texts/27"
+        },
+        {
+          "$ref": "#/texts/28"
+        },
+        {
+          "$ref": "#/texts/29"
+        },
+        {
+          "$ref": "#/texts/30"
+        },
+        {
+          "$ref": "#/texts/31"
+        },
+        {
+          "$ref": "#/texts/32"
+        },
+        {
+          "$ref": "#/texts/33"
+        },
+        {
+          "$ref": "#/texts/34"
+        },
+        {
+          "$ref": "#/texts/35"
+        },
+        {
+          "$ref": "#/texts/36"
+        },
+        {
+          "$ref": "#/texts/37"
+        },
+        {
+          "$ref": "#/texts/38"
+        },
+        {
+          "$ref": "#/pictures/0"
+        },
+        {
+          "$ref": "#/groups/2"
+        },
+        {
+          "$ref": "#/texts/42"
+        },
+        {
+          "$ref": "#/texts/43"
+        },
+        {
+          "$ref": "#/texts/44"
+        },
+        {
+          "$ref": "#/texts/45"
+        },
+        {
+          "$ref": "#/texts/46"
+        },
+        {
+          "$ref": "#/texts/47"
+        },
+        {
+          "$ref": "#/texts/48"
+        },
+        {
+          "$ref": "#/texts/49"
+        },
+        {
+          "$ref": "#/texts/50"
+        },
+        {
+          "$ref": "#/texts/51"
+        },
+        {
+          "$ref": "#/texts/52"
+        },
+        {
+          "$ref": "#/texts/53"
+        },
+        {
+          "$ref": "#/texts/54"
+        },
+        {
+          "$ref": "#/texts/55"
+        },
+        {
+          "$ref": "#/texts/56"
+        },
+        {
+          "$ref": "#/texts/57"
+        },
+        {
+          "$ref": "#/texts/58"
+        },
+        {
+          "$ref": "#/texts/59"
+        },
+        {
+          "$ref": "#/texts/60"
+        },
+        {
+          "$ref": "#/texts/61"
+        },
+        {
+          "$ref": "#/texts/62"
+        },
+        {
+          "$ref": "#/texts/63"
+        },
+        {
+          "$ref": "#/texts/64"
+        }
+      ],
+      "content_layer": "body",
+      "name": "_root_",
+      "label": "unspecified"
+    },
+    "groups": [
+      {
+        "self_ref": "#/groups/0",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [
+          {
+            "$ref": "#/texts/2"
+          },
+          {
+            "$ref": "#/texts/3"
+          },
+          {
+            "$ref": "#/texts/4"
+          },
+          {
+            "$ref": "#/texts/5"
+          },
+          {
+            "$ref": "#/texts/6"
+          },
+          {
+            "$ref": "#/texts/7"
+          },
+          {
+            "$ref": "#/texts/8"
+          },
+          {
+            "$ref": "#/texts/9"
+          },
+          {
+            "$ref": "#/texts/10"
+          },
+          {
+            "$ref": "#/texts/11"
+          },
+          {
+            "$ref": "#/texts/12"
+          }
+        ],
+        "content_layer": "body",
+        "name": "list",
+        "label": "list"
+      },
+      {
+        "self_ref": "#/groups/1",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [
+          {
+            "$ref": "#/texts/14"
+          },
+          {
+            "$ref": "#/texts/15"
+          },
+          {
+            "$ref": "#/texts/16"
+          },
+          {
+            "$ref": "#/texts/17"
+          },
+          {
+            "$ref": "#/texts/18"
+          },
+          {
+            "$ref": "#/texts/19"
+          },
+          {
+            "$ref": "#/texts/20"
+          },
+          {
+            "$ref": "#/texts/21"
+          },
+          {
+            "$ref": "#/texts/22"
+          },
+          {
+            "$ref": "#/texts/23"
+          },
+          {
+            "$ref": "#/texts/24"
+          },
+          {
+            "$ref": "#/texts/25"
+          }
+        ],
+        "content_layer": "body",
+        "name": "list",
+        "label": "list"
+      },
+      {
+        "self_ref": "#/groups/2",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [
+          {
+            "$ref": "#/texts/40"
+          },
+          {
+            "$ref": "#/texts/41"
+          }
+        ],
+        "content_layer": "body",
+        "name": "list",
+        "label": "list"
+      }
+    ],
+    "texts": [
+      {
+        "self_ref": "#/texts/0",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "furniture",
+        "label": "page_header",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 830.7925780594726,
+              "r": 95.7084616875,
+              "b": 822.5642819957749,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              8
+            ]
+          }
+        ],
+        "orig": "Pinnacle",
+        "text": "Pinnacle"
+      },
+      {
+        "self_ref": "#/texts/1",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "furniture",
+        "label": "page_header",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 291.757038,
+              "t": 830.7925780594726,
+              "r": 570.3032679375,
+              "b": 822.5642819957749,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              14
+            ]
+          }
+        ],
+        "orig": "Spot the Error",
+        "text": "Spot the Error"
+      },
+      {
+        "self_ref": "#/texts/2",
+        "parent": {
+          "$ref": "#/groups/0"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 814.6982416875001,
+              "r": 288.93281742,
+              "b": 794.1941298199854,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              87
+            ]
+          }
+        ],
+        "orig": "Q.629. I  am sure that / the postman would be / coming shortly / to deliver the letter.",
+        "text": "Q.629. I  am sure that / the postman would be / coming shortly / to deliver the letter.",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/3",
+        "parent": {
+          "$ref": "#/groups/0"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 789.8544916875001,
+              "r": 103.85859717000001,
+              "b": 781.7722548199854,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              18
+            ]
+          }
+        ],
+        "orig": "(a) I am sure that",
+        "text": "(a) I am sure that",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/4",
+        "parent": {
+          "$ref": "#/groups/0"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 777.4326166875001,
+              "r": 120.80390967000001,
+              "b": 769.3503798199854,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              25
+            ]
+          }
+        ],
+        "orig": "(c) to deliver the letter",
+        "text": "(c) to deliver the letter",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/5",
+        "parent": {
+          "$ref": "#/groups/0"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 756.7294916875001,
+              "r": 117.58711242000001,
+              "b": 736.2253798199854,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              41
+            ]
+          }
+        ],
+        "orig": "Q.630. Maruti likes adventures of Tarzan.",
+        "text": "Q.630. Maruti likes adventures of Tarzan.",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/6",
+        "parent": {
+          "$ref": "#/groups/0"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 731.8857416875001,
+              "r": 115.34150667,
+              "b": 723.8035048199854,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              23
+            ]
+          }
+        ],
+        "orig": "(a) stories, especially",
+        "text": "(a) stories, especially",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/7",
+        "parent": {
+          "$ref": "#/groups/0"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 719.4638666875001,
+              "r": 92.81953467000001,
+              "b": 711.3816298199854,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              16
+            ]
+          }
+        ],
+        "orig": "(c) Maruti likes",
+        "text": "(c) Maruti likes",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/8",
+        "parent": {
+          "$ref": "#/groups/0"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 172.800003,
+              "t": 789.8544916875001,
+              "r": 252.57392742,
+              "b": 781.7722548199854,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              18
+            ]
+          }
+        ],
+        "orig": "(b) coming shortly",
+        "text": "(b) coming shortly",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/9",
+        "parent": {
+          "$ref": "#/groups/0"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 172.800003,
+              "t": 777.4326166875001,
+              "r": 277.40742492,
+              "b": 769.3503798199854,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              24
+            ]
+          }
+        ],
+        "orig": "(d) the postman would be",
+        "text": "(d) the postman would be",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/10",
+        "parent": {
+          "$ref": "#/groups/0"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 130.529007,
+              "t": 756.7294916875001,
+              "r": 288.36152742,
+              "b": 748.6472548199854,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              41
+            ]
+          }
+        ],
+        "orig": "adventure  /  stories,  especially  /  an",
+        "text": "adventure  /  stories,  especially  /  an",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/11",
+        "parent": {
+          "$ref": "#/groups/0"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 136.800003,
+              "t": 731.8857416875001,
+              "r": 248.81221241999998,
+              "b": 723.8035048199854,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              27
+            ]
+          }
+        ],
+        "orig": "(b) an adventures of Tarzan",
+        "text": "(b) an adventures of Tarzan",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/12",
+        "parent": {
+          "$ref": "#/groups/0"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 136.800003,
+              "t": 719.4638666875001,
+              "r": 192.21504492,
+              "b": 711.3816298199854,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              13
+            ]
+          }
+        ],
+        "orig": "(d) adventure",
+        "text": "(d) adventure",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/13",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 698.7607416875001,
+              "r": 288.77461242,
+              "b": 678.2566298199854,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              81
+            ]
+          }
+        ],
+        "orig": "Q.631. The  historians  /  are  a  great  /  asset  to  the/  field  of academia.",
+        "text": "Q.631. The  historians  /  are  a  great  /  asset  to  the/  field  of academia."
+      },
+      {
+        "self_ref": "#/texts/14",
+        "parent": {
+          "$ref": "#/groups/1"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 673.9169916875001,
+              "r": 115.68428067,
+              "b": 665.8347548199854,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              21
+            ]
+          }
+        ],
+        "orig": "(a) field of academia",
+        "text": "(a) field of academia",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/15",
+        "parent": {
+          "$ref": "#/groups/1"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 661.4951196874999,
+              "r": 93.45234717000001,
+              "b": 653.4128828199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              16
+            ]
+          }
+        ],
+        "orig": "(c) asset to the",
+        "text": "(c) asset to the",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/16",
+        "parent": {
+          "$ref": "#/groups/1"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 172.800003,
+              "t": 673.9169916875001,
+              "r": 233.39179991999998,
+              "b": 665.8347548199854,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              15
+            ]
+          }
+        ],
+        "orig": "(b) are a great",
+        "text": "(b) are a great",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/17",
+        "parent": {
+          "$ref": "#/groups/1"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 172.800003,
+              "t": 661.4951196874999,
+              "r": 245.41523741999998,
+              "b": 653.4128828199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              18
+            ]
+          }
+        ],
+        "orig": "(d) The historians",
+        "text": "(d) The historians",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/18",
+        "parent": {
+          "$ref": "#/groups/1"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 639.4091796875,
+              "r": 232.85566992000003,
+              "b": 631.3269428199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              49
+            ]
+          }
+        ],
+        "orig": "Q.632. Select the grammatically correct sentence.",
+        "text": "Q.632. Select the grammatically correct sentence.",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/19",
+        "parent": {
+          "$ref": "#/groups/1"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 626.9872996875,
+              "r": 279.19600242,
+              "b": 606.4831928199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              83
+            ]
+          }
+        ],
+        "orig": "(a) The warrior was waiting for an right  time to attack the lion hiding in a cave.",
+        "text": "(a) The warrior was waiting for an right  time to attack the lion hiding in a cave.",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/20",
+        "parent": {
+          "$ref": "#/groups/1"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 602.1435496875,
+              "r": 279.92988491999995,
+              "b": 581.6394428199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              85
+            ]
+          }
+        ],
+        "orig": "(b) The warrior was waiting for the right time to attack the lion hiding in the cave.",
+        "text": "(b) The warrior was waiting for the right time to attack the lion hiding in the cave.",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/21",
+        "parent": {
+          "$ref": "#/groups/1"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 577.2997996875,
+              "r": 267.55048991999996,
+              "b": 556.7956928199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              82
+            ]
+          }
+        ],
+        "orig": "(c) An warrior was waiting for a right time to attack the lion hiding in the cave.",
+        "text": "(c) An warrior was waiting for a right time to attack the lion hiding in the cave.",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/22",
+        "parent": {
+          "$ref": "#/groups/1"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 552.4560496875,
+              "r": 269.36542992,
+              "b": 531.9480328199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              82
+            ]
+          }
+        ],
+        "orig": "(d) The warrior was waiting for a right time to attack an lion hiding in the cave.",
+        "text": "(d) The warrior was waiting for a right time to attack an lion hiding in the cave.",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/23",
+        "parent": {
+          "$ref": "#/groups/1"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 517.9482396875001,
+              "r": 288.65596242,
+              "b": 497.4441328199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              76
+            ]
+          }
+        ],
+        "orig": "Q.633. We hardly knew nothing / about the manager / who had recently joined.",
+        "text": "Q.633. We hardly knew nothing / about the manager / who had recently joined.",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/24",
+        "parent": {
+          "$ref": "#/groups/1"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 493.1044896875,
+              "r": 141.55049142000001,
+              "b": 485.02225281998534,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              26
+            ]
+          }
+        ],
+        "orig": "(a) We hardly knew nothing",
+        "text": "(a) We hardly knew nothing",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/25",
+        "parent": {
+          "$ref": "#/groups/1"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 480.6826196875,
+              "r": 122.07832317,
+              "b": 472.6003828199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              21
+            ]
+          }
+        ],
+        "orig": "(c) about the manager",
+        "text": "(c) about the manager",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/26",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "section_header",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 455.27734588447265,
+              "r": 79.90409043749999,
+              "b": 447.0490498207749,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              12
+            ]
+          }
+        ],
+        "orig": "Solutions :-",
+        "text": "Solutions :-",
+        "level": 1
+      },
+      {
+        "self_ref": "#/texts/27",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "section_header",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 430.1943396875,
+              "r": 288.67646693999995,
+              "b": 409.6902228199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              89
+            ]
+          }
+        ],
+        "orig": "Sol.552.(d)  This  is  the  oldest  standing  structure  of  Chola architecture in India.",
+        "text": "Sol.552.(d)  This  is  the  oldest  standing  structure  of  Chola architecture in India.",
+        "level": 1
+      },
+      {
+        "self_ref": "#/texts/28",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 405.3466796875,
+              "r": 288.56953242000003,
+              "b": 359.99881281998535,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              263
+            ]
+          }
+        ],
+        "orig": "'Eldest'  must  be  replaced  with  'oldest'.  We  use  superlative degree  'eldest'  for  blood  relations  of  the  same  generation  or lower generation & 'oldest' for something that was created first of all. Hence, 'option (d)' is the most appropriate answer.",
+        "text": "'Eldest'  must  be  replaced  with  'oldest'.  We  use  superlative degree  'eldest'  for  blood  relations  of  the  same  generation  or lower generation & 'oldest' for something that was created first of all. Hence, 'option (d)' is the most appropriate answer."
+      },
+      {
+        "self_ref": "#/texts/29",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "section_header",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 347.3818396875,
+              "r": 131.38594043999998,
+              "b": 339.29960281998535,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              27
+            ]
+          }
+        ],
+        "orig": "Sol.553.(b) travel in train",
+        "text": "Sol.553.(b) travel in train",
+        "level": 1
+      },
+      {
+        "self_ref": "#/texts/30",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 334.9599596875,
+              "r": 288.94600242,
+              "b": 289.60819281998533,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              227
+            ]
+          }
+        ],
+        "orig": "Preposition  'in'  must  be  replaced with 'by' as preposition 'by' is used with the means or method of transportation. For exampleby  train,  by  bus,  by  car,  etc.  Hence,  'travel  by train' is the most appropriate answer.",
+        "text": "Preposition  'in'  must  be  replaced with 'by' as preposition 'by' is used with the means or method of transportation. For exampleby  train,  by  bus,  by  car,  etc.  Hence,  'travel  by train' is the most appropriate answer."
+      },
+      {
+        "self_ref": "#/texts/31",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "section_header",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 275.60448968749995,
+              "r": 163.63740444,
+              "b": 267.5222528199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              33
+            ]
+          }
+        ],
+        "orig": "Sol.554.(c) she will have married",
+        "text": "Sol.554.(c) she will have married",
+        "level": 1
+      },
+      {
+        "self_ref": "#/texts/32",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 263.18261968750005,
+              "r": 288.98848242,
+              "b": 205.41288281998538,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              295
+            ]
+          }
+        ],
+        "orig": "'Will  have'  must  be  replaced  with  'will  be'.  Simple  Present Tense(Singular  Sub.  +  V-s/es)  is  used  with  the  phrase  'by  the time' to indicate the point of time in the future when some action will  have  been  completed.  Hence,  'she  marries'  is  the  most appropriate answer.",
+        "text": "'Will  have'  must  be  replaced  with  'will  be'.  Simple  Present Tense(Singular  Sub.  +  V-s/es)  is  used  with  the  phrase  'by  the time' to indicate the point of time in the future when some action will  have  been  completed.  Hence,  'she  marries'  is  the  most appropriate answer."
+      },
+      {
+        "self_ref": "#/texts/33",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "section_header",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 191.41308968750002,
+              "r": 188.99385444,
+              "b": 183.33085281998535,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              38
+            ]
+          }
+        ],
+        "orig": "Sol.555.(d) on an Atlas-Agena D rocket",
+        "text": "Sol.555.(d) on an Atlas-Agena D rocket",
+        "level": 1
+      },
+      {
+        "self_ref": "#/texts/34",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 178.99120968750003,
+              "r": 288.70869491999997,
+              "b": 133.64335281998535,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              245
+            ]
+          }
+        ],
+        "orig": "Article 'a' must be replaced with 'article 'an' as we generally use article 'an' with the nouns starting with a vowel sound. Similarly, in the given sentence, 'Atlas-Agena D' starts with a vowel sound. Hence, 'an' is the most appropriate answer.",
+        "text": "Article 'a' must be replaced with 'article 'an' as we generally use article 'an' with the nouns starting with a vowel sound. Similarly, in the given sentence, 'Atlas-Agena D' starts with a vowel sound. Hence, 'an' is the most appropriate answer."
+      },
+      {
+        "self_ref": "#/texts/35",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "section_header",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 119.64354968750001,
+              "r": 94.84980744,
+              "b": 111.56131281998535,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              16
+            ]
+          }
+        ],
+        "orig": "Sol.556.(d) less",
+        "text": "Sol.556.(d) less",
+        "level": 1
+      },
+      {
+        "self_ref": "#/texts/36",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 107.2216796875,
+              "r": 288.54169992,
+              "b": 74.29569281998533,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              181
+            ]
+          }
+        ],
+        "orig": "'Lesser'  is  used  to  indicate  something  of  lower  importance  or significance & 'less' used to indicate a lower amount or degree. Hence, 'less' is the most appropriate answer.",
+        "text": "'Lesser'  is  used  to  indicate  something  of  lower  importance  or significance & 'less' used to indicate a lower amount or degree. Hence, 'less' is the most appropriate answer."
+      },
+      {
+        "self_ref": "#/texts/37",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "section_header",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 60.29198968749995,
+              "r": 255.87861443999998,
+              "b": 52.20975281998528,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              58
+            ]
+          }
+        ],
+        "orig": "Sol.557.(c) He is chef who specialises in Italian cuisine.",
+        "text": "Sol.557.(c) He is chef who specialises in Italian cuisine.",
+        "level": 1
+      },
+      {
+        "self_ref": "#/texts/38",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 47.87011968750005,
+              "r": 288.89765742000003,
+              "b": 27.366002819985283,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              142
+            ]
+          }
+        ],
+        "orig": "The  article  'the'  is  used  to refer to specific or particular nouns. Similarly, in the  given  sentence,  'chef'  is  a  specific  person.",
+        "text": "The  article  'the'  is  used  to refer to specific or particular nouns. Similarly, in the  given  sentence,  'chef'  is  a  specific  person."
+      },
+      {
+        "self_ref": "#/texts/39",
+        "parent": {
+          "$ref": "#/pictures/0"
+        },
+        "children": [],
+        "content_layer": "furniture",
+        "label": "page_footer",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 32.0,
+              "t": 20.17999999999995,
+              "r": 101.77000000000001,
+              "b": 10.92999999999995,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              13
+            ]
+          }
+        ],
+        "orig": "TG: @ikunal_x",
+        "text": "TG: @ikunal_x"
+      },
+      {
+        "self_ref": "#/texts/40",
+        "parent": {
+          "$ref": "#/groups/2"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 172.800003,
+              "t": 493.1044896875,
+              "r": 223.51728492,
+              "b": 485.02225281998534,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              12
+            ]
+          }
+        ],
+        "orig": "(b) No error",
+        "text": "(b) No error",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/41",
+        "parent": {
+          "$ref": "#/groups/2"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 172.800003,
+              "t": 480.6826196875,
+              "r": 282.90937992,
+              "b": 472.6003828199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              27
+            ]
+          }
+        ],
+        "orig": "(d) who had recently joined",
+        "text": "(d) who had recently joined",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/42",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 120.0832065,
+              "t": 756.7294916875001,
+              "r": 126.02900667,
+              "b": 748.6472548199854,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              1
+            ]
+          }
+        ],
+        "orig": "/",
+        "text": "/"
+      },
+      {
+        "self_ref": "#/texts/43",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 308.54999,
+              "t": 814.6982416875001,
+              "r": 568.21991192,
+              "b": 794.1941298199854,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              96
+            ]
+          }
+        ],
+        "orig": "Hence,  'He  is  the  chef  who  specialises in Italian cuisine' is the most appropriate answer.",
+        "text": "Hence,  'He  is  the  chef  who  specialises in Italian cuisine' is the most appropriate answer."
+      },
+      {
+        "self_ref": "#/texts/44",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "section_header",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 308.54999,
+              "t": 782.9521486875,
+              "r": 398.62469744,
+              "b": 774.8699118199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              22
+            ]
+          }
+        ],
+        "orig": "Sol.558.(d) wealth off",
+        "text": "Sol.558.(d) wealth off",
+        "level": 1
+      },
+      {
+        "self_ref": "#/texts/45",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 308.54999,
+              "t": 770.5302736875,
+              "r": 568.03534442,
+              "b": 750.0261618199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              126
+            ]
+          }
+        ],
+        "orig": "'Wealth of something' is the correct phrase which means a lot of something. Hence, 'wealth of' is the most appropriate answer.",
+        "text": "'Wealth of something' is the correct phrase which means a lot of something. Hence, 'wealth of' is the most appropriate answer."
+      },
+      {
+        "self_ref": "#/texts/46",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "section_header",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 308.54999,
+              "t": 737.4052736875,
+              "r": 440.10907394,
+              "b": 729.3230368199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              33
+            ]
+          }
+        ],
+        "orig": "Sol.559.(c) glitters was not gold",
+        "text": "Sol.559.(c) glitters was not gold",
+        "level": 1
+      },
+      {
+        "self_ref": "#/texts/47",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 308.54999,
+              "t": 724.9833986875,
+              "r": 568.7223519199999,
+              "b": 667.2136618199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              298
+            ]
+          }
+        ],
+        "orig": "'Was'  must  be  replaced  with  'is'  as  we  generally  use  Simple Present Tense to write proverbs or old sayings. 'All that glitters is not gold' is a proverb which means everything that shines is not necessarily  good  from inside. Hence, 'glitters is not gold' is the most appropriate answer.",
+        "text": "'Was'  must  be  replaced  with  'is'  as  we  generally  use  Simple Present Tense to write proverbs or old sayings. 'All that glitters is not gold' is a proverb which means everything that shines is not necessarily  good  from inside. Hence, 'glitters is not gold' is the most appropriate answer."
+      },
+      {
+        "self_ref": "#/texts/48",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "section_header",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 308.54999,
+              "t": 654.5888696874999,
+              "r": 364.15399393999996,
+              "b": 646.5066328199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              13
+            ]
+          }
+        ],
+        "orig": "Sol.560.(b) A",
+        "text": "Sol.560.(b) A",
+        "level": 1
+      },
+      {
+        "self_ref": "#/texts/49",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 308.54999,
+              "t": 642.1669896875001,
+              "r": 569.26171442,
+              "b": 584.3972528199854,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              290
+            ]
+          }
+        ],
+        "orig": "'Is' must be replaced with 'has been' as we generally use present perfect tense(has/have + V 3 ) to discuss a situation that began in the  past  and  continues  into  the  present.  Similarly,  in  the given sentence,  a  state  of  chaos  began in the past and still exists in the present.",
+        "text": "'Is' must be replaced with 'has been' as we generally use present perfect tense(has/have + V 3 ) to discuss a situation that began in the  past  and  continues  into  the  present.  Similarly,  in  the given sentence,  a  state  of  chaos  began in the past and still exists in the present."
+      },
+      {
+        "self_ref": "#/texts/50",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 308.54999,
+              "t": 580.0576196874999,
+              "r": 522.2521355979882,
+              "b": 571.9753828199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              54
+            ]
+          }
+        ],
+        "orig": "Hence, 'it has been a' is the most appropriate answer.",
+        "text": "Hence, 'it has been a' is the most appropriate answer."
+      },
+      {
+        "self_ref": "#/texts/51",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "section_header",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 308.54999,
+              "t": 559.3544896875001,
+              "r": 456.51824894,
+              "b": 551.2722528199854,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              33
+            ]
+          }
+        ],
+        "orig": "Sol.561.(d) and good communicator",
+        "text": "Sol.561.(d) and good communicator",
+        "level": 1
+      },
+      {
+        "self_ref": "#/texts/52",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 308.54999,
+              "t": 546.9326196874999,
+              "r": 568.51288442,
+              "b": 489.1628828199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              289
+            ]
+          }
+        ],
+        "orig": "Use  of  the  adjective  'good'  is  superfluous  in  this  sentence  as there is already  an  adjective(excellent)  which  qualifies  the meaning of both the nouns, 'writer' and 'communicator'. Therefore,  'good'  must be removed. Hence, 'and communicator' is the most appropriate answer.",
+        "text": "Use  of  the  adjective  'good'  is  superfluous  in  this  sentence  as there is already  an  adjective(excellent)  which  qualifies  the meaning of both the nouns, 'writer' and 'communicator'. Therefore,  'good'  must be removed. Hence, 'and communicator' is the most appropriate answer."
+      },
+      {
+        "self_ref": "#/texts/53",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 308.54999,
+              "t": 476.5419896875,
+              "r": 568.70038442,
+              "b": 406.3503828199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              322
+            ]
+          }
+        ],
+        "orig": "Sol.562.(c) With cloud streaming, people can play games from a The  article  'An'  is  used  before the words starting from a vowel sound(an imminent danger, an apple). Similarly, the word 'internet' starts with a vowel sound. Hence, 'With cloud streaming, people can play games  from  an' is the  most appropriate answer.",
+        "text": "Sol.562.(c) With cloud streaming, people can play games from a The  article  'An'  is  used  before the words starting from a vowel sound(an imminent danger, an apple). Similarly, the word 'internet' starts with a vowel sound. Hence, 'With cloud streaming, people can play games  from  an' is the  most appropriate answer."
+      },
+      {
+        "self_ref": "#/texts/54",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "section_header",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 308.54999,
+              "t": 393.7294896875,
+              "r": 363.60467744,
+              "b": 385.64725281998534,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              13
+            ]
+          }
+        ],
+        "orig": "Sol.563.(a) B",
+        "text": "Sol.563.(a) B",
+        "level": 1
+      },
+      {
+        "self_ref": "#/texts/55",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 308.54999,
+              "t": 381.3076196875,
+              "r": 568.7091669199999,
+              "b": 323.53788281998527,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              288
+            ]
+          }
+        ],
+        "orig": "We use the phrase 'including' to give further examples of people or  things  that  we  are  talking  about.  The  phrase  'come  with' means having something as an essential part. Similarly, warranty is an essential part of the fridge. 'Hence, 'comes with' is the most appropriate answer.",
+        "text": "We use the phrase 'including' to give further examples of people or  things  that  we  are  talking  about.  The  phrase  'come  with' means having something as an essential part. Similarly, warranty is an essential part of the fridge. 'Hence, 'comes with' is the most appropriate answer."
+      },
+      {
+        "self_ref": "#/texts/56",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "section_header",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 308.54999,
+              "t": 310.91698968749995,
+              "r": 390.54315419,
+              "b": 302.8347528199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              19
+            ]
+          }
+        ],
+        "orig": "Sol.564.(c) to much",
+        "text": "Sol.564.(c) to much",
+        "level": 1
+      },
+      {
+        "self_ref": "#/texts/57",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 308.54999,
+              "t": 298.49511968750005,
+              "r": 568.62713942,
+              "b": 265.5691328199854,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              167
+            ]
+          }
+        ],
+        "orig": "'To'  must  be  replaced  with  'too'  as  'too'  is  used  to  indicate  an excessive or more than necessary amount. Hence, 'too much' is the most appropriate answer.",
+        "text": "'To'  must  be  replaced  with  'too'  as  'too'  is  used  to  indicate  an excessive or more than necessary amount. Hence, 'too much' is the most appropriate answer."
+      },
+      {
+        "self_ref": "#/texts/58",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "section_header",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 308.54999,
+              "t": 252.94433968750002,
+              "r": 424.57440419,
+              "b": 244.86210281998535,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              28
+            ]
+          }
+        ],
+        "orig": "Sol.565.(d) whose the sister",
+        "text": "Sol.565.(d) whose the sister",
+        "level": 1
+      },
+      {
+        "self_ref": "#/texts/59",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 308.54999,
+              "t": 240.52245968750003,
+              "r": 568.62420692,
+              "b": 195.17460281998535,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              244
+            ]
+          }
+        ],
+        "orig": "Article 'the' must be removed before 'sister' as the word 'whose' is  used  to  indicate  possession or association, and it should be followed  directly  by  the  noun  it  is  describing.  Hence,  'whose sister' is the most appropriate answer.",
+        "text": "Article 'the' must be removed before 'sister' as the word 'whose' is  used  to  indicate  possession or association, and it should be followed  directly  by  the  noun  it  is  describing.  Hence,  'whose sister' is the most appropriate answer."
+      },
+      {
+        "self_ref": "#/texts/60",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "section_header",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 308.54999,
+              "t": 183.93261968750005,
+              "r": 468.47137709,
+              "b": 175.85038281998538,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              40
+            ]
+          }
+        ],
+        "orig": "Sol.566.(c) before orbiting an astronaut",
+        "text": "Sol.566.(c) before orbiting an astronaut",
+        "level": 1
+      },
+      {
+        "self_ref": "#/texts/61",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 308.54999,
+              "t": 171.51073968749995,
+              "r": 568.75897442,
+              "b": 101.31913281998538,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              371
+            ]
+          }
+        ],
+        "orig": "Article  'A'  is  used  before  the  words  starting  from  a consonant sound - (a conversation, a story). Whereas, the article 'An' is used before  the  words  starting  with  a  vowel  sound(an  imminent danger, an apple). Similarly, in the given sentence, 'astronaut' is a noun  starting  with  a  vowel  sound.  Hence,  'an  astronaut' is the most appropriate answer.",
+        "text": "Article  'A'  is  used  before  the  words  starting  from  a consonant sound - (a conversation, a story). Whereas, the article 'An' is used before  the  words  starting  with  a  vowel  sound(an  imminent danger, an apple). Similarly, in the given sentence, 'astronaut' is a noun  starting  with  a  vowel  sound.  Hence,  'an  astronaut' is the most appropriate answer."
+      },
+      {
+        "self_ref": "#/texts/62",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "section_header",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 308.54999,
+              "t": 88.69823968749995,
+              "r": 400.57586893999996,
+              "b": 80.61600281998528,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              22
+            ]
+          }
+        ],
+        "orig": "Sol.567.(b) he had not",
+        "text": "Sol.567.(b) he had not",
+        "level": 1
+      },
+      {
+        "self_ref": "#/texts/63",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 308.54999,
+              "t": 76.27636968750005,
+              "r": 568.6877919199999,
+              "b": 30.928502819985283,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              242
+            ]
+          }
+        ],
+        "orig": "The given sentence is an example  of  a  third  conditional sentence  and  the  correct  grammatical  structure  is  'If  +  past perfect(had  +  V 3 )……..  Would  have  +  V 3 '.  Hence,  'he  would  not have' is the most appropriate answer.",
+        "text": "The given sentence is an example  of  a  third  conditional sentence  and  the  correct  grammatical  structure  is  'If  +  past perfect(had  +  V 3 )……..  Would  have  +  V 3 '.  Hence,  'he  would  not have' is the most appropriate answer."
+      },
+      {
+        "self_ref": "#/texts/64",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "furniture",
+        "label": "page_footer",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 99.3266505,
+              "t": 21.989447959472614,
+              "r": 495.95088382500006,
+              "b": 13.761151895774901,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              109
+            ]
+          }
+        ],
+        "orig": "www.ssccglpinnacle.com                                                 Download Pinnacle Exam Preparation App",
+        "text": "www.ssccglpinnacle.com                                                 Download Pinnacle Exam Preparation App"
+      }
+    ],
+    "pictures": [
+      {
+        "self_ref": "#/pictures/0",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [
+          {
+            "$ref": "#/texts/39"
+          }
+        ],
+        "content_layer": "body",
+        "label": "picture",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 12.521380424499512,
+              "t": 23.35528564453125,
+              "r": 201.1107177734375,
+              "b": 8.2919921875,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              0
+            ]
+          }
+        ],
+        "captions": [],
+        "references": [],
+        "footnotes": [],
+        "annotations": []
+      }
+    ],
+    "tables": [],
+    "key_value_items": [],
+    "form_items": [],
+    "pages": {
+      "1": {
+        "size": {
+          "width": 596.0,
+          "height": 842.0
+        },
+        "page_no": 1
+      }
+    }
+  }
+}

@@ -1,0 +1,6218 @@
+{
+  "document_id": "english",
+  "source": "english.pdf",
+  "pdf_page": 499,
+  "page_width": 596.0,
+  "page_height": 842.0,
+  "extracted_at": "2026-09-09T10:59:48.822757+00:00",
+  "extraction_version": 4,
+  "ocr_enabled": true,
+  "extraction_detection": {
+    "requested_profile": "auto",
+    "effective_profile": "hybrid",
+    "embedded_text_characters": 4435,
+    "auto_text_threshold": 80
+  },
+  "docling_result": {
+    "status": "success",
+    "errors": []
+  },
+  "content_summary": {
+    "text_items": 71,
+    "text_characters": 5696,
+    "table_items": 0,
+    "picture_items": 0,
+    "group_items": 15,
+    "warnings": []
+  },
+  "reading_order": {
+    "source": "docling_iterate_items",
+    "items": [
+      {
+        "reading_order_index": 0,
+        "element_ref": "#/texts/1",
+        "label": "text",
+        "level": 1,
+        "text_preview": "Idioms"
+      },
+      {
+        "reading_order_index": 1,
+        "element_ref": "#/texts/2",
+        "label": "text",
+        "level": 2,
+        "text_preview": "the  barrel  to  find  someone  willing to do the job."
+      },
+      {
+        "reading_order_index": 2,
+        "element_ref": "#/texts/3",
+        "label": "text",
+        "level": 2,
+        "text_preview": "Sol.653.(a) Greek to her - not understood by her ."
+      },
+      {
+        "reading_order_index": 3,
+        "element_ref": "#/texts/4",
+        "label": "text",
+        "level": 2,
+        "text_preview": "Sol.654.(c) Be at a crossroads - To make a very important decision"
+      },
+      {
+        "reading_order_index": 4,
+        "element_ref": "#/texts/5",
+        "label": "text",
+        "level": 2,
+        "text_preview": "E.g. - After completing her education, she found  herself at a crossroads, unsure of which career path to pursue."
+      },
+      {
+        "reading_order_index": 5,
+        "element_ref": "#/texts/6",
+        "label": "text",
+        "level": 2,
+        "text_preview": "Sol.655.(d)  To  pick  holes  in  someone's coat - to find fault with someone."
+      },
+      {
+        "reading_order_index": 6,
+        "element_ref": "#/texts/7",
+        "label": "text",
+        "level": 2,
+        "text_preview": "E.g.-  She  constantly  finds  faults  in  his work, no matter how much effort he puts in."
+      },
+      {
+        "reading_order_index": 7,
+        "element_ref": "#/texts/8",
+        "label": "text",
+        "level": 2,
+        "text_preview": "Sol.656.(a) jumping  in  with  both  feet  - coming to conclusions too quickly"
+      },
+      {
+        "reading_order_index": 8,
+        "element_ref": "#/texts/9",
+        "label": "text",
+        "level": 2,
+        "text_preview": "Sol.657.(c)  Rust  bucket  - A vehicle that is old or almost broken"
+      },
+      {
+        "reading_order_index": 9,
+        "element_ref": "#/texts/10",
+        "label": "list_item",
+        "level": 3,
+        "text_preview": "E.g.  -  I  couldn't  believe  my  eyes  when  I saw him driving that old rust bucket of a car."
+      },
+      {
+        "reading_order_index": 10,
+        "element_ref": "#/texts/11",
+        "label": "text",
+        "level": 2,
+        "text_preview": "Sol.658.(a) Hit the hay - To go to bed E.g.  -  After  a  long  day  at  work,  I  was exhausted  and  decided  to  hit  the  hay early."
+      },
+      {
+        "reading_order_index": 11,
+        "element_ref": "#/texts/12",
+        "label": "text",
+        "level": 2,
+        "text_preview": "Sol.659.(c) A taste of his own medicine - when you are  mistreated  the  same  way you mistreat others"
+      },
+      {
+        "reading_order_index": 12,
+        "element_ref": "#/texts/13",
+        "label": "text",
+        "level": 2,
+        "text_preview": "Sol.660.(d)  A  broth  of  a  boy  - a  lively, energetic young person."
+      },
+      {
+        "reading_order_index": 13,
+        "element_ref": "#/texts/14",
+        "label": "text",
+        "level": 2,
+        "text_preview": "E.g.- He's a broth of a boy, always full of energy and mischief."
+      },
+      {
+        "reading_order_index": 14,
+        "element_ref": "#/texts/15",
+        "label": "text",
+        "level": 2,
+        "text_preview": "Sol.661.(d) A drop in a bucket - insignificant  compared  to  the  required amount."
+      },
+      {
+        "reading_order_index": 15,
+        "element_ref": "#/texts/16",
+        "label": "text",
+        "level": 2,
+        "text_preview": "Sol.662.(c) Long in the tooth - To be old, often too old to do something."
+      },
+      {
+        "reading_order_index": 16,
+        "element_ref": "#/texts/17",
+        "label": "text",
+        "level": 2,
+        "text_preview": "E.g.- She's still a great dancer, but she's getting a little long in the tooth."
+      },
+      {
+        "reading_order_index": 17,
+        "element_ref": "#/texts/18",
+        "label": "list_item",
+        "level": 3,
+        "text_preview": "Sol.663.(b) A shot in the dark - Randomly doing  something,  the  outcome  of which is unknown."
+      },
+      {
+        "reading_order_index": 18,
+        "element_ref": "#/texts/19",
+        "label": "list_item",
+        "level": 3,
+        "text_preview": "E.g. -  Ram  took  a  shot  in  the  dark when teacher asked him for trigonometric formulas."
+      },
+      {
+        "reading_order_index": 19,
+        "element_ref": "#/texts/20",
+        "label": "text",
+        "level": 2,
+        "text_preview": "Sol.664.(d) A Bull market - Market where prices are rising"
+      },
+      {
+        "reading_order_index": 20,
+        "element_ref": "#/texts/21",
+        "label": "text",
+        "level": 2,
+        "text_preview": "E.g.  - From April  2003 to January 2008, the  Bombay  Stock  Exchange  Index  in India  was  in  a  bull  market  trend,  rising from 2,900 points to 21,000 po"
+      },
+      {
+        "reading_order_index": 21,
+        "element_ref": "#/texts/22",
+        "label": "text",
+        "level": 2,
+        "text_preview": "Sol.665.(a) To shake in one's shoes - To be afraid"
+      },
+      {
+        "reading_order_index": 22,
+        "element_ref": "#/texts/23",
+        "label": "text",
+        "level": 2,
+        "text_preview": "E.g. Harry was shaking in his shoes when he saw the ghost."
+      },
+      {
+        "reading_order_index": 23,
+        "element_ref": "#/texts/24",
+        "label": "text",
+        "level": 2,
+        "text_preview": "Sol.666.(b)  Slack  off  - to ease pressure on something."
+      },
+      {
+        "reading_order_index": 24,
+        "element_ref": "#/texts/25",
+        "label": "text",
+        "level": 2,
+        "text_preview": "E.g.- Do not slack off in your studies."
+      },
+      {
+        "reading_order_index": 25,
+        "element_ref": "#/texts/26",
+        "label": "text",
+        "level": 2,
+        "text_preview": "Sol.667.(c) Pig  in  a  poke  - Something that is bought without examining properly"
+      },
+      {
+        "reading_order_index": 26,
+        "element_ref": "#/texts/27",
+        "label": "list_item",
+        "level": 3,
+        "text_preview": "E.g.- Be careful about buying that old car. It might turn out to be a pig in a poke."
+      },
+      {
+        "reading_order_index": 27,
+        "element_ref": "#/texts/28",
+        "label": "text",
+        "level": 2,
+        "text_preview": "Sol.668.(d) For old time's sake - Because of sentimental memories of the past E.g.- Let's go  back  to  village  for  old time's sake."
+      },
+      {
+        "reading_order_index": 28,
+        "element_ref": "#/texts/29",
+        "label": "text",
+        "level": 2,
+        "text_preview": "Sol.669.(b) Water  under  the  bridge  - Anything from the past that isn't significant or important anymore."
+      },
+      {
+        "reading_order_index": 29,
+        "element_ref": "#/texts/30",
+        "label": "text",
+        "level": 2,
+        "text_preview": "Yes, we did have our disagreements, but that's water under the bridge."
+      },
+      {
+        "reading_order_index": 30,
+        "element_ref": "#/texts/31",
+        "label": "text",
+        "level": 2,
+        "text_preview": "Sol.670.(a)"
+      },
+      {
+        "reading_order_index": 31,
+        "element_ref": "#/texts/32",
+        "label": "text",
+        "level": 2,
+        "text_preview": "To twiddle one's thumbs - To be idle."
+      },
+      {
+        "reading_order_index": 32,
+        "element_ref": "#/texts/33",
+        "label": "list_item",
+        "level": 3,
+        "text_preview": "E.g. I  arrived  early  for  the  meeting  so  I was  twiddling  my  thumbs  for  half  an hour."
+      },
+      {
+        "reading_order_index": 33,
+        "element_ref": "#/texts/34",
+        "label": "text",
+        "level": 2,
+        "text_preview": "Sol.671.(c)"
+      },
+      {
+        "reading_order_index": 34,
+        "element_ref": "#/texts/35",
+        "label": "text",
+        "level": 2,
+        "text_preview": "To sleep like a dog - To sleep soundly E.g. He  slept  like a dog, sixteen hours a day,  rising  to  eat  and  smoke,  and  then falling  back  in his bunk, whe"
+      },
+      {
+        "reading_order_index": 35,
+        "element_ref": "#/texts/36",
+        "label": "text",
+        "level": 2,
+        "text_preview": "Sol.672.(d) Apropos of nothing - Having no  relevance  to  any previous discussion or situation."
+      },
+      {
+        "reading_order_index": 36,
+        "element_ref": "#/texts/37",
+        "label": "text",
+        "level": 2,
+        "text_preview": "E.g . So, apropos of nothing, I need to ask you about one last thing."
+      },
+      {
+        "reading_order_index": 37,
+        "element_ref": "#/texts/38",
+        "label": "text",
+        "level": 2,
+        "text_preview": "Sol.673.(a)"
+      },
+      {
+        "reading_order_index": 38,
+        "element_ref": "#/texts/39",
+        "label": "text",
+        "level": 2,
+        "text_preview": "Neck of the woods - Neighbourhood"
+      },
+      {
+        "reading_order_index": 39,
+        "element_ref": "#/texts/40",
+        "label": "list_item",
+        "level": 3,
+        "text_preview": "E.g  - I  haven't  been  in  this  neck  of  the woods for years."
+      },
+      {
+        "reading_order_index": 40,
+        "element_ref": "#/texts/41",
+        "label": "list_item",
+        "level": 3,
+        "text_preview": "Sol.674.(d)  Zero  tolerance  - A  policy  of not allowing any violations of a rule or law E.g. I need zero tolerance in the recruitment process."
+      },
+      {
+        "reading_order_index": 41,
+        "element_ref": "#/texts/42",
+        "label": "text",
+        "level": 2,
+        "text_preview": "Sol.675.(a) To bridge the gap - To reduce differences and reconcile"
+      },
+      {
+        "reading_order_index": 42,
+        "element_ref": "#/texts/43",
+        "label": "list_item",
+        "level": 3,
+        "text_preview": "E.g. The  idea  was  to  bridge  the  gap between citizens and the Union's institutions."
+      },
+      {
+        "reading_order_index": 43,
+        "element_ref": "#/texts/44",
+        "label": "list_item",
+        "level": 3,
+        "text_preview": "Sol.676.(a) High and dry - Abandoned E.g  - They  pulled  out  of  the  deal  at  the last minute leaving us high and dry."
+      },
+      {
+        "reading_order_index": 44,
+        "element_ref": "#/texts/45",
+        "label": "text",
+        "level": 2,
+        "text_preview": "Sol.677.(a) The whole ball  of  wax  - everything related to a particular situation; the whole thing."
+      },
+      {
+        "reading_order_index": 45,
+        "element_ref": "#/texts/46",
+        "label": "text",
+        "level": 2,
+        "text_preview": "E.g  - He  came  back  from  Chicago  with the contract for the whole ball of wax."
+      },
+      {
+        "reading_order_index": 46,
+        "element_ref": "#/texts/47",
+        "label": "text",
+        "level": 2,
+        "text_preview": "Sol.678.(d) Method  to  my  madness  - Strange or crazy  actions  that  appear meaningless but in the end are done for a good reason."
+      },
+      {
+        "reading_order_index": 47,
+        "element_ref": "#/texts/48",
+        "label": "text",
+        "level": 2,
+        "text_preview": "E.g. He  keeps  talking  to  himself  loudly, but  he  insists  there  is  a  method  in  his madness."
+      },
+      {
+        "reading_order_index": 48,
+        "element_ref": "#/texts/49",
+        "label": "text",
+        "level": 2,
+        "text_preview": "Sol.679.(a) To lay someone by the heels"
+      },
+      {
+        "reading_order_index": 49,
+        "element_ref": "#/texts/50",
+        "label": "list_item",
+        "level": 3,
+        "text_preview": "To confine somebody in prison."
+      },
+      {
+        "reading_order_index": 50,
+        "element_ref": "#/texts/51",
+        "label": "list_item",
+        "level": 3,
+        "text_preview": "E.g. Superior  forces  laid the invaders by the heels."
+      },
+      {
+        "reading_order_index": 51,
+        "element_ref": "#/texts/52",
+        "label": "text",
+        "level": 2,
+        "text_preview": "Sol.680.(b) Have  people  rolling  in  the aisles - Make an audience laugh uncontrollably."
+      },
+      {
+        "reading_order_index": 52,
+        "element_ref": "#/texts/53",
+        "label": "list_item",
+        "level": 3,
+        "text_preview": "E.g. The  comedian  made  the  audience rolling in the aisles."
+      },
+      {
+        "reading_order_index": 53,
+        "element_ref": "#/texts/54",
+        "label": "text",
+        "level": 2,
+        "text_preview": "Sol.681.(d)"
+      },
+      {
+        "reading_order_index": 54,
+        "element_ref": "#/texts/55",
+        "label": "text",
+        "level": 2,
+        "text_preview": "To breast the tape - To win a race"
+      },
+      {
+        "reading_order_index": 55,
+        "element_ref": "#/texts/56",
+        "label": "text",
+        "level": 2,
+        "text_preview": "E.g.- Goutam is able to sprint ahead and breast the tape."
+      },
+      {
+        "reading_order_index": 56,
+        "element_ref": "#/texts/57",
+        "label": "text",
+        "level": 2,
+        "text_preview": "Sol.682.(d)  Good  grief  - An  expression of surprise or frustration"
+      },
+      {
+        "reading_order_index": 57,
+        "element_ref": "#/texts/58",
+        "label": "list_item",
+        "level": 3,
+        "text_preview": "E.g. Oh  God,  good  grief  we  are  again stuck in a traffic jam."
+      },
+      {
+        "reading_order_index": 58,
+        "element_ref": "#/texts/59",
+        "label": "text",
+        "level": 2,
+        "text_preview": "Sol.683.(d)  To  jump  out  of  one's  skin  - To be extremely surprised"
+      },
+      {
+        "reading_order_index": 59,
+        "element_ref": "#/texts/60",
+        "label": "text",
+        "level": 2,
+        "text_preview": "E.g. My friends made me jump out of my skin on my birthday."
+      },
+      {
+        "reading_order_index": 60,
+        "element_ref": "#/texts/61",
+        "label": "text",
+        "level": 2,
+        "text_preview": "Sol.684.(a) Penny wise and pound foolish  - Careless  with  large  amounts, but not small."
+      },
+      {
+        "reading_order_index": 61,
+        "element_ref": "#/texts/62",
+        "label": "text",
+        "level": 2,
+        "text_preview": "E.g- someone who will drive across town to  save  five  cents  a  gallon  on  gasoline but  just  recently  purchased  a BMW that he or she cannot afford could "
+      },
+      {
+        "reading_order_index": 62,
+        "element_ref": "#/texts/63",
+        "label": "text",
+        "level": 2,
+        "text_preview": "Sol.685.(d) Appeal to Caesar - Appeal to the highest possible authority E.g. Paul appealed to Caesar for justice."
+      },
+      {
+        "reading_order_index": 63,
+        "element_ref": "#/texts/64",
+        "label": "text",
+        "level": 2,
+        "text_preview": "Sol.686.(b)  A  bite  at  the  cherry  - An attempt or opportunity to do something. E.g. I  got  a  bite  at  the  cherry  after  my first attempt at the task."
+      },
+      {
+        "reading_order_index": 64,
+        "element_ref": "#/texts/65",
+        "label": "list_item",
+        "level": 3,
+        "text_preview": "Sol.687.(a)  Save  your  breath  - To  make an effort that will be futile"
+      },
+      {
+        "reading_order_index": 65,
+        "element_ref": "#/texts/66",
+        "label": "text",
+        "level": 2,
+        "text_preview": "E.g. If  you  tell  someone  to  save  their breath,  you  mean  that  they  should  not bother  saying  something,  because  you will not agree to it or you do"
+      },
+      {
+        "reading_order_index": 66,
+        "element_ref": "#/texts/67",
+        "label": "text",
+        "level": 2,
+        "text_preview": "Sol.688.(b) A beast of burden - An animal that carries luggage"
+      },
+      {
+        "reading_order_index": 67,
+        "element_ref": "#/texts/68",
+        "label": "text",
+        "level": 2,
+        "text_preview": "E.g. One  beast  of  burden  is  not enough to pull the cart. Get another one."
+      },
+      {
+        "reading_order_index": 68,
+        "element_ref": "#/texts/69",
+        "label": "text",
+        "level": 2,
+        "text_preview": "Sol.689.(a)  Cast  someone  adrift  - To leave  someone  without  any  support  or purpose"
+      }
+    ]
+  },
+  "layout_analysis": {
+    "method": "docling_bbox_left_edge_clustering_v1",
+    "column_count": 3,
+    "confidence": 1.0,
+    "page_width": 596.0,
+    "page_height": 842.0,
+    "columns": [
+      {
+        "column_index": 1,
+        "left": 0.0,
+        "right": 122.175,
+        "detected_start": 28.8,
+        "supporting_elements": 22
+      },
+      {
+        "column_index": 2,
+        "left": 122.175,
+        "right": 308.925,
+        "detected_start": 215.55,
+        "supporting_elements": 24
+      },
+      {
+        "column_index": 3,
+        "left": 308.925,
+        "right": 596.0,
+        "detected_start": 402.3,
+        "supporting_elements": 23
+      }
+    ],
+    "elements": [
+      {
+        "element_ref": "#/texts/0",
+        "element_type": "text",
+        "label": "page_header",
+        "column_index": 1,
+        "column_indices": [
+          1
+        ],
+        "spans_columns": false,
+        "reading_order_index": null,
+        "bbox": {
+          "l": 28.800003,
+          "t": 830.7925780594726,
+          "r": 95.7084616875,
+          "b": 822.5642819957749,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/1",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 3,
+        "column_indices": [
+          3
+        ],
+        "spans_columns": false,
+        "reading_order_index": 0,
+        "bbox": {
+          "l": 291.757038,
+          "t": 830.7925780594726,
+          "r": 566.9288154374999,
+          "b": 822.5642819957749,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/2",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 1,
+        "bbox": {
+          "l": 28.800003,
+          "t": 814.6982416875001,
+          "r": 195.33955242,
+          "b": 794.1941298199854,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/3",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 2,
+        "bbox": {
+          "l": 28.800003,
+          "t": 781.5732416875001,
+          "r": 195.94306992,
+          "b": 761.0691298199854,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/4",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 3,
+        "bbox": {
+          "l": 28.800003,
+          "t": 748.4482416875001,
+          "r": 195.99287742,
+          "b": 727.9441298199854,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/5",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 4,
+        "bbox": {
+          "l": 28.800003,
+          "t": 723.6044916875001,
+          "r": 195.83027742,
+          "b": 690.6785048199854,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/6",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 5,
+        "bbox": {
+          "l": 28.800003,
+          "t": 678.0537106875,
+          "r": 195.52852194000002,
+          "b": 657.5496028199854,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/7",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 6,
+        "bbox": {
+          "l": 28.800003,
+          "t": 653.2099596875,
+          "r": 195.87568992,
+          "b": 620.2839728199854,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/8",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 7,
+        "bbox": {
+          "l": 28.800003,
+          "t": 609.0419896875001,
+          "r": 195.51094194,
+          "b": 588.5378828199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/9",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 8,
+        "bbox": {
+          "l": 28.800003,
+          "t": 575.9208996875,
+          "r": 195.59736492,
+          "b": 555.4128828199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/10",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 9,
+        "bbox": {
+          "l": 28.800003,
+          "t": 551.0732396875001,
+          "r": 195.73066992,
+          "b": 518.1472528199854,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/11",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 10,
+        "bbox": {
+          "l": 28.800003,
+          "t": 505.5263696875,
+          "r": 195.81709242,
+          "b": 460.17850281998534,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/12",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 11,
+        "bbox": {
+          "l": 28.800003,
+          "t": 447.5576196875,
+          "r": 195.63838242,
+          "b": 414.6316328199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/13",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 12,
+        "bbox": {
+          "l": 28.800003,
+          "t": 402.0107396875,
+          "r": 195.31171992,
+          "b": 381.5066328199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/14",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 13,
+        "bbox": {
+          "l": 28.800003,
+          "t": 377.1669896875,
+          "r": 195.36592242,
+          "b": 356.6628828199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/15",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 14,
+        "bbox": {
+          "l": 28.800003,
+          "t": 344.0419896875,
+          "r": 195.41425944,
+          "b": 311.1160028199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/16",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 15,
+        "bbox": {
+          "l": 28.800003,
+          "t": 298.49511968750005,
+          "r": 195.91816992,
+          "b": 277.9910028199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/17",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 16,
+        "bbox": {
+          "l": 28.800003,
+          "t": 273.65136968750005,
+          "r": 188.69941992,
+          "b": 253.14725281998528,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/18",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 17,
+        "bbox": {
+          "l": 28.800003,
+          "t": 239.1435496875,
+          "r": 199.69892742,
+          "b": 206.21756281998535,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/19",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 18,
+        "bbox": {
+          "l": 28.800003,
+          "t": 201.8779296875,
+          "r": 195.52412742,
+          "b": 168.95194281998533,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/20",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 19,
+        "bbox": {
+          "l": 28.800003,
+          "t": 156.3310496875,
+          "r": 195.42744492,
+          "b": 135.82694281998533,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/21",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 20,
+        "bbox": {
+          "l": 28.800003,
+          "t": 131.4872996875,
+          "r": 195.98994492,
+          "b": 86.13944281998533,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/22",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 21,
+        "bbox": {
+          "l": 28.800003,
+          "t": 73.51854968750001,
+          "r": 195.84492491999998,
+          "b": 53.014442819985334,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/23",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 22,
+        "bbox": {
+          "l": 28.800003,
+          "t": 48.67479968750001,
+          "r": 195.97675992,
+          "b": 28.170692819985334,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/24",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 0,
+        "column_indices": [
+          2,
+          3
+        ],
+        "spans_columns": true,
+        "reading_order_index": 23,
+        "bbox": {
+          "l": 215.54999,
+          "t": 814.6982416875001,
+          "r": 382.19061692,
+          "b": 794.1941298199854,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/25",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 0,
+        "column_indices": [
+          2,
+          3
+        ],
+        "spans_columns": true,
+        "reading_order_index": 24,
+        "bbox": {
+          "l": 215.54999,
+          "t": 789.8544916875001,
+          "r": 363.39080942,
+          "b": 781.7722548199854,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/26",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 0,
+        "column_indices": [
+          2,
+          3
+        ],
+        "spans_columns": true,
+        "reading_order_index": 25,
+        "bbox": {
+          "l": 215.54999,
+          "t": 767.7685546875,
+          "r": 382.42791692000003,
+          "b": 734.8425678199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/27",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 0,
+        "column_indices": [
+          2,
+          3
+        ],
+        "spans_columns": true,
+        "reading_order_index": 26,
+        "bbox": {
+          "l": 215.54999,
+          "t": 730.5029296875,
+          "r": 382.48505192000005,
+          "b": 709.9988178199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/28",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 0,
+        "column_indices": [
+          2,
+          3
+        ],
+        "spans_columns": true,
+        "reading_order_index": 27,
+        "bbox": {
+          "l": 215.54999,
+          "t": 694.6201166875001,
+          "r": 382.67401442,
+          "b": 649.2683528199854,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/29",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 0,
+        "column_indices": [
+          2,
+          3
+        ],
+        "spans_columns": true,
+        "reading_order_index": 28,
+        "bbox": {
+          "l": 215.54999,
+          "t": 635.2685496875,
+          "r": 382.17596942,
+          "b": 602.3425628199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/30",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 0,
+        "column_indices": [
+          2,
+          3
+        ],
+        "spans_columns": true,
+        "reading_order_index": 29,
+        "bbox": {
+          "l": 215.54999,
+          "t": 598.0029296875,
+          "r": 382.19061692,
+          "b": 577.4988128199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/31",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 2,
+        "column_indices": [
+          2
+        ],
+        "spans_columns": false,
+        "reading_order_index": 30,
+        "bbox": {
+          "l": 215.54999,
+          "t": 563.4951196874999,
+          "r": 264.86102519,
+          "b": 555.4128828199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/32",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 0,
+        "column_indices": [
+          2,
+          3
+        ],
+        "spans_columns": true,
+        "reading_order_index": 31,
+        "bbox": {
+          "l": 215.54999,
+          "t": 551.0732396875001,
+          "r": 363.99286442000005,
+          "b": 542.9910028199854,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/33",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 0,
+        "column_indices": [
+          2,
+          3
+        ],
+        "spans_columns": true,
+        "reading_order_index": 32,
+        "bbox": {
+          "l": 215.54999,
+          "t": 538.6513696874999,
+          "r": 382.38104192000003,
+          "b": 505.72538281998527,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/34",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 2,
+        "column_indices": [
+          2
+        ],
+        "spans_columns": false,
+        "reading_order_index": 33,
+        "bbox": {
+          "l": 215.54999,
+          "t": 490.3427696875,
+          "r": 264.73358369,
+          "b": 482.2605328199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/35",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 0,
+        "column_indices": [
+          2,
+          3
+        ],
+        "spans_columns": true,
+        "reading_order_index": 34,
+        "bbox": {
+          "l": 215.54999,
+          "t": 477.9208996875,
+          "r": 382.29168691999996,
+          "b": 407.7292828199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/36",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 0,
+        "column_indices": [
+          2,
+          3
+        ],
+        "spans_columns": true,
+        "reading_order_index": 35,
+        "bbox": {
+          "l": 215.54999,
+          "t": 392.3466796875,
+          "r": 382.63153442,
+          "b": 359.42069281998533,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/37",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 0,
+        "column_indices": [
+          2,
+          3
+        ],
+        "spans_columns": true,
+        "reading_order_index": 36,
+        "bbox": {
+          "l": 215.54999,
+          "t": 355.0810496875,
+          "r": 382.58612192,
+          "b": 334.57694281998533,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/38",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 2,
+        "column_indices": [
+          2
+        ],
+        "spans_columns": false,
+        "reading_order_index": 37,
+        "bbox": {
+          "l": 215.54999,
+          "t": 319.19823968749995,
+          "r": 264.86102519,
+          "b": 311.1160028199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/39",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 0,
+        "column_indices": [
+          2,
+          3
+        ],
+        "spans_columns": true,
+        "reading_order_index": 38,
+        "bbox": {
+          "l": 215.54999,
+          "t": 306.77636968750005,
+          "r": 365.04755192000005,
+          "b": 298.6941328199854,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/40",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 0,
+        "column_indices": [
+          2,
+          3
+        ],
+        "spans_columns": true,
+        "reading_order_index": 39,
+        "bbox": {
+          "l": 215.54999,
+          "t": 294.35448968749995,
+          "r": 382.49237192,
+          "b": 273.8503828199854,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/41",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 0,
+        "column_indices": [
+          2,
+          3
+        ],
+        "spans_columns": true,
+        "reading_order_index": 40,
+        "bbox": {
+          "l": 215.54999,
+          "t": 261.22948968749995,
+          "r": 386.52069692,
+          "b": 215.88163281998538,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/42",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 0,
+        "column_indices": [
+          2,
+          3
+        ],
+        "spans_columns": true,
+        "reading_order_index": 41,
+        "bbox": {
+          "l": 215.54999,
+          "t": 203.25683968750002,
+          "r": 382.57733192,
+          "b": 182.75272281998537,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/43",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 0,
+        "column_indices": [
+          2,
+          3
+        ],
+        "spans_columns": true,
+        "reading_order_index": 42,
+        "bbox": {
+          "l": 215.54999,
+          "t": 178.41308968750002,
+          "r": 382.77947942000003,
+          "b": 145.48710281998535,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/44",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 0,
+        "column_indices": [
+          2,
+          3
+        ],
+        "spans_columns": true,
+        "reading_order_index": 43,
+        "bbox": {
+          "l": 215.54999,
+          "t": 132.86620968750003,
+          "r": 382.70038442,
+          "b": 99.94022281998537,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/45",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 0,
+        "column_indices": [
+          2,
+          3
+        ],
+        "spans_columns": true,
+        "reading_order_index": 44,
+        "bbox": {
+          "l": 215.54999,
+          "t": 87.31933968750002,
+          "r": 382.73993144,
+          "b": 54.39335281998535,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/46",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 0,
+        "column_indices": [
+          2,
+          3
+        ],
+        "spans_columns": true,
+        "reading_order_index": 45,
+        "bbox": {
+          "l": 215.54999,
+          "t": 50.05370968750003,
+          "r": 382.47626192,
+          "b": 29.549602819985353,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/47",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 3,
+        "column_indices": [
+          3
+        ],
+        "spans_columns": false,
+        "reading_order_index": 46,
+        "bbox": {
+          "l": 402.30002,
+          "t": 814.6982416875001,
+          "r": 569.13400442,
+          "b": 769.3503798199854,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/48",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 3,
+        "column_indices": [
+          3
+        ],
+        "spans_columns": false,
+        "reading_order_index": 47,
+        "bbox": {
+          "l": 402.30002,
+          "t": 765.0068356875,
+          "r": 569.18234192,
+          "b": 732.0808488199854,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/49",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 3,
+        "column_indices": [
+          3
+        ],
+        "spans_columns": false,
+        "reading_order_index": 48,
+        "bbox": {
+          "l": 402.30002,
+          "t": 720.8427736875,
+          "r": 568.95675644,
+          "b": 712.7605368199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/50",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 3,
+        "column_indices": [
+          3
+        ],
+        "spans_columns": false,
+        "reading_order_index": 49,
+        "bbox": {
+          "l": 402.30002,
+          "t": 708.4208986875,
+          "r": 535.38839942,
+          "b": 700.3386618199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/51",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 3,
+        "column_indices": [
+          3
+        ],
+        "spans_columns": false,
+        "reading_order_index": 50,
+        "bbox": {
+          "l": 402.30002,
+          "t": 695.9990236875,
+          "r": 569.18673692,
+          "b": 675.4949118199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/52",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 3,
+        "column_indices": [
+          3
+        ],
+        "spans_columns": false,
+        "reading_order_index": 51,
+        "bbox": {
+          "l": 402.30002,
+          "t": 664.2529296875,
+          "r": 569.51779394,
+          "b": 631.3269428199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/53",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 3,
+        "column_indices": [
+          3
+        ],
+        "spans_columns": false,
+        "reading_order_index": 52,
+        "bbox": {
+          "l": 402.30002,
+          "t": 626.9872996875,
+          "r": 569.00948942,
+          "b": 606.4831928199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/54",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 3,
+        "column_indices": [
+          3
+        ],
+        "spans_columns": false,
+        "reading_order_index": 53,
+        "bbox": {
+          "l": 402.30002,
+          "t": 593.8622996875,
+          "r": 449.62472744,
+          "b": 585.7800628199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/55",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 3,
+        "column_indices": [
+          3
+        ],
+        "spans_columns": false,
+        "reading_order_index": 54,
+        "bbox": {
+          "l": 402.30002,
+          "t": 581.4404296875,
+          "r": 538.34591942,
+          "b": 573.3581928199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/56",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 3,
+        "column_indices": [
+          3
+        ],
+        "spans_columns": false,
+        "reading_order_index": 55,
+        "bbox": {
+          "l": 402.30002,
+          "t": 569.0185496875,
+          "r": 568.95968942,
+          "b": 548.5144428199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/57",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 3,
+        "column_indices": [
+          3
+        ],
+        "spans_columns": false,
+        "reading_order_index": 56,
+        "bbox": {
+          "l": 402.30002,
+          "t": 535.8935496875,
+          "r": 568.81173692,
+          "b": 515.3894428199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/58",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 3,
+        "column_indices": [
+          3
+        ],
+        "spans_columns": false,
+        "reading_order_index": 57,
+        "bbox": {
+          "l": 402.30002,
+          "t": 511.0497996875,
+          "r": 569.1047094200001,
+          "b": 490.54569281998533,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/59",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 3,
+        "column_indices": [
+          3
+        ],
+        "spans_columns": false,
+        "reading_order_index": 58,
+        "bbox": {
+          "l": 402.30002,
+          "t": 477.9208996875,
+          "r": 569.15158394,
+          "b": 457.4167828199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/60",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 3,
+        "column_indices": [
+          3
+        ],
+        "spans_columns": false,
+        "reading_order_index": 59,
+        "bbox": {
+          "l": 402.30002,
+          "t": 453.0771496875,
+          "r": 568.83077942,
+          "b": 432.5730328199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/61",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 3,
+        "column_indices": [
+          3
+        ],
+        "spans_columns": false,
+        "reading_order_index": 60,
+        "bbox": {
+          "l": 402.30002,
+          "t": 421.3310496875,
+          "r": 569.23947692,
+          "b": 388.40506281998535,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/62",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 3,
+        "column_indices": [
+          3
+        ],
+        "spans_columns": false,
+        "reading_order_index": 61,
+        "bbox": {
+          "l": 402.30002,
+          "t": 384.0654296875,
+          "r": 569.39035442,
+          "b": 326.29569281998533,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/63",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 3,
+        "column_indices": [
+          3
+        ],
+        "spans_columns": false,
+        "reading_order_index": 62,
+        "bbox": {
+          "l": 402.30002,
+          "t": 313.6747996875,
+          "r": 569.03292692,
+          "b": 280.74881281998535,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/64",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 3,
+        "column_indices": [
+          3
+        ],
+        "spans_columns": false,
+        "reading_order_index": 63,
+        "bbox": {
+          "l": 402.30002,
+          "t": 268.1279296875,
+          "r": 569.40792692,
+          "b": 222.78006281998535,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/65",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 3,
+        "column_indices": [
+          3
+        ],
+        "spans_columns": false,
+        "reading_order_index": 64,
+        "bbox": {
+          "l": 402.30002,
+          "t": 211.54198968749995,
+          "r": 569.51925692,
+          "b": 191.03788281998538,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/66",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 3,
+        "column_indices": [
+          3
+        ],
+        "spans_columns": false,
+        "reading_order_index": 65,
+        "bbox": {
+          "l": 402.30002,
+          "t": 186.69823968749995,
+          "r": 568.99337942,
+          "b": 128.92460281998535,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/67",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 3,
+        "column_indices": [
+          3
+        ],
+        "spans_columns": false,
+        "reading_order_index": 66,
+        "bbox": {
+          "l": 402.30002,
+          "t": 119.0654296875,
+          "r": 569.46798692,
+          "b": 98.56131281998535,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/68",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 3,
+        "column_indices": [
+          3
+        ],
+        "spans_columns": false,
+        "reading_order_index": 67,
+        "bbox": {
+          "l": 402.30002,
+          "t": 94.2216796875,
+          "r": 569.36984192,
+          "b": 73.71756281998535,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/69",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 3,
+        "column_indices": [
+          3
+        ],
+        "spans_columns": false,
+        "reading_order_index": 68,
+        "bbox": {
+          "l": 402.30002,
+          "t": 61.0966796875,
+          "r": 569.13693692,
+          "b": 28.170692819985334,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/70",
+        "element_type": "text",
+        "label": "page_footer",
+        "column_index": 0,
+        "column_indices": [
+          2,
+          3
+        ],
+        "spans_columns": true,
+        "reading_order_index": null,
+        "bbox": {
+          "l": 99.3266505,
+          "t": 21.989447959472614,
+          "r": 495.95088382500006,
+          "b": 13.761151895774901,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      }
+    ],
+    "warnings": []
+  },
+  "structure_chunks": {
+    "enabled": true,
+    "method": "docling_hybrid_chunker",
+    "scope": "page",
+    "items": [
+      {
+        "text": "Idioms\nthe  barrel  to  find  someone  willing to do the job.\nSol.653.(a) Greek to her - not understood by her .\nSol.654.(c) Be at a crossroads - To make a very important decision\nE.g. - After completing her education, she found  herself at a crossroads, unsure of which career path to pursue.\nSol.655.(d)  To  pick  holes  in  someone's coat - to find fault with someone.\nE.g.-  She  constantly  finds  faults  in  his work, no matter how much effort he puts in.\nSol.656.(a) jumping  in  with  both  feet  - coming to conclusions too quickly\nSol.657.(c)  Rust  bucket  - A vehicle that is old or almost broken\n- E.g.  -  I  couldn't  believe  my  eyes  when  I saw him driving that old rust bucket of a car.\nSol.658.(a) Hit the hay - To go to bed E.g.  -  After  a  long  day  at  work,  I  was exhausted  and  decided  to  hit  the  hay early.\nSol.659.(c) A taste of his own medicine - when you are  mistreated  the  same  way you mistreat others",
+        "meta": {
+          "schema_name": "docling_core.transforms.chunker.DocMeta",
+          "version": "1.0.0",
+          "doc_items": [
+            {
+              "self_ref": "#/texts/1",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 291.757038,
+                    "t": 830.7925780594726,
+                    "r": 566.9288154374999,
+                    "b": 822.5642819957749,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    6
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/2",
+              "parent": {
+                "cref": "#/groups/0"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 814.6982416875001,
+                    "r": 195.33955242,
+                    "b": 794.1941298199854,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    54
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/3",
+              "parent": {
+                "cref": "#/groups/0"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 781.5732416875001,
+                    "r": 195.94306992,
+                    "b": 761.0691298199854,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    50
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/4",
+              "parent": {
+                "cref": "#/groups/0"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 748.4482416875001,
+                    "r": 195.99287742,
+                    "b": 727.9441298199854,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    66
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/5",
+              "parent": {
+                "cref": "#/groups/0"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 723.6044916875001,
+                    "r": 195.83027742,
+                    "b": 690.6785048199854,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    113
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/6",
+              "parent": {
+                "cref": "#/groups/0"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 678.0537106875,
+                    "r": 195.52852194000002,
+                    "b": 657.5496028199854,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    78
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/7",
+              "parent": {
+                "cref": "#/groups/0"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 653.2099596875,
+                    "r": 195.87568992,
+                    "b": 620.2839728199854,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    90
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/8",
+              "parent": {
+                "cref": "#/groups/0"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 609.0419896875001,
+                    "r": 195.51094194,
+                    "b": 588.5378828199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    78
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/9",
+              "parent": {
+                "cref": "#/groups/0"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 575.9208996875,
+                    "r": 195.59736492,
+                    "b": 555.4128828199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    67
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/10",
+              "parent": {
+                "cref": "#/groups/1"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 551.0732396875001,
+                    "r": 195.73066992,
+                    "b": 518.1472528199854,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    95
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/11",
+              "parent": {
+                "cref": "#/groups/0"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 505.5263696875,
+                    "r": 195.81709242,
+                    "b": 460.17850281998534,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    136
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/12",
+              "parent": {
+                "cref": "#/groups/0"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 447.5576196875,
+                    "r": 195.63838242,
+                    "b": 414.6316328199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    102
+                  ]
+                }
+              ]
+            }
+          ],
+          "headings": null,
+          "captions": null,
+          "origin": {
+            "mimetype": "application/pdf",
+            "binary_hash": 16152952628565769236,
+            "filename": "english_page_0499.pdf",
+            "uri": null
+          }
+        },
+        "chunk_index": 0,
+        "contextualized_text": "Idioms\nthe  barrel  to  find  someone  willing to do the job.\nSol.653.(a) Greek to her - not understood by her .\nSol.654.(c) Be at a crossroads - To make a very important decision\nE.g. - After completing her education, she found  herself at a crossroads, unsure of which career path to pursue.\nSol.655.(d)  To  pick  holes  in  someone's coat - to find fault with someone.\nE.g.-  She  constantly  finds  faults  in  his work, no matter how much effort he puts in.\nSol.656.(a) jumping  in  with  both  feet  - coming to conclusions too quickly\nSol.657.(c)  Rust  bucket  - A vehicle that is old or almost broken\n- E.g.  -  I  couldn't  believe  my  eyes  when  I saw him driving that old rust bucket of a car.\nSol.658.(a) Hit the hay - To go to bed E.g.  -  After  a  long  day  at  work,  I  was exhausted  and  decided  to  hit  the  hay early.\nSol.659.(c) A taste of his own medicine - when you are  mistreated  the  same  way you mistreat others"
+      },
+      {
+        "text": "Sol.660.(d)  A  broth  of  a  boy  - a  lively, energetic young person.\nE.g.- He's a broth of a boy, always full of energy and mischief.\nSol.661.(d) A drop in a bucket - insignificant  compared  to  the  required amount.\nSol.662.(c) Long in the tooth - To be old, often too old to do something.\nE.g.- She's still a great dancer, but she's getting a little long in the tooth.\n- Sol.663.(b) A shot in the dark - Randomly doing  something,  the  outcome  of which is unknown.\n- E.g. -  Ram  took  a  shot  in  the  dark when teacher asked him for trigonometric formulas.\nSol.664.(d) A Bull market - Market where prices are rising\nE.g.  - From April  2003 to January 2008, the  Bombay  Stock  Exchange  Index  in India  was  in  a  bull  market  trend,  rising from 2,900 points to 21,000 points.\nSol.665.(a) To shake in one's shoes - To be afraid\nE.g. Harry was shaking in his shoes when he saw the ghost.",
+        "meta": {
+          "schema_name": "docling_core.transforms.chunker.DocMeta",
+          "version": "1.0.0",
+          "doc_items": [
+            {
+              "self_ref": "#/texts/13",
+              "parent": {
+                "cref": "#/groups/0"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 402.0107396875,
+                    "r": 195.31171992,
+                    "b": 381.5066328199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    71
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/14",
+              "parent": {
+                "cref": "#/groups/0"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 377.1669896875,
+                    "r": 195.36592242,
+                    "b": 356.6628828199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    64
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/15",
+              "parent": {
+                "cref": "#/groups/0"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 344.0419896875,
+                    "r": 195.41425944,
+                    "b": 311.1160028199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    83
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/16",
+              "parent": {
+                "cref": "#/groups/0"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 298.49511968750005,
+                    "r": 195.91816992,
+                    "b": 277.9910028199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    73
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/17",
+              "parent": {
+                "cref": "#/groups/0"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 273.65136968750005,
+                    "r": 188.69941992,
+                    "b": 253.14725281998528,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    79
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/18",
+              "parent": {
+                "cref": "#/groups/2"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 239.1435496875,
+                    "r": 199.69892742,
+                    "b": 206.21756281998535,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    95
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/19",
+              "parent": {
+                "cref": "#/groups/3"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 201.8779296875,
+                    "r": 195.52412742,
+                    "b": 168.95194281998533,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    92
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/20",
+              "parent": {
+                "cref": "#/groups/0"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 156.3310496875,
+                    "r": 195.42744492,
+                    "b": 135.82694281998533,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    58
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/21",
+              "parent": {
+                "cref": "#/groups/0"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 131.4872996875,
+                    "r": 195.98994492,
+                    "b": 86.13944281998533,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    165
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/22",
+              "parent": {
+                "cref": "#/groups/0"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 73.51854968750001,
+                    "r": 195.84492491999998,
+                    "b": 53.014442819985334,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    50
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/23",
+              "parent": {
+                "cref": "#/groups/0"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 48.67479968750001,
+                    "r": 195.97675992,
+                    "b": 28.170692819985334,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    58
+                  ]
+                }
+              ]
+            }
+          ],
+          "headings": null,
+          "captions": null,
+          "origin": {
+            "mimetype": "application/pdf",
+            "binary_hash": 16152952628565769236,
+            "filename": "english_page_0499.pdf",
+            "uri": null
+          }
+        },
+        "chunk_index": 1,
+        "contextualized_text": "Sol.660.(d)  A  broth  of  a  boy  - a  lively, energetic young person.\nE.g.- He's a broth of a boy, always full of energy and mischief.\nSol.661.(d) A drop in a bucket - insignificant  compared  to  the  required amount.\nSol.662.(c) Long in the tooth - To be old, often too old to do something.\nE.g.- She's still a great dancer, but she's getting a little long in the tooth.\n- Sol.663.(b) A shot in the dark - Randomly doing  something,  the  outcome  of which is unknown.\n- E.g. -  Ram  took  a  shot  in  the  dark when teacher asked him for trigonometric formulas.\nSol.664.(d) A Bull market - Market where prices are rising\nE.g.  - From April  2003 to January 2008, the  Bombay  Stock  Exchange  Index  in India  was  in  a  bull  market  trend,  rising from 2,900 points to 21,000 points.\nSol.665.(a) To shake in one's shoes - To be afraid\nE.g. Harry was shaking in his shoes when he saw the ghost."
+      },
+      {
+        "text": "Sol.666.(b)  Slack  off  - to ease pressure on something.\nE.g.- Do not slack off in your studies.\nSol.667.(c) Pig  in  a  poke  - Something that is bought without examining properly\n- E.g.- Be careful about buying that old car. It might turn out to be a pig in a poke.\nSol.668.(d) For old time's sake - Because of sentimental memories of the past E.g.- Let's go  back  to  village  for  old time's sake.\nSol.669.(b) Water  under  the  bridge  - Anything from the past that isn't significant or important anymore.\nYes, we did have our disagreements, but that's water under the bridge.\nSol.670.(a)\nTo twiddle one's thumbs - To be idle.\n- E.g. I  arrived  early  for  the  meeting  so  I was  twiddling  my  thumbs  for  half  an hour.\nSol.671.(c)",
+        "meta": {
+          "schema_name": "docling_core.transforms.chunker.DocMeta",
+          "version": "1.0.0",
+          "doc_items": [
+            {
+              "self_ref": "#/texts/24",
+              "parent": {
+                "cref": "#/groups/0"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 215.54999,
+                    "t": 814.6982416875001,
+                    "r": 382.19061692,
+                    "b": 794.1941298199854,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    57
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/25",
+              "parent": {
+                "cref": "#/groups/0"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 215.54999,
+                    "t": 789.8544916875001,
+                    "r": 363.39080942,
+                    "b": 781.7722548199854,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    39
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/26",
+              "parent": {
+                "cref": "#/groups/0"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 215.54999,
+                    "t": 767.7685546875,
+                    "r": 382.42791692000003,
+                    "b": 734.8425678199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    83
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/27",
+              "parent": {
+                "cref": "#/groups/4"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 215.54999,
+                    "t": 730.5029296875,
+                    "r": 382.48505192000005,
+                    "b": 709.9988178199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    84
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/28",
+              "parent": {
+                "cref": "#/groups/0"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 215.54999,
+                    "t": 694.6201166875001,
+                    "r": 382.67401442,
+                    "b": 649.2683528199854,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    134
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/29",
+              "parent": {
+                "cref": "#/groups/0"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 215.54999,
+                    "t": 635.2685496875,
+                    "r": 382.17596942,
+                    "b": 602.3425628199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    108
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/30",
+              "parent": {
+                "cref": "#/groups/0"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 215.54999,
+                    "t": 598.0029296875,
+                    "r": 382.19061692,
+                    "b": 577.4988128199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    70
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/31",
+              "parent": {
+                "cref": "#/groups/0"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 215.54999,
+                    "t": 563.4951196874999,
+                    "r": 264.86102519,
+                    "b": 555.4128828199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    11
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/32",
+              "parent": {
+                "cref": "#/groups/0"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 215.54999,
+                    "t": 551.0732396875001,
+                    "r": 363.99286442000005,
+                    "b": 542.9910028199854,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    37
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/33",
+              "parent": {
+                "cref": "#/groups/5"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 215.54999,
+                    "t": 538.6513696874999,
+                    "r": 382.38104192000003,
+                    "b": 505.72538281998527,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    96
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/34",
+              "parent": {
+                "cref": "#/groups/0"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 215.54999,
+                    "t": 490.3427696875,
+                    "r": 264.73358369,
+                    "b": 482.2605328199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    11
+                  ]
+                }
+              ]
+            }
+          ],
+          "headings": null,
+          "captions": null,
+          "origin": {
+            "mimetype": "application/pdf",
+            "binary_hash": 16152952628565769236,
+            "filename": "english_page_0499.pdf",
+            "uri": null
+          }
+        },
+        "chunk_index": 2,
+        "contextualized_text": "Sol.666.(b)  Slack  off  - to ease pressure on something.\nE.g.- Do not slack off in your studies.\nSol.667.(c) Pig  in  a  poke  - Something that is bought without examining properly\n- E.g.- Be careful about buying that old car. It might turn out to be a pig in a poke.\nSol.668.(d) For old time's sake - Because of sentimental memories of the past E.g.- Let's go  back  to  village  for  old time's sake.\nSol.669.(b) Water  under  the  bridge  - Anything from the past that isn't significant or important anymore.\nYes, we did have our disagreements, but that's water under the bridge.\nSol.670.(a)\nTo twiddle one's thumbs - To be idle.\n- E.g. I  arrived  early  for  the  meeting  so  I was  twiddling  my  thumbs  for  half  an hour.\nSol.671.(c)"
+      },
+      {
+        "text": "To sleep like a dog - To sleep soundly E.g. He  slept  like a dog, sixteen hours a day,  rising  to  eat  and  smoke,  and  then falling  back  in his bunk, where he coiled himself very much  like  a  hibernating bear.\nSol.672.(d) Apropos of nothing - Having no  relevance  to  any previous discussion or situation.\nE.g . So, apropos of nothing, I need to ask you about one last thing.\nSol.673.(a)\nNeck of the woods - Neighbourhood\n- E.g  - I  haven't  been  in  this  neck  of  the woods for years.\n- Sol.674.(d)  Zero  tolerance  - A  policy  of not allowing any violations of a rule or law E.g. I need zero tolerance in the recruitment process.\nSol.675.(a) To bridge the gap - To reduce differences and reconcile\n- E.g. The  idea  was  to  bridge  the  gap between citizens and the Union's institutions.\n- Sol.676.(a) High and dry - Abandoned E.g  - They  pulled  out  of  the  deal  at  the last minute leaving us high and dry.",
+        "meta": {
+          "schema_name": "docling_core.transforms.chunker.DocMeta",
+          "version": "1.0.0",
+          "doc_items": [
+            {
+              "self_ref": "#/texts/35",
+              "parent": {
+                "cref": "#/groups/0"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 215.54999,
+                    "t": 477.9208996875,
+                    "r": 382.29168691999996,
+                    "b": 407.7292828199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    218
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/36",
+              "parent": {
+                "cref": "#/groups/0"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 215.54999,
+                    "t": 392.3466796875,
+                    "r": 382.63153442,
+                    "b": 359.42069281998533,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    96
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/37",
+              "parent": {
+                "cref": "#/groups/0"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 215.54999,
+                    "t": 355.0810496875,
+                    "r": 382.58612192,
+                    "b": 334.57694281998533,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    69
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/38",
+              "parent": {
+                "cref": "#/groups/0"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 215.54999,
+                    "t": 319.19823968749995,
+                    "r": 264.86102519,
+                    "b": 311.1160028199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    11
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/39",
+              "parent": {
+                "cref": "#/groups/0"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 215.54999,
+                    "t": 306.77636968750005,
+                    "r": 365.04755192000005,
+                    "b": 298.6941328199854,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    33
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/40",
+              "parent": {
+                "cref": "#/groups/6"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 215.54999,
+                    "t": 294.35448968749995,
+                    "r": 382.49237192,
+                    "b": 273.8503828199854,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    65
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/41",
+              "parent": {
+                "cref": "#/groups/7"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 215.54999,
+                    "t": 261.22948968749995,
+                    "r": 386.52069692,
+                    "b": 215.88163281998538,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    145
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/42",
+              "parent": {
+                "cref": "#/groups/0"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 215.54999,
+                    "t": 203.25683968750002,
+                    "r": 382.57733192,
+                    "b": 182.75272281998537,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    67
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/43",
+              "parent": {
+                "cref": "#/groups/8"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 215.54999,
+                    "t": 178.41308968750002,
+                    "r": 382.77947942000003,
+                    "b": 145.48710281998535,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    88
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/44",
+              "parent": {
+                "cref": "#/groups/9"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 215.54999,
+                    "t": 132.86620968750003,
+                    "r": 382.70038442,
+                    "b": 99.94022281998537,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    122
+                  ]
+                }
+              ]
+            }
+          ],
+          "headings": null,
+          "captions": null,
+          "origin": {
+            "mimetype": "application/pdf",
+            "binary_hash": 16152952628565769236,
+            "filename": "english_page_0499.pdf",
+            "uri": null
+          }
+        },
+        "chunk_index": 3,
+        "contextualized_text": "To sleep like a dog - To sleep soundly E.g. He  slept  like a dog, sixteen hours a day,  rising  to  eat  and  smoke,  and  then falling  back  in his bunk, where he coiled himself very much  like  a  hibernating bear.\nSol.672.(d) Apropos of nothing - Having no  relevance  to  any previous discussion or situation.\nE.g . So, apropos of nothing, I need to ask you about one last thing.\nSol.673.(a)\nNeck of the woods - Neighbourhood\n- E.g  - I  haven't  been  in  this  neck  of  the woods for years.\n- Sol.674.(d)  Zero  tolerance  - A  policy  of not allowing any violations of a rule or law E.g. I need zero tolerance in the recruitment process.\nSol.675.(a) To bridge the gap - To reduce differences and reconcile\n- E.g. The  idea  was  to  bridge  the  gap between citizens and the Union's institutions.\n- Sol.676.(a) High and dry - Abandoned E.g  - They  pulled  out  of  the  deal  at  the last minute leaving us high and dry."
+      },
+      {
+        "text": "Sol.677.(a) The whole ball  of  wax  - everything related to a particular situation; the whole thing.\nE.g  - He  came  back  from  Chicago  with the contract for the whole ball of wax.\nSol.678.(d) Method  to  my  madness  - Strange or crazy  actions  that  appear meaningless but in the end are done for a good reason.\nE.g. He  keeps  talking  to  himself  loudly, but  he  insists  there  is  a  method  in  his madness.\nSol.679.(a) To lay someone by the heels\n- To confine somebody in prison.\n- E.g. Superior  forces  laid the invaders by the heels.\nSol.680.(b) Have  people  rolling  in  the aisles - Make an audience laugh uncontrollably.\n- E.g. The  comedian  made  the  audience rolling in the aisles.\nSol.681.(d)\nTo breast the tape - To win a race\nE.g.- Goutam is able to sprint ahead and breast the tape.\nSol.682.(d)  Good  grief  - An  expression of surprise or frustration\n- E.g. Oh  God,  good  grief  we  are  again stuck in a traffic jam.",
+        "meta": {
+          "schema_name": "docling_core.transforms.chunker.DocMeta",
+          "version": "1.0.0",
+          "doc_items": [
+            {
+              "self_ref": "#/texts/45",
+              "parent": {
+                "cref": "#/groups/0"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 215.54999,
+                    "t": 87.31933968750002,
+                    "r": 382.73993144,
+                    "b": 54.39335281998535,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    101
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/46",
+              "parent": {
+                "cref": "#/groups/0"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 215.54999,
+                    "t": 50.05370968750003,
+                    "r": 382.47626192,
+                    "b": 29.549602819985353,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    82
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/47",
+              "parent": {
+                "cref": "#/groups/0"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 402.30002,
+                    "t": 814.6982416875001,
+                    "r": 569.13400442,
+                    "b": 769.3503798199854,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    133
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/48",
+              "parent": {
+                "cref": "#/groups/0"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 402.30002,
+                    "t": 765.0068356875,
+                    "r": 569.18234192,
+                    "b": 732.0808488199854,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    102
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/49",
+              "parent": {
+                "cref": "#/groups/0"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 402.30002,
+                    "t": 720.8427736875,
+                    "r": 568.95675644,
+                    "b": 712.7605368199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    39
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/50",
+              "parent": {
+                "cref": "#/groups/10"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 402.30002,
+                    "t": 708.4208986875,
+                    "r": 535.38839942,
+                    "b": 700.3386618199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    32
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/51",
+              "parent": {
+                "cref": "#/groups/11"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 402.30002,
+                    "t": 695.9990236875,
+                    "r": 569.18673692,
+                    "b": 675.4949118199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    54
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/52",
+              "parent": {
+                "cref": "#/groups/0"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 402.30002,
+                    "t": 664.2529296875,
+                    "r": 569.51779394,
+                    "b": 631.3269428199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    90
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/53",
+              "parent": {
+                "cref": "#/groups/12"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 402.30002,
+                    "t": 626.9872996875,
+                    "r": 569.00948942,
+                    "b": 606.4831928199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    62
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/54",
+              "parent": {
+                "cref": "#/groups/0"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 402.30002,
+                    "t": 593.8622996875,
+                    "r": 449.62472744,
+                    "b": 585.7800628199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    11
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/55",
+              "parent": {
+                "cref": "#/groups/0"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 402.30002,
+                    "t": 581.4404296875,
+                    "r": 538.34591942,
+                    "b": 573.3581928199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    34
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/56",
+              "parent": {
+                "cref": "#/groups/0"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 402.30002,
+                    "t": 569.0185496875,
+                    "r": 568.95968942,
+                    "b": 548.5144428199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    57
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/57",
+              "parent": {
+                "cref": "#/groups/0"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 402.30002,
+                    "t": 535.8935496875,
+                    "r": 568.81173692,
+                    "b": 515.3894428199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    69
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/58",
+              "parent": {
+                "cref": "#/groups/13"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 402.30002,
+                    "t": 511.0497996875,
+                    "r": 569.1047094200001,
+                    "b": 490.54569281998533,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    66
+                  ]
+                }
+              ]
+            }
+          ],
+          "headings": null,
+          "captions": null,
+          "origin": {
+            "mimetype": "application/pdf",
+            "binary_hash": 16152952628565769236,
+            "filename": "english_page_0499.pdf",
+            "uri": null
+          }
+        },
+        "chunk_index": 4,
+        "contextualized_text": "Sol.677.(a) The whole ball  of  wax  - everything related to a particular situation; the whole thing.\nE.g  - He  came  back  from  Chicago  with the contract for the whole ball of wax.\nSol.678.(d) Method  to  my  madness  - Strange or crazy  actions  that  appear meaningless but in the end are done for a good reason.\nE.g. He  keeps  talking  to  himself  loudly, but  he  insists  there  is  a  method  in  his madness.\nSol.679.(a) To lay someone by the heels\n- To confine somebody in prison.\n- E.g. Superior  forces  laid the invaders by the heels.\nSol.680.(b) Have  people  rolling  in  the aisles - Make an audience laugh uncontrollably.\n- E.g. The  comedian  made  the  audience rolling in the aisles.\nSol.681.(d)\nTo breast the tape - To win a race\nE.g.- Goutam is able to sprint ahead and breast the tape.\nSol.682.(d)  Good  grief  - An  expression of surprise or frustration\n- E.g. Oh  God,  good  grief  we  are  again stuck in a traffic jam."
+      },
+      {
+        "text": "Sol.683.(d)  To  jump  out  of  one's  skin  - To be extremely surprised\nE.g. My friends made me jump out of my skin on my birthday.\nSol.684.(a) Penny wise and pound foolish  - Careless  with  large  amounts, but not small.\nE.g- someone who will drive across town to  save  five  cents  a  gallon  on  gasoline but  just  recently  purchased  a BMW that he or she cannot afford could be said to be 'penny wise and pound foolish.'\nSol.685.(d) Appeal to Caesar - Appeal to the highest possible authority E.g. Paul appealed to Caesar for justice.\nSol.686.(b)  A  bite  at  the  cherry  - An attempt or opportunity to do something. E.g. I  got  a  bite  at  the  cherry  after  my first attempt at the task.\n- Sol.687.(a)  Save  your  breath  - To  make an effort that will be futile\nE.g. If  you  tell  someone  to  save  their breath,  you  mean  that  they  should  not bother  saying  something,  because  you will not agree to it or you do not want to hear it.\nSol.688.(b) A beast of burden - An animal that carries luggage",
+        "meta": {
+          "schema_name": "docling_core.transforms.chunker.DocMeta",
+          "version": "1.0.0",
+          "doc_items": [
+            {
+              "self_ref": "#/texts/59",
+              "parent": {
+                "cref": "#/groups/0"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 402.30002,
+                    "t": 477.9208996875,
+                    "r": 569.15158394,
+                    "b": 457.4167828199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    72
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/60",
+              "parent": {
+                "cref": "#/groups/0"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 402.30002,
+                    "t": 453.0771496875,
+                    "r": 568.83077942,
+                    "b": 432.5730328199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    59
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/61",
+              "parent": {
+                "cref": "#/groups/0"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 402.30002,
+                    "t": 421.3310496875,
+                    "r": 569.23947692,
+                    "b": 388.40506281998535,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    90
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/62",
+              "parent": {
+                "cref": "#/groups/0"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 402.30002,
+                    "t": 384.0654296875,
+                    "r": 569.39035442,
+                    "b": 326.29569281998533,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    205
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/63",
+              "parent": {
+                "cref": "#/groups/0"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 402.30002,
+                    "t": 313.6747996875,
+                    "r": 569.03292692,
+                    "b": 280.74881281998535,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    113
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/64",
+              "parent": {
+                "cref": "#/groups/0"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 402.30002,
+                    "t": 268.1279296875,
+                    "r": 569.40792692,
+                    "b": 222.78006281998535,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    159
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/65",
+              "parent": {
+                "cref": "#/groups/14"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 402.30002,
+                    "t": 211.54198968749995,
+                    "r": 569.51925692,
+                    "b": 191.03788281998538,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    73
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/66",
+              "parent": {
+                "cref": "#/groups/0"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 402.30002,
+                    "t": 186.69823968749995,
+                    "r": 568.99337942,
+                    "b": 128.92460281998535,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    181
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/67",
+              "parent": {
+                "cref": "#/groups/0"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 402.30002,
+                    "t": 119.0654296875,
+                    "r": 569.46798692,
+                    "b": 98.56131281998535,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    62
+                  ]
+                }
+              ]
+            }
+          ],
+          "headings": null,
+          "captions": null,
+          "origin": {
+            "mimetype": "application/pdf",
+            "binary_hash": 16152952628565769236,
+            "filename": "english_page_0499.pdf",
+            "uri": null
+          }
+        },
+        "chunk_index": 5,
+        "contextualized_text": "Sol.683.(d)  To  jump  out  of  one's  skin  - To be extremely surprised\nE.g. My friends made me jump out of my skin on my birthday.\nSol.684.(a) Penny wise and pound foolish  - Careless  with  large  amounts, but not small.\nE.g- someone who will drive across town to  save  five  cents  a  gallon  on  gasoline but  just  recently  purchased  a BMW that he or she cannot afford could be said to be 'penny wise and pound foolish.'\nSol.685.(d) Appeal to Caesar - Appeal to the highest possible authority E.g. Paul appealed to Caesar for justice.\nSol.686.(b)  A  bite  at  the  cherry  - An attempt or opportunity to do something. E.g. I  got  a  bite  at  the  cherry  after  my first attempt at the task.\n- Sol.687.(a)  Save  your  breath  - To  make an effort that will be futile\nE.g. If  you  tell  someone  to  save  their breath,  you  mean  that  they  should  not bother  saying  something,  because  you will not agree to it or you do not want to hear it.\nSol.688.(b) A beast of burden - An animal that carries luggage"
+      },
+      {
+        "text": "E.g. One  beast  of  burden  is  not enough to pull the cart. Get another one.\nSol.689.(a)  Cast  someone  adrift  - To leave  someone  without  any  support  or purpose",
+        "meta": {
+          "schema_name": "docling_core.transforms.chunker.DocMeta",
+          "version": "1.0.0",
+          "doc_items": [
+            {
+              "self_ref": "#/texts/68",
+              "parent": {
+                "cref": "#/groups/0"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 402.30002,
+                    "t": 94.2216796875,
+                    "r": 569.36984192,
+                    "b": 73.71756281998535,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    78
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/69",
+              "parent": {
+                "cref": "#/groups/0"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 402.30002,
+                    "t": 61.0966796875,
+                    "r": 569.13693692,
+                    "b": 28.170692819985334,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    90
+                  ]
+                }
+              ]
+            }
+          ],
+          "headings": null,
+          "captions": null,
+          "origin": {
+            "mimetype": "application/pdf",
+            "binary_hash": 16152952628565769236,
+            "filename": "english_page_0499.pdf",
+            "uri": null
+          }
+        },
+        "chunk_index": 6,
+        "contextualized_text": "E.g. One  beast  of  burden  is  not enough to pull the cart. Get another one.\nSol.689.(a)  Cast  someone  adrift  - To leave  someone  without  any  support  or purpose"
+      }
+    ]
+  },
+  "content_assets": {
+    "tables": [],
+    "figures": []
+  },
+  "docling_document": {
+    "schema_name": "DoclingDocument",
+    "version": "1.10.0",
+    "name": "english_page_0499",
+    "origin": {
+      "mimetype": "application/pdf",
+      "binary_hash": 16152952628565769236,
+      "filename": "english_page_0499.pdf"
+    },
+    "furniture": {
+      "self_ref": "#/furniture",
+      "children": [],
+      "content_layer": "furniture",
+      "name": "_root_",
+      "label": "unspecified"
+    },
+    "body": {
+      "self_ref": "#/body",
+      "children": [
+        {
+          "$ref": "#/texts/0"
+        },
+        {
+          "$ref": "#/texts/1"
+        },
+        {
+          "$ref": "#/groups/0"
+        },
+        {
+          "$ref": "#/texts/70"
+        }
+      ],
+      "content_layer": "body",
+      "name": "_root_",
+      "label": "unspecified"
+    },
+    "groups": [
+      {
+        "self_ref": "#/groups/0",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [
+          {
+            "$ref": "#/texts/2"
+          },
+          {
+            "$ref": "#/texts/3"
+          },
+          {
+            "$ref": "#/texts/4"
+          },
+          {
+            "$ref": "#/texts/5"
+          },
+          {
+            "$ref": "#/texts/6"
+          },
+          {
+            "$ref": "#/texts/7"
+          },
+          {
+            "$ref": "#/texts/8"
+          },
+          {
+            "$ref": "#/texts/9"
+          },
+          {
+            "$ref": "#/groups/1"
+          },
+          {
+            "$ref": "#/texts/11"
+          },
+          {
+            "$ref": "#/texts/12"
+          },
+          {
+            "$ref": "#/texts/13"
+          },
+          {
+            "$ref": "#/texts/14"
+          },
+          {
+            "$ref": "#/texts/15"
+          },
+          {
+            "$ref": "#/texts/16"
+          },
+          {
+            "$ref": "#/texts/17"
+          },
+          {
+            "$ref": "#/groups/2"
+          },
+          {
+            "$ref": "#/groups/3"
+          },
+          {
+            "$ref": "#/texts/20"
+          },
+          {
+            "$ref": "#/texts/21"
+          },
+          {
+            "$ref": "#/texts/22"
+          },
+          {
+            "$ref": "#/texts/23"
+          },
+          {
+            "$ref": "#/texts/24"
+          },
+          {
+            "$ref": "#/texts/25"
+          },
+          {
+            "$ref": "#/texts/26"
+          },
+          {
+            "$ref": "#/groups/4"
+          },
+          {
+            "$ref": "#/texts/28"
+          },
+          {
+            "$ref": "#/texts/29"
+          },
+          {
+            "$ref": "#/texts/30"
+          },
+          {
+            "$ref": "#/texts/31"
+          },
+          {
+            "$ref": "#/texts/32"
+          },
+          {
+            "$ref": "#/groups/5"
+          },
+          {
+            "$ref": "#/texts/34"
+          },
+          {
+            "$ref": "#/texts/35"
+          },
+          {
+            "$ref": "#/texts/36"
+          },
+          {
+            "$ref": "#/texts/37"
+          },
+          {
+            "$ref": "#/texts/38"
+          },
+          {
+            "$ref": "#/texts/39"
+          },
+          {
+            "$ref": "#/groups/6"
+          },
+          {
+            "$ref": "#/groups/7"
+          },
+          {
+            "$ref": "#/texts/42"
+          },
+          {
+            "$ref": "#/groups/8"
+          },
+          {
+            "$ref": "#/groups/9"
+          },
+          {
+            "$ref": "#/texts/45"
+          },
+          {
+            "$ref": "#/texts/46"
+          },
+          {
+            "$ref": "#/texts/47"
+          },
+          {
+            "$ref": "#/texts/48"
+          },
+          {
+            "$ref": "#/texts/49"
+          },
+          {
+            "$ref": "#/groups/10"
+          },
+          {
+            "$ref": "#/groups/11"
+          },
+          {
+            "$ref": "#/texts/52"
+          },
+          {
+            "$ref": "#/groups/12"
+          },
+          {
+            "$ref": "#/texts/54"
+          },
+          {
+            "$ref": "#/texts/55"
+          },
+          {
+            "$ref": "#/texts/56"
+          },
+          {
+            "$ref": "#/texts/57"
+          },
+          {
+            "$ref": "#/groups/13"
+          },
+          {
+            "$ref": "#/texts/59"
+          },
+          {
+            "$ref": "#/texts/60"
+          },
+          {
+            "$ref": "#/texts/61"
+          },
+          {
+            "$ref": "#/texts/62"
+          },
+          {
+            "$ref": "#/texts/63"
+          },
+          {
+            "$ref": "#/texts/64"
+          },
+          {
+            "$ref": "#/groups/14"
+          },
+          {
+            "$ref": "#/texts/66"
+          },
+          {
+            "$ref": "#/texts/67"
+          },
+          {
+            "$ref": "#/texts/68"
+          },
+          {
+            "$ref": "#/texts/69"
+          }
+        ],
+        "content_layer": "body",
+        "name": "group",
+        "label": "form_area"
+      },
+      {
+        "self_ref": "#/groups/1",
+        "parent": {
+          "$ref": "#/groups/0"
+        },
+        "children": [
+          {
+            "$ref": "#/texts/10"
+          }
+        ],
+        "content_layer": "body",
+        "name": "group",
+        "label": "list"
+      },
+      {
+        "self_ref": "#/groups/2",
+        "parent": {
+          "$ref": "#/groups/0"
+        },
+        "children": [
+          {
+            "$ref": "#/texts/18"
+          }
+        ],
+        "content_layer": "body",
+        "name": "group",
+        "label": "list"
+      },
+      {
+        "self_ref": "#/groups/3",
+        "parent": {
+          "$ref": "#/groups/0"
+        },
+        "children": [
+          {
+            "$ref": "#/texts/19"
+          }
+        ],
+        "content_layer": "body",
+        "name": "group",
+        "label": "list"
+      },
+      {
+        "self_ref": "#/groups/4",
+        "parent": {
+          "$ref": "#/groups/0"
+        },
+        "children": [
+          {
+            "$ref": "#/texts/27"
+          }
+        ],
+        "content_layer": "body",
+        "name": "group",
+        "label": "list"
+      },
+      {
+        "self_ref": "#/groups/5",
+        "parent": {
+          "$ref": "#/groups/0"
+        },
+        "children": [
+          {
+            "$ref": "#/texts/33"
+          }
+        ],
+        "content_layer": "body",
+        "name": "group",
+        "label": "list"
+      },
+      {
+        "self_ref": "#/groups/6",
+        "parent": {
+          "$ref": "#/groups/0"
+        },
+        "children": [
+          {
+            "$ref": "#/texts/40"
+          }
+        ],
+        "content_layer": "body",
+        "name": "group",
+        "label": "list"
+      },
+      {
+        "self_ref": "#/groups/7",
+        "parent": {
+          "$ref": "#/groups/0"
+        },
+        "children": [
+          {
+            "$ref": "#/texts/41"
+          }
+        ],
+        "content_layer": "body",
+        "name": "group",
+        "label": "list"
+      },
+      {
+        "self_ref": "#/groups/8",
+        "parent": {
+          "$ref": "#/groups/0"
+        },
+        "children": [
+          {
+            "$ref": "#/texts/43"
+          }
+        ],
+        "content_layer": "body",
+        "name": "group",
+        "label": "list"
+      },
+      {
+        "self_ref": "#/groups/9",
+        "parent": {
+          "$ref": "#/groups/0"
+        },
+        "children": [
+          {
+            "$ref": "#/texts/44"
+          }
+        ],
+        "content_layer": "body",
+        "name": "group",
+        "label": "list"
+      },
+      {
+        "self_ref": "#/groups/10",
+        "parent": {
+          "$ref": "#/groups/0"
+        },
+        "children": [
+          {
+            "$ref": "#/texts/50"
+          }
+        ],
+        "content_layer": "body",
+        "name": "group",
+        "label": "list"
+      },
+      {
+        "self_ref": "#/groups/11",
+        "parent": {
+          "$ref": "#/groups/0"
+        },
+        "children": [
+          {
+            "$ref": "#/texts/51"
+          }
+        ],
+        "content_layer": "body",
+        "name": "group",
+        "label": "list"
+      },
+      {
+        "self_ref": "#/groups/12",
+        "parent": {
+          "$ref": "#/groups/0"
+        },
+        "children": [
+          {
+            "$ref": "#/texts/53"
+          }
+        ],
+        "content_layer": "body",
+        "name": "group",
+        "label": "list"
+      },
+      {
+        "self_ref": "#/groups/13",
+        "parent": {
+          "$ref": "#/groups/0"
+        },
+        "children": [
+          {
+            "$ref": "#/texts/58"
+          }
+        ],
+        "content_layer": "body",
+        "name": "group",
+        "label": "list"
+      },
+      {
+        "self_ref": "#/groups/14",
+        "parent": {
+          "$ref": "#/groups/0"
+        },
+        "children": [
+          {
+            "$ref": "#/texts/65"
+          }
+        ],
+        "content_layer": "body",
+        "name": "group",
+        "label": "list"
+      }
+    ],
+    "texts": [
+      {
+        "self_ref": "#/texts/0",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "furniture",
+        "label": "page_header",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 830.7925780594726,
+              "r": 95.7084616875,
+              "b": 822.5642819957749,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              8
+            ]
+          }
+        ],
+        "orig": "Pinnacle",
+        "text": "Pinnacle"
+      },
+      {
+        "self_ref": "#/texts/1",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 291.757038,
+              "t": 830.7925780594726,
+              "r": 566.9288154374999,
+              "b": 822.5642819957749,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              6
+            ]
+          }
+        ],
+        "orig": "Idioms",
+        "text": "Idioms"
+      },
+      {
+        "self_ref": "#/texts/2",
+        "parent": {
+          "$ref": "#/groups/0"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 814.6982416875001,
+              "r": 195.33955242,
+              "b": 794.1941298199854,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              54
+            ]
+          }
+        ],
+        "orig": "the  barrel  to  find  someone  willing to do the job.",
+        "text": "the  barrel  to  find  someone  willing to do the job."
+      },
+      {
+        "self_ref": "#/texts/3",
+        "parent": {
+          "$ref": "#/groups/0"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 781.5732416875001,
+              "r": 195.94306992,
+              "b": 761.0691298199854,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              50
+            ]
+          }
+        ],
+        "orig": "Sol.653.(a) Greek to her - not understood by her .",
+        "text": "Sol.653.(a) Greek to her - not understood by her ."
+      },
+      {
+        "self_ref": "#/texts/4",
+        "parent": {
+          "$ref": "#/groups/0"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 748.4482416875001,
+              "r": 195.99287742,
+              "b": 727.9441298199854,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              66
+            ]
+          }
+        ],
+        "orig": "Sol.654.(c) Be at a crossroads - To make a very important decision",
+        "text": "Sol.654.(c) Be at a crossroads - To make a very important decision"
+      },
+      {
+        "self_ref": "#/texts/5",
+        "parent": {
+          "$ref": "#/groups/0"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 723.6044916875001,
+              "r": 195.83027742,
+              "b": 690.6785048199854,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              113
+            ]
+          }
+        ],
+        "orig": "E.g. - After completing her education, she found  herself at a crossroads, unsure of which career path to pursue.",
+        "text": "E.g. - After completing her education, she found  herself at a crossroads, unsure of which career path to pursue."
+      },
+      {
+        "self_ref": "#/texts/6",
+        "parent": {
+          "$ref": "#/groups/0"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 678.0537106875,
+              "r": 195.52852194000002,
+              "b": 657.5496028199854,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              78
+            ]
+          }
+        ],
+        "orig": "Sol.655.(d)  To  pick  holes  in  someone's coat - to find fault with someone.",
+        "text": "Sol.655.(d)  To  pick  holes  in  someone's coat - to find fault with someone."
+      },
+      {
+        "self_ref": "#/texts/7",
+        "parent": {
+          "$ref": "#/groups/0"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 653.2099596875,
+              "r": 195.87568992,
+              "b": 620.2839728199854,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              90
+            ]
+          }
+        ],
+        "orig": "E.g.-  She  constantly  finds  faults  in  his work, no matter how much effort he puts in.",
+        "text": "E.g.-  She  constantly  finds  faults  in  his work, no matter how much effort he puts in."
+      },
+      {
+        "self_ref": "#/texts/8",
+        "parent": {
+          "$ref": "#/groups/0"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 609.0419896875001,
+              "r": 195.51094194,
+              "b": 588.5378828199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              78
+            ]
+          }
+        ],
+        "orig": "Sol.656.(a) jumping  in  with  both  feet  - coming to conclusions too quickly",
+        "text": "Sol.656.(a) jumping  in  with  both  feet  - coming to conclusions too quickly"
+      },
+      {
+        "self_ref": "#/texts/9",
+        "parent": {
+          "$ref": "#/groups/0"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 575.9208996875,
+              "r": 195.59736492,
+              "b": 555.4128828199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              67
+            ]
+          }
+        ],
+        "orig": "Sol.657.(c)  Rust  bucket  - A vehicle that is old or almost broken",
+        "text": "Sol.657.(c)  Rust  bucket  - A vehicle that is old or almost broken"
+      },
+      {
+        "self_ref": "#/texts/10",
+        "parent": {
+          "$ref": "#/groups/1"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 551.0732396875001,
+              "r": 195.73066992,
+              "b": 518.1472528199854,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              95
+            ]
+          }
+        ],
+        "orig": "E.g.  -  I  couldn't  believe  my  eyes  when  I saw him driving that old rust bucket of a car.",
+        "text": "E.g.  -  I  couldn't  believe  my  eyes  when  I saw him driving that old rust bucket of a car.",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/11",
+        "parent": {
+          "$ref": "#/groups/0"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 505.5263696875,
+              "r": 195.81709242,
+              "b": 460.17850281998534,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              136
+            ]
+          }
+        ],
+        "orig": "Sol.658.(a) Hit the hay - To go to bed E.g.  -  After  a  long  day  at  work,  I  was exhausted  and  decided  to  hit  the  hay early.",
+        "text": "Sol.658.(a) Hit the hay - To go to bed E.g.  -  After  a  long  day  at  work,  I  was exhausted  and  decided  to  hit  the  hay early."
+      },
+      {
+        "self_ref": "#/texts/12",
+        "parent": {
+          "$ref": "#/groups/0"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 447.5576196875,
+              "r": 195.63838242,
+              "b": 414.6316328199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              102
+            ]
+          }
+        ],
+        "orig": "Sol.659.(c) A taste of his own medicine - when you are  mistreated  the  same  way you mistreat others",
+        "text": "Sol.659.(c) A taste of his own medicine - when you are  mistreated  the  same  way you mistreat others"
+      },
+      {
+        "self_ref": "#/texts/13",
+        "parent": {
+          "$ref": "#/groups/0"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 402.0107396875,
+              "r": 195.31171992,
+              "b": 381.5066328199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              71
+            ]
+          }
+        ],
+        "orig": "Sol.660.(d)  A  broth  of  a  boy  - a  lively, energetic young person.",
+        "text": "Sol.660.(d)  A  broth  of  a  boy  - a  lively, energetic young person."
+      },
+      {
+        "self_ref": "#/texts/14",
+        "parent": {
+          "$ref": "#/groups/0"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 377.1669896875,
+              "r": 195.36592242,
+              "b": 356.6628828199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              64
+            ]
+          }
+        ],
+        "orig": "E.g.- He's a broth of a boy, always full of energy and mischief.",
+        "text": "E.g.- He's a broth of a boy, always full of energy and mischief."
+      },
+      {
+        "self_ref": "#/texts/15",
+        "parent": {
+          "$ref": "#/groups/0"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 344.0419896875,
+              "r": 195.41425944,
+              "b": 311.1160028199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              83
+            ]
+          }
+        ],
+        "orig": "Sol.661.(d) A drop in a bucket - insignificant  compared  to  the  required amount.",
+        "text": "Sol.661.(d) A drop in a bucket - insignificant  compared  to  the  required amount."
+      },
+      {
+        "self_ref": "#/texts/16",
+        "parent": {
+          "$ref": "#/groups/0"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 298.49511968750005,
+              "r": 195.91816992,
+              "b": 277.9910028199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              73
+            ]
+          }
+        ],
+        "orig": "Sol.662.(c) Long in the tooth - To be old, often too old to do something.",
+        "text": "Sol.662.(c) Long in the tooth - To be old, often too old to do something."
+      },
+      {
+        "self_ref": "#/texts/17",
+        "parent": {
+          "$ref": "#/groups/0"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 273.65136968750005,
+              "r": 188.69941992,
+              "b": 253.14725281998528,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              79
+            ]
+          }
+        ],
+        "orig": "E.g.- She's still a great dancer, but she's getting a little long in the tooth.",
+        "text": "E.g.- She's still a great dancer, but she's getting a little long in the tooth."
+      },
+      {
+        "self_ref": "#/texts/18",
+        "parent": {
+          "$ref": "#/groups/2"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 239.1435496875,
+              "r": 199.69892742,
+              "b": 206.21756281998535,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              95
+            ]
+          }
+        ],
+        "orig": "Sol.663.(b) A shot in the dark - Randomly doing  something,  the  outcome  of which is unknown.",
+        "text": "Sol.663.(b) A shot in the dark - Randomly doing  something,  the  outcome  of which is unknown.",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/19",
+        "parent": {
+          "$ref": "#/groups/3"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 201.8779296875,
+              "r": 195.52412742,
+              "b": 168.95194281998533,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              92
+            ]
+          }
+        ],
+        "orig": "E.g. -  Ram  took  a  shot  in  the  dark when teacher asked him for trigonometric formulas.",
+        "text": "E.g. -  Ram  took  a  shot  in  the  dark when teacher asked him for trigonometric formulas.",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/20",
+        "parent": {
+          "$ref": "#/groups/0"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 156.3310496875,
+              "r": 195.42744492,
+              "b": 135.82694281998533,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              58
+            ]
+          }
+        ],
+        "orig": "Sol.664.(d) A Bull market - Market where prices are rising",
+        "text": "Sol.664.(d) A Bull market - Market where prices are rising"
+      },
+      {
+        "self_ref": "#/texts/21",
+        "parent": {
+          "$ref": "#/groups/0"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 131.4872996875,
+              "r": 195.98994492,
+              "b": 86.13944281998533,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              165
+            ]
+          }
+        ],
+        "orig": "E.g.  - From April  2003 to January 2008, the  Bombay  Stock  Exchange  Index  in India  was  in  a  bull  market  trend,  rising from 2,900 points to 21,000 points.",
+        "text": "E.g.  - From April  2003 to January 2008, the  Bombay  Stock  Exchange  Index  in India  was  in  a  bull  market  trend,  rising from 2,900 points to 21,000 points."
+      },
+      {
+        "self_ref": "#/texts/22",
+        "parent": {
+          "$ref": "#/groups/0"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 73.51854968750001,
+              "r": 195.84492491999998,
+              "b": 53.014442819985334,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              50
+            ]
+          }
+        ],
+        "orig": "Sol.665.(a) To shake in one's shoes - To be afraid",
+        "text": "Sol.665.(a) To shake in one's shoes - To be afraid"
+      },
+      {
+        "self_ref": "#/texts/23",
+        "parent": {
+          "$ref": "#/groups/0"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 48.67479968750001,
+              "r": 195.97675992,
+              "b": 28.170692819985334,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              58
+            ]
+          }
+        ],
+        "orig": "E.g. Harry was shaking in his shoes when he saw the ghost.",
+        "text": "E.g. Harry was shaking in his shoes when he saw the ghost."
+      },
+      {
+        "self_ref": "#/texts/24",
+        "parent": {
+          "$ref": "#/groups/0"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 215.54999,
+              "t": 814.6982416875001,
+              "r": 382.19061692,
+              "b": 794.1941298199854,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              57
+            ]
+          }
+        ],
+        "orig": "Sol.666.(b)  Slack  off  - to ease pressure on something.",
+        "text": "Sol.666.(b)  Slack  off  - to ease pressure on something."
+      },
+      {
+        "self_ref": "#/texts/25",
+        "parent": {
+          "$ref": "#/groups/0"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 215.54999,
+              "t": 789.8544916875001,
+              "r": 363.39080942,
+              "b": 781.7722548199854,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              39
+            ]
+          }
+        ],
+        "orig": "E.g.- Do not slack off in your studies.",
+        "text": "E.g.- Do not slack off in your studies."
+      },
+      {
+        "self_ref": "#/texts/26",
+        "parent": {
+          "$ref": "#/groups/0"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 215.54999,
+              "t": 767.7685546875,
+              "r": 382.42791692000003,
+              "b": 734.8425678199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              83
+            ]
+          }
+        ],
+        "orig": "Sol.667.(c) Pig  in  a  poke  - Something that is bought without examining properly",
+        "text": "Sol.667.(c) Pig  in  a  poke  - Something that is bought without examining properly"
+      },
+      {
+        "self_ref": "#/texts/27",
+        "parent": {
+          "$ref": "#/groups/4"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 215.54999,
+              "t": 730.5029296875,
+              "r": 382.48505192000005,
+              "b": 709.9988178199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              84
+            ]
+          }
+        ],
+        "orig": "E.g.- Be careful about buying that old car. It might turn out to be a pig in a poke.",
+        "text": "E.g.- Be careful about buying that old car. It might turn out to be a pig in a poke.",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/28",
+        "parent": {
+          "$ref": "#/groups/0"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 215.54999,
+              "t": 694.6201166875001,
+              "r": 382.67401442,
+              "b": 649.2683528199854,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              134
+            ]
+          }
+        ],
+        "orig": "Sol.668.(d) For old time's sake - Because of sentimental memories of the past E.g.- Let's go  back  to  village  for  old time's sake.",
+        "text": "Sol.668.(d) For old time's sake - Because of sentimental memories of the past E.g.- Let's go  back  to  village  for  old time's sake."
+      },
+      {
+        "self_ref": "#/texts/29",
+        "parent": {
+          "$ref": "#/groups/0"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 215.54999,
+              "t": 635.2685496875,
+              "r": 382.17596942,
+              "b": 602.3425628199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              108
+            ]
+          }
+        ],
+        "orig": "Sol.669.(b) Water  under  the  bridge  - Anything from the past that isn't significant or important anymore.",
+        "text": "Sol.669.(b) Water  under  the  bridge  - Anything from the past that isn't significant or important anymore."
+      },
+      {
+        "self_ref": "#/texts/30",
+        "parent": {
+          "$ref": "#/groups/0"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 215.54999,
+              "t": 598.0029296875,
+              "r": 382.19061692,
+              "b": 577.4988128199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              70
+            ]
+          }
+        ],
+        "orig": "Yes, we did have our disagreements, but that's water under the bridge.",
+        "text": "Yes, we did have our disagreements, but that's water under the bridge."
+      },
+      {
+        "self_ref": "#/texts/31",
+        "parent": {
+          "$ref": "#/groups/0"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 215.54999,
+              "t": 563.4951196874999,
+              "r": 264.86102519,
+              "b": 555.4128828199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              11
+            ]
+          }
+        ],
+        "orig": "Sol.670.(a)",
+        "text": "Sol.670.(a)"
+      },
+      {
+        "self_ref": "#/texts/32",
+        "parent": {
+          "$ref": "#/groups/0"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 215.54999,
+              "t": 551.0732396875001,
+              "r": 363.99286442000005,
+              "b": 542.9910028199854,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              37
+            ]
+          }
+        ],
+        "orig": "To twiddle one's thumbs - To be idle.",
+        "text": "To twiddle one's thumbs - To be idle."
+      },
+      {
+        "self_ref": "#/texts/33",
+        "parent": {
+          "$ref": "#/groups/5"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 215.54999,
+              "t": 538.6513696874999,
+              "r": 382.38104192000003,
+              "b": 505.72538281998527,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              96
+            ]
+          }
+        ],
+        "orig": "E.g. I  arrived  early  for  the  meeting  so  I was  twiddling  my  thumbs  for  half  an hour.",
+        "text": "E.g. I  arrived  early  for  the  meeting  so  I was  twiddling  my  thumbs  for  half  an hour.",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/34",
+        "parent": {
+          "$ref": "#/groups/0"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 215.54999,
+              "t": 490.3427696875,
+              "r": 264.73358369,
+              "b": 482.2605328199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              11
+            ]
+          }
+        ],
+        "orig": "Sol.671.(c)",
+        "text": "Sol.671.(c)"
+      },
+      {
+        "self_ref": "#/texts/35",
+        "parent": {
+          "$ref": "#/groups/0"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 215.54999,
+              "t": 477.9208996875,
+              "r": 382.29168691999996,
+              "b": 407.7292828199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              218
+            ]
+          }
+        ],
+        "orig": "To sleep like a dog - To sleep soundly E.g. He  slept  like a dog, sixteen hours a day,  rising  to  eat  and  smoke,  and  then falling  back  in his bunk, where he coiled himself very much  like  a  hibernating bear.",
+        "text": "To sleep like a dog - To sleep soundly E.g. He  slept  like a dog, sixteen hours a day,  rising  to  eat  and  smoke,  and  then falling  back  in his bunk, where he coiled himself very much  like  a  hibernating bear."
+      },
+      {
+        "self_ref": "#/texts/36",
+        "parent": {
+          "$ref": "#/groups/0"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 215.54999,
+              "t": 392.3466796875,
+              "r": 382.63153442,
+              "b": 359.42069281998533,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              96
+            ]
+          }
+        ],
+        "orig": "Sol.672.(d) Apropos of nothing - Having no  relevance  to  any previous discussion or situation.",
+        "text": "Sol.672.(d) Apropos of nothing - Having no  relevance  to  any previous discussion or situation."
+      },
+      {
+        "self_ref": "#/texts/37",
+        "parent": {
+          "$ref": "#/groups/0"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 215.54999,
+              "t": 355.0810496875,
+              "r": 382.58612192,
+              "b": 334.57694281998533,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              69
+            ]
+          }
+        ],
+        "orig": "E.g . So, apropos of nothing, I need to ask you about one last thing.",
+        "text": "E.g . So, apropos of nothing, I need to ask you about one last thing."
+      },
+      {
+        "self_ref": "#/texts/38",
+        "parent": {
+          "$ref": "#/groups/0"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 215.54999,
+              "t": 319.19823968749995,
+              "r": 264.86102519,
+              "b": 311.1160028199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              11
+            ]
+          }
+        ],
+        "orig": "Sol.673.(a)",
+        "text": "Sol.673.(a)"
+      },
+      {
+        "self_ref": "#/texts/39",
+        "parent": {
+          "$ref": "#/groups/0"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 215.54999,
+              "t": 306.77636968750005,
+              "r": 365.04755192000005,
+              "b": 298.6941328199854,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              33
+            ]
+          }
+        ],
+        "orig": "Neck of the woods - Neighbourhood",
+        "text": "Neck of the woods - Neighbourhood"
+      },
+      {
+        "self_ref": "#/texts/40",
+        "parent": {
+          "$ref": "#/groups/6"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 215.54999,
+              "t": 294.35448968749995,
+              "r": 382.49237192,
+              "b": 273.8503828199854,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              65
+            ]
+          }
+        ],
+        "orig": "E.g  - I  haven't  been  in  this  neck  of  the woods for years.",
+        "text": "E.g  - I  haven't  been  in  this  neck  of  the woods for years.",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/41",
+        "parent": {
+          "$ref": "#/groups/7"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 215.54999,
+              "t": 261.22948968749995,
+              "r": 386.52069692,
+              "b": 215.88163281998538,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              145
+            ]
+          }
+        ],
+        "orig": "Sol.674.(d)  Zero  tolerance  - A  policy  of not allowing any violations of a rule or law E.g. I need zero tolerance in the recruitment process.",
+        "text": "Sol.674.(d)  Zero  tolerance  - A  policy  of not allowing any violations of a rule or law E.g. I need zero tolerance in the recruitment process.",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/42",
+        "parent": {
+          "$ref": "#/groups/0"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 215.54999,
+              "t": 203.25683968750002,
+              "r": 382.57733192,
+              "b": 182.75272281998537,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              67
+            ]
+          }
+        ],
+        "orig": "Sol.675.(a) To bridge the gap - To reduce differences and reconcile",
+        "text": "Sol.675.(a) To bridge the gap - To reduce differences and reconcile"
+      },
+      {
+        "self_ref": "#/texts/43",
+        "parent": {
+          "$ref": "#/groups/8"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 215.54999,
+              "t": 178.41308968750002,
+              "r": 382.77947942000003,
+              "b": 145.48710281998535,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              88
+            ]
+          }
+        ],
+        "orig": "E.g. The  idea  was  to  bridge  the  gap between citizens and the Union's institutions.",
+        "text": "E.g. The  idea  was  to  bridge  the  gap between citizens and the Union's institutions.",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/44",
+        "parent": {
+          "$ref": "#/groups/9"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 215.54999,
+              "t": 132.86620968750003,
+              "r": 382.70038442,
+              "b": 99.94022281998537,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              122
+            ]
+          }
+        ],
+        "orig": "Sol.676.(a) High and dry - Abandoned E.g  - They  pulled  out  of  the  deal  at  the last minute leaving us high and dry.",
+        "text": "Sol.676.(a) High and dry - Abandoned E.g  - They  pulled  out  of  the  deal  at  the last minute leaving us high and dry.",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/45",
+        "parent": {
+          "$ref": "#/groups/0"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 215.54999,
+              "t": 87.31933968750002,
+              "r": 382.73993144,
+              "b": 54.39335281998535,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              101
+            ]
+          }
+        ],
+        "orig": "Sol.677.(a) The whole ball  of  wax  - everything related to a particular situation; the whole thing.",
+        "text": "Sol.677.(a) The whole ball  of  wax  - everything related to a particular situation; the whole thing."
+      },
+      {
+        "self_ref": "#/texts/46",
+        "parent": {
+          "$ref": "#/groups/0"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 215.54999,
+              "t": 50.05370968750003,
+              "r": 382.47626192,
+              "b": 29.549602819985353,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              82
+            ]
+          }
+        ],
+        "orig": "E.g  - He  came  back  from  Chicago  with the contract for the whole ball of wax.",
+        "text": "E.g  - He  came  back  from  Chicago  with the contract for the whole ball of wax."
+      },
+      {
+        "self_ref": "#/texts/47",
+        "parent": {
+          "$ref": "#/groups/0"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 402.30002,
+              "t": 814.6982416875001,
+              "r": 569.13400442,
+              "b": 769.3503798199854,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              133
+            ]
+          }
+        ],
+        "orig": "Sol.678.(d) Method  to  my  madness  - Strange or crazy  actions  that  appear meaningless but in the end are done for a good reason.",
+        "text": "Sol.678.(d) Method  to  my  madness  - Strange or crazy  actions  that  appear meaningless but in the end are done for a good reason."
+      },
+      {
+        "self_ref": "#/texts/48",
+        "parent": {
+          "$ref": "#/groups/0"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 402.30002,
+              "t": 765.0068356875,
+              "r": 569.18234192,
+              "b": 732.0808488199854,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              102
+            ]
+          }
+        ],
+        "orig": "E.g. He  keeps  talking  to  himself  loudly, but  he  insists  there  is  a  method  in  his madness.",
+        "text": "E.g. He  keeps  talking  to  himself  loudly, but  he  insists  there  is  a  method  in  his madness."
+      },
+      {
+        "self_ref": "#/texts/49",
+        "parent": {
+          "$ref": "#/groups/0"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 402.30002,
+              "t": 720.8427736875,
+              "r": 568.95675644,
+              "b": 712.7605368199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              39
+            ]
+          }
+        ],
+        "orig": "Sol.679.(a) To lay someone by the heels",
+        "text": "Sol.679.(a) To lay someone by the heels"
+      },
+      {
+        "self_ref": "#/texts/50",
+        "parent": {
+          "$ref": "#/groups/10"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 402.30002,
+              "t": 708.4208986875,
+              "r": 535.38839942,
+              "b": 700.3386618199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              32
+            ]
+          }
+        ],
+        "orig": "- To confine somebody in prison.",
+        "text": "To confine somebody in prison.",
+        "enumerated": false,
+        "marker": "-"
+      },
+      {
+        "self_ref": "#/texts/51",
+        "parent": {
+          "$ref": "#/groups/11"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 402.30002,
+              "t": 695.9990236875,
+              "r": 569.18673692,
+              "b": 675.4949118199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              54
+            ]
+          }
+        ],
+        "orig": "E.g. Superior  forces  laid the invaders by the heels.",
+        "text": "E.g. Superior  forces  laid the invaders by the heels.",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/52",
+        "parent": {
+          "$ref": "#/groups/0"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 402.30002,
+              "t": 664.2529296875,
+              "r": 569.51779394,
+              "b": 631.3269428199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              90
+            ]
+          }
+        ],
+        "orig": "Sol.680.(b) Have  people  rolling  in  the aisles - Make an audience laugh uncontrollably.",
+        "text": "Sol.680.(b) Have  people  rolling  in  the aisles - Make an audience laugh uncontrollably."
+      },
+      {
+        "self_ref": "#/texts/53",
+        "parent": {
+          "$ref": "#/groups/12"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 402.30002,
+              "t": 626.9872996875,
+              "r": 569.00948942,
+              "b": 606.4831928199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              62
+            ]
+          }
+        ],
+        "orig": "E.g. The  comedian  made  the  audience rolling in the aisles.",
+        "text": "E.g. The  comedian  made  the  audience rolling in the aisles.",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/54",
+        "parent": {
+          "$ref": "#/groups/0"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 402.30002,
+              "t": 593.8622996875,
+              "r": 449.62472744,
+              "b": 585.7800628199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              11
+            ]
+          }
+        ],
+        "orig": "Sol.681.(d)",
+        "text": "Sol.681.(d)"
+      },
+      {
+        "self_ref": "#/texts/55",
+        "parent": {
+          "$ref": "#/groups/0"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 402.30002,
+              "t": 581.4404296875,
+              "r": 538.34591942,
+              "b": 573.3581928199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              34
+            ]
+          }
+        ],
+        "orig": "To breast the tape - To win a race",
+        "text": "To breast the tape - To win a race"
+      },
+      {
+        "self_ref": "#/texts/56",
+        "parent": {
+          "$ref": "#/groups/0"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 402.30002,
+              "t": 569.0185496875,
+              "r": 568.95968942,
+              "b": 548.5144428199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              57
+            ]
+          }
+        ],
+        "orig": "E.g.- Goutam is able to sprint ahead and breast the tape.",
+        "text": "E.g.- Goutam is able to sprint ahead and breast the tape."
+      },
+      {
+        "self_ref": "#/texts/57",
+        "parent": {
+          "$ref": "#/groups/0"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 402.30002,
+              "t": 535.8935496875,
+              "r": 568.81173692,
+              "b": 515.3894428199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              69
+            ]
+          }
+        ],
+        "orig": "Sol.682.(d)  Good  grief  - An  expression of surprise or frustration",
+        "text": "Sol.682.(d)  Good  grief  - An  expression of surprise or frustration"
+      },
+      {
+        "self_ref": "#/texts/58",
+        "parent": {
+          "$ref": "#/groups/13"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 402.30002,
+              "t": 511.0497996875,
+              "r": 569.1047094200001,
+              "b": 490.54569281998533,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              66
+            ]
+          }
+        ],
+        "orig": "E.g. Oh  God,  good  grief  we  are  again stuck in a traffic jam.",
+        "text": "E.g. Oh  God,  good  grief  we  are  again stuck in a traffic jam.",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/59",
+        "parent": {
+          "$ref": "#/groups/0"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 402.30002,
+              "t": 477.9208996875,
+              "r": 569.15158394,
+              "b": 457.4167828199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              72
+            ]
+          }
+        ],
+        "orig": "Sol.683.(d)  To  jump  out  of  one's  skin  - To be extremely surprised",
+        "text": "Sol.683.(d)  To  jump  out  of  one's  skin  - To be extremely surprised"
+      },
+      {
+        "self_ref": "#/texts/60",
+        "parent": {
+          "$ref": "#/groups/0"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 402.30002,
+              "t": 453.0771496875,
+              "r": 568.83077942,
+              "b": 432.5730328199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              59
+            ]
+          }
+        ],
+        "orig": "E.g. My friends made me jump out of my skin on my birthday.",
+        "text": "E.g. My friends made me jump out of my skin on my birthday."
+      },
+      {
+        "self_ref": "#/texts/61",
+        "parent": {
+          "$ref": "#/groups/0"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 402.30002,
+              "t": 421.3310496875,
+              "r": 569.23947692,
+              "b": 388.40506281998535,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              90
+            ]
+          }
+        ],
+        "orig": "Sol.684.(a) Penny wise and pound foolish  - Careless  with  large  amounts, but not small.",
+        "text": "Sol.684.(a) Penny wise and pound foolish  - Careless  with  large  amounts, but not small."
+      },
+      {
+        "self_ref": "#/texts/62",
+        "parent": {
+          "$ref": "#/groups/0"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 402.30002,
+              "t": 384.0654296875,
+              "r": 569.39035442,
+              "b": 326.29569281998533,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              205
+            ]
+          }
+        ],
+        "orig": "E.g- someone who will drive across town to  save  five  cents  a  gallon  on  gasoline but  just  recently  purchased  a BMW that he or she cannot afford could be said to be 'penny wise and pound foolish.'",
+        "text": "E.g- someone who will drive across town to  save  five  cents  a  gallon  on  gasoline but  just  recently  purchased  a BMW that he or she cannot afford could be said to be 'penny wise and pound foolish.'"
+      },
+      {
+        "self_ref": "#/texts/63",
+        "parent": {
+          "$ref": "#/groups/0"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 402.30002,
+              "t": 313.6747996875,
+              "r": 569.03292692,
+              "b": 280.74881281998535,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              113
+            ]
+          }
+        ],
+        "orig": "Sol.685.(d) Appeal to Caesar - Appeal to the highest possible authority E.g. Paul appealed to Caesar for justice.",
+        "text": "Sol.685.(d) Appeal to Caesar - Appeal to the highest possible authority E.g. Paul appealed to Caesar for justice."
+      },
+      {
+        "self_ref": "#/texts/64",
+        "parent": {
+          "$ref": "#/groups/0"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 402.30002,
+              "t": 268.1279296875,
+              "r": 569.40792692,
+              "b": 222.78006281998535,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              159
+            ]
+          }
+        ],
+        "orig": "Sol.686.(b)  A  bite  at  the  cherry  - An attempt or opportunity to do something. E.g. I  got  a  bite  at  the  cherry  after  my first attempt at the task.",
+        "text": "Sol.686.(b)  A  bite  at  the  cherry  - An attempt or opportunity to do something. E.g. I  got  a  bite  at  the  cherry  after  my first attempt at the task."
+      },
+      {
+        "self_ref": "#/texts/65",
+        "parent": {
+          "$ref": "#/groups/14"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 402.30002,
+              "t": 211.54198968749995,
+              "r": 569.51925692,
+              "b": 191.03788281998538,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              73
+            ]
+          }
+        ],
+        "orig": "Sol.687.(a)  Save  your  breath  - To  make an effort that will be futile",
+        "text": "Sol.687.(a)  Save  your  breath  - To  make an effort that will be futile",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/66",
+        "parent": {
+          "$ref": "#/groups/0"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 402.30002,
+              "t": 186.69823968749995,
+              "r": 568.99337942,
+              "b": 128.92460281998535,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              181
+            ]
+          }
+        ],
+        "orig": "E.g. If  you  tell  someone  to  save  their breath,  you  mean  that  they  should  not bother  saying  something,  because  you will not agree to it or you do not want to hear it.",
+        "text": "E.g. If  you  tell  someone  to  save  their breath,  you  mean  that  they  should  not bother  saying  something,  because  you will not agree to it or you do not want to hear it."
+      },
+      {
+        "self_ref": "#/texts/67",
+        "parent": {
+          "$ref": "#/groups/0"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 402.30002,
+              "t": 119.0654296875,
+              "r": 569.46798692,
+              "b": 98.56131281998535,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              62
+            ]
+          }
+        ],
+        "orig": "Sol.688.(b) A beast of burden - An animal that carries luggage",
+        "text": "Sol.688.(b) A beast of burden - An animal that carries luggage"
+      },
+      {
+        "self_ref": "#/texts/68",
+        "parent": {
+          "$ref": "#/groups/0"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 402.30002,
+              "t": 94.2216796875,
+              "r": 569.36984192,
+              "b": 73.71756281998535,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              78
+            ]
+          }
+        ],
+        "orig": "E.g. One  beast  of  burden  is  not enough to pull the cart. Get another one.",
+        "text": "E.g. One  beast  of  burden  is  not enough to pull the cart. Get another one."
+      },
+      {
+        "self_ref": "#/texts/69",
+        "parent": {
+          "$ref": "#/groups/0"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 402.30002,
+              "t": 61.0966796875,
+              "r": 569.13693692,
+              "b": 28.170692819985334,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              90
+            ]
+          }
+        ],
+        "orig": "Sol.689.(a)  Cast  someone  adrift  - To leave  someone  without  any  support  or purpose",
+        "text": "Sol.689.(a)  Cast  someone  adrift  - To leave  someone  without  any  support  or purpose"
+      },
+      {
+        "self_ref": "#/texts/70",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "furniture",
+        "label": "page_footer",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 99.3266505,
+              "t": 21.989447959472614,
+              "r": 495.95088382500006,
+              "b": 13.761151895774901,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              109
+            ]
+          }
+        ],
+        "orig": "www.ssccglpinnacle.com                                                 Download Pinnacle Exam Preparation App",
+        "text": "www.ssccglpinnacle.com                                                 Download Pinnacle Exam Preparation App"
+      }
+    ],
+    "pictures": [],
+    "tables": [],
+    "key_value_items": [],
+    "form_items": [],
+    "pages": {
+      "1": {
+        "size": {
+          "width": 596.0,
+          "height": 842.0
+        },
+        "page_no": 1
+      }
+    }
+  }
+}

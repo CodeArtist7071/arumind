@@ -1,0 +1,5 @@
+transformers>=4.40,<5
+torch>=2.6,<3
+Pillow>=10,<13
+sentencepiece>=0.2,<1
+opencv-contrib-python==4.10.0.84

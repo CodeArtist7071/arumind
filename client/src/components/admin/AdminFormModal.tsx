@@ -63,22 +63,24 @@ export const AdminFormModal: React.FC<AdminFormModalProps> = ({
   if (!isOpen) return null;
 
   return (
-    <div className="fixed inset-0 z-60 flex items-center justify-center p-4 bg-slate-950/40 backdrop-blur-md animate-in fade-in duration-300">
-      <div className="bg-white dark:bg-slate-900 w-full max-w-xl max-h-[90vh] flex flex-col rounded-3xl shadow-2xl border border-[#16a34a]/10 overflow-hidden">
-        <div className="flex items-center justify-between px-10 py-8 border-b border-slate-100 dark:border-slate-800 shrink-0">
+    <div className="fixed inset-0 z-[60] flex items-center justify-center bg-[#10170f]/45 p-3 backdrop-blur-sm animate-in fade-in duration-200 sm:p-6">
+      <div role="dialog" aria-modal="true" aria-labelledby="admin-form-title" className="flex max-h-[min(88vh,800px)] w-full max-w-xl flex-col overflow-hidden rounded-2xl border border-[#e4e9df] bg-[#fbfcf8] shadow-[0_24px_80px_rgba(14,27,12,0.24)] dark:border-white/10 dark:bg-[#171e17]">
+        <div className="flex shrink-0 items-start justify-between gap-4 border-b border-[#e7ebe2] px-5 py-5 dark:border-white/10 sm:px-7">
           <div>
-            <h3 className="text-2xl font-bold tracking-tight text-slate-800 dark:text-slate-100 italic">
+            <h3 id="admin-form-title" className="text-xl font-semibold tracking-tight text-[#1b2419] dark:text-[#e8eee4]">
               {title}
             </h3>
-            <p className="text-[10px] uppercase font-black tracking-[0.3em] text-[#16a34a] mt-1">
-              Update the form fields below
+            <p className="mt-1.5 text-sm text-[#778171] dark:text-[#a6b09f]">
+              Complete the details below, then save your changes.
             </p>
           </div>
           <button
+            type="button"
+            aria-label="Close form"
             onClick={onClose}
-            className="text-slate-400 hover:text-slate-900 dark:hover:text-slate-100 p-2.5 hover:bg-slate-100 dark:hover:bg-slate-800 rounded-2xl transition-all"
+            className="grid size-9 shrink-0 place-items-center rounded-xl text-[#788473] transition hover:bg-[#edf1e9] hover:text-[#263b22] dark:hover:bg-white/[0.06] dark:hover:text-white"
           >
-            <X size={24} />
+            <X size={19} />
           </button>
         </div>
 
@@ -86,19 +88,20 @@ export const AdminFormModal: React.FC<AdminFormModalProps> = ({
           onSubmit={handleSubmit(onSubmit)}
           className="flex flex-col flex-1 overflow-hidden"
         >
-          <div className="p-10 flex-1 overflow-y-auto custom-scrollbar space-y-8">
-            <div className="grid grid-cols-1 gap-8">
+          <div className="flex-1 space-y-5 overflow-y-auto px-5 py-6 sm:px-7">
+            <div className="grid grid-cols-1 gap-5 sm:grid-cols-2">
               {fields.map((field) => (
-                <div key={field.name} className="flex flex-col gap-3">
-                  <label className="text-[11px] font-black uppercase tracking-[0.25em] text-slate-500 flex items-center gap-2">
+                <div key={field.name} className={`flex flex-col gap-2 ${field.type === "textarea" || (field.type === "select" && field.multiple) ? "sm:col-span-2" : ""}`}>
+                  <label htmlFor={`admin-field-${field.name}`} className="flex items-center gap-1.5 text-sm font-medium text-[#34402f] dark:text-[#d6dfd1]">
                     {field.label} {field.required && <span className="text-[#16a34a]">*</span>}
                   </label>
 
                   {field.type === "textarea" ? (
                     <textarea
+                      id={`admin-field-${field.name}`}
                       disabled={field.disabled}
                       {...register(field.name, { required: field.required })}
-                      className="bg-slate-50 dark:bg-slate-800/50 rounded-2xl px-6 py-5 text-sm font-medium border border-slate-200/50 dark:border-slate-700/30 focus:ring-2 focus:ring-[#16a34a]/20 focus:border-[#16a34a] focus:bg-white outline-none transition-all min-h-[140px] disabled:opacity-50"
+                      className="min-h-28 rounded-xl border border-[#dfe6d9] bg-white px-3.5 py-3 text-sm text-[#263b22] outline-none transition placeholder:text-[#9aa493] focus:border-[#7ba36e] focus:ring-4 focus:ring-[#7ba36e]/10 disabled:opacity-50 dark:border-white/10 dark:bg-[#111711] dark:text-[#e8eee4]"
                     />
                   ) : field.type === "select" && field.multiple ? (
                     <Controller
@@ -106,7 +109,7 @@ export const AdminFormModal: React.FC<AdminFormModalProps> = ({
                       control={control}
                       rules={{ required: field.required }}
                       render={({ field: { value, onChange } }) => (
-                        <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 p-6 bg-slate-50 dark:bg-slate-800/30 rounded-3xl border border-slate-200/50 dark:border-slate-800">
+                        <div id={`admin-field-${field.name}`} className="grid grid-cols-1 gap-2 rounded-xl border border-[#e3e9de] bg-white p-3 dark:border-white/10 dark:bg-[#111711] sm:grid-cols-2">
                           {field.options?.map((opt) => {
                             const isSelected = Array.isArray(value) && value.includes(opt.value);
                             return (
@@ -121,14 +124,14 @@ export const AdminFormModal: React.FC<AdminFormModalProps> = ({
                                     onChange([...newValue, opt.value]);
                                   }
                                 }}
-                                className={`flex items-center gap-3 px-4 py-3 rounded-2xl text-[11px] font-black uppercase tracking-widest transition-all border ${
+                                className={`flex min-h-11 items-center gap-3 rounded-lg border px-3 py-2 text-left text-xs font-medium transition ${
                                   isSelected
-                                    ? "bg-[#16a34a] text-white border-[#16a34a] shadow-lg shadow-[#16a34a]/20 scale-[1.02]"
-                                    : "bg-white dark:bg-slate-800 text-slate-500 border-slate-100 dark:border-slate-700 hover:border-[#16a34a]/30"
+                                    ? "border-[#7ba36e] bg-[#edf4e9] text-[#285922] dark:bg-[#263d24] dark:text-[#d8efd0]"
+                                    : "border-transparent bg-[#f7f9f5] text-[#687565] hover:bg-[#edf3e9] dark:bg-white/[0.04] dark:text-[#aeb9aa]"
                                 }`}
                               >
-                                <div className={`size-4 rounded-md border flex items-center justify-center transition-all ${
-                                    isSelected ? "bg-white/20 border-white" : "bg-slate-50 border-slate-200"
+                                <div className={`grid size-4 shrink-0 place-items-center rounded border transition ${
+                                    isSelected ? "border-[#548348] bg-[#548348] text-white" : "border-[#cbd4c5] bg-white dark:border-white/20 dark:bg-[#151c15]"
                                 }`}>
                                     {isSelected && <Check size={10} strokeWidth={4} />}
                                 </div>
@@ -141,9 +144,10 @@ export const AdminFormModal: React.FC<AdminFormModalProps> = ({
                     />
                   ) : field.type === "select" ? (
                     <select
+                      id={`admin-field-${field.name}`}
                       disabled={field.disabled}
                       {...register(field.name, { required: field.required })}
-                      className="bg-slate-50 dark:bg-slate-800/50 rounded-2xl px-6 py-5 text-sm font-medium border border-slate-200/50 dark:border-slate-700/30 focus:ring-2 focus:ring-[#16a34a]/20 focus:border-[#16a34a] focus:bg-white outline-none transition-all cursor-pointer h-[60px] appearance-none disabled:opacity-50"
+                      className="min-h-11 rounded-xl border border-[#dfe6d9] bg-white px-3.5 text-sm text-[#263b22] outline-none transition focus:border-[#7ba36e] focus:ring-4 focus:ring-[#7ba36e]/10 disabled:opacity-50 dark:border-white/10 dark:bg-[#111711] dark:text-[#e8eee4]"
                     >
                       <option value="">Select option...</option>
                       {field.options?.map((opt) => (
@@ -155,27 +159,29 @@ export const AdminFormModal: React.FC<AdminFormModalProps> = ({
                   ) : field.type === "checkbox" ? (
                     <div className="flex items-center gap-4 py-3">
                       <input
+                        id={`admin-field-${field.name}`}
                         type="checkbox"
                         {...register(field.name)}
-                        className="w-6 h-6 rounded-xl text-[#16a34a] focus:ring-[#16a34a] cursor-pointer"
+                        className="size-4 rounded border-[#cbd4c5] text-[#315f29] focus:ring-[#7ba36e]"
                       />
-                      <span className="text-sm font-bold text-slate-700 dark:text-slate-300">
+                      <label htmlFor={`admin-field-${field.name}`} className="text-sm text-[#687565] dark:text-[#aeb9aa]">
                         Active Status
-                      </span>
+                      </label>
                     </div>
                   ) : (
                     <input
+                      id={`admin-field-${field.name}`}
                       type={field.type}
                       disabled={field.disabled}
                       {...register(field.name, {
                         required: field.required,
                         valueAsNumber: field.type === "number",
                       })}
-                      className="bg-slate-50 dark:bg-slate-800/50 rounded-2xl px-6 py-5 text-sm font-medium border border-slate-200/50 dark:border-slate-700/30 focus:ring-2 focus:ring-[#16a34a]/20 focus:border-[#16a34a] focus:bg-white outline-none transition-all h-[60px] disabled:opacity-50"
+                      className="min-h-11 rounded-xl border border-[#dfe6d9] bg-white px-3.5 text-sm text-[#263b22] outline-none transition focus:border-[#7ba36e] focus:ring-4 focus:ring-[#7ba36e]/10 disabled:opacity-50 dark:border-white/10 dark:bg-[#111711] dark:text-[#e8eee4]"
                     />
                   )}
                   {errors[field.name] && (
-                    <span className="text-[10px] text-red-500 font-black uppercase tracking-widest pl-2">
+                    <span role="alert" className="text-xs font-medium text-red-600 dark:text-red-400">
                        This field is required
                     </span>
                   )}
@@ -184,17 +190,17 @@ export const AdminFormModal: React.FC<AdminFormModalProps> = ({
             </div>
           </div>
 
-          <div className="flex items-center justify-end gap-6 px-10 py-8 border-t border-slate-100 dark:border-slate-800/50 shrink-0 bg-slate-50/50 dark:bg-slate-900/30">
+          <div className="flex shrink-0 items-center justify-end gap-2 border-t border-[#e7ebe2] bg-[#f6f8f3] px-5 py-4 dark:border-white/10 dark:bg-[#141a14] sm:px-7">
             <button
               type="button"
               onClick={onClose}
-              className="px-8 py-4 text-[11px] font-black uppercase tracking-widest text-slate-400 hover:text-slate-800 dark:hover:text-slate-200 transition-all font-mono"
+              className="min-h-10 rounded-lg px-4 text-sm font-medium text-[#687565] transition hover:bg-[#e9eee5] hover:text-[#263b22] dark:hover:bg-white/[0.06] dark:hover:text-white"
             >
               Cancel
             </button>
             <button
               type="submit"
-              className="flex items-center gap-4 px-10 py-5 text-[11px] font-black uppercase tracking-widest bg-[#16a34a] text-white rounded-2xl shadow-2xl shadow-[#16a34a]/30 hover:shadow-[#16a34a]/50 hover:-translate-y-0.5 transition-all active:scale-95 disabled:opacity-50"
+              className="flex min-h-10 items-center gap-2 rounded-lg bg-[#24551e] px-4 text-sm font-semibold text-white shadow-sm transition hover:bg-[#173f19] active:scale-[0.98] disabled:opacity-50"
             >
               <Save size={18} />
               Save

@@ -5,6 +5,9 @@ import { supabase } from "../utils/supabase";
 
 export const normalizeExplanations = (questions: any[]) => {
   return questions?.map(q => {
+    const optionRows = q.question_options ?? q.options ?? [];
+    const options = optionRows.map((o: any) => ({ l: o.option_key, v: o.option_text, is_correct: o.is_correct, display_order: o.display_order }));
+    const correctOption = optionRows.find((o: any) => o.is_correct);
     // Process concept explanations
     const expObj = Array.isArray(q.question_explanations) ? q.question_explanations[0] : q.question_explanations;
     const expArray = expObj 
@@ -19,6 +22,8 @@ export const normalizeExplanations = (questions: any[]) => {
 
     return {
       ...q,
+      options,
+      correct_answer: correctOption?.option_key ?? q.correct_answer,
       question_explanations: (expArray && expArray.length > 0) ? expArray : undefined,
       question_correct_explanations: (correctExpArray && correctExpArray.length > 0) ? correctExpArray : undefined
     };
@@ -33,14 +38,12 @@ export const getQuestions = async (
     .from("questions")
     .select(`
       id,
-      exam_id,
       subject_id,
       chapter_id,
-      correct_answer,
       difficulty_level,
       marks,
       negative_marks,
-      options,
+      question_options (id, option_key, option_text, display_order, is_correct),
       question,
       question_number,
       diagram_url,
@@ -160,20 +163,7 @@ export const getAdaptiveQuestions = async (
 
   let query = supabase
     .from(table)
-    .select(`
-      id,
-      exam_id,
-      subject_id,
-      chapter_id,
-      question,
-      options,
-      correct_answer,
-      difficulty_level,
-      marks,
-      negative_marks,
-      diagram_url,
-      diagram_present
-    `)
+      .select(`id, subject_id, chapter_id, question, question_type, difficulty_level, marks, negative_marks, diagram_url, diagram_present, question_options(id, option_key, option_text, display_order, is_correct)`)
     .eq("chapter_id", chapterId)
     .eq("difficulty_level", difficulty)
     .eq("is_active", true);
@@ -198,7 +188,7 @@ export const getAdaptiveQuestions = async (
 
     const { data: fallbackData } = await supabase
       .from(table)
-      .select("id, exam_id, subject_id, chapter_id, question, options, correct_answer, difficulty_level, marks, negative_marks, diagram_url, diagram_present")
+      .select("id, subject_id, chapter_id, question, question_type, difficulty_level, marks, negative_marks, diagram_url, diagram_present, question_options(id, option_key, option_text, display_order, is_correct)")
       .eq("chapter_id", chapterId)
       .eq("difficulty_level", fallback)
       .eq("is_active", true)
@@ -229,14 +219,12 @@ export const computeInitialTheta = async (
 
   const { data: answers } = await supabase
     .from("test_attempt_answers")
-    .select("selected_option, questions(correct_answer)")
+    .select("selected_option, questions(question_options(option_key, is_correct))")
     .in("attempt_id", attemptIds);
 
   if (!answers?.length) return 0.3;
 
-  const correct = answers.filter(
-    (a) => a.selected_option === (a.questions as any)?.correct_answer
-  ).length;
+  const correct = answers.filter((a) => (a.questions as any)?.question_options?.some((option: any) => option.option_key === a.selected_option && option.is_correct)).length;
 
   const accuracy = correct / answers.length;
 
@@ -262,7 +250,7 @@ export const seedAbilityFromMockTest = async (
       questions (
         id,
         chapter_id,
-        correct_answer,
+        question_options(option_key, is_correct),
         difficulty_level
       )
     `)
@@ -288,7 +276,7 @@ export const seedAbilityFromMockTest = async (
       const q = a.questions as any;
       if (!a.selected_option) return; // skipped
       total++;
-      if (a.selected_option === q.correct_answer) correct++;
+      if (q.question_options?.some((option: any) => option.option_key === a.selected_option && option.is_correct)) correct++;
     });
 
     const accuracy = total > 0 ? correct / total : 0;
@@ -320,14 +308,12 @@ export const getQuestionsByIds = async (ids: string[]) => {
     .from("questions")
     .select(`
       id,
-      exam_id,
       subject_id,
       chapter_id,
-      correct_answer,
       difficulty_level,
       marks,
       negative_marks,
-      options,
+      question_options (id, option_key, option_text, display_order, is_correct),
       question,
       question_number,
       diagram_url,

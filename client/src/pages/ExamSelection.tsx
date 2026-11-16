@@ -137,7 +137,7 @@ export default function ExamGoalSelection() {
                 key={exam.id}
                 onClick={() => toggleExam(exam.id)}
                 style={{ animationDelay: `${idx * 40}ms` }}
-                className={`group relative px-4 lg:px-10 py-3 lg:py-5 rounded-full flex items-center gap-2 lg:gap-4 transition-all duration-500 ease-botanical hover:scale-[1.05] active:scale-95 ring-1 ring-black/5 shadow-ambient animate-reveal opacity-0 ${
+                className={`group relative h-10 px-4 lg:px-10 py-3 lg:py-5 rounded-full flex items-center gap-2 lg:gap-4 transition-all duration-500 ease-botanical hover:scale-[1.05] active:scale-95 ring-1 ring-black/5 shadow-ambient animate-reveal opacity-0 ${
                   isSelected 
                     ? "bg-primary text-white shadow-xl shadow-primary/30" 
                     : "bg-surface-container-low text-on-surface-variant hover:bg-surface-container-highest hover:text-on-surface"
@@ -168,7 +168,7 @@ export default function ExamGoalSelection() {
         </div>
 
         {/* BOTTOM ACTION BAR: Weighted Manifestation */}
-        <div className="fixed bottom-0 left-0 right-0 p-5 lg:p-10 pointer-events-none z-50">
+        <div className="fixed bottom-0 border-t-2 border-t-on-surface-variant/40 left-0 right-0 p-5 lg:p-10 pointer-events-none z-50">
           <div className="max-w-300 mx-auto flex justify-end">
             <button
               onClick={handleSaveExams}

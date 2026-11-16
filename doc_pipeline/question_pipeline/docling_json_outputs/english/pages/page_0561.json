@@ -1,0 +1,597 @@
+{
+  "document_id": "english",
+  "source": "english.pdf",
+  "pdf_page": 561,
+  "page_width": 596.0,
+  "page_height": 842.0,
+  "extracted_at": "2026-09-09T11:03:55.177110+00:00",
+  "extraction_version": 4,
+  "ocr_enabled": true,
+  "extraction_detection": {
+    "requested_profile": "auto",
+    "effective_profile": "hybrid",
+    "embedded_text_characters": 1672,
+    "auto_text_threshold": 80
+  },
+  "docling_result": {
+    "status": "success",
+    "errors": []
+  },
+  "content_summary": {
+    "text_items": 2,
+    "text_characters": 126,
+    "table_items": 1,
+    "picture_items": 0,
+    "group_items": 0,
+    "warnings": []
+  },
+  "reading_order": {
+    "source": "docling_iterate_items",
+    "items": [
+      {
+        "reading_order_index": 0,
+        "element_ref": "#/texts/0",
+        "label": "text",
+        "level": 1,
+        "text_preview": "Pinnacle Synonyms"
+      },
+      {
+        "reading_order_index": 1,
+        "element_ref": "#/tables/0",
+        "label": "table",
+        "level": 1,
+        "text_preview": ""
+      }
+    ]
+  },
+  "layout_analysis": {
+    "method": "docling_bbox_left_edge_clustering_v1",
+    "column_count": 1,
+    "confidence": 1.0,
+    "page_width": 596.0,
+    "page_height": 842.0,
+    "columns": [
+      {
+        "column_index": 1,
+        "left": 0.0,
+        "right": 596.0,
+        "detected_start": 28.8,
+        "supporting_elements": 1
+      }
+    ],
+    "elements": [
+      {
+        "element_ref": "#/texts/0",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 1,
+        "column_indices": [
+          1
+        ],
+        "spans_columns": false,
+        "reading_order_index": 0,
+        "bbox": {
+          "l": 28.800003,
+          "t": 830.7925780594726,
+          "r": 95.7084616875,
+          "b": 822.5642819957749,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/1",
+        "element_type": "text",
+        "label": "page_footer",
+        "column_index": 1,
+        "column_indices": [
+          1
+        ],
+        "spans_columns": false,
+        "reading_order_index": null,
+        "bbox": {
+          "l": 99.3266505,
+          "t": 21.989447959472614,
+          "r": 495.95088382500006,
+          "b": 13.761151895774901,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/tables/0",
+        "element_type": "table",
+        "label": "table",
+        "column_index": 1,
+        "column_indices": [
+          1
+        ],
+        "spans_columns": false,
+        "reading_order_index": 1,
+        "bbox": {
+          "l": 27.879470825195312,
+          "t": 826.4018707275391,
+          "r": 562.5488891601562,
+          "b": 25.75384521484375,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      }
+    ],
+    "warnings": []
+  },
+  "structure_chunks": {
+    "enabled": true,
+    "method": "docling_hybrid_chunker",
+    "scope": "page",
+    "items": [
+      {
+        "text": "Pinnacle Synonyms",
+        "meta": {
+          "schema_name": "docling_core.transforms.chunker.DocMeta",
+          "version": "1.0.0",
+          "doc_items": [
+            {
+              "self_ref": "#/texts/0",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 830.7925780594726,
+                    "r": 95.7084616875,
+                    "b": 822.5642819957749,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    8
+                  ]
+                },
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 291.757038,
+                    "t": 830.7925780594726,
+                    "r": 568.8811779375,
+                    "b": 822.5642819957749,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    9,
+                    17
+                  ]
+                }
+              ]
+            }
+          ],
+          "headings": null,
+          "captions": null,
+          "origin": {
+            "mimetype": "application/pdf",
+            "binary_hash": 5820782270700689395,
+            "filename": "english_page_0561.pdf",
+            "uri": null
+          }
+        },
+        "chunk_index": 0,
+        "contextualized_text": "Pinnacle Synonyms"
+      },
+      {
+        "text": "\nstimulating; unexciting but likable. Sol.760.(c) Wander - to walk somewhere slowly with no particular sense of direction or purpose Amble to walk at a slow relaxed speed Bustle - to move in a busy, noisy, or exciting way Stare - to look at somebody or something for a long time because you are surprised, shocked, etc. Trot - to move forward at a speed that is faster than a walk Sol.761.(b) 'Slick' means clever at persuading people but perhaps not completely honest. The given sentence states that the university team won the match in the end with a slick(cunning) move. Hence, 'slick' is the most appropriate answer. Sol.762.(b) Agitated - feeling or appearing troubled or nervous. Initiated - to start something Animated - interesting and full of energy Triumphed - to achieve success Sol.763.(b) Serendipity - the fact of finding something valuable or interesting by accident or something pleasant happening by chance Godsend - something unexpected that is very useful because it comes just when it is needed Sibilance - a hissing quality of sound, or the hissing sound itself Catastrophe - a sudden disaster that causes great suffering or damage",
+        "meta": {
+          "schema_name": "docling_core.transforms.chunker.DocMeta",
+          "version": "1.0.0",
+          "doc_items": [
+            {
+              "self_ref": "#/tables/0",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "table",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 27.879470825195312,
+                    "t": 826.4018707275391,
+                    "r": 562.5488891601562,
+                    "b": 25.75384521484375,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    0
+                  ]
+                }
+              ]
+            }
+          ],
+          "headings": null,
+          "captions": null,
+          "origin": {
+            "mimetype": "application/pdf",
+            "binary_hash": 5820782270700689395,
+            "filename": "english_page_0561.pdf",
+            "uri": null
+          }
+        },
+        "chunk_index": 1,
+        "contextualized_text": "\nstimulating; unexciting but likable. Sol.760.(c) Wander - to walk somewhere slowly with no particular sense of direction or purpose Amble to walk at a slow relaxed speed Bustle - to move in a busy, noisy, or exciting way Stare - to look at somebody or something for a long time because you are surprised, shocked, etc. Trot - to move forward at a speed that is faster than a walk Sol.761.(b) 'Slick' means clever at persuading people but perhaps not completely honest. The given sentence states that the university team won the match in the end with a slick(cunning) move. Hence, 'slick' is the most appropriate answer. Sol.762.(b) Agitated - feeling or appearing troubled or nervous. Initiated - to start something Animated - interesting and full of energy Triumphed - to achieve success Sol.763.(b) Serendipity - the fact of finding something valuable or interesting by accident or something pleasant happening by chance Godsend - something unexpected that is very useful because it comes just when it is needed Sibilance - a hissing quality of sound, or the hissing sound itself Catastrophe - a sudden disaster that causes great suffering or damage"
+      },
+      {
+        "text": " Surreptitious - done secretly Sol.764.(c) Complements - a thing that goes together well with something else Matches - to look good with something else Disarrays - a state of confusion and complete lack of organization in a situation or place Relegates - to put somebody/something into a lower level or position Drains - a pipe or hole in the ground that dirty water etc. goes down to be carried away Sol.765.(c) Sanguinity - cheerfully optimistic Optimism - the feeling that the future will be good or successful Acrimony - angry and bitter feelings or words Despondence - feeling or showing extreme discouragement, dejection, or depression despondent,  = Distrust - the feeling that you",
+        "meta": {
+          "schema_name": "docling_core.transforms.chunker.DocMeta",
+          "version": "1.0.0",
+          "doc_items": [
+            {
+              "self_ref": "#/tables/0",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "table",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 27.879470825195312,
+                    "t": 826.4018707275391,
+                    "r": 562.5488891601562,
+                    "b": 25.75384521484375,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    0
+                  ]
+                }
+              ]
+            }
+          ],
+          "headings": null,
+          "captions": null,
+          "origin": {
+            "mimetype": "application/pdf",
+            "binary_hash": 5820782270700689395,
+            "filename": "english_page_0561.pdf",
+            "uri": null
+          }
+        },
+        "chunk_index": 2,
+        "contextualized_text": " Surreptitious - done secretly Sol.764.(c) Complements - a thing that goes together well with something else Matches - to look good with something else Disarrays - a state of confusion and complete lack of organization in a situation or place Relegates - to put somebody/something into a lower level or position Drains - a pipe or hole in the ground that dirty water etc. goes down to be carried away Sol.765.(c) Sanguinity - cheerfully optimistic Optimism - the feeling that the future will be good or successful Acrimony - angry and bitter feelings or words Despondence - feeling or showing extreme discouragement, dejection, or depression despondent,  = Distrust - the feeling that you"
+      }
+    ]
+  },
+  "content_assets": {
+    "tables": [
+      {
+        "element_ref": "#/tables/0",
+        "label": "table",
+        "provenance": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 27.879470825195312,
+              "t": 826.4018707275391,
+              "r": 562.5488891601562,
+              "b": 25.75384521484375,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              0
+            ]
+          }
+        ],
+        "captions": [],
+        "num_rows": 2,
+        "num_cols": 2
+      }
+    ],
+    "figures": []
+  },
+  "docling_document": {
+    "schema_name": "DoclingDocument",
+    "version": "1.10.0",
+    "name": "english_page_0561",
+    "origin": {
+      "mimetype": "application/pdf",
+      "binary_hash": 5820782270700689395,
+      "filename": "english_page_0561.pdf"
+    },
+    "furniture": {
+      "self_ref": "#/furniture",
+      "children": [],
+      "content_layer": "furniture",
+      "name": "_root_",
+      "label": "unspecified"
+    },
+    "body": {
+      "self_ref": "#/body",
+      "children": [
+        {
+          "$ref": "#/texts/0"
+        },
+        {
+          "$ref": "#/tables/0"
+        },
+        {
+          "$ref": "#/texts/1"
+        }
+      ],
+      "content_layer": "body",
+      "name": "_root_",
+      "label": "unspecified"
+    },
+    "groups": [],
+    "texts": [
+      {
+        "self_ref": "#/texts/0",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 830.7925780594726,
+              "r": 95.7084616875,
+              "b": 822.5642819957749,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              8
+            ]
+          },
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 291.757038,
+              "t": 830.7925780594726,
+              "r": 568.8811779375,
+              "b": 822.5642819957749,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              9,
+              17
+            ]
+          }
+        ],
+        "orig": "Pinnacle Synonyms",
+        "text": "Pinnacle Synonyms"
+      },
+      {
+        "self_ref": "#/texts/1",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "furniture",
+        "label": "page_footer",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 99.3266505,
+              "t": 21.989447959472614,
+              "r": 495.95088382500006,
+              "b": 13.761151895774901,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              109
+            ]
+          }
+        ],
+        "orig": "www.ssccglpinnacle.com                                                 Download Pinnacle Exam Preparation App",
+        "text": "www.ssccglpinnacle.com                                                 Download Pinnacle Exam Preparation App"
+      }
+    ],
+    "pictures": [],
+    "tables": [
+      {
+        "self_ref": "#/tables/0",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "table",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 27.879470825195312,
+              "t": 826.4018707275391,
+              "r": 562.5488891601562,
+              "b": 25.75384521484375,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              0
+            ]
+          }
+        ],
+        "captions": [],
+        "references": [],
+        "footnotes": [],
+        "data": {
+          "table_cells": [
+            {
+              "bbox": {
+                "l": 27.350471422076225,
+                "t": 17.934784650802612,
+                "r": 188.22480875253677,
+                "b": 38.14517146348953,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 0,
+              "end_row_offset_idx": 1,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "Unexciting- not interesting, stirring, or",
+              "column_header": true,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 21.44986602663994,
+                "t": 32.477322578430176,
+                "r": 198.3265705704689,
+                "b": 788.5603103637695,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 1,
+              "end_row_offset_idx": 2,
+              "start_col_offset_idx": 0,
+              "end_col_offset_idx": 1,
+              "text": "stimulating; unexciting but likable. Sol.760.(c) Wander - to walk somewhere slowly with no particular sense of direction or purpose Amble to walk at a slow relaxed speed Bustle - to move in a busy, noisy, or exciting way Stare - to look at somebody or something for a long time because you are surprised, shocked, etc. Trot - to move forward at a speed that is faster than a walk Sol.761.(b) 'Slick' means clever at persuading people but perhaps not completely honest. The given sentence states that the university team won the match in the end with a slick(cunning) move. Hence, 'slick' is the most appropriate answer. Sol.762.(b) Agitated - feeling or appearing troubled or nervous. Initiated - to start something Animated - interesting and full of energy Triumphed - to achieve success Sol.763.(b) Serendipity - the fact of finding something valuable or interesting by accident or something pleasant happening by chance Godsend - something unexpected that is very useful because it comes just when it is needed Sibilance - a hissing quality of sound, or the hissing sound itself Catastrophe - a sudden disaster that causes great suffering or damage Surreptitious - done secretly Sol.764.(c) Complements - a thing that goes together well with something else Matches - to look good with something else Disarrays - a state of confusion and complete lack of organization in a situation or place Relegates - to put somebody/something into a lower level or position Drains - a pipe or hole in the ground that dirty water etc. goes down to be carried away Sol.765.(c) Sanguinity - cheerfully optimistic Optimism - the feeling that the future will be good or successful Acrimony - angry and bitter feelings or words Despondence - feeling or showing extreme discouragement, dejection, or depression despondent",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            },
+            {
+              "bbox": {
+                "l": 0.0,
+                "t": 11.909309387207031,
+                "r": 164.55631732940674,
+                "b": 791.6921291351318,
+                "coord_origin": "TOPLEFT"
+              },
+              "row_span": 1,
+              "col_span": 1,
+              "start_row_offset_idx": 1,
+              "end_row_offset_idx": 2,
+              "start_col_offset_idx": 1,
+              "end_col_offset_idx": 2,
+              "text": "Distrust - the feeling that you",
+              "column_header": false,
+              "row_header": false,
+              "row_section": false,
+              "fillable": false
+            }
+          ],
+          "num_rows": 2,
+          "num_cols": 2,
+          "grid": [
+            [
+              {
+                "bbox": {
+                  "l": 27.350471422076225,
+                  "t": 17.934784650802612,
+                  "r": 188.22480875253677,
+                  "b": 38.14517146348953,
+                  "coord_origin": "TOPLEFT"
+                },
+                "row_span": 1,
+                "col_span": 1,
+                "start_row_offset_idx": 0,
+                "end_row_offset_idx": 1,
+                "start_col_offset_idx": 0,
+                "end_col_offset_idx": 1,
+                "text": "Unexciting- not interesting, stirring, or",
+                "column_header": true,
+                "row_header": false,
+                "row_section": false,
+                "fillable": false
+              },
+              {
+                "row_span": 1,
+                "col_span": 1,
+                "start_row_offset_idx": 0,
+                "end_row_offset_idx": 1,
+                "start_col_offset_idx": 1,
+                "end_col_offset_idx": 2,
+                "text": "",
+                "column_header": false,
+                "row_header": false,
+                "row_section": false,
+                "fillable": false
+              }
+            ],
+            [
+              {
+                "bbox": {
+                  "l": 21.44986602663994,
+                  "t": 32.477322578430176,
+                  "r": 198.3265705704689,
+                  "b": 788.5603103637695,
+                  "coord_origin": "TOPLEFT"
+                },
+                "row_span": 1,
+                "col_span": 1,
+                "start_row_offset_idx": 1,
+                "end_row_offset_idx": 2,
+                "start_col_offset_idx": 0,
+                "end_col_offset_idx": 1,
+                "text": "stimulating; unexciting but likable. Sol.760.(c) Wander - to walk somewhere slowly with no particular sense of direction or purpose Amble to walk at a slow relaxed speed Bustle - to move in a busy, noisy, or exciting way Stare - to look at somebody or something for a long time because you are surprised, shocked, etc. Trot - to move forward at a speed that is faster than a walk Sol.761.(b) 'Slick' means clever at persuading people but perhaps not completely honest. The given sentence states that the university team won the match in the end with a slick(cunning) move. Hence, 'slick' is the most appropriate answer. Sol.762.(b) Agitated - feeling or appearing troubled or nervous. Initiated - to start something Animated - interesting and full of energy Triumphed - to achieve success Sol.763.(b) Serendipity - the fact of finding something valuable or interesting by accident or something pleasant happening by chance Godsend - something unexpected that is very useful because it comes just when it is needed Sibilance - a hissing quality of sound, or the hissing sound itself Catastrophe - a sudden disaster that causes great suffering or damage Surreptitious - done secretly Sol.764.(c) Complements - a thing that goes together well with something else Matches - to look good with something else Disarrays - a state of confusion and complete lack of organization in a situation or place Relegates - to put somebody/something into a lower level or position Drains - a pipe or hole in the ground that dirty water etc. goes down to be carried away Sol.765.(c) Sanguinity - cheerfully optimistic Optimism - the feeling that the future will be good or successful Acrimony - angry and bitter feelings or words Despondence - feeling or showing extreme discouragement, dejection, or depression despondent",
+                "column_header": false,
+                "row_header": false,
+                "row_section": false,
+                "fillable": false
+              },
+              {
+                "bbox": {
+                  "l": 0.0,
+                  "t": 11.909309387207031,
+                  "r": 164.55631732940674,
+                  "b": 791.6921291351318,
+                  "coord_origin": "TOPLEFT"
+                },
+                "row_span": 1,
+                "col_span": 1,
+                "start_row_offset_idx": 1,
+                "end_row_offset_idx": 2,
+                "start_col_offset_idx": 1,
+                "end_col_offset_idx": 2,
+                "text": "Distrust - the feeling that you",
+                "column_header": false,
+                "row_header": false,
+                "row_section": false,
+                "fillable": false
+              }
+            ]
+          ]
+        },
+        "annotations": []
+      }
+    ],
+    "key_value_items": [],
+    "form_items": [],
+    "pages": {
+      "1": {
+        "size": {
+          "width": 596.0,
+          "height": 842.0
+        },
+        "page_no": 1
+      }
+    }
+  }
+}

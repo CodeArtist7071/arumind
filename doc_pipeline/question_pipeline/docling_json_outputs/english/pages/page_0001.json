@@ -1,0 +1,1336 @@
+{
+  "document_id": "english",
+  "source": "english.pdf",
+  "pdf_page": 1,
+  "page_width": 595.0,
+  "page_height": 842.0,
+  "extracted_at": "2026-09-09T10:04:45.185764+00:00",
+  "extraction_version": 4,
+  "ocr_enabled": true,
+  "extraction_detection": {
+    "requested_profile": "auto",
+    "effective_profile": "scanned",
+    "embedded_text_characters": 29,
+    "auto_text_threshold": 80
+  },
+  "docling_result": {
+    "status": "success",
+    "errors": []
+  },
+  "content_summary": {
+    "text_items": 14,
+    "text_characters": 333,
+    "table_items": 0,
+    "picture_items": 2,
+    "group_items": 0,
+    "warnings": []
+  },
+  "reading_order": {
+    "source": "docling_iterate_items",
+    "items": [
+      {
+        "reading_order_index": 0,
+        "element_ref": "#/pictures/0",
+        "label": "picture",
+        "level": 1,
+        "text_preview": ""
+      },
+      {
+        "reading_order_index": 1,
+        "element_ref": "#/texts/1",
+        "label": "text",
+        "level": 1,
+        "text_preview": "8th edition Version1"
+      },
+      {
+        "reading_order_index": 2,
+        "element_ref": "#/texts/2",
+        "label": "section_header",
+        "level": 1,
+        "text_preview": "PINNACLE"
+      },
+      {
+        "reading_order_index": 3,
+        "element_ref": "#/texts/3",
+        "label": "section_header",
+        "level": 1,
+        "text_preview": "SSC ENGLISH"
+      },
+      {
+        "reading_order_index": 4,
+        "element_ref": "#/texts/4",
+        "label": "text",
+        "level": 1,
+        "text_preview": "eduquity based pattern"
+      },
+      {
+        "reading_order_index": 5,
+        "element_ref": "#/texts/5",
+        "label": "section_header",
+        "level": 1,
+        "text_preview": "7600+ MCQ ebp"
+      },
+      {
+        "reading_order_index": 6,
+        "element_ref": "#/texts/6",
+        "label": "text",
+        "level": 1,
+        "text_preview": "Till date"
+      },
+      {
+        "reading_order_index": 7,
+        "element_ref": "#/texts/7",
+        "label": "text",
+        "level": 1,
+        "text_preview": "with detailed explanation"
+      },
+      {
+        "reading_order_index": 8,
+        "element_ref": "#/texts/8",
+        "label": "section_header",
+        "level": 1,
+        "text_preview": "Chapter wise"
+      },
+      {
+        "reading_order_index": 9,
+        "element_ref": "#/texts/9",
+        "label": "section_header",
+        "level": 1,
+        "text_preview": "English Medium"
+      },
+      {
+        "reading_order_index": 10,
+        "element_ref": "#/texts/10",
+        "label": "text",
+        "level": 1,
+        "text_preview": "Useful for SSC CGL Tier 1 & Tier 2, SSC CPO, SSC CHSL, SSC JE, SSC MTS, GD, Steno, Delhi Police, Selection post & other Govt. exams"
+      },
+      {
+        "reading_order_index": 11,
+        "element_ref": "#/texts/11",
+        "label": "text",
+        "level": 1,
+        "text_preview": "PINNACLEPUBLICATIONS"
+      },
+      {
+        "reading_order_index": 12,
+        "element_ref": "#/texts/12",
+        "label": "text",
+        "level": 1,
+        "text_preview": "eachbookhas multipurpose uniqueID"
+      },
+      {
+        "reading_order_index": 13,
+        "element_ref": "#/texts/13",
+        "label": "text",
+        "level": 1,
+        "text_preview": "piracy check"
+      },
+      {
+        "reading_order_index": 14,
+        "element_ref": "#/pictures/1",
+        "label": "picture",
+        "level": 1,
+        "text_preview": ""
+      }
+    ]
+  },
+  "layout_analysis": {
+    "method": "docling_bbox_left_edge_clustering_v1",
+    "column_count": 2,
+    "confidence": 1.0,
+    "page_width": 595.0,
+    "page_height": 842.0,
+    "columns": [
+      {
+        "column_index": 1,
+        "left": 0.0,
+        "right": 284.525,
+        "detected_start": 106.717,
+        "supporting_elements": 9
+      },
+      {
+        "column_index": 2,
+        "left": 284.525,
+        "right": 595.0,
+        "detected_start": 462.333,
+        "supporting_elements": 5
+      }
+    ],
+    "elements": [
+      {
+        "element_ref": "#/texts/0",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 1,
+        "column_indices": [
+          1
+        ],
+        "spans_columns": false,
+        "reading_order_index": null,
+        "bbox": {
+          "l": 71.83948771158855,
+          "t": 664.1784261067709,
+          "r": 121.28195190429688,
+          "b": 636.5927327473959,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/1",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 2,
+        "column_indices": [
+          2
+        ],
+        "spans_columns": false,
+        "reading_order_index": 1,
+        "bbox": {
+          "l": 430.6143391927083,
+          "t": 741.4183451334635,
+          "r": 528.2315266927084,
+          "b": 665.4516194661459,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/2",
+        "element_type": "text",
+        "label": "section_header",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 2,
+        "bbox": {
+          "l": 178.7535400390625,
+          "t": 741.4183451334635,
+          "r": 360.0426025390625,
+          "b": 712.1350809733073,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/3",
+        "element_type": "text",
+        "label": "section_header",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 3,
+        "bbox": {
+          "l": 130.15623982747397,
+          "t": 693.4616902669271,
+          "r": 431.4595133463542,
+          "b": 526.6743977864583,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/4",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 4,
+        "bbox": {
+          "l": 96.77201334635417,
+          "t": 518.1864827473958,
+          "r": 527.3863525390625,
+          "b": 457.4979654947917,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/5",
+        "element_type": "text",
+        "label": "section_header",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 5,
+        "bbox": {
+          "l": 137.76277669270834,
+          "t": 443.9173177083333,
+          "r": 434.8401692708333,
+          "b": 380.6824544270833,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/6",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 2,
+        "column_indices": [
+          2
+        ],
+        "spans_columns": false,
+        "reading_order_index": 6,
+        "bbox": {
+          "l": 454.7017008463542,
+          "t": 401.4778238932292,
+          "r": 510.0603434244792,
+          "b": 389.5947672526042,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/7",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 7,
+        "bbox": {
+          "l": 118.32386271158855,
+          "t": 374.7409261067708,
+          "r": 433.9949951171875,
+          "b": 355.21875,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/8",
+        "element_type": "text",
+        "label": "section_header",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 8,
+        "bbox": {
+          "l": 87.47513834635417,
+          "t": 336.9697672526042,
+          "r": 507.5248209635417,
+          "b": 274.15926106770837,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/9",
+        "element_type": "text",
+        "label": "section_header",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 9,
+        "bbox": {
+          "l": 161.42755126953125,
+          "t": 260.15421549479163,
+          "r": 430.1917317708333,
+          "b": 223.65625,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/10",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 10,
+        "bbox": {
+          "l": 95.50426228841145,
+          "t": 193.524169921875,
+          "r": 467.8018391927083,
+          "b": 158.72379557291663,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/11",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 1,
+        "column_indices": [
+          1
+        ],
+        "spans_columns": false,
+        "reading_order_index": 11,
+        "bbox": {
+          "l": 73.52982584635417,
+          "t": 111.19148763020837,
+          "r": 280.59657796223956,
+          "b": 95.913330078125,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/12",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 2,
+        "column_indices": [
+          2
+        ],
+        "spans_columns": false,
+        "reading_order_index": 12,
+        "bbox": {
+          "l": 284.8224283854167,
+          "t": 123.07462565104163,
+          "r": 332.57456461588544,
+          "b": 97.61092122395837,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/13",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 2,
+        "column_indices": [
+          2
+        ],
+        "spans_columns": false,
+        "reading_order_index": 13,
+        "bbox": {
+          "l": 479.2116292317708,
+          "t": 195.64615885416663,
+          "r": 532.4573567708334,
+          "b": 185.460693359375,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/pictures/0",
+        "element_type": "picture",
+        "label": "picture",
+        "column_index": 1,
+        "column_indices": [
+          1
+        ],
+        "spans_columns": false,
+        "reading_order_index": 0,
+        "bbox": {
+          "l": 65.19017791748047,
+          "t": 706.9413146972656,
+          "r": 123.87261962890625,
+          "b": 618.3026733398438,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/pictures/1",
+        "element_type": "picture",
+        "label": "picture",
+        "column_index": 2,
+        "column_indices": [
+          2
+        ],
+        "spans_columns": false,
+        "reading_order_index": 14,
+        "bbox": {
+          "l": 484.805908203125,
+          "t": 182.9794921875,
+          "r": 530.2305297851562,
+          "b": 136.1278076171875,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      }
+    ],
+    "warnings": []
+  },
+  "structure_chunks": {
+    "enabled": true,
+    "method": "docling_hybrid_chunker",
+    "scope": "page",
+    "items": [
+      {
+        "text": "8th edition Version1",
+        "meta": {
+          "schema_name": "docling_core.transforms.chunker.DocMeta",
+          "version": "1.0.0",
+          "doc_items": [
+            {
+              "self_ref": "#/texts/1",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 430.6143391927083,
+                    "t": 741.4183451334635,
+                    "r": 528.2315266927084,
+                    "b": 665.4516194661459,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    20
+                  ]
+                }
+              ]
+            }
+          ],
+          "headings": null,
+          "captions": null,
+          "origin": {
+            "mimetype": "application/pdf",
+            "binary_hash": 4149736569036084051,
+            "filename": "english_page_0001.pdf",
+            "uri": null
+          }
+        },
+        "chunk_index": 0,
+        "contextualized_text": "8th edition Version1"
+      },
+      {
+        "text": "eduquity based pattern",
+        "meta": {
+          "schema_name": "docling_core.transforms.chunker.DocMeta",
+          "version": "1.0.0",
+          "doc_items": [
+            {
+              "self_ref": "#/texts/4",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 96.77201334635417,
+                    "t": 518.1864827473958,
+                    "r": 527.3863525390625,
+                    "b": 457.4979654947917,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    22
+                  ]
+                }
+              ]
+            }
+          ],
+          "headings": [
+            "SSC ENGLISH"
+          ],
+          "captions": null,
+          "origin": {
+            "mimetype": "application/pdf",
+            "binary_hash": 4149736569036084051,
+            "filename": "english_page_0001.pdf",
+            "uri": null
+          }
+        },
+        "chunk_index": 1,
+        "contextualized_text": "SSC ENGLISH\neduquity based pattern"
+      },
+      {
+        "text": "Till date\nwith detailed explanation",
+        "meta": {
+          "schema_name": "docling_core.transforms.chunker.DocMeta",
+          "version": "1.0.0",
+          "doc_items": [
+            {
+              "self_ref": "#/texts/6",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 454.7017008463542,
+                    "t": 401.4778238932292,
+                    "r": 510.0603434244792,
+                    "b": 389.5947672526042,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    9
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/7",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 118.32386271158855,
+                    "t": 374.7409261067708,
+                    "r": 433.9949951171875,
+                    "b": 355.21875,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    25
+                  ]
+                }
+              ]
+            }
+          ],
+          "headings": [
+            "7600+ MCQ ebp"
+          ],
+          "captions": null,
+          "origin": {
+            "mimetype": "application/pdf",
+            "binary_hash": 4149736569036084051,
+            "filename": "english_page_0001.pdf",
+            "uri": null
+          }
+        },
+        "chunk_index": 2,
+        "contextualized_text": "7600+ MCQ ebp\nTill date\nwith detailed explanation"
+      },
+      {
+        "text": "Useful for SSC CGL Tier 1 & Tier 2, SSC CPO, SSC CHSL, SSC JE, SSC MTS, GD, Steno, Delhi Police, Selection post & other Govt. exams\nPINNACLEPUBLICATIONS\neachbookhas multipurpose uniqueID\npiracy check",
+        "meta": {
+          "schema_name": "docling_core.transforms.chunker.DocMeta",
+          "version": "1.0.0",
+          "doc_items": [
+            {
+              "self_ref": "#/texts/10",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 95.50426228841145,
+                    "t": 193.524169921875,
+                    "r": 467.8018391927083,
+                    "b": 158.72379557291663,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    131
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/11",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 73.52982584635417,
+                    "t": 111.19148763020837,
+                    "r": 280.59657796223956,
+                    "b": 95.913330078125,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    20
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/12",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 284.8224283854167,
+                    "t": 123.07462565104163,
+                    "r": 332.57456461588544,
+                    "b": 97.61092122395837,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    33
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/13",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 479.2116292317708,
+                    "t": 195.64615885416663,
+                    "r": 532.4573567708334,
+                    "b": 185.460693359375,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    12
+                  ]
+                }
+              ]
+            }
+          ],
+          "headings": [
+            "English Medium"
+          ],
+          "captions": null,
+          "origin": {
+            "mimetype": "application/pdf",
+            "binary_hash": 4149736569036084051,
+            "filename": "english_page_0001.pdf",
+            "uri": null
+          }
+        },
+        "chunk_index": 3,
+        "contextualized_text": "English Medium\nUseful for SSC CGL Tier 1 & Tier 2, SSC CPO, SSC CHSL, SSC JE, SSC MTS, GD, Steno, Delhi Police, Selection post & other Govt. exams\nPINNACLEPUBLICATIONS\neachbookhas multipurpose uniqueID\npiracy check"
+      }
+    ]
+  },
+  "content_assets": {
+    "tables": [],
+    "figures": [
+      {
+        "element_ref": "#/pictures/0",
+        "label": "picture",
+        "provenance": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 65.19017791748047,
+              "t": 706.9413146972656,
+              "r": 123.87261962890625,
+              "b": 618.3026733398438,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              0
+            ]
+          }
+        ],
+        "captions": []
+      },
+      {
+        "element_ref": "#/pictures/1",
+        "label": "picture",
+        "provenance": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 484.805908203125,
+              "t": 182.9794921875,
+              "r": 530.2305297851562,
+              "b": 136.1278076171875,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              0
+            ]
+          }
+        ],
+        "captions": []
+      }
+    ]
+  },
+  "docling_document": {
+    "schema_name": "DoclingDocument",
+    "version": "1.10.0",
+    "name": "english_page_0001",
+    "origin": {
+      "mimetype": "application/pdf",
+      "binary_hash": 4149736569036084051,
+      "filename": "english_page_0001.pdf"
+    },
+    "furniture": {
+      "self_ref": "#/furniture",
+      "children": [],
+      "content_layer": "furniture",
+      "name": "_root_",
+      "label": "unspecified"
+    },
+    "body": {
+      "self_ref": "#/body",
+      "children": [
+        {
+          "$ref": "#/pictures/0"
+        },
+        {
+          "$ref": "#/texts/1"
+        },
+        {
+          "$ref": "#/texts/2"
+        },
+        {
+          "$ref": "#/texts/3"
+        },
+        {
+          "$ref": "#/texts/4"
+        },
+        {
+          "$ref": "#/texts/5"
+        },
+        {
+          "$ref": "#/texts/6"
+        },
+        {
+          "$ref": "#/texts/7"
+        },
+        {
+          "$ref": "#/texts/8"
+        },
+        {
+          "$ref": "#/texts/9"
+        },
+        {
+          "$ref": "#/texts/10"
+        },
+        {
+          "$ref": "#/texts/11"
+        },
+        {
+          "$ref": "#/texts/12"
+        },
+        {
+          "$ref": "#/texts/13"
+        },
+        {
+          "$ref": "#/pictures/1"
+        }
+      ],
+      "content_layer": "body",
+      "name": "_root_",
+      "label": "unspecified"
+    },
+    "groups": [],
+    "texts": [
+      {
+        "self_ref": "#/texts/0",
+        "parent": {
+          "$ref": "#/pictures/0"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 71.83948771158855,
+              "t": 664.1784261067709,
+              "r": 121.28195190429688,
+              "b": 636.5927327473959,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              3
+            ]
+          }
+        ],
+        "orig": "New",
+        "text": "New"
+      },
+      {
+        "self_ref": "#/texts/1",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 430.6143391927083,
+              "t": 741.4183451334635,
+              "r": 528.2315266927084,
+              "b": 665.4516194661459,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              20
+            ]
+          }
+        ],
+        "orig": "8th edition Version1",
+        "text": "8th edition Version1"
+      },
+      {
+        "self_ref": "#/texts/2",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "section_header",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 178.7535400390625,
+              "t": 741.4183451334635,
+              "r": 360.0426025390625,
+              "b": 712.1350809733073,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              8
+            ]
+          }
+        ],
+        "orig": "PINNACLE",
+        "text": "PINNACLE",
+        "level": 1
+      },
+      {
+        "self_ref": "#/texts/3",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "section_header",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 130.15623982747397,
+              "t": 693.4616902669271,
+              "r": 431.4595133463542,
+              "b": 526.6743977864583,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              11
+            ]
+          }
+        ],
+        "orig": "SSC ENGLISH",
+        "text": "SSC ENGLISH",
+        "level": 1
+      },
+      {
+        "self_ref": "#/texts/4",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 96.77201334635417,
+              "t": 518.1864827473958,
+              "r": 527.3863525390625,
+              "b": 457.4979654947917,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              22
+            ]
+          }
+        ],
+        "orig": "eduquity based pattern",
+        "text": "eduquity based pattern"
+      },
+      {
+        "self_ref": "#/texts/5",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "section_header",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 137.76277669270834,
+              "t": 443.9173177083333,
+              "r": 434.8401692708333,
+              "b": 380.6824544270833,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              13
+            ]
+          }
+        ],
+        "orig": "7600+ MCQ ebp",
+        "text": "7600+ MCQ ebp",
+        "level": 1
+      },
+      {
+        "self_ref": "#/texts/6",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 454.7017008463542,
+              "t": 401.4778238932292,
+              "r": 510.0603434244792,
+              "b": 389.5947672526042,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              9
+            ]
+          }
+        ],
+        "orig": "Till date",
+        "text": "Till date"
+      },
+      {
+        "self_ref": "#/texts/7",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 118.32386271158855,
+              "t": 374.7409261067708,
+              "r": 433.9949951171875,
+              "b": 355.21875,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              25
+            ]
+          }
+        ],
+        "orig": "with detailed explanation",
+        "text": "with detailed explanation"
+      },
+      {
+        "self_ref": "#/texts/8",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "section_header",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 87.47513834635417,
+              "t": 336.9697672526042,
+              "r": 507.5248209635417,
+              "b": 274.15926106770837,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              12
+            ]
+          }
+        ],
+        "orig": "Chapter wise",
+        "text": "Chapter wise",
+        "level": 1
+      },
+      {
+        "self_ref": "#/texts/9",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "section_header",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 161.42755126953125,
+              "t": 260.15421549479163,
+              "r": 430.1917317708333,
+              "b": 223.65625,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              14
+            ]
+          }
+        ],
+        "orig": "English Medium",
+        "text": "English Medium",
+        "level": 1
+      },
+      {
+        "self_ref": "#/texts/10",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 95.50426228841145,
+              "t": 193.524169921875,
+              "r": 467.8018391927083,
+              "b": 158.72379557291663,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              131
+            ]
+          }
+        ],
+        "orig": "Useful for SSC CGL Tier 1 & Tier 2, SSC CPO, SSC CHSL, SSC JE, SSC MTS, GD, Steno, Delhi Police, Selection post & other Govt. exams",
+        "text": "Useful for SSC CGL Tier 1 & Tier 2, SSC CPO, SSC CHSL, SSC JE, SSC MTS, GD, Steno, Delhi Police, Selection post & other Govt. exams"
+      },
+      {
+        "self_ref": "#/texts/11",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 73.52982584635417,
+              "t": 111.19148763020837,
+              "r": 280.59657796223956,
+              "b": 95.913330078125,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              20
+            ]
+          }
+        ],
+        "orig": "PINNACLEPUBLICATIONS",
+        "text": "PINNACLEPUBLICATIONS"
+      },
+      {
+        "self_ref": "#/texts/12",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 284.8224283854167,
+              "t": 123.07462565104163,
+              "r": 332.57456461588544,
+              "b": 97.61092122395837,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              33
+            ]
+          }
+        ],
+        "orig": "eachbookhas multipurpose uniqueID",
+        "text": "eachbookhas multipurpose uniqueID"
+      },
+      {
+        "self_ref": "#/texts/13",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 479.2116292317708,
+              "t": 195.64615885416663,
+              "r": 532.4573567708334,
+              "b": 185.460693359375,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              12
+            ]
+          }
+        ],
+        "orig": "piracy check",
+        "text": "piracy check"
+      }
+    ],
+    "pictures": [
+      {
+        "self_ref": "#/pictures/0",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [
+          {
+            "$ref": "#/texts/0"
+          }
+        ],
+        "content_layer": "body",
+        "label": "picture",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 65.19017791748047,
+              "t": 706.9413146972656,
+              "r": 123.87261962890625,
+              "b": 618.3026733398438,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              0
+            ]
+          }
+        ],
+        "captions": [],
+        "references": [],
+        "footnotes": [],
+        "annotations": []
+      },
+      {
+        "self_ref": "#/pictures/1",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "picture",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 484.805908203125,
+              "t": 182.9794921875,
+              "r": 530.2305297851562,
+              "b": 136.1278076171875,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              0
+            ]
+          }
+        ],
+        "captions": [],
+        "references": [],
+        "footnotes": [],
+        "annotations": []
+      }
+    ],
+    "tables": [],
+    "key_value_items": [],
+    "form_items": [],
+    "pages": {
+      "1": {
+        "size": {
+          "width": 595.0,
+          "height": 842.0
+        },
+        "page_no": 1
+      }
+    }
+  }
+}

@@ -1,0 +1,6345 @@
+{
+  "document_id": "english",
+  "source": "english.pdf",
+  "pdf_page": 341,
+  "page_width": 596.0,
+  "page_height": 842.0,
+  "extracted_at": "2026-09-09T10:38:12.503655+00:00",
+  "extraction_version": 4,
+  "ocr_enabled": true,
+  "extraction_detection": {
+    "requested_profile": "auto",
+    "effective_profile": "hybrid",
+    "embedded_text_characters": 4652,
+    "auto_text_threshold": 80
+  },
+  "docling_result": {
+    "status": "success",
+    "errors": []
+  },
+  "content_summary": {
+    "text_items": 71,
+    "text_characters": 6089,
+    "table_items": 0,
+    "picture_items": 0,
+    "group_items": 29,
+    "warnings": []
+  },
+  "reading_order": {
+    "source": "docling_iterate_items",
+    "items": [
+      {
+        "reading_order_index": 0,
+        "element_ref": "#/texts/1",
+        "label": "text",
+        "level": 1,
+        "text_preview": "Cloze Test"
+      },
+      {
+        "reading_order_index": 1,
+        "element_ref": "#/texts/2",
+        "label": "list_item",
+        "level": 3,
+        "text_preview": "Q.496. (a) design      (b) damage    (c) rectify (d) create"
+      },
+      {
+        "reading_order_index": 2,
+        "element_ref": "#/texts/3",
+        "label": "list_item",
+        "level": 3,
+        "text_preview": "Q.497. (a) bleached  (b) published  (c) imprinted  (d) coloured"
+      },
+      {
+        "reading_order_index": 3,
+        "element_ref": "#/texts/4",
+        "label": "section_header",
+        "level": 2,
+        "text_preview": "SET-100. Q .(498 - 502)"
+      },
+      {
+        "reading_order_index": 4,
+        "element_ref": "#/texts/5",
+        "label": "text",
+        "level": 2,
+        "text_preview": "Literature is a reflection of society and often (498)______ insight into  the  human  experience.  Through  various  forms like novels, poems,  and  plays,  lit"
+      },
+      {
+        "reading_order_index": 5,
+        "element_ref": "#/texts/6",
+        "label": "list_item",
+        "level": 3,
+        "text_preview": "Q.498."
+      },
+      {
+        "reading_order_index": 6,
+        "element_ref": "#/texts/7",
+        "label": "text",
+        "level": 2,
+        "text_preview": "(a) denies   (b) suggests      (c) garners    (d) offers"
+      },
+      {
+        "reading_order_index": 7,
+        "element_ref": "#/texts/8",
+        "label": "text",
+        "level": 2,
+        "text_preview": "Q.499."
+      },
+      {
+        "reading_order_index": 8,
+        "element_ref": "#/texts/9",
+        "label": "list_item",
+        "level": 3,
+        "text_preview": "(a) exploit    (b) explore        (c) exclaim    (d) explain"
+      },
+      {
+        "reading_order_index": 9,
+        "element_ref": "#/texts/10",
+        "label": "list_item",
+        "level": 3,
+        "text_preview": "Q.500. (a) platform    (b) planking    (c) plank     (d) planks"
+      },
+      {
+        "reading_order_index": 10,
+        "element_ref": "#/texts/11",
+        "label": "list_item",
+        "level": 3,
+        "text_preview": "Q.501. (a) provokes   (b) withers     (c) avoids     (d) cultivates"
+      },
+      {
+        "reading_order_index": 11,
+        "element_ref": "#/texts/12",
+        "label": "list_item",
+        "level": 3,
+        "text_preview": "Q.502. (a) became   (b) become   (c) becomes   (d) becoming"
+      },
+      {
+        "reading_order_index": 12,
+        "element_ref": "#/texts/13",
+        "label": "section_header",
+        "level": 2,
+        "text_preview": "SET-101. Q .(503 - 507)"
+      },
+      {
+        "reading_order_index": 13,
+        "element_ref": "#/texts/14",
+        "label": "text",
+        "level": 2,
+        "text_preview": "Children  working  in  hazardous  industries  are  _______(503)  to debilitating diseases which can cripple them for life. By sitting in cramped, damp, unhygien"
+      },
+      {
+        "reading_order_index": 14,
+        "element_ref": "#/texts/15",
+        "label": "text",
+        "level": 2,
+        "text_preview": "Q.503. (a) Questionable (b) Determined (c) Prone (d) Elevated"
+      },
+      {
+        "reading_order_index": 15,
+        "element_ref": "#/texts/16",
+        "label": "text",
+        "level": 2,
+        "text_preview": "Q.504. (a) Creators  (b) Producers  (c) Admirers  (d) Victims"
+      },
+      {
+        "reading_order_index": 16,
+        "element_ref": "#/texts/17",
+        "label": "text",
+        "level": 2,
+        "text_preview": "Q.505. (a) Examined  (b) Impaired  (c) Included  (d) Established"
+      },
+      {
+        "reading_order_index": 17,
+        "element_ref": "#/texts/18",
+        "label": "list_item",
+        "level": 3,
+        "text_preview": "Q.506. (a) Determined  (b) Confirmed  (c) Trapped  (d) Adopted"
+      },
+      {
+        "reading_order_index": 18,
+        "element_ref": "#/texts/19",
+        "label": "text",
+        "level": 2,
+        "text_preview": "Q.507. (a) Remain   (b) Choose   (c) Compete   (d) Accuse"
+      },
+      {
+        "reading_order_index": 19,
+        "element_ref": "#/texts/20",
+        "label": "section_header",
+        "level": 2,
+        "text_preview": "SET-102. Q .(508 - 512)"
+      },
+      {
+        "reading_order_index": 20,
+        "element_ref": "#/texts/21",
+        "label": "text",
+        "level": 2,
+        "text_preview": "Sustainability  is  ____(508)___  longer  just  a  buzzword.  It  ____ (509)  ____   a necessity   and   the   primary   agenda   of   the world"
+      },
+      {
+        "reading_order_index": 21,
+        "element_ref": "#/texts/22",
+        "label": "text",
+        "level": 2,
+        "text_preview": "today.  Like  many  other  countries,  India  too  is  witnessing  a growth of ____(510)____ green economy.  It ____(511)____ estimated  that  India's  renewabl"
+      },
+      {
+        "reading_order_index": 22,
+        "element_ref": "#/texts/23",
+        "label": "list_item",
+        "level": 3,
+        "text_preview": "Q.508."
+      },
+      {
+        "reading_order_index": 23,
+        "element_ref": "#/texts/24",
+        "label": "text",
+        "level": 2,
+        "text_preview": "(a) any          (b) never           (c) no              (d) not"
+      },
+      {
+        "reading_order_index": 24,
+        "element_ref": "#/texts/25",
+        "label": "list_item",
+        "level": 3,
+        "text_preview": "Q.509."
+      },
+      {
+        "reading_order_index": 25,
+        "element_ref": "#/texts/26",
+        "label": "list_item",
+        "level": 3,
+        "text_preview": "(a) will be     (b) is                 (c) might be     (d) was"
+      },
+      {
+        "reading_order_index": 26,
+        "element_ref": "#/texts/27",
+        "label": "list_item",
+        "level": 3,
+        "text_preview": "Q.510."
+      },
+      {
+        "reading_order_index": 27,
+        "element_ref": "#/texts/28",
+        "label": "text",
+        "level": 2,
+        "text_preview": "(a) his           (b) hers             (c) its                (d) their"
+      },
+      {
+        "reading_order_index": 28,
+        "element_ref": "#/texts/29",
+        "label": "list_item",
+        "level": 3,
+        "text_preview": "Q.511."
+      },
+      {
+        "reading_order_index": 29,
+        "element_ref": "#/texts/30",
+        "label": "text",
+        "level": 2,
+        "text_preview": "(a) will be      (b) were            (c) had been     (d) is"
+      },
+      {
+        "reading_order_index": 30,
+        "element_ref": "#/texts/31",
+        "label": "list_item",
+        "level": 3,
+        "text_preview": "Q.512."
+      },
+      {
+        "reading_order_index": 31,
+        "element_ref": "#/texts/32",
+        "label": "text",
+        "level": 2,
+        "text_preview": "(a) with          (b) since            (c) by                (d) for"
+      },
+      {
+        "reading_order_index": 32,
+        "element_ref": "#/texts/33",
+        "label": "section_header",
+        "level": 2,
+        "text_preview": "SET-103. Q .(513 - 517)"
+      },
+      {
+        "reading_order_index": 33,
+        "element_ref": "#/texts/34",
+        "label": "text",
+        "level": 2,
+        "text_preview": "The  internet  has  (513)  _______reshaped  the  way information is accessed  and  shared.  With a vast array of websites and social media  platforms,  individu"
+      },
+      {
+        "reading_order_index": 34,
+        "element_ref": "#/texts/35",
+        "label": "text",
+        "level": 2,
+        "text_preview": "________ challenges. The spread of misinformation has become a (516) ________ issue, as false content can quickly gain traction. It  is essential for users to ("
+      },
+      {
+        "reading_order_index": 35,
+        "element_ref": "#/texts/36",
+        "label": "list_item",
+        "level": 3,
+        "text_preview": "Q.513. (a) discreetly"
+      },
+      {
+        "reading_order_index": 36,
+        "element_ref": "#/texts/37",
+        "label": "list_item",
+        "level": 3,
+        "text_preview": "(b) occasionally"
+      },
+      {
+        "reading_order_index": 37,
+        "element_ref": "#/texts/38",
+        "label": "list_item",
+        "level": 3,
+        "text_preview": "(c) significantly"
+      },
+      {
+        "reading_order_index": 38,
+        "element_ref": "#/texts/39",
+        "label": "list_item",
+        "level": 3,
+        "text_preview": "(d) gradually"
+      },
+      {
+        "reading_order_index": 39,
+        "element_ref": "#/texts/40",
+        "label": "text",
+        "level": 2,
+        "text_preview": "Q.514. (a) hesitantly (b) periodically (c) scarcely (d) seamlessly"
+      },
+      {
+        "reading_order_index": 40,
+        "element_ref": "#/texts/41",
+        "label": "text",
+        "level": 2,
+        "text_preview": "Q.515. (a) numerous  (b) abstract  (c) irrelevant  (d) intriguing"
+      },
+      {
+        "reading_order_index": 41,
+        "element_ref": "#/texts/42",
+        "label": "text",
+        "level": 2,
+        "text_preview": "Q.516. (a) pressing  (b) soothing  (c) negligible  (d) dormant"
+      },
+      {
+        "reading_order_index": 42,
+        "element_ref": "#/texts/43",
+        "label": "list_item",
+        "level": 3,
+        "text_preview": "Q.517. (a) meticulously                      (b) hesitantly"
+      },
+      {
+        "reading_order_index": 43,
+        "element_ref": "#/texts/44",
+        "label": "list_item",
+        "level": 3,
+        "text_preview": "(c) reluctantly                          (d) impulsively"
+      },
+      {
+        "reading_order_index": 44,
+        "element_ref": "#/texts/45",
+        "label": "section_header",
+        "level": 2,
+        "text_preview": "SET-104. Q .(518 - 522)"
+      },
+      {
+        "reading_order_index": 45,
+        "element_ref": "#/texts/46",
+        "label": "text",
+        "level": 2,
+        "text_preview": "Vijayanagara  or  \"city  of  victory\"  was  the____(518)____of  both a city and an empire. The empire was____(519)____ in the fourteenth  century.  In  its heyd"
+      },
+      {
+        "reading_order_index": 46,
+        "element_ref": "#/texts/47",
+        "label": "list_item",
+        "level": 3,
+        "text_preview": "Q.518."
+      },
+      {
+        "reading_order_index": 47,
+        "element_ref": "#/texts/48",
+        "label": "text",
+        "level": 2,
+        "text_preview": "(a) mark         (b) name          (c) sign             (d) label"
+      },
+      {
+        "reading_order_index": 48,
+        "element_ref": "#/texts/49",
+        "label": "text",
+        "level": 2,
+        "text_preview": "Q.519."
+      },
+      {
+        "reading_order_index": 49,
+        "element_ref": "#/texts/50",
+        "label": "list_item",
+        "level": 3,
+        "text_preview": "(a) founded   (b) begun         (c) Implanted   (d) discovered"
+      },
+      {
+        "reading_order_index": 50,
+        "element_ref": "#/texts/51",
+        "label": "list_item",
+        "level": 3,
+        "text_preview": "Q.520."
+      },
+      {
+        "reading_order_index": 51,
+        "element_ref": "#/texts/52",
+        "label": "list_item",
+        "level": 3,
+        "text_preview": "(a) started       (b) magnified   (c) strained      (d) stretched"
+      },
+      {
+        "reading_order_index": 52,
+        "element_ref": "#/texts/53",
+        "label": "list_item",
+        "level": 3,
+        "text_preview": "Q.521 (a) previously"
+      },
+      {
+        "reading_order_index": 53,
+        "element_ref": "#/texts/54",
+        "label": "list_item",
+        "level": 3,
+        "text_preview": "(b) subsequently"
+      },
+      {
+        "reading_order_index": 54,
+        "element_ref": "#/texts/55",
+        "label": "list_item",
+        "level": 3,
+        "text_preview": "(c) accidentally"
+      },
+      {
+        "reading_order_index": 55,
+        "element_ref": "#/texts/56",
+        "label": "list_item",
+        "level": 3,
+        "text_preview": "(d) presently"
+      },
+      {
+        "reading_order_index": 56,
+        "element_ref": "#/texts/57",
+        "label": "text",
+        "level": 2,
+        "text_preview": "Q.522. (a) extracted  (b) designed  (c) derived  (d) collected"
+      },
+      {
+        "reading_order_index": 57,
+        "element_ref": "#/texts/58",
+        "label": "section_header",
+        "level": 2,
+        "text_preview": "Solutions :-"
+      },
+      {
+        "reading_order_index": 58,
+        "element_ref": "#/texts/59",
+        "label": "section_header",
+        "level": 2,
+        "text_preview": "SET - 85"
+      },
+      {
+        "reading_order_index": 59,
+        "element_ref": "#/texts/60",
+        "label": "section_header",
+        "level": 2,
+        "text_preview": "Sol.423.(d) cannot"
+      },
+      {
+        "reading_order_index": 60,
+        "element_ref": "#/texts/61",
+        "label": "text",
+        "level": 2,
+        "text_preview": "'Can'  is  used  to  indicate  the ability to do something. The given passage  talks  about  the  inability  of  the  camel  to  find  water. Hence, 'cannot' is"
+      },
+      {
+        "reading_order_index": 61,
+        "element_ref": "#/texts/62",
+        "label": "section_header",
+        "level": 2,
+        "text_preview": "Sol.424.(b) the"
+      },
+      {
+        "reading_order_index": 62,
+        "element_ref": "#/texts/63",
+        "label": "text",
+        "level": 2,
+        "text_preview": "Article  'the'  is  used  before  a  specific  or  particular  noun.  The 'small  amount'  mentioned  in  the  given  passage  is  specific. Hence, 'the' is the"
+      },
+      {
+        "reading_order_index": 63,
+        "element_ref": "#/texts/64",
+        "label": "section_header",
+        "level": 2,
+        "text_preview": "Sol.425.(c) that"
+      },
+      {
+        "reading_order_index": 64,
+        "element_ref": "#/texts/65",
+        "label": "text",
+        "level": 2,
+        "text_preview": "When we make a comparison, 'that' is used to avoid repetition of a  noun.  In  the  given  sentence,  there  is  a  comparison between the  body  temperature.  "
+      },
+      {
+        "reading_order_index": 65,
+        "element_ref": "#/texts/66",
+        "label": "section_header",
+        "level": 2,
+        "text_preview": "Sol.426.(d) at"
+      },
+      {
+        "reading_order_index": 66,
+        "element_ref": "#/texts/67",
+        "label": "text",
+        "level": 2,
+        "text_preview": "'At' is used to indicate the position or level of something. In the given sentence, 'at' has been used to indicate the higher level of temperature. Hence, 'at' "
+      },
+      {
+        "reading_order_index": 67,
+        "element_ref": "#/texts/68",
+        "label": "section_header",
+        "level": 2,
+        "text_preview": "Sol.427.(d) start"
+      },
+      {
+        "reading_order_index": 68,
+        "element_ref": "#/texts/69",
+        "label": "text",
+        "level": 2,
+        "text_preview": "According to the 'Subject-Verb Agreement Rule', a plural subject always  takes  a  plural  verb.  'Human  beings'  is  a  plural  subject that will take 'start'"
+      }
+    ]
+  },
+  "layout_analysis": {
+    "method": "docling_bbox_left_edge_clustering_v1",
+    "column_count": 3,
+    "confidence": 0.954,
+    "page_width": 596.0,
+    "page_height": 842.0,
+    "columns": [
+      {
+        "column_index": 1,
+        "left": 0.0,
+        "right": 172.873,
+        "detected_start": 34.916,
+        "supporting_elements": 33
+      },
+      {
+        "column_index": 2,
+        "left": 172.873,
+        "right": 364.305,
+        "detected_start": 310.83,
+        "supporting_elements": 31
+      },
+      {
+        "column_index": 3,
+        "left": 364.305,
+        "right": 596.0,
+        "detected_start": 417.781,
+        "supporting_elements": 5
+      }
+    ],
+    "elements": [
+      {
+        "element_ref": "#/texts/0",
+        "element_type": "text",
+        "label": "page_header",
+        "column_index": 1,
+        "column_indices": [
+          1
+        ],
+        "spans_columns": false,
+        "reading_order_index": null,
+        "bbox": {
+          "l": 28.800003,
+          "t": 830.7925780594726,
+          "r": 95.7084616875,
+          "b": 822.5642819957749,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/1",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 0,
+        "column_indices": [
+          2,
+          3
+        ],
+        "spans_columns": true,
+        "reading_order_index": 0,
+        "bbox": {
+          "l": 291.757038,
+          "t": 830.7925780594726,
+          "r": 568.9931979375,
+          "b": 822.5642819957749,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/2",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 1,
+        "bbox": {
+          "l": 28.800003,
+          "t": 814.6982416875001,
+          "r": 254.08125492,
+          "b": 806.6160048199854,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/3",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 2,
+        "bbox": {
+          "l": 28.800003,
+          "t": 795.3740236875,
+          "r": 275.50019741999995,
+          "b": 787.2917868199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/4",
+        "element_type": "text",
+        "label": "section_header",
+        "column_index": 1,
+        "column_indices": [
+          1
+        ],
+        "spans_columns": false,
+        "reading_order_index": 3,
+        "bbox": {
+          "l": 28.800003,
+          "t": 776.0498046875,
+          "r": 126.41133144,
+          "b": 767.9675678199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/5",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 4,
+        "bbox": {
+          "l": 28.800003,
+          "t": 763.6279296875,
+          "r": 288.88154742,
+          "b": 656.1706928199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/6",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 1,
+        "column_indices": [
+          1
+        ],
+        "spans_columns": false,
+        "reading_order_index": 5,
+        "bbox": {
+          "l": 28.800003,
+          "t": 644.9287096875,
+          "r": 57.953323440000005,
+          "b": 636.8464728199854,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/7",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 6,
+        "bbox": {
+          "l": 57.953323499999996,
+          "t": 644.9287096875,
+          "r": 260.91035742,
+          "b": 636.8464728199854,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/8",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 1,
+        "column_indices": [
+          1
+        ],
+        "spans_columns": false,
+        "reading_order_index": 7,
+        "bbox": {
+          "l": 28.800003,
+          "t": 624.2294896875001,
+          "r": 55.716506939999995,
+          "b": 616.1472528199854,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/9",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 8,
+        "bbox": {
+          "l": 55.716507,
+          "t": 624.2294896875001,
+          "r": 267.30879492,
+          "b": 616.1472528199854,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/10",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 9,
+        "bbox": {
+          "l": 28.800003,
+          "t": 604.9013696874999,
+          "r": 259.79853492,
+          "b": 596.8191328199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/11",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 10,
+        "bbox": {
+          "l": 28.800003,
+          "t": 585.5810496875,
+          "r": 275.39033742,
+          "b": 577.4988128199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/12",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 11,
+        "bbox": {
+          "l": 28.800003,
+          "t": 566.2568396875,
+          "r": 274.98603492,
+          "b": 558.1746028199854,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/13",
+        "element_type": "text",
+        "label": "section_header",
+        "column_index": 1,
+        "column_indices": [
+          1
+        ],
+        "spans_columns": false,
+        "reading_order_index": 12,
+        "bbox": {
+          "l": 28.800003,
+          "t": 542.7919896875001,
+          "r": 126.41133144,
+          "b": 534.7097528199854,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/14",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 13,
+        "bbox": {
+          "l": 28.800003,
+          "t": 530.3701196874999,
+          "r": 288.93867492,
+          "b": 422.9128828199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/15",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 14,
+        "bbox": {
+          "l": 28.800003,
+          "t": 411.6747996875,
+          "r": 274.74873627000005,
+          "b": 403.59256281998535,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/16",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 15,
+        "bbox": {
+          "l": 28.800003,
+          "t": 392.3466796875,
+          "r": 269.02265742,
+          "b": 384.26444281998533,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/17",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 16,
+        "bbox": {
+          "l": 28.800003,
+          "t": 373.0263696875,
+          "r": 282.44794992,
+          "b": 364.9441328199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/18",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 17,
+        "bbox": {
+          "l": 28.800003,
+          "t": 353.7021496875,
+          "r": 281.87665992,
+          "b": 345.61991281998536,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/19",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 18,
+        "bbox": {
+          "l": 28.800003,
+          "t": 334.3779296875,
+          "r": 260.65986491999996,
+          "b": 326.29569281998533,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/20",
+        "element_type": "text",
+        "label": "section_header",
+        "column_index": 1,
+        "column_indices": [
+          1
+        ],
+        "spans_columns": false,
+        "reading_order_index": 19,
+        "bbox": {
+          "l": 28.800003,
+          "t": 315.05370968750003,
+          "r": 124.17451467,
+          "b": 306.97147281998537,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/21",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 20,
+        "bbox": {
+          "l": 28.800003,
+          "t": 302.6318396875,
+          "r": 291.04511934,
+          "b": 269.70585281998535,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/22",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 21,
+        "bbox": {
+          "l": 28.800003,
+          "t": 265.36620968750003,
+          "r": 288.84346242,
+          "b": 195.17460281998535,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/23",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 1,
+        "column_indices": [
+          1
+        ],
+        "spans_columns": false,
+        "reading_order_index": 22,
+        "bbox": {
+          "l": 28.800003,
+          "t": 183.93261968750005,
+          "r": 57.953323440000005,
+          "b": 175.85038281998538,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/24",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 23,
+        "bbox": {
+          "l": 57.953323499999996,
+          "t": 183.93261968750005,
+          "r": 250.92598242000003,
+          "b": 175.85038281998538,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/25",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 1,
+        "column_indices": [
+          1
+        ],
+        "spans_columns": false,
+        "reading_order_index": 24,
+        "bbox": {
+          "l": 28.800003,
+          "t": 164.6122996875,
+          "r": 57.953323440000005,
+          "b": 156.53006281998535,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/26",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 25,
+        "bbox": {
+          "l": 57.953323499999996,
+          "t": 164.6122996875,
+          "r": 255.36885387,
+          "b": 156.53006281998535,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/27",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 1,
+        "column_indices": [
+          1
+        ],
+        "spans_columns": false,
+        "reading_order_index": 26,
+        "bbox": {
+          "l": 28.800003,
+          "t": 145.28808968750002,
+          "r": 57.953323440000005,
+          "b": 137.20585281998535,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/28",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 27,
+        "bbox": {
+          "l": 57.953323499999996,
+          "t": 145.28808968750002,
+          "r": 259.90840242,
+          "b": 137.20585281998535,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/29",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 1,
+        "column_indices": [
+          1
+        ],
+        "spans_columns": false,
+        "reading_order_index": 28,
+        "bbox": {
+          "l": 28.800003,
+          "t": 125.96386968750005,
+          "r": 57.953323440000005,
+          "b": 117.88163281998538,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/30",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 29,
+        "bbox": {
+          "l": 57.953323499999996,
+          "t": 125.96386968750005,
+          "r": 252.92988491999998,
+          "b": 117.88163281998538,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/31",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 1,
+        "column_indices": [
+          1
+        ],
+        "spans_columns": false,
+        "reading_order_index": 30,
+        "bbox": {
+          "l": 28.800003,
+          "t": 106.64354968750001,
+          "r": 57.953323440000005,
+          "b": 98.56131281998535,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/32",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 31,
+        "bbox": {
+          "l": 57.953323499999996,
+          "t": 106.64354968750001,
+          "r": 257.25410742,
+          "b": 98.56131281998535,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/33",
+        "element_type": "text",
+        "label": "section_header",
+        "column_index": 1,
+        "column_indices": [
+          1
+        ],
+        "spans_columns": false,
+        "reading_order_index": 32,
+        "bbox": {
+          "l": 28.800003,
+          "t": 85.9404296875,
+          "r": 126.41133144,
+          "b": 77.85819281998533,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/34",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 33,
+        "bbox": {
+          "l": 28.800003,
+          "t": 73.51854968750001,
+          "r": 288.62665992,
+          "b": 28.170692819985334,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/35",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 0,
+        "column_indices": [
+          2,
+          3
+        ],
+        "spans_columns": true,
+        "reading_order_index": 34,
+        "bbox": {
+          "l": 308.54999,
+          "t": 814.6982416875001,
+          "r": 568.6828044199999,
+          "b": 744.5027238199854,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/36",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 0,
+        "column_indices": [
+          2,
+          3
+        ],
+        "spans_columns": true,
+        "reading_order_index": 35,
+        "bbox": {
+          "l": 308.54999,
+          "t": 733.2646486875,
+          "r": 423.0495016699999,
+          "b": 725.1824118199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/37",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 3,
+        "column_indices": [
+          3
+        ],
+        "spans_columns": false,
+        "reading_order_index": 36,
+        "bbox": {
+          "l": 452.54999,
+          "t": 733.2646486875,
+          "r": 520.43231192,
+          "b": 725.1824118199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/38",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 0,
+        "column_indices": [
+          2,
+          3
+        ],
+        "spans_columns": true,
+        "reading_order_index": 37,
+        "bbox": {
+          "l": 308.54999,
+          "t": 720.8427736875,
+          "r": 421.05438467,
+          "b": 712.7605368199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/39",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 3,
+        "column_indices": [
+          3
+        ],
+        "spans_columns": false,
+        "reading_order_index": 38,
+        "bbox": {
+          "l": 452.54999,
+          "t": 720.8427736875,
+          "r": 504.69549692,
+          "b": 712.7605368199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/40",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 0,
+        "column_indices": [
+          2,
+          3
+        ],
+        "spans_columns": true,
+        "reading_order_index": 39,
+        "bbox": {
+          "l": 308.54999,
+          "t": 701.5185546875,
+          "r": 562.6725519199999,
+          "b": 693.4363178199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/41",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 0,
+        "column_indices": [
+          2,
+          3
+        ],
+        "spans_columns": true,
+        "reading_order_index": 40,
+        "bbox": {
+          "l": 308.54999,
+          "t": 682.1943356875,
+          "r": 554.66132192,
+          "b": 674.1120988199854,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/42",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 0,
+        "column_indices": [
+          2,
+          3
+        ],
+        "spans_columns": true,
+        "reading_order_index": 41,
+        "bbox": {
+          "l": 308.54999,
+          "t": 662.8740196875,
+          "r": 548.56170692,
+          "b": 654.7917828199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/43",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 0,
+        "column_indices": [
+          2,
+          3
+        ],
+        "spans_columns": true,
+        "reading_order_index": 42,
+        "bbox": {
+          "l": 308.54999,
+          "t": 643.5497996875,
+          "r": 509.96453941999994,
+          "b": 635.4675628199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/44",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 0,
+        "column_indices": [
+          2,
+          3
+        ],
+        "spans_columns": true,
+        "reading_order_index": 43,
+        "bbox": {
+          "l": 308.54999,
+          "t": 631.1279296875,
+          "r": 510.96649441999995,
+          "b": 623.0456928199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/45",
+        "element_type": "text",
+        "label": "section_header",
+        "column_index": 0,
+        "column_indices": [
+          2,
+          3
+        ],
+        "spans_columns": true,
+        "reading_order_index": 44,
+        "bbox": {
+          "l": 308.54999,
+          "t": 611.8076196874999,
+          "r": 406.16131843999995,
+          "b": 603.7253828199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/46",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 0,
+        "column_indices": [
+          2,
+          3
+        ],
+        "spans_columns": true,
+        "reading_order_index": 45,
+        "bbox": {
+          "l": 308.54999,
+          "t": 599.3818396875,
+          "r": 568.72820942,
+          "b": 479.5027228199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/47",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 2,
+        "column_indices": [
+          2
+        ],
+        "spans_columns": false,
+        "reading_order_index": 46,
+        "bbox": {
+          "l": 308.54999,
+          "t": 468.2607396875,
+          "r": 337.70331044,
+          "b": 460.17850281998534,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/48",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 3,
+        "column_indices": [
+          3
+        ],
+        "spans_columns": false,
+        "reading_order_index": 47,
+        "bbox": {
+          "l": 337.7033105,
+          "t": 468.2607396875,
+          "r": 543.78045692,
+          "b": 460.17850281998534,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/49",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 2,
+        "column_indices": [
+          2
+        ],
+        "spans_columns": false,
+        "reading_order_index": 48,
+        "bbox": {
+          "l": 308.54999,
+          "t": 450.3193396875,
+          "r": 337.70331044,
+          "b": 442.23710281998535,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/50",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 3,
+        "column_indices": [
+          3
+        ],
+        "spans_columns": false,
+        "reading_order_index": 49,
+        "bbox": {
+          "l": 337.7033105,
+          "t": 450.3193396875,
+          "r": 568.68866192,
+          "b": 442.23710281998535,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/51",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 2,
+        "column_indices": [
+          2
+        ],
+        "spans_columns": false,
+        "reading_order_index": 50,
+        "bbox": {
+          "l": 308.54999,
+          "t": 432.3740196875,
+          "r": 337.70331044,
+          "b": 424.2917828199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/52",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 3,
+        "column_indices": [
+          3
+        ],
+        "spans_columns": false,
+        "reading_order_index": 51,
+        "bbox": {
+          "l": 337.7033105,
+          "t": 432.3740196875,
+          "r": 564.2062419199999,
+          "b": 424.2917828199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/53",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 0,
+        "column_indices": [
+          2,
+          3
+        ],
+        "spans_columns": true,
+        "reading_order_index": 52,
+        "bbox": {
+          "l": 308.54999,
+          "t": 414.4326196875,
+          "r": 408.99579092,
+          "b": 406.3503828199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/54",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 3,
+        "column_indices": [
+          3
+        ],
+        "spans_columns": false,
+        "reading_order_index": 53,
+        "bbox": {
+          "l": 416.54999,
+          "t": 414.4326196875,
+          "r": 505.66229192,
+          "b": 406.3503828199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/55",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 0,
+        "column_indices": [
+          2,
+          3
+        ],
+        "spans_columns": true,
+        "reading_order_index": 54,
+        "bbox": {
+          "l": 308.54999,
+          "t": 402.0107396875,
+          "r": 409.6901266699999,
+          "b": 393.92850281998534,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/56",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 3,
+        "column_indices": [
+          3
+        ],
+        "spans_columns": false,
+        "reading_order_index": 55,
+        "bbox": {
+          "l": 416.54999,
+          "t": 402.0107396875,
+          "r": 486.73505192,
+          "b": 393.92850281998534,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/57",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 0,
+        "column_indices": [
+          2,
+          3
+        ],
+        "spans_columns": true,
+        "reading_order_index": 56,
+        "bbox": {
+          "l": 308.54999,
+          "t": 384.0654296875,
+          "r": 546.59295692,
+          "b": 375.98319281998533,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/58",
+        "element_type": "text",
+        "label": "section_header",
+        "column_index": 2,
+        "column_indices": [
+          2
+        ],
+        "spans_columns": false,
+        "reading_order_index": 57,
+        "bbox": {
+          "l": 308.54999,
+          "t": 360.04296588447266,
+          "r": 359.65407743749995,
+          "b": 351.8146698207749,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/59",
+        "element_type": "text",
+        "label": "section_header",
+        "column_index": 3,
+        "column_indices": [
+          3
+        ],
+        "spans_columns": false,
+        "reading_order_index": 58,
+        "bbox": {
+          "l": 420.242129,
+          "t": 339.0966796875,
+          "r": 457.09466819,
+          "b": 331.01444281998533,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/60",
+        "element_type": "text",
+        "label": "section_header",
+        "column_index": 0,
+        "column_indices": [
+          2,
+          3
+        ],
+        "spans_columns": true,
+        "reading_order_index": 59,
+        "bbox": {
+          "l": 308.54999,
+          "t": 318.3935496875,
+          "r": 385.73114267,
+          "b": 310.31131281998535,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/61",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 0,
+        "column_indices": [
+          2,
+          3
+        ],
+        "spans_columns": true,
+        "reading_order_index": 60,
+        "bbox": {
+          "l": 308.54999,
+          "t": 305.9716796875,
+          "r": 568.7663019199999,
+          "b": 273.04569281998533,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/62",
+        "element_type": "text",
+        "label": "section_header",
+        "column_index": 2,
+        "column_indices": [
+          2
+        ],
+        "spans_columns": false,
+        "reading_order_index": 61,
+        "bbox": {
+          "l": 308.54999,
+          "t": 263.18261968750005,
+          "r": 370.77655292,
+          "b": 255.10038281998538,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/63",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 0,
+        "column_indices": [
+          2,
+          3
+        ],
+        "spans_columns": true,
+        "reading_order_index": 62,
+        "bbox": {
+          "l": 308.54999,
+          "t": 250.76073968749995,
+          "r": 568.65497192,
+          "b": 217.83475281998528,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/64",
+        "element_type": "text",
+        "label": "section_header",
+        "column_index": 2,
+        "column_indices": [
+          2
+        ],
+        "spans_columns": false,
+        "reading_order_index": 63,
+        "bbox": {
+          "l": 308.54999,
+          "t": 207.97948968749995,
+          "r": 373.47039992,
+          "b": 199.89725281998528,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/65",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 0,
+        "column_indices": [
+          2,
+          3
+        ],
+        "spans_columns": true,
+        "reading_order_index": 64,
+        "bbox": {
+          "l": 308.54999,
+          "t": 195.55761968750005,
+          "r": 568.7692269199999,
+          "b": 137.78788281998538,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/66",
+        "element_type": "text",
+        "label": "section_header",
+        "column_index": 2,
+        "column_indices": [
+          2
+        ],
+        "spans_columns": false,
+        "reading_order_index": 65,
+        "bbox": {
+          "l": 308.54999,
+          "t": 127.92479968750001,
+          "r": 365.94696242,
+          "b": 119.84256281998535,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/67",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 0,
+        "column_indices": [
+          2,
+          3
+        ],
+        "spans_columns": true,
+        "reading_order_index": 66,
+        "bbox": {
+          "l": 308.54999,
+          "t": 115.5029296875,
+          "r": 568.2243069199999,
+          "b": 82.57694281998533,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/68",
+        "element_type": "text",
+        "label": "section_header",
+        "column_index": 0,
+        "column_indices": [
+          2,
+          3
+        ],
+        "spans_columns": true,
+        "reading_order_index": 67,
+        "bbox": {
+          "l": 308.54999,
+          "t": 72.71386968750005,
+          "r": 376.80584941999996,
+          "b": 64.63163281998538,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/69",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 0,
+        "column_indices": [
+          2,
+          3
+        ],
+        "spans_columns": true,
+        "reading_order_index": 68,
+        "bbox": {
+          "l": 308.54999,
+          "t": 60.29198968749995,
+          "r": 568.21551692,
+          "b": 27.366002819985283,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/70",
+        "element_type": "text",
+        "label": "page_footer",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2,
+          3
+        ],
+        "spans_columns": true,
+        "reading_order_index": null,
+        "bbox": {
+          "l": 99.3266505,
+          "t": 21.989447959472614,
+          "r": 495.95088382500006,
+          "b": 13.761151895774901,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      }
+    ],
+    "warnings": []
+  },
+  "structure_chunks": {
+    "enabled": true,
+    "method": "docling_hybrid_chunker",
+    "scope": "page",
+    "items": [
+      {
+        "text": "Cloze Test\n- Q.496. (a) design      (b) damage    (c) rectify (d) create\n- Q.497. (a) bleached  (b) published  (c) imprinted  (d) coloured",
+        "meta": {
+          "schema_name": "docling_core.transforms.chunker.DocMeta",
+          "version": "1.0.0",
+          "doc_items": [
+            {
+              "self_ref": "#/texts/1",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 291.757038,
+                    "t": 830.7925780594726,
+                    "r": 568.9931979375,
+                    "b": 822.5642819957749,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    10
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/2",
+              "parent": {
+                "cref": "#/groups/1"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 814.6982416875001,
+                    "r": 254.08125492,
+                    "b": 806.6160048199854,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    59
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/3",
+              "parent": {
+                "cref": "#/groups/2"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 795.3740236875,
+                    "r": 275.50019741999995,
+                    "b": 787.2917868199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    63
+                  ]
+                }
+              ]
+            }
+          ],
+          "headings": null,
+          "captions": null,
+          "origin": {
+            "mimetype": "application/pdf",
+            "binary_hash": 5903944433455168134,
+            "filename": "english_page_0341.pdf",
+            "uri": null
+          }
+        },
+        "chunk_index": 0,
+        "contextualized_text": "Cloze Test\n- Q.496. (a) design      (b) damage    (c) rectify (d) create\n- Q.497. (a) bleached  (b) published  (c) imprinted  (d) coloured"
+      },
+      {
+        "text": "Literature is a reflection of society and often (498)______ insight into  the  human  experience.  Through  various  forms like novels, poems,  and  plays,  literature  allows  us  to  (499)______  different emotions  and  perspectives.  It  can  serve  as  a  (500)______  for social  issues,  shedding  light  on  topics  that  need  attention. Reading literature not only enhances our language skills but also (501)______  empathy  by  helping  us  understand  the  feelings  of characters.  In  a  rapidly  changing world, literature (502)______ a timeless portal to diverse worlds and cultures\n- Q.498.\n(a) denies   (b) suggests      (c) garners    (d) offers\nQ.499.\n- (a) exploit    (b) explore        (c) exclaim    (d) explain\n- Q.500. (a) platform    (b) planking    (c) plank     (d) planks\n- Q.501. (a) provokes   (b) withers     (c) avoids     (d) cultivates",
+        "meta": {
+          "schema_name": "docling_core.transforms.chunker.DocMeta",
+          "version": "1.0.0",
+          "doc_items": [
+            {
+              "self_ref": "#/texts/5",
+              "parent": {
+                "cref": "#/groups/0"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 763.6279296875,
+                    "r": 288.88154742,
+                    "b": 656.1706928199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    598
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/6",
+              "parent": {
+                "cref": "#/groups/3"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 644.9287096875,
+                    "r": 57.953323440000005,
+                    "b": 636.8464728199854,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    6
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/7",
+              "parent": {
+                "cref": "#/groups/0"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 57.953323499999996,
+                    "t": 644.9287096875,
+                    "r": 260.91035742,
+                    "b": 636.8464728199854,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    56
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/8",
+              "parent": {
+                "cref": "#/groups/0"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 624.2294896875001,
+                    "r": 55.716506939999995,
+                    "b": 616.1472528199854,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    6
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/9",
+              "parent": {
+                "cref": "#/groups/4"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 55.716507,
+                    "t": 624.2294896875001,
+                    "r": 267.30879492,
+                    "b": 616.1472528199854,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    60
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/10",
+              "parent": {
+                "cref": "#/groups/5"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 604.9013696874999,
+                    "r": 259.79853492,
+                    "b": 596.8191328199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    63
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/11",
+              "parent": {
+                "cref": "#/groups/6"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 585.5810496875,
+                    "r": 275.39033742,
+                    "b": 577.4988128199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    67
+                  ]
+                }
+              ]
+            }
+          ],
+          "headings": [
+            "SET-100. Q .(498 - 502)"
+          ],
+          "captions": null,
+          "origin": {
+            "mimetype": "application/pdf",
+            "binary_hash": 5903944433455168134,
+            "filename": "english_page_0341.pdf",
+            "uri": null
+          }
+        },
+        "chunk_index": 1,
+        "contextualized_text": "SET-100. Q .(498 - 502)\nLiterature is a reflection of society and often (498)______ insight into  the  human  experience.  Through  various  forms like novels, poems,  and  plays,  literature  allows  us  to  (499)______  different emotions  and  perspectives.  It  can  serve  as  a  (500)______  for social  issues,  shedding  light  on  topics  that  need  attention. Reading literature not only enhances our language skills but also (501)______  empathy  by  helping  us  understand  the  feelings  of characters.  In  a  rapidly  changing world, literature (502)______ a timeless portal to diverse worlds and cultures\n- Q.498.\n(a) denies   (b) suggests      (c) garners    (d) offers\nQ.499.\n- (a) exploit    (b) explore        (c) exclaim    (d) explain\n- Q.500. (a) platform    (b) planking    (c) plank     (d) planks\n- Q.501. (a) provokes   (b) withers     (c) avoids     (d) cultivates"
+      },
+      {
+        "text": "- Q.502. (a) became   (b) become   (c) becomes   (d) becoming",
+        "meta": {
+          "schema_name": "docling_core.transforms.chunker.DocMeta",
+          "version": "1.0.0",
+          "doc_items": [
+            {
+              "self_ref": "#/texts/12",
+              "parent": {
+                "cref": "#/groups/7"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 566.2568396875,
+                    "r": 274.98603492,
+                    "b": 558.1746028199854,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    59
+                  ]
+                }
+              ]
+            }
+          ],
+          "headings": [
+            "SET-100. Q .(498 - 502)"
+          ],
+          "captions": null,
+          "origin": {
+            "mimetype": "application/pdf",
+            "binary_hash": 5903944433455168134,
+            "filename": "english_page_0341.pdf",
+            "uri": null
+          }
+        },
+        "chunk_index": 2,
+        "contextualized_text": "SET-100. Q .(498 - 502)\n- Q.502. (a) became   (b) become   (c) becomes   (d) becoming"
+      },
+      {
+        "text": "Children  working  in  hazardous  industries  are  _______(503)  to debilitating diseases which can cripple them for life. By sitting in cramped, damp, unhygienic spaces, their limbs become deformed  for  life.  Inside  the  matchstick,  fireworks  and  glass industries,  they  are_______(504)  of  bronchial  diseases  and  TB. Their mental and physical development is permanently_______(505) by long hours of work. Once_______(506),  they  can't  get  out  of  the  vicious  circle  of poverty. They_______(507) uneducated and powerless.\nQ.503. (a) Questionable (b) Determined (c) Prone (d) Elevated\nQ.504. (a) Creators  (b) Producers  (c) Admirers  (d) Victims\nQ.505. (a) Examined  (b) Impaired  (c) Included  (d) Established\n- Q.506. (a) Determined  (b) Confirmed  (c) Trapped  (d) Adopted",
+        "meta": {
+          "schema_name": "docling_core.transforms.chunker.DocMeta",
+          "version": "1.0.0",
+          "doc_items": [
+            {
+              "self_ref": "#/texts/14",
+              "parent": {
+                "cref": "#/groups/0"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 530.3701196874999,
+                    "r": 288.93867492,
+                    "b": 422.9128828199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    540
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/15",
+              "parent": {
+                "cref": "#/groups/0"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 411.6747996875,
+                    "r": 274.74873627000005,
+                    "b": 403.59256281998535,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    61
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/16",
+              "parent": {
+                "cref": "#/groups/0"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 392.3466796875,
+                    "r": 269.02265742,
+                    "b": 384.26444281998533,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    61
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/17",
+              "parent": {
+                "cref": "#/groups/0"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 373.0263696875,
+                    "r": 282.44794992,
+                    "b": 364.9441328199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    64
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/18",
+              "parent": {
+                "cref": "#/groups/8"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 353.7021496875,
+                    "r": 281.87665992,
+                    "b": 345.61991281998536,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    62
+                  ]
+                }
+              ]
+            }
+          ],
+          "headings": [
+            "SET-101. Q .(503 - 507)"
+          ],
+          "captions": null,
+          "origin": {
+            "mimetype": "application/pdf",
+            "binary_hash": 5903944433455168134,
+            "filename": "english_page_0341.pdf",
+            "uri": null
+          }
+        },
+        "chunk_index": 3,
+        "contextualized_text": "SET-101. Q .(503 - 507)\nChildren  working  in  hazardous  industries  are  _______(503)  to debilitating diseases which can cripple them for life. By sitting in cramped, damp, unhygienic spaces, their limbs become deformed  for  life.  Inside  the  matchstick,  fireworks  and  glass industries,  they  are_______(504)  of  bronchial  diseases  and  TB. Their mental and physical development is permanently_______(505) by long hours of work. Once_______(506),  they  can't  get  out  of  the  vicious  circle  of poverty. They_______(507) uneducated and powerless.\nQ.503. (a) Questionable (b) Determined (c) Prone (d) Elevated\nQ.504. (a) Creators  (b) Producers  (c) Admirers  (d) Victims\nQ.505. (a) Examined  (b) Impaired  (c) Included  (d) Established\n- Q.506. (a) Determined  (b) Confirmed  (c) Trapped  (d) Adopted"
+      },
+      {
+        "text": "Q.507. (a) Remain   (b) Choose   (c) Compete   (d) Accuse",
+        "meta": {
+          "schema_name": "docling_core.transforms.chunker.DocMeta",
+          "version": "1.0.0",
+          "doc_items": [
+            {
+              "self_ref": "#/texts/19",
+              "parent": {
+                "cref": "#/groups/0"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 334.3779296875,
+                    "r": 260.65986491999996,
+                    "b": 326.29569281998533,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    57
+                  ]
+                }
+              ]
+            }
+          ],
+          "headings": [
+            "SET-101. Q .(503 - 507)"
+          ],
+          "captions": null,
+          "origin": {
+            "mimetype": "application/pdf",
+            "binary_hash": 5903944433455168134,
+            "filename": "english_page_0341.pdf",
+            "uri": null
+          }
+        },
+        "chunk_index": 4,
+        "contextualized_text": "SET-101. Q .(503 - 507)\nQ.507. (a) Remain   (b) Choose   (c) Compete   (d) Accuse"
+      },
+      {
+        "text": "Sustainability  is  ____(508)___  longer  just  a  buzzword.  It  ____ (509)  ____   a necessity   and   the   primary   agenda   of   the world\ntoday.  Like  many  other  countries,  India  too  is  witnessing  a growth of ____(510)____ green economy.  It ____(511)____ estimated  that  India's  renewable energy target will create more than  3.4  million  new  job  opportunities  ____(512)____  2030.  In fact, a recent survey stated that a Sustainability Manager is going to be one of the top 10 jobs this decade.\n- Q.508.\n(a) any          (b) never           (c) no              (d) not\n- Q.509.\n- (a) will be     (b) is                 (c) might be     (d) was\n- Q.510.\n(a) his           (b) hers             (c) its                (d) their\n- Q.511.\n(a) will be      (b) were            (c) had been     (d) is\n- Q.512.",
+        "meta": {
+          "schema_name": "docling_core.transforms.chunker.DocMeta",
+          "version": "1.0.0",
+          "doc_items": [
+            {
+              "self_ref": "#/texts/21",
+              "parent": {
+                "cref": "#/groups/0"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 302.6318396875,
+                    "r": 291.04511934,
+                    "b": 269.70585281998535,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    144
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/22",
+              "parent": {
+                "cref": "#/groups/0"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 265.36620968750003,
+                    "r": 288.84346242,
+                    "b": 195.17460281998535,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    372
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/23",
+              "parent": {
+                "cref": "#/groups/9"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 183.93261968750005,
+                    "r": 57.953323440000005,
+                    "b": 175.85038281998538,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    6
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/24",
+              "parent": {
+                "cref": "#/groups/0"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 57.953323499999996,
+                    "t": 183.93261968750005,
+                    "r": 250.92598242000003,
+                    "b": 175.85038281998538,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    64
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/25",
+              "parent": {
+                "cref": "#/groups/10"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 164.6122996875,
+                    "r": 57.953323440000005,
+                    "b": 156.53006281998535,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    6
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/26",
+              "parent": {
+                "cref": "#/groups/11"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 57.953323499999996,
+                    "t": 164.6122996875,
+                    "r": 255.36885387,
+                    "b": 156.53006281998535,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    63
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/27",
+              "parent": {
+                "cref": "#/groups/12"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 145.28808968750002,
+                    "r": 57.953323440000005,
+                    "b": 137.20585281998535,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    6
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/28",
+              "parent": {
+                "cref": "#/groups/0"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 57.953323499999996,
+                    "t": 145.28808968750002,
+                    "r": 259.90840242,
+                    "b": 137.20585281998535,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    71
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/29",
+              "parent": {
+                "cref": "#/groups/13"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 125.96386968750005,
+                    "r": 57.953323440000005,
+                    "b": 117.88163281998538,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    6
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/30",
+              "parent": {
+                "cref": "#/groups/0"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 57.953323499999996,
+                    "t": 125.96386968750005,
+                    "r": 252.92988491999998,
+                    "b": 117.88163281998538,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    60
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/31",
+              "parent": {
+                "cref": "#/groups/14"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 106.64354968750001,
+                    "r": 57.953323440000005,
+                    "b": 98.56131281998535,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    6
+                  ]
+                }
+              ]
+            }
+          ],
+          "headings": [
+            "SET-102. Q .(508 - 512)"
+          ],
+          "captions": null,
+          "origin": {
+            "mimetype": "application/pdf",
+            "binary_hash": 5903944433455168134,
+            "filename": "english_page_0341.pdf",
+            "uri": null
+          }
+        },
+        "chunk_index": 5,
+        "contextualized_text": "SET-102. Q .(508 - 512)\nSustainability  is  ____(508)___  longer  just  a  buzzword.  It  ____ (509)  ____   a necessity   and   the   primary   agenda   of   the world\ntoday.  Like  many  other  countries,  India  too  is  witnessing  a growth of ____(510)____ green economy.  It ____(511)____ estimated  that  India's  renewable energy target will create more than  3.4  million  new  job  opportunities  ____(512)____  2030.  In fact, a recent survey stated that a Sustainability Manager is going to be one of the top 10 jobs this decade.\n- Q.508.\n(a) any          (b) never           (c) no              (d) not\n- Q.509.\n- (a) will be     (b) is                 (c) might be     (d) was\n- Q.510.\n(a) his           (b) hers             (c) its                (d) their\n- Q.511.\n(a) will be      (b) were            (c) had been     (d) is\n- Q.512."
+      },
+      {
+        "text": "(a) with          (b) since            (c) by                (d) for",
+        "meta": {
+          "schema_name": "docling_core.transforms.chunker.DocMeta",
+          "version": "1.0.0",
+          "doc_items": [
+            {
+              "self_ref": "#/texts/32",
+              "parent": {
+                "cref": "#/groups/0"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 57.953323499999996,
+                    "t": 106.64354968750001,
+                    "r": 257.25410742,
+                    "b": 98.56131281998535,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    68
+                  ]
+                }
+              ]
+            }
+          ],
+          "headings": [
+            "SET-102. Q .(508 - 512)"
+          ],
+          "captions": null,
+          "origin": {
+            "mimetype": "application/pdf",
+            "binary_hash": 5903944433455168134,
+            "filename": "english_page_0341.pdf",
+            "uri": null
+          }
+        },
+        "chunk_index": 6,
+        "contextualized_text": "SET-102. Q .(508 - 512)\n(a) with          (b) since            (c) by                (d) for"
+      },
+      {
+        "text": "The  internet  has  (513)  _______reshaped  the  way information is accessed  and  shared.  With a vast array of websites and social media  platforms,  individuals  can  (514)  _______  connect  with others  globally.  However,  this  digital  age  also  brings  (515)\n________ challenges. The spread of misinformation has become a (516) ________ issue, as false content can quickly gain traction. It  is essential for users to (517)_______ assess the credibility of sources  before believing and sharing information. In this era of rapid data dissemination, cultivating media literacy is of utmost importance.\n- Q.513. (a) discreetly\n- (b) occasionally\n- (c) significantly\n- (d) gradually\nQ.514. (a) hesitantly (b) periodically (c) scarcely (d) seamlessly\nQ.515. (a) numerous  (b) abstract  (c) irrelevant  (d) intriguing",
+        "meta": {
+          "schema_name": "docling_core.transforms.chunker.DocMeta",
+          "version": "1.0.0",
+          "doc_items": [
+            {
+              "self_ref": "#/texts/34",
+              "parent": {
+                "cref": "#/groups/0"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 73.51854968750001,
+                    "r": 288.62665992,
+                    "b": 28.170692819985334,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    268
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/35",
+              "parent": {
+                "cref": "#/groups/0"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 308.54999,
+                    "t": 814.6982416875001,
+                    "r": 568.6828044199999,
+                    "b": 744.5027238199854,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    341
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/36",
+              "parent": {
+                "cref": "#/groups/15"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 308.54999,
+                    "t": 733.2646486875,
+                    "r": 423.0495016699999,
+                    "b": 725.1824118199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    21
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/37",
+              "parent": {
+                "cref": "#/groups/16"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 452.54999,
+                    "t": 733.2646486875,
+                    "r": 520.43231192,
+                    "b": 725.1824118199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    16
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/38",
+              "parent": {
+                "cref": "#/groups/17"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 308.54999,
+                    "t": 720.8427736875,
+                    "r": 421.05438467,
+                    "b": 712.7605368199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    17
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/39",
+              "parent": {
+                "cref": "#/groups/18"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 452.54999,
+                    "t": 720.8427736875,
+                    "r": 504.69549692,
+                    "b": 712.7605368199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    13
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/40",
+              "parent": {
+                "cref": "#/groups/0"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 308.54999,
+                    "t": 701.5185546875,
+                    "r": 562.6725519199999,
+                    "b": 693.4363178199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    66
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/41",
+              "parent": {
+                "cref": "#/groups/0"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 308.54999,
+                    "t": 682.1943356875,
+                    "r": 554.66132192,
+                    "b": 674.1120988199854,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    65
+                  ]
+                }
+              ]
+            }
+          ],
+          "headings": [
+            "SET-103. Q .(513 - 517)"
+          ],
+          "captions": null,
+          "origin": {
+            "mimetype": "application/pdf",
+            "binary_hash": 5903944433455168134,
+            "filename": "english_page_0341.pdf",
+            "uri": null
+          }
+        },
+        "chunk_index": 7,
+        "contextualized_text": "SET-103. Q .(513 - 517)\nThe  internet  has  (513)  _______reshaped  the  way information is accessed  and  shared.  With a vast array of websites and social media  platforms,  individuals  can  (514)  _______  connect  with others  globally.  However,  this  digital  age  also  brings  (515)\n________ challenges. The spread of misinformation has become a (516) ________ issue, as false content can quickly gain traction. It  is essential for users to (517)_______ assess the credibility of sources  before believing and sharing information. In this era of rapid data dissemination, cultivating media literacy is of utmost importance.\n- Q.513. (a) discreetly\n- (b) occasionally\n- (c) significantly\n- (d) gradually\nQ.514. (a) hesitantly (b) periodically (c) scarcely (d) seamlessly\nQ.515. (a) numerous  (b) abstract  (c) irrelevant  (d) intriguing"
+      },
+      {
+        "text": "Q.516. (a) pressing  (b) soothing  (c) negligible  (d) dormant\n- Q.517. (a) meticulously                      (b) hesitantly\n- (c) reluctantly                          (d) impulsively",
+        "meta": {
+          "schema_name": "docling_core.transforms.chunker.DocMeta",
+          "version": "1.0.0",
+          "doc_items": [
+            {
+              "self_ref": "#/texts/42",
+              "parent": {
+                "cref": "#/groups/0"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 308.54999,
+                    "t": 662.8740196875,
+                    "r": 548.56170692,
+                    "b": 654.7917828199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    62
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/43",
+              "parent": {
+                "cref": "#/groups/19"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 308.54999,
+                    "t": 643.5497996875,
+                    "r": 509.96453941999994,
+                    "b": 635.4675628199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    59
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/44",
+              "parent": {
+                "cref": "#/groups/20"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 308.54999,
+                    "t": 631.1279296875,
+                    "r": 510.96649441999995,
+                    "b": 623.0456928199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    56
+                  ]
+                }
+              ]
+            }
+          ],
+          "headings": [
+            "SET-103. Q .(513 - 517)"
+          ],
+          "captions": null,
+          "origin": {
+            "mimetype": "application/pdf",
+            "binary_hash": 5903944433455168134,
+            "filename": "english_page_0341.pdf",
+            "uri": null
+          }
+        },
+        "chunk_index": 8,
+        "contextualized_text": "SET-103. Q .(513 - 517)\nQ.516. (a) pressing  (b) soothing  (c) negligible  (d) dormant\n- Q.517. (a) meticulously                      (b) hesitantly\n- (c) reluctantly                          (d) impulsively"
+      },
+      {
+        "text": "Vijayanagara  or  \"city  of  victory\"  was  the____(518)____of  both a city and an empire. The empire was____(519)____ in the fourteenth  century.  In  its heyday, it ____(520)____ from the river Krishna  in  the  north  to  the  extreme  south  of  the  peninsula.  In 1565, the city was  sacked and _____(521)_____ deserted. Although it fell into ruin in the seventeenth - eighteenth centuries,  it  lived  on  in  the  memories  of  people  living  in  the Krishna-Tungabhadra  doab.  They  remembered  it  as  Hampi,  a name _____  (522)_____  from  that  of  the  local  mother  goddess, Pampadevi.\n- Q.518.\n(a) mark         (b) name          (c) sign             (d) label\nQ.519.\n- (a) founded   (b) begun         (c) Implanted   (d) discovered\n- Q.520.\n- (a) started       (b) magnified   (c) strained      (d) stretched",
+        "meta": {
+          "schema_name": "docling_core.transforms.chunker.DocMeta",
+          "version": "1.0.0",
+          "doc_items": [
+            {
+              "self_ref": "#/texts/46",
+              "parent": {
+                "cref": "#/groups/0"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 308.54999,
+                    "t": 599.3818396875,
+                    "r": 568.72820942,
+                    "b": 479.5027228199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    603
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/47",
+              "parent": {
+                "cref": "#/groups/21"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 308.54999,
+                    "t": 468.2607396875,
+                    "r": 337.70331044,
+                    "b": 460.17850281998534,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    6
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/48",
+              "parent": {
+                "cref": "#/groups/0"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 337.7033105,
+                    "t": 468.2607396875,
+                    "r": 543.78045692,
+                    "b": 460.17850281998534,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    65
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/49",
+              "parent": {
+                "cref": "#/groups/0"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 308.54999,
+                    "t": 450.3193396875,
+                    "r": 337.70331044,
+                    "b": 442.23710281998535,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    6
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/50",
+              "parent": {
+                "cref": "#/groups/22"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 337.7033105,
+                    "t": 450.3193396875,
+                    "r": 568.68866192,
+                    "b": 442.23710281998535,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    62
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/51",
+              "parent": {
+                "cref": "#/groups/23"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 308.54999,
+                    "t": 432.3740196875,
+                    "r": 337.70331044,
+                    "b": 424.2917828199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    6
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/52",
+              "parent": {
+                "cref": "#/groups/24"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 337.7033105,
+                    "t": 432.3740196875,
+                    "r": 564.2062419199999,
+                    "b": 424.2917828199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    65
+                  ]
+                }
+              ]
+            }
+          ],
+          "headings": [
+            "SET-104. Q .(518 - 522)"
+          ],
+          "captions": null,
+          "origin": {
+            "mimetype": "application/pdf",
+            "binary_hash": 5903944433455168134,
+            "filename": "english_page_0341.pdf",
+            "uri": null
+          }
+        },
+        "chunk_index": 9,
+        "contextualized_text": "SET-104. Q .(518 - 522)\nVijayanagara  or  \"city  of  victory\"  was  the____(518)____of  both a city and an empire. The empire was____(519)____ in the fourteenth  century.  In  its heyday, it ____(520)____ from the river Krishna  in  the  north  to  the  extreme  south  of  the  peninsula.  In 1565, the city was  sacked and _____(521)_____ deserted. Although it fell into ruin in the seventeenth - eighteenth centuries,  it  lived  on  in  the  memories  of  people  living  in  the Krishna-Tungabhadra  doab.  They  remembered  it  as  Hampi,  a name _____  (522)_____  from  that  of  the  local  mother  goddess, Pampadevi.\n- Q.518.\n(a) mark         (b) name          (c) sign             (d) label\nQ.519.\n- (a) founded   (b) begun         (c) Implanted   (d) discovered\n- Q.520.\n- (a) started       (b) magnified   (c) strained      (d) stretched"
+      },
+      {
+        "text": "- Q.521 (a) previously\n- (b) subsequently\n- (c) accidentally\n- (d) presently\nQ.522. (a) extracted  (b) designed  (c) derived  (d) collected",
+        "meta": {
+          "schema_name": "docling_core.transforms.chunker.DocMeta",
+          "version": "1.0.0",
+          "doc_items": [
+            {
+              "self_ref": "#/texts/53",
+              "parent": {
+                "cref": "#/groups/25"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 308.54999,
+                    "t": 414.4326196875,
+                    "r": 408.99579092,
+                    "b": 406.3503828199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    20
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/54",
+              "parent": {
+                "cref": "#/groups/26"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 416.54999,
+                    "t": 414.4326196875,
+                    "r": 505.66229192,
+                    "b": 406.3503828199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    16
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/55",
+              "parent": {
+                "cref": "#/groups/27"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 308.54999,
+                    "t": 402.0107396875,
+                    "r": 409.6901266699999,
+                    "b": 393.92850281998534,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    16
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/56",
+              "parent": {
+                "cref": "#/groups/28"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 416.54999,
+                    "t": 402.0107396875,
+                    "r": 486.73505192,
+                    "b": 393.92850281998534,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    13
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/57",
+              "parent": {
+                "cref": "#/groups/0"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 308.54999,
+                    "t": 384.0654296875,
+                    "r": 546.59295692,
+                    "b": 375.98319281998533,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    62
+                  ]
+                }
+              ]
+            }
+          ],
+          "headings": [
+            "SET-104. Q .(518 - 522)"
+          ],
+          "captions": null,
+          "origin": {
+            "mimetype": "application/pdf",
+            "binary_hash": 5903944433455168134,
+            "filename": "english_page_0341.pdf",
+            "uri": null
+          }
+        },
+        "chunk_index": 10,
+        "contextualized_text": "SET-104. Q .(518 - 522)\n- Q.521 (a) previously\n- (b) subsequently\n- (c) accidentally\n- (d) presently\nQ.522. (a) extracted  (b) designed  (c) derived  (d) collected"
+      },
+      {
+        "text": "'Can'  is  used  to  indicate  the ability to do something. The given passage  talks  about  the  inability  of  the  camel  to  find  water. Hence, 'cannot' is the most appropriate answer.",
+        "meta": {
+          "schema_name": "docling_core.transforms.chunker.DocMeta",
+          "version": "1.0.0",
+          "doc_items": [
+            {
+              "self_ref": "#/texts/61",
+              "parent": {
+                "cref": "#/groups/0"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 308.54999,
+                    "t": 305.9716796875,
+                    "r": 568.7663019199999,
+                    "b": 273.04569281998533,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    189
+                  ]
+                }
+              ]
+            }
+          ],
+          "headings": [
+            "Sol.423.(d) cannot"
+          ],
+          "captions": null,
+          "origin": {
+            "mimetype": "application/pdf",
+            "binary_hash": 5903944433455168134,
+            "filename": "english_page_0341.pdf",
+            "uri": null
+          }
+        },
+        "chunk_index": 11,
+        "contextualized_text": "Sol.423.(d) cannot\n'Can'  is  used  to  indicate  the ability to do something. The given passage  talks  about  the  inability  of  the  camel  to  find  water. Hence, 'cannot' is the most appropriate answer."
+      },
+      {
+        "text": "Article  'the'  is  used  before  a  specific  or  particular  noun.  The 'small  amount'  mentioned  in  the  given  passage  is  specific. Hence, 'the' is the most appropriate answer.",
+        "meta": {
+          "schema_name": "docling_core.transforms.chunker.DocMeta",
+          "version": "1.0.0",
+          "doc_items": [
+            {
+              "self_ref": "#/texts/63",
+              "parent": {
+                "cref": "#/groups/0"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 308.54999,
+                    "t": 250.76073968749995,
+                    "r": 568.65497192,
+                    "b": 217.83475281998528,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    185
+                  ]
+                }
+              ]
+            }
+          ],
+          "headings": [
+            "Sol.424.(b) the"
+          ],
+          "captions": null,
+          "origin": {
+            "mimetype": "application/pdf",
+            "binary_hash": 5903944433455168134,
+            "filename": "english_page_0341.pdf",
+            "uri": null
+          }
+        },
+        "chunk_index": 12,
+        "contextualized_text": "Sol.424.(b) the\nArticle  'the'  is  used  before  a  specific  or  particular  noun.  The 'small  amount'  mentioned  in  the  given  passage  is  specific. Hence, 'the' is the most appropriate answer."
+      },
+      {
+        "text": "When we make a comparison, 'that' is used to avoid repetition of a  noun.  In  the  given  sentence,  there  is  a  comparison between the  body  temperature.  Therefore,  'that'  has  been used to avoid repetition of the noun phrase 'body temperature'. Hence, 'that' is the most appropriate answer.",
+        "meta": {
+          "schema_name": "docling_core.transforms.chunker.DocMeta",
+          "version": "1.0.0",
+          "doc_items": [
+            {
+              "self_ref": "#/texts/65",
+              "parent": {
+                "cref": "#/groups/0"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 308.54999,
+                    "t": 195.55761968750005,
+                    "r": 568.7692269199999,
+                    "b": 137.78788281998538,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    299
+                  ]
+                }
+              ]
+            }
+          ],
+          "headings": [
+            "Sol.425.(c) that"
+          ],
+          "captions": null,
+          "origin": {
+            "mimetype": "application/pdf",
+            "binary_hash": 5903944433455168134,
+            "filename": "english_page_0341.pdf",
+            "uri": null
+          }
+        },
+        "chunk_index": 13,
+        "contextualized_text": "Sol.425.(c) that\nWhen we make a comparison, 'that' is used to avoid repetition of a  noun.  In  the  given  sentence,  there  is  a  comparison between the  body  temperature.  Therefore,  'that'  has  been used to avoid repetition of the noun phrase 'body temperature'. Hence, 'that' is the most appropriate answer."
+      },
+      {
+        "text": "'At' is used to indicate the position or level of something. In the given sentence, 'at' has been used to indicate the higher level of temperature. Hence, 'at' is the most appropriate answer.",
+        "meta": {
+          "schema_name": "docling_core.transforms.chunker.DocMeta",
+          "version": "1.0.0",
+          "doc_items": [
+            {
+              "self_ref": "#/texts/67",
+              "parent": {
+                "cref": "#/groups/0"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 308.54999,
+                    "t": 115.5029296875,
+                    "r": 568.2243069199999,
+                    "b": 82.57694281998533,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    191
+                  ]
+                }
+              ]
+            }
+          ],
+          "headings": [
+            "Sol.426.(d) at"
+          ],
+          "captions": null,
+          "origin": {
+            "mimetype": "application/pdf",
+            "binary_hash": 5903944433455168134,
+            "filename": "english_page_0341.pdf",
+            "uri": null
+          }
+        },
+        "chunk_index": 14,
+        "contextualized_text": "Sol.426.(d) at\n'At' is used to indicate the position or level of something. In the given sentence, 'at' has been used to indicate the higher level of temperature. Hence, 'at' is the most appropriate answer."
+      },
+      {
+        "text": "According to the 'Subject-Verb Agreement Rule', a plural subject always  takes  a  plural  verb.  'Human  beings'  is  a  plural  subject that will take 'start' as a plural verb. Hence, 'start' is the most",
+        "meta": {
+          "schema_name": "docling_core.transforms.chunker.DocMeta",
+          "version": "1.0.0",
+          "doc_items": [
+            {
+              "self_ref": "#/texts/69",
+              "parent": {
+                "cref": "#/groups/0"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 308.54999,
+                    "t": 60.29198968749995,
+                    "r": 568.21551692,
+                    "b": 27.366002819985283,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    205
+                  ]
+                }
+              ]
+            }
+          ],
+          "headings": [
+            "Sol.427.(d) start"
+          ],
+          "captions": null,
+          "origin": {
+            "mimetype": "application/pdf",
+            "binary_hash": 5903944433455168134,
+            "filename": "english_page_0341.pdf",
+            "uri": null
+          }
+        },
+        "chunk_index": 15,
+        "contextualized_text": "Sol.427.(d) start\nAccording to the 'Subject-Verb Agreement Rule', a plural subject always  takes  a  plural  verb.  'Human  beings'  is  a  plural  subject that will take 'start' as a plural verb. Hence, 'start' is the most"
+      }
+    ]
+  },
+  "content_assets": {
+    "tables": [],
+    "figures": []
+  },
+  "docling_document": {
+    "schema_name": "DoclingDocument",
+    "version": "1.10.0",
+    "name": "english_page_0341",
+    "origin": {
+      "mimetype": "application/pdf",
+      "binary_hash": 5903944433455168134,
+      "filename": "english_page_0341.pdf"
+    },
+    "furniture": {
+      "self_ref": "#/furniture",
+      "children": [],
+      "content_layer": "furniture",
+      "name": "_root_",
+      "label": "unspecified"
+    },
+    "body": {
+      "self_ref": "#/body",
+      "children": [
+        {
+          "$ref": "#/texts/0"
+        },
+        {
+          "$ref": "#/texts/1"
+        },
+        {
+          "$ref": "#/groups/0"
+        },
+        {
+          "$ref": "#/texts/70"
+        }
+      ],
+      "content_layer": "body",
+      "name": "_root_",
+      "label": "unspecified"
+    },
+    "groups": [
+      {
+        "self_ref": "#/groups/0",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [
+          {
+            "$ref": "#/groups/1"
+          },
+          {
+            "$ref": "#/groups/2"
+          },
+          {
+            "$ref": "#/texts/4"
+          },
+          {
+            "$ref": "#/texts/5"
+          },
+          {
+            "$ref": "#/groups/3"
+          },
+          {
+            "$ref": "#/texts/7"
+          },
+          {
+            "$ref": "#/texts/8"
+          },
+          {
+            "$ref": "#/groups/4"
+          },
+          {
+            "$ref": "#/groups/5"
+          },
+          {
+            "$ref": "#/groups/6"
+          },
+          {
+            "$ref": "#/groups/7"
+          },
+          {
+            "$ref": "#/texts/13"
+          },
+          {
+            "$ref": "#/texts/14"
+          },
+          {
+            "$ref": "#/texts/15"
+          },
+          {
+            "$ref": "#/texts/16"
+          },
+          {
+            "$ref": "#/texts/17"
+          },
+          {
+            "$ref": "#/groups/8"
+          },
+          {
+            "$ref": "#/texts/19"
+          },
+          {
+            "$ref": "#/texts/20"
+          },
+          {
+            "$ref": "#/texts/21"
+          },
+          {
+            "$ref": "#/texts/22"
+          },
+          {
+            "$ref": "#/groups/9"
+          },
+          {
+            "$ref": "#/texts/24"
+          },
+          {
+            "$ref": "#/groups/10"
+          },
+          {
+            "$ref": "#/groups/11"
+          },
+          {
+            "$ref": "#/groups/12"
+          },
+          {
+            "$ref": "#/texts/28"
+          },
+          {
+            "$ref": "#/groups/13"
+          },
+          {
+            "$ref": "#/texts/30"
+          },
+          {
+            "$ref": "#/groups/14"
+          },
+          {
+            "$ref": "#/texts/32"
+          },
+          {
+            "$ref": "#/texts/33"
+          },
+          {
+            "$ref": "#/texts/34"
+          },
+          {
+            "$ref": "#/texts/35"
+          },
+          {
+            "$ref": "#/groups/15"
+          },
+          {
+            "$ref": "#/groups/16"
+          },
+          {
+            "$ref": "#/groups/17"
+          },
+          {
+            "$ref": "#/groups/18"
+          },
+          {
+            "$ref": "#/texts/40"
+          },
+          {
+            "$ref": "#/texts/41"
+          },
+          {
+            "$ref": "#/texts/42"
+          },
+          {
+            "$ref": "#/groups/19"
+          },
+          {
+            "$ref": "#/groups/20"
+          },
+          {
+            "$ref": "#/texts/45"
+          },
+          {
+            "$ref": "#/texts/46"
+          },
+          {
+            "$ref": "#/groups/21"
+          },
+          {
+            "$ref": "#/texts/48"
+          },
+          {
+            "$ref": "#/texts/49"
+          },
+          {
+            "$ref": "#/groups/22"
+          },
+          {
+            "$ref": "#/groups/23"
+          },
+          {
+            "$ref": "#/groups/24"
+          },
+          {
+            "$ref": "#/groups/25"
+          },
+          {
+            "$ref": "#/groups/26"
+          },
+          {
+            "$ref": "#/groups/27"
+          },
+          {
+            "$ref": "#/groups/28"
+          },
+          {
+            "$ref": "#/texts/57"
+          },
+          {
+            "$ref": "#/texts/58"
+          },
+          {
+            "$ref": "#/texts/59"
+          },
+          {
+            "$ref": "#/texts/60"
+          },
+          {
+            "$ref": "#/texts/61"
+          },
+          {
+            "$ref": "#/texts/62"
+          },
+          {
+            "$ref": "#/texts/63"
+          },
+          {
+            "$ref": "#/texts/64"
+          },
+          {
+            "$ref": "#/texts/65"
+          },
+          {
+            "$ref": "#/texts/66"
+          },
+          {
+            "$ref": "#/texts/67"
+          },
+          {
+            "$ref": "#/texts/68"
+          },
+          {
+            "$ref": "#/texts/69"
+          }
+        ],
+        "content_layer": "body",
+        "name": "group",
+        "label": "form_area"
+      },
+      {
+        "self_ref": "#/groups/1",
+        "parent": {
+          "$ref": "#/groups/0"
+        },
+        "children": [
+          {
+            "$ref": "#/texts/2"
+          }
+        ],
+        "content_layer": "body",
+        "name": "group",
+        "label": "list"
+      },
+      {
+        "self_ref": "#/groups/2",
+        "parent": {
+          "$ref": "#/groups/0"
+        },
+        "children": [
+          {
+            "$ref": "#/texts/3"
+          }
+        ],
+        "content_layer": "body",
+        "name": "group",
+        "label": "list"
+      },
+      {
+        "self_ref": "#/groups/3",
+        "parent": {
+          "$ref": "#/groups/0"
+        },
+        "children": [
+          {
+            "$ref": "#/texts/6"
+          }
+        ],
+        "content_layer": "body",
+        "name": "group",
+        "label": "list"
+      },
+      {
+        "self_ref": "#/groups/4",
+        "parent": {
+          "$ref": "#/groups/0"
+        },
+        "children": [
+          {
+            "$ref": "#/texts/9"
+          }
+        ],
+        "content_layer": "body",
+        "name": "group",
+        "label": "list"
+      },
+      {
+        "self_ref": "#/groups/5",
+        "parent": {
+          "$ref": "#/groups/0"
+        },
+        "children": [
+          {
+            "$ref": "#/texts/10"
+          }
+        ],
+        "content_layer": "body",
+        "name": "group",
+        "label": "list"
+      },
+      {
+        "self_ref": "#/groups/6",
+        "parent": {
+          "$ref": "#/groups/0"
+        },
+        "children": [
+          {
+            "$ref": "#/texts/11"
+          }
+        ],
+        "content_layer": "body",
+        "name": "group",
+        "label": "list"
+      },
+      {
+        "self_ref": "#/groups/7",
+        "parent": {
+          "$ref": "#/groups/0"
+        },
+        "children": [
+          {
+            "$ref": "#/texts/12"
+          }
+        ],
+        "content_layer": "body",
+        "name": "group",
+        "label": "list"
+      },
+      {
+        "self_ref": "#/groups/8",
+        "parent": {
+          "$ref": "#/groups/0"
+        },
+        "children": [
+          {
+            "$ref": "#/texts/18"
+          }
+        ],
+        "content_layer": "body",
+        "name": "group",
+        "label": "list"
+      },
+      {
+        "self_ref": "#/groups/9",
+        "parent": {
+          "$ref": "#/groups/0"
+        },
+        "children": [
+          {
+            "$ref": "#/texts/23"
+          }
+        ],
+        "content_layer": "body",
+        "name": "group",
+        "label": "list"
+      },
+      {
+        "self_ref": "#/groups/10",
+        "parent": {
+          "$ref": "#/groups/0"
+        },
+        "children": [
+          {
+            "$ref": "#/texts/25"
+          }
+        ],
+        "content_layer": "body",
+        "name": "group",
+        "label": "list"
+      },
+      {
+        "self_ref": "#/groups/11",
+        "parent": {
+          "$ref": "#/groups/0"
+        },
+        "children": [
+          {
+            "$ref": "#/texts/26"
+          }
+        ],
+        "content_layer": "body",
+        "name": "group",
+        "label": "list"
+      },
+      {
+        "self_ref": "#/groups/12",
+        "parent": {
+          "$ref": "#/groups/0"
+        },
+        "children": [
+          {
+            "$ref": "#/texts/27"
+          }
+        ],
+        "content_layer": "body",
+        "name": "group",
+        "label": "list"
+      },
+      {
+        "self_ref": "#/groups/13",
+        "parent": {
+          "$ref": "#/groups/0"
+        },
+        "children": [
+          {
+            "$ref": "#/texts/29"
+          }
+        ],
+        "content_layer": "body",
+        "name": "group",
+        "label": "list"
+      },
+      {
+        "self_ref": "#/groups/14",
+        "parent": {
+          "$ref": "#/groups/0"
+        },
+        "children": [
+          {
+            "$ref": "#/texts/31"
+          }
+        ],
+        "content_layer": "body",
+        "name": "group",
+        "label": "list"
+      },
+      {
+        "self_ref": "#/groups/15",
+        "parent": {
+          "$ref": "#/groups/0"
+        },
+        "children": [
+          {
+            "$ref": "#/texts/36"
+          }
+        ],
+        "content_layer": "body",
+        "name": "group",
+        "label": "list"
+      },
+      {
+        "self_ref": "#/groups/16",
+        "parent": {
+          "$ref": "#/groups/0"
+        },
+        "children": [
+          {
+            "$ref": "#/texts/37"
+          }
+        ],
+        "content_layer": "body",
+        "name": "group",
+        "label": "list"
+      },
+      {
+        "self_ref": "#/groups/17",
+        "parent": {
+          "$ref": "#/groups/0"
+        },
+        "children": [
+          {
+            "$ref": "#/texts/38"
+          }
+        ],
+        "content_layer": "body",
+        "name": "group",
+        "label": "list"
+      },
+      {
+        "self_ref": "#/groups/18",
+        "parent": {
+          "$ref": "#/groups/0"
+        },
+        "children": [
+          {
+            "$ref": "#/texts/39"
+          }
+        ],
+        "content_layer": "body",
+        "name": "group",
+        "label": "list"
+      },
+      {
+        "self_ref": "#/groups/19",
+        "parent": {
+          "$ref": "#/groups/0"
+        },
+        "children": [
+          {
+            "$ref": "#/texts/43"
+          }
+        ],
+        "content_layer": "body",
+        "name": "group",
+        "label": "list"
+      },
+      {
+        "self_ref": "#/groups/20",
+        "parent": {
+          "$ref": "#/groups/0"
+        },
+        "children": [
+          {
+            "$ref": "#/texts/44"
+          }
+        ],
+        "content_layer": "body",
+        "name": "group",
+        "label": "list"
+      },
+      {
+        "self_ref": "#/groups/21",
+        "parent": {
+          "$ref": "#/groups/0"
+        },
+        "children": [
+          {
+            "$ref": "#/texts/47"
+          }
+        ],
+        "content_layer": "body",
+        "name": "group",
+        "label": "list"
+      },
+      {
+        "self_ref": "#/groups/22",
+        "parent": {
+          "$ref": "#/groups/0"
+        },
+        "children": [
+          {
+            "$ref": "#/texts/50"
+          }
+        ],
+        "content_layer": "body",
+        "name": "group",
+        "label": "list"
+      },
+      {
+        "self_ref": "#/groups/23",
+        "parent": {
+          "$ref": "#/groups/0"
+        },
+        "children": [
+          {
+            "$ref": "#/texts/51"
+          }
+        ],
+        "content_layer": "body",
+        "name": "group",
+        "label": "list"
+      },
+      {
+        "self_ref": "#/groups/24",
+        "parent": {
+          "$ref": "#/groups/0"
+        },
+        "children": [
+          {
+            "$ref": "#/texts/52"
+          }
+        ],
+        "content_layer": "body",
+        "name": "group",
+        "label": "list"
+      },
+      {
+        "self_ref": "#/groups/25",
+        "parent": {
+          "$ref": "#/groups/0"
+        },
+        "children": [
+          {
+            "$ref": "#/texts/53"
+          }
+        ],
+        "content_layer": "body",
+        "name": "group",
+        "label": "list"
+      },
+      {
+        "self_ref": "#/groups/26",
+        "parent": {
+          "$ref": "#/groups/0"
+        },
+        "children": [
+          {
+            "$ref": "#/texts/54"
+          }
+        ],
+        "content_layer": "body",
+        "name": "group",
+        "label": "list"
+      },
+      {
+        "self_ref": "#/groups/27",
+        "parent": {
+          "$ref": "#/groups/0"
+        },
+        "children": [
+          {
+            "$ref": "#/texts/55"
+          }
+        ],
+        "content_layer": "body",
+        "name": "group",
+        "label": "list"
+      },
+      {
+        "self_ref": "#/groups/28",
+        "parent": {
+          "$ref": "#/groups/0"
+        },
+        "children": [
+          {
+            "$ref": "#/texts/56"
+          }
+        ],
+        "content_layer": "body",
+        "name": "group",
+        "label": "list"
+      }
+    ],
+    "texts": [
+      {
+        "self_ref": "#/texts/0",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "furniture",
+        "label": "page_header",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 830.7925780594726,
+              "r": 95.7084616875,
+              "b": 822.5642819957749,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              8
+            ]
+          }
+        ],
+        "orig": "Pinnacle",
+        "text": "Pinnacle"
+      },
+      {
+        "self_ref": "#/texts/1",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 291.757038,
+              "t": 830.7925780594726,
+              "r": 568.9931979375,
+              "b": 822.5642819957749,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              10
+            ]
+          }
+        ],
+        "orig": "Cloze Test",
+        "text": "Cloze Test"
+      },
+      {
+        "self_ref": "#/texts/2",
+        "parent": {
+          "$ref": "#/groups/1"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 814.6982416875001,
+              "r": 254.08125492,
+              "b": 806.6160048199854,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              59
+            ]
+          }
+        ],
+        "orig": "Q.496. (a) design      (b) damage    (c) rectify (d) create",
+        "text": "Q.496. (a) design      (b) damage    (c) rectify (d) create",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/3",
+        "parent": {
+          "$ref": "#/groups/2"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 795.3740236875,
+              "r": 275.50019741999995,
+              "b": 787.2917868199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              63
+            ]
+          }
+        ],
+        "orig": "Q.497. (a) bleached  (b) published  (c) imprinted  (d) coloured",
+        "text": "Q.497. (a) bleached  (b) published  (c) imprinted  (d) coloured",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/4",
+        "parent": {
+          "$ref": "#/groups/0"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "section_header",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 776.0498046875,
+              "r": 126.41133144,
+              "b": 767.9675678199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              23
+            ]
+          }
+        ],
+        "orig": "SET-100. Q .(498 - 502)",
+        "text": "SET-100. Q .(498 - 502)",
+        "level": 1
+      },
+      {
+        "self_ref": "#/texts/5",
+        "parent": {
+          "$ref": "#/groups/0"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 763.6279296875,
+              "r": 288.88154742,
+              "b": 656.1706928199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              598
+            ]
+          }
+        ],
+        "orig": "Literature is a reflection of society and often (498)______ insight into  the  human  experience.  Through  various  forms like novels, poems,  and  plays,  literature  allows  us  to  (499)______  different emotions  and  perspectives.  It  can  serve  as  a  (500)______  for social  issues,  shedding  light  on  topics  that  need  attention. Reading literature not only enhances our language skills but also (501)______  empathy  by  helping  us  understand  the  feelings  of characters.  In  a  rapidly  changing world, literature (502)______ a timeless portal to diverse worlds and cultures",
+        "text": "Literature is a reflection of society and often (498)______ insight into  the  human  experience.  Through  various  forms like novels, poems,  and  plays,  literature  allows  us  to  (499)______  different emotions  and  perspectives.  It  can  serve  as  a  (500)______  for social  issues,  shedding  light  on  topics  that  need  attention. Reading literature not only enhances our language skills but also (501)______  empathy  by  helping  us  understand  the  feelings  of characters.  In  a  rapidly  changing world, literature (502)______ a timeless portal to diverse worlds and cultures"
+      },
+      {
+        "self_ref": "#/texts/6",
+        "parent": {
+          "$ref": "#/groups/3"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 644.9287096875,
+              "r": 57.953323440000005,
+              "b": 636.8464728199854,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              6
+            ]
+          }
+        ],
+        "orig": "Q.498.",
+        "text": "Q.498.",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/7",
+        "parent": {
+          "$ref": "#/groups/0"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 57.953323499999996,
+              "t": 644.9287096875,
+              "r": 260.91035742,
+              "b": 636.8464728199854,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              56
+            ]
+          }
+        ],
+        "orig": "(a) denies   (b) suggests      (c) garners    (d) offers",
+        "text": "(a) denies   (b) suggests      (c) garners    (d) offers"
+      },
+      {
+        "self_ref": "#/texts/8",
+        "parent": {
+          "$ref": "#/groups/0"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 624.2294896875001,
+              "r": 55.716506939999995,
+              "b": 616.1472528199854,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              6
+            ]
+          }
+        ],
+        "orig": "Q.499.",
+        "text": "Q.499."
+      },
+      {
+        "self_ref": "#/texts/9",
+        "parent": {
+          "$ref": "#/groups/4"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 55.716507,
+              "t": 624.2294896875001,
+              "r": 267.30879492,
+              "b": 616.1472528199854,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              60
+            ]
+          }
+        ],
+        "orig": "(a) exploit    (b) explore        (c) exclaim    (d) explain",
+        "text": "(a) exploit    (b) explore        (c) exclaim    (d) explain",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/10",
+        "parent": {
+          "$ref": "#/groups/5"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 604.9013696874999,
+              "r": 259.79853492,
+              "b": 596.8191328199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              63
+            ]
+          }
+        ],
+        "orig": "Q.500. (a) platform    (b) planking    (c) plank     (d) planks",
+        "text": "Q.500. (a) platform    (b) planking    (c) plank     (d) planks",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/11",
+        "parent": {
+          "$ref": "#/groups/6"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 585.5810496875,
+              "r": 275.39033742,
+              "b": 577.4988128199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              67
+            ]
+          }
+        ],
+        "orig": "Q.501. (a) provokes   (b) withers     (c) avoids     (d) cultivates",
+        "text": "Q.501. (a) provokes   (b) withers     (c) avoids     (d) cultivates",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/12",
+        "parent": {
+          "$ref": "#/groups/7"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 566.2568396875,
+              "r": 274.98603492,
+              "b": 558.1746028199854,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              59
+            ]
+          }
+        ],
+        "orig": "Q.502. (a) became   (b) become   (c) becomes   (d) becoming",
+        "text": "Q.502. (a) became   (b) become   (c) becomes   (d) becoming",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/13",
+        "parent": {
+          "$ref": "#/groups/0"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "section_header",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 542.7919896875001,
+              "r": 126.41133144,
+              "b": 534.7097528199854,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              23
+            ]
+          }
+        ],
+        "orig": "SET-101. Q .(503 - 507)",
+        "text": "SET-101. Q .(503 - 507)",
+        "level": 1
+      },
+      {
+        "self_ref": "#/texts/14",
+        "parent": {
+          "$ref": "#/groups/0"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 530.3701196874999,
+              "r": 288.93867492,
+              "b": 422.9128828199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              540
+            ]
+          }
+        ],
+        "orig": "Children  working  in  hazardous  industries  are  _______(503)  to debilitating diseases which can cripple them for life. By sitting in cramped, damp, unhygienic spaces, their limbs become deformed  for  life.  Inside  the  matchstick,  fireworks  and  glass industries,  they  are_______(504)  of  bronchial  diseases  and  TB. Their mental and physical development is permanently_______(505) by long hours of work. Once_______(506),  they  can't  get  out  of  the  vicious  circle  of poverty. They_______(507) uneducated and powerless.",
+        "text": "Children  working  in  hazardous  industries  are  _______(503)  to debilitating diseases which can cripple them for life. By sitting in cramped, damp, unhygienic spaces, their limbs become deformed  for  life.  Inside  the  matchstick,  fireworks  and  glass industries,  they  are_______(504)  of  bronchial  diseases  and  TB. Their mental and physical development is permanently_______(505) by long hours of work. Once_______(506),  they  can't  get  out  of  the  vicious  circle  of poverty. They_______(507) uneducated and powerless."
+      },
+      {
+        "self_ref": "#/texts/15",
+        "parent": {
+          "$ref": "#/groups/0"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 411.6747996875,
+              "r": 274.74873627000005,
+              "b": 403.59256281998535,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              61
+            ]
+          }
+        ],
+        "orig": "Q.503. (a) Questionable (b) Determined (c) Prone (d) Elevated",
+        "text": "Q.503. (a) Questionable (b) Determined (c) Prone (d) Elevated"
+      },
+      {
+        "self_ref": "#/texts/16",
+        "parent": {
+          "$ref": "#/groups/0"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 392.3466796875,
+              "r": 269.02265742,
+              "b": 384.26444281998533,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              61
+            ]
+          }
+        ],
+        "orig": "Q.504. (a) Creators  (b) Producers  (c) Admirers  (d) Victims",
+        "text": "Q.504. (a) Creators  (b) Producers  (c) Admirers  (d) Victims"
+      },
+      {
+        "self_ref": "#/texts/17",
+        "parent": {
+          "$ref": "#/groups/0"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 373.0263696875,
+              "r": 282.44794992,
+              "b": 364.9441328199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              64
+            ]
+          }
+        ],
+        "orig": "Q.505. (a) Examined  (b) Impaired  (c) Included  (d) Established",
+        "text": "Q.505. (a) Examined  (b) Impaired  (c) Included  (d) Established"
+      },
+      {
+        "self_ref": "#/texts/18",
+        "parent": {
+          "$ref": "#/groups/8"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 353.7021496875,
+              "r": 281.87665992,
+              "b": 345.61991281998536,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              62
+            ]
+          }
+        ],
+        "orig": "Q.506. (a) Determined  (b) Confirmed  (c) Trapped  (d) Adopted",
+        "text": "Q.506. (a) Determined  (b) Confirmed  (c) Trapped  (d) Adopted",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/19",
+        "parent": {
+          "$ref": "#/groups/0"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 334.3779296875,
+              "r": 260.65986491999996,
+              "b": 326.29569281998533,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              57
+            ]
+          }
+        ],
+        "orig": "Q.507. (a) Remain   (b) Choose   (c) Compete   (d) Accuse",
+        "text": "Q.507. (a) Remain   (b) Choose   (c) Compete   (d) Accuse"
+      },
+      {
+        "self_ref": "#/texts/20",
+        "parent": {
+          "$ref": "#/groups/0"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "section_header",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 315.05370968750003,
+              "r": 124.17451467,
+              "b": 306.97147281998537,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              23
+            ]
+          }
+        ],
+        "orig": "SET-102. Q .(508 - 512)",
+        "text": "SET-102. Q .(508 - 512)",
+        "level": 1
+      },
+      {
+        "self_ref": "#/texts/21",
+        "parent": {
+          "$ref": "#/groups/0"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 302.6318396875,
+              "r": 291.04511934,
+              "b": 269.70585281998535,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              144
+            ]
+          }
+        ],
+        "orig": "Sustainability  is  ____(508)___  longer  just  a  buzzword.  It  ____ (509)  ____   a necessity   and   the   primary   agenda   of   the world",
+        "text": "Sustainability  is  ____(508)___  longer  just  a  buzzword.  It  ____ (509)  ____   a necessity   and   the   primary   agenda   of   the world"
+      },
+      {
+        "self_ref": "#/texts/22",
+        "parent": {
+          "$ref": "#/groups/0"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 265.36620968750003,
+              "r": 288.84346242,
+              "b": 195.17460281998535,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              372
+            ]
+          }
+        ],
+        "orig": "today.  Like  many  other  countries,  India  too  is  witnessing  a growth of ____(510)____ green economy.  It ____(511)____ estimated  that  India's  renewable energy target will create more than  3.4  million  new  job  opportunities  ____(512)____  2030.  In fact, a recent survey stated that a Sustainability Manager is going to be one of the top 10 jobs this decade.",
+        "text": "today.  Like  many  other  countries,  India  too  is  witnessing  a growth of ____(510)____ green economy.  It ____(511)____ estimated  that  India's  renewable energy target will create more than  3.4  million  new  job  opportunities  ____(512)____  2030.  In fact, a recent survey stated that a Sustainability Manager is going to be one of the top 10 jobs this decade."
+      },
+      {
+        "self_ref": "#/texts/23",
+        "parent": {
+          "$ref": "#/groups/9"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 183.93261968750005,
+              "r": 57.953323440000005,
+              "b": 175.85038281998538,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              6
+            ]
+          }
+        ],
+        "orig": "Q.508.",
+        "text": "Q.508.",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/24",
+        "parent": {
+          "$ref": "#/groups/0"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 57.953323499999996,
+              "t": 183.93261968750005,
+              "r": 250.92598242000003,
+              "b": 175.85038281998538,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              64
+            ]
+          }
+        ],
+        "orig": "(a) any          (b) never           (c) no              (d) not",
+        "text": "(a) any          (b) never           (c) no              (d) not"
+      },
+      {
+        "self_ref": "#/texts/25",
+        "parent": {
+          "$ref": "#/groups/10"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 164.6122996875,
+              "r": 57.953323440000005,
+              "b": 156.53006281998535,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              6
+            ]
+          }
+        ],
+        "orig": "Q.509.",
+        "text": "Q.509.",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/26",
+        "parent": {
+          "$ref": "#/groups/11"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 57.953323499999996,
+              "t": 164.6122996875,
+              "r": 255.36885387,
+              "b": 156.53006281998535,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              63
+            ]
+          }
+        ],
+        "orig": "(a) will be     (b) is                 (c) might be     (d) was",
+        "text": "(a) will be     (b) is                 (c) might be     (d) was",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/27",
+        "parent": {
+          "$ref": "#/groups/12"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 145.28808968750002,
+              "r": 57.953323440000005,
+              "b": 137.20585281998535,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              6
+            ]
+          }
+        ],
+        "orig": "Q.510.",
+        "text": "Q.510.",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/28",
+        "parent": {
+          "$ref": "#/groups/0"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 57.953323499999996,
+              "t": 145.28808968750002,
+              "r": 259.90840242,
+              "b": 137.20585281998535,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              71
+            ]
+          }
+        ],
+        "orig": "(a) his           (b) hers             (c) its                (d) their",
+        "text": "(a) his           (b) hers             (c) its                (d) their"
+      },
+      {
+        "self_ref": "#/texts/29",
+        "parent": {
+          "$ref": "#/groups/13"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 125.96386968750005,
+              "r": 57.953323440000005,
+              "b": 117.88163281998538,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              6
+            ]
+          }
+        ],
+        "orig": "Q.511.",
+        "text": "Q.511.",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/30",
+        "parent": {
+          "$ref": "#/groups/0"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 57.953323499999996,
+              "t": 125.96386968750005,
+              "r": 252.92988491999998,
+              "b": 117.88163281998538,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              60
+            ]
+          }
+        ],
+        "orig": "(a) will be      (b) were            (c) had been     (d) is",
+        "text": "(a) will be      (b) were            (c) had been     (d) is"
+      },
+      {
+        "self_ref": "#/texts/31",
+        "parent": {
+          "$ref": "#/groups/14"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 106.64354968750001,
+              "r": 57.953323440000005,
+              "b": 98.56131281998535,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              6
+            ]
+          }
+        ],
+        "orig": "Q.512.",
+        "text": "Q.512.",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/32",
+        "parent": {
+          "$ref": "#/groups/0"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 57.953323499999996,
+              "t": 106.64354968750001,
+              "r": 257.25410742,
+              "b": 98.56131281998535,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              68
+            ]
+          }
+        ],
+        "orig": "(a) with          (b) since            (c) by                (d) for",
+        "text": "(a) with          (b) since            (c) by                (d) for"
+      },
+      {
+        "self_ref": "#/texts/33",
+        "parent": {
+          "$ref": "#/groups/0"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "section_header",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 85.9404296875,
+              "r": 126.41133144,
+              "b": 77.85819281998533,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              23
+            ]
+          }
+        ],
+        "orig": "SET-103. Q .(513 - 517)",
+        "text": "SET-103. Q .(513 - 517)",
+        "level": 1
+      },
+      {
+        "self_ref": "#/texts/34",
+        "parent": {
+          "$ref": "#/groups/0"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 73.51854968750001,
+              "r": 288.62665992,
+              "b": 28.170692819985334,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              268
+            ]
+          }
+        ],
+        "orig": "The  internet  has  (513)  _______reshaped  the  way information is accessed  and  shared.  With a vast array of websites and social media  platforms,  individuals  can  (514)  _______  connect  with others  globally.  However,  this  digital  age  also  brings  (515)",
+        "text": "The  internet  has  (513)  _______reshaped  the  way information is accessed  and  shared.  With a vast array of websites and social media  platforms,  individuals  can  (514)  _______  connect  with others  globally.  However,  this  digital  age  also  brings  (515)"
+      },
+      {
+        "self_ref": "#/texts/35",
+        "parent": {
+          "$ref": "#/groups/0"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 308.54999,
+              "t": 814.6982416875001,
+              "r": 568.6828044199999,
+              "b": 744.5027238199854,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              341
+            ]
+          }
+        ],
+        "orig": "________ challenges. The spread of misinformation has become a (516) ________ issue, as false content can quickly gain traction. It  is essential for users to (517)_______ assess the credibility of sources  before believing and sharing information. In this era of rapid data dissemination, cultivating media literacy is of utmost importance.",
+        "text": "________ challenges. The spread of misinformation has become a (516) ________ issue, as false content can quickly gain traction. It  is essential for users to (517)_______ assess the credibility of sources  before believing and sharing information. In this era of rapid data dissemination, cultivating media literacy is of utmost importance."
+      },
+      {
+        "self_ref": "#/texts/36",
+        "parent": {
+          "$ref": "#/groups/15"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 308.54999,
+              "t": 733.2646486875,
+              "r": 423.0495016699999,
+              "b": 725.1824118199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              21
+            ]
+          }
+        ],
+        "orig": "Q.513. (a) discreetly",
+        "text": "Q.513. (a) discreetly",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/37",
+        "parent": {
+          "$ref": "#/groups/16"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 452.54999,
+              "t": 733.2646486875,
+              "r": 520.43231192,
+              "b": 725.1824118199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              16
+            ]
+          }
+        ],
+        "orig": "(b) occasionally",
+        "text": "(b) occasionally",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/38",
+        "parent": {
+          "$ref": "#/groups/17"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 308.54999,
+              "t": 720.8427736875,
+              "r": 421.05438467,
+              "b": 712.7605368199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              17
+            ]
+          }
+        ],
+        "orig": "(c) significantly",
+        "text": "(c) significantly",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/39",
+        "parent": {
+          "$ref": "#/groups/18"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 452.54999,
+              "t": 720.8427736875,
+              "r": 504.69549692,
+              "b": 712.7605368199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              13
+            ]
+          }
+        ],
+        "orig": "(d) gradually",
+        "text": "(d) gradually",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/40",
+        "parent": {
+          "$ref": "#/groups/0"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 308.54999,
+              "t": 701.5185546875,
+              "r": 562.6725519199999,
+              "b": 693.4363178199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              66
+            ]
+          }
+        ],
+        "orig": "Q.514. (a) hesitantly (b) periodically (c) scarcely (d) seamlessly",
+        "text": "Q.514. (a) hesitantly (b) periodically (c) scarcely (d) seamlessly"
+      },
+      {
+        "self_ref": "#/texts/41",
+        "parent": {
+          "$ref": "#/groups/0"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 308.54999,
+              "t": 682.1943356875,
+              "r": 554.66132192,
+              "b": 674.1120988199854,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              65
+            ]
+          }
+        ],
+        "orig": "Q.515. (a) numerous  (b) abstract  (c) irrelevant  (d) intriguing",
+        "text": "Q.515. (a) numerous  (b) abstract  (c) irrelevant  (d) intriguing"
+      },
+      {
+        "self_ref": "#/texts/42",
+        "parent": {
+          "$ref": "#/groups/0"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 308.54999,
+              "t": 662.8740196875,
+              "r": 548.56170692,
+              "b": 654.7917828199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              62
+            ]
+          }
+        ],
+        "orig": "Q.516. (a) pressing  (b) soothing  (c) negligible  (d) dormant",
+        "text": "Q.516. (a) pressing  (b) soothing  (c) negligible  (d) dormant"
+      },
+      {
+        "self_ref": "#/texts/43",
+        "parent": {
+          "$ref": "#/groups/19"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 308.54999,
+              "t": 643.5497996875,
+              "r": 509.96453941999994,
+              "b": 635.4675628199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              59
+            ]
+          }
+        ],
+        "orig": "Q.517. (a) meticulously                      (b) hesitantly",
+        "text": "Q.517. (a) meticulously                      (b) hesitantly",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/44",
+        "parent": {
+          "$ref": "#/groups/20"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 308.54999,
+              "t": 631.1279296875,
+              "r": 510.96649441999995,
+              "b": 623.0456928199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              56
+            ]
+          }
+        ],
+        "orig": "(c) reluctantly                          (d) impulsively",
+        "text": "(c) reluctantly                          (d) impulsively",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/45",
+        "parent": {
+          "$ref": "#/groups/0"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "section_header",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 308.54999,
+              "t": 611.8076196874999,
+              "r": 406.16131843999995,
+              "b": 603.7253828199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              23
+            ]
+          }
+        ],
+        "orig": "SET-104. Q .(518 - 522)",
+        "text": "SET-104. Q .(518 - 522)",
+        "level": 1
+      },
+      {
+        "self_ref": "#/texts/46",
+        "parent": {
+          "$ref": "#/groups/0"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 308.54999,
+              "t": 599.3818396875,
+              "r": 568.72820942,
+              "b": 479.5027228199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              603
+            ]
+          }
+        ],
+        "orig": "Vijayanagara  or  \"city  of  victory\"  was  the____(518)____of  both a city and an empire. The empire was____(519)____ in the fourteenth  century.  In  its heyday, it ____(520)____ from the river Krishna  in  the  north  to  the  extreme  south  of  the  peninsula.  In 1565, the city was  sacked and _____(521)_____ deserted. Although it fell into ruin in the seventeenth - eighteenth centuries,  it  lived  on  in  the  memories  of  people  living  in  the Krishna-Tungabhadra  doab.  They  remembered  it  as  Hampi,  a name _____  (522)_____  from  that  of  the  local  mother  goddess, Pampadevi.",
+        "text": "Vijayanagara  or  \"city  of  victory\"  was  the____(518)____of  both a city and an empire. The empire was____(519)____ in the fourteenth  century.  In  its heyday, it ____(520)____ from the river Krishna  in  the  north  to  the  extreme  south  of  the  peninsula.  In 1565, the city was  sacked and _____(521)_____ deserted. Although it fell into ruin in the seventeenth - eighteenth centuries,  it  lived  on  in  the  memories  of  people  living  in  the Krishna-Tungabhadra  doab.  They  remembered  it  as  Hampi,  a name _____  (522)_____  from  that  of  the  local  mother  goddess, Pampadevi."
+      },
+      {
+        "self_ref": "#/texts/47",
+        "parent": {
+          "$ref": "#/groups/21"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 308.54999,
+              "t": 468.2607396875,
+              "r": 337.70331044,
+              "b": 460.17850281998534,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              6
+            ]
+          }
+        ],
+        "orig": "Q.518.",
+        "text": "Q.518.",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/48",
+        "parent": {
+          "$ref": "#/groups/0"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 337.7033105,
+              "t": 468.2607396875,
+              "r": 543.78045692,
+              "b": 460.17850281998534,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              65
+            ]
+          }
+        ],
+        "orig": "(a) mark         (b) name          (c) sign             (d) label",
+        "text": "(a) mark         (b) name          (c) sign             (d) label"
+      },
+      {
+        "self_ref": "#/texts/49",
+        "parent": {
+          "$ref": "#/groups/0"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 308.54999,
+              "t": 450.3193396875,
+              "r": 337.70331044,
+              "b": 442.23710281998535,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              6
+            ]
+          }
+        ],
+        "orig": "Q.519.",
+        "text": "Q.519."
+      },
+      {
+        "self_ref": "#/texts/50",
+        "parent": {
+          "$ref": "#/groups/22"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 337.7033105,
+              "t": 450.3193396875,
+              "r": 568.68866192,
+              "b": 442.23710281998535,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              62
+            ]
+          }
+        ],
+        "orig": "(a) founded   (b) begun         (c) Implanted   (d) discovered",
+        "text": "(a) founded   (b) begun         (c) Implanted   (d) discovered",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/51",
+        "parent": {
+          "$ref": "#/groups/23"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 308.54999,
+              "t": 432.3740196875,
+              "r": 337.70331044,
+              "b": 424.2917828199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              6
+            ]
+          }
+        ],
+        "orig": "Q.520.",
+        "text": "Q.520.",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/52",
+        "parent": {
+          "$ref": "#/groups/24"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 337.7033105,
+              "t": 432.3740196875,
+              "r": 564.2062419199999,
+              "b": 424.2917828199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              65
+            ]
+          }
+        ],
+        "orig": "(a) started       (b) magnified   (c) strained      (d) stretched",
+        "text": "(a) started       (b) magnified   (c) strained      (d) stretched",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/53",
+        "parent": {
+          "$ref": "#/groups/25"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 308.54999,
+              "t": 414.4326196875,
+              "r": 408.99579092,
+              "b": 406.3503828199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              20
+            ]
+          }
+        ],
+        "orig": "Q.521 (a) previously",
+        "text": "Q.521 (a) previously",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/54",
+        "parent": {
+          "$ref": "#/groups/26"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 416.54999,
+              "t": 414.4326196875,
+              "r": 505.66229192,
+              "b": 406.3503828199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              16
+            ]
+          }
+        ],
+        "orig": "(b) subsequently",
+        "text": "(b) subsequently",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/55",
+        "parent": {
+          "$ref": "#/groups/27"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 308.54999,
+              "t": 402.0107396875,
+              "r": 409.6901266699999,
+              "b": 393.92850281998534,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              16
+            ]
+          }
+        ],
+        "orig": "(c) accidentally",
+        "text": "(c) accidentally",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/56",
+        "parent": {
+          "$ref": "#/groups/28"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 416.54999,
+              "t": 402.0107396875,
+              "r": 486.73505192,
+              "b": 393.92850281998534,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              13
+            ]
+          }
+        ],
+        "orig": "(d) presently",
+        "text": "(d) presently",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/57",
+        "parent": {
+          "$ref": "#/groups/0"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 308.54999,
+              "t": 384.0654296875,
+              "r": 546.59295692,
+              "b": 375.98319281998533,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              62
+            ]
+          }
+        ],
+        "orig": "Q.522. (a) extracted  (b) designed  (c) derived  (d) collected",
+        "text": "Q.522. (a) extracted  (b) designed  (c) derived  (d) collected"
+      },
+      {
+        "self_ref": "#/texts/58",
+        "parent": {
+          "$ref": "#/groups/0"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "section_header",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 308.54999,
+              "t": 360.04296588447266,
+              "r": 359.65407743749995,
+              "b": 351.8146698207749,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              12
+            ]
+          }
+        ],
+        "orig": "Solutions :-",
+        "text": "Solutions :-",
+        "level": 1
+      },
+      {
+        "self_ref": "#/texts/59",
+        "parent": {
+          "$ref": "#/groups/0"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "section_header",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 420.242129,
+              "t": 339.0966796875,
+              "r": 457.09466819,
+              "b": 331.01444281998533,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              8
+            ]
+          }
+        ],
+        "orig": "SET - 85",
+        "text": "SET - 85",
+        "level": 1
+      },
+      {
+        "self_ref": "#/texts/60",
+        "parent": {
+          "$ref": "#/groups/0"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "section_header",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 308.54999,
+              "t": 318.3935496875,
+              "r": 385.73114267,
+              "b": 310.31131281998535,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              18
+            ]
+          }
+        ],
+        "orig": "Sol.423.(d) cannot",
+        "text": "Sol.423.(d) cannot",
+        "level": 1
+      },
+      {
+        "self_ref": "#/texts/61",
+        "parent": {
+          "$ref": "#/groups/0"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 308.54999,
+              "t": 305.9716796875,
+              "r": 568.7663019199999,
+              "b": 273.04569281998533,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              189
+            ]
+          }
+        ],
+        "orig": "'Can'  is  used  to  indicate  the ability to do something. The given passage  talks  about  the  inability  of  the  camel  to  find  water. Hence, 'cannot' is the most appropriate answer.",
+        "text": "'Can'  is  used  to  indicate  the ability to do something. The given passage  talks  about  the  inability  of  the  camel  to  find  water. Hence, 'cannot' is the most appropriate answer."
+      },
+      {
+        "self_ref": "#/texts/62",
+        "parent": {
+          "$ref": "#/groups/0"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "section_header",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 308.54999,
+              "t": 263.18261968750005,
+              "r": 370.77655292,
+              "b": 255.10038281998538,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              15
+            ]
+          }
+        ],
+        "orig": "Sol.424.(b) the",
+        "text": "Sol.424.(b) the",
+        "level": 1
+      },
+      {
+        "self_ref": "#/texts/63",
+        "parent": {
+          "$ref": "#/groups/0"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 308.54999,
+              "t": 250.76073968749995,
+              "r": 568.65497192,
+              "b": 217.83475281998528,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              185
+            ]
+          }
+        ],
+        "orig": "Article  'the'  is  used  before  a  specific  or  particular  noun.  The 'small  amount'  mentioned  in  the  given  passage  is  specific. Hence, 'the' is the most appropriate answer.",
+        "text": "Article  'the'  is  used  before  a  specific  or  particular  noun.  The 'small  amount'  mentioned  in  the  given  passage  is  specific. Hence, 'the' is the most appropriate answer."
+      },
+      {
+        "self_ref": "#/texts/64",
+        "parent": {
+          "$ref": "#/groups/0"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "section_header",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 308.54999,
+              "t": 207.97948968749995,
+              "r": 373.47039992,
+              "b": 199.89725281998528,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              16
+            ]
+          }
+        ],
+        "orig": "Sol.425.(c) that",
+        "text": "Sol.425.(c) that",
+        "level": 1
+      },
+      {
+        "self_ref": "#/texts/65",
+        "parent": {
+          "$ref": "#/groups/0"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 308.54999,
+              "t": 195.55761968750005,
+              "r": 568.7692269199999,
+              "b": 137.78788281998538,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              299
+            ]
+          }
+        ],
+        "orig": "When we make a comparison, 'that' is used to avoid repetition of a  noun.  In  the  given  sentence,  there  is  a  comparison between the  body  temperature.  Therefore,  'that'  has  been used to avoid repetition of the noun phrase 'body temperature'. Hence, 'that' is the most appropriate answer.",
+        "text": "When we make a comparison, 'that' is used to avoid repetition of a  noun.  In  the  given  sentence,  there  is  a  comparison between the  body  temperature.  Therefore,  'that'  has  been used to avoid repetition of the noun phrase 'body temperature'. Hence, 'that' is the most appropriate answer."
+      },
+      {
+        "self_ref": "#/texts/66",
+        "parent": {
+          "$ref": "#/groups/0"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "section_header",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 308.54999,
+              "t": 127.92479968750001,
+              "r": 365.94696242,
+              "b": 119.84256281998535,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              14
+            ]
+          }
+        ],
+        "orig": "Sol.426.(d) at",
+        "text": "Sol.426.(d) at",
+        "level": 1
+      },
+      {
+        "self_ref": "#/texts/67",
+        "parent": {
+          "$ref": "#/groups/0"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 308.54999,
+              "t": 115.5029296875,
+              "r": 568.2243069199999,
+              "b": 82.57694281998533,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              191
+            ]
+          }
+        ],
+        "orig": "'At' is used to indicate the position or level of something. In the given sentence, 'at' has been used to indicate the higher level of temperature. Hence, 'at' is the most appropriate answer.",
+        "text": "'At' is used to indicate the position or level of something. In the given sentence, 'at' has been used to indicate the higher level of temperature. Hence, 'at' is the most appropriate answer."
+      },
+      {
+        "self_ref": "#/texts/68",
+        "parent": {
+          "$ref": "#/groups/0"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "section_header",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 308.54999,
+              "t": 72.71386968750005,
+              "r": 376.80584941999996,
+              "b": 64.63163281998538,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              17
+            ]
+          }
+        ],
+        "orig": "Sol.427.(d) start",
+        "text": "Sol.427.(d) start",
+        "level": 1
+      },
+      {
+        "self_ref": "#/texts/69",
+        "parent": {
+          "$ref": "#/groups/0"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 308.54999,
+              "t": 60.29198968749995,
+              "r": 568.21551692,
+              "b": 27.366002819985283,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              205
+            ]
+          }
+        ],
+        "orig": "According to the 'Subject-Verb Agreement Rule', a plural subject always  takes  a  plural  verb.  'Human  beings'  is  a  plural  subject that will take 'start' as a plural verb. Hence, 'start' is the most",
+        "text": "According to the 'Subject-Verb Agreement Rule', a plural subject always  takes  a  plural  verb.  'Human  beings'  is  a  plural  subject that will take 'start' as a plural verb. Hence, 'start' is the most"
+      },
+      {
+        "self_ref": "#/texts/70",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "furniture",
+        "label": "page_footer",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 99.3266505,
+              "t": 21.989447959472614,
+              "r": 495.95088382500006,
+              "b": 13.761151895774901,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              109
+            ]
+          }
+        ],
+        "orig": "www.ssccglpinnacle.com                                                 Download Pinnacle Exam Preparation App",
+        "text": "www.ssccglpinnacle.com                                                 Download Pinnacle Exam Preparation App"
+      }
+    ],
+    "pictures": [],
+    "tables": [],
+    "key_value_items": [],
+    "form_items": [],
+    "pages": {
+      "1": {
+        "size": {
+          "width": 596.0,
+          "height": 842.0
+        },
+        "page_no": 1
+      }
+    }
+  }
+}

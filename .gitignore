@@ -1,6 +1,6 @@
 # Node modules
 node_modules/
-
+*.pdf
 # Build outputs
 build/
 
@@ -45,3 +45,11 @@ coverage/
 .dev.vars*
 !.dev.vars.example
 !.env.example
+doc_pipeline/outputs
+doc_pipeline/pdfs
+# Python bytecode and local credentials
+__pycache__/
+*.py[cod]
+/ai/dataset_pipeline/token.json
+/ai/question_bank_pipeline/secrets/
+

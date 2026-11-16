@@ -1,4 +1,4 @@
-import { ChevronRight, Notebook, Plus } from "lucide-react";
+import { ChevronRight, Notebook, Plus, Zap, BookOpen } from "lucide-react";
 import type { examProps } from "../../slice/examSlice";
 
 interface ExamSelectorCardProps {
@@ -10,19 +10,26 @@ interface ExamSelectorCardProps {
 }
 
 const ExamSkeleton = () => (
-  <div className="px-3 py-4 w-full md:p-8 bg-surface-container-high/20 rounded-4xl animate-pulse border border-on-surface/5">
-    <div className="flex flex-row md:flex-col items-center md:items-start gap-4">
-      <div className="size-8 lg:size-14 bg-surface-container-high rounded-2xl" />
-      <div className="flex-1 space-y-2">
-        <div className="h-4 bg-surface-container-high rounded w-24 md:w-32" />
-        <div className="hidden md:block h-3 bg-surface-container-high rounded w-48" />
+  <div className="p-6 w-full bg-surface-container-high/30 rounded-3xl animate-pulse border border-on-surface/5">
+    <div className="flex flex-col gap-4">
+      <div className="size-12 bg-surface-container-highest rounded-2xl" />
+      <div className="space-y-2">
+        <div className="h-5 bg-surface-container-highest rounded-lg w-32" />
+        <div className="h-3 bg-surface-container-highest rounded w-48" />
       </div>
+      <div className="h-2 bg-surface-container-highest rounded-full w-full mt-2" />
     </div>
   </div>
 );
 
-export const ExamSelectorCard = ({
+const examColorPalette = [
+  { bg: "from-primary/10 to-primary/5", accent: "bg-primary", iconBg: "bg-primary/15 text-primary", bar: "bg-primary" },
+  { bg: "from-blue-500/10 to-blue-500/5", accent: "bg-blue-500", iconBg: "bg-blue-500/15 text-blue-600", bar: "bg-blue-500" },
+  { bg: "from-amber-500/10 to-amber-500/5", accent: "bg-amber-500", iconBg: "bg-amber-500/15 text-amber-600", bar: "bg-amber-500" },
+  { bg: "from-violet-500/10 to-violet-500/5", accent: "bg-violet-500", iconBg: "bg-violet-500/15 text-violet-600", bar: "bg-violet-500" },
+];
 
+export const ExamSelectorCard = ({
   targetedExams,
   onSelect,
   onViewAll,
@@ -30,79 +37,112 @@ export const ExamSelectorCard = ({
 }: ExamSelectorCardProps) => {
   return (
     <section className="hidden md:block scroll-mt-15">
-      <div className="flex justify-between items-center mb-8 px-2">
-        <div className="space-y-1">
-          <h3 className="text-sm font-technical font-black uppercase tracking-[0.2em] text-primary">
-            Select Exams.
+      {/* Header */}
+      <div className="flex justify-between items-center mb-6 px-1">
+        <div className="space-y-0.5">
+          <h3 className="text-xs font-technical font-black uppercase tracking-[0.25em] text-on-surface-variant opacity-60">
+            Your Target Exams
           </h3>
-          <p className="text-sm text-on-surface-variant opacity-40 font-medium">
-            Please Select exam you are preparing for.
+          <p className="text-lg font-black text-on-surface tracking-tight leading-tight">
+            Continue Preparing
           </p>
         </div>
         <button
           onClick={onViewAll}
-          className="text-md cursor-pointer font-technical bg-primary/10 text-primary border border-primary/20 p-2 rounded-full font-black uppercase tracking-widest hover:bg-primary hover:text-white transition-all duration-300"
+          className="flex items-center gap-2 cursor-pointer font-technical bg-primary text-white px-4 py-2 rounded-full font-black text-[10px] uppercase tracking-widest hover:bg-primary/90 active:scale-95 transition-all duration-300 shadow-md shadow-primary/20"
         >
-          <Plus size={20} className="text-md"/>
+          <Plus size={14} />
+          Add Exam
         </button>
       </div>
 
-    <div className="columns-2 md:columns-none md:grid md:grid-cols-2 md:gap-6">
-  {loading ? (
-    Array.from({ length: 2 }).map((_, i) => (
-      <div key={i} className="break-inside-avoid mb-3 md:mb-0">
-        <ExamSkeleton />
-      </div>
-    ))
-  ) : targetedExams.length > 0 ? (
-    targetedExams.map((exam, index) => (
-      <div
-        key={index}
-        className="break-inside-avoid mb-3 md:mb-0"
-        onClick={() => onSelect(exam)}
-      >
-        <div className="px-5 py-4 md:p-8 bg-surface-container-high/40 rounded-sm lg:rounded-4xl shadow-ambient hover:bg-surface-container-high group cursor-pointer relative overflow-hidden">
-          {/* Hover "Take Test" badge — desktop only */}
-          <div className="absolute right-2 top-0 p-4">
-            <div className="relative w-full px-4 h-10 hidden border-t group-hover:bg-primary rounded-full border-on-surface/5 md:flex items-center justify-between">
-              <div className="flex justify-center items-center gap-2">
-                <p className="text-[10px] font-technical font-black text-primary group-hover:text-surface-container-high uppercase tracking-widest leading-none">
-                  Take Test
-                </p>
-              </div>
-              <ChevronRight className="size-5 text-primary group-hover:text-surface-container-high opacity-10 group-hover:opacity-100 group-hover:translate-x-2 transition-all duration-500" />
-            </div>
-          </div>
+      <div className="grid grid-cols-2 gap-4">
+        {loading ? (
+          Array.from({ length: 2 }).map((_, i) => (
+            <ExamSkeleton key={i} />
+          ))
+        ) : targetedExams.length > 0 ? (
+          targetedExams.map((exam, index) => {
+            const palette = examColorPalette[index % examColorPalette.length];
+            return (
+              <div
+                key={exam.id}
+                onClick={() => onSelect(exam)}
+                className="group relative cursor-pointer overflow-hidden rounded-3xl border border-on-surface/5 bg-surface-container-high/60 hover:bg-surface-container-high shadow-ambient hover:shadow-ambient-lg transition-all duration-500 hover:-translate-y-1 p-6"
+              >
+                {/* Background gradient */}
+                <div className={`absolute inset-0 bg-gradient-to-br ${palette.bg} opacity-60 group-hover:opacity-100 transition-opacity duration-500`} />
 
-          <div className="flex flex-row md:flex-col md:items-start items-center gap-2 md:gap-4">
-            <div className="size-8 lg:size-14 bg-surface-container-high rounded-2xl flex items-center justify-center text-primary mb-0 lg:mb-6 group-hover:bg-primary group-hover:text-white transition-all duration-500 shadow-sm">
-              <Notebook className="size-4 lg:size-6" />
+                {/* Decorative circle */}
+                <div className="absolute -top-6 -right-6 size-24 rounded-full bg-on-surface/3 group-hover:bg-on-surface/5 transition-colors duration-500" />
+
+                <div className="relative z-10 flex flex-col gap-4">
+                  {/* Icon + Action Row */}
+                  <div className="flex items-start justify-between">
+                    <div className={`size-12 rounded-2xl ${palette.iconBg} flex items-center justify-center shadow-sm group-hover:scale-110 transition-transform duration-500`}>
+                      <Notebook className="size-6" />
+                    </div>
+                    <div className="flex items-center gap-1 px-3 py-1.5 bg-on-surface/5 group-hover:bg-primary group-hover:text-white rounded-full transition-all duration-500">
+                      <span className="text-[9px] font-technical font-black uppercase tracking-widest text-on-surface-variant group-hover:text-white transition-colors">Start Test</span>
+                      <ChevronRight className="size-3 group-hover:translate-x-0.5 transition-transform" />
+                    </div>
+                  </div>
+
+                  {/* Exam Name */}
+                  <div>
+                    <h4 className="font-black text-xl text-on-surface tracking-tight leading-tight mb-1">
+                      {exam.name}
+                    </h4>
+                    <p className="text-xs text-on-surface-variant opacity-60 font-medium leading-relaxed line-clamp-2">
+                      {exam.full_name}
+                    </p>
+                  </div>
+
+                  {/* Progress Bar */}
+                  <div className="space-y-1.5">
+                    <div className="flex items-center justify-between">
+                      <span className="text-[9px] font-technical font-black uppercase tracking-widest text-on-surface-variant opacity-50">Syllabus Progress</span>
+                      <span className="text-[9px] font-technical font-black text-on-surface-variant opacity-50">0%</span>
+                    </div>
+                    <div className="h-1.5 bg-on-surface/8 rounded-full overflow-hidden">
+                      <div
+                        className={`h-full ${palette.bar} rounded-full transition-all duration-1000`}
+                        style={{ width: "0%" }}
+                      />
+                    </div>
+                  </div>
+
+                  {/* Meta */}
+                  <div className="flex items-center gap-3 pt-1">
+                    <div className="flex items-center gap-1.5 text-on-surface-variant opacity-50">
+                      <BookOpen className="size-3" />
+                      <span className="text-[9px] font-technical font-black uppercase tracking-wider">Explore Subjects</span>
+                    </div>
+                    <div className="flex items-center gap-1 ml-auto">
+                      <Zap className="size-3 text-on-surface-variant opacity-40" />
+                      <span className="text-[9px] font-technical font-black text-on-surface-variant opacity-40 uppercase tracking-wider">{exam.type || "Govt"}</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            );
+          })
+        ) : (
+          <div className="col-span-full py-14 text-center bg-surface-container-high/30 rounded-3xl border-2 border-dashed border-on-surface/8">
+            <div className="size-14 bg-primary/10 rounded-2xl flex items-center justify-center mx-auto mb-4">
+              <Notebook className="size-7 text-primary opacity-60" />
             </div>
-            <div className="flex flex-col">
-              <h4 className="font-black text-sm md:text-2xl ml-2 md:ml-0 mb-0 md:mb-2 text-on-surface tracking-tighter leading-none">
-                {exam.name}
-            </h4>
-              <p className="md:block text-xs w-40 md:w-full text-on-surface-variant mb-0 md:mb-6 font-medium leading-relaxed opacity-60">
-                {exam.full_name}
-              </p>
-            </div>
+            <h4 className="text-base font-black text-on-surface mb-1">No exams selected yet</h4>
+            <p className="text-sm text-on-surface-variant opacity-50 font-medium mb-5">Add exams you're preparing for to get started.</p>
+            <button
+              onClick={onViewAll}
+              className="text-xs font-technical bg-primary text-white px-6 py-2.5 rounded-full font-black uppercase tracking-widest hover:bg-primary/90 transition-all duration-300 shadow-md shadow-primary/20"
+            >
+              Add Exams Here
+            </button>
           </div>
-        </div>
+        )}
       </div>
-    ))
-  ) : (
-    <div className="col-span-full py-12 text-center bg-surface-container-high/20 rounded-3xl border-2 border-dashed border-on-surface/5">
-      <h2 className="text-on-surface-variant font-black text-primary">No target exams selected yet.</h2>
-      <p className="text-on-surface-variant font-medium text-sm mb-6">Please add exams to your profile to get started.</p>
-      <button
-        onClick={onViewAll}
-        className="text-xs font-technical bg-primary/10 text-primary border border-primary/20 px-4 py-2 rounded-full font-black uppercase tracking-widest hover:bg-primary hover:text-white transition-all duration-300"
-      >
-        Add Exams Here
-      </button>
-    </div>
-  )}
-</div>
     </section>
   );
 };

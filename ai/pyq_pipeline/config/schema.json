@@ -1,0 +1,32 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/pyq-question.schema.json",
+  "title": "PYQ Question Record",
+  "type": "object",
+  "required": ["record_id", "exam", "subject", "chapter", "topic", "question_text", "options", "correct_answers", "question_type", "source", "mapping_status", "extraction_status", "answer_verification_status", "review_reasons", "schema_version"],
+  "properties": {
+    "record_id": {"type": "string", "minLength": 1},
+    "exam": {"$ref": "#/$defs/exam"},
+    "subject": {"$ref": "#/$defs/taxonomy"},
+    "chapter": {"$ref": "#/$defs/taxonomy"},
+    "topic": {"$ref": "#/$defs/taxonomy"},
+    "question_text": {"type": "string"},
+    "options": {"type": "array", "items": {"$ref": "#/$defs/option"}},
+    "correct_answers": {"type": "array", "items": {"type": "string"}},
+    "question_type": {"enum": ["single_choice", "multiple_select", "true_false", "numerical", "descriptive", "unknown"]},
+    "explanation": {"type": ["string", "null"]},
+    "language": {"type": ["string", "null"]},
+    "source": {"type": "object", "required": ["file_path", "file_hash", "start_offset", "end_offset", "original_question_number"]},
+    "mapping_status": {"enum": ["mapped", "unresolved", "ambiguous", "not_applicable"]},
+    "extraction_status": {"enum": ["extracted", "needs_review", "failed"]},
+    "answer_verification_status": {"enum": ["not_verified", "source_answer", "answer_key_matched", "conflict"]},
+    "review_reasons": {"type": "array", "items": {"type": "string"}},
+    "schema_version": {"const": "1.0"}
+  },
+  "$defs": {
+    "exam": {"type": "object", "required": ["raw_name", "canonical_name", "exam_id", "year", "session", "paper", "shift", "set"]},
+    "taxonomy": {"type": "object", "required": ["raw_name", "canonical_name"], "properties": {"raw_name": {"type": ["string", "null"]}, "canonical_name": {"type": ["string", "null"]}}},
+    "option": {"type": "object", "required": ["label", "text"], "properties": {"label": {"type": "string"}, "text": {"type": "string"}}, "additionalProperties": false}
+  },
+  "additionalProperties": true
+}

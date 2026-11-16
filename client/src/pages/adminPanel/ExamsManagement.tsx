@@ -135,25 +135,25 @@ const ExamsManagement: React.FC = () => {
   };
 
   return (
-    <div className="p-10 space-y-12 animate-in fade-in slide-in-from-bottom-8 duration-700">
-      <header className="space-y-8">
+    <div className="mx-auto w-full max-w-[1440px] space-y-6 px-4 py-6 sm:px-7 sm:py-8 lg:px-10 lg:py-10">
+      <header className="space-y-5">
         <div>
-          <h2 className="text-4xl font-bold tracking-tight text-slate-800 dark:text-slate-100 italic">
-            Examination Lattice
+          <h2 className="text-2xl font-semibold tracking-tight text-[#1b2419] dark:text-[#e8eee4] sm:text-3xl">
+            Exams
           </h2>
-          <p className="text-[10px] text-[#16a34a] uppercase font-black tracking-[0.4em] mt-3">
-            Managing Curriculum Ecosystems via Board Orchestration
+          <p className="mt-1.5 text-sm text-[#778171] dark:text-[#a6b09f]">
+            Create and maintain the exams available under each board.
           </p>
         </div>
 
         {/* Unified Hierarchical Control Bar */}
         <div className="flex flex-wrap items-center gap-4 w-full">
-            <div className="flex-1 flex items-center gap-2 bg-slate-100/50 dark:bg-slate-900/50 backdrop-blur-xl rounded-4xl border border-slate-200 dark:border-slate-800 shadow-sm overflow-hidden max-w-md">
+                <div className="flex min-w-0 flex-1 items-center gap-2 overflow-hidden rounded-xl border border-[#e2e8dc] bg-[#fbfcf8] dark:border-white/10 dark:bg-[#171e17] sm:max-w-md">
                 {/* Board Manifestation Selection */}
                 <select 
                     value={selectedBoard}
                     onChange={(e) => { setSelectedBoard(e.target.value); setPage(0); }}
-                    className="flex-1 bg-transparent text-[12px] font-black uppercase tracking-widest px-8 py-3 outline-none hover:text-[#16a34a] transition-colors cursor-pointer"
+                    className="min-h-11 w-full bg-transparent px-3.5 text-sm text-[#34402f] outline-none transition-colors hover:text-[#315f29] dark:text-[#d6dfd1] sm:px-4"
                 >
                     <option value="all">Entire Ecosystem (Select Board)</option>
                     {boards.map(b => <option key={b.id} value={b.id}>{b.name}</option>)}
@@ -165,20 +165,21 @@ const ExamsManagement: React.FC = () => {
                     setEditingItem(null);
                     setIsModalOpen(true);
                 }}
-                className="group shrink-0 flex items-center gap-4 px-10 py-3.5 bg-[#16a34a] hover:bg-[#15803d] text-white rounded-4xl font-black text-[11px] uppercase tracking-[0.2em] shadow-xl shadow-[#16a34a]/10 hover:-translate-y-1 transition-all duration-300"
+                className="group flex min-h-11 shrink-0 items-center gap-2 rounded-xl bg-[#24551e] px-4 text-sm font-semibold text-white transition hover:bg-[#173f19] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#4c8b3e]"
             >
-                <Plus size={20} className="group-hover:rotate-90 transition-transform duration-500" />
-                <span>Manifest Exam</span>
+                <Plus size={18} />
+                <span>Add exam</span>
             </button>
         </div>
       </header>
 
       {selectedBoard === "all" ? (
-          <div className="flex flex-col items-center justify-center p-32 bg-slate-50 dark:bg-slate-900 rounded-[3rem] border-2 border-dashed border-slate-200 dark:border-slate-800 animate-reveal">
-              <div className="size-16 bg-slate-200 dark:bg-slate-800 rounded-2xl flex items-center justify-center text-slate-400 mb-6 group-hover:scale-110 transition-transform">
-                  <Plus size={32} />
+          <div className="flex flex-col items-center justify-center rounded-2xl border border-dashed border-[#d8e1d2] bg-[#fbfcf8] px-6 py-16 text-center dark:border-white/10 dark:bg-[#171e17] sm:py-20">
+              <div className="mb-4 grid size-12 place-items-center rounded-xl bg-[#e8f0e3] text-[#315f29] dark:bg-[#263d24] dark:text-[#c9e4c0]">
+                  <Plus size={22} />
               </div>
-              <p className="text-lg font-black text-slate-400 tracking-tight text-center uppercase">Manifest an Exam Board<br/><span className="text-[10px] opacity-60">to unlock the examination lattice</span></p>
+              <p className="text-sm font-semibold text-[#34402f] dark:text-[#d6dfd1]">Choose an exam board to view its exams</p>
+              <p className="mt-1 text-sm text-[#778171] dark:text-[#a6b09f]">Select a board above, or add one in Exam boards.</p>
           </div>
       ) : (
           <AdminTable
@@ -193,7 +194,7 @@ const ExamsManagement: React.FC = () => {
               setIsModalOpen(true);
             }}
             onDelete={(id) => {
-              if (window.confirm("Verify: Remove this examination manifest from the lattice?")) deleteItem(id);
+              if (window.confirm("Delete this exam? This action cannot be undone.")) deleteItem(id);
             }}
             loading={loading}
           />
@@ -201,7 +202,7 @@ const ExamsManagement: React.FC = () => {
 
       <AdminFormModal
         isOpen={isModalOpen}
-        title={editingItem ? "Edit Examination Manifest" : "Add Examination Manifest"}
+        title={editingItem ? "Edit exam" : "Add exam"}
         fields={fields}
         initialData={editingItem}
         onClose={() => setIsModalOpen(false)}

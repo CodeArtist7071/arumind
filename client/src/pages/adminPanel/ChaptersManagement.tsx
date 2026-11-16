@@ -163,25 +163,25 @@ const ChaptersManagement: React.FC = () => {
   };
 
   return (
-    <div className="p-10 space-y-12 animate-in fade-in slide-in-from-bottom-8 duration-700">
-      <header className="space-y-8">
+    <div className="mx-auto w-full max-w-[1440px] space-y-6 px-4 py-6 sm:px-7 sm:py-8 lg:px-10 lg:py-10">
+      <header className="space-y-5">
         <div>
-          <h2 className="text-4xl font-bold tracking-tight text-slate-800 dark:text-slate-100 italic">
-            Chapter Repository
+          <h2 className="text-2xl font-semibold tracking-tight text-[#1b2419] dark:text-[#e8eee4] sm:text-3xl">
+            Chapters
           </h2>
-          <p className="text-[10px] text-[#16a34a] uppercase font-black tracking-[0.4em] mt-3">
-            Managing Curriculum Nodes via Hierarchy Orchestration
+          <p className="mt-1.5 text-sm text-[#778171] dark:text-[#a6b09f]">
+            Organize chapter content within each subject and exam.
           </p>
         </div>
 
         {/* Unified Hierarchical Control Bar */}
         <div className="flex flex-wrap items-center gap-4 w-full">
-            <div className="flex-1 flex items-center gap-2 bg-slate-100/50 dark:bg-slate-900/50 backdrop-blur-xl rounded-4xl border border-slate-200 dark:border-slate-800 shadow-sm overflow-hidden">
+            <div className="flex min-w-0 flex-1 flex-col gap-1 overflow-hidden rounded-xl border border-[#e2e8dc] bg-[#fbfcf8] dark:border-white/10 dark:bg-[#171e17] sm:flex-row sm:items-center sm:gap-0">
                 {/* 1. Exam Board */}
                 <select 
                     value={selectedBoard}
                     onChange={(e) => { setSelectedBoard(e.target.value); setSelectedExam("all"); setSelectedSubject("all"); }}
-                    className="flex-1 bg-transparent text-[12px] font-black uppercase tracking-widest px-6 py-4 border-r border-slate-200 dark:border-slate-800 outline-none hover:text-[#16a34a] transition-colors cursor-pointer"
+                    className="min-h-11 min-w-0 flex-1 bg-transparent px-3.5 text-sm text-[#34402f] outline-none transition-colors hover:text-[#315f29] dark:text-[#d6dfd1] sm:border-r sm:border-[#e5e9e0] sm:px-4 dark:sm:border-white/10"
                 >
                     <option value="all">1. Select Board</option>
                     {boards.map(b => <option key={b.id} value={b.id}>{b.name}</option>)}
@@ -192,7 +192,7 @@ const ChaptersManagement: React.FC = () => {
                     value={selectedExam}
                     disabled={selectedBoard === "all"}
                     onChange={(e) => { setSelectedExam(e.target.value); setSelectedSubject("all"); }}
-                    className="flex-1 bg-transparent w-[300px] text-[12px] font-black uppercase tracking-widest px-6 py-4 border-r border-slate-200 dark:border-slate-800 outline-none disabled:opacity-30 hover:enabled:text-[#16a34a] transition-colors cursor-pointer"
+                    className="min-h-11 min-w-0 flex-1 bg-transparent px-3.5 text-sm text-[#34402f] outline-none transition-colors hover:enabled:text-[#315f29] disabled:opacity-40 dark:text-[#d6dfd1] sm:border-r sm:border-[#e5e9e0] sm:px-4 dark:sm:border-white/10"
                 >
                     <option value="all">2. Select Exam</option>
                     {filteredExams.map(e => <option key={e.id} value={e.id}>{e.name}</option>)}
@@ -203,7 +203,7 @@ const ChaptersManagement: React.FC = () => {
                     value={selectedSubject}
                     disabled={selectedExam === "all"}
                     onChange={(e) => setSelectedSubject(e.target.value)}
-                    className="flex-1 bg-transparent text-[12px] font-black uppercase tracking-widest px-2 py-4 outline-none disabled:opacity-30 hover:enabled:text-[#16a34a] transition-colors cursor-pointer"
+                    className="min-h-11 min-w-0 flex-1 bg-transparent px-3.5 text-sm text-[#34402f] outline-none transition-colors hover:enabled:text-[#315f29] disabled:opacity-40 dark:text-[#d6dfd1] sm:px-4"
                 >
                     <option value="all">3. Select Subject</option>
                     {filteredSubjects.map(s => <option key={s.id} value={s.id}>{s.name}</option>)}
@@ -215,20 +215,21 @@ const ChaptersManagement: React.FC = () => {
                     setEditingItem(null);
                     setIsModalOpen(true);
                 }}
-                className="group shrink-0 flex items-center gap-4 px-10 py-3.5 bg-[#16a34a] hover:bg-[#15803d] text-white rounded-[2rem] font-black text-[11px] uppercase tracking-[0.2em] shadow-xl shadow-[#16a34a]/10 hover:-translate-y-1 transition-all duration-300"
+                className="group flex min-h-11 shrink-0 items-center gap-2 rounded-xl bg-[#24551e] px-4 text-sm font-semibold text-white transition hover:bg-[#173f19] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#4c8b3e]"
             >
-                <Plus size={20} className="group-hover:rotate-90 transition-transform duration-500" />
+                <Plus size={18} />
                 <span>Add Chapter</span>
             </button>
         </div>
       </header>
 
       {selectedBoard === "all" ? (
-          <div className="flex flex-col items-center justify-center p-32 bg-slate-50 dark:bg-slate-900 rounded-[3rem] border-2 border-dashed border-slate-200 dark:border-slate-800 animate-reveal">
-              <div className="size-16 bg-slate-200 dark:bg-slate-800 rounded-2xl flex items-center justify-center text-slate-400 mb-6 group-hover:scale-110 transition-transform">
-                  <Plus size={32} />
+          <div className="flex flex-col items-center justify-center rounded-2xl border border-dashed border-[#d8e1d2] bg-[#fbfcf8] px-6 py-16 text-center dark:border-white/10 dark:bg-[#171e17] sm:py-20">
+              <div className="mb-4 grid size-12 place-items-center rounded-xl bg-[#e8f0e3] text-[#315f29] dark:bg-[#263d24] dark:text-[#c9e4c0]">
+                  <Plus size={22} />
               </div>
-              <p className="text-lg font-black text-slate-400 tracking-tight text-center uppercase">Manifest an Exam Board<br/><span className="text-[10px] opacity-60">to unlock the curriculum lattice</span></p>
+              <p className="text-sm font-semibold text-[#34402f] dark:text-[#d6dfd1]">Choose an exam board to view its chapters</p>
+              <p className="mt-1 text-sm text-[#778171] dark:text-[#a6b09f]">Select a board above to get started.</p>
           </div>
       ) : (
           <AdminTable
@@ -243,7 +244,7 @@ const ChaptersManagement: React.FC = () => {
               setIsModalOpen(true);
             }}
             onDelete={(id) => {
-              if (window.confirm("Verify: Remove this chapter from the lattice?")) deleteItem(id);
+              if (window.confirm("Delete this chapter? This action cannot be undone.")) deleteItem(id);
             }}
             loading={loading}
           />
@@ -251,7 +252,7 @@ const ChaptersManagement: React.FC = () => {
 
       <AdminFormModal
         isOpen={isModalOpen}
-        title={editingItem ? "Edit Chapter Node" : "Add Chapter Node"}
+        title={editingItem ? "Edit chapter" : "Add chapter"}
         fields={fields}
         initialData={editingItem}
         onClose={() => setIsModalOpen(false)}

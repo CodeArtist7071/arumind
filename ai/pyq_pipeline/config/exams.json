@@ -1,0 +1,265 @@
+{
+  "exams": [
+    {
+      "id": "b8a65a66-36c7-4d65-a2f6-c83f6110d032",
+      "canonical_name": "AAO",
+      "aliases": [
+        "Assistant Agriculture Officer Examination"
+      ],
+      "is_active": true,
+      "exam_board_id": "cdad5e16-d3ce-448c-8d72-1af16611e367",
+      "type": "Agriculture"
+    },
+    {
+      "id": "df860f87-c021-4565-b3de-c2da4d712c53",
+      "canonical_name": "AEE",
+      "aliases": [
+        "Assistant Executive Engineer Examination"
+      ],
+      "is_active": true,
+      "exam_board_id": "cdad5e16-d3ce-448c-8d72-1af16611e367",
+      "type": "Engineering"
+    },
+    {
+      "id": "e50e98ff-0d87-47d3-b3b9-1da81c804835",
+      "canonical_name": "AMIN",
+      "aliases": [
+        "Amin Recruitment Examination"
+      ],
+      "is_active": true,
+      "exam_board_id": "7ed06554-d33d-4790-84a0-ae6c8b0c5578",
+      "type": "12th Level"
+    },
+    {
+      "id": "10ac9a9e-3352-46b1-bd8a-ac028dfb013c",
+      "canonical_name": "ARI",
+      "aliases": [
+        "Assistant Revenue Inspector Examination"
+      ],
+      "is_active": true,
+      "exam_board_id": "7ed06554-d33d-4790-84a0-ae6c8b0c5578",
+      "type": "12th Level"
+    },
+    {
+      "id": "85a72c15-5b08-4a48-8049-178537fe1336",
+      "canonical_name": "ASO",
+      "aliases": [
+        "Assistant Section Officer Examination"
+      ],
+      "is_active": true,
+      "exam_board_id": "cdad5e16-d3ce-448c-8d72-1af16611e367",
+      "type": "Graduate Level"
+    },
+    {
+      "id": "2f6b18b5-0f6a-44db-9bea-31c5abbecad6",
+      "canonical_name": "CGL",
+      "aliases": [
+        "Combined Graduate Level Examination"
+      ],
+      "is_active": true,
+      "exam_board_id": "7f35f854-24bb-4b99-89dc-d1ac9701b750",
+      "type": "Graduate Level"
+    },
+    {
+      "id": "c574f15c-1623-4ead-bd33-d0551fa9dbd6",
+      "canonical_name": "CGL, CHSL, CPO, MTS, CDS, GD, Selection Post",
+      "aliases": [],
+      "is_active": true,
+      "exam_board_id": "f81eea7e-3e58-4fe6-ac6c-82682450a830",
+      "type": "COMBINED"
+    },
+    {
+      "id": "af17ee6f-8b1f-4557-9a76-c38e343fc7b6",
+      "canonical_name": "CHSL",
+      "aliases": [
+        "Combined Higher Secondary Level Examination"
+      ],
+      "is_active": true,
+      "exam_board_id": "7f35f854-24bb-4b99-89dc-d1ac9701b750",
+      "type": "12th Level"
+    },
+    {
+      "id": "f773d816-8ffc-45bc-a843-c75db9a47f19",
+      "canonical_name": "Computer Awareness",
+      "aliases": [],
+      "is_active": true,
+      "exam_board_id": "f81eea7e-3e58-4fe6-ac6c-82682450a830",
+      "type": "COMBINED"
+    },
+    {
+      "id": "d59119f8-f016-403f-b32a-aab16eb1663b",
+      "canonical_name": "CRE",
+      "aliases": [
+        "Combined Recruitment Examination"
+      ],
+      "is_active": true,
+      "exam_board_id": "7ed06554-d33d-4790-84a0-ae6c8b0c5578",
+      "type": "Multiple Posts"
+    },
+    {
+      "id": "6d393880-0367-46d0-b99b-7336f3e15722",
+      "canonical_name": "FOREST GUARD",
+      "aliases": [
+        "Forest Guard Recruitment Examination"
+      ],
+      "is_active": true,
+      "exam_board_id": "7ed06554-d33d-4790-84a0-ae6c8b0c5578",
+      "type": "Forest Service"
+    },
+    {
+      "id": "dbc527d1-1f82-4ede-a8fe-3aac5948ab16",
+      "canonical_name": "FORESTER",
+      "aliases": [
+        "Forester Recruitment Examination"
+      ],
+      "is_active": true,
+      "exam_board_id": "7ed06554-d33d-4790-84a0-ae6c8b0c5578",
+      "type": "Forest Service"
+    },
+    {
+      "id": "6670b0c7-227a-4094-b54f-157518338cfe",
+      "canonical_name": "ICDS",
+      "aliases": [
+        "Integrated Child Development Services Recruitment"
+      ],
+      "is_active": true,
+      "exam_board_id": "7ed06554-d33d-4790-84a0-ae6c8b0c5578",
+      "type": "Field Staff"
+    },
+    {
+      "id": "f4f70bd7-b6bc-4863-9926-db03854b3099",
+      "canonical_name": "JA",
+      "aliases": [
+        "Junior Assistant Examination"
+      ],
+      "is_active": true,
+      "exam_board_id": "7f35f854-24bb-4b99-89dc-d1ac9701b750",
+      "type": "Clerical"
+    },
+    {
+      "id": "cc5c847f-1655-48a6-806b-99c444846dde",
+      "canonical_name": "JEO",
+      "aliases": [
+        "Junior Enforcement Officer Examination"
+      ],
+      "is_active": true,
+      "exam_board_id": "7f35f854-24bb-4b99-89dc-d1ac9701b750",
+      "type": "Graduate Level"
+    },
+    {
+      "id": "9bc99fdf-46a2-423f-a9ad-3c205fde51eb",
+      "canonical_name": "LI",
+      "aliases": [
+        "Livestock Inspector Examination"
+      ],
+      "is_active": true,
+      "exam_board_id": "7ed06554-d33d-4790-84a0-ae6c8b0c5578",
+      "type": "Agriculture"
+    },
+    {
+      "id": "bf7333d8-cab4-49c2-9a80-7458453a5917",
+      "canonical_name": "LTR",
+      "aliases": [
+        "Leave Training Reserve Teacher Examination"
+      ],
+      "is_active": true,
+      "exam_board_id": "7f35f854-24bb-4b99-89dc-d1ac9701b750",
+      "type": "Teaching"
+    },
+    {
+      "id": "5e9447f4-2e54-48d6-8fc8-fc1e7d427344",
+      "canonical_name": "OCS ( OAS / OPS / OFS / ORS / OTAS )",
+      "aliases": [
+        "Odisha Civil Services"
+      ],
+      "is_active": true,
+      "exam_board_id": "cdad5e16-d3ce-448c-8d72-1af16611e367",
+      "type": "COMBINED"
+    },
+    {
+      "id": "e246028c-204b-4464-913b-078ffbacb03e",
+      "canonical_name": "OJS",
+      "aliases": [
+        "Odisha Judicial Services Examination"
+      ],
+      "is_active": true,
+      "exam_board_id": "cdad5e16-d3ce-448c-8d72-1af16611e367",
+      "type": "Judicial"
+    },
+    {
+      "id": "de2acdab-c9a1-421f-b282-248964e4f54f",
+      "canonical_name": "OMAS",
+      "aliases": [
+        "Odisha Municipal Administrative Services Examination"
+      ],
+      "is_active": true,
+      "exam_board_id": "cdad5e16-d3ce-448c-8d72-1af16611e367",
+      "type": "Administrative"
+    },
+    {
+      "id": "a0723b61-7dc0-4bdd-991e-5fbf088e6a3d",
+      "canonical_name": "PEO",
+      "aliases": [
+        "Panchayat Executive Officer Examination"
+      ],
+      "is_active": true,
+      "exam_board_id": "7ed06554-d33d-4790-84a0-ae6c8b0c5578",
+      "type": "Graduate Level"
+    },
+    {
+      "id": "6cc1df31-0cf5-4cd2-98d0-5761e58d0c8d",
+      "canonical_name": "PET",
+      "aliases": [
+        "Physical Efficiency Test"
+      ],
+      "is_active": false,
+      "exam_board_id": "7ed06554-d33d-4790-84a0-ae6c8b0c5578",
+      "type": "Physical Test"
+    },
+    {
+      "id": "5d9d01ee-18f8-4cea-b161-2c51d35077f7",
+      "canonical_name": "RI",
+      "aliases": [
+        "Revenue Inspector Examination"
+      ],
+      "is_active": true,
+      "exam_board_id": "7ed06554-d33d-4790-84a0-ae6c8b0c5578",
+      "type": "Graduate Level"
+    },
+    {
+      "id": "7d83df73-c84b-420d-ab67-6a1116d119f6",
+      "canonical_name": "SCEW",
+      "aliases": [
+        "Soil Conservation Extension Worker Examination"
+      ],
+      "is_active": true,
+      "exam_board_id": "7f35f854-24bb-4b99-89dc-d1ac9701b750",
+      "type": "Field Staff"
+    },
+    {
+      "id": "147e1eb2-7710-4f79-9ac4-c9532d866f37",
+      "canonical_name": "SFS",
+      "aliases": [
+        "Statistical Field Surveyor Examination"
+      ],
+      "is_active": false,
+      "exam_board_id": "7ed06554-d33d-4790-84a0-ae6c8b0c5578",
+      "type": "Field Staff"
+    },
+    {
+      "id": "f745f9ac-a994-42fa-a239-ffe855148790",
+      "canonical_name": "TGT",
+      "aliases": [
+        "Trained Graduate Teacher Examination"
+      ],
+      "is_active": true,
+      "exam_board_id": "7ed06554-d33d-4790-84a0-ae6c8b0c5578",
+      "type": "Teaching"
+    }
+  ],
+  "source_table": "public.exams",
+  "note": null,
+  "synced_at": "2026-10-27T07:45:29.071309+00:00",
+  "active_count": 24,
+  "record_count": 26
+}

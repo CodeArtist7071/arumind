@@ -1,0 +1,29 @@
+{
+  'paths':
+    {
+      'input': 'input/markdown',
+      'output': 'output',
+      'state_db': 'intermediate/state.sqlite3',
+    },
+  'file_patterns': ['*.md', '*.markdown'],
+  'encoding': 'utf-8-sig',
+  'processing':
+    {
+      'batch_size': 100,
+      'chunk_chars': 12000,
+      'overlap_chars': 500,
+      'concurrency': 1,
+      'confidence_threshold': 0.85,
+    },
+  'llm':
+    {
+      'enabled': false,
+      'provider': 'openrouter',
+      'model': '',
+      'api_key_env': 'OPENROUTER_API_KEY',
+      'api_base': 'https://openrouter.ai/api/v1/chat/completions',
+      'retry_count': 3,
+      'timeout_seconds': 60,
+    },
+  'export': { 'max_cell_chars': 32000, 'template': null, 'column_mapping': {} },
+}

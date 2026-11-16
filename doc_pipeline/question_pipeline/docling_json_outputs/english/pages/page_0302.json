@@ -1,0 +1,6615 @@
+{
+  "document_id": "english",
+  "source": "english.pdf",
+  "pdf_page": 302,
+  "page_width": 596.0,
+  "page_height": 842.0,
+  "extracted_at": "2026-09-09T10:34:44.053423+00:00",
+  "extraction_version": 4,
+  "ocr_enabled": true,
+  "extraction_detection": {
+    "requested_profile": "auto",
+    "effective_profile": "hybrid",
+    "embedded_text_characters": 5107,
+    "auto_text_threshold": 80
+  },
+  "docling_result": {
+    "status": "success",
+    "errors": []
+  },
+  "content_summary": {
+    "text_items": 69,
+    "text_characters": 6237,
+    "table_items": 0,
+    "picture_items": 0,
+    "group_items": 42,
+    "warnings": []
+  },
+  "reading_order": {
+    "source": "docling_iterate_items",
+    "items": [
+      {
+        "reading_order_index": 0,
+        "element_ref": "#/texts/1",
+        "label": "text",
+        "level": 1,
+        "text_preview": "SSC CGL 23/09/2025 (Shift 3)"
+      },
+      {
+        "reading_order_index": 1,
+        "element_ref": "#/texts/2",
+        "label": "list_item",
+        "level": 2,
+        "text_preview": "Q.31. (a) opacity (b) hierarchy (c) transparency (d) redundancy"
+      },
+      {
+        "reading_order_index": 2,
+        "element_ref": "#/texts/3",
+        "label": "list_item",
+        "level": 2,
+        "text_preview": "Q.32. (a) biases  (b) neutrality (c) liberation (d) innovation"
+      },
+      {
+        "reading_order_index": 3,
+        "element_ref": "#/texts/4",
+        "label": "list_item",
+        "level": 2,
+        "text_preview": "Q.33. (a) performativity (b) mobilization (c) disruption (d) clarity"
+      },
+      {
+        "reading_order_index": 4,
+        "element_ref": "#/texts/5",
+        "label": "list_item",
+        "level": 2,
+        "text_preview": "Q.34. (a) gatekeeping"
+      },
+      {
+        "reading_order_index": 5,
+        "element_ref": "#/texts/6",
+        "label": "list_item",
+        "level": 2,
+        "text_preview": "(c) dissemination"
+      },
+      {
+        "reading_order_index": 6,
+        "element_ref": "#/texts/7",
+        "label": "list_item",
+        "level": 2,
+        "text_preview": "(b) empowerment"
+      },
+      {
+        "reading_order_index": 7,
+        "element_ref": "#/texts/8",
+        "label": "list_item",
+        "level": 2,
+        "text_preview": "(d) collaboration"
+      },
+      {
+        "reading_order_index": 8,
+        "element_ref": "#/texts/9",
+        "label": "list_item",
+        "level": 2,
+        "text_preview": "Q.35. (a) facade   (b) breakthrough   (c) solution   (d) revolution"
+      },
+      {
+        "reading_order_index": 9,
+        "element_ref": "#/texts/10",
+        "label": "section_header",
+        "level": 1,
+        "text_preview": "SET-8.Q .(36 - 40)"
+      },
+      {
+        "reading_order_index": 10,
+        "element_ref": "#/texts/11",
+        "label": "text",
+        "level": 1,
+        "text_preview": "To  articulate  subjectivity  outside  the  parameters  of  modern rationality  is  to  engage  in  a  form  of  epistemic  insurgency-an attempt to (36)_____th"
+      },
+      {
+        "reading_order_index": 11,
+        "element_ref": "#/texts/12",
+        "label": "section_header",
+        "level": 1,
+        "text_preview": "SSC CGL 24/09/2025 (Shift 2)"
+      },
+      {
+        "reading_order_index": 12,
+        "element_ref": "#/texts/13",
+        "label": "list_item",
+        "level": 3,
+        "text_preview": "Q.36. (a) fortify"
+      },
+      {
+        "reading_order_index": 13,
+        "element_ref": "#/texts/14",
+        "label": "list_item",
+        "level": 3,
+        "text_preview": "(b) decolonize"
+      },
+      {
+        "reading_order_index": 14,
+        "element_ref": "#/texts/15",
+        "label": "list_item",
+        "level": 3,
+        "text_preview": "(c) mystify"
+      },
+      {
+        "reading_order_index": 15,
+        "element_ref": "#/texts/16",
+        "label": "list_item",
+        "level": 3,
+        "text_preview": "(d) concretize"
+      },
+      {
+        "reading_order_index": 16,
+        "element_ref": "#/texts/17",
+        "label": "list_item",
+        "level": 3,
+        "text_preview": "Q.37. (a) excavation"
+      },
+      {
+        "reading_order_index": 17,
+        "element_ref": "#/texts/18",
+        "label": "list_item",
+        "level": 3,
+        "text_preview": "(b) sanctification"
+      },
+      {
+        "reading_order_index": 18,
+        "element_ref": "#/texts/19",
+        "label": "list_item",
+        "level": 3,
+        "text_preview": "(c) obfuscation"
+      },
+      {
+        "reading_order_index": 19,
+        "element_ref": "#/texts/20",
+        "label": "list_item",
+        "level": 3,
+        "text_preview": "(d) domestication"
+      },
+      {
+        "reading_order_index": 20,
+        "element_ref": "#/texts/21",
+        "label": "list_item",
+        "level": 3,
+        "text_preview": "Q.38. (a) abrogation"
+      },
+      {
+        "reading_order_index": 21,
+        "element_ref": "#/texts/22",
+        "label": "list_item",
+        "level": 3,
+        "text_preview": "(b) intensification"
+      },
+      {
+        "reading_order_index": 22,
+        "element_ref": "#/texts/23",
+        "label": "list_item",
+        "level": 3,
+        "text_preview": "(c) recuperation"
+      },
+      {
+        "reading_order_index": 23,
+        "element_ref": "#/texts/24",
+        "label": "list_item",
+        "level": 3,
+        "text_preview": "(d) inscription"
+      },
+      {
+        "reading_order_index": 24,
+        "element_ref": "#/texts/25",
+        "label": "list_item",
+        "level": 3,
+        "text_preview": "Q.39. (a) vulnerability"
+      },
+      {
+        "reading_order_index": 25,
+        "element_ref": "#/texts/26",
+        "label": "list_item",
+        "level": 3,
+        "text_preview": "(b) objectivity"
+      },
+      {
+        "reading_order_index": 26,
+        "element_ref": "#/texts/27",
+        "label": "list_item",
+        "level": 3,
+        "text_preview": "(c) permanence"
+      },
+      {
+        "reading_order_index": 27,
+        "element_ref": "#/texts/28",
+        "label": "list_item",
+        "level": 3,
+        "text_preview": "(d) efficacy"
+      },
+      {
+        "reading_order_index": 28,
+        "element_ref": "#/texts/29",
+        "label": "list_item",
+        "level": 3,
+        "text_preview": "Q.40. (a) transcendence"
+      },
+      {
+        "reading_order_index": 29,
+        "element_ref": "#/texts/30",
+        "label": "list_item",
+        "level": 3,
+        "text_preview": "(b) recursion"
+      },
+      {
+        "reading_order_index": 30,
+        "element_ref": "#/texts/31",
+        "label": "list_item",
+        "level": 3,
+        "text_preview": "(c) retrospection"
+      },
+      {
+        "reading_order_index": 31,
+        "element_ref": "#/texts/32",
+        "label": "list_item",
+        "level": 3,
+        "text_preview": "(d) dissolution"
+      },
+      {
+        "reading_order_index": 32,
+        "element_ref": "#/texts/33",
+        "label": "section_header",
+        "level": 1,
+        "text_preview": "SET-9.Q .(41 - 45)"
+      },
+      {
+        "reading_order_index": 33,
+        "element_ref": "#/texts/34",
+        "label": "text",
+        "level": 1,
+        "text_preview": "Human creativity, though often romanticised as a sudden spark of  brilliance,  is  more  accurately  the  result  of deliberate mental engagement. Innovative id"
+      },
+      {
+        "reading_order_index": 34,
+        "element_ref": "#/texts/35",
+        "label": "text",
+        "level": 1,
+        "text_preview": "SSC CGL 25/09/2025 (Shift 1)"
+      },
+      {
+        "reading_order_index": 35,
+        "element_ref": "#/texts/36",
+        "label": "list_item",
+        "level": 3,
+        "text_preview": "Q.41. (a) will integrate"
+      },
+      {
+        "reading_order_index": 36,
+        "element_ref": "#/texts/37",
+        "label": "list_item",
+        "level": 3,
+        "text_preview": "(b) integrated"
+      },
+      {
+        "reading_order_index": 37,
+        "element_ref": "#/texts/38",
+        "label": "list_item",
+        "level": 3,
+        "text_preview": "(c) integrate"
+      },
+      {
+        "reading_order_index": 38,
+        "element_ref": "#/texts/39",
+        "label": "list_item",
+        "level": 3,
+        "text_preview": "(d) are integrating"
+      },
+      {
+        "reading_order_index": 39,
+        "element_ref": "#/texts/40",
+        "label": "list_item",
+        "level": 3,
+        "text_preview": "Q.42. (a) imitate"
+      },
+      {
+        "reading_order_index": 40,
+        "element_ref": "#/texts/41",
+        "label": "list_item",
+        "level": 3,
+        "text_preview": "(b) abandon"
+      },
+      {
+        "reading_order_index": 41,
+        "element_ref": "#/texts/42",
+        "label": "list_item",
+        "level": 3,
+        "text_preview": "(c) conceal"
+      },
+      {
+        "reading_order_index": 42,
+        "element_ref": "#/texts/43",
+        "label": "list_item",
+        "level": 3,
+        "text_preview": "(d) revise"
+      },
+      {
+        "reading_order_index": 43,
+        "element_ref": "#/texts/44",
+        "label": "list_item",
+        "level": 3,
+        "text_preview": "Q.43. (a) challenge"
+      },
+      {
+        "reading_order_index": 44,
+        "element_ref": "#/texts/45",
+        "label": "list_item",
+        "level": 3,
+        "text_preview": "(b) reinforce"
+      },
+      {
+        "reading_order_index": 45,
+        "element_ref": "#/texts/46",
+        "label": "list_item",
+        "level": 3,
+        "text_preview": "(c) restore"
+      },
+      {
+        "reading_order_index": 46,
+        "element_ref": "#/texts/47",
+        "label": "list_item",
+        "level": 3,
+        "text_preview": "(d) harden"
+      },
+      {
+        "reading_order_index": 47,
+        "element_ref": "#/texts/48",
+        "label": "list_item",
+        "level": 3,
+        "text_preview": "Q.44. (a) subtle"
+      },
+      {
+        "reading_order_index": 48,
+        "element_ref": "#/texts/49",
+        "label": "list_item",
+        "level": 3,
+        "text_preview": "(b) rudimentary"
+      },
+      {
+        "reading_order_index": 49,
+        "element_ref": "#/texts/50",
+        "label": "list_item",
+        "level": 3,
+        "text_preview": "(c) intricate"
+      },
+      {
+        "reading_order_index": 50,
+        "element_ref": "#/texts/51",
+        "label": "list_item",
+        "level": 3,
+        "text_preview": "(d) refined"
+      },
+      {
+        "reading_order_index": 51,
+        "element_ref": "#/texts/52",
+        "label": "text",
+        "level": 1,
+        "text_preview": "Q.45. Select the most appropriate meaning of the word 'iteration' as highlighted in the passage."
+      },
+      {
+        "reading_order_index": 52,
+        "element_ref": "#/texts/53",
+        "label": "list_item",
+        "level": 2,
+        "text_preview": "(a) a sudden interruption"
+      },
+      {
+        "reading_order_index": 53,
+        "element_ref": "#/texts/54",
+        "label": "list_item",
+        "level": 2,
+        "text_preview": "(c) a final conclusion"
+      },
+      {
+        "reading_order_index": 54,
+        "element_ref": "#/texts/55",
+        "label": "section_header",
+        "level": 1,
+        "text_preview": "SET-10.Q .(46 - 50)"
+      },
+      {
+        "reading_order_index": 55,
+        "element_ref": "#/texts/56",
+        "label": "text",
+        "level": 1,
+        "text_preview": "Personal discipline is often misunderstood as a rigid set of rules, but  in  practice,  it  is  a  flexible  system  that  helps  individuals (46)____  their  b"
+      },
+      {
+        "reading_order_index": 56,
+        "element_ref": "#/texts/57",
+        "label": "text",
+        "level": 1,
+        "text_preview": "SSC CGL 25/09/2025 (Shift 3)"
+      },
+      {
+        "reading_order_index": 57,
+        "element_ref": "#/texts/58",
+        "label": "list_item",
+        "level": 2,
+        "text_preview": "Q.46. (a) steer"
+      },
+      {
+        "reading_order_index": 58,
+        "element_ref": "#/texts/59",
+        "label": "list_item",
+        "level": 2,
+        "text_preview": "(b) steered"
+      },
+      {
+        "reading_order_index": 59,
+        "element_ref": "#/texts/60",
+        "label": "list_item",
+        "level": 2,
+        "text_preview": "(c) steering       (d) steers"
+      },
+      {
+        "reading_order_index": 60,
+        "element_ref": "#/texts/61",
+        "label": "text",
+        "level": 1,
+        "text_preview": "Q.47. Select the most appropriate meaning of the word 'poised'."
+      },
+      {
+        "reading_order_index": 61,
+        "element_ref": "#/texts/62",
+        "label": "list_item",
+        "level": 2,
+        "text_preview": "(a) agitation    (b) balance and composure"
+      },
+      {
+        "reading_order_index": 62,
+        "element_ref": "#/texts/63",
+        "label": "list_item",
+        "level": 2,
+        "text_preview": "(c) strictness  (d) confusion"
+      },
+      {
+        "reading_order_index": 63,
+        "element_ref": "#/texts/64",
+        "label": "list_item",
+        "level": 2,
+        "text_preview": "Q.48. (a) dissolve"
+      },
+      {
+        "reading_order_index": 64,
+        "element_ref": "#/texts/65",
+        "label": "list_item",
+        "level": 2,
+        "text_preview": "(b) dissolving"
+      },
+      {
+        "reading_order_index": 65,
+        "element_ref": "#/texts/66",
+        "label": "list_item",
+        "level": 2,
+        "text_preview": "(b) a repeated process"
+      },
+      {
+        "reading_order_index": 66,
+        "element_ref": "#/texts/67",
+        "label": "list_item",
+        "level": 2,
+        "text_preview": "(d) a minor distraction"
+      }
+    ]
+  },
+  "layout_analysis": {
+    "method": "docling_bbox_left_edge_clustering_v1",
+    "column_count": 4,
+    "confidence": 1.0,
+    "page_width": 596.0,
+    "page_height": 842.0,
+    "columns": [
+      {
+        "column_index": 1,
+        "left": 0.0,
+        "right": 100.8,
+        "detected_start": 28.8,
+        "supporting_elements": 22
+      },
+      {
+        "column_index": 2,
+        "left": 100.8,
+        "right": 240.675,
+        "detected_start": 172.8,
+        "supporting_elements": 12
+      },
+      {
+        "column_index": 3,
+        "left": 240.675,
+        "right": 380.774,
+        "detected_start": 308.55,
+        "supporting_elements": 22
+      },
+      {
+        "column_index": 4,
+        "left": 380.774,
+        "right": 596.0,
+        "detected_start": 452.997,
+        "supporting_elements": 11
+      }
+    ],
+    "elements": [
+      {
+        "element_ref": "#/texts/0",
+        "element_type": "text",
+        "label": "page_header",
+        "column_index": 1,
+        "column_indices": [
+          1
+        ],
+        "spans_columns": false,
+        "reading_order_index": null,
+        "bbox": {
+          "l": 28.800003,
+          "t": 830.7937988594726,
+          "r": 95.7084616875,
+          "b": 822.5655027957749,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/1",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 0,
+        "bbox": {
+          "l": 28.800003,
+          "t": 814.6972656875,
+          "r": 151.06904591999998,
+          "b": 806.6150288199854,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/2",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 1,
+        "bbox": {
+          "l": 28.800003,
+          "t": 793.9938966875,
+          "r": 279.61348242,
+          "b": 785.9116598199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/3",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 2,
+        "bbox": {
+          "l": 28.800003,
+          "t": 773.2905276875,
+          "r": 259.49531742,
+          "b": 765.2082908199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/4",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 3,
+        "bbox": {
+          "l": 28.800003,
+          "t": 752.5871586875,
+          "r": 284.84736491999996,
+          "b": 744.5049218199854,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/5",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 4,
+        "bbox": {
+          "l": 28.800003,
+          "t": 731.8837886875,
+          "r": 119.54707317,
+          "b": 723.8015518199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/6",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 5,
+        "bbox": {
+          "l": 28.800003,
+          "t": 719.4617916875,
+          "r": 129.72041291999997,
+          "b": 711.3795548199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/7",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 2,
+        "column_indices": [
+          2
+        ],
+        "spans_columns": false,
+        "reading_order_index": 6,
+        "bbox": {
+          "l": 172.800003,
+          "t": 731.8837886875,
+          "r": 246.54902742000002,
+          "b": 723.8015518199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/8",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 2,
+        "column_indices": [
+          2
+        ],
+        "spans_columns": false,
+        "reading_order_index": 7,
+        "bbox": {
+          "l": 172.800003,
+          "t": 719.4617916875,
+          "r": 240.86250492,
+          "b": 711.3795548199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/9",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 8,
+        "bbox": {
+          "l": 28.800003,
+          "t": 698.7584226875,
+          "r": 280.98896742,
+          "b": 690.6761858199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/10",
+        "element_type": "text",
+        "label": "section_header",
+        "column_index": 1,
+        "column_indices": [
+          1
+        ],
+        "spans_columns": false,
+        "reading_order_index": 9,
+        "bbox": {
+          "l": 28.800003,
+          "t": 676.6748046875,
+          "r": 103.52021769,
+          "b": 668.5925678199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/11",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2,
+          3
+        ],
+        "spans_columns": true,
+        "reading_order_index": 10,
+        "bbox": {
+          "l": 28.800003,
+          "t": 664.2529296875,
+          "r": 289.02363492,
+          "b": 370.4641528199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/12",
+        "element_type": "text",
+        "label": "section_header",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 11,
+        "bbox": {
+          "l": 28.800003,
+          "t": 366.1242696875,
+          "r": 151.06904591999998,
+          "b": 358.0420328199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/13",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 12,
+        "bbox": {
+          "l": 28.800003,
+          "t": 345.4208996875,
+          "r": 123.66914367000001,
+          "b": 337.33866281998536,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/14",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 2,
+        "column_indices": [
+          2
+        ],
+        "spans_columns": false,
+        "reading_order_index": 13,
+        "bbox": {
+          "l": 172.800003,
+          "t": 345.4208996875,
+          "r": 234.10371492000002,
+          "b": 337.33866281998536,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/15",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 14,
+        "bbox": {
+          "l": 28.800003,
+          "t": 332.9990196875,
+          "r": 124.85127267000001,
+          "b": 324.9167828199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/16",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 2,
+        "column_indices": [
+          2
+        ],
+        "spans_columns": false,
+        "reading_order_index": 15,
+        "bbox": {
+          "l": 172.800003,
+          "t": 332.9990196875,
+          "r": 232.35029742,
+          "b": 324.9167828199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/17",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 16,
+        "bbox": {
+          "l": 28.800003,
+          "t": 312.29564968750003,
+          "r": 122.64082317,
+          "b": 304.21341281998536,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/18",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 2,
+        "column_indices": [
+          2
+        ],
+        "spans_columns": false,
+        "reading_order_index": 17,
+        "bbox": {
+          "l": 172.800003,
+          "t": 312.29564968750003,
+          "r": 244.94941992000003,
+          "b": 304.21341281998536,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/19",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 18,
+        "bbox": {
+          "l": 28.800003,
+          "t": 299.87353968750006,
+          "r": 123.20771817,
+          "b": 291.7913028199854,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/20",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 2,
+        "column_indices": [
+          2
+        ],
+        "spans_columns": false,
+        "reading_order_index": 19,
+        "bbox": {
+          "l": 172.800003,
+          "t": 299.87353968750006,
+          "r": 248.28046992,
+          "b": 291.7913028199854,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/21",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 20,
+        "bbox": {
+          "l": 28.800003,
+          "t": 279.1701696875,
+          "r": 122.75508117000001,
+          "b": 271.0879328199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/22",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 2,
+        "column_indices": [
+          2
+        ],
+        "spans_columns": false,
+        "reading_order_index": 21,
+        "bbox": {
+          "l": 172.800003,
+          "t": 279.1701696875,
+          "r": 247.27412742,
+          "b": 271.0879328199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/23",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 22,
+        "bbox": {
+          "l": 28.800003,
+          "t": 266.74804968750004,
+          "r": 123.45381192,
+          "b": 258.6658128199854,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/24",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 2,
+        "column_indices": [
+          2
+        ],
+        "spans_columns": false,
+        "reading_order_index": 23,
+        "bbox": {
+          "l": 172.800003,
+          "t": 266.74804968750004,
+          "r": 232.82929991999998,
+          "b": 258.6658128199854,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/25",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 24,
+        "bbox": {
+          "l": 28.800003,
+          "t": 246.04491968750006,
+          "r": 131.82978791999997,
+          "b": 237.9626828199854,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/26",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 2,
+        "column_indices": [
+          2
+        ],
+        "spans_columns": false,
+        "reading_order_index": 25,
+        "bbox": {
+          "l": 172.800003,
+          "t": 246.04491968750006,
+          "r": 233.70381492,
+          "b": 237.9626828199854,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/27",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 26,
+        "bbox": {
+          "l": 28.800003,
+          "t": 233.6227996875,
+          "r": 139.03242491999998,
+          "b": 225.54056281998533,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/28",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 2,
+        "column_indices": [
+          2
+        ],
+        "spans_columns": false,
+        "reading_order_index": 27,
+        "bbox": {
+          "l": 172.800003,
+          "t": 233.6227996875,
+          "r": 224.04902742000002,
+          "b": 225.54056281998533,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/29",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 28,
+        "bbox": {
+          "l": 28.800003,
+          "t": 212.91942968750004,
+          "r": 139.03242491999998,
+          "b": 204.83719281998538,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/30",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 2,
+        "column_indices": [
+          2
+        ],
+        "spans_columns": false,
+        "reading_order_index": 29,
+        "bbox": {
+          "l": 172.800003,
+          "t": 212.91942968750004,
+          "r": 228.16230492,
+          "b": 204.83719281998538,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/31",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 30,
+        "bbox": {
+          "l": 28.800003,
+          "t": 200.49730968749998,
+          "r": 139.03242491999998,
+          "b": 192.4150728199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/32",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 2,
+        "column_indices": [
+          2
+        ],
+        "spans_columns": false,
+        "reading_order_index": 31,
+        "bbox": {
+          "l": 172.800003,
+          "t": 200.49730968749998,
+          "r": 234.85957241999998,
+          "b": 192.4150728199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/33",
+        "element_type": "text",
+        "label": "section_header",
+        "column_index": 1,
+        "column_indices": [
+          1
+        ],
+        "spans_columns": false,
+        "reading_order_index": 32,
+        "bbox": {
+          "l": 28.800003,
+          "t": 175.65331968750002,
+          "r": 103.52021769,
+          "b": 167.57108281998535,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/34",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2,
+          3
+        ],
+        "spans_columns": true,
+        "reading_order_index": 33,
+        "bbox": {
+          "l": 28.800003,
+          "t": 163.2314496875,
+          "r": 288.98115492,
+          "b": 30.928992819985297,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/35",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 0,
+        "column_indices": [
+          3,
+          4
+        ],
+        "spans_columns": true,
+        "reading_order_index": 34,
+        "bbox": {
+          "l": 308.54999,
+          "t": 653.2111796875,
+          "r": 430.8190329199999,
+          "b": 645.1289428199854,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/36",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 0,
+        "column_indices": [
+          3,
+          4
+        ],
+        "spans_columns": true,
+        "reading_order_index": 35,
+        "bbox": {
+          "l": 308.54999,
+          "t": 632.5078096875,
+          "r": 396.85809595999996,
+          "b": 624.4255728199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/37",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 4,
+        "column_indices": [
+          4
+        ],
+        "spans_columns": false,
+        "reading_order_index": 36,
+        "bbox": {
+          "l": 454.78680499999996,
+          "t": 632.5078096875,
+          "r": 511.01043691999996,
+          "b": 624.4255728199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/38",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 0,
+        "column_indices": [
+          3,
+          4
+        ],
+        "spans_columns": true,
+        "reading_order_index": 37,
+        "bbox": {
+          "l": 308.54999,
+          "t": 620.0856896875,
+          "r": 401.77118117,
+          "b": 612.0034528199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/39",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 4,
+        "column_indices": [
+          4
+        ],
+        "spans_columns": false,
+        "reading_order_index": 38,
+        "bbox": {
+          "l": 452.54999,
+          "t": 620.0856896875,
+          "r": 528.25897442,
+          "b": 612.0034528199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/40",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 3,
+        "column_indices": [
+          3
+        ],
+        "spans_columns": false,
+        "reading_order_index": 39,
+        "bbox": {
+          "l": 308.54999,
+          "t": 599.3823196875001,
+          "r": 373.70770516999994,
+          "b": 591.3000828199854,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/41",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 4,
+        "column_indices": [
+          4
+        ],
+        "spans_columns": false,
+        "reading_order_index": 40,
+        "bbox": {
+          "l": 454.78680499999996,
+          "t": 599.3823196875001,
+          "r": 505.51288442,
+          "b": 591.3000828199854,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/42",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 0,
+        "column_indices": [
+          3,
+          4
+        ],
+        "spans_columns": true,
+        "reading_order_index": 41,
+        "bbox": {
+          "l": 308.54999,
+          "t": 586.9602096875,
+          "r": 402.20184542,
+          "b": 578.8779728199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/43",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 4,
+        "column_indices": [
+          4
+        ],
+        "spans_columns": false,
+        "reading_order_index": 42,
+        "bbox": {
+          "l": 452.54999,
+          "t": 586.9602096875,
+          "r": 494.18378192,
+          "b": 578.8779728199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/44",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 0,
+        "column_indices": [
+          3,
+          4
+        ],
+        "spans_columns": true,
+        "reading_order_index": 43,
+        "bbox": {
+          "l": 308.54999,
+          "t": 566.2568396875,
+          "r": 400.01776366999997,
+          "b": 558.1746028199854,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/45",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 4,
+        "column_indices": [
+          4
+        ],
+        "spans_columns": false,
+        "reading_order_index": 44,
+        "bbox": {
+          "l": 452.54999,
+          "t": 566.2568396875,
+          "r": 506.12372192,
+          "b": 558.1746028199854,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/46",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 0,
+        "column_indices": [
+          3,
+          4
+        ],
+        "spans_columns": true,
+        "reading_order_index": 45,
+        "bbox": {
+          "l": 308.54999,
+          "t": 553.8348396875,
+          "r": 401.16473642,
+          "b": 545.7526028199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/47",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 4,
+        "column_indices": [
+          4
+        ],
+        "spans_columns": false,
+        "reading_order_index": 46,
+        "bbox": {
+          "l": 452.54999,
+          "t": 553.8348396875,
+          "r": 498.17401441999993,
+          "b": 545.7526028199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/48",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 3,
+        "column_indices": [
+          3
+        ],
+        "spans_columns": false,
+        "reading_order_index": 47,
+        "bbox": {
+          "l": 308.54999,
+          "t": 533.1314696874999,
+          "r": 370.44696295999995,
+          "b": 525.0492328199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/49",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 4,
+        "column_indices": [
+          4
+        ],
+        "spans_columns": false,
+        "reading_order_index": 48,
+        "bbox": {
+          "l": 452.54999,
+          "t": 533.1314696874999,
+          "r": 516.4201044199999,
+          "b": 525.0492328199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/50",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 0,
+        "column_indices": [
+          3,
+          4
+        ],
+        "spans_columns": true,
+        "reading_order_index": 49,
+        "bbox": {
+          "l": 308.54999,
+          "t": 520.7094696875,
+          "r": 401.25262667,
+          "b": 512.6272328199854,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/51",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 4,
+        "column_indices": [
+          4
+        ],
+        "spans_columns": false,
+        "reading_order_index": 50,
+        "bbox": {
+          "l": 452.54999,
+          "t": 520.7094696875,
+          "r": 495.84930692,
+          "b": 512.6272328199854,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/52",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 0,
+        "column_indices": [
+          3,
+          4
+        ],
+        "spans_columns": true,
+        "reading_order_index": 51,
+        "bbox": {
+          "l": 308.54999,
+          "t": 502.7665996875,
+          "r": 568.43378192,
+          "b": 482.2622428199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/53",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 0,
+        "column_indices": [
+          3,
+          4
+        ],
+        "spans_columns": true,
+        "reading_order_index": 52,
+        "bbox": {
+          "l": 308.54999,
+          "t": 477.9226096875,
+          "r": 409.21112267,
+          "b": 469.84037281998536,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/54",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 3,
+        "column_indices": [
+          3
+        ],
+        "spans_columns": false,
+        "reading_order_index": 53,
+        "bbox": {
+          "l": 308.54999,
+          "t": 465.5004896875,
+          "r": 393.95331017,
+          "b": 457.41825281998536,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/55",
+        "element_type": "text",
+        "label": "section_header",
+        "column_index": 3,
+        "column_indices": [
+          3
+        ],
+        "spans_columns": false,
+        "reading_order_index": 54,
+        "bbox": {
+          "l": 308.54999,
+          "t": 443.4169896875,
+          "r": 388.43377919,
+          "b": 435.33475281998534,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/56",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 0,
+        "column_indices": [
+          3,
+          4
+        ],
+        "spans_columns": true,
+        "reading_order_index": 55,
+        "bbox": {
+          "l": 308.54999,
+          "t": 430.9948696875,
+          "r": 568.7326044199999,
+          "b": 137.20633281998528,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/57",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 0,
+        "column_indices": [
+          3,
+          4
+        ],
+        "spans_columns": true,
+        "reading_order_index": 56,
+        "bbox": {
+          "l": 308.54999,
+          "t": 132.86645968749997,
+          "r": 430.8190329199999,
+          "b": 124.7842228199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/58",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 3,
+        "column_indices": [
+          3
+        ],
+        "spans_columns": false,
+        "reading_order_index": 57,
+        "bbox": {
+          "l": 308.54999,
+          "t": 113.54320968750005,
+          "r": 368.29364267,
+          "b": 105.46097281998539,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/59",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 4,
+        "column_indices": [
+          4
+        ],
+        "spans_columns": false,
+        "reading_order_index": 58,
+        "bbox": {
+          "l": 380.54999,
+          "t": 113.54320968750005,
+          "r": 439.62567692,
+          "b": 105.46097281998539,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/60",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 0,
+        "column_indices": [
+          3,
+          4
+        ],
+        "spans_columns": true,
+        "reading_order_index": 59,
+        "bbox": {
+          "l": 308.54999,
+          "t": 101.12108968749999,
+          "r": 434.52801767,
+          "b": 93.03885281998532,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/61",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 0,
+        "column_indices": [
+          3,
+          4
+        ],
+        "spans_columns": true,
+        "reading_order_index": 60,
+        "bbox": {
+          "l": 308.54999,
+          "t": 81.79809968749998,
+          "r": 565.02362192,
+          "b": 73.71586281998532,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/62",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 0,
+        "column_indices": [
+          3,
+          4
+        ],
+        "spans_columns": true,
+        "reading_order_index": 61,
+        "bbox": {
+          "l": 308.54999,
+          "t": 69.37597968750003,
+          "r": 477.92840942,
+          "b": 61.29374281998537,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/63",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 0,
+        "column_indices": [
+          3,
+          4
+        ],
+        "spans_columns": true,
+        "reading_order_index": 62,
+        "bbox": {
+          "l": 308.54999,
+          "t": 56.95409968750005,
+          "r": 421.28289992,
+          "b": 48.87186281998538,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/64",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 0,
+        "column_indices": [
+          3,
+          4
+        ],
+        "spans_columns": true,
+        "reading_order_index": 63,
+        "bbox": {
+          "l": 308.54999,
+          "t": 36.25048968750002,
+          "r": 401.15155292,
+          "b": 28.168252819985355,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/65",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 4,
+        "column_indices": [
+          4
+        ],
+        "spans_columns": false,
+        "reading_order_index": 64,
+        "bbox": {
+          "l": 452.54999,
+          "t": 36.25048968750002,
+          "r": 508.72967941999997,
+          "b": 28.168252819985355,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/66",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 4,
+        "column_indices": [
+          4
+        ],
+        "spans_columns": false,
+        "reading_order_index": 65,
+        "bbox": {
+          "l": 416.54999,
+          "t": 477.9226096875,
+          "r": 544.53632192,
+          "b": 469.84037281998536,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/67",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 4,
+        "column_indices": [
+          4
+        ],
+        "spans_columns": false,
+        "reading_order_index": 66,
+        "bbox": {
+          "l": 452.54999,
+          "t": 465.5004896875,
+          "r": 541.23602435,
+          "b": 457.41825281998536,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/68",
+        "element_type": "text",
+        "label": "page_footer",
+        "column_index": 0,
+        "column_indices": [
+          2,
+          3,
+          4
+        ],
+        "spans_columns": true,
+        "reading_order_index": null,
+        "bbox": {
+          "l": 99.3266505,
+          "t": 21.98847795947256,
+          "r": 495.95088382500006,
+          "b": 13.76018189577485,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      }
+    ],
+    "warnings": []
+  },
+  "structure_chunks": {
+    "enabled": true,
+    "method": "docling_hybrid_chunker",
+    "scope": "page",
+    "items": [
+      {
+        "text": "SSC CGL 23/09/2025 (Shift 3)\n- Q.31. (a) opacity (b) hierarchy (c) transparency (d) redundancy\n- Q.32. (a) biases  (b) neutrality (c) liberation (d) innovation\n- Q.33. (a) performativity (b) mobilization (c) disruption (d) clarity\n- Q.34. (a) gatekeeping\n- (c) dissemination\n- (b) empowerment\n- (d) collaboration\n- Q.35. (a) facade   (b) breakthrough   (c) solution   (d) revolution",
+        "meta": {
+          "schema_name": "docling_core.transforms.chunker.DocMeta",
+          "version": "1.0.0",
+          "doc_items": [
+            {
+              "self_ref": "#/texts/1",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 814.6972656875,
+                    "r": 151.06904591999998,
+                    "b": 806.6150288199854,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    28
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/2",
+              "parent": {
+                "cref": "#/groups/0"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 793.9938966875,
+                    "r": 279.61348242,
+                    "b": 785.9116598199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    63
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/3",
+              "parent": {
+                "cref": "#/groups/0"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 773.2905276875,
+                    "r": 259.49531742,
+                    "b": 765.2082908199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    62
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/4",
+              "parent": {
+                "cref": "#/groups/0"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 752.5871586875,
+                    "r": 284.84736491999996,
+                    "b": 744.5049218199854,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    68
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/5",
+              "parent": {
+                "cref": "#/groups/0"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 731.8837886875,
+                    "r": 119.54707317,
+                    "b": 723.8015518199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    21
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/6",
+              "parent": {
+                "cref": "#/groups/0"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 719.4617916875,
+                    "r": 129.72041291999997,
+                    "b": 711.3795548199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    17
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/7",
+              "parent": {
+                "cref": "#/groups/0"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 172.800003,
+                    "t": 731.8837886875,
+                    "r": 246.54902742000002,
+                    "b": 723.8015518199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    15
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/8",
+              "parent": {
+                "cref": "#/groups/0"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 172.800003,
+                    "t": 719.4617916875,
+                    "r": 240.86250492,
+                    "b": 711.3795548199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    17
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/9",
+              "parent": {
+                "cref": "#/groups/0"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 698.7584226875,
+                    "r": 280.98896742,
+                    "b": 690.6761858199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    67
+                  ]
+                }
+              ]
+            }
+          ],
+          "headings": null,
+          "captions": null,
+          "origin": {
+            "mimetype": "application/pdf",
+            "binary_hash": 7247725237889183466,
+            "filename": "english_page_0302.pdf",
+            "uri": null
+          }
+        },
+        "chunk_index": 0,
+        "contextualized_text": "SSC CGL 23/09/2025 (Shift 3)\n- Q.31. (a) opacity (b) hierarchy (c) transparency (d) redundancy\n- Q.32. (a) biases  (b) neutrality (c) liberation (d) innovation\n- Q.33. (a) performativity (b) mobilization (c) disruption (d) clarity\n- Q.34. (a) gatekeeping\n- (c) dissemination\n- (b) empowerment\n- (d) collaboration\n- Q.35. (a) facade   (b) breakthrough   (c) solution   (d) revolution"
+      },
+      {
+        "text": "To  articulate  subjectivity  outside  the  parameters  of  modern rationality  is  to  engage  in  a  form  of  epistemic  insurgency-an attempt to (36)_____the archive of thought that has long dictated who  can  speak,  know,  and  be  known.  Within  this  intellectual economy, knowledge functions less as illumination and more as a  technique  of  capture,  binding  bodies to grids of intelligibility. The  university,  as  both  a  disciplinary  and  affective  apparatus, perpetuates this capture by codifying dissent into legible critique, thereby neutralizing its subversive potential. The scholar's task, therefore, is not to seek entry into this canon but to  perform  an  (37)  _____of  its  internal  architecture-to  expose how  its  grammar  of  universality  is  built  upon  exclusion  and erasure.  What  is  often  called  'truth'  is  merely  the  sediment of power's reiterations, a rhetorical stability  achieved  through repetition and  consent.  Liberation,  then,  cannot  arise  from accumulation  of  knowledge  but  from  its  strategic  (38)____,  a refusal to reproduce epistemic norms that domesticate difference.  This  gesture  demands  a  reorientation  of  thought itself-toward",
+        "meta": {
+          "schema_name": "docling_core.transforms.chunker.DocMeta",
+          "version": "1.0.0",
+          "doc_items": [
+            {
+              "self_ref": "#/texts/11",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 664.2529296875,
+                    "r": 289.02363492,
+                    "b": 370.4641528199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    1579
+                  ]
+                }
+              ]
+            }
+          ],
+          "headings": [
+            "SET-8.Q .(36 - 40)"
+          ],
+          "captions": null,
+          "origin": {
+            "mimetype": "application/pdf",
+            "binary_hash": 7247725237889183466,
+            "filename": "english_page_0302.pdf",
+            "uri": null
+          }
+        },
+        "chunk_index": 1,
+        "contextualized_text": "SET-8.Q .(36 - 40)\nTo  articulate  subjectivity  outside  the  parameters  of  modern rationality  is  to  engage  in  a  form  of  epistemic  insurgency-an attempt to (36)_____the archive of thought that has long dictated who  can  speak,  know,  and  be  known.  Within  this  intellectual economy, knowledge functions less as illumination and more as a  technique  of  capture,  binding  bodies to grids of intelligibility. The  university,  as  both  a  disciplinary  and  affective  apparatus, perpetuates this capture by codifying dissent into legible critique, thereby neutralizing its subversive potential. The scholar's task, therefore, is not to seek entry into this canon but to  perform  an  (37)  _____of  its  internal  architecture-to  expose how  its  grammar  of  universality  is  built  upon  exclusion  and erasure.  What  is  often  called  'truth'  is  merely  the  sediment of power's reiterations, a rhetorical stability  achieved  through repetition and  consent.  Liberation,  then,  cannot  arise  from accumulation  of  knowledge  but  from  its  strategic  (38)____,  a refusal to reproduce epistemic norms that domesticate difference.  This  gesture  demands  a  reorientation  of  thought itself-toward"
+      },
+      {
+        "text": "opacity,  silence,  and  the  undecidable.  Only  then can we begin to imagine a politics of knowing that does not rely on  mastery  but  on  (39)_____-an  ethics  that acknowledges the unknowable  as  constitutive  of  the  human.  In  this  sense,  the future  of theory lies not in progress but in (40)____-a recursive undoing of thought's imperial trajectory.",
+        "meta": {
+          "schema_name": "docling_core.transforms.chunker.DocMeta",
+          "version": "1.0.0",
+          "doc_items": [
+            {
+              "self_ref": "#/texts/11",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 664.2529296875,
+                    "r": 289.02363492,
+                    "b": 370.4641528199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    1579
+                  ]
+                }
+              ]
+            }
+          ],
+          "headings": [
+            "SET-8.Q .(36 - 40)"
+          ],
+          "captions": null,
+          "origin": {
+            "mimetype": "application/pdf",
+            "binary_hash": 7247725237889183466,
+            "filename": "english_page_0302.pdf",
+            "uri": null
+          }
+        },
+        "chunk_index": 2,
+        "contextualized_text": "SET-8.Q .(36 - 40)\nopacity,  silence,  and  the  undecidable.  Only  then can we begin to imagine a politics of knowing that does not rely on  mastery  but  on  (39)_____-an  ethics  that acknowledges the unknowable  as  constitutive  of  the  human.  In  this  sense,  the future  of theory lies not in progress but in (40)____-a recursive undoing of thought's imperial trajectory."
+      },
+      {
+        "text": "- Q.36. (a) fortify\n- (b) decolonize\n- (c) mystify\n- (d) concretize\n- Q.37. (a) excavation\n- (b) sanctification\n- (c) obfuscation\n- (d) domestication\n- Q.38. (a) abrogation\n- (b) intensification\n- (c) recuperation\n- (d) inscription\n- Q.39. (a) vulnerability\n- (b) objectivity\n- (c) permanence\n- (d) efficacy\n- Q.40. (a) transcendence\n- (b) recursion\n- (c) retrospection\n- (d) dissolution",
+        "meta": {
+          "schema_name": "docling_core.transforms.chunker.DocMeta",
+          "version": "1.0.0",
+          "doc_items": [
+            {
+              "self_ref": "#/texts/13",
+              "parent": {
+                "cref": "#/groups/2"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 345.4208996875,
+                    "r": 123.66914367000001,
+                    "b": 337.33866281998536,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    17
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/14",
+              "parent": {
+                "cref": "#/groups/3"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 172.800003,
+                    "t": 345.4208996875,
+                    "r": 234.10371492000002,
+                    "b": 337.33866281998536,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    14
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/15",
+              "parent": {
+                "cref": "#/groups/4"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 332.9990196875,
+                    "r": 124.85127267000001,
+                    "b": 324.9167828199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    11
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/16",
+              "parent": {
+                "cref": "#/groups/5"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 172.800003,
+                    "t": 332.9990196875,
+                    "r": 232.35029742,
+                    "b": 324.9167828199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    14
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/17",
+              "parent": {
+                "cref": "#/groups/6"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 312.29564968750003,
+                    "r": 122.64082317,
+                    "b": 304.21341281998536,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    20
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/18",
+              "parent": {
+                "cref": "#/groups/7"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 172.800003,
+                    "t": 312.29564968750003,
+                    "r": 244.94941992000003,
+                    "b": 304.21341281998536,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    18
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/19",
+              "parent": {
+                "cref": "#/groups/8"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 299.87353968750006,
+                    "r": 123.20771817,
+                    "b": 291.7913028199854,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    15
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/20",
+              "parent": {
+                "cref": "#/groups/9"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 172.800003,
+                    "t": 299.87353968750006,
+                    "r": 248.28046992,
+                    "b": 291.7913028199854,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    17
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/21",
+              "parent": {
+                "cref": "#/groups/10"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 279.1701696875,
+                    "r": 122.75508117000001,
+                    "b": 271.0879328199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    20
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/22",
+              "parent": {
+                "cref": "#/groups/11"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 172.800003,
+                    "t": 279.1701696875,
+                    "r": 247.27412742,
+                    "b": 271.0879328199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    19
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/23",
+              "parent": {
+                "cref": "#/groups/12"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 266.74804968750004,
+                    "r": 123.45381192,
+                    "b": 258.6658128199854,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    16
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/24",
+              "parent": {
+                "cref": "#/groups/13"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 172.800003,
+                    "t": 266.74804968750004,
+                    "r": 232.82929991999998,
+                    "b": 258.6658128199854,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    15
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/25",
+              "parent": {
+                "cref": "#/groups/14"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 246.04491968750006,
+                    "r": 131.82978791999997,
+                    "b": 237.9626828199854,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    23
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/26",
+              "parent": {
+                "cref": "#/groups/15"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 172.800003,
+                    "t": 246.04491968750006,
+                    "r": 233.70381492,
+                    "b": 237.9626828199854,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    15
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/27",
+              "parent": {
+                "cref": "#/groups/16"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 233.6227996875,
+                    "r": 139.03242491999998,
+                    "b": 225.54056281998533,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    14
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/28",
+              "parent": {
+                "cref": "#/groups/17"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 172.800003,
+                    "t": 233.6227996875,
+                    "r": 224.04902742000002,
+                    "b": 225.54056281998533,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    12
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/29",
+              "parent": {
+                "cref": "#/groups/18"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 212.91942968750004,
+                    "r": 139.03242491999998,
+                    "b": 204.83719281998538,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    23
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/30",
+              "parent": {
+                "cref": "#/groups/19"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 172.800003,
+                    "t": 212.91942968750004,
+                    "r": 228.16230492,
+                    "b": 204.83719281998538,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    13
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/31",
+              "parent": {
+                "cref": "#/groups/20"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 200.49730968749998,
+                    "r": 139.03242491999998,
+                    "b": 192.4150728199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    17
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/32",
+              "parent": {
+                "cref": "#/groups/21"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 172.800003,
+                    "t": 200.49730968749998,
+                    "r": 234.85957241999998,
+                    "b": 192.4150728199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    15
+                  ]
+                }
+              ]
+            }
+          ],
+          "headings": [
+            "SSC CGL 24/09/2025 (Shift 2)"
+          ],
+          "captions": null,
+          "origin": {
+            "mimetype": "application/pdf",
+            "binary_hash": 7247725237889183466,
+            "filename": "english_page_0302.pdf",
+            "uri": null
+          }
+        },
+        "chunk_index": 3,
+        "contextualized_text": "SSC CGL 24/09/2025 (Shift 2)\n- Q.36. (a) fortify\n- (b) decolonize\n- (c) mystify\n- (d) concretize\n- Q.37. (a) excavation\n- (b) sanctification\n- (c) obfuscation\n- (d) domestication\n- Q.38. (a) abrogation\n- (b) intensification\n- (c) recuperation\n- (d) inscription\n- Q.39. (a) vulnerability\n- (b) objectivity\n- (c) permanence\n- (d) efficacy\n- Q.40. (a) transcendence\n- (b) recursion\n- (c) retrospection\n- (d) dissolution"
+      },
+      {
+        "text": "Human creativity, though often romanticised as a sudden spark of  brilliance,  is  more  accurately  the  result  of deliberate mental engagement. Innovative ideas frequently emerge when individuals (41)_____diverse experiences, allowing unrelated concepts to intersect in unexpected ways. This cross-pollination of  thoughts  becomes  even  more  powerful  when  paired  with moments of strategic rest; studies show that the mind continues to  process  information  subconsciously  even  when  one  is  not actively  focused.  Yet  the  journey towards meaningful creativity is  rarely  linear.  Many  breakthroughs  follow  repeated  failures, which serve not as endpoints but as crucial feedback loops. This Cloze Test is  why  resilient  thinkers  view  setbacks  as  opportunities  to (42)_____ their methods rather than abandon them. Collaboration,  too,  plays  a  pivotal  role.  When  people exchange perspectives,  they  often  uncover  assumptions  that would have otherwise  remained  hidden.  Such  dialogue  can  (43)_____rigid thinking patterns  and  open  pathways  to  original  solutions. However,  true  creativity  requires  more  than  just novel ideas-it demands  disciplined  refinement.  Without  structure,  even",
+        "meta": {
+          "schema_name": "docling_core.transforms.chunker.DocMeta",
+          "version": "1.0.0",
+          "doc_items": [
+            {
+              "self_ref": "#/texts/34",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 163.2314496875,
+                    "r": 288.98115492,
+                    "b": 30.928992819985297,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    710
+                  ]
+                },
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 291.757038,
+                    "t": 830.7937988594726,
+                    "r": 568.9931979375,
+                    "b": 822.5655027957749,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    711,
+                    721
+                  ]
+                },
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 308.54999,
+                    "t": 814.6972656875,
+                    "r": 568.69012442,
+                    "b": 657.5508228199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    722,
+                    1517
+                  ]
+                }
+              ]
+            }
+          ],
+          "headings": [
+            "SET-9.Q .(41 - 45)"
+          ],
+          "captions": null,
+          "origin": {
+            "mimetype": "application/pdf",
+            "binary_hash": 7247725237889183466,
+            "filename": "english_page_0302.pdf",
+            "uri": null
+          }
+        },
+        "chunk_index": 4,
+        "contextualized_text": "SET-9.Q .(41 - 45)\nHuman creativity, though often romanticised as a sudden spark of  brilliance,  is  more  accurately  the  result  of deliberate mental engagement. Innovative ideas frequently emerge when individuals (41)_____diverse experiences, allowing unrelated concepts to intersect in unexpected ways. This cross-pollination of  thoughts  becomes  even  more  powerful  when  paired  with moments of strategic rest; studies show that the mind continues to  process  information  subconsciously  even  when  one  is  not actively  focused.  Yet  the  journey towards meaningful creativity is  rarely  linear.  Many  breakthroughs  follow  repeated  failures, which serve not as endpoints but as crucial feedback loops. This Cloze Test is  why  resilient  thinkers  view  setbacks  as  opportunities  to (42)_____ their methods rather than abandon them. Collaboration,  too,  plays  a  pivotal  role.  When  people exchange perspectives,  they  often  uncover  assumptions  that would have otherwise  remained  hidden.  Such  dialogue  can  (43)_____rigid thinking patterns  and  open  pathways  to  original  solutions. However,  true  creativity  requires  more  than  just novel ideas-it demands  disciplined  refinement.  Without  structure,  even"
+      },
+      {
+        "text": "the most promising concept risks becoming (44)_____and losing its potential impact. Ultimately, creativity thrives at the intersection of curiosity, persistence, and thoughtful (45) iteration ,  elements that collectively sustain the tenacity  needed  for  long-term innovation.\nSSC CGL 25/09/2025 (Shift 1)\n- Q.41. (a) will integrate\n- (b) integrated\n- (c) integrate\n- (d) are integrating\n- Q.42. (a) imitate\n- (b) abandon\n- (c) conceal\n- (d) revise\n- Q.43. (a) challenge\n- (b) reinforce\n- (c) restore\n- (d) harden\n- Q.44. (a) subtle\n- (b) rudimentary\n- (c) intricate\n- (d) refined\nQ.45. Select the most appropriate meaning of the word 'iteration' as highlighted in the passage.\n- (a) a sudden interruption\n- (c) a final conclusion",
+        "meta": {
+          "schema_name": "docling_core.transforms.chunker.DocMeta",
+          "version": "1.0.0",
+          "doc_items": [
+            {
+              "self_ref": "#/texts/34",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 163.2314496875,
+                    "r": 288.98115492,
+                    "b": 30.928992819985297,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    710
+                  ]
+                },
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 291.757038,
+                    "t": 830.7937988594726,
+                    "r": 568.9931979375,
+                    "b": 822.5655027957749,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    711,
+                    721
+                  ]
+                },
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 308.54999,
+                    "t": 814.6972656875,
+                    "r": 568.69012442,
+                    "b": 657.5508228199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    722,
+                    1517
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/35",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 308.54999,
+                    "t": 653.2111796875,
+                    "r": 430.8190329199999,
+                    "b": 645.1289428199854,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    28
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/36",
+              "parent": {
+                "cref": "#/groups/23"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 308.54999,
+                    "t": 632.5078096875,
+                    "r": 396.85809595999996,
+                    "b": 624.4255728199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    24
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/37",
+              "parent": {
+                "cref": "#/groups/24"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 454.78680499999996,
+                    "t": 632.5078096875,
+                    "r": 511.01043691999996,
+                    "b": 624.4255728199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    14
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/38",
+              "parent": {
+                "cref": "#/groups/25"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 308.54999,
+                    "t": 620.0856896875,
+                    "r": 401.77118117,
+                    "b": 612.0034528199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    13
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/39",
+              "parent": {
+                "cref": "#/groups/26"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 452.54999,
+                    "t": 620.0856896875,
+                    "r": 528.25897442,
+                    "b": 612.0034528199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    19
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/40",
+              "parent": {
+                "cref": "#/groups/27"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 308.54999,
+                    "t": 599.3823196875001,
+                    "r": 373.70770516999994,
+                    "b": 591.3000828199854,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    17
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/41",
+              "parent": {
+                "cref": "#/groups/28"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 454.78680499999996,
+                    "t": 599.3823196875001,
+                    "r": 505.51288442,
+                    "b": 591.3000828199854,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    11
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/42",
+              "parent": {
+                "cref": "#/groups/29"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 308.54999,
+                    "t": 586.9602096875,
+                    "r": 402.20184542,
+                    "b": 578.8779728199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    11
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/43",
+              "parent": {
+                "cref": "#/groups/30"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 452.54999,
+                    "t": 586.9602096875,
+                    "r": 494.18378192,
+                    "b": 578.8779728199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    10
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/44",
+              "parent": {
+                "cref": "#/groups/31"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 308.54999,
+                    "t": 566.2568396875,
+                    "r": 400.01776366999997,
+                    "b": 558.1746028199854,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    19
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/45",
+              "parent": {
+                "cref": "#/groups/32"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 452.54999,
+                    "t": 566.2568396875,
+                    "r": 506.12372192,
+                    "b": 558.1746028199854,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    13
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/46",
+              "parent": {
+                "cref": "#/groups/33"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 308.54999,
+                    "t": 553.8348396875,
+                    "r": 401.16473642,
+                    "b": 545.7526028199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    11
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/47",
+              "parent": {
+                "cref": "#/groups/34"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 452.54999,
+                    "t": 553.8348396875,
+                    "r": 498.17401441999993,
+                    "b": 545.7526028199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    10
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/48",
+              "parent": {
+                "cref": "#/groups/35"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 308.54999,
+                    "t": 533.1314696874999,
+                    "r": 370.44696295999995,
+                    "b": 525.0492328199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    16
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/49",
+              "parent": {
+                "cref": "#/groups/36"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 452.54999,
+                    "t": 533.1314696874999,
+                    "r": 516.4201044199999,
+                    "b": 525.0492328199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    15
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/50",
+              "parent": {
+                "cref": "#/groups/37"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 308.54999,
+                    "t": 520.7094696875,
+                    "r": 401.25262667,
+                    "b": 512.6272328199854,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    13
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/51",
+              "parent": {
+                "cref": "#/groups/38"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 452.54999,
+                    "t": 520.7094696875,
+                    "r": 495.84930692,
+                    "b": 512.6272328199854,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    11
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/52",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 308.54999,
+                    "t": 502.7665996875,
+                    "r": 568.43378192,
+                    "b": 482.2622428199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    96
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/53",
+              "parent": {
+                "cref": "#/groups/39"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 308.54999,
+                    "t": 477.9226096875,
+                    "r": 409.21112267,
+                    "b": 469.84037281998536,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    25
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/54",
+              "parent": {
+                "cref": "#/groups/39"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 308.54999,
+                    "t": 465.5004896875,
+                    "r": 393.95331017,
+                    "b": 457.41825281998536,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    22
+                  ]
+                }
+              ]
+            }
+          ],
+          "headings": [
+            "SET-9.Q .(41 - 45)"
+          ],
+          "captions": null,
+          "origin": {
+            "mimetype": "application/pdf",
+            "binary_hash": 7247725237889183466,
+            "filename": "english_page_0302.pdf",
+            "uri": null
+          }
+        },
+        "chunk_index": 5,
+        "contextualized_text": "SET-9.Q .(41 - 45)\nthe most promising concept risks becoming (44)_____and losing its potential impact. Ultimately, creativity thrives at the intersection of curiosity, persistence, and thoughtful (45) iteration ,  elements that collectively sustain the tenacity  needed  for  long-term innovation.\nSSC CGL 25/09/2025 (Shift 1)\n- Q.41. (a) will integrate\n- (b) integrated\n- (c) integrate\n- (d) are integrating\n- Q.42. (a) imitate\n- (b) abandon\n- (c) conceal\n- (d) revise\n- Q.43. (a) challenge\n- (b) reinforce\n- (c) restore\n- (d) harden\n- Q.44. (a) subtle\n- (b) rudimentary\n- (c) intricate\n- (d) refined\nQ.45. Select the most appropriate meaning of the word 'iteration' as highlighted in the passage.\n- (a) a sudden interruption\n- (c) a final conclusion"
+      },
+      {
+        "text": "Personal discipline is often misunderstood as a rigid set of rules, but  in  practice,  it  is  a  flexible  system  that  helps  individuals (46)____  their  behaviour  toward  meaningful  objectives.  Unlike external enforcement, discipline grows strongest when driven by intrinsic motivation. People who manage their time intentionally often  find  that  even  small  routines  can  produce  significant change over extended periods. However, many struggle because they  view  discipline  as punishment rather than a strategic tool. This misunderstanding prevents  them  from  recognising  its deeper  value.  True  discipline  is  closely  linked  to  the  habit  of deliberate reflection, a  practice  that  allows  one  to  assess choices without harsh judgment. Such reflection helps cultivate a sense of (47)____ poise ,  especially in moments of uncertainty. When individuals learn to pause and observe their impulses, they gain clarity rather than reacting impulsively. Yet reflection alone is insufficient; it must be paired with purposeful action. Without consistent effort, even the most  insightful intentions can (48)____  into  inactivity.  Moreover,  the  long-term  process  of self-regulation  requires  emotional  steadiness.  This  is  where sustained  (49)_____ fortitude becomes  indispensable,  enabling individuals",
+        "meta": {
+          "schema_name": "docling_core.transforms.chunker.DocMeta",
+          "version": "1.0.0",
+          "doc_items": [
+            {
+              "self_ref": "#/texts/56",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 308.54999,
+                    "t": 430.9948696875,
+                    "r": 568.7326044199999,
+                    "b": 137.20633281998528,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    1563
+                  ]
+                }
+              ]
+            }
+          ],
+          "headings": [
+            "SET-10.Q .(46 - 50)"
+          ],
+          "captions": null,
+          "origin": {
+            "mimetype": "application/pdf",
+            "binary_hash": 7247725237889183466,
+            "filename": "english_page_0302.pdf",
+            "uri": null
+          }
+        },
+        "chunk_index": 6,
+        "contextualized_text": "SET-10.Q .(46 - 50)\nPersonal discipline is often misunderstood as a rigid set of rules, but  in  practice,  it  is  a  flexible  system  that  helps  individuals (46)____  their  behaviour  toward  meaningful  objectives.  Unlike external enforcement, discipline grows strongest when driven by intrinsic motivation. People who manage their time intentionally often  find  that  even  small  routines  can  produce  significant change over extended periods. However, many struggle because they  view  discipline  as punishment rather than a strategic tool. This misunderstanding prevents  them  from  recognising  its deeper  value.  True  discipline  is  closely  linked  to  the  habit  of deliberate reflection, a  practice  that  allows  one  to  assess choices without harsh judgment. Such reflection helps cultivate a sense of (47)____ poise ,  especially in moments of uncertainty. When individuals learn to pause and observe their impulses, they gain clarity rather than reacting impulsively. Yet reflection alone is insufficient; it must be paired with purposeful action. Without consistent effort, even the most  insightful intentions can (48)____  into  inactivity.  Moreover,  the  long-term  process  of self-regulation  requires  emotional  steadiness.  This  is  where sustained  (49)_____ fortitude becomes  indispensable,  enabling individuals"
+      },
+      {
+        "text": "to  remain  committed  despite  obstacles.  Ultimately, discipline  is  less  about  restriction  and  more  about  intentional alignment with one's values, achieved through repeated choices that (50) ____ personal growth.\nSSC CGL 25/09/2025 (Shift 3)\n- Q.46. (a) steer\n- (b) steered\n- (c) steering       (d) steers\nQ.47. Select the most appropriate meaning of the word 'poised'.\n- (a) agitation    (b) balance and composure\n- (c) strictness  (d) confusion\n- Q.48. (a) dissolve\n- (b) dissolving\n- (b) a repeated process\n- (d) a minor distraction",
+        "meta": {
+          "schema_name": "docling_core.transforms.chunker.DocMeta",
+          "version": "1.0.0",
+          "doc_items": [
+            {
+              "self_ref": "#/texts/56",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 308.54999,
+                    "t": 430.9948696875,
+                    "r": 568.7326044199999,
+                    "b": 137.20633281998528,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    1563
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/57",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 308.54999,
+                    "t": 132.86645968749997,
+                    "r": 430.8190329199999,
+                    "b": 124.7842228199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    28
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/58",
+              "parent": {
+                "cref": "#/groups/40"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 308.54999,
+                    "t": 113.54320968750005,
+                    "r": 368.29364267,
+                    "b": 105.46097281998539,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    15
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/59",
+              "parent": {
+                "cref": "#/groups/40"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 380.54999,
+                    "t": 113.54320968750005,
+                    "r": 439.62567692,
+                    "b": 105.46097281998539,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    11
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/60",
+              "parent": {
+                "cref": "#/groups/40"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 308.54999,
+                    "t": 101.12108968749999,
+                    "r": 434.52801767,
+                    "b": 93.03885281998532,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    29
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/61",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 308.54999,
+                    "t": 81.79809968749998,
+                    "r": 565.02362192,
+                    "b": 73.71586281998532,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    63
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/62",
+              "parent": {
+                "cref": "#/groups/41"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 308.54999,
+                    "t": 69.37597968750003,
+                    "r": 477.92840942,
+                    "b": 61.29374281998537,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    42
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/63",
+              "parent": {
+                "cref": "#/groups/41"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 308.54999,
+                    "t": 56.95409968750005,
+                    "r": 421.28289992,
+                    "b": 48.87186281998538,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    29
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/64",
+              "parent": {
+                "cref": "#/groups/41"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 308.54999,
+                    "t": 36.25048968750002,
+                    "r": 401.15155292,
+                    "b": 28.168252819985355,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    18
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/65",
+              "parent": {
+                "cref": "#/groups/41"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 452.54999,
+                    "t": 36.25048968750002,
+                    "r": 508.72967941999997,
+                    "b": 28.168252819985355,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    14
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/66",
+              "parent": {
+                "cref": "#/groups/41"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 416.54999,
+                    "t": 477.9226096875,
+                    "r": 544.53632192,
+                    "b": 469.84037281998536,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    22
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/67",
+              "parent": {
+                "cref": "#/groups/41"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 452.54999,
+                    "t": 465.5004896875,
+                    "r": 541.23602435,
+                    "b": 457.41825281998536,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    23
+                  ]
+                }
+              ]
+            }
+          ],
+          "headings": [
+            "SET-10.Q .(46 - 50)"
+          ],
+          "captions": null,
+          "origin": {
+            "mimetype": "application/pdf",
+            "binary_hash": 7247725237889183466,
+            "filename": "english_page_0302.pdf",
+            "uri": null
+          }
+        },
+        "chunk_index": 7,
+        "contextualized_text": "SET-10.Q .(46 - 50)\nto  remain  committed  despite  obstacles.  Ultimately, discipline  is  less  about  restriction  and  more  about  intentional alignment with one's values, achieved through repeated choices that (50) ____ personal growth.\nSSC CGL 25/09/2025 (Shift 3)\n- Q.46. (a) steer\n- (b) steered\n- (c) steering       (d) steers\nQ.47. Select the most appropriate meaning of the word 'poised'.\n- (a) agitation    (b) balance and composure\n- (c) strictness  (d) confusion\n- Q.48. (a) dissolve\n- (b) dissolving\n- (b) a repeated process\n- (d) a minor distraction"
+      }
+    ]
+  },
+  "content_assets": {
+    "tables": [],
+    "figures": []
+  },
+  "docling_document": {
+    "schema_name": "DoclingDocument",
+    "version": "1.10.0",
+    "name": "english_page_0302",
+    "origin": {
+      "mimetype": "application/pdf",
+      "binary_hash": 7247725237889183466,
+      "filename": "english_page_0302.pdf"
+    },
+    "furniture": {
+      "self_ref": "#/furniture",
+      "children": [],
+      "content_layer": "furniture",
+      "name": "_root_",
+      "label": "unspecified"
+    },
+    "body": {
+      "self_ref": "#/body",
+      "children": [
+        {
+          "$ref": "#/texts/0"
+        },
+        {
+          "$ref": "#/texts/1"
+        },
+        {
+          "$ref": "#/groups/0"
+        },
+        {
+          "$ref": "#/texts/10"
+        },
+        {
+          "$ref": "#/texts/11"
+        },
+        {
+          "$ref": "#/texts/12"
+        },
+        {
+          "$ref": "#/groups/1"
+        },
+        {
+          "$ref": "#/texts/33"
+        },
+        {
+          "$ref": "#/texts/34"
+        },
+        {
+          "$ref": "#/texts/35"
+        },
+        {
+          "$ref": "#/groups/22"
+        },
+        {
+          "$ref": "#/texts/52"
+        },
+        {
+          "$ref": "#/groups/39"
+        },
+        {
+          "$ref": "#/texts/55"
+        },
+        {
+          "$ref": "#/texts/56"
+        },
+        {
+          "$ref": "#/texts/57"
+        },
+        {
+          "$ref": "#/groups/40"
+        },
+        {
+          "$ref": "#/texts/61"
+        },
+        {
+          "$ref": "#/groups/41"
+        },
+        {
+          "$ref": "#/texts/68"
+        }
+      ],
+      "content_layer": "body",
+      "name": "_root_",
+      "label": "unspecified"
+    },
+    "groups": [
+      {
+        "self_ref": "#/groups/0",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [
+          {
+            "$ref": "#/texts/2"
+          },
+          {
+            "$ref": "#/texts/3"
+          },
+          {
+            "$ref": "#/texts/4"
+          },
+          {
+            "$ref": "#/texts/5"
+          },
+          {
+            "$ref": "#/texts/6"
+          },
+          {
+            "$ref": "#/texts/7"
+          },
+          {
+            "$ref": "#/texts/8"
+          },
+          {
+            "$ref": "#/texts/9"
+          }
+        ],
+        "content_layer": "body",
+        "name": "list",
+        "label": "list"
+      },
+      {
+        "self_ref": "#/groups/1",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [
+          {
+            "$ref": "#/groups/2"
+          },
+          {
+            "$ref": "#/groups/3"
+          },
+          {
+            "$ref": "#/groups/4"
+          },
+          {
+            "$ref": "#/groups/5"
+          },
+          {
+            "$ref": "#/groups/6"
+          },
+          {
+            "$ref": "#/groups/7"
+          },
+          {
+            "$ref": "#/groups/8"
+          },
+          {
+            "$ref": "#/groups/9"
+          },
+          {
+            "$ref": "#/groups/10"
+          },
+          {
+            "$ref": "#/groups/11"
+          },
+          {
+            "$ref": "#/groups/12"
+          },
+          {
+            "$ref": "#/groups/13"
+          },
+          {
+            "$ref": "#/groups/14"
+          },
+          {
+            "$ref": "#/groups/15"
+          },
+          {
+            "$ref": "#/groups/16"
+          },
+          {
+            "$ref": "#/groups/17"
+          },
+          {
+            "$ref": "#/groups/18"
+          },
+          {
+            "$ref": "#/groups/19"
+          },
+          {
+            "$ref": "#/groups/20"
+          },
+          {
+            "$ref": "#/groups/21"
+          }
+        ],
+        "content_layer": "body",
+        "name": "group",
+        "label": "key_value_area"
+      },
+      {
+        "self_ref": "#/groups/2",
+        "parent": {
+          "$ref": "#/groups/1"
+        },
+        "children": [
+          {
+            "$ref": "#/texts/13"
+          }
+        ],
+        "content_layer": "body",
+        "name": "group",
+        "label": "list"
+      },
+      {
+        "self_ref": "#/groups/3",
+        "parent": {
+          "$ref": "#/groups/1"
+        },
+        "children": [
+          {
+            "$ref": "#/texts/14"
+          }
+        ],
+        "content_layer": "body",
+        "name": "group",
+        "label": "list"
+      },
+      {
+        "self_ref": "#/groups/4",
+        "parent": {
+          "$ref": "#/groups/1"
+        },
+        "children": [
+          {
+            "$ref": "#/texts/15"
+          }
+        ],
+        "content_layer": "body",
+        "name": "group",
+        "label": "list"
+      },
+      {
+        "self_ref": "#/groups/5",
+        "parent": {
+          "$ref": "#/groups/1"
+        },
+        "children": [
+          {
+            "$ref": "#/texts/16"
+          }
+        ],
+        "content_layer": "body",
+        "name": "group",
+        "label": "list"
+      },
+      {
+        "self_ref": "#/groups/6",
+        "parent": {
+          "$ref": "#/groups/1"
+        },
+        "children": [
+          {
+            "$ref": "#/texts/17"
+          }
+        ],
+        "content_layer": "body",
+        "name": "group",
+        "label": "list"
+      },
+      {
+        "self_ref": "#/groups/7",
+        "parent": {
+          "$ref": "#/groups/1"
+        },
+        "children": [
+          {
+            "$ref": "#/texts/18"
+          }
+        ],
+        "content_layer": "body",
+        "name": "group",
+        "label": "list"
+      },
+      {
+        "self_ref": "#/groups/8",
+        "parent": {
+          "$ref": "#/groups/1"
+        },
+        "children": [
+          {
+            "$ref": "#/texts/19"
+          }
+        ],
+        "content_layer": "body",
+        "name": "group",
+        "label": "list"
+      },
+      {
+        "self_ref": "#/groups/9",
+        "parent": {
+          "$ref": "#/groups/1"
+        },
+        "children": [
+          {
+            "$ref": "#/texts/20"
+          }
+        ],
+        "content_layer": "body",
+        "name": "group",
+        "label": "list"
+      },
+      {
+        "self_ref": "#/groups/10",
+        "parent": {
+          "$ref": "#/groups/1"
+        },
+        "children": [
+          {
+            "$ref": "#/texts/21"
+          }
+        ],
+        "content_layer": "body",
+        "name": "group",
+        "label": "list"
+      },
+      {
+        "self_ref": "#/groups/11",
+        "parent": {
+          "$ref": "#/groups/1"
+        },
+        "children": [
+          {
+            "$ref": "#/texts/22"
+          }
+        ],
+        "content_layer": "body",
+        "name": "group",
+        "label": "list"
+      },
+      {
+        "self_ref": "#/groups/12",
+        "parent": {
+          "$ref": "#/groups/1"
+        },
+        "children": [
+          {
+            "$ref": "#/texts/23"
+          }
+        ],
+        "content_layer": "body",
+        "name": "group",
+        "label": "list"
+      },
+      {
+        "self_ref": "#/groups/13",
+        "parent": {
+          "$ref": "#/groups/1"
+        },
+        "children": [
+          {
+            "$ref": "#/texts/24"
+          }
+        ],
+        "content_layer": "body",
+        "name": "group",
+        "label": "list"
+      },
+      {
+        "self_ref": "#/groups/14",
+        "parent": {
+          "$ref": "#/groups/1"
+        },
+        "children": [
+          {
+            "$ref": "#/texts/25"
+          }
+        ],
+        "content_layer": "body",
+        "name": "group",
+        "label": "list"
+      },
+      {
+        "self_ref": "#/groups/15",
+        "parent": {
+          "$ref": "#/groups/1"
+        },
+        "children": [
+          {
+            "$ref": "#/texts/26"
+          }
+        ],
+        "content_layer": "body",
+        "name": "group",
+        "label": "list"
+      },
+      {
+        "self_ref": "#/groups/16",
+        "parent": {
+          "$ref": "#/groups/1"
+        },
+        "children": [
+          {
+            "$ref": "#/texts/27"
+          }
+        ],
+        "content_layer": "body",
+        "name": "group",
+        "label": "list"
+      },
+      {
+        "self_ref": "#/groups/17",
+        "parent": {
+          "$ref": "#/groups/1"
+        },
+        "children": [
+          {
+            "$ref": "#/texts/28"
+          }
+        ],
+        "content_layer": "body",
+        "name": "group",
+        "label": "list"
+      },
+      {
+        "self_ref": "#/groups/18",
+        "parent": {
+          "$ref": "#/groups/1"
+        },
+        "children": [
+          {
+            "$ref": "#/texts/29"
+          }
+        ],
+        "content_layer": "body",
+        "name": "group",
+        "label": "list"
+      },
+      {
+        "self_ref": "#/groups/19",
+        "parent": {
+          "$ref": "#/groups/1"
+        },
+        "children": [
+          {
+            "$ref": "#/texts/30"
+          }
+        ],
+        "content_layer": "body",
+        "name": "group",
+        "label": "list"
+      },
+      {
+        "self_ref": "#/groups/20",
+        "parent": {
+          "$ref": "#/groups/1"
+        },
+        "children": [
+          {
+            "$ref": "#/texts/31"
+          }
+        ],
+        "content_layer": "body",
+        "name": "group",
+        "label": "list"
+      },
+      {
+        "self_ref": "#/groups/21",
+        "parent": {
+          "$ref": "#/groups/1"
+        },
+        "children": [
+          {
+            "$ref": "#/texts/32"
+          }
+        ],
+        "content_layer": "body",
+        "name": "group",
+        "label": "list"
+      },
+      {
+        "self_ref": "#/groups/22",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [
+          {
+            "$ref": "#/groups/23"
+          },
+          {
+            "$ref": "#/groups/24"
+          },
+          {
+            "$ref": "#/groups/25"
+          },
+          {
+            "$ref": "#/groups/26"
+          },
+          {
+            "$ref": "#/groups/27"
+          },
+          {
+            "$ref": "#/groups/28"
+          },
+          {
+            "$ref": "#/groups/29"
+          },
+          {
+            "$ref": "#/groups/30"
+          },
+          {
+            "$ref": "#/groups/31"
+          },
+          {
+            "$ref": "#/groups/32"
+          },
+          {
+            "$ref": "#/groups/33"
+          },
+          {
+            "$ref": "#/groups/34"
+          },
+          {
+            "$ref": "#/groups/35"
+          },
+          {
+            "$ref": "#/groups/36"
+          },
+          {
+            "$ref": "#/groups/37"
+          },
+          {
+            "$ref": "#/groups/38"
+          }
+        ],
+        "content_layer": "body",
+        "name": "group",
+        "label": "key_value_area"
+      },
+      {
+        "self_ref": "#/groups/23",
+        "parent": {
+          "$ref": "#/groups/22"
+        },
+        "children": [
+          {
+            "$ref": "#/texts/36"
+          }
+        ],
+        "content_layer": "body",
+        "name": "group",
+        "label": "list"
+      },
+      {
+        "self_ref": "#/groups/24",
+        "parent": {
+          "$ref": "#/groups/22"
+        },
+        "children": [
+          {
+            "$ref": "#/texts/37"
+          }
+        ],
+        "content_layer": "body",
+        "name": "group",
+        "label": "list"
+      },
+      {
+        "self_ref": "#/groups/25",
+        "parent": {
+          "$ref": "#/groups/22"
+        },
+        "children": [
+          {
+            "$ref": "#/texts/38"
+          }
+        ],
+        "content_layer": "body",
+        "name": "group",
+        "label": "list"
+      },
+      {
+        "self_ref": "#/groups/26",
+        "parent": {
+          "$ref": "#/groups/22"
+        },
+        "children": [
+          {
+            "$ref": "#/texts/39"
+          }
+        ],
+        "content_layer": "body",
+        "name": "group",
+        "label": "list"
+      },
+      {
+        "self_ref": "#/groups/27",
+        "parent": {
+          "$ref": "#/groups/22"
+        },
+        "children": [
+          {
+            "$ref": "#/texts/40"
+          }
+        ],
+        "content_layer": "body",
+        "name": "group",
+        "label": "list"
+      },
+      {
+        "self_ref": "#/groups/28",
+        "parent": {
+          "$ref": "#/groups/22"
+        },
+        "children": [
+          {
+            "$ref": "#/texts/41"
+          }
+        ],
+        "content_layer": "body",
+        "name": "group",
+        "label": "list"
+      },
+      {
+        "self_ref": "#/groups/29",
+        "parent": {
+          "$ref": "#/groups/22"
+        },
+        "children": [
+          {
+            "$ref": "#/texts/42"
+          }
+        ],
+        "content_layer": "body",
+        "name": "group",
+        "label": "list"
+      },
+      {
+        "self_ref": "#/groups/30",
+        "parent": {
+          "$ref": "#/groups/22"
+        },
+        "children": [
+          {
+            "$ref": "#/texts/43"
+          }
+        ],
+        "content_layer": "body",
+        "name": "group",
+        "label": "list"
+      },
+      {
+        "self_ref": "#/groups/31",
+        "parent": {
+          "$ref": "#/groups/22"
+        },
+        "children": [
+          {
+            "$ref": "#/texts/44"
+          }
+        ],
+        "content_layer": "body",
+        "name": "group",
+        "label": "list"
+      },
+      {
+        "self_ref": "#/groups/32",
+        "parent": {
+          "$ref": "#/groups/22"
+        },
+        "children": [
+          {
+            "$ref": "#/texts/45"
+          }
+        ],
+        "content_layer": "body",
+        "name": "group",
+        "label": "list"
+      },
+      {
+        "self_ref": "#/groups/33",
+        "parent": {
+          "$ref": "#/groups/22"
+        },
+        "children": [
+          {
+            "$ref": "#/texts/46"
+          }
+        ],
+        "content_layer": "body",
+        "name": "group",
+        "label": "list"
+      },
+      {
+        "self_ref": "#/groups/34",
+        "parent": {
+          "$ref": "#/groups/22"
+        },
+        "children": [
+          {
+            "$ref": "#/texts/47"
+          }
+        ],
+        "content_layer": "body",
+        "name": "group",
+        "label": "list"
+      },
+      {
+        "self_ref": "#/groups/35",
+        "parent": {
+          "$ref": "#/groups/22"
+        },
+        "children": [
+          {
+            "$ref": "#/texts/48"
+          }
+        ],
+        "content_layer": "body",
+        "name": "group",
+        "label": "list"
+      },
+      {
+        "self_ref": "#/groups/36",
+        "parent": {
+          "$ref": "#/groups/22"
+        },
+        "children": [
+          {
+            "$ref": "#/texts/49"
+          }
+        ],
+        "content_layer": "body",
+        "name": "group",
+        "label": "list"
+      },
+      {
+        "self_ref": "#/groups/37",
+        "parent": {
+          "$ref": "#/groups/22"
+        },
+        "children": [
+          {
+            "$ref": "#/texts/50"
+          }
+        ],
+        "content_layer": "body",
+        "name": "group",
+        "label": "list"
+      },
+      {
+        "self_ref": "#/groups/38",
+        "parent": {
+          "$ref": "#/groups/22"
+        },
+        "children": [
+          {
+            "$ref": "#/texts/51"
+          }
+        ],
+        "content_layer": "body",
+        "name": "group",
+        "label": "list"
+      },
+      {
+        "self_ref": "#/groups/39",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [
+          {
+            "$ref": "#/texts/53"
+          },
+          {
+            "$ref": "#/texts/54"
+          }
+        ],
+        "content_layer": "body",
+        "name": "list",
+        "label": "list"
+      },
+      {
+        "self_ref": "#/groups/40",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [
+          {
+            "$ref": "#/texts/58"
+          },
+          {
+            "$ref": "#/texts/59"
+          },
+          {
+            "$ref": "#/texts/60"
+          }
+        ],
+        "content_layer": "body",
+        "name": "list",
+        "label": "list"
+      },
+      {
+        "self_ref": "#/groups/41",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [
+          {
+            "$ref": "#/texts/62"
+          },
+          {
+            "$ref": "#/texts/63"
+          },
+          {
+            "$ref": "#/texts/64"
+          },
+          {
+            "$ref": "#/texts/65"
+          },
+          {
+            "$ref": "#/texts/66"
+          },
+          {
+            "$ref": "#/texts/67"
+          }
+        ],
+        "content_layer": "body",
+        "name": "list",
+        "label": "list"
+      }
+    ],
+    "texts": [
+      {
+        "self_ref": "#/texts/0",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "furniture",
+        "label": "page_header",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 830.7937988594726,
+              "r": 95.7084616875,
+              "b": 822.5655027957749,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              8
+            ]
+          }
+        ],
+        "orig": "Pinnacle",
+        "text": "Pinnacle"
+      },
+      {
+        "self_ref": "#/texts/1",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 814.6972656875,
+              "r": 151.06904591999998,
+              "b": 806.6150288199854,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              28
+            ]
+          }
+        ],
+        "orig": "SSC CGL 23/09/2025 (Shift 3)",
+        "text": "SSC CGL 23/09/2025 (Shift 3)"
+      },
+      {
+        "self_ref": "#/texts/2",
+        "parent": {
+          "$ref": "#/groups/0"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 793.9938966875,
+              "r": 279.61348242,
+              "b": 785.9116598199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              63
+            ]
+          }
+        ],
+        "orig": "Q.31. (a) opacity (b) hierarchy (c) transparency (d) redundancy",
+        "text": "Q.31. (a) opacity (b) hierarchy (c) transparency (d) redundancy",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/3",
+        "parent": {
+          "$ref": "#/groups/0"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 773.2905276875,
+              "r": 259.49531742,
+              "b": 765.2082908199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              62
+            ]
+          }
+        ],
+        "orig": "Q.32. (a) biases  (b) neutrality (c) liberation (d) innovation",
+        "text": "Q.32. (a) biases  (b) neutrality (c) liberation (d) innovation",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/4",
+        "parent": {
+          "$ref": "#/groups/0"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 752.5871586875,
+              "r": 284.84736491999996,
+              "b": 744.5049218199854,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              68
+            ]
+          }
+        ],
+        "orig": "Q.33. (a) performativity (b) mobilization (c) disruption (d) clarity",
+        "text": "Q.33. (a) performativity (b) mobilization (c) disruption (d) clarity",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/5",
+        "parent": {
+          "$ref": "#/groups/0"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 731.8837886875,
+              "r": 119.54707317,
+              "b": 723.8015518199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              21
+            ]
+          }
+        ],
+        "orig": "Q.34. (a) gatekeeping",
+        "text": "Q.34. (a) gatekeeping",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/6",
+        "parent": {
+          "$ref": "#/groups/0"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 719.4617916875,
+              "r": 129.72041291999997,
+              "b": 711.3795548199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              17
+            ]
+          }
+        ],
+        "orig": "(c) dissemination",
+        "text": "(c) dissemination",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/7",
+        "parent": {
+          "$ref": "#/groups/0"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 172.800003,
+              "t": 731.8837886875,
+              "r": 246.54902742000002,
+              "b": 723.8015518199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              15
+            ]
+          }
+        ],
+        "orig": "(b) empowerment",
+        "text": "(b) empowerment",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/8",
+        "parent": {
+          "$ref": "#/groups/0"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 172.800003,
+              "t": 719.4617916875,
+              "r": 240.86250492,
+              "b": 711.3795548199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              17
+            ]
+          }
+        ],
+        "orig": "(d) collaboration",
+        "text": "(d) collaboration",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/9",
+        "parent": {
+          "$ref": "#/groups/0"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 698.7584226875,
+              "r": 280.98896742,
+              "b": 690.6761858199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              67
+            ]
+          }
+        ],
+        "orig": "Q.35. (a) facade   (b) breakthrough   (c) solution   (d) revolution",
+        "text": "Q.35. (a) facade   (b) breakthrough   (c) solution   (d) revolution",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/10",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "section_header",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 676.6748046875,
+              "r": 103.52021769,
+              "b": 668.5925678199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              18
+            ]
+          }
+        ],
+        "orig": "SET-8.Q .(36 - 40)",
+        "text": "SET-8.Q .(36 - 40)",
+        "level": 1
+      },
+      {
+        "self_ref": "#/texts/11",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 664.2529296875,
+              "r": 289.02363492,
+              "b": 370.4641528199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              1579
+            ]
+          }
+        ],
+        "orig": "To  articulate  subjectivity  outside  the  parameters  of  modern rationality  is  to  engage  in  a  form  of  epistemic  insurgency-an attempt to (36)_____the archive of thought that has long dictated who  can  speak,  know,  and  be  known.  Within  this  intellectual economy, knowledge functions less as illumination and more as a  technique  of  capture,  binding  bodies to grids of intelligibility. The  university,  as  both  a  disciplinary  and  affective  apparatus, perpetuates this capture by codifying dissent into legible critique, thereby neutralizing its subversive potential. The scholar's task, therefore, is not to seek entry into this canon but to  perform  an  (37)  _____of  its  internal  architecture-to  expose how  its  grammar  of  universality  is  built  upon  exclusion  and erasure.  What  is  often  called  'truth'  is  merely  the  sediment of power's reiterations, a rhetorical stability  achieved  through repetition and  consent.  Liberation,  then,  cannot  arise  from accumulation  of  knowledge  but  from  its  strategic  (38)____,  a refusal to reproduce epistemic norms that domesticate difference.  This  gesture  demands  a  reorientation  of  thought itself-toward  opacity,  silence,  and  the  undecidable.  Only  then can we begin to imagine a politics of knowing that does not rely on  mastery  but  on  (39)_____-an  ethics  that acknowledges the unknowable  as  constitutive  of  the  human.  In  this  sense,  the future  of theory lies not in progress but in (40)____-a recursive undoing of thought's imperial trajectory.",
+        "text": "To  articulate  subjectivity  outside  the  parameters  of  modern rationality  is  to  engage  in  a  form  of  epistemic  insurgency-an attempt to (36)_____the archive of thought that has long dictated who  can  speak,  know,  and  be  known.  Within  this  intellectual economy, knowledge functions less as illumination and more as a  technique  of  capture,  binding  bodies to grids of intelligibility. The  university,  as  both  a  disciplinary  and  affective  apparatus, perpetuates this capture by codifying dissent into legible critique, thereby neutralizing its subversive potential. The scholar's task, therefore, is not to seek entry into this canon but to  perform  an  (37)  _____of  its  internal  architecture-to  expose how  its  grammar  of  universality  is  built  upon  exclusion  and erasure.  What  is  often  called  'truth'  is  merely  the  sediment of power's reiterations, a rhetorical stability  achieved  through repetition and  consent.  Liberation,  then,  cannot  arise  from accumulation  of  knowledge  but  from  its  strategic  (38)____,  a refusal to reproduce epistemic norms that domesticate difference.  This  gesture  demands  a  reorientation  of  thought itself-toward  opacity,  silence,  and  the  undecidable.  Only  then can we begin to imagine a politics of knowing that does not rely on  mastery  but  on  (39)_____-an  ethics  that acknowledges the unknowable  as  constitutive  of  the  human.  In  this  sense,  the future  of theory lies not in progress but in (40)____-a recursive undoing of thought's imperial trajectory."
+      },
+      {
+        "self_ref": "#/texts/12",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "section_header",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 366.1242696875,
+              "r": 151.06904591999998,
+              "b": 358.0420328199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              28
+            ]
+          }
+        ],
+        "orig": "SSC CGL 24/09/2025 (Shift 2)",
+        "text": "SSC CGL 24/09/2025 (Shift 2)",
+        "level": 1
+      },
+      {
+        "self_ref": "#/texts/13",
+        "parent": {
+          "$ref": "#/groups/2"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 345.4208996875,
+              "r": 123.66914367000001,
+              "b": 337.33866281998536,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              17
+            ]
+          }
+        ],
+        "orig": "Q.36. (a) fortify",
+        "text": "Q.36. (a) fortify",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/14",
+        "parent": {
+          "$ref": "#/groups/3"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 172.800003,
+              "t": 345.4208996875,
+              "r": 234.10371492000002,
+              "b": 337.33866281998536,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              14
+            ]
+          }
+        ],
+        "orig": "(b) decolonize",
+        "text": "(b) decolonize",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/15",
+        "parent": {
+          "$ref": "#/groups/4"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 332.9990196875,
+              "r": 124.85127267000001,
+              "b": 324.9167828199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              11
+            ]
+          }
+        ],
+        "orig": "(c) mystify",
+        "text": "(c) mystify",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/16",
+        "parent": {
+          "$ref": "#/groups/5"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 172.800003,
+              "t": 332.9990196875,
+              "r": 232.35029742,
+              "b": 324.9167828199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              14
+            ]
+          }
+        ],
+        "orig": "(d) concretize",
+        "text": "(d) concretize",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/17",
+        "parent": {
+          "$ref": "#/groups/6"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 312.29564968750003,
+              "r": 122.64082317,
+              "b": 304.21341281998536,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              20
+            ]
+          }
+        ],
+        "orig": "Q.37. (a) excavation",
+        "text": "Q.37. (a) excavation",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/18",
+        "parent": {
+          "$ref": "#/groups/7"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 172.800003,
+              "t": 312.29564968750003,
+              "r": 244.94941992000003,
+              "b": 304.21341281998536,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              18
+            ]
+          }
+        ],
+        "orig": "(b) sanctification",
+        "text": "(b) sanctification",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/19",
+        "parent": {
+          "$ref": "#/groups/8"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 299.87353968750006,
+              "r": 123.20771817,
+              "b": 291.7913028199854,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              15
+            ]
+          }
+        ],
+        "orig": "(c) obfuscation",
+        "text": "(c) obfuscation",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/20",
+        "parent": {
+          "$ref": "#/groups/9"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 172.800003,
+              "t": 299.87353968750006,
+              "r": 248.28046992,
+              "b": 291.7913028199854,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              17
+            ]
+          }
+        ],
+        "orig": "(d) domestication",
+        "text": "(d) domestication",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/21",
+        "parent": {
+          "$ref": "#/groups/10"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 279.1701696875,
+              "r": 122.75508117000001,
+              "b": 271.0879328199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              20
+            ]
+          }
+        ],
+        "orig": "Q.38. (a) abrogation",
+        "text": "Q.38. (a) abrogation",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/22",
+        "parent": {
+          "$ref": "#/groups/11"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 172.800003,
+              "t": 279.1701696875,
+              "r": 247.27412742,
+              "b": 271.0879328199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              19
+            ]
+          }
+        ],
+        "orig": "(b) intensification",
+        "text": "(b) intensification",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/23",
+        "parent": {
+          "$ref": "#/groups/12"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 266.74804968750004,
+              "r": 123.45381192,
+              "b": 258.6658128199854,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              16
+            ]
+          }
+        ],
+        "orig": "(c) recuperation",
+        "text": "(c) recuperation",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/24",
+        "parent": {
+          "$ref": "#/groups/13"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 172.800003,
+              "t": 266.74804968750004,
+              "r": 232.82929991999998,
+              "b": 258.6658128199854,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              15
+            ]
+          }
+        ],
+        "orig": "(d) inscription",
+        "text": "(d) inscription",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/25",
+        "parent": {
+          "$ref": "#/groups/14"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 246.04491968750006,
+              "r": 131.82978791999997,
+              "b": 237.9626828199854,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              23
+            ]
+          }
+        ],
+        "orig": "Q.39. (a) vulnerability",
+        "text": "Q.39. (a) vulnerability",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/26",
+        "parent": {
+          "$ref": "#/groups/15"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 172.800003,
+              "t": 246.04491968750006,
+              "r": 233.70381492,
+              "b": 237.9626828199854,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              15
+            ]
+          }
+        ],
+        "orig": "(b) objectivity",
+        "text": "(b) objectivity",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/27",
+        "parent": {
+          "$ref": "#/groups/16"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 233.6227996875,
+              "r": 139.03242491999998,
+              "b": 225.54056281998533,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              14
+            ]
+          }
+        ],
+        "orig": "(c) permanence",
+        "text": "(c) permanence",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/28",
+        "parent": {
+          "$ref": "#/groups/17"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 172.800003,
+              "t": 233.6227996875,
+              "r": 224.04902742000002,
+              "b": 225.54056281998533,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              12
+            ]
+          }
+        ],
+        "orig": "(d) efficacy",
+        "text": "(d) efficacy",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/29",
+        "parent": {
+          "$ref": "#/groups/18"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 212.91942968750004,
+              "r": 139.03242491999998,
+              "b": 204.83719281998538,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              23
+            ]
+          }
+        ],
+        "orig": "Q.40. (a) transcendence",
+        "text": "Q.40. (a) transcendence",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/30",
+        "parent": {
+          "$ref": "#/groups/19"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 172.800003,
+              "t": 212.91942968750004,
+              "r": 228.16230492,
+              "b": 204.83719281998538,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              13
+            ]
+          }
+        ],
+        "orig": "(b) recursion",
+        "text": "(b) recursion",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/31",
+        "parent": {
+          "$ref": "#/groups/20"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 200.49730968749998,
+              "r": 139.03242491999998,
+              "b": 192.4150728199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              17
+            ]
+          }
+        ],
+        "orig": "(c) retrospection",
+        "text": "(c) retrospection",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/32",
+        "parent": {
+          "$ref": "#/groups/21"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 172.800003,
+              "t": 200.49730968749998,
+              "r": 234.85957241999998,
+              "b": 192.4150728199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              15
+            ]
+          }
+        ],
+        "orig": "(d) dissolution",
+        "text": "(d) dissolution",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/33",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "section_header",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 175.65331968750002,
+              "r": 103.52021769,
+              "b": 167.57108281998535,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              18
+            ]
+          }
+        ],
+        "orig": "SET-9.Q .(41 - 45)",
+        "text": "SET-9.Q .(41 - 45)",
+        "level": 1
+      },
+      {
+        "self_ref": "#/texts/34",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 163.2314496875,
+              "r": 288.98115492,
+              "b": 30.928992819985297,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              710
+            ]
+          },
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 291.757038,
+              "t": 830.7937988594726,
+              "r": 568.9931979375,
+              "b": 822.5655027957749,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              711,
+              721
+            ]
+          },
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 308.54999,
+              "t": 814.6972656875,
+              "r": 568.69012442,
+              "b": 657.5508228199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              722,
+              1517
+            ]
+          }
+        ],
+        "orig": "Human creativity, though often romanticised as a sudden spark of  brilliance,  is  more  accurately  the  result  of deliberate mental engagement. Innovative ideas frequently emerge when individuals (41)_____diverse experiences, allowing unrelated concepts to intersect in unexpected ways. This cross-pollination of  thoughts  becomes  even  more  powerful  when  paired  with moments of strategic rest; studies show that the mind continues to  process  information  subconsciously  even  when  one  is  not actively  focused.  Yet  the  journey towards meaningful creativity is  rarely  linear.  Many  breakthroughs  follow  repeated  failures, which serve not as endpoints but as crucial feedback loops. This Cloze Test is  why  resilient  thinkers  view  setbacks  as  opportunities  to (42)_____ their methods rather than abandon them. Collaboration,  too,  plays  a  pivotal  role.  When  people exchange perspectives,  they  often  uncover  assumptions  that would have otherwise  remained  hidden.  Such  dialogue  can  (43)_____rigid thinking patterns  and  open  pathways  to  original  solutions. However,  true  creativity  requires  more  than  just novel ideas-it demands  disciplined  refinement.  Without  structure,  even  the most promising concept risks becoming (44)_____and losing its potential impact. Ultimately, creativity thrives at the intersection of curiosity, persistence, and thoughtful (45) iteration ,  elements that collectively sustain the tenacity  needed  for  long-term innovation.",
+        "text": "Human creativity, though often romanticised as a sudden spark of  brilliance,  is  more  accurately  the  result  of deliberate mental engagement. Innovative ideas frequently emerge when individuals (41)_____diverse experiences, allowing unrelated concepts to intersect in unexpected ways. This cross-pollination of  thoughts  becomes  even  more  powerful  when  paired  with moments of strategic rest; studies show that the mind continues to  process  information  subconsciously  even  when  one  is  not actively  focused.  Yet  the  journey towards meaningful creativity is  rarely  linear.  Many  breakthroughs  follow  repeated  failures, which serve not as endpoints but as crucial feedback loops. This Cloze Test is  why  resilient  thinkers  view  setbacks  as  opportunities  to (42)_____ their methods rather than abandon them. Collaboration,  too,  plays  a  pivotal  role.  When  people exchange perspectives,  they  often  uncover  assumptions  that would have otherwise  remained  hidden.  Such  dialogue  can  (43)_____rigid thinking patterns  and  open  pathways  to  original  solutions. However,  true  creativity  requires  more  than  just novel ideas-it demands  disciplined  refinement.  Without  structure,  even  the most promising concept risks becoming (44)_____and losing its potential impact. Ultimately, creativity thrives at the intersection of curiosity, persistence, and thoughtful (45) iteration ,  elements that collectively sustain the tenacity  needed  for  long-term innovation."
+      },
+      {
+        "self_ref": "#/texts/35",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 308.54999,
+              "t": 653.2111796875,
+              "r": 430.8190329199999,
+              "b": 645.1289428199854,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              28
+            ]
+          }
+        ],
+        "orig": "SSC CGL 25/09/2025 (Shift 1)",
+        "text": "SSC CGL 25/09/2025 (Shift 1)"
+      },
+      {
+        "self_ref": "#/texts/36",
+        "parent": {
+          "$ref": "#/groups/23"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 308.54999,
+              "t": 632.5078096875,
+              "r": 396.85809595999996,
+              "b": 624.4255728199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              24
+            ]
+          }
+        ],
+        "orig": "Q.41. (a) will integrate",
+        "text": "Q.41. (a) will integrate",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/37",
+        "parent": {
+          "$ref": "#/groups/24"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 454.78680499999996,
+              "t": 632.5078096875,
+              "r": 511.01043691999996,
+              "b": 624.4255728199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              14
+            ]
+          }
+        ],
+        "orig": "(b) integrated",
+        "text": "(b) integrated",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/38",
+        "parent": {
+          "$ref": "#/groups/25"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 308.54999,
+              "t": 620.0856896875,
+              "r": 401.77118117,
+              "b": 612.0034528199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              13
+            ]
+          }
+        ],
+        "orig": "(c) integrate",
+        "text": "(c) integrate",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/39",
+        "parent": {
+          "$ref": "#/groups/26"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 452.54999,
+              "t": 620.0856896875,
+              "r": 528.25897442,
+              "b": 612.0034528199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              19
+            ]
+          }
+        ],
+        "orig": "(d) are integrating",
+        "text": "(d) are integrating",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/40",
+        "parent": {
+          "$ref": "#/groups/27"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 308.54999,
+              "t": 599.3823196875001,
+              "r": 373.70770516999994,
+              "b": 591.3000828199854,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              17
+            ]
+          }
+        ],
+        "orig": "Q.42. (a) imitate",
+        "text": "Q.42. (a) imitate",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/41",
+        "parent": {
+          "$ref": "#/groups/28"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 454.78680499999996,
+              "t": 599.3823196875001,
+              "r": 505.51288442,
+              "b": 591.3000828199854,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              11
+            ]
+          }
+        ],
+        "orig": "(b) abandon",
+        "text": "(b) abandon",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/42",
+        "parent": {
+          "$ref": "#/groups/29"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 308.54999,
+              "t": 586.9602096875,
+              "r": 402.20184542,
+              "b": 578.8779728199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              11
+            ]
+          }
+        ],
+        "orig": "(c) conceal",
+        "text": "(c) conceal",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/43",
+        "parent": {
+          "$ref": "#/groups/30"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 452.54999,
+              "t": 586.9602096875,
+              "r": 494.18378192,
+              "b": 578.8779728199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              10
+            ]
+          }
+        ],
+        "orig": "(d) revise",
+        "text": "(d) revise",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/44",
+        "parent": {
+          "$ref": "#/groups/31"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 308.54999,
+              "t": 566.2568396875,
+              "r": 400.01776366999997,
+              "b": 558.1746028199854,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              19
+            ]
+          }
+        ],
+        "orig": "Q.43. (a) challenge",
+        "text": "Q.43. (a) challenge",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/45",
+        "parent": {
+          "$ref": "#/groups/32"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 452.54999,
+              "t": 566.2568396875,
+              "r": 506.12372192,
+              "b": 558.1746028199854,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              13
+            ]
+          }
+        ],
+        "orig": "(b) reinforce",
+        "text": "(b) reinforce",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/46",
+        "parent": {
+          "$ref": "#/groups/33"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 308.54999,
+              "t": 553.8348396875,
+              "r": 401.16473642,
+              "b": 545.7526028199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              11
+            ]
+          }
+        ],
+        "orig": "(c) restore",
+        "text": "(c) restore",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/47",
+        "parent": {
+          "$ref": "#/groups/34"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 452.54999,
+              "t": 553.8348396875,
+              "r": 498.17401441999993,
+              "b": 545.7526028199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              10
+            ]
+          }
+        ],
+        "orig": "(d) harden",
+        "text": "(d) harden",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/48",
+        "parent": {
+          "$ref": "#/groups/35"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 308.54999,
+              "t": 533.1314696874999,
+              "r": 370.44696295999995,
+              "b": 525.0492328199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              16
+            ]
+          }
+        ],
+        "orig": "Q.44. (a) subtle",
+        "text": "Q.44. (a) subtle",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/49",
+        "parent": {
+          "$ref": "#/groups/36"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 452.54999,
+              "t": 533.1314696874999,
+              "r": 516.4201044199999,
+              "b": 525.0492328199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              15
+            ]
+          }
+        ],
+        "orig": "(b) rudimentary",
+        "text": "(b) rudimentary",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/50",
+        "parent": {
+          "$ref": "#/groups/37"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 308.54999,
+              "t": 520.7094696875,
+              "r": 401.25262667,
+              "b": 512.6272328199854,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              13
+            ]
+          }
+        ],
+        "orig": "(c) intricate",
+        "text": "(c) intricate",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/51",
+        "parent": {
+          "$ref": "#/groups/38"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 452.54999,
+              "t": 520.7094696875,
+              "r": 495.84930692,
+              "b": 512.6272328199854,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              11
+            ]
+          }
+        ],
+        "orig": "(d) refined",
+        "text": "(d) refined",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/52",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 308.54999,
+              "t": 502.7665996875,
+              "r": 568.43378192,
+              "b": 482.2622428199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              96
+            ]
+          }
+        ],
+        "orig": "Q.45. Select the most appropriate meaning of the word 'iteration' as highlighted in the passage.",
+        "text": "Q.45. Select the most appropriate meaning of the word 'iteration' as highlighted in the passage."
+      },
+      {
+        "self_ref": "#/texts/53",
+        "parent": {
+          "$ref": "#/groups/39"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 308.54999,
+              "t": 477.9226096875,
+              "r": 409.21112267,
+              "b": 469.84037281998536,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              25
+            ]
+          }
+        ],
+        "orig": "(a) a sudden interruption",
+        "text": "(a) a sudden interruption",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/54",
+        "parent": {
+          "$ref": "#/groups/39"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 308.54999,
+              "t": 465.5004896875,
+              "r": 393.95331017,
+              "b": 457.41825281998536,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              22
+            ]
+          }
+        ],
+        "orig": "(c) a final conclusion",
+        "text": "(c) a final conclusion",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/55",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "section_header",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 308.54999,
+              "t": 443.4169896875,
+              "r": 388.43377919,
+              "b": 435.33475281998534,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              19
+            ]
+          }
+        ],
+        "orig": "SET-10.Q .(46 - 50)",
+        "text": "SET-10.Q .(46 - 50)",
+        "level": 1
+      },
+      {
+        "self_ref": "#/texts/56",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 308.54999,
+              "t": 430.9948696875,
+              "r": 568.7326044199999,
+              "b": 137.20633281998528,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              1563
+            ]
+          }
+        ],
+        "orig": "Personal discipline is often misunderstood as a rigid set of rules, but  in  practice,  it  is  a  flexible  system  that  helps  individuals (46)____  their  behaviour  toward  meaningful  objectives.  Unlike external enforcement, discipline grows strongest when driven by intrinsic motivation. People who manage their time intentionally often  find  that  even  small  routines  can  produce  significant change over extended periods. However, many struggle because they  view  discipline  as punishment rather than a strategic tool. This misunderstanding prevents  them  from  recognising  its deeper  value.  True  discipline  is  closely  linked  to  the  habit  of deliberate reflection, a  practice  that  allows  one  to  assess choices without harsh judgment. Such reflection helps cultivate a sense of (47)____ poise ,  especially in moments of uncertainty. When individuals learn to pause and observe their impulses, they gain clarity rather than reacting impulsively. Yet reflection alone is insufficient; it must be paired with purposeful action. Without consistent effort, even the most  insightful intentions can (48)____  into  inactivity.  Moreover,  the  long-term  process  of self-regulation  requires  emotional  steadiness.  This  is  where sustained  (49)_____ fortitude becomes  indispensable,  enabling individuals  to  remain  committed  despite  obstacles.  Ultimately, discipline  is  less  about  restriction  and  more  about  intentional alignment with one's values, achieved through repeated choices that (50) ____ personal growth.",
+        "text": "Personal discipline is often misunderstood as a rigid set of rules, but  in  practice,  it  is  a  flexible  system  that  helps  individuals (46)____  their  behaviour  toward  meaningful  objectives.  Unlike external enforcement, discipline grows strongest when driven by intrinsic motivation. People who manage their time intentionally often  find  that  even  small  routines  can  produce  significant change over extended periods. However, many struggle because they  view  discipline  as punishment rather than a strategic tool. This misunderstanding prevents  them  from  recognising  its deeper  value.  True  discipline  is  closely  linked  to  the  habit  of deliberate reflection, a  practice  that  allows  one  to  assess choices without harsh judgment. Such reflection helps cultivate a sense of (47)____ poise ,  especially in moments of uncertainty. When individuals learn to pause and observe their impulses, they gain clarity rather than reacting impulsively. Yet reflection alone is insufficient; it must be paired with purposeful action. Without consistent effort, even the most  insightful intentions can (48)____  into  inactivity.  Moreover,  the  long-term  process  of self-regulation  requires  emotional  steadiness.  This  is  where sustained  (49)_____ fortitude becomes  indispensable,  enabling individuals  to  remain  committed  despite  obstacles.  Ultimately, discipline  is  less  about  restriction  and  more  about  intentional alignment with one's values, achieved through repeated choices that (50) ____ personal growth."
+      },
+      {
+        "self_ref": "#/texts/57",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 308.54999,
+              "t": 132.86645968749997,
+              "r": 430.8190329199999,
+              "b": 124.7842228199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              28
+            ]
+          }
+        ],
+        "orig": "SSC CGL 25/09/2025 (Shift 3)",
+        "text": "SSC CGL 25/09/2025 (Shift 3)"
+      },
+      {
+        "self_ref": "#/texts/58",
+        "parent": {
+          "$ref": "#/groups/40"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 308.54999,
+              "t": 113.54320968750005,
+              "r": 368.29364267,
+              "b": 105.46097281998539,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              15
+            ]
+          }
+        ],
+        "orig": "Q.46. (a) steer",
+        "text": "Q.46. (a) steer",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/59",
+        "parent": {
+          "$ref": "#/groups/40"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 380.54999,
+              "t": 113.54320968750005,
+              "r": 439.62567692,
+              "b": 105.46097281998539,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              11
+            ]
+          }
+        ],
+        "orig": "(b) steered",
+        "text": "(b) steered",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/60",
+        "parent": {
+          "$ref": "#/groups/40"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 308.54999,
+              "t": 101.12108968749999,
+              "r": 434.52801767,
+              "b": 93.03885281998532,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              29
+            ]
+          }
+        ],
+        "orig": "(c) steering       (d) steers",
+        "text": "(c) steering       (d) steers",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/61",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 308.54999,
+              "t": 81.79809968749998,
+              "r": 565.02362192,
+              "b": 73.71586281998532,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              63
+            ]
+          }
+        ],
+        "orig": "Q.47. Select the most appropriate meaning of the word 'poised'.",
+        "text": "Q.47. Select the most appropriate meaning of the word 'poised'."
+      },
+      {
+        "self_ref": "#/texts/62",
+        "parent": {
+          "$ref": "#/groups/41"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 308.54999,
+              "t": 69.37597968750003,
+              "r": 477.92840942,
+              "b": 61.29374281998537,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              42
+            ]
+          }
+        ],
+        "orig": "(a) agitation    (b) balance and composure",
+        "text": "(a) agitation    (b) balance and composure",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/63",
+        "parent": {
+          "$ref": "#/groups/41"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 308.54999,
+              "t": 56.95409968750005,
+              "r": 421.28289992,
+              "b": 48.87186281998538,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              29
+            ]
+          }
+        ],
+        "orig": "(c) strictness  (d) confusion",
+        "text": "(c) strictness  (d) confusion",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/64",
+        "parent": {
+          "$ref": "#/groups/41"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 308.54999,
+              "t": 36.25048968750002,
+              "r": 401.15155292,
+              "b": 28.168252819985355,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              18
+            ]
+          }
+        ],
+        "orig": "Q.48. (a) dissolve",
+        "text": "Q.48. (a) dissolve",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/65",
+        "parent": {
+          "$ref": "#/groups/41"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 452.54999,
+              "t": 36.25048968750002,
+              "r": 508.72967941999997,
+              "b": 28.168252819985355,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              14
+            ]
+          }
+        ],
+        "orig": "(b) dissolving",
+        "text": "(b) dissolving",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/66",
+        "parent": {
+          "$ref": "#/groups/41"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 416.54999,
+              "t": 477.9226096875,
+              "r": 544.53632192,
+              "b": 469.84037281998536,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              22
+            ]
+          }
+        ],
+        "orig": "(b) a repeated process",
+        "text": "(b) a repeated process",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/67",
+        "parent": {
+          "$ref": "#/groups/41"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 452.54999,
+              "t": 465.5004896875,
+              "r": 541.23602435,
+              "b": 457.41825281998536,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              23
+            ]
+          }
+        ],
+        "orig": "(d) a minor distraction",
+        "text": "(d) a minor distraction",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/68",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "furniture",
+        "label": "page_footer",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 99.3266505,
+              "t": 21.98847795947256,
+              "r": 495.95088382500006,
+              "b": 13.76018189577485,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              109
+            ]
+          }
+        ],
+        "orig": "www.ssccglpinnacle.com                                                 Download Pinnacle Exam Preparation App",
+        "text": "www.ssccglpinnacle.com                                                 Download Pinnacle Exam Preparation App"
+      }
+    ],
+    "pictures": [],
+    "tables": [],
+    "key_value_items": [],
+    "form_items": [],
+    "pages": {
+      "1": {
+        "size": {
+          "width": 596.0,
+          "height": 842.0
+        },
+        "page_no": 1
+      }
+    }
+  }
+}

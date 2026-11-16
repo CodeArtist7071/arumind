@@ -1,0 +1,2266 @@
+{
+  "document_id": "english",
+  "source": "english.pdf",
+  "pdf_page": 238,
+  "page_width": 596.0,
+  "page_height": 842.0,
+  "extracted_at": "2026-09-09T10:28:39.150357+00:00",
+  "extraction_version": 4,
+  "ocr_enabled": true,
+  "extraction_detection": {
+    "requested_profile": "auto",
+    "effective_profile": "hybrid",
+    "embedded_text_characters": 5666,
+    "auto_text_threshold": 80
+  },
+  "docling_result": {
+    "status": "success",
+    "errors": []
+  },
+  "content_summary": {
+    "text_items": 27,
+    "text_characters": 7265,
+    "table_items": 0,
+    "picture_items": 0,
+    "group_items": 0,
+    "warnings": []
+  },
+  "reading_order": {
+    "source": "docling_iterate_items",
+    "items": [
+      {
+        "reading_order_index": 0,
+        "element_ref": "#/texts/1",
+        "label": "text",
+        "level": 1,
+        "text_preview": "Sentence 3 will be the starting line as it introduces the main idea of  the  parajumble,  i.e.  'Transaction  logs  are  collected  from regional  branches.'  A"
+      },
+      {
+        "reading_order_index": 1,
+        "element_ref": "#/texts/2",
+        "label": "section_header",
+        "level": 1,
+        "text_preview": "Sol.216.(b) QPRS"
+      },
+      {
+        "reading_order_index": 2,
+        "element_ref": "#/texts/3",
+        "label": "text",
+        "level": 1,
+        "text_preview": "The given sentence starts with part Q as it introduces the main idea  of  the  sentence,  i.e.  investors  remained  cautious  about spending. And, part P state"
+      },
+      {
+        "reading_order_index": 3,
+        "element_ref": "#/texts/4",
+        "label": "section_header",
+        "level": 1,
+        "text_preview": "Sol.217.(a) 2 - 3 - 4 - 1"
+      },
+      {
+        "reading_order_index": 4,
+        "element_ref": "#/texts/5",
+        "label": "text",
+        "level": 1,
+        "text_preview": "Sentence 2 will be the starting line as it describes the first step in the manufacturing process, i.e. assembly of raw components. And,  sentence  3  states  th"
+      },
+      {
+        "reading_order_index": 5,
+        "element_ref": "#/texts/6",
+        "label": "section_header",
+        "level": 1,
+        "text_preview": "Sol.218.(a) 3 - 2 - 4 - 1"
+      },
+      {
+        "reading_order_index": 6,
+        "element_ref": "#/texts/7",
+        "label": "text",
+        "level": 1,
+        "text_preview": "Sentence  3  will  be  the starting line as it states the first step in project planning, i.e. collection of requirement lists. And, sentence  2  states  the  n"
+      },
+      {
+        "reading_order_index": 7,
+        "element_ref": "#/texts/8",
+        "label": "section_header",
+        "level": 1,
+        "text_preview": "Sol.219.(a) QPRS"
+      },
+      {
+        "reading_order_index": 8,
+        "element_ref": "#/texts/9",
+        "label": "text",
+        "level": 1,
+        "text_preview": "The  given  sentence  starts  with  part  Q  which  contains  the subject,  'Converting  solar  energy'.  Part  P  contains a portion of the  subject  as  it  b"
+      },
+      {
+        "reading_order_index": 9,
+        "element_ref": "#/texts/10",
+        "label": "section_header",
+        "level": 1,
+        "text_preview": "Sol.220.(c) 1-4-2-3"
+      },
+      {
+        "reading_order_index": 10,
+        "element_ref": "#/texts/11",
+        "label": "text",
+        "level": 1,
+        "text_preview": "Sentence  1  will  be  the  starting  line  as  it  introduces  the  initial interaction  at  the  check-in counter. And, sentence 4 states that the airline sta"
+      },
+      {
+        "reading_order_index": 11,
+        "element_ref": "#/texts/12",
+        "label": "section_header",
+        "level": 1,
+        "text_preview": "Sol.221.(c) 2-4-3-1"
+      },
+      {
+        "reading_order_index": 12,
+        "element_ref": "#/texts/13",
+        "label": "text",
+        "level": 1,
+        "text_preview": "Sentence 2 will be the starting line as it introduces the first step of  the  process,  i.e.  designing  the  algorithm.  And,  sentence  4 states  the  next  s"
+      },
+      {
+        "reading_order_index": 13,
+        "element_ref": "#/texts/14",
+        "label": "section_header",
+        "level": 1,
+        "text_preview": "Sol.222.(c) QRSP"
+      },
+      {
+        "reading_order_index": 14,
+        "element_ref": "#/texts/15",
+        "label": "text",
+        "level": 1,
+        "text_preview": "Part  Q  will  be  the starting line as it contains the subject of the sentence,  i.e.  'The  renovation  of  historical  monuments'.  And, part  R  contains  t"
+      },
+      {
+        "reading_order_index": 15,
+        "element_ref": "#/texts/16",
+        "label": "section_header",
+        "level": 1,
+        "text_preview": "Sol.223.(a) 2-1-3-4"
+      },
+      {
+        "reading_order_index": 16,
+        "element_ref": "#/texts/17",
+        "label": "text",
+        "level": 1,
+        "text_preview": "The given paragraph is about the process of baking. Sentence 2 is  the starting line as it introduces the first step in the process, i.e.  'Ingredients  are  mi"
+      },
+      {
+        "reading_order_index": 17,
+        "element_ref": "#/texts/18",
+        "label": "section_header",
+        "level": 1,
+        "text_preview": "Sol.224.(a) 3-4-2-1"
+      },
+      {
+        "reading_order_index": 18,
+        "element_ref": "#/texts/19",
+        "label": "text",
+        "level": 1,
+        "text_preview": "Sentence 3 will be the starting line as it introduces the first step in the research process, i.e. testing hypotheses using protocols. And, sentence 4 states th"
+      },
+      {
+        "reading_order_index": 19,
+        "element_ref": "#/texts/20",
+        "label": "section_header",
+        "level": 1,
+        "text_preview": "Sol.225.(c) QRSP"
+      },
+      {
+        "reading_order_index": 20,
+        "element_ref": "#/texts/21",
+        "label": "text",
+        "level": 1,
+        "text_preview": "Part  Q  will  be  the starting line as it contains the subject of the sentence,  i.e.  'The  distribution  of  study  materials'.  And,  part  R contains  the "
+      },
+      {
+        "reading_order_index": 21,
+        "element_ref": "#/texts/22",
+        "label": "section_header",
+        "level": 1,
+        "text_preview": "Sol.226.(b) 1-3-2-4"
+      },
+      {
+        "reading_order_index": 22,
+        "element_ref": "#/texts/23",
+        "label": "text",
+        "level": 1,
+        "text_preview": "Sentence  1  will  be  the starting line as it states the first step in farming  i.e.  the  soil  was  ploughed.  And,  sentence 3 states the next step, i.e. so"
+      },
+      {
+        "reading_order_index": 23,
+        "element_ref": "#/texts/24",
+        "label": "section_header",
+        "level": 1,
+        "text_preview": "Sol.227.(c) 4-2-3-1"
+      },
+      {
+        "reading_order_index": 24,
+        "element_ref": "#/texts/25",
+        "label": "text",
+        "level": 1,
+        "text_preview": "Sentence 4 will be the starting line as it introduces the main idea of  the  parajumble,  i.e.  Infrastructure  projects  are  restricted  by complex  regulator"
+      }
+    ]
+  },
+  "layout_analysis": {
+    "method": "docling_bbox_left_edge_clustering_v1",
+    "column_count": 2,
+    "confidence": 1.0,
+    "page_width": 596.0,
+    "page_height": 842.0,
+    "columns": [
+      {
+        "column_index": 1,
+        "left": 0.0,
+        "right": 168.675,
+        "detected_start": 28.8,
+        "supporting_elements": 13
+      },
+      {
+        "column_index": 2,
+        "left": 168.675,
+        "right": 596.0,
+        "detected_start": 308.55,
+        "supporting_elements": 12
+      }
+    ],
+    "elements": [
+      {
+        "element_ref": "#/texts/0",
+        "element_type": "text",
+        "label": "page_header",
+        "column_index": 1,
+        "column_indices": [
+          1
+        ],
+        "spans_columns": false,
+        "reading_order_index": null,
+        "bbox": {
+          "l": 28.800003,
+          "t": 830.7925780594726,
+          "r": 95.7084616875,
+          "b": 822.5642819957749,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/1",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 0,
+        "bbox": {
+          "l": 28.800003,
+          "t": 814.6982416875001,
+          "r": 288.92695992,
+          "b": 719.6589738199854,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/2",
+        "element_type": "text",
+        "label": "section_header",
+        "column_index": 1,
+        "column_indices": [
+          1
+        ],
+        "spans_columns": false,
+        "reading_order_index": 1,
+        "bbox": {
+          "l": 28.800003,
+          "t": 705.6591796875,
+          "r": 101.11201467000001,
+          "b": 697.5769428199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/3",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 2,
+        "bbox": {
+          "l": 28.800003,
+          "t": 693.2373046875,
+          "r": 288.99287742,
+          "b": 598.2019428199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/4",
+        "element_type": "text",
+        "label": "section_header",
+        "column_index": 1,
+        "column_indices": [
+          1
+        ],
+        "spans_columns": false,
+        "reading_order_index": 3,
+        "bbox": {
+          "l": 28.800003,
+          "t": 584.1982396875001,
+          "r": 119.19551067,
+          "b": 576.1160028199854,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/5",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 4,
+        "bbox": {
+          "l": 28.800003,
+          "t": 571.7763696874999,
+          "r": 289.02949242,
+          "b": 476.74100281998534,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/6",
+        "element_type": "text",
+        "label": "section_header",
+        "column_index": 1,
+        "column_indices": [
+          1
+        ],
+        "spans_columns": false,
+        "reading_order_index": 5,
+        "bbox": {
+          "l": 28.800003,
+          "t": 462.7412096875,
+          "r": 119.19111642000001,
+          "b": 454.6589728199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/7",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 6,
+        "bbox": {
+          "l": 28.800003,
+          "t": 450.3193396875,
+          "r": 288.85371492,
+          "b": 342.85819281998533,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/8",
+        "element_type": "text",
+        "label": "section_header",
+        "column_index": 1,
+        "column_indices": [
+          1
+        ],
+        "spans_columns": false,
+        "reading_order_index": 7,
+        "bbox": {
+          "l": 28.800003,
+          "t": 328.85839968749997,
+          "r": 98.63349915,
+          "b": 320.7761628199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/9",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 8,
+        "bbox": {
+          "l": 28.800003,
+          "t": 316.4365196875,
+          "r": 288.82881492,
+          "b": 208.97733281998535,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/10",
+        "element_type": "text",
+        "label": "section_header",
+        "column_index": 1,
+        "column_indices": [
+          1
+        ],
+        "spans_columns": false,
+        "reading_order_index": 9,
+        "bbox": {
+          "l": 28.800003,
+          "t": 194.97558968750002,
+          "r": 109.27705419,
+          "b": 186.89335281998535,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/11",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 10,
+        "bbox": {
+          "l": 28.800003,
+          "t": 182.55370968750003,
+          "r": 289.02949242,
+          "b": 87.51835281998535,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/12",
+        "element_type": "text",
+        "label": "section_header",
+        "column_index": 1,
+        "column_indices": [
+          1
+        ],
+        "spans_columns": false,
+        "reading_order_index": 11,
+        "bbox": {
+          "l": 28.800003,
+          "t": 73.51659968750005,
+          "r": 105.66914367000001,
+          "b": 65.43436281998538,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/13",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 12,
+        "bbox": {
+          "l": 28.800003,
+          "t": 61.094729687500035,
+          "r": 288.99873492,
+          "b": 28.16874281998537,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/14",
+        "element_type": "text",
+        "label": "section_header",
+        "column_index": 2,
+        "column_indices": [
+          2
+        ],
+        "spans_columns": false,
+        "reading_order_index": 13,
+        "bbox": {
+          "l": 308.54999,
+          "t": 730.5048826875,
+          "r": 381.04657244,
+          "b": 722.4226458199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/15",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 2,
+        "column_indices": [
+          2
+        ],
+        "spans_columns": false,
+        "reading_order_index": 14,
+        "bbox": {
+          "l": 308.54999,
+          "t": 718.0830076875,
+          "r": 568.71503192,
+          "b": 623.0456928199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/16",
+        "element_type": "text",
+        "label": "section_header",
+        "column_index": 2,
+        "column_indices": [
+          2
+        ],
+        "spans_columns": false,
+        "reading_order_index": 15,
+        "bbox": {
+          "l": 308.54999,
+          "t": 609.0419896875001,
+          "r": 385.55096642,
+          "b": 600.9597528199854,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/17",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 2,
+        "column_indices": [
+          2
+        ],
+        "spans_columns": false,
+        "reading_order_index": 16,
+        "bbox": {
+          "l": 308.54999,
+          "t": 596.6201196874999,
+          "r": 568.77215942,
+          "b": 489.1628828199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/18",
+        "element_type": "text",
+        "label": "section_header",
+        "column_index": 2,
+        "column_indices": [
+          2
+        ],
+        "spans_columns": false,
+        "reading_order_index": 17,
+        "bbox": {
+          "l": 308.54999,
+          "t": 472.4013696875,
+          "r": 389.15448194,
+          "b": 464.3191328199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/19",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 2,
+        "column_indices": [
+          2
+        ],
+        "spans_columns": false,
+        "reading_order_index": 18,
+        "bbox": {
+          "l": 308.54999,
+          "t": 459.9794896875,
+          "r": 568.74872192,
+          "b": 364.94217281998533,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/20",
+        "element_type": "text",
+        "label": "section_header",
+        "column_index": 2,
+        "column_indices": [
+          2
+        ],
+        "spans_columns": false,
+        "reading_order_index": 19,
+        "bbox": {
+          "l": 308.54999,
+          "t": 350.9404296875,
+          "r": 380.48846642,
+          "b": 342.85819281998533,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/21",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 2,
+        "column_indices": [
+          2
+        ],
+        "spans_columns": false,
+        "reading_order_index": 20,
+        "bbox": {
+          "l": 308.54999,
+          "t": 338.5185496875,
+          "r": 568.59491192,
+          "b": 255.90506281998535,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/22",
+        "element_type": "text",
+        "label": "section_header",
+        "column_index": 2,
+        "column_indices": [
+          2
+        ],
+        "spans_columns": false,
+        "reading_order_index": 21,
+        "bbox": {
+          "l": 308.54999,
+          "t": 243.2841796875,
+          "r": 385.79706017,
+          "b": 235.20194281998533,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/23",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 2,
+        "column_indices": [
+          2
+        ],
+        "spans_columns": false,
+        "reading_order_index": 22,
+        "bbox": {
+          "l": 308.54999,
+          "t": 230.8622996875,
+          "r": 568.5187419199999,
+          "b": 160.67069281998533,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/24",
+        "element_type": "text",
+        "label": "section_header",
+        "column_index": 2,
+        "column_indices": [
+          2
+        ],
+        "spans_columns": false,
+        "reading_order_index": 23,
+        "bbox": {
+          "l": 308.54999,
+          "t": 148.04784968750005,
+          "r": 385.42352492,
+          "b": 139.96561281998538,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/25",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 2,
+        "column_indices": [
+          2
+        ],
+        "spans_columns": false,
+        "reading_order_index": 24,
+        "bbox": {
+          "l": 308.54999,
+          "t": 135.62597968750003,
+          "r": 568.75457942,
+          "b": 28.16874281998537,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/26",
+        "element_type": "text",
+        "label": "page_footer",
+        "column_index": 2,
+        "column_indices": [
+          2
+        ],
+        "spans_columns": false,
+        "reading_order_index": null,
+        "bbox": {
+          "l": 99.3266505,
+          "t": 21.989447959472614,
+          "r": 495.95088382500006,
+          "b": 13.761151895774901,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      }
+    ],
+    "warnings": []
+  },
+  "structure_chunks": {
+    "enabled": true,
+    "method": "docling_hybrid_chunker",
+    "scope": "page",
+    "items": [
+      {
+        "text": "Sentence 3 will be the starting line as it introduces the main idea of  the  parajumble,  i.e.  'Transaction  logs  are  collected  from regional  branches.'  And,  sentence  2  states  the  next  step  after collection, i.e. verifying authenticity using AI. So, sentence 2 will follow  sentence  3.  Further,  sentence  4  states  the  next  step, which is drafting detailed statements & sentence 1 tells the final step of the process. So, sentence 1 will follow sentence 4. Going through the options, option (a) has the correct sequence.",
+        "meta": {
+          "schema_name": "docling_core.transforms.chunker.DocMeta",
+          "version": "1.0.0",
+          "doc_items": [
+            {
+              "self_ref": "#/texts/1",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 814.6982416875001,
+                    "r": 288.92695992,
+                    "b": 719.6589738199854,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    539
+                  ]
+                }
+              ]
+            }
+          ],
+          "headings": null,
+          "captions": null,
+          "origin": {
+            "mimetype": "application/pdf",
+            "binary_hash": 12947176320386319714,
+            "filename": "english_page_0238.pdf",
+            "uri": null
+          }
+        },
+        "chunk_index": 0,
+        "contextualized_text": "Sentence 3 will be the starting line as it introduces the main idea of  the  parajumble,  i.e.  'Transaction  logs  are  collected  from regional  branches.'  And,  sentence  2  states  the  next  step  after collection, i.e. verifying authenticity using AI. So, sentence 2 will follow  sentence  3.  Further,  sentence  4  states  the  next  step, which is drafting detailed statements & sentence 1 tells the final step of the process. So, sentence 1 will follow sentence 4. Going through the options, option (a) has the correct sequence."
+      },
+      {
+        "text": "The given sentence starts with part Q as it introduces the main idea  of  the  sentence,  i.e.  investors  remained  cautious  about spending. And, part P states the contrasting condition happening  simultaneously.  So,  P  will  follow  Q  .  Further,  part  R states  the  reason  or topic of consideration, i.e. considering the volatile inflation rates. So, R will follow  P . Finally, part  S completes  the  sentence  by  stating  the scope or setting. Going through the options, option (b) has the correct sequence.",
+        "meta": {
+          "schema_name": "docling_core.transforms.chunker.DocMeta",
+          "version": "1.0.0",
+          "doc_items": [
+            {
+              "self_ref": "#/texts/3",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 693.2373046875,
+                    "r": 288.99287742,
+                    "b": 598.2019428199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    521
+                  ]
+                }
+              ]
+            }
+          ],
+          "headings": [
+            "Sol.216.(b) QPRS"
+          ],
+          "captions": null,
+          "origin": {
+            "mimetype": "application/pdf",
+            "binary_hash": 12947176320386319714,
+            "filename": "english_page_0238.pdf",
+            "uri": null
+          }
+        },
+        "chunk_index": 1,
+        "contextualized_text": "Sol.216.(b) QPRS\nThe given sentence starts with part Q as it introduces the main idea  of  the  sentence,  i.e.  investors  remained  cautious  about spending. And, part P states the contrasting condition happening  simultaneously.  So,  P  will  follow  Q  .  Further,  part  R states  the  reason  or topic of consideration, i.e. considering the volatile inflation rates. So, R will follow  P . Finally, part  S completes  the  sentence  by  stating  the scope or setting. Going through the options, option (b) has the correct sequence."
+      },
+      {
+        "text": "Sentence 2 will be the starting line as it describes the first step in the manufacturing process, i.e. assembly of raw components. And,  sentence  3  states  the  next  step  in  the  process,  i.e.  the assembly undergoing a structural integrity test. Further, sentence  4  states  the  third  step,  i.e.  discarding faulty parts by the automated arm. Finally, sentence 1 states the last step in the process,  i.e.  dispatching  the  packaged  units to the warehouse. Going through the options, option (a) has the correct sequence.",
+        "meta": {
+          "schema_name": "docling_core.transforms.chunker.DocMeta",
+          "version": "1.0.0",
+          "doc_items": [
+            {
+              "self_ref": "#/texts/5",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 571.7763696874999,
+                    "r": 289.02949242,
+                    "b": 476.74100281998534,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    533
+                  ]
+                }
+              ]
+            }
+          ],
+          "headings": [
+            "Sol.217.(a) 2 - 3 - 4 - 1"
+          ],
+          "captions": null,
+          "origin": {
+            "mimetype": "application/pdf",
+            "binary_hash": 12947176320386319714,
+            "filename": "english_page_0238.pdf",
+            "uri": null
+          }
+        },
+        "chunk_index": 2,
+        "contextualized_text": "Sol.217.(a) 2 - 3 - 4 - 1\nSentence 2 will be the starting line as it describes the first step in the manufacturing process, i.e. assembly of raw components. And,  sentence  3  states  the  next  step  in  the  process,  i.e.  the assembly undergoing a structural integrity test. Further, sentence  4  states  the  third  step,  i.e.  discarding faulty parts by the automated arm. Finally, sentence 1 states the last step in the process,  i.e.  dispatching  the  packaged  units to the warehouse. Going through the options, option (a) has the correct sequence."
+      },
+      {
+        "text": "Sentence  3  will  be  the starting line as it states the first step in project planning, i.e. collection of requirement lists. And, sentence  2  states  the  next  step,  i.e.  filtering  out  unfeasible options  using  risk assessment tools. So, sentence 2 will follow sentence  3.  Further,  sentence  4  states  the  next  step  after assessment, i.e. outlining feasible strategies. Finally, sentence 1 states the last step in the process, i.e. submission of the plan to the  steering  committee.  Going  through  the  options,  option  (a) has the correct sequence.",
+        "meta": {
+          "schema_name": "docling_core.transforms.chunker.DocMeta",
+          "version": "1.0.0",
+          "doc_items": [
+            {
+              "self_ref": "#/texts/7",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 450.3193396875,
+                    "r": 288.85371492,
+                    "b": 342.85819281998533,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    570
+                  ]
+                }
+              ]
+            }
+          ],
+          "headings": [
+            "Sol.218.(a) 3 - 2 - 4 - 1"
+          ],
+          "captions": null,
+          "origin": {
+            "mimetype": "application/pdf",
+            "binary_hash": 12947176320386319714,
+            "filename": "english_page_0238.pdf",
+            "uri": null
+          }
+        },
+        "chunk_index": 3,
+        "contextualized_text": "Sol.218.(a) 3 - 2 - 4 - 1\nSentence  3  will  be  the starting line as it states the first step in project planning, i.e. collection of requirement lists. And, sentence  2  states  the  next  step,  i.e.  filtering  out  unfeasible options  using  risk assessment tools. So, sentence 2 will follow sentence  3.  Further,  sentence  4  states  the  next  step  after assessment, i.e. outlining feasible strategies. Finally, sentence 1 states the last step in the process, i.e. submission of the plan to the  steering  committee.  Going  through  the  options,  option  (a) has the correct sequence."
+      },
+      {
+        "text": "The  given  sentence  starts  with  part  Q  which  contains  the subject,  'Converting  solar  energy'.  Part  P  contains a portion of the  subject  as  it  begins  with  the  preposition  'into',  which  is commonly  used  after  the  verb  'convert'.  So,  P  will  follow  Q  . Further,  part  R  contains the verb 'requires' along with its object 'efficient  storage  systems'.  So,  R  will  follow  P .  Finally,  part  S completes  the  sentence  by  stating  the  context,  i.e.,  in  cloudy regions.  Going  through  the  options,  option  (a)  has  the  correct sequence.",
+        "meta": {
+          "schema_name": "docling_core.transforms.chunker.DocMeta",
+          "version": "1.0.0",
+          "doc_items": [
+            {
+              "self_ref": "#/texts/9",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 316.4365196875,
+                    "r": 288.82881492,
+                    "b": 208.97733281998535,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    583
+                  ]
+                }
+              ]
+            }
+          ],
+          "headings": [
+            "Sol.219.(a) QPRS"
+          ],
+          "captions": null,
+          "origin": {
+            "mimetype": "application/pdf",
+            "binary_hash": 12947176320386319714,
+            "filename": "english_page_0238.pdf",
+            "uri": null
+          }
+        },
+        "chunk_index": 4,
+        "contextualized_text": "Sol.219.(a) QPRS\nThe  given  sentence  starts  with  part  Q  which  contains  the subject,  'Converting  solar  energy'.  Part  P  contains a portion of the  subject  as  it  begins  with  the  preposition  'into',  which  is commonly  used  after  the  verb  'convert'.  So,  P  will  follow  Q  . Further,  part  R  contains the verb 'requires' along with its object 'efficient  storage  systems'.  So,  R  will  follow  P .  Finally,  part  S completes  the  sentence  by  stating  the  context,  i.e.,  in  cloudy regions.  Going  through  the  options,  option  (a)  has  the  correct sequence."
+      },
+      {
+        "text": "Sentence  1  will  be  the  starting  line  as  it  introduces  the  initial interaction  at  the  check-in counter. And, sentence 4 states that the airline staff weighed his luggage and tagged it. So, sentence 4  will  follow  sentence  1.  Further,  sentence  2  states  that  his carry-on bag was  screened through the X-ray machine  & sentence  3  states  that he proceeded to the departure gate. So, sentence  3  will  follow  sentence  2.  Going  through  the  options, option (c) has the correct sequence.",
+        "meta": {
+          "schema_name": "docling_core.transforms.chunker.DocMeta",
+          "version": "1.0.0",
+          "doc_items": [
+            {
+              "self_ref": "#/texts/11",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 182.55370968750003,
+                    "r": 289.02949242,
+                    "b": 87.51835281998535,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    512
+                  ]
+                }
+              ]
+            }
+          ],
+          "headings": [
+            "Sol.220.(c) 1-4-2-3"
+          ],
+          "captions": null,
+          "origin": {
+            "mimetype": "application/pdf",
+            "binary_hash": 12947176320386319714,
+            "filename": "english_page_0238.pdf",
+            "uri": null
+          }
+        },
+        "chunk_index": 5,
+        "contextualized_text": "Sol.220.(c) 1-4-2-3\nSentence  1  will  be  the  starting  line  as  it  introduces  the  initial interaction  at  the  check-in counter. And, sentence 4 states that the airline staff weighed his luggage and tagged it. So, sentence 4  will  follow  sentence  1.  Further,  sentence  2  states  that  his carry-on bag was  screened through the X-ray machine  & sentence  3  states  that he proceeded to the departure gate. So, sentence  3  will  follow  sentence  2.  Going  through  the  options, option (c) has the correct sequence."
+      },
+      {
+        "text": "Sentence 2 will be the starting line as it introduces the first step of  the  process,  i.e.  designing  the  algorithm.  And,  sentence  4 states  the  next  step  in  the  process,  i.e.  the  source  code  is Parajumble deployed to the staging environment. So, sentence 4 will follow sentence  2.  Further,  sentence  3  states  that  runtime  errors  are detected  by  automated  tools  &  sentence  1  states  that system stability  is  verified by the committee. So, sentence 1 will follow sentence 3. Going through the options, option (c) has the correct sequence.",
+        "meta": {
+          "schema_name": "docling_core.transforms.chunker.DocMeta",
+          "version": "1.0.0",
+          "doc_items": [
+            {
+              "self_ref": "#/texts/13",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 61.094729687500035,
+                    "r": 288.99873492,
+                    "b": 28.16874281998537,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    211
+                  ]
+                },
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 291.757038,
+                    "t": 830.7925780594726,
+                    "r": 569.6914179375,
+                    "b": 822.5642819957749,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    212,
+                    222
+                  ]
+                },
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 308.54999,
+                    "t": 814.6982416875001,
+                    "r": 568.68426692,
+                    "b": 744.5027238199854,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    223,
+                    571
+                  ]
+                }
+              ]
+            }
+          ],
+          "headings": [
+            "Sol.221.(c) 2-4-3-1"
+          ],
+          "captions": null,
+          "origin": {
+            "mimetype": "application/pdf",
+            "binary_hash": 12947176320386319714,
+            "filename": "english_page_0238.pdf",
+            "uri": null
+          }
+        },
+        "chunk_index": 6,
+        "contextualized_text": "Sol.221.(c) 2-4-3-1\nSentence 2 will be the starting line as it introduces the first step of  the  process,  i.e.  designing  the  algorithm.  And,  sentence  4 states  the  next  step  in  the  process,  i.e.  the  source  code  is Parajumble deployed to the staging environment. So, sentence 4 will follow sentence  2.  Further,  sentence  3  states  that  runtime  errors  are detected  by  automated  tools  &  sentence  1  states  that system stability  is  verified by the committee. So, sentence 1 will follow sentence 3. Going through the options, option (c) has the correct sequence."
+      },
+      {
+        "text": "Part  Q  will  be  the starting line as it contains the subject of the sentence,  i.e.  'The  renovation  of  historical  monuments'.  And, part  R  contains  the  helping  verb(is)  and  the  main  verb(carried out). So, R will follow Q . Further, part S states the location of the activity. So, S  will  follow  R.  Finally,  part  P  completes  the sentence by specifying the manner/supervision under which the work  is  done.  Going  through  the  options,  option  (c)  has  the correct sequence.",
+        "meta": {
+          "schema_name": "docling_core.transforms.chunker.DocMeta",
+          "version": "1.0.0",
+          "doc_items": [
+            {
+              "self_ref": "#/texts/15",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 308.54999,
+                    "t": 718.0830076875,
+                    "r": 568.71503192,
+                    "b": 623.0456928199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    501
+                  ]
+                }
+              ]
+            }
+          ],
+          "headings": [
+            "Sol.222.(c) QRSP"
+          ],
+          "captions": null,
+          "origin": {
+            "mimetype": "application/pdf",
+            "binary_hash": 12947176320386319714,
+            "filename": "english_page_0238.pdf",
+            "uri": null
+          }
+        },
+        "chunk_index": 7,
+        "contextualized_text": "Sol.222.(c) QRSP\nPart  Q  will  be  the starting line as it contains the subject of the sentence,  i.e.  'The  renovation  of  historical  monuments'.  And, part  R  contains  the  helping  verb(is)  and  the  main  verb(carried out). So, R will follow Q . Further, part S states the location of the activity. So, S  will  follow  R.  Finally,  part  P  completes  the sentence by specifying the manner/supervision under which the work  is  done.  Going  through  the  options,  option  (c)  has  the correct sequence."
+      },
+      {
+        "text": "The given paragraph is about the process of baking. Sentence 2 is  the starting line as it introduces the first step in the process, i.e.  'Ingredients  are  mixed  thoroughly  to  form a smooth paste.' And, sentence 1 states the next step, i.e. pouring the batter into molds. So, sentence 1 will follow sentence 2. Further, sentence 3 states  the  third step, i.e.  placing  the  tray  in  the  oven.  So, sentence  3  will  come  next.  Finally,  sentence  4  states  the  last step, i.e. cooling and packing. Going through the options, option (a) has the correct sequence.",
+        "meta": {
+          "schema_name": "docling_core.transforms.chunker.DocMeta",
+          "version": "1.0.0",
+          "doc_items": [
+            {
+              "self_ref": "#/texts/17",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 308.54999,
+                    "t": 596.6201196874999,
+                    "r": 568.77215942,
+                    "b": 489.1628828199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    575
+                  ]
+                }
+              ]
+            }
+          ],
+          "headings": [
+            "Sol.223.(a) 2-1-3-4"
+          ],
+          "captions": null,
+          "origin": {
+            "mimetype": "application/pdf",
+            "binary_hash": 12947176320386319714,
+            "filename": "english_page_0238.pdf",
+            "uri": null
+          }
+        },
+        "chunk_index": 8,
+        "contextualized_text": "Sol.223.(a) 2-1-3-4\nThe given paragraph is about the process of baking. Sentence 2 is  the starting line as it introduces the first step in the process, i.e.  'Ingredients  are  mixed  thoroughly  to  form a smooth paste.' And, sentence 1 states the next step, i.e. pouring the batter into molds. So, sentence 1 will follow sentence 2. Further, sentence 3 states  the  third step, i.e.  placing  the  tray  in  the  oven.  So, sentence  3  will  come  next.  Finally,  sentence  4  states  the  last step, i.e. cooling and packing. Going through the options, option (a) has the correct sequence."
+      },
+      {
+        "text": "Sentence 3 will be the starting line as it introduces the first step in the research process, i.e. testing hypotheses using protocols. And, sentence 4 states that observations are recorded during the experiment.  So,  sentence  4  will  follow  sentence  3.  Further, sentence  2  states  the  third  stage, i.e. verified data is compiled into  digital  formats  &  sentence  1  states  the  final  stage.  So, sentence  1  will  follow  sentence  2.  Going  through  the  options, option (a) has the correct sequence.",
+        "meta": {
+          "schema_name": "docling_core.transforms.chunker.DocMeta",
+          "version": "1.0.0",
+          "doc_items": [
+            {
+              "self_ref": "#/texts/19",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 308.54999,
+                    "t": 459.9794896875,
+                    "r": 568.74872192,
+                    "b": 364.94217281998533,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    518
+                  ]
+                }
+              ]
+            }
+          ],
+          "headings": [
+            "Sol.224.(a) 3-4-2-1"
+          ],
+          "captions": null,
+          "origin": {
+            "mimetype": "application/pdf",
+            "binary_hash": 12947176320386319714,
+            "filename": "english_page_0238.pdf",
+            "uri": null
+          }
+        },
+        "chunk_index": 9,
+        "contextualized_text": "Sol.224.(a) 3-4-2-1\nSentence 3 will be the starting line as it introduces the first step in the research process, i.e. testing hypotheses using protocols. And, sentence 4 states that observations are recorded during the experiment.  So,  sentence  4  will  follow  sentence  3.  Further, sentence  2  states  the  third  stage, i.e. verified data is compiled into  digital  formats  &  sentence  1  states  the  final  stage.  So, sentence  1  will  follow  sentence  2.  Going  through  the  options, option (a) has the correct sequence."
+      },
+      {
+        "text": "Part  Q  will  be  the starting line as it contains the subject of the sentence,  i.e.  'The  distribution  of  study  materials'.  And,  part  R contains  the  helping  verb(has)  and  the  main  verb(completed). So, R will follow Q . Further, part S states the location where the distribution happened. So, S will follow R. Finally,  part  P completes  the  sentence  by  specifying  the  standard  followed during the process. Hence, option (c) has the correct sequence.",
+        "meta": {
+          "schema_name": "docling_core.transforms.chunker.DocMeta",
+          "version": "1.0.0",
+          "doc_items": [
+            {
+              "self_ref": "#/texts/21",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 308.54999,
+                    "t": 338.5185496875,
+                    "r": 568.59491192,
+                    "b": 255.90506281998535,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    473
+                  ]
+                }
+              ]
+            }
+          ],
+          "headings": [
+            "Sol.225.(c) QRSP"
+          ],
+          "captions": null,
+          "origin": {
+            "mimetype": "application/pdf",
+            "binary_hash": 12947176320386319714,
+            "filename": "english_page_0238.pdf",
+            "uri": null
+          }
+        },
+        "chunk_index": 10,
+        "contextualized_text": "Sol.225.(c) QRSP\nPart  Q  will  be  the starting line as it contains the subject of the sentence,  i.e.  'The  distribution  of  study  materials'.  And,  part  R contains  the  helping  verb(has)  and  the  main  verb(completed). So, R will follow Q . Further, part S states the location where the distribution happened. So, S will follow R. Finally,  part  P completes  the  sentence  by  specifying  the  standard  followed during the process. Hence, option (c) has the correct sequence."
+      },
+      {
+        "text": "Sentence  1  will  be  the starting line as it states the first step in farming  i.e.  the  soil  was  ploughed.  And,  sentence 3 states the next step, i.e. sowing the seeds in neat rows. Further, sentence 2 states  the  third  step,  i.e.  water  and  fertilizers  were  applied  & sentence 4 states the final step, which is gathering the harvest. Going through the options, option (b) has the correct sequence.",
+        "meta": {
+          "schema_name": "docling_core.transforms.chunker.DocMeta",
+          "version": "1.0.0",
+          "doc_items": [
+            {
+              "self_ref": "#/texts/23",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 308.54999,
+                    "t": 230.8622996875,
+                    "r": 568.5187419199999,
+                    "b": 160.67069281998533,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    413
+                  ]
+                }
+              ]
+            }
+          ],
+          "headings": [
+            "Sol.226.(b) 1-3-2-4"
+          ],
+          "captions": null,
+          "origin": {
+            "mimetype": "application/pdf",
+            "binary_hash": 12947176320386319714,
+            "filename": "english_page_0238.pdf",
+            "uri": null
+          }
+        },
+        "chunk_index": 11,
+        "contextualized_text": "Sol.226.(b) 1-3-2-4\nSentence  1  will  be  the starting line as it states the first step in farming  i.e.  the  soil  was  ploughed.  And,  sentence 3 states the next step, i.e. sowing the seeds in neat rows. Further, sentence 2 states  the  third  step,  i.e.  water  and  fertilizers  were  applied  & sentence 4 states the final step, which is gathering the harvest. Going through the options, option (b) has the correct sequence."
+      },
+      {
+        "text": "Sentence 4 will be the starting line as it introduces the main idea of  the  parajumble,  i.e.  Infrastructure  projects  are  restricted  by complex  regulatory  frameworks.  And,  sentence  2  states  that developers  submit  blueprints,  which  require  clearance  from agencies. So, sentence 2 will follow sentence 4. Sentence 3 talks about  further  slowdowns  due  to  logistical  hurdles  even  after permit  grant.  So,  sentence  3  will  follow  sentence  2.  Finally, sentence  1  concludes  the  parajumble  by  stating  the  negative consequence of the delays.  Going  through  the options,  option",
+        "meta": {
+          "schema_name": "docling_core.transforms.chunker.DocMeta",
+          "version": "1.0.0",
+          "doc_items": [
+            {
+              "self_ref": "#/texts/25",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 308.54999,
+                    "t": 135.62597968750003,
+                    "r": 568.75457942,
+                    "b": 28.16874281998537,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    611
+                  ]
+                }
+              ]
+            }
+          ],
+          "headings": [
+            "Sol.227.(c) 4-2-3-1"
+          ],
+          "captions": null,
+          "origin": {
+            "mimetype": "application/pdf",
+            "binary_hash": 12947176320386319714,
+            "filename": "english_page_0238.pdf",
+            "uri": null
+          }
+        },
+        "chunk_index": 12,
+        "contextualized_text": "Sol.227.(c) 4-2-3-1\nSentence 4 will be the starting line as it introduces the main idea of  the  parajumble,  i.e.  Infrastructure  projects  are  restricted  by complex  regulatory  frameworks.  And,  sentence  2  states  that developers  submit  blueprints,  which  require  clearance  from agencies. So, sentence 2 will follow sentence 4. Sentence 3 talks about  further  slowdowns  due  to  logistical  hurdles  even  after permit  grant.  So,  sentence  3  will  follow  sentence  2.  Finally, sentence  1  concludes  the  parajumble  by  stating  the  negative consequence of the delays.  Going  through  the options,  option"
+      }
+    ]
+  },
+  "content_assets": {
+    "tables": [],
+    "figures": []
+  },
+  "docling_document": {
+    "schema_name": "DoclingDocument",
+    "version": "1.10.0",
+    "name": "english_page_0238",
+    "origin": {
+      "mimetype": "application/pdf",
+      "binary_hash": 12947176320386319714,
+      "filename": "english_page_0238.pdf"
+    },
+    "furniture": {
+      "self_ref": "#/furniture",
+      "children": [],
+      "content_layer": "furniture",
+      "name": "_root_",
+      "label": "unspecified"
+    },
+    "body": {
+      "self_ref": "#/body",
+      "children": [
+        {
+          "$ref": "#/texts/0"
+        },
+        {
+          "$ref": "#/texts/1"
+        },
+        {
+          "$ref": "#/texts/2"
+        },
+        {
+          "$ref": "#/texts/3"
+        },
+        {
+          "$ref": "#/texts/4"
+        },
+        {
+          "$ref": "#/texts/5"
+        },
+        {
+          "$ref": "#/texts/6"
+        },
+        {
+          "$ref": "#/texts/7"
+        },
+        {
+          "$ref": "#/texts/8"
+        },
+        {
+          "$ref": "#/texts/9"
+        },
+        {
+          "$ref": "#/texts/10"
+        },
+        {
+          "$ref": "#/texts/11"
+        },
+        {
+          "$ref": "#/texts/12"
+        },
+        {
+          "$ref": "#/texts/13"
+        },
+        {
+          "$ref": "#/texts/14"
+        },
+        {
+          "$ref": "#/texts/15"
+        },
+        {
+          "$ref": "#/texts/16"
+        },
+        {
+          "$ref": "#/texts/17"
+        },
+        {
+          "$ref": "#/texts/18"
+        },
+        {
+          "$ref": "#/texts/19"
+        },
+        {
+          "$ref": "#/texts/20"
+        },
+        {
+          "$ref": "#/texts/21"
+        },
+        {
+          "$ref": "#/texts/22"
+        },
+        {
+          "$ref": "#/texts/23"
+        },
+        {
+          "$ref": "#/texts/24"
+        },
+        {
+          "$ref": "#/texts/25"
+        },
+        {
+          "$ref": "#/texts/26"
+        }
+      ],
+      "content_layer": "body",
+      "name": "_root_",
+      "label": "unspecified"
+    },
+    "groups": [],
+    "texts": [
+      {
+        "self_ref": "#/texts/0",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "furniture",
+        "label": "page_header",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 830.7925780594726,
+              "r": 95.7084616875,
+              "b": 822.5642819957749,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              8
+            ]
+          }
+        ],
+        "orig": "Pinnacle",
+        "text": "Pinnacle"
+      },
+      {
+        "self_ref": "#/texts/1",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 814.6982416875001,
+              "r": 288.92695992,
+              "b": 719.6589738199854,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              539
+            ]
+          }
+        ],
+        "orig": "Sentence 3 will be the starting line as it introduces the main idea of  the  parajumble,  i.e.  'Transaction  logs  are  collected  from regional  branches.'  And,  sentence  2  states  the  next  step  after collection, i.e. verifying authenticity using AI. So, sentence 2 will follow  sentence  3.  Further,  sentence  4  states  the  next  step, which is drafting detailed statements & sentence 1 tells the final step of the process. So, sentence 1 will follow sentence 4. Going through the options, option (a) has the correct sequence.",
+        "text": "Sentence 3 will be the starting line as it introduces the main idea of  the  parajumble,  i.e.  'Transaction  logs  are  collected  from regional  branches.'  And,  sentence  2  states  the  next  step  after collection, i.e. verifying authenticity using AI. So, sentence 2 will follow  sentence  3.  Further,  sentence  4  states  the  next  step, which is drafting detailed statements & sentence 1 tells the final step of the process. So, sentence 1 will follow sentence 4. Going through the options, option (a) has the correct sequence."
+      },
+      {
+        "self_ref": "#/texts/2",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "section_header",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 705.6591796875,
+              "r": 101.11201467000001,
+              "b": 697.5769428199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              16
+            ]
+          }
+        ],
+        "orig": "Sol.216.(b) QPRS",
+        "text": "Sol.216.(b) QPRS",
+        "level": 1
+      },
+      {
+        "self_ref": "#/texts/3",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 693.2373046875,
+              "r": 288.99287742,
+              "b": 598.2019428199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              521
+            ]
+          }
+        ],
+        "orig": "The given sentence starts with part Q as it introduces the main idea  of  the  sentence,  i.e.  investors  remained  cautious  about spending. And, part P states the contrasting condition happening  simultaneously.  So,  P  will  follow  Q  .  Further,  part  R states  the  reason  or topic of consideration, i.e. considering the volatile inflation rates. So, R will follow  P . Finally, part  S completes  the  sentence  by  stating  the scope or setting. Going through the options, option (b) has the correct sequence.",
+        "text": "The given sentence starts with part Q as it introduces the main idea  of  the  sentence,  i.e.  investors  remained  cautious  about spending. And, part P states the contrasting condition happening  simultaneously.  So,  P  will  follow  Q  .  Further,  part  R states  the  reason  or topic of consideration, i.e. considering the volatile inflation rates. So, R will follow  P . Finally, part  S completes  the  sentence  by  stating  the scope or setting. Going through the options, option (b) has the correct sequence."
+      },
+      {
+        "self_ref": "#/texts/4",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "section_header",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 584.1982396875001,
+              "r": 119.19551067,
+              "b": 576.1160028199854,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              25
+            ]
+          }
+        ],
+        "orig": "Sol.217.(a) 2 - 3 - 4 - 1",
+        "text": "Sol.217.(a) 2 - 3 - 4 - 1",
+        "level": 1
+      },
+      {
+        "self_ref": "#/texts/5",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 571.7763696874999,
+              "r": 289.02949242,
+              "b": 476.74100281998534,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              533
+            ]
+          }
+        ],
+        "orig": "Sentence 2 will be the starting line as it describes the first step in the manufacturing process, i.e. assembly of raw components. And,  sentence  3  states  the  next  step  in  the  process,  i.e.  the assembly undergoing a structural integrity test. Further, sentence  4  states  the  third  step,  i.e.  discarding faulty parts by the automated arm. Finally, sentence 1 states the last step in the process,  i.e.  dispatching  the  packaged  units to the warehouse. Going through the options, option (a) has the correct sequence.",
+        "text": "Sentence 2 will be the starting line as it describes the first step in the manufacturing process, i.e. assembly of raw components. And,  sentence  3  states  the  next  step  in  the  process,  i.e.  the assembly undergoing a structural integrity test. Further, sentence  4  states  the  third  step,  i.e.  discarding faulty parts by the automated arm. Finally, sentence 1 states the last step in the process,  i.e.  dispatching  the  packaged  units to the warehouse. Going through the options, option (a) has the correct sequence."
+      },
+      {
+        "self_ref": "#/texts/6",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "section_header",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 462.7412096875,
+              "r": 119.19111642000001,
+              "b": 454.6589728199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              25
+            ]
+          }
+        ],
+        "orig": "Sol.218.(a) 3 - 2 - 4 - 1",
+        "text": "Sol.218.(a) 3 - 2 - 4 - 1",
+        "level": 1
+      },
+      {
+        "self_ref": "#/texts/7",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 450.3193396875,
+              "r": 288.85371492,
+              "b": 342.85819281998533,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              570
+            ]
+          }
+        ],
+        "orig": "Sentence  3  will  be  the starting line as it states the first step in project planning, i.e. collection of requirement lists. And, sentence  2  states  the  next  step,  i.e.  filtering  out  unfeasible options  using  risk assessment tools. So, sentence 2 will follow sentence  3.  Further,  sentence  4  states  the  next  step  after assessment, i.e. outlining feasible strategies. Finally, sentence 1 states the last step in the process, i.e. submission of the plan to the  steering  committee.  Going  through  the  options,  option  (a) has the correct sequence.",
+        "text": "Sentence  3  will  be  the starting line as it states the first step in project planning, i.e. collection of requirement lists. And, sentence  2  states  the  next  step,  i.e.  filtering  out  unfeasible options  using  risk assessment tools. So, sentence 2 will follow sentence  3.  Further,  sentence  4  states  the  next  step  after assessment, i.e. outlining feasible strategies. Finally, sentence 1 states the last step in the process, i.e. submission of the plan to the  steering  committee.  Going  through  the  options,  option  (a) has the correct sequence."
+      },
+      {
+        "self_ref": "#/texts/8",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "section_header",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 328.85839968749997,
+              "r": 98.63349915,
+              "b": 320.7761628199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              16
+            ]
+          }
+        ],
+        "orig": "Sol.219.(a) QPRS",
+        "text": "Sol.219.(a) QPRS",
+        "level": 1
+      },
+      {
+        "self_ref": "#/texts/9",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 316.4365196875,
+              "r": 288.82881492,
+              "b": 208.97733281998535,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              583
+            ]
+          }
+        ],
+        "orig": "The  given  sentence  starts  with  part  Q  which  contains  the subject,  'Converting  solar  energy'.  Part  P  contains a portion of the  subject  as  it  begins  with  the  preposition  'into',  which  is commonly  used  after  the  verb  'convert'.  So,  P  will  follow  Q  . Further,  part  R  contains the verb 'requires' along with its object 'efficient  storage  systems'.  So,  R  will  follow  P .  Finally,  part  S completes  the  sentence  by  stating  the  context,  i.e.,  in  cloudy regions.  Going  through  the  options,  option  (a)  has  the  correct sequence.",
+        "text": "The  given  sentence  starts  with  part  Q  which  contains  the subject,  'Converting  solar  energy'.  Part  P  contains a portion of the  subject  as  it  begins  with  the  preposition  'into',  which  is commonly  used  after  the  verb  'convert'.  So,  P  will  follow  Q  . Further,  part  R  contains the verb 'requires' along with its object 'efficient  storage  systems'.  So,  R  will  follow  P .  Finally,  part  S completes  the  sentence  by  stating  the  context,  i.e.,  in  cloudy regions.  Going  through  the  options,  option  (a)  has  the  correct sequence."
+      },
+      {
+        "self_ref": "#/texts/10",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "section_header",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 194.97558968750002,
+              "r": 109.27705419,
+              "b": 186.89335281998535,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              19
+            ]
+          }
+        ],
+        "orig": "Sol.220.(c) 1-4-2-3",
+        "text": "Sol.220.(c) 1-4-2-3",
+        "level": 1
+      },
+      {
+        "self_ref": "#/texts/11",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 182.55370968750003,
+              "r": 289.02949242,
+              "b": 87.51835281998535,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              512
+            ]
+          }
+        ],
+        "orig": "Sentence  1  will  be  the  starting  line  as  it  introduces  the  initial interaction  at  the  check-in counter. And, sentence 4 states that the airline staff weighed his luggage and tagged it. So, sentence 4  will  follow  sentence  1.  Further,  sentence  2  states  that  his carry-on bag was  screened through the X-ray machine  & sentence  3  states  that he proceeded to the departure gate. So, sentence  3  will  follow  sentence  2.  Going  through  the  options, option (c) has the correct sequence.",
+        "text": "Sentence  1  will  be  the  starting  line  as  it  introduces  the  initial interaction  at  the  check-in counter. And, sentence 4 states that the airline staff weighed his luggage and tagged it. So, sentence 4  will  follow  sentence  1.  Further,  sentence  2  states  that  his carry-on bag was  screened through the X-ray machine  & sentence  3  states  that he proceeded to the departure gate. So, sentence  3  will  follow  sentence  2.  Going  through  the  options, option (c) has the correct sequence."
+      },
+      {
+        "self_ref": "#/texts/12",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "section_header",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 73.51659968750005,
+              "r": 105.66914367000001,
+              "b": 65.43436281998538,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              19
+            ]
+          }
+        ],
+        "orig": "Sol.221.(c) 2-4-3-1",
+        "text": "Sol.221.(c) 2-4-3-1",
+        "level": 1
+      },
+      {
+        "self_ref": "#/texts/13",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 61.094729687500035,
+              "r": 288.99873492,
+              "b": 28.16874281998537,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              211
+            ]
+          },
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 291.757038,
+              "t": 830.7925780594726,
+              "r": 569.6914179375,
+              "b": 822.5642819957749,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              212,
+              222
+            ]
+          },
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 308.54999,
+              "t": 814.6982416875001,
+              "r": 568.68426692,
+              "b": 744.5027238199854,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              223,
+              571
+            ]
+          }
+        ],
+        "orig": "Sentence 2 will be the starting line as it introduces the first step of  the  process,  i.e.  designing  the  algorithm.  And,  sentence  4 states  the  next  step  in  the  process,  i.e.  the  source  code  is Parajumble deployed to the staging environment. So, sentence 4 will follow sentence  2.  Further,  sentence  3  states  that  runtime  errors  are detected  by  automated  tools  &  sentence  1  states  that system stability  is  verified by the committee. So, sentence 1 will follow sentence 3. Going through the options, option (c) has the correct sequence.",
+        "text": "Sentence 2 will be the starting line as it introduces the first step of  the  process,  i.e.  designing  the  algorithm.  And,  sentence  4 states  the  next  step  in  the  process,  i.e.  the  source  code  is Parajumble deployed to the staging environment. So, sentence 4 will follow sentence  2.  Further,  sentence  3  states  that  runtime  errors  are detected  by  automated  tools  &  sentence  1  states  that system stability  is  verified by the committee. So, sentence 1 will follow sentence 3. Going through the options, option (c) has the correct sequence."
+      },
+      {
+        "self_ref": "#/texts/14",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "section_header",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 308.54999,
+              "t": 730.5048826875,
+              "r": 381.04657244,
+              "b": 722.4226458199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              16
+            ]
+          }
+        ],
+        "orig": "Sol.222.(c) QRSP",
+        "text": "Sol.222.(c) QRSP",
+        "level": 1
+      },
+      {
+        "self_ref": "#/texts/15",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 308.54999,
+              "t": 718.0830076875,
+              "r": 568.71503192,
+              "b": 623.0456928199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              501
+            ]
+          }
+        ],
+        "orig": "Part  Q  will  be  the starting line as it contains the subject of the sentence,  i.e.  'The  renovation  of  historical  monuments'.  And, part  R  contains  the  helping  verb(is)  and  the  main  verb(carried out). So, R will follow Q . Further, part S states the location of the activity. So, S  will  follow  R.  Finally,  part  P  completes  the sentence by specifying the manner/supervision under which the work  is  done.  Going  through  the  options,  option  (c)  has  the correct sequence.",
+        "text": "Part  Q  will  be  the starting line as it contains the subject of the sentence,  i.e.  'The  renovation  of  historical  monuments'.  And, part  R  contains  the  helping  verb(is)  and  the  main  verb(carried out). So, R will follow Q . Further, part S states the location of the activity. So, S  will  follow  R.  Finally,  part  P  completes  the sentence by specifying the manner/supervision under which the work  is  done.  Going  through  the  options,  option  (c)  has  the correct sequence."
+      },
+      {
+        "self_ref": "#/texts/16",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "section_header",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 308.54999,
+              "t": 609.0419896875001,
+              "r": 385.55096642,
+              "b": 600.9597528199854,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              19
+            ]
+          }
+        ],
+        "orig": "Sol.223.(a) 2-1-3-4",
+        "text": "Sol.223.(a) 2-1-3-4",
+        "level": 1
+      },
+      {
+        "self_ref": "#/texts/17",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 308.54999,
+              "t": 596.6201196874999,
+              "r": 568.77215942,
+              "b": 489.1628828199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              575
+            ]
+          }
+        ],
+        "orig": "The given paragraph is about the process of baking. Sentence 2 is  the starting line as it introduces the first step in the process, i.e.  'Ingredients  are  mixed  thoroughly  to  form a smooth paste.' And, sentence 1 states the next step, i.e. pouring the batter into molds. So, sentence 1 will follow sentence 2. Further, sentence 3 states  the  third step, i.e.  placing  the  tray  in  the  oven.  So, sentence  3  will  come  next.  Finally,  sentence  4  states  the  last step, i.e. cooling and packing. Going through the options, option (a) has the correct sequence.",
+        "text": "The given paragraph is about the process of baking. Sentence 2 is  the starting line as it introduces the first step in the process, i.e.  'Ingredients  are  mixed  thoroughly  to  form a smooth paste.' And, sentence 1 states the next step, i.e. pouring the batter into molds. So, sentence 1 will follow sentence 2. Further, sentence 3 states  the  third step, i.e.  placing  the  tray  in  the  oven.  So, sentence  3  will  come  next.  Finally,  sentence  4  states  the  last step, i.e. cooling and packing. Going through the options, option (a) has the correct sequence."
+      },
+      {
+        "self_ref": "#/texts/18",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "section_header",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 308.54999,
+              "t": 472.4013696875,
+              "r": 389.15448194,
+              "b": 464.3191328199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              19
+            ]
+          }
+        ],
+        "orig": "Sol.224.(a) 3-4-2-1",
+        "text": "Sol.224.(a) 3-4-2-1",
+        "level": 1
+      },
+      {
+        "self_ref": "#/texts/19",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 308.54999,
+              "t": 459.9794896875,
+              "r": 568.74872192,
+              "b": 364.94217281998533,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              518
+            ]
+          }
+        ],
+        "orig": "Sentence 3 will be the starting line as it introduces the first step in the research process, i.e. testing hypotheses using protocols. And, sentence 4 states that observations are recorded during the experiment.  So,  sentence  4  will  follow  sentence  3.  Further, sentence  2  states  the  third  stage, i.e. verified data is compiled into  digital  formats  &  sentence  1  states  the  final  stage.  So, sentence  1  will  follow  sentence  2.  Going  through  the  options, option (a) has the correct sequence.",
+        "text": "Sentence 3 will be the starting line as it introduces the first step in the research process, i.e. testing hypotheses using protocols. And, sentence 4 states that observations are recorded during the experiment.  So,  sentence  4  will  follow  sentence  3.  Further, sentence  2  states  the  third  stage, i.e. verified data is compiled into  digital  formats  &  sentence  1  states  the  final  stage.  So, sentence  1  will  follow  sentence  2.  Going  through  the  options, option (a) has the correct sequence."
+      },
+      {
+        "self_ref": "#/texts/20",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "section_header",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 308.54999,
+              "t": 350.9404296875,
+              "r": 380.48846642,
+              "b": 342.85819281998533,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              16
+            ]
+          }
+        ],
+        "orig": "Sol.225.(c) QRSP",
+        "text": "Sol.225.(c) QRSP",
+        "level": 1
+      },
+      {
+        "self_ref": "#/texts/21",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 308.54999,
+              "t": 338.5185496875,
+              "r": 568.59491192,
+              "b": 255.90506281998535,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              473
+            ]
+          }
+        ],
+        "orig": "Part  Q  will  be  the starting line as it contains the subject of the sentence,  i.e.  'The  distribution  of  study  materials'.  And,  part  R contains  the  helping  verb(has)  and  the  main  verb(completed). So, R will follow Q . Further, part S states the location where the distribution happened. So, S will follow R. Finally,  part  P completes  the  sentence  by  specifying  the  standard  followed during the process. Hence, option (c) has the correct sequence.",
+        "text": "Part  Q  will  be  the starting line as it contains the subject of the sentence,  i.e.  'The  distribution  of  study  materials'.  And,  part  R contains  the  helping  verb(has)  and  the  main  verb(completed). So, R will follow Q . Further, part S states the location where the distribution happened. So, S will follow R. Finally,  part  P completes  the  sentence  by  specifying  the  standard  followed during the process. Hence, option (c) has the correct sequence."
+      },
+      {
+        "self_ref": "#/texts/22",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "section_header",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 308.54999,
+              "t": 243.2841796875,
+              "r": 385.79706017,
+              "b": 235.20194281998533,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              19
+            ]
+          }
+        ],
+        "orig": "Sol.226.(b) 1-3-2-4",
+        "text": "Sol.226.(b) 1-3-2-4",
+        "level": 1
+      },
+      {
+        "self_ref": "#/texts/23",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 308.54999,
+              "t": 230.8622996875,
+              "r": 568.5187419199999,
+              "b": 160.67069281998533,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              413
+            ]
+          }
+        ],
+        "orig": "Sentence  1  will  be  the starting line as it states the first step in farming  i.e.  the  soil  was  ploughed.  And,  sentence 3 states the next step, i.e. sowing the seeds in neat rows. Further, sentence 2 states  the  third  step,  i.e.  water  and  fertilizers  were  applied  & sentence 4 states the final step, which is gathering the harvest. Going through the options, option (b) has the correct sequence.",
+        "text": "Sentence  1  will  be  the starting line as it states the first step in farming  i.e.  the  soil  was  ploughed.  And,  sentence 3 states the next step, i.e. sowing the seeds in neat rows. Further, sentence 2 states  the  third  step,  i.e.  water  and  fertilizers  were  applied  & sentence 4 states the final step, which is gathering the harvest. Going through the options, option (b) has the correct sequence."
+      },
+      {
+        "self_ref": "#/texts/24",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "section_header",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 308.54999,
+              "t": 148.04784968750005,
+              "r": 385.42352492,
+              "b": 139.96561281998538,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              19
+            ]
+          }
+        ],
+        "orig": "Sol.227.(c) 4-2-3-1",
+        "text": "Sol.227.(c) 4-2-3-1",
+        "level": 1
+      },
+      {
+        "self_ref": "#/texts/25",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 308.54999,
+              "t": 135.62597968750003,
+              "r": 568.75457942,
+              "b": 28.16874281998537,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              611
+            ]
+          }
+        ],
+        "orig": "Sentence 4 will be the starting line as it introduces the main idea of  the  parajumble,  i.e.  Infrastructure  projects  are  restricted  by complex  regulatory  frameworks.  And,  sentence  2  states  that developers  submit  blueprints,  which  require  clearance  from agencies. So, sentence 2 will follow sentence 4. Sentence 3 talks about  further  slowdowns  due  to  logistical  hurdles  even  after permit  grant.  So,  sentence  3  will  follow  sentence  2.  Finally, sentence  1  concludes  the  parajumble  by  stating  the  negative consequence of the delays.  Going  through  the options,  option",
+        "text": "Sentence 4 will be the starting line as it introduces the main idea of  the  parajumble,  i.e.  Infrastructure  projects  are  restricted  by complex  regulatory  frameworks.  And,  sentence  2  states  that developers  submit  blueprints,  which  require  clearance  from agencies. So, sentence 2 will follow sentence 4. Sentence 3 talks about  further  slowdowns  due  to  logistical  hurdles  even  after permit  grant.  So,  sentence  3  will  follow  sentence  2.  Finally, sentence  1  concludes  the  parajumble  by  stating  the  negative consequence of the delays.  Going  through  the options,  option"
+      },
+      {
+        "self_ref": "#/texts/26",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "furniture",
+        "label": "page_footer",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 99.3266505,
+              "t": 21.989447959472614,
+              "r": 495.95088382500006,
+              "b": 13.761151895774901,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              109
+            ]
+          }
+        ],
+        "orig": "www.ssccglpinnacle.com                                                 Download Pinnacle Exam Preparation App",
+        "text": "www.ssccglpinnacle.com                                                 Download Pinnacle Exam Preparation App"
+      }
+    ],
+    "pictures": [],
+    "tables": [],
+    "key_value_items": [],
+    "form_items": [],
+    "pages": {
+      "1": {
+        "size": {
+          "width": 596.0,
+          "height": 842.0
+        },
+        "page_no": 1
+      }
+    }
+  }
+}

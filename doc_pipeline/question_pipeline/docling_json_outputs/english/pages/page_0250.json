@@ -1,0 +1,2789 @@
+{
+  "document_id": "english",
+  "source": "english.pdf",
+  "pdf_page": 250,
+  "page_width": 596.0,
+  "page_height": 842.0,
+  "extracted_at": "2026-09-09T10:29:39.883111+00:00",
+  "extraction_version": 4,
+  "ocr_enabled": true,
+  "extraction_detection": {
+    "requested_profile": "auto",
+    "effective_profile": "hybrid",
+    "embedded_text_characters": 5393,
+    "auto_text_threshold": 80
+  },
+  "docling_result": {
+    "status": "success",
+    "errors": []
+  },
+  "content_summary": {
+    "text_items": 32,
+    "text_characters": 6819,
+    "table_items": 0,
+    "picture_items": 2,
+    "group_items": 0,
+    "warnings": []
+  },
+  "reading_order": {
+    "source": "docling_iterate_items",
+    "items": [
+      {
+        "reading_order_index": 0,
+        "element_ref": "#/texts/1",
+        "label": "text",
+        "level": 1,
+        "text_preview": "will  follow  P .  Further,  sentence  Q  provides  a  specific  example that  recycling  paper  saves  trees  and water. So, Q will follow R. However,  sentenc"
+      },
+      {
+        "reading_order_index": 1,
+        "element_ref": "#/texts/2",
+        "label": "section_header",
+        "level": 1,
+        "text_preview": "Sol.262.(a) ABCD"
+      },
+      {
+        "reading_order_index": 2,
+        "element_ref": "#/texts/3",
+        "label": "text",
+        "level": 1,
+        "text_preview": "The  given  sentence  starts  with  part A as it tells us the time of the event. And, part B contains the subject of the sentence. So, B will follow A. Further,"
+      },
+      {
+        "reading_order_index": 3,
+        "element_ref": "#/texts/4",
+        "label": "section_header",
+        "level": 1,
+        "text_preview": "Sol.263.(c) BACD"
+      },
+      {
+        "reading_order_index": 4,
+        "element_ref": "#/texts/5",
+        "label": "text",
+        "level": 1,
+        "text_preview": "'Subject  +  verb  +  object + adverb of place + adverb of time' is the  correct  grammatical  structure.  'Many  passengers'  is  the subject.  'Were  injured'"
+      },
+      {
+        "reading_order_index": 5,
+        "element_ref": "#/texts/6",
+        "label": "section_header",
+        "level": 1,
+        "text_preview": "Sol.264.(b) BCDA"
+      },
+      {
+        "reading_order_index": 6,
+        "element_ref": "#/texts/7",
+        "label": "text",
+        "level": 1,
+        "text_preview": "The  given  sentence  starts  with  part  B  as  it  introduces  the subject,  i.e.  'wildlife  sanctuaries.'  Part  C  follows  with  the  verb 'have  been  es"
+      },
+      {
+        "reading_order_index": 7,
+        "element_ref": "#/texts/8",
+        "label": "section_header",
+        "level": 1,
+        "text_preview": "Sol.265.(b) ACBD"
+      },
+      {
+        "reading_order_index": 8,
+        "element_ref": "#/texts/9",
+        "label": "text",
+        "level": 1,
+        "text_preview": "The  given  sentence  starts  with  part  A  as  it  introduces  the subject,  'the  winner.'  Part  C  follows  with  'was,'  forming  the passive structure. P"
+      },
+      {
+        "reading_order_index": 9,
+        "element_ref": "#/texts/10",
+        "label": "section_header",
+        "level": 1,
+        "text_preview": "Sol.266.(a) QPSR"
+      },
+      {
+        "reading_order_index": 10,
+        "element_ref": "#/texts/11",
+        "label": "text",
+        "level": 1,
+        "text_preview": "Sentence 1 introduces the topic with 'Economic inflation affects both  consumers  and  businesses.'  First,  Sentence  Q  follows because  it  explains  the  co"
+      },
+      {
+        "reading_order_index": 11,
+        "element_ref": "#/texts/12",
+        "label": "section_header",
+        "level": 1,
+        "text_preview": "Sol.267.(b) 1-4-3-2"
+      },
+      {
+        "reading_order_index": 12,
+        "element_ref": "#/texts/13",
+        "label": "text",
+        "level": 1,
+        "text_preview": "Sentence 1 is the starting line as it introduces the main idea of the  parajumble,  i.e.  'Cybersecurity  is  a  growing  concern  in the digital age.' And, sen"
+      },
+      {
+        "reading_order_index": 13,
+        "element_ref": "#/texts/14",
+        "label": "section_header",
+        "level": 1,
+        "text_preview": "Sol.268.(a) SQPR"
+      },
+      {
+        "reading_order_index": 14,
+        "element_ref": "#/texts/15",
+        "label": "text",
+        "level": 1,
+        "text_preview": "Sentence  S  will  follow  S1  as  it  introduces  that  technology's benefits  are  unequally  distributed.  Sentence  Q  comes  next because it explains that "
+      },
+      {
+        "reading_order_index": 15,
+        "element_ref": "#/pictures/0",
+        "label": "picture",
+        "level": 1,
+        "text_preview": ""
+      },
+      {
+        "reading_order_index": 16,
+        "element_ref": "#/pictures/1",
+        "label": "picture",
+        "level": 1,
+        "text_preview": ""
+      },
+      {
+        "reading_order_index": 17,
+        "element_ref": "#/texts/16",
+        "label": "section_header",
+        "level": 1,
+        "text_preview": "Sol.269.(c) BCAD"
+      },
+      {
+        "reading_order_index": 18,
+        "element_ref": "#/texts/17",
+        "label": "text",
+        "level": 1,
+        "text_preview": "The  given  sentence  starts  with  part  B  as  it  introduces  the subject, i.e. 'the students.' Part C follows with the verb 'accepted.' Part A gives the obj"
+      },
+      {
+        "reading_order_index": 19,
+        "element_ref": "#/texts/18",
+        "label": "section_header",
+        "level": 1,
+        "text_preview": "Sol.270.(c) PQRS"
+      },
+      {
+        "reading_order_index": 20,
+        "element_ref": "#/texts/19",
+        "label": "text",
+        "level": 1,
+        "text_preview": "Sentence 1 introduces the  topic,  \"Honeybees  are  vital  for pollination.\"  First,  sentence  P  follows  because  it  explains  the process, \"they transfer p"
+      },
+      {
+        "reading_order_index": 21,
+        "element_ref": "#/texts/20",
+        "label": "section_header",
+        "level": 1,
+        "text_preview": "Sol.271.(b) QRPS"
+      },
+      {
+        "reading_order_index": 22,
+        "element_ref": "#/texts/21",
+        "label": "text",
+        "level": 1,
+        "text_preview": "Sentence  Q  will  follow  S1  as  it  introduces  the  evolution  of art from cave paintings to modern murals. Sentence R comes next because  it explains  how "
+      },
+      {
+        "reading_order_index": 23,
+        "element_ref": "#/texts/22",
+        "label": "section_header",
+        "level": 1,
+        "text_preview": "Sol.272.(b) CDBA"
+      },
+      {
+        "reading_order_index": 24,
+        "element_ref": "#/texts/23",
+        "label": "text",
+        "level": 1,
+        "text_preview": "The given sentence starts with part C as it introduces the main subject  of the sentence, i.e. 'the construction company.' Part D provides  the  verb  phrase  '"
+      },
+      {
+        "reading_order_index": 25,
+        "element_ref": "#/texts/24",
+        "label": "section_header",
+        "level": 1,
+        "text_preview": "Sol.273.(c) R → P → Q → S"
+      },
+      {
+        "reading_order_index": 26,
+        "element_ref": "#/texts/25",
+        "label": "text",
+        "level": 1,
+        "text_preview": "The given sentence starts with part R as it introduces the main subject of the process, i.e., 'the government announces census dates  and  guidelines.'  Part  P"
+      },
+      {
+        "reading_order_index": 27,
+        "element_ref": "#/texts/26",
+        "label": "section_header",
+        "level": 1,
+        "text_preview": "Sol.274.(b) 2-1-4-3"
+      },
+      {
+        "reading_order_index": 28,
+        "element_ref": "#/texts/27",
+        "label": "text",
+        "level": 1,
+        "text_preview": "Sentence 2 will be the starting line as it introduces the main idea of  the  parajumble,  i.e.  'Coral  reefs  are  home  to  many  marine species.' And, senten"
+      },
+      {
+        "reading_order_index": 29,
+        "element_ref": "#/texts/28",
+        "label": "section_header",
+        "level": 1,
+        "text_preview": "Sol.275.(a) SQRP"
+      },
+      {
+        "reading_order_index": 30,
+        "element_ref": "#/texts/29",
+        "label": "text",
+        "level": 1,
+        "text_preview": "The given sentence starts with the subject 'Advances in satellite imaging'.  Now  we  need  the  main  verb  for  this  subject.  Part  S begins with the verb '"
+      }
+    ]
+  },
+  "layout_analysis": {
+    "method": "docling_bbox_left_edge_clustering_v1",
+    "column_count": 2,
+    "confidence": 1.0,
+    "page_width": 596.0,
+    "page_height": 842.0,
+    "columns": [
+      {
+        "column_index": 1,
+        "left": 0.0,
+        "right": 168.851,
+        "detected_start": 29.152,
+        "supporting_elements": 17
+      },
+      {
+        "column_index": 2,
+        "left": 168.851,
+        "right": 596.0,
+        "detected_start": 308.55,
+        "supporting_elements": 14
+      }
+    ],
+    "elements": [
+      {
+        "element_ref": "#/texts/0",
+        "element_type": "text",
+        "label": "page_header",
+        "column_index": 1,
+        "column_indices": [
+          1
+        ],
+        "spans_columns": false,
+        "reading_order_index": null,
+        "bbox": {
+          "l": 28.800003,
+          "t": 830.7925780594726,
+          "r": 95.7084616875,
+          "b": 822.5642819957749,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/1",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 0,
+        "bbox": {
+          "l": 28.800003,
+          "t": 814.6982416875001,
+          "r": 288.63398742,
+          "b": 756.9245988199854,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/2",
+        "element_type": "text",
+        "label": "section_header",
+        "column_index": 1,
+        "column_indices": [
+          1
+        ],
+        "spans_columns": false,
+        "reading_order_index": 1,
+        "bbox": {
+          "l": 28.800003,
+          "t": 744.3076166875001,
+          "r": 101.34492492000001,
+          "b": 736.2253798199854,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/3",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 2,
+        "bbox": {
+          "l": 28.800003,
+          "t": 731.8857416875001,
+          "r": 288.88300992,
+          "b": 674.1120988199854,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/4",
+        "element_type": "text",
+        "label": "section_header",
+        "column_index": 1,
+        "column_indices": [
+          1
+        ],
+        "spans_columns": false,
+        "reading_order_index": 3,
+        "bbox": {
+          "l": 28.800003,
+          "t": 661.4951196874999,
+          "r": 101.17353792,
+          "b": 653.4128828199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/5",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 4,
+        "bbox": {
+          "l": 28.800003,
+          "t": 649.0732396875001,
+          "r": 289.02217242,
+          "b": 591.2996028199854,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/6",
+        "element_type": "text",
+        "label": "section_header",
+        "column_index": 1,
+        "column_indices": [
+          1
+        ],
+        "spans_columns": false,
+        "reading_order_index": 5,
+        "bbox": {
+          "l": 28.800003,
+          "t": 580.0576196874999,
+          "r": 101.50312842000001,
+          "b": 571.9753828199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/7",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 6,
+        "bbox": {
+          "l": 28.800003,
+          "t": 567.6357396875001,
+          "r": 288.96504492,
+          "b": 497.4441328199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/8",
+        "element_type": "text",
+        "label": "section_header",
+        "column_index": 1,
+        "column_indices": [
+          1
+        ],
+        "spans_columns": false,
+        "reading_order_index": 7,
+        "bbox": {
+          "l": 28.800003,
+          "t": 486.2060496875,
+          "r": 101.54707317,
+          "b": 478.12381281998535,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/9",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 8,
+        "bbox": {
+          "l": 28.800003,
+          "t": 473.7841796875,
+          "r": 289.02070992,
+          "b": 416.01444281998533,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/10",
+        "element_type": "text",
+        "label": "section_header",
+        "column_index": 1,
+        "column_indices": [
+          1
+        ],
+        "spans_columns": false,
+        "reading_order_index": 9,
+        "bbox": {
+          "l": 28.800003,
+          "t": 403.3896496875,
+          "r": 100.86592092000001,
+          "b": 395.30741281998536,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/11",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 10,
+        "bbox": {
+          "l": 28.800003,
+          "t": 390.9677696875,
+          "r": 288.93281742,
+          "b": 258.6628828199854,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/12",
+        "element_type": "text",
+        "label": "section_header",
+        "column_index": 1,
+        "column_indices": [
+          1
+        ],
+        "spans_columns": false,
+        "reading_order_index": 11,
+        "bbox": {
+          "l": 28.800003,
+          "t": 244.66698968749995,
+          "r": 106.04267892000001,
+          "b": 236.58475281998528,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/13",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 12,
+        "bbox": {
+          "l": 28.800003,
+          "t": 232.24120968750003,
+          "r": 289.00752492,
+          "b": 124.78397281998537,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/14",
+        "element_type": "text",
+        "label": "section_header",
+        "column_index": 1,
+        "column_indices": [
+          1
+        ],
+        "spans_columns": false,
+        "reading_order_index": 13,
+        "bbox": {
+          "l": 28.800003,
+          "t": 110.7841796875,
+          "r": 100.86592092000001,
+          "b": 102.70194281998533,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/15",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 14,
+        "bbox": {
+          "l": 28.800003,
+          "t": 98.36229968750001,
+          "r": 289.02802992,
+          "b": 28.170692819985334,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/16",
+        "element_type": "text",
+        "label": "section_header",
+        "column_index": 2,
+        "column_indices": [
+          2
+        ],
+        "spans_columns": false,
+        "reading_order_index": 17,
+        "bbox": {
+          "l": 308.54999,
+          "t": 780.1904296875,
+          "r": 380.96747042,
+          "b": 772.1081928199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/17",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 2,
+        "column_indices": [
+          2
+        ],
+        "spans_columns": false,
+        "reading_order_index": 18,
+        "bbox": {
+          "l": 308.54999,
+          "t": 767.7685546875,
+          "r": 568.47918692,
+          "b": 709.9988178199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/18",
+        "element_type": "text",
+        "label": "section_header",
+        "column_index": 2,
+        "column_indices": [
+          2
+        ],
+        "spans_columns": false,
+        "reading_order_index": 19,
+        "bbox": {
+          "l": 308.54999,
+          "t": 695.9990236875,
+          "r": 380.48846642,
+          "b": 687.9167868199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/19",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 2,
+        "column_indices": [
+          2
+        ],
+        "spans_columns": false,
+        "reading_order_index": 20,
+        "bbox": {
+          "l": 308.54999,
+          "t": 683.5771486875,
+          "r": 568.7326044199999,
+          "b": 576.1160028199854,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/20",
+        "element_type": "text",
+        "label": "section_header",
+        "column_index": 2,
+        "column_indices": [
+          2
+        ],
+        "spans_columns": false,
+        "reading_order_index": 21,
+        "bbox": {
+          "l": 308.54999,
+          "t": 564.8779296875,
+          "r": 380.86200167,
+          "b": 556.7956928199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/21",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 2,
+        "column_indices": [
+          2
+        ],
+        "spans_columns": false,
+        "reading_order_index": 22,
+        "bbox": {
+          "l": 308.54999,
+          "t": 552.4560496875,
+          "r": 568.4718669199999,
+          "b": 457.4167828199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/22",
+        "element_type": "text",
+        "label": "section_header",
+        "column_index": 2,
+        "column_indices": [
+          2
+        ],
+        "spans_columns": false,
+        "reading_order_index": 23,
+        "bbox": {
+          "l": 308.54999,
+          "t": 444.7958996875,
+          "r": 381.34539992,
+          "b": 436.71366281998536,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/23",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 2,
+        "column_indices": [
+          2
+        ],
+        "spans_columns": false,
+        "reading_order_index": 24,
+        "bbox": {
+          "l": 308.54999,
+          "t": 432.3740196875,
+          "r": 568.73553692,
+          "b": 349.7605328199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/24",
+        "element_type": "text",
+        "label": "section_header",
+        "column_index": 2,
+        "column_indices": [
+          2
+        ],
+        "spans_columns": false,
+        "reading_order_index": 25,
+        "bbox": {
+          "l": 308.54999,
+          "t": 337.18359497750004,
+          "r": 420.88299767,
+          "b": 329.0574128199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/25",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 2,
+        "column_indices": [
+          2
+        ],
+        "spans_columns": false,
+        "reading_order_index": 26,
+        "bbox": {
+          "l": 308.54999,
+          "t": 324.7177696875,
+          "r": 568.58612192,
+          "b": 217.26053281998531,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/26",
+        "element_type": "text",
+        "label": "section_header",
+        "column_index": 2,
+        "column_indices": [
+          2
+        ],
+        "spans_columns": false,
+        "reading_order_index": 27,
+        "bbox": {
+          "l": 308.54999,
+          "t": 206.0185496875,
+          "r": 385.79706017,
+          "b": 197.93631281998535,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/27",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 2,
+        "column_indices": [
+          2
+        ],
+        "spans_columns": false,
+        "reading_order_index": 28,
+        "bbox": {
+          "l": 308.54999,
+          "t": 193.5966796875,
+          "r": 568.72088942,
+          "b": 98.56131281998535,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/28",
+        "element_type": "text",
+        "label": "section_header",
+        "column_index": 2,
+        "column_indices": [
+          2
+        ],
+        "spans_columns": false,
+        "reading_order_index": 29,
+        "bbox": {
+          "l": 308.54999,
+          "t": 85.9404296875,
+          "r": 382.84833017,
+          "b": 77.85819281998533,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/29",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 2,
+        "column_indices": [
+          2
+        ],
+        "spans_columns": false,
+        "reading_order_index": 30,
+        "bbox": {
+          "l": 308.54999,
+          "t": 73.51854968750001,
+          "r": 568.76776442,
+          "b": 28.170692819985334,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/30",
+        "element_type": "text",
+        "label": "page_footer",
+        "column_index": 2,
+        "column_indices": [
+          2
+        ],
+        "spans_columns": false,
+        "reading_order_index": null,
+        "bbox": {
+          "l": 99.3266505,
+          "t": 21.989447959472614,
+          "r": 495.95088382500006,
+          "b": 13.761151895774901,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/31",
+        "element_type": "text",
+        "label": "page_footer",
+        "column_index": 1,
+        "column_indices": [
+          1
+        ],
+        "spans_columns": false,
+        "reading_order_index": null,
+        "bbox": {
+          "l": 32.0,
+          "t": 20.17999999999995,
+          "r": 101.77000000000001,
+          "b": 10.92999999999995,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/pictures/0",
+        "element_type": "picture",
+        "label": "picture",
+        "column_index": 1,
+        "column_indices": [
+          1
+        ],
+        "spans_columns": false,
+        "reading_order_index": 15,
+        "bbox": {
+          "l": 12.612339973449707,
+          "t": 24.42413330078125,
+          "r": 47.853187561035156,
+          "b": 8.353271484375,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/pictures/1",
+        "element_type": "picture",
+        "label": "picture",
+        "column_index": 1,
+        "column_indices": [
+          1
+        ],
+        "spans_columns": false,
+        "reading_order_index": 16,
+        "bbox": {
+          "l": 50.97460174560547,
+          "t": 21.3104248046875,
+          "r": 103.11927795410156,
+          "b": 9.65472412109375,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      }
+    ],
+    "warnings": []
+  },
+  "structure_chunks": {
+    "enabled": true,
+    "method": "docling_hybrid_chunker",
+    "scope": "page",
+    "items": [
+      {
+        "text": "will  follow  P .  Further,  sentence  Q  provides  a  specific  example that  recycling  paper  saves  trees  and water. So, Q will follow R. However,  sentence  S  states  that  awareness  among  people  is still  low.  So,  S  will follow Q . Going through the options, option (d) has the correct sequence.",
+        "meta": {
+          "schema_name": "docling_core.transforms.chunker.DocMeta",
+          "version": "1.0.0",
+          "doc_items": [
+            {
+              "self_ref": "#/texts/1",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 814.6982416875001,
+                    "r": 288.63398742,
+                    "b": 756.9245988199854,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    309
+                  ]
+                }
+              ]
+            }
+          ],
+          "headings": null,
+          "captions": null,
+          "origin": {
+            "mimetype": "application/pdf",
+            "binary_hash": 17559766183385856275,
+            "filename": "english_page_0250.pdf",
+            "uri": null
+          }
+        },
+        "chunk_index": 0,
+        "contextualized_text": "will  follow  P .  Further,  sentence  Q  provides  a  specific  example that  recycling  paper  saves  trees  and water. So, Q will follow R. However,  sentence  S  states  that  awareness  among  people  is still  low.  So,  S  will follow Q . Going through the options, option (d) has the correct sequence."
+      },
+      {
+        "text": "The  given  sentence  starts  with  part A as it tells us the time of the event. And, part B contains the subject of the sentence. So, B will follow A. Further, part C contains the main verb 'went' & part D  tells  us the place where they went. So, D will follow C. Going through the options, option (a) has the correct sequence.",
+        "meta": {
+          "schema_name": "docling_core.transforms.chunker.DocMeta",
+          "version": "1.0.0",
+          "doc_items": [
+            {
+              "self_ref": "#/texts/3",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 731.8857416875001,
+                    "r": 288.88300992,
+                    "b": 674.1120988199854,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    329
+                  ]
+                }
+              ]
+            }
+          ],
+          "headings": [
+            "Sol.262.(a) ABCD"
+          ],
+          "captions": null,
+          "origin": {
+            "mimetype": "application/pdf",
+            "binary_hash": 17559766183385856275,
+            "filename": "english_page_0250.pdf",
+            "uri": null
+          }
+        },
+        "chunk_index": 1,
+        "contextualized_text": "Sol.262.(a) ABCD\nThe  given  sentence  starts  with  part A as it tells us the time of the event. And, part B contains the subject of the sentence. So, B will follow A. Further, part C contains the main verb 'went' & part D  tells  us the place where they went. So, D will follow C. Going through the options, option (a) has the correct sequence."
+      },
+      {
+        "text": "'Subject  +  verb  +  object + adverb of place + adverb of time' is the  correct  grammatical  structure.  'Many  passengers'  is  the subject.  'Were  injured'  is  the  verb. 'in the accident' denotes the place or occasion. 'Yesterday' is an adverb of time. Hence, BACD is the correct sequence.",
+        "meta": {
+          "schema_name": "docling_core.transforms.chunker.DocMeta",
+          "version": "1.0.0",
+          "doc_items": [
+            {
+              "self_ref": "#/texts/5",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 649.0732396875001,
+                    "r": 289.02217242,
+                    "b": 591.2996028199854,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    296
+                  ]
+                }
+              ]
+            }
+          ],
+          "headings": [
+            "Sol.263.(c) BACD"
+          ],
+          "captions": null,
+          "origin": {
+            "mimetype": "application/pdf",
+            "binary_hash": 17559766183385856275,
+            "filename": "english_page_0250.pdf",
+            "uri": null
+          }
+        },
+        "chunk_index": 2,
+        "contextualized_text": "Sol.263.(c) BACD\n'Subject  +  verb  +  object + adverb of place + adverb of time' is the  correct  grammatical  structure.  'Many  passengers'  is  the subject.  'Were  injured'  is  the  verb. 'in the accident' denotes the place or occasion. 'Yesterday' is an adverb of time. Hence, BACD is the correct sequence."
+      },
+      {
+        "text": "The  given  sentence  starts  with  part  B  as  it  introduces  the subject,  i.e.  'wildlife  sanctuaries.'  Part  C  follows  with  the  verb 'have  been  established.'  Part  D  states  the  place  'across  the country,' and finally, part A states the purpose of the sanctuaries, i.e.  'to protect endangered species.' Going through the options, option (b) has the correct sequence.",
+        "meta": {
+          "schema_name": "docling_core.transforms.chunker.DocMeta",
+          "version": "1.0.0",
+          "doc_items": [
+            {
+              "self_ref": "#/texts/7",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 567.6357396875001,
+                    "r": 288.96504492,
+                    "b": 497.4441328199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    386
+                  ]
+                }
+              ]
+            }
+          ],
+          "headings": [
+            "Sol.264.(b) BCDA"
+          ],
+          "captions": null,
+          "origin": {
+            "mimetype": "application/pdf",
+            "binary_hash": 17559766183385856275,
+            "filename": "english_page_0250.pdf",
+            "uri": null
+          }
+        },
+        "chunk_index": 3,
+        "contextualized_text": "Sol.264.(b) BCDA\nThe  given  sentence  starts  with  part  B  as  it  introduces  the subject,  i.e.  'wildlife  sanctuaries.'  Part  C  follows  with  the  verb 'have  been  established.'  Part  D  states  the  place  'across  the country,' and finally, part A states the purpose of the sanctuaries, i.e.  'to protect endangered species.' Going through the options, option (b) has the correct sequence."
+      },
+      {
+        "text": "The  given  sentence  starts  with  part  A  as  it  introduces  the subject,  'the  winner.'  Part  C  follows  with  'was,'  forming  the passive structure. Part B gives the past participle 'declared,' and finally,  part  D  adds  the  time  expression  'yesterday.'  Going through the options, option (b) has the correct sequence.",
+        "meta": {
+          "schema_name": "docling_core.transforms.chunker.DocMeta",
+          "version": "1.0.0",
+          "doc_items": [
+            {
+              "self_ref": "#/texts/9",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 473.7841796875,
+                    "r": 289.02070992,
+                    "b": 416.01444281998533,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    333
+                  ]
+                }
+              ]
+            }
+          ],
+          "headings": [
+            "Sol.265.(b) ACBD"
+          ],
+          "captions": null,
+          "origin": {
+            "mimetype": "application/pdf",
+            "binary_hash": 17559766183385856275,
+            "filename": "english_page_0250.pdf",
+            "uri": null
+          }
+        },
+        "chunk_index": 4,
+        "contextualized_text": "Sol.265.(b) ACBD\nThe  given  sentence  starts  with  part  A  as  it  introduces  the subject,  'the  winner.'  Part  C  follows  with  'was,'  forming  the passive structure. Part B gives the past participle 'declared,' and finally,  part  D  adds  the  time  expression  'yesterday.'  Going through the options, option (b) has the correct sequence."
+      },
+      {
+        "text": "Sentence 1 introduces the topic with 'Economic inflation affects both  consumers  and  businesses.'  First,  Sentence  Q  follows because  it  explains  the  consumer  impact  with  'Rising  prices reduce  the  purchasing  power  of  individuals.'  Next,  Sentence P comes as it highlights the business consequence with 'Businesses struggle to maintain profit margins.' Then, Sentence S adds the wider effect with 'It creates uncertainty in long-term investment planning.' Finally, Sentence R logically concludes the sequence  with  the  government's  response  with  'Governments may intervene through monetary policy.' Thus, option (a) has the correct sequence.",
+        "meta": {
+          "schema_name": "docling_core.transforms.chunker.DocMeta",
+          "version": "1.0.0",
+          "doc_items": [
+            {
+              "self_ref": "#/texts/11",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 390.9677696875,
+                    "r": 288.93281742,
+                    "b": 258.6628828199854,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    663
+                  ]
+                }
+              ]
+            }
+          ],
+          "headings": [
+            "Sol.266.(a) QPSR"
+          ],
+          "captions": null,
+          "origin": {
+            "mimetype": "application/pdf",
+            "binary_hash": 17559766183385856275,
+            "filename": "english_page_0250.pdf",
+            "uri": null
+          }
+        },
+        "chunk_index": 5,
+        "contextualized_text": "Sol.266.(a) QPSR\nSentence 1 introduces the topic with 'Economic inflation affects both  consumers  and  businesses.'  First,  Sentence  Q  follows because  it  explains  the  consumer  impact  with  'Rising  prices reduce  the  purchasing  power  of  individuals.'  Next,  Sentence P comes as it highlights the business consequence with 'Businesses struggle to maintain profit margins.' Then, Sentence S adds the wider effect with 'It creates uncertainty in long-term investment planning.' Finally, Sentence R logically concludes the sequence  with  the  government's  response  with  'Governments may intervene through monetary policy.' Thus, option (a) has the correct sequence."
+      },
+      {
+        "text": "Sentence 1 is the starting line as it introduces the main idea of the  parajumble,  i.e.  'Cybersecurity  is  a  growing  concern  in the digital age.' And, sentence 4 explains what cybersecurity means, so sentence 4 will follow sentence 1. Further, sentence 3 states that hackers use advanced  techniques to  steal  data,  and sentence 2 states that strong passwords,  encryption,  and awareness  can  help  prevent  cybercrimes.  So,  sentence  2  will follow sentence 3. Going through the options, option (b) has the correct sequence.",
+        "meta": {
+          "schema_name": "docling_core.transforms.chunker.DocMeta",
+          "version": "1.0.0",
+          "doc_items": [
+            {
+              "self_ref": "#/texts/13",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 232.24120968750003,
+                    "r": 289.00752492,
+                    "b": 124.78397281998537,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    537
+                  ]
+                }
+              ]
+            }
+          ],
+          "headings": [
+            "Sol.267.(b) 1-4-3-2"
+          ],
+          "captions": null,
+          "origin": {
+            "mimetype": "application/pdf",
+            "binary_hash": 17559766183385856275,
+            "filename": "english_page_0250.pdf",
+            "uri": null
+          }
+        },
+        "chunk_index": 6,
+        "contextualized_text": "Sol.267.(b) 1-4-3-2\nSentence 1 is the starting line as it introduces the main idea of the  parajumble,  i.e.  'Cybersecurity  is  a  growing  concern  in the digital age.' And, sentence 4 explains what cybersecurity means, so sentence 4 will follow sentence 1. Further, sentence 3 states that hackers use advanced  techniques to  steal  data,  and sentence 2 states that strong passwords,  encryption,  and awareness  can  help  prevent  cybercrimes.  So,  sentence  2  will follow sentence 3. Going through the options, option (b) has the correct sequence."
+      },
+      {
+        "text": "Sentence  S  will  follow  S1  as  it  introduces  that  technology's benefits  are  unequally  distributed.  Sentence  Q  comes  next because it explains that those in rural or underserved areas lag behind.  Further,  Sentence  P  follows  Q  as  it  mentions  that unequal access limits educational opportunities, and Sentence R concludes  by  stating  that  it  prevents  skill  development  and Parajumble employment access. Going through  the options, option (a) has the correct sequence.",
+        "meta": {
+          "schema_name": "docling_core.transforms.chunker.DocMeta",
+          "version": "1.0.0",
+          "doc_items": [
+            {
+              "self_ref": "#/texts/15",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 98.36229968750001,
+                    "r": 289.02802992,
+                    "b": 28.170692819985334,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    398
+                  ]
+                },
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 291.757038,
+                    "t": 830.7925780594726,
+                    "r": 569.6914179375,
+                    "b": 822.5642819957749,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    399,
+                    409
+                  ]
+                },
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 308.54999,
+                    "t": 814.6982416875001,
+                    "r": 568.19207942,
+                    "b": 794.1941298199854,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    410,
+                    493
+                  ]
+                }
+              ]
+            }
+          ],
+          "headings": [
+            "Sol.268.(a) SQPR"
+          ],
+          "captions": null,
+          "origin": {
+            "mimetype": "application/pdf",
+            "binary_hash": 17559766183385856275,
+            "filename": "english_page_0250.pdf",
+            "uri": null
+          }
+        },
+        "chunk_index": 7,
+        "contextualized_text": "Sol.268.(a) SQPR\nSentence  S  will  follow  S1  as  it  introduces  that  technology's benefits  are  unequally  distributed.  Sentence  Q  comes  next because it explains that those in rural or underserved areas lag behind.  Further,  Sentence  P  follows  Q  as  it  mentions  that unequal access limits educational opportunities, and Sentence R concludes  by  stating  that  it  prevents  skill  development  and Parajumble employment access. Going through  the options, option (a) has the correct sequence."
+      },
+      {
+        "text": "The  given  sentence  starts  with  part  B  as  it  introduces  the subject, i.e. 'the students.' Part C follows with the verb 'accepted.' Part A gives the object 'his advice,' and finally, part D adds the manner 'happily.' Going through the options, option (c) has the correct sequence.",
+        "meta": {
+          "schema_name": "docling_core.transforms.chunker.DocMeta",
+          "version": "1.0.0",
+          "doc_items": [
+            {
+              "self_ref": "#/texts/17",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 308.54999,
+                    "t": 767.7685546875,
+                    "r": 568.47918692,
+                    "b": 709.9988178199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    288
+                  ]
+                }
+              ]
+            }
+          ],
+          "headings": [
+            "Sol.269.(c) BCAD"
+          ],
+          "captions": null,
+          "origin": {
+            "mimetype": "application/pdf",
+            "binary_hash": 17559766183385856275,
+            "filename": "english_page_0250.pdf",
+            "uri": null
+          }
+        },
+        "chunk_index": 8,
+        "contextualized_text": "Sol.269.(c) BCAD\nThe  given  sentence  starts  with  part  B  as  it  introduces  the subject, i.e. 'the students.' Part C follows with the verb 'accepted.' Part A gives the object 'his advice,' and finally, part D adds the manner 'happily.' Going through the options, option (c) has the correct sequence."
+      },
+      {
+        "text": "Sentence 1 introduces the  topic,  \"Honeybees  are  vital  for pollination.\"  First,  sentence  P  follows  because  it  explains  the process, \"they transfer pollen between flowers.\" Next, sentence Q comes  as  it  shows  the  result  of  pollination,  \"this  helps  in  the growth  of  fruits  and  seeds.\"  Then,  sentence  R  highlights  the consequence,  \"without  bees,  many  crops  would  fail.\"  Finally, sentence S points out the current problem, \"but bee populations are declining globally.\" Going through the options, option (c) has the correct sequence.",
+        "meta": {
+          "schema_name": "docling_core.transforms.chunker.DocMeta",
+          "version": "1.0.0",
+          "doc_items": [
+            {
+              "self_ref": "#/texts/19",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 308.54999,
+                    "t": 683.5771486875,
+                    "r": 568.7326044199999,
+                    "b": 576.1160028199854,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    566
+                  ]
+                }
+              ]
+            }
+          ],
+          "headings": [
+            "Sol.270.(c) PQRS"
+          ],
+          "captions": null,
+          "origin": {
+            "mimetype": "application/pdf",
+            "binary_hash": 17559766183385856275,
+            "filename": "english_page_0250.pdf",
+            "uri": null
+          }
+        },
+        "chunk_index": 9,
+        "contextualized_text": "Sol.270.(c) PQRS\nSentence 1 introduces the  topic,  \"Honeybees  are  vital  for pollination.\"  First,  sentence  P  follows  because  it  explains  the process, \"they transfer pollen between flowers.\" Next, sentence Q comes  as  it  shows  the  result  of  pollination,  \"this  helps  in  the growth  of  fruits  and  seeds.\"  Then,  sentence  R  highlights  the consequence,  \"without  bees,  many  crops  would  fail.\"  Finally, sentence S points out the current problem, \"but bee populations are declining globally.\" Going through the options, option (c) has the correct sequence."
+      },
+      {
+        "text": "Sentence  Q  will  follow  S1  as  it  introduces  the  evolution  of art from cave paintings to modern murals. Sentence R comes next because  it explains  how  artists  express  views  on  culture, politics,  and  identity.  Further, Sentence P follows R as it shows that art communicates emotions beyond words, and Sentence S concludes  by  stating  that  it  also  raises  awareness  on  social issues.  Going  through  the  options,  option  'b'  has  the  correct sequence.",
+        "meta": {
+          "schema_name": "docling_core.transforms.chunker.DocMeta",
+          "version": "1.0.0",
+          "doc_items": [
+            {
+              "self_ref": "#/texts/21",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 308.54999,
+                    "t": 552.4560496875,
+                    "r": 568.4718669199999,
+                    "b": 457.4167828199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    478
+                  ]
+                }
+              ]
+            }
+          ],
+          "headings": [
+            "Sol.271.(b) QRPS"
+          ],
+          "captions": null,
+          "origin": {
+            "mimetype": "application/pdf",
+            "binary_hash": 17559766183385856275,
+            "filename": "english_page_0250.pdf",
+            "uri": null
+          }
+        },
+        "chunk_index": 10,
+        "contextualized_text": "Sol.271.(b) QRPS\nSentence  Q  will  follow  S1  as  it  introduces  the  evolution  of art from cave paintings to modern murals. Sentence R comes next because  it explains  how  artists  express  views  on  culture, politics,  and  identity.  Further, Sentence P follows R as it shows that art communicates emotions beyond words, and Sentence S concludes  by  stating  that  it  also  raises  awareness  on  social issues.  Going  through  the  options,  option  'b'  has  the  correct sequence."
+      },
+      {
+        "text": "The given sentence starts with part C as it introduces the main subject  of the sentence, i.e. 'the construction company.' Part D provides  the  verb  phrase  'promised  to,'  so  it  follows C. Part B contains the action 'complete,' which connects with the promise.  Finally,  part  A gives the time frame 'by the end of the year,'  which  naturally  comes  at  the  end.  Going  through  the options, option (b) has the correct sequence.",
+        "meta": {
+          "schema_name": "docling_core.transforms.chunker.DocMeta",
+          "version": "1.0.0",
+          "doc_items": [
+            {
+              "self_ref": "#/texts/23",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 308.54999,
+                    "t": 432.3740196875,
+                    "r": 568.73553692,
+                    "b": 349.7605328199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    439
+                  ]
+                }
+              ]
+            }
+          ],
+          "headings": [
+            "Sol.272.(b) CDBA"
+          ],
+          "captions": null,
+          "origin": {
+            "mimetype": "application/pdf",
+            "binary_hash": 17559766183385856275,
+            "filename": "english_page_0250.pdf",
+            "uri": null
+          }
+        },
+        "chunk_index": 11,
+        "contextualized_text": "Sol.272.(b) CDBA\nThe given sentence starts with part C as it introduces the main subject  of the sentence, i.e. 'the construction company.' Part D provides  the  verb  phrase  'promised  to,'  so  it  follows C. Part B contains the action 'complete,' which connects with the promise.  Finally,  part  A gives the time frame 'by the end of the year,'  which  naturally  comes  at  the  end.  Going  through  the options, option (b) has the correct sequence."
+      },
+      {
+        "text": "The given sentence starts with part R as it introduces the main subject of the process, i.e., 'the government announces census dates  and  guidelines.'  Part  P  follows,  describing  the  action 'enumerators  visit  households  to  collect  data.'  Next,  part  Q explains what happens  after data collection, i.e., 'data  is compiled  and  analyzed  at  central  offices.'  Finally,  part  S  gives the  conclusion,  'a  final  census  report  is  published  and  shared with  the  public.'  Going  through  the  options,  option  (c)  has the correct sequence.",
+        "meta": {
+          "schema_name": "docling_core.transforms.chunker.DocMeta",
+          "version": "1.0.0",
+          "doc_items": [
+            {
+              "self_ref": "#/texts/25",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 308.54999,
+                    "t": 324.7177696875,
+                    "r": 568.58612192,
+                    "b": 217.26053281998531,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    563
+                  ]
+                }
+              ]
+            }
+          ],
+          "headings": [
+            "Sol.273.(c) R → P → Q → S"
+          ],
+          "captions": null,
+          "origin": {
+            "mimetype": "application/pdf",
+            "binary_hash": 17559766183385856275,
+            "filename": "english_page_0250.pdf",
+            "uri": null
+          }
+        },
+        "chunk_index": 12,
+        "contextualized_text": "Sol.273.(c) R → P → Q → S\nThe given sentence starts with part R as it introduces the main subject of the process, i.e., 'the government announces census dates  and  guidelines.'  Part  P  follows,  describing  the  action 'enumerators  visit  households  to  collect  data.'  Next,  part  Q explains what happens  after data collection, i.e., 'data  is compiled  and  analyzed  at  central  offices.'  Finally,  part  S  gives the  conclusion,  'a  final  census  report  is  published  and  shared with  the  public.'  Going  through  the  options,  option  (c)  has the correct sequence."
+      },
+      {
+        "text": "Sentence 2 will be the starting line as it introduces the main idea of  the  parajumble,  i.e.  'Coral  reefs  are  home  to  many  marine species.' And, sentence 1 talks about the animals that form coral reefs. So, sentence 1 will follow sentence 2. Further, sentence 4 states that corals are losing their wonderful colours due to coral bleaching & sentence 3 talks about the cause of coral bleaching. So, sentence 3 will follow sentence 4. Going through the options, option (b) has the correct sequence.",
+        "meta": {
+          "schema_name": "docling_core.transforms.chunker.DocMeta",
+          "version": "1.0.0",
+          "doc_items": [
+            {
+              "self_ref": "#/texts/27",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 308.54999,
+                    "t": 193.5966796875,
+                    "r": 568.72088942,
+                    "b": 98.56131281998535,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    505
+                  ]
+                }
+              ]
+            }
+          ],
+          "headings": [
+            "Sol.274.(b) 2-1-4-3"
+          ],
+          "captions": null,
+          "origin": {
+            "mimetype": "application/pdf",
+            "binary_hash": 17559766183385856275,
+            "filename": "english_page_0250.pdf",
+            "uri": null
+          }
+        },
+        "chunk_index": 13,
+        "contextualized_text": "Sol.274.(b) 2-1-4-3\nSentence 2 will be the starting line as it introduces the main idea of  the  parajumble,  i.e.  'Coral  reefs  are  home  to  many  marine species.' And, sentence 1 talks about the animals that form coral reefs. So, sentence 1 will follow sentence 2. Further, sentence 4 states that corals are losing their wonderful colours due to coral bleaching & sentence 3 talks about the cause of coral bleaching. So, sentence 3 will follow sentence 4. Going through the options, option (b) has the correct sequence."
+      },
+      {
+        "text": "The given sentence starts with the subject 'Advances in satellite imaging'.  Now  we  need  the  main  verb  for  this  subject.  Part  S begins with the verb 'have  transformed',  so  it  will  come immediately after the subject. And, Part Q states that it enables",
+        "meta": {
+          "schema_name": "docling_core.transforms.chunker.DocMeta",
+          "version": "1.0.0",
+          "doc_items": [
+            {
+              "self_ref": "#/texts/29",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 308.54999,
+                    "t": 73.51854968750001,
+                    "r": 568.76776442,
+                    "b": 28.170692819985334,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    265
+                  ]
+                }
+              ]
+            }
+          ],
+          "headings": [
+            "Sol.275.(a) SQRP"
+          ],
+          "captions": null,
+          "origin": {
+            "mimetype": "application/pdf",
+            "binary_hash": 17559766183385856275,
+            "filename": "english_page_0250.pdf",
+            "uri": null
+          }
+        },
+        "chunk_index": 14,
+        "contextualized_text": "Sol.275.(a) SQRP\nThe given sentence starts with the subject 'Advances in satellite imaging'.  Now  we  need  the  main  verb  for  this  subject.  Part  S begins with the verb 'have  transformed',  so  it  will  come immediately after the subject. And, Part Q states that it enables"
+      }
+    ]
+  },
+  "content_assets": {
+    "tables": [],
+    "figures": [
+      {
+        "element_ref": "#/pictures/0",
+        "label": "picture",
+        "provenance": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 12.612339973449707,
+              "t": 24.42413330078125,
+              "r": 47.853187561035156,
+              "b": 8.353271484375,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              0
+            ]
+          }
+        ],
+        "captions": []
+      },
+      {
+        "element_ref": "#/pictures/1",
+        "label": "picture",
+        "provenance": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 50.97460174560547,
+              "t": 21.3104248046875,
+              "r": 103.11927795410156,
+              "b": 9.65472412109375,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              0
+            ]
+          }
+        ],
+        "captions": []
+      }
+    ]
+  },
+  "docling_document": {
+    "schema_name": "DoclingDocument",
+    "version": "1.10.0",
+    "name": "english_page_0250",
+    "origin": {
+      "mimetype": "application/pdf",
+      "binary_hash": 17559766183385856275,
+      "filename": "english_page_0250.pdf"
+    },
+    "furniture": {
+      "self_ref": "#/furniture",
+      "children": [],
+      "content_layer": "furniture",
+      "name": "_root_",
+      "label": "unspecified"
+    },
+    "body": {
+      "self_ref": "#/body",
+      "children": [
+        {
+          "$ref": "#/texts/0"
+        },
+        {
+          "$ref": "#/texts/1"
+        },
+        {
+          "$ref": "#/texts/2"
+        },
+        {
+          "$ref": "#/texts/3"
+        },
+        {
+          "$ref": "#/texts/4"
+        },
+        {
+          "$ref": "#/texts/5"
+        },
+        {
+          "$ref": "#/texts/6"
+        },
+        {
+          "$ref": "#/texts/7"
+        },
+        {
+          "$ref": "#/texts/8"
+        },
+        {
+          "$ref": "#/texts/9"
+        },
+        {
+          "$ref": "#/texts/10"
+        },
+        {
+          "$ref": "#/texts/11"
+        },
+        {
+          "$ref": "#/texts/12"
+        },
+        {
+          "$ref": "#/texts/13"
+        },
+        {
+          "$ref": "#/texts/14"
+        },
+        {
+          "$ref": "#/texts/15"
+        },
+        {
+          "$ref": "#/pictures/0"
+        },
+        {
+          "$ref": "#/pictures/1"
+        },
+        {
+          "$ref": "#/texts/16"
+        },
+        {
+          "$ref": "#/texts/17"
+        },
+        {
+          "$ref": "#/texts/18"
+        },
+        {
+          "$ref": "#/texts/19"
+        },
+        {
+          "$ref": "#/texts/20"
+        },
+        {
+          "$ref": "#/texts/21"
+        },
+        {
+          "$ref": "#/texts/22"
+        },
+        {
+          "$ref": "#/texts/23"
+        },
+        {
+          "$ref": "#/texts/24"
+        },
+        {
+          "$ref": "#/texts/25"
+        },
+        {
+          "$ref": "#/texts/26"
+        },
+        {
+          "$ref": "#/texts/27"
+        },
+        {
+          "$ref": "#/texts/28"
+        },
+        {
+          "$ref": "#/texts/29"
+        },
+        {
+          "$ref": "#/texts/30"
+        },
+        {
+          "$ref": "#/texts/31"
+        }
+      ],
+      "content_layer": "body",
+      "name": "_root_",
+      "label": "unspecified"
+    },
+    "groups": [],
+    "texts": [
+      {
+        "self_ref": "#/texts/0",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "furniture",
+        "label": "page_header",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 830.7925780594726,
+              "r": 95.7084616875,
+              "b": 822.5642819957749,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              8
+            ]
+          }
+        ],
+        "orig": "Pinnacle",
+        "text": "Pinnacle"
+      },
+      {
+        "self_ref": "#/texts/1",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 814.6982416875001,
+              "r": 288.63398742,
+              "b": 756.9245988199854,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              309
+            ]
+          }
+        ],
+        "orig": "will  follow  P .  Further,  sentence  Q  provides  a  specific  example that  recycling  paper  saves  trees  and water. So, Q will follow R. However,  sentence  S  states  that  awareness  among  people  is still  low.  So,  S  will follow Q . Going through the options, option (d) has the correct sequence.",
+        "text": "will  follow  P .  Further,  sentence  Q  provides  a  specific  example that  recycling  paper  saves  trees  and water. So, Q will follow R. However,  sentence  S  states  that  awareness  among  people  is still  low.  So,  S  will follow Q . Going through the options, option (d) has the correct sequence."
+      },
+      {
+        "self_ref": "#/texts/2",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "section_header",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 744.3076166875001,
+              "r": 101.34492492000001,
+              "b": 736.2253798199854,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              16
+            ]
+          }
+        ],
+        "orig": "Sol.262.(a) ABCD",
+        "text": "Sol.262.(a) ABCD",
+        "level": 1
+      },
+      {
+        "self_ref": "#/texts/3",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 731.8857416875001,
+              "r": 288.88300992,
+              "b": 674.1120988199854,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              329
+            ]
+          }
+        ],
+        "orig": "The  given  sentence  starts  with  part A as it tells us the time of the event. And, part B contains the subject of the sentence. So, B will follow A. Further, part C contains the main verb 'went' & part D  tells  us the place where they went. So, D will follow C. Going through the options, option (a) has the correct sequence.",
+        "text": "The  given  sentence  starts  with  part A as it tells us the time of the event. And, part B contains the subject of the sentence. So, B will follow A. Further, part C contains the main verb 'went' & part D  tells  us the place where they went. So, D will follow C. Going through the options, option (a) has the correct sequence."
+      },
+      {
+        "self_ref": "#/texts/4",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "section_header",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 661.4951196874999,
+              "r": 101.17353792,
+              "b": 653.4128828199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              16
+            ]
+          }
+        ],
+        "orig": "Sol.263.(c) BACD",
+        "text": "Sol.263.(c) BACD",
+        "level": 1
+      },
+      {
+        "self_ref": "#/texts/5",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 649.0732396875001,
+              "r": 289.02217242,
+              "b": 591.2996028199854,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              296
+            ]
+          }
+        ],
+        "orig": "'Subject  +  verb  +  object + adverb of place + adverb of time' is the  correct  grammatical  structure.  'Many  passengers'  is  the subject.  'Were  injured'  is  the  verb. 'in the accident' denotes the place or occasion. 'Yesterday' is an adverb of time. Hence, BACD is the correct sequence.",
+        "text": "'Subject  +  verb  +  object + adverb of place + adverb of time' is the  correct  grammatical  structure.  'Many  passengers'  is  the subject.  'Were  injured'  is  the  verb. 'in the accident' denotes the place or occasion. 'Yesterday' is an adverb of time. Hence, BACD is the correct sequence."
+      },
+      {
+        "self_ref": "#/texts/6",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "section_header",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 580.0576196874999,
+              "r": 101.50312842000001,
+              "b": 571.9753828199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              16
+            ]
+          }
+        ],
+        "orig": "Sol.264.(b) BCDA",
+        "text": "Sol.264.(b) BCDA",
+        "level": 1
+      },
+      {
+        "self_ref": "#/texts/7",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 567.6357396875001,
+              "r": 288.96504492,
+              "b": 497.4441328199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              386
+            ]
+          }
+        ],
+        "orig": "The  given  sentence  starts  with  part  B  as  it  introduces  the subject,  i.e.  'wildlife  sanctuaries.'  Part  C  follows  with  the  verb 'have  been  established.'  Part  D  states  the  place  'across  the country,' and finally, part A states the purpose of the sanctuaries, i.e.  'to protect endangered species.' Going through the options, option (b) has the correct sequence.",
+        "text": "The  given  sentence  starts  with  part  B  as  it  introduces  the subject,  i.e.  'wildlife  sanctuaries.'  Part  C  follows  with  the  verb 'have  been  established.'  Part  D  states  the  place  'across  the country,' and finally, part A states the purpose of the sanctuaries, i.e.  'to protect endangered species.' Going through the options, option (b) has the correct sequence."
+      },
+      {
+        "self_ref": "#/texts/8",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "section_header",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 486.2060496875,
+              "r": 101.54707317,
+              "b": 478.12381281998535,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              16
+            ]
+          }
+        ],
+        "orig": "Sol.265.(b) ACBD",
+        "text": "Sol.265.(b) ACBD",
+        "level": 1
+      },
+      {
+        "self_ref": "#/texts/9",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 473.7841796875,
+              "r": 289.02070992,
+              "b": 416.01444281998533,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              333
+            ]
+          }
+        ],
+        "orig": "The  given  sentence  starts  with  part  A  as  it  introduces  the subject,  'the  winner.'  Part  C  follows  with  'was,'  forming  the passive structure. Part B gives the past participle 'declared,' and finally,  part  D  adds  the  time  expression  'yesterday.'  Going through the options, option (b) has the correct sequence.",
+        "text": "The  given  sentence  starts  with  part  A  as  it  introduces  the subject,  'the  winner.'  Part  C  follows  with  'was,'  forming  the passive structure. Part B gives the past participle 'declared,' and finally,  part  D  adds  the  time  expression  'yesterday.'  Going through the options, option (b) has the correct sequence."
+      },
+      {
+        "self_ref": "#/texts/10",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "section_header",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 403.3896496875,
+              "r": 100.86592092000001,
+              "b": 395.30741281998536,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              16
+            ]
+          }
+        ],
+        "orig": "Sol.266.(a) QPSR",
+        "text": "Sol.266.(a) QPSR",
+        "level": 1
+      },
+      {
+        "self_ref": "#/texts/11",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 390.9677696875,
+              "r": 288.93281742,
+              "b": 258.6628828199854,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              663
+            ]
+          }
+        ],
+        "orig": "Sentence 1 introduces the topic with 'Economic inflation affects both  consumers  and  businesses.'  First,  Sentence  Q  follows because  it  explains  the  consumer  impact  with  'Rising  prices reduce  the  purchasing  power  of  individuals.'  Next,  Sentence P comes as it highlights the business consequence with 'Businesses struggle to maintain profit margins.' Then, Sentence S adds the wider effect with 'It creates uncertainty in long-term investment planning.' Finally, Sentence R logically concludes the sequence  with  the  government's  response  with  'Governments may intervene through monetary policy.' Thus, option (a) has the correct sequence.",
+        "text": "Sentence 1 introduces the topic with 'Economic inflation affects both  consumers  and  businesses.'  First,  Sentence  Q  follows because  it  explains  the  consumer  impact  with  'Rising  prices reduce  the  purchasing  power  of  individuals.'  Next,  Sentence P comes as it highlights the business consequence with 'Businesses struggle to maintain profit margins.' Then, Sentence S adds the wider effect with 'It creates uncertainty in long-term investment planning.' Finally, Sentence R logically concludes the sequence  with  the  government's  response  with  'Governments may intervene through monetary policy.' Thus, option (a) has the correct sequence."
+      },
+      {
+        "self_ref": "#/texts/12",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "section_header",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 244.66698968749995,
+              "r": 106.04267892000001,
+              "b": 236.58475281998528,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              19
+            ]
+          }
+        ],
+        "orig": "Sol.267.(b) 1-4-3-2",
+        "text": "Sol.267.(b) 1-4-3-2",
+        "level": 1
+      },
+      {
+        "self_ref": "#/texts/13",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 232.24120968750003,
+              "r": 289.00752492,
+              "b": 124.78397281998537,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              537
+            ]
+          }
+        ],
+        "orig": "Sentence 1 is the starting line as it introduces the main idea of the  parajumble,  i.e.  'Cybersecurity  is  a  growing  concern  in the digital age.' And, sentence 4 explains what cybersecurity means, so sentence 4 will follow sentence 1. Further, sentence 3 states that hackers use advanced  techniques to  steal  data,  and sentence 2 states that strong passwords,  encryption,  and awareness  can  help  prevent  cybercrimes.  So,  sentence  2  will follow sentence 3. Going through the options, option (b) has the correct sequence.",
+        "text": "Sentence 1 is the starting line as it introduces the main idea of the  parajumble,  i.e.  'Cybersecurity  is  a  growing  concern  in the digital age.' And, sentence 4 explains what cybersecurity means, so sentence 4 will follow sentence 1. Further, sentence 3 states that hackers use advanced  techniques to  steal  data,  and sentence 2 states that strong passwords,  encryption,  and awareness  can  help  prevent  cybercrimes.  So,  sentence  2  will follow sentence 3. Going through the options, option (b) has the correct sequence."
+      },
+      {
+        "self_ref": "#/texts/14",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "section_header",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 110.7841796875,
+              "r": 100.86592092000001,
+              "b": 102.70194281998533,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              16
+            ]
+          }
+        ],
+        "orig": "Sol.268.(a) SQPR",
+        "text": "Sol.268.(a) SQPR",
+        "level": 1
+      },
+      {
+        "self_ref": "#/texts/15",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 98.36229968750001,
+              "r": 289.02802992,
+              "b": 28.170692819985334,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              398
+            ]
+          },
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 291.757038,
+              "t": 830.7925780594726,
+              "r": 569.6914179375,
+              "b": 822.5642819957749,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              399,
+              409
+            ]
+          },
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 308.54999,
+              "t": 814.6982416875001,
+              "r": 568.19207942,
+              "b": 794.1941298199854,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              410,
+              493
+            ]
+          }
+        ],
+        "orig": "Sentence  S  will  follow  S1  as  it  introduces  that  technology's benefits  are  unequally  distributed.  Sentence  Q  comes  next because it explains that those in rural or underserved areas lag behind.  Further,  Sentence  P  follows  Q  as  it  mentions  that unequal access limits educational opportunities, and Sentence R concludes  by  stating  that  it  prevents  skill  development  and Parajumble employment access. Going through  the options, option (a) has the correct sequence.",
+        "text": "Sentence  S  will  follow  S1  as  it  introduces  that  technology's benefits  are  unequally  distributed.  Sentence  Q  comes  next because it explains that those in rural or underserved areas lag behind.  Further,  Sentence  P  follows  Q  as  it  mentions  that unequal access limits educational opportunities, and Sentence R concludes  by  stating  that  it  prevents  skill  development  and Parajumble employment access. Going through  the options, option (a) has the correct sequence."
+      },
+      {
+        "self_ref": "#/texts/16",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "section_header",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 308.54999,
+              "t": 780.1904296875,
+              "r": 380.96747042,
+              "b": 772.1081928199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              16
+            ]
+          }
+        ],
+        "orig": "Sol.269.(c) BCAD",
+        "text": "Sol.269.(c) BCAD",
+        "level": 1
+      },
+      {
+        "self_ref": "#/texts/17",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 308.54999,
+              "t": 767.7685546875,
+              "r": 568.47918692,
+              "b": 709.9988178199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              288
+            ]
+          }
+        ],
+        "orig": "The  given  sentence  starts  with  part  B  as  it  introduces  the subject, i.e. 'the students.' Part C follows with the verb 'accepted.' Part A gives the object 'his advice,' and finally, part D adds the manner 'happily.' Going through the options, option (c) has the correct sequence.",
+        "text": "The  given  sentence  starts  with  part  B  as  it  introduces  the subject, i.e. 'the students.' Part C follows with the verb 'accepted.' Part A gives the object 'his advice,' and finally, part D adds the manner 'happily.' Going through the options, option (c) has the correct sequence."
+      },
+      {
+        "self_ref": "#/texts/18",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "section_header",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 308.54999,
+              "t": 695.9990236875,
+              "r": 380.48846642,
+              "b": 687.9167868199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              16
+            ]
+          }
+        ],
+        "orig": "Sol.270.(c) PQRS",
+        "text": "Sol.270.(c) PQRS",
+        "level": 1
+      },
+      {
+        "self_ref": "#/texts/19",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 308.54999,
+              "t": 683.5771486875,
+              "r": 568.7326044199999,
+              "b": 576.1160028199854,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              566
+            ]
+          }
+        ],
+        "orig": "Sentence 1 introduces the  topic,  \"Honeybees  are  vital  for pollination.\"  First,  sentence  P  follows  because  it  explains  the process, \"they transfer pollen between flowers.\" Next, sentence Q comes  as  it  shows  the  result  of  pollination,  \"this  helps  in  the growth  of  fruits  and  seeds.\"  Then,  sentence  R  highlights  the consequence,  \"without  bees,  many  crops  would  fail.\"  Finally, sentence S points out the current problem, \"but bee populations are declining globally.\" Going through the options, option (c) has the correct sequence.",
+        "text": "Sentence 1 introduces the  topic,  \"Honeybees  are  vital  for pollination.\"  First,  sentence  P  follows  because  it  explains  the process, \"they transfer pollen between flowers.\" Next, sentence Q comes  as  it  shows  the  result  of  pollination,  \"this  helps  in  the growth  of  fruits  and  seeds.\"  Then,  sentence  R  highlights  the consequence,  \"without  bees,  many  crops  would  fail.\"  Finally, sentence S points out the current problem, \"but bee populations are declining globally.\" Going through the options, option (c) has the correct sequence."
+      },
+      {
+        "self_ref": "#/texts/20",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "section_header",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 308.54999,
+              "t": 564.8779296875,
+              "r": 380.86200167,
+              "b": 556.7956928199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              16
+            ]
+          }
+        ],
+        "orig": "Sol.271.(b) QRPS",
+        "text": "Sol.271.(b) QRPS",
+        "level": 1
+      },
+      {
+        "self_ref": "#/texts/21",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 308.54999,
+              "t": 552.4560496875,
+              "r": 568.4718669199999,
+              "b": 457.4167828199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              478
+            ]
+          }
+        ],
+        "orig": "Sentence  Q  will  follow  S1  as  it  introduces  the  evolution  of art from cave paintings to modern murals. Sentence R comes next because  it explains  how  artists  express  views  on  culture, politics,  and  identity.  Further, Sentence P follows R as it shows that art communicates emotions beyond words, and Sentence S concludes  by  stating  that  it  also  raises  awareness  on  social issues.  Going  through  the  options,  option  'b'  has  the  correct sequence.",
+        "text": "Sentence  Q  will  follow  S1  as  it  introduces  the  evolution  of art from cave paintings to modern murals. Sentence R comes next because  it explains  how  artists  express  views  on  culture, politics,  and  identity.  Further, Sentence P follows R as it shows that art communicates emotions beyond words, and Sentence S concludes  by  stating  that  it  also  raises  awareness  on  social issues.  Going  through  the  options,  option  'b'  has  the  correct sequence."
+      },
+      {
+        "self_ref": "#/texts/22",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "section_header",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 308.54999,
+              "t": 444.7958996875,
+              "r": 381.34539992,
+              "b": 436.71366281998536,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              16
+            ]
+          }
+        ],
+        "orig": "Sol.272.(b) CDBA",
+        "text": "Sol.272.(b) CDBA",
+        "level": 1
+      },
+      {
+        "self_ref": "#/texts/23",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 308.54999,
+              "t": 432.3740196875,
+              "r": 568.73553692,
+              "b": 349.7605328199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              439
+            ]
+          }
+        ],
+        "orig": "The given sentence starts with part C as it introduces the main subject  of the sentence, i.e. 'the construction company.' Part D provides  the  verb  phrase  'promised  to,'  so  it  follows C. Part B contains the action 'complete,' which connects with the promise.  Finally,  part  A gives the time frame 'by the end of the year,'  which  naturally  comes  at  the  end.  Going  through  the options, option (b) has the correct sequence.",
+        "text": "The given sentence starts with part C as it introduces the main subject  of the sentence, i.e. 'the construction company.' Part D provides  the  verb  phrase  'promised  to,'  so  it  follows C. Part B contains the action 'complete,' which connects with the promise.  Finally,  part  A gives the time frame 'by the end of the year,'  which  naturally  comes  at  the  end.  Going  through  the options, option (b) has the correct sequence."
+      },
+      {
+        "self_ref": "#/texts/24",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "section_header",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 308.54999,
+              "t": 337.18359497750004,
+              "r": 420.88299767,
+              "b": 329.0574128199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              25
+            ]
+          }
+        ],
+        "orig": "Sol.273.(c) R → P → Q → S",
+        "text": "Sol.273.(c) R → P → Q → S",
+        "level": 1
+      },
+      {
+        "self_ref": "#/texts/25",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 308.54999,
+              "t": 324.7177696875,
+              "r": 568.58612192,
+              "b": 217.26053281998531,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              563
+            ]
+          }
+        ],
+        "orig": "The given sentence starts with part R as it introduces the main subject of the process, i.e., 'the government announces census dates  and  guidelines.'  Part  P  follows,  describing  the  action 'enumerators  visit  households  to  collect  data.'  Next,  part  Q explains what happens  after data collection, i.e., 'data  is compiled  and  analyzed  at  central  offices.'  Finally,  part  S  gives the  conclusion,  'a  final  census  report  is  published  and  shared with  the  public.'  Going  through  the  options,  option  (c)  has the correct sequence.",
+        "text": "The given sentence starts with part R as it introduces the main subject of the process, i.e., 'the government announces census dates  and  guidelines.'  Part  P  follows,  describing  the  action 'enumerators  visit  households  to  collect  data.'  Next,  part  Q explains what happens  after data collection, i.e., 'data  is compiled  and  analyzed  at  central  offices.'  Finally,  part  S  gives the  conclusion,  'a  final  census  report  is  published  and  shared with  the  public.'  Going  through  the  options,  option  (c)  has the correct sequence."
+      },
+      {
+        "self_ref": "#/texts/26",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "section_header",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 308.54999,
+              "t": 206.0185496875,
+              "r": 385.79706017,
+              "b": 197.93631281998535,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              19
+            ]
+          }
+        ],
+        "orig": "Sol.274.(b) 2-1-4-3",
+        "text": "Sol.274.(b) 2-1-4-3",
+        "level": 1
+      },
+      {
+        "self_ref": "#/texts/27",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 308.54999,
+              "t": 193.5966796875,
+              "r": 568.72088942,
+              "b": 98.56131281998535,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              505
+            ]
+          }
+        ],
+        "orig": "Sentence 2 will be the starting line as it introduces the main idea of  the  parajumble,  i.e.  'Coral  reefs  are  home  to  many  marine species.' And, sentence 1 talks about the animals that form coral reefs. So, sentence 1 will follow sentence 2. Further, sentence 4 states that corals are losing their wonderful colours due to coral bleaching & sentence 3 talks about the cause of coral bleaching. So, sentence 3 will follow sentence 4. Going through the options, option (b) has the correct sequence.",
+        "text": "Sentence 2 will be the starting line as it introduces the main idea of  the  parajumble,  i.e.  'Coral  reefs  are  home  to  many  marine species.' And, sentence 1 talks about the animals that form coral reefs. So, sentence 1 will follow sentence 2. Further, sentence 4 states that corals are losing their wonderful colours due to coral bleaching & sentence 3 talks about the cause of coral bleaching. So, sentence 3 will follow sentence 4. Going through the options, option (b) has the correct sequence."
+      },
+      {
+        "self_ref": "#/texts/28",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "section_header",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 308.54999,
+              "t": 85.9404296875,
+              "r": 382.84833017,
+              "b": 77.85819281998533,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              16
+            ]
+          }
+        ],
+        "orig": "Sol.275.(a) SQRP",
+        "text": "Sol.275.(a) SQRP",
+        "level": 1
+      },
+      {
+        "self_ref": "#/texts/29",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 308.54999,
+              "t": 73.51854968750001,
+              "r": 568.76776442,
+              "b": 28.170692819985334,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              265
+            ]
+          }
+        ],
+        "orig": "The given sentence starts with the subject 'Advances in satellite imaging'.  Now  we  need  the  main  verb  for  this  subject.  Part  S begins with the verb 'have  transformed',  so  it  will  come immediately after the subject. And, Part Q states that it enables",
+        "text": "The given sentence starts with the subject 'Advances in satellite imaging'.  Now  we  need  the  main  verb  for  this  subject.  Part  S begins with the verb 'have  transformed',  so  it  will  come immediately after the subject. And, Part Q states that it enables"
+      },
+      {
+        "self_ref": "#/texts/30",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "furniture",
+        "label": "page_footer",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 99.3266505,
+              "t": 21.989447959472614,
+              "r": 495.95088382500006,
+              "b": 13.761151895774901,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              109
+            ]
+          }
+        ],
+        "orig": "www.ssccglpinnacle.com                                                 Download Pinnacle Exam Preparation App",
+        "text": "www.ssccglpinnacle.com                                                 Download Pinnacle Exam Preparation App"
+      },
+      {
+        "self_ref": "#/texts/31",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "furniture",
+        "label": "page_footer",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 32.0,
+              "t": 20.17999999999995,
+              "r": 101.77000000000001,
+              "b": 10.92999999999995,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              13
+            ]
+          }
+        ],
+        "orig": "TG: @ikunal_x",
+        "text": "TG: @ikunal_x"
+      }
+    ],
+    "pictures": [
+      {
+        "self_ref": "#/pictures/0",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "picture",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 12.612339973449707,
+              "t": 24.42413330078125,
+              "r": 47.853187561035156,
+              "b": 8.353271484375,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              0
+            ]
+          }
+        ],
+        "captions": [],
+        "references": [],
+        "footnotes": [],
+        "annotations": []
+      },
+      {
+        "self_ref": "#/pictures/1",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "picture",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 50.97460174560547,
+              "t": 21.3104248046875,
+              "r": 103.11927795410156,
+              "b": 9.65472412109375,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              0
+            ]
+          }
+        ],
+        "captions": [],
+        "references": [],
+        "footnotes": [],
+        "annotations": []
+      }
+    ],
+    "tables": [],
+    "key_value_items": [],
+    "form_items": [],
+    "pages": {
+      "1": {
+        "size": {
+          "width": 596.0,
+          "height": 842.0
+        },
+        "page_no": 1
+      }
+    }
+  }
+}

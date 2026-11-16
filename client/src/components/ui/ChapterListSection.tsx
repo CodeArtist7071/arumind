@@ -3,10 +3,7 @@ import {
   ChevronRight,
   BookOpen,
   GraduationCap,
-  Plus,
-  X,
-  ArrowDown,
-  ArrowUp,
+  Hash,
 } from "lucide-react";
 import type { examProps } from "../../slice/examSlice";
 import type { AppDispatch, RootState } from "../../store";
@@ -33,7 +30,6 @@ interface ChapterListSectionProps {
 export const ChapterListSection = ({
   targetedExams,
 }: ChapterListSectionProps) => {
-  // If multiple exams, show tabs; if single, hide tabs and use that exam
   const {
     data: subjectData,
     e_data: chaptersData,
@@ -42,116 +38,118 @@ export const ChapterListSection = ({
     (state: RootState) =>
       state.examSubject ?? { data: [], e_data: [], loading: false },
   );
-  const [toggle, setToggle] = useState(false);
   const dispatch = useDispatch<AppDispatch>();
-  console.log("subjectData", subjectData);
   const hasMultipleExams = targetedExams.length > 1;
   const listofExams = targetedExams.map((exam) => exam.id);
-  console.log("targetedExams", chaptersData);
-  // Default to first exam (or only exam)
+
   const [activeSubjectId, setActiveSubjectId] = useState<string>(
     subjectData[0]?.subject_id || subjectData[0]?.subjects?.id || "",
   );
-  const filteredChaptersData = chaptersData.filter((chapter => chapter.subjects.id === activeSubjectId));
- console.log(activeSubjectId, "activeSubjectId");
+
+  const filteredChaptersData = chaptersData.filter(
+    (chapter) => chapter.subjects?.id === activeSubjectId,
+  );
+
   useEffect(() => {
     dispatch(fetchExamSubjects(listofExams));
-    // setActiveSubjectId(subjectData[0]?.subject_id || subjectData[0]?.subjects?.id || "");
   }, [activeSubjectId]);
 
-  // Get currently active exam data
-  const activeExam = targetedExams.find((e) => e.id === activeSubjectId);
+  // Auto-select first subject when data loads
+  useEffect(() => {
+    if (subjectData.length > 0 && !activeSubjectId) {
+      setActiveSubjectId(subjectData[0]?.subject_id || subjectData[0]?.subjects?.id || "");
+    }
+  }, [subjectData]);
 
   return (
-    <section className={`block md:hidden mb-10 bg-surface-container-high/40 shadow-ambient rounded-2xl p-4`}>
+    <section className="block md:hidden mb-6 rounded-3xl overflow-hidden border border-on-surface/5 bg-surface-container-high/60 shadow-ambient">
       {/* Section Header */}
-      <div className="flex justify-between items-center">
-        <div className="space-y-1">
-          <h3 className="text-md font-technical font-black text-primary">
-            Practice Chapter Wise
-          </h3>
-          <p className="text-xs text-on-surface-variant opacity-60 font-medium">
-            {hasMultipleExams
-              ? "Select Chapters and give tests."
-              : "Master one subject at a time"}
-          </p>
+      <div className="px-5 pt-5 pb-4 border-b border-on-surface/5">
+        <div className="flex items-center justify-between">
+          <div className="space-y-0.5">
+            <p className="text-[10px] font-technical font-black uppercase tracking-[0.25em] text-on-surface-variant opacity-50">
+              Chapter Wise Practice
+            </p>
+            <h3 className="text-base font-black text-on-surface tracking-tight">
+              Pick a Chapter
+            </h3>
+          </div>
+          <div className="size-9 bg-primary/10 rounded-xl flex items-center justify-center">
+            <BookOpen className="size-4 text-primary" />
+          </div>
         </div>
-        <button
-          className={`p-2 w-fit transition-transform  bg-primary rounded-full`}
-          onClick={() => setToggle(!toggle)}
-        >
-          {toggle ? <X size={15} className="text-white text-sm"/> : <p className="text-xs text-white px-2">View Here</p>}
-             
-        </button>
       </div>
-      <div
-        className={`${toggle ? "block" : "hidden"} space-y-2 transform transition-all duration-500`}
-      >
-        {/* EXAM TABS — Only show if multiple exams */}
-        <div className="mb-4">
+
+      {/* Subject Tabs */}
+      {subjectData.length > 0 && (
+        <div className="px-4 pt-4 pb-3">
           <div
-            className="flex gap-2 mt-4 overflow-x-auto scrollbar-hide pb-2"
+            className="flex gap-2 overflow-x-auto pb-1"
             style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}
           >
             {subjectData.map((subject, index) => (
               <button
                 key={index}
-                onClick={() => setActiveSubjectId(subject.subjects.id)}
-                className={`shrink-0 px-4 py-2.5 rounded-full text-xs font-technical font-black uppercase tracking-widest transition-all duration-300 ${
-                  activeSubjectId === subject.subjects.id
-                    ? "bg-primary text-white shadow-md"
-                    : "bg-surface-container-high/40 text-on-surface-variant hover:bg-surface-container-high"
+                onClick={() => setActiveSubjectId(subject.subjects?.id)}
+                className={`shrink-0 flex items-center gap-1.5 px-3 py-2 rounded-full text-[10px] font-technical font-black uppercase tracking-widest transition-all duration-300 whitespace-nowrap ${
+                  activeSubjectId === subject.subjects?.id
+                    ? "bg-primary text-white shadow-md shadow-primary/20"
+                    : "bg-surface-container-highest text-on-surface-variant hover:bg-on-surface/10"
                 }`}
               >
-                <div className="flex items-center gap-2">
-                  <GraduationCap className="size-4" />
-                  <span>{subject.subjects.name}</span>
-                </div>
+                <GraduationCap className="size-3" />
+                {subject.subjects?.name || "Subject"}
               </button>
             ))}
           </div>
         </div>
-        {/* CHAPTER LIST */}
-        <div className="h-50 overflow-auto space-y-2 scrollbar-thin scrollbar-none! scrollbar-thumb-gray-400 scrollbar-track-transparent">
-          {filteredChaptersData.map((chapter, index) => (
-            <div
-              key={index}
-              className="bg-surface-container-high/40 rounded-2xl p-3 hover:bg-surface-container-high transition-all duration-300 cursor-pointer group"
-              onClick={() => setActiveSubjectId(chapter.id)}
-            >
-              <div className="flex items-start gap-3">
-                {/* Chapter Icon */}
-                {/* <div className="size-10 rounded-xl bg-surface-container-high flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-all duration-500 shadow-sm flex-shrink-0">
-                <BookOpen className="size-5" />
-              </div> */}
+      )}
 
-                {/* Subject Info */}
-                <div className="flex-1 min-w-0">
-                  <div className="flex items-center justify-between mb-1">
-                    <h4 className="font-black text-sm text-on-surface tracking-tight">
-                      {chapter.name}
-                    </h4>
-                    <ChevronRight className="size-4 text-on-surface-variant opacity-40 group-hover:text-primary group-hover:translate-x-1 transition-all duration-300" />
-                  </div>
+      {/* Chapter List */}
+      <div className="px-4 pb-4">
+        {subjectsLoading ? (
+          <div className="space-y-2">
+            {Array.from({ length: 4 }).map((_, i) => (
+              <div key={i} className="h-14 bg-surface-container-highest/40 rounded-2xl animate-pulse" />
+            ))}
+          </div>
+        ) : filteredChaptersData.length > 0 ? (
+          <div className="space-y-2 max-h-[280px] overflow-y-auto" style={{ scrollbarWidth: "none" }}>
+            {filteredChaptersData.map((chapter, index) => (
+              <div
+                key={index}
+                className="flex items-center gap-3 px-4 py-3.5 bg-surface-container-highest/40 rounded-2xl hover:bg-surface-container-highest cursor-pointer group transition-all duration-200 active:scale-[0.98]"
+              >
+                {/* Chapter Index */}
+                <div className="size-7 rounded-xl bg-primary/10 text-primary flex items-center justify-center flex-shrink-0">
+                  <span className="text-[10px] font-technical font-black">{index + 1}</span>
                 </div>
-              </div>          
-            
-            </div>
-          ))}
 
-          {/* Empty State */}
-          {(!subjectData || subjectData.length === 0) && (
-            <div className="py-12 text-center bg-surface-container-high/20 rounded-2xl border-2 border-dashed border-on-surface/5">
-              <BookOpen className="size-8 text-on-surface-variant opacity-30 mx-auto mb-3" />
-              <h4 className="text-sm font-black text-on-surface-variant mb-1">
-                No chapters available
-              </h4>
-              <p className="text-xs text-on-surface-variant opacity-60">
-                Subjects will appear once content is added
-              </p>
-            </div>
-          )}
-        </div>
+                {/* Chapter Name */}
+                <div className="flex-1 min-w-0">
+                  <h4 className="font-black text-sm text-on-surface tracking-tight truncate leading-tight">
+                    {chapter.name}
+                  </h4>
+                </div>
+
+                {/* Arrow */}
+                <ChevronRight className="size-4 text-on-surface-variant opacity-30 group-hover:text-primary group-hover:opacity-80 group-hover:translate-x-0.5 transition-all duration-200 flex-shrink-0" />
+              </div>
+            ))}
+          </div>
+        ) : subjectData.length > 0 ? (
+          <div className="py-8 text-center">
+            <Hash className="size-7 text-on-surface-variant opacity-25 mx-auto mb-2" />
+            <p className="text-sm font-black text-on-surface-variant opacity-50">No chapters yet</p>
+            <p className="text-xs text-on-surface-variant opacity-35 mt-0.5">Select a subject to see chapters</p>
+          </div>
+        ) : (
+          <div className="py-8 text-center">
+            <BookOpen className="size-7 text-on-surface-variant opacity-25 mx-auto mb-2" />
+            <p className="text-sm font-black text-on-surface-variant opacity-50">No subjects available</p>
+            <p className="text-xs text-on-surface-variant opacity-35 mt-0.5">Content will appear once added</p>
+          </div>
+        )}
       </div>
     </section>
   );

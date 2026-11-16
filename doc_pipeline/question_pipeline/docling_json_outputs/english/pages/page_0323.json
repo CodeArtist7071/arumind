@@ -1,0 +1,5523 @@
+{
+  "document_id": "english",
+  "source": "english.pdf",
+  "pdf_page": 323,
+  "page_width": 596.0,
+  "page_height": 842.0,
+  "extracted_at": "2026-09-09T10:36:37.965960+00:00",
+  "extraction_version": 4,
+  "ocr_enabled": true,
+  "extraction_detection": {
+    "requested_profile": "auto",
+    "effective_profile": "hybrid",
+    "embedded_text_characters": 4876,
+    "auto_text_threshold": 80
+  },
+  "docling_result": {
+    "status": "success",
+    "errors": []
+  },
+  "content_summary": {
+    "text_items": 59,
+    "text_characters": 6356,
+    "table_items": 0,
+    "picture_items": 0,
+    "group_items": 33,
+    "warnings": []
+  },
+  "reading_order": {
+    "source": "docling_iterate_items",
+    "items": [
+      {
+        "reading_order_index": 0,
+        "element_ref": "#/texts/1",
+        "label": "text",
+        "level": 1,
+        "text_preview": "Cloze Test"
+      },
+      {
+        "reading_order_index": 1,
+        "element_ref": "#/texts/2",
+        "label": "list_item",
+        "level": 3,
+        "text_preview": "(c) conflictingly                  (d) clumsily"
+      },
+      {
+        "reading_order_index": 2,
+        "element_ref": "#/texts/3",
+        "label": "list_item",
+        "level": 3,
+        "text_preview": "Q.256. (a) instigate    (b) distant    (c) remote     (d) bleak"
+      },
+      {
+        "reading_order_index": 3,
+        "element_ref": "#/texts/4",
+        "label": "list_item",
+        "level": 3,
+        "text_preview": "Q.257. (a) nevertheless"
+      },
+      {
+        "reading_order_index": 4,
+        "element_ref": "#/texts/5",
+        "label": "list_item",
+        "level": 3,
+        "text_preview": "(b) notwithstanding"
+      },
+      {
+        "reading_order_index": 5,
+        "element_ref": "#/texts/6",
+        "label": "list_item",
+        "level": 3,
+        "text_preview": "(c) regardless"
+      },
+      {
+        "reading_order_index": 6,
+        "element_ref": "#/texts/7",
+        "label": "list_item",
+        "level": 3,
+        "text_preview": "(d) inasmuch"
+      },
+      {
+        "reading_order_index": 7,
+        "element_ref": "#/texts/8",
+        "label": "section_header",
+        "level": 2,
+        "text_preview": "SET-52. Q .(258 - 262)"
+      },
+      {
+        "reading_order_index": 8,
+        "element_ref": "#/texts/9",
+        "label": "text",
+        "level": 2,
+        "text_preview": "Rory  Cooper  was  a  top  aide  to  former  House  Majority  Leader Eric  Cantor,  the  up-and-coming  Virginia  Republican  who  lost  a 2014  House  primary."
+      },
+      {
+        "reading_order_index": 9,
+        "element_ref": "#/texts/10",
+        "label": "list_item",
+        "level": 3,
+        "text_preview": "Q.258. (a) frisking  (b) skipping  (c) detailing  (d) ignoring"
+      },
+      {
+        "reading_order_index": 10,
+        "element_ref": "#/texts/11",
+        "label": "list_item",
+        "level": 3,
+        "text_preview": "Q.259. (a) committed  (b) pacified  (c) sorted    (d) isolated"
+      },
+      {
+        "reading_order_index": 11,
+        "element_ref": "#/texts/12",
+        "label": "list_item",
+        "level": 3,
+        "text_preview": "Q.260. (a) indebted  (b) provoked  (c) excited   (d) frustrated"
+      },
+      {
+        "reading_order_index": 12,
+        "element_ref": "#/texts/13",
+        "label": "list_item",
+        "level": 3,
+        "text_preview": "Q.261. (a) plainest     (b) slowest     (c) longest    (d) strangest"
+      },
+      {
+        "reading_order_index": 13,
+        "element_ref": "#/texts/14",
+        "label": "list_item",
+        "level": 3,
+        "text_preview": "Q.262. (a) average    (b) amount   (c) ideal   (d) understanding"
+      },
+      {
+        "reading_order_index": 14,
+        "element_ref": "#/texts/15",
+        "label": "section_header",
+        "level": 2,
+        "text_preview": "SET-53. Q .(263 - 267)"
+      },
+      {
+        "reading_order_index": 15,
+        "element_ref": "#/texts/16",
+        "label": "text",
+        "level": 2,
+        "text_preview": "The limbs of the flying squirrel are interlinked with a membrane. When  the  creature  (263)________  into  the  air,  the  membrane opens and the squirrel seem"
+      },
+      {
+        "reading_order_index": 16,
+        "element_ref": "#/texts/17",
+        "label": "text",
+        "level": 2,
+        "text_preview": "Q.263. (a) spring     (b) cross     (c) hurdle     (d) leaps"
+      },
+      {
+        "reading_order_index": 17,
+        "element_ref": "#/texts/18",
+        "label": "text",
+        "level": 2,
+        "text_preview": "Q.264."
+      },
+      {
+        "reading_order_index": 18,
+        "element_ref": "#/texts/19",
+        "label": "text",
+        "level": 2,
+        "text_preview": "(a) skate"
+      },
+      {
+        "reading_order_index": 19,
+        "element_ref": "#/texts/20",
+        "label": "list_item",
+        "level": 3,
+        "text_preview": "(b) skim       (c) wheel"
+      },
+      {
+        "reading_order_index": 20,
+        "element_ref": "#/texts/21",
+        "label": "list_item",
+        "level": 3,
+        "text_preview": "(d) glide"
+      },
+      {
+        "reading_order_index": 21,
+        "element_ref": "#/texts/22",
+        "label": "list_item",
+        "level": 3,
+        "text_preview": "Q.265. (a) affect  (b) suspicion  (c) fancy  (d) impression"
+      },
+      {
+        "reading_order_index": 22,
+        "element_ref": "#/texts/23",
+        "label": "list_item",
+        "level": 3,
+        "text_preview": "Q.266. (a) progress   (b) motion   (c) sign   (d) wave"
+      },
+      {
+        "reading_order_index": 23,
+        "element_ref": "#/texts/24",
+        "label": "text",
+        "level": 2,
+        "text_preview": "Q.267. (a) adopt    (b) replace    (c) adept     (d) swap"
+      },
+      {
+        "reading_order_index": 24,
+        "element_ref": "#/texts/25",
+        "label": "section_header",
+        "level": 2,
+        "text_preview": "SET-54. Q .(268 - 272)"
+      },
+      {
+        "reading_order_index": 25,
+        "element_ref": "#/texts/26",
+        "label": "text",
+        "level": 2,
+        "text_preview": "This Diwali is more  significant because  we  are  going  to celebrate it after three years, without the evil shadow of Covid-19 that  (268)________  looming  o"
+      },
+      {
+        "reading_order_index": 26,
+        "element_ref": "#/texts/27",
+        "label": "list_item",
+        "level": 3,
+        "text_preview": "Q.268."
+      },
+      {
+        "reading_order_index": 27,
+        "element_ref": "#/texts/28",
+        "label": "text",
+        "level": 2,
+        "text_preview": "(a) is                 (b) were            (c) are                (d) was"
+      },
+      {
+        "reading_order_index": 28,
+        "element_ref": "#/texts/29",
+        "label": "list_item",
+        "level": 3,
+        "text_preview": "Q.269."
+      },
+      {
+        "reading_order_index": 29,
+        "element_ref": "#/texts/30",
+        "label": "list_item",
+        "level": 3,
+        "text_preview": "(a) economic boom       (b) demonetisation"
+      },
+      {
+        "reading_order_index": 30,
+        "element_ref": "#/texts/31",
+        "label": "list_item",
+        "level": 3,
+        "text_preview": "(c) disease"
+      },
+      {
+        "reading_order_index": 31,
+        "element_ref": "#/texts/32",
+        "label": "list_item",
+        "level": 3,
+        "text_preview": "(d) new birth"
+      },
+      {
+        "reading_order_index": 32,
+        "element_ref": "#/texts/33",
+        "label": "list_item",
+        "level": 3,
+        "text_preview": "Q.270. (a) had recognised            (b) has hovered"
+      },
+      {
+        "reading_order_index": 33,
+        "element_ref": "#/texts/34",
+        "label": "list_item",
+        "level": 3,
+        "text_preview": "(c) has shed                        (d) has adopted"
+      },
+      {
+        "reading_order_index": 34,
+        "element_ref": "#/texts/35",
+        "label": "text",
+        "level": 2,
+        "text_preview": "Q.271. (a) salute   (b) berate   (c) terminate    (d) onerous"
+      },
+      {
+        "reading_order_index": 35,
+        "element_ref": "#/texts/36",
+        "label": "text",
+        "level": 2,
+        "text_preview": "Q.272. (a) stagnating (b) impeding (c) implicating (d) spreading"
+      },
+      {
+        "reading_order_index": 36,
+        "element_ref": "#/texts/37",
+        "label": "section_header",
+        "level": 2,
+        "text_preview": "SET-55. Q .(273 - 277)"
+      },
+      {
+        "reading_order_index": 37,
+        "element_ref": "#/texts/38",
+        "label": "text",
+        "level": 2,
+        "text_preview": "When Ojeya Cruz Banks moved to Ohio from New Zealand (273) ________  years  ago,  she  was  overwhelmed  by  the  logistics  of uprooting her life. But Cruz Ban"
+      },
+      {
+        "reading_order_index": 38,
+        "element_ref": "#/texts/39",
+        "label": "text",
+        "level": 2,
+        "text_preview": "Q.273. (a) several   (b) particular   (c) enormous   (d) immense"
+      },
+      {
+        "reading_order_index": 39,
+        "element_ref": "#/texts/40",
+        "label": "text",
+        "level": 2,
+        "text_preview": "Q.274. (a) distraught  (b) dispassionate  (c) relieved  (d) worried"
+      },
+      {
+        "reading_order_index": 40,
+        "element_ref": "#/texts/41",
+        "label": "text",
+        "level": 2,
+        "text_preview": "Q.275. (a) agreeable  (b) unpleasant  (c) amusing  (d) enjoyable"
+      },
+      {
+        "reading_order_index": 41,
+        "element_ref": "#/texts/42",
+        "label": "text",
+        "level": 2,
+        "text_preview": "Q.276. (a) futile   (b) available   (c) nonviable   (d) inaccessible"
+      },
+      {
+        "reading_order_index": 42,
+        "element_ref": "#/texts/43",
+        "label": "text",
+        "level": 2,
+        "text_preview": "Q.277. (a) disapproved (b) ceaseless (c) inessential (d) required"
+      },
+      {
+        "reading_order_index": 43,
+        "element_ref": "#/texts/44",
+        "label": "section_header",
+        "level": 2,
+        "text_preview": "SET-56. Q .(278 - 282)"
+      },
+      {
+        "reading_order_index": 44,
+        "element_ref": "#/texts/45",
+        "label": "text",
+        "level": 2,
+        "text_preview": "Augmented  reality  and  virtual  reality  are  two  types  of  reality technologies that either augment or replace a real-world environment  with  a  (278)____"
+      },
+      {
+        "reading_order_index": 45,
+        "element_ref": "#/texts/46",
+        "label": "text",
+        "level": 2,
+        "text_preview": "Q.278. (a) simulated  (b) catered  (c) revealed  (d) suffocated"
+      },
+      {
+        "reading_order_index": 46,
+        "element_ref": "#/texts/47",
+        "label": "list_item",
+        "level": 3,
+        "text_preview": "Q.279. (a) with"
+      },
+      {
+        "reading_order_index": 47,
+        "element_ref": "#/texts/48",
+        "label": "list_item",
+        "level": 3,
+        "text_preview": "(b) behind       (c) along"
+      },
+      {
+        "reading_order_index": 48,
+        "element_ref": "#/texts/49",
+        "label": "list_item",
+        "level": 3,
+        "text_preview": "(d) beyond"
+      },
+      {
+        "reading_order_index": 49,
+        "element_ref": "#/texts/50",
+        "label": "list_item",
+        "level": 3,
+        "text_preview": "Q.280. (a) equipment"
+      },
+      {
+        "reading_order_index": 50,
+        "element_ref": "#/texts/51",
+        "label": "list_item",
+        "level": 3,
+        "text_preview": "(b) arsenal"
+      },
+      {
+        "reading_order_index": 51,
+        "element_ref": "#/texts/52",
+        "label": "list_item",
+        "level": 3,
+        "text_preview": "(c) outfit"
+      },
+      {
+        "reading_order_index": 52,
+        "element_ref": "#/texts/53",
+        "label": "list_item",
+        "level": 3,
+        "text_preview": "(d) baggage"
+      },
+      {
+        "reading_order_index": 53,
+        "element_ref": "#/texts/54",
+        "label": "list_item",
+        "level": 3,
+        "text_preview": "Q.281. (a) comprehensive        (b) conclusive"
+      },
+      {
+        "reading_order_index": 54,
+        "element_ref": "#/texts/55",
+        "label": "list_item",
+        "level": 3,
+        "text_preview": "(c) transgressive"
+      },
+      {
+        "reading_order_index": 55,
+        "element_ref": "#/texts/56",
+        "label": "list_item",
+        "level": 3,
+        "text_preview": "(d) reprehensive"
+      },
+      {
+        "reading_order_index": 56,
+        "element_ref": "#/texts/57",
+        "label": "text",
+        "level": 2,
+        "text_preview": "Q.282. (a) glossary  (b) network  (c) rendition  (d) resistance"
+      }
+    ]
+  },
+  "layout_analysis": {
+    "method": "docling_bbox_left_edge_clustering_v1",
+    "column_count": 3,
+    "confidence": 0.946,
+    "page_width": 596.0,
+    "page_height": 842.0,
+    "columns": [
+      {
+        "column_index": 1,
+        "left": 0.0,
+        "right": 84.396,
+        "detected_start": 31.992,
+        "supporting_elements": 26
+      },
+      {
+        "column_index": 2,
+        "left": 84.396,
+        "right": 222.275,
+        "detected_start": 136.8,
+        "supporting_elements": 5
+      },
+      {
+        "column_index": 3,
+        "left": 222.275,
+        "right": 596.0,
+        "detected_start": 307.75,
+        "supporting_elements": 26
+      }
+    ],
+    "elements": [
+      {
+        "element_ref": "#/texts/0",
+        "element_type": "text",
+        "label": "page_header",
+        "column_index": 1,
+        "column_indices": [
+          1
+        ],
+        "spans_columns": false,
+        "reading_order_index": null,
+        "bbox": {
+          "l": 28.800003,
+          "t": 830.7925780594726,
+          "r": 95.7084616875,
+          "b": 822.5642819957749,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/1",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 3,
+        "column_indices": [
+          3
+        ],
+        "spans_columns": false,
+        "reading_order_index": 0,
+        "bbox": {
+          "l": 291.757038,
+          "t": 830.7925780594726,
+          "r": 568.9931979375,
+          "b": 822.5642819957749,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/2",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 1,
+        "bbox": {
+          "l": 28.800003,
+          "t": 814.6962886875,
+          "r": 206.14570934999998,
+          "b": 806.6140518199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/3",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 2,
+        "bbox": {
+          "l": 28.800003,
+          "t": 802.2744136875,
+          "r": 252.72334521,
+          "b": 794.1921768199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/4",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 3,
+        "bbox": {
+          "l": 28.800003,
+          "t": 781.5732416875001,
+          "r": 124.48213167,
+          "b": 773.4910048199854,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/5",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 2,
+        "column_indices": [
+          2
+        ],
+        "spans_columns": false,
+        "reading_order_index": 4,
+        "bbox": {
+          "l": 136.800003,
+          "t": 781.5732416875001,
+          "r": 230.57050991999998,
+          "b": 773.4910048199854,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/6",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 5,
+        "bbox": {
+          "l": 28.800003,
+          "t": 769.1513666875001,
+          "r": 115.19209317,
+          "b": 761.0691298199854,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/7",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 2,
+        "column_indices": [
+          2
+        ],
+        "spans_columns": false,
+        "reading_order_index": 6,
+        "bbox": {
+          "l": 136.800003,
+          "t": 769.1513666875001,
+          "r": 202.93769684999998,
+          "b": 761.0691298199854,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/8",
+        "element_type": "text",
+        "label": "section_header",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 7,
+        "bbox": {
+          "l": 28.800003,
+          "t": 748.4462886875,
+          "r": 121.24775694,
+          "b": 740.3640518199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/9",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2,
+          3
+        ],
+        "spans_columns": true,
+        "reading_order_index": 8,
+        "bbox": {
+          "l": 28.800003,
+          "t": 736.0244136875,
+          "r": 288.94600242,
+          "b": 554.0339728199854,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/10",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 9,
+        "bbox": {
+          "l": 28.800003,
+          "t": 541.4130896875,
+          "r": 257.48701242,
+          "b": 533.3308528199854,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/11",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 10,
+        "bbox": {
+          "l": 28.800003,
+          "t": 520.7099596875,
+          "r": 260.86201242,
+          "b": 512.6277228199854,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/12",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2,
+          3
+        ],
+        "spans_columns": true,
+        "reading_order_index": 11,
+        "bbox": {
+          "l": 28.800003,
+          "t": 500.0068396875,
+          "r": 268.31074242,
+          "b": 491.92460281998535,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/13",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2,
+          3
+        ],
+        "spans_columns": true,
+        "reading_order_index": 12,
+        "bbox": {
+          "l": 28.800003,
+          "t": 479.3037096875,
+          "r": 275.16181991999997,
+          "b": 471.2214728199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/14",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2,
+          3
+        ],
+        "spans_columns": true,
+        "reading_order_index": 13,
+        "bbox": {
+          "l": 28.800003,
+          "t": 458.5986296875,
+          "r": 275.01679992,
+          "b": 450.51639281998536,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/15",
+        "element_type": "text",
+        "label": "section_header",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 14,
+        "bbox": {
+          "l": 28.800003,
+          "t": 437.8974596875,
+          "r": 121.24775694,
+          "b": 429.8152228199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/16",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2,
+          3
+        ],
+        "spans_columns": true,
+        "reading_order_index": 15,
+        "bbox": {
+          "l": 28.800003,
+          "t": 425.4755896875,
+          "r": 288.97383492,
+          "b": 342.86014281998536,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/17",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 16,
+        "bbox": {
+          "l": 28.800003,
+          "t": 330.2372996875,
+          "r": 240.72627491999998,
+          "b": 322.15506281998535,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/18",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 1,
+        "column_indices": [
+          1
+        ],
+        "spans_columns": false,
+        "reading_order_index": 17,
+        "bbox": {
+          "l": 28.800003,
+          "t": 309.5341796875,
+          "r": 55.716506939999995,
+          "b": 301.45194281998533,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/19",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 18,
+        "bbox": {
+          "l": 55.716507,
+          "t": 309.5341796875,
+          "r": 95.34199542,
+          "b": 301.45194281998533,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/20",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 2,
+        "column_indices": [
+          2
+        ],
+        "spans_columns": false,
+        "reading_order_index": 19,
+        "bbox": {
+          "l": 100.800003,
+          "t": 309.5341796875,
+          "r": 196.98750492,
+          "b": 301.45194281998533,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/21",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 0,
+        "column_indices": [
+          2,
+          3
+        ],
+        "spans_columns": true,
+        "reading_order_index": 20,
+        "bbox": {
+          "l": 208.800003,
+          "t": 309.5341796875,
+          "r": 243.83320992,
+          "b": 301.45194281998533,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/22",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 21,
+        "bbox": {
+          "l": 28.800003,
+          "t": 288.8310496875,
+          "r": 253.25947635,
+          "b": 280.74881281998535,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/23",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 22,
+        "bbox": {
+          "l": 28.800003,
+          "t": 268.1279296875,
+          "r": 234.81562992,
+          "b": 260.04569281998533,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/24",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 23,
+        "bbox": {
+          "l": 28.800003,
+          "t": 247.4247996875,
+          "r": 238.99482492,
+          "b": 239.34256281998535,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/25",
+        "element_type": "text",
+        "label": "section_header",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 24,
+        "bbox": {
+          "l": 28.800003,
+          "t": 226.7216796875,
+          "r": 121.24775694,
+          "b": 218.63944281998533,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/26",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2,
+          3
+        ],
+        "spans_columns": true,
+        "reading_order_index": 25,
+        "bbox": {
+          "l": 28.800003,
+          "t": 214.2997996875,
+          "r": 288.93721242,
+          "b": 81.99686281998538,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/27",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 1,
+        "column_indices": [
+          1
+        ],
+        "spans_columns": false,
+        "reading_order_index": 26,
+        "bbox": {
+          "l": 28.800003,
+          "t": 69.37597968750003,
+          "r": 57.953323440000005,
+          "b": 61.29374281998537,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/28",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 0,
+        "column_indices": [
+          2,
+          3
+        ],
+        "spans_columns": true,
+        "reading_order_index": 27,
+        "bbox": {
+          "l": 57.953323499999996,
+          "t": 69.37597968750003,
+          "r": 269.21162742,
+          "b": 61.29374281998537,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/29",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 1,
+        "column_indices": [
+          1
+        ],
+        "spans_columns": false,
+        "reading_order_index": 28,
+        "bbox": {
+          "l": 28.800003,
+          "t": 48.67284968750005,
+          "r": 55.716506939999995,
+          "b": 40.59061281998538,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/30",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 2,
+        "column_indices": [
+          2
+        ],
+        "spans_columns": false,
+        "reading_order_index": 29,
+        "bbox": {
+          "l": 55.716507,
+          "t": 48.67284968750005,
+          "r": 232.36348242000003,
+          "b": 40.59061281998538,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/31",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 30,
+        "bbox": {
+          "l": 28.800003,
+          "t": 36.250979687500035,
+          "r": 104.20576467000001,
+          "b": 28.16874281998537,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/32",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 2,
+        "column_indices": [
+          2
+        ],
+        "spans_columns": false,
+        "reading_order_index": 31,
+        "bbox": {
+          "l": 136.800003,
+          "t": 36.250979687500035,
+          "r": 205.33271742,
+          "b": 28.16874281998537,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/33",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 3,
+        "column_indices": [
+          3
+        ],
+        "spans_columns": false,
+        "reading_order_index": 32,
+        "bbox": {
+          "l": 308.54999,
+          "t": 814.6962886875,
+          "r": 503.65838942,
+          "b": 806.6140518199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/34",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 3,
+        "column_indices": [
+          3
+        ],
+        "spans_columns": false,
+        "reading_order_index": 33,
+        "bbox": {
+          "l": 308.54999,
+          "t": 802.2744136875,
+          "r": 505.92157441999996,
+          "b": 794.1921768199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/35",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 3,
+        "column_indices": [
+          3
+        ],
+        "spans_columns": false,
+        "reading_order_index": 34,
+        "bbox": {
+          "l": 308.54999,
+          "t": 781.5732416875001,
+          "r": 537.14032442,
+          "b": 773.4910048199854,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/36",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 3,
+        "column_indices": [
+          3
+        ],
+        "spans_columns": false,
+        "reading_order_index": 35,
+        "bbox": {
+          "l": 308.54999,
+          "t": 760.8681636875,
+          "r": 563.80194692,
+          "b": 752.7859268199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/37",
+        "element_type": "text",
+        "label": "section_header",
+        "column_index": 3,
+        "column_indices": [
+          3
+        ],
+        "spans_columns": false,
+        "reading_order_index": 36,
+        "bbox": {
+          "l": 308.54999,
+          "t": 738.7861326875,
+          "r": 400.99774393999996,
+          "b": 730.7038958199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/38",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 3,
+        "column_indices": [
+          3
+        ],
+        "spans_columns": false,
+        "reading_order_index": 37,
+        "bbox": {
+          "l": 308.54999,
+          "t": 726.3623046875,
+          "r": 568.78094942,
+          "b": 469.83866281998536,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/39",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 3,
+        "column_indices": [
+          3
+        ],
+        "spans_columns": false,
+        "reading_order_index": 38,
+        "bbox": {
+          "l": 308.54999,
+          "t": 457.2197296875,
+          "r": 557.79022442,
+          "b": 449.1374928199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/40",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 3,
+        "column_indices": [
+          3
+        ],
+        "spans_columns": false,
+        "reading_order_index": 39,
+        "bbox": {
+          "l": 308.54999,
+          "t": 436.5146496875,
+          "r": 564.45233192,
+          "b": 428.43241281998536,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/41",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 3,
+        "column_indices": [
+          3
+        ],
+        "spans_columns": false,
+        "reading_order_index": 40,
+        "bbox": {
+          "l": 308.54999,
+          "t": 415.8115196875,
+          "r": 563.18670692,
+          "b": 407.7292828199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/42",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 3,
+        "column_indices": [
+          3
+        ],
+        "spans_columns": false,
+        "reading_order_index": 41,
+        "bbox": {
+          "l": 308.54999,
+          "t": 392.3486296875,
+          "r": 557.31122192,
+          "b": 384.26639281998536,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/43",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 3,
+        "column_indices": [
+          3
+        ],
+        "spans_columns": false,
+        "reading_order_index": 42,
+        "bbox": {
+          "l": 308.54999,
+          "t": 371.6435496875,
+          "r": 563.054871845,
+          "b": 363.56131281998535,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/44",
+        "element_type": "text",
+        "label": "section_header",
+        "column_index": 3,
+        "column_indices": [
+          3
+        ],
+        "spans_columns": false,
+        "reading_order_index": 43,
+        "bbox": {
+          "l": 308.54999,
+          "t": 346.7997996875,
+          "r": 400.99774393999996,
+          "b": 338.71756281998535,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/45",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 3,
+        "column_indices": [
+          3
+        ],
+        "spans_columns": false,
+        "reading_order_index": 44,
+        "bbox": {
+          "l": 308.54999,
+          "t": 334.3779296875,
+          "r": 568.73699942,
+          "b": 177.23319281998533,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/46",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 3,
+        "column_indices": [
+          3
+        ],
+        "spans_columns": false,
+        "reading_order_index": 45,
+        "bbox": {
+          "l": 308.54999,
+          "t": 161.85058968750002,
+          "r": 553.63739192,
+          "b": 153.76835281998535,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/47",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 3,
+        "column_indices": [
+          3
+        ],
+        "spans_columns": false,
+        "reading_order_index": 46,
+        "bbox": {
+          "l": 308.54999,
+          "t": 138.3876996875,
+          "r": 370.12616191999996,
+          "b": 130.30546281998534,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/48",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 3,
+        "column_indices": [
+          3
+        ],
+        "spans_columns": false,
+        "reading_order_index": 47,
+        "bbox": {
+          "l": 380.54999,
+          "t": 138.3876996875,
+          "r": 474.32489191999997,
+          "b": 130.30546281998534,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/49",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 3,
+        "column_indices": [
+          3
+        ],
+        "spans_columns": false,
+        "reading_order_index": 48,
+        "bbox": {
+          "l": 488.54999,
+          "t": 138.3876996875,
+          "r": 533.44451942,
+          "b": 130.30546281998534,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/50",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 3,
+        "column_indices": [
+          3
+        ],
+        "spans_columns": false,
+        "reading_order_index": 49,
+        "bbox": {
+          "l": 308.54999,
+          "t": 114.92284968750005,
+          "r": 402.64569316999996,
+          "b": 106.84061281998538,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/51",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 3,
+        "column_indices": [
+          3
+        ],
+        "spans_columns": false,
+        "reading_order_index": 50,
+        "bbox": {
+          "l": 452.54999,
+          "t": 114.92284968750005,
+          "r": 504.39666692,
+          "b": 106.84061281998538,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/52",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 3,
+        "column_indices": [
+          3
+        ],
+        "spans_columns": false,
+        "reading_order_index": 51,
+        "bbox": {
+          "l": 308.54999,
+          "t": 102.50097968750003,
+          "r": 382.78241191999996,
+          "b": 94.41874281998537,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/53",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 3,
+        "column_indices": [
+          3
+        ],
+        "spans_columns": false,
+        "reading_order_index": 52,
+        "bbox": {
+          "l": 452.54999,
+          "t": 102.50097968750003,
+          "r": 503.08270441999997,
+          "b": 94.41874281998537,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/54",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 3,
+        "column_indices": [
+          3
+        ],
+        "spans_columns": false,
+        "reading_order_index": 53,
+        "bbox": {
+          "l": 308.54999,
+          "t": 79.03808968750002,
+          "r": 488.35663442,
+          "b": 70.95585281998535,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/55",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 3,
+        "column_indices": [
+          3
+        ],
+        "spans_columns": false,
+        "reading_order_index": 54,
+        "bbox": {
+          "l": 308.54999,
+          "t": 66.61620968750003,
+          "r": 411.10077167,
+          "b": 58.533972819985365,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/56",
+        "element_type": "text",
+        "label": "list_item",
+        "column_index": 3,
+        "column_indices": [
+          3
+        ],
+        "spans_columns": false,
+        "reading_order_index": 55,
+        "bbox": {
+          "l": 416.54999,
+          "t": 66.61620968750003,
+          "r": 496.83807691999993,
+          "b": 58.533972819985365,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/57",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 3,
+        "column_indices": [
+          3
+        ],
+        "spans_columns": false,
+        "reading_order_index": 56,
+        "bbox": {
+          "l": 308.54999,
+          "t": 43.15136968750005,
+          "r": 549.7086819199999,
+          "b": 35.069132819985384,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/58",
+        "element_type": "text",
+        "label": "page_footer",
+        "column_index": 0,
+        "column_indices": [
+          2,
+          3
+        ],
+        "spans_columns": true,
+        "reading_order_index": null,
+        "bbox": {
+          "l": 99.3266505,
+          "t": 21.98749795947265,
+          "r": 495.95088382500006,
+          "b": 13.759201895774936,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      }
+    ],
+    "warnings": []
+  },
+  "structure_chunks": {
+    "enabled": true,
+    "method": "docling_hybrid_chunker",
+    "scope": "page",
+    "items": [
+      {
+        "text": "Cloze Test\n- (c) conflictingly                  (d) clumsily\n- Q.256. (a) instigate    (b) distant    (c) remote     (d) bleak\n- Q.257. (a) nevertheless\n- (b) notwithstanding\n- (c) regardless\n- (d) inasmuch",
+        "meta": {
+          "schema_name": "docling_core.transforms.chunker.DocMeta",
+          "version": "1.0.0",
+          "doc_items": [
+            {
+              "self_ref": "#/texts/1",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 291.757038,
+                    "t": 830.7925780594726,
+                    "r": 568.9931979375,
+                    "b": 822.5642819957749,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    10
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/2",
+              "parent": {
+                "cref": "#/groups/1"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 814.6962886875,
+                    "r": 206.14570934999998,
+                    "b": 806.6140518199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    47
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/3",
+              "parent": {
+                "cref": "#/groups/2"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 802.2744136875,
+                    "r": 252.72334521,
+                    "b": 794.1921768199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    63
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/4",
+              "parent": {
+                "cref": "#/groups/3"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 781.5732416875001,
+                    "r": 124.48213167,
+                    "b": 773.4910048199854,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    23
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/5",
+              "parent": {
+                "cref": "#/groups/4"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 136.800003,
+                    "t": 781.5732416875001,
+                    "r": 230.57050991999998,
+                    "b": 773.4910048199854,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    19
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/6",
+              "parent": {
+                "cref": "#/groups/5"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 769.1513666875001,
+                    "r": 115.19209317,
+                    "b": 761.0691298199854,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    14
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/7",
+              "parent": {
+                "cref": "#/groups/6"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 136.800003,
+                    "t": 769.1513666875001,
+                    "r": 202.93769684999998,
+                    "b": 761.0691298199854,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    12
+                  ]
+                }
+              ]
+            }
+          ],
+          "headings": null,
+          "captions": null,
+          "origin": {
+            "mimetype": "application/pdf",
+            "binary_hash": 2670402293247827851,
+            "filename": "english_page_0323.pdf",
+            "uri": null
+          }
+        },
+        "chunk_index": 0,
+        "contextualized_text": "Cloze Test\n- (c) conflictingly                  (d) clumsily\n- Q.256. (a) instigate    (b) distant    (c) remote     (d) bleak\n- Q.257. (a) nevertheless\n- (b) notwithstanding\n- (c) regardless\n- (d) inasmuch"
+      },
+      {
+        "text": "Rory  Cooper  was  a  top  aide  to  former  House  Majority  Leader Eric  Cantor,  the  up-and-coming  Virginia  Republican  who  lost  a 2014  House  primary.  He  was  also a prominent Never Trumper, openly (258)_______how awful he found the 45th president. The cause  Cooper  has  (259)_______himself  to  for  the  past  year, though, is closer to home. He is, as he puts it in his Twitter bio, 'Apparently  Mr.  Open  the  Schools'.  A  father  of  a  fifth  grader, a second  grader  and  a  kindergartner,  Cooper  is  (260)_______ because  the  public  schools  in  Fairfax,  Virginia,  where  he  lives, have  not  reopened. Fairfax, in the Washington, D.C., suburbs, is one of the school districts that has moved (261) ________ toward in-person  learning,  and  it  is  still  not close: only in the past few weeks have students  started  to return to classrooms, and only about",
+        "meta": {
+          "schema_name": "docling_core.transforms.chunker.DocMeta",
+          "version": "1.0.0",
+          "doc_items": [
+            {
+              "self_ref": "#/texts/9",
+              "parent": {
+                "cref": "#/groups/0"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 736.0244136875,
+                    "r": 288.94600242,
+                    "b": 554.0339728199854,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    978
+                  ]
+                }
+              ]
+            }
+          ],
+          "headings": [
+            "SET-52. Q .(258 - 262)"
+          ],
+          "captions": null,
+          "origin": {
+            "mimetype": "application/pdf",
+            "binary_hash": 2670402293247827851,
+            "filename": "english_page_0323.pdf",
+            "uri": null
+          }
+        },
+        "chunk_index": 1,
+        "contextualized_text": "SET-52. Q .(258 - 262)\nRory  Cooper  was  a  top  aide  to  former  House  Majority  Leader Eric  Cantor,  the  up-and-coming  Virginia  Republican  who  lost  a 2014  House  primary.  He  was  also a prominent Never Trumper, openly (258)_______how awful he found the 45th president. The cause  Cooper  has  (259)_______himself  to  for  the  past  year, though, is closer to home. He is, as he puts it in his Twitter bio, 'Apparently  Mr.  Open  the  Schools'.  A  father  of  a  fifth  grader, a second  grader  and  a  kindergartner,  Cooper  is  (260)_______ because  the  public  schools  in  Fairfax,  Virginia,  where  he  lives, have  not  reopened. Fairfax, in the Washington, D.C., suburbs, is one of the school districts that has moved (261) ________ toward in-person  learning,  and  it  is  still  not close: only in the past few weeks have students  started  to return to classrooms, and only about"
+      },
+      {
+        "text": "half of those eligible have opted to go back, for an (262) ________ of two days a week.\n- Q.258. (a) frisking  (b) skipping  (c) detailing  (d) ignoring\n- Q.259. (a) committed  (b) pacified  (c) sorted    (d) isolated\n- Q.260. (a) indebted  (b) provoked  (c) excited   (d) frustrated\n- Q.261. (a) plainest     (b) slowest     (c) longest    (d) strangest\n- Q.262. (a) average    (b) amount   (c) ideal   (d) understanding",
+        "meta": {
+          "schema_name": "docling_core.transforms.chunker.DocMeta",
+          "version": "1.0.0",
+          "doc_items": [
+            {
+              "self_ref": "#/texts/9",
+              "parent": {
+                "cref": "#/groups/0"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 736.0244136875,
+                    "r": 288.94600242,
+                    "b": 554.0339728199854,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    978
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/10",
+              "parent": {
+                "cref": "#/groups/7"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 541.4130896875,
+                    "r": 257.48701242,
+                    "b": 533.3308528199854,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    62
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/11",
+              "parent": {
+                "cref": "#/groups/8"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 520.7099596875,
+                    "r": 260.86201242,
+                    "b": 512.6277228199854,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    62
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/12",
+              "parent": {
+                "cref": "#/groups/9"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 500.0068396875,
+                    "r": 268.31074242,
+                    "b": 491.92460281998535,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    63
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/13",
+              "parent": {
+                "cref": "#/groups/10"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 479.3037096875,
+                    "r": 275.16181991999997,
+                    "b": 471.2214728199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    68
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/14",
+              "parent": {
+                "cref": "#/groups/11"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 458.5986296875,
+                    "r": 275.01679992,
+                    "b": 450.51639281998536,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    64
+                  ]
+                }
+              ]
+            }
+          ],
+          "headings": [
+            "SET-52. Q .(258 - 262)"
+          ],
+          "captions": null,
+          "origin": {
+            "mimetype": "application/pdf",
+            "binary_hash": 2670402293247827851,
+            "filename": "english_page_0323.pdf",
+            "uri": null
+          }
+        },
+        "chunk_index": 2,
+        "contextualized_text": "SET-52. Q .(258 - 262)\nhalf of those eligible have opted to go back, for an (262) ________ of two days a week.\n- Q.258. (a) frisking  (b) skipping  (c) detailing  (d) ignoring\n- Q.259. (a) committed  (b) pacified  (c) sorted    (d) isolated\n- Q.260. (a) indebted  (b) provoked  (c) excited   (d) frustrated\n- Q.261. (a) plainest     (b) slowest     (c) longest    (d) strangest\n- Q.262. (a) average    (b) amount   (c) ideal   (d) understanding"
+      },
+      {
+        "text": "The limbs of the flying squirrel are interlinked with a membrane. When  the  creature  (263)________  into  the  air,  the  membrane opens and the squirrel seems to (264)_______ swiftly downwards.  This  movement  gives  the  (265)_______  of  flight. However, it is not flying really. It is a (266)_______ in the air from a higher  level. It  is  also  noteworthy  that  a  squirrel  cannot (267)_____ its direction while it is in flying mode.\nQ.263. (a) spring     (b) cross     (c) hurdle     (d) leaps\nQ.264.\n(a) skate\n- (b) skim       (c) wheel\n- (d) glide\n- Q.265. (a) affect  (b) suspicion  (c) fancy  (d) impression\n- Q.266. (a) progress   (b) motion   (c) sign   (d) wave\nQ.267. (a) adopt    (b) replace    (c) adept     (d) swap",
+        "meta": {
+          "schema_name": "docling_core.transforms.chunker.DocMeta",
+          "version": "1.0.0",
+          "doc_items": [
+            {
+              "self_ref": "#/texts/16",
+              "parent": {
+                "cref": "#/groups/0"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 425.4755896875,
+                    "r": 288.97383492,
+                    "b": 342.86014281998536,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    444
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/17",
+              "parent": {
+                "cref": "#/groups/0"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 330.2372996875,
+                    "r": 240.72627491999998,
+                    "b": 322.15506281998535,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    60
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/18",
+              "parent": {
+                "cref": "#/groups/0"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 309.5341796875,
+                    "r": 55.716506939999995,
+                    "b": 301.45194281998533,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    6
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/19",
+              "parent": {
+                "cref": "#/groups/0"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 55.716507,
+                    "t": 309.5341796875,
+                    "r": 95.34199542,
+                    "b": 301.45194281998533,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    9
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/20",
+              "parent": {
+                "cref": "#/groups/12"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 100.800003,
+                    "t": 309.5341796875,
+                    "r": 196.98750492,
+                    "b": 301.45194281998533,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    24
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/21",
+              "parent": {
+                "cref": "#/groups/13"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 208.800003,
+                    "t": 309.5341796875,
+                    "r": 243.83320992,
+                    "b": 301.45194281998533,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    9
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/22",
+              "parent": {
+                "cref": "#/groups/14"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 288.8310496875,
+                    "r": 253.25947635,
+                    "b": 280.74881281998535,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    59
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/23",
+              "parent": {
+                "cref": "#/groups/15"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 268.1279296875,
+                    "r": 234.81562992,
+                    "b": 260.04569281998533,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    54
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/24",
+              "parent": {
+                "cref": "#/groups/0"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 247.4247996875,
+                    "r": 238.99482492,
+                    "b": 239.34256281998535,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    57
+                  ]
+                }
+              ]
+            }
+          ],
+          "headings": [
+            "SET-53. Q .(263 - 267)"
+          ],
+          "captions": null,
+          "origin": {
+            "mimetype": "application/pdf",
+            "binary_hash": 2670402293247827851,
+            "filename": "english_page_0323.pdf",
+            "uri": null
+          }
+        },
+        "chunk_index": 3,
+        "contextualized_text": "SET-53. Q .(263 - 267)\nThe limbs of the flying squirrel are interlinked with a membrane. When  the  creature  (263)________  into  the  air,  the  membrane opens and the squirrel seems to (264)_______ swiftly downwards.  This  movement  gives  the  (265)_______  of  flight. However, it is not flying really. It is a (266)_______ in the air from a higher  level. It  is  also  noteworthy  that  a  squirrel  cannot (267)_____ its direction while it is in flying mode.\nQ.263. (a) spring     (b) cross     (c) hurdle     (d) leaps\nQ.264.\n(a) skate\n- (b) skim       (c) wheel\n- (d) glide\n- Q.265. (a) affect  (b) suspicion  (c) fancy  (d) impression\n- Q.266. (a) progress   (b) motion   (c) sign   (d) wave\nQ.267. (a) adopt    (b) replace    (c) adept     (d) swap"
+      },
+      {
+        "text": "This Diwali is more  significant because  we  are  going  to celebrate it after three years, without the evil shadow of Covid-19 that  (268)________  looming  over  all  festivities.  The  lockdowns and  endless  bad  news  of  death  and  (269)________  had  turned our  country  into  a  zone  of  gloom.  But,  this  season  of  Diwali (270)________ all the sorrows of people by lighting the candle of hope  in  their  lives.  We  can  see  the  lights,  the  candles,  the lanterns,  and  the  busy  people  coming  out  of  their  houses and purchasing  toys  for  their  children.  Let's  (271)________  those people who have made such a huge contribution to (272)________ good thoughts and saving people's lives.\n- Q.268.\n(a) is                 (b) were            (c) are                (d) was\n- Q.269.\n- (a) economic boom       (b) demonetisation\n- (c) disease\n- (d) new birth",
+        "meta": {
+          "schema_name": "docling_core.transforms.chunker.DocMeta",
+          "version": "1.0.0",
+          "doc_items": [
+            {
+              "self_ref": "#/texts/26",
+              "parent": {
+                "cref": "#/groups/0"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 214.2997996875,
+                    "r": 288.93721242,
+                    "b": 81.99686281998538,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    719
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/27",
+              "parent": {
+                "cref": "#/groups/16"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 69.37597968750003,
+                    "r": 57.953323440000005,
+                    "b": 61.29374281998537,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    6
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/28",
+              "parent": {
+                "cref": "#/groups/0"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 57.953323499999996,
+                    "t": 69.37597968750003,
+                    "r": 269.21162742,
+                    "b": 61.29374281998537,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    73
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/29",
+              "parent": {
+                "cref": "#/groups/17"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 48.67284968750005,
+                    "r": 55.716506939999995,
+                    "b": 40.59061281998538,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    6
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/30",
+              "parent": {
+                "cref": "#/groups/18"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 55.716507,
+                    "t": 48.67284968750005,
+                    "r": 232.36348242000003,
+                    "b": 40.59061281998538,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    42
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/31",
+              "parent": {
+                "cref": "#/groups/19"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 36.250979687500035,
+                    "r": 104.20576467000001,
+                    "b": 28.16874281998537,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    11
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/32",
+              "parent": {
+                "cref": "#/groups/20"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 136.800003,
+                    "t": 36.250979687500035,
+                    "r": 205.33271742,
+                    "b": 28.16874281998537,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    13
+                  ]
+                }
+              ]
+            }
+          ],
+          "headings": [
+            "SET-54. Q .(268 - 272)"
+          ],
+          "captions": null,
+          "origin": {
+            "mimetype": "application/pdf",
+            "binary_hash": 2670402293247827851,
+            "filename": "english_page_0323.pdf",
+            "uri": null
+          }
+        },
+        "chunk_index": 4,
+        "contextualized_text": "SET-54. Q .(268 - 272)\nThis Diwali is more  significant because  we  are  going  to celebrate it after three years, without the evil shadow of Covid-19 that  (268)________  looming  over  all  festivities.  The  lockdowns and  endless  bad  news  of  death  and  (269)________  had  turned our  country  into  a  zone  of  gloom.  But,  this  season  of  Diwali (270)________ all the sorrows of people by lighting the candle of hope  in  their  lives.  We  can  see  the  lights,  the  candles,  the lanterns,  and  the  busy  people  coming  out  of  their  houses and purchasing  toys  for  their  children.  Let's  (271)________  those people who have made such a huge contribution to (272)________ good thoughts and saving people's lives.\n- Q.268.\n(a) is                 (b) were            (c) are                (d) was\n- Q.269.\n- (a) economic boom       (b) demonetisation\n- (c) disease\n- (d) new birth"
+      },
+      {
+        "text": "- Q.270. (a) had recognised            (b) has hovered\n- (c) has shed                        (d) has adopted\nQ.271. (a) salute   (b) berate   (c) terminate    (d) onerous\nQ.272. (a) stagnating (b) impeding (c) implicating (d) spreading",
+        "meta": {
+          "schema_name": "docling_core.transforms.chunker.DocMeta",
+          "version": "1.0.0",
+          "doc_items": [
+            {
+              "self_ref": "#/texts/33",
+              "parent": {
+                "cref": "#/groups/21"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 308.54999,
+                    "t": 814.6962886875,
+                    "r": 503.65838942,
+                    "b": 806.6140518199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    52
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/34",
+              "parent": {
+                "cref": "#/groups/22"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 308.54999,
+                    "t": 802.2744136875,
+                    "r": 505.92157441999996,
+                    "b": 794.1921768199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    51
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/35",
+              "parent": {
+                "cref": "#/groups/0"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 308.54999,
+                    "t": 781.5732416875001,
+                    "r": 537.14032442,
+                    "b": 773.4910048199854,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    61
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/36",
+              "parent": {
+                "cref": "#/groups/0"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 308.54999,
+                    "t": 760.8681636875,
+                    "r": 563.80194692,
+                    "b": 752.7859268199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    64
+                  ]
+                }
+              ]
+            }
+          ],
+          "headings": [
+            "SET-54. Q .(268 - 272)"
+          ],
+          "captions": null,
+          "origin": {
+            "mimetype": "application/pdf",
+            "binary_hash": 2670402293247827851,
+            "filename": "english_page_0323.pdf",
+            "uri": null
+          }
+        },
+        "chunk_index": 5,
+        "contextualized_text": "SET-54. Q .(268 - 272)\n- Q.270. (a) had recognised            (b) has hovered\n- (c) has shed                        (d) has adopted\nQ.271. (a) salute   (b) berate   (c) terminate    (d) onerous\nQ.272. (a) stagnating (b) impeding (c) implicating (d) spreading"
+      },
+      {
+        "text": "When Ojeya Cruz Banks moved to Ohio from New Zealand (273) ________  years  ago,  she  was  overwhelmed  by  the  logistics  of uprooting her life. But Cruz Banks, a Denison University professor  and  a  single  mom,  who  is  also  my  neighbour  and friend,  was  (274)  ________  to  find  a  house  next  to  a  public elementary school. She assumed that she would be able to walk to  pick  up  her  daughter,  a  needed  convenience  given  that  she didn't  yet  have  a  car.  Unfortunately,  when  she  went  to register her  daughter  for  kindergarten,  she  was  met  with  an  (275) ________ surprise: The only (276) ________ option was a half-day program  that  would  bus  students  to  a  day-care  centre  on  the outskirts  of  the  town  for  the  afternoon. The district did offer a limited number of full-day slots, but those had all been claimed in  a  lottery  earlier  that  spring  and  came  with  a  tuition  cost.",
+        "meta": {
+          "schema_name": "docling_core.transforms.chunker.DocMeta",
+          "version": "1.0.0",
+          "doc_items": [
+            {
+              "self_ref": "#/texts/38",
+              "parent": {
+                "cref": "#/groups/0"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 308.54999,
+                    "t": 726.3623046875,
+                    "r": 568.78094942,
+                    "b": 469.83866281998536,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    1377
+                  ]
+                }
+              ]
+            }
+          ],
+          "headings": [
+            "SET-55. Q .(273 - 277)"
+          ],
+          "captions": null,
+          "origin": {
+            "mimetype": "application/pdf",
+            "binary_hash": 2670402293247827851,
+            "filename": "english_page_0323.pdf",
+            "uri": null
+          }
+        },
+        "chunk_index": 6,
+        "contextualized_text": "SET-55. Q .(273 - 277)\nWhen Ojeya Cruz Banks moved to Ohio from New Zealand (273) ________  years  ago,  she  was  overwhelmed  by  the  logistics  of uprooting her life. But Cruz Banks, a Denison University professor  and  a  single  mom,  who  is  also  my  neighbour  and friend,  was  (274)  ________  to  find  a  house  next  to  a  public elementary school. She assumed that she would be able to walk to  pick  up  her  daughter,  a  needed  convenience  given  that  she didn't  yet  have  a  car.  Unfortunately,  when  she  went  to register her  daughter  for  kindergarten,  she  was  met  with  an  (275) ________ surprise: The only (276) ________ option was a half-day program  that  would  bus  students  to  a  day-care  centre  on  the outskirts  of  the  town  for  the  afternoon. The district did offer a limited number of full-day slots, but those had all been claimed in  a  lottery  earlier  that  spring  and  came  with  a  tuition  cost."
+      },
+      {
+        "text": "'I was like, 'Cost me? What? Public school costs money here?'' she told me. Many parents across the United States, like Cruz Banks, may assume that free,  full-day  kindergarten is a (277) ________ part of the country's public education system. I was one of them, until my  youngest  had  to  enter  our  district's  lottery  several months ago.  When  he  was  assigned  to the half-day program, I swung between alarm and frustration.\nQ.273. (a) several   (b) particular   (c) enormous   (d) immense\nQ.274. (a) distraught  (b) dispassionate  (c) relieved  (d) worried\nQ.275. (a) agreeable  (b) unpleasant  (c) amusing  (d) enjoyable\nQ.276. (a) futile   (b) available   (c) nonviable   (d) inaccessible\nQ.277. (a) disapproved (b) ceaseless (c) inessential (d) required",
+        "meta": {
+          "schema_name": "docling_core.transforms.chunker.DocMeta",
+          "version": "1.0.0",
+          "doc_items": [
+            {
+              "self_ref": "#/texts/38",
+              "parent": {
+                "cref": "#/groups/0"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 308.54999,
+                    "t": 726.3623046875,
+                    "r": 568.78094942,
+                    "b": 469.83866281998536,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    1377
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/39",
+              "parent": {
+                "cref": "#/groups/0"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 308.54999,
+                    "t": 457.2197296875,
+                    "r": 557.79022442,
+                    "b": 449.1374928199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    64
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/40",
+              "parent": {
+                "cref": "#/groups/0"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 308.54999,
+                    "t": 436.5146496875,
+                    "r": 564.45233192,
+                    "b": 428.43241281998536,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    67
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/41",
+              "parent": {
+                "cref": "#/groups/0"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 308.54999,
+                    "t": 415.8115196875,
+                    "r": 563.18670692,
+                    "b": 407.7292828199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    64
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/42",
+              "parent": {
+                "cref": "#/groups/0"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 308.54999,
+                    "t": 392.3486296875,
+                    "r": 557.31122192,
+                    "b": 384.26639281998536,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    68
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/43",
+              "parent": {
+                "cref": "#/groups/0"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 308.54999,
+                    "t": 371.6435496875,
+                    "r": 563.054871845,
+                    "b": 363.56131281998535,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    65
+                  ]
+                }
+              ]
+            }
+          ],
+          "headings": [
+            "SET-55. Q .(273 - 277)"
+          ],
+          "captions": null,
+          "origin": {
+            "mimetype": "application/pdf",
+            "binary_hash": 2670402293247827851,
+            "filename": "english_page_0323.pdf",
+            "uri": null
+          }
+        },
+        "chunk_index": 7,
+        "contextualized_text": "SET-55. Q .(273 - 277)\n'I was like, 'Cost me? What? Public school costs money here?'' she told me. Many parents across the United States, like Cruz Banks, may assume that free,  full-day  kindergarten is a (277) ________ part of the country's public education system. I was one of them, until my  youngest  had  to  enter  our  district's  lottery  several months ago.  When  he  was  assigned  to the half-day program, I swung between alarm and frustration.\nQ.273. (a) several   (b) particular   (c) enormous   (d) immense\nQ.274. (a) distraught  (b) dispassionate  (c) relieved  (d) worried\nQ.275. (a) agreeable  (b) unpleasant  (c) amusing  (d) enjoyable\nQ.276. (a) futile   (b) available   (c) nonviable   (d) inaccessible\nQ.277. (a) disapproved (b) ceaseless (c) inessential (d) required"
+      },
+      {
+        "text": "Augmented  reality  and  virtual  reality  are  two  types  of  reality technologies that either augment or replace a real-world environment  with  a  (278)________  one.  In  augmented  reality,  a virtual  environment  coexists  (279)________  the  actual  world,  to be  instructive  and  offer  more  data  about  the  real  world  that a user  can  access  without  having  to  search.  When  a  handset  is pointed at a piece of malfunctioning (280)________, for example, industrial AR apps might provide rapid troubleshooting information.  Virtual  reality  is  a  (281)________  environmental simulation that completely replaces the user's surroundings with a totally virtual world. For example, VR may provide a user with a box containing a cartoon (282)________ of Mike Tyson in a virtual boxing ring.\nQ.278. (a) simulated  (b) catered  (c) revealed  (d) suffocated\n- Q.279. (a) with\n- (b) behind       (c) along\n- (d) beyond",
+        "meta": {
+          "schema_name": "docling_core.transforms.chunker.DocMeta",
+          "version": "1.0.0",
+          "doc_items": [
+            {
+              "self_ref": "#/texts/45",
+              "parent": {
+                "cref": "#/groups/0"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 308.54999,
+                    "t": 334.3779296875,
+                    "r": 568.73699942,
+                    "b": 177.23319281998533,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    811
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/46",
+              "parent": {
+                "cref": "#/groups/0"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 308.54999,
+                    "t": 161.85058968750002,
+                    "r": 553.63739192,
+                    "b": 153.76835281998535,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    63
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/47",
+              "parent": {
+                "cref": "#/groups/23"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 308.54999,
+                    "t": 138.3876996875,
+                    "r": 370.12616191999996,
+                    "b": 130.30546281998534,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    15
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/48",
+              "parent": {
+                "cref": "#/groups/24"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 380.54999,
+                    "t": 138.3876996875,
+                    "r": 474.32489191999997,
+                    "b": 130.30546281998534,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    26
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/49",
+              "parent": {
+                "cref": "#/groups/25"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 488.54999,
+                    "t": 138.3876996875,
+                    "r": 533.44451942,
+                    "b": 130.30546281998534,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    10
+                  ]
+                }
+              ]
+            }
+          ],
+          "headings": [
+            "SET-56. Q .(278 - 282)"
+          ],
+          "captions": null,
+          "origin": {
+            "mimetype": "application/pdf",
+            "binary_hash": 2670402293247827851,
+            "filename": "english_page_0323.pdf",
+            "uri": null
+          }
+        },
+        "chunk_index": 8,
+        "contextualized_text": "SET-56. Q .(278 - 282)\nAugmented  reality  and  virtual  reality  are  two  types  of  reality technologies that either augment or replace a real-world environment  with  a  (278)________  one.  In  augmented  reality,  a virtual  environment  coexists  (279)________  the  actual  world,  to be  instructive  and  offer  more  data  about  the  real  world  that a user  can  access  without  having  to  search.  When  a  handset  is pointed at a piece of malfunctioning (280)________, for example, industrial AR apps might provide rapid troubleshooting information.  Virtual  reality  is  a  (281)________  environmental simulation that completely replaces the user's surroundings with a totally virtual world. For example, VR may provide a user with a box containing a cartoon (282)________ of Mike Tyson in a virtual boxing ring.\nQ.278. (a) simulated  (b) catered  (c) revealed  (d) suffocated\n- Q.279. (a) with\n- (b) behind       (c) along\n- (d) beyond"
+      },
+      {
+        "text": "- Q.280. (a) equipment\n- (b) arsenal\n- (c) outfit\n- (d) baggage\n- Q.281. (a) comprehensive        (b) conclusive\n- (c) transgressive\n- (d) reprehensive\nQ.282. (a) glossary  (b) network  (c) rendition  (d) resistance",
+        "meta": {
+          "schema_name": "docling_core.transforms.chunker.DocMeta",
+          "version": "1.0.0",
+          "doc_items": [
+            {
+              "self_ref": "#/texts/50",
+              "parent": {
+                "cref": "#/groups/26"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 308.54999,
+                    "t": 114.92284968750005,
+                    "r": 402.64569316999996,
+                    "b": 106.84061281998538,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    20
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/51",
+              "parent": {
+                "cref": "#/groups/27"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 452.54999,
+                    "t": 114.92284968750005,
+                    "r": 504.39666692,
+                    "b": 106.84061281998538,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    11
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/52",
+              "parent": {
+                "cref": "#/groups/28"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 308.54999,
+                    "t": 102.50097968750003,
+                    "r": 382.78241191999996,
+                    "b": 94.41874281998537,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    10
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/53",
+              "parent": {
+                "cref": "#/groups/29"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 452.54999,
+                    "t": 102.50097968750003,
+                    "r": 503.08270441999997,
+                    "b": 94.41874281998537,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    11
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/54",
+              "parent": {
+                "cref": "#/groups/30"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 308.54999,
+                    "t": 79.03808968750002,
+                    "r": 488.35663442,
+                    "b": 70.95585281998535,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    46
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/55",
+              "parent": {
+                "cref": "#/groups/31"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 308.54999,
+                    "t": 66.61620968750003,
+                    "r": 411.10077167,
+                    "b": 58.533972819985365,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    17
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/56",
+              "parent": {
+                "cref": "#/groups/32"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "list_item",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 416.54999,
+                    "t": 66.61620968750003,
+                    "r": 496.83807691999993,
+                    "b": 58.533972819985365,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    16
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/57",
+              "parent": {
+                "cref": "#/groups/0"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 308.54999,
+                    "t": 43.15136968750005,
+                    "r": 549.7086819199999,
+                    "b": 35.069132819985384,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    63
+                  ]
+                }
+              ]
+            }
+          ],
+          "headings": [
+            "SET-56. Q .(278 - 282)"
+          ],
+          "captions": null,
+          "origin": {
+            "mimetype": "application/pdf",
+            "binary_hash": 2670402293247827851,
+            "filename": "english_page_0323.pdf",
+            "uri": null
+          }
+        },
+        "chunk_index": 9,
+        "contextualized_text": "SET-56. Q .(278 - 282)\n- Q.280. (a) equipment\n- (b) arsenal\n- (c) outfit\n- (d) baggage\n- Q.281. (a) comprehensive        (b) conclusive\n- (c) transgressive\n- (d) reprehensive\nQ.282. (a) glossary  (b) network  (c) rendition  (d) resistance"
+      }
+    ]
+  },
+  "content_assets": {
+    "tables": [],
+    "figures": []
+  },
+  "docling_document": {
+    "schema_name": "DoclingDocument",
+    "version": "1.10.0",
+    "name": "english_page_0323",
+    "origin": {
+      "mimetype": "application/pdf",
+      "binary_hash": 2670402293247827851,
+      "filename": "english_page_0323.pdf"
+    },
+    "furniture": {
+      "self_ref": "#/furniture",
+      "children": [],
+      "content_layer": "furniture",
+      "name": "_root_",
+      "label": "unspecified"
+    },
+    "body": {
+      "self_ref": "#/body",
+      "children": [
+        {
+          "$ref": "#/texts/0"
+        },
+        {
+          "$ref": "#/texts/1"
+        },
+        {
+          "$ref": "#/groups/0"
+        },
+        {
+          "$ref": "#/texts/58"
+        }
+      ],
+      "content_layer": "body",
+      "name": "_root_",
+      "label": "unspecified"
+    },
+    "groups": [
+      {
+        "self_ref": "#/groups/0",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [
+          {
+            "$ref": "#/groups/1"
+          },
+          {
+            "$ref": "#/groups/2"
+          },
+          {
+            "$ref": "#/groups/3"
+          },
+          {
+            "$ref": "#/groups/4"
+          },
+          {
+            "$ref": "#/groups/5"
+          },
+          {
+            "$ref": "#/groups/6"
+          },
+          {
+            "$ref": "#/texts/8"
+          },
+          {
+            "$ref": "#/texts/9"
+          },
+          {
+            "$ref": "#/groups/7"
+          },
+          {
+            "$ref": "#/groups/8"
+          },
+          {
+            "$ref": "#/groups/9"
+          },
+          {
+            "$ref": "#/groups/10"
+          },
+          {
+            "$ref": "#/groups/11"
+          },
+          {
+            "$ref": "#/texts/15"
+          },
+          {
+            "$ref": "#/texts/16"
+          },
+          {
+            "$ref": "#/texts/17"
+          },
+          {
+            "$ref": "#/texts/18"
+          },
+          {
+            "$ref": "#/texts/19"
+          },
+          {
+            "$ref": "#/groups/12"
+          },
+          {
+            "$ref": "#/groups/13"
+          },
+          {
+            "$ref": "#/groups/14"
+          },
+          {
+            "$ref": "#/groups/15"
+          },
+          {
+            "$ref": "#/texts/24"
+          },
+          {
+            "$ref": "#/texts/25"
+          },
+          {
+            "$ref": "#/texts/26"
+          },
+          {
+            "$ref": "#/groups/16"
+          },
+          {
+            "$ref": "#/texts/28"
+          },
+          {
+            "$ref": "#/groups/17"
+          },
+          {
+            "$ref": "#/groups/18"
+          },
+          {
+            "$ref": "#/groups/19"
+          },
+          {
+            "$ref": "#/groups/20"
+          },
+          {
+            "$ref": "#/groups/21"
+          },
+          {
+            "$ref": "#/groups/22"
+          },
+          {
+            "$ref": "#/texts/35"
+          },
+          {
+            "$ref": "#/texts/36"
+          },
+          {
+            "$ref": "#/texts/37"
+          },
+          {
+            "$ref": "#/texts/38"
+          },
+          {
+            "$ref": "#/texts/39"
+          },
+          {
+            "$ref": "#/texts/40"
+          },
+          {
+            "$ref": "#/texts/41"
+          },
+          {
+            "$ref": "#/texts/42"
+          },
+          {
+            "$ref": "#/texts/43"
+          },
+          {
+            "$ref": "#/texts/44"
+          },
+          {
+            "$ref": "#/texts/45"
+          },
+          {
+            "$ref": "#/texts/46"
+          },
+          {
+            "$ref": "#/groups/23"
+          },
+          {
+            "$ref": "#/groups/24"
+          },
+          {
+            "$ref": "#/groups/25"
+          },
+          {
+            "$ref": "#/groups/26"
+          },
+          {
+            "$ref": "#/groups/27"
+          },
+          {
+            "$ref": "#/groups/28"
+          },
+          {
+            "$ref": "#/groups/29"
+          },
+          {
+            "$ref": "#/groups/30"
+          },
+          {
+            "$ref": "#/groups/31"
+          },
+          {
+            "$ref": "#/groups/32"
+          },
+          {
+            "$ref": "#/texts/57"
+          }
+        ],
+        "content_layer": "body",
+        "name": "group",
+        "label": "form_area"
+      },
+      {
+        "self_ref": "#/groups/1",
+        "parent": {
+          "$ref": "#/groups/0"
+        },
+        "children": [
+          {
+            "$ref": "#/texts/2"
+          }
+        ],
+        "content_layer": "body",
+        "name": "group",
+        "label": "list"
+      },
+      {
+        "self_ref": "#/groups/2",
+        "parent": {
+          "$ref": "#/groups/0"
+        },
+        "children": [
+          {
+            "$ref": "#/texts/3"
+          }
+        ],
+        "content_layer": "body",
+        "name": "group",
+        "label": "list"
+      },
+      {
+        "self_ref": "#/groups/3",
+        "parent": {
+          "$ref": "#/groups/0"
+        },
+        "children": [
+          {
+            "$ref": "#/texts/4"
+          }
+        ],
+        "content_layer": "body",
+        "name": "group",
+        "label": "list"
+      },
+      {
+        "self_ref": "#/groups/4",
+        "parent": {
+          "$ref": "#/groups/0"
+        },
+        "children": [
+          {
+            "$ref": "#/texts/5"
+          }
+        ],
+        "content_layer": "body",
+        "name": "group",
+        "label": "list"
+      },
+      {
+        "self_ref": "#/groups/5",
+        "parent": {
+          "$ref": "#/groups/0"
+        },
+        "children": [
+          {
+            "$ref": "#/texts/6"
+          }
+        ],
+        "content_layer": "body",
+        "name": "group",
+        "label": "list"
+      },
+      {
+        "self_ref": "#/groups/6",
+        "parent": {
+          "$ref": "#/groups/0"
+        },
+        "children": [
+          {
+            "$ref": "#/texts/7"
+          }
+        ],
+        "content_layer": "body",
+        "name": "group",
+        "label": "list"
+      },
+      {
+        "self_ref": "#/groups/7",
+        "parent": {
+          "$ref": "#/groups/0"
+        },
+        "children": [
+          {
+            "$ref": "#/texts/10"
+          }
+        ],
+        "content_layer": "body",
+        "name": "group",
+        "label": "list"
+      },
+      {
+        "self_ref": "#/groups/8",
+        "parent": {
+          "$ref": "#/groups/0"
+        },
+        "children": [
+          {
+            "$ref": "#/texts/11"
+          }
+        ],
+        "content_layer": "body",
+        "name": "group",
+        "label": "list"
+      },
+      {
+        "self_ref": "#/groups/9",
+        "parent": {
+          "$ref": "#/groups/0"
+        },
+        "children": [
+          {
+            "$ref": "#/texts/12"
+          }
+        ],
+        "content_layer": "body",
+        "name": "group",
+        "label": "list"
+      },
+      {
+        "self_ref": "#/groups/10",
+        "parent": {
+          "$ref": "#/groups/0"
+        },
+        "children": [
+          {
+            "$ref": "#/texts/13"
+          }
+        ],
+        "content_layer": "body",
+        "name": "group",
+        "label": "list"
+      },
+      {
+        "self_ref": "#/groups/11",
+        "parent": {
+          "$ref": "#/groups/0"
+        },
+        "children": [
+          {
+            "$ref": "#/texts/14"
+          }
+        ],
+        "content_layer": "body",
+        "name": "group",
+        "label": "list"
+      },
+      {
+        "self_ref": "#/groups/12",
+        "parent": {
+          "$ref": "#/groups/0"
+        },
+        "children": [
+          {
+            "$ref": "#/texts/20"
+          }
+        ],
+        "content_layer": "body",
+        "name": "group",
+        "label": "list"
+      },
+      {
+        "self_ref": "#/groups/13",
+        "parent": {
+          "$ref": "#/groups/0"
+        },
+        "children": [
+          {
+            "$ref": "#/texts/21"
+          }
+        ],
+        "content_layer": "body",
+        "name": "group",
+        "label": "list"
+      },
+      {
+        "self_ref": "#/groups/14",
+        "parent": {
+          "$ref": "#/groups/0"
+        },
+        "children": [
+          {
+            "$ref": "#/texts/22"
+          }
+        ],
+        "content_layer": "body",
+        "name": "group",
+        "label": "list"
+      },
+      {
+        "self_ref": "#/groups/15",
+        "parent": {
+          "$ref": "#/groups/0"
+        },
+        "children": [
+          {
+            "$ref": "#/texts/23"
+          }
+        ],
+        "content_layer": "body",
+        "name": "group",
+        "label": "list"
+      },
+      {
+        "self_ref": "#/groups/16",
+        "parent": {
+          "$ref": "#/groups/0"
+        },
+        "children": [
+          {
+            "$ref": "#/texts/27"
+          }
+        ],
+        "content_layer": "body",
+        "name": "group",
+        "label": "list"
+      },
+      {
+        "self_ref": "#/groups/17",
+        "parent": {
+          "$ref": "#/groups/0"
+        },
+        "children": [
+          {
+            "$ref": "#/texts/29"
+          }
+        ],
+        "content_layer": "body",
+        "name": "group",
+        "label": "list"
+      },
+      {
+        "self_ref": "#/groups/18",
+        "parent": {
+          "$ref": "#/groups/0"
+        },
+        "children": [
+          {
+            "$ref": "#/texts/30"
+          }
+        ],
+        "content_layer": "body",
+        "name": "group",
+        "label": "list"
+      },
+      {
+        "self_ref": "#/groups/19",
+        "parent": {
+          "$ref": "#/groups/0"
+        },
+        "children": [
+          {
+            "$ref": "#/texts/31"
+          }
+        ],
+        "content_layer": "body",
+        "name": "group",
+        "label": "list"
+      },
+      {
+        "self_ref": "#/groups/20",
+        "parent": {
+          "$ref": "#/groups/0"
+        },
+        "children": [
+          {
+            "$ref": "#/texts/32"
+          }
+        ],
+        "content_layer": "body",
+        "name": "group",
+        "label": "list"
+      },
+      {
+        "self_ref": "#/groups/21",
+        "parent": {
+          "$ref": "#/groups/0"
+        },
+        "children": [
+          {
+            "$ref": "#/texts/33"
+          }
+        ],
+        "content_layer": "body",
+        "name": "group",
+        "label": "list"
+      },
+      {
+        "self_ref": "#/groups/22",
+        "parent": {
+          "$ref": "#/groups/0"
+        },
+        "children": [
+          {
+            "$ref": "#/texts/34"
+          }
+        ],
+        "content_layer": "body",
+        "name": "group",
+        "label": "list"
+      },
+      {
+        "self_ref": "#/groups/23",
+        "parent": {
+          "$ref": "#/groups/0"
+        },
+        "children": [
+          {
+            "$ref": "#/texts/47"
+          }
+        ],
+        "content_layer": "body",
+        "name": "group",
+        "label": "list"
+      },
+      {
+        "self_ref": "#/groups/24",
+        "parent": {
+          "$ref": "#/groups/0"
+        },
+        "children": [
+          {
+            "$ref": "#/texts/48"
+          }
+        ],
+        "content_layer": "body",
+        "name": "group",
+        "label": "list"
+      },
+      {
+        "self_ref": "#/groups/25",
+        "parent": {
+          "$ref": "#/groups/0"
+        },
+        "children": [
+          {
+            "$ref": "#/texts/49"
+          }
+        ],
+        "content_layer": "body",
+        "name": "group",
+        "label": "list"
+      },
+      {
+        "self_ref": "#/groups/26",
+        "parent": {
+          "$ref": "#/groups/0"
+        },
+        "children": [
+          {
+            "$ref": "#/texts/50"
+          }
+        ],
+        "content_layer": "body",
+        "name": "group",
+        "label": "list"
+      },
+      {
+        "self_ref": "#/groups/27",
+        "parent": {
+          "$ref": "#/groups/0"
+        },
+        "children": [
+          {
+            "$ref": "#/texts/51"
+          }
+        ],
+        "content_layer": "body",
+        "name": "group",
+        "label": "list"
+      },
+      {
+        "self_ref": "#/groups/28",
+        "parent": {
+          "$ref": "#/groups/0"
+        },
+        "children": [
+          {
+            "$ref": "#/texts/52"
+          }
+        ],
+        "content_layer": "body",
+        "name": "group",
+        "label": "list"
+      },
+      {
+        "self_ref": "#/groups/29",
+        "parent": {
+          "$ref": "#/groups/0"
+        },
+        "children": [
+          {
+            "$ref": "#/texts/53"
+          }
+        ],
+        "content_layer": "body",
+        "name": "group",
+        "label": "list"
+      },
+      {
+        "self_ref": "#/groups/30",
+        "parent": {
+          "$ref": "#/groups/0"
+        },
+        "children": [
+          {
+            "$ref": "#/texts/54"
+          }
+        ],
+        "content_layer": "body",
+        "name": "group",
+        "label": "list"
+      },
+      {
+        "self_ref": "#/groups/31",
+        "parent": {
+          "$ref": "#/groups/0"
+        },
+        "children": [
+          {
+            "$ref": "#/texts/55"
+          }
+        ],
+        "content_layer": "body",
+        "name": "group",
+        "label": "list"
+      },
+      {
+        "self_ref": "#/groups/32",
+        "parent": {
+          "$ref": "#/groups/0"
+        },
+        "children": [
+          {
+            "$ref": "#/texts/56"
+          }
+        ],
+        "content_layer": "body",
+        "name": "group",
+        "label": "list"
+      }
+    ],
+    "texts": [
+      {
+        "self_ref": "#/texts/0",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "furniture",
+        "label": "page_header",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 830.7925780594726,
+              "r": 95.7084616875,
+              "b": 822.5642819957749,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              8
+            ]
+          }
+        ],
+        "orig": "Pinnacle",
+        "text": "Pinnacle"
+      },
+      {
+        "self_ref": "#/texts/1",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 291.757038,
+              "t": 830.7925780594726,
+              "r": 568.9931979375,
+              "b": 822.5642819957749,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              10
+            ]
+          }
+        ],
+        "orig": "Cloze Test",
+        "text": "Cloze Test"
+      },
+      {
+        "self_ref": "#/texts/2",
+        "parent": {
+          "$ref": "#/groups/1"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 814.6962886875,
+              "r": 206.14570934999998,
+              "b": 806.6140518199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              47
+            ]
+          }
+        ],
+        "orig": "(c) conflictingly                  (d) clumsily",
+        "text": "(c) conflictingly                  (d) clumsily",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/3",
+        "parent": {
+          "$ref": "#/groups/2"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 802.2744136875,
+              "r": 252.72334521,
+              "b": 794.1921768199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              63
+            ]
+          }
+        ],
+        "orig": "Q.256. (a) instigate    (b) distant    (c) remote     (d) bleak",
+        "text": "Q.256. (a) instigate    (b) distant    (c) remote     (d) bleak",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/4",
+        "parent": {
+          "$ref": "#/groups/3"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 781.5732416875001,
+              "r": 124.48213167,
+              "b": 773.4910048199854,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              23
+            ]
+          }
+        ],
+        "orig": "Q.257. (a) nevertheless",
+        "text": "Q.257. (a) nevertheless",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/5",
+        "parent": {
+          "$ref": "#/groups/4"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 136.800003,
+              "t": 781.5732416875001,
+              "r": 230.57050991999998,
+              "b": 773.4910048199854,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              19
+            ]
+          }
+        ],
+        "orig": "(b) notwithstanding",
+        "text": "(b) notwithstanding",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/6",
+        "parent": {
+          "$ref": "#/groups/5"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 769.1513666875001,
+              "r": 115.19209317,
+              "b": 761.0691298199854,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              14
+            ]
+          }
+        ],
+        "orig": "(c) regardless",
+        "text": "(c) regardless",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/7",
+        "parent": {
+          "$ref": "#/groups/6"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 136.800003,
+              "t": 769.1513666875001,
+              "r": 202.93769684999998,
+              "b": 761.0691298199854,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              12
+            ]
+          }
+        ],
+        "orig": "(d) inasmuch",
+        "text": "(d) inasmuch",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/8",
+        "parent": {
+          "$ref": "#/groups/0"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "section_header",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 748.4462886875,
+              "r": 121.24775694,
+              "b": 740.3640518199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              22
+            ]
+          }
+        ],
+        "orig": "SET-52. Q .(258 - 262)",
+        "text": "SET-52. Q .(258 - 262)",
+        "level": 1
+      },
+      {
+        "self_ref": "#/texts/9",
+        "parent": {
+          "$ref": "#/groups/0"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 736.0244136875,
+              "r": 288.94600242,
+              "b": 554.0339728199854,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              978
+            ]
+          }
+        ],
+        "orig": "Rory  Cooper  was  a  top  aide  to  former  House  Majority  Leader Eric  Cantor,  the  up-and-coming  Virginia  Republican  who  lost  a 2014  House  primary.  He  was  also a prominent Never Trumper, openly (258)_______how awful he found the 45th president. The cause  Cooper  has  (259)_______himself  to  for  the  past  year, though, is closer to home. He is, as he puts it in his Twitter bio, 'Apparently  Mr.  Open  the  Schools'.  A  father  of  a  fifth  grader, a second  grader  and  a  kindergartner,  Cooper  is  (260)_______ because  the  public  schools  in  Fairfax,  Virginia,  where  he  lives, have  not  reopened. Fairfax, in the Washington, D.C., suburbs, is one of the school districts that has moved (261) ________ toward in-person  learning,  and  it  is  still  not close: only in the past few weeks have students  started  to return to classrooms, and only about  half of those eligible have opted to go back, for an (262) ________ of two days a week.",
+        "text": "Rory  Cooper  was  a  top  aide  to  former  House  Majority  Leader Eric  Cantor,  the  up-and-coming  Virginia  Republican  who  lost  a 2014  House  primary.  He  was  also a prominent Never Trumper, openly (258)_______how awful he found the 45th president. The cause  Cooper  has  (259)_______himself  to  for  the  past  year, though, is closer to home. He is, as he puts it in his Twitter bio, 'Apparently  Mr.  Open  the  Schools'.  A  father  of  a  fifth  grader, a second  grader  and  a  kindergartner,  Cooper  is  (260)_______ because  the  public  schools  in  Fairfax,  Virginia,  where  he  lives, have  not  reopened. Fairfax, in the Washington, D.C., suburbs, is one of the school districts that has moved (261) ________ toward in-person  learning,  and  it  is  still  not close: only in the past few weeks have students  started  to return to classrooms, and only about  half of those eligible have opted to go back, for an (262) ________ of two days a week."
+      },
+      {
+        "self_ref": "#/texts/10",
+        "parent": {
+          "$ref": "#/groups/7"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 541.4130896875,
+              "r": 257.48701242,
+              "b": 533.3308528199854,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              62
+            ]
+          }
+        ],
+        "orig": "Q.258. (a) frisking  (b) skipping  (c) detailing  (d) ignoring",
+        "text": "Q.258. (a) frisking  (b) skipping  (c) detailing  (d) ignoring",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/11",
+        "parent": {
+          "$ref": "#/groups/8"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 520.7099596875,
+              "r": 260.86201242,
+              "b": 512.6277228199854,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              62
+            ]
+          }
+        ],
+        "orig": "Q.259. (a) committed  (b) pacified  (c) sorted    (d) isolated",
+        "text": "Q.259. (a) committed  (b) pacified  (c) sorted    (d) isolated",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/12",
+        "parent": {
+          "$ref": "#/groups/9"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 500.0068396875,
+              "r": 268.31074242,
+              "b": 491.92460281998535,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              63
+            ]
+          }
+        ],
+        "orig": "Q.260. (a) indebted  (b) provoked  (c) excited   (d) frustrated",
+        "text": "Q.260. (a) indebted  (b) provoked  (c) excited   (d) frustrated",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/13",
+        "parent": {
+          "$ref": "#/groups/10"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 479.3037096875,
+              "r": 275.16181991999997,
+              "b": 471.2214728199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              68
+            ]
+          }
+        ],
+        "orig": "Q.261. (a) plainest     (b) slowest     (c) longest    (d) strangest",
+        "text": "Q.261. (a) plainest     (b) slowest     (c) longest    (d) strangest",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/14",
+        "parent": {
+          "$ref": "#/groups/11"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 458.5986296875,
+              "r": 275.01679992,
+              "b": 450.51639281998536,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              64
+            ]
+          }
+        ],
+        "orig": "Q.262. (a) average    (b) amount   (c) ideal   (d) understanding",
+        "text": "Q.262. (a) average    (b) amount   (c) ideal   (d) understanding",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/15",
+        "parent": {
+          "$ref": "#/groups/0"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "section_header",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 437.8974596875,
+              "r": 121.24775694,
+              "b": 429.8152228199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              22
+            ]
+          }
+        ],
+        "orig": "SET-53. Q .(263 - 267)",
+        "text": "SET-53. Q .(263 - 267)",
+        "level": 1
+      },
+      {
+        "self_ref": "#/texts/16",
+        "parent": {
+          "$ref": "#/groups/0"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 425.4755896875,
+              "r": 288.97383492,
+              "b": 342.86014281998536,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              444
+            ]
+          }
+        ],
+        "orig": "The limbs of the flying squirrel are interlinked with a membrane. When  the  creature  (263)________  into  the  air,  the  membrane opens and the squirrel seems to (264)_______ swiftly downwards.  This  movement  gives  the  (265)_______  of  flight. However, it is not flying really. It is a (266)_______ in the air from a higher  level. It  is  also  noteworthy  that  a  squirrel  cannot (267)_____ its direction while it is in flying mode.",
+        "text": "The limbs of the flying squirrel are interlinked with a membrane. When  the  creature  (263)________  into  the  air,  the  membrane opens and the squirrel seems to (264)_______ swiftly downwards.  This  movement  gives  the  (265)_______  of  flight. However, it is not flying really. It is a (266)_______ in the air from a higher  level. It  is  also  noteworthy  that  a  squirrel  cannot (267)_____ its direction while it is in flying mode."
+      },
+      {
+        "self_ref": "#/texts/17",
+        "parent": {
+          "$ref": "#/groups/0"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 330.2372996875,
+              "r": 240.72627491999998,
+              "b": 322.15506281998535,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              60
+            ]
+          }
+        ],
+        "orig": "Q.263. (a) spring     (b) cross     (c) hurdle     (d) leaps",
+        "text": "Q.263. (a) spring     (b) cross     (c) hurdle     (d) leaps"
+      },
+      {
+        "self_ref": "#/texts/18",
+        "parent": {
+          "$ref": "#/groups/0"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 309.5341796875,
+              "r": 55.716506939999995,
+              "b": 301.45194281998533,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              6
+            ]
+          }
+        ],
+        "orig": "Q.264.",
+        "text": "Q.264."
+      },
+      {
+        "self_ref": "#/texts/19",
+        "parent": {
+          "$ref": "#/groups/0"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 55.716507,
+              "t": 309.5341796875,
+              "r": 95.34199542,
+              "b": 301.45194281998533,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              9
+            ]
+          }
+        ],
+        "orig": "(a) skate",
+        "text": "(a) skate"
+      },
+      {
+        "self_ref": "#/texts/20",
+        "parent": {
+          "$ref": "#/groups/12"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 100.800003,
+              "t": 309.5341796875,
+              "r": 196.98750492,
+              "b": 301.45194281998533,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              24
+            ]
+          }
+        ],
+        "orig": "(b) skim       (c) wheel",
+        "text": "(b) skim       (c) wheel",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/21",
+        "parent": {
+          "$ref": "#/groups/13"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 208.800003,
+              "t": 309.5341796875,
+              "r": 243.83320992,
+              "b": 301.45194281998533,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              9
+            ]
+          }
+        ],
+        "orig": "(d) glide",
+        "text": "(d) glide",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/22",
+        "parent": {
+          "$ref": "#/groups/14"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 288.8310496875,
+              "r": 253.25947635,
+              "b": 280.74881281998535,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              59
+            ]
+          }
+        ],
+        "orig": "Q.265. (a) affect  (b) suspicion  (c) fancy  (d) impression",
+        "text": "Q.265. (a) affect  (b) suspicion  (c) fancy  (d) impression",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/23",
+        "parent": {
+          "$ref": "#/groups/15"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 268.1279296875,
+              "r": 234.81562992,
+              "b": 260.04569281998533,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              54
+            ]
+          }
+        ],
+        "orig": "Q.266. (a) progress   (b) motion   (c) sign   (d) wave",
+        "text": "Q.266. (a) progress   (b) motion   (c) sign   (d) wave",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/24",
+        "parent": {
+          "$ref": "#/groups/0"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 247.4247996875,
+              "r": 238.99482492,
+              "b": 239.34256281998535,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              57
+            ]
+          }
+        ],
+        "orig": "Q.267. (a) adopt    (b) replace    (c) adept     (d) swap",
+        "text": "Q.267. (a) adopt    (b) replace    (c) adept     (d) swap"
+      },
+      {
+        "self_ref": "#/texts/25",
+        "parent": {
+          "$ref": "#/groups/0"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "section_header",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 226.7216796875,
+              "r": 121.24775694,
+              "b": 218.63944281998533,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              22
+            ]
+          }
+        ],
+        "orig": "SET-54. Q .(268 - 272)",
+        "text": "SET-54. Q .(268 - 272)",
+        "level": 1
+      },
+      {
+        "self_ref": "#/texts/26",
+        "parent": {
+          "$ref": "#/groups/0"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 214.2997996875,
+              "r": 288.93721242,
+              "b": 81.99686281998538,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              719
+            ]
+          }
+        ],
+        "orig": "This Diwali is more  significant because  we  are  going  to celebrate it after three years, without the evil shadow of Covid-19 that  (268)________  looming  over  all  festivities.  The  lockdowns and  endless  bad  news  of  death  and  (269)________  had  turned our  country  into  a  zone  of  gloom.  But,  this  season  of  Diwali (270)________ all the sorrows of people by lighting the candle of hope  in  their  lives.  We  can  see  the  lights,  the  candles,  the lanterns,  and  the  busy  people  coming  out  of  their  houses and purchasing  toys  for  their  children.  Let's  (271)________  those people who have made such a huge contribution to (272)________ good thoughts and saving people's lives.",
+        "text": "This Diwali is more  significant because  we  are  going  to celebrate it after three years, without the evil shadow of Covid-19 that  (268)________  looming  over  all  festivities.  The  lockdowns and  endless  bad  news  of  death  and  (269)________  had  turned our  country  into  a  zone  of  gloom.  But,  this  season  of  Diwali (270)________ all the sorrows of people by lighting the candle of hope  in  their  lives.  We  can  see  the  lights,  the  candles,  the lanterns,  and  the  busy  people  coming  out  of  their  houses and purchasing  toys  for  their  children.  Let's  (271)________  those people who have made such a huge contribution to (272)________ good thoughts and saving people's lives."
+      },
+      {
+        "self_ref": "#/texts/27",
+        "parent": {
+          "$ref": "#/groups/16"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 69.37597968750003,
+              "r": 57.953323440000005,
+              "b": 61.29374281998537,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              6
+            ]
+          }
+        ],
+        "orig": "Q.268.",
+        "text": "Q.268.",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/28",
+        "parent": {
+          "$ref": "#/groups/0"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 57.953323499999996,
+              "t": 69.37597968750003,
+              "r": 269.21162742,
+              "b": 61.29374281998537,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              73
+            ]
+          }
+        ],
+        "orig": "(a) is                 (b) were            (c) are                (d) was",
+        "text": "(a) is                 (b) were            (c) are                (d) was"
+      },
+      {
+        "self_ref": "#/texts/29",
+        "parent": {
+          "$ref": "#/groups/17"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 48.67284968750005,
+              "r": 55.716506939999995,
+              "b": 40.59061281998538,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              6
+            ]
+          }
+        ],
+        "orig": "Q.269.",
+        "text": "Q.269.",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/30",
+        "parent": {
+          "$ref": "#/groups/18"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 55.716507,
+              "t": 48.67284968750005,
+              "r": 232.36348242000003,
+              "b": 40.59061281998538,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              42
+            ]
+          }
+        ],
+        "orig": "(a) economic boom       (b) demonetisation",
+        "text": "(a) economic boom       (b) demonetisation",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/31",
+        "parent": {
+          "$ref": "#/groups/19"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 36.250979687500035,
+              "r": 104.20576467000001,
+              "b": 28.16874281998537,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              11
+            ]
+          }
+        ],
+        "orig": "(c) disease",
+        "text": "(c) disease",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/32",
+        "parent": {
+          "$ref": "#/groups/20"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 136.800003,
+              "t": 36.250979687500035,
+              "r": 205.33271742,
+              "b": 28.16874281998537,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              13
+            ]
+          }
+        ],
+        "orig": "(d) new birth",
+        "text": "(d) new birth",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/33",
+        "parent": {
+          "$ref": "#/groups/21"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 308.54999,
+              "t": 814.6962886875,
+              "r": 503.65838942,
+              "b": 806.6140518199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              52
+            ]
+          }
+        ],
+        "orig": "Q.270. (a) had recognised            (b) has hovered",
+        "text": "Q.270. (a) had recognised            (b) has hovered",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/34",
+        "parent": {
+          "$ref": "#/groups/22"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 308.54999,
+              "t": 802.2744136875,
+              "r": 505.92157441999996,
+              "b": 794.1921768199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              51
+            ]
+          }
+        ],
+        "orig": "(c) has shed                        (d) has adopted",
+        "text": "(c) has shed                        (d) has adopted",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/35",
+        "parent": {
+          "$ref": "#/groups/0"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 308.54999,
+              "t": 781.5732416875001,
+              "r": 537.14032442,
+              "b": 773.4910048199854,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              61
+            ]
+          }
+        ],
+        "orig": "Q.271. (a) salute   (b) berate   (c) terminate    (d) onerous",
+        "text": "Q.271. (a) salute   (b) berate   (c) terminate    (d) onerous"
+      },
+      {
+        "self_ref": "#/texts/36",
+        "parent": {
+          "$ref": "#/groups/0"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 308.54999,
+              "t": 760.8681636875,
+              "r": 563.80194692,
+              "b": 752.7859268199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              64
+            ]
+          }
+        ],
+        "orig": "Q.272. (a) stagnating (b) impeding (c) implicating (d) spreading",
+        "text": "Q.272. (a) stagnating (b) impeding (c) implicating (d) spreading"
+      },
+      {
+        "self_ref": "#/texts/37",
+        "parent": {
+          "$ref": "#/groups/0"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "section_header",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 308.54999,
+              "t": 738.7861326875,
+              "r": 400.99774393999996,
+              "b": 730.7038958199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              22
+            ]
+          }
+        ],
+        "orig": "SET-55. Q .(273 - 277)",
+        "text": "SET-55. Q .(273 - 277)",
+        "level": 1
+      },
+      {
+        "self_ref": "#/texts/38",
+        "parent": {
+          "$ref": "#/groups/0"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 308.54999,
+              "t": 726.3623046875,
+              "r": 568.78094942,
+              "b": 469.83866281998536,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              1377
+            ]
+          }
+        ],
+        "orig": "When Ojeya Cruz Banks moved to Ohio from New Zealand (273) ________  years  ago,  she  was  overwhelmed  by  the  logistics  of uprooting her life. But Cruz Banks, a Denison University professor  and  a  single  mom,  who  is  also  my  neighbour  and friend,  was  (274)  ________  to  find  a  house  next  to  a  public elementary school. She assumed that she would be able to walk to  pick  up  her  daughter,  a  needed  convenience  given  that  she didn't  yet  have  a  car.  Unfortunately,  when  she  went  to register her  daughter  for  kindergarten,  she  was  met  with  an  (275) ________ surprise: The only (276) ________ option was a half-day program  that  would  bus  students  to  a  day-care  centre  on  the outskirts  of  the  town  for  the  afternoon. The district did offer a limited number of full-day slots, but those had all been claimed in  a  lottery  earlier  that  spring  and  came  with  a  tuition  cost.  'I was like, 'Cost me? What? Public school costs money here?'' she told me. Many parents across the United States, like Cruz Banks, may assume that free,  full-day  kindergarten is a (277) ________ part of the country's public education system. I was one of them, until my  youngest  had  to  enter  our  district's  lottery  several months ago.  When  he  was  assigned  to the half-day program, I swung between alarm and frustration.",
+        "text": "When Ojeya Cruz Banks moved to Ohio from New Zealand (273) ________  years  ago,  she  was  overwhelmed  by  the  logistics  of uprooting her life. But Cruz Banks, a Denison University professor  and  a  single  mom,  who  is  also  my  neighbour  and friend,  was  (274)  ________  to  find  a  house  next  to  a  public elementary school. She assumed that she would be able to walk to  pick  up  her  daughter,  a  needed  convenience  given  that  she didn't  yet  have  a  car.  Unfortunately,  when  she  went  to register her  daughter  for  kindergarten,  she  was  met  with  an  (275) ________ surprise: The only (276) ________ option was a half-day program  that  would  bus  students  to  a  day-care  centre  on  the outskirts  of  the  town  for  the  afternoon. The district did offer a limited number of full-day slots, but those had all been claimed in  a  lottery  earlier  that  spring  and  came  with  a  tuition  cost.  'I was like, 'Cost me? What? Public school costs money here?'' she told me. Many parents across the United States, like Cruz Banks, may assume that free,  full-day  kindergarten is a (277) ________ part of the country's public education system. I was one of them, until my  youngest  had  to  enter  our  district's  lottery  several months ago.  When  he  was  assigned  to the half-day program, I swung between alarm and frustration."
+      },
+      {
+        "self_ref": "#/texts/39",
+        "parent": {
+          "$ref": "#/groups/0"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 308.54999,
+              "t": 457.2197296875,
+              "r": 557.79022442,
+              "b": 449.1374928199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              64
+            ]
+          }
+        ],
+        "orig": "Q.273. (a) several   (b) particular   (c) enormous   (d) immense",
+        "text": "Q.273. (a) several   (b) particular   (c) enormous   (d) immense"
+      },
+      {
+        "self_ref": "#/texts/40",
+        "parent": {
+          "$ref": "#/groups/0"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 308.54999,
+              "t": 436.5146496875,
+              "r": 564.45233192,
+              "b": 428.43241281998536,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              67
+            ]
+          }
+        ],
+        "orig": "Q.274. (a) distraught  (b) dispassionate  (c) relieved  (d) worried",
+        "text": "Q.274. (a) distraught  (b) dispassionate  (c) relieved  (d) worried"
+      },
+      {
+        "self_ref": "#/texts/41",
+        "parent": {
+          "$ref": "#/groups/0"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 308.54999,
+              "t": 415.8115196875,
+              "r": 563.18670692,
+              "b": 407.7292828199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              64
+            ]
+          }
+        ],
+        "orig": "Q.275. (a) agreeable  (b) unpleasant  (c) amusing  (d) enjoyable",
+        "text": "Q.275. (a) agreeable  (b) unpleasant  (c) amusing  (d) enjoyable"
+      },
+      {
+        "self_ref": "#/texts/42",
+        "parent": {
+          "$ref": "#/groups/0"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 308.54999,
+              "t": 392.3486296875,
+              "r": 557.31122192,
+              "b": 384.26639281998536,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              68
+            ]
+          }
+        ],
+        "orig": "Q.276. (a) futile   (b) available   (c) nonviable   (d) inaccessible",
+        "text": "Q.276. (a) futile   (b) available   (c) nonviable   (d) inaccessible"
+      },
+      {
+        "self_ref": "#/texts/43",
+        "parent": {
+          "$ref": "#/groups/0"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 308.54999,
+              "t": 371.6435496875,
+              "r": 563.054871845,
+              "b": 363.56131281998535,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              65
+            ]
+          }
+        ],
+        "orig": "Q.277. (a) disapproved (b) ceaseless (c) inessential (d) required",
+        "text": "Q.277. (a) disapproved (b) ceaseless (c) inessential (d) required"
+      },
+      {
+        "self_ref": "#/texts/44",
+        "parent": {
+          "$ref": "#/groups/0"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "section_header",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 308.54999,
+              "t": 346.7997996875,
+              "r": 400.99774393999996,
+              "b": 338.71756281998535,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              22
+            ]
+          }
+        ],
+        "orig": "SET-56. Q .(278 - 282)",
+        "text": "SET-56. Q .(278 - 282)",
+        "level": 1
+      },
+      {
+        "self_ref": "#/texts/45",
+        "parent": {
+          "$ref": "#/groups/0"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 308.54999,
+              "t": 334.3779296875,
+              "r": 568.73699942,
+              "b": 177.23319281998533,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              811
+            ]
+          }
+        ],
+        "orig": "Augmented  reality  and  virtual  reality  are  two  types  of  reality technologies that either augment or replace a real-world environment  with  a  (278)________  one.  In  augmented  reality,  a virtual  environment  coexists  (279)________  the  actual  world,  to be  instructive  and  offer  more  data  about  the  real  world  that a user  can  access  without  having  to  search.  When  a  handset  is pointed at a piece of malfunctioning (280)________, for example, industrial AR apps might provide rapid troubleshooting information.  Virtual  reality  is  a  (281)________  environmental simulation that completely replaces the user's surroundings with a totally virtual world. For example, VR may provide a user with a box containing a cartoon (282)________ of Mike Tyson in a virtual boxing ring.",
+        "text": "Augmented  reality  and  virtual  reality  are  two  types  of  reality technologies that either augment or replace a real-world environment  with  a  (278)________  one.  In  augmented  reality,  a virtual  environment  coexists  (279)________  the  actual  world,  to be  instructive  and  offer  more  data  about  the  real  world  that a user  can  access  without  having  to  search.  When  a  handset  is pointed at a piece of malfunctioning (280)________, for example, industrial AR apps might provide rapid troubleshooting information.  Virtual  reality  is  a  (281)________  environmental simulation that completely replaces the user's surroundings with a totally virtual world. For example, VR may provide a user with a box containing a cartoon (282)________ of Mike Tyson in a virtual boxing ring."
+      },
+      {
+        "self_ref": "#/texts/46",
+        "parent": {
+          "$ref": "#/groups/0"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 308.54999,
+              "t": 161.85058968750002,
+              "r": 553.63739192,
+              "b": 153.76835281998535,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              63
+            ]
+          }
+        ],
+        "orig": "Q.278. (a) simulated  (b) catered  (c) revealed  (d) suffocated",
+        "text": "Q.278. (a) simulated  (b) catered  (c) revealed  (d) suffocated"
+      },
+      {
+        "self_ref": "#/texts/47",
+        "parent": {
+          "$ref": "#/groups/23"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 308.54999,
+              "t": 138.3876996875,
+              "r": 370.12616191999996,
+              "b": 130.30546281998534,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              15
+            ]
+          }
+        ],
+        "orig": "Q.279. (a) with",
+        "text": "Q.279. (a) with",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/48",
+        "parent": {
+          "$ref": "#/groups/24"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 380.54999,
+              "t": 138.3876996875,
+              "r": 474.32489191999997,
+              "b": 130.30546281998534,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              26
+            ]
+          }
+        ],
+        "orig": "(b) behind       (c) along",
+        "text": "(b) behind       (c) along",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/49",
+        "parent": {
+          "$ref": "#/groups/25"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 488.54999,
+              "t": 138.3876996875,
+              "r": 533.44451942,
+              "b": 130.30546281998534,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              10
+            ]
+          }
+        ],
+        "orig": "(d) beyond",
+        "text": "(d) beyond",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/50",
+        "parent": {
+          "$ref": "#/groups/26"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 308.54999,
+              "t": 114.92284968750005,
+              "r": 402.64569316999996,
+              "b": 106.84061281998538,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              20
+            ]
+          }
+        ],
+        "orig": "Q.280. (a) equipment",
+        "text": "Q.280. (a) equipment",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/51",
+        "parent": {
+          "$ref": "#/groups/27"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 452.54999,
+              "t": 114.92284968750005,
+              "r": 504.39666692,
+              "b": 106.84061281998538,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              11
+            ]
+          }
+        ],
+        "orig": "(b) arsenal",
+        "text": "(b) arsenal",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/52",
+        "parent": {
+          "$ref": "#/groups/28"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 308.54999,
+              "t": 102.50097968750003,
+              "r": 382.78241191999996,
+              "b": 94.41874281998537,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              10
+            ]
+          }
+        ],
+        "orig": "(c) outfit",
+        "text": "(c) outfit",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/53",
+        "parent": {
+          "$ref": "#/groups/29"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 452.54999,
+              "t": 102.50097968750003,
+              "r": 503.08270441999997,
+              "b": 94.41874281998537,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              11
+            ]
+          }
+        ],
+        "orig": "(d) baggage",
+        "text": "(d) baggage",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/54",
+        "parent": {
+          "$ref": "#/groups/30"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 308.54999,
+              "t": 79.03808968750002,
+              "r": 488.35663442,
+              "b": 70.95585281998535,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              46
+            ]
+          }
+        ],
+        "orig": "Q.281. (a) comprehensive        (b) conclusive",
+        "text": "Q.281. (a) comprehensive        (b) conclusive",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/55",
+        "parent": {
+          "$ref": "#/groups/31"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 308.54999,
+              "t": 66.61620968750003,
+              "r": 411.10077167,
+              "b": 58.533972819985365,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              17
+            ]
+          }
+        ],
+        "orig": "(c) transgressive",
+        "text": "(c) transgressive",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/56",
+        "parent": {
+          "$ref": "#/groups/32"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "list_item",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 416.54999,
+              "t": 66.61620968750003,
+              "r": 496.83807691999993,
+              "b": 58.533972819985365,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              16
+            ]
+          }
+        ],
+        "orig": "(d) reprehensive",
+        "text": "(d) reprehensive",
+        "enumerated": false,
+        "marker": ""
+      },
+      {
+        "self_ref": "#/texts/57",
+        "parent": {
+          "$ref": "#/groups/0"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 308.54999,
+              "t": 43.15136968750005,
+              "r": 549.7086819199999,
+              "b": 35.069132819985384,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              63
+            ]
+          }
+        ],
+        "orig": "Q.282. (a) glossary  (b) network  (c) rendition  (d) resistance",
+        "text": "Q.282. (a) glossary  (b) network  (c) rendition  (d) resistance"
+      },
+      {
+        "self_ref": "#/texts/58",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "furniture",
+        "label": "page_footer",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 99.3266505,
+              "t": 21.98749795947265,
+              "r": 495.95088382500006,
+              "b": 13.759201895774936,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              109
+            ]
+          }
+        ],
+        "orig": "www.ssccglpinnacle.com                                                 Download Pinnacle Exam Preparation App",
+        "text": "www.ssccglpinnacle.com                                                 Download Pinnacle Exam Preparation App"
+      }
+    ],
+    "pictures": [],
+    "tables": [],
+    "key_value_items": [],
+    "form_items": [],
+    "pages": {
+      "1": {
+        "size": {
+          "width": 596.0,
+          "height": 842.0
+        },
+        "page_no": 1
+      }
+    }
+  }
+}

@@ -1,0 +1,3599 @@
+{
+  "document_id": "english",
+  "source": "english.pdf",
+  "pdf_page": 305,
+  "page_width": 596.0,
+  "page_height": 842.0,
+  "extracted_at": "2026-09-09T10:35:05.376279+00:00",
+  "extraction_version": 4,
+  "ocr_enabled": true,
+  "extraction_detection": {
+    "requested_profile": "auto",
+    "effective_profile": "hybrid",
+    "embedded_text_characters": 4646,
+    "auto_text_threshold": 80
+  },
+  "docling_result": {
+    "status": "success",
+    "errors": []
+  },
+  "content_summary": {
+    "text_items": 45,
+    "text_characters": 5728,
+    "table_items": 0,
+    "picture_items": 0,
+    "group_items": 0,
+    "warnings": []
+  },
+  "reading_order": {
+    "source": "docling_iterate_items",
+    "items": [
+      {
+        "reading_order_index": 0,
+        "element_ref": "#/texts/1",
+        "label": "text",
+        "level": 1,
+        "text_preview": "'Reorients' means to change the focus or direction of understanding. The given passage states that this understanding  shifts  the  goal  of  self-discovery  fr"
+      },
+      {
+        "reading_order_index": 1,
+        "element_ref": "#/texts/2",
+        "label": "section_header",
+        "level": 1,
+        "text_preview": "SET - 4"
+      },
+      {
+        "reading_order_index": 2,
+        "element_ref": "#/texts/3",
+        "label": "section_header",
+        "level": 1,
+        "text_preview": "Sol.16.(c) commodification"
+      },
+      {
+        "reading_order_index": 3,
+        "element_ref": "#/texts/4",
+        "label": "text",
+        "level": 1,
+        "text_preview": "'Commodification' means the process of turning something into a marketable commodity. The given passage  states that creativity in  the  digital  age  is  trans"
+      },
+      {
+        "reading_order_index": 4,
+        "element_ref": "#/texts/5",
+        "label": "section_header",
+        "level": 1,
+        "text_preview": "Sol.17.(b) homogenizing"
+      },
+      {
+        "reading_order_index": 5,
+        "element_ref": "#/texts/6",
+        "label": "text",
+        "level": 1,
+        "text_preview": "'Homogenizing'  means  making  things  uniform  or  similar.  The given passage states that the so-called 'disruption' in the digital age actually compels artis"
+      },
+      {
+        "reading_order_index": 6,
+        "element_ref": "#/texts/7",
+        "label": "section_header",
+        "level": 1,
+        "text_preview": "Sol.18.(c) conflates"
+      },
+      {
+        "reading_order_index": 7,
+        "element_ref": "#/texts/8",
+        "label": "text",
+        "level": 1,
+        "text_preview": "'Conflates'  means  to  combine  two  things  as  if  they  were  the same.  The  given  passage  states  that  engagement  metrics equate genuine human connect"
+      },
+      {
+        "reading_order_index": 8,
+        "element_ref": "#/texts/9",
+        "label": "section_header",
+        "level": 1,
+        "text_preview": "Sol.19.(d) performed"
+      },
+      {
+        "reading_order_index": 9,
+        "element_ref": "#/texts/10",
+        "label": "text",
+        "level": 1,
+        "text_preview": "'Performed' means the act of carrying out or enacting something.  The  given  passage  states  that  vulnerability  is  not genuinely shared but is staged and p"
+      },
+      {
+        "reading_order_index": 10,
+        "element_ref": "#/texts/11",
+        "label": "section_header",
+        "level": 1,
+        "text_preview": "Sol.20.(c) opposition"
+      },
+      {
+        "reading_order_index": 11,
+        "element_ref": "#/texts/12",
+        "label": "text",
+        "level": 1,
+        "text_preview": "'Opposition' means being in contrast or conflict with something. The given passage states that reclaiming art requires a return to messy,  unquantifiable  creat"
+      },
+      {
+        "reading_order_index": 12,
+        "element_ref": "#/texts/13",
+        "label": "section_header",
+        "level": 1,
+        "text_preview": "SET - 5"
+      },
+      {
+        "reading_order_index": 13,
+        "element_ref": "#/texts/14",
+        "label": "section_header",
+        "level": 1,
+        "text_preview": "Sol.21.(b) elides"
+      },
+      {
+        "reading_order_index": 14,
+        "element_ref": "#/texts/15",
+        "label": "text",
+        "level": 1,
+        "text_preview": "'Elides'  means  to  omit  or  gloss  over  something.  The  given passage  states  that  official  history  often  elides  inconvenient truths  and  dissenting"
+      },
+      {
+        "reading_order_index": 15,
+        "element_ref": "#/texts/16",
+        "label": "section_header",
+        "level": 1,
+        "text_preview": "Sol.22.(c) embodiment"
+      },
+      {
+        "reading_order_index": 16,
+        "element_ref": "#/texts/17",
+        "label": "text",
+        "level": 1,
+        "text_preview": "'Embodiment'  means  a  tangible  or  visible  form  of  an  idea, quality,  or feeling. The given passage states that official history is  given a physical emb"
+      },
+      {
+        "reading_order_index": 17,
+        "element_ref": "#/texts/18",
+        "label": "section_header",
+        "level": 1,
+        "text_preview": "Sol.23.(d) messy"
+      },
+      {
+        "reading_order_index": 18,
+        "element_ref": "#/texts/19",
+        "label": "text",
+        "level": 1,
+        "text_preview": "'Messy'  means  complicated,  disorderly,  or  not  straightforward. The given passage states that the curated heroic timeline often papers  over  the  messy  f"
+      },
+      {
+        "reading_order_index": 19,
+        "element_ref": "#/texts/20",
+        "label": "text",
+        "level": 1,
+        "text_preview": "Cloze Test"
+      },
+      {
+        "reading_order_index": 20,
+        "element_ref": "#/texts/21",
+        "label": "section_header",
+        "level": 1,
+        "text_preview": "Sol.24.(a) excavated"
+      },
+      {
+        "reading_order_index": 21,
+        "element_ref": "#/texts/22",
+        "label": "text",
+        "level": 1,
+        "text_preview": "'Excavated' means to uncover or bring to light something that is hidden. The given passage states that silenced narratives must be actively excavated and brough"
+      },
+      {
+        "reading_order_index": 22,
+        "element_ref": "#/texts/23",
+        "label": "text",
+        "level": 1,
+        "text_preview": "."
+      },
+      {
+        "reading_order_index": 23,
+        "element_ref": "#/texts/24",
+        "label": "section_header",
+        "level": 1,
+        "text_preview": "Sol.25.(c) pageantry"
+      },
+      {
+        "reading_order_index": 24,
+        "element_ref": "#/texts/25",
+        "label": "text",
+        "level": 1,
+        "text_preview": "'Pageantry'  means  a  showy  or  ceremonial  display.  The  given passage  states  that  any  official  gesture  of  remembrance risks becoming a hollow act of"
+      },
+      {
+        "reading_order_index": 25,
+        "element_ref": "#/texts/26",
+        "label": "section_header",
+        "level": 1,
+        "text_preview": "SET - 6"
+      },
+      {
+        "reading_order_index": 26,
+        "element_ref": "#/texts/27",
+        "label": "section_header",
+        "level": 1,
+        "text_preview": "Sol.26.(c) fabricates"
+      },
+      {
+        "reading_order_index": 27,
+        "element_ref": "#/texts/28",
+        "label": "text",
+        "level": 1,
+        "text_preview": "In  the  passage,  'fabricates'  means  to  construct  an  illusion  of continuity.  The  given  passage  states  that  what  seems  factual often mirrors power"
+      },
+      {
+        "reading_order_index": 28,
+        "element_ref": "#/texts/29",
+        "label": "section_header",
+        "level": 1,
+        "text_preview": "Sol.27.(c) constructed"
+      },
+      {
+        "reading_order_index": 29,
+        "element_ref": "#/texts/30",
+        "label": "text",
+        "level": 1,
+        "text_preview": "'Constructed'  means  built or formed. The given passage states that meaning too is not found but constructed. Hence, 'constructed' is the most appropriate answ"
+      },
+      {
+        "reading_order_index": 30,
+        "element_ref": "#/texts/31",
+        "label": "section_header",
+        "level": 1,
+        "text_preview": "Sol.28.(a) residue"
+      },
+      {
+        "reading_order_index": 31,
+        "element_ref": "#/texts/32",
+        "label": "text",
+        "level": 1,
+        "text_preview": "In  the  passage,  'residue'  means  traces  or  fragments  of  ideas, memories or meanings. The given passage states that what we inherit,  then,  is  not cert"
+      },
+      {
+        "reading_order_index": 32,
+        "element_ref": "#/texts/33",
+        "label": "section_header",
+        "level": 1,
+        "text_preview": "Sol.29.(b) resonate"
+      },
+      {
+        "reading_order_index": 33,
+        "element_ref": "#/texts/34",
+        "label": "text",
+        "level": 1,
+        "text_preview": "In the given passage, 'resonate' is used metaphorically to mean that the past continues to echo or influence the present. Hence, 'resonate' is the most appropri"
+      },
+      {
+        "reading_order_index": 34,
+        "element_ref": "#/texts/35",
+        "label": "section_header",
+        "level": 1,
+        "text_preview": "Sol.30.(d) possibility"
+      },
+      {
+        "reading_order_index": 35,
+        "element_ref": "#/texts/36",
+        "label": "text",
+        "level": 1,
+        "text_preview": "The  given  passage  states  that  in  that  pause between knowing and not knowing, history becomes not a record of what was, but a  possibility  of  what  migh"
+      },
+      {
+        "reading_order_index": 36,
+        "element_ref": "#/texts/37",
+        "label": "section_header",
+        "level": 1,
+        "text_preview": "SET - 7"
+      },
+      {
+        "reading_order_index": 37,
+        "element_ref": "#/texts/38",
+        "label": "section_header",
+        "level": 1,
+        "text_preview": "Sol.31.(b) hierarchy"
+      },
+      {
+        "reading_order_index": 38,
+        "element_ref": "#/texts/39",
+        "label": "text",
+        "level": 1,
+        "text_preview": "'Hierarchy' means a system in which people or things are ranked one  above  the  other,  creating  levels  of  authority or power. The given  passage  states  t"
+      },
+      {
+        "reading_order_index": 39,
+        "element_ref": "#/texts/40",
+        "label": "section_header",
+        "level": 1,
+        "text_preview": "Sol.32.(a) biases"
+      },
+      {
+        "reading_order_index": 40,
+        "element_ref": "#/texts/41",
+        "label": "text",
+        "level": 1,
+        "text_preview": "'Biases'  means  a  tendency  or  inclination  that  unfairly  favors certain  outcomes  or  perspectives.  The  given  passage  states that  regulatory  framew"
+      },
+      {
+        "reading_order_index": 41,
+        "element_ref": "#/texts/42",
+        "label": "section_header",
+        "level": 1,
+        "text_preview": "Sol.33.(a) performativity"
+      },
+      {
+        "reading_order_index": 42,
+        "element_ref": "#/texts/43",
+        "label": "text",
+        "level": 1,
+        "text_preview": "'Performativity' means the act of performing or showing something  symbolically  rather  than  engaging  in  substantive action. The given passage  states  that"
+      }
+    ]
+  },
+  "layout_analysis": {
+    "method": "docling_bbox_left_edge_clustering_v1",
+    "column_count": 4,
+    "confidence": 0.981,
+    "page_width": 596.0,
+    "page_height": 842.0,
+    "columns": [
+      {
+        "column_index": 1,
+        "left": 0.0,
+        "right": 85.937,
+        "detected_start": 28.8,
+        "supporting_elements": 17
+      },
+      {
+        "column_index": 2,
+        "left": 85.937,
+        "right": 225.43,
+        "detected_start": 143.074,
+        "supporting_elements": 2
+      },
+      {
+        "column_index": 3,
+        "left": 225.43,
+        "right": 365.305,
+        "detected_start": 307.787,
+        "supporting_elements": 22
+      },
+      {
+        "column_index": 4,
+        "left": 365.305,
+        "right": 596.0,
+        "detected_start": 422.824,
+        "supporting_elements": 2
+      }
+    ],
+    "elements": [
+      {
+        "element_ref": "#/texts/0",
+        "element_type": "text",
+        "label": "page_header",
+        "column_index": 1,
+        "column_indices": [
+          1
+        ],
+        "spans_columns": false,
+        "reading_order_index": null,
+        "bbox": {
+          "l": 28.800003,
+          "t": 830.7935546594726,
+          "r": 95.7084616875,
+          "b": 822.5652585957749,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/1",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2,
+          3
+        ],
+        "spans_columns": true,
+        "reading_order_index": 0,
+        "bbox": {
+          "l": 28.800003,
+          "t": 814.6972656875,
+          "r": 288.93867492,
+          "b": 756.9270408199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/2",
+        "element_type": "text",
+        "label": "section_header",
+        "column_index": 2,
+        "column_indices": [
+          2
+        ],
+        "spans_columns": false,
+        "reading_order_index": 1,
+        "bbox": {
+          "l": 143.0739285,
+          "t": 740.1650386875,
+          "r": 174.76289319,
+          "b": 732.0828018199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/3",
+        "element_type": "text",
+        "label": "section_header",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 2,
+        "bbox": {
+          "l": 28.800003,
+          "t": 715.3212886875,
+          "r": 140.67158517000001,
+          "b": 707.2390518199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/4",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2,
+          3
+        ],
+        "spans_columns": true,
+        "reading_order_index": 3,
+        "bbox": {
+          "l": 28.800003,
+          "t": 702.8994136875,
+          "r": 288.54023742,
+          "b": 632.7068228199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/5",
+        "element_type": "text",
+        "label": "section_header",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 4,
+        "bbox": {
+          "l": 28.800003,
+          "t": 621.4658196875,
+          "r": 129.96650666999997,
+          "b": 613.3835828199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/6",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2,
+          3
+        ],
+        "spans_columns": true,
+        "reading_order_index": 5,
+        "bbox": {
+          "l": 28.800003,
+          "t": 609.0439496875,
+          "r": 288.98994491999997,
+          "b": 551.2737228199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/7",
+        "element_type": "text",
+        "label": "section_header",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 6,
+        "bbox": {
+          "l": 28.800003,
+          "t": 537.2724596875,
+          "r": 109.99336242000001,
+          "b": 529.1902228199854,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/8",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2,
+          3
+        ],
+        "spans_columns": true,
+        "reading_order_index": 7,
+        "bbox": {
+          "l": 28.800003,
+          "t": 524.8500996875,
+          "r": 288.91377492,
+          "b": 454.65751281998536,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/9",
+        "element_type": "text",
+        "label": "section_header",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 8,
+        "bbox": {
+          "l": 28.800003,
+          "t": 440.6567396875,
+          "r": 115.18330392000001,
+          "b": 432.57450281998536,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/10",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2,
+          3
+        ],
+        "spans_columns": true,
+        "reading_order_index": 9,
+        "bbox": {
+          "l": 28.800003,
+          "t": 428.2343796875,
+          "r": 289.01631492,
+          "b": 370.4641528199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/11",
+        "element_type": "text",
+        "label": "section_header",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 10,
+        "bbox": {
+          "l": 28.800003,
+          "t": 355.0825196875,
+          "r": 115.25801067,
+          "b": 347.00028281998533,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/12",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2,
+          3
+        ],
+        "spans_columns": true,
+        "reading_order_index": 11,
+        "bbox": {
+          "l": 28.800003,
+          "t": 342.6601596875,
+          "r": 288.61933992,
+          "b": 284.89042281998536,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/13",
+        "element_type": "text",
+        "label": "section_header",
+        "column_index": 2,
+        "column_indices": [
+          2
+        ],
+        "spans_columns": false,
+        "reading_order_index": 12,
+        "bbox": {
+          "l": 143.0739285,
+          "t": 270.88866968750006,
+          "r": 174.76289319,
+          "b": 262.8064328199854,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/14",
+        "element_type": "text",
+        "label": "section_header",
+        "column_index": 1,
+        "column_indices": [
+          1
+        ],
+        "spans_columns": false,
+        "reading_order_index": 13,
+        "bbox": {
+          "l": 28.800003,
+          "t": 248.80517968749996,
+          "r": 96.83174142000001,
+          "b": 240.7229428199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/15",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2,
+          3
+        ],
+        "spans_columns": true,
+        "reading_order_index": 14,
+        "bbox": {
+          "l": 28.800003,
+          "t": 236.38280968749996,
+          "r": 288.89179992,
+          "b": 191.03495281998528,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/16",
+        "element_type": "text",
+        "label": "section_header",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 15,
+        "bbox": {
+          "l": 28.800003,
+          "t": 175.65331968750002,
+          "r": 123.51094092000001,
+          "b": 167.57108281998535,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/17",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2,
+          3
+        ],
+        "spans_columns": true,
+        "reading_order_index": 16,
+        "bbox": {
+          "l": 28.800003,
+          "t": 163.2314496875,
+          "r": 288.90205241999996,
+          "b": 105.46073281998531,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/18",
+        "element_type": "text",
+        "label": "section_header",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2
+        ],
+        "spans_columns": true,
+        "reading_order_index": 17,
+        "bbox": {
+          "l": 28.800003,
+          "t": 91.45946968750002,
+          "r": 99.40693692,
+          "b": 83.37723281998535,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/19",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 0,
+        "column_indices": [
+          1,
+          2,
+          3
+        ],
+        "spans_columns": true,
+        "reading_order_index": 18,
+        "bbox": {
+          "l": 28.800003,
+          "t": 79.0375996875,
+          "r": 288.97969242,
+          "b": 33.68924281998534,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/20",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 0,
+        "column_indices": [
+          3,
+          4
+        ],
+        "spans_columns": true,
+        "reading_order_index": 19,
+        "bbox": {
+          "l": 291.757038,
+          "t": 830.7935546594726,
+          "r": 568.9931979375,
+          "b": 822.5652585957749,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/21",
+        "element_type": "text",
+        "label": "section_header",
+        "column_index": 0,
+        "column_indices": [
+          3,
+          4
+        ],
+        "spans_columns": true,
+        "reading_order_index": 20,
+        "bbox": {
+          "l": 308.54999,
+          "t": 814.6972656875,
+          "r": 393.36444316999996,
+          "b": 806.6150288199854,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/22",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 0,
+        "column_indices": [
+          3,
+          4
+        ],
+        "spans_columns": true,
+        "reading_order_index": 21,
+        "bbox": {
+          "l": 308.54999,
+          "t": 802.2753906875,
+          "r": 568.63153442,
+          "b": 744.5046768199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/23",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 3,
+        "column_indices": [
+          3
+        ],
+        "spans_columns": false,
+        "reading_order_index": 22,
+        "bbox": {
+          "l": 308.54999,
+          "t": 740.6435543997657,
+          "r": 312.1309912479883,
+          "b": 734.357370393983,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/24",
+        "element_type": "text",
+        "label": "section_header",
+        "column_index": 0,
+        "column_indices": [
+          3,
+          4
+        ],
+        "spans_columns": true,
+        "reading_order_index": 23,
+        "bbox": {
+          "l": 308.54999,
+          "t": 730.5039066875,
+          "r": 392.53827167,
+          "b": 722.4216698199854,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/25",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 0,
+        "column_indices": [
+          3,
+          4
+        ],
+        "spans_columns": true,
+        "reading_order_index": 24,
+        "bbox": {
+          "l": 308.54999,
+          "t": 718.0815426875,
+          "r": 568.6388544199999,
+          "b": 660.3113128199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/26",
+        "element_type": "text",
+        "label": "section_header",
+        "column_index": 4,
+        "column_indices": [
+          4
+        ],
+        "spans_columns": false,
+        "reading_order_index": 25,
+        "bbox": {
+          "l": 422.8239155,
+          "t": 646.3100596875,
+          "r": 454.51288019,
+          "b": 638.2278228199854,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/27",
+        "element_type": "text",
+        "label": "section_header",
+        "column_index": 0,
+        "column_indices": [
+          3,
+          4
+        ],
+        "spans_columns": true,
+        "reading_order_index": 26,
+        "bbox": {
+          "l": 308.54999,
+          "t": 626.9868196875,
+          "r": 392.84588866999997,
+          "b": 618.9045828199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/28",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 0,
+        "column_indices": [
+          3,
+          4
+        ],
+        "spans_columns": true,
+        "reading_order_index": 27,
+        "bbox": {
+          "l": 308.54999,
+          "t": 614.5644496875,
+          "r": 568.4118069199999,
+          "b": 556.7947128199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/29",
+        "element_type": "text",
+        "label": "section_header",
+        "column_index": 0,
+        "column_indices": [
+          3,
+          4
+        ],
+        "spans_columns": true,
+        "reading_order_index": 28,
+        "bbox": {
+          "l": 308.54999,
+          "t": 542.7929696875,
+          "r": 400.47918917,
+          "b": 534.7107328199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/30",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 0,
+        "column_indices": [
+          3,
+          4
+        ],
+        "spans_columns": true,
+        "reading_order_index": 29,
+        "bbox": {
+          "l": 308.54999,
+          "t": 530.3710896875,
+          "r": 568.12469942,
+          "b": 497.44462281998534,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/31",
+        "element_type": "text",
+        "label": "section_header",
+        "column_index": 0,
+        "column_indices": [
+          3,
+          4
+        ],
+        "spans_columns": true,
+        "reading_order_index": 30,
+        "bbox": {
+          "l": 308.54999,
+          "t": 482.0634796875,
+          "r": 382.07049767,
+          "b": 473.9812428199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/32",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 0,
+        "column_indices": [
+          3,
+          4
+        ],
+        "spans_columns": true,
+        "reading_order_index": 31,
+        "bbox": {
+          "l": 308.54999,
+          "t": 469.6411096875,
+          "r": 568.44549692,
+          "b": 424.29276281998534,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/33",
+        "element_type": "text",
+        "label": "section_header",
+        "column_index": 0,
+        "column_indices": [
+          3,
+          4
+        ],
+        "spans_columns": true,
+        "reading_order_index": 32,
+        "bbox": {
+          "l": 308.54999,
+          "t": 408.9111296875,
+          "r": 388.03387667,
+          "b": 400.82889281998536,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/34",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 0,
+        "column_indices": [
+          3,
+          4
+        ],
+        "spans_columns": true,
+        "reading_order_index": 33,
+        "bbox": {
+          "l": 308.54999,
+          "t": 396.4892596875,
+          "r": 568.39715942,
+          "b": 363.56327281998534,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/35",
+        "element_type": "text",
+        "label": "section_header",
+        "column_index": 0,
+        "column_indices": [
+          3,
+          4
+        ],
+        "spans_columns": true,
+        "reading_order_index": 34,
+        "bbox": {
+          "l": 308.54999,
+          "t": 346.8012696875,
+          "r": 393.42596642,
+          "b": 338.71903281998533,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/36",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 0,
+        "column_indices": [
+          3,
+          4
+        ],
+        "spans_columns": true,
+        "reading_order_index": 35,
+        "bbox": {
+          "l": 308.54999,
+          "t": 334.3793896875,
+          "r": 568.72674692,
+          "b": 289.03055281998536,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/37",
+        "element_type": "text",
+        "label": "section_header",
+        "column_index": 4,
+        "column_indices": [
+          4
+        ],
+        "spans_columns": false,
+        "reading_order_index": 36,
+        "bbox": {
+          "l": 422.8239155,
+          "t": 275.02978968750006,
+          "r": 452.27606423,
+          "b": 266.9475528199854,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/38",
+        "element_type": "text",
+        "label": "section_header",
+        "column_index": 0,
+        "column_indices": [
+          3,
+          4
+        ],
+        "spans_columns": true,
+        "reading_order_index": 37,
+        "bbox": {
+          "l": 308.54999,
+          "t": 262.60741968750006,
+          "r": 389.51922842,
+          "b": 254.5251828199854,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/39",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 0,
+        "column_indices": [
+          3,
+          4
+        ],
+        "spans_columns": true,
+        "reading_order_index": 38,
+        "bbox": {
+          "l": 308.54999,
+          "t": 250.18554968750004,
+          "r": 568.71356192,
+          "b": 179.99296281998534,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/40",
+        "element_type": "text",
+        "label": "section_header",
+        "column_index": 0,
+        "column_indices": [
+          3,
+          4
+        ],
+        "spans_columns": true,
+        "reading_order_index": 39,
+        "bbox": {
+          "l": 308.54999,
+          "t": 170.13280968749996,
+          "r": 379.06463819,
+          "b": 162.0505728199853,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/41",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 0,
+        "column_indices": [
+          3,
+          4
+        ],
+        "spans_columns": true,
+        "reading_order_index": 40,
+        "bbox": {
+          "l": 308.54999,
+          "t": 157.71044968750005,
+          "r": 568.76776442,
+          "b": 87.51786281998534,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/42",
+        "element_type": "text",
+        "label": "section_header",
+        "column_index": 0,
+        "column_indices": [
+          3,
+          4
+        ],
+        "spans_columns": true,
+        "reading_order_index": 41,
+        "bbox": {
+          "l": 308.54999,
+          "t": 74.89696968750002,
+          "r": 408.61786142,
+          "b": 66.81473281998535,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/43",
+        "element_type": "text",
+        "label": "text",
+        "column_index": 0,
+        "column_indices": [
+          3,
+          4
+        ],
+        "spans_columns": true,
+        "reading_order_index": 42,
+        "bbox": {
+          "l": 308.54999,
+          "t": 62.475099687500006,
+          "r": 568.73407442,
+          "b": 29.548622819985326,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      },
+      {
+        "element_ref": "#/texts/44",
+        "element_type": "text",
+        "label": "page_footer",
+        "column_index": 0,
+        "column_indices": [
+          2,
+          3,
+          4
+        ],
+        "spans_columns": true,
+        "reading_order_index": null,
+        "bbox": {
+          "l": 99.3266505,
+          "t": 21.98847795947256,
+          "r": 495.95088382500006,
+          "b": 13.76018189577485,
+          "coord_origin": "BOTTOMLEFT"
+        }
+      }
+    ],
+    "warnings": []
+  },
+  "structure_chunks": {
+    "enabled": true,
+    "method": "docling_hybrid_chunker",
+    "scope": "page",
+    "items": [
+      {
+        "text": "'Reorients' means to change the focus or direction of understanding. The given passage states that this understanding  shifts  the  goal  of  self-discovery  from  finding  a fixed answer to engaging in a lifelong question. Hence, 'reorients' is the most appropriate answer.",
+        "meta": {
+          "schema_name": "docling_core.transforms.chunker.DocMeta",
+          "version": "1.0.0",
+          "doc_items": [
+            {
+              "self_ref": "#/texts/1",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 814.6972656875,
+                    "r": 288.93867492,
+                    "b": 756.9270408199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    274
+                  ]
+                }
+              ]
+            }
+          ],
+          "headings": null,
+          "captions": null,
+          "origin": {
+            "mimetype": "application/pdf",
+            "binary_hash": 13905150361140621426,
+            "filename": "english_page_0305.pdf",
+            "uri": null
+          }
+        },
+        "chunk_index": 0,
+        "contextualized_text": "'Reorients' means to change the focus or direction of understanding. The given passage states that this understanding  shifts  the  goal  of  self-discovery  from  finding  a fixed answer to engaging in a lifelong question. Hence, 'reorients' is the most appropriate answer."
+      },
+      {
+        "text": "'Commodification' means the process of turning something into a marketable commodity. The given passage  states that creativity in  the  digital  age  is  transformed  into  a  form  of marketable  output  governed  by  algorithms  and  engagement metrics. Hence, 'commodification' is the most  appropriate answer.",
+        "meta": {
+          "schema_name": "docling_core.transforms.chunker.DocMeta",
+          "version": "1.0.0",
+          "doc_items": [
+            {
+              "self_ref": "#/texts/4",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 702.8994136875,
+                    "r": 288.54023742,
+                    "b": 632.7068228199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    314
+                  ]
+                }
+              ]
+            }
+          ],
+          "headings": [
+            "Sol.16.(c) commodification"
+          ],
+          "captions": null,
+          "origin": {
+            "mimetype": "application/pdf",
+            "binary_hash": 13905150361140621426,
+            "filename": "english_page_0305.pdf",
+            "uri": null
+          }
+        },
+        "chunk_index": 1,
+        "contextualized_text": "Sol.16.(c) commodification\n'Commodification' means the process of turning something into a marketable commodity. The given passage  states that creativity in  the  digital  age  is  transformed  into  a  form  of marketable  output  governed  by  algorithms  and  engagement metrics. Hence, 'commodification' is the most  appropriate answer."
+      },
+      {
+        "text": "'Homogenizing'  means  making  things  uniform  or  similar.  The given passage states that the so-called 'disruption' in the digital age actually compels artists to conform  to standardized entrepreneurial  norms  rather  than  expressing  unique  vision. Hence, 'homogenizing' is the most appropriate answer.",
+        "meta": {
+          "schema_name": "docling_core.transforms.chunker.DocMeta",
+          "version": "1.0.0",
+          "doc_items": [
+            {
+              "self_ref": "#/texts/6",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 609.0439496875,
+                    "r": 288.98994491999997,
+                    "b": 551.2737228199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    310
+                  ]
+                }
+              ]
+            }
+          ],
+          "headings": [
+            "Sol.17.(b) homogenizing"
+          ],
+          "captions": null,
+          "origin": {
+            "mimetype": "application/pdf",
+            "binary_hash": 13905150361140621426,
+            "filename": "english_page_0305.pdf",
+            "uri": null
+          }
+        },
+        "chunk_index": 2,
+        "contextualized_text": "Sol.17.(b) homogenizing\n'Homogenizing'  means  making  things  uniform  or  similar.  The given passage states that the so-called 'disruption' in the digital age actually compels artists to conform  to standardized entrepreneurial  norms  rather  than  expressing  unique  vision. Hence, 'homogenizing' is the most appropriate answer."
+      },
+      {
+        "text": "'Conflates'  means  to  combine  two  things  as  if  they  were  the same.  The  given  passage  states  that  engagement  metrics equate genuine human connection with quantifiable interaction, blurring the distinction between  authentic connection and measurable  data.  Hence,  'conflates'  is  the  most  appropriate answer.",
+        "meta": {
+          "schema_name": "docling_core.transforms.chunker.DocMeta",
+          "version": "1.0.0",
+          "doc_items": [
+            {
+              "self_ref": "#/texts/8",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 524.8500996875,
+                    "r": 288.91377492,
+                    "b": 454.65751281998536,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    328
+                  ]
+                }
+              ]
+            }
+          ],
+          "headings": [
+            "Sol.18.(c) conflates"
+          ],
+          "captions": null,
+          "origin": {
+            "mimetype": "application/pdf",
+            "binary_hash": 13905150361140621426,
+            "filename": "english_page_0305.pdf",
+            "uri": null
+          }
+        },
+        "chunk_index": 3,
+        "contextualized_text": "Sol.18.(c) conflates\n'Conflates'  means  to  combine  two  things  as  if  they  were  the same.  The  given  passage  states  that  engagement  metrics equate genuine human connection with quantifiable interaction, blurring the distinction between  authentic connection and measurable  data.  Hence,  'conflates'  is  the  most  appropriate answer."
+      },
+      {
+        "text": "'Performed' means the act of carrying out or enacting something.  The  given  passage  states  that  vulnerability  is  not genuinely shared but is staged and packaged  for public consumption,  neutralizing  its  political  edge. Hence, 'performed' is the most appropriate answer.",
+        "meta": {
+          "schema_name": "docling_core.transforms.chunker.DocMeta",
+          "version": "1.0.0",
+          "doc_items": [
+            {
+              "self_ref": "#/texts/10",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 428.2343796875,
+                    "r": 289.01631492,
+                    "b": 370.4641528199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    280
+                  ]
+                }
+              ]
+            }
+          ],
+          "headings": [
+            "Sol.19.(d) performed"
+          ],
+          "captions": null,
+          "origin": {
+            "mimetype": "application/pdf",
+            "binary_hash": 13905150361140621426,
+            "filename": "english_page_0305.pdf",
+            "uri": null
+          }
+        },
+        "chunk_index": 4,
+        "contextualized_text": "Sol.19.(d) performed\n'Performed' means the act of carrying out or enacting something.  The  given  passage  states  that  vulnerability  is  not genuinely shared but is staged and packaged  for public consumption,  neutralizing  its  political  edge. Hence, 'performed' is the most appropriate answer."
+      },
+      {
+        "text": "'Opposition' means being in contrast or conflict with something. The given passage states that reclaiming art requires a return to messy,  unquantifiable  creative  work,  which is in direct contrast to  the  smooth,  metric-driven  production  of  content.  Hence, 'opposition' is the most appropriate answer.",
+        "meta": {
+          "schema_name": "docling_core.transforms.chunker.DocMeta",
+          "version": "1.0.0",
+          "doc_items": [
+            {
+              "self_ref": "#/texts/12",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 342.6601596875,
+                    "r": 288.61933992,
+                    "b": 284.89042281998536,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    310
+                  ]
+                }
+              ]
+            }
+          ],
+          "headings": [
+            "Sol.20.(c) opposition"
+          ],
+          "captions": null,
+          "origin": {
+            "mimetype": "application/pdf",
+            "binary_hash": 13905150361140621426,
+            "filename": "english_page_0305.pdf",
+            "uri": null
+          }
+        },
+        "chunk_index": 5,
+        "contextualized_text": "Sol.20.(c) opposition\n'Opposition' means being in contrast or conflict with something. The given passage states that reclaiming art requires a return to messy,  unquantifiable  creative  work,  which is in direct contrast to  the  smooth,  metric-driven  production  of  content.  Hence, 'opposition' is the most appropriate answer."
+      },
+      {
+        "text": "'Elides'  means  to  omit  or  gloss  over  something.  The  given passage  states  that  official  history  often  elides  inconvenient truths  and  dissenting  voices  to  create  a  narrative  of  national unity. Hence, 'elides' is the most appropriate answer.",
+        "meta": {
+          "schema_name": "docling_core.transforms.chunker.DocMeta",
+          "version": "1.0.0",
+          "doc_items": [
+            {
+              "self_ref": "#/texts/15",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 236.38280968749996,
+                    "r": 288.89179992,
+                    "b": 191.03495281998528,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    263
+                  ]
+                }
+              ]
+            }
+          ],
+          "headings": [
+            "Sol.21.(b) elides"
+          ],
+          "captions": null,
+          "origin": {
+            "mimetype": "application/pdf",
+            "binary_hash": 13905150361140621426,
+            "filename": "english_page_0305.pdf",
+            "uri": null
+          }
+        },
+        "chunk_index": 6,
+        "contextualized_text": "Sol.21.(b) elides\n'Elides'  means  to  omit  or  gloss  over  something.  The  given passage  states  that  official  history  often  elides  inconvenient truths  and  dissenting  voices  to  create  a  narrative  of  national unity. Hence, 'elides' is the most appropriate answer."
+      },
+      {
+        "text": "'Embodiment'  means  a  tangible  or  visible  form  of  an  idea, quality,  or feeling. The given passage states that official history is  given a physical embodiment in monuments, memorials, and state-sponsored  ceremonies.  Hence,  'embodiment'  is  the most appropriate answer.",
+        "meta": {
+          "schema_name": "docling_core.transforms.chunker.DocMeta",
+          "version": "1.0.0",
+          "doc_items": [
+            {
+              "self_ref": "#/texts/17",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 163.2314496875,
+                    "r": 288.90205241999996,
+                    "b": 105.46073281998531,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    281
+                  ]
+                }
+              ]
+            }
+          ],
+          "headings": [
+            "Sol.22.(c) embodiment"
+          ],
+          "captions": null,
+          "origin": {
+            "mimetype": "application/pdf",
+            "binary_hash": 13905150361140621426,
+            "filename": "english_page_0305.pdf",
+            "uri": null
+          }
+        },
+        "chunk_index": 7,
+        "contextualized_text": "Sol.22.(c) embodiment\n'Embodiment'  means  a  tangible  or  visible  form  of  an  idea, quality,  or feeling. The given passage states that official history is  given a physical embodiment in monuments, memorials, and state-sponsored  ceremonies.  Hence,  'embodiment'  is  the most appropriate answer."
+      },
+      {
+        "text": "'Messy'  means  complicated,  disorderly,  or  not  straightforward. The given passage states that the curated heroic timeline often papers  over  the  messy  fractures  of  conflict,  exploitation,  and internal dissent. Hence, 'messy' is the most appropriate answer.\nCloze Test",
+        "meta": {
+          "schema_name": "docling_core.transforms.chunker.DocMeta",
+          "version": "1.0.0",
+          "doc_items": [
+            {
+              "self_ref": "#/texts/19",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 28.800003,
+                    "t": 79.0375996875,
+                    "r": 288.97969242,
+                    "b": 33.68924281998534,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    268
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/20",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 291.757038,
+                    "t": 830.7935546594726,
+                    "r": 568.9931979375,
+                    "b": 822.5652585957749,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    10
+                  ]
+                }
+              ]
+            }
+          ],
+          "headings": [
+            "Sol.23.(d) messy"
+          ],
+          "captions": null,
+          "origin": {
+            "mimetype": "application/pdf",
+            "binary_hash": 13905150361140621426,
+            "filename": "english_page_0305.pdf",
+            "uri": null
+          }
+        },
+        "chunk_index": 8,
+        "contextualized_text": "Sol.23.(d) messy\n'Messy'  means  complicated,  disorderly,  or  not  straightforward. The given passage states that the curated heroic timeline often papers  over  the  messy  fractures  of  conflict,  exploitation,  and internal dissent. Hence, 'messy' is the most appropriate answer.\nCloze Test"
+      },
+      {
+        "text": "'Excavated' means to uncover or bring to light something that is hidden. The given passage states that silenced narratives must be actively excavated and brought into the mainstream discourse  for  a  more  honest  reckoning  with  the  past.  Hence, 'excavated' is the most appropriate answer.\n.",
+        "meta": {
+          "schema_name": "docling_core.transforms.chunker.DocMeta",
+          "version": "1.0.0",
+          "doc_items": [
+            {
+              "self_ref": "#/texts/22",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 308.54999,
+                    "t": 802.2753906875,
+                    "r": 568.63153442,
+                    "b": 744.5046768199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    294
+                  ]
+                }
+              ]
+            },
+            {
+              "self_ref": "#/texts/23",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 308.54999,
+                    "t": 740.6435543997657,
+                    "r": 312.1309912479883,
+                    "b": 734.357370393983,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    1
+                  ]
+                }
+              ]
+            }
+          ],
+          "headings": [
+            "Sol.24.(a) excavated"
+          ],
+          "captions": null,
+          "origin": {
+            "mimetype": "application/pdf",
+            "binary_hash": 13905150361140621426,
+            "filename": "english_page_0305.pdf",
+            "uri": null
+          }
+        },
+        "chunk_index": 9,
+        "contextualized_text": "Sol.24.(a) excavated\n'Excavated' means to uncover or bring to light something that is hidden. The given passage states that silenced narratives must be actively excavated and brought into the mainstream discourse  for  a  more  honest  reckoning  with  the  past.  Hence, 'excavated' is the most appropriate answer.\n."
+      },
+      {
+        "text": "'Pageantry'  means  a  showy  or  ceremonial  display.  The  given passage  states  that  any  official  gesture  of  remembrance risks becoming a hollow act of pageantry, designed to manage public perception rather than to achieve genuine justice. Hence, 'pageantry' is the most appropriate answer.",
+        "meta": {
+          "schema_name": "docling_core.transforms.chunker.DocMeta",
+          "version": "1.0.0",
+          "doc_items": [
+            {
+              "self_ref": "#/texts/25",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 308.54999,
+                    "t": 718.0815426875,
+                    "r": 568.6388544199999,
+                    "b": 660.3113128199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    299
+                  ]
+                }
+              ]
+            }
+          ],
+          "headings": [
+            "Sol.25.(c) pageantry"
+          ],
+          "captions": null,
+          "origin": {
+            "mimetype": "application/pdf",
+            "binary_hash": 13905150361140621426,
+            "filename": "english_page_0305.pdf",
+            "uri": null
+          }
+        },
+        "chunk_index": 10,
+        "contextualized_text": "Sol.25.(c) pageantry\n'Pageantry'  means  a  showy  or  ceremonial  display.  The  given passage  states  that  any  official  gesture  of  remembrance risks becoming a hollow act of pageantry, designed to manage public perception rather than to achieve genuine justice. Hence, 'pageantry' is the most appropriate answer."
+      },
+      {
+        "text": "In  the  passage,  'fabricates'  means  to  construct  an  illusion  of continuity.  The  given  passage  states  that  what  seems  factual often mirrors power itself-an inscription that fabricates continuity  where  disruption  once  existed.  Hence, 'fabricates' is the most appropriate answer.",
+        "meta": {
+          "schema_name": "docling_core.transforms.chunker.DocMeta",
+          "version": "1.0.0",
+          "doc_items": [
+            {
+              "self_ref": "#/texts/28",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 308.54999,
+                    "t": 614.5644496875,
+                    "r": 568.4118069199999,
+                    "b": 556.7947128199853,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    297
+                  ]
+                }
+              ]
+            }
+          ],
+          "headings": [
+            "Sol.26.(c) fabricates"
+          ],
+          "captions": null,
+          "origin": {
+            "mimetype": "application/pdf",
+            "binary_hash": 13905150361140621426,
+            "filename": "english_page_0305.pdf",
+            "uri": null
+          }
+        },
+        "chunk_index": 11,
+        "contextualized_text": "Sol.26.(c) fabricates\nIn  the  passage,  'fabricates'  means  to  construct  an  illusion  of continuity.  The  given  passage  states  that  what  seems  factual often mirrors power itself-an inscription that fabricates continuity  where  disruption  once  existed.  Hence, 'fabricates' is the most appropriate answer."
+      },
+      {
+        "text": "'Constructed'  means  built or formed. The given passage states that meaning too is not found but constructed. Hence, 'constructed' is the most appropriate answer.",
+        "meta": {
+          "schema_name": "docling_core.transforms.chunker.DocMeta",
+          "version": "1.0.0",
+          "doc_items": [
+            {
+              "self_ref": "#/texts/30",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 308.54999,
+                    "t": 530.3710896875,
+                    "r": 568.12469942,
+                    "b": 497.44462281998534,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    163
+                  ]
+                }
+              ]
+            }
+          ],
+          "headings": [
+            "Sol.27.(c) constructed"
+          ],
+          "captions": null,
+          "origin": {
+            "mimetype": "application/pdf",
+            "binary_hash": 13905150361140621426,
+            "filename": "english_page_0305.pdf",
+            "uri": null
+          }
+        },
+        "chunk_index": 12,
+        "contextualized_text": "Sol.27.(c) constructed\n'Constructed'  means  built or formed. The given passage states that meaning too is not found but constructed. Hence, 'constructed' is the most appropriate answer."
+      },
+      {
+        "text": "In  the  passage,  'residue'  means  traces  or  fragments  of  ideas, memories or meanings. The given passage states that what we inherit,  then,  is  not certainty but residue. Hence, 'residue' is the most appropriate answer.",
+        "meta": {
+          "schema_name": "docling_core.transforms.chunker.DocMeta",
+          "version": "1.0.0",
+          "doc_items": [
+            {
+              "self_ref": "#/texts/32",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 308.54999,
+                    "t": 469.6411096875,
+                    "r": 568.44549692,
+                    "b": 424.29276281998534,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    227
+                  ]
+                }
+              ]
+            }
+          ],
+          "headings": [
+            "Sol.28.(a) residue"
+          ],
+          "captions": null,
+          "origin": {
+            "mimetype": "application/pdf",
+            "binary_hash": 13905150361140621426,
+            "filename": "english_page_0305.pdf",
+            "uri": null
+          }
+        },
+        "chunk_index": 13,
+        "contextualized_text": "Sol.28.(a) residue\nIn  the  passage,  'residue'  means  traces  or  fragments  of  ideas, memories or meanings. The given passage states that what we inherit,  then,  is  not certainty but residue. Hence, 'residue' is the most appropriate answer."
+      },
+      {
+        "text": "In the given passage, 'resonate' is used metaphorically to mean that the past continues to echo or influence the present. Hence, 'resonate' is the most appropriate answer.",
+        "meta": {
+          "schema_name": "docling_core.transforms.chunker.DocMeta",
+          "version": "1.0.0",
+          "doc_items": [
+            {
+              "self_ref": "#/texts/34",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 308.54999,
+                    "t": 396.4892596875,
+                    "r": 568.39715942,
+                    "b": 363.56327281998534,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    171
+                  ]
+                }
+              ]
+            }
+          ],
+          "headings": [
+            "Sol.29.(b) resonate"
+          ],
+          "captions": null,
+          "origin": {
+            "mimetype": "application/pdf",
+            "binary_hash": 13905150361140621426,
+            "filename": "english_page_0305.pdf",
+            "uri": null
+          }
+        },
+        "chunk_index": 14,
+        "contextualized_text": "Sol.29.(b) resonate\nIn the given passage, 'resonate' is used metaphorically to mean that the past continues to echo or influence the present. Hence, 'resonate' is the most appropriate answer."
+      },
+      {
+        "text": "The  given  passage  states  that  in  that  pause between knowing and not knowing, history becomes not a record of what was, but a  possibility  of  what  might  still  be.  Hence,  'possibility'  is  the most appropriate answer.",
+        "meta": {
+          "schema_name": "docling_core.transforms.chunker.DocMeta",
+          "version": "1.0.0",
+          "doc_items": [
+            {
+              "self_ref": "#/texts/36",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 308.54999,
+                    "t": 334.3793896875,
+                    "r": 568.72674692,
+                    "b": 289.03055281998536,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    230
+                  ]
+                }
+              ]
+            }
+          ],
+          "headings": [
+            "Sol.30.(d) possibility"
+          ],
+          "captions": null,
+          "origin": {
+            "mimetype": "application/pdf",
+            "binary_hash": 13905150361140621426,
+            "filename": "english_page_0305.pdf",
+            "uri": null
+          }
+        },
+        "chunk_index": 15,
+        "contextualized_text": "Sol.30.(d) possibility\nThe  given  passage  states  that  in  that  pause between knowing and not knowing, history becomes not a record of what was, but a  possibility  of  what  might  still  be.  Hence,  'possibility'  is  the most appropriate answer."
+      },
+      {
+        "text": "'Hierarchy' means a system in which people or things are ranked one  above  the  other,  creating  levels  of  authority or power. The given  passage  states  that  digital  platforms  and  governance structures  reinforce  asymmetries  in  civic  participation,  where access does not equate to agency. Hence, 'hierarchy' is the most appropriate answer.",
+        "meta": {
+          "schema_name": "docling_core.transforms.chunker.DocMeta",
+          "version": "1.0.0",
+          "doc_items": [
+            {
+              "self_ref": "#/texts/39",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 308.54999,
+                    "t": 250.18554968750004,
+                    "r": 568.71356192,
+                    "b": 179.99296281998534,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    354
+                  ]
+                }
+              ]
+            }
+          ],
+          "headings": [
+            "Sol.31.(b) hierarchy"
+          ],
+          "captions": null,
+          "origin": {
+            "mimetype": "application/pdf",
+            "binary_hash": 13905150361140621426,
+            "filename": "english_page_0305.pdf",
+            "uri": null
+          }
+        },
+        "chunk_index": 16,
+        "contextualized_text": "Sol.31.(b) hierarchy\n'Hierarchy' means a system in which people or things are ranked one  above  the  other,  creating  levels  of  authority or power. The given  passage  states  that  digital  platforms  and  governance structures  reinforce  asymmetries  in  civic  participation,  where access does not equate to agency. Hence, 'hierarchy' is the most appropriate answer."
+      },
+      {
+        "text": "'Biases'  means  a  tendency  or  inclination  that  unfairly  favors certain  outcomes  or  perspectives.  The  given  passage  states that  regulatory  frameworks  frequently  treat  data  as  a  neutral commodity,  obscuring  its  embedded  biases  within  historical patterns  of  power  and surveillance. Hence, 'biases' is the most appropriate answer.",
+        "meta": {
+          "schema_name": "docling_core.transforms.chunker.DocMeta",
+          "version": "1.0.0",
+          "doc_items": [
+            {
+              "self_ref": "#/texts/41",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 308.54999,
+                    "t": 157.71044968750005,
+                    "r": 568.76776442,
+                    "b": 87.51786281998534,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    357
+                  ]
+                }
+              ]
+            }
+          ],
+          "headings": [
+            "Sol.32.(a) biases"
+          ],
+          "captions": null,
+          "origin": {
+            "mimetype": "application/pdf",
+            "binary_hash": 13905150361140621426,
+            "filename": "english_page_0305.pdf",
+            "uri": null
+          }
+        },
+        "chunk_index": 17,
+        "contextualized_text": "Sol.32.(a) biases\n'Biases'  means  a  tendency  or  inclination  that  unfairly  favors certain  outcomes  or  perspectives.  The  given  passage  states that  regulatory  frameworks  frequently  treat  data  as  a  neutral commodity,  obscuring  its  embedded  biases  within  historical patterns  of  power  and surveillance. Hence, 'biases' is the most appropriate answer."
+      },
+      {
+        "text": "'Performativity' means the act of performing or showing something  symbolically  rather  than  engaging  in  substantive action. The given passage  states  that  the  proliferation  of",
+        "meta": {
+          "schema_name": "docling_core.transforms.chunker.DocMeta",
+          "version": "1.0.0",
+          "doc_items": [
+            {
+              "self_ref": "#/texts/43",
+              "parent": {
+                "cref": "#/body"
+              },
+              "children": [],
+              "content_layer": "body",
+              "meta": null,
+              "label": "text",
+              "prov": [
+                {
+                  "page_no": 1,
+                  "bbox": {
+                    "l": 308.54999,
+                    "t": 62.475099687500006,
+                    "r": 568.73407442,
+                    "b": 29.548622819985326,
+                    "coord_origin": "BOTTOMLEFT"
+                  },
+                  "charspan": [
+                    0,
+                    184
+                  ]
+                }
+              ]
+            }
+          ],
+          "headings": [
+            "Sol.33.(a) performativity"
+          ],
+          "captions": null,
+          "origin": {
+            "mimetype": "application/pdf",
+            "binary_hash": 13905150361140621426,
+            "filename": "english_page_0305.pdf",
+            "uri": null
+          }
+        },
+        "chunk_index": 18,
+        "contextualized_text": "Sol.33.(a) performativity\n'Performativity' means the act of performing or showing something  symbolically  rather  than  engaging  in  substantive action. The given passage  states  that  the  proliferation  of"
+      }
+    ]
+  },
+  "content_assets": {
+    "tables": [],
+    "figures": []
+  },
+  "docling_document": {
+    "schema_name": "DoclingDocument",
+    "version": "1.10.0",
+    "name": "english_page_0305",
+    "origin": {
+      "mimetype": "application/pdf",
+      "binary_hash": 13905150361140621426,
+      "filename": "english_page_0305.pdf"
+    },
+    "furniture": {
+      "self_ref": "#/furniture",
+      "children": [],
+      "content_layer": "furniture",
+      "name": "_root_",
+      "label": "unspecified"
+    },
+    "body": {
+      "self_ref": "#/body",
+      "children": [
+        {
+          "$ref": "#/texts/0"
+        },
+        {
+          "$ref": "#/texts/1"
+        },
+        {
+          "$ref": "#/texts/2"
+        },
+        {
+          "$ref": "#/texts/3"
+        },
+        {
+          "$ref": "#/texts/4"
+        },
+        {
+          "$ref": "#/texts/5"
+        },
+        {
+          "$ref": "#/texts/6"
+        },
+        {
+          "$ref": "#/texts/7"
+        },
+        {
+          "$ref": "#/texts/8"
+        },
+        {
+          "$ref": "#/texts/9"
+        },
+        {
+          "$ref": "#/texts/10"
+        },
+        {
+          "$ref": "#/texts/11"
+        },
+        {
+          "$ref": "#/texts/12"
+        },
+        {
+          "$ref": "#/texts/13"
+        },
+        {
+          "$ref": "#/texts/14"
+        },
+        {
+          "$ref": "#/texts/15"
+        },
+        {
+          "$ref": "#/texts/16"
+        },
+        {
+          "$ref": "#/texts/17"
+        },
+        {
+          "$ref": "#/texts/18"
+        },
+        {
+          "$ref": "#/texts/19"
+        },
+        {
+          "$ref": "#/texts/20"
+        },
+        {
+          "$ref": "#/texts/21"
+        },
+        {
+          "$ref": "#/texts/22"
+        },
+        {
+          "$ref": "#/texts/23"
+        },
+        {
+          "$ref": "#/texts/24"
+        },
+        {
+          "$ref": "#/texts/25"
+        },
+        {
+          "$ref": "#/texts/26"
+        },
+        {
+          "$ref": "#/texts/27"
+        },
+        {
+          "$ref": "#/texts/28"
+        },
+        {
+          "$ref": "#/texts/29"
+        },
+        {
+          "$ref": "#/texts/30"
+        },
+        {
+          "$ref": "#/texts/31"
+        },
+        {
+          "$ref": "#/texts/32"
+        },
+        {
+          "$ref": "#/texts/33"
+        },
+        {
+          "$ref": "#/texts/34"
+        },
+        {
+          "$ref": "#/texts/35"
+        },
+        {
+          "$ref": "#/texts/36"
+        },
+        {
+          "$ref": "#/texts/37"
+        },
+        {
+          "$ref": "#/texts/38"
+        },
+        {
+          "$ref": "#/texts/39"
+        },
+        {
+          "$ref": "#/texts/40"
+        },
+        {
+          "$ref": "#/texts/41"
+        },
+        {
+          "$ref": "#/texts/42"
+        },
+        {
+          "$ref": "#/texts/43"
+        },
+        {
+          "$ref": "#/texts/44"
+        }
+      ],
+      "content_layer": "body",
+      "name": "_root_",
+      "label": "unspecified"
+    },
+    "groups": [],
+    "texts": [
+      {
+        "self_ref": "#/texts/0",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "furniture",
+        "label": "page_header",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 830.7935546594726,
+              "r": 95.7084616875,
+              "b": 822.5652585957749,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              8
+            ]
+          }
+        ],
+        "orig": "Pinnacle",
+        "text": "Pinnacle"
+      },
+      {
+        "self_ref": "#/texts/1",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 814.6972656875,
+              "r": 288.93867492,
+              "b": 756.9270408199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              274
+            ]
+          }
+        ],
+        "orig": "'Reorients' means to change the focus or direction of understanding. The given passage states that this understanding  shifts  the  goal  of  self-discovery  from  finding  a fixed answer to engaging in a lifelong question. Hence, 'reorients' is the most appropriate answer.",
+        "text": "'Reorients' means to change the focus or direction of understanding. The given passage states that this understanding  shifts  the  goal  of  self-discovery  from  finding  a fixed answer to engaging in a lifelong question. Hence, 'reorients' is the most appropriate answer."
+      },
+      {
+        "self_ref": "#/texts/2",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "section_header",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 143.0739285,
+              "t": 740.1650386875,
+              "r": 174.76289319,
+              "b": 732.0828018199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              7
+            ]
+          }
+        ],
+        "orig": "SET - 4",
+        "text": "SET - 4",
+        "level": 1
+      },
+      {
+        "self_ref": "#/texts/3",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "section_header",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 715.3212886875,
+              "r": 140.67158517000001,
+              "b": 707.2390518199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              26
+            ]
+          }
+        ],
+        "orig": "Sol.16.(c) commodification",
+        "text": "Sol.16.(c) commodification",
+        "level": 1
+      },
+      {
+        "self_ref": "#/texts/4",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 702.8994136875,
+              "r": 288.54023742,
+              "b": 632.7068228199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              314
+            ]
+          }
+        ],
+        "orig": "'Commodification' means the process of turning something into a marketable commodity. The given passage  states that creativity in  the  digital  age  is  transformed  into  a  form  of marketable  output  governed  by  algorithms  and  engagement metrics. Hence, 'commodification' is the most  appropriate answer.",
+        "text": "'Commodification' means the process of turning something into a marketable commodity. The given passage  states that creativity in  the  digital  age  is  transformed  into  a  form  of marketable  output  governed  by  algorithms  and  engagement metrics. Hence, 'commodification' is the most  appropriate answer."
+      },
+      {
+        "self_ref": "#/texts/5",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "section_header",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 621.4658196875,
+              "r": 129.96650666999997,
+              "b": 613.3835828199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              23
+            ]
+          }
+        ],
+        "orig": "Sol.17.(b) homogenizing",
+        "text": "Sol.17.(b) homogenizing",
+        "level": 1
+      },
+      {
+        "self_ref": "#/texts/6",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 609.0439496875,
+              "r": 288.98994491999997,
+              "b": 551.2737228199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              310
+            ]
+          }
+        ],
+        "orig": "'Homogenizing'  means  making  things  uniform  or  similar.  The given passage states that the so-called 'disruption' in the digital age actually compels artists to conform  to standardized entrepreneurial  norms  rather  than  expressing  unique  vision. Hence, 'homogenizing' is the most appropriate answer.",
+        "text": "'Homogenizing'  means  making  things  uniform  or  similar.  The given passage states that the so-called 'disruption' in the digital age actually compels artists to conform  to standardized entrepreneurial  norms  rather  than  expressing  unique  vision. Hence, 'homogenizing' is the most appropriate answer."
+      },
+      {
+        "self_ref": "#/texts/7",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "section_header",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 537.2724596875,
+              "r": 109.99336242000001,
+              "b": 529.1902228199854,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              20
+            ]
+          }
+        ],
+        "orig": "Sol.18.(c) conflates",
+        "text": "Sol.18.(c) conflates",
+        "level": 1
+      },
+      {
+        "self_ref": "#/texts/8",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 524.8500996875,
+              "r": 288.91377492,
+              "b": 454.65751281998536,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              328
+            ]
+          }
+        ],
+        "orig": "'Conflates'  means  to  combine  two  things  as  if  they  were  the same.  The  given  passage  states  that  engagement  metrics equate genuine human connection with quantifiable interaction, blurring the distinction between  authentic connection and measurable  data.  Hence,  'conflates'  is  the  most  appropriate answer.",
+        "text": "'Conflates'  means  to  combine  two  things  as  if  they  were  the same.  The  given  passage  states  that  engagement  metrics equate genuine human connection with quantifiable interaction, blurring the distinction between  authentic connection and measurable  data.  Hence,  'conflates'  is  the  most  appropriate answer."
+      },
+      {
+        "self_ref": "#/texts/9",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "section_header",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 440.6567396875,
+              "r": 115.18330392000001,
+              "b": 432.57450281998536,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              20
+            ]
+          }
+        ],
+        "orig": "Sol.19.(d) performed",
+        "text": "Sol.19.(d) performed",
+        "level": 1
+      },
+      {
+        "self_ref": "#/texts/10",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 428.2343796875,
+              "r": 289.01631492,
+              "b": 370.4641528199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              280
+            ]
+          }
+        ],
+        "orig": "'Performed' means the act of carrying out or enacting something.  The  given  passage  states  that  vulnerability  is  not genuinely shared but is staged and packaged  for public consumption,  neutralizing  its  political  edge. Hence, 'performed' is the most appropriate answer.",
+        "text": "'Performed' means the act of carrying out or enacting something.  The  given  passage  states  that  vulnerability  is  not genuinely shared but is staged and packaged  for public consumption,  neutralizing  its  political  edge. Hence, 'performed' is the most appropriate answer."
+      },
+      {
+        "self_ref": "#/texts/11",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "section_header",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 355.0825196875,
+              "r": 115.25801067,
+              "b": 347.00028281998533,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              21
+            ]
+          }
+        ],
+        "orig": "Sol.20.(c) opposition",
+        "text": "Sol.20.(c) opposition",
+        "level": 1
+      },
+      {
+        "self_ref": "#/texts/12",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 342.6601596875,
+              "r": 288.61933992,
+              "b": 284.89042281998536,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              310
+            ]
+          }
+        ],
+        "orig": "'Opposition' means being in contrast or conflict with something. The given passage states that reclaiming art requires a return to messy,  unquantifiable  creative  work,  which is in direct contrast to  the  smooth,  metric-driven  production  of  content.  Hence, 'opposition' is the most appropriate answer.",
+        "text": "'Opposition' means being in contrast or conflict with something. The given passage states that reclaiming art requires a return to messy,  unquantifiable  creative  work,  which is in direct contrast to  the  smooth,  metric-driven  production  of  content.  Hence, 'opposition' is the most appropriate answer."
+      },
+      {
+        "self_ref": "#/texts/13",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "section_header",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 143.0739285,
+              "t": 270.88866968750006,
+              "r": 174.76289319,
+              "b": 262.8064328199854,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              7
+            ]
+          }
+        ],
+        "orig": "SET - 5",
+        "text": "SET - 5",
+        "level": 1
+      },
+      {
+        "self_ref": "#/texts/14",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "section_header",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 248.80517968749996,
+              "r": 96.83174142000001,
+              "b": 240.7229428199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              17
+            ]
+          }
+        ],
+        "orig": "Sol.21.(b) elides",
+        "text": "Sol.21.(b) elides",
+        "level": 1
+      },
+      {
+        "self_ref": "#/texts/15",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 236.38280968749996,
+              "r": 288.89179992,
+              "b": 191.03495281998528,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              263
+            ]
+          }
+        ],
+        "orig": "'Elides'  means  to  omit  or  gloss  over  something.  The  given passage  states  that  official  history  often  elides  inconvenient truths  and  dissenting  voices  to  create  a  narrative  of  national unity. Hence, 'elides' is the most appropriate answer.",
+        "text": "'Elides'  means  to  omit  or  gloss  over  something.  The  given passage  states  that  official  history  often  elides  inconvenient truths  and  dissenting  voices  to  create  a  narrative  of  national unity. Hence, 'elides' is the most appropriate answer."
+      },
+      {
+        "self_ref": "#/texts/16",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "section_header",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 175.65331968750002,
+              "r": 123.51094092000001,
+              "b": 167.57108281998535,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              21
+            ]
+          }
+        ],
+        "orig": "Sol.22.(c) embodiment",
+        "text": "Sol.22.(c) embodiment",
+        "level": 1
+      },
+      {
+        "self_ref": "#/texts/17",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 163.2314496875,
+              "r": 288.90205241999996,
+              "b": 105.46073281998531,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              281
+            ]
+          }
+        ],
+        "orig": "'Embodiment'  means  a  tangible  or  visible  form  of  an  idea, quality,  or feeling. The given passage states that official history is  given a physical embodiment in monuments, memorials, and state-sponsored  ceremonies.  Hence,  'embodiment'  is  the most appropriate answer.",
+        "text": "'Embodiment'  means  a  tangible  or  visible  form  of  an  idea, quality,  or feeling. The given passage states that official history is  given a physical embodiment in monuments, memorials, and state-sponsored  ceremonies.  Hence,  'embodiment'  is  the most appropriate answer."
+      },
+      {
+        "self_ref": "#/texts/18",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "section_header",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 91.45946968750002,
+              "r": 99.40693692,
+              "b": 83.37723281998535,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              16
+            ]
+          }
+        ],
+        "orig": "Sol.23.(d) messy",
+        "text": "Sol.23.(d) messy",
+        "level": 1
+      },
+      {
+        "self_ref": "#/texts/19",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 28.800003,
+              "t": 79.0375996875,
+              "r": 288.97969242,
+              "b": 33.68924281998534,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              268
+            ]
+          }
+        ],
+        "orig": "'Messy'  means  complicated,  disorderly,  or  not  straightforward. The given passage states that the curated heroic timeline often papers  over  the  messy  fractures  of  conflict,  exploitation,  and internal dissent. Hence, 'messy' is the most appropriate answer.",
+        "text": "'Messy'  means  complicated,  disorderly,  or  not  straightforward. The given passage states that the curated heroic timeline often papers  over  the  messy  fractures  of  conflict,  exploitation,  and internal dissent. Hence, 'messy' is the most appropriate answer."
+      },
+      {
+        "self_ref": "#/texts/20",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 291.757038,
+              "t": 830.7935546594726,
+              "r": 568.9931979375,
+              "b": 822.5652585957749,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              10
+            ]
+          }
+        ],
+        "orig": "Cloze Test",
+        "text": "Cloze Test"
+      },
+      {
+        "self_ref": "#/texts/21",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "section_header",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 308.54999,
+              "t": 814.6972656875,
+              "r": 393.36444316999996,
+              "b": 806.6150288199854,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              20
+            ]
+          }
+        ],
+        "orig": "Sol.24.(a) excavated",
+        "text": "Sol.24.(a) excavated",
+        "level": 1
+      },
+      {
+        "self_ref": "#/texts/22",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 308.54999,
+              "t": 802.2753906875,
+              "r": 568.63153442,
+              "b": 744.5046768199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              294
+            ]
+          }
+        ],
+        "orig": "'Excavated' means to uncover or bring to light something that is hidden. The given passage states that silenced narratives must be actively excavated and brought into the mainstream discourse  for  a  more  honest  reckoning  with  the  past.  Hence, 'excavated' is the most appropriate answer.",
+        "text": "'Excavated' means to uncover or bring to light something that is hidden. The given passage states that silenced narratives must be actively excavated and brought into the mainstream discourse  for  a  more  honest  reckoning  with  the  past.  Hence, 'excavated' is the most appropriate answer."
+      },
+      {
+        "self_ref": "#/texts/23",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 308.54999,
+              "t": 740.6435543997657,
+              "r": 312.1309912479883,
+              "b": 734.357370393983,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              1
+            ]
+          }
+        ],
+        "orig": ".",
+        "text": "."
+      },
+      {
+        "self_ref": "#/texts/24",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "section_header",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 308.54999,
+              "t": 730.5039066875,
+              "r": 392.53827167,
+              "b": 722.4216698199854,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              20
+            ]
+          }
+        ],
+        "orig": "Sol.25.(c) pageantry",
+        "text": "Sol.25.(c) pageantry",
+        "level": 1
+      },
+      {
+        "self_ref": "#/texts/25",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 308.54999,
+              "t": 718.0815426875,
+              "r": 568.6388544199999,
+              "b": 660.3113128199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              299
+            ]
+          }
+        ],
+        "orig": "'Pageantry'  means  a  showy  or  ceremonial  display.  The  given passage  states  that  any  official  gesture  of  remembrance risks becoming a hollow act of pageantry, designed to manage public perception rather than to achieve genuine justice. Hence, 'pageantry' is the most appropriate answer.",
+        "text": "'Pageantry'  means  a  showy  or  ceremonial  display.  The  given passage  states  that  any  official  gesture  of  remembrance risks becoming a hollow act of pageantry, designed to manage public perception rather than to achieve genuine justice. Hence, 'pageantry' is the most appropriate answer."
+      },
+      {
+        "self_ref": "#/texts/26",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "section_header",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 422.8239155,
+              "t": 646.3100596875,
+              "r": 454.51288019,
+              "b": 638.2278228199854,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              7
+            ]
+          }
+        ],
+        "orig": "SET - 6",
+        "text": "SET - 6",
+        "level": 1
+      },
+      {
+        "self_ref": "#/texts/27",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "section_header",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 308.54999,
+              "t": 626.9868196875,
+              "r": 392.84588866999997,
+              "b": 618.9045828199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              21
+            ]
+          }
+        ],
+        "orig": "Sol.26.(c) fabricates",
+        "text": "Sol.26.(c) fabricates",
+        "level": 1
+      },
+      {
+        "self_ref": "#/texts/28",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 308.54999,
+              "t": 614.5644496875,
+              "r": 568.4118069199999,
+              "b": 556.7947128199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              297
+            ]
+          }
+        ],
+        "orig": "In  the  passage,  'fabricates'  means  to  construct  an  illusion  of continuity.  The  given  passage  states  that  what  seems  factual often mirrors power itself-an inscription that fabricates continuity  where  disruption  once  existed.  Hence, 'fabricates' is the most appropriate answer.",
+        "text": "In  the  passage,  'fabricates'  means  to  construct  an  illusion  of continuity.  The  given  passage  states  that  what  seems  factual often mirrors power itself-an inscription that fabricates continuity  where  disruption  once  existed.  Hence, 'fabricates' is the most appropriate answer."
+      },
+      {
+        "self_ref": "#/texts/29",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "section_header",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 308.54999,
+              "t": 542.7929696875,
+              "r": 400.47918917,
+              "b": 534.7107328199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              22
+            ]
+          }
+        ],
+        "orig": "Sol.27.(c) constructed",
+        "text": "Sol.27.(c) constructed",
+        "level": 1
+      },
+      {
+        "self_ref": "#/texts/30",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 308.54999,
+              "t": 530.3710896875,
+              "r": 568.12469942,
+              "b": 497.44462281998534,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              163
+            ]
+          }
+        ],
+        "orig": "'Constructed'  means  built or formed. The given passage states that meaning too is not found but constructed. Hence, 'constructed' is the most appropriate answer.",
+        "text": "'Constructed'  means  built or formed. The given passage states that meaning too is not found but constructed. Hence, 'constructed' is the most appropriate answer."
+      },
+      {
+        "self_ref": "#/texts/31",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "section_header",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 308.54999,
+              "t": 482.0634796875,
+              "r": 382.07049767,
+              "b": 473.9812428199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              18
+            ]
+          }
+        ],
+        "orig": "Sol.28.(a) residue",
+        "text": "Sol.28.(a) residue",
+        "level": 1
+      },
+      {
+        "self_ref": "#/texts/32",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 308.54999,
+              "t": 469.6411096875,
+              "r": 568.44549692,
+              "b": 424.29276281998534,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              227
+            ]
+          }
+        ],
+        "orig": "In  the  passage,  'residue'  means  traces  or  fragments  of  ideas, memories or meanings. The given passage states that what we inherit,  then,  is  not certainty but residue. Hence, 'residue' is the most appropriate answer.",
+        "text": "In  the  passage,  'residue'  means  traces  or  fragments  of  ideas, memories or meanings. The given passage states that what we inherit,  then,  is  not certainty but residue. Hence, 'residue' is the most appropriate answer."
+      },
+      {
+        "self_ref": "#/texts/33",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "section_header",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 308.54999,
+              "t": 408.9111296875,
+              "r": 388.03387667,
+              "b": 400.82889281998536,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              19
+            ]
+          }
+        ],
+        "orig": "Sol.29.(b) resonate",
+        "text": "Sol.29.(b) resonate",
+        "level": 1
+      },
+      {
+        "self_ref": "#/texts/34",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 308.54999,
+              "t": 396.4892596875,
+              "r": 568.39715942,
+              "b": 363.56327281998534,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              171
+            ]
+          }
+        ],
+        "orig": "In the given passage, 'resonate' is used metaphorically to mean that the past continues to echo or influence the present. Hence, 'resonate' is the most appropriate answer.",
+        "text": "In the given passage, 'resonate' is used metaphorically to mean that the past continues to echo or influence the present. Hence, 'resonate' is the most appropriate answer."
+      },
+      {
+        "self_ref": "#/texts/35",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "section_header",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 308.54999,
+              "t": 346.8012696875,
+              "r": 393.42596642,
+              "b": 338.71903281998533,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              22
+            ]
+          }
+        ],
+        "orig": "Sol.30.(d) possibility",
+        "text": "Sol.30.(d) possibility",
+        "level": 1
+      },
+      {
+        "self_ref": "#/texts/36",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 308.54999,
+              "t": 334.3793896875,
+              "r": 568.72674692,
+              "b": 289.03055281998536,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              230
+            ]
+          }
+        ],
+        "orig": "The  given  passage  states  that  in  that  pause between knowing and not knowing, history becomes not a record of what was, but a  possibility  of  what  might  still  be.  Hence,  'possibility'  is  the most appropriate answer.",
+        "text": "The  given  passage  states  that  in  that  pause between knowing and not knowing, history becomes not a record of what was, but a  possibility  of  what  might  still  be.  Hence,  'possibility'  is  the most appropriate answer."
+      },
+      {
+        "self_ref": "#/texts/37",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "section_header",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 422.8239155,
+              "t": 275.02978968750006,
+              "r": 452.27606423,
+              "b": 266.9475528199854,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              7
+            ]
+          }
+        ],
+        "orig": "SET - 7",
+        "text": "SET - 7",
+        "level": 1
+      },
+      {
+        "self_ref": "#/texts/38",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "section_header",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 308.54999,
+              "t": 262.60741968750006,
+              "r": 389.51922842,
+              "b": 254.5251828199854,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              20
+            ]
+          }
+        ],
+        "orig": "Sol.31.(b) hierarchy",
+        "text": "Sol.31.(b) hierarchy",
+        "level": 1
+      },
+      {
+        "self_ref": "#/texts/39",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 308.54999,
+              "t": 250.18554968750004,
+              "r": 568.71356192,
+              "b": 179.99296281998534,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              354
+            ]
+          }
+        ],
+        "orig": "'Hierarchy' means a system in which people or things are ranked one  above  the  other,  creating  levels  of  authority or power. The given  passage  states  that  digital  platforms  and  governance structures  reinforce  asymmetries  in  civic  participation,  where access does not equate to agency. Hence, 'hierarchy' is the most appropriate answer.",
+        "text": "'Hierarchy' means a system in which people or things are ranked one  above  the  other,  creating  levels  of  authority or power. The given  passage  states  that  digital  platforms  and  governance structures  reinforce  asymmetries  in  civic  participation,  where access does not equate to agency. Hence, 'hierarchy' is the most appropriate answer."
+      },
+      {
+        "self_ref": "#/texts/40",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "section_header",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 308.54999,
+              "t": 170.13280968749996,
+              "r": 379.06463819,
+              "b": 162.0505728199853,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              17
+            ]
+          }
+        ],
+        "orig": "Sol.32.(a) biases",
+        "text": "Sol.32.(a) biases",
+        "level": 1
+      },
+      {
+        "self_ref": "#/texts/41",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 308.54999,
+              "t": 157.71044968750005,
+              "r": 568.76776442,
+              "b": 87.51786281998534,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              357
+            ]
+          }
+        ],
+        "orig": "'Biases'  means  a  tendency  or  inclination  that  unfairly  favors certain  outcomes  or  perspectives.  The  given  passage  states that  regulatory  frameworks  frequently  treat  data  as  a  neutral commodity,  obscuring  its  embedded  biases  within  historical patterns  of  power  and surveillance. Hence, 'biases' is the most appropriate answer.",
+        "text": "'Biases'  means  a  tendency  or  inclination  that  unfairly  favors certain  outcomes  or  perspectives.  The  given  passage  states that  regulatory  frameworks  frequently  treat  data  as  a  neutral commodity,  obscuring  its  embedded  biases  within  historical patterns  of  power  and surveillance. Hence, 'biases' is the most appropriate answer."
+      },
+      {
+        "self_ref": "#/texts/42",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "section_header",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 308.54999,
+              "t": 74.89696968750002,
+              "r": 408.61786142,
+              "b": 66.81473281998535,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              25
+            ]
+          }
+        ],
+        "orig": "Sol.33.(a) performativity",
+        "text": "Sol.33.(a) performativity",
+        "level": 1
+      },
+      {
+        "self_ref": "#/texts/43",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "body",
+        "label": "text",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 308.54999,
+              "t": 62.475099687500006,
+              "r": 568.73407442,
+              "b": 29.548622819985326,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              184
+            ]
+          }
+        ],
+        "orig": "'Performativity' means the act of performing or showing something  symbolically  rather  than  engaging  in  substantive action. The given passage  states  that  the  proliferation  of",
+        "text": "'Performativity' means the act of performing or showing something  symbolically  rather  than  engaging  in  substantive action. The given passage  states  that  the  proliferation  of"
+      },
+      {
+        "self_ref": "#/texts/44",
+        "parent": {
+          "$ref": "#/body"
+        },
+        "children": [],
+        "content_layer": "furniture",
+        "label": "page_footer",
+        "prov": [
+          {
+            "page_no": 1,
+            "bbox": {
+              "l": 99.3266505,
+              "t": 21.98847795947256,
+              "r": 495.95088382500006,
+              "b": 13.76018189577485,
+              "coord_origin": "BOTTOMLEFT"
+            },
+            "charspan": [
+              0,
+              109
+            ]
+          }
+        ],
+        "orig": "www.ssccglpinnacle.com                                                 Download Pinnacle Exam Preparation App",
+        "text": "www.ssccglpinnacle.com                                                 Download Pinnacle Exam Preparation App"
+      }
+    ],
+    "pictures": [],
+    "tables": [],
+    "key_value_items": [],
+    "form_items": [],
+    "pages": {
+      "1": {
+        "size": {
+          "width": 596.0,
+          "height": 842.0
+        },
+        "page_no": 1
+      }
+    }
+  }
+}
