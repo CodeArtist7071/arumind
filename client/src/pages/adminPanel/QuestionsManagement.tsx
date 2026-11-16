@@ -170,7 +170,7 @@ const QuestionsManagement: React.FC = () => {
   const fields: any[] = [
     { name: "question", label: "Question", type: "textarea", required: true, previewAsHtml: true },
     { name: "question_type", label: "Question type", type: "select", options: ["SINGLE_CHOICE", "MULTIPLE_CHOICE", "TRUE_FALSE"].map(value => ({ label: value.replaceAll("_", " "), value })), required: true },
-    { name: "options", label: "Answer options", type: "options", defaultValue: [{ text: "", is_correct: false }, { text: "", is_correct: false }] }, {
+    { name: "options", label: "Answer options", type: "options", defaultValue: [{ text: "", is_correct: false }, { text: "", is_correct: false }, { text: "", is_correct: false }, { text: "", is_correct: false }] }, {
       name: "difficulty_level",
       label: "Question Difficulty Level",
       type: "select",
@@ -181,6 +181,16 @@ const QuestionsManagement: React.FC = () => {
       ],
       required: true
     },
+    { name: "marks", label: "Marks", type: "number", defaultValue: 1 },
+    { name: "negative_marks", label: "Negative marks", type: "number", defaultValue: 0 },
+    { name: "explanation", label: "Explanation", type: "textarea", previewAsHtml: true },
+    { name: "diagram_present", label: "Question has a diagram", type: "checkbox", defaultValue: false },
+    { name: "diagram_url", label: "Diagram URL", type: "text" },
+    { name: "source_snippet", label: "Source snippet", type: "textarea" },
+    { name: "page_number", label: "Page number", type: "number" },
+    { name: "question_number", label: "Question number", type: "number" },
+    { name: "paper_set", label: "Paper set ID", type: "text" },
+    { name: "data_table_id", label: "Data table ID", type: "number" },
     // { name: "explanation", label: "Editorial Explanation", type: "textarea" },
     {
       name: "subject_id",
@@ -209,7 +219,7 @@ const QuestionsManagement: React.FC = () => {
         const value = option.text?.trim();
         return value ? [{ option_key: String.fromCharCode(65 + index), option_text: value, display_order: index + 1, is_correct: Boolean(option.is_correct) }] : [];
       });
-      if (optionRows.length < 2 || !optionRows.some((option: any) => option.is_correct)) throw new Error("Add at least two options and mark one correct answer.");
+      if (!optionRows.length || !optionRows.some((option: any) => option.is_correct)) throw new Error("Add at least one option and mark a correct answer.");
       // Orchestrate authoritative technical bundling
       const bundledData = {
         question: formData.question,
@@ -223,6 +233,11 @@ const QuestionsManagement: React.FC = () => {
         explanation: formData.explanation || null,
         diagram_present: formData.diagram_present ?? false,
         diagram_url: formData.diagram_url || null,
+        source_snippet: formData.source_snippet || null,
+        page_number: formData.page_number || null,
+        question_number: formData.question_number || null,
+        paper_set: formData.paper_set || null,
+        data_table_id: formData.data_table_id || null,
       };
 
       let questionId = editingItem?.id;

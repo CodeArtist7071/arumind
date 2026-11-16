@@ -1,6 +1,6 @@
 import React from "react";
 import { useForm, useWatch, Controller } from "react-hook-form";
-import { X, Save, Check, Plus, Trash2 } from "lucide-react";
+import { X, Save, Check, Plus, Trash2, Eye, EyeOff } from "lucide-react";
 import { getHtmlMarkup, HtmlContent } from "../ui/HtmlContent";
 
 interface Field {
@@ -45,6 +45,8 @@ export const AdminFormModal: React.FC<AdminFormModalProps> = ({
   } = useForm({
     defaultValues: initialData || {},
   });
+  const [previewFields, setPreviewFields] = React.useState<Record<string, boolean>>({});
+  const [optionPreviews, setOptionPreviews] = React.useState<Record<number, boolean>>({});
 
   // Orchestrate hard-reset manifestation whenever the modal opens
   React.useEffect(() => {
@@ -53,11 +55,13 @@ export const AdminFormModal: React.FC<AdminFormModalProps> = ({
         // Strip technical metadata for form mapping
         const { id, created_at, updated_at, ...editableData } = initialData;
         reset(editableData);
+        setOptionPreviews({});
       } else {
         // Enforce a clinical reset with technical default manifestations
         const defaults: any = {};
         fields.forEach(f => { if (f.defaultValue !== undefined) defaults[f.name] = f.defaultValue; });
         reset(defaults);
+        setOptionPreviews({});
       }
     }
   }, [isOpen, reset, initialData, fields]);
@@ -109,30 +113,39 @@ export const AdminFormModal: React.FC<AdminFormModalProps> = ({
                     <Controller
                       name={field.name}
                       control={control}
-                      rules={{ validate: (value: any[]) => Array.isArray(value) && value.length >= 2 || "Add at least two options" }}
+                      rules={{ validate: (value: any[]) => Array.isArray(value) && value.length >= 1 || "Add at least one option" }}
                       render={({ field: { value, onChange } }) => {
                         const optionRows = Array.isArray(value) ? value : [];
                         return <div className="space-y-3">
-                          <p className="text-xs text-[#778171] dark:text-[#a6b09f]">Add 2 to 6 choices, then select the correct answer(s).</p>
+                          <p className="text-xs text-[#778171] dark:text-[#a6b09f]">Add up to 6 choices and mark the correct answer(s).</p>
                           <div className="space-y-2">
                             {optionRows.map((option: any, index: number) => (
                               <div key={index} className="flex items-center gap-2">
                                 <span className="w-8 shrink-0 text-center text-xs font-semibold text-[#596851] dark:text-[#c3cebd]">{String.fromCharCode(65 + index)}</span>
-                                <input
+                                  <input
                                   aria-label={`Option ${String.fromCharCode(65 + index)}`}
                                   value={option?.text ?? ""}
                                   onChange={event => onChange(optionRows.map((row, rowIndex) => rowIndex === index ? { ...row, text: event.target.value } : row))}
                                   placeholder={`Enter option ${String.fromCharCode(65 + index)}`}
                                   className="min-h-11 min-w-0 flex-1 rounded-xl border border-[#dfe6d9] bg-white px-3.5 text-sm text-[#263b22] outline-none focus:border-[#7ba36e] focus:ring-4 focus:ring-[#7ba36e]/10 dark:border-white/10 dark:bg-[#111711] dark:text-[#e8eee4]"
                                 />
+                                <button type="button" aria-label={`${optionPreviews[index] ? "Hide" : "Show"} preview for option ${String.fromCharCode(65 + index)}`} aria-pressed={Boolean(optionPreviews[index])} onClick={() => setOptionPreviews(current => ({ ...current, [index]: !current[index] }))} className="grid size-10 shrink-0 place-items-center rounded-lg text-[#596851] hover:bg-[#edf3e9] focus-visible:outline focus-visible:outline-2 focus-visible:outline-[#4c8b3e] dark:text-[#c3cebd] dark:hover:bg-white/[0.06]">
+                                  {optionPreviews[index] ? <EyeOff size={16} /> : <Eye size={16} />}
+                                </button>
                                 <label className="flex min-h-10 items-center gap-2 rounded-lg px-2 text-xs text-[#596851] dark:text-[#c3cebd]">
                                   <input type="checkbox" checked={Boolean(option?.is_correct)} onChange={event => onChange(optionRows.map((row, rowIndex) => rowIndex === index ? { ...row, is_correct: event.target.checked } : row))} className="size-4 accent-[#315f29]" />
                                   Correct
                                 </label>
-                                <button type="button" aria-label={`Remove option ${String.fromCharCode(65 + index)}`} disabled={optionRows.length <= 2} onClick={() => onChange(optionRows.filter((_, rowIndex) => rowIndex !== index).map((row, rowIndex) => ({ ...row, is_correct: row.is_correct })))} className="grid size-10 shrink-0 place-items-center rounded-lg text-[#8b625e] hover:bg-red-50 disabled:opacity-40 dark:hover:bg-red-950/30"><Trash2 size={16} /></button>
+                                <button type="button" aria-label={`Remove option ${String.fromCharCode(65 + index)}`} disabled={optionRows.length <= 1} onClick={() => onChange(optionRows.filter((_, rowIndex) => rowIndex !== index).map((row, rowIndex) => ({ ...row, is_correct: row.is_correct })))} className="grid size-10 shrink-0 place-items-center rounded-lg text-[#8b625e] hover:bg-red-50 disabled:opacity-40 dark:hover:bg-red-950/30"><Trash2 size={16} /></button>
                               </div>
                             ))}
                           </div>
+                          {optionRows.map((option: any, index: number) => optionPreviews[index] && option?.text ? (
+                            <div key={`preview-${index}`} className="rounded-lg border border-[#dfe6d9] bg-[#f7f9f5] px-3 py-2 dark:border-white/10 dark:bg-white/[0.04]">
+                              <p className="mb-1 text-[10px] font-semibold uppercase tracking-wide text-[#778171] dark:text-[#a6b09f]">Option {String.fromCharCode(65 + index)} preview</p>
+                              <div className="text-sm text-[#263b22] dark:text-[#e8eee4]"><HtmlContent html={option.text} /></div>
+                            </div>
+                          ) : null)}
                           {optionRows.length < 6 && <button type="button" onClick={() => onChange([...optionRows, { text: "", is_correct: false }])} className="inline-flex min-h-10 items-center gap-2 rounded-lg border border-dashed border-[#b9c9b1] px-3 text-sm font-medium text-[#315f29] hover:bg-[#edf4e9] dark:border-white/20 dark:text-[#c9e4c0]"><Plus size={16} />Add option</button>}
                           {!optionRows.some(option => option?.is_correct) && <p role="status" className="text-xs text-amber-700 dark:text-amber-300">Select at least one correct option.</p>}
                         </div>;
@@ -216,7 +229,13 @@ export const AdminFormModal: React.FC<AdminFormModalProps> = ({
                     />
                   )}
                   {field.previewAsHtml && (
-                    <HtmlFieldPreview control={control} name={field.name} />
+                    <div>
+                      <button type="button" aria-pressed={Boolean(previewFields[field.name])} onClick={() => setPreviewFields(current => ({ ...current, [field.name]: !current[field.name] }))} className="mb-2 inline-flex min-h-9 items-center gap-2 rounded-lg px-2 text-xs font-medium text-[#53634d] hover:bg-[#edf3e9] focus-visible:outline focus-visible:outline-2 focus-visible:outline-[#4c8b3e] dark:text-[#c3cebd] dark:hover:bg-white/[0.06]">
+                        {previewFields[field.name] ? <EyeOff size={15} /> : <Eye size={15} />}
+                        {previewFields[field.name] ? "Hide preview" : "Show preview"}
+                      </button>
+                      {previewFields[field.name] && <HtmlFieldPreview control={control} name={field.name} />}
+                    </div>
                   )}
                   {errors[field.name] && (
                     <span role="alert" className="text-xs font-medium text-red-600 dark:text-red-400">
