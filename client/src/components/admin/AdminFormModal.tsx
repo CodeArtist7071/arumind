@@ -1,6 +1,7 @@
 import React from "react";
-import { useForm, Controller } from "react-hook-form";
+import { useForm, useWatch, Controller } from "react-hook-form";
 import { X, Save, Check } from "lucide-react";
+import { getHtmlMarkup, HtmlContent } from "../ui/HtmlContent";
 
 interface Field {
   name: string;
@@ -11,6 +12,7 @@ interface Field {
   multiple?: boolean;
   disabled?: boolean;
   defaultValue?: any;
+  previewAsHtml?: boolean;
 }
 
 interface AdminFormModalProps {
@@ -180,6 +182,9 @@ export const AdminFormModal: React.FC<AdminFormModalProps> = ({
                       className="min-h-11 rounded-xl border border-[#dfe6d9] bg-white px-3.5 text-sm text-[#263b22] outline-none transition focus:border-[#7ba36e] focus:ring-4 focus:ring-[#7ba36e]/10 disabled:opacity-50 dark:border-white/10 dark:bg-[#111711] dark:text-[#e8eee4]"
                     />
                   )}
+                  {field.previewAsHtml && (
+                    <HtmlFieldPreview control={control} name={field.name} />
+                  )}
                   {errors[field.name] && (
                     <span role="alert" className="text-xs font-medium text-red-600 dark:text-red-400">
                        This field is required
@@ -207,6 +212,23 @@ export const AdminFormModal: React.FC<AdminFormModalProps> = ({
             </button>
           </div>
         </form>
+      </div>
+    </div>
+  );
+};
+
+const HtmlFieldPreview = ({ control, name }: { control: any; name: string }) => {
+  const value = useWatch({ control, name });
+  const markup = getHtmlMarkup(value);
+  if (!markup) return null;
+
+  return (
+    <div className="rounded-lg border border-[#dfe6d9] bg-[#f7f9f5] px-3 py-2 dark:border-white/10 dark:bg-white/[0.04]">
+      <p className="mb-1 text-[10px] font-semibold uppercase tracking-wide text-[#778171] dark:text-[#a6b09f]">
+        Preview
+      </p>
+      <div className="text-sm text-[#263b22] dark:text-[#e8eee4]">
+        <HtmlContent html={markup} />
       </div>
     </div>
   );

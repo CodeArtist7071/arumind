@@ -3,6 +3,7 @@ import { useSelector } from "react-redux";
 import type { RootState } from "../../store";
 import { useFormContext } from "react-hook-form";
 import { CheckCircle2, Info } from "lucide-react";
+import { HtmlContent } from "../ui/HtmlContent";
 
 type QuestionListProps = {
   questionRef: React.RefObject<(HTMLDivElement | null)[]>;
@@ -91,15 +92,13 @@ export const QuestionList = ({
                 {!isOdia && (
                   <p
                     className="text-on-surface font-semibold text-xs md:text-base lg:text-lg leading-relaxed tracking-tight"
-                    dangerouslySetInnerHTML={{ __html: q.question }}
-                  />
+                  ><HtmlContent html={q.question} /></p>
                 )}
                 {isOdia && odiaData?.question && (
                   <div className="bg-primary/5 p-1 rounded-lg border-l-4 border-primary">
-                    <p
-                      className="ml-3 md:ml-0 text-primary font-bold text-xs leading-relaxed"
-                      dangerouslySetInnerHTML={{ __html: odiaData.question }}
-                    />
+                    <p className="ml-3 md:ml-0 text-primary font-bold text-xs leading-relaxed">
+                      <HtmlContent html={odiaData.question} />
+                    </p>
                   </div>
                 )}
               </div>
@@ -133,16 +132,14 @@ export const QuestionList = ({
                           <span className="hidden sm:flex items-center justify-center size-5 md:size-8 rounded-lg bg-surface-container-high font-technical font-black text-[9px] md:text-xs text-on-surface-variant">
                             {opt.l}
                           </span>
-                          <span
-                            className="font-bold text-[11px] md:text-base lg:text-lg text-on-surface"
-                            dangerouslySetInnerHTML={{ __html: opt.v }}
-                          />
+                          <span className="font-bold text-[11px] md:text-base lg:text-lg text-on-surface">
+                            <HtmlContent html={opt.v} />
+                          </span>
                         </div>
                         {isOdia && odiaData?.options?.find((o: any) => o.l === opt.l) && (
-                          <div
-                            className="ml-0 lg:ml-13 text-primary text-xs font-bold opacity-80"
-                            dangerouslySetInnerHTML={{ __html: odiaData.options.find((o: any) => o.l === opt.l)?.v || '' }}
-                          />
+                          <div className="ml-0 lg:ml-13 text-primary text-xs font-bold opacity-80">
+                            <HtmlContent html={odiaData.options.find((o: any) => o.l === opt.l)?.v || ''} />
+                          </div>
                         )}
                       </div>
 
@@ -248,10 +245,9 @@ const ExplanationViewer = ({ explanations, onClose }: { explanations: string[], 
           )}
         </div>
       </div>
-      <div
-        className="text-sm font-medium text-on-surface-variant/80 leading-relaxed italic pr-0 md:pr-6"
-        dangerouslySetInnerHTML={{ __html: validExplanations[index] }}
-      />
+      <div className="text-sm font-medium text-on-surface-variant/80 leading-relaxed italic pr-0 md:pr-6">
+        <HtmlContent html={validExplanations[index]} />
+      </div>
     </div>
   );
 };

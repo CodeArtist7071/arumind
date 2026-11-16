@@ -4,6 +4,7 @@ import { AdminTable } from "../../components/admin/AdminTable";
 import { AdminFormModal } from "../../components/admin/AdminFormModal";
 import { Check, CircleHelp, Plus } from "lucide-react";
 import { supabase } from "../../utils/supabase";
+import { getHtmlMarkup, HtmlContent } from "../../components/ui/HtmlContent";
 
 /**
  * Question Repository Management Page.
@@ -36,8 +37,8 @@ const QuestionsManagement: React.FC = () => {
       const { data: optionRows, error } = await supabase.from("question_options").select("*").in("question_id", questions.map(q => q.id)).order("display_order");
       if (error) { console.error("Failed to load question options", error); return; }
       if (!cancelled) setData(questions.map(q => {
-        const options = (optionRows || []).filter(o => o.question_id === q.id).map(o => ({ id: o.id, l: o.option_key, v: o.option_text, is_correct: o.is_correct }));
-        return { ...q, options, correct_answer: options.find(o => o.is_correct)?.l };
+        const options = (optionRows || []).filter(o => o.question_id === q.id).map(o => ({ id: o.id, l: o.option_key, v: getHtmlMarkup(o.option_text), is_correct: o.is_correct }));
+        return { ...q, question: getHtmlMarkup(q.question), options, correct_answer: options.find(o => o.is_correct)?.l };
       }));
     };
     loadOptions();
@@ -67,10 +68,10 @@ const QuestionsManagement: React.FC = () => {
       minWidth: 340,
       flex: 2.2,
       wrapText: true,
-      render: (val: string) => (
+      render: (val: unknown) => (
         <div className="py-2 pr-3">
-          <p title={val} className="line-clamp-2 whitespace-normal text-sm font-medium leading-5 text-[#263b22] dark:text-[#e8eee4]">
-            {val}
+          <p title={getHtmlMarkup(val)} className="line-clamp-2 whitespace-normal text-sm font-medium leading-5 text-[#263b22] dark:text-[#e8eee4]">
+            <HtmlContent html={val} />
           </p>
         </div>
       )
@@ -110,7 +111,7 @@ const QuestionsManagement: React.FC = () => {
                 <span className={`shrink-0 font-semibold ${isCorrect ? "text-[#315f29] dark:text-[#c9e4c0]" : "text-[#82907b] dark:text-[#9eaa98]"}`}>
                   {label}.
                 </span>
-                <span className="min-w-0 whitespace-normal break-words">{option?.v || "—"}</span>
+                <span className="min-w-0 whitespace-normal break-words"><HtmlContent html={option?.v || "—"} /></span>
                 {isCorrect && <Check size={14} strokeWidth={2.5} className="ml-auto mt-0.5 shrink-0" aria-label="Correct answer" />}
               </div>
             );
@@ -167,14 +168,14 @@ const QuestionsManagement: React.FC = () => {
   ], [chapters, updateItem]);
 
   const fields: any[] = [
-    { name: "question", label: "Question", type: "textarea", required: true },
+    { name: "question", label: "Question", type: "textarea", required: true, previewAsHtml: true },
     { name: "question_type", label: "Question type", type: "select", options: ["SINGLE_CHOICE", "MULTIPLE_CHOICE", "TRUE_FALSE"].map(value => ({ label: value.replaceAll("_", " "), value })), required: true },
-    { name: "option_A", label: "Option A", type: "text", required: true },
-    { name: "option_B", label: "Option B", type: "text", required: true },
-    { name: "option_C", label: "Option C", type: "text", required: true },
-    { name: "option_D", label: "Option D", type: "text", required: true },
-    { name: "option_E", label: "Option E", type: "text" },
-    { name: "option_F", label: "Option F", type: "text" },
+    { name: "option_A", label: "Option A", type: "text", required: true, previewAsHtml: true },
+    { name: "option_B", label: "Option B", type: "text", required: true, previewAsHtml: true },
+    { name: "option_C", label: "Option C", type: "text", required: true, previewAsHtml: true },
+    { name: "option_D", label: "Option D", type: "text", required: true, previewAsHtml: true },
+    { name: "option_E", label: "Option E", type: "text", previewAsHtml: true },
+    { name: "option_F", label: "Option F", type: "text", previewAsHtml: true },
     {
       name: "correct_options",
       label: "Correct option(s)",

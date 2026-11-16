@@ -22,6 +22,7 @@ import {
   Shield,
 } from "lucide-react";
 import { PieChart, Pie, Cell, ResponsiveContainer, Tooltip } from "recharts";
+import { HtmlContent } from "../../components/ui/HtmlContent";
 
 const formatDate = (dateString: string) => {
   if (!dateString) return "N/A";
@@ -339,7 +340,7 @@ const Results = () => {
                         }`}>
                         {String(i + 1).padStart(2, '0')}
                       </div>
-                      <h4 className="text-[13px] font-black text-on-surface leading-snug">{q.question}</h4>
+                      <h4 className="text-[13px] font-black text-on-surface leading-snug"><HtmlContent html={q.question} /></h4>
                     </div>
 
                     <div className="grid grid-cols-2 gap-2">
@@ -350,7 +351,7 @@ const Results = () => {
                           }`}>
                           <div className="flex items-center justify-between">
                             <span className="text-[9px] font-technical font-black opacity-40">{opt.l}</span>
-                            <span className="text-[11px] ml-4 font-bold tracking-tight leading-tight">{opt.v}</span>
+                            <span className="text-[11px] ml-4 font-bold tracking-tight leading-tight"><HtmlContent html={opt.v} /></span>
 
                           </div>
                           {opt.l === q.correct_answer && <CheckCircle2 className="ml-2" size={10} />}
@@ -365,7 +366,7 @@ const Results = () => {
                         <Info size={12} className="text-primary" />
                         <p className="text-[9px] font-technical font-black text-primary uppercase tracking-widest">Preparation Insight</p>
                       </div>
-                      <p className="text-[10px] font-medium text-on-surface-variant/80 leading-relaxed italic">{q.explanation || `Core evaluation confirms Option ${q.correct_answer} is correct.`}</p>
+                      <p className="text-[10px] font-medium text-on-surface-variant/80 leading-relaxed italic"><HtmlContent html={q.explanation || `Core evaluation confirms Option ${q.correct_answer} is correct.`} /></p>
                     </div>
                   </div>
                 );
@@ -522,7 +523,7 @@ const Results = () => {
                           </div>
                           <div className="space-y-2">
                             <h4 className="text-lg font-bold text-on-surface leading-snug group-hover/q:text-primary transition-colors">
-                              {q.question}
+                              <HtmlContent html={q.question} />
                             </h4>
                             <div className="flex items-center gap-4">
                               <span className="text-[10px] font-mono font-bold uppercase tracking-widest text-primary">
@@ -566,7 +567,7 @@ const Results = () => {
                                     {opt.l}
                                   </div>
                                   <span className="text-sm font-bold tracking-tight">
-                                    {opt.v}
+                                    <HtmlContent html={opt.v} />
                                   </span>
                                   {opt.l === q.correct_answer && (
                                     <CheckCircle2 size={18} className="ml-auto opacity-100" />
@@ -587,8 +588,8 @@ const Results = () => {
                               </span>
                             </div>
                             <p className="text-sm font-medium text-on-surface-variant/80 leading-relaxed italic pr-6">
-                              {q.explanation ||
-                                `Option ${q.correct_answer} is the correct answer. Reviewing the core concepts of ${attempt?.subjects?.name} will clarify this topic.`}
+                              <HtmlContent html={q.explanation ||
+                                `Option ${q.correct_answer} is the correct answer. Reviewing the core concepts of ${attempt?.subjects?.name} will clarify this topic.`} />
                             </p>
                           </div>
                         </div>

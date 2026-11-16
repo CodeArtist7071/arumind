@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { X, Search, PlusCircle, HelpCircle, Loader2 } from "lucide-react";
 import { supabase } from "../../utils/supabase";
 import { AdminTable } from "./AdminTable";
+import { getHtmlMarkup, HtmlContent } from "../ui/HtmlContent";
 
 interface QuestionDrawerProps {
   isOpen: boolean;
@@ -36,7 +37,10 @@ export const QuestionDrawer: React.FC<QuestionDrawerProps> = ({
           .order("question_number", { ascending: true });
 
         if (error) throw error;
-        setQuestions(data || []);
+        setQuestions((data || []).map((question) => ({
+          ...question,
+          question: getHtmlMarkup(question.question),
+        })));
       } catch (err) {
         console.error("Failed to fetch questions:", err);
       } finally {
@@ -48,7 +52,7 @@ export const QuestionDrawer: React.FC<QuestionDrawerProps> = ({
   }, [chapterId, isOpen]);
 
   const filteredQuestions = questions.filter((q) =>
-    q.question.toLowerCase().includes(searchTerm.toLowerCase())
+    String(q.question ?? "").toLowerCase().includes(searchTerm.toLowerCase())
   );
 
   const columns = [
@@ -57,7 +61,7 @@ export const QuestionDrawer: React.FC<QuestionDrawerProps> = ({
       key: "question",
       render: (val: string) => (
         <span className="text-xs font-medium line-clamp-2" title={val}>
-          {val}
+          <HtmlContent html={val} />
         </span>
       ),
     },
