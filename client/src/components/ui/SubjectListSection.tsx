@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
 import {
   ChevronRight,
   BookOpen,
@@ -27,29 +28,20 @@ interface SubjectListSectionProps {
   targetedExams: ExamWithSubjects[];
 }
 
-const subjectColors = [
-  "from-emerald-500/15 to-emerald-500/5 border-emerald-500/15",
-  "from-blue-500/15 to-blue-500/5 border-blue-500/15",
-  "from-amber-500/15 to-amber-500/5 border-amber-500/15",
-  "from-violet-500/15 to-violet-500/5 border-violet-500/15",
-  "from-rose-500/15 to-rose-500/5 border-rose-500/15",
-  "from-cyan-500/15 to-cyan-500/5 border-cyan-500/15",
-];
-
-const subjectIconColors = [
-  "bg-emerald-500/15 text-emerald-600",
-  "bg-blue-500/15 text-blue-600",
-  "bg-amber-500/15 text-amber-600",
-  "bg-violet-500/15 text-violet-600",
-  "bg-rose-500/15 text-rose-600",
-  "bg-cyan-500/15 text-cyan-600",
-];
-
 const SubjectSkeleton = () => (
-  <div className="shrink-0 w-[220px] snap-start">
-    <div className="h-[130px] bg-surface-container-high/40 rounded-2xl animate-pulse border border-on-surface/5" />
+  <div className="w-64 shrink-0 snap-start">
+    <div className="h-36 animate-pulse rounded-2xl border border-outline-variant/10 bg-surface-container-high/40" />
   </div>
 );
+
+// Keep the colorful subject-card treatment from the dashboard, starting with
+// the leaf-green brand color and rotating through distinct soft accents.
+const subjectCardColors = [
+  { card: "from-primary/15 via-primary/5 to-surface-container-low", border: "border-primary/20 hover:border-primary/40", icon: "bg-primary/15 text-primary", action: "text-primary" },
+  { card: "from-blue-500/15 via-blue-500/5 to-surface-container-low", border: "border-blue-500/20 hover:border-blue-500/40", icon: "bg-blue-500/15 text-blue-600", action: "text-blue-600" },
+  { card: "from-amber-500/15 via-amber-500/5 to-surface-container-low", border: "border-amber-500/20 hover:border-amber-500/40", icon: "bg-amber-500/15 text-amber-600", action: "text-amber-600" },
+  { card: "from-violet-500/15 via-violet-500/5 to-surface-container-low", border: "border-violet-500/20 hover:border-violet-500/40", icon: "bg-violet-500/15 text-violet-600", action: "text-violet-600" },
+];
 
 export const SubjectListSection = ({
   targetedExams,
@@ -62,6 +54,7 @@ export const SubjectListSection = ({
       state.examSubject ?? { data: [], e_data: [], loading: false },
   );
   const dispatch = useDispatch<AppDispatch>();
+  const navigate = useNavigate();
   const hasMultipleExams = targetedExams.length > 1;
 
   const [activeExamId, setActiveExamId] = useState<string>(
@@ -72,23 +65,23 @@ export const SubjectListSection = ({
     if (activeExamId) {
       dispatch(fetchExamSubjects(activeExamId));
     }
-  }, [activeExamId]);
+  }, [activeExamId, dispatch]);
 
   return (
-    <section className="rounded-2xl">
+    <section className="rounded-2xl border border-outline-variant/10 bg-surface-container-low/60 p-4 sm:p-5">
       {/* Section Header */}
       <div className="flex justify-between items-center mb-4 px-1">
         <div className="space-y-0.5">
-          <p className="text-[10px] font-technical font-black uppercase tracking-[0.25em] text-on-surface-variant opacity-50">
+          <p className="text-xs font-semibold uppercase tracking-wide text-on-surface-variant">
             Browse by Subject
           </p>
-          <h3 className="text-lg font-black text-on-surface tracking-tight">
+          <h3 className="text-lg font-bold tracking-tight text-on-surface">
             Continue Learning
           </h3>
         </div>
-        <div className="flex items-center gap-1.5 px-3 py-1.5 bg-surface-container-high rounded-full border border-on-surface/5">
-          <LayoutGrid className="size-3.5 text-primary" />
-          <span className="text-[9px] font-technical font-black uppercase tracking-wider text-on-surface-variant opacity-60">{subjectsData.length} Subjects</span>
+        <div className="flex items-center gap-1.5 rounded-full border border-outline-variant/10 bg-surface-container-high px-3 py-2">
+          <LayoutGrid className="size-4 text-primary" />
+          <span className="text-xs font-medium text-on-surface-variant">{subjectsData.length} subjects</span>
         </div>
       </div>
 
@@ -97,15 +90,16 @@ export const SubjectListSection = ({
         <div className="flex gap-2 overflow-x-auto pb-3 mb-3" style={{ scrollbarWidth: "none" }}>
           {targetedExams.map((exam) => (
             <button
+              type="button"
               key={exam.id}
               onClick={() => setActiveExamId(exam.id)}
-              className={`shrink-0 flex items-center gap-1.5 px-3 py-2 rounded-full text-[10px] font-technical font-black uppercase tracking-widest transition-all duration-300 ${
+              className={`flex min-h-11 shrink-0 items-center gap-2 rounded-full px-4 py-2 text-sm font-semibold transition-all duration-300 ${
                 activeExamId === exam.id
                   ? "bg-primary text-white shadow-md shadow-primary/20"
                   : "bg-surface-container-high/60 text-on-surface-variant hover:bg-surface-container-high border border-on-surface/5"
               }`}
             >
-              <GraduationCap className="size-3" />
+              <GraduationCap className="size-4" />
               {exam.name}
             </button>
           ))}
@@ -114,36 +108,22 @@ export const SubjectListSection = ({
 
       {/* Subject Cards — Horizontal scroll */}
       <div
-        className="flex gap-3 overflow-x-auto pb-2 snap-x snap-mandatory scroll-smooth"
+        className="flex snap-x snap-mandatory gap-3 overflow-x-auto pb-3 scroll-smooth"
         style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}
       >
         {subjectsLoading ? (
           Array.from({ length: 4 }).map((_, i) => <SubjectSkeleton key={i} />)
         ) : subjectsData.length > 0 ? (
           subjectsData.map((subject, index) => {
-            const colorClass = subjectColors[index % subjectColors.length];
-            const iconColor = subjectIconColors[index % subjectIconColors.length];
+            const colors = subjectCardColors[index % subjectCardColors.length];
             return (
-              <div key={index} className="shrink-0 w-[200px] snap-start">
-                <div className={`h-[130px] bg-gradient-to-br ${colorClass} border rounded-2xl p-4 cursor-pointer group hover:scale-[1.02] hover:shadow-ambient transition-all duration-300 flex flex-col justify-between relative overflow-hidden`}>
-                  {/* Decorative blob */}
-                  <div className="absolute -bottom-4 -right-4 size-20 rounded-full bg-on-surface/3 group-hover:scale-125 transition-transform duration-500" />
-
-                  <div className={`size-9 rounded-xl ${iconColor} flex items-center justify-center shadow-sm`}>
-                    <BookOpen className="size-4" />
-                  </div>
-
-                  <div>
-                    <h4 className="font-black text-sm text-on-surface tracking-tight leading-tight line-clamp-2">
-                      {subject.subjects?.name || subject.name}
-                    </h4>
-                    <div className="flex items-center justify-between mt-2">
-                      <span className="text-[9px] font-technical font-black uppercase tracking-widest text-on-surface-variant opacity-50">Start Practice</span>
-                      <ChevronRight className="size-3.5 text-on-surface-variant opacity-40 group-hover:translate-x-0.5 group-hover:opacity-80 transition-all duration-300" />
-                    </div>
-                  </div>
-                </div>
-              </div>
+              <button key={subject.subject_id ?? subject.subjects?.id ?? subject.id} type="button" onClick={() => navigate(`/user/dashboard/exam/${activeExamId}`)} className={`group flex min-h-36 w-64 shrink-0 snap-start flex-col justify-between rounded-2xl border bg-gradient-to-br ${colors.card} ${colors.border} p-4 text-left transition hover:shadow-ambient focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary`}>
+                <span className={`grid size-10 place-items-center rounded-xl ${colors.icon}`}><BookOpen className="size-5" /></span>
+                <span className="block min-w-0">
+                  <span className="line-clamp-2 block text-base font-semibold leading-snug text-on-surface">{subject.subjects?.name || subject.name}</span>
+                  <span className={`mt-2 flex items-center justify-between gap-2 text-sm font-medium ${colors.action}`}><span>Explore chapters</span><ChevronRight className="size-4 transition-transform group-hover:translate-x-0.5" /></span>
+                </span>
+              </button>
             );
           })
         ) : null}
@@ -151,10 +131,10 @@ export const SubjectListSection = ({
 
       {/* Empty State */}
       {!subjectsLoading && (!subjectsData || subjectsData.length === 0) && (
-        <div className="py-10 text-center bg-surface-container-high/30 rounded-2xl border border-dashed border-on-surface/8">
+        <div className="rounded-2xl border border-dashed border-outline-variant/20 bg-surface-container-high/30 py-10 text-center">
           <BookOpen className="size-8 text-on-surface-variant opacity-25 mx-auto mb-3" />
-          <h4 className="text-sm font-black text-on-surface-variant mb-1">No subjects yet</h4>
-          <p className="text-xs text-on-surface-variant opacity-50">Subjects will appear once content is added</p>
+          <h4 className="mb-1 text-base font-semibold text-on-surface-variant">No subjects yet</h4>
+          <p className="text-sm text-on-surface-variant/70">Subjects will appear once content is added.</p>
         </div>
       )}
     </section>

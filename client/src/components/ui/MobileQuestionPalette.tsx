@@ -17,7 +17,7 @@ export const MobileQuestionPalette = ({
     <aside className="lg:hidden fixed top-20 right-0 md:right-8 z-50 h-[calc(100vh-10rem)] flex flex-col items-center group/timeline">
       <div className="flex flex-col items-center mb-4 opacity-40 group-hover/timeline:opacity-100 transition-opacity">
         <div className="size-2 rounded-full border-2 border-primary mb-2 shadow-sm" />
-        <span className="text-[6px] font-technical font-black text-on-surface-variant uppercase tracking-[0.4em] [writing-mode:vertical-lr]">
+        <span className="text-xs font-semibold text-on-surface-variant uppercase tracking-wide [writing-mode:vertical-lr]">
           Start
         </span>
       </div>
@@ -37,7 +37,8 @@ export const MobileQuestionPalette = ({
                     block: "center",
                   })
                 }
-                className={`relative z-10 size-8 md:size-10 rounded-full flex items-center justify-center font-technical font-black text-[9px] md:text-xs transition-all duration-500 ease-premium cursor-pointer group/node shrink-0 border-2
+                aria-label={`Go to question ${i + 1}${isConfirmed ? ", answered" : ", unanswered"}`}
+                className={`relative z-10 size-10 md:size-10 rounded-full flex items-center justify-center font-semibold text-xs transition-all duration-500 ease-premium cursor-pointer group/node shrink-0 border-2
                 ${
                   isConfirmed
                     ? "bg-primary text-white border-primary shadow-ambient"
@@ -65,7 +66,7 @@ export const MobileQuestionPalette = ({
             className="absolute bottom-0 left-0 right-0 bg-primary/10 transition-all duration-1000 ease-botanical"
             style={{ height: `${progressPercentage}%` }}
           />
-          <span className="text-[9px] md:text-xs font-technical font-black text-primary relative z-10">
+          <span className="text-xs font-semibold text-primary relative z-10">
             {progressPercentage}%
           </span>
         </div>

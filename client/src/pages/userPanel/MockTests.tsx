@@ -10,6 +10,7 @@ import {
 } from "lucide-react";
 import { useNavigate, useLocation, Outlet } from "react-router";
 import { ExamSelectorCard } from "../../components/ui/ExamSelectorCard";
+import { ExamSelectorCardMobile } from "../../components/ui/ExamSelectorCardMobile";
 
 const MockTests = () => {
   const dispatch = useDispatch<AppDispatch>();
@@ -35,7 +36,7 @@ const MockTests = () => {
   };
 
   return (
-    <div className="min-h-screen bg-surface-container-low overflow-hidden relative">
+    <div className="min-h-screen overflow-hidden bg-surface-container-low relative">
       <div 
         className={`p-6 lg:p-10 transition-all duration-800 ease-premium ${
           isPreferenceActive 
@@ -43,11 +44,11 @@ const MockTests = () => {
             : "scale-100 opacity-100 blur-0 translate-x-0"
         }`}
       >
-      <div className="max-w-7xl mx-auto space-y-10">
+      <div className="mx-auto max-w-7xl space-y-8 sm:space-y-10">
         {/* Header Section */}
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-6">
           <div className="space-y-2">
-            <h1 className="text-xl font-black tracking-tight text-on-surface dark:text-white">
+            <h1 className="text-2xl font-bold tracking-tight text-on-surface dark:text-white sm:text-3xl">
               Adaptive Mock Test <span className="text-primary">Portal</span>
             </h1>
             <p className="hidden md:block text-on-surface-variant text-sm md:text-md dark:text-slate-400 font-medium max-w-lg">
@@ -55,7 +56,7 @@ const MockTests = () => {
               Improve your score with AI-driven question selection.
             </p>
           </div>
-          <div className="bg-primary text-white px-6 py-3 rounded-2xl shadow-xl shadow-green-600/20 flex items-center gap-3">
+          <div className="flex items-center gap-3 rounded-2xl bg-primary px-4 py-3 text-white shadow-xl shadow-green-600/20 sm:px-6">
             <Zap className="size-5" fill="white" />
             <span className="font-bold tracking-wide uppercase text-xs">
               Adaptive Learning Active
@@ -66,6 +67,12 @@ const MockTests = () => {
         {/* Exams Grid */}
         <div className="lg:w-[70%] gap-6">
           <ExamSelectorCard
+            targetedExams={targetedExams}
+            onSelect={(exam) => handleStartExam(exam.id)}
+            onViewAll={() => navigate("/select-exams")}
+            loading={examsLoading}
+          />
+          <ExamSelectorCardMobile
             targetedExams={targetedExams}
             onSelect={(exam) => handleStartExam(exam.id)}
             onViewAll={() => navigate("/select-exams")}

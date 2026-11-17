@@ -130,25 +130,26 @@ const Exam = () => {
   }
 
   return (
-    <div className="text-on-surface h-screen font-narrative antialiased transition-colors duration-700">
+    <div className="min-h-full text-on-surface font-narrative antialiased transition-colors duration-700">
       {/* Main Content */}
-      <main className=" w-full mx-auto px-4">
-        {/* Page Header - Asymmetrical & Editorial */}
-        <div className="md:mb-16 mb-6 max-w-2xl">
-          <h1 className="mt-3 text-2xl md:text-5xl font-black tracking-tight mb-6 leading-[0.9] text-on-surface animate-reveal">
-            Subject List for <span className="text-primary italic">Curriculum</span>
+      <main className="mx-auto w-full max-w-6xl px-4 sm:px-6 lg:px-8">
+        {/* Page header */}
+        <div className="mb-6 max-w-3xl sm:mb-8">
+          <p className="text-sm font-semibold text-primary">Your learning library</p>
+          <h1 className="mt-1 text-2xl font-bold leading-tight tracking-tight text-on-surface animate-reveal sm:text-3xl lg:text-4xl">
+            Subjects and chapters
           </h1>
           <p
-            className="text-on-surface-variant text-sm md:text-lg leading-relaxed max-w-md animate-reveal opacity-80"
+            className="mt-2 max-w-2xl text-sm leading-relaxed text-on-surface-variant animate-reveal sm:text-base"
             style={{ animationDelay: "0.1s" }}
           >
-            View all subjects and chapters for your selected exam. Select a chapter to start practicing with tailored preferences.  
+            Browse your exam curriculum and choose a chapter to start practicing.
           </p>
         </div>
 
         {/* --- STICKY EXAM PREFERENCE TICKER --- */}
         {!eid && (
-          <div className="sticky -top-3 md:-top-6 lg:-top-10 z-40 dark:bg-surface-container-low/80 backdrop-blur-3xl border-b border-on-surface/5 -mx-6 lg:-mx-10 px-6 lg:px-10 py-6 mb-12 shadow-sm transition-all duration-500">
+          <div className="sticky top-0 z-40 -mx-4 mb-5 border-y border-outline-variant/20 bg-surface/95 px-4 py-3 shadow-sm backdrop-blur-xl transition-all duration-300 sm:-mx-6 sm:px-6 lg:-mx-8 lg:px-8">
             <div className="flex-col md:flex-row max-w-300 mx-auto overflow-x-auto custom-scrollbar-hide flex items-center justify-between gap-2">
               {/* <div className="flex items-center gap-3 mr-6 shrink-0">
               <Target className="size-4 text-primary" />
@@ -168,74 +169,81 @@ const Exam = () => {
           </div>
         )}
 
-        <div className="h-[90vh] pb-20 overflow-y-auto">
+        <div className="space-y-3 pb-20 sm:space-y-4">
           {data.map((subject: any, index: number) => {
             // Technical Verification: ensure parent subject existence manifestation
             if (!subject.subjects) return null;
 
-            if (subject.exam_id === eid)
+            if (subject.exam_id === eid) {
+              const subjectChapters = e_data.filter(
+                (chapter) => chapter.subjects?.id === subject.subjects.id,
+              );
+              const completedChapters = subjectChapters.filter((chapter) =>
+                attemptedChapters.has(chapter.id),
+              ).length;
+              const progress = subjectChapters.length
+                ? Math.round((completedChapters / subjectChapters.length) * 100)
+                : 0;
               return (
                 <section
                   key={index}
-                  className="bg-surface-container-low rounded-3xl overflow-hidden hover-bloom mb-5 md:mb-12 transition-all duration-500 ease-botanical"
+                  className="overflow-hidden rounded-2xl border border-outline-variant/20 bg-surface-container-low shadow-sm transition-shadow duration-300 hover:shadow-md sm:rounded-3xl"
                 >
                   {/* Subject Header - Accordion Toggle */}
-                  <div
+                  <button
+                    type="button"
+                    aria-expanded={expandedSubjects.has(subject.subjects.id)}
                     onClick={() => toggleSubject(subject.subjects.id)}
-                    className="p-4 md:p-8 bg-surface-container-high/40 flex flex-col md:flex-row justify-between items-start md:items-center gap-6 cursor-pointer group"
+                    className="group flex w-full flex-col items-start justify-between gap-4 bg-gradient-to-r from-primary/8 to-surface-container-low p-4 text-left transition-colors hover:from-primary/10 sm:p-5 md:flex-row md:items-center md:gap-6 md:p-6"
                   >
                     <div className="flex items-center gap-2 md:gap-4 flex-1">
-                      <div className="md:size-14 size-10 bg-primary/10 rounded-xl md:rounded-2xl flex text-black items-center justify-center transition-transform duration-500 group-hover:scale-110">
+                      <div className="grid size-11 shrink-0 place-items-center rounded-xl bg-primary/10 text-primary transition-transform duration-300 group-hover:scale-105 sm:size-12 sm:rounded-2xl">
                         <span className="text-primary text-2xl">
-                          <BookCopy className="md:w-[50px] md:h-[50px] w-[20px] h-[20px]" />
+                          <BookCopy className="size-6 sm:size-8" />
                         </span>
                       </div>
                       <div>
-                        <h2 className="text-sm md:text-2xl font-bold tracking-tight text-on-surface">
+                        <h2 className="text-base font-semibold tracking-tight text-on-surface sm:text-lg md:text-xl">
                           {subject.subjects.name}
                         </h2>
-                        <p className="text-xs md:text-sm text-on-surface-variant max-w-sm opacity-60">
+                        <p className="mt-1 max-w-xl text-sm leading-relaxed text-on-surface-variant">
                           {subject.subjects.description}
                         </p>
                       </div>
                     </div>
 
-                    <div className="flex items-center gap-8 w-full md:w-auto">
+                    <div className="flex w-full items-center gap-3 md:w-auto md:gap-5">
                       <div className="w-full md:w-48">
-                        <div className="flex justify-between items-baseline mb-3">
-                          <span className="text-[10px] font-bold uppercase tracking-widest text-primary font-mono opacity-70">
-                            Study Progress
+                        <div className="mb-2 flex items-baseline justify-between">
+                          <span className="text-xs font-medium text-on-surface-variant">
+                            Chapters completed
                           </span>
-                          <span className="text-sm font-bold font-mono">
-                            4{" "}
-                            <span className="text-on-surface-variant/40 font-normal">
-                              /
-                            </span>{" "}
-                            12
+                          <span className="text-xs font-semibold tabular-nums text-on-surface">
+                            {completedChapters} / {subjectChapters.length}
                           </span>
                         </div>
-                        <div className="w-full h-3 bg-surface-container-highest rounded-full overflow-hidden">
+                        <div className="h-2 w-full overflow-hidden rounded-full bg-surface-container-highest" role="progressbar" aria-label={`${subject.subjects.name} chapters completed`} aria-valuenow={progress} aria-valuemin={0} aria-valuemax={100}>
                           <div
-                            className="h-full bg-primary-container rounded-full transition-all duration-1000 ease-botanical"
-                            style={{ width: "33%" }}
+                            className="h-full rounded-full bg-primary transition-all duration-500"
+                            style={{ width: `${progress}%` }}
                           />
                         </div>
                       </div>
 
                       <div
-                        className={`p-2 rounded-full bg-surface-container-highest text-on-surface-variant transition-transform duration-500 ${expandedSubjects.has(subject.subjects.id) ? "rotate-180" : ""}`}
+                        className={`grid size-9 shrink-0 place-items-center rounded-full bg-surface-container-highest text-on-surface-variant transition-transform duration-300 ${expandedSubjects.has(subject.subjects.id) ? "rotate-180" : ""}`}
                       >
                         <ChevronDown size={20} />
                       </div>
                     </div>
-                  </div>
+                  </button>
 
                   {/* Collapsible Content */}
                   <div
                     className={`grid transition-all duration-500 ease-botanical ${expandedSubjects.has(subject.subjects.id) ? "grid-rows-[1fr] opacity-100" : "grid-rows-[0fr] opacity-0"}`}
                   >
                     <div className="overflow-hidden">
-                      <div className="px-4 py-8 space-y-2 bg-surface/30">
+                      <div className="space-y-2 bg-surface/40 p-3 sm:p-4">
                         {/* Chapter Items */}
                         {e_data.map((item, idx) => {
                           // Technical Verification: ensure chapter subject manifestation
@@ -244,35 +252,32 @@ const Exam = () => {
                           if (subject.subjects.id === item.subjects.id) {
                             return (
                               <div
-                                onClick={() =>
-                                  handleButton(item.subjects.id, item.id)
-                                }
                                 key={idx}
-                                className="md:group  md:flex flex-row p-2 md:p-5 mx-2 rounded-2xl  md:justify-between md:items-center cursor-pointer hover:bg-surface-container-high transition-all duration-300 ease-botanical"
+                                className="group flex flex-col gap-3 rounded-xl border border-outline-variant/15 bg-surface-container-lowest/70 p-3 transition-colors hover:border-primary/20 hover:bg-surface-container-lowest sm:flex-row sm:items-center sm:justify-between sm:p-4"
                               >
-                                <div className="flex mb-6 md:mb-0 md:justify-between items-center gap-5">
-                                  <div
-                                    className={`size-2 rounded-full ${attemptedChapters.has(item.id) ? "bg-primary" : "bg-on-surface-variant/20 group-hover:bg-primary/40"}`}
-                                  />
+                                <div className="flex min-w-0 items-center gap-3 sm:gap-4">
+                                  <div className={`grid size-9 shrink-0 place-items-center rounded-xl ${attemptedChapters.has(item.id) ? "bg-primary/10 text-primary" : "bg-surface-container-high text-on-surface-variant"}`}>
+                                    {attemptedChapters.has(item.id) ? <CheckCircle2 size={18} /> : <BookCopy size={18} />}
+                                  </div>
                                   <div>
-                                    <h4 className="font-bold text-on-surface text-sm  md:text-lg group-hover:text-primary transition-colors">
+                                    <h4 className="font-semibold text-on-surface text-sm sm:text-base group-hover:text-primary transition-colors">
                                       {item.name}
                                     </h4>
-                                    <span className="text-xs font-mono font-bold uppercase tracking-wider text-on-surface-variant/60">
-                                      Completed 2 days ago
+                                      <span className="text-xs text-on-surface-variant">
+                                      Chapter practice
                                     </span>
                                   </div>
                                 </div>
-                                <div className="block">
+                                <div className="block w-full sm:w-auto">
                                   <button
                                     onClick={(e) => {
                                       e.stopPropagation();
                                       handleButton(item.subjects.id, item.id);
                                     }}
-                                    className={`w-full md:mt-0 px-6 py-2.5 rounded-full text-sm font-black transition-all duration-300 shadow-sm ${
+                                    className={`min-h-11 w-full rounded-xl px-5 py-2.5 text-sm font-semibold transition-all duration-300 shadow-sm sm:min-w-36 sm:w-auto sm:rounded-full ${
                                       attemptedChapters.has(item.id)
-                                        ? "bg-surface-container-highest text-on-surface hover:bg-surface-dim"
-                                        : "bg-linear-to-r from-primary to-primary-container text-white hover:scale-105 active:scale-95 shadow-primary/20 hover:shadow-lg"
+                                        ? "border border-primary/20 bg-primary/5 text-primary hover:bg-primary/10"
+                                        : "bg-primary text-white hover:bg-primary/90 active:scale-[0.98]"
                                     }`}
                                   >
                                     {attemptedChapters.has(item.id)
@@ -305,6 +310,7 @@ const Exam = () => {
                   </div>
                 </section>
               );
+            }
           })}
         </div>
 
@@ -322,7 +328,7 @@ const Exam = () => {
               </div>
 
               {/* Modal Header */}
-              <div className="p-8 sm:p-10 pb-4 sm:pb-6 bg-surface-container-low/50">
+            <div className="bg-surface-container-low/50 p-5 pb-4 sm:p-10 sm:pb-6">
                 <h3 className="text-2xl sm:text-3xl font-black tracking-tighter text-on-surface">
                   Exam Preferences
                 </h3>
@@ -332,7 +338,7 @@ const Exam = () => {
               </div>
 
               {/* Modal Content - Scrollable for small screens */}
-              <div className="p-8 sm:p-10 pt-4 space-y-4 max-h-[70vh] overflow-y-auto custom-scrollbar">
+              <div className="max-h-[70vh] space-y-4 overflow-y-auto p-5 pt-4 custom-scrollbar sm:p-10 sm:pt-4">
                 {/* 1. Normal Mode */}
                 <div
                   onClick={() => setPrefs((p) => ({ ...p, mode: "normal" }))}

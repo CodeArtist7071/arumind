@@ -34,7 +34,7 @@ export const QuestionList = ({
   const answers = watch("answers");
 
   return (
-    <section className="col-span-full lg:col-span-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 gap-4 md:gap-8">
+    <section className="col-span-full grid grid-cols-1 gap-4 lg:col-span-8 lg:gap-8">
       {questionData?.map((q, i) => {
         const difficultyClass =
           q.difficulty_level === "Easy"
@@ -70,7 +70,7 @@ export const QuestionList = ({
               <div className="flex items-center gap-2 md:gap-4">
                 <div className="flex flex-col items-end">
                   <span className="hidden md:block text-[8px] font-technical font-black text-on-surface-variant/30 uppercase tracking-[0.3em] mb-1">Complexity</span>
-                  <span className={`text-[7px] md:text-[10px] font-technical font-black uppercase tracking-widest px-2 md:px-3 py-1 rounded-full ${difficultyClass}`}>
+                  <span className={`text-xs font-semibold uppercase tracking-wide px-2.5 md:px-3 py-1.5 rounded-full ${difficultyClass}`}>
                     {q.difficulty_level}
                   </span>
                 </div>
@@ -79,7 +79,7 @@ export const QuestionList = ({
 
                 <div className="flex flex-col items-end">
                   <span className="hidden md:block text-[8px] font-technical font-black text-on-surface-variant/30 uppercase tracking-[0.3em] mb-1">Growth</span>
-                  <span className="text-[7px] md:text-[10px] font-technical font-black uppercase tracking-widest px-2 md:px-3 py-1 bg-primary text-white rounded-full">
+                  <span className="text-xs font-semibold uppercase tracking-wide px-2.5 md:px-3 py-1.5 bg-primary text-white rounded-full">
                     {q.marks} Pts
                   </span>
                 </div>
@@ -91,12 +91,12 @@ export const QuestionList = ({
               <div className={`space-y-3 mb-4 lg:mb-10 transition-all duration-700 origin-left ${expandedExplanations[q.id] ? "scale-90 opacity-60" : ""}`}>
                 {!isOdia && (
                   <p
-                    className="text-on-surface font-semibold text-xs md:text-base lg:text-lg leading-relaxed tracking-tight"
+                    className="text-on-surface text-base font-medium leading-relaxed tracking-tight lg:text-lg"
                   ><HtmlContent html={q.question} /></p>
                 )}
                 {isOdia && odiaData?.question && (
                   <div className="bg-primary/5 p-1 rounded-lg border-l-4 border-primary">
-                    <p className="ml-3 md:ml-0 text-primary font-bold text-xs leading-relaxed">
+                    <p className="ml-3 text-primary text-base font-semibold leading-relaxed md:ml-0">
                       <HtmlContent html={odiaData.question} />
                     </p>
                   </div>
@@ -132,7 +132,7 @@ export const QuestionList = ({
                           <span className="hidden sm:flex items-center justify-center size-5 md:size-8 rounded-lg bg-surface-container-high font-technical font-black text-[9px] md:text-xs text-on-surface-variant">
                             {opt.l}
                           </span>
-                          <span className="font-bold text-[11px] md:text-base lg:text-lg text-on-surface">
+                          <span className="text-sm font-semibold text-on-surface md:text-base lg:text-lg">
                             <HtmlContent html={opt.v} />
                           </span>
                         </div>
@@ -160,7 +160,7 @@ export const QuestionList = ({
                           }));
                           if (onConfirm) onConfirm(q.id, currentAnswer);
                         }}
-                        className="absolute right-2 md:right-4 bg-linear-to-r from-primary to-primary-container text-white px-3 py-1.5 md:px-6 md:py-2 rounded-full text-[8px] md:text-[10px] font-technical font-black uppercase tracking-widest shadow-ambient-lg transition-all animate-in slide-in-from-right-4 hover:scale-110 active:scale-95 cursor-pointer"
+                        className="absolute right-2 rounded-full bg-linear-to-r from-primary to-primary-container px-3 py-2 text-xs font-semibold text-white shadow-ambient-lg transition-all animate-in slide-in-from-right-4 hover:scale-105 active:scale-95 cursor-pointer md:right-4 md:px-6"
                       >
                         Select
                       </button>
@@ -175,7 +175,7 @@ export const QuestionList = ({
                   <div className="flex justify-between items-center bg-primary/5 px-3 md:px-6 py-2 md:py-4 rounded-xl md:rounded-3xl border border-primary/20">
                     <div className="flex items-center gap-2 md:gap-4">
                       <div className="size-2 rounded-full bg-primary animate-ping shadow-[0_0_15px_rgba(34,197,94,0.6)]" />
-                      <span className="text-[7px] md:text-[12px] font-technical font-black text-primary uppercase tracking-[0.2em]">Recorded</span>
+                      <span className="text-xs font-semibold text-primary">Recorded</span>
                     </div>
                     {q.question_explanations?.length > 0 && !expandedExplanations[q.id] && (
                       <button
@@ -183,7 +183,7 @@ export const QuestionList = ({
                           e.preventDefault();
                           setExpandedExplanations(prev => ({ ...prev, [q.id]: true }));
                         }}
-                        className="px-3 py-1 rounded-full bg-primary text-white hover:bg-primary/90 text-[7px] md:text-[10px] font-mono font-black uppercase tracking-widest transition-all cursor-pointer"
+                        className="min-h-10 rounded-full bg-primary px-3 text-xs font-semibold text-white transition-all hover:bg-primary/90 cursor-pointer"
                       >
                         Explain
                       </button>

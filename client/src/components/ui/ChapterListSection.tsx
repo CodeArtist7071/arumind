@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
 import {
   ChevronRight,
   BookOpen,
@@ -39,8 +40,9 @@ export const ChapterListSection = ({
       state.examSubject ?? { data: [], e_data: [], loading: false },
   );
   const dispatch = useDispatch<AppDispatch>();
-  const hasMultipleExams = targetedExams.length > 1;
+  const navigate = useNavigate();
   const listofExams = targetedExams.map((exam) => exam.id);
+  const examIdsKey = listofExams.join(",");
 
   const [activeSubjectId, setActiveSubjectId] = useState<string>(
     subjectData[0]?.subject_id || subjectData[0]?.subjects?.id || "",
@@ -51,8 +53,8 @@ export const ChapterListSection = ({
   );
 
   useEffect(() => {
-    dispatch(fetchExamSubjects(listofExams));
-  }, [activeSubjectId]);
+    if (listofExams.length) dispatch(fetchExamSubjects(listofExams));
+  }, [dispatch, examIdsKey]);
 
   // Auto-select first subject when data loads
   useEffect(() => {
@@ -62,42 +64,43 @@ export const ChapterListSection = ({
   }, [subjectData]);
 
   return (
-    <section className="block md:hidden mb-6 rounded-3xl overflow-hidden border border-on-surface/5 bg-surface-container-high/60 shadow-ambient">
+    <section className="mb-6 block overflow-hidden rounded-2xl border border-outline-variant/10 bg-surface-container-low/60 shadow-ambient md:hidden">
       {/* Section Header */}
-      <div className="px-5 pt-5 pb-4 border-b border-on-surface/5">
+      <div className="border-b border-outline-variant/10 px-4 py-4 sm:px-5">
         <div className="flex items-center justify-between">
           <div className="space-y-0.5">
-            <p className="text-[10px] font-technical font-black uppercase tracking-[0.25em] text-on-surface-variant opacity-50">
+            <p className="text-xs font-semibold uppercase tracking-wide text-on-surface-variant">
               Chapter Wise Practice
             </p>
-            <h3 className="text-base font-black text-on-surface tracking-tight">
+            <h3 className="text-lg font-bold tracking-tight text-on-surface">
               Pick a Chapter
             </h3>
           </div>
-          <div className="size-9 bg-primary/10 rounded-xl flex items-center justify-center">
-            <BookOpen className="size-4 text-primary" />
+          <div className="grid size-10 place-items-center rounded-xl bg-primary/10">
+            <BookOpen className="size-5 text-primary" />
           </div>
         </div>
       </div>
 
       {/* Subject Tabs */}
       {subjectData.length > 0 && (
-        <div className="px-4 pt-4 pb-3">
+        <div className="px-4 pt-4 pb-2">
           <div
             className="flex gap-2 overflow-x-auto pb-1"
             style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}
           >
             {subjectData.map((subject, index) => (
               <button
+                type="button"
                 key={index}
                 onClick={() => setActiveSubjectId(subject.subjects?.id)}
-                className={`shrink-0 flex items-center gap-1.5 px-3 py-2 rounded-full text-[10px] font-technical font-black uppercase tracking-widest transition-all duration-300 whitespace-nowrap ${
+                className={`flex min-h-11 shrink-0 items-center gap-2 whitespace-nowrap rounded-full px-4 py-2 text-sm font-semibold transition-all duration-300 ${
                   activeSubjectId === subject.subjects?.id
                     ? "bg-primary text-white shadow-md shadow-primary/20"
                     : "bg-surface-container-highest text-on-surface-variant hover:bg-on-surface/10"
                 }`}
               >
-                <GraduationCap className="size-3" />
+                <GraduationCap className="size-4" />
                 {subject.subjects?.name || "Subject"}
               </button>
             ))}
@@ -110,44 +113,50 @@ export const ChapterListSection = ({
         {subjectsLoading ? (
           <div className="space-y-2">
             {Array.from({ length: 4 }).map((_, i) => (
-              <div key={i} className="h-14 bg-surface-container-highest/40 rounded-2xl animate-pulse" />
+              <div key={i} className="h-14 animate-pulse rounded-xl bg-surface-container-highest/40" />
             ))}
           </div>
         ) : filteredChaptersData.length > 0 ? (
-          <div className="space-y-2 max-h-[280px] overflow-y-auto" style={{ scrollbarWidth: "none" }}>
+          <div className="max-h-[min(60vh,520px)] space-y-2 overflow-y-auto" style={{ scrollbarWidth: "none" }}>
             {filteredChaptersData.map((chapter, index) => (
-              <div
+              <button
+                type="button"
                 key={index}
-                className="flex items-center gap-3 px-4 py-3.5 bg-surface-container-highest/40 rounded-2xl hover:bg-surface-container-highest cursor-pointer group transition-all duration-200 active:scale-[0.98]"
+                onClick={() => {
+                  const linkedExamIds = chapter.subjects?.exam_subjects?.map((link: any) => link.exam_id) ?? [];
+                  const exam = targetedExams.find((targetedExam) => linkedExamIds.includes(targetedExam.id)) ?? targetedExams[0];
+                  if (exam) navigate(`/user/dashboard/exam/${exam.id}`, { state: { autoOpenChapterId: chapter.id } });
+                }}
+                className="group flex min-h-14 w-full items-center gap-3 rounded-xl border border-outline-variant/10 bg-surface-container-high/50 px-3.5 py-3 text-left transition-colors hover:bg-surface-container-high focus-visible:outline focus-visible:outline-2 focus-visible:outline-primary active:bg-primary/5"
               >
                 {/* Chapter Index */}
-                <div className="size-7 rounded-xl bg-primary/10 text-primary flex items-center justify-center flex-shrink-0">
-                  <span className="text-[10px] font-technical font-black">{index + 1}</span>
+                <div className="grid size-8 shrink-0 place-items-center rounded-lg bg-primary/10 text-primary">
+                  <span className="text-sm font-semibold">{index + 1}</span>
                 </div>
 
                 {/* Chapter Name */}
                 <div className="flex-1 min-w-0">
-                  <h4 className="font-black text-sm text-on-surface tracking-tight truncate leading-tight">
+                  <h4 className="truncate text-base font-semibold leading-snug text-on-surface">
                     {chapter.name}
                   </h4>
                 </div>
 
                 {/* Arrow */}
                 <ChevronRight className="size-4 text-on-surface-variant opacity-30 group-hover:text-primary group-hover:opacity-80 group-hover:translate-x-0.5 transition-all duration-200 flex-shrink-0" />
-              </div>
+              </button>
             ))}
           </div>
         ) : subjectData.length > 0 ? (
           <div className="py-8 text-center">
             <Hash className="size-7 text-on-surface-variant opacity-25 mx-auto mb-2" />
-            <p className="text-sm font-black text-on-surface-variant opacity-50">No chapters yet</p>
-            <p className="text-xs text-on-surface-variant opacity-35 mt-0.5">Select a subject to see chapters</p>
+            <p className="text-base font-semibold text-on-surface-variant">No chapters yet</p>
+            <p className="mt-1 text-sm text-on-surface-variant/70">Select a subject to see chapters.</p>
           </div>
         ) : (
           <div className="py-8 text-center">
             <BookOpen className="size-7 text-on-surface-variant opacity-25 mx-auto mb-2" />
-            <p className="text-sm font-black text-on-surface-variant opacity-50">No subjects available</p>
-            <p className="text-xs text-on-surface-variant opacity-35 mt-0.5">Content will appear once added</p>
+            <p className="text-base font-semibold text-on-surface-variant">No subjects available</p>
+            <p className="mt-1 text-sm text-on-surface-variant/70">Content will appear once added.</p>
           </div>
         )}
       </div>

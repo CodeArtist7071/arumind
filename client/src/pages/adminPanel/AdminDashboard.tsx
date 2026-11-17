@@ -1,22 +1,19 @@
-import React from "react";
+import React, { useMemo, useState } from "react";
 import {
   ArrowUpRight,
   BookOpen,
   CircleHelp,
   GraduationCap,
   Layers3,
+  Loader2,
+  RefreshCw,
+  Search,
   Users,
 } from "lucide-react";
 import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 import type { RootState } from "../../store";
-
-const stats = [
-  { title: "Total students", value: "1,245", icon: Users, note: "Registered learners", tint: "bg-[#e7f0e1] text-[#315f29] dark:bg-[#263d24] dark:text-[#c9e4c0]" },
-  { title: "Active exams", value: "8", icon: GraduationCap, note: "Available to learners", tint: "bg-[#f4eddb] text-[#816329] dark:bg-[#3d3522] dark:text-[#e7ce91]" },
-  { title: "Total chapters", value: "317", icon: Layers3, note: "Across your curriculum", tint: "bg-[#e8edf4] text-[#456184] dark:bg-[#263344] dark:text-[#c5d7ef]" },
-  { title: "Questions live", value: "8,450", icon: CircleHelp, note: "Published in question bank", tint: "bg-[#f2e8e3] text-[#8a5541] dark:bg-[#3d2e28] dark:text-[#e7b9a4]" },
-];
+import { useChapterQuestionStatus } from "../../hooks/useChapterQuestionStatus";
 
 const shortcuts = [
   { title: "Build a curriculum", description: "Organize boards, exams, subjects and chapters.", path: "/admin/lattice", icon: BookOpen, label: "Open curriculum designer" },
@@ -26,7 +23,23 @@ const shortcuts = [
 
 const AdminDashboard: React.FC = () => {
   const { profile } = useSelector((state: RootState) => state.user);
+  const { chapters, loading: loadingChapterStatus, error: chapterStatusError, refresh } = useChapterQuestionStatus();
+  const [chapterSearch, setChapterSearch] = useState("");
   const firstName = profile?.email?.split("@")[0]?.split(/[._-]/)[0];
+  const activeQuestionTotal = chapters.reduce((total, chapter) => total + chapter.activeCount, 0);
+  const hasInactiveQuestions = chapters.some((chapter) => chapter.inactiveCount > 0);
+  const filteredChapters = useMemo(() => {
+    const term = chapterSearch.trim().toLocaleLowerCase();
+    if (!term) return chapters;
+    return chapters.filter((chapter) => `${chapter.name} ${chapter.subjectName}`.toLocaleLowerCase().includes(term));
+  }, [chapterSearch, chapters]);
+
+  const stats = [
+    { title: "Total students", value: "1,245", icon: Users, note: "Registered learners", tint: "bg-[#e7f0e1] text-[#315f29] dark:bg-[#263d24] dark:text-[#c9e4c0]" },
+    { title: "Active exams", value: "8", icon: GraduationCap, note: "Available to learners", tint: "bg-[#f4eddb] text-[#816329] dark:bg-[#3d3522] dark:text-[#e7ce91]" },
+    { title: "Total chapters", value: loadingChapterStatus ? "…" : chapters.length.toLocaleString(), icon: Layers3, note: "Across your curriculum", tint: "bg-[#e8edf4] text-[#456184] dark:bg-[#263344] dark:text-[#c5d7ef]" },
+    { title: "Questions live", value: loadingChapterStatus ? "…" : activeQuestionTotal.toLocaleString(), icon: CircleHelp, note: "Active in question bank", tint: "bg-[#f2e8e3] text-[#8a5541] dark:bg-[#3d2e28] dark:text-[#e7b9a4]" },
+  ];
 
   return (
     <div className="mx-auto w-full max-w-[1440px] space-y-8 px-4 py-6 sm:px-7 sm:py-8 lg:px-10 lg:py-10">
@@ -73,6 +86,46 @@ const AdminDashboard: React.FC = () => {
             </article>
           ))}
         </div>
+      </section>
+
+      <section className="overflow-hidden rounded-2xl border border-[#e5e9e0] bg-[#fbfcf8] dark:border-white/10 dark:bg-[#171e17]" aria-labelledby="chapter-question-status-title">
+        <div className="flex flex-col gap-3 border-b border-[#e8ece4] p-4 dark:border-white/10 sm:flex-row sm:items-center sm:justify-between sm:px-5">
+          <div>
+            <h2 id="chapter-question-status-title" className="text-lg font-semibold tracking-tight">Question status by chapter</h2>
+            <p className="mt-1 text-sm text-[#778171] dark:text-[#a6b09f]">Active and inactive question counts across your chapters.</p>
+          </div>
+          <div className="flex w-full gap-2 sm:w-auto">
+            <label className="group relative min-w-0 flex-1 sm:w-64 sm:flex-none">
+              <Search size={15} aria-hidden="true" className="absolute left-3 top-1/2 -translate-y-1/2 text-[#879181] group-focus-within:text-[#315f29]" />
+              <input value={chapterSearch} onChange={(event) => setChapterSearch(event.target.value)} aria-label="Search chapters" placeholder="Search chapters…" className="min-h-10 w-full rounded-xl border border-[#e2e8dc] bg-white pl-9 pr-3 text-sm text-[#263b22] outline-none placeholder:text-[#9aa493] focus:border-[#7ba36e] focus:ring-4 focus:ring-[#7ba36e]/10 dark:border-white/10 dark:bg-[#111711] dark:text-[#e8eee4]" />
+            </label>
+            <button type="button" onClick={() => void refresh()} aria-label="Refresh chapter question counts" disabled={loadingChapterStatus} className="grid size-10 shrink-0 place-items-center rounded-xl border border-[#dfe6d9] text-[#687565] transition hover:bg-[#edf3e9] hover:text-[#315f29] disabled:opacity-50 dark:border-white/10 dark:hover:bg-white/[0.06]"><RefreshCw size={15} className={loadingChapterStatus ? "animate-spin" : ""} /></button>
+          </div>
+        </div>
+
+        {chapterStatusError && <div role="alert" className="m-4 rounded-xl border border-red-200 bg-red-50 px-4 py-3 text-sm text-red-800 dark:border-red-900/50 dark:bg-red-950/20 dark:text-red-200">Unable to load chapter question counts: {chapterStatusError}</div>}
+        {loadingChapterStatus && chapters.length === 0 ? (
+          <div className="flex items-center justify-center gap-2 px-4 py-12 text-sm text-[#778171] dark:text-[#a6b09f]" role="status"><Loader2 size={17} className="animate-spin text-[#4c8b3e]" />Loading chapter counts…</div>
+        ) : (
+          <>
+            <div className="hidden max-h-[600px] overflow-auto md:block">
+              <table className="w-full border-collapse text-left">
+                <thead className="sticky top-0 bg-[#f4f7f1] text-[11px] uppercase tracking-wide text-[#687565] dark:bg-[#202920] dark:text-[#b5c0b0]"><tr><th scope="col" className="px-5 py-3 font-semibold">Chapter</th><th scope="col" className="px-5 py-3 font-semibold">Active questions</th>{hasInactiveQuestions && <th scope="col" className="px-5 py-3 font-semibold">Inactive questions</th>}</tr></thead>
+                <tbody className="divide-y divide-[#edf0e9] dark:divide-white/5">
+                  {filteredChapters.map((chapter) => <tr key={chapter.id} className="hover:bg-[#f8fbf6] dark:hover:bg-white/[0.03]"><th scope="row" className="px-5 py-3 text-sm font-medium text-[#34402f] dark:text-[#d6dfd1]"><span className="block">{chapter.name}</span><span className="mt-0.5 block text-xs font-normal text-[#879181]">{chapter.subjectName}</span></th><td className="px-5 py-3"><span className="inline-flex rounded-full bg-[#edf5e9] px-2.5 py-1 text-xs font-semibold tabular-nums text-[#315f29] dark:bg-[#203620] dark:text-[#c9e4c0]">{chapter.activeCount.toLocaleString()}</span></td>{hasInactiveQuestions && <td className="px-5 py-3">{chapter.inactiveCount > 0 && <span className="inline-flex rounded-full bg-[#fff1e9] px-2.5 py-1 text-xs font-semibold tabular-nums text-[#99572e] dark:bg-[#392a20] dark:text-[#efc19e]">{chapter.inactiveCount.toLocaleString()}</span>}</td>}</tr>)}
+                  {!filteredChapters.length && <tr><td colSpan={hasInactiveQuestions ? 3 : 2} className="px-5 py-10 text-center text-sm text-[#778171] dark:text-[#a6b09f]">No matching chapters.</td></tr>}
+                </tbody>
+              </table>
+            </div>
+            <ul className="max-h-[600px] divide-y divide-[#edf0e9] overflow-y-auto md:hidden dark:divide-white/5">
+              {filteredChapters.map((chapter) => <li key={chapter.id} className="flex items-start gap-3 px-4 py-3.5">
+                <div className="min-w-0 flex-1"><p className="break-words text-sm font-medium text-[#34402f] dark:text-[#d6dfd1]">{chapter.name}</p><p className="mt-0.5 break-words text-xs text-[#879181]">{chapter.subjectName}</p></div>
+                <div className="flex shrink-0 flex-col items-end gap-1.5"><span className="rounded-full bg-[#edf5e9] px-2.5 py-1 text-xs font-semibold tabular-nums text-[#315f29] dark:bg-[#203620] dark:text-[#c9e4c0]">{chapter.activeCount.toLocaleString()} active</span>{chapter.inactiveCount > 0 && <span className="rounded-full bg-[#fff1e9] px-2.5 py-1 text-xs font-semibold tabular-nums text-[#99572e] dark:bg-[#392a20] dark:text-[#efc19e]">{chapter.inactiveCount.toLocaleString()} inactive</span>}</div>
+              </li>)}
+              {!filteredChapters.length && <li className="px-4 py-10 text-center text-sm text-[#778171] dark:text-[#a6b09f]">No matching chapters.</li>}
+            </ul>
+          </>
+        )}
       </section>
 
       <section>

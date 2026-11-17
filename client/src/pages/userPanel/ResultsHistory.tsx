@@ -135,78 +135,84 @@ export default function ResultsHistory() {
         {/* Mobile Feed: History Log */}
         <section className="md:hidden">
           {/* Sticky Glassmorphic Stats Header */}
-          <div className="sticky top-0 z-40 bg-surface/80 backdrop-blur-xl border-b border-outline-variant/10 px-6 py-4 mb-8">
+          <div className="sticky top-0 z-40 bg-surface/95 backdrop-blur-xl border-b border-outline-variant/20 px-4 py-4 mb-6">
             <div className="flex flex-col gap-1 mb-4">
-              <span className="text-[8px] font-technical font-black text-primary uppercase tracking-[0.4em]">History Log</span>
-              <h1 className="text-2xl font-black text-on-surface tracking-tighter">Your Attempts</h1>
+              <span className="text-xs font-semibold text-primary uppercase tracking-wide">Learning activity</span>
+              <h1 className="text-2xl font-bold text-on-surface tracking-tight">Test results</h1>
+              <p className="text-sm text-on-surface-variant">Review scores and continue where you left off.</p>
             </div>
-            
-            <div className="flex gap-2 overflow-x-auto no-scrollbar py-1">
+
+            <div className="grid grid-cols-3 gap-2 mb-4">
               {[
-                { label: 'Entries', value: stats.total, color: 'text-primary' },
-                { label: 'Syllabus', value: stats.unique, color: 'text-secondary' },
-                { label: 'Archive', value: stats.completed, color: 'text-tertiary' },
-                { label: 'Efficiency', value: `${stats.rate}%`, color: 'text-primary' },
+                { label: 'Attempts', value: stats.total },
+                { label: 'Chapters', value: stats.unique },
+                { label: 'Completed', value: stats.completed },
               ].map((s, idx) => (
-                <div key={idx} className="bg-surface-container-high/40 px-3 py-2 rounded-xl border border-outline-variant/5 min-w-[80px] shrink-0">
-                  <p className="text-[7px] font-technical font-black uppercase tracking-widest opacity-40 mb-0.5">{s.label}</p>
-                  <p className={`text-sm font-technical font-black ${s.color}`}>{s.value}</p>
+                <div key={idx} className="bg-surface-container-low px-3 py-2.5 rounded-xl border border-outline-variant/20 min-w-0">
+                  <p className="text-xs font-medium text-on-surface-variant mb-0.5">{s.label}</p>
+                  <p className="text-lg font-bold text-primary tabular-nums">{s.value}</p>
                 </div>
               ))}
+            </div>
+
+            <label className="relative block mb-3">
+              <Search className="absolute left-3 top-1/2 -translate-y-1/2 size-4 text-on-surface-variant" aria-hidden="true" />
+              <input type="search" aria-label="Search test results" placeholder="Search exam, subject, or chapter" className="w-full min-h-11 pl-10 pr-3 rounded-xl bg-surface-container-low border border-outline-variant/30 text-sm outline-none focus:ring-2 focus:ring-primary/30" value={searchTerm} onChange={(e) => setSearchTerm(e.target.value)} />
+            </label>
+            <div className="flex gap-2 overflow-x-auto no-scrollbar" role="group" aria-label="Filter results by status">
+              {['ALL', 'STARTED', 'COMPLETED'].map(filter => <button key={filter} type="button" onClick={() => setStatusFilter(filter)} aria-pressed={statusFilter === filter} className={`min-h-10 shrink-0 rounded-full px-4 text-xs font-semibold transition-colors ${statusFilter === filter ? 'bg-primary text-white' : 'bg-surface-container-high text-on-surface-variant'}`}>{filter === 'ALL' ? 'All results' : filter === 'STARTED' ? 'In progress' : 'Completed'}</button>)}
             </div>
           </div>
 
           {/* Timeline Feed: Zero-BordersEditorial Look */}
-          <div className="relative px-6 space-y-12 pb-20">
+          <div className="relative px-4 space-y-8 pb-20">
             {/* Central Timeline Line */}
             <div className="absolute left-9 top-0 bottom-0 w-px bg-linear-to-b from-primary/20 via-primary/5 to-transparent" />
 
             {Object.keys(filteredGroups).length === 0 ? (
-                <div className="py-20 text-center opacity-40 font-technical text-[10px] uppercase tracking-widest">No History Entries Recorded.</div>
+                <div className="rounded-2xl border border-dashed border-outline-variant/50 bg-surface-container-low p-8 text-center text-sm text-on-surface-variant">No matching results. Try changing your search or filter.</div>
             ) : (
                 Object.entries(filteredGroups).map(([exam, subjects]) => (
-                  <div key={exam} className="relative z-10 space-y-10">
-                    <div className="flex items-center gap-4">
-                      <div className="size-6 rounded-full bg-surface border-2 border-primary shadow-ambient-sm z-20 shrink-0" />
-                      <p className="text-[9px] font-technical font-black text-primary uppercase tracking-[0.4em] leading-none mb-1">{exam}</p>
+                  <div key={exam} className="relative z-10 space-y-4">
+                    <div className="flex items-center gap-2 px-1">
+                      <div className="size-2 rounded-full bg-primary shrink-0" />
+                      <p className="text-sm font-semibold text-primary leading-none">{exam}</p>
                     </div>
 
-                    <div className="space-y-10 ml-6 pl-3 border-l border-outline-variant/10">
+                    <div className="space-y-4">
                       {Object.entries(subjects).map(([subject, atts]) => (
-                        <div key={subject} className="space-y-6">
-                           <div className="flex items-center gap-3">
-                              <BookOpen className="size-4 text-on-surface-variant/20" />
-                              <h3 className="text-[11px] font-technical font-black text-on-surface uppercase tracking-widest opacity-60">{subject}</h3>
+                        <div key={subject} className="overflow-hidden rounded-2xl border border-outline-variant/20 bg-surface-container-low">
+                           <div className="flex items-center gap-2 border-b border-outline-variant/20 px-4 py-3">
+                              <BookOpen className="size-4 text-primary" />
+                              <h3 className="text-sm font-semibold text-on-surface">{subject}</h3>
                            </div>
-                           
-                           <div className="grid gap-4">
+
+                           <div className="divide-y divide-outline-variant/20 px-3">
                              {atts.map((attempt) => (
-                               <div
+                               <button
                                  key={attempt.id}
+                                 type="button"
                                  onClick={() => navigate(`/user/results/${attempt.id}`)}
-                                 className="group/item relative flex flex-col gap-2 active:scale-[0.98] transition-all"
+                                 className="group/item flex min-h-[76px] w-full items-center gap-3 py-3 text-left transition-colors hover:bg-surface-container-high/60"
                                >
-                                 <div className="flex items-center gap-4">
-                                   <div className={`size-8 rounded-full flex items-center justify-center shrink-0 shadow-ambient-sm z-10 ${
-                                     attempt.status === 'COMPLETED' ? 'bg-primary text-white' : 'bg-surface border border-secondary text-secondary'
+                                   <div className={`size-10 rounded-xl flex items-center justify-center shrink-0 ${
+                                     attempt.status === 'COMPLETED' ? 'bg-primary/10 text-primary' : 'bg-secondary/10 text-secondary'
                                    }`}>
-                                     {attempt.status === 'COMPLETED' ? <CheckCircle2 className="size-4" /> : <PlayCircle className="size-4" />}
+                                     {attempt.status === 'COMPLETED' ? <CheckCircle2 className="size-5" /> : <PlayCircle className="size-5" />}
                                    </div>
                                    <div className="min-w-0 flex-1">
-                                      <p className="text-sm font-black text-on-surface tracking-tight group-hover/item:text-primary transition-colors truncate">{attempt.chapter_name}</p>
-                                      <div className="flex items-center gap-3 mt-1">
-                                        <span className="text-[8px] font-technical font-black text-on-surface-variant/40 uppercase tracking-[0.2em]">
+                                      <p className="text-sm font-semibold text-on-surface group-hover/item:text-primary transition-colors truncate">{attempt.chapter_name}</p>
+                                      <div className="flex flex-wrap items-center gap-x-2 gap-y-1 mt-1">
+                                        <span className="text-xs text-on-surface-variant">
                                           {new Date(attempt.submitted_at || attempt.started_at).toLocaleDateString(undefined, { month: 'short', day: 'numeric', year: 'numeric' })}
                                         </span>
-                                        <div className="size-1 rounded-full bg-outline-variant/30" />
-                                        <span className={`text-[7px] font-technical font-black uppercase tracking-widest ${
+                                        <span className={`text-xs font-semibold ${
                                            attempt.status === 'COMPLETED' ? 'text-primary' : 'text-secondary'
                                         }`}>{attempt.status}</span>
                                       </div>
                                    </div>
-                                   <ChevronRight size={14} className="text-on-surface-variant/20 group-hover/item:text-primary transition-colors" />
-                                 </div>
-                               </div>
+                                   <ChevronRight size={18} className="text-on-surface-variant group-hover/item:text-primary transition-colors" />
+                               </button>
                              ))}
                            </div>
                         </div>
@@ -220,49 +226,58 @@ export default function ResultsHistory() {
 
         {/* Desktop manifestation (Hidden on Mobile) */}
         <div className="hidden md:block space-y-12">
+          <section className="flex flex-wrap items-end justify-between gap-4">
+            <div>
+              <p className="text-sm font-semibold text-primary">Learning activity</p>
+              <h1 className="mt-1 text-3xl font-bold tracking-tight text-on-surface">Test results</h1>
+              <p className="mt-2 text-sm text-on-surface-variant">Review your attempts, scores, and progress by subject.</p>
+            </div>
+            <button type="button" onClick={() => navigate('/user/dashboard')} className="min-h-11 rounded-xl bg-primary px-5 text-sm font-semibold text-white shadow-sm hover:bg-primary/90">Start a practice test</button>
+          </section>
           {/* Stats Registry */}
-          <section className="grid grid-cols-4 gap-8">
+          <section className="grid grid-cols-2 xl:grid-cols-4 gap-4">
             {[
-              { label: 'Entries', value: stats.total, icon: <History size={20} />, color: 'text-primary' },
-              { label: 'Syllabus', value: stats.unique, icon: <Target size={20} />, color: 'text-secondary' },
-              { label: 'Archive', value: stats.completed, icon: <CheckCircle2 size={20} />, color: 'text-tertiary' },
-              { label: 'Index', value: `${stats.rate}%`, icon: <TrendingUp size={20} />, color: 'text-primary' },
+              { label: 'Total attempts', value: stats.total, icon: <History size={20} />, color: 'text-primary' },
+              { label: 'Chapters practiced', value: stats.unique, icon: <Target size={20} />, color: 'text-primary' },
+              { label: 'Completed', value: stats.completed, icon: <CheckCircle2 size={20} />, color: 'text-primary' },
+              { label: 'Completion rate', value: `${stats.rate}%`, icon: <TrendingUp size={20} />, color: 'text-primary' },
             ].map((s, idx) => (
-              <div key={idx} className="bg-surface-container-low p-10 rounded-4xl shadow-ambient-sm group transition-all duration-500 hover:shadow-ambient hover:-translate-y-1 cursor-default border border-outline-variant/10">
-                <div className="flex justify-between items-start mb-8">
-                  <div className={`p-4 rounded-3xl bg-surface-container-high ${s.color} transition-transform duration-500 shadow-sm`}>
+              <div key={idx} className="bg-surface-container-low p-5 md:p-6 rounded-2xl border border-outline-variant/20 shadow-sm">
+                <div className="flex justify-between items-start mb-5">
+                  <div className={`p-3 rounded-xl bg-primary/10 ${s.color}`}>
                     {s.icon}
                   </div>
-                  <div className="size-2 rounded-full bg-on-surface-variant/20 group-hover:bg-primary transition-colors" />
                 </div>
-                <p className="text-5xl font-technical font-black text-on-surface tracking-tighter leading-none">{s.value}</p>
-                <p className="text-[10px] font-technical font-black text-on-surface-variant/40 uppercase tracking-[0.2em] mt-3 leading-relaxed">{s.label}</p>
+                <p className="text-3xl font-bold text-on-surface tracking-tight leading-none">{s.value}</p>
+                <p className="text-sm text-on-surface-variant mt-2">{s.label}</p>
               </div>
             ))}
           </section>
 
           {/* Filter Station */}
-          <section className="flex flex-row gap-8 items-center justify-between">
-            <div className="relative w-2/3 group">
+          <section className="flex flex-col xl:flex-row gap-4 items-stretch xl:items-center justify-between rounded-2xl bg-surface-container-low p-4 border border-outline-variant/20">
+            <div className="relative w-full xl:max-w-xl group">
               <Search className="absolute left-6 top-1/2 -translate-y-1/2 size-5 text-on-surface-variant/30 group-focus-within:text-primary transition-colors" />
               <input
                 type="text"
                 placeholder="Search history..."
-                className="w-full pl-16 pr-8 py-5 bg-surface-container-low rounded-4xl text-sm font-medium focus:ring-4 ring-primary/5 outline-none transition-all placeholder:text-on-surface-variant/20 border border-outline-variant/10"
+                className="w-full min-h-12 pl-12 pr-4 py-3 bg-surface rounded-xl text-sm focus:ring-2 focus:ring-primary/30 outline-none transition-all placeholder:text-on-surface-variant/60 border border-outline-variant/30"
                 value={searchTerm}
                 onChange={(e) => setSearchTerm(e.target.value)}
               />
             </div>
 
-            <div className="flex items-center gap-2 p-2 bg-surface-container-low rounded-4xl border border-outline-variant/10">
+            <div className="flex flex-wrap items-center gap-2" role="group" aria-label="Filter results by status">
               {['ALL', 'STARTED', 'COMPLETED'].map((filter) => (
                 <button
                   key={filter}
                   onClick={() => setStatusFilter(filter)}
-                  className={`px-10 py-3 rounded-full text-[10px] font-technical font-black uppercase tracking-widest transition-all ${
+                  type="button"
+                  aria-pressed={statusFilter === filter}
+                  className={`min-h-11 px-5 rounded-full text-sm font-semibold transition-all ${
                     statusFilter === filter
-                      ? 'bg-white text-primary shadow-ambient-sm font-black'
-                      : 'text-on-surface-variant/40 hover:text-on-surface'
+                      ? 'bg-primary text-white shadow-sm'
+                      : 'bg-surface text-on-surface-variant border border-outline-variant/30 hover:text-primary'
                   }`}
                 >
                   {filter}

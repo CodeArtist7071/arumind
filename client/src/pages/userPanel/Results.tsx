@@ -252,7 +252,7 @@ const Results = () => {
               <ArrowLeft size={18} />
             </button>
             <div className="flex flex-col">
-              <span className="text-[8px] font-technical font-black text-primary uppercase tracking-[0.4em]">Performance Report</span>
+              <span className="text-xs font-semibold text-primary uppercase tracking-wide">Performance Report</span>
               <h1 className="text-xl font-black text-on-surface tracking-tighter">Test Results</h1>
             </div>
           </div>
@@ -269,19 +269,19 @@ const Results = () => {
                 </svg>
                 <div className="absolute inset-0 flex flex-col items-center justify-center">
                   <span className="text-4xl font-technical font-black text-on-surface">{metrics.totalScore}</span>
-                  <span className="text-[7px] font-technical font-black uppercase text-on-surface-variant/40 tracking-widest mt-1">Total {metrics.maxScore}</span>
+                  <span className="text-xs font-medium uppercase text-on-surface-variant tracking-wide mt-1">Total {metrics.maxScore}</span>
                 </div>
               </div>
 
               <div className="space-y-2">
-                <div className="inline-flex items-center gap-2 px-3 py-1 bg-primary/10 text-primary rounded-full text-[8px] font-technical font-black uppercase tracking-widest">
+                <div className="inline-flex items-center gap-2 px-3 py-1.5 bg-primary/10 text-primary rounded-full text-xs font-semibold uppercase tracking-wide">
                   <Zap size={10} fill="currentColor" />
                   {metrics.accuracy}% System Accuracy
                 </div>
                 <h2 className="text-3xl font-black text-on-surface tracking-tighter">
                   {metrics.accuracy >= 80 ? "Exemplary Performance" : metrics.accuracy >= 50 ? "Consistent Progress" : "Needs Review"}
                 </h2>
-                <p className="text-[11px] text-on-surface-variant leading-relaxed opacity-70">
+                <p className="text-sm text-on-surface-variant leading-relaxed">
                   Result analysis complete for <span className="text-primary font-bold">{attempt?.chapters?.name}</span>.
                 </p>
               </div>
@@ -297,7 +297,7 @@ const Results = () => {
                   <div key={i} className="bg-surface-container-high/40 p-3 rounded-2xl border border-outline-variant/10 text-left">
                     <div className="text-primary mb-1">{item.icon}</div>
                     <p className="text-sm font-technical font-black text-on-surface">{item.value}</p>
-                    <p className="text-[7px] font-technical font-black text-on-surface-variant/40 uppercase tracking-widest leading-none mt-0.5">{item.label}</p>
+                    <p className="text-xs font-medium text-on-surface-variant uppercase tracking-wide mt-1">{item.label}</p>
                   </div>
                 ))}
               </div>
@@ -308,7 +308,7 @@ const Results = () => {
           <div className="bg-primary text-white p-6 rounded-3xl shadow-xl space-y-4">
             <div className="flex items-center gap-2 opacity-50">
               <Zap size={12} fill="currentColor" />
-              <span className="text-[8px] font-technical font-black uppercase tracking-[0.3em]">Performance Insight</span>
+              <span className="text-xs font-semibold uppercase tracking-wide">Performance Insight</span>
             </div>
             <p className="text-sm font-bold leading-relaxed tracking-tight">
               {metrics.accuracy < 50
@@ -320,10 +320,10 @@ const Results = () => {
           {/* Mobile Question Review: Ultra-Clean Timeline */}
           <div className="space-y-4 pb-20">
             <div className="flex items-center justify-between px-2">
-              <span className="text-[8px] font-technical font-black uppercase tracking-[0.3em] text-on-surface-variant/40">Analytical Feed</span>
+              <span className="text-xs font-semibold uppercase tracking-wide text-on-surface-variant">Question review</span>
               <div className="flex gap-4">
-                <div className="flex items-center gap-1.5"><div className="size-1.5 rounded-full bg-primary" /><span className="text-[7px] font-technical font-black uppercase text-on-surface-variant/60">Correct</span></div>
-                <div className="flex items-center gap-1.5"><div className="size-1.5 rounded-full bg-error" /><span className="text-[7px] font-technical font-black uppercase text-on-surface-variant/60">Erroneous</span></div>
+                <div className="flex items-center gap-1.5"><div className="size-2 rounded-full bg-primary" /><span className="text-xs font-medium uppercase text-on-surface-variant">Correct</span></div>
+                <div className="flex items-center gap-1.5"><div className="size-2 rounded-full bg-error" /><span className="text-xs font-medium uppercase text-on-surface-variant">Incorrect</span></div>
               </div>
             </div>
 
@@ -340,7 +340,7 @@ const Results = () => {
                         }`}>
                         {String(i + 1).padStart(2, '0')}
                       </div>
-                      <h4 className="text-[13px] font-black text-on-surface leading-snug"><HtmlContent html={q.question} /></h4>
+                      <h4 className="text-base font-semibold text-on-surface leading-relaxed"><HtmlContent html={q.question} /></h4>
                     </div>
 
                     <div className="grid grid-cols-2 gap-2">
@@ -350,8 +350,8 @@ const Results = () => {
                             "bg-surface-container-high/40 border-outline-variant/5 text-on-surface-variant/70"
                           }`}>
                           <div className="flex items-center justify-between">
-                            <span className="text-[9px] font-technical font-black opacity-40">{opt.l}</span>
-                            <span className="text-[11px] ml-4 font-bold tracking-tight leading-tight"><HtmlContent html={opt.v} /></span>
+                            <span className="text-xs font-semibold opacity-60">{opt.l}</span>
+                            <span className="text-sm ml-3 font-medium leading-relaxed"><HtmlContent html={opt.v} /></span>
 
                           </div>
                           {opt.l === q.correct_answer && <CheckCircle2 className="ml-2" size={10} />}
@@ -364,9 +364,9 @@ const Results = () => {
                     <div className="bg-surface-container-high/40 p-4 rounded-2xl border border-dashed border-outline-variant/20">
                       <div className="flex items-center gap-2 mb-2">
                         <Info size={12} className="text-primary" />
-                        <p className="text-[9px] font-technical font-black text-primary uppercase tracking-widest">Preparation Insight</p>
+                        <p className="text-xs font-semibold text-primary uppercase tracking-wide">Explanation</p>
                       </div>
-                      <p className="text-[10px] font-medium text-on-surface-variant/80 leading-relaxed italic"><HtmlContent html={q.explanation || `Core evaluation confirms Option ${q.correct_answer} is correct.`} /></p>
+                      <p className="text-sm font-medium text-on-surface-variant leading-relaxed"><HtmlContent html={q.explanation || `Core evaluation confirms Option ${q.correct_answer} is correct.`} /></p>
                     </div>
                   </div>
                 );
