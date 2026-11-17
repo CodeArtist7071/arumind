@@ -111,7 +111,7 @@ const QuestionsManagement: React.FC = () => {
       minWidth: 160,
       flex: 0.8,
       render: (val: string) => (
-        <span className="inline-flex max-w-full rounded-full bg-[#f0f4ec] px-2.5 py-1 text-xs font-medium text-[#53634d] dark:bg-white/[0.08] dark:text-[#c4d0be]">
+        <span className="inline-flex max-w-full rounded-xl bg-[#f0f4ec] text-wrap px-2.5 py-1 text-xs font-medium text-[#53634d] dark:bg-white/[0.08] dark:text-[#c4d0be]">
           {chapters.find(c => c.id === val)?.name || "Unknown Chapter"}
         </span>
       )

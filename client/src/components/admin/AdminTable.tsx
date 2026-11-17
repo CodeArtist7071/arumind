@@ -201,7 +201,7 @@ export const AdminTable: React.FC<AdminTableProps> = memo(({
               </tr>
             ))}
           </thead>
-          <tbody className="divide-y divide-[#edf0e9] bg-white dark:divide-white/5 dark:bg-[#111711]">
+          <tbody className="divide-y divide-[#edf0e9] bg-white dark:bg-[#111711]">
             {table.getRowModel().rows.length ? table.getRowModel().rows.map((row) => (
               <tr key={row.id} className="transition-colors hover:bg-[#f8faf6] dark:hover:bg-white/[0.03]">
                 {row.getAllCells().map((cell) => (

@@ -9,30 +9,11 @@ import { Plus } from "lucide-react";
  * Handles CRUD manifestations for curriculum verticals with hierarchical orchestration.
  */
 const ChaptersManagement: React.FC = () => {
-  const [selectedBoard, setSelectedBoard] = useState<string>("all");
-  const [selectedExam, setSelectedExam] = useState<string>("all");
   const [selectedSubject, setSelectedSubject] = useState<string>("all");
 
-  // Auxiliary context manifestations (Pre-filtered for operational manifestation)
-  const { data: boardsData } = useTableData("exam_boards", { pageSize: 1000 });
-  const { data: examsData, loading: examLoading } = useTableData("exams", { pageSize: 1000 });
   const { data: subjectsData, loading: subLoading } = useTableData("subjects", { pageSize: 1000 });
-  const { data: examSubjects, loading: esLoading } = useTableData("exam_subjects", { pageSize: 1000 });
 
-  const boards = useMemo(() => boardsData.filter(b => b.is_active !== false), [boardsData]);
-  const exams = useMemo(() => examsData.filter(e => e.is_active !== false), [examsData]);
   const subjects = useMemo(() => subjectsData.filter(s => s.is_active !== false), [subjectsData]);
-
-  // Hierarchical Filter Propagation Logic
-  const filteredExams = useMemo(() => 
-    selectedBoard === "all" ? exams : exams.filter(e => e.exam_board_id === selectedBoard)
-  , [exams, selectedBoard]);
-
-  const filteredSubjects = useMemo(() => {
-    if (selectedExam === "all") return subjects;
-    const linkedIds = examSubjects.filter(es => es.exam_id === selectedExam).map(es => es.subject_id);
-    return subjects.filter(s => linkedIds.includes(s.id));
-  }, [subjects, examSubjects, selectedExam]);
 
   const { 
     data: chapters, 
@@ -53,7 +34,7 @@ const ChaptersManagement: React.FC = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [editingItem, setEditingItem] = useState<any>(null);
 
-  const loading = chapLoading || subLoading || examLoading || esLoading;
+  const loading = chapLoading || subLoading;
 
   // High-Fidelity Data Enrichment
   const mappedChapters = useMemo(() => {
@@ -65,12 +46,6 @@ const ChaptersManagement: React.FC = () => {
   }, [chapters, subjectsData]);
 
   const columns = useMemo(() => [
-    { 
-      header: "Technical ID", 
-      key: "id", 
-      render: (val: string) => <span className="text-[9px] font-mono opacity-40">{val}</span>,
-      width: 120
-    },
     { 
       header: "Parent Subject Manifestation", 
       key: "subject_name", 
@@ -170,43 +145,21 @@ const ChaptersManagement: React.FC = () => {
             Chapters
           </h2>
           <p className="mt-1.5 text-sm text-[#778171] dark:text-[#a6b09f]">
-            Organize chapter content within each subject and exam.
+            Organize chapter content by subject.
           </p>
         </div>
 
-        {/* Unified Hierarchical Control Bar */}
+        {/* Subject filter */}
         <div className="flex flex-wrap items-center gap-4 w-full">
-            <div className="flex min-w-0 flex-1 flex-col gap-1 overflow-hidden rounded-xl border border-[#e2e8dc] bg-[#fbfcf8] dark:border-white/10 dark:bg-[#171e17] sm:flex-row sm:items-center sm:gap-0">
-                {/* 1. Exam Board */}
-                <select 
-                    value={selectedBoard}
-                    onChange={(e) => { setSelectedBoard(e.target.value); setSelectedExam("all"); setSelectedSubject("all"); }}
-                    className="min-h-11 min-w-0 flex-1 bg-transparent px-3.5 text-sm text-[#34402f] outline-none transition-colors hover:text-[#315f29] dark:text-[#d6dfd1] sm:border-r sm:border-[#e5e9e0] sm:px-4 dark:sm:border-white/10"
-                >
-                    <option value="all">1. Select Board</option>
-                    {boards.map(b => <option key={b.id} value={b.id}>{b.name}</option>)}
-                </select>
-
-                {/* 2. Exams */}
-                <select 
-                    value={selectedExam}
-                    disabled={selectedBoard === "all"}
-                    onChange={(e) => { setSelectedExam(e.target.value); setSelectedSubject("all"); }}
-                    className="min-h-11 min-w-0 flex-1 bg-transparent px-3.5 text-sm text-[#34402f] outline-none transition-colors hover:enabled:text-[#315f29] disabled:opacity-40 dark:text-[#d6dfd1] sm:border-r sm:border-[#e5e9e0] sm:px-4 dark:sm:border-white/10"
-                >
-                    <option value="all">2. Select Exam</option>
-                    {filteredExams.map(e => <option key={e.id} value={e.id}>{e.name}</option>)}
-                </select>
-
-                {/* 3. Subjects */}
+            <div className="flex min-w-0 flex-1 items-center rounded-xl border border-[#e2e8dc] bg-[#fbfcf8] dark:border-white/10 dark:bg-[#171e17]">
                 <select 
                     value={selectedSubject}
-                    disabled={selectedExam === "all"}
                     onChange={(e) => setSelectedSubject(e.target.value)}
-                    className="min-h-11 min-w-0 flex-1 bg-transparent px-3.5 text-sm text-[#34402f] outline-none transition-colors hover:enabled:text-[#315f29] disabled:opacity-40 dark:text-[#d6dfd1] sm:px-4"
+                    aria-label="Filter chapters by subject"
+                    className="min-h-11 w-full bg-transparent px-3.5 text-sm text-[#34402f] outline-none transition-colors hover:text-[#315f29] dark:text-[#d6dfd1] sm:px-4"
                 >
-                    <option value="all">3. Select Subject</option>
-                    {filteredSubjects.map(s => <option key={s.id} value={s.id}>{s.name}</option>)}
+                    <option value="all">All subjects</option>
+                    {subjects.map(s => <option key={s.id} value={s.id}>{s.name}</option>)}
                 </select>
             </div>
 
@@ -223,15 +176,6 @@ const ChaptersManagement: React.FC = () => {
         </div>
       </header>
 
-      {selectedBoard === "all" ? (
-          <div className="flex flex-col items-center justify-center rounded-2xl border border-dashed border-[#d8e1d2] bg-[#fbfcf8] px-6 py-16 text-center dark:border-white/10 dark:bg-[#171e17] sm:py-20">
-              <div className="mb-4 grid size-12 place-items-center rounded-xl bg-[#e8f0e3] text-[#315f29] dark:bg-[#263d24] dark:text-[#c9e4c0]">
-                  <Plus size={22} />
-              </div>
-              <p className="text-sm font-semibold text-[#34402f] dark:text-[#d6dfd1]">Choose an exam board to view its chapters</p>
-              <p className="mt-1 text-sm text-[#778171] dark:text-[#a6b09f]">Select a board above to get started.</p>
-          </div>
-      ) : (
           <AdminTable
             columns={columns}
             data={mappedChapters}
@@ -248,7 +192,6 @@ const ChaptersManagement: React.FC = () => {
             }}
             loading={loading}
           />
-      )}
 
       <AdminFormModal
         isOpen={isModalOpen}
