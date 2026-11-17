@@ -7,11 +7,13 @@ import { supabase } from "../utils/supabase";
  */
 export function useCurriculumLattice() {
   const [exams, setExams] = useState<any[]>([]);
+  const [questionCountsByChapter, setQuestionCountsByChapter] = useState<Record<string, number>>({});
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
 
   const fetchLatticeData = useCallback(async () => {
     setLoading(true);
+    setError(null);
     try {
       // 1. Fetch core exams manifestation
       const { data: examsData, error: examsError } = await supabase
@@ -38,11 +40,21 @@ export function useCurriculumLattice() {
         .select("id, subject_id");
       if (chaptersError) throw chaptersError;
 
-      // 5. Fetch question counts per chapter
-      const { data: questionsData, error: questionsError } = await supabase
-        .from("questions")
-        .select("id, chapter_id");
-      if (questionsError) throw questionsError;
+      // 5. Fetch every chapter reference in pages (Supabase applies a row limit).
+      const questionCounts: Record<string, number> = {};
+      const questionPageSize = 1000;
+      for (let from = 0; ; from += questionPageSize) {
+        const { data: questionsData, error: questionsError } = await supabase
+          .from("questions")
+          .select("chapter_id")
+          .range(from, from + questionPageSize - 1);
+        if (questionsError) throw questionsError;
+        for (const question of questionsData ?? []) {
+          questionCounts[question.chapter_id] = (questionCounts[question.chapter_id] ?? 0) + 1;
+        }
+        if (!questionsData || questionsData.length < questionPageSize) break;
+      }
+      setQuestionCountsByChapter(questionCounts);
 
       // Orchestrate the curriculum manifestation
       const processedExams = examsData.map((exam) => {
@@ -55,9 +67,10 @@ export function useCurriculumLattice() {
           .map((s) => {
             const subjectChapters = chaptersData.filter((c) => c.subject_id === s.id);
             const chapterIds = subjectChapters.map((c) => c.id);
-            const questionCount = questionsData.filter((q) =>
-              chapterIds.includes(q.chapter_id)
-            ).length;
+            const questionCount = chapterIds.reduce(
+              (count, chapterId) => count + (questionCounts[chapterId] ?? 0),
+              0,
+            );
 
             return {
               ...s,
@@ -86,5 +99,5 @@ export function useCurriculumLattice() {
     fetchLatticeData();
   }, [fetchLatticeData]);
 
-  return { exams, loading, error, refresh: fetchLatticeData };
+  return { exams, questionCountsByChapter, loading, error, refresh: fetchLatticeData };
 }

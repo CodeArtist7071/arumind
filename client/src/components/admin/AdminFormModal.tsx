@@ -1,6 +1,6 @@
 import React from "react";
 import { useForm, useWatch, Controller } from "react-hook-form";
-import { X, Save, Check, Plus, Trash2, Eye, EyeOff } from "lucide-react";
+import { X, Save, Check, Plus, Trash2, Eye, EyeOff, Loader2 } from "lucide-react";
 import { getHtmlMarkup, HtmlContent } from "../ui/HtmlContent";
 
 interface Field {
@@ -13,6 +13,8 @@ interface Field {
   disabled?: boolean;
   defaultValue?: any;
   previewAsHtml?: boolean;
+  step?: number | "any";
+  min?: number;
 }
 
 interface AdminFormModalProps {
@@ -22,6 +24,7 @@ interface AdminFormModalProps {
   isOpen: boolean;
   onClose: () => void;
   onSubmit: (data: any) => void;
+  saveStatus?: string;
 }
 
 /**
@@ -35,6 +38,7 @@ export const AdminFormModal: React.FC<AdminFormModalProps> = ({
   isOpen,
   onClose,
   onSubmit,
+  saveStatus,
 }) => {
   const {
     register,
@@ -47,6 +51,7 @@ export const AdminFormModal: React.FC<AdminFormModalProps> = ({
   });
   const [previewFields, setPreviewFields] = React.useState<Record<string, boolean>>({});
   const [optionPreviews, setOptionPreviews] = React.useState<Record<number, boolean>>({});
+  const [isSaving, setIsSaving] = React.useState(false);
 
   // Orchestrate hard-reset manifestation whenever the modal opens
   React.useEffect(() => {
@@ -91,10 +96,23 @@ export const AdminFormModal: React.FC<AdminFormModalProps> = ({
         </div>
 
         <form
-          onSubmit={handleSubmit(onSubmit)}
+          onSubmit={handleSubmit(async (values) => {
+            if (isSaving) return;
+            setIsSaving(true);
+            try {
+              await onSubmit(values);
+            } finally {
+              setIsSaving(false);
+            }
+          }, (invalidFields) => {
+            console.error("[Admin form] Submission blocked by validation", invalidFields);
+            const firstInvalidField = Object.keys(invalidFields)[0];
+            if (firstInvalidField) document.getElementById(`admin-field-${firstInvalidField}`)?.scrollIntoView({ behavior: "smooth", block: "center" });
+          })}
           className="flex flex-col flex-1 overflow-hidden"
         >
           <div className="flex-1 space-y-5 overflow-y-auto px-5 py-6 sm:px-7">
+            {saveStatus && <p role="status" aria-live="polite" className="rounded-lg border border-[#dfe6d9] bg-[#f2f6ef] px-3 py-2 text-xs text-[#315f29] dark:border-white/10 dark:bg-white/[0.04] dark:text-[#c9e4c0]">{saveStatus}</p>}
             <div className="grid grid-cols-1 gap-5 sm:grid-cols-2">
               {fields.map((field) => (
                 <div key={field.name} className={`flex flex-col gap-2 ${field.type === "textarea" || field.type === "options" || (field.type === "select" && field.multiple) ? "sm:col-span-2" : ""}`}>
@@ -117,7 +135,14 @@ export const AdminFormModal: React.FC<AdminFormModalProps> = ({
                       render={({ field: { value, onChange } }) => {
                         const optionRows = Array.isArray(value) ? value : [];
                         return <div className="space-y-3">
-                          <p className="text-xs text-[#778171] dark:text-[#a6b09f]">Add up to 6 choices and mark the correct answer(s).</p>
+                          <div className="flex flex-wrap items-center justify-between gap-2">
+                            <p className="text-xs text-[#778171] dark:text-[#a6b09f]">{optionRows.length} of 6 choices</p>
+                            {optionRows.length < 6 && <button type="button" onClick={() => {
+                              const nextOptions = [...optionRows, { text: "", is_correct: false }];
+                              console.debug("[Question form] Add option", { before: optionRows.length, after: nextOptions.length });
+                              onChange(nextOptions);
+                            }} className="inline-flex min-h-10 items-center gap-2 rounded-lg bg-[#e8f0e3] px-3 text-sm font-semibold text-[#315f29] hover:bg-[#dcebd5] focus-visible:outline focus-visible:outline-2 focus-visible:outline-[#4c8b3e] dark:bg-[#263d24] dark:text-[#c9e4c0]"><Plus size={16} />Add option</button>}
+                          </div>
                           <div className="space-y-2">
                             {optionRows.map((option: any, index: number) => (
                               <div key={index} className="flex items-center gap-2">
@@ -146,7 +171,6 @@ export const AdminFormModal: React.FC<AdminFormModalProps> = ({
                               <div className="text-sm text-[#263b22] dark:text-[#e8eee4]"><HtmlContent html={option.text} /></div>
                             </div>
                           ) : null)}
-                          {optionRows.length < 6 && <button type="button" onClick={() => onChange([...optionRows, { text: "", is_correct: false }])} className="inline-flex min-h-10 items-center gap-2 rounded-lg border border-dashed border-[#b9c9b1] px-3 text-sm font-medium text-[#315f29] hover:bg-[#edf4e9] dark:border-white/20 dark:text-[#c9e4c0]"><Plus size={16} />Add option</button>}
                           {!optionRows.some(option => option?.is_correct) && <p role="status" className="text-xs text-amber-700 dark:text-amber-300">Select at least one correct option.</p>}
                         </div>;
                       }}
@@ -220,6 +244,8 @@ export const AdminFormModal: React.FC<AdminFormModalProps> = ({
                     <input
                       id={`admin-field-${field.name}`}
                       type={field.type}
+                      step={field.type === "number" ? (field.step ?? 1) : undefined}
+                      min={field.type === "number" ? field.min : undefined}
                       disabled={field.disabled}
                       {...register(field.name, {
                         required: field.required,
@@ -239,7 +265,7 @@ export const AdminFormModal: React.FC<AdminFormModalProps> = ({
                   )}
                   {errors[field.name] && (
                     <span role="alert" className="text-xs font-medium text-red-600 dark:text-red-400">
-                       This field is required
+                       {errors[field.name]?.message?.toString() || "This field is required"}
                     </span>
                   )}
                 </div>
@@ -257,10 +283,12 @@ export const AdminFormModal: React.FC<AdminFormModalProps> = ({
             </button>
             <button
               type="submit"
-              className="flex min-h-10 items-center gap-2 rounded-lg bg-[#24551e] px-4 text-sm font-semibold text-white shadow-sm transition hover:bg-[#173f19] active:scale-[0.98] disabled:opacity-50"
+              disabled={isSaving}
+              aria-live="polite"
+              className="flex min-h-10 items-center gap-2 rounded-lg bg-[#24551e] px-4 text-sm font-semibold text-white shadow-sm transition hover:bg-[#173f19] active:scale-[0.98] disabled:cursor-wait disabled:opacity-70"
             >
-              <Save size={18} />
-              Save
+              {isSaving ? <Loader2 size={18} className="animate-spin" /> : <Save size={18} />}
+              {isSaving ? "Saving…" : "Save"}
             </button>
           </div>
         </form>

@@ -12,6 +12,7 @@ import {
   PanelLeftOpen,
   School,
   SlidersHorizontal,
+  Terminal,
   Users,
   X,
 } from "lucide-react";
@@ -32,6 +33,7 @@ const navItems = [
   { label: "Questions", icon: CircleHelp, path: "/admin/questions" },
   { label: "Features", icon: SlidersHorizontal, path: "/admin/features" },
   { label: "Users", icon: Users, path: "/admin/users" },
+  { label: "SQL editor", icon: Terminal, path: "/admin/sql" },
 ];
 
 const pageTitles = new Map(navItems.map(({ path, label }) => [path, label]));

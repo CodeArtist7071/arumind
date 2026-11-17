@@ -1,4 +1,4 @@
-import React, { useState, useMemo } from "react";
+import React, { useState, useMemo, useRef, useCallback } from "react";
 import { useTableData } from "../../hooks/useTableData";
 import { AdminTable } from "../../components/admin/AdminTable";
 import { AdminFormModal } from "../../components/admin/AdminFormModal";
@@ -29,14 +29,42 @@ const QuestionsManagement: React.FC = () => {
     pageSize: 3000
   });
   const [data, setData] = useState<any[]>([]);
+  const optionsLoadRequest = useRef(0);
   const refresh = refreshQuestions;
+  const reloadQuestionsFromBackend = useCallback(async () => {
+    let query = supabase.from("questions").select("*").order("created_at", { ascending: false }).range(0, 2999);
+    if (selectedChapter !== "all") query = query.eq("chapter_id", selectedChapter);
+    else if (selectedSubject !== "all") query = query.eq("subject_id", selectedSubject);
+    const { data: latestQuestions, error: questionsError } = await query;
+    if (questionsError) throw questionsError;
+    const questionIds = (latestQuestions || []).map(question => question.id);
+    if (!questionIds.length) {
+      optionsLoadRequest.current++;
+      setData([]);
+      return;
+    }
+    const { data: latestOptions, error: optionsError } = await supabase
+      .from("question_options")
+      .select("*")
+      .in("question_id", questionIds)
+      .order("display_order");
+    if (optionsError) throw optionsError;
+    optionsLoadRequest.current++;
+    setData((latestQuestions || []).map(question => {
+      const options = (latestOptions || [])
+        .filter(option => option.question_id === question.id)
+        .map(option => ({ id: option.id, l: option.option_key, v: getHtmlMarkup(option.option_text), is_correct: option.is_correct }));
+      return { ...question, question: getHtmlMarkup(question.question), options, correct_answer: options.find(option => option.is_correct)?.l };
+    }));
+  }, [selectedChapter, selectedSubject]);
   React.useEffect(() => {
     let cancelled = false;
+    const requestId = ++optionsLoadRequest.current;
     const loadOptions = async () => {
       if (!questions.length) { setData([]); return; }
       const { data: optionRows, error } = await supabase.from("question_options").select("*").in("question_id", questions.map(q => q.id)).order("display_order");
       if (error) { console.error("Failed to load question options", error); return; }
-      if (!cancelled) setData(questions.map(q => {
+      if (!cancelled && requestId === optionsLoadRequest.current) setData(questions.map(q => {
         const options = (optionRows || []).filter(o => o.question_id === q.id).map(o => ({ id: o.id, l: o.option_key, v: getHtmlMarkup(o.option_text), is_correct: o.is_correct }));
         return { ...q, question: getHtmlMarkup(q.question), options, correct_answer: options.find(o => o.is_correct)?.l };
       }));
@@ -47,6 +75,7 @@ const QuestionsManagement: React.FC = () => {
 
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [editingItem, setEditingItem] = useState<any>(null);
+  const [saveStatus, setSaveStatus] = useState("");
 
   const filteredChapters = selectedSubject === "all" ? chapters : chapters.filter(c => c.subject_id === selectedSubject);
   const visibleQuestions = useMemo(() => statusFilter === "all"
@@ -167,7 +196,7 @@ const QuestionsManagement: React.FC = () => {
     },
   ], [chapters, updateItem]);
 
-  const fields: any[] = [
+  const fields: any[] = useMemo(() => [
     { name: "question", label: "Question", type: "textarea", required: true, previewAsHtml: true },
     { name: "question_type", label: "Question type", type: "select", options: ["SINGLE_CHOICE", "MULTIPLE_CHOICE", "TRUE_FALSE"].map(value => ({ label: value.replaceAll("_", " "), value })), required: true },
     { name: "options", label: "Answer options", type: "options", defaultValue: [{ text: "", is_correct: false }, { text: "", is_correct: false }, { text: "", is_correct: false }, { text: "", is_correct: false }] }, {
@@ -181,15 +210,15 @@ const QuestionsManagement: React.FC = () => {
       ],
       required: true
     },
-    { name: "marks", label: "Marks", type: "number", defaultValue: 1 },
-    { name: "negative_marks", label: "Negative marks", type: "number", defaultValue: 0 },
+    { name: "marks", label: "Marks", type: "number", min: 0, step: 0.01, defaultValue: 1 },
+    { name: "negative_marks", label: "Negative marks", type: "number", min: 0, step: 0.01, defaultValue: 0 },
     { name: "explanation", label: "Explanation", type: "textarea", previewAsHtml: true },
     { name: "diagram_present", label: "Question has a diagram", type: "checkbox", defaultValue: false },
     { name: "diagram_url", label: "Diagram URL", type: "text" },
     { name: "source_snippet", label: "Source snippet", type: "textarea" },
     { name: "page_number", label: "Page number", type: "number" },
     { name: "question_number", label: "Question number", type: "number" },
-    { name: "paper_set", label: "Paper set ID", type: "text" },
+    { name: "paper_set", label: "Paper set ID (single UUID)", type: "text" },
     { name: "data_table_id", label: "Data table ID", type: "number" },
     // { name: "explanation", label: "Editorial Explanation", type: "textarea" },
     {
@@ -211,15 +240,26 @@ const QuestionsManagement: React.FC = () => {
       required: true
     },
     { name: "is_active", label: "Active", type: "checkbox" }
-  ];
+  ], [subjects, filteredChapters, selectedSubject, selectedChapter]);
 
   const handleApply = async (formData: any) => {
+    let debugStage = "validate-options";
     try {
+      setSaveStatus("Form submitted; validating options…");
+      const paperSet = typeof formData.paper_set === "string" ? formData.paper_set.trim() : "";
+      const uuidPattern = /^[0-9a-f]{8}-[0-9a-f]{4}-[1-8][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/i;
+      if (paperSet && !uuidPattern.test(paperSet)) {
+        throw new Error("Paper set ID must be one UUID. The questions.paper_set column cannot store multiple comma-separated IDs.");
+      }
       const optionRows = (formData.options || []).flatMap((option: any, index: number) => {
         const value = option.text?.trim();
         return value ? [{ option_key: String.fromCharCode(65 + index), option_text: value, display_order: index + 1, is_correct: Boolean(option.is_correct) }] : [];
       });
       if (!optionRows.length || !optionRows.some((option: any) => option.is_correct)) throw new Error("Add at least one option and mark a correct answer.");
+      console.groupCollapsed("[Question management] Save question diagnostics");
+      console.debug("Operation", editingItem ? "update" : "create");
+      console.debug("Form options", (formData.options || []).map((option: any, index: number) => ({ key: String.fromCharCode(65 + index), hasText: Boolean(option.text?.trim()), isCorrect: Boolean(option.is_correct) })));
+      console.debug("Rows to persist", optionRows);
       // Orchestrate authoritative technical bundling
       const bundledData = {
         question: formData.question,
@@ -236,33 +276,70 @@ const QuestionsManagement: React.FC = () => {
         source_snippet: formData.source_snippet || null,
         page_number: formData.page_number || null,
         question_number: formData.question_number || null,
-        paper_set: formData.paper_set || null,
+        paper_set: paperSet || null,
         data_table_id: formData.data_table_id || null,
       };
 
       let questionId = editingItem?.id;
       if (editingItem) {
+        debugStage = "update-question";
+        setSaveStatus("Updating question…");
         await updateItem(editingItem.id, bundledData);
       } else {
+        debugStage = "insert-question";
+        setSaveStatus("Creating question…");
         const { data: inserted, error } = await supabase.from("questions").insert(bundledData).select("id").single();
-        if (error) throw error;
+        if (error) { console.error("Question insert error", error); throw error; }
         questionId = inserted.id;
       }
 
       const rowsWithQuestion = optionRows.map((option: any) => ({ ...option, question_id: questionId }));
-      if (editingItem) {
-        const { error } = await supabase.from("question_options").delete().eq("question_id", questionId);
-        if (error) throw error;
-      }
-      const { error: optionsError } = await supabase.from("question_options").insert(rowsWithQuestion);
-      if (optionsError) throw optionsError;
+      debugStage = editingItem ? "upsert-options" : "insert-options";
+      setSaveStatus(`Saving ${rowsWithQuestion.length} option(s) to question_options…`);
+      const { error: optionsError } = await supabase
+        .from("question_options")
+        .upsert(rowsWithQuestion, { onConflict: "question_id,option_key" });
+      if (optionsError) { console.error("Question options upsert error", { error: optionsError, questionId, rows: rowsWithQuestion }); throw optionsError; }
 
-      setIsModalOpen(false);
+      if (editingItem) {
+        const retainedKeys = rowsWithQuestion.map((option: any) => option.option_key);
+        const removedKeys = (editingItem.options || [])
+          .map((option: any) => option.l)
+          .filter((key: string) => !retainedKeys.includes(key));
+        if (removedKeys.length) {
+          debugStage = "delete-removed-options";
+          setSaveStatus(`Removing ${removedKeys.length} deleted option(s)…`);
+          const { error: deleteError } = await supabase
+            .from("question_options")
+            .delete()
+            .eq("question_id", questionId)
+            .in("option_key", removedKeys);
+          if (deleteError) { console.error("Removed option delete error", { deleteError, questionId, removedKeys }); throw deleteError; }
+        }
+      }
+      console.info("Question and options saved successfully", { questionId, savedOptionCount: rowsWithQuestion.length });
+      debugStage = "verify-saved-content";
+      const [{ data: savedQuestion, error: savedQuestionError }, { data: savedOptions, error: savedOptionsError }] = await Promise.all([
+        supabase.from("questions").select("*").eq("id", questionId).single(),
+        supabase.from("question_options").select("*").eq("question_id", questionId).order("display_order"),
+      ]);
+      if (savedQuestionError) throw savedQuestionError;
+      if (savedOptionsError) throw savedOptionsError;
+      console.groupCollapsed("[Question management] Persisted question contents");
+      console.log("Question", savedQuestion);
+      console.table(savedOptions || []);
+      console.groupEnd();
+      await reloadQuestionsFromBackend();
+      console.groupEnd();
+      setSaveStatus("Question and options saved successfully.");
+
       setEditingItem(null);
-      refresh(); // Force complete lattice synchronization
+      setIsModalOpen(false);
     } catch (err: any) {
-      alert("Synchronization Failure: " + (err.message || "Unknown error manifested"));
-      console.error("[Lattice Sync Error]", err);
+      console.groupEnd();
+      const details = [err?.message, err?.code && `code=${err.code}`, err?.details, err?.hint].filter(Boolean).join(" | ");
+      console.error("[Question management] Save failed", { stage: debugStage, error: err });
+      setSaveStatus(`Save failed at ${debugStage}: ${details || "Unknown error"}`);
     }
   };
 
@@ -275,6 +352,7 @@ const QuestionsManagement: React.FC = () => {
       options: opts.map((option: any) => ({ text: option.v, is_correct: option.is_correct }))
     };
   };
+  const modalInitialData = useMemo(() => manifestEditingItem(editingItem), [editingItem]);
 
   return (
     <div className="mx-auto w-full max-w-[1440px] space-y-6 px-4 py-6 sm:px-7 sm:py-8 lg:px-10 lg:py-10">
@@ -361,6 +439,10 @@ const QuestionsManagement: React.FC = () => {
           onPageChange={setPage}
           onRefresh={refresh}
           onEdit={(item) => {
+            console.groupCollapsed("[Question management] Selected question for editing");
+            console.log("Question", item);
+            console.table(item.options || []);
+            console.groupEnd();
             setEditingItem(item);
             setIsModalOpen(true);
           }}
@@ -375,7 +457,8 @@ const QuestionsManagement: React.FC = () => {
         isOpen={isModalOpen}
         title={editingItem ? "Edit Question" : "Add Question"}
         fields={fields}
-        initialData={manifestEditingItem(editingItem)}
+        initialData={modalInitialData}
+        saveStatus={saveStatus}
         onClose={() => setIsModalOpen(false)}
         onSubmit={handleApply}
       />

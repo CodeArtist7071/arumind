@@ -67,6 +67,7 @@ const FeaturesManagement = lazy(
 const CurriculumLattice = lazy(
   () => import("./pages/adminPanel/CurriculumLattice"),
 );
+const AdminSqlEditor = lazy(() => import("./pages/adminPanel/AdminSqlEditor"));
 const ExamBoardsManagement = lazy(
   () => import("./pages/adminPanel/ExamBoardsManagement"),
 );
@@ -177,6 +178,7 @@ const router = createBrowserRouter(
           <Route path="subjects" element={<SubjectsManagement />} />
           <Route path="chapters" element={<ChaptersManagement />} />
           <Route path="questions" element={<QuestionsManagement />} />
+          <Route path="sql" element={<AdminSqlEditor />} />
         </Route>
       </Route>
 

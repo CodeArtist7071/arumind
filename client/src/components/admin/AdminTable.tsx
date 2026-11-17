@@ -1,32 +1,32 @@
-import React, { useMemo, useState, memo } from "react";
-import { AgGridReact } from "ag-grid-react";
-import { 
-  Search, 
-  Edit3, 
-  Trash2, 
-  Loader2, 
-  Database,
+import React, { memo, useMemo, useState } from "react";
+import {
+  createSortedRowModel,
+  rowSortingFeature,
+  sortFn_alphanumeric,
+  tableFeatures,
+  useTable,
+  type ColumnDef,
+} from "@tanstack/react-table";
+import {
+  Search,
+  Edit3,
+  Trash2,
+  Loader2,
   RefreshCw,
   ChevronLeft,
   ChevronRight,
   ArrowUpDown,
   ArrowUp,
   ArrowDown,
-  Menu
 } from "lucide-react";
 
 interface Column {
   header: string;
   key: string;
   render?: (val: any, row: any) => React.ReactNode;
-  rowGroup?: boolean;
   hide?: boolean;
-  pinned?: "left" | "right" | boolean;
   width?: number;
   minWidth?: number;
-  flex?: number;
-  autoHeight?: boolean;
-  wrapText?: boolean;
   comparator?: (valueA: any, valueB: any) => number;
 }
 
@@ -42,88 +42,30 @@ interface AdminTableProps {
   onPageChange?: (page: number) => void;
   onRefresh?: () => void;
   searchPlaceholder?: string;
-  enableCellSpan?: boolean;
-  isFullWidthRow?: (params: any) => boolean;
-  fullWidthCellRenderer?: any;
-  getRowHeight?: (params: any) => number | undefined;
-  autoGroupColumnDef?: any;
-  groupDisplayType?: "singleColumn" | "multipleColumns" | "groupRows" | "custom";
-  groupDefaultExpanded?: number;
 }
 
-/**
- * Clean Professional Header.
- * Subtle, high-contrast, and intuitive sorting manifestation.
- */
-const CleanHeader = memo((props: any) => {
-  const [sort, setSort] = useState(props.column.getSort());
-
-  React.useEffect(() => {
-    const updateSort = () => setSort(props.column.getSort());
-    props.column.addEventListener('sortChanged', updateSort);
-    return () => props.column.removeEventListener('sortChanged', updateSort);
-  }, [props.column]);
-
-  const onSortRequested = (event: React.MouseEvent) => {
-    props.progressSort(event.shiftKey);
-  };
-
-  const onMenuClicked = (event: React.MouseEvent) => {
-    event.stopPropagation();
-    props.showColumnMenu(event.currentTarget);
-  };
-
-  return (
-    <div className="flex items-center justify-between w-full h-full group">
-      <button
-        type="button"
-        aria-label={`Sort by ${props.displayName}`}
-        className="flex items-center gap-2 cursor-pointer select-none py-1 h-full flex-1 text-left focus-visible:outline focus-visible:outline-2 focus-visible:outline-[#4c8b3e]"
-        onClick={onSortRequested}
-      >
-        <span className="text-[11px] font-bold uppercase tracking-wider text-slate-800 dark:text-slate-200">
-          {props.displayName}
-        </span>
-        <div className="text-slate-400 group-hover:text-[#16a34a] transition-all">
-          {sort === 'asc' ? <ArrowUp size={12} /> : sort === 'desc' ? <ArrowDown size={12} /> : <ArrowUpDown size={12} className="opacity-0 group-hover:opacity-40" />}
-        </div>
-      </button>
-      <button 
-        onClick={onMenuClicked}
-        aria-label={`Column options for ${props.displayName}`}
-        className="p-1 text-slate-400 hover:text-[#16a34a] hover:bg-[#16a34a]/10 rounded transition-all opacity-0 group-hover:opacity-100 focus-visible:opacity-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-[#4c8b3e]"
-        title="Column Options"
-      >
-        <Menu size={14} />
-      </button>
-    </div>
-  );
+const adminTableFeatures = tableFeatures({
+  rowSortingFeature,
+  sortedRowModel: createSortedRowModel(),
+  sortFns: { alphanumeric: sortFn_alphanumeric },
 });
 
-/**
- * Modern SaaS Action Cell.
- * Minimalist, high-performance orchestration controls.
- */
 const ActionCell = memo(({ data, onEdit, onDelete }: any) => (
-  <div className="flex items-center gap-4 h-full">
+  <div className="flex items-center gap-2">
     <button
-      onClick={(e) => {
-        e.stopPropagation();
-        onEdit(data);
-      }}
+      type="button"
+      onClick={() => onEdit(data)}
       aria-label="Edit record"
-      className="p-2 text-slate-500 hover:text-[#16a34a] hover:bg-[#16a34a]/10 rounded-lg transition-all focus-visible:outline focus-visible:outline-2 focus-visible:outline-[#4c8b3e]"
+      className="rounded-lg p-2 text-slate-500 transition hover:bg-[#16a34a]/10 hover:text-[#16a34a] focus-visible:outline focus-visible:outline-2 focus-visible:outline-[#4c8b3e]"
       title="Edit"
     >
       <Edit3 size={15} />
     </button>
     <button
-      onClick={(e) => {
-        e.stopPropagation();
-        onDelete(data.id);
-      }}
+      type="button"
+      onClick={() => onDelete(data.id)}
       aria-label="Delete record"
-      className="p-2 text-slate-500 hover:text-red-600 hover:bg-red-500/10 rounded-lg transition-all focus-visible:outline focus-visible:outline-2 focus-visible:outline-red-500"
+      className="rounded-lg p-2 text-slate-500 transition hover:bg-red-500/10 hover:text-red-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-red-500"
       title="Delete"
     >
       <Trash2 size={15} />
@@ -131,10 +73,7 @@ const ActionCell = memo(({ data, onEdit, onDelete }: any) => (
   </div>
 ));
 
-/**
- * Professional Admin Lattice Table.
- * Optimized for React 19 with the legacy ag-theme-alpine manifestation.
- */
+/** Shared, accessible admin data table, powered by TanStack Table. */
 export const AdminTable: React.FC<AdminTableProps> = memo(({
   columns,
   data,
@@ -147,180 +86,172 @@ export const AdminTable: React.FC<AdminTableProps> = memo(({
   onPageChange,
   onRefresh,
   searchPlaceholder = "Search records...",
-  enableCellSpan,
-  isFullWidthRow,
-  fullWidthCellRenderer,
-  getRowHeight,
-  autoGroupColumnDef,
-  groupDisplayType,
-  groupDefaultExpanded
 }) => {
   const [quickFilterText, setQuickFilterText] = useState("");
   const recordCount = totalCount ?? data?.length ?? 0;
+  const normalizedQuery = quickFilterText.trim().toLocaleLowerCase();
 
-  const columnDefs = useMemo(() => {
-    const defs: any[] = columns.map((col) => {
-      const isTechnical = col.key === "id" || col.key.includes("_id") || col.key === "display_order";
-      
-      return {
-        headerName: col.header,
-        field: col.key,
-        sortable: true,
-        comparator: col.comparator,
-        filter: true,
-        headerComponent: CleanHeader,
-        flex: col.width ? col.flex : (col.flex ?? 1),
-        minWidth: col.minWidth ?? 160,
-        width: col.width,
-        pinned: col.pinned,
-        rowGroup: col.rowGroup,
-        hide: col.hide,
-        autoHeight: col.autoHeight,
-        wrapText: col.wrapText,
-        cellRenderer: (params: any) => {
-          if (col.render) {
-            try {
-              return col.render(params.value, params.data);
-            } catch (e) {
-              return <span className="text-[10px] uppercase font-bold text-red-400">Render Error</span>;
-            }
+  const filteredData = useMemo(() => {
+    const rows = data ?? [];
+    if (!normalizedQuery) return rows;
+    return rows.filter((row) =>
+      columns.some((column) => String(row?.[column.key] ?? "").toLocaleLowerCase().includes(normalizedQuery)),
+    );
+  }, [columns, data, normalizedQuery]);
+
+  const tableColumns = useMemo<ColumnDef<any, any>[]>(() => {
+    const visibleColumns: ColumnDef<any, any>[] = columns.filter((column) => !column.hide).map((column) => ({
+      id: column.key,
+      accessorKey: column.key,
+      header: column.header,
+      enableSorting: true,
+      sortFn: column.comparator
+        ? (rowA: any, rowB: any, columnId: string) => column.comparator!(rowA.getValue(columnId), rowB.getValue(columnId))
+        : "alphanumeric" as const,
+      meta: { width: column.width, minWidth: column.minWidth },
+      cell: (context: any) => {
+        const value = context.getValue();
+        if (column.render) {
+          try {
+            return column.render(value, context.row.original);
+          } catch {
+            return <span className="text-xs font-semibold text-red-500">Unable to render</span>;
           }
-          return (
-            <span className={`text-[13px] font-medium ${isTechnical ? "font-mono opacity-40 text-[10px] tabular-nums" : "text-slate-800 dark:text-slate-100"}`}>
-              {params.value ?? "—"}
-            </span>
-          );
-        },
-      };
-    });
+        }
+        const technical = column.key === "id" || column.key.includes("_id") || column.key === "display_order";
+        return (
+          <span className={technical ? "font-mono text-xs text-slate-500" : "text-sm font-medium text-slate-800 dark:text-slate-100"}>
+            {value ?? "—"}
+          </span>
+        );
+      },
+    }));
 
-    defs.push({
-      headerName: "Actions",
-      field: "id",
-      pinned: "right",
-      width: 90,
-      minWidth: 100,
-      hide:false,
-      sortable: false,
-      filter: false,
-      headerComponent: CleanHeader,
-      cellRenderer: (params: any) => (
-        <ActionCell 
-          data={params.data} 
-          onEdit={onEdit} 
-          onDelete={onDelete} 
-        />
-      ),
+    visibleColumns.push({
+      id: "actions",
+      header: "Actions",
+      enableSorting: false,
+      cell: ({ row }) => <ActionCell data={row.original} onEdit={onEdit} onDelete={onDelete} />,
     });
-
-    return defs;
+    return visibleColumns;
   }, [columns, onEdit, onDelete]);
+
+  const table = useTable({
+    features: adminTableFeatures,
+    columns: tableColumns,
+    data: filteredData,
+    getRowId: (row: any, index: number) => String(row?.id ?? index),
+  });
 
   const totalPages = Math.ceil(recordCount / pageSize);
 
   if (loading && (!data || data.length === 0)) {
     return (
-      <div className="flex flex-col items-center justify-center p-32 text-slate-300">
-        <Loader2 className="animate-spin text-[#16a34a] mb-4" size={32} />
-        <span className="text-[10px] font-bold uppercase tracking-widest">Loading...</span>
+      <div className="flex flex-col items-center justify-center p-12 text-slate-300 sm:p-32" role="status" aria-live="polite">
+        <Loader2 className="mb-4 animate-spin text-[#16a34a]" size={32} />
+        <span className="text-xs font-bold uppercase tracking-widest">Loading...</span>
       </div>
     );
   }
 
   return (
-      <div className="w-full overflow-hidden rounded-2xl border border-[#e5e9e0] bg-[#fbfcf8] p-4 dark:border-white/10 dark:bg-[#171e17] sm:p-5">
+    <div className="w-full overflow-hidden rounded-2xl border border-[#e5e9e0] bg-[#fbfcf8] p-4 dark:border-white/10 dark:bg-[#171e17] sm:p-5">
       <div className="flex flex-col gap-3 pb-4 sm:flex-row sm:items-center sm:justify-between">
         <div className="group relative w-full sm:max-w-sm">
-          <Search 
-            size={16} 
-            className="absolute left-3.5 top-1/2 -translate-y-1/2 text-[#879181] transition-colors group-focus-within:text-[#315f29]" 
-          />
+          <Search size={16} aria-hidden="true" className="absolute left-3.5 top-1/2 -translate-y-1/2 text-[#879181] transition-colors group-focus-within:text-[#315f29]" />
           <input
-            type="text"
+            type="search"
             aria-label="Search records in table"
             placeholder={searchPlaceholder}
             value={quickFilterText}
-            onChange={(e) => setQuickFilterText(e.target.value)}
+            onChange={(event) => setQuickFilterText(event.target.value)}
             className="min-h-11 w-full rounded-xl border border-[#e2e8dc] bg-white pl-10 pr-4 text-sm text-[#263b22] outline-none transition placeholder:text-[#9aa493] focus:border-[#7ba36e] focus:ring-4 focus:ring-[#7ba36e]/10 dark:border-white/10 dark:bg-[#111711] dark:text-[#e8eee4]"
           />
         </div>
         <div className="flex items-center justify-between gap-4 sm:justify-end">
-          <button 
-            onClick={onRefresh}
-            aria-label="Refresh table"
-            disabled={!onRefresh}
-            className="grid size-10 place-items-center rounded-xl text-[#73806e] transition hover:bg-[#edf3e9] hover:text-[#315f29] disabled:cursor-default disabled:opacity-40 dark:hover:bg-white/[0.06]"
-            title="Refresh"
-          >
+          <button type="button" onClick={onRefresh} aria-label="Refresh table" disabled={!onRefresh} className="grid size-10 place-items-center rounded-xl text-[#73806e] transition hover:bg-[#edf3e9] hover:text-[#315f29] disabled:cursor-default disabled:opacity-40 dark:hover:bg-white/[0.06]" title="Refresh">
             <RefreshCw size={16} />
           </button>
-          <div className="rounded-lg bg-[#f0f4ec] px-3 py-2 text-xs text-[#687565] dark:bg-white/[0.06] dark:text-[#aeb9aa]">
-            <span className="font-semibold tabular-nums text-[#263b22] dark:text-white">{recordCount}</span> {recordCount === 1 ? "record" : "records"}
+          <div className="rounded-lg bg-[#f0f4ec] px-3 py-2 text-xs text-[#687565] dark:bg-white/[0.06] dark:text-[#aeb9aa]" aria-live="polite">
+            <span className="font-semibold tabular-nums text-[#263b22] dark:text-white">{normalizedQuery ? filteredData.length : recordCount}</span>{" "}
+            {recordCount === 1 ? "record" : "records"}
           </div>
         </div>
       </div>
 
-      {/* High-Fidelity Grid Container */}
-      <div className="ag-theme-alpine w-full overflow-hidden rounded-xl border border-[#e6eae2] dark:border-white/10" style={{ height: 520 }}>
-        <AgGridReact
-          rowData={data || []}
-          columnDefs={columnDefs}
-          theme="legacy"
-          enableCellSpan={enableCellSpan}
-          isFullWidthRow={isFullWidthRow}
-          fullWidthCellRenderer={fullWidthCellRenderer}
-          getRowHeight={getRowHeight}
-          autoGroupColumnDef={autoGroupColumnDef}
-          groupDisplayType={groupDisplayType}
-          groupDefaultExpanded={groupDefaultExpanded}
-          quickFilterText={quickFilterText}
-          getRowId={(params: any) => params.data?.id}
-          animateRows={true}
-          defaultColDef={{
-            flex: 1,
-            minWidth: 100,
-            resizable: true,
-          }}
-          onGridReady={(params: any) => {
-            params.api.sizeColumnsToFit();
-          }}
-          overlayNoRowsTemplate='<span class="text-sm text-slate-500">No matching records found</span>'
-        />
+      <div className="hidden w-full overflow-x-auto rounded-xl border border-[#e6eae2] dark:border-white/10 md:block">
+        <table className="w-full min-w-[720px] border-collapse text-left">
+          <thead className="bg-[#f4f7f1] dark:bg-white/[0.04]">
+            {table.getHeaderGroups().map((headerGroup) => (
+              <tr key={headerGroup.id}>
+                {headerGroup.headers.map((header) => {
+                  const sort = header.column.getIsSorted();
+                  const metadata = header.column.columnDef.meta as { width?: number; minWidth?: number } | undefined;
+                  return (
+                    <th key={header.id} scope="col" style={{ width: metadata?.width, minWidth: metadata?.minWidth ?? 120 }} className="border-b border-[#e6eae2] px-4 py-3 text-[11px] font-bold uppercase tracking-wider text-slate-700 dark:border-white/10 dark:text-slate-200">
+                      {header.isPlaceholder ? null : header.column.getCanSort() ? (
+                        <button type="button" onClick={header.column.getToggleSortingHandler()} aria-label={`Sort by ${header.column.columnDef.header}`} className="inline-flex items-center gap-2 rounded focus-visible:outline focus-visible:outline-2 focus-visible:outline-[#4c8b3e]">
+                          <table.FlexRender header={header} />
+                          {sort === "asc" ? <ArrowUp size={13} aria-label="ascending" /> : sort === "desc" ? <ArrowDown size={13} aria-label="descending" /> : <ArrowUpDown size={13} className="opacity-40" aria-hidden="true" />}
+                        </button>
+                      ) : <table.FlexRender header={header} />}
+                    </th>
+                  );
+                })}
+              </tr>
+            ))}
+          </thead>
+          <tbody className="divide-y divide-[#edf0e9] bg-white dark:divide-white/5 dark:bg-[#111711]">
+            {table.getRowModel().rows.length ? table.getRowModel().rows.map((row) => (
+              <tr key={row.id} className="transition-colors hover:bg-[#f8faf6] dark:hover:bg-white/[0.03]">
+                {row.getAllCells().map((cell) => (
+                  <td key={cell.id} className="px-4 py-3 align-middle text-sm text-slate-700 dark:text-slate-200">
+                    <table.FlexRender cell={cell} />
+                  </td>
+                ))}
+              </tr>
+            )) : (
+              <tr><td colSpan={table.getAllLeafColumns().length} className="px-4 py-12 text-center text-sm text-slate-500">No matching records found</td></tr>
+            )}
+          </tbody>
+        </table>
       </div>
 
-      {/* SaaS Pagination Orchestration */}
+      <div className="space-y-3 md:hidden" aria-label="Admin records">
+        {table.getRowModel().rows.length ? table.getRowModel().rows.map((row) => {
+          const cells = row.getAllCells();
+          const actionCell = cells.find((cell) => cell.column.id === "actions");
+          return (
+            <article key={row.id} className="overflow-hidden rounded-xl border border-[#e6eae2] bg-white dark:border-white/10 dark:bg-[#111711]">
+              <dl className="divide-y divide-[#edf0e9] px-3 dark:divide-white/5">
+                {cells.filter((cell) => cell.column.id !== "actions").map((cell) => {
+                  const title = cell.column.columnDef.header;
+                  const label = typeof title === "string" ? title : cell.column.id;
+                  return (
+                    <div key={cell.id} className="grid grid-cols-[minmax(5.5rem,0.7fr)_minmax(0,1.3fr)] gap-3 py-3">
+                      <dt className="text-xs font-semibold text-[#778171] dark:text-[#a6b09f]">{label}</dt>
+                      <dd className="min-w-0 break-words text-sm text-slate-700 dark:text-slate-200"><table.FlexRender cell={cell} /></dd>
+                    </div>
+                  );
+                })}
+              </dl>
+              {actionCell && <div className="flex justify-end border-t border-[#edf0e9] px-2 py-1.5 dark:border-white/5"><table.FlexRender cell={actionCell} /></div>}
+            </article>
+          );
+        }) : (
+          <div className="rounded-xl border border-[#e6eae2] bg-white px-4 py-10 text-center text-sm text-slate-500 dark:border-white/10 dark:bg-[#111711]">No matching records found</div>
+        )}
+      </div>
+
       {totalPages > 1 && onPageChange && (
         <div className="flex flex-col gap-3 px-1 pt-4 sm:flex-row sm:items-center sm:justify-between">
           <div className="text-xs text-[#778171] dark:text-[#a6b09f]">
-             Showing <span className="font-semibold tabular-nums text-[#263b22] dark:text-white">{Math.min(page * pageSize + 1, recordCount)}</span>–<span className="font-semibold tabular-nums text-[#263b22] dark:text-white">{Math.min((page + 1) * pageSize, recordCount)}</span> of <span className="font-semibold tabular-nums text-[#263b22] dark:text-white">{recordCount}</span>
+            Showing <span className="font-semibold tabular-nums text-[#263b22] dark:text-white">{Math.min(page * pageSize + 1, recordCount)}</span>–<span className="font-semibold tabular-nums text-[#263b22] dark:text-white">{Math.min((page + 1) * pageSize, recordCount)}</span> of <span className="font-semibold tabular-nums text-[#263b22] dark:text-white">{recordCount}</span>
           </div>
-          
           <div className="flex items-center gap-1 rounded-xl border border-[#e5e9e0] bg-white p-1 dark:border-white/10 dark:bg-[#111711]">
-            <button
-               onClick={() => onPageChange(page - 1)}
-               aria-label="Previous page"
-               disabled={page === 0}
-               className="p-2 text-slate-500 hover:text-[#16a34a] hover:bg-white dark:hover:bg-slate-800 disabled:opacity-30 disabled:hover:bg-transparent rounded-lg transition-all focus-visible:outline focus-visible:outline-2 focus-visible:outline-[#4c8b3e]"
-            >
-              <ChevronLeft size={16} />
-            </button>
-            
-            <div className="flex items-center gap-2 px-3">
-               <span className="text-[10px] font-black text-[#16a34a]">PAGE</span>
-               <span className="bg-white dark:bg-slate-800 border border-slate-100 dark:border-slate-700 text-slate-900 dark:text-slate-100 px-2 py-0.5 rounded text-[10px] font-black min-w-[28px] text-center shadow-xs">
-                  {page + 1}
-               </span>
-               <span className="text-[10px] font-bold text-slate-400">OF {totalPages}</span>
-      </div>
-
-            <button
-               onClick={() => onPageChange(page + 1)}
-               aria-label="Next page"
-               disabled={page >= totalPages - 1}
-               className="p-2 text-slate-500 hover:text-[#16a34a] hover:bg-white dark:hover:bg-slate-800 disabled:opacity-30 disabled:hover:bg-transparent rounded-lg transition-all focus-visible:outline focus-visible:outline-2 focus-visible:outline-[#4c8b3e]"
-            >
-              <ChevronRight size={16} />
-            </button>
+            <button type="button" onClick={() => onPageChange(page - 1)} aria-label="Previous page" disabled={page === 0} className="rounded-lg p-2 text-slate-500 transition hover:bg-[#edf3e9] hover:text-[#16a34a] disabled:opacity-30 focus-visible:outline focus-visible:outline-2 focus-visible:outline-[#4c8b3e]"><ChevronLeft size={16} /></button>
+            <div className="flex items-center gap-2 px-3"><span className="text-[10px] font-black text-[#16a34a]">PAGE</span><span className="min-w-7 rounded border border-slate-100 bg-white px-2 py-0.5 text-center text-[10px] font-black text-slate-900 dark:border-slate-700 dark:bg-slate-800 dark:text-slate-100">{page + 1}</span><span className="text-[10px] font-bold text-slate-400">OF {totalPages}</span></div>
+            <button type="button" onClick={() => onPageChange(page + 1)} aria-label="Next page" disabled={page >= totalPages - 1} className="rounded-lg p-2 text-slate-500 transition hover:bg-[#edf3e9] hover:text-[#16a34a] disabled:opacity-30 focus-visible:outline focus-visible:outline-2 focus-visible:outline-[#4c8b3e]"><ChevronRight size={16} /></button>
           </div>
         </div>
       )}

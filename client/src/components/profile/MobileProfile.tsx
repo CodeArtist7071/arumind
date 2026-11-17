@@ -16,7 +16,8 @@ import {
   CreditCard, 
   Award,
   BookOpen,
-  Target
+  Target,
+  ShieldCheck,
 } from "lucide-react";
 import { toggleEyeProtection, toggleBlueLightShield, setActionCenter } from "../../slice/uiSlice";
 import { useTheme } from "../../hooks/useTheme";
@@ -38,6 +39,12 @@ export const MobileProfile: React.FC<MobileProfileProps> = ({ onEdit }) => {
     dispatch(clearUser());
     navigate("/login");
   };
+
+  const registryItems = [
+    ...(profile?.role === "admin" ? [{ label: "Admin workspace", sub: "Manage platform content", icon: <ShieldCheck className="text-primary" />, action: () => navigate("/admin/dashboard") }] : []),
+    { label: "Elite Subscription", sub: "₹2,499 Active Plan", icon: <CreditCard className="text-secondary" />, action: () => {} },
+    { label: "Logout Session", sub: "End authorized access", icon: <LogOut className="text-red-500" />, action: handleLogout },
+  ];
 
   return (
     <div className="flex flex-col gap-8 pb-32 animate-reveal">
@@ -137,25 +144,22 @@ export const MobileProfile: React.FC<MobileProfileProps> = ({ onEdit }) => {
             <p className="text-[10px] font-technical font-black uppercase tracking-[0.4em] text-on-surface-variant">Registry Access</p>
          </div>
 
-         {[
-           // { label: 'Target Manifests', sub: 'Exam Board Selection', icon: <Target className="text-primary" />, action: () => dispatch(setActionCenter(true)) },
-           { label: 'Elite Subscription', sub: '₹2,499 Active Plan', icon: <CreditCard className="text-secondary" />, action: () => {} },
-           { label: 'Logout Session', sub: 'End authorized access', icon: <LogOut className="text-red-500" />, action: handleLogout },
-         ].map((item, idx) => (
-           <div 
-             key={idx} 
+         {registryItems.map((item) => (
+           <button
+             type="button"
+             key={item.label}
              onClick={item.action}
-             className="flex items-center gap-6 p-6 bg-surface-container-low rounded-4xl active:bg-surface-container-high transition-all group"
+             className="flex min-h-20 w-full items-center gap-4 rounded-3xl bg-surface-container-low p-4 text-left transition-all active:bg-surface-container-high group sm:gap-6 sm:p-6"
            >
-              <div className="size-12 bg-white rounded-2xl shadow-sm flex items-center justify-center opacity-80">
+              <div className="grid size-11 shrink-0 place-items-center rounded-2xl bg-white opacity-80 shadow-sm sm:size-12">
                  {item.icon}
               </div>
-              <div className="flex flex-col flex-1">
-                 <h4 className="text-sm font-black text-on-surface tracking-tight leading-none mb-1">{item.label}</h4>
-                 <p className="text-[9px] font-technical uppercase tracking-widest text-on-surface-variant/40">{item.sub}</p>
+              <div className="flex min-w-0 flex-1 flex-col">
+                 <h4 className="text-sm font-black leading-tight tracking-tight text-on-surface">{item.label}</h4>
+                 <p className="mt-1 text-[9px] font-technical uppercase tracking-widest text-on-surface-variant/60">{item.sub}</p>
               </div>
               <ChevronRight size={18} className="text-on-surface-variant/20 group-active:translate-x-1 transition-transform" />
-           </div>
+           </button>
          ))}
       </section>
 

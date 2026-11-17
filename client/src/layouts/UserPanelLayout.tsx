@@ -19,7 +19,6 @@ import {
   Timer,
   LayoutGrid,
   Book,
-  ShieldCheck,
 } from "lucide-react";
 import { useDispatch, useSelector } from "react-redux";
 import InstallAppButton from "../components/InstallAppButton";
@@ -186,15 +185,6 @@ export default function UserPanelLayout() {
       icon: <Target size={20} />,
       path: "/user/results",
     },
-    ...(profile?.role === "admin"
-      ? [
-          {
-            label: "Admin Portal",
-            icon: <ShieldCheck size={20} />,
-            path: "/admin/dashboard",
-          },
-        ]
-      : []),
   ];
 
   const handleEyeProtectionToggle = () => {
@@ -540,38 +530,6 @@ export default function UserPanelLayout() {
               )}
             </NavLink>
           ))}
-          {profile?.role === "admin" && (
-            <NavLink
-              to="/admin/dashboard"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hidden md:flex-1 md:flex flex-col items-center justify-center pt-2 pb-1"
-            >
-              {({ isActive }) => (
-                <>
-                  <div className="relative h-8 w-16 flex items-center justify-center mb-1">
-                    <div
-                      className={`absolute inset-0 bg-primary/15 rounded-full transition-all duration-400 ease-botanical ${isActive ? "opacity-100 scale-100" : "opacity-0 scale-75"}`}
-                    />
-                    <div
-                      className={`relative z-10 transition-all duration-300 ${isActive ? "text-primary scale-110" : "text-on-surface-variant/70"}`}
-                    >
-                      <ShieldCheck size={24} />
-                    </div>
-                  </div>
-                  <span
-                    className={`text-[10px] font-technical font-black uppercase tracking-wider transition-colors duration-300 ${
-                      isActive
-                        ? "text-primary opacity-100"
-                        : "text-on-surface-variant/40 opacity-80"
-                    }`}
-                  >
-                    Admin
-                  </span>
-                </>
-              )}
-            </NavLink>
-          )}
         </nav>
       </main>
     </div>

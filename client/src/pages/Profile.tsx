@@ -21,7 +21,8 @@ import {
   Settings,
   ChevronRight,
   Eye,
-  LogOut
+  LogOut,
+  ShieldCheck,
 } from "lucide-react";
 import { useNavigate } from "react-router";
 import { supabase } from "../utils/supabase";
@@ -163,6 +164,16 @@ import { clearUser } from "../slice/userSlice";
                         </button>
                     </div>
                 </section>
+
+                {profile?.role === "admin" && (
+                    <section className="flex flex-col gap-4 rounded-3xl border border-primary/15 bg-surface-container-low p-5 shadow-ambient sm:flex-row sm:items-center sm:justify-between sm:p-7" aria-label="Administrator settings">
+                        <div className="flex items-center gap-4">
+                            <span className="grid size-11 shrink-0 place-items-center rounded-2xl bg-primary/10 text-primary"><ShieldCheck size={21} /></span>
+                            <div><h3 className="text-sm font-bold text-on-surface">Admin workspace</h3><p className="mt-1 text-xs text-on-surface-variant">Manage curriculum, questions, and platform data.</p></div>
+                        </div>
+                        <button type="button" onClick={() => navigate("/admin/dashboard")} className="inline-flex min-h-11 w-full items-center justify-center gap-2 rounded-xl bg-primary px-4 text-sm font-semibold text-white transition hover:opacity-90 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary sm:w-auto">Open admin panel <ChevronRight size={16} /></button>
+                    </section>
+                )}
 
                 <div className="grid grid-cols-1 lg:grid-cols-12 gap-10">
                     <div className="lg:col-span-8 space-y-10">
