@@ -46,7 +46,7 @@ const MockTests = () => {
       >
       <div className="mx-auto max-w-7xl space-y-8 sm:space-y-10">
         {/* Header Section */}
-        <div className="flex flex-col md:flex-row md:items-end justify-between gap-6">
+        <div className="flex flex-col md:flex-row md:items-start justify-between gap-6">
           <div className="space-y-2">
             <h1 className="text-2xl font-bold tracking-tight text-on-surface dark:text-white sm:text-3xl">
               Adaptive Mock Test <span className="text-primary">Portal</span>
@@ -56,16 +56,24 @@ const MockTests = () => {
               Improve your score with AI-driven question selection.
             </p>
           </div>
-          <div className="flex items-center gap-3 rounded-2xl bg-primary px-4 py-3 text-white shadow-xl shadow-green-600/20 sm:px-6">
-            <Zap className="size-5" fill="white" />
-            <span className="font-bold tracking-wide uppercase text-xs">
-              Adaptive Learning Active
-            </span>
+          <div className="lg:w-[70%] gap-6">
+            <ExamSelectorCard
+              targetedExams={targetedExams}
+              onSelect={(exam) => handleStartExam(exam.id)}
+              onViewAll={() => navigate("/select-exams")}
+              loading={examsLoading}
+            />
+            <ExamSelectorCardMobile
+              targetedExams={targetedExams}
+              onSelect={(exam) => handleStartExam(exam.id)}
+              onViewAll={() => navigate("/select-exams")}
+              loading={examsLoading}
+            />
           </div>
         </div>
 
         {/* Exams Grid */}
-        <div className="lg:w-[70%] gap-6">
+        {/*<div className="lg:w-[70%] gap-6">
           <ExamSelectorCard
             targetedExams={targetedExams}
             onSelect={(exam) => handleStartExam(exam.id)}
@@ -78,7 +86,7 @@ const MockTests = () => {
             onViewAll={() => navigate("/select-exams")}
             loading={examsLoading}
           />
-        </div>
+        </div>*/}
 
         {/* Info Section */}
         <div className="hidden grid-cols-1 md:grid-cols-3 gap-8 pt-10  dark:border-slate-800">

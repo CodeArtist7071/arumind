@@ -83,7 +83,10 @@ export const GridDayHeaderRow: React.FC<GridDayHeaderRowProps> = ({
           const date = new Date(viewYear, viewMonth - 1, day);
           const weekdayIdx = date.getDay();
           const isToday = new Date().toDateString() === date.toDateString();
-          const isSelected = selectedDate && selectedDate.getDate() === day && selectedDate.getMonth() + 1 === viewMonth;
+          const isSelected = selectedDate &&
+            selectedDate.getDate() === day &&
+            selectedDate.getMonth() + 1 === viewMonth &&
+            selectedDate.getFullYear() === viewYear;
           const weekIdx = Math.floor(idx / 7);
           const color = WEEK_COLORS[weekIdx] || WEEK_COLORS[WEEK_COLORS.length - 1];
 

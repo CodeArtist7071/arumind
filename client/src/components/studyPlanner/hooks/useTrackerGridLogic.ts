@@ -7,6 +7,7 @@ import type { RootState, AppDispatch } from "../../../store";
 import { updateUserLocally } from "../../../slice/userSlice";
 import { useGoogleCalendar } from "../../../utils/useGoogleCalender";
 import { type Habit } from "../types";
+import { getLocalDateString } from "../../../utils/getLocaleDateString";
 
 export const useTrackerGridLogic = (
   initialHabits: Habit[],
@@ -507,6 +508,8 @@ export const useTrackerGridLogic = (
   const createHabit = useCallback(async (habitData: Partial<Habit>) => {
     if (!user?.id) return;
     try {
+      // `selectedDate` is a local calendar date. Serializing it through
+      // toISOString() shifts it to the previous day in time zones ahead of UTC.
       const scheduledDate = selectedDate || new Date();
       const newHabit: any = {
         user_id: user.id,
@@ -515,12 +518,12 @@ export const useTrackerGridLogic = (
         start_time: habitData.start_time || "09:00",
         end_time: habitData.end_time || "10:00",
         progress: Array(31).fill(false),
-        month: viewMonth,
-        year: viewYear,
+        month: scheduledDate.getMonth() + 1,
+        year: scheduledDate.getFullYear(),
         exam_id: examId,
         is_recurring: habitData.duration_type !== "DAILY",
         duration_type: habitData.duration_type || "MONTHLY",
-        scheduled_date: scheduledDate.toISOString().split('T')[0]
+        scheduled_date: getLocalDateString(scheduledDate)
       };
       
       const { error } = await supabase.from("study_habits").insert(newHabit);

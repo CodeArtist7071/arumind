@@ -1,4 +1,4 @@
-import { Loader, X, Sparkles, CheckCircle2, AlertCircle, Tag, Calendar, ChevronLeft, Book, RefreshCw } from "lucide-react";
+import { Loader, X, Sparkles, CheckCircle2, AlertCircle, Tag, Calendar, Book, RefreshCw } from "lucide-react";
 import { supabase } from "../../utils/supabase";
 import { useDispatch, useSelector } from "react-redux";
 import type { AppDispatch, RootState } from "../../store";
@@ -17,6 +17,7 @@ import { type Habit } from "./types";
 interface PlannerContext {
   viewMonth: number;
   viewYear: number;
+  selectedDate: Date;
   initialHabits: Habit[];
   examId: string;
   onRefresh: () => void;
@@ -78,14 +79,15 @@ export const AddRoutine = () => {
   const {
     viewMonth,
     viewYear,
+    selectedDate,
     initialHabits,
     examId,
     onRefresh,
-    onRequestConnection,
-    initialProgress: incomingProgress
+    onRequestConnection
   } = context || {
     viewMonth: new Date().getMonth() + 1,
     viewYear: new Date().getFullYear(),
+    selectedDate: new Date(),
     initialHabits: [],
     examId: "",
     onRefresh: () => { },
@@ -101,9 +103,11 @@ export const AddRoutine = () => {
   const [showWelcome, setShowWelcome] = useState<boolean>(false);
 
   useEffect(() => {
-    // const seen = localStorage.getItem("arumind_planner_welcome_seen");
-    setShowWelcome(true);
-  }, []);
+    // Editing should open directly on the form; the welcome step is only for
+    // first-time task creation.
+    const hasSeenWelcome = localStorage.getItem("arumind_planner_welcome_seen") === "true";
+    setShowWelcome(!editingHabitId && !hasSeenWelcome);
+  }, [editingHabitId]);
 
   const handleProceed = () => {
     localStorage.setItem("arumind_planner_welcome_seen", "true");
@@ -143,14 +147,14 @@ export const AddRoutine = () => {
     } else if (durationType === "CUSTOM") {
       setComputedEndDate("");
     }
-  }, [dateValue, durationType, useChapter]);
+  }, [dateValue, durationType]);
 
   useEffect(() => {
-    // Force present date when switching to DAILY (if not editing an existing habit)
+    // Preserve the day selected in the planner when changing task duration.
     if (durationType === "DAILY" && !editingHabitId) {
-      setValue("date", getLocalDateString(new Date()));
+      setValue("date", getLocalDateString(selectedDate));
     }
-  }, [durationType, editingHabitId, setValue]);
+  }, [durationType, editingHabitId, selectedDate, setValue]);
 
   const showToast = (type: ToastType, message: string, duration = 3000) => {
     setToast({ type, message });
@@ -158,46 +162,44 @@ export const AddRoutine = () => {
   };
 
   useEffect(() => {
-    if (examId) {
-      getChaptersByExamID(examId).then((data) => { setChapters(data || []); });
-    }
-  }, [examId]);
+    if (!examId || !useChapter) return;
+    let isCurrent = true;
+    getChaptersByExamID(examId).then((data) => {
+      if (isCurrent) setChapters(data || []);
+    });
+    return () => { isCurrent = false; };
+  }, [examId, useChapter]);
 
   useEffect(() => {
-    if (editingHabitId) {
-      const h = initialHabits.find(x => x.id === editingHabitId);
-      if (h) {
-        setValue("habit", h.name);
-        setValue("priority", h.priority as any);
-        setValue("start_time", h.start_time || "09:00");
-        setValue("end_time", h.end_time || "10:00");
-        setValue("duration_type", h.duration_type || (h.is_recurring === false ? "DAILY" : "MONTHLY"));
+    if (!editingHabitId) return;
+    const habit = initialHabits.find((item) => item.id === editingHabitId);
+    if (!habit) return;
 
-        if (h.scheduled_date) {
-          setValue("date", h.scheduled_date);
-        }
-        if (h.scheduled_end_date) {
-          setValue("end_date", h.scheduled_end_date);
-        }
+    const chapterSelected = Boolean(habit.chapter_id);
+    setUseChapter(chapterSelected);
+    reset({
+      habit: habit.name,
+      priority: habit.priority,
+      start_time: habit.start_time || "09:00",
+      end_time: habit.end_time || "10:00",
+      duration_type: habit.duration_type || (habit.is_recurring === false ? "DAILY" : "MONTHLY"),
+      date: habit.scheduled_date || getLocalDateString(selectedDate),
+      end_date: habit.scheduled_end_date || "",
+      chapter_id: habit.chapter_id || "",
+      syncToCalendar: connected,
+    });
+  }, [editingHabitId, initialHabits, reset, connected, selectedDate]);
 
-        if (h.chapter_id) {
-          setValue("chapter_id", h.chapter_id);
-          setUseChapter(true);
-        }
-      }
-    } else {
-      const now = new Date();
-      const isCurrentView = now.getMonth() + 1 === viewMonth && now.getFullYear() === viewYear;
-      const initialDay = isCurrentView ? now.getDate() : 1;
-
-      reset({
-        priority: "MEDIUM",
-        duration_type: "MONTHLY",
-        syncToCalendar: connected,
-        date: getLocalDateString(new Date(viewYear, viewMonth - 1, initialDay))
-      });
-    }
-  }, [editingHabitId, initialHabits, reset, setValue, connected, viewYear, viewMonth, incomingProgress]);
+  useEffect(() => {
+    if (editingHabitId) return;
+    setUseChapter(false);
+    reset({
+      priority: "MEDIUM",
+      duration_type: "MONTHLY",
+      syncToCalendar: connected,
+      date: getLocalDateString(selectedDate),
+    });
+  }, [editingHabitId, reset, connected, selectedDate]);
 
   const handleAIParse = async () => {
     if (!aiInput.trim()) { showToast("error", "Please describe your routine first"); return; }
@@ -328,16 +330,14 @@ export const AddRoutine = () => {
         showToast("success", `"${name}" added to your program!`);
       }
       reset(); setAiInput(""); setAiFilled(false);
-      setTimeout(() => {
-        onRefresh();
-        navigate(-1);
-      }, 1200);
+      onRefresh();
+      navigate(-1);
     } catch (err) { console.error(err); showToast("error", "Something went wrong. Please try again."); }
   }
 
   if (showWelcome) {
     return (
-      <div className="h-full bg-surface shadow-ambient-lg border-l border-on-surface/5 flex flex-col animate-reveal-right overflow-hidden md:rounded-[2.5rem]">
+      <div className="h-full bg-surface flex flex-col overflow-hidden rounded-2xl">
         <div className="h-1 w-full bg-linear-to-r from-green-500 via-emerald-400 to-green-600" />
         
         <div className="flex-1 flex flex-col px-10 pt-12 pb-10 overflow-y-auto">
@@ -389,27 +389,27 @@ export const AddRoutine = () => {
   }
 
   return (
-    <div className="h-full bg-surface shadow-ambient-lg border-l border-on-surface/5 flex flex-col animate-reveal-right overflow-hidden md:rounded-[2.5rem]">
+    <div className="h-full bg-surface flex flex-col overflow-hidden rounded-2xl">
       <div className="h-1 w-full bg-linear-to-r from-green-500 via-emerald-400 to-green-600" />
 
-      <div className="flex items-center justify-between px-8 pt-6 pb-6">
+      <div className="sticky top-0 z-20 flex items-center justify-between border-b border-outline-variant/10 bg-surface/95 px-5 py-5 backdrop-blur sm:px-8">
         <div>
-          <h2 className="text-2xl font-black tracking-tighter text-on-surface leading-none">
+          <h2 id="routine-dialog-title" className="text-xl font-semibold tracking-tight text-on-surface leading-none sm:text-2xl">
             {editingHabitId ? "Edit Task" : "Add Task"}
           </h2>
-          <p className="text-[9px] font-technical uppercase tracking-[0.3em] text-on-surface-variant opacity-40 mt-2">
-            {editingHabitId ? "Optimize Patterns" : "Design Persistence"}
+          <p className="mt-2 text-sm text-on-surface-variant">
+            {editingHabitId ? "Update task details and schedule." : "Create a study task for your planner."}
           </p>
         </div>
         <button
           onClick={() => navigate(-1)}
           className="size-10 rounded-2xl bg-surface-container-high/40 text-on-surface-variant hover:bg-surface-container-highest hover:text-primary transition-all duration-300 flex items-center justify-center group"
         >
-          <ChevronLeft className="size-5 group-hover:-translate-x-1 transition-transform" />
+          <X className="size-5" />
         </button>
       </div>
 
-      <div className="flex-1 overflow-y-auto px-8 pb-10 space-y-6 custom-scrollbar scroll-smooth">
+      <div className="min-h-0 flex-1 overflow-y-auto overscroll-y-contain px-8 pb-10 space-y-6 custom-scrollbar">
         <ToastBanner toast={toast} />
 
         {/* AI INPUT RITUAL */}
@@ -582,17 +582,19 @@ export const AddRoutine = () => {
           )}
         </div>
 
-        <button
-          onClick={handleSubmit(onSubmit)}
-          disabled={isSubmitting}
-          className="w-full py-6 bg-linear-to-r from-green-600 to-emerald-500 hover:from-green-700 hover:to-emerald-600 disabled:opacity-60 text-white rounded-[3rem] font-black uppercase text-xs tracking-[0.3em] transition-all shadow-xl shadow-green-500/20 active:scale-95 flex items-center justify-center gap-3"
-        >
-          {isSubmitting ? (
-            <><Loader size={18} className="animate-spin" /> Manifesting...</>
-          ) : (
-            <>{editingHabitId ? "Update Task" : "Open Task"} <Sparkles size={16} /></>
-          )}
-        </button>
+        <div className="sticky bottom-0 -mx-8 border-t border-outline-variant/15 bg-surface/95 px-8 pt-4 pb-2 backdrop-blur">
+          <button
+            onClick={handleSubmit(onSubmit)}
+            disabled={isSubmitting}
+            className="min-h-12 w-full rounded-xl bg-primary px-5 text-sm font-semibold text-white shadow-sm transition-colors hover:bg-primary/90 disabled:opacity-60 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary flex items-center justify-center gap-2"
+          >
+            {isSubmitting ? (
+              <><Loader size={18} className="animate-spin" /> Saving...</>
+            ) : (
+              <>{editingHabitId ? "Save changes" : "Add task"}</>
+            )}
+          </button>
+        </div>
       </div>
     </div>
   );

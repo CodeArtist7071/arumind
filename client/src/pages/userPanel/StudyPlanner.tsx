@@ -78,16 +78,23 @@ export default function StudyPlannerPage() {
     return examData.filter((el) => profile.target_exams.includes(el.id));
   }, [examData, profile?.target_exams]);
 
+  // Keep the first target visibly selected while the planner route is resolving
+  // its default exam (and after the targeted exam list loads).
+  const defaultExamId = targetedExams[0]?.id || "";
+  const selectedTickerExamId = targetedExams.some((exam) => exam.id === examId)
+    ? examId!
+    : defaultExamId;
+
   const monthName = useMemo(() => {
     return new Date(viewYear, viewMonth - 1).toLocaleString("default", { month: "long" });
   }, [viewMonth, viewYear]);
 
-  // Redirection: If no exam is selected, default to the first target exam
+  // Keep the route, ticker highlight, and task query on the same targeted exam.
   useEffect(() => {
-    if (!examId && profile?.target_exams?.length > 0) {
-      navigate(`/user/plan-study/${profile.target_exams[0]}`, { replace: true });
+    if (defaultExamId && examId !== defaultExamId && !targetedExams.some((exam) => exam.id === examId)) {
+      navigate(`/user/plan-study/${defaultExamId}`, { replace: true });
     }
-  }, [examId, profile, navigate]);
+  }, [defaultExamId, examId, targetedExams, navigate]);
 
   const handleSyncTaskToCalendar = async (habit: Habit, silent = false) => {
     if (!connected) {
@@ -134,6 +141,11 @@ export default function StudyPlannerPage() {
   const onAddHabit = (mode: "routine" | "test") => {
     setAddMode(mode);
     navigate(`/user/plan-study/${examId || "default"}/add`);
+  };
+
+  const onAddMobileHabit = (mode: "routine" | "test") => {
+    setAddMode(mode);
+    setAutoOpenAddModal(true);
   };
 
   const trackerHabits = useMemo(() => habits.filter((h) => !h.is_mastery), [habits]);
@@ -188,6 +200,7 @@ export default function StudyPlannerPage() {
             examId={examId || ""}
             viewMonth={viewMonth}
             viewYear={viewYear}
+            selectedDate={selectedDate}
             onRefresh={fetchData}
             onRequestConnection={() => setIsGooglePopupOpen(true)}
             initialUseChapter={addMode === "test"}
@@ -205,7 +218,7 @@ export default function StudyPlannerPage() {
             onSelectDate={setSelectedDate}
             onMonthChange={handleMonthChange}
             stats={stats}
-            onAddHabit={onAddHabit}
+            onAddHabit={onAddMobileHabit}
             onEditHabit={(h) => { setEditingHabitId(h.id); setAddMode(h.is_mastery ? "test" : "routine"); setAutoOpenAddModal(true); }}
             onSync={handleSyncTaskToCalendar}
             onSyncAll={handleSyncAllTasks}
@@ -220,15 +233,15 @@ export default function StudyPlannerPage() {
 
         {/* DESKTOP ZONE */}
         <div className="hidden lg:block relative min-h-screen will-change-contents">
-          <section className={`transition-all duration-800 ease-(--ease-premium) transform origin-right will-change-[transform,opacity,filter] ${outlet ? "scale-[0.94] opacity-30 blur-md pointer-events-none -translate-x-16" : "scale-100 opacity-100 blur-0"}`}>
-            <div className="px-2 mb-8">
-              <h3 className="text-[11px] font-technical font-black uppercase tracking-[0.4em] text-on-surface-variant opacity-60">Monthly Performance Grid</h3>
-              <p className="text-sm font-bold text-on-surface mt-2 tracking-tight">Your study routines and recurring tasks.</p>
+          <section className={`transition-opacity duration-200 ${outlet ? "opacity-40 pointer-events-none" : "opacity-100"}`}>
+            <div className="flex items-center justify-between">
+              <div className="px-2 mb-8">
+                {/*<h3 className="text-[11px] font-technical font-black uppercase tracking-[0.4em] text-on-surface-variant opacity-60">Monthly Performance Grid</h3>*/}
+                <p className="text-sm font-bold text-on-surface mt-2 tracking-tight">Your study routines and recurring tasks.</p>
+              </div>
+              <ExamTicker targetedExams={targetedExams} selectedExam={selectedTickerExamId} setSelectedExam={(id) => navigate(`/user/plan-study/${id}`)} />              
             </div>
-            <div className="mb-6">
-              <ExamTicker targetedExams={targetedExams} selectedExam={examId || ""} setSelectedExam={(id) => navigate(`/user/plan-study/${id}`)} />
-            </div>
-
+           
             <div className="bg-surface-container-low rounded-[3rem] overflow-hidden border border-outline-variant/5 shadow-ambient-lg">
               <TrackerGrid
                 initialHabits={trackerHabits}
@@ -264,18 +277,29 @@ export default function StudyPlannerPage() {
         {/* OVERLAY BACKDROP */}
         <div 
           onClick={() => navigate(-1)}
-          className={`fixed inset-0 z-[90] bg-black/5 backdrop-blur-sm transition-all duration-700 ease-in-out ${outlet ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"}`}
+          className={`fixed inset-0 z-[90] bg-black/20 transition-opacity duration-200 ${outlet ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"}`}
         />
 
-        {/* OVERLAY PANEL */}
-        <div className={`hidden lg:block fixed inset-y-0 right-0 z-100 transition-all duration-700 ease-in-out transform will-change-[transform,opacity] ${outlet ? "translate-x-0 opacity-100 pointer-events-auto" : "translate-x-full opacity-0 pointer-events-none"} w-full md:max-w-[540px]`} style={{ transitionTimingFunction: 'var(--ease-premium)' }}>
-          <Suspense fallback={<div className="h-full bg-surface/80 backdrop-blur-3xl border-l border-on-surface/5 animate-pulse" />}>
-            {outlet && (
-              <div className="h-full shadow-ambient-2xl border-l border-on-surface/5 backdrop-blur-3xl bg-surface/85">
-                <Outlet context={{ viewMonth, viewYear, initialHabits: habits, examId: examId || "", onRefresh: fetchData, onRequestConnection: () => setIsGooglePopupOpen(true), initialProgress: progress }} />
-              </div>
-            )}
-          </Suspense>
+        {/* Centered desktop dialog */}
+        <div
+          onClick={() => navigate(-1)}
+          className={`hidden lg:flex fixed inset-0 z-[100] items-center justify-center p-4 transition-opacity duration-200 ${outlet ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"}`}
+        >
+          <div
+            role="dialog"
+            aria-modal="true"
+            aria-labelledby="routine-dialog-title"
+            onClick={(event) => event.stopPropagation()}
+            className={`h-[min(88vh,820px)] w-full max-w-[640px] overflow-hidden rounded-2xl border border-outline-variant/20 bg-surface shadow-2xl transition-transform duration-200 ${outlet ? "translate-y-0 scale-100" : "translate-y-2 scale-[0.98]"}`}
+          >
+            <Suspense fallback={<div className="flex h-full items-center justify-center bg-surface"><div className="size-8 animate-spin rounded-full border-2 border-primary border-t-transparent" /></div>}>
+              {outlet && (
+                <div className="h-full">
+                  <Outlet context={{ viewMonth, viewYear, selectedDate, initialHabits: habits, examId: examId || "", onRefresh: fetchData, onRequestConnection: () => setIsGooglePopupOpen(true), initialProgress: progress }} />
+                </div>
+              )}
+            </Suspense>
+          </div>
         </div>
 
         <div className="hidden lg:grid grid-cols-12 gap-10 mt-20 px-2">

@@ -124,13 +124,13 @@ export default function TrackerGrid(props: TrackerGridProps) {
       <div className="bg-emerald-800 text-white p-6 shadow-lg border-b-4 border-emerald-900">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row md:items-end justify-between gap-6">
            <div>
-              <h1 className="text-6xl font-black tracking-tighter uppercase leading-none">{monthName}</h1>
-              <p className="text-[10px] font-technical font-black tracking-[0.4em] text-emerald-300 opacity-60 uppercase mt-2 pl-2">Monthly Study Persistence</p>
+              <h1 className="text-4xl font-black tracking-tighter uppercase leading-none">{monthName}</h1>
+              <p className="text-[12px] font-technical font-black tracking-[0.4em] text-emerald-300 opacity-60 uppercase mt-2 pl-2">Monthly Study Persistence</p>
            </div>
            <div className="flex-1 max-w-md w-full space-y-2">
               <div className="flex justify-between items-end">
-                 <span className="text-[10px] font-technical font-black uppercase tracking-widest text-emerald-300 opacity-60">Active Days Progress</span>
-                 <span className="text-4xl font-black leading-none">{overallProgress}%</span>
+                 <span className="text-[12px] font-technical font-black uppercase tracking-widest text-emerald-300 opacity-60">Active Days Progress</span>
+                 <span className="text-3xl font-black leading-none">{overallProgress}%</span>
               </div>
               <div className="h-6 bg-emerald-950/50 rounded-lg overflow-hidden border border-emerald-700/50 p-1">
                  <div 

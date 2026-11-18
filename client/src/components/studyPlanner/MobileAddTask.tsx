@@ -30,6 +30,7 @@ interface MobileAddTaskProps {
   title?: string;
   viewMonth: number;
   viewYear: number;
+  selectedDate: Date;
   editingHabitId?: string;
   onRefresh?: () => void;
   initialProgress?: Record<string, boolean[]>;
@@ -101,10 +102,10 @@ export const MobileAddTask: React.FC<MobileAddTaskProps> = ({
   viewMonth,
   examId,
   viewYear,
+  selectedDate,
   editingHabitId,
   title,
   onRefresh,
-  initialProgress: incomingProgress,
   onRequestConnection,
   initialUseChapter,
 }) => {
@@ -132,7 +133,7 @@ export const MobileAddTask: React.FC<MobileAddTaskProps> = ({
       const timer = setTimeout(() => {
         setShouldRender(false);
         setIsAnimatingOut(false);
-      }, 850); // Matches the buttery exit duration
+      }, 220);
       return () => clearTimeout(timer);
     }
   }, [isOpen, shouldRender]);
@@ -164,7 +165,7 @@ export const MobileAddTask: React.FC<MobileAddTaskProps> = ({
     } else if (durationType === "CUSTOM") {
       setComputedEndDate("");
     }
-  }, [dateValue, durationType, useChapter]);
+  }, [dateValue, durationType]);
 
   // Mobile Debug: Watch errors
   useEffect(() => {
@@ -175,51 +176,50 @@ export const MobileAddTask: React.FC<MobileAddTaskProps> = ({
 
   useEffect(() => {
     if (durationType === "DAILY" && !editingHabitId) {
-      setValue("date", getLocalDateString(new Date()));
+      setValue("date", getLocalDateString(selectedDate));
     }
-  }, [durationType, editingHabitId, setValue]);
+  }, [durationType, editingHabitId, selectedDate, setValue]);
 
   useEffect(() => {
-    if (examId && isOpen) {
-      getChaptersByExamID(examId).then((data) => setChapters(data || []));
-    }
-  }, [examId, isOpen]);
+    if (!examId || !isOpen || !useChapter) return;
+    let isCurrent = true;
+    getChaptersByExamID(examId).then((data) => {
+      if (isCurrent) setChapters(data || []);
+    });
+    return () => { isCurrent = false; };
+  }, [examId, isOpen, useChapter]);
 
   useEffect(() => {
-    if (editingHabitId && isOpen) {
-      const h = initialHabits.find(x => x.id === editingHabitId);
-      if (h) {
-        setValue("habit", h.name);
-        setValue("priority", h.priority as any);
-        setValue("start_time", h.start_time || "09:00");
-        setValue("end_time", h.end_time || "10:00");
-        setValue("duration_type", h.duration_type || (h.is_recurring === false ? "DAILY" : "MONTHLY"));
+    if (!isOpen || !editingHabitId) return;
+    const habit = initialHabits.find((item) => item.id === editingHabitId);
+    if (!habit) return;
 
-        if (h.scheduled_date) {
-          setValue("date", h.scheduled_date);
-        }
-        if (h.scheduled_end_date) {
-          setValue("end_date", h.scheduled_end_date);
-        }
+    setUseChapter(Boolean(habit.chapter_id));
+    reset({
+      habit: habit.name,
+      priority: habit.priority,
+      start_time: habit.start_time || "09:00",
+      end_time: habit.end_time || "10:00",
+      duration_type: habit.duration_type || (habit.is_recurring === false ? "DAILY" : "MONTHLY"),
+      date: habit.scheduled_date || getLocalDateString(selectedDate),
+      end_date: habit.scheduled_end_date || "",
+      chapter_id: habit.chapter_id || "",
+      syncToCalendar: connected,
+    });
+  }, [editingHabitId, isOpen, initialHabits, reset, connected, selectedDate]);
 
-        if (h.chapter_id) { setUseChapter(true); setValue("chapter_id", h.chapter_id); }
-      }
-    } else if (isOpen) {
+  useEffect(() => {
+    if (!isOpen || editingHabitId) return;
       console.log("🔍 [MobileAddTask] Adding New Study Session, Mode:", initialUseChapter ? "Mastery" : "Routine", "ExamID:", examId);
-      const now = new Date();
-      const isCurrentView = now.getMonth() + 1 === viewMonth && now.getFullYear() === viewYear;
-      const initialDay = isCurrentView ? now.getDate() : 1;
-
       setToast({ type: "loading", message: "Syncing Schedule..." });
       reset({
         priority: "MEDIUM",
         duration_type: "MONTHLY",
         syncToCalendar: connected,
-        date: getLocalDateString(new Date(viewYear, viewMonth - 1, initialDay))
+        date: getLocalDateString(selectedDate),
       });
       setUseChapter(initialUseChapter || false);
-    }
-  }, [editingHabitId, isOpen, initialHabits, reset, setValue, connected, viewYear, viewMonth, initialUseChapter, examId]);
+  }, [editingHabitId, isOpen, reset, connected, selectedDate, initialUseChapter, examId]);
 
   const onSubmit = async (data: FormValues) => {
     console.log("🚀 [MobileAddTask] Form Submitted Successfully:", data);
@@ -304,12 +304,11 @@ export const MobileAddTask: React.FC<MobileAddTaskProps> = ({
       }
       console.log("✅ [MobileAddTask] Manifestation Successful");
       setToast({ type: "success", message: "Schedule updated!" });
-      window.alert("✅ Session Added Successfully!");
-      setTimeout(() => { onClose(); onRefresh?.(); }, 1200);
+      onRefresh?.();
+      setTimeout(onClose, 250);
     } catch (e: any) {
       console.error("❌ [MobileAddTask] Manifestation Failed:", e);
       setToast({ type: "error", message: e.message || "System error. Try again." });
-      window.alert("❌ Manifestation Failed: " + (e.message || "Unknown error"));
     }
   };
 
@@ -319,12 +318,12 @@ export const MobileAddTask: React.FC<MobileAddTaskProps> = ({
     <div className="fixed inset-0 z-100 flex items-end justify-center">
       {/* Backdrop with lush fade */}
       <div 
-        className={`absolute inset-0 bg-on-surface/10 backdrop-blur-sm transition-all duration-700 ease-premium ${isAnimatingOut ? "animate-out fade-out" : "animate-in fade-in"}`} 
+        className={`absolute inset-0 bg-on-surface/20 transition-opacity duration-200 ${isAnimatingOut ? "animate-out fade-out" : "animate-in fade-in"}`} 
         onClick={onClose} 
       />
 
       {/* Action Sheet Container with buttery slide */}
-      <div className={`relative w-full max-h-[92vh] bg-surface rounded-t-[3rem] shadow-ambient-2xl flex flex-col overflow-hidden border-t border-on-surface/5 transition-all duration-850 ease-premium ${isAnimatingOut ? "animate-out slide-out-to-bottom-full" : "animate-in slide-in-from-bottom-full"}`}>
+      <div className={`relative w-full max-h-[92vh] bg-surface rounded-t-[3rem] shadow-ambient-2xl flex min-h-0 flex-col overflow-hidden border-t border-on-surface/5 transition-transform duration-200 ease-out ${isAnimatingOut ? "translate-y-full" : "translate-y-0"}`}>
         
         {/* Drag Handle Ritual */}
         <div className="pt-4 pb-2 shrink-0" onClick={onClose}>
@@ -332,15 +331,15 @@ export const MobileAddTask: React.FC<MobileAddTaskProps> = ({
         </div>
 
         {/* ── Mobile Header ────────────────────────────────────────────────── */}
-        <header className="px-6 pt-2 pb-4 flex items-center justify-between sticky top-0 bg-surface/80 backdrop-blur-3xl z-10 transition-all duration-500">
+        <header className="px-6 pt-2 pb-4 flex items-center justify-between sticky top-0 bg-surface z-10">
           <button onClick={onClose} className="size-10 rounded-full bg-on-surface/5 flex items-center justify-center active:scale-95 transition-transform">
             <X className="size-5" />
           </button>
-          <span className="text-sm font-black uppercase tracking-[0.3em] text-primary">Add Task</span>
+          <span className="text-sm font-black uppercase tracking-[0.3em] text-primary">{editingHabitId ? "Edit task" : "Add task"}</span>
           <div className="w-10" /> {/* Spacer for symmetry */}
         </header>
 
-        <div className="flex-1 overflow-y-auto custom-scrollbar-hide pb-32">
+        <div className="min-h-0 flex-1 overflow-y-auto overscroll-y-contain custom-scrollbar-hide pb-32">
           {toast && (
             <div className="sticky top-2 mx-4 z-50 animate-in fade-in slide-in-from-top-2">
               <div className={`p-4 rounded-3xl border flex items-center gap-3 shadow-lg ${toast.type === 'success' ? 'bg-green-50 border-green-200 text-green-800' :
@@ -354,13 +353,13 @@ export const MobileAddTask: React.FC<MobileAddTaskProps> = ({
             </div>
           )}
 
-          <main className="px-3 space-y-5 animate-reveal">
+          <main className="space-y-5 px-3">
             <div className="space-y-2 mt-6">
               <h2 className="text-xl font-black tracking-tighter text-on-surface leading-none">
                 {editingHabitId ? "Edit Task" : "Add Task"}
               </h2>
-              <p className="text-xs font-medium text-on-surface-variant opacity-60">
-                {useChapter ? "Scheduling your Test" : "Your daily study routines."}
+              <p className="text-xs font-medium text-on-surface-variant opacity-70">
+                {editingHabitId ? "Update the task details and schedule." : useChapter ? "Scheduling your test." : "Set up your study routine."}
               </p>
             </div>
 
@@ -492,9 +491,9 @@ export const MobileAddTask: React.FC<MobileAddTaskProps> = ({
                 setToast({ type: "error", message: msg });
               })();
             }}
-            className="w-full py-4 bg-on-surface text-surface rounded-3xl font-black uppercase tracking-widest text-sm shadow-xl active:scale-95 transition-all flex items-center justify-center gap-2"
+            className="w-full min-h-12 rounded-xl bg-primary px-5 py-3 text-sm font-semibold text-white shadow-sm transition-colors hover:bg-primary/90 active:scale-[0.99] flex items-center justify-center gap-2"
           >
-            {isSubmitting ? <Loader className="animate-spin" size={18} /> : (editingHabitId ? "Edit Task" : "Add Task")}
+            {isSubmitting ? <Loader className="animate-spin" size={18} /> : (editingHabitId ? "Save changes" : "Add task")}
           </button>
         </footer>
       </div>

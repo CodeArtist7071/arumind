@@ -37,8 +37,8 @@ export const GridHeader: React.FC<GridHeaderProps> = ({
           <Calendar color="" size={120} />
         </div>
         <div className="w-1/3 flex flex-col relative z-10">
-          <span className="text-[10px] font-technical font-black tracking-[0.4em] uppercase opacity-60 mb-1">Current Progress</span>
-          <div className="text-6xl font-technical font-black tracking-tighter leading-none">{overallProgress}%</div>
+          <span className="text-[12px] font-technical font-black tracking-[0.4em] uppercase opacity-60 mb-1">Current Progress</span>
+          <div className="text-4xl font-technical font-black tracking-tighter leading-none">{overallProgress}%</div>
         </div>
 
         <div className="w-1/3 flex justify-center items-center gap-6 relative z-10">
@@ -86,8 +86,8 @@ export const GridHeader: React.FC<GridHeaderProps> = ({
           <GoogleCalendarButton />
           <div className="flex flex-col items-end gap-2 px-6 border-l border-white/10 ml-4">
             <div className="text-2xl font-black tracking-tighter leading-none text-right flex flex-col items-end">
-              <span className="text-[10px] font-technical uppercase tracking-[0.2em] opacity-40">OPrep Portal</span>
-              <span className="font-narrative italic text-secondary-container">Botanical</span>
+              <span className="text-[10px] font-technical uppercase tracking-[0.2em] opacity-40">Arumind Portal</span>
+              <span className="font-narrative italic text-secondary-container">Planner</span>
             </div>
             <button
               onClick={() => setUnlockPastDays(!unlockPastDays)}

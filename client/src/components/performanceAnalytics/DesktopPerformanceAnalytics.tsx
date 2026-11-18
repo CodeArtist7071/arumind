@@ -56,31 +56,27 @@ export const DesktopPerformanceAnalytics: React.FC<DesktopPerformanceAnalyticsPr
 
   return (
     <div className={className}>
-      <section className="pt-8">
-        <h1 className="text-6xl font-black leading-[0.9] tracking-tighter text-on-surface">
-          Your Marks<span className="text-primary italic">&</span> <br />
-          Progress.
-        </h1>
-        <p className="mt-8 text-on-surface-variant max-w-lg text-lg font-medium leading-relaxed opacity-80">
-          See how you are doing in{" "}
-          <span className="text-primary font-black px-2 py-0.5 bg-primary/5 rounded-lg">
-            {targetedExams?.find((e: any) => e.id === selectedExam)?.name ||
-              "your exam"}
-          </span>{" "}
-          preparation. Your score improves as you practice more.
-        </p>
-      </section>
-
-      <div className="mt-16">
+      <section className="">
+        <div className="flex items-center justify-between">
+          <p className="mt-8 text-on-surface-variant max-w-lg text-lg font-medium leading-relaxed opacity-80">
+            See how you are doing in{" "}
+            <span className="text-primary font-black px-2 py-0.5 bg-primary/5 rounded-lg">
+              {targetedExams?.find((e: any) => e.id === selectedExam)?.name ||
+                "your exam"}
+            </span>{" "}
+            preparation. Your score improves as you practice more.
+          </p>
           <ExamTicker
             targetedExams={targetedExams}
             selectedExam={selectedExam}
             setSelectedExam={setSelectedExam}
           />
-      </div>
+        </div>       
+      </section>
+
 
       {!metrics ? (
-        <section className="mt-16 text-center py-32 bg-surface-container-low/40 rounded-[4rem] border border-dashed border-outline-variant/10">
+        <section className="mt-5 text-center py-32 bg-surface-container-low/40 rounded-[4rem] border border-dashed border-outline-variant/10">
           <FlaskConical className="size-20 text-primary/10 mx-auto mb-8 animate-pulse" />
           <h2 className="text-3xl font-black text-on-surface tracking-tighter">
             You haven't taken any tests yet.
@@ -90,7 +86,7 @@ export const DesktopPerformanceAnalytics: React.FC<DesktopPerformanceAnalyticsPr
           </p>
           <button
             onClick={() => navigate("/user/dashboard")}
-            className="mt-12 px-10 py-4 bg-primary text-white rounded-full font-technical font-black uppercase tracking-widest text-[11px] shadow-xl shadow-primary/20 hover:scale-105 active:scale-95 transition-all"
+            className="mt-5 px-10 py-4 bg-primary text-white rounded-full font-technical font-black uppercase tracking-widest text-[11px] shadow-xl shadow-primary/20 hover:scale-105 active:scale-95 transition-all"
           >
             Start a Practice Test
           </button>
